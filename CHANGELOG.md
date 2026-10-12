@@ -38,6 +38,8 @@ version is given separately (playtest v1.03).
 - Header and footer stay in place on every screen size, more compact on
   phones; only the area between them scrolls, and a page that fits the window
   no longer scrolls.
+- Radio buttons and checkboxes in black on the parchment panels (light on the
+  dark page) instead of the browser blue.
 
 ## [1.0.0] - 2026-10-12
 

@@ -55,6 +55,8 @@
 @layer base {
   html {
     color-scheme: dark;
+    /* Radio buttons, checkboxes and range inputs: no browser blue */
+    accent-color: var(--color-bone);
   }
 
   body {
@@ -109,6 +111,7 @@
   /* Parchment panel: light centre, darkened worn edges */
   .panel-parchment {
     color-scheme: light;
+    accent-color: var(--color-ink);
     background-color: var(--color-panel);
     color: var(--color-on-panel);
     box-shadow:

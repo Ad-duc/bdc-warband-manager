@@ -42,6 +42,8 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 - L'en-tête et le pied de page restent en place sur toutes les tailles
   d'écran, plus compacts sur téléphone ; seule la zone entre les deux défile,
   et une page qui tient dans la fenêtre ne défile plus.
+- Boutons radio et cases à cocher en noir sur les panneaux parchemin (en clair
+  sur le fond sombre) au lieu du bleu du navigateur.
 
 ## [1.0.0] - 2026-10-12
 
