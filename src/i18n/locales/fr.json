@@ -30,5 +30,79 @@
     "disclaimer": "Outil de fan non officiel, à usage privé. Black Death City, ses règles, ses textes et ses illustrations appartiennent à leur auteur, Sam Pearson.",
     "version": "Version {{version}}, règles de la version de test {{rules}}",
     "offline": "Fonctionne hors ligne une fois chargé."
+  },
+  "rules": {
+    "data": {
+      "unknownFaction": "Faction inconnue \"{{faction}}\".",
+      "unknownOrigin": "Origine inconnue \"{{origin}}\".",
+      "unknownFighter": "Profil de combattant inconnu \"{{profile}}\".",
+      "unknownWargear": "Équipement inconnu \"{{wargear}}\".",
+      "unknownSkill": "Compétence inconnue \"{{skill}}\".",
+      "unknownSpell": "Sort inconnu \"{{spell}}\"."
+    },
+    "budget": {
+      "exceeded": "{{spent}} pa dépensées : le budget est de {{starting}} pa.",
+      "leftover": "Il reste {{remaining}} pa : elles iront au butin, vous pouvez encore recruter ou équiper."
+    },
+    "composition": {
+      "maxFighters": "{{count}} combattants : une bande ne peut jamais en compter plus de {{max}}.",
+      "leaderCount": "{{count}} chef(s) : une bande doit avoir exactement 1 Chef.",
+      "leaderOrigin": "L'origine impose {{expected}} comme chef, pas {{profile}}.",
+      "promotedLeader": "{{profile}} ne peut pas être promu chef de cette bande.",
+      "categoryMax": "{{count}} {{category}} : {{max}} au maximum.",
+      "categoryMin": "{{count}} {{category}} : au moins {{min}} requis.",
+      "profileLimit": "{{count}} {{profile}} : limité à 0-{{max}}."
+    },
+    "wargear": {
+      "notAllowed": "{{wargear}} ne figure pas dans les listes d'équipement de ce combattant.",
+      "fixedMissing": "Ce combattant doit garder son équipement {{wargear}}.",
+      "notPurchasable": "{{wargear}} ne peut pas être acheté.",
+      "restriction": "{{wargear}} interdit {{other}}.",
+      "requires": "{{wargear}} exige {{required}}."
+    },
+    "carry": {
+      "melee": "{{count}} armes de corps à corps et objets tenus : {{max}} au maximum.",
+      "ranged": "{{count}} armes à distance : {{max}} au maximum.",
+      "armour": "{{count}} armures : {{max}} au maximum.",
+      "items": "{{count}} objets : {{max}} au maximum."
+    },
+    "twoHanded": {
+      "multiple": "{{count}} armes à deux mains : 1 seule par combattant, corps à corps et distance confondus.",
+      "heldItemRanged": "Un objet tenu ({{wargear}}) ne peut pas être porté avec une arme à distance à deux mains.",
+      "heldItemMelee": "Objet tenu avec une arme de corps à corps à deux mains ({{wargear}}) : -1 Attaques avec cette arme.",
+      "offHand": "Avec une arme à deux mains, {{wargear}} ne permet pas d'attaque de main secondaire."
+    },
+    "rarity": {
+      "exceeded": "{{count}} combattants équipés de {{wargear}} : Rare 0-{{max}} dans la bande."
+    },
+    "fighter": {
+      "unarmed": "Aucune arme de corps à corps : ce combattant utilisera la Frappe à mains nues."
+    },
+    "weapon": {
+      "oneUse": "{{wargear}} ne permet qu'1 attaque par bataille."
+    },
+    "henchman": {
+      "championItem": "{{wargear}} est habituellement réservé aux champions."
+    },
+    "skill": {
+      "duplicate": "{{skill}} est déjà possédée par un autre combattant de la bande.",
+      "notEligible": "Ce combattant ne peut pas prendre de compétence dans {{table}} ({{skill}}).",
+      "fixedMissing": "Ce combattant commence avec {{skill}}.",
+      "recruitmentCount": "{{actual}} compétence(s) choisie(s), le profil en accorde {{expected}} au recrutement."
+    },
+    "spell": {
+      "notKnownLore": "{{spell}} n'appartient à aucun domaine connu de ce combattant.",
+      "duplicateOnFighter": "{{spell}} est choisi deux fois.",
+      "recruitmentCount": "{{actual}} sort(s) fétiche(s) choisi(s), le profil en accorde {{expected}}.",
+      "sharedSignature": "{{spell}} est le sort fétiche de {{count}} combattants."
+    },
+    "blackRot": {
+      "full": "Pourriture noire : les {{boxes}} cases sont cochées."
+    }
+  },
+  "severity": {
+    "error": "Erreur",
+    "warning": "Avertissement",
+    "info": "Information"
   }
 }

@@ -610,35 +610,35 @@
       "id": "arcane-staff", "name": { "en": "Arcane Staff", "fr": "Bâton arcanique" }, "kind": "melee", "cost": 10, "purchasable": true,
       "profile": { "attacks": 2, "rend": 0, "damage": 1, "critDamage": "d3" },
       "traits": [{ "key": "arcane" }, { "key": "off-hand" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "axe", "name": { "en": "Axe", "fr": "Hache" }, "kind": "melee", "cost": 16, "purchasable": true,
       "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3" },
       "traits": [{ "key": "off-hand" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "club-mace-hammer", "name": { "en": "Club/Mace/Hammer", "fr": "Gourdin/Masse/Marteau" }, "kind": "melee", "cost": 14, "purchasable": true,
       "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
       "traits": [{ "key": "bludgeon" }, { "key": "off-hand" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "dagger", "name": { "en": "Dagger", "fr": "Dague" }, "kind": "melee", "cost": 10, "purchasable": true,
       "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
       "traits": [{ "key": "off-hand" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "ensorcelled-weapon", "name": { "en": "Ensorcelled Weapon", "fr": "Arme ensorcelée" }, "kind": "melee", "cost": 26, "purchasable": true,
       "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3" },
       "traits": [{ "key": "arcane" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null,
       "designerNote": { "en": "You can use any weapon to represent the Ensorcelled Weapon.", "fr": "Vous pouvez utiliser n'importe quelle arme pour représenter l'Arme ensorcelée." },
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
@@ -646,77 +646,77 @@
       "id": "flail", "name": { "en": "Flail", "fr": "Fléau" }, "kind": "melee", "cost": 14, "purchasable": true,
       "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
       "traits": [{ "key": "off-hand" }, { "key": "wrap" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "halberd", "name": { "en": "Halberd", "fr": "Hallebarde" }, "kind": "melee", "cost": 34, "purchasable": true,
       "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3+1" },
       "traits": [{ "key": "brace" }, { "key": "two-handed" }, { "key": "unwieldy" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "heavy-axe", "name": { "en": "Heavy Axe", "fr": "Hache lourde" }, "kind": "melee", "cost": 40, "purchasable": true,
       "profile": { "attacks": 3, "rend": -2, "damage": 2, "critDamage": "d3+1" },
       "traits": [{ "key": "two-handed" }, { "key": "unwieldy" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "ogre-blade", "name": { "en": "Ogre Blade", "fr": "Lame d'ogre" }, "kind": "melee", "cost": 36, "purchasable": true,
       "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
       "traits": [{ "key": "off-hand" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "ogre-great-weapon", "name": { "en": "Ogre Great Weapon", "fr": "Grande arme d'ogre" }, "kind": "melee", "cost": 50, "purchasable": true,
       "profile": { "attacks": 3, "rend": -2, "damage": 3, "critDamage": "d3+2" },
       "traits": [{ "key": "two-handed" }, { "key": "unwieldy" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "ogre-mace", "name": { "en": "Ogre Mace", "fr": "Masse d'ogre" }, "kind": "melee", "cost": 38, "purchasable": true,
       "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
       "traits": [{ "key": "bludgeon" }, { "key": "off-hand" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "spear", "name": { "en": "Spear", "fr": "Lance" }, "kind": "melee", "cost": 16, "purchasable": true,
       "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
       "traits": [{ "key": "brace" }, { "key": "two-handed" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "sword", "name": { "en": "Sword", "fr": "Épée" }, "kind": "melee", "cost": 18, "purchasable": true,
       "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
       "traits": [{ "key": "guard" }, { "key": "off-hand" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "warhammer", "name": { "en": "Warhammer", "fr": "Marteau de guerre" }, "kind": "melee", "cost": 38, "purchasable": true,
       "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
       "traits": [{ "key": "bludgeon" }, { "key": "two-handed" }, { "key": "unwieldy" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "zweihander", "name": { "en": "Zweihander", "fr": "Espadon" }, "kind": "melee", "cost": 42, "purchasable": true,
       "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
       "traits": [{ "key": "guard" }, { "key": "two-handed" }, { "key": "unwieldy" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "vicious-bite", "name": { "en": "Vicious Bite", "fr": "Morsure féroce" }, "kind": "melee", "cost": 0, "purchasable": false,
       "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
       "traits": [{ "key": "natural-weapon" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 70, "md": "06_guild-mercenaries.md > Hunting Dog" }
     },
 
@@ -724,124 +724,124 @@
       "id": "arbalest", "name": { "en": "Arbalest", "fr": "Arbalète lourde" }, "kind": "ranged", "cost": 96, "purchasable": true,
       "profile": { "range": 24, "attacks": 1, "rend": -2, "damage": 3, "critDamage": "d6+2" },
       "traits": [{ "key": "heavy" }, { "key": "rare" }, { "key": "reload" }, { "key": "two-handed" }, { "key": "unwieldy" }],
-      "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "blackpowder-pistol", "name": { "en": "Blackpowder Pistol", "fr": "Pistolet à poudre noire" }, "kind": "ranged", "cost": 18, "purchasable": true,
       "profile": { "range": 12, "attacks": 1, "rend": -1, "damage": 1, "critDamage": "d6" },
       "traits": [{ "key": "misfire" }, { "key": "reload" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "blackpowder-rifle", "name": { "en": "Blackpowder Rifle", "fr": "Fusil à poudre noire" }, "kind": "ranged", "cost": 22, "purchasable": true,
       "profile": { "range": 18, "attacks": 1, "rend": -1, "damage": 1, "critDamage": "d6" },
       "traits": [{ "key": "misfire" }, { "key": "reload" }, { "key": "two-handed" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "blunderbuss", "name": { "en": "Blunderbuss", "fr": "Tromblon" }, "kind": "ranged", "cost": 15, "purchasable": true,
       "profile": { "range": 8, "attacks": "d3", "rend": 0, "damage": 1, "critDamage": "d3" },
       "traits": [{ "key": "misfire" }, { "key": "reload" }, { "key": "two-handed" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "brace-of-pistols", "name": { "en": "Brace of Pistols", "fr": "Paire de pistolets" }, "kind": "ranged", "cost": 32, "purchasable": true,
       "profile": { "range": 12, "attacks": 2, "rend": -1, "damage": 1, "critDamage": "d6" },
       "traits": [{ "key": "misfire" }, { "key": "reload" }, { "key": "two-handed" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "crossbow", "name": { "en": "Crossbow", "fr": "Arbalète" }, "kind": "ranged", "cost": 26, "purchasable": true,
       "profile": { "range": 20, "attacks": 1, "rend": -1, "damage": 1, "critDamage": "d6" },
       "traits": [{ "key": "reload" }, { "key": "two-handed" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "fire-bombs", "name": { "en": "Fire Bombs", "fr": "Bombes incendiaires" }, "kind": "ranged", "cost": 37, "purchasable": true,
       "profile": { "range": 8, "attacks": 1, "rend": 0, "damage": 2, "critDamage": "d3+1" },
       "traits": [{ "key": "blast" }, { "key": "one-use" }, { "key": "rare" }, { "key": "scare" }],
-      "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "flamethrower", "name": { "en": "Flamethrower", "fr": "Lance-flammes" }, "kind": "ranged", "cost": 88, "purchasable": true,
       "profile": { "range": "flame", "attacks": 1, "rend": 0, "damage": "d3", "critDamage": null },
       "traits": [{ "key": "flame" }, { "key": "rare" }, { "key": "reload" }, { "key": "scare" }, { "key": "two-handed" }],
-      "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "hand-crossbow", "name": { "en": "Hand Crossbow", "fr": "Arbalète de poing" }, "kind": "ranged", "cost": 16, "purchasable": true,
       "profile": { "range": 12, "attacks": 1, "rend": 0, "damage": 1, "critDamage": "d6" },
       "traits": [{ "key": "reload" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "long-bow", "name": { "en": "Long Bow", "fr": "Arc long" }, "kind": "ranged", "cost": 28, "purchasable": true,
       "profile": { "range": 24, "attacks": 1, "rend": -1, "damage": 1, "critDamage": "d6" },
       "traits": [{ "key": "heavy" }, { "key": "two-handed" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "long-rifle", "name": { "en": "Long Rifle", "fr": "Fusil long" }, "kind": "ranged", "cost": 90, "purchasable": true,
       "profile": { "range": 30, "attacks": 1, "rend": -2, "damage": 2, "critDamage": "d6+2" },
       "traits": [{ "key": "heavy" }, { "key": "misfire" }, { "key": "reload" }, { "key": "two-handed" }, { "key": "unwieldy" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "ogre-cannon", "name": { "en": "Ogre Cannon", "fr": "Canon d'ogre" }, "kind": "ranged", "cost": 105, "purchasable": true,
       "profile": { "range": 18, "attacks": 1, "rend": -3, "damage": 2, "critDamage": "d3+1" },
       "traits": [{ "key": "blast" }, { "key": "heavy" }, { "key": "misfire" }, { "key": "rare" }, { "key": "reload" }, { "key": "unwieldy" }, { "key": "two-handed" }],
-      "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "ogre-pistol", "name": { "en": "Ogre Pistol", "fr": "Pistolet d'ogre" }, "kind": "ranged", "cost": 30, "purchasable": true,
       "profile": { "range": 16, "attacks": 1, "rend": -1, "damage": 2, "critDamage": "d6+1" },
       "traits": [{ "key": "misfire" }, { "key": "reload" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "repeater-pistol", "name": { "en": "Repeater Pistol", "fr": "Pistolet à répétition" }, "kind": "ranged", "cost": 35, "purchasable": true,
       "profile": { "range": 12, "attacks": 1, "rend": -1, "damage": 1, "critDamage": "d6" },
       "traits": [{ "key": "misfire" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "short-bow", "name": { "en": "Short Bow", "fr": "Arc court" }, "kind": "ranged", "cost": 18, "purchasable": true,
       "profile": { "range": 16, "attacks": 1, "rend": 0, "damage": 1, "critDamage": "d6" },
       "traits": [{ "key": "two-handed" }],
-      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "volley-rifle", "name": { "en": "Volley Rifle", "fr": "Fusil à salves" }, "kind": "ranged", "cost": 75, "purchasable": true,
       "profile": { "range": 16, "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d6" },
       "traits": [{ "key": "misfire" }, { "key": "rare" }, { "key": "reload" }, { "key": "two-handed" }, { "key": "volley" }],
-      "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
       "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
 
     {
       "id": "cuirass", "name": { "en": "Cuirass", "fr": "Cuirasse" }, "kind": "armour", "cost": 20, "purchasable": true,
-      "profile": null, "traits": [], "armourValue": 5, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
+      "profile": null, "traits": [], "armourValue": 5, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
       "text": null, "designerNote": null,
       "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Cuirasse" }
     },
     {
       "id": "warded-robes", "name": { "en": "Warded Robes", "fr": "Robe de protection" }, "kind": "armour", "cost": 10, "purchasable": true,
-      "profile": null, "traits": [], "armourValue": 6, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
+      "profile": null, "traits": [], "armourValue": 6, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
       "text": {
         "en": "Roll a dice each time a fighter equipped with this armour is targeted by a spell cast by an enemy fighter. On a 4+, the spell has no effect on this fighter.",
         "fr": "Lancez un dé chaque fois qu'un combattant équipé de cette armure est ciblé par un sort lancé par un combattant ennemi. Sur 4+, le sort n'a aucun effet sur ce combattant."
@@ -851,7 +851,7 @@
     },
     {
       "id": "full-plate", "name": { "en": "Full-plate", "fr": "Armure de plates" }, "kind": "armour", "cost": 40, "purchasable": true,
-      "profile": null, "traits": [], "armourValue": 4, "itemKeywords": [], "rarity": null, "requires": null,
+      "profile": null, "traits": [], "armourValue": 4, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null,
       "restrictions": [{ "type": "forbid-trait", "kind": "ranged", "trait": "two-handed", "exceptWargearIds": ["brace-of-pistols"] }],
       "grantsAttack": null,
       "text": {
@@ -863,14 +863,14 @@
     },
     {
       "id": "ogre-armour", "name": { "en": "Ogre Armour", "fr": "Armure d'ogre" }, "kind": "armour", "cost": 30, "purchasable": true,
-      "profile": null, "traits": [], "armourValue": 5, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
+      "profile": null, "traits": [], "armourValue": 5, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
       "text": null, "designerNote": null,
       "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armure d'ogre" }
     },
 
     {
       "id": "bomb-bolt", "name": { "en": "Bomb-bolt", "fr": "Carreau explosif" }, "kind": "item", "cost": 25, "purchasable": true,
-      "profile": null, "traits": [], "armourValue": null, "itemKeywords": [], "rarity": 1,
+      "profile": null, "traits": [], "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": 1,
       "requires": { "anyOfWargearIds": ["crossbow"] }, "restrictions": [], "grantsAttack": null,
       "text": {
         "en": "This item requires the fighter to be equipped with a Crossbow. Once per battle, when this fighter makes a Ranged Attack action with their crossbow, they can use the bomb-bolt. If they do so, the weapon gains the following for the attack:\n- Improve the Rend value by 1.\n- Add 1 to the Damage and Critical Damage values.\n- The Blast weapon trait.",
@@ -881,7 +881,7 @@
     },
     {
       "id": "grappling-hook", "name": { "en": "Grappling Hook", "fr": "Grappin" }, "kind": "item", "cost": 5, "purchasable": true,
-      "profile": null, "traits": [], "armourValue": null, "itemKeywords": [], "rarity": 2, "requires": null, "restrictions": [], "grantsAttack": null,
+      "profile": null, "traits": [], "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": 2, "requires": null, "restrictions": [], "grantsAttack": null,
       "text": {
         "en": "This fighter can climb high walls in the same manner as ladders.",
         "fr": "Ce combattant peut escalader les hauts murs de la même manière que les échelles."
@@ -891,7 +891,7 @@
     },
     {
       "id": "grimoire", "name": { "en": "Grimoire", "fr": "Grimoire" }, "kind": "item", "cost": 15, "purchasable": true,
-      "profile": null, "traits": [], "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
+      "profile": null, "traits": [], "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
       "text": {
         "en": "Once per battle, after this fighter has made casting roll, you can re-roll the casting roll.",
         "fr": "Une fois par bataille, après que ce combattant a effectué un jet de lancement, vous pouvez relancer le jet de lancement."
@@ -901,7 +901,7 @@
     },
     {
       "id": "guild-banner", "name": { "en": "Guild Banner", "fr": "Bannière de la Guilde" }, "kind": "item", "cost": 25, "purchasable": true,
-      "profile": null, "traits": [], "armourValue": null, "itemKeywords": ["held-item"], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null,
+      "profile": null, "traits": [], "armourValue": null, "armourImprovement": 0, "itemKeywords": ["held-item"], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null,
       "text": {
         "en": "While this fighter is on the battlefield, you can re-roll flee tests. You can re-roll Willpower tests made by friendly fighters while they are within 12\" of this fighter and this fighter is visible to them.",
         "fr": "Tant que ce combattant est sur le champ de bataille, vous pouvez relancer les tests de déroute. Vous pouvez relancer les tests de Volonté effectués par les combattants alliés tant qu'ils sont à 12\" ou moins de ce combattant et que ce combattant est visible pour eux."
@@ -911,7 +911,7 @@
     },
     {
       "id": "loyal-companion", "name": { "en": "Loyal Companion", "fr": "Compagnon fidèle" }, "kind": "item", "cost": 20, "purchasable": true,
-      "profile": null, "traits": [], "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [],
+      "profile": null, "traits": [], "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [],
       "grantsAttack": { "rend": -1, "damage": 1, "critDamage": "d3", "traits": [{ "key": "natural-weapon" }] },
       "text": {
         "en": "Each time the bearer makes a melee attack, they can make 1 additional attack with the following weapon.",
@@ -925,7 +925,7 @@
     },
     {
       "id": "shield", "name": { "en": "Shield", "fr": "Bouclier" }, "kind": "item", "cost": 10, "purchasable": true,
-      "profile": null, "traits": [], "armourValue": null, "itemKeywords": ["held-item"], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
+      "profile": null, "traits": [], "armourValue": null, "armourImprovement": 1, "itemKeywords": ["held-item"], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
       "text": {
         "en": "Improve this fighter's Armour value by 1, to a maximum of 2+. (For example, 6+ becomes 5+).",
         "fr": "Améliorez de 1 la valeur d'Armure de ce combattant, jusqu'à un maximum de 2+. (Par exemple, 6+ devient 5+)."
@@ -935,7 +935,7 @@
     },
     {
       "id": "lantern-torch", "name": { "en": "Lantern/Torch", "fr": "Lanterne/Torche" }, "kind": "item", "cost": 4, "purchasable": true,
-      "profile": null, "traits": [], "armourValue": null, "itemKeywords": ["held-item"], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
+      "profile": null, "traits": [], "armourValue": null, "armourImprovement": 0, "itemKeywords": ["held-item"], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
       "text": {
         "en": "Worsen the Armour value of enemy Demon and Undead fighters by 1 while they are engaged with any fighters equipped with this item.",
         "fr": "Dégradez de 1 la valeur d'Armure des combattants ennemis Démons et Morts-vivants tant qu'ils sont engagés avec au moins un combattant équipé de cet objet."
@@ -945,7 +945,7 @@
     },
     {
       "id": "wooden-stakes", "name": { "en": "Wooden Stakes", "fr": "Pieux en bois" }, "kind": "item", "cost": 5, "purchasable": true,
-      "profile": null, "traits": [], "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null,
+      "profile": null, "traits": [], "armourValue": null, "armourImprovement": 0, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null,
       "text": {
         "en": "Once per battle, while this fighter is engaged in melee with a Undead or Demon fighter that is bloodied, it can use the following bonus action.\nDrive the Stake [Bonus Action]: Pick an enemy Demon or Undead fighter this fighter is engaged in melee with, that is bloodied, to be the target. Roll a dice. On a 2+ the target is immediately taken down. In the aftermath of battle, this fighter earns 10 bonus experience.",
         "fr": "Une fois par bataille, tant que ce combattant est engagé au corps à corps avec un combattant Mort-vivant ou Démon qui est ensanglanté, il peut utiliser l'action bonus suivante.\nPlanter le pieu [Action bonus] : choisissez comme cible un combattant ennemi Démon ou Mort-vivant avec lequel ce combattant est engagé au corps à corps et qui est ensanglanté. Lancez un dé. Sur 2+, la cible est immédiatement mise hors de combat. Lors de la séquence d'après-bataille, ce combattant gagne 10 d'expérience bonus."

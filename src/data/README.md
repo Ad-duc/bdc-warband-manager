@@ -85,6 +85,7 @@ an error, so a typo cannot slip through.
 
 - `requires.anyOfWargearIds`: the item needs one of these weapons (Bomb-bolt needs a Crossbow).
 - `restrictions`: `forbid-trait` rules, eg. Full-plate forbids two-handed ranged weapons except the Brace of Pistols.
+- `armourImprovement`: improves the bearer's Armour value by this amount, to 2+ at best (Shield: 1).
 
 ## Player documents
 

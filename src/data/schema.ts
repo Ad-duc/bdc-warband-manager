@@ -274,6 +274,8 @@ export const WargearSchema = z
     profile: AttackProfileSchema.nullable(),
     traits: z.array(TraitRefSchema),
     armourValue: z.number().int().min(2).max(6).nullable(),
+    /** Improves the Armour value of the bearer by this amount, to 2+ at best (eg. Shield: 1). */
+    armourImprovement: z.number().int().min(0),
     itemKeywords: z.array(IdSchema),
     /** Rare 0-x: max number of fighters of the WARBAND equipped with it (p. 28). */
     rarity: z.number().int().positive().nullable(),
@@ -540,6 +542,8 @@ export const WarbandFighterSchema = z
     /** Advancement deltas, kept apart from injury deltas for traceability. */
     statModifiers: StatDeltaSchema,
     status: z.enum(["active", "dead", "retired"]),
+    /** Champion promoted to lead the warband after the leader's death (campaign). */
+    promotedToLeader: z.boolean(),
     history: z.array(FighterHistoryEntrySchema),
   })
   .strict();

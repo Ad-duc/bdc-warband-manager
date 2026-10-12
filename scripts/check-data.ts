@@ -154,7 +154,12 @@ const MENTION = new RegExp(
 
 function walk(dir: string, out: string[]): void {
   for (const name of readdirSync(dir)) {
-    if (name === "node_modules" || name === ".git" || name === "dist") continue;
+    if (
+      ["node_modules", ".git", "dist", "dev-dist", "coverage", "test-results", "playwright-report"].includes(
+        name,
+      )
+    )
+      continue;
     const path = join(dir, name);
     if (statSync(path).isDirectory()) walk(path, out);
     else if (/\.(ts|tsx|js|json|md|css|html|yml|yaml)$/.test(name)) out.push(path);

@@ -79,7 +79,9 @@ spells. Two casters may share the same signature spell (info message only).
 
 The origin imposes the leader at the start of the campaign only. In campaign
 mode the code accepts the imposed leader or a champion promoted through the
-faction `leaderSuccession` table.
+faction `leaderSuccession` table, flagged with `promotedToLeader` on the
+fighter. A promoted fighter counts as the Leader for the composition limits
+and gains the Leader keyword for skill eligibility.
 
 ### A11 - Warband rating of a free recruit (settled)
 
