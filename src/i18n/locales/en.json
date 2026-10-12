@@ -269,7 +269,9 @@
     "name": "Warband name",
     "faction": {
       "legend": "Pick a faction",
-      "locked": "Remove every fighter to change faction."
+      "locked": "Remove every fighter to change faction.",
+      "readMore": "Read more",
+      "readLess": "Show less"
     },
     "origin": {
       "legend": "The origin tells how your warband came to the City. It imposes the leader and gives a stronghold.",

@@ -2,12 +2,14 @@
  * File:        src/features/wizard/StepFaction.tsx
  * Role:        Step 1: warband name and faction. Every faction file of
  *              src/data is listed; the faction can be changed while the
- *              warband has no fighter.
+ *              warband has no fighter. One faction per row; long descriptions
+ *              are cut to three lines with a "read more" toggle.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
  */
 
+import { useLayoutEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { gameData } from "../../data/index.ts";
 import { useFormatter } from "../../i18n/text.ts";
@@ -42,40 +44,92 @@ export function StepFaction({ warband, update }: StepProps) {
         <legend className="mb-2 font-bold">{t("wizard.faction.legend")}</legend>
         {locked && <p className="mb-2 text-sm">{t("wizard.faction.locked")}</p>}
         <div className="grid gap-3">
-          {gameData.factions.map((faction) => (
-            <label
-              key={faction.id}
-              className="flex cursor-pointer gap-3 border-2 border-on-panel p-3 has-[:checked]:bg-bone"
-            >
-              <input
-                type="radio"
-                name="faction"
-                value={faction.id}
-                checked={warband.factionId === faction.id}
-                disabled={locked && warband.factionId !== faction.id}
-                onChange={() => {
-                  update((w) => ({
-                    ...w,
-                    factionId: faction.id,
-                    originId: null,
-                    strongholdId: null,
-                    strongholdTrackers: {},
-                  }));
-                }}
-                className="mt-1 size-5"
-              />
-              {/* Fixed-width box so that every description starts at the same place. */}
-              <span className="flex w-20 shrink-0 justify-center">
-                <img src={`${BASE}images/${faction.assets.shield}`} alt="" className="h-20 w-auto" />
-              </span>
-              <span>
-                <span className="block font-gothic text-2xl">{f.text(faction.name)}</span>
-                <span className="block text-sm">{f.text(faction.description)}</span>
-              </span>
-            </label>
-          ))}
+          {gameData.factions.map((faction) => {
+            const inputId = `faction-${faction.id}`;
+            const descId = `faction-${faction.id}-description`;
+            return (
+              <div
+                key={faction.id}
+                className="flex gap-3 border-2 border-on-panel p-3 has-[:checked]:bg-bone"
+              >
+                <input
+                  id={inputId}
+                  type="radio"
+                  name="faction"
+                  value={faction.id}
+                  aria-describedby={descId}
+                  checked={warband.factionId === faction.id}
+                  disabled={locked && warband.factionId !== faction.id}
+                  onChange={() => {
+                    update((w) => ({
+                      ...w,
+                      factionId: faction.id,
+                      originId: null,
+                      strongholdId: null,
+                      strongholdTrackers: {},
+                    }));
+                  }}
+                  className="mt-1 size-5 shrink-0"
+                />
+                {/* Fixed-width box so that every description starts at the same place. */}
+                <label htmlFor={inputId} className="flex w-20 shrink-0 cursor-pointer justify-center">
+                  <img src={`${BASE}images/${faction.assets.shield}`} alt="" className="h-20 w-auto" />
+                </label>
+                <div className="min-w-0 flex-1">
+                  <label htmlFor={inputId} className="block cursor-pointer font-gothic text-2xl">
+                    {f.text(faction.name)}
+                  </label>
+                  <Description id={descId} text={f.text(faction.description)} />
+                </div>
+              </div>
+            );
+          })}
         </div>
       </fieldset>
     </div>
+  );
+}
+
+/** Description cut to three lines, with a toggle shown only when the text is longer. */
+function Description({ id, text }: { id: string; text: string }) {
+  const { t } = useTranslation();
+  const ref = useRef<HTMLParagraphElement>(null);
+  const [open, setOpen] = useState(false);
+  const [overflows, setOverflows] = useState(false);
+
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (el === null || open) return;
+    const measure = (): void => {
+      setOverflows(el.scrollHeight > el.clientHeight + 1);
+    };
+    measure();
+    if (typeof ResizeObserver === "undefined") return;
+    const observer = new ResizeObserver(measure);
+    observer.observe(el);
+    return () => {
+      observer.disconnect();
+    };
+  }, [open, text]);
+
+  return (
+    <>
+      <p id={id} ref={ref} className={`text-sm ${open ? "" : "line-clamp-3"}`}>
+        {text}
+      </p>
+      {(overflows || open) && (
+        <button
+          type="button"
+          aria-expanded={open}
+          aria-controls={id}
+          onClick={() => {
+            setOpen((o) => !o);
+          }}
+          className="min-h-11 text-sm font-bold underline underline-offset-4"
+        >
+          {open ? t("wizard.faction.readLess") : t("wizard.faction.readMore")}
+        </button>
+      )}
+    </>
   );
 }

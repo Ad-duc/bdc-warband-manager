@@ -269,7 +269,9 @@
     "name": "Nom de la bande",
     "faction": {
       "legend": "Choisissez une faction",
-      "locked": "Renvoyez tous les combattants pour changer de faction."
+      "locked": "Renvoyez tous les combattants pour changer de faction.",
+      "readMore": "Lire la suite",
+      "readLess": "Réduire"
     },
     "origin": {
       "legend": "L'origine raconte comment votre bande est arrivée dans la Cité. Elle impose le chef et donne un repaire.",

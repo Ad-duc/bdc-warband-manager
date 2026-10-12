@@ -17,7 +17,8 @@ version is given separately (playtest v1.03).
 
 ### Changed
 
-- Factions listed one per row in the first wizard step.
+- Factions listed one per row in the first wizard step; long descriptions are
+  cut to three lines with a "Read more" toggle.
 
 ## [1.0.0] - 2026-10-12
 
