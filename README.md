@@ -24,11 +24,11 @@ English and French.
 | ---- | -------------------------------------------------------- | ------ |
 | 0    | Data schemas, Guild Mercenaries data, data checker       | done   |
 | 1    | Project skeleton, theme, i18n, local storage, PWA, tests | done   |
-| 2    | Rules engine and its tests                               | next   |
-| 3    | Warband creation wizard                                  |        |
-| 4    | Campaign tracking                                        |        |
-| 5    | Printing, export, sharing                                |        |
-| 6    | Verminkin, Death Covens, The Blighted Cloister           |        |
+| 2    | Rules engine and its tests                               | done   |
+| 3    | Warband creation wizard                                  | done   |
+| 4    | Campaign tracking                                        | done   |
+| 5    | Printing, export, sharing                                | done   |
+| 6    | Verminkin, Death Covens, The Blighted Cloister           | next   |
 | 7    | Accessibility, performance, contribution guide           |        |
 
 ## Stack
