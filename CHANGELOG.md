@@ -15,6 +15,10 @@ version is given separately (playtest v1.03).
 
 ## [Unreleased]
 
+### Changed
+
+- Factions listed one per row in the first wizard step.
+
 ## [1.0.0] - 2026-10-12
 
 First complete release, built on the Black Death City playtest v1.03.

@@ -41,7 +41,7 @@ export function StepFaction({ warband, update }: StepProps) {
       <fieldset>
         <legend className="mb-2 font-bold">{t("wizard.faction.legend")}</legend>
         {locked && <p className="mb-2 text-sm">{t("wizard.faction.locked")}</p>}
-        <div className="grid gap-3 sm:grid-cols-2 2xl:grid-cols-4">
+        <div className="grid gap-3">
           {gameData.factions.map((faction) => (
             <label
               key={faction.id}
@@ -64,7 +64,10 @@ export function StepFaction({ warband, update }: StepProps) {
                 }}
                 className="mt-1 size-5"
               />
-              <img src={`${BASE}images/${faction.assets.shield}`} alt="" className="h-20 w-auto" />
+              {/* Fixed-width box so that every description starts at the same place. */}
+              <span className="flex w-20 shrink-0 justify-center">
+                <img src={`${BASE}images/${faction.assets.shield}`} alt="" className="h-20 w-auto" />
+              </span>
               <span>
                 <span className="block font-gothic text-2xl">{f.text(faction.name)}</span>
                 <span className="block text-sm">{f.text(faction.description)}</span>
