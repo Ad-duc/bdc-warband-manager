@@ -15,50 +15,6 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ## [Non publié]
 
-### Ajouté
-
-- Veille des règles : `scripts/watch/release.py` (vérification,
-  téléchargement, marquage) et `scripts/watch/diff_versions.py`, scripts npm
-  `watch:*`, procédure `docs/RULES_UPDATE.md` suivie chaque semaine par un
-  agent planifié qui ouvre une pull request pour chaque nouvelle version
-  officielle des règles.
-- `sources/` : texte anglais extrait des versions de test 1.02 et 1.03,
-  traduction française et glossaire, consignes de traduction, manifeste des
-  publications.
-- Lien de soutien "Offrez-moi un café" en bas à droite du pied de page.
-- Lecteur des règles en français (bouton "Règles en français" dans
-  l'en-tête) : tous les chapitres de la traduction, liste des chapitres,
-  sommaire avec accès direct aux sections, liens vers le chapitre précédent et
-  suivant, disponible hors ligne.
-- Page "Nouveautés" dans l'application, ouverte depuis le pied de page : cet
-  historique en français ou en anglais, selon la langue de l'interface
-  (`CHANGELOG.md` est la version anglaise).
-- Dos des cartes de combattants dans la vue Impression : logo du jeu, bouclier
-  de la faction sur un panneau de pierre et nom de la faction, avec le nom de
-  la bande en option. "Imprimer les dos derrière les cartes" ajoute une page
-  de dos après chaque page de cartes, en miroir pour un recto verso sur le
-  bord long ; le nouveau contenu "Dos des cartes" imprime une planche de 9 dos
-  à passer au verso à la main. Images de qualité impression dans
-  `public/images/print/`.
-- Générateur de dos de cartes (bouton "Dos de cartes" dans l'en-tête) :
-  planches de 9 dos pour n'importe quelle faction, avec le nom de la bande en
-  option, sans bande enregistrée.
-
-### Modifié
-
-- Les scripts de données lisent la traduction dans `sources/fr/` par défaut ;
-  la CI lance désormais `check:generated` et compare les données à la
-  traduction.
-- L'en-tête et le pied de page restent en place sur toutes les tailles
-  d'écran, plus compacts sur téléphone ; seule la zone entre les deux défile,
-  et une page qui tient dans la fenêtre ne défile plus.
-- Boutons radio et cases à cocher en noir sur les panneaux parchemin (en clair
-  sur le fond sombre) au lieu du bleu du navigateur.
-- Titres, noms et bandeaux du générateur, de la campagne, de l'accueil et de
-  l'écran d'impression en Trattatello, plus lisible que Old Celtiberian. Old
-  Celtiberian reste pour le titre de l'en-tête, le lecteur des règles et les
-  feuilles imprimées.
-
 ## [1.0.0] - 2026-10-12
 
 Première version complète, fondée sur la version de test 1.03 de Black Death
@@ -97,6 +53,32 @@ City.
 - Audit d'accessibilité axe-core de chaque écran dans les deux langues (WCAG
   2.2 A et AA), lancé par les tests de bout en bout.
 - Guide de contribution (`CONTRIBUTING.md`) et cet historique.
+- Veille des règles : `scripts/watch/release.py` (vérification,
+  téléchargement, marquage) et `scripts/watch/diff_versions.py`, scripts npm
+  `watch:*`, procédure `docs/RULES_UPDATE.md` suivie chaque semaine par un
+  agent planifié qui ouvre une pull request pour chaque nouvelle version
+  officielle des règles.
+- `sources/` : texte anglais extrait des versions de test 1.02 et 1.03,
+  traduction française et glossaire, consignes de traduction, manifeste des
+  publications.
+- Lien de soutien "Offrez-moi un café" en bas à droite du pied de page.
+- Lecteur des règles en français (bouton "Règles en français" dans
+  l'en-tête) : tous les chapitres de la traduction, liste des chapitres,
+  sommaire avec accès direct aux sections, liens vers le chapitre précédent et
+  suivant, disponible hors ligne.
+- Page "Nouveautés" dans l'application, ouverte depuis le pied de page : cet
+  historique en français ou en anglais, selon la langue de l'interface
+  (`CHANGELOG.md` est la version anglaise).
+- Dos des cartes de combattants dans la vue Impression : logo du jeu, bouclier
+  de la faction sur un panneau de pierre et nom de la faction, avec le nom de
+  la bande en option. "Imprimer les dos derrière les cartes" ajoute une page
+  de dos après chaque page de cartes, en miroir pour un recto verso sur le
+  bord long ; le nouveau contenu "Dos des cartes" imprime une planche de 9 dos
+  à passer au verso à la main. Images de qualité impression dans
+  `public/images/print/`.
+- Générateur de dos de cartes (bouton "Dos de cartes" dans l'en-tête) :
+  planches de 9 dos pour n'importe quelle faction, avec le nom de la bande en
+  option, sans bande enregistrée.
 
 ### Modifié
 
@@ -110,6 +92,18 @@ City.
   longues descriptions sont coupées à trois lignes avec un bouton "Lire la
   suite", comme les textes d'ambiance des origines à la deuxième étape et les
   longues règles spéciales des parchemins de combattants.
+- Les scripts de données lisent la traduction dans `sources/fr/` par défaut ;
+  la CI lance désormais `check:generated` et compare les données à la
+  traduction.
+- L'en-tête et le pied de page restent en place sur toutes les tailles
+  d'écran, plus compacts sur téléphone ; seule la zone entre les deux défile,
+  et une page qui tient dans la fenêtre ne défile plus.
+- Boutons radio et cases à cocher en noir sur les panneaux parchemin (en clair
+  sur le fond sombre) au lieu du bleu du navigateur.
+- Titres, noms et bandeaux du générateur, de la campagne, de l'accueil et de
+  l'écran d'impression en Trattatello, plus lisible que Old Celtiberian. Old
+  Celtiberian reste pour le titre de l'en-tête, le lecteur des règles et les
+  feuilles imprimées.
 
 [Non publié]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/Ad-duc/bdc-warband-manager/releases/tag/v1.0.0
