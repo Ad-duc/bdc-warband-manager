@@ -49,8 +49,13 @@ committed (over 100 MB, GitHub limit): only their extracted text is.
 git checkout main && git pull --ff-only
 npm ci
 command -v pdftotext || sudo apt-get install -y poppler-utils   # or apt-get without sudo when root
-gh pr list --state open --label rules-watch                     # work already in progress?
+gh api "repos/Ad-duc/bdc-warband-manager/pulls?state=open" \
+  --jq '.[] | select(.head.ref | startswith("rules")) | "\(.number) \(.head.ref)"'   # work in progress?
 ```
+
+The `gh` commands go through the REST API (`gh api`): GraphQL based
+commands such as `gh pr create` or `gh pr list` may be unavailable in the
+agent environment.
 
 ## 1. Detect
 
@@ -166,9 +171,9 @@ translation to v<version>`, `Update game data to v<version>`). Then:
 
 ```bash
 git push -u origin rules/v<version>
-gh label create rules-watch --color 5C4BB9 --description "Rules watcher" 2>/dev/null || true
-gh pr create --base main --label rules-watch \
-  --title "Update rules to playtest v<version>" --body-file .cache/watch/pr-body.md
+N=$(gh api repos/Ad-duc/bdc-warband-manager/pulls -f base=main -f head=rules/v<version> \
+  -f title="Update rules to playtest v<version>" -F body=@.cache/watch/pr-body.md --jq .number)
+gh api repos/Ad-duc/bdc-warband-manager/issues/$N/labels -f "labels[]=rules-watch"
 ```
 
 Pull request body (French), in this order:
