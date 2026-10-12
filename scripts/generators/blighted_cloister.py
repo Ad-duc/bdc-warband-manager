@@ -61,7 +61,7 @@ def build(md_path):
         ),
         "armouryName": T("Cloister Armoury", "Armurerie du Cloître"),
         "sourceRef": src.ref(113, "The Blighted Cloister"),
-        "assets": {"shield": "bouclier_cloister.png", "accentColor": None},
+        "assets": {"shield": "bouclier_cloister.webp", "accentColor": None},
     }
 
     # ----------------------------------------------------------------------------

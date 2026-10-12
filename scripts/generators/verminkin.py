@@ -85,7 +85,7 @@ def build(md_path):
         ),
         "armouryName": T("Verminkin Armoury", "Armurerie Verminkin"),
         "sourceRef": ref(73, "Verminkin"),
-        "assets": {"shield": "bouclier_verminkin.png", "accentColor": None},
+        "assets": {"shield": "bouclier_verminkin.webp", "accentColor": None},
     }
 
     # ----------------------------------------------------------------------------

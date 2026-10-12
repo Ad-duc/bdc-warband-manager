@@ -10,7 +10,7 @@
  */
 
 import type { FactionData, FighterProfile, Warband, WarbandFighter } from "../../data/schema.ts";
-import { WARBAND_SCHEMA_VERSION } from "../../data/schema.ts";
+import { WARBAND_SCHEMA_VERSION } from "../../data/constants.ts";
 import { rollD6, rollStartingExperience, type RandomSource } from "../../rules/index.ts";
 
 export function newId(): string {

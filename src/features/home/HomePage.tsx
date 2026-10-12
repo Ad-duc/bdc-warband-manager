@@ -10,7 +10,7 @@
 
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { gameData } from "../../data/index.ts";
+import { loadGameDataAsync, useGameData } from "../../data/useGameData.ts";
 import type { Warband } from "../../data/schema.ts";
 import { db, deleteWarband, listWarbands, saveWarband } from "../../db/database.ts";
 import { useLiveQuery } from "../../app/useLiveQuery.ts";
@@ -21,7 +21,7 @@ import { useWizard } from "../../store/wizard.ts";
 import { ConfirmDialog } from "../common/ConfirmDialog.tsx";
 import { ShareButton } from "../share/ShareButton.tsx";
 import { createWarband, duplicateWarband, newId } from "../warbands/factory.ts";
-import { downloadExport, parseImport } from "../warbands/transfer.ts";
+import { downloadExport } from "../warbands/export.ts";
 
 export function HomePage() {
   const { t } = useTranslation();
@@ -31,9 +31,10 @@ export function HomePage() {
   const [toDelete, setToDelete] = useState<Warband | null>(null);
   const [message, setMessage] = useState<string | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
+  const gameData = useGameData();
 
   const create = async () => {
-    const faction = gameData.factions[0];
+    const faction = (await loadGameDataAsync()).factions[0];
     if (faction === undefined) return;
     const w = createWarband(f.lang, faction.id);
     await start(w);
@@ -41,6 +42,7 @@ export function HomePage() {
   };
 
   const importFile = async (file: File) => {
+    const { parseImport } = await import("../warbands/transfer.ts");
     const result = parseImport(await file.text());
     if (!result.ok) {
       const known = ["invalid-json", "newer-version", "empty"].includes(result.error);
@@ -57,6 +59,7 @@ export function HomePage() {
   };
 
   const rating = (w: Warband): number | null => {
+    if (gameData === null) return null;
     const faction = findFaction(gameData, w.factionId);
     return faction === undefined ? null : warbandRating(indexFaction(gameData.common, faction), w).total;
   };
@@ -124,7 +127,7 @@ export function HomePage() {
           </p>
           <ul className="mt-4 space-y-3" data-testid="warband-list">
             {warbands.map((w) => {
-              const faction = findFaction(gameData, w.factionId);
+              const faction = gameData === null ? undefined : findFaction(gameData, w.factionId);
               const r = rating(w);
               const title = w.name.trim() === "" ? t("home.unnamed") : w.name;
               return (

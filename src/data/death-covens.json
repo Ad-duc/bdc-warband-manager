@@ -15,7 +15,7 @@
   },
   "armouryName": { "en": "Coven Armoury", "fr": "Armurerie du Coven" },
   "sourceRef": { "page": 93, "md": "08_death-covens.md > Death Covens" },
-  "assets": { "shield": "bouclier_death.png", "accentColor": null },
+  "assets": { "shield": "bouclier_death.webp", "accentColor": null },
 
   "origins": [
     {

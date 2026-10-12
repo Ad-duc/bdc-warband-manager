@@ -9,7 +9,8 @@
  */
 
 import { useTranslation } from "react-i18next";
-import { STAT_KEYS, type Stats } from "../../data/schema.ts";
+import { STAT_KEYS } from "../../data/constants.ts";
+import type { Stats } from "../../data/schema.ts";
 import { formatStat, useFormatter } from "../../i18n/text.ts";
 
 export function StatsTable({ stats, caption }: { stats: Stats; caption?: string }) {

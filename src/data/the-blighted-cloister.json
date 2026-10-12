@@ -15,7 +15,7 @@
   },
   "armouryName": { "en": "Cloister Armoury", "fr": "Armurerie du Cloître" },
   "sourceRef": { "page": 113, "md": "09_the-blighted-cloister.md > The Blighted Cloister" },
-  "assets": { "shield": "bouclier_cloister.png", "accentColor": null },
+  "assets": { "shield": "bouclier_cloister.webp", "accentColor": null },
 
   "origins": [
     {

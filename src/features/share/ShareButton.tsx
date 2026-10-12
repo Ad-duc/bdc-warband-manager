@@ -10,7 +10,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { Warband } from "../../data/schema.ts";
-import { shareUrl } from "./share.ts";
+import { shareUrl } from "./share-link.ts";
 
 export function ShareButton({
   warband,

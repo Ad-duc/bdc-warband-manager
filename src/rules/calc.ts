@@ -20,7 +20,7 @@ import type {
   Warband,
   WarbandFighter,
 } from "../data/schema.ts";
-import { STAT_KEYS } from "../data/schema.ts";
+import { STAT_KEYS } from "../data/constants.ts";
 import { hasTrait, isHeldItem, type FactionIndex } from "./lookup.ts";
 
 /* ------------------------------------------------------------------------- */

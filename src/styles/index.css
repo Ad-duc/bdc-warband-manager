@@ -14,14 +14,15 @@
 
 @font-face {
   font-family: "Old Celtiberian";
-  src: url("/fonts/old-celtiberian.otf") format("opentype");
+  src: url("/fonts/old-celtiberian.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Trattatello";
-  src: url("/fonts/trattatello.ttf") format("truetype");
-  font-display: swap;
+  src: url("/fonts/trattatello.woff2") format("woff2");
+  /* Decorative font: never re-lays out the first visit; cached by the service worker afterwards. */
+  font-display: optional;
 }
 
 @theme {
@@ -188,6 +189,6 @@
   /* Ornamental separator from the style guide assets */
   .ornament {
     height: 25px;
-    background: url("/images/ornement.png") center / contain no-repeat;
+    background: url("/images/ornement.webp") center / contain no-repeat;
   }
 }

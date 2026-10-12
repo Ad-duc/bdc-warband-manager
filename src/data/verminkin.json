@@ -15,7 +15,7 @@
   },
   "armouryName": { "en": "Verminkin Armoury", "fr": "Armurerie Verminkin" },
   "sourceRef": { "page": 73, "md": "07_verminkin.md > Verminkin" },
-  "assets": { "shield": "bouclier_verminkin.png", "accentColor": null },
+  "assets": { "shield": "bouclier_verminkin.webp", "accentColor": null },
 
   "origins": [
     {

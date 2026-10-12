@@ -9,7 +9,10 @@
  */
 
 import Dexie, { type EntityTable } from "dexie";
-import { CampaignSchema, WarbandSchema, type Campaign, type Warband } from "../data/schema.ts";
+import type { Campaign, Warband } from "../data/schema.ts";
+
+/** The zod schemas are loaded on the first save only, to keep the first screen light. */
+const schemas = () => import("../data/schema.ts");
 
 export interface SettingRecord {
   key: string;
@@ -44,6 +47,7 @@ export const db = createDatabase();
 
 /** Validates then stores a warband; returns its id. */
 export async function saveWarband(target: BdcDatabase, warband: Warband): Promise<string> {
+  const { WarbandSchema } = await schemas();
   const valid = WarbandSchema.parse(warband);
   return target.warbands.put(valid);
 }
@@ -58,5 +62,6 @@ export async function deleteWarband(target: BdcDatabase, id: string): Promise<vo
 }
 
 export async function saveCampaign(target: BdcDatabase, campaign: Campaign): Promise<string> {
+  const { CampaignSchema } = await schemas();
   return target.campaigns.put(CampaignSchema.parse(campaign));
 }

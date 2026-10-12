@@ -15,7 +15,7 @@
   },
   "armouryName": { "en": "Guild Armoury", "fr": "Armurerie de la Guilde" },
   "sourceRef": { "page": 53, "md": "06_guild-mercenaries.md > Guild Mercenaries" },
-  "assets": { "shield": "bouclier_guild.png", "accentColor": null },
+  "assets": { "shield": "bouclier_guild.webp", "accentColor": null },
 
   "origins": [
     {

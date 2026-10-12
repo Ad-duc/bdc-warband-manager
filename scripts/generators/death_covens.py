@@ -62,7 +62,7 @@ def build(md_path):
         ),
         "armouryName": T("Coven Armoury", "Armurerie du Coven"),
         "sourceRef": src.ref(93, "Death Covens"),
-        "assets": {"shield": "bouclier_death.png", "accentColor": None},
+        "assets": {"shield": "bouclier_death.webp", "accentColor": None},
     }
 
     # ----------------------------------------------------------------------------

@@ -8,15 +8,10 @@
  * License:     MIT
  */
 
-import { compressToEncodedURIComponent, decompressFromEncodedURIComponent } from "lz-string";
-import type { Warband } from "../../data/schema.ts";
+import { decompressFromEncodedURIComponent } from "lz-string";
 import { parseImport, type ImportResult } from "../warbands/transfer.ts";
 
-export const SHARE_PREFIX = "#w=";
-
-export function encodeWarband(warband: Warband): string {
-  return compressToEncodedURIComponent(JSON.stringify(warband));
-}
+export { SHARE_PREFIX, encodeWarband, shareUrl } from "./share-link.ts";
 
 export function decodeWarband(payload: string): ImportResult {
   let text: string | null;
@@ -27,12 +22,4 @@ export function decodeWarband(payload: string): ImportResult {
   }
   if (text === null || text === "") return { ok: false, error: "invalid-json" };
   return parseImport(text);
-}
-
-/** Full link, built from the current page address. */
-export function shareUrl(
-  warband: Warband,
-  location: Pick<Location, "origin" | "pathname"> = window.location,
-): string {
-  return `${location.origin}${location.pathname}${SHARE_PREFIX}${encodeWarband(warband)}`;
 }

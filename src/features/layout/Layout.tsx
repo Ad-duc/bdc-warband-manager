@@ -10,12 +10,13 @@
 import type { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "./LanguageSwitcher.tsx";
-import { gameData } from "../../data/index.ts";
+import { useGameData } from "../../data/useGameData.ts";
 
 const BASE = import.meta.env.BASE_URL;
 
 export function Layout({ children }: { children: ReactNode }) {
   const { t } = useTranslation();
+  const gameData = useGameData();
 
   return (
     <div className="flex min-h-dvh flex-col">
@@ -28,7 +29,7 @@ export function Layout({ children }: { children: ReactNode }) {
 
       <header className="no-print border-b-2 border-rule">
         <div className="mx-auto flex max-w-[120rem] items-center gap-4 px-4 py-3 sm:px-6 xl:px-10">
-          <img src={`${BASE}images/logo.png`} alt="" width={56} height={63} className="h-14 w-auto" />
+          <img src={`${BASE}images/logo.webp`} alt="" width={56} height={63} className="h-14 w-auto" />
           <div className="flex-1">
             <a href="#/" className="block font-gothic text-3xl leading-none">
               {t("app.gameTitle")}
@@ -39,7 +40,7 @@ export function Layout({ children }: { children: ReactNode }) {
         </div>
       </header>
 
-      <main id="main" className="mx-auto w-full max-w-[120rem] flex-1 px-4 py-8 sm:px-6 xl:px-10">
+      <main id="main" className="mx-auto min-h-dvh w-full max-w-[120rem] flex-1 px-4 py-8 sm:px-6 xl:px-10">
         {children}
       </main>
 
@@ -49,7 +50,7 @@ export function Layout({ children }: { children: ReactNode }) {
           <p>
             {t("footer.version", {
               version: __APP_VERSION__,
-              rules: gameData.common.sourceVersion.replace("playtest-", ""),
+              rules: gameData === null ? "" : gameData.common.sourceVersion.replace("playtest-", ""),
             })}
             {" - "}
             {t("footer.offline")}

@@ -14,11 +14,41 @@
     <meta name="description" content="Unofficial fan-made warband builder for Black Death City." />
     <link rel="icon" type="image/png" href="/icons/favicon-64.png" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
-    <link rel="preload" href="/fonts/old-celtiberian.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="/fonts/old-celtiberian.woff2" as="font" type="font/woff2" crossorigin />
     <title>BDC Warband Manager</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static shell painted before the JavaScript runs; React replaces it on first render. -->
+      <div class="flex min-h-dvh flex-col">
+        <header class="no-print border-b-2 border-rule">
+          <div class="mx-auto flex max-w-[120rem] items-center gap-4 px-4 py-3 sm:px-6 xl:px-10">
+            <img src="/images/logo.webp" alt="" width="56" height="63" class="h-14 w-auto" />
+            <div class="flex-1">
+              <span class="block font-gothic text-3xl leading-none">Black Death City</span>
+              <p id="shell-tagline" class="font-hand text-lg text-on-page-muted">
+                Warband builder and campaign tracker
+              </p>
+            </div>
+            <div class="h-11 w-[5.75rem]"></div>
+          </div>
+        </header>
+        <main class="min-h-dvh"></main>
+      </div>
+      <script>
+        // Shows the tagline in the language the application will pick (saved choice, then browser).
+        try {
+          var lng = localStorage.getItem("bdc.language") || navigator.language || "en";
+          if (lng.slice(0, 2) === "fr") {
+            document.documentElement.lang = "fr";
+            document.getElementById("shell-tagline").textContent =
+              "Cr\u00e9ation de bandes et suivi de campagne";
+          }
+        } catch (e) {
+          // Storage unavailable: keep the English tagline.
+        }
+      </script>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

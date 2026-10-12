@@ -85,7 +85,7 @@ export function RosterFirstPage({ warband, index }: { warband: Warband; index: F
           <Box title={t("print.rating")} className="text-center">
             <p className="font-gothic text-[26pt]">{f.number(rating.total)}</p>
           </Box>
-          <img src={`${BASE}images/cranes.png`} alt="" className="mx-auto h-[14mm] w-auto print-decor" />
+          <img src={`${BASE}images/cranes.webp`} alt="" className="mx-auto h-[14mm] w-auto print-decor" />
           <Box title={t("print.holdings")}>
             <dl className="space-y-[1.5mm]">
               <div className="print-line">

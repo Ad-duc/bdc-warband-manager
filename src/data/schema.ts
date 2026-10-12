@@ -9,6 +9,7 @@
  */
 
 import { z } from "zod";
+import { WARBAND_SCHEMA_VERSION } from "./constants.ts";
 
 /* ------------------------------------------------------------------------- */
 /* Primitives                                                                */
@@ -362,8 +363,7 @@ export const StatsSchema = z
   })
   .strict();
 export type Stats = z.infer<typeof StatsSchema>;
-export const STAT_KEYS = ["mv", "bl", "bw", "ar", "in", "wl", "lf"] as const;
-export type StatKey = (typeof STAT_KEYS)[number];
+export { STAT_KEYS, type StatKey } from "./constants.ts";
 
 /** Option bought when the fighter is recruited (Misbegotten bloodline mutations). */
 export const FighterOptionSchema = z
@@ -569,7 +569,7 @@ export type FactionData = z.infer<typeof FactionDataSchema>;
 /* Player documents                                                          */
 /* ------------------------------------------------------------------------- */
 
-export const WARBAND_SCHEMA_VERSION = 1;
+export { WARBAND_SCHEMA_VERSION } from "./constants.ts";
 
 export const ExperienceRollSchema = z
   .object({
