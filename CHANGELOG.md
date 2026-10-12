@@ -29,6 +29,8 @@ version is given separately (playtest v1.03).
 
 - Data scripts read the translation from `sources/fr/` by default; the CI now
   runs `check:generated` and compares the data with the translation.
+- Header and footer stay in place on screens from 768 px wide; only the area
+  between them scrolls, and a page that fits the window no longer scrolls.
 
 ## [1.0.0] - 2026-10-12
 

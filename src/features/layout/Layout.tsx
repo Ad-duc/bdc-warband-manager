@@ -2,7 +2,9 @@
  * File:        src/features/layout/Layout.tsx
  * Role:        Common page frame: skip link, header with logo, title and
  *              language selector, main area, footer with the fan-made notice
- *              and the support link.
+ *              and the support link. From the md breakpoint the frame fills the
+ *              window: header and footer stay in place and only the area
+ *              between them scrolls. Phones and print keep the normal flow.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -23,7 +25,7 @@ export function Layout({ children }: { children: ReactNode }) {
   const gameData = useGameData();
 
   return (
-    <div className="flex min-h-dvh flex-col">
+    <div className="flex min-h-dvh flex-col md:h-dvh md:overflow-hidden print:h-auto print:overflow-visible">
       <a
         href="#main"
         className="no-print sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:bg-panel focus:p-2 focus:text-on-panel"
@@ -31,7 +33,7 @@ export function Layout({ children }: { children: ReactNode }) {
         {t("app.skipToContent")}
       </a>
 
-      <header className="no-print border-b-2 border-rule">
+      <header className="no-print shrink-0 border-b-2 border-rule">
         <div className="mx-auto flex max-w-[120rem] items-center gap-4 px-4 py-3 sm:px-6 xl:px-10">
           <img src={`${BASE}images/logo.webp`} alt="" width={56} height={63} className="h-14 w-auto" />
           <div className="flex-1">
@@ -44,11 +46,13 @@ export function Layout({ children }: { children: ReactNode }) {
         </div>
       </header>
 
-      <main id="main" className="mx-auto min-h-dvh w-full max-w-[120rem] flex-1 px-4 py-8 sm:px-6 xl:px-10">
-        {children}
-      </main>
+      <div className="flex-1 md:min-h-0 md:overflow-y-auto print:overflow-visible">
+        <main id="main" className="mx-auto w-full max-w-[120rem] px-4 py-8 sm:px-6 xl:px-10">
+          {children}
+        </main>
+      </div>
 
-      <footer className="no-print border-t-2 border-rule">
+      <footer className="no-print shrink-0 border-t-2 border-rule">
         <div className="mx-auto flex max-w-[120rem] flex-col gap-4 px-4 py-4 text-sm text-on-page-muted sm:flex-row sm:items-end sm:justify-between sm:px-6 xl:px-10">
           <div className="space-y-1">
             <p>{t("footer.disclaimer")}</p>
