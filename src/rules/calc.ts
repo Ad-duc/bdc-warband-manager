@@ -104,11 +104,27 @@ export function totalModifiers(fighter: WarbandFighter): Record<StatKey, number>
 }
 
 /**
+ * Adds a flat modifier to a dice expression: ("2d6", -1) gives "2d6-1",
+ * ("2d6+1", -1) gives "2d6". Used for a Move value rolled for each move.
+ */
+export function addToDice(expr: string, delta: number): string {
+  const m = /^(\d*d\d+)([+-]\d+)?$/.exec(expr);
+  if (m === null || delta === 0) return expr;
+  // Group 1 always matches; group 2 is the optional "+n" / "-n".
+  const dice = m[1] as string;
+  const total = Number(m[2] ?? 0) + delta;
+  if (total === 0) return dice;
+  return `${dice}${total > 0 ? "+" : ""}${total}`;
+}
+
+/**
  * Characteristics after wargear and modifiers.
  * - Armour: worn armour replaces the value, then improvements (Shield) apply.
  * - Bl, Bw, Ar are target numbers: a delta of -1 improves them (4+ becomes 3+).
  *   They stay between 2+ and 6+; above 6+ they become "-" (null), p. 11.
- * - Mv, In, Wl never go below 0, Lf never below 1.
+ * - Wargear can change characteristics (Heavy Plating: Move -1).
+ * - Mv, In, Wl never go below 0, Lf never below 1. A dice Move (2d6") keeps
+ *   its dice and carries the modifier ("2d6-1").
  */
 export function effectiveStats(index: FactionIndex, fighter: WarbandFighter): Stats | null {
   const profile = index.fighters.get(fighter.profileId);
@@ -117,6 +133,7 @@ export function effectiveStats(index: FactionIndex, fighter: WarbandFighter): St
     .map((id) => index.wargear.get(id))
     .filter((w): w is Wargear => w !== undefined);
   const mods = totalModifiers(fighter);
+  for (const w of gear) for (const key of STAT_KEYS) mods[key] += w.statModifiers[key] ?? 0;
 
   let armour = profile.stats.ar;
   const worn = gear.find((w) => w.kind === "armour");
@@ -131,7 +148,10 @@ export function effectiveStats(index: FactionIndex, fighter: WarbandFighter): St
   };
 
   const stats: Stats = {
-    mv: Math.max(0, profile.stats.mv + mods.mv),
+    mv:
+      typeof profile.stats.mv === "number"
+        ? Math.max(0, profile.stats.mv + mods.mv)
+        : addToDice(profile.stats.mv, mods.mv),
     bl: target(profile.stats.bl, mods.bl),
     bw: target(profile.stats.bw, mods.bw),
     ar: target(armour, mods.ar - improvement),
@@ -155,7 +175,7 @@ export interface WeaponLine {
   attacksReduced: boolean;
 }
 
-/** Lines of the roster weapon table, in wargear order. */
+/** Lines of the roster weapon table, in wargear order, with improvements applied. */
 export function weaponLines(index: FactionIndex, fighter: WarbandFighter): WeaponLine[] {
   const gear = fighter.wargearIds
     .map((id) => index.wargear.get(id))
@@ -169,6 +189,10 @@ export function weaponLines(index: FactionIndex, fighter: WarbandFighter): Weapo
       const reduce = w.kind === "melee" && holdsItem && hasTrait(w, "two-handed") && typeof base === "number";
       const profile: AttackProfile = { ...w.profile, traits: w.traits };
       if (reduce) profile.attacks = base - 1;
+      // Rend improvements from other wargear (Wheel-Spikes on Crushing Bulk).
+      for (const other of gear)
+        for (const imp of other.weaponImprovements)
+          if (imp.wargearIds.includes(w.id)) profile.rend -= imp.rend;
       lines.push({ id: w.id, kind: w.kind, profile, attacksReduced: reduce });
     }
     if (w.grantsAttack !== null)

@@ -8,7 +8,7 @@
  * License:     MIT
  */
 
-import type { FighterProfile, SkillTable, Wargear, Warband, WarbandFighter } from "../data/schema.ts";
+import type { FighterProfile, Origin, SkillTable, Wargear, Warband, WarbandFighter } from "../data/schema.ts";
 import { RULES, type RuleCode } from "./catalog.ts";
 import { activeFighters, recruitmentBudget } from "./calc.ts";
 import {
@@ -17,6 +17,7 @@ import {
   hasTrait,
   indexFaction,
   isHeldItem,
+  profileLimit,
   type FactionIndex,
 } from "./lookup.ts";
 import type { Diagnostic, DiagnosticParams, RulesData, ValidationMode } from "./types.ts";
@@ -58,7 +59,7 @@ export function validateWarband(warband: Warband, data: RulesData, mode: Validat
     else resolved.push({ fighter, profile });
   }
 
-  checkComposition(index, resolved, origin?.requiredLeaderId ?? null, push);
+  checkComposition(index, resolved, origin, push);
   for (const r of resolved) checkFighter(index, r.fighter, r.profile, mode, push);
   checkWarbandWide(index, resolved, push);
 
@@ -83,9 +84,10 @@ export function hasErrors(diagnostics: Diagnostic[]): boolean {
 function checkComposition(
   index: FactionIndex,
   resolved: { fighter: WarbandFighter; profile: FighterProfile }[],
-  requiredLeaderId: string | null,
+  origin: Origin | undefined,
   push: Push,
 ): void {
+  const requiredLeaderId = origin?.requiredLeaderId ?? null;
   const { maxFighters, composition } = index.common.recruitment;
   if (resolved.length > maxFighters)
     push("composition.maxFighters", { count: resolved.length, max: maxFighters });
@@ -118,9 +120,10 @@ function checkComposition(
 
   const byProfile = new Map<FighterProfile, number>();
   for (const r of resolved) byProfile.set(r.profile, (byProfile.get(r.profile) ?? 0) + 1);
-  for (const [profile, count] of byProfile)
-    if (profile.limit !== null && count > profile.limit)
-      push("composition.profileLimit", { profile: profile.id, count, max: profile.limit });
+  for (const [profile, count] of byProfile) {
+    const max = profileLimit(profile, origin);
+    if (max !== null && count > max) push("composition.profileLimit", { profile: profile.id, count, max });
+  }
 }
 
 /* ------------------------------------------------------------------------- */

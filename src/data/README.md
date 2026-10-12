@@ -86,6 +86,15 @@ an error, so a typo cannot slip through.
 - `requires.anyOfWargearIds`: the item needs one of these weapons (Bomb-bolt needs a Crossbow).
 - `restrictions`: `forbid-trait` rules, eg. Full-plate forbids two-handed ranged weapons except the Brace of Pistols.
 - `armourImprovement`: improves the bearer's Armour value by this amount, to 2+ at best (Shield: 1).
+- `statModifiers` (optional, default `{}`): changes to the bearer's characteristics (Heavy Plating: `{ "mv": -1 }`).
+- `weaponImprovements` (optional, default `[]`): improves other weapons of the bearer; `rend: 1` turns -1 into -2 (Wheel-Spikes on Crushing Bulk).
+- `grantsAttack`: extra attack line; with a `range` it is a ranged attack (Bomb-bolt), otherwise a melee one (Loyal Companion).
+
+### Origins and characteristics
+
+- `profileLimits` (optional, default `[]`): profile limits replaced by the origin (Sparkseer Coven: 0-2 Rolling-Contraption).
+- `stats.mv` is a number of inches or a dice expression rolled for each move (Rolling-Contraption: `"2d6"`).
+- A JSON value of `critDamage` left out is printed "-" (Blast weapons since v1.03).
 
 ## Player documents
 
@@ -97,7 +106,7 @@ never translated text, so an export does not depend on the interface language.
 ## Checking the data
 
 ```bash
-npm run check:data -- --sources "<folder holding 05_..., 06_..., 10_... .md>"
+npm run check:data -- --sources "<folder holding the 02_... to 10_... .md files>"
 ```
 
 Without `--sources` (or the `BDC_SOURCES` variable) the script still validates

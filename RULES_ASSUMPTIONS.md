@@ -147,6 +147,49 @@ The lasting injury table and advancements belong to Chapter 5. Both are free
 text with optional effects on the characteristics, entered with
 "improve" / "worsen" buttons (stored as raw deltas, -1 Blade meaning 4+ to 3+).
 
+## Verminkin
+
+### A21 - Profile limits raised by an origin (settled)
+
+p. 74: Acolytes of Plague "can include 0-2 Pox Priest Apprentices", Sparkseer
+Coven "0-2 Rolling Contraptions", while the scrolls print 0-1.
+Code: the origin's `profileLimits` replace the scroll limit for that warband
+(wizard catalogue and `composition.profileLimit`). The wizard writes the
+official profile names (Pox Priest's Apprentice, Rolling-Contraption) rather
+than the plural spelling of p. 74.
+
+### A22 - Move value rolled for each move (settled)
+
+p. 92: the Rolling-Contraption has a Move value of 2d6". Code: the Move is
+stored as the dice expression "2d6" and displayed 2D6" in French; a Move
+modifier is carried by the expression (eg. "2d6-1"), never rolled in advance.
+
+### A23 - Full-plate in the Verminkin Armoury (open)
+
+p. 81 copies the Guild text: no two-handed ranged weapon "with the exception of
+a Brace of Pistols", a weapon the Verminkin cannot buy. Code: the restriction
+applies to every two-handed ranged weapon, with no exception. Today only
+Verminkin Champions, Assassins and Sparkseers can take Full-plate; the
+Sparkseer List two-handed guns are therefore refused with it.
+
+### A24 - Wargear changing characteristics and weapons (settled)
+
+Heavy Plating: -1 Move, applied to the displayed and printed characteristics
+(Rat-Mutant 5" becomes 4"). Wheel-Spikes: the Crushing Bulk weapon line shows
+Rend -2; the Splat! attack stays described in the special rule text.
+
+### A25 - Battle-time effects not tracked (settled)
+
+Engineering points (d3, 3 with Mad Tinkerers), the Giant Rat summoned by a
+Bomb Rat, entwined and doomed fighters, the Fighting Pits fight: none of these
+is stored on the roster. Fighting Pits experience is entered like any bonus
+experience, in the battle log.
+
+### A26 - Rat-Mutant keywords (data)
+
+p. 91 prints "Brute, Verminkin, Ogre": the Ogre keyword is kept. v1.03 removed
+Incredible Strength, so the keyword has no effect in the app.
+
 ## Data decisions
 
 ### D01 - Number of Guild Mercenaries profiles (data)
@@ -163,7 +206,11 @@ the keyword and trait tables.
 ### D03 - English typos fixed in the data (data)
 
 "to ignited" (Flaming Weapon), "[1o+]" (Will of The Saints), the long s in
-the quotes ("a attack", "it's Rend" and "actionmust" are fixed in v1.03 itself). "Torchlight/Lantern" is stored as "Lantern/Torch", the
+the quotes ("a attack", "it's Rend" and "actionmust" are fixed in v1.03 itself).
+Verminkin: "equal or less than than" and "in the template it is hit" (Bomb
+Rat), "it's Rend" (Engineer), "doomed ." (Doom), missing final stops (Rickety
+Workshop origin, Tunnel from Below). The single "half" character of Shadow
+Lurker is written 1/2". "Torchlight/Lantern" is stored as "Lantern/Torch", the
 list spelling. "Chapter house" is stored as "Chapter House".
 
 ### D04 - Club/Mace/Hammer (data)
@@ -201,3 +248,10 @@ to reload"; Duellist and Shooting Drills reworded. Pages printed from p. 26 on
 moved by 2, the off-hand weapon rule moved from p. 24 to p. 23. `npm run
 check:data -- --sources` checks every `sourceRef.md` heading against the
 translation.
+
+### D09 - Attack tables inside rule texts (data)
+
+Rules that print a small Rend / Damage table in the middle of a text (Bomb
+Rat, Splat!) keep it as a sentence at the end of the text: "Rend -2, Damage
+d3" / "Perforation -2, Dégâts D3". Spells keep their table in the `attack`
+field, as for the Guild Mercenaries.

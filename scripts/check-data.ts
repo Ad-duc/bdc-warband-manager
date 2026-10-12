@@ -236,20 +236,72 @@ function frRend(r: number): string {
 }
 function frTraits(w: Wargear, c: CommonData): string {
   const names = new Map(c.weaponTraits.map((t) => [t.key, t.name.fr]));
-  return w.traits
+  const list = w.traits
     .map((t) => (t.key === "rare" ? `Rare 0-${w.rarity ?? "?"}` : (names.get(t.key) ?? t.key)))
     .join(", ");
+  return list === "" ? "-" : list;
 }
 function frRange(p: AttackProfile): string {
   return p.range === "flame" ? "Flamme" : `${p.range ?? ""}"`;
 }
+/** Fighter names are compared without the "0-x" prefix, hyphens and case. */
+const fighterKey = (s: string): string =>
+  s
+    .replace(/^0-\d+ /, "")
+    .replace(/-/g, " ")
+    .toLowerCase();
 
-function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): void {
-  const path = join(dir, "06_guild-mercenaries.md");
-  if (!existsSync(path)) {
-    warn(`06_guild-mercenaries.md not found in ${dir}`);
+/** Where each part of a faction chapter lives in its translation file. */
+interface FactionLayout {
+  file: string;
+  names: string;
+  armouryStart: string;
+  melee: string;
+  ranged: string;
+  armourItems: string;
+  skillSections: string[];
+  loreSections: string[];
+  /** True when natural weapons (no price) are printed in the melee table. */
+  naturalWeaponsInMeleeTable: boolean;
+}
+
+const LAYOUTS: Record<string, FactionLayout> = {
+  "guild-mercenaries": {
+    file: "06_guild-mercenaries.md",
+    names: "Noms des Guild Mercenaries",
+    armouryStart: "## Armurerie de la Guilde (*Guild Armoury*)",
+    melee: "Armurerie de la Guilde - Armes de corps à corps",
+    ranged: "Armurerie de la Guilde - Armes à distance",
+    armourItems: "Armurerie de la Guilde - Armures et objets",
+    skillSections: ["Vieux briscards", "Ruse de soldat"],
+    loreSections: ["Domaine de la Magie autorisée", "Domaine des Saints"],
+    naturalWeaponsInMeleeTable: false,
+  },
+  verminkin: {
+    file: "07_verminkin.md",
+    names: "Noms des Verminkin",
+    armouryStart: "## Armurerie Verminkin (*Vermin Armoury*)",
+    melee: "Armurerie Verminkin - Armes de corps à corps",
+    ranged: "Armurerie Verminkin - Armes à distance",
+    armourItems: "Armurerie Verminkin - Armures et objets",
+    skillSections: ["Machinations magistrales", "Coureurs de tunnels"],
+    loreSections: ["Domaine des Tunnels profonds", "Domaine des Véroles"],
+    naturalWeaponsInMeleeTable: true,
+  },
+};
+
+function compareFaction(dir: string, f: FactionData, c: CommonData): void {
+  const layout = LAYOUTS[f.id];
+  if (layout === undefined) {
+    warn(`${f.id}: no Markdown layout, comparison skipped`);
     return;
   }
+  const path = join(dir, layout.file);
+  if (!existsSync(path)) {
+    warn(`${layout.file} not found in ${dir}`);
+    return;
+  }
+  console.log(`  -- ${f.id} (${layout.file})`);
   const md = readFileSync(path, "utf8").split("\n");
   const byEn = new Map(f.wargear.map((w) => [w.name.en.toLowerCase(), w]));
   const byFr = new Map(f.wargear.map((w) => [w.name.fr.toLowerCase(), w]));
@@ -273,7 +325,7 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
 
   // D66 names
   const d66: string[] = [];
-  for (const row of tableRows(section(md, 3, "Noms des Guild Mercenaries"))) {
+  for (const row of tableRows(section(md, 3, layout.names))) {
     if (!/^\d0$/.test(row[0] ?? "")) continue;
     row.slice(1).forEach((name, col) => d66.push(`${(row[0] ?? "")[0]}${col + 1}=${name}`));
   }
@@ -286,11 +338,11 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
   // Fighter list and scrolls
   const listRows = tableRows(section(md, 2, "Liste des combattants"))
     .filter((r) => r[0] !== "Combattant")
-    .map((r) => `${(r[0] ?? "").replace(/^0-1 /, "")}=${cost(r[1] ?? "")}`);
+    .map((r) => `${fighterKey(r[0] ?? "")}=${cost(r[1] ?? "")}`);
   compareSets(
     "Fighters list (name=cost)",
     listRows,
-    f.fighters.map((x) => `${x.name.en}=${x.cost}`),
+    f.fighters.map((x) => `${fighterKey(x.name.en)}=${x.cost}`),
   );
 
   // The scrolls chapter holds several "##" sub-headings, so it is cut by hand.
@@ -299,15 +351,15 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
   const scrollLines = md.slice(scrollStart + 1, scrollEnd);
   const scrollNames = headings(scrollLines, 3);
   compareSets(
-    "Fighter scrolls (name, 0-1 limit)",
-    scrollNames.map((n) => (n.startsWith("0-1 ") ? `${n.slice(4)} [0-1]` : n)),
-    f.fighters.map((x) => (x.limit === 1 ? `${x.name.en} [0-1]` : x.name.en)),
+    "Fighter scrolls (name, 0-x limit)",
+    scrollNames.map((n) => n.replace(/^0-(\d+) (.*)$/, "$2 [0-$1]")),
+    f.fighters.map((x) => (x.limit === null ? x.name.en : `${x.name.en} [0-${x.limit}]`)),
   );
   const statRows: string[] = [];
   for (let i = 0; i < scrollLines.length; i += 1) {
     const line = scrollLines[i] ?? "";
     if (!line.startsWith("### ")) continue;
-    const name = line.slice(4).replace(/^0-1 /, "");
+    const name = line.slice(4).replace(/^0-\d+ /, "");
     const rows = tableRows(scrollLines.slice(i, i + 8)).filter((r) => r[0] !== "Mouvement");
     const s = rows[0];
     if (s) statRows.push(`${name}: ${s.join(" ")}`);
@@ -318,7 +370,7 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
     statRows,
     f.fighters.map(
       (x) =>
-        `${x.name.en}: ${x.stats.mv}" ${fmt(x.stats.bl, true)} ${fmt(x.stats.bw, true)} ${fmt(x.stats.ar, true)} ${x.stats.in} ${x.stats.wl} ${x.stats.lf}`,
+        `${x.name.en}: ${frValue(x.stats.mv)}" ${fmt(x.stats.bl, true)} ${fmt(x.stats.bw, true)} ${fmt(x.stats.ar, true)} ${x.stats.in} ${x.stats.wl} ${x.stats.lf}`,
     ),
   );
   const xpRows = scrollLines
@@ -327,7 +379,7 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
   compareSets(
     "Starting experience (in scroll order)",
     xpRows.map((v, i) => `${i + 1}:${v}`),
-    f.fighters.map((x) => {
+    f.fighters.map((x, i) => {
       const e = x.startingExperience;
       const v =
         e.dice === null
@@ -335,14 +387,14 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
           : e.base === 0
             ? e.dice.toUpperCase()
             : `${e.base}+${e.dice.toUpperCase()}`;
-      return `${f.fighters.indexOf(x) + 1}:${v}`;
+      return `${i + 1}:${v}`;
     }),
   );
 
   // Armoury lists
   const armoury = md.slice(
-    md.findIndex((l) => l.startsWith("## Armurerie de la Guilde (*Guild Armoury*)")),
-    md.findIndex((l) => l.startsWith("## Armurerie de la Guilde - Armes de corps")),
+    md.findIndex((l) => l.startsWith(layout.armouryStart)),
+    md.findIndex((l) => l.startsWith(`## ${layout.melee}`)),
   );
   for (const list of f.armouryLists) {
     const rows = tableRows(section(armoury, 3, list.name.fr))
@@ -359,9 +411,7 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
   }
 
   // Weapon profiles
-  const melee = tableRows(section(md, 2, "Armurerie de la Guilde - Armes de corps à corps")).filter(
-    (r) => r.length === 7 && r[0] !== "Nom",
-  );
+  const melee = tableRows(section(md, 2, layout.melee)).filter((r) => r.length === 7 && r[0] !== "Nom");
   compareSets(
     "Melee weapon profiles",
     melee.map(
@@ -369,15 +419,13 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
         `${findWargear(r[0] ?? "")?.id ?? "?" + (r[0] ?? "")}: ${r.slice(1, 5).join(" ")} | ${stripTerms(r[5] ?? "")} | ${cost(r[6] ?? "")}`,
     ),
     f.wargear
-      .filter((w) => w.kind === "melee" && w.purchasable && w.profile)
+      .filter((w) => w.kind === "melee" && (w.purchasable || layout.naturalWeaponsInMeleeTable) && w.profile)
       .map((w) => {
         const p = w.profile as AttackProfile;
         return `${w.id}: ${frValue(p.attacks)} ${frRend(p.rend)} ${frValue(p.damage)} ${frValue(p.critDamage)} | ${frTraits(w, c)} | ${w.cost}`;
       }),
   );
-  const ranged = tableRows(section(md, 2, "Armurerie de la Guilde - Armes à distance")).filter(
-    (r) => r.length === 8 && r[0] !== "Nom",
-  );
+  const ranged = tableRows(section(md, 2, layout.ranged)).filter((r) => r.length === 8 && r[0] !== "Nom");
   compareSets(
     "Ranged weapon profiles",
     ranged.map(
@@ -393,9 +441,7 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
   );
 
   // Armour and items
-  const ai = headings(section(md, 2, "Armurerie de la Guilde - Armures et objets"), 3).filter(
-    (h) => !h.startsWith("Objets tenus"),
-  );
+  const ai = headings(section(md, 2, layout.armourItems), 3).filter((h) => !h.startsWith("Objets tenus"));
   compareSets(
     "Armour and items (item=price)",
     ai.map((h) => {
@@ -406,22 +452,14 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
   );
 
   // Skills and spells
-  const skillMd = [
-    ...headings(section(md, 2, "Vieux briscards"), 3),
-    ...headings(section(md, 2, "Ruse de soldat"), 3),
-  ].map((h) => splitTerm(h).fr);
   compareSets(
     "Faction skills (FR names)",
-    skillMd,
+    layout.skillSections.flatMap((s) => headings(section(md, 2, s), 3)).map((h) => splitTerm(h).fr),
     f.skillTables.flatMap((t) => t.skills.map((s) => s.name.fr)),
   );
-  const spellMd = [
-    ...headings(section(md, 2, "Domaine de la Magie autorisée"), 3),
-    ...headings(section(md, 2, "Domaine des Saints"), 3),
-  ].map((h) => splitTerm(h).fr);
   compareSets(
     "Spells (roll - FR name)",
-    spellMd,
+    layout.loreSections.flatMap((s) => headings(section(md, 2, s), 3)).map((h) => splitTerm(h).fr),
     f.spellLores.flatMap((l) => l.spells.map((s) => `${s.roll} - ${s.name.fr}`)),
   );
 }
@@ -480,7 +518,7 @@ function checkMdRefs(dir: string, label: string, value: unknown): void {
             .flatMap((l) => {
               const h = l.replace(/^#+ /, "").trim();
               const noPrice = h.replace(/ - (\d+ pa|D6|D3|2D6|D66)$/, "");
-              return [h, noPrice, stripTerms(h), stripTerms(noPrice), stripTerms(h).replace(/^0-1 /, "")];
+              return [h, noPrice, stripTerms(h), stripTerms(noPrice), stripTerms(h).replace(/^0-\d+ /, "")];
             }),
         ),
       );
@@ -500,8 +538,7 @@ if (dir === null) {
   checkMdRefs(dir, "common", common);
   for (const f of factions) checkMdRefs(dir, f.id, f);
   compareCommon(dir, common);
-  const gm = factions.find((f) => f.id === "guild-mercenaries");
-  if (gm) compareGuildMercenaries(dir, gm, common);
+  for (const f of factions) compareFaction(dir, f, common);
 }
 
 /* ------------------------------------------------------------------------- */

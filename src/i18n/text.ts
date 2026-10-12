@@ -33,9 +33,9 @@ export function formatRange(profile: AttackProfile, flameLabel: string): string 
 }
 
 /** Characteristic as printed: 5", 3+, 4, or "-". */
-export function formatStat(key: StatKey, value: number | null): string {
+export function formatStat(key: StatKey, value: number | string | null, lang: Language): string {
   if (value === null) return "-";
-  if (key === "mv") return `${value}"`;
+  if (key === "mv") return `${formatDice(value, lang)}"`;
   if (key === "bl" || key === "bw" || key === "ar") return `${value}+`;
   return String(value);
 }

@@ -267,7 +267,8 @@
       "legend": "The origin tells how your warband came to the City. It imposes the leader and gives a stronghold.",
       "leader": "Leader:",
       "stronghold": "Stronghold:",
-      "income": "income {{income}} silver"
+      "income": "income {{income}} silver",
+      "profileLimit": "Your warband can include 0-{{limit}} {{name}}."
     },
     "fighters": {
       "counters": "Warband composition",

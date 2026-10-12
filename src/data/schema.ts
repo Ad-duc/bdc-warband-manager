@@ -53,6 +53,21 @@ export const FileHeaderSchema = z
   })
   .strict();
 
+/** Raw changes to the characteristics (eg. -1 Move, -1 Blade meaning 4+ to 3+). */
+export const StatDeltaSchema = z
+  .object({
+    mv: z.number().int(),
+    bl: z.number().int(),
+    bw: z.number().int(),
+    ar: z.number().int(),
+    in: z.number().int(),
+    wl: z.number().int(),
+    lf: z.number().int(),
+  })
+  .partial()
+  .strict();
+export type StatDelta = z.infer<typeof StatDeltaSchema>;
+
 export const CategorySchema = z.enum(["leader", "champion", "henchman", "brute", "beast"]);
 export type Category = z.infer<typeof CategorySchema>;
 
@@ -284,8 +299,22 @@ export const WargearSchema = z
       .strict()
       .nullable(),
     restrictions: z.array(EquipRestrictionSchema),
-    /** Extra attack granted by an item (eg. Loyal Companion). */
+    /** Extra attack granted by an item (eg. Loyal Companion, Bomb-bolt). */
     grantsAttack: AttackProfileSchema.nullable(),
+    /** Changes to the bearer's characteristics (eg. Heavy Plating: Move -1). */
+    statModifiers: StatDeltaSchema.default({}),
+    /** Improvements to other weapons of the bearer (eg. Wheel-Spikes: Rend of Crushing Bulk). */
+    weaponImprovements: z
+      .array(
+        z
+          .object({
+            wargearIds: z.array(IdSchema).min(1),
+            /** "Improve the Rend value by 1": -1 becomes -2. */
+            rend: z.number().int().positive(),
+          })
+          .strict(),
+      )
+      .default([]),
     text: LocalizedTextSchema.nullable(),
     designerNote: LocalizedTextSchema.nullable(),
     sourceRef: SourceRefSchema,
@@ -313,10 +342,13 @@ export const ArmouryListSchema = z
   .strict();
 export type ArmouryList = z.infer<typeof ArmouryListSchema>;
 
-/** Characteristics. Mv in inches; Bl, Bw, Ar are target numbers (3 = "3+"); null = "-". */
+/**
+ * Characteristics. Mv in inches, or a dice expression rolled for each move
+ * (Rolling-Contraption: "2d6"); Bl, Bw, Ar are target numbers (3 = "3+"); null = "-".
+ */
 export const StatsSchema = z
   .object({
-    mv: z.number().int().min(0),
+    mv: z.union([z.number().int().min(0), DiceExprSchema]),
     bl: z.number().int().min(2).max(6).nullable(),
     bw: z.number().int().min(2).max(6).nullable(),
     ar: z.number().int().min(2).max(6).nullable(),
@@ -398,6 +430,17 @@ export const OriginSchema = z
     requiredLeaderId: IdSchema.nullable(),
     strongholdId: IdSchema.nullable(),
     specialRules: z.array(RuleSchema),
+    /** Profile limits replaced by the origin (eg. "0-2 Rolling Contraptions"). */
+    profileLimits: z
+      .array(
+        z
+          .object({
+            fighterId: IdSchema,
+            limit: z.number().int().positive(),
+          })
+          .strict(),
+      )
+      .default([]),
     sourceRef: SourceRefSchema,
   })
   .strict();
@@ -481,20 +524,6 @@ export type FactionData = z.infer<typeof FactionDataSchema>;
 /* ------------------------------------------------------------------------- */
 
 export const WARBAND_SCHEMA_VERSION = 1;
-
-const StatDeltaSchema = z
-  .object({
-    mv: z.number().int(),
-    bl: z.number().int(),
-    bw: z.number().int(),
-    ar: z.number().int(),
-    in: z.number().int(),
-    wl: z.number().int(),
-    lf: z.number().int(),
-  })
-  .partial()
-  .strict();
-export type StatDelta = z.infer<typeof StatDeltaSchema>;
 
 export const ExperienceRollSchema = z
   .object({
@@ -714,6 +743,8 @@ export function checkFactionIntegrity(faction: FactionData, common: CommonData):
     }
     if (o.strongholdId !== null && !strongholdIds.has(o.strongholdId))
       problems.push(`Origin ${o.id}: unknown stronghold "${o.strongholdId}"`);
+    for (const l of o.profileLimits)
+      if (!fighterIds.has(l.fighterId)) problems.push(`Origin ${o.id}: unknown fighter "${l.fighterId}"`);
   }
 
   for (const s of faction.leaderSuccession) {
@@ -759,6 +790,9 @@ export function checkFactionIntegrity(faction: FactionData, common: CommonData):
     const hasRareTrait = w.traits.some((t) => t.key === "rare");
     if (isWeapon && hasRareTrait !== (w.rarity !== null))
       problems.push(`Wargear ${w.id}: Rare trait and rarity value disagree`);
+    for (const i of w.weaponImprovements)
+      for (const id of i.wargearIds)
+        if (!wargearById.has(id)) problems.push(`Wargear ${w.id}: unknown improved weapon "${id}"`);
     for (const r of w.requires?.anyOfWargearIds ?? [])
       if (!wargearById.has(r)) problems.push(`Wargear ${w.id}: unknown required wargear "${r}"`);
     for (const r of w.restrictions) {

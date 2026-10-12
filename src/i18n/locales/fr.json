@@ -267,7 +267,8 @@
       "legend": "L'origine raconte comment votre bande est arrivée dans la Cité. Elle impose le chef et donne un repaire.",
       "leader": "Chef :",
       "stronghold": "Repaire :",
-      "income": "revenu {{income}} pa"
+      "income": "revenu {{income}} pa",
+      "profileLimit": "Votre bande peut inclure 0-{{limit}} {{name}}."
     },
     "fighters": {
       "counters": "Composition de la bande",
