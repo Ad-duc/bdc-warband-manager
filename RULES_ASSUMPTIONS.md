@@ -29,18 +29,18 @@ Companion, Wooden Stakes, Grappling Hook 0-2) but the Rare definition (p. 28)
 only speaks of weapons.
 Code: same per-warband reading as A01.
 
-### A03 - One two-handed weapon per fighter, melee and ranged together (open)
+### A03 - One two-handed weapon per fighter, melee and ranged together (settled)
 p. 28: "A fighter can only be equipped with 1 two-handed weapon." The sentence
 does not distinguish melee from ranged.
 Code: literal reading, an error as soon as a fighter carries two two-handed
 weapons of any kind. Consequence: Halberd + Crossbow or Spear + Long Bow are
-refused, which removes many Guild Mercenaries combinations.
+refused. Decision 2026-10-12: literal reading confirmed.
 
-### A04 - Off-hand weapon carried with a two-handed weapon (open)
+### A04 - Off-hand weapon carried with a two-handed weapon (settled)
 p. 24 and p. 28 only forbid off-hand attacks while a two-handed weapon is
 equipped; nothing forbids carrying the off-hand weapon (it stays usable as the
 main melee weapon if the two-handed one is a ranged weapon).
-Code: warning, not error.
+Code: warning, not error. Decision 2026-10-12: warning confirmed.
 
 ### A05 - Carrying limit and held items (settled)
 p. 13: 2 melee weapons, 1 ranged weapon, 1 set of armour, 2 items.
@@ -71,11 +71,12 @@ The origin imposes the leader at the start of the campaign only. In campaign
 mode the code accepts the imposed leader or a champion promoted through the
 faction `leaderSuccession` table.
 
-### A11 - Warband rating of a free recruit (open)
+### A11 - Warband rating of a free recruit (settled)
 p. 48: rating = silver cost of all fighters and wargear + experience. Eager to
 Prove (Guild Barracks) recruits a Guild Recruit for 0 silver.
 Code: the rating uses the profile cost (30), the silver actually paid is kept
-in `recruitCostPaid` and only affects the stash.
+in `recruitCostPaid` and only affects the stash. Decision 2026-10-12:
+profile cost confirmed.
 
 ### A12 - Fighters without a weapon (settled)
 p. 24: a fighter without a melee weapon uses the Unarmed Strike. The app warns
@@ -94,6 +95,11 @@ Cloister) will be added with that faction.
 ### A15 - Jars of Canal Leeches (settled for v1.02)
 Roster field without rules. Stored as a counter in the stash, excluded from the
 warband rating like the rest of the stash.
+
+### A16 - Ranged weapon warning for one-use weapons (settled)
+The brief asked for a warning on "ranged weapons without possible reload".
+Decision 2026-10-12: an info message on weapons with the One-use trait
+(Fire Bombs): 1 attack per battle (p. 27).
 
 ## Data decisions
 
@@ -116,10 +122,11 @@ list spelling. "Chapter house" is stored as "Chapter House".
 One wargear entry. The rules chapter example (p. 14) calls it "Club" with the
 same profile.
 
-### D05 - Accent colour per faction (open)
+### D05 - Accent colour per faction (settled)
 The brief asks for one accent colour per faction; the style guide
 (CHARTE_GRAPHIQUE_BDC.md, section 2) forbids any colour, including to tell
-factions apart. `assets.accentColor` is null until decided.
+factions apart. Decision 2026-10-12: strict grayscale everywhere, factions are
+told apart by their shield and name. `assets.accentColor` stays null.
 
 ### D06 - Wizard and Witch Hunter keyword names (data)
 "Witch Hunter" and "Mercenary" stay in English in French (glossary). "Wizard"
