@@ -60,7 +60,8 @@
     "version": "Version {{version}}, rules playtest {{rules}}",
     "offline": "Works offline once loaded.",
     "support": "Buy me a coffee",
-    "newTab": "(opens in a new tab)"
+    "newTab": "(opens in a new tab)",
+    "changelog": "What's new"
   },
   "rules": {
     "data": {
@@ -538,5 +539,9 @@
     "loading": "Loading the chapter...",
     "error": "This chapter could not be loaded. Reload the page while online.",
     "notFound": "Unknown chapter. Pick one from the list."
+  },
+  "changelog": {
+    "loading": "Loading the changelog...",
+    "error": "The changelog could not be loaded. Reload the page while online."
   }
 }

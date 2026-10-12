@@ -2,7 +2,8 @@
  * File:        tests/unit/reader.test.ts
  * Role:        French rules reader: every translation chapter of sources/fr
  *              is listed and loads, Markdown rendering (heading ids, contents
- *              list, wrapped tables, escaped raw HTML) and the rules routes.
+ *              list, wrapped tables, escaped raw HTML), the rules routes, and
+ *              the changelog shown in the app (same versions in both languages).
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -12,6 +13,7 @@ import { readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import { hrefFor, parseHash } from "../../src/app/router.ts";
+import { loadChangelog, stripHeader } from "../../src/features/changelog/changelog.ts";
 import { CHAPTERS, findChapter, loadChapter } from "../../src/features/reader/chapters.ts";
 import { escapeHtml, plainHeading, renderChapter, slugify } from "../../src/features/reader/markdown.ts";
 
@@ -90,5 +92,28 @@ describe("rules routes", () => {
     expect(parseHash("#/rules/batailles")).toEqual({ name: "rules", chapter: "batailles" });
     expect(hrefFor({ name: "rules", chapter: null })).toBe("#/rules");
     expect(hrefFor({ name: "rules", chapter: "verminkin" })).toBe("#/rules/verminkin");
+  });
+});
+
+describe("changelog", () => {
+  const versions = (text: string): string[] =>
+    [...text.matchAll(/^## \[([^\]]+)\]/gm)].map((m) => m[1] ?? "").filter((v) => /^\d/.test(v));
+
+  it("has the same released versions in English and French", async () => {
+    const en = await loadChangelog("en");
+    const fr = await loadChangelog("fr");
+    expect(versions(en).length).toBeGreaterThan(0);
+    expect(versions(fr)).toEqual(versions(en));
+    expect(en.startsWith("# Changelog")).toBe(true);
+    expect(fr.startsWith("# Nouveautés")).toBe(true);
+  });
+
+  it("drops the header comment", () => {
+    expect(stripHeader("<!--\n  File: x\n-->\n\n# Title\n<!-- kept -->")).toBe("# Title\n<!-- kept -->");
+  });
+
+  it("has a route", () => {
+    expect(parseHash("#/changelog")).toEqual({ name: "changelog" });
+    expect(hrefFor({ name: "changelog" })).toBe("#/changelog");
   });
 });

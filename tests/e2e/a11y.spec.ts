@@ -3,9 +3,9 @@
  * Role:        Accessibility audit with axe-core on every screen, in both
  *              languages: home, each wizard step (with an open scroll), the
  *              campaign dashboard (open injuries and battle form), the print
- *              view, the shared page, the rules reader and the confirmation
- *              dialog. WCAG 2.2 A and AA rules; any violation fails the test
- *              with its details.
+ *              view, the shared page, the rules reader, the changelog and the
+ *              confirmation dialog. WCAG 2.2 A and AA rules; any violation
+ *              fails the test with its details.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -85,6 +85,12 @@ for (const locale of ["en-GB", "fr-FR"] as const) {
       await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
       await page.locator("summary").first().click();
       await audit(page, "rules reader");
+    });
+
+    test("changelog", async ({ page }) => {
+      await page.goto("./#/changelog");
+      await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+      await audit(page, "changelog");
     });
 
     test("print view and shared page", async ({ page }) => {

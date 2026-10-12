@@ -1,10 +1,12 @@
 /*
  * File:        src/features/layout/Layout.tsx
- * Role:        Common page frame: skip link, header with logo, title and
- *              link to the French rules reader and language selector, main area, footer with the fan-made notice
- *              and the support link. The frame fills the window: header and
- *              footer stay in place and only the area between them scrolls.
- *              Both are more compact on phones; print keeps the normal flow.
+ * Role:        Common page frame: skip link; header with logo, title, link to
+ *              the French rules reader and language selector; main area;
+ *              footer with the fan-made notice, the version, a link to the
+ *              changelog and the support link. The frame fills the window:
+ *              header and footer stay in place and only the area between them
+ *              scrolls. Both are more compact on phones; print keeps the
+ *              normal flow.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -92,6 +94,14 @@ export function Layout({ children }: { children: ReactNode }) {
               })}
               {" - "}
               {t("footer.offline")}
+              {" - "}
+              <a
+                href={hrefFor({ name: "changelog" })}
+                aria-current={route.name === "changelog" ? "page" : undefined}
+                className="underline underline-offset-2 hover:text-on-page"
+              >
+                {t("footer.changelog")}
+              </a>
             </p>
           </div>
           <a

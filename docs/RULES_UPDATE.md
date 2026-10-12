@@ -146,7 +146,8 @@ npm run -s watch:mark -- --translated <version>
 - Record each structural decision in `RULES_ASSUMPTIONS.md` (new `Dnn` entry
   "Move to playtest v<version> (data)", as `D08` did for v1.03).
 - Update the version quoted in `README.md` (English and French sections),
-  `package.json` (`description`), `CHANGELOG.md` (`[Unreleased]`) and the
+  `package.json` (`description`), `CHANGELOG.md` (`[Unreleased]`) with its
+  French twin `CHANGELOG.fr.md` (`[Non publié]`) and the
   campaign notice texts of `common.json` when they quote the version.
 - A test that pins a value changed by the new rules is updated, with the
   version in its title (`(v<version>)`), never deleted. A new rule gets a new

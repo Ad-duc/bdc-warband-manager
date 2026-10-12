@@ -32,7 +32,9 @@ npx playwright install --with-deps chromium firefox   # once, for the e2e tests
 1. Create a branch from `main`.
 2. Make the change, with its tests.
 3. Run `npm run check`, then `npm run test:e2e`.
-4. Add a line under `[Unreleased]` in `CHANGELOG.md`.
+4. Add a line under `[Unreleased]` in `CHANGELOG.md` and the same line, in
+   French, under `[Non publié]` in `CHANGELOG.fr.md`. Both files are shown in
+   the app ("What's new" page) and must list the same versions.
 5. Open a pull request. The CI runs the same checks and publishes `main` to
    GitHub Pages.
 
@@ -123,7 +125,7 @@ le dossier "Traduction FR" pour comparer ou régénérer les données.
    `npm run generate:data -- --sources "<dossier Traduction FR>"`. Les fichiers
    `common.json` et `guild-mercenaries.json` se modifient à la main.
 3. Avant chaque envoi : `npm run check`, puis `npm run test:e2e`, et une ligne
-   dans `CHANGELOG.md`.
+   dans `CHANGELOG.md` et sa traduction dans `CHANGELOG.fr.md`.
 4. Conventions : en-tête dans chaque fichier, code et commentaires en anglais,
    aucun texte en dur dans le JSX, aucun tiret cadratin ni espace insécable,
    aucune mention d'outil de génération.

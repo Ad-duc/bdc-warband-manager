@@ -106,7 +106,8 @@ public/       local fonts, images, PWA icons
 ```
 
 Rule readings and open questions are kept in `RULES_ASSUMPTIONS.md`. See
-`CONTRIBUTING.md` before changing anything and `CHANGELOG.md` for the history.
+`CONTRIBUTING.md` before changing anything and `CHANGELOG.md` (French:
+`CHANGELOG.fr.md`) for the history.
 
 ## Quality
 
@@ -156,4 +157,4 @@ données aux fichiers de traduction :
 Les choix d'interprétation des règles sont consignés dans
 `RULES_ASSUMPTIONS.md`. Le format des données est décrit dans
 `src/data/README.md`, la façon de contribuer dans `CONTRIBUTING.md` et
-l'historique dans `CHANGELOG.md`.
+l'historique dans `CHANGELOG.fr.md`.

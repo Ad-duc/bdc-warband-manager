@@ -60,7 +60,8 @@
     "version": "Version {{version}}, règles de la version de test {{rules}}",
     "offline": "Fonctionne hors ligne une fois chargé.",
     "support": "Offrez-moi un café",
-    "newTab": "(s'ouvre dans un nouvel onglet)"
+    "newTab": "(s'ouvre dans un nouvel onglet)",
+    "changelog": "Nouveautés"
   },
   "rules": {
     "data": {
@@ -538,5 +539,9 @@
     "loading": "Chargement du chapitre...",
     "error": "Ce chapitre n'a pas pu être chargé. Rechargez la page avec une connexion.",
     "notFound": "Chapitre inconnu. Choisissez-en un dans la liste."
+  },
+  "changelog": {
+    "loading": "Chargement des nouveautés...",
+    "error": "Les nouveautés n'ont pas pu être chargées. Rechargez la page avec une connexion."
   }
 }

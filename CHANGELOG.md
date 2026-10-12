@@ -27,6 +27,9 @@ version is given separately (playtest v1.03).
 - French rules reader ("Règles en français" button in the header): every
   chapter of the translation, chapter list, contents with jumps to sections,
   previous and next links, available offline.
+- "What's new" page in the app, opened from the footer: this changelog in
+  English or French, following the interface language (`CHANGELOG.fr.md` is
+  the French version).
 
 ### Changed
 
