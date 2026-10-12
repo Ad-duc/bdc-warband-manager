@@ -217,6 +217,7 @@ export function BlackRot({ boxes, vertical = false }: { boxes: number; vertical?
       </span>
       <span
         className={`flex ${vertical ? "flex-col" : "flex-row"} gap-[0.8mm]`}
+        role="img"
         aria-label={t("print.blackRotValue", { count: boxes })}
       >
         {[1, 2, 3].map((b) => (
