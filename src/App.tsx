@@ -28,6 +28,9 @@ const SharedPage = lazy(async () => ({
 const ChangelogPage = lazy(async () => ({
   default: (await import("./features/changelog/ChangelogPage.tsx")).ChangelogPage,
 }));
+const CardBacksPage = lazy(async () => ({
+  default: (await import("./print/CardBacksPage.tsx")).CardBacksPage,
+}));
 const RulesPage = lazy(async () => ({
   default: (await import("./features/reader/RulesPage.tsx")).RulesPage,
 }));
@@ -44,6 +47,7 @@ export function App() {
         {route.name === "shared" && <SharedPage payload={route.payload} />}
         {route.name === "rules" && <RulesPage chapterId={route.chapter} />}
         {route.name === "changelog" && <ChangelogPage />}
+        {route.name === "cardBacks" && <CardBacksPage />}
       </Suspense>
       {route.name === "home" && <HomePage />}
     </Layout>

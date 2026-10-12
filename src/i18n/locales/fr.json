@@ -12,6 +12,7 @@
     "skipToContent": "Aller au contenu"
   },
   "header": {
+    "cardBacks": "Dos de cartes",
     "rules": "Règles en français"
   },
   "language": {
@@ -480,13 +481,23 @@
     "readOnly": "Lecture seule. Enregistrez une copie pour la modifier sur cet appareil.",
     "saveCopy": "Enregistrer une copie"
   },
+  "cardBacks": {
+    "title": "Générateur de dos de cartes",
+    "intro": "Planches de 9 dos de cartes de combattants (63 x 88 mm) pour la faction de votre choix, sans bande enregistrée. Imprimez-les au verso des cartes officielles ou des cartes imprimées depuis une bande.",
+    "faction": "Faction",
+    "warbandName": "Nom de la bande (facultatif)",
+    "sheets": "Planches",
+    "sheetCount_one": "{{count}} planche ({{cards}} dos)",
+    "sheetCount_other": "{{count}} planches ({{cards}} dos)"
+  },
   "print": {
     "title": "Impression",
     "content": "Contenu",
     "contents": {
       "roster": "Feuille de bande",
       "cards": "Cartes de combattants",
-      "both": "Les deux"
+      "both": "Les deux",
+      "backs": "Dos des cartes"
     },
     "style": "Style",
     "styles": {
@@ -494,7 +505,11 @@
       "ink-saver": "Économie d'encre"
     },
     "blank": "Ajouter des blocs combattant vierges jusqu'à 15",
+    "backs": "Dos des cartes",
+    "duplex": "Imprimer les dos derrière les cartes (recto verso)",
+    "backName": "Nom de la bande au dos",
     "help": "La boîte de dialogue d'impression du navigateur imprime sur papier ou enregistre en PDF. Choisissez le format A4, l'échelle 100 % et activez les graphiques d'arrière-plan pour le fond parchemin.",
+    "backsHelp": "Dos des cartes : imprimez en recto verso, retournement sur le bord long, échelle 100 %. Chaque dos tombe derrière sa carte. Sans imprimante recto verso, imprimez les cartes, remettez les feuilles dans le bac et imprimez la page \"Dos des cartes\" au verso.",
     "print": "Imprimer",
     "back": "Retour",
     "warbandName": "Nom de la bande :",

@@ -30,6 +30,14 @@ version is given separately (playtest v1.03).
 - "What's new" page in the app, opened from the footer: this changelog in
   English or French, following the interface language (`CHANGELOG.fr.md` is
   the French version).
+- Fighter card backs in the print view: game logo, faction shield on a stone
+  panel and faction name, with the warband name as an option. "Print the backs
+  behind the cards" adds a back page after each card page, mirrored for a
+  long-edge duplex print; the new "Card backs" content prints a stand-alone
+  sheet of 9 backs to put on the reverse by hand. Print-quality images in
+  `public/images/print/`.
+- Card back generator ("Card backs" button in the header): sheets of 9 backs
+  for any faction, with an optional warband name, without a saved warband.
 
 ### Changed
 

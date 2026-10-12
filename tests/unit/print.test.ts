@@ -1,14 +1,20 @@
 /*
  * File:        tests/unit/print.test.ts
  * Role:        Print model (fighter blocks, weapon lines, notes, blank blocks,
- *              pagination) and share link encoding.
+ *              pagination, duplex card back cells) and share link encoding.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
  */
 
 import { describe, expect, it } from "vitest";
-import { buildPrintFighter, buildPrintFighters, paginate, type PrintLabels } from "../../src/print/model.ts";
+import {
+  buildPrintFighter,
+  buildPrintFighters,
+  duplexBackCells,
+  paginate,
+  type PrintLabels,
+} from "../../src/print/model.ts";
 import { decodeWarband, encodeWarband, shareUrl, SHARE_PREFIX } from "../../src/features/share/share.ts";
 import { parseHash } from "../../src/app/router.ts";
 import { indexFaction } from "../../src/rules/index.ts";
@@ -116,5 +122,29 @@ describe("share links", () => {
   it("a damaged link is refused", () => {
     expect(decodeWarband("")).toEqual({ ok: false, error: "invalid-json" });
     expect(decodeWarband("%%%").ok).toBe(false);
+  });
+});
+
+describe("duplex card backs", () => {
+  it("the stand-alone generator has its own route", () => {
+    expect(parseHash("#/card-backs")).toEqual({ name: "cardBacks" });
+  });
+
+  it("a full page gets 9 backs", () => {
+    expect(duplexBackCells(9)).toEqual(Array.from({ length: 9 }, () => true));
+  });
+
+  it("columns are mirrored on a long-edge flip, rows are kept", () => {
+    // 1 card in column 1: its back sits in column 3 of the same row
+    expect(duplexBackCells(1)).toEqual([false, false, true]);
+    // 4 cards: full first row, then column 1 of row 2 mirrored to column 3
+    expect(duplexBackCells(4)).toEqual([true, true, true, false, false, true]);
+    // 8 cards: last row has columns 1 and 2, mirrored to 3 and 2
+    expect(duplexBackCells(8).slice(6)).toEqual([false, true, true]);
+  });
+
+  it("no card, no back; more than a page is capped", () => {
+    expect(duplexBackCells(0)).toEqual([]);
+    expect(duplexBackCells(12)).toHaveLength(9);
   });
 });

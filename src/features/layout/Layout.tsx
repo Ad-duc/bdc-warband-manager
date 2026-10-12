@@ -1,7 +1,8 @@
 /*
  * File:        src/features/layout/Layout.tsx
- * Role:        Common page frame: skip link; header with logo, title, link to
- *              the French rules reader and language selector; main area;
+ * Role:        Common page frame: skip link; header with logo, title, links
+ *              to the card back generator and the French rules reader, and
+ *              language selector; main area;
  *              footer with the fan-made notice, the version, a link to the
  *              changelog and the support link. The frame fills the window:
  *              header and footer stay in place and only the area between them
@@ -52,6 +53,28 @@ export function Layout({ children }: { children: ReactNode }) {
             </a>
             <p className="truncate font-hand text-base text-on-page-muted sm:text-lg">{t("app.tagline")}</p>
           </div>
+          <a
+            href={hrefFor({ name: "cardBacks" })}
+            aria-current={route.name === "cardBacks" ? "page" : undefined}
+            className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 border-2 border-on-page px-2 text-sm hover:bg-on-page hover:text-page aria-[current=page]:bg-on-page aria-[current=page]:text-page sm:px-3"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="7" y="3" width="13" height="17" />
+              <path d="M4 6v15h12" />
+              <path d="M13.5 8l2.5 3.5-2.5 3.5-2.5-3.5z" />
+            </svg>
+            <span className="sr-only sm:not-sr-only">{t("header.cardBacks")}</span>
+          </a>
           <a
             href={hrefFor({ name: "rules", chapter: null })}
             aria-current={route.name === "rules" ? "page" : undefined}

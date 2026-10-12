@@ -12,6 +12,7 @@
     "skipToContent": "Skip to content"
   },
   "header": {
+    "cardBacks": "Card backs",
     "rules": "French rules"
   },
   "language": {
@@ -480,13 +481,23 @@
     "readOnly": "Read-only. Save a copy to edit it on this device.",
     "saveCopy": "Save a copy"
   },
+  "cardBacks": {
+    "title": "Card back generator",
+    "intro": "Sheets of 9 fighter card backs (63 x 88 mm) for the faction of your choice, without a saved warband. Print them on the reverse of the official fighter cards or of the cards printed from a warband.",
+    "faction": "Faction",
+    "warbandName": "Warband name (optional)",
+    "sheets": "Sheets",
+    "sheetCount_one": "{{count}} sheet ({{cards}} backs)",
+    "sheetCount_other": "{{count}} sheets ({{cards}} backs)"
+  },
   "print": {
     "title": "Print",
     "content": "Content",
     "contents": {
       "roster": "Warband roster",
       "cards": "Fighter cards",
-      "both": "Both"
+      "both": "Both",
+      "backs": "Card backs"
     },
     "style": "Style",
     "styles": {
@@ -494,7 +505,11 @@
       "ink-saver": "Ink saver"
     },
     "blank": "Add blank fighter blocks up to 15",
+    "backs": "Card backs",
+    "duplex": "Print the backs behind the cards (duplex)",
+    "backName": "Warband name on the backs",
     "help": "The browser print dialog prints on paper or saves as PDF. Set the paper to A4, scale 100%, and enable background graphics for the parchment style.",
+    "backsHelp": "Card backs: print double-sided, flip on the long edge, scale 100%. Each back lands behind its card. Without a duplex printer, print the cards, put the sheets back in the tray and print the \"Card backs\" page on the reverse.",
     "print": "Print",
     "back": "Back",
     "warbandName": "Warband Name:",

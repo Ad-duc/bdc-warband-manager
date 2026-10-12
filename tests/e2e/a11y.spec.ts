@@ -101,6 +101,13 @@ for (const locale of ["en-GB", "fr-FR"] as const) {
       await page.getByRole("radio", { name: fr ? "Les deux" : "Both" }).check();
       await page.getByRole("radio", { name: fr ? "Économie d'encre" : "Ink saver" }).check();
       await audit(page, "print cards, ink saver");
+      await page.getByLabel(fr ? /Imprimer les dos/ : /Print the backs/).check();
+      await page.getByLabel(fr ? "Nom de la bande au dos" : "Warband name on the backs").check();
+      await page.getByRole("radio", { name: fr ? "Fond parchemin" : "Parchment background" }).check();
+      await audit(page, "print cards with backs");
+      await page.goto("./#/card-backs");
+      await expect(page.getByTestId("print-card-back").first()).toBeVisible();
+      await audit(page, "card back generator");
       await page.goto("./#/warband/demo-1/campaign");
       await page.getByRole("button", { name: fr ? "Partager" : "Share" }).click();
       const field = page.getByLabel(fr ? "Lien de partage" : "Share link");

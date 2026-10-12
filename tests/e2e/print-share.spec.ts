@@ -1,6 +1,6 @@
 /*
  * File:        tests/e2e/print-share.spec.ts
- * Role:        Print view (A4 roster and TCG cards, page count of the PDF
+ * Role:        Print view (A4 roster, TCG cards and their backs, page count of the PDF
  *              output on Chromium), share link opened read-only then saved as
  *              a copy, and the application working offline once loaded.
  * Author:      Adrien Duclaud
@@ -32,6 +32,21 @@ test("print view: roster on 3 pages, cards on 1 page", async ({ page, browserNam
   await expect(page.getByTestId("print-page")).toHaveCount(2);
   await page.getByLabel(/blocs combattant vierges/).uncheck();
   await expect(page.getByTestId("print-card")).toHaveCount(9);
+
+  // Card backs: one back page behind each card page, then a stand-alone sheet
+  await page.getByLabel(/Imprimer les dos/).check();
+  await expect(page.getByTestId("print-page")).toHaveCount(2);
+  await expect(page.getByTestId("print-card-back")).toHaveCount(9);
+  await expect(page.getByTestId("print-back-warband")).toHaveCount(0);
+  await page.getByLabel("Nom de la bande au dos").check();
+  await expect(page.getByTestId("print-back-warband").first()).toHaveText("Les Lames de Rennes");
+  await page.getByRole("radio", { name: "Dos des cartes" }).check();
+  await expect(page.getByTestId("print-page")).toHaveCount(1);
+  await expect(page.getByTestId("print-card")).toHaveCount(0);
+  await expect(page.getByTestId("print-card-back")).toHaveCount(9);
+  await page.getByRole("radio", { name: "Les deux" }).check();
+  // Roster of 3 pages + 1 blank page so the cards start on a new sheet
+  await expect(page.getByTestId("print-page")).toHaveCount(6);
 
   if (browserName === "chromium") {
     await page.getByRole("radio", { name: "Feuille de bande" }).check();

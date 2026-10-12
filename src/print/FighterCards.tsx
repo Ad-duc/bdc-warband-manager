@@ -3,17 +3,20 @@
  * Role:        Fighter cards in TCG sleeve format (63 x 88 mm), 9 per A4 page
  *              with dashed cut lines: category pictogram, name, cost,
  *              characteristics, 3 weapons with their traits underneath, text
- *              area, Black Rot circles and experience.
+ *              area, Black Rot circles and experience. With card backs on,
+ *              each card page is followed by its back page (long-edge duplex).
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
  */
 
+import { Fragment } from "react";
 import { useTranslation } from "react-i18next";
 import { STAT_KEYS } from "../data/schema.ts";
 import { formatStat, useFormatter } from "../i18n/text.ts";
 import { CARDS_PER_PAGE, WEAPON_ROWS, paginate, type PrintFighter } from "./model.ts";
 import { Pictogram } from "./Pictogram.tsx";
+import { CardBackPage, type CardBackInfo } from "./CardBack.tsx";
 import { BlackRot } from "./RosterSheet.tsx";
 
 function Card({ fighter }: { fighter: PrintFighter | null }) {
@@ -108,15 +111,25 @@ function Card({ fighter }: { fighter: PrintFighter | null }) {
   );
 }
 
-export function FighterCards({ fighters }: { fighters: (PrintFighter | null)[] }) {
+export function FighterCards({
+  fighters,
+  backs = null,
+}: {
+  fighters: (PrintFighter | null)[];
+  /** Card back to print behind each card page, or null for fronts only. */
+  backs?: CardBackInfo | null;
+}) {
   return (
     <>
       {paginate(fighters, CARDS_PER_PAGE).map((page, i) => (
-        <div key={i} className="print-page print-cards-page" data-testid="print-page">
-          {page.map((fighter, j) => (
-            <Card key={fighter?.id ?? `blank-${i}-${j}`} fighter={fighter} />
-          ))}
-        </div>
+        <Fragment key={i}>
+          <div className="print-page print-cards-page" data-testid="print-page">
+            {page.map((fighter, j) => (
+              <Card key={fighter?.id ?? `blank-${i}-${j}`} fighter={fighter} />
+            ))}
+          </div>
+          {backs !== null && <CardBackPage count={page.length} info={backs} />}
+        </Fragment>
       ))}
     </>
   );

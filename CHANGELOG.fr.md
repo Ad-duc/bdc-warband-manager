@@ -33,6 +33,16 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 - Page "Nouveautés" dans l'application, ouverte depuis le pied de page : cet
   historique en français ou en anglais, selon la langue de l'interface
   (`CHANGELOG.md` est la version anglaise).
+- Dos des cartes de combattants dans la vue Impression : logo du jeu, bouclier
+  de la faction sur un panneau de pierre et nom de la faction, avec le nom de
+  la bande en option. "Imprimer les dos derrière les cartes" ajoute une page
+  de dos après chaque page de cartes, en miroir pour un recto verso sur le
+  bord long ; le nouveau contenu "Dos des cartes" imprime une planche de 9 dos
+  à passer au verso à la main. Images de qualité impression dans
+  `public/images/print/`.
+- Générateur de dos de cartes (bouton "Dos de cartes" dans l'en-tête) :
+  planches de 9 dos pour n'importe quelle faction, avec le nom de la bande en
+  option, sans bande enregistrée.
 
 ### Modifié
 

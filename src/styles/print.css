@@ -1,6 +1,7 @@
 /*
  * File:        src/styles/print.css
- * Role:        A4 print layout of the Warband Roster and the fighter cards.
+ * Role:        A4 print layout of the Warband Roster, the fighter cards and
+ *              their backs.
  *              On screen the pages are shown as A4 sheets; when printing, the
  *              application frame is hidden and each sheet is one page.
  *              Two styles: parchment (tinted background) and ink saver.
@@ -159,6 +160,188 @@
   height: 3.6mm;
 }
 
+/* Card backs (63 x 88 mm). The 3 mm ink border hides small duplex shifts;
+   the grid is centred on the page, so a long-edge flip keeps every back
+   behind its card. */
+.print-card-back,
+.print-card-back-empty {
+  box-sizing: border-box;
+  width: 63mm;
+  height: 88mm;
+  break-inside: avoid;
+}
+.print-card-back {
+  padding: 3mm;
+  background-color: var(--color-ink);
+  overflow: hidden;
+}
+.print-back-face {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6mm;
+  height: 100%;
+  padding: 5mm 4mm;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--color-parchment);
+  background-image: radial-gradient(
+    ellipse at center,
+    var(--color-parchment) 55%,
+    color-mix(in srgb, var(--color-mist) 70%, var(--color-parchment)) 100%
+  );
+  color: var(--color-ink);
+}
+/* Double frame: thick outer line, thin inner line, square corners */
+.print-back-face::before,
+.print-back-face::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+.print-back-face::before {
+  inset: 1.8mm;
+  border: 0.6mm solid var(--color-ink);
+}
+.print-back-face::after {
+  inset: 2.8mm;
+  border: 0.2mm solid var(--color-ink);
+}
+/* Corner diamonds: black diamond with a small white centre */
+.print-back-corner {
+  position: absolute;
+  z-index: 1;
+  width: 3.4mm;
+  height: 3.4mm;
+  margin: -1.7mm 0 0 -1.7mm;
+  background-color: var(--color-ink);
+  transform: rotate(45deg);
+}
+.print-back-corner::after {
+  content: "";
+  position: absolute;
+  inset: 1.1mm;
+  background-color: var(--color-white);
+}
+.print-back-corner-tl {
+  top: 2.1mm;
+  left: 2.1mm;
+}
+.print-back-corner-tr {
+  top: 2.1mm;
+  left: calc(100% - 2.1mm);
+}
+.print-back-corner-bl {
+  top: calc(100% - 2.1mm);
+  left: 2.1mm;
+}
+.print-back-corner-br {
+  top: calc(100% - 2.1mm);
+  left: calc(100% - 2.1mm);
+}
+.print-back-sword {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 74mm;
+  width: auto;
+  transform: translate(-50%, -50%);
+  opacity: 0.45;
+}
+.print-back-logo,
+.print-back-stone,
+.print-back-faction,
+.print-back-warband,
+.print-back-ornament {
+  position: relative;
+  z-index: 1;
+}
+.print-back-logo {
+  width: 20mm;
+  height: auto;
+}
+/* Stone panel with torn edges (style guide section 6) */
+.print-back-stone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36mm;
+  height: 29mm;
+  background-color: var(--color-stone);
+  clip-path: polygon(
+    0% 3%,
+    8% 0%,
+    17% 2%,
+    26% 0%,
+    37% 3%,
+    48% 1%,
+    59% 3%,
+    70% 0%,
+    81% 2%,
+    92% 0%,
+    100% 3%,
+    98% 14%,
+    100% 27%,
+    97% 40%,
+    100% 53%,
+    98% 66%,
+    100% 79%,
+    98% 90%,
+    100% 97%,
+    91% 100%,
+    80% 97%,
+    69% 100%,
+    58% 98%,
+    47% 100%,
+    36% 97%,
+    25% 100%,
+    14% 98%,
+    5% 100%,
+    0% 97%,
+    2% 86%,
+    0% 73%,
+    3% 60%,
+    0% 47%,
+    2% 34%,
+    0% 21%,
+    2% 10%
+  );
+}
+.print-back-shield {
+  max-width: 30mm;
+  max-height: 25mm;
+  width: auto;
+  height: auto;
+}
+.print-back-faction {
+  margin: 0;
+  font-family: var(--font-gothic);
+  font-size: 15pt;
+  line-height: 1.05;
+  text-align: center;
+  white-space: nowrap;
+}
+.print-back-faction-long {
+  font-size: 13pt;
+}
+.print-back-warband {
+  max-width: 48mm;
+  margin: -0.8mm 0 0;
+  overflow: hidden;
+  font-family: var(--font-hand);
+  font-size: 10pt;
+  line-height: 1.1;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.print-back-ornament {
+  width: 38mm;
+  height: auto;
+}
+
 /* Ink saver: no tinted backgrounds, outlines instead of ink fills, no artwork */
 .print-ink-saver .print-stats th,
 .print-ink-saver .print-weapons th {
@@ -173,6 +356,17 @@
 }
 .print-ink-saver .print-decor {
   display: none;
+}
+.print-ink-saver .print-card-back {
+  padding: 0;
+  border: 1px dashed var(--color-ink);
+  background-color: var(--color-white);
+}
+.print-ink-saver .print-back-face {
+  background: var(--color-white);
+}
+.print-ink-saver .print-back-stone {
+  background-color: var(--color-white);
 }
 
 @media print {

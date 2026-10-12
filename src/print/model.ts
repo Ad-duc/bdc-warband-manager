@@ -206,3 +206,26 @@ export function paginate<T>(items: T[], size: number): T[][] {
   for (let i = 0; i < items.length; i += size) pages.push(items.slice(i, i + size));
   return pages;
 }
+
+/** Card columns on an A4 page (3 x 3 grid). */
+export const CARD_COLUMNS = 3;
+
+/**
+ * Cells of the back page printed behind a page of `count` cards, for a
+ * long-edge duplex print: each row is kept and its columns are mirrored, so
+ * the back of the card in column 1 lands in column 3. Only the rows used by
+ * the front page are returned; `true` marks a cell that holds a card back,
+ * `false` an empty cell left white.
+ */
+export function duplexBackCells(count: number, columns: number = CARD_COLUMNS): boolean[] {
+  const used = Math.max(0, Math.min(count, CARDS_PER_PAGE));
+  const rows = Math.ceil(used / columns);
+  const cells: boolean[] = [];
+  for (let r = 0; r < rows; r += 1) {
+    for (let c = 0; c < columns; c += 1) {
+      const front = r * columns + (columns - 1 - c);
+      cells.push(front < used);
+    }
+  }
+  return cells;
+}
