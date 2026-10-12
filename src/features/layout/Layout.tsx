@@ -1,7 +1,8 @@
 /*
  * File:        src/features/layout/Layout.tsx
  * Role:        Common page frame: skip link, header with logo, title and
- *              language selector, main area, footer with the fan-made notice.
+ *              language selector, main area, footer with the fan-made notice
+ *              and the support link.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -13,6 +14,9 @@ import { LanguageSwitcher } from "./LanguageSwitcher.tsx";
 import { useGameData } from "../../data/useGameData.ts";
 
 const BASE = import.meta.env.BASE_URL;
+
+/** Optional support link shown in the bottom-right corner of the footer. */
+const SUPPORT_URL = "https://buymeacoffee.com/ad.duc";
 
 export function Layout({ children }: { children: ReactNode }) {
   const { t } = useTranslation();
@@ -45,16 +49,42 @@ export function Layout({ children }: { children: ReactNode }) {
       </main>
 
       <footer className="no-print border-t-2 border-rule">
-        <div className="mx-auto max-w-[120rem] space-y-1 px-4 py-4 sm:px-6 xl:px-10 text-sm text-on-page-muted">
-          <p>{t("footer.disclaimer")}</p>
-          <p>
-            {t("footer.version", {
-              version: __APP_VERSION__,
-              rules: gameData === null ? "" : gameData.common.sourceVersion.replace("playtest-", ""),
-            })}
-            {" - "}
-            {t("footer.offline")}
-          </p>
+        <div className="mx-auto flex max-w-[120rem] flex-col gap-4 px-4 py-4 text-sm text-on-page-muted sm:flex-row sm:items-end sm:justify-between sm:px-6 xl:px-10">
+          <div className="space-y-1">
+            <p>{t("footer.disclaimer")}</p>
+            <p>
+              {t("footer.version", {
+                version: __APP_VERSION__,
+                rules: gameData === null ? "" : gameData.common.sourceVersion.replace("playtest-", ""),
+              })}
+              {" - "}
+              {t("footer.offline")}
+            </p>
+          </div>
+          <a
+            href={SUPPORT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-11 shrink-0 items-center gap-2 self-end border-2 border-on-page px-3 text-on-page hover:bg-on-page hover:text-page"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z" />
+              <path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17" />
+              <path d="M8 3v3M12 3v3" />
+            </svg>
+            {t("footer.support")}
+            <span className="sr-only">{t("footer.newTab")}</span>
+          </a>
         </div>
       </footer>
     </div>

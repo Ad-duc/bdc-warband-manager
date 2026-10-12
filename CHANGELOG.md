@@ -15,6 +15,10 @@ version is given separately (playtest v1.03).
 
 ## [Unreleased]
 
+### Added
+
+- "Buy me a coffee" support link in the bottom-right corner of the footer.
+
 ## [1.0.0] - 2026-10-12
 
 First complete release, built on the Black Death City playtest v1.03.

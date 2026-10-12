@@ -55,7 +55,9 @@
   "footer": {
     "disclaimer": "Outil de fan non officiel, à usage privé. Black Death City, ses règles, ses textes et ses illustrations appartiennent à leur auteur, Sam Pearson.",
     "version": "Version {{version}}, règles de la version de test {{rules}}",
-    "offline": "Fonctionne hors ligne une fois chargé."
+    "offline": "Fonctionne hors ligne une fois chargé.",
+    "support": "Offrez-moi un café",
+    "newTab": "(s'ouvre dans un nouvel onglet)"
   },
   "rules": {
     "data": {
