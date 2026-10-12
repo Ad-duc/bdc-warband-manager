@@ -576,7 +576,8 @@ export const WarbandSchema = z
     id: z.string().min(1),
     name: z.string(),
     factionId: IdSchema,
-    originId: IdSchema,
+    /** null while the origin is not chosen yet (wizard step 2). */
+    originId: IdSchema.nullable(),
     creationLanguage: z.enum(["en", "fr"]),
     mode: z.enum(["recruitment", "campaign"]),
     createdAt: z.iso.datetime(),

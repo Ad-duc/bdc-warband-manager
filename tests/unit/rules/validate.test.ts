@@ -58,6 +58,10 @@ describe("data references", () => {
     expect(codes({ ...swordsForHire(), factionId: "nope" })).toEqual(["data.unknownFaction"]);
   });
 
+  it("origin not chosen yet", () => {
+    expect(codes({ ...swordsForHire(), originId: null })).toEqual(["origin.missing"]);
+  });
+
   it("unknown origin", () => {
     expect(codes({ ...swordsForHire(), originId: "nope" })).toEqual(["data.unknownOrigin"]);
   });

@@ -54,6 +54,11 @@ export const RULES = {
     ref: { page: 61, md: `${GM} > Domaines de magie des Guild Mercenaries` },
   },
 
+  "origin.missing": {
+    severity: "error",
+    modes: BOTH,
+    ref: { page: 47, md: `${GENERAL} > Étape 2 - Choisir une origine` },
+  },
   "budget.exceeded": {
     severity: "error",
     modes: RECRUITMENT,

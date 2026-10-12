@@ -1,64 +1,198 @@
 /*
  * File:        src/features/home/HomePage.tsx
- * Role:        Home screen. Step 1: themed empty state with the saved warband
- *              count read from IndexedDB. The list, creation and import arrive
- *              in step 3.
+ * Role:        Home screen: saved warbands (name, faction, rating, last
+ *              update) with open, duplicate, export and delete (confirmed);
+ *              creation of a new warband and JSON import.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
  */
 
-import { useEffect, useState } from "react";
+import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { db } from "../../db/database.ts";
+import { gameData } from "../../data/index.ts";
+import type { Warband } from "../../data/schema.ts";
+import { db, deleteWarband, listWarbands, saveWarband } from "../../db/database.ts";
+import { useLiveQuery } from "../../app/useLiveQuery.ts";
+import { hrefFor, navigate } from "../../app/router.ts";
+import { findFaction, indexFaction, warbandRating } from "../../rules/index.ts";
+import { useFormatter } from "../../i18n/text.ts";
+import { useWizard } from "../../store/wizard.ts";
+import { ConfirmDialog } from "../common/ConfirmDialog.tsx";
+import { createWarband, duplicateWarband, newId } from "../warbands/factory.ts";
+import { downloadExport, parseImport } from "../warbands/transfer.ts";
 
 export function HomePage() {
   const { t } = useTranslation();
-  const [count, setCount] = useState<number | null>(null);
+  const f = useFormatter();
+  const warbands = useLiveQuery(() => listWarbands(db), []);
+  const start = useWizard((s) => s.start);
+  const [toDelete, setToDelete] = useState<Warband | null>(null);
+  const [message, setMessage] = useState<string | null>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
 
-  useEffect(() => {
-    let alive = true;
-    db.warbands
-      .count()
-      .then((n) => {
-        if (alive) setCount(n);
-      })
-      .catch(() => {
-        if (alive) setCount(0);
-      });
-    return () => {
-      alive = false;
-    };
-  }, []);
+  const create = async () => {
+    const faction = gameData.factions[0];
+    if (faction === undefined) return;
+    const w = createWarband(f.lang, faction.id);
+    await start(w);
+    navigate({ name: "wizard", id: w.id });
+  };
+
+  const importFile = async (file: File) => {
+    const result = parseImport(await file.text());
+    if (!result.ok) {
+      const known = ["invalid-json", "newer-version", "empty"].includes(result.error);
+      setMessage(
+        known
+          ? t(`home.importError.${result.error}`)
+          : t("home.importError.invalid", { detail: result.error }),
+      );
+      return;
+    }
+    const existing = new Set((await listWarbands(db)).map((w) => w.id));
+    for (const w of result.warbands) await saveWarband(db, existing.has(w.id) ? { ...w, id: newId() } : w);
+    setMessage(t("home.imported", { count: result.warbands.length }));
+  };
+
+  const rating = (w: Warband): number | null => {
+    const faction = findFaction(gameData, w.factionId);
+    return faction === undefined ? null : warbandRating(indexFaction(gameData.common, faction), w).total;
+  };
 
   return (
-    <section aria-labelledby="home-heading" className="panel-parchment mx-auto max-w-3xl p-6 sm:p-10">
+    <section aria-labelledby="home-heading" className="panel-parchment mx-auto max-w-4xl p-6 sm:p-10">
       <h1 id="home-heading" className="text-center font-gothic text-4xl sm:text-5xl">
         {t("home.heading")}
       </h1>
       <div className="ornament my-4" aria-hidden="true" />
-      <p className="text-center text-lg text-on-panel-muted">{t("home.empty")}</p>
-      {count !== null && (
-        <p className="mt-2 text-center font-hand text-xl" aria-live="polite">
-          {t("home.savedCount", { count })}
+
+      <div className="flex flex-wrap justify-center gap-3">
+        <button type="button" className="btn btn-solid" onClick={() => void create()}>
+          {t("home.create")}
+        </button>
+        <button
+          type="button"
+          className="btn"
+          onClick={() => {
+            fileRef.current?.click();
+          }}
+        >
+          {t("home.import")}
+        </button>
+        <input
+          ref={fileRef}
+          type="file"
+          accept="application/json,.json"
+          className="sr-only"
+          tabIndex={-1}
+          aria-label={t("home.import")}
+          data-testid="import-input"
+          onChange={(e) => {
+            const file = e.target.files?.[0];
+            if (file !== undefined) void importFile(file);
+            e.target.value = "";
+          }}
+        />
+        {warbands !== undefined && warbands.length > 0 && (
+          <button
+            type="button"
+            className="btn"
+            onClick={() => {
+              downloadExport(warbands);
+            }}
+          >
+            {t("home.exportAll")}
+          </button>
+        )}
+      </div>
+      {message !== null && (
+        <p role="status" className="mt-3 text-center">
+          {message}
         </p>
       )}
-      <div className="mt-8 flex flex-wrap justify-center gap-4">
-        {(["create", "import"] as const).map((action) => (
-          <button
-            key={action}
-            type="button"
-            disabled
-            aria-describedby="home-coming-soon"
-            className="min-h-11 border-2 border-on-panel bg-on-panel px-6 py-2 font-bold text-panel disabled:cursor-not-allowed disabled:opacity-70"
-          >
-            {t(`home.${action}`)}
-          </button>
-        ))}
-      </div>
-      <p id="home-coming-soon" className="mt-3 text-center text-sm text-on-panel-muted">
-        {t("home.comingSoon")}
-      </p>
+
+      {warbands === undefined ? (
+        <p className="mt-6 text-center">{t("wizard.loading")}</p>
+      ) : warbands.length === 0 ? (
+        <p className="mt-6 text-center text-lg text-on-panel-muted">{t("home.empty")}</p>
+      ) : (
+        <>
+          <p className="mt-6 text-center font-hand text-xl" aria-live="polite">
+            {t("home.savedCount", { count: warbands.length })}
+          </p>
+          <ul className="mt-4 space-y-3" data-testid="warband-list">
+            {warbands.map((w) => {
+              const faction = findFaction(gameData, w.factionId);
+              const r = rating(w);
+              const title = w.name.trim() === "" ? t("home.unnamed") : w.name;
+              return (
+                <li key={w.id} className="flex flex-wrap items-center gap-3 border-2 border-on-panel p-3">
+                  <div className="min-w-0 flex-1">
+                    <a
+                      href={hrefFor({ name: "wizard", id: w.id })}
+                      className="font-gothic text-2xl underline-offset-4 hover:underline"
+                    >
+                      {title}
+                    </a>
+                    <p className="text-sm">
+                      {faction === undefined ? w.factionId : f.text(faction.name)}
+                      {" - "}
+                      {t("home.rating", { value: r === null ? "-" : f.number(r) })}
+                      {" - "}
+                      {t("home.updated", { date: f.date(w.updatedAt) })}
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      type="button"
+                      className="btn btn-sm"
+                      aria-label={t("home.duplicateNamed", { name: title })}
+                      onClick={() => void saveWarband(db, duplicateWarband(w, t("home.copySuffix")))}
+                    >
+                      {t("home.duplicate")}
+                    </button>
+                    <button
+                      type="button"
+                      className="btn btn-sm"
+                      aria-label={t("home.exportNamed", { name: title })}
+                      onClick={() => {
+                        downloadExport([w]);
+                      }}
+                    >
+                      {t("home.export")}
+                    </button>
+                    <button
+                      type="button"
+                      className="btn btn-sm"
+                      aria-label={t("home.deleteNamed", { name: title })}
+                      onClick={() => {
+                        setToDelete(w);
+                      }}
+                    >
+                      {t("home.delete")}
+                    </button>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </>
+      )}
+
+      <ConfirmDialog
+        open={toDelete !== null}
+        title={t("home.deleteTitle")}
+        message={t("home.deleteMessage", { name: toDelete?.name.trim() || t("home.unnamed") })}
+        confirmLabel={t("home.delete")}
+        onCancel={() => {
+          setToDelete(null);
+        }}
+        onConfirm={() => {
+          if (toDelete !== null) void deleteWarband(db, toDelete.id);
+          setToDelete(null);
+        }}
+      />
     </section>
   );
 }

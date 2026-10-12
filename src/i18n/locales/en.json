@@ -22,9 +22,29 @@
     "empty": "No warband yet. Gather your silver and venture into the City.",
     "create": "New warband",
     "import": "Import",
-    "comingSoon": "Available in a coming version",
     "savedCount_one": "{{count}} warband saved on this device",
-    "savedCount_other": "{{count}} warbands saved on this device"
+    "savedCount_other": "{{count}} warbands saved on this device",
+    "export": "Export",
+    "exportAll": "Export all",
+    "exportNamed": "Export {{name}}",
+    "duplicate": "Duplicate",
+    "duplicateNamed": "Duplicate {{name}}",
+    "delete": "Delete",
+    "deleteNamed": "Delete {{name}}",
+    "deleteTitle": "Delete this warband?",
+    "deleteMessage": "\"{{name}}\" will be removed from this device. Export it first to keep a copy.",
+    "copySuffix": "(copy)",
+    "unnamed": "Unnamed warband",
+    "rating": "rating {{value}}",
+    "updated": "updated {{date}}",
+    "imported_one": "{{count}} warband imported.",
+    "imported_other": "{{count}} warbands imported.",
+    "importError": {
+      "invalid-json": "This file is not valid JSON.",
+      "newer-version": "This file comes from a newer version of the app.",
+      "empty": "This file holds no warband.",
+      "invalid": "This file is not a valid warband: {{detail}}"
+    }
   },
   "footer": {
     "disclaimer": "Unofficial fan-made tool for private use. Black Death City, its rules, texts and artwork belong to their author, Sam Pearson.",
@@ -98,11 +118,204 @@
     },
     "blackRot": {
       "full": "Black Rot: all {{boxes}} boxes are filled."
+    },
+    "origin": {
+      "missing": "No origin chosen yet."
     }
   },
   "severity": {
     "error": "Error",
     "warning": "Warning",
     "info": "Information"
+  },
+  "common": {
+    "cancel": "Cancel"
+  },
+  "units": {
+    "silver": "{{value}}s"
+  },
+  "budget": {
+    "spent": "Spent",
+    "remaining": "Left",
+    "rating": "Warband rating",
+    "over": "over budget",
+    "meter": "{{spent}} of {{starting}} silver spent"
+  },
+  "diagnostics": {
+    "title": "Checks",
+    "summary": "{{errors}} error(s), {{warnings}} warning(s), {{infos}} information",
+    "allGood": "Nothing to report.",
+    "source": "Source: p. {{page}} of the playtest",
+    "assumption": "reading {{id}}",
+    "who": "{{name}}:",
+    "sourceSection": "Source: p. {{page}}, {{section}}"
+  },
+  "categories": {
+    "leader_one": "Leader",
+    "leader_other": "Leaders",
+    "champion_one": "Champion",
+    "champion_other": "Champions",
+    "henchman_one": "Henchman",
+    "henchman_other": "Henchmen",
+    "brute_one": "Brute",
+    "brute_other": "Brutes",
+    "beast_one": "Beast",
+    "beast_other": "Beasts"
+  },
+  "stats": {
+    "mv": {
+      "abbr": "Mv",
+      "name": "Move"
+    },
+    "bl": {
+      "abbr": "Bl",
+      "name": "Blade"
+    },
+    "bw": {
+      "abbr": "Bw",
+      "name": "Bow"
+    },
+    "ar": {
+      "abbr": "Ar",
+      "name": "Armour"
+    },
+    "in": {
+      "abbr": "In",
+      "name": "Initiative"
+    },
+    "wl": {
+      "abbr": "Wl",
+      "name": "Willpower"
+    },
+    "lf": {
+      "abbr": "Lf",
+      "name": "Life"
+    }
+  },
+  "weapon": {
+    "name": "Weapon",
+    "rng": "Rng",
+    "atk": "Atk",
+    "rnd": "Rnd",
+    "dmg": "Dmg",
+    "crit": "Crit",
+    "traits": "Weapon traits",
+    "rules": "Rules",
+    "cost": "Silver",
+    "flame": "Flame"
+  },
+  "wargearKinds": {
+    "melee": "Melee weapons",
+    "ranged": "Ranged weapons",
+    "armour": "Armour",
+    "item": "Items"
+  },
+  "spellTypes": {
+    "attack": "Attack Spell",
+    "enchant": "Enchant Spell",
+    "cantrip": "Cantrip Spell",
+    "hex": "Hex Spell",
+    "healing": "Healing Spell",
+    "aura": "Aura Spell"
+  },
+  "scroll": {
+    "keywords": "Keywords:",
+    "wargear": "Wargear:",
+    "startingExperience": "Starting Experience:",
+    "source": "Fighter scroll, p. {{page}}",
+    "tag": {
+      "action": "Action",
+      "bonus-action": "Bonus Action"
+    }
+  },
+  "roster": {
+    "name": "Name",
+    "type": "Type",
+    "cost": "Cost",
+    "exp": "Exp"
+  },
+  "wizard": {
+    "loading": "Loading...",
+    "notFound": "This warband does not exist on this device.",
+    "backHome": "Back to the warbands",
+    "stepsLabel": "Creation steps",
+    "progress": "Step {{step}} of {{total}}",
+    "steps": {
+      "faction": "Faction",
+      "origin": "Origin",
+      "fighters": "Fighters",
+      "wargear": "Wargear",
+      "skills": "Skills",
+      "rating": "Rating"
+    },
+    "previous": "Previous",
+    "next": "Next",
+    "saveError": "Could not save: {{error}}",
+    "name": "Warband name",
+    "faction": {
+      "legend": "Pick a faction",
+      "locked": "Remove every fighter to change faction."
+    },
+    "origin": {
+      "legend": "The origin tells how your warband came to the City. It imposes the leader and gives a stronghold.",
+      "leader": "Leader:",
+      "stronghold": "Stronghold:",
+      "income": "income {{income}} silver"
+    },
+    "fighters": {
+      "counters": "Warband composition",
+      "counterMax": "{{count}}/{{max}} {{label}}",
+      "counterMin": "{{count}}/{{min}}+ {{label}}",
+      "counterTotal": "{{count}}/{{max}} fighters",
+      "catalogue": "Fighter list",
+      "filter": "Filter by type",
+      "all": "All",
+      "add": "Recruit",
+      "addNamed": "Recruit {{name}}",
+      "roster": "Recruited fighters ({{count}})",
+      "none": "No fighter recruited yet.",
+      "remove": "Dismiss",
+      "removeNamed": "Dismiss {{name}}",
+      "name": "Name",
+      "randomName": "Random",
+      "randomNameFor": "Random name for {{name}}",
+      "experience": "Starting experience",
+      "xpDetail": "{{base}} + {{die}} ({{result}}) = {{total}}, {{mode}}",
+      "xpMode": {
+        "rolled": "rolled",
+        "manual": "entered"
+      },
+      "reroll": "Roll again",
+      "manualDie": "Die result"
+    },
+    "wargear": {
+      "pickFighter": "Fighter to equip",
+      "carried": "Wargear of {{name}}",
+      "total": "Wargear cost: {{value}}s",
+      "nothing": "Nothing yet.",
+      "remove": "Remove",
+      "removeNamed": "Remove {{name}}",
+      "add": "Buy",
+      "addNamed": "Buy {{name}}",
+      "held": "Held Item",
+      "rare": "Rare 0-{{max}}"
+    },
+    "skills": {
+      "none": "No fighter of this warband picks skills or spells at recruitment.",
+      "grant": "Skills picked: {{picked}} of {{expected}}.",
+      "fixed": "Already known: {{skills}}.",
+      "takenBy": "held by {{name}}",
+      "spells": "Signature spells, {{lore}}: {{picked}} of {{expected}}",
+      "casting": "{{type}}, casting value {{value}}+, critical {{critical}}+"
+    },
+    "rating": {
+      "caption": "Fighters and their value",
+      "totals": "Total",
+      "formula": "Warband rating (cost + experience)",
+      "stash": "Silver to the stash",
+      "stronghold": "Stronghold",
+      "blocked": "Fix the errors before completing the warband.",
+      "finish": "Complete the warband"
+    }
   }
 }

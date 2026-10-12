@@ -47,7 +47,8 @@ export function validateWarband(warband: Warband, data: RulesData, mode: Validat
   }
   const index = indexFaction(data.common, faction);
   const origin = faction.origins.find((o) => o.id === warband.originId);
-  if (origin === undefined) push("data.unknownOrigin", { origin: warband.originId });
+  if (warband.originId === null) push("origin.missing");
+  else if (origin === undefined) push("data.unknownOrigin", { origin: warband.originId });
 
   const resolved: { fighter: WarbandFighter; profile: FighterProfile }[] = [];
   for (const fighter of activeFighters(warband)) {
@@ -220,7 +221,8 @@ function checkWargear(
   if (melee.length === 0) push("fighter.unarmed", {}, id);
 }
 
-function isEligible(fighter: WarbandFighter, profile: FighterProfile, table: SkillTable): boolean {
+/** True when the fighter may take skills from this table. */
+export function isEligible(fighter: WarbandFighter, profile: FighterProfile, table: SkillTable): boolean {
   const e = table.eligibility;
   if (e.kind === "any") return true;
   if (e.kind === "fighters") return e.fighterIds.includes(profile.id);

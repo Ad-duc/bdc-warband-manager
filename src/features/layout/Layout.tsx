@@ -30,7 +30,9 @@ export function Layout({ children }: { children: ReactNode }) {
         <div className="mx-auto flex max-w-5xl items-center gap-4 px-4 py-3">
           <img src={`${BASE}images/logo.png`} alt="" width={56} height={63} className="h-14 w-auto" />
           <div className="flex-1">
-            <p className="font-gothic text-3xl leading-none">{t("app.gameTitle")}</p>
+            <a href="#/" className="block font-gothic text-3xl leading-none">
+              {t("app.gameTitle")}
+            </a>
             <p className="font-hand text-lg text-on-page-muted">{t("app.tagline")}</p>
           </div>
           <LanguageSwitcher />

@@ -22,9 +22,29 @@
     "empty": "Aucune bande pour l'instant. Rassemblez vos pièces d'argent et aventurez-vous dans la Cité.",
     "create": "Nouvelle bande",
     "import": "Importer",
-    "comingSoon": "Disponible dans une prochaine version",
     "savedCount_one": "{{count}} bande enregistrée sur cet appareil",
-    "savedCount_other": "{{count}} bandes enregistrées sur cet appareil"
+    "savedCount_other": "{{count}} bandes enregistrées sur cet appareil",
+    "export": "Exporter",
+    "exportAll": "Tout exporter",
+    "exportNamed": "Exporter {{name}}",
+    "duplicate": "Dupliquer",
+    "duplicateNamed": "Dupliquer {{name}}",
+    "delete": "Supprimer",
+    "deleteNamed": "Supprimer {{name}}",
+    "deleteTitle": "Supprimer cette bande ?",
+    "deleteMessage": "\"{{name}}\" sera effacée de cet appareil. Exportez-la d'abord pour en garder une copie.",
+    "copySuffix": "(copie)",
+    "unnamed": "Bande sans nom",
+    "rating": "valeur {{value}}",
+    "updated": "modifiée le {{date}}",
+    "imported_one": "{{count}} bande importée.",
+    "imported_other": "{{count}} bandes importées.",
+    "importError": {
+      "invalid-json": "Ce fichier n'est pas un JSON valide.",
+      "newer-version": "Ce fichier vient d'une version plus récente de l'application.",
+      "empty": "Ce fichier ne contient aucune bande.",
+      "invalid": "Ce fichier n'est pas une bande valide : {{detail}}"
+    }
   },
   "footer": {
     "disclaimer": "Outil de fan non officiel, à usage privé. Black Death City, ses règles, ses textes et ses illustrations appartiennent à leur auteur, Sam Pearson.",
@@ -98,11 +118,204 @@
     },
     "blackRot": {
       "full": "Pourriture noire : les {{boxes}} cases sont cochées."
+    },
+    "origin": {
+      "missing": "Aucune origine choisie."
     }
   },
   "severity": {
     "error": "Erreur",
     "warning": "Avertissement",
     "info": "Information"
+  },
+  "common": {
+    "cancel": "Annuler"
+  },
+  "units": {
+    "silver": "{{value}} pa"
+  },
+  "budget": {
+    "spent": "Dépensé",
+    "remaining": "Reste",
+    "rating": "Valeur de bande",
+    "over": "budget dépassé",
+    "meter": "{{spent}} pa dépensées sur {{starting}}"
+  },
+  "diagnostics": {
+    "title": "Vérifications",
+    "summary": "{{errors}} erreur(s), {{warnings}} avertissement(s), {{infos}} information(s)",
+    "allGood": "Rien à signaler.",
+    "source": "Source : p. {{page}} de la VO",
+    "assumption": "lecture {{id}}",
+    "who": "{{name}} :",
+    "sourceSection": "Source : p. {{page}} de la VO, {{section}}"
+  },
+  "categories": {
+    "leader_one": "Chef",
+    "leader_other": "Chefs",
+    "champion_one": "Champion",
+    "champion_other": "Champions",
+    "henchman_one": "Homme de main",
+    "henchman_other": "Hommes de main",
+    "brute_one": "Brute",
+    "brute_other": "Brutes",
+    "beast_one": "Bête",
+    "beast_other": "Bêtes"
+  },
+  "stats": {
+    "mv": {
+      "abbr": "Mvt",
+      "name": "Mouvement"
+    },
+    "bl": {
+      "abbr": "Lam",
+      "name": "Lame"
+    },
+    "bw": {
+      "abbr": "Arc",
+      "name": "Arc"
+    },
+    "ar": {
+      "abbr": "Arm",
+      "name": "Armure"
+    },
+    "in": {
+      "abbr": "Ini",
+      "name": "Initiative"
+    },
+    "wl": {
+      "abbr": "Vlt",
+      "name": "Volonté"
+    },
+    "lf": {
+      "abbr": "Vie",
+      "name": "Vie"
+    }
+  },
+  "weapon": {
+    "name": "Arme",
+    "rng": "Por",
+    "atk": "Att",
+    "rnd": "Perf",
+    "dmg": "Dég",
+    "crit": "Crit",
+    "traits": "Traits d'armes",
+    "rules": "Règles",
+    "cost": "Pièces d'argent",
+    "flame": "Flamme"
+  },
+  "wargearKinds": {
+    "melee": "Armes de corps à corps",
+    "ranged": "Armes à distance",
+    "armour": "Armures",
+    "item": "Objets"
+  },
+  "spellTypes": {
+    "attack": "Sort d'Attaque",
+    "enchant": "Sort d'Enchantement",
+    "cantrip": "Sort mineur",
+    "hex": "Sort de Maléfice",
+    "healing": "Sort de Soin",
+    "aura": "Sort d'Aura"
+  },
+  "scroll": {
+    "keywords": "Mots-clés :",
+    "wargear": "Équipement :",
+    "startingExperience": "Expérience de départ :",
+    "source": "Parchemin, p. {{page}} de la VO",
+    "tag": {
+      "action": "Action",
+      "bonus-action": "Action bonus"
+    }
+  },
+  "roster": {
+    "name": "Nom",
+    "type": "Type",
+    "cost": "Coût",
+    "exp": "Exp"
+  },
+  "wizard": {
+    "loading": "Chargement...",
+    "notFound": "Cette bande n'existe pas sur cet appareil.",
+    "backHome": "Retour aux bandes",
+    "stepsLabel": "Étapes de création",
+    "progress": "Étape {{step}} sur {{total}}",
+    "steps": {
+      "faction": "Faction",
+      "origin": "Origine",
+      "fighters": "Combattants",
+      "wargear": "Équipement",
+      "skills": "Compétences",
+      "rating": "Valeur"
+    },
+    "previous": "Précédent",
+    "next": "Suivant",
+    "saveError": "Enregistrement impossible : {{error}}",
+    "name": "Nom de la bande",
+    "faction": {
+      "legend": "Choisissez une faction",
+      "locked": "Renvoyez tous les combattants pour changer de faction."
+    },
+    "origin": {
+      "legend": "L'origine raconte comment votre bande est arrivée dans la Cité. Elle impose le chef et donne un repaire.",
+      "leader": "Chef :",
+      "stronghold": "Repaire :",
+      "income": "revenu {{income}} pa"
+    },
+    "fighters": {
+      "counters": "Composition de la bande",
+      "counterMax": "{{count}}/{{max}} {{label}}",
+      "counterMin": "{{count}}/{{min}}+ {{label}}",
+      "counterTotal": "{{count}}/{{max}} combattants",
+      "catalogue": "Liste des combattants",
+      "filter": "Filtrer par type",
+      "all": "Tous",
+      "add": "Recruter",
+      "addNamed": "Recruter {{name}}",
+      "roster": "Combattants recrutés ({{count}})",
+      "none": "Aucun combattant recruté pour l'instant.",
+      "remove": "Renvoyer",
+      "removeNamed": "Renvoyer {{name}}",
+      "name": "Nom",
+      "randomName": "Au hasard",
+      "randomNameFor": "Nom au hasard pour {{name}}",
+      "experience": "Expérience de départ",
+      "xpDetail": "{{base}} + {{die}} ({{result}}) = {{total}}, {{mode}}",
+      "xpMode": {
+        "rolled": "jet simulé",
+        "manual": "saisi"
+      },
+      "reroll": "Relancer",
+      "manualDie": "Résultat du dé"
+    },
+    "wargear": {
+      "pickFighter": "Combattant à équiper",
+      "carried": "Équipement de {{name}}",
+      "total": "Coût de l'équipement : {{value}} pa",
+      "nothing": "Rien pour l'instant.",
+      "remove": "Retirer",
+      "removeNamed": "Retirer {{name}}",
+      "add": "Acheter",
+      "addNamed": "Acheter {{name}}",
+      "held": "Objet tenu",
+      "rare": "Rare 0-{{max}}"
+    },
+    "skills": {
+      "none": "Aucun combattant de cette bande ne choisit de compétence ni de sort au recrutement.",
+      "grant": "Compétences choisies : {{picked}} sur {{expected}}.",
+      "fixed": "Déjà connue(s) : {{skills}}.",
+      "takenBy": "possédée par {{name}}",
+      "spells": "Sorts fétiches, {{lore}} : {{picked}} sur {{expected}}",
+      "casting": "{{type}}, valeur de lancement {{value}}+, critique {{critical}}+"
+    },
+    "rating": {
+      "caption": "Combattants et leur valeur",
+      "totals": "Total",
+      "formula": "Valeur de bande (coût + expérience)",
+      "stash": "Pièces d'argent pour le butin",
+      "stronghold": "Repaire",
+      "blocked": "Corrigez les erreurs avant de terminer la bande.",
+      "finish": "Terminer la bande"
+    }
   }
 }
