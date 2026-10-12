@@ -58,7 +58,7 @@ export function PrintView({ warband, backHref }: { warband: Warband; backHref: s
   return (
     <div>
       <section aria-labelledby="print-heading" className="no-print panel-parchment mb-6 space-y-3 p-4">
-        <h1 id="print-heading" className="font-gothic text-3xl">
+        <h1 id="print-heading" className="font-hand text-3xl">
           {t("print.title")}
         </h1>
         <div className="flex flex-wrap gap-6">

@@ -21,8 +21,8 @@
 @font-face {
   font-family: "Trattatello";
   src: url("/fonts/trattatello.woff2") format("woff2");
-  /* Decorative font: never re-lays out the first visit; cached by the service worker afterwards. */
-  font-display: optional;
+  /* Headings of the app: shown as soon as it arrives, then cached by the service worker. */
+  font-display: swap;
 }
 
 @theme {
@@ -181,11 +181,11 @@
     background-color: var(--color-bone);
   }
 
-  /* Category band: ink background, white gothic text */
+  /* Category band: ink background, white handwritten text */
   .band {
     background-color: var(--color-ink);
     color: var(--color-white);
-    font-family: var(--font-gothic);
+    font-family: var(--font-hand);
     padding: 0.25rem 0.75rem;
   }
 

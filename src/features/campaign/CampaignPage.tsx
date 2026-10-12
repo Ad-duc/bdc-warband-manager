@@ -177,7 +177,7 @@ function Overview({ warband, index, update }: { warband: Warband; index: Faction
       <div className="flex flex-wrap items-center gap-4">
         <img src={`${BASE}images/${index.faction.assets.shield}`} alt="" className="h-20 w-auto" />
         <div className="min-w-0 flex-1">
-          <h1 id="overview-heading" className="font-gothic text-4xl">
+          <h1 id="overview-heading" className="font-hand text-4xl">
             {warband.name.trim() === "" ? t("home.unnamed") : warband.name}
           </h1>
           <p className="no-print mt-1 flex flex-wrap gap-2">
@@ -193,7 +193,7 @@ function Overview({ warband, index, update }: { warband: Warband; index: Faction
         </div>
         <dl className="grid grid-cols-2 gap-x-6 gap-y-1">
           <dt className="text-sm">{t("budget.rating")}</dt>
-          <dd className="font-gothic text-3xl" data-testid="campaign-rating">
+          <dd className="font-hand text-3xl" data-testid="campaign-rating">
             {f.number(rating.total)}
           </dd>
           <dt className="text-sm">{t("campaign.ratingDetail")}</dt>
@@ -332,7 +332,7 @@ function Holdings({ warband, index, update }: { warband: Warband; index: Faction
         <div className="border-2 border-on-panel p-3">
           <p>
             <strong>{t("wizard.origin.stronghold")}</strong>{" "}
-            <span className="font-gothic text-xl">{f.text(stronghold.name)}</span> (
+            <span className="font-hand text-xl">{f.text(stronghold.name)}</span> (
             {t("wizard.origin.income", { income: f.dice(stronghold.income) })})
           </p>
           {stronghold.rules.map((r) => (

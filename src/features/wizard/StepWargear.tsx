@@ -57,7 +57,7 @@ export function StepWargear({ warband, index, update }: StepProps) {
       </div>
 
       <section aria-labelledby="carried-heading">
-        <h2 id="carried-heading" className="font-gothic text-2xl">
+        <h2 id="carried-heading" className="font-hand text-2xl">
           {t("wizard.wargear.carried", { name: name(selected) })}
         </h2>
         <p className="text-sm">

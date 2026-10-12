@@ -112,7 +112,7 @@ export function BattleLog({
             setReviewing(true);
           }}
         >
-          <h3 id={`${formId}-title`} className="font-gothic text-2xl">
+          <h3 id={`${formId}-title`} className="font-hand text-2xl">
             {t("campaign.battle.new")}
           </h3>
           <div className="grid gap-3 sm:grid-cols-3">

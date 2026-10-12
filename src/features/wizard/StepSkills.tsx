@@ -61,7 +61,7 @@ export function StepSkills({ warband, index, update }: StepProps) {
             aria-labelledby={`skills-${fighter.instanceId}`}
             className="border-2 border-on-panel p-3"
           >
-            <h2 id={`skills-${fighter.instanceId}`} className="font-gothic text-2xl">
+            <h2 id={`skills-${fighter.instanceId}`} className="font-hand text-2xl">
               {label(fighter)}
             </h2>
             <p className="text-sm">

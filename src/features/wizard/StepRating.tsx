@@ -74,19 +74,19 @@ export function StepRating({
       <dl className="grid gap-2 sm:grid-cols-3">
         <div className="border-2 border-on-panel p-3">
           <dt className="text-sm">{t("wizard.rating.formula")}</dt>
-          <dd className="font-gothic text-3xl" data-testid="final-rating">
+          <dd className="font-hand text-3xl" data-testid="final-rating">
             {f.number(rating.total)}
           </dd>
         </div>
         <div className="border-2 border-on-panel p-3">
           <dt className="text-sm">{t("wizard.rating.stash")}</dt>
-          <dd className="font-gothic text-3xl" data-testid="final-stash">
+          <dd className="font-hand text-3xl" data-testid="final-stash">
             {t("units.silver", { value: f.number(Math.max(0, budget.remaining)) })}
           </dd>
         </div>
         <div className="border-2 border-on-panel p-3">
           <dt className="text-sm">{t("wizard.rating.stronghold")}</dt>
-          <dd className="font-gothic text-2xl">
+          <dd className="font-hand text-2xl">
             {(() => {
               const s = index.faction.strongholds.find((x) => x.id === warband.strongholdId);
               return s === undefined ? "-" : f.text(s.name);

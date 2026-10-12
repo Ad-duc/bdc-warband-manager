@@ -44,6 +44,10 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
   et une page qui tient dans la fenêtre ne défile plus.
 - Boutons radio et cases à cocher en noir sur les panneaux parchemin (en clair
   sur le fond sombre) au lieu du bleu du navigateur.
+- Titres, noms et bandeaux du générateur, de la campagne, de l'accueil et de
+  l'écran d'impression en Trattatello, plus lisible que Old Celtiberian. Old
+  Celtiberian reste pour le titre de l'en-tête, le lecteur des règles et les
+  feuilles imprimées.
 
 ## [1.0.0] - 2026-10-12
 

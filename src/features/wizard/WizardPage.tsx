@@ -124,7 +124,7 @@ export function WizardPage({ id }: { id: string }) {
             id="step-heading"
             ref={headingRef}
             tabIndex={-1}
-            className="mb-4 scroll-mt-24 font-gothic text-3xl sm:text-4xl"
+            className="mb-4 scroll-mt-24 font-hand text-3xl sm:text-4xl"
           >
             {t(`wizard.steps.${current}`)}
           </h1>

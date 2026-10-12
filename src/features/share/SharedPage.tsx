@@ -45,7 +45,7 @@ export function SharedPage({ payload }: { payload: string }) {
         aria-labelledby="shared-heading"
       >
         <div className="min-w-0 flex-1">
-          <h1 id="shared-heading" className="font-gothic text-3xl">
+          <h1 id="shared-heading" className="font-hand text-3xl">
             {t("share.title", { name: warband.name.trim() === "" ? t("home.unnamed") : warband.name })}
           </h1>
           <p>{t("share.readOnly")}</p>

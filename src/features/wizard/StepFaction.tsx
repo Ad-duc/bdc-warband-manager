@@ -76,7 +76,7 @@ export function StepFaction({ warband, update }: StepProps) {
                   <img src={`${BASE}images/${faction.assets.shield}`} alt="" className="h-20 w-auto" />
                 </label>
                 <div className="min-w-0 flex-1">
-                  <label htmlFor={inputId} className="block cursor-pointer font-gothic text-2xl">
+                  <label htmlFor={inputId} className="block cursor-pointer font-hand text-2xl">
                     {f.text(faction.name)}
                   </label>
                   <ClampedText id={descId} text={f.text(faction.description)} className="text-sm" />

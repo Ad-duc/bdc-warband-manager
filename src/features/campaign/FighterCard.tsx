@@ -53,7 +53,7 @@ export function FighterCard({
       data-testid="campaign-fighter"
     >
       <header className="flex flex-wrap items-baseline justify-between gap-2">
-        <h3 id={`${xpId}-title`} className="font-gothic text-2xl">
+        <h3 id={`${xpId}-title`} className="font-hand text-2xl">
           {name}
         </h3>
         <p className="text-sm">

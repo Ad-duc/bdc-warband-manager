@@ -40,6 +40,9 @@ version is given separately (playtest v1.03).
   no longer scrolls.
 - Radio buttons and checkboxes in black on the parchment panels (light on the
   dark page) instead of the browser blue.
+- Headings, names and bands of the builder, campaign, home and print screens
+  use Trattatello, easier to read than Old Celtiberian. Old Celtiberian is
+  kept for the header title, the rules reader and the printed sheets.
 
 ## [1.0.0] - 2026-10-12
 

@@ -47,7 +47,7 @@ export function StepOrigin({ warband, index, update }: StepProps) {
                   }}
                   className="size-5 shrink-0"
                 />
-                <span id={`${inputId}-name`} className="font-gothic text-2xl">
+                <span id={`${inputId}-name`} className="font-hand text-2xl">
                   {f.text(origin.name)}
                 </span>
               </label>

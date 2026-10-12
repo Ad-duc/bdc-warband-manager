@@ -91,7 +91,7 @@ export function StepFighters({ warband, index, update }: StepProps) {
 
       <div className="grid gap-6 xl:grid-cols-2 xl:items-start">
         <section aria-labelledby="catalogue-heading">
-          <h2 id="catalogue-heading" className="font-gothic text-2xl">
+          <h2 id="catalogue-heading" className="font-hand text-2xl">
             {t("wizard.fighters.catalogue")}
           </h2>
           <div role="group" aria-label={t("wizard.fighters.filter")} className="my-2 flex flex-wrap gap-1">
@@ -125,7 +125,7 @@ export function StepFighters({ warband, index, update }: StepProps) {
         </section>
 
         <section aria-labelledby="roster-heading">
-          <h2 id="roster-heading" className="font-gothic text-2xl">
+          <h2 id="roster-heading" className="font-hand text-2xl">
             {t("wizard.fighters.roster", { count: active.length })}
           </h2>
           {active.length === 0 ? (
@@ -202,7 +202,7 @@ function ProfileEntry({
       <div className="flex flex-wrap items-center gap-2 p-2">
         <details className="min-w-0 flex-1">
           <summary className="cursor-pointer">
-            <span className="font-gothic text-xl">
+            <span className="font-hand text-xl">
               {limit !== null && `0-${limit} `}
               {f.text(profile.name)}
             </span>{" "}
@@ -215,7 +215,7 @@ function ProfileEntry({
             <ScrollBody profile={profile} />
             {forms.map((form) => (
               <section key={form.id} className="border-t-2 border-on-panel pt-2" data-testid="profile-form">
-                <h3 className="font-gothic text-lg">{t("scroll.form", { name: f.text(form.name) })}</h3>
+                <h3 className="font-hand text-lg">{t("scroll.form", { name: f.text(form.name) })}</h3>
                 <ScrollBody profile={form} />
               </section>
             ))}
@@ -272,7 +272,7 @@ function ScrollBody({ profile }: { profile: FighterProfile }) {
         </p>
       ))}
       {profile.quote !== null && (
-        <blockquote className="text-center font-gothic text-lg">"{f.text(profile.quote)}"</blockquote>
+        <blockquote className="text-center font-hand text-lg">"{f.text(profile.quote)}"</blockquote>
       )}
       <p className="text-xs">{t("scroll.source", { page: profile.sourceRef.page })}</p>
     </>
@@ -333,7 +333,7 @@ function RecruitedFighter({
     <li className="border-2 border-on-panel p-3" data-testid="recruited-fighter">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <p>
-          <span className="font-gothic text-xl">{label}</span>{" "}
+          <span className="font-hand text-xl">{label}</span>{" "}
           <span className="text-sm">
             {t(`categories.${profile.category}_one`)} - {costLabel}
           </span>
