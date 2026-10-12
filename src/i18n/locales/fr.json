@@ -11,6 +11,9 @@
     "tagline": "Création de bandes et suivi de campagne",
     "skipToContent": "Aller au contenu"
   },
+  "header": {
+    "rules": "Règles en français"
+  },
   "language": {
     "label": "Langue",
     "en": "English",
@@ -522,5 +525,18 @@
       "options": "Options :",
       "formOf": "Forme de {{name}}"
     }
+  },
+  "reader": {
+    "title": "Règles en français",
+    "notice": "Traduction française non officielle des règles de la version de test 1.03.",
+    "chapter": "Chapitre",
+    "chapters": "Chapitres",
+    "contents": "Sommaire",
+    "pager": "Navigation entre les chapitres",
+    "previous": "(chapitre précédent)",
+    "next": "(chapitre suivant)",
+    "loading": "Chargement du chapitre...",
+    "error": "Ce chapitre n'a pas pu être chargé. Rechargez la page avec une connexion.",
+    "notFound": "Chapitre inconnu. Choisissez-en un dans la liste."
   }
 }

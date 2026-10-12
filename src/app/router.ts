@@ -3,7 +3,8 @@
  * Role:        Minimal hash router (works on GitHub Pages without server rules).
  *              Routes: "#/" home, "#/warband/<id>" creation wizard,
  *              "#/warband/<id>/campaign" campaign dashboard,
- *              "#/warband/<id>/print" print view, "#w=<data>" shared warband.
+ *              "#/warband/<id>/print" print view, "#w=<data>" shared warband,
+ *              "#/rules" and "#/rules/<chapter>" French rules reader.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -16,10 +17,13 @@ export type Route =
   | { name: "wizard"; id: string }
   | { name: "campaign"; id: string }
   | { name: "print"; id: string }
-  | { name: "shared"; payload: string };
+  | { name: "shared"; payload: string }
+  | { name: "rules"; chapter: string | null };
 
 export function parseHash(hash: string): Route {
   if (hash.startsWith("#w=")) return { name: "shared", payload: hash.slice(3) };
+  const rules = /^#\/rules(?:\/([a-z0-9-]+))?$/.exec(hash);
+  if (rules !== null) return { name: "rules", chapter: rules[1] ?? null };
   const match = /^#\/warband\/([A-Za-z0-9-]+)(?:\/(campaign|print))?$/.exec(hash);
   if (match?.[1] !== undefined) {
     const id = match[1];
@@ -40,6 +44,8 @@ export function hrefFor(route: Route): string {
       return `#/warband/${route.id}/print`;
     case "shared":
       return `#w=${route.payload}`;
+    case "rules":
+      return route.chapter === null ? "#/rules" : `#/rules/${route.chapter}`;
     case "home":
       return "#/";
   }

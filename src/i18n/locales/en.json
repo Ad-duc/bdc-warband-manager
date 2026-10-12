@@ -11,6 +11,9 @@
     "tagline": "Warband builder and campaign tracker",
     "skipToContent": "Skip to content"
   },
+  "header": {
+    "rules": "French rules"
+  },
   "language": {
     "label": "Language",
     "en": "English",
@@ -522,5 +525,18 @@
       "options": "Options:",
       "formOf": "Form of {{name}}"
     }
+  },
+  "reader": {
+    "title": "French rules",
+    "notice": "Unofficial French translation of the playtest v1.03 rules. The text below is in French.",
+    "chapter": "Chapter",
+    "chapters": "Chapters",
+    "contents": "Contents",
+    "pager": "Chapter navigation",
+    "previous": "(previous chapter)",
+    "next": "(next chapter)",
+    "loading": "Loading the chapter...",
+    "error": "This chapter could not be loaded. Reload the page while online.",
+    "notFound": "Unknown chapter. Pick one from the list."
   }
 }

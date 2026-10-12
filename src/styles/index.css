@@ -186,6 +186,97 @@
     padding: 0.25rem 0.75rem;
   }
 
+  /* French rules reader: Markdown chapters rendered on a parchment panel */
+  .reader-content {
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+  .reader-content :where(h1, h2, h3, h4) {
+    font-family: var(--font-gothic);
+    line-height: 1.15;
+    scroll-margin-top: 1rem;
+  }
+  /* Original terms in headings: body font, smaller, easier to read than gothic */
+  .reader-content :where(h1, h2, h3, h4) em {
+    font-family: var(--font-body);
+    font-size: 0.65em;
+    font-weight: 400;
+  }
+  .reader-content h1 {
+    margin: 0 0 1rem;
+    font-size: 2.25rem;
+  }
+  .reader-content h2 {
+    margin: 2.5rem 0 0.75rem;
+    border-bottom: 2px solid var(--color-on-panel);
+    padding-bottom: 0.25rem;
+    font-size: 1.75rem;
+  }
+  .reader-content h3 {
+    margin: 1.75rem 0 0.5rem;
+    font-size: 1.375rem;
+  }
+  .reader-content h4 {
+    margin: 1.25rem 0 0.5rem;
+    font-size: 1.125rem;
+  }
+  .reader-content :where(p, ul, ol, blockquote, .reader-table) {
+    margin: 0 0 0.875rem;
+  }
+  .reader-content :where(ul, ol) {
+    padding-left: 1.5rem;
+  }
+  .reader-content ul {
+    list-style: disc;
+  }
+  .reader-content ol {
+    list-style: decimal;
+  }
+  .reader-content li + li {
+    margin-top: 0.25rem;
+  }
+  .reader-content blockquote {
+    border-left: 4px solid var(--color-on-panel);
+    padding-left: 1rem;
+    font-style: italic;
+  }
+  .reader-content hr {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 2px solid var(--color-on-panel);
+  }
+  .reader-content code {
+    font-family: ui-monospace, monospace;
+    font-size: 0.9em;
+  }
+  .reader-content a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .reader-table {
+    overflow-x: auto;
+  }
+  .reader-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--color-ink);
+    font-size: 0.9rem;
+  }
+  .reader-table th {
+    background-color: var(--color-ink);
+    color: var(--color-white);
+    padding: 0.375rem 0.5rem;
+    text-align: left;
+    vertical-align: bottom;
+  }
+  .reader-table td {
+    padding: 0.375rem 0.5rem;
+    vertical-align: top;
+  }
+  .reader-table tbody tr:nth-child(even) {
+    background-color: var(--color-bone);
+  }
+
   /* Ornamental separator from the style guide assets */
   .ornament {
     height: 25px;
