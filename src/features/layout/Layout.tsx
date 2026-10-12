@@ -27,7 +27,7 @@ export function Layout({ children }: { children: ReactNode }) {
       </a>
 
       <header className="no-print border-b-2 border-rule">
-        <div className="mx-auto flex max-w-5xl items-center gap-4 px-4 py-3">
+        <div className="mx-auto flex max-w-[120rem] items-center gap-4 px-4 py-3 sm:px-6 xl:px-10">
           <img src={`${BASE}images/logo.png`} alt="" width={56} height={63} className="h-14 w-auto" />
           <div className="flex-1">
             <a href="#/" className="block font-gothic text-3xl leading-none">
@@ -39,12 +39,12 @@ export function Layout({ children }: { children: ReactNode }) {
         </div>
       </header>
 
-      <main id="main" className="mx-auto w-full max-w-5xl flex-1 px-4 py-8">
+      <main id="main" className="mx-auto w-full max-w-[120rem] flex-1 px-4 py-8 sm:px-6 xl:px-10">
         {children}
       </main>
 
       <footer className="no-print border-t-2 border-rule">
-        <div className="mx-auto max-w-5xl space-y-1 px-4 py-4 text-sm text-on-page-muted">
+        <div className="mx-auto max-w-[120rem] space-y-1 px-4 py-4 sm:px-6 xl:px-10 text-sm text-on-page-muted">
           <p>{t("footer.disclaimer")}</p>
           <p>
             {t("footer.version", {

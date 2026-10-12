@@ -15,6 +15,7 @@ import type { Category, FighterProfile, WarbandFighter } from "../../data/schema
 import {
   effectiveCategory,
   manualStartingExperience,
+  profileLimit,
   randomName,
   rollStartingExperience,
 } from "../../rules/index.ts";
@@ -75,78 +76,94 @@ export function StepFighters({ warband, index, update }: StepProps) {
         </li>
       </ul>
 
-      <section aria-labelledby="catalogue-heading">
-        <h2 id="catalogue-heading" className="font-gothic text-2xl">
-          {t("wizard.fighters.catalogue")}
-        </h2>
-        <div role="group" aria-label={t("wizard.fighters.filter")} className="my-2 flex flex-wrap gap-1">
-          {(["all", ...CATEGORIES] as const).map((c) => (
-            <button
-              key={c}
-              type="button"
-              aria-pressed={filter === c}
-              className="btn btn-sm aria-pressed:bg-on-panel aria-pressed:text-panel"
-              onClick={() => {
-                setFilter(c);
-              }}
-            >
-              {c === "all" ? t("wizard.fighters.all") : t(`categories.${c}_other`)}
-            </button>
-          ))}
-        </div>
-        <ul className="space-y-2">
-          {profiles.map((p) => (
-            <ProfileEntry
-              key={p.id}
-              profile={p}
-              onAdd={() => {
-                update((w) => ({ ...w, fighters: [...w.fighters, createFighter(p)] }));
-              }}
-            />
-          ))}
-        </ul>
-      </section>
-
-      <section aria-labelledby="roster-heading">
-        <h2 id="roster-heading" className="font-gothic text-2xl">
-          {t("wizard.fighters.roster", { count: active.length })}
-        </h2>
-        {active.length === 0 ? (
-          <p>{t("wizard.fighters.none")}</p>
-        ) : (
-          <ul className="space-y-3">
-            {active.map((fighter) => {
-              const profile = index.fighters.get(fighter.profileId);
-              if (profile === undefined) return null;
-              return (
-                <RecruitedFighter
-                  key={fighter.instanceId}
-                  fighter={fighter}
-                  profile={profile}
-                  onChange={(patch) => {
-                    replace(fighter.instanceId, patch);
-                  }}
-                  onRandomName={() => {
-                    replace(fighter.instanceId, { customName: randomName(index.faction.nameTable.entries) });
-                  }}
-                  onRemove={() => {
-                    update((w) => ({
-                      ...w,
-                      fighters: w.fighters.filter((x) => x.instanceId !== fighter.instanceId),
-                    }));
-                  }}
-                  costLabel={t("units.silver", { value: f.number(profile.cost) })}
-                />
-              );
-            })}
+      <div className="grid gap-6 xl:grid-cols-2 xl:items-start">
+        <section aria-labelledby="catalogue-heading">
+          <h2 id="catalogue-heading" className="font-gothic text-2xl">
+            {t("wizard.fighters.catalogue")}
+          </h2>
+          <div role="group" aria-label={t("wizard.fighters.filter")} className="my-2 flex flex-wrap gap-1">
+            {(["all", ...CATEGORIES] as const).map((c) => (
+              <button
+                key={c}
+                type="button"
+                aria-pressed={filter === c}
+                className="btn btn-sm aria-pressed:bg-on-panel aria-pressed:text-panel"
+                onClick={() => {
+                  setFilter(c);
+                }}
+              >
+                {c === "all" ? t("wizard.fighters.all") : t(`categories.${c}_other`)}
+              </button>
+            ))}
+          </div>
+          <ul className="space-y-2">
+            {profiles.map((p) => (
+              <ProfileEntry
+                key={p.id}
+                profile={p}
+                limit={profileLimit(
+                  p,
+                  index.faction.origins.find((o) => o.id === warband.originId),
+                )}
+                onAdd={() => {
+                  update((w) => ({ ...w, fighters: [...w.fighters, createFighter(p)] }));
+                }}
+              />
+            ))}
           </ul>
-        )}
-      </section>
+        </section>
+
+        <section aria-labelledby="roster-heading">
+          <h2 id="roster-heading" className="font-gothic text-2xl">
+            {t("wizard.fighters.roster", { count: active.length })}
+          </h2>
+          {active.length === 0 ? (
+            <p>{t("wizard.fighters.none")}</p>
+          ) : (
+            <ul className="space-y-3">
+              {active.map((fighter) => {
+                const profile = index.fighters.get(fighter.profileId);
+                if (profile === undefined) return null;
+                return (
+                  <RecruitedFighter
+                    key={fighter.instanceId}
+                    fighter={fighter}
+                    profile={profile}
+                    onChange={(patch) => {
+                      replace(fighter.instanceId, patch);
+                    }}
+                    onRandomName={() => {
+                      replace(fighter.instanceId, {
+                        customName: randomName(index.faction.nameTable.entries),
+                      });
+                    }}
+                    onRemove={() => {
+                      update((w) => ({
+                        ...w,
+                        fighters: w.fighters.filter((x) => x.instanceId !== fighter.instanceId),
+                      }));
+                    }}
+                    costLabel={t("units.silver", { value: f.number(profile.cost) })}
+                  />
+                );
+              })}
+            </ul>
+          )}
+        </section>
+      </div>
     </div>
   );
 }
 
-function ProfileEntry({ profile, onAdd }: { profile: FighterProfile; onAdd: () => void }) {
+function ProfileEntry({
+  profile,
+  limit,
+  onAdd,
+}: {
+  profile: FighterProfile;
+  limit: number | null;
+  onAdd: () => void;
+}) {
   const { t } = useTranslation();
   const f = useFormatter();
   const xp = profile.startingExperience;
@@ -157,7 +174,7 @@ function ProfileEntry({ profile, onAdd }: { profile: FighterProfile; onAdd: () =
         <details className="min-w-0 flex-1">
           <summary className="cursor-pointer">
             <span className="font-gothic text-xl">
-              {profile.limit !== null && `0-${profile.limit} `}
+              {limit !== null && `0-${limit} `}
               {f.text(profile.name)}
             </span>{" "}
             <span className="text-sm">

@@ -80,23 +80,25 @@ export function CampaignPage({ id }: { id: string }) {
   return (
     <div className="space-y-4">
       <Overview warband={warband} index={index} update={update} />
-      <div className="grid gap-4 lg:grid-cols-[1fr_20rem]">
+      <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_20rem] 2xl:grid-cols-[minmax(0,1fr)_24rem]">
         <div className="min-w-0 space-y-4">
           <section aria-labelledby="fighters-heading" className="panel-parchment space-y-3 p-4">
             <h2 id="fighters-heading" className="band text-2xl">
               {t("campaign.fighters", { count: active.length })}
             </h2>
-            {active.map((x) => (
-              <FighterCard
-                key={x.instanceId}
-                fighter={x}
-                warband={warband}
-                index={index}
-                onChange={(next) => {
-                  update((w) => patchFighter(w, x.instanceId, next));
-                }}
-              />
-            ))}
+            <div className="grid gap-3 2xl:grid-cols-2 2xl:items-start">
+              {active.map((x) => (
+                <FighterCard
+                  key={x.instanceId}
+                  fighter={x}
+                  warband={warband}
+                  index={index}
+                  onChange={(next) => {
+                    update((w) => patchFighter(w, x.instanceId, next));
+                  }}
+                />
+              ))}
+            </div>
             <a className="btn" href={hrefFor({ name: "wizard", id: warband.id })}>
               {t("campaign.editRoster")}
             </a>
@@ -105,7 +107,7 @@ export function CampaignPage({ id }: { id: string }) {
                 <summary className="cursor-pointer font-bold">
                   {t("campaign.gone", { count: gone.length })}
                 </summary>
-                <div className="mt-2 space-y-3">
+                <div className="mt-2 grid gap-3 2xl:grid-cols-2 2xl:items-start">
                   {gone.map((x) => (
                     <FighterCard
                       key={x.instanceId}

@@ -106,24 +106,26 @@ export function StepWargear({ warband, index, update }: StepProps) {
               <h2 id={`list-${list.id}`} className="band text-xl">
                 {f.text(list.name)}
               </h2>
-              {KINDS.map((kind) => {
-                const items = list.entries
-                  .map((e) => index.wargear.get(e.wargearId))
-                  .filter((w): w is Wargear => w !== undefined && w.kind === kind);
-                if (items.length === 0) return null;
-                return (
-                  <WargearTable
-                    key={kind}
-                    kind={kind}
-                    items={items}
-                    index={index}
-                    profile={profile}
-                    onAdd={(id) => {
-                      setGear([...selected.wargearIds, id]);
-                    }}
-                  />
-                );
-              })}
+              <div className="grid gap-x-6 min-[100rem]:grid-cols-2 min-[100rem]:items-start">
+                {KINDS.map((kind) => {
+                  const items = list.entries
+                    .map((e) => index.wargear.get(e.wargearId))
+                    .filter((w): w is Wargear => w !== undefined && w.kind === kind);
+                  if (items.length === 0) return null;
+                  return (
+                    <WargearTable
+                      key={kind}
+                      kind={kind}
+                      items={items}
+                      index={index}
+                      profile={profile}
+                      onAdd={(id) => {
+                        setGear([...selected.wargearIds, id]);
+                      }}
+                    />
+                  );
+                })}
+              </div>
             </section>
           );
         })

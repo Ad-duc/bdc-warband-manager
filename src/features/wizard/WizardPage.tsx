@@ -118,7 +118,7 @@ export function WizardPage({ id }: { id: string }) {
         </p>
       )}
 
-      <div className="grid gap-4 lg:grid-cols-[1fr_20rem]">
+      <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_20rem] 2xl:grid-cols-[minmax(0,1fr)_24rem]">
         <section aria-labelledby="step-heading" className="panel-parchment min-w-0 p-4 sm:p-6">
           <h1
             id="step-heading"

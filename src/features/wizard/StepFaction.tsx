@@ -41,7 +41,7 @@ export function StepFaction({ warband, update }: StepProps) {
       <fieldset>
         <legend className="mb-2 font-bold">{t("wizard.faction.legend")}</legend>
         {locked && <p className="mb-2 text-sm">{t("wizard.faction.locked")}</p>}
-        <div className="grid gap-3 sm:grid-cols-2">
+        <div className="grid gap-3 sm:grid-cols-2 2xl:grid-cols-4">
           {gameData.factions.map((faction) => (
             <label
               key={faction.id}

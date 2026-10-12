@@ -10,10 +10,11 @@
 
 import { useTranslation } from "react-i18next";
 import { STAT_KEYS, type Stats } from "../../data/schema.ts";
-import { formatStat } from "../../i18n/text.ts";
+import { formatStat, useFormatter } from "../../i18n/text.ts";
 
 export function StatsTable({ stats, caption }: { stats: Stats; caption?: string }) {
   const { t } = useTranslation();
+  const f = useFormatter();
   return (
     <table className="table-bdc text-center">
       {caption !== undefined && <caption className="sr-only">{caption}</caption>}
@@ -31,7 +32,7 @@ export function StatsTable({ stats, caption }: { stats: Stats; caption?: string 
       <tbody>
         <tr>
           {STAT_KEYS.map((k) => (
-            <td key={k}>{formatStat(k, stats[k])}</td>
+            <td key={k}>{formatStat(k, stats[k], f.lang)}</td>
           ))}
         </tr>
       </tbody>

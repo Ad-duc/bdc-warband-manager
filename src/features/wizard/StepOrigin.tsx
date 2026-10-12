@@ -20,7 +20,7 @@ export function StepOrigin({ warband, index, update }: StepProps) {
   return (
     <fieldset>
       <legend className="mb-3">{t("wizard.origin.legend")}</legend>
-      <div className="grid gap-3 md:grid-cols-2">
+      <div className="grid gap-3 md:grid-cols-2 2xl:grid-cols-4">
         {faction.origins.map((origin) => {
           const leader = faction.fighters.find((x) => x.id === origin.requiredLeaderId);
           const stronghold = faction.strongholds.find((s) => s.id === origin.strongholdId);

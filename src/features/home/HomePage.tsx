@@ -62,7 +62,7 @@ export function HomePage() {
   };
 
   return (
-    <section aria-labelledby="home-heading" className="panel-parchment mx-auto max-w-4xl p-6 sm:p-10">
+    <section aria-labelledby="home-heading" className="panel-parchment mx-auto max-w-7xl p-6 sm:p-10">
       <h1 id="home-heading" className="text-center font-gothic text-4xl sm:text-5xl">
         {t("home.heading")}
       </h1>
