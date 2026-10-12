@@ -244,11 +244,15 @@ function frTraits(w: Wargear, c: CommonData): string {
 function frRange(p: AttackProfile): string {
   return p.range === "flame" ? "Flamme" : `${p.range ?? ""}"`;
 }
-/** Fighter names are compared without the "0-x" prefix, hyphens and case. */
+/**
+ * Fighter names are compared without the "0-x" prefix, hyphens, case and the
+ * plural of the lists ("Rat Mutant", "Darkcloven Beastmen").
+ */
 const fighterKey = (s: string): string =>
   s
     .replace(/^0-\d+ /, "")
     .replace(/-/g, " ")
+    .replace(/men$/, "man")
     .toLowerCase();
 
 /** Where each part of a faction chapter lives in its translation file. */
@@ -299,6 +303,17 @@ const LAYOUTS: Record<string, FactionLayout> = {
     skillSections: ["Sombre aristocratie", "Seigneurs immortels"],
     loreSections: ["Domaine de la Nécromancie", "Domaine du Sang"],
     naturalWeaponsInMeleeTable: false,
+  },
+  "the-blighted-cloister": {
+    file: "09_the-blighted-cloister.md",
+    names: "Noms du Blighted Cloister",
+    armouryStart: "## Armurerie du Cloître (*Cloister Armoury*)",
+    melee: "Armurerie du Cloître - Armes de corps à corps",
+    ranged: "Armurerie du Cloître - Armes à distance",
+    armourItems: "Armurerie du Cloître - Armures et objets",
+    skillSections: ["Ordonnés du Cloître", "Bénédictions de Sainte Pourriture"],
+    loreSections: ["Domaine des Asticots bénis", "Domaine démoniaque de la Pourriture"],
+    naturalWeaponsInMeleeTable: true,
   },
 };
 

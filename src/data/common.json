@@ -66,6 +66,9 @@
     { "key": "gargoyle", "kind": "fighter", "name": { "en": "Gargoyle", "fr": "Gargoyle" } },
     { "key": "bat", "kind": "fighter", "name": { "en": "Bat", "fr": "Chauve-souris" } },
     { "key": "fly", "kind": "fighter", "name": { "en": "Fly", "fr": "Vol" } },
+    { "key": "cloister", "kind": "fighter", "name": { "en": "Cloister", "fr": "Cloister" } },
+    { "key": "knight", "kind": "fighter", "name": { "en": "Knight", "fr": "Chevalier" } },
+    { "key": "beastman", "kind": "fighter", "name": { "en": "Beastman", "fr": "Homme-bête" } },
     { "key": "held-item", "kind": "item", "name": { "en": "Held Item", "fr": "Objet tenu" } }
   ],
 

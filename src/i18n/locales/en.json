@@ -279,7 +279,8 @@
       "stronghold": "Stronghold:",
       "income": "income {{income}} silver",
       "profileLimit": "Your warband can include 0-{{limit}} {{name}}.",
-      "uncapped": "{{name}} does not count towards the {{category}} limit."
+      "uncapped": "{{name}} does not count towards the {{category}} limit.",
+      "profileLimitAny": "Your warband can recruit any number of {{name}}."
     },
     "fighters": {
       "counters": "Warband composition",
@@ -306,7 +307,9 @@
       },
       "reroll": "Roll again",
       "manualDie": "Die result",
-      "options": "Options ({{picked}}/{{max}})"
+      "options": "Options ({{picked}}/{{max}})",
+      "randomEpithet": "Epithet",
+      "randomEpithetFor": "Random epithet for {{name}}"
     },
     "wargear": {
       "pickFighter": "Fighter to equip",

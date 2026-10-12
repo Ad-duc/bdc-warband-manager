@@ -1,0 +1,1791 @@
+{
+  "_header": {
+    "file": "src/data/the-blighted-cloister.json",
+    "role": "The Blighted Cloister faction data: origins, strongholds, campaign rules, names, epithets, fighters, Cloister Armoury, skills, spell lores",
+    "author": "Adrien Duclaud",
+    "created": "2026-10-12",
+    "license": "MIT for the file structure. Game content belongs to Sam Pearson (Black Death City)."
+  },
+  "schemaVersion": 1,
+  "id": "the-blighted-cloister",
+  "name": { "en": "The Blighted Cloister", "fr": "The Blighted Cloister" },
+  "description": {
+    "en": "The Blighted Cloister are a secretive monastic order of knights and sorcerer-priests who believe the Black Rot to be not a curse but a blessing bestowed upon the City. Behind the high stone-walls of their abbeys they nurse the sick and disease-ridden with no intention to cure them. Instead, they are nurtured into swollen vessels of pestilence and venerated as living saints.\nWithin the Cloister's innermost circles, their creed has descended further into blasphemy. Prayers have given way to dark pacts, and hymns to whispered invocations. The Black Rot has drawn the eyes of demonic entities who seek to walk the mortal world to sow plague and disease. These demons grant strength to the knights of the Cloister, transforming them into bloated and rotten creatures that tower over lesser men. The price is their soul, and as the demonic corruption twists their insides there are few who retain their sanity for long.",
+    "fr": "The Blighted Cloister est un ordre monastique secret de chevaliers et de prêtres-sorciers, qui voient dans la Pourriture noire non pas une malédiction, mais une bénédiction accordée à la Cité. Derrière les hautes enceintes de pierre de leurs abbayes, ils prennent soin des malades et des pestiférés sans aucune intention de les guérir. Ils les entretiennent au contraire jusqu'à en faire des réceptacles boursouflés de pestilence, vénérés comme des saints vivants.\nDans les cercles les plus fermés du Cloître, leur credo a sombré plus loin encore dans le blasphème. Les prières ont cédé la place aux sombres pactes, et les hymnes aux invocations murmurées. La Pourriture noire a attiré le regard d'entités démoniaques qui cherchent à fouler le monde des mortels pour y semer la peste et la maladie. Ces démons donnent de la force aux chevaliers du Cloître et font d'eux des créatures bouffies et pourries, qui dominent de toute leur taille les hommes ordinaires. Le prix en est leur âme, et tandis que la corruption démoniaque leur tord les entrailles, rares sont ceux qui gardent longtemps la raison."
+  },
+  "armouryName": { "en": "Cloister Armoury", "fr": "Armurerie du Cloître" },
+  "sourceRef": { "page": 113, "md": "09_the-blighted-cloister.md > The Blighted Cloister" },
+  "assets": { "shield": "bouclier_cloister.png", "accentColor": null },
+
+  "origins": [
+    {
+      "id": "knights-militant",
+      "name": { "en": "Knights-Militant", "fr": "Chevaliers militants" },
+      "flavour": {
+        "en": "This band of knights have claimed an old keep deep within the City for the Cloister. From here they launch crusades into the ruins, bringing a swift death to any who do not venerate the Living Saints.",
+        "fr": "Cette troupe de chevaliers s'est emparée, au nom du Cloître, d'un vieux donjon au cœur de la Cité. De là, ils lancent des croisades dans les ruines et apportent une mort rapide à quiconque ne vénère pas les Saints vivants."
+      },
+      "requiredLeaderId": "knight-abbot",
+      "strongholdId": "fortified-keep",
+      "specialRules": [],
+      "profileLimits": [{ "fighterId": "cloister-knight", "limit": null }],
+      "uncappedFighterIds": [],
+      "sourceRef": { "page": 114, "md": "09_the-blighted-cloister.md > Chevaliers militants" }
+    },
+    {
+      "id": "priesthood-of-sorcerers",
+      "name": { "en": "Priesthood of Sorcerers", "fr": "Clergé de sorciers" },
+      "flavour": {
+        "en": "Once renowned for illuminating manuscripts of great beauty, this corrupted priesthood now pores over the ancient scrolls preserved within their abbey, uncovering plagues and afflictions of yore so they may be unleashed upon the world anew.",
+        "fr": "Jadis renommé pour ses manuscrits enluminés d'une grande beauté, ce clergé corrompu se penche désormais sur les parchemins anciens conservés dans son abbaye, pour y exhumer les pestes et les afflictions d'autrefois et les déchaîner de nouveau sur le monde."
+      },
+      "requiredLeaderId": "high-sorcerer",
+      "strongholdId": "secluded-scriptorium",
+      "specialRules": [],
+      "profileLimits": [{ "fighterId": "cloister-sorcerer", "limit": 2 }],
+      "uncappedFighterIds": [],
+      "sourceRef": { "page": 114, "md": "09_the-blighted-cloister.md > Clergé de sorciers" }
+    },
+    {
+      "id": "the-anointed-one",
+      "name": { "en": "The Anointed One", "fr": "L'Oint" },
+      "flavour": {
+        "en": "From the Cloister's innermost circles comes forth a warrior bearing the mark of a demonic patron. In return for carrying out its dark designs within the City, he is bestowed with unholy gifts that warp both flesh and soul.",
+        "fr": "Des cercles les plus fermés du Cloître s'avance un guerrier qui arbore le sceau d'un maître démoniaque. En échange de l'accomplissement de ses sombres desseins dans la Cité, il reçoit des dons impies qui déforment la chair comme l'âme."
+      },
+      "requiredLeaderId": "knight-abbot",
+      "strongholdId": "unholy-altar",
+      "specialRules": [],
+      "profileLimits": [{ "fighterId": "rot-demon", "limit": null }],
+      "uncappedFighterIds": [],
+      "sourceRef": { "page": 114, "md": "09_the-blighted-cloister.md > L'Oint" }
+    },
+    {
+      "id": "blessed-rabble",
+      "name": { "en": "Blessed Rabble", "fr": "Populace bénie" },
+      "flavour": {
+        "en": "Led by one who speaks for the Living Saints, a swelling congregation gather on the streets of the City to hear his sermons. Ignited with fervour, they venture forth into the city believing themselves blessed with divine purpose.",
+        "fr": "Menée par celui qui parle au nom des Saints vivants, une congrégation toujours plus nombreuse se rassemble dans les rues de la Cité pour écouter ses sermons. Embrasés de ferveur, ses fidèles s'aventurent dans la cité, convaincus d'être investis d'une mission divine."
+      },
+      "requiredLeaderId": "high-sorcerer",
+      "strongholdId": "street-pulpit",
+      "specialRules": [],
+      "profileLimits": [],
+      "uncappedFighterIds": [],
+      "sourceRef": { "page": 114, "md": "09_the-blighted-cloister.md > Populace bénie" }
+    }
+  ],
+
+  "strongholds": [
+    {
+      "id": "fortified-keep",
+      "name": { "en": "Fortified Keep", "fr": "Donjon fortifié" },
+      "flavour": {
+        "en": "Once abandoned, this timeworn keep has been reclaimed by the Cloister and fortified against the dangers of the City. Here, its knights drill tirelessly in the arts of war, ever preparing for the next crusade into the ruins.",
+        "fr": "Autrefois abandonné, ce donjon usé par le temps a été repris par le Cloître et fortifié contre les dangers de la Cité. Ses chevaliers s'y exercent sans relâche aux arts de la guerre, se préparant sans cesse à la prochaine croisade dans les ruines."
+      },
+      "income": "3d6x5",
+      "rules": [
+        {
+          "id": "martial-training",
+          "name": { "en": "Martial Training", "fr": "Entraînement martial" },
+          "tag": null,
+          "text": {
+            "en": "In step 3 of the Aftermath sequence you can pick up to 3 friendly Knight fighters to take part in martial training. Each of those fighters earns d6 bonus experience.",
+            "fr": "À l'étape 3 de la séquence d'après-bataille, vous pouvez choisir jusqu'à 3 combattants alliés Chevaliers pour prendre part à l'entraînement martial. Chacun de ces combattants gagne D6 d'expérience bonus."
+          }
+        },
+        {
+          "id": "search-the-city",
+          "name": { "en": "Search the City", "fr": "Fouiller la Cité" },
+          "tag": null,
+          "text": {
+            "en": "In step 5 of the aftermath sequence, if you won the battle, you gain 1 additional re-roll when searching the City.",
+            "fr": "À l'étape 5 de la séquence d'après-bataille, si vous avez gagné la bataille, vous gagnez 1 relance supplémentaire quand vous fouillez la Cité."
+          }
+        }
+      ],
+      "trackers": [],
+      "sourceRef": { "page": 115, "md": "09_the-blighted-cloister.md > Donjon fortifié" }
+    },
+    {
+      "id": "secluded-scriptorium",
+      "name": { "en": "Secluded Scriptorium", "fr": "Scriptorium isolé" },
+      "flavour": {
+        "en": "By candlelight, the High Sorcerer oversees a host of hooded scribes as they translate forgotten manuscripts and corrupt works of medicine into foul treatises on plague and poison.",
+        "fr": "À la lueur des chandelles, le High Sorcerer surveille une armée de scribes encapuchonnés, qui traduisent des manuscrits oubliés et dévoient des ouvrages de médecine pour en faire d'immondes traités sur la peste et le poison."
+      },
+      "income": "3d6x5",
+      "rules": [
+        {
+          "id": "blasphemous-study",
+          "name": { "en": "Blasphemous Study", "fr": "Étude blasphématoire" },
+          "tag": null,
+          "text": {
+            "en": "In each Aftermath sequence, you can pick 1 of the following:\n- Scry Ancient Scrolls: Roll a dice for each Wizard in your warband. Record an ongoing tally on your Warband Roster. Each time the tally exceeds a multiple of 20, you can pick a Wizard in your warband to earn enough experience to receive their next advancement.\n- Brew Concoctions: Roll a dice for each Wizard in your warband. For each roll of 5+, you can add 1 Vial of Poison item (pg xx) to your stash.",
+            "fr": "À chaque séquence d'après-bataille, vous pouvez choisir 1 des options suivantes :\n- Scruter les parchemins anciens : lancez un dé pour chaque Sorcier de votre bande. Tenez un total cumulé sur votre feuille de bande. Chaque fois que le total dépasse un multiple de 20, vous pouvez choisir un Sorcier de votre bande : il gagne assez d'expérience pour obtenir sa prochaine progression.\n- Préparer des décoctions : lancez un dé pour chaque Sorcier de votre bande. Pour chaque résultat de 5+, vous pouvez ajouter 1 objet Fiole de poison (p. xx) à votre butin."
+          }
+        }
+      ],
+      "trackers": [
+        {
+          "id": "ancient-scrolls-tally",
+          "name": { "en": "Ancient scrolls tally", "fr": "Total des parchemins anciens" },
+          "initial": "0"
+        }
+      ],
+      "sourceRef": { "page": 115, "md": "09_the-blighted-cloister.md > Scriptorium isolé" }
+    },
+    {
+      "id": "unholy-altar",
+      "name": { "en": "Unholy Altar", "fr": "Autel impie" },
+      "flavour": {
+        "en": "The walls of this hidden sanctum are covered with profane sigils, each daubed in dried blood. The Anointed One enters alone and kneels before the altar in silent communion, awaiting the judgement of the demon that lays claim to his soul.",
+        "fr": "Les parois de ce sanctuaire dissimulé sont couvertes de sceaux profanes, chacun tracé au sang séché. L'Oint entre seul et s'agenouille devant l'autel, en communion silencieuse, dans l'attente du jugement du démon qui réclame son âme."
+      },
+      "income": "3d6x5",
+      "rules": [
+        {
+          "id": "demonic-communion",
+          "name": { "en": "Demonic Communion", "fr": "Communion démoniaque" },
+          "tag": null,
+          "text": {
+            "en": "Before the Aftermath sequence, roll on the table below. If you won the battle, roll 3d6. If you lost, roll 2d6:\n2 - Damnation: Your leader is killed. You can add a Demonic Rotspawn to your warband without paying any silver. It bears the name of your former leader.\n3-8 - Silence: No effect.\n9-12 - Minor Boon: Your leader earns 10 bonus experience.\n13-15 - Demonic Ally: You can add a Rot Demon or a Rotling to your warband without paying any silver.\n16+ - Major Boon: Your leader earns 30 bonus experience.",
+            "fr": "Avant la séquence d'après-bataille, faites un jet sur la table ci-dessous. Si vous avez gagné la bataille, lancez 3D6. Si vous avez perdu, lancez 2D6 :\n2 - Damnation : votre chef est tué. Vous pouvez ajouter un Demonic Rotspawn à votre bande sans dépenser de pièces d'argent. Il porte le nom de votre ancien chef.\n3-8 - Silence : aucun effet.\n9-12 - Faveur mineure : votre chef gagne 10 d'expérience bonus.\n13-15 - Allié démoniaque : vous pouvez ajouter un Rot Demon ou un Rotling à votre bande sans dépenser de pièces d'argent.\n16+ - Faveur majeure : votre chef gagne 30 d'expérience bonus."
+          }
+        }
+      ],
+      "trackers": [],
+      "sourceRef": { "page": 115, "md": "09_the-blighted-cloister.md > Autel impie" }
+    },
+    {
+      "id": "street-pulpit",
+      "name": { "en": "Street Pulpit", "fr": "Chaire de rue" },
+      "flavour": {
+        "en": "Each night, beneath this weathered pulpit, those afflicted with the Black Rot gather before the congregation to receive the Cloister's blessing. Those who have fallen in battle are brought forth and raised upon wooden crosses, where they are left to fester, their decaying bodies venerated as holy martyrs.",
+        "fr": "Chaque nuit, au pied de cette chaire usée par les intempéries, ceux que la Pourriture noire a frappés se rassemblent devant la congrégation pour recevoir la bénédiction du Cloître. Ceux qui sont tombés au combat sont amenés et dressés sur des croix de bois, où on les laisse suppurer, leurs corps en décomposition vénérés comme de saints martyrs."
+      },
+      "income": "3d6x5",
+      "rules": [
+        {
+          "id": "venerate-living-saints",
+          "name": { "en": "Venerate Living Saints", "fr": "Vénérer les Saints vivants" },
+          "tag": null,
+          "text": {
+            "en": "Each time a Dreg Cultist in this warband earns a level of Black Rot, they earn 5 additional experience.",
+            "fr": "Chaque fois qu'un Dreg Cultist de cette bande gagne un niveau de Pourriture noire, il gagne 5 d'expérience supplémentaire."
+          }
+        },
+        {
+          "id": "canonise-the-fallen",
+          "name": { "en": "Canonise the Fallen", "fr": "Canoniser les défunts" },
+          "tag": null,
+          "text": {
+            "en": "Each time a fighter in this warband is killed, every Dreg Cultist in this warband earns 10 additional bonus experience in step 3 of the aftermath sequence.",
+            "fr": "Chaque fois qu'un combattant de cette bande est tué, chaque Dreg Cultist de cette bande gagne 10 d'expérience bonus supplémentaire à l'étape 3 de la séquence d'après-bataille."
+          }
+        }
+      ],
+      "trackers": [],
+      "sourceRef": { "page": 115, "md": "09_the-blighted-cloister.md > Chaire de rue" }
+    }
+  ],
+
+  "campaignRules": [
+    {
+      "id": "death-of-a-leader",
+      "name": { "en": "Death of a Leader", "fr": "Mort d'un Chef" },
+      "tag": null,
+      "text": {
+        "en": "During the campaign, if your leader is killed, and you choose to promote a champion (pg xx), the following champions are eligible:",
+        "fr": "Pendant la campagne, si votre chef est tué et que vous choisissez de promouvoir un champion (p. xx), les champions suivants sont éligibles :"
+      }
+    },
+    {
+      "id": "rot-demons",
+      "name": { "en": "Rot Demons", "fr": "Rot Demons" },
+      "tag": null,
+      "text": {
+        "en": "Fighters with the Demon keyword do not use the standard injury table (pg xx). Instead they use the following Demon Injury Table (d66):\nThe exception to this are Rotlings which use the Beasts Injury Table (pg xx).\n11-16 - Banished: The demon is banished from the mortal world for 666 years. Remove it from your warband roster. All its wargear is lost.\n21-36 - Fractured Essence: The demon's grip on its corporeal form is momentarily unravelled. The demon misses the next battle.\n41-65 - Unharmed: Mortal weapons are not enough to deal lasting harm to a creature such as this. The demon suffers no lasting effects.\n66 - Enraged: The demon suffers no lasting effects. In addition, in step 3 of the Aftermath sequence, after earning experience, they earn bonus experience to reach the next level.",
+        "fr": "Les combattants qui ont le mot-clé Démon n'utilisent pas la table des blessures standard (p. xx). À la place, ils utilisent la Table des blessures des Démons suivante (D66) :\nFont exception les Rotlings, qui utilisent la Table des blessures des Bêtes (p. xx).\n11-16 - Banni : le démon est banni du monde des mortels pour 666 ans. Retirez-le de votre feuille de bande. Tout son équipement est perdu.\n21-36 - Essence fracturée : l'emprise du démon sur sa forme corporelle se défait un instant. Le démon manque la prochaine bataille.\n41-65 - Intact : les armes des mortels ne suffisent pas à infliger un mal durable à une telle créature. Le démon ne subit aucun effet durable.\n66 - Furieux : le démon ne subit aucun effet durable. De plus, à l'étape 3 de la séquence d'après-bataille, après avoir gagné de l'expérience, il gagne assez d'expérience bonus pour atteindre le niveau suivant."
+      }
+    }
+  ],
+
+  "leaderSuccession": [
+    { "formerLeaderId": "knight-abbot", "eligibleChampionIds": ["cloister-champion"] },
+    { "formerLeaderId": "high-sorcerer", "eligibleChampionIds": ["cloister-sorcerer"] }
+  ],
+  "nameTable": {
+    "die": "d66",
+    "sourceRef": { "page": 116, "md": "09_the-blighted-cloister.md > Noms du Blighted Cloister" },
+    "entries": {
+      "11": "Agabus",
+      "12": "Anselm",
+      "13": "Balthus",
+      "14": "Blasius",
+      "15": "Cadmus",
+      "16": "Cassian",
+      "21": "Corvinus",
+      "22": "Dismas",
+      "23": "Eleazar",
+      "24": "Erasmus",
+      "25": "Festian",
+      "26": "Gideon",
+      "31": "Ignatius",
+      "32": "Isidor",
+      "33": "Lazarus",
+      "34": "Lucien",
+      "35": "Malach",
+      "36": "Morthus",
+      "41": "Nicodem",
+      "42": "Othmar",
+      "43": "Paschal",
+      "44": "Pestian",
+      "45": "Pestor",
+      "46": "Phocas",
+      "51": "Pusian",
+      "52": "Putrian",
+      "53": "Raban",
+      "54": "Remigius",
+      "55": "Rotmar",
+      "56": "Septimus",
+      "61": "Severin",
+      "62": "Silvan",
+      "63": "Tertius",
+      "64": "Theophilus",
+      "65": "Vermian",
+      "66": "Zacharias"
+    }
+  },
+  "epithetTable": {
+    "die": "d66",
+    "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Épithètes du Blighted Cloister" },
+    "entries": {
+      "11": { "en": "Acolyte of the Black Breath", "fr": "Acolyte du Souffle noir" },
+      "12": { "en": "Anointed of Corruption", "fr": "Oint de la Corruption" },
+      "13": { "en": "Apostle of Miasma", "fr": "Apôtre du Miasme" },
+      "14": { "en": "Ashen One", "fr": "le Cendreux" },
+      "15": { "en": "Bearer of the Seventh Pox", "fr": "Porteur de la Septième Vérole" },
+      "16": { "en": "Father of Maggots", "fr": "Père des Asticots" },
+      "21": { "en": "Fly-Crowned", "fr": "le Couronné de mouches" },
+      "22": { "en": "Giver of Blessed Sores", "fr": "Dispensateur des Plaies bénies" },
+      "23": { "en": "He of the Festering Throne", "fr": "Celui du Trône purulent" },
+      "24": { "en": "He Who Withereth All", "fr": "Celui qui flétrit toute chose" },
+      "25": { "en": "He Whose Breath Befouleth", "fr": "Celui dont l'haleine empeste" },
+      "26": { "en": "Keeper of the Ninth Sore", "fr": "Gardien de la Neuvième Plaie" },
+      "31": { "en": "Mire-Born", "fr": "Né du bourbier" },
+      "32": { "en": "O' the Thousand-Flies", "fr": "aux Mille Mouches" },
+      "33": { "en": "O' the Unclean Miracle", "fr": "du Miracle impur" },
+      "34": { "en": "Prince of Worms", "fr": "Prince des Vers" },
+      "35": { "en": "Rot Incarnate", "fr": "la Pourriture incarnée" },
+      "36": { "en": "Scion of the Black Pox", "fr": "Rejeton de la Vérole noire" },
+      "41": { "en": "Shepherd of Carrion", "fr": "Berger de la Charogne" },
+      "42": { "en": "the Bloated Pastor", "fr": "le Pasteur bouffi" },
+      "43": { "en": "the Crawling Host", "fr": "la Légion rampante" },
+      "44": { "en": "the Defiler of Altars", "fr": "le Souilleur d'autels" },
+      "45": { "en": "the Devourer of Flesh", "fr": "le Dévoreur de chair" },
+      "46": { "en": "the Ever-Hungry", "fr": "l'Éternel Affamé" },
+      "51": { "en": "the Festering Apostle", "fr": "l'Apôtre purulent" },
+      "52": { "en": "the Herald of the Last Plague", "fr": "le Héraut de la Dernière Peste" },
+      "53": { "en": "the Hollow-Eyed", "fr": "l'Homme aux yeux caves" },
+      "54": { "en": "the Mock Redeemer", "fr": "le Faux Rédempteur" },
+      "55": { "en": "the Page of Poxes", "fr": "le Page des Véroles" },
+      "56": { "en": "the Pale Reckoning", "fr": "le Pâle Châtiment" },
+      "61": { "en": "the Saint Defiled", "fr": "le Saint souillé" },
+      "62": { "en": "the Unclean", "fr": "l'Impur" },
+      "63": { "en": "the Unhallowed One", "fr": "le Sacrilège" },
+      "64": { "en": "the Unshriven", "fr": "l'Impénitent" },
+      "65": { "en": "the Withered Posie", "fr": "le Bouquet flétri" },
+      "66": { "en": "Warden of the Festering Covenant", "fr": "Veilleur de l'Alliance purulente" }
+    }
+  },
+
+  "fighters": [
+    {
+      "id": "knight-abbot",
+      "name": { "en": "Knight-Abbot", "fr": "Knight-Abbot" },
+      "category": "leader",
+      "keywords": ["leader", "cloister", "human", "knight"],
+      "cost": 190,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 3, "bw": 4, "ar": 4, "in": 4, "wl": 4, "lf": 7 },
+      "allowedWargearLists": ["main", "champion"],
+      "fixedWargearIds": ["full-plate"],
+      "startingExperience": { "base": 60, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 2, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "lord-of-the-cloister",
+          "name": { "en": "Lord of the Cloister", "fr": "Seigneur du Cloître" },
+          "tag": null,
+          "text": {
+            "en": "When this fighter is recruited, pick 2 skills for them.",
+            "fr": "Quand ce combattant est recruté, choisissez 2 compétences pour lui."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter is equipped with Full-Plate armour (included in their recruit cost). They can be equipped with additional wargear from the Main List and Champion List from the Cloister Armoury.",
+        "fr": "Ce combattant est équipé d'une Armure de plates, comprise dans son coût de recrutement. Il peut être équipé d'équipement supplémentaire de la Liste principale et de la Liste des Champions de l'Armurerie du Cloître."
+      },
+      "quote": {
+        "en": "Blessed are they whom the Black Rot hath chosen.",
+        "fr": "Bénis soient ceux que la Pourriture noire a choisis."
+      },
+      "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > Knight-Abbot" }
+    },
+    {
+      "id": "high-sorcerer",
+      "name": { "en": "High Sorcerer", "fr": "High Sorcerer" },
+      "category": "leader",
+      "keywords": ["leader", "cloister", "human", "wizard"],
+      "cost": 175,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 4, "bw": 6, "ar": 6, "in": 3, "wl": 5, "lf": 6 },
+      "allowedWargearLists": ["practitioner", "practitioner-items"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 60, "dice": "d6" },
+      "knownSpellLoreIds": ["lore-of-blessed-maggots"],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 2, "spellLoreId": "lore-of-blessed-maggots" },
+      "specialRules": [
+        {
+          "id": "master-of-dark-spellcraft",
+          "name": { "en": "Master of Dark Spellcraft", "fr": "Maître du sombre art de la magie" },
+          "tag": null,
+          "text": {
+            "en": "This fighter knows the Lore of Blessed Maggots. When they are recruited, pick 2 spells from it to be their signature spells. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "fr": "Ce combattant connaît le Domaine des Asticots bénis. Quand il est recruté, choisissez 2 sorts de ce domaine : ils deviennent ses sorts fétiches. De plus, au début de chaque bataille, il prépare 1 sort aléatoire de ce domaine."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Practitioner List and Practitioner Item List from the Cloister Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens et de la Liste d'objets des Praticiens de l'Armurerie du Cloître."
+      },
+      "quote": { "en": "Count thy afflictions as blessings.", "fr": "Tiens tes afflictions pour des bénédictions." },
+      "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > High Sorcerer" }
+    },
+    {
+      "id": "cloister-sorcerer",
+      "name": { "en": "Cloister Sorcerer", "fr": "Cloister Sorcerer" },
+      "category": "champion",
+      "keywords": ["champion", "cloister", "human", "wizard"],
+      "cost": 140,
+      "limit": 1,
+      "stats": { "mv": 5, "bl": 4, "bw": 6, "ar": 6, "in": 3, "wl": 4, "lf": 5 },
+      "allowedWargearLists": ["practitioner", "practitioner-items"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 40, "dice": "d6" },
+      "knownSpellLoreIds": ["lore-of-blessed-maggots"],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 1, "spellLoreId": "lore-of-blessed-maggots" },
+      "specialRules": [
+        {
+          "id": "dark-spellcraft",
+          "name": { "en": "Dark Spellcraft", "fr": "Sombre art de la magie" },
+          "tag": null,
+          "text": {
+            "en": "This fighter knows the Lore of Blessed Maggots. When they are recruited, pick 1 spell from it to be their signature spell. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "fr": "Ce combattant connaît le Domaine des Asticots bénis. Quand il est recruté, choisissez 1 sort de ce domaine : il devient son sort fétiche. De plus, au début de chaque bataille, il prépare 1 sort aléatoire de ce domaine."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Practitioner List and Practitioner Item List from the Cloister Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens et de la Liste d'objets des Praticiens de l'Armurerie du Cloître."
+      },
+      "quote": { "en": "I'll see thy flesh boil and burn.", "fr": "Je verrai ta chair bouillir et brûler." },
+      "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > Cloister Sorcerer" }
+    },
+    {
+      "id": "cloister-champion",
+      "name": { "en": "Cloister Champion", "fr": "Cloister Champion" },
+      "category": "champion",
+      "keywords": ["champion", "cloister", "human", "knight"],
+      "cost": 145,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 3, "bw": 4, "ar": 4, "in": 4, "wl": 4, "lf": 6 },
+      "allowedWargearLists": ["main", "champion"],
+      "fixedWargearIds": ["full-plate"],
+      "startingExperience": { "base": 40, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 1, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "lord-of-the-cloister",
+          "name": { "en": "Lord of the Cloister", "fr": "Seigneur du Cloître" },
+          "tag": null,
+          "text": {
+            "en": "When this fighter is recruited, pick 1 skill for them.",
+            "fr": "Quand ce combattant est recruté, choisissez 1 compétence pour lui."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter is equipped with Full-Plate armour (included in their recruit cost). They can be equipped with additional wargear from the Main List and Champion List from the Cloister Armoury.",
+        "fr": "Ce combattant est équipé d'une Armure de plates, comprise dans son coût de recrutement. Il peut être équipé d'équipement supplémentaire de la Liste principale et de la Liste des Champions de l'Armurerie du Cloître."
+      },
+      "quote": { "en": "Corruption grants me strength.", "fr": "La corruption me donne de la force." },
+      "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > Cloister Champion" }
+    },
+    {
+      "id": "darkcloven-shaman",
+      "name": { "en": "Darkcloven Shaman", "fr": "Darkcloven Shaman" },
+      "category": "champion",
+      "keywords": ["champion", "cloister", "beastman", "wizard"],
+      "cost": 145,
+      "limit": 1,
+      "stats": { "mv": 6, "bl": 4, "bw": 6, "ar": 6, "in": 4, "wl": 4, "lf": 5 },
+      "allowedWargearLists": ["practitioner", "practitioner-items"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 40, "dice": "d6" },
+      "knownSpellLoreIds": ["lore-of-blessed-maggots", "demonic-lore-of-rot"],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "darkcloven-magic",
+          "name": { "en": "Darkcloven Magic", "fr": "Magie Darkcloven" },
+          "tag": null,
+          "text": {
+            "en": "This fighter knows the Lore of Blessed Maggots and the Demonic Lore of Rot. However, when they are recruited they have no signature spells. At the start of each battle they prepare 1 random spell from each lore.",
+            "fr": "Ce combattant connaît le Domaine des Asticots bénis et le Domaine démoniaque de la Pourriture. Cependant, quand il est recruté, il n'a aucun sort fétiche. Au début de chaque bataille, il prépare 1 sort aléatoire de chaque domaine."
+          }
+        },
+        {
+          "id": "ram-horns",
+          "name": { "en": "Ram Horns", "fr": "Cornes de bélier" },
+          "tag": null,
+          "text": {
+            "en": "After this fighter finishes a Charge Move, pick 1 enemy fighter engaged in melee with them to be the target. The target is hit by 2 attacks as follows: Rend -1, Damage 1.",
+            "fr": "Après que ce combattant a terminé une Charge, choisissez comme cible 1 combattant ennemi engagé au corps à corps avec lui. La cible est touchée par 2 attaques comme suit : Perforation -1, Dégâts 1."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Practitioner List and Practitioner Item List from the Cloister Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens et de la Liste d'objets des Praticiens de l'Armurerie du Cloître."
+      },
+      "quote": {
+        "en": "Tonight the herd shall feast on blood and marrow.",
+        "fr": "Ce soir, la harde se repaîtra de sang et de moelle."
+      },
+      "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Darkcloven Shaman" }
+    },
+    {
+      "id": "demonic-rot-herald",
+      "name": { "en": "Demonic Rot-Herald", "fr": "Demonic Rot-Herald" },
+      "category": "champion",
+      "keywords": ["champion", "cloister", "demon", "wizard"],
+      "cost": 175,
+      "limit": 1,
+      "stats": { "mv": 4, "bl": 3, "bw": 6, "ar": 5, "in": 4, "wl": 4, "lf": 6 },
+      "allowedWargearLists": ["practitioner-items"],
+      "fixedWargearIds": ["demonic-rot-blade"],
+      "startingExperience": { "base": 40, "dice": "d6" },
+      "knownSpellLoreIds": ["demonic-lore-of-rot"],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 1, "spellLoreId": "demonic-lore-of-rot" },
+      "specialRules": [
+        {
+          "id": "demonic-spellcraft",
+          "name": { "en": "Demonic Spellcraft", "fr": "Art démoniaque de la magie" },
+          "tag": null,
+          "text": {
+            "en": "This fighter knows the Demonic Lore of Rot. When they are recruited, pick 1 spell from it to be their signature spell. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "fr": "Ce combattant connaît le Domaine démoniaque de la Pourriture. Quand il est recruté, choisissez 1 sort de ce domaine : il devient son sort fétiche. De plus, au début de chaque bataille, il prépare 1 sort aléatoire de ce domaine."
+          }
+        },
+        {
+          "id": "demonic-wards",
+          "name": { "en": "Demonic Wards", "fr": "Protections démoniaques" },
+          "tag": null,
+          "text": {
+            "en": "This fighter ignores Rend when making armour rolls.",
+            "fr": "Ce combattant ignore la Perforation quand il effectue des jets d'armure."
+          }
+        },
+        {
+          "id": "fear",
+          "name": { "en": "Fear", "fr": "Peur" },
+          "tag": null,
+          "text": {
+            "en": "This fighter causes fear. Enemy fighters that start their activation engaged in melee with a fighter that causes fear must pass a Willpower test. If they fail, their activation immediately ends.\nEnemy fighters that also cause fear can ignore this rule.",
+            "fr": "Ce combattant cause la peur. Les combattants ennemis qui commencent leur activation engagés au corps à corps avec un combattant qui cause la peur doivent réussir un test de Volonté. S'ils le ratent, leur activation prend fin immédiatement.\nUn combattant ennemi qui cause la peur lui aussi peut ignorer cette règle."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter is equipped with a Demonic Rot Blade (included in their recruit cost). They can be equipped with additional wargear from the Practitioner Item List from the Cloister Armoury.",
+        "fr": "Ce combattant est équipé d'une Lame de pourriture démoniaque, comprise dans son coût de recrutement. Il peut être équipé d'équipement supplémentaire de la Liste d'objets des Praticiens de l'Armurerie du Cloître."
+      },
+      "quote": {
+        "en": "Thy flesh and thy soul shall know corruption, mortal.",
+        "fr": "Ta chair et ton âme connaîtront la corruption, mortel."
+      },
+      "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Demonic Rot-Herald" }
+    },
+    {
+      "id": "cloister-knight",
+      "name": { "en": "Cloister Knight", "fr": "Cloister Knight" },
+      "category": "henchman",
+      "keywords": ["henchman", "cloister", "human", "knight"],
+      "cost": 95,
+      "limit": 3,
+      "stats": { "mv": 5, "bl": 4, "bw": 6, "ar": 4, "in": 3, "wl": 3, "lf": 5 },
+      "allowedWargearLists": ["main"],
+      "fixedWargearIds": ["full-plate"],
+      "startingExperience": { "base": 30, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [],
+      "wargearText": {
+        "en": "This fighter is equipped with Full-Plate armour (included in their recruit cost). They can be equipped with additional wargear from the Main List from the Cloister Armoury.",
+        "fr": "Ce combattant est équipé d'une Armure de plates, comprise dans son coût de recrutement. Il peut être équipé d'équipement supplémentaire de la Liste principale de l'Armurerie du Cloître."
+      },
+      "quote": { "en": "My blade serves the Living Saints.", "fr": "Ma lame sert les Saints vivants." },
+      "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Cloister Knight" }
+    },
+    {
+      "id": "dreg-cultist",
+      "name": { "en": "Dreg Cultist", "fr": "Dreg Cultist" },
+      "category": "henchman",
+      "keywords": ["henchman", "cloister", "human"],
+      "cost": 30,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 5, "bw": 5, "ar": 6, "in": 2, "wl": 2, "lf": 3 },
+      "allowedWargearLists": ["main", "dreg"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 0, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List and Dreg List from the Cloister Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Dregs de l'Armurerie du Cloître."
+      },
+      "quote": { "en": "The afflicted shall inherit the City.", "fr": "Les affligés hériteront de la Cité." },
+      "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Dreg Cultist" }
+    },
+    {
+      "id": "darkcloven-beastman",
+      "name": { "en": "Darkcloven Beastman", "fr": "Darkcloven Beastman" },
+      "category": "henchman",
+      "keywords": ["henchman", "cloister", "beastman"],
+      "cost": 55,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 4, "bw": 5, "ar": 6, "in": 3, "wl": 3, "lf": 4 },
+      "allowedWargearLists": ["main"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 20, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "ram-horns",
+          "name": { "en": "Ram Horns", "fr": "Cornes de bélier" },
+          "tag": null,
+          "text": {
+            "en": "After this fighter finishes a Charge Move, pick 1 enemy fighter engaged in melee with them to be the target. The target is hit by 2 attacks as follows: Rend -1, Damage 1.",
+            "fr": "Après que ce combattant a terminé une Charge, choisissez comme cible 1 combattant ennemi engagé au corps à corps avec lui. La cible est touchée par 2 attaques comme suit : Perforation -1, Dégâts 1."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List from the Cloister Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie du Cloître."
+      },
+      "quote": { "en": "Feast on flesh!", "fr": "Repaissez-vous de chair !" },
+      "sourceRef": { "page": 129, "md": "09_the-blighted-cloister.md > Darkcloven Beastman" }
+    },
+    {
+      "id": "rot-demon",
+      "name": { "en": "Rot Demon", "fr": "Rot Demon" },
+      "category": "henchman",
+      "keywords": ["henchman", "cloister", "demon"],
+      "cost": 120,
+      "limit": 3,
+      "stats": { "mv": 4, "bl": 3, "bw": 6, "ar": 5, "in": 4, "wl": 4, "lf": 5 },
+      "allowedWargearLists": [],
+      "fixedWargearIds": ["demonic-rot-blade"],
+      "startingExperience": { "base": 30, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "demonic-wards",
+          "name": { "en": "Demonic Wards", "fr": "Protections démoniaques" },
+          "tag": null,
+          "text": {
+            "en": "This fighter ignores Rend when making armour rolls.",
+            "fr": "Ce combattant ignore la Perforation quand il effectue des jets d'armure."
+          }
+        },
+        {
+          "id": "fear",
+          "name": { "en": "Fear", "fr": "Peur" },
+          "tag": null,
+          "text": {
+            "en": "This fighter causes fear. Enemy fighters that start their activation engaged in melee with a fighter that causes fear must pass a Willpower test. If they fail, their activation immediately ends.\nEnemy fighters that also cause fear can ignore this rule.",
+            "fr": "Ce combattant cause la peur. Les combattants ennemis qui commencent leur activation engagés au corps à corps avec un combattant qui cause la peur doivent réussir un test de Volonté. S'ils le ratent, leur activation prend fin immédiatement.\nUn combattant ennemi qui cause la peur lui aussi peut ignorer cette règle."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter is equipped with a Demonic Rot Blade (included in their recruit cost). They cannot be equipped with any other wargear.",
+        "fr": "Ce combattant est équipé d'une Lame de pourriture démoniaque, comprise dans son coût de recrutement. Il ne peut être équipé d'aucun autre équipement."
+      },
+      "quote": {
+        "en": "Once more do I tread the mortal plane.",
+        "fr": "Une fois encore, je foule le plan des mortels."
+      },
+      "sourceRef": { "page": 129, "md": "09_the-blighted-cloister.md > Rot Demon" }
+    },
+    {
+      "id": "demonic-rotspawn",
+      "name": { "en": "Demonic Rotspawn", "fr": "Demonic Rotspawn" },
+      "category": "brute",
+      "keywords": ["brute", "cloister", "demon"],
+      "cost": 130,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 3, "bw": 6, "ar": 5, "in": 4, "wl": 4, "lf": 8 },
+      "allowedWargearLists": [],
+      "fixedWargearIds": ["demonic-rot-maw"],
+      "startingExperience": { "base": 30, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "demonic-wards",
+          "name": { "en": "Demonic Wards", "fr": "Protections démoniaques" },
+          "tag": null,
+          "text": {
+            "en": "This fighter ignores Rend when making armour rolls.",
+            "fr": "Ce combattant ignore la Perforation quand il effectue des jets d'armure."
+          }
+        },
+        {
+          "id": "fear",
+          "name": { "en": "Fear", "fr": "Peur" },
+          "tag": null,
+          "text": {
+            "en": "This fighter causes fear. Enemy fighters that start their activation engaged in melee with a fighter that causes fear must pass a Willpower test. If they fail, their activation immediately ends.\nEnemy fighters that also cause fear can ignore this rule.",
+            "fr": "Ce combattant cause la peur. Les combattants ennemis qui commencent leur activation engagés au corps à corps avec un combattant qui cause la peur doivent réussir un test de Volonté. S'ils le ratent, leur activation prend fin immédiatement.\nUn combattant ennemi qui cause la peur lui aussi peut ignorer cette règle."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter is equipped with a Demonic Rot Maw (see below), they cannot be equipped with any other wargear.",
+        "fr": "Ce combattant est équipé d'une Gueule de pourriture démoniaque, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
+      },
+      "quote": { "en": "Sate... my... hunger...", "fr": "Rassasiez... ma... faim..." },
+      "sourceRef": { "page": 130, "md": "09_the-blighted-cloister.md > Demonic Rotspawn" }
+    },
+    {
+      "id": "demonic-rot-colossal",
+      "name": { "en": "Demonic Rot-Colossal", "fr": "Demonic Rot-Colossal" },
+      "category": "brute",
+      "keywords": ["brute", "cloister", "demon"],
+      "cost": 200,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 4, "bw": 6, "ar": 5, "in": 4, "wl": 4, "lf": 10 },
+      "allowedWargearLists": [],
+      "fixedWargearIds": ["great-demonic-rot-blade"],
+      "startingExperience": { "base": 30, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "demonic-wards",
+          "name": { "en": "Demonic Wards", "fr": "Protections démoniaques" },
+          "tag": null,
+          "text": {
+            "en": "This fighter ignores Rend when making armour rolls.",
+            "fr": "Ce combattant ignore la Perforation quand il effectue des jets d'armure."
+          }
+        },
+        {
+          "id": "fear",
+          "name": { "en": "Fear", "fr": "Peur" },
+          "tag": null,
+          "text": {
+            "en": "This fighter causes fear. Enemy fighters that start their activation engaged in melee with a fighter that causes fear must pass a Willpower test. If they fail, their activation immediately ends.\nEnemy fighters that also cause fear can ignore this rule.",
+            "fr": "Ce combattant cause la peur. Les combattants ennemis qui commencent leur activation engagés au corps à corps avec un combattant qui cause la peur doivent réussir un test de Volonté. S'ils le ratent, leur activation prend fin immédiatement.\nUn combattant ennemi qui cause la peur lui aussi peut ignorer cette règle."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter is equipped with a Great Demonic Rot Blade (included in their recruit cost). They cannot be equipped with any other wargear.",
+        "fr": "Ce combattant est équipé d'une Grande lame de pourriture démoniaque, comprise dans son coût de recrutement. Il ne peut être équipé d'aucun autre équipement."
+      },
+      "quote": { "en": "Come hither, little mortal.", "fr": "Approche, petit mortel." },
+      "sourceRef": { "page": 130, "md": "09_the-blighted-cloister.md > Demonic Rot-Colossal" }
+    },
+    {
+      "id": "bloat-fly",
+      "name": { "en": "Bloat Fly", "fr": "Bloat Fly" },
+      "category": "beast",
+      "keywords": ["beast", "cloister", "fly"],
+      "cost": 50,
+      "limit": null,
+      "stats": { "mv": 10, "bl": 5, "bw": null, "ar": 6, "in": 4, "wl": 1, "lf": 2 },
+      "allowedWargearLists": [],
+      "fixedWargearIds": ["proboscis"],
+      "startingExperience": { "base": 0, "dice": null },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [],
+      "wargearText": {
+        "en": "This fighter is equipped with a proboscis (see below), they cannot be equipped with any other wargear.",
+        "fr": "Ce combattant est équipé d'une trompe, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
+      },
+      "quote": null,
+      "sourceRef": { "page": 131, "md": "09_the-blighted-cloister.md > Bloat Fly" }
+    },
+    {
+      "id": "rotling",
+      "name": { "en": "Rotling", "fr": "Rotling" },
+      "category": "beast",
+      "keywords": ["beast", "cloister", "demon"],
+      "cost": 25,
+      "limit": null,
+      "stats": { "mv": 4, "bl": 4, "bw": null, "ar": 5, "in": 3, "wl": 2, "lf": 3 },
+      "allowedWargearLists": [],
+      "fixedWargearIds": ["demonic-rot-strike"],
+      "startingExperience": { "base": 0, "dice": null },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [],
+      "wargearText": {
+        "en": "This fighter is equipped with a demonic rot strike (see below), they cannot be equipped with any other wargear.",
+        "fr": "Ce combattant est équipé d'une frappe de pourriture démoniaque, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
+      },
+      "quote": null,
+      "sourceRef": { "page": 131, "md": "09_the-blighted-cloister.md > Rotling" }
+    }
+  ],
+
+  "wargear": [
+    {
+      "id": "arcane-staff",
+      "name": { "en": "Arcane Staff", "fr": "Bâton arcanique" },
+      "kind": "melee",
+      "cost": 10,
+      "purchasable": true,
+      "profile": { "attacks": 2, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "arcane" }, { "key": "off-hand" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "axe",
+      "name": { "en": "Axe", "fr": "Hache" },
+      "kind": "melee",
+      "cost": 16,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "off-hand" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "club-mace-hammer",
+      "name": { "en": "Club/Mace/Hammer", "fr": "Gourdin/Masse/Marteau" },
+      "kind": "melee",
+      "cost": 14,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "bludgeon" }, { "key": "off-hand" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "dagger",
+      "name": { "en": "Dagger", "fr": "Dague" },
+      "kind": "melee",
+      "cost": 10,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "off-hand" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "demonic-rot-blade",
+      "name": { "en": "Demonic Rot Blade", "fr": "Lame de pourriture démoniaque" },
+      "kind": "melee",
+      "cost": 45,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "arcane" }, { "key": "guard" }, { "key": "poison" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "demonic-rot-maw",
+      "name": { "en": "Demonic Rot Maw", "fr": "Gueule de pourriture démoniaque" },
+      "kind": "melee",
+      "cost": 0,
+      "purchasable": false,
+      "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "arcane" }, { "key": "bludgeon" }, { "key": "natural-weapon" }, { "key": "poison" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "demonic-rot-strike",
+      "name": { "en": "Demonic Rot Strike", "fr": "Frappe de pourriture démoniaque" },
+      "kind": "melee",
+      "cost": 0,
+      "purchasable": false,
+      "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "arcane" }, { "key": "natural-weapon" }, { "key": "poison" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "ensorcelled-weapon",
+      "name": { "en": "Ensorcelled Weapon", "fr": "Arme ensorcelée" },
+      "kind": "melee",
+      "cost": 26,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "arcane" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": {
+        "en": "You can use any weapon to represent the Ensorcelled Weapon.",
+        "fr": "Vous pouvez utiliser n'importe quelle arme pour représenter l'Arme ensorcelée."
+      },
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "flail",
+      "name": { "en": "Flail", "fr": "Fléau" },
+      "kind": "melee",
+      "cost": 14,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "off-hand" }, { "key": "wrap" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "great-demonic-rot-blade",
+      "name": { "en": "Great Demonic Rot Blade", "fr": "Grande lame de pourriture démoniaque" },
+      "kind": "melee",
+      "cost": 70,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -2, "damage": 3, "critDamage": "d3+2" },
+      "traits": [
+        { "key": "arcane" },
+        { "key": "bludgeon" },
+        { "key": "poison" },
+        { "key": "two-handed" },
+        { "key": "unwieldy" }
+      ],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "great-club",
+      "name": { "en": "Great Club", "fr": "Grand gourdin" },
+      "kind": "melee",
+      "cost": 38,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "bludgeon" }, { "key": "two-handed" }, { "key": "unwieldy" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "halberd",
+      "name": { "en": "Halberd", "fr": "Hallebarde" },
+      "kind": "melee",
+      "cost": 34,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3+1" },
+      "traits": [{ "key": "brace" }, { "key": "two-handed" }, { "key": "unwieldy" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "heavy-axe",
+      "name": { "en": "Heavy Axe", "fr": "Hache lourde" },
+      "kind": "melee",
+      "cost": 40,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -2, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "two-handed" }, { "key": "unwieldy" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "proboscis",
+      "name": { "en": "Proboscis", "fr": "Trompe" },
+      "kind": "melee",
+      "cost": 0,
+      "purchasable": false,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": 1 },
+      "traits": [{ "key": "natural-weapon" }, { "key": "poison" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "spear",
+      "name": { "en": "Spear", "fr": "Lance" },
+      "kind": "melee",
+      "cost": 16,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "brace" }, { "key": "two-handed" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "sword",
+      "name": { "en": "Sword", "fr": "Épée" },
+      "kind": "melee",
+      "cost": 18,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "guard" }, { "key": "off-hand" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+    },
+    {
+      "id": "sling",
+      "name": { "en": "Sling", "fr": "Fronde" },
+      "kind": "ranged",
+      "cost": 14,
+      "purchasable": true,
+      "profile": { "range": 16, "attacks": 1, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes à distance" }
+    },
+    {
+      "id": "blowpipe",
+      "name": { "en": "Blowpipe", "fr": "Sarbacane" },
+      "kind": "ranged",
+      "cost": 16,
+      "purchasable": true,
+      "profile": { "range": 12, "attacks": 1, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "poison" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes à distance" }
+    },
+    {
+      "id": "cuirass",
+      "name": { "en": "Cuirass", "fr": "Cuirasse" },
+      "kind": "armour",
+      "cost": 20,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": 5,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Cuirasse" }
+    },
+    {
+      "id": "warded-robes",
+      "name": { "en": "Warded Robes", "fr": "Robe de protection" },
+      "kind": "armour",
+      "cost": 10,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": 6,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "Roll a dice each time a fighter equipped with this armour is targeted by a spell cast by an enemy fighter. On a 4+, the spell has no effect on this fighter.",
+        "fr": "Lancez un dé chaque fois qu'un combattant équipé de cette armure est ciblé par un sort lancé par un combattant ennemi. Sur 4+, le sort n'a aucun effet sur ce combattant."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Robe de protection" }
+    },
+    {
+      "id": "full-plate",
+      "name": { "en": "Full-plate", "fr": "Armure de plates" },
+      "kind": "armour",
+      "cost": 40,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": 4,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [{ "type": "forbid-trait", "kind": "ranged", "trait": "two-handed", "exceptWargearIds": [] }],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "Fighters equipped with this armour cannot be equipped with two-handed ranged weapons with the exception of a Brace of Pistols.",
+        "fr": "Les combattants équipés de cette armure ne peuvent pas être équipés d'armes à distance à deux mains, à l'exception d'une Paire de pistolets."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Armure de plates" }
+    },
+    {
+      "id": "cauldron",
+      "name": { "en": "Cauldron", "fr": "Chaudron" },
+      "kind": "item",
+      "cost": 40,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": ["held-item"],
+      "rarity": 1,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "[Action] This fighter can use this item as an action. The fighter takes a Willpower test. If they pass, pick a spell from a spell lore they know to be prepared.",
+        "fr": "[Action] Ce combattant peut utiliser cet objet en tant qu'action. Le combattant effectue un test de Volonté. S'il le réussit, choisissez un sort d'un domaine de magie qu'il connaît : ce sort devient un sort préparé."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Chaudron" }
+    },
+    {
+      "id": "cloister-icon",
+      "name": { "en": "Cloister Icon", "fr": "Icône du Cloître" },
+      "kind": "item",
+      "cost": 25,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": ["held-item"],
+      "rarity": 1,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "While this fighter is on the battlefield, you can re-roll flee tests.\nYou can re-roll Willpower tests made by friendly fighters while they are within 12\" of this fighter and this fighter is visible to them.",
+        "fr": "Tant que ce combattant est sur le champ de bataille, vous pouvez relancer les tests de déroute.\nVous pouvez relancer les tests de Volonté effectués par les combattants alliés tant qu'ils sont à 12\" ou moins de ce combattant et que ce combattant est visible pour eux."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Icône du Cloître" }
+    },
+    {
+      "id": "demonic-familiar",
+      "name": { "en": "Demonic Familiar", "fr": "Familier démoniaque" },
+      "kind": "item",
+      "cost": 20,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": 1,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": {
+        "rend": 0,
+        "damage": 1,
+        "critDamage": "d3",
+        "traits": [{ "key": "arcane" }, { "key": "natural-weapon" }, { "key": "poison" }]
+      },
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "Each time this fighter makes a melee attack, they can make 1 additional attack with the following weapon:",
+        "fr": "Chaque fois que ce combattant effectue une attaque au corps à corps, il peut effectuer 1 attaque supplémentaire avec l'arme suivante :"
+      },
+      "designerNote": {
+        "en": "This item is designed for miniatures that feature other small demonic creatures on the same base. The demonic familiar is not considered a separate fighter for any rules.",
+        "fr": "Cet objet est conçu pour les figurines qui comportent d'autres petites créatures démoniaques sur le même socle. Le familier démoniaque n'est considéré comme un combattant distinct pour aucune règle."
+      },
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Familier démoniaque" }
+    },
+    {
+      "id": "ensorcelled-bell",
+      "name": { "en": "Ensorcelled Bell", "fr": "Cloche ensorcelée" },
+      "kind": "item",
+      "cost": 10,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": 1,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "Once per battle, you can re-roll a miscast roll made for this fighter.",
+        "fr": "Une fois par bataille, vous pouvez relancer un jet de fiasco effectué pour ce combattant."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Cloche ensorcelée" }
+    },
+    {
+      "id": "grimoire",
+      "name": { "en": "Grimoire", "fr": "Grimoire" },
+      "kind": "item",
+      "cost": 15,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": 1,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "Once per battle, after this fighter has made casting roll, you can re-roll the casting roll.",
+        "fr": "Une fois par bataille, après que ce combattant a effectué un jet de lancement, vous pouvez relancer le jet de lancement."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Grimoire" }
+    },
+    {
+      "id": "shield",
+      "name": { "en": "Shield", "fr": "Bouclier" },
+      "kind": "item",
+      "cost": 10,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": null,
+      "armourImprovement": 1,
+      "itemKeywords": ["held-item"],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "Improve this fighter's Armour value by 1, to a maximum of 2+. (For example, 6+ becomes 5+).",
+        "fr": "Améliorez de 1 la valeur d'Armure de ce combattant, jusqu'à un maximum de 2+. (Par exemple, 6+ devient 5+)."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Bouclier" }
+    }
+  ],
+
+  "armouryLists": [
+    {
+      "id": "main",
+      "name": { "en": "Main List", "fr": "Liste principale" },
+      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Liste principale" },
+      "entries": [
+        { "wargearId": "axe", "cost": 16 },
+        { "wargearId": "club-mace-hammer", "cost": 14 },
+        { "wargearId": "dagger", "cost": 10 },
+        { "wargearId": "flail", "cost": 14 },
+        { "wargearId": "halberd", "cost": 34 },
+        { "wargearId": "spear", "cost": 16 },
+        { "wargearId": "sword", "cost": 18 },
+        { "wargearId": "great-club", "cost": 38 },
+        { "wargearId": "heavy-axe", "cost": 40 },
+        { "wargearId": "shield", "cost": 10 },
+        { "wargearId": "cloister-icon", "cost": 25 }
+      ]
+    },
+    {
+      "id": "champion",
+      "name": { "en": "Champion List", "fr": "Liste des Champions" },
+      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Liste des Champions" },
+      "entries": [
+        { "wargearId": "demonic-rot-blade", "cost": 45 },
+        { "wargearId": "great-demonic-rot-blade", "cost": 70 },
+        { "wargearId": "full-plate", "cost": 40 }
+      ]
+    },
+    {
+      "id": "dreg",
+      "name": { "en": "Dreg List", "fr": "Liste des Dregs" },
+      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Liste des Dregs" },
+      "entries": [
+        { "wargearId": "blowpipe", "cost": 16 },
+        { "wargearId": "sling", "cost": 14 }
+      ]
+    },
+    {
+      "id": "practitioner",
+      "name": { "en": "Practitioner List", "fr": "Liste des Praticiens" },
+      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Liste des Praticiens" },
+      "entries": [
+        { "wargearId": "arcane-staff", "cost": 10 },
+        { "wargearId": "ensorcelled-weapon", "cost": 26 },
+        { "wargearId": "sword", "cost": 18 },
+        { "wargearId": "warded-robes", "cost": 10 }
+      ]
+    },
+    {
+      "id": "practitioner-items",
+      "name": { "en": "Practitioner Item List", "fr": "Liste d'objets des Praticiens" },
+      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Liste d'objets des Praticiens" },
+      "entries": [
+        { "wargearId": "grimoire", "cost": 15 },
+        { "wargearId": "cauldron", "cost": 40 },
+        { "wargearId": "demonic-familiar", "cost": 30 },
+        { "wargearId": "ensorcelled-bell", "cost": 10 }
+      ]
+    }
+  ],
+
+  "skillTables": [
+    {
+      "id": "ordained-of-the-cloister",
+      "name": { "en": "Ordained of the Cloister", "fr": "Ordonnés du Cloître" },
+      "eligibility": {
+        "kind": "keywords",
+        "anyOf": [
+          ["cloister", "leader"],
+          ["cloister", "champion"]
+        ]
+      },
+      "eligibilityLabel": {
+        "en": "Cloister Leaders and Champions only",
+        "fr": "Chefs et Champions Cloister uniquement"
+      },
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Ordonnés du Cloître" },
+      "skills": [
+        {
+          "id": "shepherd-the-afflicted",
+          "name": { "en": "Shepherd the Afflicted", "fr": "Guider les affligés" },
+          "text": {
+            "en": "Add 1 to the maximum distance other friendly fighters can move if they started the move within 6\" of this fighter.",
+            "fr": "Ajoutez 1 à la distance maximale dont les autres combattants alliés peuvent se déplacer s'ils ont commencé ce Mouvement à 6\" ou moins de ce combattant."
+          },
+          "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Guider les affligés" }
+        },
+        {
+          "id": "demonic-conduit",
+          "name": { "en": "Demonic Conduit", "fr": "Conduit démoniaque" },
+          "text": {
+            "en": "Once per battle, when a friendly Demon fighter would be set up from reserve, they can instead be set up within 3\" of this fighter, not engaged in melee with any enemy fighters.",
+            "fr": "Une fois par bataille, quand un combattant allié Démon devrait être placé depuis la réserve, il peut, à la place, être placé à 3\" ou moins de ce combattant, non engagé au corps à corps avec le moindre combattant ennemi."
+          },
+          "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Conduit démoniaque" }
+        },
+        {
+          "id": "rite-of-contagion",
+          "name": { "en": "Rite of Contagion", "fr": "Rite de contagion" },
+          "text": {
+            "en": "Once per battle, if this fighter is not engaged, this fighter can use the following bonus action:\nRite of Contagion [Bonus Action]: Each enemy fighter within 12\" of this fighter must pass a Willpower test else suffer 1 point of damage and be poisoned (see the Poison weapon trait).",
+            "fr": "Une fois par bataille, si ce combattant n'est pas engagé, ce combattant peut utiliser l'action bonus suivante :\nRite de contagion [Action bonus] : chaque combattant ennemi à 12\" ou moins de ce combattant doit réussir un test de Volonté, sans quoi il subit 1 point de dégâts et est empoisonné, voir le trait d'arme Poison."
+          },
+          "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Rite de contagion" }
+        },
+        {
+          "id": "last-rites",
+          "name": { "en": "Last Rites", "fr": "Derniers sacrements" },
+          "text": {
+            "en": "Each time another fighter is taken down within 6\" of this fighter, this fighter can heal 1 life point.",
+            "fr": "Chaque fois qu'un autre combattant est mis hors de combat à 6\" ou moins de ce combattant, ce combattant peut être soigné de 1 point de vie."
+          },
+          "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Derniers sacrements" }
+        },
+        {
+          "id": "unholy-sermon",
+          "name": { "en": "Unholy Sermon", "fr": "Sermon impie" },
+          "text": {
+            "en": "Once per battle, if this fighter is not engaged, this fighter can use the following bonus action:\nUnholy Sermon [Bonus Action]: Until the end of the round, add 1 to attack rolls for melee attacks made by friendly fighters while they are within 6\" of this fighter.",
+            "fr": "Une fois par bataille, si ce combattant n'est pas engagé, ce combattant peut utiliser l'action bonus suivante :\nSermon impie [Action bonus] : jusqu'à la fin du round, ajoutez 1 aux jets d'attaque des attaques au corps à corps effectuées par les combattants alliés tant qu'ils sont à 6\" ou moins de ce combattant."
+          },
+          "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Sermon impie" }
+        },
+        {
+          "id": "the-black-benediction",
+          "name": { "en": "The Black Benediction", "fr": "La Bénédiction noire" },
+          "text": {
+            "en": "Subtract 1 from the Damage and Critical Damage values of weapons while they target this fighter (to a minimum of 1).",
+            "fr": "Soustrayez 1 aux valeurs de Dégâts et de Dégâts critiques des armes tant qu'elles ciblent ce combattant, jusqu'à un minimum de 1."
+          },
+          "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > La Bénédiction noire" }
+        }
+      ]
+    },
+    {
+      "id": "blessings-of-saint-rot",
+      "name": { "en": "Blessings of Saint Rot", "fr": "Bénédictions de Sainte Pourriture" },
+      "eligibility": { "kind": "keywords", "anyOf": [["cloister"]] },
+      "eligibilityLabel": { "en": "Any Cloister fighter", "fr": "N'importe quel combattant Cloister" },
+      "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Bénédictions de Sainte Pourriture" },
+      "skills": [
+        {
+          "id": "infested-with-maggots",
+          "name": { "en": "Infested with Maggots", "fr": "Infesté d'asticots" },
+          "text": {
+            "en": "Each time this fighter activates, if it has suffered any damage, roll a dice. On a 4+, they heal 1 life point.",
+            "fr": "Chaque fois que ce combattant est activé, s'il a subi des dégâts, lancez un dé. Sur 4+, il est soigné de 1 point de vie."
+          },
+          "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Infesté d'asticots" }
+        },
+        {
+          "id": "black-blood",
+          "name": { "en": "Black Blood", "fr": "Sang noir" },
+          "text": { "en": "This fighter cannot be poisoned.", "fr": "Ce combattant ne peut pas être empoisonné." },
+          "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Sang noir" }
+        },
+        {
+          "id": "toxic-miasma",
+          "name": { "en": "Toxic Miasma", "fr": "Miasme toxique" },
+          "text": {
+            "en": "Each time an enemy fighter activates while they are engaged in melee with this fighter, they must pass a Willpower test or suffer 1 point of damage.",
+            "fr": "Chaque fois qu'un combattant ennemi est activé alors qu'il est engagé au corps à corps avec ce combattant, il doit réussir un test de Volonté ou subir 1 point de dégâts."
+          },
+          "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Miasme toxique" }
+        },
+        {
+          "id": "shroud-of-flies",
+          "name": { "en": "Shroud of Flies", "fr": "Linceul de mouches" },
+          "text": {
+            "en": "Subtract 1 from attack rolls that target this fighter.",
+            "fr": "Soustrayez 1 aux jets d'attaque qui ciblent ce combattant."
+          },
+          "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Linceul de mouches" }
+        },
+        {
+          "id": "vessel-of-black-rot",
+          "name": { "en": "Vessel of Black Rot", "fr": "Réceptacle de la Pourriture noire" },
+          "text": {
+            "en": "When this fighter is taken down, roll a dice for each enemy fighter within 6\". On a 4+ they become poisoned (see Poison weapon trait).",
+            "fr": "Quand ce combattant est mis hors de combat, lancez un dé pour chaque combattant ennemi à 6\" ou moins. Sur 4+, il devient empoisonné, voir le trait d'arme Poison."
+          },
+          "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Réceptacle de la Pourriture noire" }
+        },
+        {
+          "id": "vector-of-entropy",
+          "name": { "en": "Vector of Entropy", "fr": "Vecteur d'entropie" },
+          "text": {
+            "en": "Worsen the Armour value of enemy fighters by 1 (to a minimum of '-') while they are engaged in melee with this fighter.",
+            "fr": "Dégradez de 1 la valeur d'Armure des combattants ennemis, jusqu'à un minimum de \"-\", tant qu'ils sont engagés au corps à corps avec ce combattant."
+          },
+          "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Vecteur d'entropie" }
+        }
+      ]
+    }
+  ],
+
+  "spellLores": [
+    {
+      "id": "lore-of-blessed-maggots",
+      "name": { "en": "Lore of Blessed Maggots", "fr": "Domaine des Asticots bénis" },
+      "die": "d6",
+      "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > Domaine des Asticots bénis" },
+      "spells": [
+        {
+          "id": "swollen-form",
+          "roll": 1,
+          "name": { "en": "Swollen Form", "fr": "Forme boursouflée" },
+          "spellType": "enchant",
+          "castingValue": 7,
+          "criticalCastValue": 10,
+          "text": {
+            "en": "Pick a visible friendly fighter within 9\" of the caster to be the target. That fighter is swollen until the end of the round. While a fighter is swollen, they can ignore the first 3 points of damage they suffer.",
+            "fr": "Choisissez comme cible un combattant allié visible à 9\" ou moins du lanceur. Le combattant choisi est boursouflé jusqu'à la fin du round. Tant qu'un combattant est boursouflé, il peut ignorer les 3 premiers points de dégâts qu'il subit."
+          },
+          "criticalText": { "en": "Increase the range to 12\".", "fr": "Augmentez la portée à 12\"." },
+          "attack": null,
+          "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > 1 - Forme boursouflée" }
+        },
+        {
+          "id": "black-mire",
+          "roll": 2,
+          "name": { "en": "Black Mire", "fr": "Bourbier noir" },
+          "spellType": "hex",
+          "castingValue": 8,
+          "criticalCastValue": 12,
+          "text": {
+            "en": "Pick a visible point on the battlefield floor within 6\" of the caster. Until the end of the round, the battlefield floor within 6\" of that point is a mire. Subtract 2 from the maximum distance a non-Cloister fighter can move each time they move across the mire.",
+            "fr": "Choisissez un point visible sur le sol du champ de bataille à 6\" ou moins du lanceur. Jusqu'à la fin du round, le sol du champ de bataille à 6\" ou moins de ce point est un bourbier. Soustrayez 2 à la distance maximale dont un combattant non Cloister peut se déplacer chaque fois qu'il se déplace à travers le bourbier."
+          },
+          "criticalText": {
+            "en": "The battlefield floor within 9\" of that point is a mire, instead of 6\".",
+            "fr": "Le sol du champ de bataille à 9\" ou moins de ce point est un bourbier, à la place de 6\"."
+          },
+          "attack": null,
+          "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > 2 - Bourbier noir" }
+        },
+        {
+          "id": "erupting-sores",
+          "roll": 3,
+          "name": { "en": "Erupting Sores", "fr": "Plaies éruptives" },
+          "spellType": "attack",
+          "castingValue": 8,
+          "criticalCastValue": 12,
+          "text": {
+            "en": "The closest visible enemy fighter within 9\" is targeted and suffers d3 damage. If they are not taken down, they must pass a Willpower test, else scatter d6\".",
+            "fr": "Le combattant ennemi visible le plus proche à 9\" ou moins est ciblé et subit D3 dégâts. S'il n'est pas mis hors de combat, il doit réussir un test de Volonté, sans quoi il dévie de D6\"."
+          },
+          "criticalText": { "en": "Increase the range to 12\".", "fr": "Augmentez la portée à 12\"." },
+          "attack": null,
+          "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > 3 - Plaies éruptives" }
+        },
+        {
+          "id": "rain-of-filth",
+          "roll": 4,
+          "name": { "en": "Rain of Filth", "fr": "Pluie d'immondices" },
+          "spellType": "healing",
+          "castingValue": 7,
+          "criticalCastValue": 12,
+          "text": {
+            "en": "Place the blast template centred on a point within 12\" of the caster, it then scatters d6\".\nEach fighter in the template is targeted and heals d3 life.",
+            "fr": "Placez le gabarit d'explosion centré sur un point à 12\" ou moins du lanceur ; il dévie ensuite de D6\".\nChaque combattant situé dans le gabarit est ciblé et est soigné de D3 points de vie."
+          },
+          "criticalText": { "en": "It does not scatter.", "fr": "Il ne dévie pas." },
+          "attack": null,
+          "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > 4 - Pluie d'immondices" }
+        },
+        {
+          "id": "putrid-blessing",
+          "roll": 5,
+          "name": { "en": "Putrid Blessing", "fr": "Bénédiction putride" },
+          "spellType": "enchant",
+          "castingValue": 8,
+          "criticalCastValue": 10,
+          "text": {
+            "en": "Pick a friendly fighter within 6\" of the casting fighter to be the target. That fighter has a putrid blessing until the end of the round. While a fighter has a putrid blessing, their melee weapons gain the Arcane and Poison weapon traits.",
+            "fr": "Choisissez comme cible un combattant allié à 6\" ou moins du combattant qui lance le sort. Le combattant choisi a une bénédiction putride jusqu'à la fin du round. Tant qu'un combattant a une bénédiction putride, ses armes de corps à corps gagnent les traits d'armes Arcanique et Poison."
+          },
+          "criticalText": {
+            "en": "Increase the range of the spell from 6\" to 12\".",
+            "fr": "Augmentez la portée du sort de 6\" à 12\"."
+          },
+          "attack": null,
+          "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > 5 - Bénédiction putride" }
+        },
+        {
+          "id": "black-bile",
+          "roll": 6,
+          "name": { "en": "Black Bile", "fr": "Bile noire" },
+          "spellType": "attack",
+          "castingValue": 9,
+          "criticalCastValue": 14,
+          "text": {
+            "en": "Place the flame template from the caster. Each fighter in the template is targeted and hit with the following attack:",
+            "fr": "Placez le gabarit de flamme à partir du lanceur. Chaque combattant situé dans le gabarit est ciblé et touché par l'attaque suivante :"
+          },
+          "criticalText": {
+            "en": "Each fighter hit by the attack must pass a Willpower test else they become poisoned, (see the Poison weapon trait).",
+            "fr": "Chaque combattant touché par l'attaque doit réussir un test de Volonté, sans quoi il devient empoisonné, voir le trait d'arme Poison."
+          },
+          "attack": { "rend": -1, "damage": "d3" },
+          "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > 6 - Bile noire" }
+        }
+      ]
+    },
+    {
+      "id": "demonic-lore-of-rot",
+      "name": { "en": "Demonic Lore of Rot", "fr": "Domaine démoniaque de la Pourriture" },
+      "die": "d6",
+      "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > Domaine démoniaque de la Pourriture" },
+      "spells": [
+        {
+          "id": "summon-rotling",
+          "roll": 1,
+          "name": { "en": "Summon Rotling", "fr": "Invoquer un Rotling" },
+          "spellType": "summon",
+          "castingValue": 9,
+          "criticalCastValue": 14,
+          "text": {
+            "en": "A summoned Rotling fighter (pg xx) is added to the caster's warband until it is taken down. Set up the fighter within 3\" of the caster and not engaged in melee.\nA warband cannot have more than 3 summoned fighters at any time. If the caster's warband already has 3 summoned fighters, they cannot cast this spell.",
+            "fr": "Un combattant Rotling invoqué (p. xx) est ajouté à la bande du lanceur jusqu'à ce qu'il soit mis hors de combat. Placez le combattant à 3\" ou moins du lanceur et non engagé au corps à corps.\nUne bande ne peut jamais avoir plus de 3 combattants invoqués à la fois. Si la bande du lanceur a déjà 3 combattants invoqués, il ne peut pas lancer ce sort."
+          },
+          "criticalText": {
+            "en": "The fighter can be set up within 9\" of the caster and not engaged in melee.",
+            "fr": "Le combattant peut être placé à 9\" ou moins du lanceur et non engagé au corps à corps."
+          },
+          "attack": null,
+          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 1 - Invoquer un Rotling" }
+        },
+        {
+          "id": "demonic-strength",
+          "roll": 2,
+          "name": { "en": "Demonic Strength", "fr": "Force démoniaque" },
+          "spellType": "enchant",
+          "castingValue": 8,
+          "criticalCastValue": 12,
+          "text": {
+            "en": "Pick a friendly Demon or Beastman fighter within 6\" of the caster to be the target. That fighter has demonic strength until the end of the round. While a fighter has demonic strength, add 1 to the Damage and Critical Damage values of their melee weapons.",
+            "fr": "Choisissez comme cible un combattant allié Démon ou Homme-bête à 6\" ou moins du lanceur. Le combattant choisi a une force démoniaque jusqu'à la fin du round. Tant qu'un combattant a une force démoniaque, ajoutez 1 aux valeurs de Dégâts et de Dégâts critiques de ses armes de corps à corps."
+          },
+          "criticalText": {
+            "en": "You can pick 2 fighters to be targets instead of 1.",
+            "fr": "Vous pouvez choisir comme cibles 2 combattants à la place de 1."
+          },
+          "attack": null,
+          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 2 - Force démoniaque" }
+        },
+        {
+          "id": "rotten-insides",
+          "roll": 3,
+          "name": { "en": "Rotten Insides", "fr": "Entrailles pourries" },
+          "spellType": "hex",
+          "castingValue": 6,
+          "criticalCastValue": 12,
+          "text": {
+            "en": "The closest visible enemy fighter within 9\" is targeted and suffers 1 damage. If they are not taken down, they have rotten insides. While a fighter has rotten insides their Move value is 2\". At the end of the activation of a fighter with rotten insides they take a Willpower test. If they pass, they no longer have rotten insides.",
+            "fr": "Le combattant ennemi visible le plus proche à 9\" ou moins est ciblé et subit 1 dégât. S'il n'est pas mis hors de combat, il a les entrailles pourries. Tant qu'un combattant a les entrailles pourries, sa valeur de Mouvement est de 2\". À la fin de l'activation d'un combattant qui a les entrailles pourries, il effectue un test de Volonté. S'il le réussit, il n'a plus les entrailles pourries."
+          },
+          "criticalText": { "en": "Increase the range to 12\".", "fr": "Augmentez la portée à 12\"." },
+          "attack": null,
+          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 3 - Entrailles pourries" }
+        },
+        {
+          "id": "plague-wind",
+          "roll": 4,
+          "name": { "en": "Plague Wind", "fr": "Vent de peste" },
+          "spellType": "hex",
+          "castingValue": 6,
+          "criticalCastValue": 10,
+          "text": {
+            "en": "Place the blast template centred on a point within 15\" of the caster. Each enemy fighter in the template is targeted and must pass a Willpower test else they become poisoned, (see the Poison weapon trait).",
+            "fr": "Placez le gabarit d'explosion centré sur un point à 15\" ou moins du lanceur. Chaque combattant ennemi situé dans le gabarit est ciblé et doit réussir un test de Volonté, sans quoi il devient empoisonné, voir le trait d'arme Poison."
+          },
+          "criticalText": {
+            "en": "Subtract 1 from any Willpower tests made for this spell.",
+            "fr": "Soustrayez 1 à tous les tests de Volonté effectués pour ce sort."
+          },
+          "attack": null,
+          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 4 - Vent de peste" }
+        },
+        {
+          "id": "protective-shroud",
+          "roll": 5,
+          "name": { "en": "Protective Shroud", "fr": "Linceul protecteur" },
+          "spellType": "enchant",
+          "castingValue": 8,
+          "criticalCastValue": 12,
+          "text": {
+            "en": "Pick a friendly Demon or Beastman fighter within 6\" of the caster to be the target. That fighter has a protective shroud until the end of the round. While a fighter has a protective shroud, improve their Armour value by 1.",
+            "fr": "Choisissez comme cible un combattant allié Démon ou Homme-bête à 6\" ou moins du lanceur. Le combattant choisi a un linceul protecteur jusqu'à la fin du round. Tant qu'un combattant a un linceul protecteur, améliorez de 1 sa valeur d'Armure."
+          },
+          "criticalText": { "en": "Increase the range to 12\".", "fr": "Augmentez la portée à 12\"." },
+          "attack": null,
+          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 5 - Linceul protecteur" }
+        },
+        {
+          "id": "plague-pit",
+          "roll": 6,
+          "name": { "en": "Plague Pit", "fr": "Fosse de peste" },
+          "spellType": "cantrip",
+          "castingValue": 9,
+          "criticalCastValue": 14,
+          "text": {
+            "en": "Place the blast template centred on a visible point on the battlefield floor within 9\" of the caster. A pit opens here. In an order chosen by the commanding player of the caster, each fighter in the template is removed from the battlefield and set up again at the edge of the pit by its commanding player, not engaged in melee. If there is no space, they are set up as close to the edge of the pit as possible, not engaged in melee.\nAfter being set up, the fighter must pass an Initiative test else suffer d3 damage and become poisoned (see the Poison weapon trait).\nThe pit remains in play until the end of the round. Fighters cannot move across the pit while they are on the battlefield floor. Any treasure tokens on the pit are destroyed.",
+            "fr": "Placez le gabarit d'explosion centré sur un point visible sur le sol du champ de bataille à 9\" ou moins du lanceur. Une fosse s'ouvre à cet endroit. Dans un ordre choisi par le joueur qui contrôle le combattant ayant lancé le sort, chaque combattant situé dans le gabarit est retiré du champ de bataille et placé de nouveau au bord de la fosse par le joueur qui contrôle le combattant en question, non engagé au corps à corps. S'il n'y a pas la place, il est placé aussi près que possible du bord de la fosse, non engagé au corps à corps.\nAprès avoir été placé, le combattant doit réussir un test d'Initiative, sans quoi il subit D3 dégâts et devient empoisonné, voir le trait d'arme Poison.\nLa fosse reste en jeu jusqu'à la fin du round. Les combattants ne peuvent pas se déplacer à travers la fosse tant qu'ils sont sur le sol du champ de bataille. Tous les pions trésor situés sur la fosse sont détruits."
+          },
+          "criticalText": { "en": "Increase the range from 9\" to 12\".", "fr": "Augmentez la portée de 9\" à 12\"." },
+          "attack": null,
+          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 6 - Fosse de peste" }
+        }
+      ]
+    }
+  ]
+}

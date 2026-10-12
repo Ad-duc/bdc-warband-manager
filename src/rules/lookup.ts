@@ -85,10 +85,13 @@ export function isHeldItem(wargear: Wargear): boolean {
   return wargear.kind === "item" && wargear.itemKeywords.includes("held-item");
 }
 
-/** Profile limit ("0-x") after the origin, which can raise it (eg. "0-2 Rolling Contraptions"). */
+/**
+ * Profile limit ("0-x") after the origin, which can raise it ("0-2 Rolling
+ * Contraptions") or lift it ("any number of Cloister Knights": null).
+ */
 export function profileLimit(profile: FighterProfile, origin: Origin | undefined): number | null {
   const override = origin?.profileLimits.find((l) => l.fighterId === profile.id);
-  return override?.limit ?? profile.limit;
+  return override === undefined ? profile.limit : override.limit;
 }
 
 /** True when fighters of this profile never gain experience (Thrall keyword, p. 96). */

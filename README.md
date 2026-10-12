@@ -28,8 +28,8 @@ English and French.
 | 3    | Warband creation wizard                                  | done   |
 | 4    | Campaign tracking                                        | done   |
 | 5    | Printing, export, sharing                                | done   |
-| 6    | Verminkin, Death Covens, The Blighted Cloister           | 2 of 3 |
-| 7    | Accessibility, performance, contribution guide           |        |
+| 6    | Verminkin, Death Covens, The Blighted Cloister           | done   |
+| 7    | Accessibility, performance, contribution guide           | next   |
 
 ## Stack
 

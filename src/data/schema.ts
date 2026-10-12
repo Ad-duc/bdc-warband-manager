@@ -464,13 +464,13 @@ export const OriginSchema = z
     requiredLeaderId: IdSchema.nullable(),
     strongholdId: IdSchema.nullable(),
     specialRules: z.array(RuleSchema),
-    /** Profile limits replaced by the origin (eg. "0-2 Rolling Contraptions"). */
+    /** Profile limits replaced by the origin (eg. "0-2 Rolling Contraptions"); null: any number. */
     profileLimits: z
       .array(
         z
           .object({
             fighterId: IdSchema,
-            limit: z.number().int().positive(),
+            limit: z.number().int().positive().nullable(),
           })
           .strict(),
       )
@@ -535,6 +535,16 @@ export const FactionDataSchema = z
         sourceRef: SourceRefSchema,
       })
       .strict(),
+    /** Optional D66 epithets for renowned fighters (Blighted Cloister), translated. */
+    epithetTable: z
+      .object({
+        die: z.literal("d66"),
+        entries: z.record(z.string().regex(/^[1-6][1-6]$/), LocalizedTextSchema),
+        sourceRef: SourceRefSchema,
+      })
+      .strict()
+      .nullable()
+      .default(null),
     fighters: z.array(FighterProfileSchema).min(1),
     wargear: z.array(WargearSchema).min(1),
     armouryLists: z.array(ArmouryListSchema).min(1),
@@ -879,6 +889,9 @@ export function checkFactionIntegrity(faction: FactionData, common: CommonData):
 
   const d66 = Object.keys(faction.nameTable.entries);
   if (d66.length !== 36) problems.push(`Name table: expected 36 entries, found ${d66.length}`);
+  const epithets = Object.keys(faction.epithetTable?.entries ?? {}).length;
+  if (faction.epithetTable !== null && epithets !== 36)
+    problems.push(`Epithet table: expected 36 entries, found ${epithets}`);
 
   return problems;
 }

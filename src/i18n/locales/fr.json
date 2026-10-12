@@ -279,7 +279,8 @@
       "stronghold": "Repaire :",
       "income": "revenu {{income}} pa",
       "profileLimit": "Votre bande peut inclure 0-{{limit}} {{name}}.",
-      "uncapped": "{{name}} ne compte pas dans la limite des {{category}}."
+      "uncapped": "{{name}} ne compte pas dans la limite des {{category}}.",
+      "profileLimitAny": "Votre bande peut recruter n'importe quel nombre de {{name}}."
     },
     "fighters": {
       "counters": "Composition de la bande",
@@ -306,7 +307,9 @@
       },
       "reroll": "Relancer",
       "manualDie": "Résultat du dé",
-      "options": "Options ({{picked}}/{{max}})"
+      "options": "Options ({{picked}}/{{max}})",
+      "randomEpithet": "Épithète",
+      "randomEpithetFor": "Épithète au hasard pour {{name}}"
     },
     "wargear": {
       "pickFighter": "Combattant à équiper",

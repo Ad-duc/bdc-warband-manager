@@ -99,6 +99,8 @@ an error, so a typo cannot slip through.
 - Skill `onlyCategories` (optional, default `[]`): categories allowed to pick the skill (Kingsguard: champion).
 - Keyword `gainsNoExperience` (optional, default `false`): fighters with it never gain experience (Thrall).
 - Spell types: `attack`, `enchant`, `cantrip`, `hex`, `healing`, `aura`, `summon`.
+- `profileLimits[].limit` set to `null` lifts the limit (Knights-Militant: any number of Cloister Knights).
+- Faction `epithetTable` (optional, default `null`): D66 epithets with both languages (Blighted Cloister).
 - `stats.mv` is a number of inches or a dice expression rolled for each move (Rolling-Contraption: `"2d6"`).
 - A JSON value of `critDamage` left out is printed "-" (Blast weapons since v1.03).
 

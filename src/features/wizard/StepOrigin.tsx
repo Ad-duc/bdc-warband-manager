@@ -68,10 +68,14 @@ export function StepOrigin({ warband, index, update }: StepProps) {
                 const fighter = faction.fighters.find((x) => x.id === l.fighterId);
                 return (
                   <span key={l.fighterId} className="text-sm">
-                    {t("wizard.origin.profileLimit", {
-                      limit: l.limit,
-                      name: fighter === undefined ? l.fighterId : f.text(fighter.name),
-                    })}
+                    {l.limit === null
+                      ? t("wizard.origin.profileLimitAny", {
+                          name: fighter === undefined ? l.fighterId : f.text(fighter.name),
+                        })
+                      : t("wizard.origin.profileLimit", {
+                          limit: l.limit,
+                          name: fighter === undefined ? l.fighterId : f.text(fighter.name),
+                        })}
                   </span>
                 );
               })}

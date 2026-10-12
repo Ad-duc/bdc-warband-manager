@@ -21,6 +21,7 @@ import {
   isUncapped,
   manualStartingExperience,
   profileLimit,
+  randomEpithet,
   randomName,
   rollStartingExperience,
 } from "../../rules/index.ts";
@@ -145,6 +146,18 @@ export function StepFighters({ warband, index, update }: StepProps) {
                         customName: randomName(index.faction.nameTable.entries),
                       });
                     }}
+                    onRandomEpithet={
+                      index.faction.epithetTable === null
+                        ? null
+                        : () => {
+                            const epithet = randomEpithet(index.faction.epithetTable?.entries);
+                            if (epithet === undefined) return;
+                            const base = fighter.customName.trim();
+                            replace(fighter.instanceId, {
+                              customName: base === "" ? f.text(epithet) : `${base}, ${f.text(epithet)}`,
+                            });
+                          }
+                    }
                     onRemove={() => {
                       update((w) => ({
                         ...w,
@@ -290,6 +303,7 @@ function RecruitedFighter({
   profile,
   onChange,
   onRandomName,
+  onRandomEpithet,
   onRemove,
   costLabel,
   index,
@@ -298,6 +312,8 @@ function RecruitedFighter({
   profile: FighterProfile;
   onChange: (patch: Partial<WarbandFighter>) => void;
   onRandomName: () => void;
+  /** null when the faction has no epithet table. */
+  onRandomEpithet: (() => void) | null;
   onRemove: () => void;
   costLabel: string;
   index: FactionIndex;
@@ -351,6 +367,16 @@ function RecruitedFighter({
             >
               {t("wizard.fighters.randomName")}
             </button>
+            {onRandomEpithet !== null && (
+              <button
+                type="button"
+                className="btn btn-sm shrink-0"
+                onClick={onRandomEpithet}
+                aria-label={t("wizard.fighters.randomEpithetFor", { name: label })}
+              >
+                {t("wizard.fighters.randomEpithet")}
+              </button>
+            )}
           </div>
         </div>
 

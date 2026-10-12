@@ -8,7 +8,7 @@
  * License:     MIT
  */
 
-import type { FighterProfile } from "../data/schema.ts";
+import type { FighterProfile, LocalizedText } from "../data/schema.ts";
 
 /** Returns a number in [0, 1). Math.random by default, seeded in tests. */
 export type RandomSource = () => number;
@@ -58,6 +58,14 @@ export function manualStartingExperience(profile: FighterProfile, dieResult: num
   if (dieResult === null || !Number.isInteger(dieResult) || dieResult < 1 || dieResult > max)
     throw new RangeError(`Die result must be an integer from 1 to ${max}`);
   return { base, dice, results: [dieResult], total: base + dieResult, mode: "manual" };
+}
+
+/** Epithet from the faction D66 table (Blighted Cloister), or undefined without a table. */
+export function randomEpithet(
+  entries: Record<string, LocalizedText> | undefined,
+  random: RandomSource = Math.random,
+): LocalizedText | undefined {
+  return entries === undefined ? undefined : entries[rollD66(random)];
 }
 
 /** Name from the faction D66 table. */

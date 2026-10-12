@@ -108,8 +108,9 @@ eligible to both tables.
 ### A14 - Black Rot (settled for v1.03)
 
 No general rule in the playtest; the roster has 3 boxes. The app keeps a 0-3
-counter and warns at 3. Faction rules using Black Rot levels (Blighted
-Cloister) will be added with that faction.
+counter and warns at 3. The only faction rule using Black Rot levels (Street
+Pulpit, Blighted Cloister) refers to Chapter 5, which is not published: no
+automatic effect.
 
 ### A15 - Jars of Canal Leeches (settled for v1.03)
 
@@ -237,6 +238,51 @@ texts. A free recruit in campaign mode costs nothing to the stash anyway (A18).
 Full-plate keeps the Guild text as in A23; the Coven Armoury has no ranged
 weapon at all.
 
+## The Blighted Cloister
+
+### A33 - Limits lifted by an origin (settled)
+
+p. 114: "can recruit any number of Cloister Knights" (Knights-Militant) and "of
+Rot Demons" (The Anointed One), while the scrolls print 0-3. Code: an origin
+`profileLimits` entry with `limit: null` removes the scroll limit. The 0-2
+Cloister Sorcerers of the Priesthood of Sorcerers use the same field as A21.
+
+### A34 - Wargear included in the recruit cost (settled)
+
+Knight-Abbot, Cloister Champion and Cloister Knight come with Full-Plate, the
+Rot Demon and the Demonic Rot-Herald with a Demonic Rot Blade, the Rot-Colossal
+with a Great Demonic Rot Blade. Code: fixed wargear, free, present from
+recruitment; removing it raises `wargear.fixedMissing`.
+
+### A35 - Demonic Familiar price (open)
+
+The Practitioner Item List prints 30 silver (p. 118), the item description 20
+(p. 120). Code: the list price is paid, as for every item bought from a list;
+`check:data` keeps a warning on this difference.
+
+### A36 - Demonic Rot Strike Rend (open)
+
+The melee weapons table gives Rend -1 (p. 119), the Rotling scroll "-"
+(p. 131). Code: the table value (-1).
+
+### A37 - Cuirass without a list (data)
+
+The Cuirass is described p. 120 but appears in no Cloister list, so no fighter
+can buy it. It stays in the data (warning in `check:data`).
+
+### A38 - Epithets (settled)
+
+p. 118: a D66 table of epithets "for a Blighted Cloister fighter of renown or
+demon", translated by the glossary. The wizard offers an epithet button next
+to the random name; the epithet is added to the name as text ("Gideon, Prince
+des Vers"), in the interface language.
+
+### A39 - Secluded Scriptorium tally (data)
+
+"Record an ongoing tally on your Warband Roster": a stronghold tracker starting
+at 0, named "Ancient scrolls tally" / "Total des parchemins anciens" by the
+app (the book gives it no name).
+
 ## Data decisions
 
 ### D01 - Number of Guild Mercenaries profiles (data)
@@ -262,7 +308,11 @@ melee weapons", "killed. You can", "the attacking fighters suffers", "Once per
 battle fighter can use", "3 witchfire token", "Improve" in mid-sentence and the
 final colon of Ethereal Armour, "castor's", "a stone talons", "a biting fangs
 bite", the comma before "(pg xx)" of the summon spells, and the long s of the
-quotes. "Torchlight/Lantern" is stored as "Lantern/Torch", the
+quotes. The Blighted Cloister: "Of a 4+" (Vessel of Black Rot), "rotten
+insides's activation", "the target,." (Putrid Blessing), the final comma of Scry
+Ancient Scrolls, the "Step 3 of the Aftermath Sequence. After earning" break
+(Demon Injury Table), missing final stops of several critical casts, and the
+long s of the quotes. "Torchlight/Lantern" is stored as "Lantern/Torch", the
 list spelling. "Chapter house" is stored as "Chapter House".
 
 ### D04 - Club/Mace/Hammer (data)
