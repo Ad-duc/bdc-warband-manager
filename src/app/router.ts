@@ -6,7 +6,8 @@
  *              "#/warband/<id>/print" print view, "#w=<data>" shared warband,
  *              "#/rules" and "#/rules/<chapter>" French rules reader,
  *              "#/changelog" history of the application versions,
- *              "#/card-backs" stand-alone card back generator.
+ *              "#/card-backs" stand-alone card back generator,
+ *              "#/reminder" French reminder sheet.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -22,12 +23,14 @@ export type Route =
   | { name: "shared"; payload: string }
   | { name: "rules"; chapter: string | null }
   | { name: "changelog" }
-  | { name: "cardBacks" };
+  | { name: "cardBacks" }
+  | { name: "reminder" };
 
 export function parseHash(hash: string): Route {
   if (hash.startsWith("#w=")) return { name: "shared", payload: hash.slice(3) };
   if (hash === "#/changelog") return { name: "changelog" };
   if (hash === "#/card-backs") return { name: "cardBacks" };
+  if (hash === "#/reminder") return { name: "reminder" };
   const rules = /^#\/rules(?:\/([a-z0-9-]+))?$/.exec(hash);
   if (rules !== null) return { name: "rules", chapter: rules[1] ?? null };
   const match = /^#\/warband\/([A-Za-z0-9-]+)(?:\/(campaign|print))?$/.exec(hash);
@@ -56,6 +59,8 @@ export function hrefFor(route: Route): string {
       return "#/changelog";
     case "cardBacks":
       return "#/card-backs";
+    case "reminder":
+      return "#/reminder";
     case "home":
       return "#/";
   }

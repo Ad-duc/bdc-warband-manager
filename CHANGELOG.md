@@ -20,6 +20,9 @@ version is given separately (playtest v1.03).
 - Direction dice ("Direction dice" button in the header), over the current
   screen: an arrow in any direction and, as an option, the scatter distances
   of the rules (D6", D6x2", 3D6"), with the detail of the dice.
+- French reminder sheet ("Reminder sheet" button in the header): the official
+  reminder sheet translated into French on one A4 page, with the page numbers
+  of the playtest v1.03 rules, ready to print.
 
 ### Changed
 

@@ -1,0 +1,174 @@
+{
+  "_header": {
+    "file": "src/print/reminder-fr.json",
+    "role": "Text of the French reminder sheet (sources/fr/10_aide-de-jeu.md, French only, page numbers of the playtest v1.03). Markup: **bold**, *italic*, {sep} diamond separator, {br} line break.",
+    "author": "Adrien Duclaud",
+    "created": "2026-10-12",
+    "license": "MIT"
+  },
+  "title": "Black Death City - Aide de jeu",
+  "setup": {
+    "title": "Mise en place",
+    "steps": [
+      "**1. Déterminer l'outsider**",
+      "**2. Déterminer le scénario** *p. 35*",
+      "**3. Étapes \"Avant la bataille\"**",
+      "**4. Sorts préparés** *p. 34*",
+      "**5. Autres règles \"Avant la bataille\"**",
+      "**6. Commencer la bataille**"
+    ]
+  },
+  "round": {
+    "title": "Séquence du round",
+    "steps": [
+      "**1. Jet de priorité** *(jet de départage, l'outsider remporte les égalités)*",
+      "**2. Étape de début de round**",
+      "**3. Activation des combattants**",
+      "**4. Étape de fin de round**",
+      "**5. Test de déroute** *(5+ combattants ensanglantés ou mis hors de combat, sur un résultat de 1)*"
+    ]
+  },
+  "reinforcements": {
+    "die": "D6",
+    "title": "Jet de renforts",
+    "rows": [
+      [
+        "1-2",
+        "Ni vu ni entendu",
+        "le combattant n'arrive pas pendant ce round. Effectuez un autre jet de renforts pour lui au round suivant."
+      ],
+      [
+        "3-5",
+        "Arrivée",
+        "placez le combattant à 3\" ou moins horizontalement d'un bord du champ de bataille relié à son point d'entrée, à plus de 6\" de tous les combattants ennemis."
+      ],
+      [
+        "6",
+        "Débordement",
+        "placez le combattant n'importe où sur le champ de bataille, entièrement à 3\" ou moins d'un bord du champ de bataille, à plus de 6\" de tous les combattants ennemis."
+      ]
+    ]
+  },
+  "traits": {
+    "title": "Rappels des traits d'armes",
+    "note": "Voir les règles complètes p. 29-30.",
+    "rows": [
+      ["Arcanique", "Touches critiques sur 5+"],
+      ["Explosion", "Gabarit d'explosion. En cas d'échec, dévie de D6x2\""],
+      ["Contondant", "Les touches critiques sauvegardées infligent 1 dégât"],
+      ["Contre-charge", "Initiative contre les combattants qui chargent"],
+      ["Flamme", "Gabarit de flamme. Touche automatique"],
+      ["Garde", "1 échec peut parer une touche"],
+      ["Lourd", "Mouvement ou Attaque"],
+      ["Incident de tir", "Sur un 1 naturel"],
+      ["Arme naturelle", "Ne peut pas parer"],
+      ["Main secondaire", "Utilisable en main secondaire : 1 attaque"],
+      ["Usage unique", "1 attaque par bataille"],
+      [
+        "Poison",
+        "Les touches critiques empoisonnent. Subit 1 dégât à chaque activation. Prend fin si soigné ou s'il reste 1 point de vie"
+      ],
+      ["Rare", "Limité au nombre indiqué"],
+      ["Rechargement", "Renoncer à un Mouvement ou une Action pour recharger"],
+      ["Effroi", "Les combattants non engagés réussissent un test de Volonté ou dévient de D6\""],
+      ["À deux mains", "1 par combattant. Pas d'attaque de main secondaire"],
+      ["Encombrant", "-1 aux jets d'attaque"],
+      ["Salve", "Plusieurs cibles à 3\" ou moins"],
+      ["Contournement", "Ne peut ni parer ni être parée"]
+    ]
+  },
+  "misfire": {
+    "die": "D6",
+    "title": "Jet d'incident de tir",
+    "rows": [
+      [
+        "1",
+        "Retour de flamme",
+        "le combattant subit D3 dégâts {sep} l'arme ne peut plus être utilisée pendant la bataille."
+      ],
+      ["2", "Encrassée", "l'arme ne peut plus être utilisée pendant la bataille."],
+      ["3-6", "Long feu", "l'attaque est ratée, comme d'habitude."]
+    ]
+  },
+  "bloodied": {
+    "label": "Ensanglanté",
+    "rows": [
+      "Tant que le combattant n'a plus que 1 point de vie :",
+      "**Ensanglanté :** quand il est activé, **Mouvement** ou **Action**, pas les deux. S'il est soigné, la pénalité ne s'applique plus."
+    ]
+  },
+  "moves": {
+    "label": "Mouvements",
+    "rows": [
+      ["Mouvement normal", "*Valeur de Mouvement en pouces*"],
+      ["Course", "*+D6\" {sep} ne peut pas terminer à moins de 1\" d'un ennemi*"],
+      ["Charge", "*+D6\" {sep} doit terminer à moins de 1\" d'un ennemi*"],
+      [
+        "Désengagement",
+        "*Test d'Initiative {sep} Mouvement de 3\" {sep} doit terminer à plus de 1\" de tous les ennemis*"
+      ]
+    ]
+  },
+  "hide": {
+    "label": "Se cacher",
+    "rows": [
+      [
+        "Possible si :",
+        "Non engagé au corps à corps {sep} au contact d'un décor {sep} à plus de 3\" de tous les ennemis"
+      ]
+    ],
+    "text": "**Caché :** non visible pour les ennemis par rapport auxquels il est à couvert {sep} reste caché jusqu'à : sa prochaine activation, ou jusqu'à ce qu'il ne soit plus au contact d'un décor, ou qu'il soit à 3\" ou moins d'un combattant ennemi."
+  },
+  "melee": {
+    "label": "Attaque au corps à corps",
+    "rows": [
+      "**1. Choisir une cible**",
+      "**2. Choisir les armes**",
+      "**3. Déterminer l'initiative** *(celui qui a chargé, ou Ini + D6)*",
+      "**4. Effectuer les jets d'attaque**",
+      "**5. Alterner attaques et parades** *(jet de parade 2+)*"
+    ]
+  },
+  "ranged": {
+    "label": "Attaque à distance",
+    "rows": [
+      "**Choisir une cible** *(l'ennemi visible le plus proche, ou l'ennemi visible non masqué le plus proche)*",
+      "**Effectuer les jets d'attaque**"
+    ],
+    "cover": "**Couvert :** *les ennemis masqués sont à couvert {sep} +1 à la valeur d'Armure*"
+  },
+  "arcane": {
+    "label": "Action Arcanique",
+    "rows": [
+      ["Puiser du pouvoir :", "+1 D6 au jet de lancement à la prochaine activation"],
+      ["Lancer un sort :", "Jet de lancement = D6 + Volonté"],
+      ["Fiasco du jet de lancement :", "**1 dé** = *1 naturel*{br}**2+ dés** = *n'importe quel double*"]
+    ]
+  },
+  "miscast": {
+    "die": "2D6",
+    "title": "Jet de fiasco",
+    "rows": [
+      [
+        "2",
+        "Fournaise de sorcellerie",
+        "le sort est raté {sep} le lanceur est mis hors de combat {sep} centrez le gabarit d'explosion sur lui {sep} tous les autres combattants situés dessous subissent D6 dégâts."
+      ],
+      [
+        "3-5",
+        "Déflagration arcanique",
+        "le sort est raté {sep} centrez le gabarit d'explosion sur le lanceur. Tous les combattants situés dessous subissent D3 dégâts."
+      ],
+      [
+        "6-7",
+        "Magie épuisée",
+        "le sort est raté {sep} le lanceur ne peut plus utiliser d'actions Arcaniques jusqu'à la fin de la bataille."
+      ],
+      [
+        "8+",
+        "Déferlement de pouvoir incontrôlé",
+        "le lanceur subit D3 dégâts {sep} s'il n'est pas mis hors de combat, le sort est lancé de façon critique."
+      ]
+    ]
+  }
+}

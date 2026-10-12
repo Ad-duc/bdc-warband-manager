@@ -15,7 +15,8 @@
     "cardBacks": "Dos de cartes",
     "rules": "Règles en français",
     "directionDie": "Dé de direction",
-    "menu": "Outils et langue"
+    "menu": "Outils et langue",
+    "reminder": "Aide de jeu"
   },
   "language": {
     "label": "Langue",
@@ -526,6 +527,10 @@
     "sheets": "Planches",
     "sheetCount_one": "{{count}} planche ({{cards}} dos)",
     "sheetCount_other": "{{count}} planches ({{cards}} dos)"
+  },
+  "reminder": {
+    "title": "Aide de jeu",
+    "intro": "La feuille d'aide de jeu officielle traduite en français, sur une page A4 : mise en place, séquence du round, traits d'armes, actions, tables de dés. Les numéros de page renvoient aux règles de la version de test 1.03."
   },
   "print": {
     "title": "Impression",

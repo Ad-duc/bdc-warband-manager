@@ -31,6 +31,9 @@ const ChangelogPage = lazy(async () => ({
 const CardBacksPage = lazy(async () => ({
   default: (await import("./print/CardBacksPage.tsx")).CardBacksPage,
 }));
+const ReminderPage = lazy(async () => ({
+  default: (await import("./print/ReminderPage.tsx")).ReminderPage,
+}));
 const RulesPage = lazy(async () => ({
   default: (await import("./features/reader/RulesPage.tsx")).RulesPage,
 }));
@@ -48,6 +51,7 @@ export function App() {
         {route.name === "rules" && <RulesPage chapterId={route.chapter} />}
         {route.name === "changelog" && <ChangelogPage />}
         {route.name === "cardBacks" && <CardBacksPage />}
+        {route.name === "reminder" && <ReminderPage />}
       </Suspense>
       {route.name === "home" && <HomePage />}
     </Layout>

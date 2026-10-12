@@ -108,6 +108,9 @@ for (const locale of ["en-GB", "fr-FR"] as const) {
       await page.goto("./#/card-backs");
       await expect(page.getByTestId("print-card-back").first()).toBeVisible();
       await audit(page, "card back generator");
+      await page.goto("./#/reminder");
+      await expect(page.getByTestId("reminder-sheet")).toBeVisible();
+      await audit(page, "reminder sheet");
       await page.getByRole("button", { name: fr ? "Dé de direction" : "Direction dice" }).click();
       await page
         .getByRole("dialog")

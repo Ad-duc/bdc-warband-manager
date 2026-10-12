@@ -1,7 +1,8 @@
 /*
  * File:        tests/unit/print.test.ts
  * Role:        Print model (fighter blocks, weapon lines, notes, blank blocks,
- *              pagination, duplex card back cells) and share link encoding.
+ *              pagination, duplex card back cells, reminder sheet markup) and
+ *              share link encoding.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -17,6 +18,8 @@ import {
 } from "../../src/print/model.ts";
 import { decodeWarband, encodeWarband, shareUrl, SHARE_PREFIX } from "../../src/features/share/share.ts";
 import { parseHash } from "../../src/app/router.ts";
+import { tokenize } from "../../src/print/richText.ts";
+import reminder from "../../src/print/reminder-fr.json";
 import { indexFaction } from "../../src/rules/index.ts";
 import { data, fighter, guild, swordsForHire } from "../fixtures/warbands.ts";
 
@@ -146,5 +149,31 @@ describe("duplex card backs", () => {
   it("no card, no back; more than a page is capped", () => {
     expect(duplexBackCells(0)).toEqual([]);
     expect(duplexBackCells(12)).toHaveLength(9);
+  });
+});
+
+describe("reminder sheet", () => {
+  it("has its own route", () => {
+    expect(parseHash("#/reminder")).toEqual({ name: "reminder" });
+  });
+
+  it("splits bold, italic, separators and line breaks", () => {
+    expect(tokenize("**1 dé** = *1 naturel*{br}a {sep} b")).toEqual([
+      "**1 dé**",
+      " = ",
+      "*1 naturel*",
+      "{br}",
+      "a ",
+      "{sep}",
+      " b",
+    ]);
+  });
+
+  it("keeps the 19 weapon traits and the real page numbers of v1.03", () => {
+    expect(reminder.traits.rows).toHaveLength(19);
+    expect(reminder.traits.note).toContain("p. 29-30");
+    expect(reminder.setup.steps.join(" ")).toContain("p. 35");
+    expect(reminder.setup.steps.join(" ")).toContain("p. 34");
+    expect(JSON.stringify(reminder)).not.toContain("xx");
   });
 });

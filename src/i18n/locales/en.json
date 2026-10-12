@@ -15,7 +15,8 @@
     "cardBacks": "Card backs",
     "rules": "French rules",
     "directionDie": "Direction dice",
-    "menu": "Tools and language"
+    "menu": "Tools and language",
+    "reminder": "Reminder sheet"
   },
   "language": {
     "label": "Language",
@@ -526,6 +527,10 @@
     "sheets": "Sheets",
     "sheetCount_one": "{{count}} sheet ({{cards}} backs)",
     "sheetCount_other": "{{count}} sheets ({{cards}} backs)"
+  },
+  "reminder": {
+    "title": "Reminder sheet (French)",
+    "intro": "The official reminder sheet translated into French, on one A4 page: set-up, round sequence, weapon traits, actions, dice tables. Page numbers refer to the playtest v1.03 rules."
   },
   "print": {
     "title": "Print",

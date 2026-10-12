@@ -1,8 +1,9 @@
 /*
  * File:        src/features/layout/HeaderTools.tsx
  * Role:        Tools of the header: direction dice, card back generator,
- *              French rules reader and language selector. From the "sm"
- *              breakpoint they are shown as buttons (icons, labels from "lg");
+ *              reminder sheet, French rules reader and language selector. From
+ *              the "sm" breakpoint they are shown as buttons (icons, labels
+ *              from "xl");
  *              on phones they are grouped in one menu so the title keeps the
  *              room it needs. The menu closes with Escape, an outside click
  *              or the choice of an entry.
@@ -17,7 +18,7 @@ import { hrefFor, useRoute } from "../../app/router.ts";
 import { LanguageSwitcher } from "./LanguageSwitcher.tsx";
 
 const BUTTON =
-  "inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 border-2 border-on-page px-2 text-sm hover:bg-on-page hover:text-page aria-[current=page]:bg-on-page aria-[current=page]:text-page lg:px-3";
+  "inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 border-2 border-on-page px-2 text-sm hover:bg-on-page hover:text-page aria-[current=page]:bg-on-page aria-[current=page]:text-page xl:px-3";
 const MENU_ITEM =
   "flex min-h-11 w-full items-center gap-3 border-2 border-on-page px-3 text-left hover:bg-on-page hover:text-page aria-[current=page]:bg-on-page aria-[current=page]:text-page";
 
@@ -53,6 +54,13 @@ const BacksIcon = () => (
     <path d="M13.5 8l2.5 3.5-2.5 3.5-2.5-3.5z" />
   </Icon>
 );
+const ReminderIcon = () => (
+  <Icon>
+    <rect x="5" y="3" width="14" height="18" />
+    <path d="M9 3v3h6V3" />
+    <path d="M8.5 11h7M8.5 14.5h7M8.5 18h4" />
+  </Icon>
+);
 const RulesIcon = () => (
   <Icon>
     <path d="M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2z" />
@@ -70,6 +78,7 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
 
   const backsCurrent = route.name === "cardBacks" ? "page" : undefined;
   const rulesCurrent = route.name === "rules" ? "page" : undefined;
+  const reminderCurrent = route.name === "reminder" ? "page" : undefined;
 
   /* Closes the phone menu on Escape (focus back on its button) and on a click outside. */
   useEffect(() => {
@@ -104,18 +113,22 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
   return (
     <>
       {/* Tablets and computers: one button per tool */}
-      <div className="hidden items-center gap-3 sm:flex lg:gap-4">
+      <div className="hidden items-center gap-3 sm:flex xl:gap-4">
         <button type="button" aria-haspopup="dialog" onClick={onOpenDie} className={BUTTON}>
           <DieIcon />
-          <span className="sr-only lg:not-sr-only">{t("header.directionDie")}</span>
+          <span className="sr-only xl:not-sr-only">{t("header.directionDie")}</span>
         </button>
         <a href={hrefFor({ name: "cardBacks" })} aria-current={backsCurrent} className={BUTTON}>
           <BacksIcon />
-          <span className="sr-only lg:not-sr-only">{t("header.cardBacks")}</span>
+          <span className="sr-only xl:not-sr-only">{t("header.cardBacks")}</span>
+        </a>
+        <a href={hrefFor({ name: "reminder" })} aria-current={reminderCurrent} className={BUTTON}>
+          <ReminderIcon />
+          <span className="sr-only xl:not-sr-only">{t("header.reminder")}</span>
         </a>
         <a href={hrefFor({ name: "rules", chapter: null })} aria-current={rulesCurrent} className={BUTTON}>
           <RulesIcon />
-          <span className="sr-only lg:not-sr-only">{t("header.rules")}</span>
+          <span className="sr-only xl:not-sr-only">{t("header.rules")}</span>
         </a>
         <LanguageSwitcher />
       </div>
@@ -170,6 +183,15 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
           >
             <BacksIcon />
             {t("header.cardBacks")}
+          </a>
+          <a
+            href={hrefFor({ name: "reminder" })}
+            aria-current={reminderCurrent}
+            className={MENU_ITEM}
+            onClick={close}
+          >
+            <ReminderIcon />
+            {t("header.reminder")}
           </a>
           <a
             href={hrefFor({ name: "rules", chapter: null })}

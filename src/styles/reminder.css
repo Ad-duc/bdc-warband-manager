@@ -1,0 +1,223 @@
+/*
+ * File:        src/styles/reminder.css
+ * Role:        A4 layout of the French reminder sheet, close to the official
+ *              "Reminder Sheet": black banner, gothic box titles, Georgia text,
+ *              grey header rows, diamond icons and separators. On screen the
+ *              sheet is shown as an A4 page; when printing it fills one page.
+ * Author:      Adrien Duclaud
+ * Created:     2026-10-12
+ * License:     MIT
+ */
+
+.reminder-sheet {
+  box-sizing: border-box;
+  width: 190mm;
+  height: 277mm;
+  margin: 0 auto 8mm;
+  padding: 0 1mm;
+  overflow: hidden;
+  background-color: var(--color-white);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 7.5pt;
+  line-height: 1.22;
+}
+.reminder-sheet *,
+.reminder-sheet *::before {
+  box-sizing: border-box;
+}
+.reminder-sheet strong,
+.reminder-sheet th {
+  font-weight: 700;
+}
+
+/* Banner: grunge black band with a pointed end, diamond and gothic title */
+.rs-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2.5mm;
+  height: 11mm;
+  margin: 0 -1mm 2.5mm;
+  padding-left: 4mm;
+}
+.rs-banner-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.rs-banner-diamond {
+  position: relative;
+  width: 5mm;
+  height: 5mm;
+  border: 0.5mm solid var(--color-white);
+  transform: rotate(45deg);
+}
+.rs-banner-diamond::after {
+  content: "";
+  position: absolute;
+  inset: 1mm;
+  background-color: var(--color-white);
+}
+.rs-banner-title {
+  position: relative;
+  margin: 0;
+  color: var(--color-white);
+  font-family: var(--font-gothic);
+  font-size: 21pt;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Boxes */
+.rs-box {
+  border: 0.5mm solid var(--color-ink);
+  padding: 1.6mm 2mm;
+  background-color: var(--color-white);
+}
+.rs-gothic {
+  margin: 0 0 1.2mm;
+  font-family: var(--font-gothic);
+  font-size: 17pt;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
+.rs-heading {
+  margin: 0;
+  font-size: 10.5pt;
+  font-weight: 700;
+}
+.rs-note {
+  margin: 0.4mm 0 1.2mm;
+}
+
+.rs-top {
+  display: grid;
+  grid-template-columns: 58mm 1fr;
+  gap: 2.5mm;
+  margin-bottom: 2.5mm;
+}
+.rs-round {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2mm;
+  align-items: start;
+}
+.rs-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.rs-steps li {
+  padding: 1.05mm 1mm;
+}
+.rs-steps li:nth-child(even) {
+  background-color: var(--color-bone);
+}
+
+.rs-columns {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 2.5mm;
+  align-items: start;
+}
+.rs-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5mm;
+}
+
+/* Tables */
+.rs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.rs-table th,
+.rs-table td {
+  border: 0.25mm solid var(--color-ink);
+  padding: 0.5mm 1mm;
+  vertical-align: middle;
+  text-align: left;
+}
+.rs-dice {
+  margin-top: 1.6mm;
+}
+.rs-round .rs-dice {
+  margin-top: 0;
+}
+.rs-dice thead th {
+  background-color: var(--color-stone);
+  text-align: center;
+}
+.rs-dice thead th.rs-die {
+  font-weight: 400;
+  text-align: left;
+}
+.rs-die {
+  width: 8mm;
+  white-space: nowrap;
+}
+.rs-dice tbody tr:nth-child(even) td {
+  background-color: var(--color-bone);
+}
+.rs-traits {
+  width: calc(100% - 4mm);
+  margin: 0 2mm;
+}
+.rs-pairs.rs-traits th {
+  width: 26.5mm;
+}
+.rs-traits td {
+  font-style: italic;
+}
+.rs-pairs th {
+  width: 30mm;
+}
+.rs-gap {
+  margin-top: 1.4mm;
+}
+
+/* Icon boxes: diamond icon on the left */
+.rs-iconbox {
+  display: flex;
+  align-items: center;
+  gap: 2.5mm;
+}
+.rs-iconbox-body {
+  flex: 1;
+  min-width: 0;
+}
+.rs-icon {
+  width: 13mm;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* Small black diamond used as a separator, as on the original sheet */
+.rs-sep {
+  display: inline-block;
+  width: 1.5mm;
+  height: 1.5mm;
+  margin: 0 0.6mm 0.25mm;
+  background-color: var(--color-ink);
+  transform: rotate(45deg);
+  vertical-align: middle;
+}
+
+.rs-rats {
+  width: 42mm;
+  height: auto;
+  margin: -1mm auto -1.5mm;
+}
+
+.rs-joined td {
+  border-top: 0;
+}
+
+@media print {
+  .reminder-sheet {
+    margin: 0;
+  }
+}
