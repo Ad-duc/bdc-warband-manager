@@ -142,7 +142,9 @@
     "info": "Information"
   },
   "common": {
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "readMore": "Read more",
+    "readLess": "Show less"
   },
   "units": {
     "silver": "{{value}}s",

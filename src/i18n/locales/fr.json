@@ -142,7 +142,9 @@
     "info": "Information"
   },
   "common": {
-    "cancel": "Annuler"
+    "cancel": "Annuler",
+    "readMore": "Lire la suite",
+    "readLess": "Réduire"
   },
   "units": {
     "silver": "{{value}} pa",

@@ -26,6 +26,9 @@ version is given separately (playtest v1.03).
 
 ### Changed
 
+- Factions listed one per row in the first wizard step; long descriptions are
+  cut to three lines with a "Read more" toggle, as are the origin flavour
+  texts of the second step.
 - Data scripts read the translation from `sources/fr/` by default; the CI now
   runs `check:generated` and compares the data with the translation.
 
