@@ -7,7 +7,6 @@
     "license": "MIT"
   },
   "app": {
-    "title": "BDC Warband Manager",
     "gameTitle": "Black Death City",
     "tagline": "Warband builder and campaign tracker",
     "skipToContent": "Skip to content"
@@ -162,8 +161,7 @@
     "allGood": "Nothing to report.",
     "source": "Source: p. {{page}} of the playtest",
     "assumption": "reading {{id}}",
-    "who": "{{name}}:",
-    "sourceSection": "Source: p. {{page}}, {{section}}"
+    "who": "{{name}}:"
   },
   "categories": {
     "leader_one": "Leader",

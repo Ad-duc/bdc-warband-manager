@@ -7,7 +7,6 @@
     "license": "MIT"
   },
   "app": {
-    "title": "BDC Warband Manager",
     "gameTitle": "Black Death City",
     "tagline": "Création de bandes et suivi de campagne",
     "skipToContent": "Aller au contenu"
@@ -162,8 +161,7 @@
     "allGood": "Rien à signaler.",
     "source": "Source : p. {{page}} de la VO",
     "assumption": "lecture {{id}}",
-    "who": "{{name}} :",
-    "sourceSection": "Source : p. {{page}} de la VO, {{section}}"
+    "who": "{{name}} :"
   },
   "categories": {
     "leader_one": "Chef",

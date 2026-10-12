@@ -29,7 +29,7 @@ English and French.
 | 4    | Campaign tracking                                        | done   |
 | 5    | Printing, export, sharing                                | done   |
 | 6    | Verminkin, Death Covens, The Blighted Cloister           | done   |
-| 7    | Accessibility, performance, contribution guide           | next   |
+| 7    | Accessibility, performance, contribution guide           | done   |
 
 ## Stack
 
@@ -53,20 +53,22 @@ npm run dev          # http://localhost:5173/bdc-warband-manager/
 
 ## Commands
 
-| Command                                        | Purpose                                                                                         |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `npm run dev`                                  | Development server                                                                              |
-| `npm run build`                                | Type check then production build in `dist/`                                                     |
-| `npm run preview`                              | Serve the production build                                                                      |
-| `npm run typecheck`                            | TypeScript 7 strict check                                                                       |
-| `npm run lint`                                 | ESLint (also forbids hard-coded JSX text)                                                       |
-| `npm run format` / `format:check`              | Prettier                                                                                        |
-| `npm test` / `test:coverage`                   | Unit tests (vitest)                                                                             |
-| `npm run test:e2e`                             | End-to-end tests (Playwright, Chromium and Firefox)                                             |
-| `npm run check:data`                           | Validate `src/data/*.json`; add `-- --sources <folder>` to compare with the translated Markdown |
-| `npm run check:i18n`                           | Same keys in `en.json` and `fr.json`, every `t()` key exists                                    |
-| `npm run build:glossary -- --sources <folder>` | Regenerate `src/i18n/glossary.json` from `00_glossaire.md`                                      |
-| `npm run check`                                | Everything above except the end-to-end tests                                                    |
+| Command                                         | Purpose                                                                                         |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `npm run dev`                                   | Development server                                                                              |
+| `npm run build`                                 | Type check then production build in `dist/`                                                     |
+| `npm run preview`                               | Serve the production build                                                                      |
+| `npm run typecheck`                             | TypeScript 7 strict check                                                                       |
+| `npm run lint`                                  | ESLint (also forbids hard-coded JSX text)                                                       |
+| `npm run format` / `format:check`               | Prettier                                                                                        |
+| `npm test` / `test:coverage`                    | Unit tests (vitest)                                                                             |
+| `npm run test:e2e`                              | End-to-end tests (Playwright, Chromium and Firefox)                                             |
+| `npm run check:data`                            | Validate `src/data/*.json`; add `-- --sources <folder>` to compare with the translated Markdown |
+| `npm run check:i18n`                            | Same keys in `en.json` and `fr.json`, every `t()` key exists, no unused key                     |
+| `npm run generate:data -- --sources <folder>`   | Rebuild the Verminkin, Death Covens and Blighted Cloister data from the translation (Python)    |
+| `npm run check:generated -- --sources <folder>` | Fail if a generated data file is out of date; writes nothing                                    |
+| `npm run build:glossary -- --sources <folder>`  | Regenerate `src/i18n/glossary.json` from `00_glossaire.md`                                      |
+| `npm run check`                                 | Everything above except the end-to-end tests                                                    |
 
 The `--sources` folder is the "Traduction FR" folder of the translation
 project. It is not part of this repository; the variable `BDC_SOURCES` can be
@@ -83,12 +85,23 @@ src/
   features/   one folder per screen
   print/      A4 roster and TCG card layouts
   styles/     Tailwind entry point and design tokens
-scripts/      data, i18n and glossary tools
+scripts/      data, i18n and glossary tools, Python data generators
 tests/        unit (vitest) and e2e (Playwright)
 public/       local fonts, images, PWA icons
 ```
 
-Rule readings and open questions are kept in `RULES_ASSUMPTIONS.md`.
+Rule readings and open questions are kept in `RULES_ASSUMPTIONS.md`. See
+`CONTRIBUTING.md` before changing anything and `CHANGELOG.md` for the history.
+
+## Quality
+
+- Accessibility: axe-core audit of every screen in English and French (WCAG
+  2.2 A and AA) in the end-to-end tests, no violation.
+- Lighthouse 13.5 on the home page: accessibility, best practices and SEO
+  100; performance 99 on desktop. On mobile the score is 88 to 93 with
+  applied throttling (`--throttling-method=devtools`) and 75 to 90 with the
+  default simulated throttling, on a slow measuring machine. The first visit
+  downloads about 0.6 MB; later visits are served by the service worker.
 
 ## Deployment
 
@@ -127,4 +140,5 @@ données aux fichiers de traduction :
 
 Les choix d'interprétation des règles sont consignés dans
 `RULES_ASSUMPTIONS.md`. Le format des données est décrit dans
-`src/data/README.md`.
+`src/data/README.md`, la façon de contribuer dans `CONTRIBUTING.md` et
+l'historique dans `CHANGELOG.md`.

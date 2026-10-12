@@ -1,7 +1,10 @@
 /*
  * File:        scripts/check-i18n.ts
  * Role:        Checks the interface strings: same keys in en.json and fr.json,
- *              no empty value, and every t("...") key used in src exists.
+ *              no empty value, every t("...") key used in src exists, and no
+ *              key is left unused. A key counts as used when its name appears
+ *              as a string in src, or when it starts with the static prefix of
+ *              a template literal (t(`rules.${code}`)).
  * Usage:       npm run check:i18n
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
@@ -64,6 +67,23 @@ for (const f of files) {
   }
 }
 console.log(`  ${used} t() calls checked in ${files.length} files`);
+
+console.log("== Unused keys");
+// Every quoted name and every static prefix of a template literal found in src.
+const strings = new Set<string>();
+const prefixes = new Set<string>();
+for (const f of files) {
+  const src = readFileSync(f, "utf8");
+  for (const m of src.matchAll(/["'`]([a-zA-Z0-9_.]+)["'`]/g)) strings.add(m[1] ?? "");
+  for (const m of src.matchAll(/`([a-zA-Z0-9_]+\.[a-zA-Z0-9_.]*)\$\{/g)) prefixes.add(m[1] ?? "");
+}
+let unused = 0;
+for (const key of known) {
+  if (strings.has(key) || [...prefixes].some((p) => key.startsWith(p))) continue;
+  unused += 1;
+  fail(`"${key}" is never used in src`);
+}
+console.log(`  ${known.size - unused} of ${known.size} keys used`);
 
 console.log(`\nResult: ${errors} error(s)`);
 process.exit(errors > 0 ? 1 : 0);
