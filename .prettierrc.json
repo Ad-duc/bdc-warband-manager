@@ -3,5 +3,14 @@
   "singleQuote": false,
   "trailingComma": "all",
   "semi": true,
-  "endOfLine": "lf"
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": "src/data/*.json",
+      "options": {
+        "objectWrap": "collapse",
+        "printWidth": 120
+      }
+    }
+  ]
 }

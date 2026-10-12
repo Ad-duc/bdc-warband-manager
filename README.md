@@ -9,7 +9,7 @@
 # BDC Warband Manager
 
 Unofficial fan-made warband builder and campaign tracker for **Black Death City**
-(playtest v1.02). Static, installable web app (PWA) that works offline, in
+(playtest v1.03). Static, installable web app (PWA) that works offline, in
 English and French.
 
 > **Fan-made, unofficial.** Black Death City, its rules, texts, names and
@@ -107,7 +107,7 @@ covered by this license.
 ## En français
 
 **BDC Warband Manager** est un outil de fan, non officiel, pour créer et suivre
-des bandes de **Black Death City** (version de test 1.02). C'est une application
+des bandes de **Black Death City** (version de test 1.03). C'est une application
 web statique, installable et utilisable hors ligne, en anglais et en français.
 
 Black Death City, ses règles, ses textes et ses illustrations appartiennent à

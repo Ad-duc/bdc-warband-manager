@@ -451,12 +451,54 @@ function compareCommon(dir: string, c: CommonData): void {
   } else warn(`10_aide-de-jeu.md not found in ${dir}`);
 }
 
+/** Every `md` reference ("<file> > <heading>") of a data file. */
+function mdRefs(value: unknown, out: string[]): string[] {
+  if (Array.isArray(value)) for (const v of value) mdRefs(v, out);
+  else if (value !== null && typeof value === "object") {
+    const o = value as Record<string, unknown>;
+    if (typeof o["md"] === "string" && typeof o["page"] === "number") out.push(o["md"]);
+    for (const v of Object.values(o)) mdRefs(v, out);
+  }
+  return out;
+}
+
+/** Checks that each reference names an existing file and heading. */
+function checkMdRefs(dir: string, label: string, value: unknown): void {
+  const cache = new Map<string, Set<string>>();
+  const missing = new Set<string>();
+  const refs = mdRefs(value, []);
+  for (const ref of refs) {
+    const [file = "", heading = ""] = ref.split(" > ");
+    if (!cache.has(file)) {
+      const path = join(dir, file);
+      const lines = existsSync(path) ? readFileSync(path, "utf8").split("\n") : [];
+      cache.set(
+        file,
+        new Set(
+          lines
+            .filter((l) => /^#{1,6} /.test(l))
+            .flatMap((l) => {
+              const h = l.replace(/^#+ /, "").trim();
+              const noPrice = h.replace(/ - (\d+ pa|D6|D3|2D6|D66)$/, "");
+              return [h, noPrice, stripTerms(h), stripTerms(noPrice), stripTerms(h).replace(/^0-1 /, "")];
+            }),
+        ),
+      );
+    }
+    if (!(cache.get(file)?.has(heading) ?? false)) missing.add(ref);
+  }
+  if (missing.size === 0) ok(`${label}: ${refs.length} source references point to existing headings`);
+  for (const m of missing) fail(`${label}: no heading for source reference "${m}"`);
+}
+
 title("Comparison with the Markdown sources");
 const dir = sourcesDir();
 if (dir === null) {
   warn("No --sources folder given (or BDC_SOURCES unset): Markdown comparison skipped");
 } else {
   console.log(`  Sources: ${dir}`);
+  checkMdRefs(dir, "common", common);
+  for (const f of factions) checkMdRefs(dir, f.id, f);
   compareCommon(dir, common);
   const gm = factions.find((f) => f.id === "guild-mercenaries");
   if (gm) compareGuildMercenaries(dir, gm, common);

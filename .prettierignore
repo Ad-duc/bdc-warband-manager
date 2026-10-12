@@ -6,5 +6,4 @@ test-results
 node_modules
 package-lock.json
 public
-src/data/*.json
 src/i18n/glossary.json

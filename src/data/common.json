@@ -7,7 +7,7 @@
     "license": "MIT for the file structure. Game content belongs to Sam Pearson (Black Death City)."
   },
   "schemaVersion": 1,
-  "sourceVersion": "playtest-1.02",
+  "sourceVersion": "playtest-1.03",
   "recruitment": {
     "startingSilver": 1000,
     "maxFighters": 15,
@@ -18,7 +18,7 @@
       "brute": { "min": 0, "max": 2 },
       "beast": { "min": 0, "max": 3 }
     },
-    "sourceRef": { "page": 48, "md": "05_bandes-regles-generales.md > Étape 3 - Recruter des combattants" }
+    "sourceRef": { "page": 50, "md": "05_bandes-regles-generales.md > Étape 3 - Recruter des combattants" }
   },
   "carryingLimit": {
     "melee": 2,
@@ -35,8 +35,9 @@
   "rosterLimits": {
     "holdings": 5,
     "blackRotBoxes": 3,
-    "sourceRef": { "page": 133, "md": "10_aide-de-jeu.md > Feuille de bande" }
+    "sourceRef": { "page": 135, "md": "10_aide-de-jeu.md > Feuille de bande" }
   },
+
   "keywords": [
     { "key": "leader", "kind": "category", "name": { "en": "Leader", "fr": "Chef" } },
     { "key": "champion", "kind": "category", "name": { "en": "Champion", "fr": "Champion" } },
@@ -55,72 +56,79 @@
     { "key": "demon", "kind": "fighter", "name": { "en": "Demon", "fr": "Démon" } },
     { "key": "held-item", "kind": "item", "name": { "en": "Held Item", "fr": "Objet tenu" } }
   ],
+
   "weaponTraits": [
     {
       "key": "arcane",
       "name": { "en": "Arcane", "fr": "Arcanique" },
       "reminder": { "en": "Critical hits on 5+", "fr": "Touches critiques sur 5+" },
-      "fullRuleRef": { "page": 27, "md": "03_batailles.md > Arcanique" }
+      "fullRuleRef": { "page": 29, "md": "03_batailles.md > Arcanique" }
     },
     {
       "key": "blast",
       "name": { "en": "Blast", "fr": "Explosion" },
-      "reminder": { "en": "Blast template. Miss scatters d6x2\"", "fr": "Gabarit d'explosion. En cas d'échec, dévie de D6x2\"" },
-      "fullRuleRef": { "page": 27, "md": "03_batailles.md > Explosion" }
+      "reminder": {
+        "en": "Blast template. Miss scatters d6x2\"",
+        "fr": "Gabarit d'explosion. En cas d'échec, dévie de D6x2\""
+      },
+      "fullRuleRef": { "page": 29, "md": "03_batailles.md > Explosion" }
     },
     {
       "key": "bludgeon",
       "name": { "en": "Bludgeon", "fr": "Contondant" },
-      "reminder": { "en": "Critical hits deal 1 damage when saved", "fr": "Les touches critiques sauvegardées infligent 1 dégât" },
-      "fullRuleRef": { "page": 27, "md": "03_batailles.md > Contondant" }
+      "reminder": {
+        "en": "Critical hits deal 1 damage when saved",
+        "fr": "Les touches critiques sauvegardées infligent 1 dégât"
+      },
+      "fullRuleRef": { "page": 29, "md": "03_batailles.md > Contondant" }
     },
     {
       "key": "brace",
       "name": { "en": "Brace", "fr": "Contre-charge" },
       "reminder": { "en": "Initiative vs charging fighters", "fr": "Initiative contre les combattants qui chargent" },
-      "fullRuleRef": { "page": 27, "md": "03_batailles.md > Contre-charge" }
+      "fullRuleRef": { "page": 29, "md": "03_batailles.md > Contre-charge" }
     },
     {
       "key": "flame",
       "name": { "en": "Flame", "fr": "Flamme" },
       "reminder": { "en": "Flame template. Auto-hits", "fr": "Gabarit de flamme. Touche automatique" },
-      "fullRuleRef": { "page": 27, "md": "03_batailles.md > Flamme" }
+      "fullRuleRef": { "page": 29, "md": "03_batailles.md > Flamme" }
     },
     {
       "key": "guard",
       "name": { "en": "Guard", "fr": "Garde" },
       "reminder": { "en": "1 miss can parry a hit", "fr": "1 échec peut parer une touche" },
-      "fullRuleRef": { "page": 27, "md": "03_batailles.md > Garde" }
+      "fullRuleRef": { "page": 29, "md": "03_batailles.md > Garde" }
     },
     {
       "key": "heavy",
       "name": { "en": "Heavy", "fr": "Lourd" },
       "reminder": { "en": "Move or Attack", "fr": "Mouvement ou Attaque" },
-      "fullRuleRef": { "page": 27, "md": "03_batailles.md > Lourd" }
+      "fullRuleRef": { "page": 29, "md": "03_batailles.md > Lourd" }
     },
     {
       "key": "misfire",
       "name": { "en": "Misfire", "fr": "Incident de tir" },
       "reminder": { "en": "On a natural 1", "fr": "Sur un 1 naturel" },
-      "fullRuleRef": { "page": 27, "md": "03_batailles.md > Incident de tir" }
+      "fullRuleRef": { "page": 29, "md": "03_batailles.md > Incident de tir" }
     },
     {
       "key": "natural-weapon",
       "name": { "en": "Natural Weapon", "fr": "Arme naturelle" },
       "reminder": { "en": "Cannot parry", "fr": "Ne peut pas parer" },
-      "fullRuleRef": { "page": 27, "md": "03_batailles.md > Arme naturelle" }
+      "fullRuleRef": { "page": 29, "md": "03_batailles.md > Arme naturelle" }
     },
     {
       "key": "off-hand",
       "name": { "en": "Off-hand", "fr": "Main secondaire" },
       "reminder": { "en": "Can be used off-hand: 1 attack", "fr": "Utilisable en main secondaire : 1 attaque" },
-      "fullRuleRef": { "page": 27, "md": "03_batailles.md > Main secondaire" }
+      "fullRuleRef": { "page": 29, "md": "03_batailles.md > Main secondaire" }
     },
     {
       "key": "one-use",
       "name": { "en": "One-use", "fr": "Usage unique" },
       "reminder": { "en": "1 attack per battle", "fr": "1 attaque par bataille" },
-      "fullRuleRef": { "page": 27, "md": "03_batailles.md > Usage unique" }
+      "fullRuleRef": { "page": 29, "md": "03_batailles.md > Usage unique" }
     },
     {
       "key": "poison",
@@ -129,19 +137,22 @@
         "en": "Critical hits poison. Suffer 1 damage when activated. Ends when healed or 1 life remains",
         "fr": "Les touches critiques empoisonnent. Subit 1 dégât à chaque activation. Prend fin si soigné ou s'il reste 1 point de vie"
       },
-      "fullRuleRef": { "page": 28, "md": "03_batailles.md > Poison" }
+      "fullRuleRef": { "page": 30, "md": "03_batailles.md > Poison" }
     },
     {
       "key": "rare",
       "name": { "en": "Rare", "fr": "Rare" },
       "reminder": { "en": "Limited by the number listed", "fr": "Limité au nombre indiqué" },
-      "fullRuleRef": { "page": 28, "md": "03_batailles.md > Rare (0-[x])" }
+      "fullRuleRef": { "page": 30, "md": "03_batailles.md > Rare (0-[x])" }
     },
     {
       "key": "reload",
       "name": { "en": "Reload", "fr": "Rechargement" },
-      "reminder": { "en": "Spend a Move or Action to reload", "fr": "Dépenser un Mouvement ou une Action pour recharger" },
-      "fullRuleRef": { "page": 28, "md": "03_batailles.md > Rechargement" }
+      "reminder": {
+        "en": "Forgo a Move or Action to reload",
+        "fr": "Renoncer à un Mouvement ou une Action pour recharger"
+      },
+      "fullRuleRef": { "page": 30, "md": "03_batailles.md > Rechargement" }
     },
     {
       "key": "scare",
@@ -150,33 +161,37 @@
         "en": "Unengaged fighters pass Willpower test or scatter d6\"",
         "fr": "Les combattants non engagés réussissent un test de Volonté ou dévient de D6\""
       },
-      "fullRuleRef": { "page": 28, "md": "03_batailles.md > Effroi" }
+      "fullRuleRef": { "page": 30, "md": "03_batailles.md > Effroi" }
     },
     {
       "key": "two-handed",
       "name": { "en": "Two-handed", "fr": "À deux mains" },
-      "reminder": { "en": "1 per fighter. No off-hand attack", "fr": "1 par combattant. Pas d'attaque de main secondaire" },
-      "fullRuleRef": { "page": 28, "md": "03_batailles.md > À deux mains" }
+      "reminder": {
+        "en": "1 per fighter. No off-hand attack",
+        "fr": "1 par combattant. Pas d'attaque de main secondaire"
+      },
+      "fullRuleRef": { "page": 30, "md": "03_batailles.md > À deux mains" }
     },
     {
       "key": "unwieldy",
       "name": { "en": "Unwieldy", "fr": "Encombrant" },
       "reminder": { "en": "-1 to attack rolls", "fr": "-1 aux jets d'attaque" },
-      "fullRuleRef": { "page": 28, "md": "03_batailles.md > Encombrant" }
+      "fullRuleRef": { "page": 30, "md": "03_batailles.md > Encombrant" }
     },
     {
       "key": "volley",
       "name": { "en": "Volley", "fr": "Salve" },
       "reminder": { "en": "Multiple targets within 3\"", "fr": "Plusieurs cibles à 3\" ou moins" },
-      "fullRuleRef": { "page": 28, "md": "03_batailles.md > Salve" }
+      "fullRuleRef": { "page": 30, "md": "03_batailles.md > Salve" }
     },
     {
       "key": "wrap",
       "name": { "en": "Wrap", "fr": "Contournement" },
       "reminder": { "en": "Cannot parry or be parried", "fr": "Ne peut ni parer ni être parée" },
-      "fullRuleRef": { "page": 28, "md": "03_batailles.md > Contournement" }
+      "fullRuleRef": { "page": 30, "md": "03_batailles.md > Contournement" }
     }
   ],
+
   "conditions": [
     {
       "key": "bloodied",
@@ -194,7 +209,7 @@
         "en": "Not visible to enemies they are in cover from. Remains hidden until: next activation, or no longer touching terrain, or are within 3\" of an enemy fighter.",
         "fr": "Non visible pour les ennemis par rapport auxquels il est à couvert. Reste caché jusqu'à : sa prochaine activation, ou jusqu'à ce qu'il ne soit plus au contact d'un décor, ou qu'il soit à 3\" ou moins d'un combattant ennemi."
       },
-      "sourceRef": { "page": 132, "md": "10_aide-de-jeu.md > Black Death City - Aide de jeu" }
+      "sourceRef": { "page": 134, "md": "10_aide-de-jeu.md > Black Death City - Aide de jeu" }
     },
     {
       "key": "poisoned",
@@ -203,16 +218,17 @@
         "en": "Suffer 1 damage when activated. Ends when healed or 1 life remains. Demons and Undead cannot become poisoned.",
         "fr": "Subit 1 dégât à chaque activation. Prend fin si soigné ou s'il reste 1 point de vie. Les Démons et les Morts-vivants ne peuvent pas être empoisonnés."
       },
-      "sourceRef": { "page": 28, "md": "03_batailles.md > Poison" }
+      "sourceRef": { "page": 30, "md": "03_batailles.md > Poison" }
     }
   ],
+
   "skillTables": [
     {
       "id": "veteran-skills",
       "name": { "en": "Veteran Skills", "fr": "Compétences de vétéran" },
       "eligibility": { "kind": "any" },
       "eligibilityLabel": { "en": "Any fighter", "fr": "N'importe quel combattant" },
-      "sourceRef": { "page": 49, "md": "05_bandes-regles-generales.md > Compétences de vétéran" },
+      "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Compétences de vétéran" },
       "skills": [
         {
           "id": "dual-weapon-wielder",
@@ -221,16 +237,16 @@
             "en": "Each time this fighter attacks with an off-hand weapon, they can make 2 attacks with that weapon instead of 1.",
             "fr": "Chaque fois que ce combattant attaque avec une arme de main secondaire, il peut effectuer 2 attaques avec cette arme à la place de 1."
           },
-          "sourceRef": { "page": 49, "md": "05_bandes-regles-generales.md > Combattant à deux armes" }
+          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Combattant à deux armes" }
         },
         {
           "id": "shooting-drills",
           "name": { "en": "Shooting Drills", "fr": "Exercices de tir" },
           "text": {
-            "en": "Each time this fighter reloads a weapon, they can make a Willpower test. If they pass, they do not need to sacrifice a Move or Action as part of the reload.",
-            "fr": "Chaque fois que ce combattant recharge une arme, il peut effectuer un test de Volonté. S'il le réussit, il n'a pas besoin de sacrifier un Mouvement ou une Action dans le cadre du rechargement."
+            "en": "Each time this fighter reloads a weapon, they can make a Willpower test. If they pass, they do not need to forgo a Move or Action, (see Reload weapon trait).",
+            "fr": "Chaque fois que ce combattant recharge une arme, il peut effectuer un test de Volonté. S'il le réussit, il n'a pas besoin de renoncer à un Mouvement ou à une Action, voir le trait d'arme Rechargement."
           },
-          "sourceRef": { "page": 49, "md": "05_bandes-regles-generales.md > Exercices de tir" }
+          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Exercices de tir" }
         },
         {
           "id": "great-weapon-master",
@@ -239,7 +255,7 @@
             "en": "This fighter ignores the 'Unwieldy' weapon trait on Melee Weapons.",
             "fr": "Ce combattant ignore le trait d'arme \"Encombrant\" des armes de corps à corps."
           },
-          "sourceRef": { "page": 49, "md": "05_bandes-regles-generales.md > Maître des grandes armes" }
+          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Maître des grandes armes" }
         },
         {
           "id": "unshakeable",
@@ -248,7 +264,7 @@
             "en": "This fighter ignores the Fear special rule and all rules that would make them scatter (eg. the Scare weapon trait).",
             "fr": "Ce combattant ignore la règle spéciale Peur et toutes les règles qui le feraient dévier, par exemple le trait d'arme Effroi."
           },
-          "sourceRef": { "page": 49, "md": "05_bandes-regles-generales.md > Inébranlable" }
+          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Inébranlable" }
         },
         {
           "id": "tough-bastard",
@@ -257,25 +273,25 @@
             "en": "Each time this fighter activates while they are bloodied, they can take a Willpower test. If they pass, they heal 1 life point and are no longer bloodied.",
             "fr": "Chaque fois que ce combattant est activé alors qu'il est ensanglanté, il peut effectuer un test de Volonté. S'il le réussit, il est soigné de 1 point de vie et n'est plus ensanglanté."
           },
-          "sourceRef": { "page": 49, "md": "05_bandes-regles-generales.md > Dur à cuire" }
+          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Dur à cuire" }
         },
         {
           "id": "fast-learner",
           "name": { "en": "Fast Learner", "fr": "Apprend vite" },
           "text": {
-            "en": "In the aftermath of each battle, this fighter earns d6 bonus experience.",
+            "en": "In the Aftermath sequence of each battle, this fighter earns d6 bonus experience.",
             "fr": "Lors de la séquence d'après-bataille de chaque bataille, ce combattant gagne D6 d'expérience bonus."
           },
-          "sourceRef": { "page": 49, "md": "05_bandes-regles-generales.md > Apprend vite" }
+          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Apprend vite" }
         },
         {
           "id": "duellist",
           "name": { "en": "Duellist", "fr": "Duelliste" },
           "text": {
-            "en": "This fighter can parry critical hits with any hit.",
-            "fr": "Ce combattant peut parer les touches critiques avec n'importe quelle touche."
+            "en": "This fighter can parry critical hits with any successful attack.",
+            "fr": "Ce combattant peut parer les touches critiques avec n'importe quelle attaque réussie."
           },
-          "sourceRef": { "page": 49, "md": "05_bandes-regles-generales.md > Duelliste" }
+          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Duelliste" }
         },
         {
           "id": "steady-aim",
@@ -284,7 +300,7 @@
             "en": "Add 1 to attack rolls for ranged attacks made by this fighter, while this fighter has not moved in the same activation.",
             "fr": "Ajoutez 1 aux jets d'attaque des attaques à distance effectuées par ce combattant, tant que ce combattant ne s'est pas déplacé pendant la même activation."
           },
-          "sourceRef": { "page": 49, "md": "05_bandes-regles-generales.md > Visée stable" }
+          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Visée stable" }
         }
       ]
     }
@@ -292,13 +308,23 @@
   "campaign": {
     "status": "not-published",
     "note": {
-      "en": "Chapter 5 (Campaign) is not part of playtest v1.02. Injuries, advancement, income and holdings are free fields until it is released.",
-      "fr": "Le Chapitre 5 (Campagne) n'existe pas dans la version de test 1.02. Blessures, progression, revenus et possessions restent des champs libres jusqu'à sa parution."
+      "en": "Chapter 5 (Campaign) is not part of playtest v1.03. Injuries, advancement, income and holdings are free fields until it is released.",
+      "fr": "Le Chapitre 5 (Campagne) n'existe pas dans la version de test 1.03. Blessures, progression, revenus et possessions restent des champs libres jusqu'à sa parution."
     },
     "tables": [
-      { "id": "lasting-injuries", "name": { "en": "Lasting Injury Table", "fr": "Table des blessures durables" }, "die": null, "entries": [] },
+      {
+        "id": "lasting-injuries",
+        "name": { "en": "Lasting Injury Table", "fr": "Table des blessures durables" },
+        "die": null,
+        "entries": []
+      },
       { "id": "advancements", "name": { "en": "Advancements", "fr": "Progression" }, "die": null, "entries": [] },
-      { "id": "exploration", "name": { "en": "Exploration Roll", "fr": "Jet d'exploration" }, "die": "d66", "entries": [] },
+      {
+        "id": "exploration",
+        "name": { "en": "Exploration Roll", "fr": "Jet d'exploration" },
+        "die": "d66",
+        "entries": []
+      },
       { "id": "holdings", "name": { "en": "Holdings", "fr": "Possessions" }, "die": null, "entries": [] }
     ]
   }

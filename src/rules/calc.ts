@@ -172,7 +172,12 @@ export function weaponLines(index: FactionIndex, fighter: WarbandFighter): Weapo
       lines.push({ id: w.id, kind: w.kind, profile, attacksReduced: reduce });
     }
     if (w.grantsAttack !== null)
-      lines.push({ id: w.id, kind: "melee", profile: w.grantsAttack, attacksReduced: false });
+      lines.push({
+        id: w.id,
+        kind: w.grantsAttack.range === undefined ? "melee" : "ranged",
+        profile: w.grantsAttack,
+        attacksReduced: false,
+      });
   }
 
   if (!gear.some((w) => w.kind === "melee"))

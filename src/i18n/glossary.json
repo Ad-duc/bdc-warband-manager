@@ -763,6 +763,11 @@
       "category": "02"
     },
     {
+      "vo": "forgo",
+      "vf": "renoncer à",
+      "category": "02"
+    },
+    {
       "vo": "immediately",
       "vf": "immédiatement",
       "category": "02"
@@ -1953,6 +1958,11 @@
       "category": "07"
     },
     {
+      "vo": "Example Melee Attack Action",
+      "vf": "Exemple d'action d'Attaque au corps à corps",
+      "category": "07"
+    },
+    {
       "vo": "flame template",
       "vf": "gabarit de flamme",
       "category": "07"
@@ -1990,6 +2000,11 @@
     {
       "vo": "line of sight",
       "vf": "ligne de vue",
+      "category": "07"
+    },
+    {
+      "vo": "Make an Armour Roll",
+      "vf": "Effectuer un jet d'armure",
       "category": "07"
     },
     {
@@ -2048,6 +2063,11 @@
       "category": "07"
     },
     {
+      "vo": "No Critical Hits",
+      "vf": "Pas de touches critiques",
+      "category": "07"
+    },
+    {
       "vo": "off-hand attack",
       "vf": "attaque de main secondaire",
       "category": "07"
@@ -2103,6 +2123,11 @@
       "category": "07"
     },
     {
+      "vo": "Resolving Attacks",
+      "vf": "Résolution des attaques",
+      "category": "07"
+    },
+    {
       "vo": "Resolving Hits",
       "vf": "Résolution des touches",
       "category": "07"
@@ -2118,8 +2143,23 @@
       "category": "07"
     },
     {
+      "vo": "Step",
+      "vf": "Étape",
+      "category": "07"
+    },
+    {
       "vo": "successful attack",
       "vf": "attaque réussie",
+      "category": "07"
+    },
+    {
+      "vo": "successful attack roll",
+      "vf": "jet d'attaque réussi",
+      "category": "07"
+    },
+    {
+      "vo": "Successful Attack Rolls",
+      "vf": "Jets d'attaque réussis",
       "category": "07"
     },
     {
@@ -2140,6 +2180,11 @@
     {
       "vo": "Unarmed Fighters",
       "vf": "Combattants sans arme",
+      "category": "07"
+    },
+    {
+      "vo": "vantage",
+      "vf": "surplomb (être en surplomb)",
       "category": "07"
     },
     {
@@ -4420,6 +4465,11 @@
     {
       "vo": "Long Rifle",
       "vf": "Fusil long",
+      "category": "20"
+    },
+    {
+      "vo": "Ogre Arbalest",
+      "vf": "Arbalète lourde d'ogre",
       "category": "20"
     },
     {

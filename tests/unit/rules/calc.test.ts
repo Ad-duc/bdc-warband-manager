@@ -144,6 +144,17 @@ describe("weapon lines", () => {
       ["loyal-companion", "melee"],
     ]);
   });
+
+  it("Bomb-bolt adds a ranged attack line with its own profile (v1.03)", () => {
+    const lines = weaponLines(index, mercenary({ wargearIds: ["dagger", "crossbow", "bomb-bolt"] }));
+    expect(lines.map((l) => [l.id, l.kind])).toEqual([
+      ["dagger", "melee"],
+      ["crossbow", "ranged"],
+      ["bomb-bolt", "ranged"],
+    ]);
+    expect(lines[2]?.profile).toMatchObject({ range: 20, rend: -1, damage: "d3+1" });
+    expect(lines[2]?.profile.critDamage).toBeUndefined();
+  });
 });
 
 describe("battle log totals", () => {
