@@ -137,12 +137,18 @@ const FORBIDDEN: [RegExp, string][] = [
   [/[\u2018\u2019\u201A\u201B]/, "typographic single quote"],
   [/[\u201C\u201D\u201E\u00AB\u00BB]/, "typographic double quote"],
   [/[\u00A0\u202F\u2007\u2009]/, "non-breaking or thin space"],
-  [/[\u200B\u200C\u200D\u2060\uFEFF]/, "zero-width character"],
+  [/\u200B|\u200C|\u200D|\u2060|\uFEFF/, "zero-width character"],
   [/\u2026/, "typographic ellipsis"],
   [/\u017F/, "long s"],
 ];
 const MENTION = new RegExp(
-  ["\\bcl" + "aude\\b", "\\bchat" + "gpt\\b", "g" + "enerated by", "g" + "énéré par", "\\bopen" + "ai\\b"].join("|"),
+  [
+    "\\bcl" + "aude\\b",
+    "\\bchat" + "gpt\\b",
+    "g" + "enerated by",
+    "g" + "énéré par",
+    "\\bopen" + "ai\\b",
+  ].join("|"),
   "i",
 );
 
@@ -208,7 +214,12 @@ const headings = (lines: string[], level: number): string[] =>
 const tableRows = (lines: string[]): string[][] =>
   lines
     .filter((l) => l.startsWith("|") && !/^\|[-| ]+\|$/.test(l))
-    .map((l) => l.slice(1, -1).split("|").map((c) => c.trim()));
+    .map((l) =>
+      l
+        .slice(1, -1)
+        .split("|")
+        .map((c) => c.trim()),
+    );
 
 /** Formats a JSON value the way the French Markdown prints it. */
 function frValue(v: number | string | null | undefined): string {
@@ -271,7 +282,11 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
   const listRows = tableRows(section(md, 2, "Liste des combattants"))
     .filter((r) => r[0] !== "Combattant")
     .map((r) => `${(r[0] ?? "").replace(/^0-1 /, "")}=${cost(r[1] ?? "")}`);
-  compareSets("Fighters list (name=cost)", listRows, f.fighters.map((x) => `${x.name.en}=${x.cost}`));
+  compareSets(
+    "Fighters list (name=cost)",
+    listRows,
+    f.fighters.map((x) => `${x.name.en}=${x.cost}`),
+  );
 
   // The scrolls chapter holds several "##" sub-headings, so it is cut by hand.
   const scrollStart = md.findIndex((l) => l.startsWith("## Parchemins de combattants"));
@@ -309,7 +324,12 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
     xpRows.map((v, i) => `${i + 1}:${v}`),
     f.fighters.map((x) => {
       const e = x.startingExperience;
-      const v = e.dice === null ? String(e.base) : e.base === 0 ? e.dice.toUpperCase() : `${e.base}+${e.dice.toUpperCase()}`;
+      const v =
+        e.dice === null
+          ? String(e.base)
+          : e.base === 0
+            ? e.dice.toUpperCase()
+            : `${e.base}+${e.dice.toUpperCase()}`;
       return `${f.fighters.indexOf(x) + 1}:${v}`;
     }),
   );
@@ -326,7 +346,11 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
         const w = findWargear(r[0] ?? "");
         return `${w?.id ?? "?" + (r[0] ?? "")}=${cost(r[1] ?? "")}`;
       });
-    compareSets(`List "${list.name.fr}" (item=price)`, rows, list.entries.map((e) => `${e.wargearId}=${e.cost}`));
+    compareSets(
+      `List "${list.name.fr}" (item=price)`,
+      rows,
+      list.entries.map((e) => `${e.wargearId}=${e.cost}`),
+    );
   }
 
   // Weapon profiles
@@ -335,7 +359,10 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
   );
   compareSets(
     "Melee weapon profiles",
-    melee.map((r) => `${findWargear(r[0] ?? "")?.id ?? "?" + (r[0] ?? "")}: ${r.slice(1, 5).join(" ")} | ${stripTerms(r[5] ?? "")} | ${cost(r[6] ?? "")}`),
+    melee.map(
+      (r) =>
+        `${findWargear(r[0] ?? "")?.id ?? "?" + (r[0] ?? "")}: ${r.slice(1, 5).join(" ")} | ${stripTerms(r[5] ?? "")} | ${cost(r[6] ?? "")}`,
+    ),
     f.wargear
       .filter((w) => w.kind === "melee" && w.purchasable && w.profile)
       .map((w) => {
@@ -378,7 +405,11 @@ function compareGuildMercenaries(dir: string, f: FactionData, c: CommonData): vo
     ...headings(section(md, 2, "Vieux briscards"), 3),
     ...headings(section(md, 2, "Ruse de soldat"), 3),
   ].map((h) => splitTerm(h).fr);
-  compareSets("Faction skills (FR names)", skillMd, f.skillTables.flatMap((t) => t.skills.map((s) => s.name.fr)));
+  compareSets(
+    "Faction skills (FR names)",
+    skillMd,
+    f.skillTables.flatMap((t) => t.skills.map((s) => s.name.fr)),
+  );
   const spellMd = [
     ...headings(section(md, 2, "Domaine de la Magie autorisée"), 3),
     ...headings(section(md, 2, "Domaine des Saints"), 3),

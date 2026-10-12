@@ -30,9 +30,7 @@ export const LocalizedTextSchema = z
 export type LocalizedText = z.infer<typeof LocalizedTextSchema>;
 
 /** Dice or fixed value as printed in the book: "3", "d3", "d3+1", "2d6", "3d6x5". */
-export const DiceExprSchema = z
-  .string()
-  .regex(/^(\d+|\d*d\d+([+-]\d+)?(x\d+)?)$/, "Invalid dice expression");
+export const DiceExprSchema = z.string().regex(/^(\d+|\d*d\d+([+-]\d+)?(x\d+)?)$/, "Invalid dice expression");
 export type DiceExpr = z.infer<typeof DiceExprSchema>;
 
 /** Traceability: printed VO page plus the Markdown file and heading. */
@@ -55,13 +53,7 @@ export const FileHeaderSchema = z
   })
   .strict();
 
-export const CategorySchema = z.enum([
-  "leader",
-  "champion",
-  "henchman",
-  "brute",
-  "beast",
-]);
+export const CategorySchema = z.enum(["leader", "champion", "henchman", "brute", "beast"]);
 export type Category = z.infer<typeof CategorySchema>;
 
 export const TraitRefSchema = z
@@ -471,7 +463,10 @@ export const FactionDataSchema = z
       .object({
         shield: z.string().min(1),
         /** null: the style guide is grayscale only, see RULES_ASSUMPTIONS.md. */
-        accentColor: z.string().regex(/^#[0-9A-F]{6}$/).nullable(),
+        accentColor: z
+          .string()
+          .regex(/^#[0-9A-F]{6}$/)
+          .nullable(),
       })
       .strict(),
     sourceRef: SourceRefSchema,
@@ -522,7 +517,7 @@ export const InjurySchema = z
 
 export const FighterHistoryEntrySchema = z
   .object({
-    date: z.string().datetime(),
+    date: z.iso.datetime(),
     battleId: z.string().nullable(),
     text: z.string(),
   })
@@ -553,7 +548,7 @@ export type WarbandFighter = z.infer<typeof WarbandFighterSchema>;
 export const BattleLogEntrySchema = z
   .object({
     id: z.string().min(1),
-    date: z.string().datetime(),
+    date: z.iso.datetime(),
     scenario: z.string(),
     opponent: z.string(),
     result: z.enum(["victory", "defeat", "draw"]),
@@ -580,8 +575,8 @@ export const WarbandSchema = z
     originId: IdSchema,
     creationLanguage: z.enum(["en", "fr"]),
     mode: z.enum(["recruitment", "campaign"]),
-    createdAt: z.string().datetime(),
-    updatedAt: z.string().datetime(),
+    createdAt: z.iso.datetime(),
+    updatedAt: z.iso.datetime(),
     stash: z
       .object({
         silver: z.number().int().min(0),
@@ -634,8 +629,8 @@ export const CampaignSchema = z
     name: z.string(),
     warbandIds: z.array(z.string().min(1)),
     notes: z.string(),
-    createdAt: z.string().datetime(),
-    updatedAt: z.string().datetime(),
+    createdAt: z.iso.datetime(),
+    updatedAt: z.iso.datetime(),
   })
   .strict();
 export type Campaign = z.infer<typeof CampaignSchema>;
@@ -668,14 +663,35 @@ export function checkFactionIntegrity(faction: FactionData, common: CommonData):
   const allTables = [...common.skillTables, ...faction.skillTables];
   const skillIds = allTables.flatMap((t) => t.skills.map((s) => s.id));
 
-  dup("fighter", faction.fighters.map((f) => f.id));
-  dup("wargear", faction.wargear.map((w) => w.id));
-  dup("armoury list", faction.armouryLists.map((l) => l.id));
-  dup("origin", faction.origins.map((o) => o.id));
-  dup("stronghold", faction.strongholds.map((s) => s.id));
-  dup("skill table", allTables.map((t) => t.id));
+  dup(
+    "fighter",
+    faction.fighters.map((f) => f.id),
+  );
+  dup(
+    "wargear",
+    faction.wargear.map((w) => w.id),
+  );
+  dup(
+    "armoury list",
+    faction.armouryLists.map((l) => l.id),
+  );
+  dup(
+    "origin",
+    faction.origins.map((o) => o.id),
+  );
+  dup(
+    "stronghold",
+    faction.strongholds.map((s) => s.id),
+  );
+  dup(
+    "skill table",
+    allTables.map((t) => t.id),
+  );
   dup("skill", skillIds);
-  dup("spell", faction.spellLores.flatMap((l) => l.spells.map((s) => s.id)));
+  dup(
+    "spell",
+    faction.spellLores.flatMap((l) => l.spells.map((s) => s.id)),
+  );
   const skillIdSet = new Set(skillIds);
 
   const checkTraits = (owner: string, traits: { key: string }[] | undefined): void => {
@@ -748,7 +764,10 @@ export function checkFactionIntegrity(faction: FactionData, common: CommonData):
   }
 
   for (const l of faction.armouryLists) {
-    dup(`entry of list ${l.id}`, l.entries.map((e) => e.wargearId));
+    dup(
+      `entry of list ${l.id}`,
+      l.entries.map((e) => e.wargearId),
+    );
     for (const e of l.entries) {
       const w = wargearById.get(e.wargearId);
       if (!w) problems.push(`List ${l.id}: unknown wargear "${e.wargearId}"`);

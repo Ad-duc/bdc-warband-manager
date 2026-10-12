@@ -1,0 +1,96 @@
+/*
+ * File:        src/styles/index.css
+ * Role:        Tailwind CSS entry point and design tokens from
+ *              CHARTE_GRAPHIQUE_BDC.md: strict grayscale palette, gothic titles,
+ *              handwritten touches, readable serif body. Components use the
+ *              semantic tokens only, never raw colours.
+ * Author:      Adrien Duclaud
+ * Created:     2026-10-12
+ * License:     MIT
+ */
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Old Celtiberian";
+  src: url("/fonts/old-celtiberian.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Trattatello";
+  src: url("/fonts/trattatello.ttf") format("truetype");
+  font-display: swap;
+}
+
+@theme {
+  /* Palette (style guide section 2) */
+  --color-ink: #0b0b0b;
+  --color-charcoal: #3b3b3b;
+  --color-ash: #757575;
+  --color-mist: #a9a9a9;
+  --color-stone: #d9d9d9;
+  --color-bone: #ececec;
+  --color-parchment: #f2f1ee;
+  --color-white: #ffffff;
+
+  /* Semantic tokens: dark gothic page, parchment panels */
+  --color-page: var(--color-ink);
+  --color-on-page: var(--color-bone);
+  --color-on-page-muted: var(--color-mist);
+  --color-panel: var(--color-parchment);
+  --color-on-panel: var(--color-ink);
+  --color-on-panel-muted: var(--color-charcoal);
+  --color-rule: var(--color-charcoal);
+  --color-focus: var(--color-white);
+
+  /* Typography (style guide section 3) */
+  --font-gothic: "Old Celtiberian", "UnifrakturMaguntia", serif;
+  --font-hand: "Trattatello", Georgia, serif;
+  --font-body: Georgia, "Times New Roman", serif;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    font-family: var(--font-body);
+    color: var(--color-on-page);
+    background-color: var(--color-page);
+    background-image: radial-gradient(ellipse at top, var(--color-charcoal) 0%, var(--color-ink) 70%);
+    background-attachment: fixed;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+}
+
+@layer components {
+  /* Parchment panel: light centre, darkened worn edges */
+  .panel-parchment {
+    background-color: var(--color-panel);
+    color: var(--color-on-panel);
+    box-shadow:
+      inset 0 0 60px color-mix(in srgb, var(--color-mist) 70%, transparent),
+      0 0 0 2px var(--color-ink);
+  }
+
+  /* Ornamental separator from the style guide assets */
+  .ornament {
+    height: 25px;
+    background: url("/images/ornement.png") center / contain no-repeat;
+  }
+}

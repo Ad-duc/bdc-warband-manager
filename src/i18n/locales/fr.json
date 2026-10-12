@@ -1,0 +1,34 @@
+{
+  "_header": {
+    "file": "src/i18n/locales/fr.json",
+    "role": "French interface strings. Every key must exist in en.json (npm run check:i18n).",
+    "author": "Adrien Duclaud",
+    "created": "2026-10-12",
+    "license": "MIT"
+  },
+  "app": {
+    "title": "BDC Warband Manager",
+    "gameTitle": "Black Death City",
+    "tagline": "Création de bandes et suivi de campagne",
+    "skipToContent": "Aller au contenu"
+  },
+  "language": {
+    "label": "Langue",
+    "en": "English",
+    "fr": "Français"
+  },
+  "home": {
+    "heading": "Vos bandes",
+    "empty": "Aucune bande pour l'instant. Rassemblez vos pièces d'argent et aventurez-vous dans la Cité.",
+    "create": "Nouvelle bande",
+    "import": "Importer",
+    "comingSoon": "Disponible dans une prochaine version",
+    "savedCount_one": "{{count}} bande enregistrée sur cet appareil",
+    "savedCount_other": "{{count}} bandes enregistrées sur cet appareil"
+  },
+  "footer": {
+    "disclaimer": "Outil de fan non officiel, à usage privé. Black Death City, ses règles, ses textes et ses illustrations appartiennent à leur auteur, Sam Pearson.",
+    "version": "Version {{version}}, règles de la version de test {{rules}}",
+    "offline": "Fonctionne hors ligne une fois chargé."
+  }
+}

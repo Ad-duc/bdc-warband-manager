@@ -1,0 +1,5781 @@
+{
+  "_header": {
+    "file": "src/i18n/glossary.json",
+    "role": "VO > VF game terms generated from 00_glossaire.md by scripts/build-glossary.ts. Do not edit by hand.",
+    "author": "Adrien Duclaud",
+    "created": "2026-10-12",
+    "license": "MIT for the file structure. Terms belong to the translation project."
+  },
+  "categories": [
+    {
+      "id": "01",
+      "name": "Général"
+    },
+    {
+      "id": "02",
+      "name": "Formulations de règles"
+    },
+    {
+      "id": "03",
+      "name": "Types de combattants et mots-clés"
+    },
+    {
+      "id": "04",
+      "name": "Valeurs et profils"
+    },
+    {
+      "id": "05",
+      "name": "Séquence de jeu"
+    },
+    {
+      "id": "06",
+      "name": "États et situations"
+    },
+    {
+      "id": "07",
+      "name": "Combat"
+    },
+    {
+      "id": "08",
+      "name": "Traits d'armes"
+    },
+    {
+      "id": "09",
+      "name": "Magie"
+    },
+    {
+      "id": "10",
+      "name": "Terrain"
+    },
+    {
+      "id": "11",
+      "name": "Scénarios : termes généraux"
+    },
+    {
+      "id": "12",
+      "name": "Scénarios : titres et objectifs"
+    },
+    {
+      "id": "13",
+      "name": "Rebondissements et tables de scénario"
+    },
+    {
+      "id": "14",
+      "name": "Campagne et feuille de bande"
+    },
+    {
+      "id": "15",
+      "name": "Factions et combattants (VO conservée)"
+    },
+    {
+      "id": "16",
+      "name": "Origines"
+    },
+    {
+      "id": "17",
+      "name": "Repaires et règles de repaire"
+    },
+    {
+      "id": "18",
+      "name": "Armureries et listes d'équipement"
+    },
+    {
+      "id": "19",
+      "name": "Armes de corps à corps"
+    },
+    {
+      "id": "20",
+      "name": "Armes à distance"
+    },
+    {
+      "id": "21",
+      "name": "Armures"
+    },
+    {
+      "id": "22",
+      "name": "Objets"
+    },
+    {
+      "id": "23",
+      "name": "Domaines de magie et sorts"
+    },
+    {
+      "id": "24",
+      "name": "Compétences"
+    },
+    {
+      "id": "25",
+      "name": "Règles spéciales de combattants"
+    },
+    {
+      "id": "26",
+      "name": "Épithètes du Blighted Cloister"
+    },
+    {
+      "id": "27",
+      "name": "Structure du livre"
+    }
+  ],
+  "entries": [
+    {
+      "vo": "12-sided dice",
+      "vf": "dé à 12 faces",
+      "category": "01"
+    },
+    {
+      "vo": "15 Fighters Limit",
+      "vf": "Limite de 15 combattants",
+      "category": "01"
+    },
+    {
+      "vo": "1st Item",
+      "vf": "1er objet",
+      "category": "01"
+    },
+    {
+      "vo": "1st Melee Weapon",
+      "vf": "1re arme de corps à corps",
+      "category": "01"
+    },
+    {
+      "vo": "2nd Item",
+      "vf": "2e objet",
+      "category": "01"
+    },
+    {
+      "vo": "2nd Melee Weapon",
+      "vf": "2e arme de corps à corps",
+      "category": "01"
+    },
+    {
+      "vo": "6-sided dice",
+      "vf": "dé à 6 faces",
+      "category": "01"
+    },
+    {
+      "vo": "A Thousand Silver Coins",
+      "vf": "Mille pièces d'argent",
+      "category": "01"
+    },
+    {
+      "vo": "aftermath sequence",
+      "vf": "séquence d'après-bataille",
+      "category": "01"
+    },
+    {
+      "vo": "armour (wargear)",
+      "vf": "armure",
+      "category": "01"
+    },
+    {
+      "vo": "Armoury",
+      "vf": "Armurerie",
+      "category": "01"
+    },
+    {
+      "vo": "base",
+      "vf": "socle",
+      "category": "01"
+    },
+    {
+      "vo": "battle",
+      "vf": "bataille",
+      "category": "01"
+    },
+    {
+      "vo": "battlefield mat",
+      "vf": "tapis de jeu",
+      "category": "01"
+    },
+    {
+      "vo": "bearer",
+      "vf": "porteur",
+      "category": "01"
+    },
+    {
+      "vo": "Black Rot",
+      "vf": "Pourriture noire",
+      "category": "01"
+    },
+    {
+      "vo": "blackpowder",
+      "vf": "poudre noire",
+      "category": "01"
+    },
+    {
+      "vo": "body",
+      "vf": "corps",
+      "category": "01"
+    },
+    {
+      "vo": "Buy Wargear",
+      "vf": "Acheter l'équipement",
+      "category": "01"
+    },
+    {
+      "vo": "Calculate your Warband Rating",
+      "vf": "Calculer votre valeur de bande",
+      "category": "01"
+    },
+    {
+      "vo": "campaign",
+      "vf": "campagne",
+      "category": "01"
+    },
+    {
+      "vo": "Carrying Limit",
+      "vf": "Limite de port",
+      "category": "01"
+    },
+    {
+      "vo": "change-log",
+      "vf": "journal des modifications",
+      "category": "01"
+    },
+    {
+      "vo": "commanding player",
+      "vf": "joueur qui contrôle le combattant",
+      "category": "01"
+    },
+    {
+      "vo": "controlling player",
+      "vf": "joueur qui contrôle le combattant",
+      "category": "01"
+    },
+    {
+      "vo": "cost",
+      "vf": "coût",
+      "category": "01"
+    },
+    {
+      "vo": "d12",
+      "vf": "D12",
+      "category": "01"
+    },
+    {
+      "vo": "d3",
+      "vf": "D3",
+      "category": "01"
+    },
+    {
+      "vo": "d6",
+      "vf": "D6",
+      "category": "01"
+    },
+    {
+      "vo": "d66",
+      "vf": "D66",
+      "category": "01"
+    },
+    {
+      "vo": "Designer's Note",
+      "vf": "Note du concepteur",
+      "category": "01"
+    },
+    {
+      "vo": "dice",
+      "vf": "dé",
+      "category": "01"
+    },
+    {
+      "vo": "dice roll",
+      "vf": "jet de dé",
+      "category": "01"
+    },
+    {
+      "vo": "direction dice",
+      "vf": "dé de direction",
+      "category": "01"
+    },
+    {
+      "vo": "district",
+      "vf": "district",
+      "category": "01"
+    },
+    {
+      "vo": "double",
+      "vf": "double",
+      "category": "01"
+    },
+    {
+      "vo": "enemy",
+      "vf": "ennemi",
+      "category": "01"
+    },
+    {
+      "vo": "enemy fighter",
+      "vf": "combattant ennemi",
+      "category": "01"
+    },
+    {
+      "vo": "experience",
+      "vf": "expérience",
+      "category": "01"
+    },
+    {
+      "vo": "faction",
+      "vf": "faction",
+      "category": "01"
+    },
+    {
+      "vo": "fail",
+      "vf": "rater",
+      "category": "01"
+    },
+    {
+      "vo": "fight a battle",
+      "vf": "livrer une bataille",
+      "category": "01"
+    },
+    {
+      "vo": "fighter",
+      "vf": "combattant",
+      "category": "01"
+    },
+    {
+      "vo": "fighter scroll",
+      "vf": "parchemin de combattant",
+      "category": "01"
+    },
+    {
+      "vo": "friendly",
+      "vf": "allié",
+      "category": "01"
+    },
+    {
+      "vo": "Friendly and Enemy Fighters",
+      "vf": "Combattants alliés et ennemis",
+      "category": "01"
+    },
+    {
+      "vo": "friendly fighter",
+      "vf": "combattant allié",
+      "category": "01"
+    },
+    {
+      "vo": "Guilder",
+      "vf": "Guildien",
+      "category": "01"
+    },
+    {
+      "vo": "held item",
+      "vf": "objet tenu",
+      "category": "01"
+    },
+    {
+      "vo": "hire",
+      "vf": "engager",
+      "category": "01"
+    },
+    {
+      "vo": "holding",
+      "vf": "possession",
+      "category": "01"
+    },
+    {
+      "vo": "horizontal distance",
+      "vf": "distance horizontale",
+      "category": "01"
+    },
+    {
+      "vo": "inch",
+      "vf": "pouce",
+      "category": "01"
+    },
+    {
+      "vo": "injury roll",
+      "vf": "jet de blessure",
+      "category": "01"
+    },
+    {
+      "vo": "item",
+      "vf": "objet",
+      "category": "01"
+    },
+    {
+      "vo": "keyword",
+      "vf": "mot-clé",
+      "category": "01"
+    },
+    {
+      "vo": "limit",
+      "vf": "limite",
+      "category": "01"
+    },
+    {
+      "vo": "Measuring Distances",
+      "vf": "Mesurer les distances",
+      "category": "01"
+    },
+    {
+      "vo": "melee weapon",
+      "vf": "arme de corps à corps",
+      "category": "01"
+    },
+    {
+      "vo": "miniature",
+      "vf": "figurine",
+      "category": "01"
+    },
+    {
+      "vo": "miniatures-agnostic",
+      "vf": "sans figurines imposées",
+      "category": "01"
+    },
+    {
+      "vo": "modifier",
+      "vf": "modificateur",
+      "category": "01"
+    },
+    {
+      "vo": "Modifiers and Natural Rolls",
+      "vf": "Modificateurs et jets naturels",
+      "category": "01"
+    },
+    {
+      "vo": "No Duplicates",
+      "vf": "Pas de doublon",
+      "category": "01"
+    },
+    {
+      "vo": "observing fighter",
+      "vf": "combattant observateur",
+      "category": "01"
+    },
+    {
+      "vo": "opponent",
+      "vf": "adversaire",
+      "category": "01"
+    },
+    {
+      "vo": "origin",
+      "vf": "origine",
+      "category": "01"
+    },
+    {
+      "vo": "Other Details",
+      "vf": "Autres informations",
+      "category": "01"
+    },
+    {
+      "vo": "pass",
+      "vf": "réussir",
+      "category": "01"
+    },
+    {
+      "vo": "Pick a Faction",
+      "vf": "Choisir une faction",
+      "category": "01"
+    },
+    {
+      "vo": "Pick an Origin",
+      "vf": "Choisir une origine",
+      "category": "01"
+    },
+    {
+      "vo": "Pick Skills",
+      "vf": "Choisir les compétences",
+      "category": "01"
+    },
+    {
+      "vo": "player",
+      "vf": "joueur",
+      "category": "01"
+    },
+    {
+      "vo": "playtest",
+      "vf": "version de test",
+      "category": "01"
+    },
+    {
+      "vo": "profile",
+      "vf": "profil",
+      "category": "01"
+    },
+    {
+      "vo": "Quick Reference Sheet",
+      "vf": "aide de jeu",
+      "category": "01"
+    },
+    {
+      "vo": "ranged weapon",
+      "vf": "arme à distance",
+      "category": "01"
+    },
+    {
+      "vo": "recruit",
+      "vf": "recruter",
+      "category": "01"
+    },
+    {
+      "vo": "recruit cost",
+      "vf": "coût de recrutement",
+      "category": "01"
+    },
+    {
+      "vo": "Recruit Fighters",
+      "vf": "Recruter des combattants",
+      "category": "01"
+    },
+    {
+      "vo": "Reminder Sheet",
+      "vf": "aide de jeu",
+      "category": "01"
+    },
+    {
+      "vo": "restriction",
+      "vf": "restriction",
+      "category": "01"
+    },
+    {
+      "vo": "result",
+      "vf": "résultat",
+      "category": "01"
+    },
+    {
+      "vo": "roll",
+      "vf": "jet",
+      "category": "01"
+    },
+    {
+      "vo": "roster (of fighters, of factions)",
+      "vf": "liste",
+      "category": "01"
+    },
+    {
+      "vo": "scroll",
+      "vf": "parchemin",
+      "category": "01"
+    },
+    {
+      "vo": "silver",
+      "vf": "pièces d'argent",
+      "category": "01"
+    },
+    {
+      "vo": "skill",
+      "vf": "compétence",
+      "category": "01"
+    },
+    {
+      "vo": "skill table",
+      "vf": "table de compétences",
+      "category": "01"
+    },
+    {
+      "vo": "skirmish game",
+      "vf": "jeu d'escarmouche",
+      "category": "01"
+    },
+    {
+      "vo": "skirmish wargame",
+      "vf": "wargame d'escarmouche",
+      "category": "01"
+    },
+    {
+      "vo": "special rule",
+      "vf": "règle spéciale",
+      "category": "01"
+    },
+    {
+      "vo": "Specific Restrictions",
+      "vf": "Restrictions spécifiques",
+      "category": "01"
+    },
+    {
+      "vo": "Starting Experience",
+      "vf": "Expérience de départ",
+      "category": "01"
+    },
+    {
+      "vo": "stash",
+      "vf": "butin",
+      "category": "01"
+    },
+    {
+      "vo": "step",
+      "vf": "étape",
+      "category": "01"
+    },
+    {
+      "vo": "stronghold",
+      "vf": "repaire",
+      "category": "01"
+    },
+    {
+      "vo": "table",
+      "vf": "table",
+      "category": "01"
+    },
+    {
+      "vo": "tape measure",
+      "vf": "mètre ruban",
+      "category": "01"
+    },
+    {
+      "vo": "template",
+      "vf": "gabarit",
+      "category": "01"
+    },
+    {
+      "vo": "test",
+      "vf": "test",
+      "category": "01"
+    },
+    {
+      "vo": "the City",
+      "vf": "la Cité",
+      "category": "01"
+    },
+    {
+      "vo": "the Cloister",
+      "vf": "le Cloître",
+      "category": "01"
+    },
+    {
+      "vo": "the Guild",
+      "vf": "la Guilde",
+      "category": "01"
+    },
+    {
+      "vo": "the Saints",
+      "vf": "les Saints",
+      "category": "01"
+    },
+    {
+      "vo": "token",
+      "vf": "pion",
+      "category": "01"
+    },
+    {
+      "vo": "Two-Handed Melee Weapons",
+      "vf": "Armes de corps à corps à deux mains",
+      "category": "01"
+    },
+    {
+      "vo": "Two-Handed Ranged Weapons",
+      "vf": "Armes à distance à deux mains",
+      "category": "01"
+    },
+    {
+      "vo": "underdog",
+      "vf": "outsider",
+      "category": "01"
+    },
+    {
+      "vo": "value",
+      "vf": "valeur",
+      "category": "01"
+    },
+    {
+      "vo": "version number",
+      "vf": "numéro de version",
+      "category": "01"
+    },
+    {
+      "vo": "vertical distance",
+      "vf": "distance verticale",
+      "category": "01"
+    },
+    {
+      "vo": "visibility",
+      "vf": "visibilité",
+      "category": "01"
+    },
+    {
+      "vo": "void-chasm",
+      "vf": "gouffre du néant",
+      "category": "01"
+    },
+    {
+      "vo": "warband",
+      "vf": "bande",
+      "category": "01"
+    },
+    {
+      "vo": "warband rating",
+      "vf": "valeur de bande",
+      "category": "01"
+    },
+    {
+      "vo": "Warband Roster",
+      "vf": "feuille de bande",
+      "category": "01"
+    },
+    {
+      "vo": "Warbands & Fighters",
+      "vf": "Bandes et combattants",
+      "category": "01"
+    },
+    {
+      "vo": "wargear",
+      "vf": "équipement",
+      "category": "01"
+    },
+    {
+      "vo": "wargear list",
+      "vf": "liste d'équipement",
+      "category": "01"
+    },
+    {
+      "vo": "weapon trait",
+      "vf": "trait d'arme",
+      "category": "01"
+    },
+    {
+      "vo": "Weapon Trait Reminders",
+      "vf": "Rappels des traits d'armes",
+      "category": "01"
+    },
+    {
+      "vo": "Weapons",
+      "vf": "Armes",
+      "category": "01"
+    },
+    {
+      "vo": "witch hunter (common noun)",
+      "vf": "chasseur de sorcières",
+      "category": "01"
+    },
+    {
+      "vo": "automatically",
+      "vf": "automatiquement",
+      "category": "02"
+    },
+    {
+      "vo": "can",
+      "vf": "peut",
+      "category": "02"
+    },
+    {
+      "vo": "cannot",
+      "vf": "ne peut pas",
+      "category": "02"
+    },
+    {
+      "vo": "each time",
+      "vf": "chaque fois que",
+      "category": "02"
+    },
+    {
+      "vo": "equipped with",
+      "vf": "équipé de",
+      "category": "02"
+    },
+    {
+      "vo": "immediately",
+      "vf": "immédiatement",
+      "category": "02"
+    },
+    {
+      "vo": "improve",
+      "vf": "améliorer",
+      "category": "02"
+    },
+    {
+      "vo": "in play",
+      "vf": "en jeu",
+      "category": "02"
+    },
+    {
+      "vo": "instead",
+      "vf": "à la place",
+      "category": "02"
+    },
+    {
+      "vo": "more than",
+      "vf": "à plus de",
+      "category": "02"
+    },
+    {
+      "vo": "must",
+      "vf": "doit",
+      "category": "02"
+    },
+    {
+      "vo": "once per activation",
+      "vf": "une fois par activation",
+      "category": "02"
+    },
+    {
+      "vo": "once per battle",
+      "vf": "une fois par bataille",
+      "category": "02"
+    },
+    {
+      "vo": "pick",
+      "vf": "choisir",
+      "category": "02"
+    },
+    {
+      "vo": "place",
+      "vf": "placer",
+      "category": "02"
+    },
+    {
+      "vo": "remove from play",
+      "vf": "retirer du jeu",
+      "category": "02"
+    },
+    {
+      "vo": "remove from the battlefield",
+      "vf": "retirer du champ de bataille",
+      "category": "02"
+    },
+    {
+      "vo": "set up",
+      "vf": "placer",
+      "category": "02"
+    },
+    {
+      "vo": "spend",
+      "vf": "dépenser",
+      "category": "02"
+    },
+    {
+      "vo": "until the end of the round",
+      "vf": "jusqu'à la fin du round",
+      "category": "02"
+    },
+    {
+      "vo": "up to",
+      "vf": "jusqu'à",
+      "category": "02"
+    },
+    {
+      "vo": "wholly within",
+      "vf": "entièrement à X\" ou moins",
+      "category": "02"
+    },
+    {
+      "vo": "wholly within (a zone)",
+      "vf": "entièrement dans",
+      "category": "02"
+    },
+    {
+      "vo": "within",
+      "vf": "à X\" ou moins",
+      "category": "02"
+    },
+    {
+      "vo": "within (a zone)",
+      "vf": "dans",
+      "category": "02"
+    },
+    {
+      "vo": "worsen",
+      "vf": "dégrader",
+      "category": "02"
+    },
+    {
+      "vo": "Aristocrat",
+      "vf": "Aristocrate",
+      "category": "03"
+    },
+    {
+      "vo": "Assassin",
+      "vf": "Assassin",
+      "category": "03"
+    },
+    {
+      "vo": "Bat",
+      "vf": "Chauve-souris",
+      "category": "03"
+    },
+    {
+      "vo": "Beast",
+      "vf": "Bête",
+      "category": "03"
+    },
+    {
+      "vo": "Beastman",
+      "vf": "Homme-bête",
+      "category": "03"
+    },
+    {
+      "vo": "Brute",
+      "vf": "Brute",
+      "category": "03"
+    },
+    {
+      "vo": "Champion",
+      "vf": "Champion",
+      "category": "03"
+    },
+    {
+      "vo": "Cloister",
+      "vf": "Cloister",
+      "category": "03"
+    },
+    {
+      "vo": "Contraption",
+      "vf": "Engin",
+      "category": "03"
+    },
+    {
+      "vo": "Demon",
+      "vf": "Démon",
+      "category": "03"
+    },
+    {
+      "vo": "Dog",
+      "vf": "Chien",
+      "category": "03"
+    },
+    {
+      "vo": "Fly",
+      "vf": "Vol",
+      "category": "03"
+    },
+    {
+      "vo": "Gargoyle",
+      "vf": "Gargoyle",
+      "category": "03"
+    },
+    {
+      "vo": "Held Item",
+      "vf": "Objet tenu",
+      "category": "03"
+    },
+    {
+      "vo": "Henchman",
+      "vf": "Homme de main",
+      "category": "03"
+    },
+    {
+      "vo": "Henchmen",
+      "vf": "Hommes de main",
+      "category": "03"
+    },
+    {
+      "vo": "Human",
+      "vf": "Humain",
+      "category": "03"
+    },
+    {
+      "vo": "Item",
+      "vf": "Objet",
+      "category": "03"
+    },
+    {
+      "vo": "Knight",
+      "vf": "Chevalier",
+      "category": "03"
+    },
+    {
+      "vo": "Leader",
+      "vf": "Chef",
+      "category": "03"
+    },
+    {
+      "vo": "Mercenary",
+      "vf": "Mercenary",
+      "category": "03"
+    },
+    {
+      "vo": "Ogre",
+      "vf": "Ogre",
+      "category": "03"
+    },
+    {
+      "vo": "Priest",
+      "vf": "Prêtre",
+      "category": "03"
+    },
+    {
+      "vo": "Rat",
+      "vf": "Rat",
+      "category": "03"
+    },
+    {
+      "vo": "Skeleton",
+      "vf": "Squelette",
+      "category": "03"
+    },
+    {
+      "vo": "summoned",
+      "vf": "invoqué",
+      "category": "03"
+    },
+    {
+      "vo": "Thrall",
+      "vf": "Asservi",
+      "category": "03"
+    },
+    {
+      "vo": "Undead",
+      "vf": "Mort-vivant",
+      "category": "03"
+    },
+    {
+      "vo": "Vampyre",
+      "vf": "Vampire",
+      "category": "03"
+    },
+    {
+      "vo": "Verminkin",
+      "vf": "Verminkin",
+      "category": "03"
+    },
+    {
+      "vo": "Werwulf",
+      "vf": "Loup-garou",
+      "category": "03"
+    },
+    {
+      "vo": "Witch Hunter",
+      "vf": "Witch Hunter",
+      "category": "03"
+    },
+    {
+      "vo": "Wizard",
+      "vf": "Sorcier",
+      "category": "03"
+    },
+    {
+      "vo": "Zombie",
+      "vf": "Zombie",
+      "category": "03"
+    },
+    {
+      "vo": "Ar",
+      "vf": "Arm",
+      "category": "04"
+    },
+    {
+      "vo": "Armour",
+      "vf": "Armure",
+      "category": "04"
+    },
+    {
+      "vo": "Atk",
+      "vf": "Att",
+      "category": "04"
+    },
+    {
+      "vo": "Attacks",
+      "vf": "Attaques",
+      "category": "04"
+    },
+    {
+      "vo": "Bl",
+      "vf": "Lam",
+      "category": "04"
+    },
+    {
+      "vo": "Blade",
+      "vf": "Lame",
+      "category": "04"
+    },
+    {
+      "vo": "Bow",
+      "vf": "Arc",
+      "category": "04"
+    },
+    {
+      "vo": "Bw",
+      "vf": "Arc",
+      "category": "04"
+    },
+    {
+      "vo": "characteristic",
+      "vf": "caractéristique",
+      "category": "04"
+    },
+    {
+      "vo": "Crit",
+      "vf": "Crit",
+      "category": "04"
+    },
+    {
+      "vo": "Critical Damage",
+      "vf": "Dégâts critiques",
+      "category": "04"
+    },
+    {
+      "vo": "Damage",
+      "vf": "Dégâts",
+      "category": "04"
+    },
+    {
+      "vo": "damage (suffered)",
+      "vf": "dégâts",
+      "category": "04"
+    },
+    {
+      "vo": "Damage and Critical Damage",
+      "vf": "Dégâts et Dégâts critiques",
+      "category": "04"
+    },
+    {
+      "vo": "Dmg",
+      "vf": "Dég",
+      "category": "04"
+    },
+    {
+      "vo": "Exp",
+      "vf": "Exp",
+      "category": "04"
+    },
+    {
+      "vo": "Improving and Worsening Armour",
+      "vf": "Améliorer et dégrader l'Armure",
+      "category": "04"
+    },
+    {
+      "vo": "Improving and Worsening Rend",
+      "vf": "Améliorer et dégrader la Perforation",
+      "category": "04"
+    },
+    {
+      "vo": "In",
+      "vf": "Ini",
+      "category": "04"
+    },
+    {
+      "vo": "Initiative",
+      "vf": "Initiative",
+      "category": "04"
+    },
+    {
+      "vo": "Initiative & Willpower Tests",
+      "vf": "Tests d'Initiative et de Volonté",
+      "category": "04"
+    },
+    {
+      "vo": "Lf",
+      "vf": "Vie",
+      "category": "04"
+    },
+    {
+      "vo": "Life",
+      "vf": "Vie",
+      "category": "04"
+    },
+    {
+      "vo": "life (remaining)",
+      "vf": "vie",
+      "category": "04"
+    },
+    {
+      "vo": "life point",
+      "vf": "point de vie",
+      "category": "04"
+    },
+    {
+      "vo": "Life, Damage, Healing & Bloodied",
+      "vf": "Vie, dégâts, soins et Ensanglanté",
+      "category": "04"
+    },
+    {
+      "vo": "Move",
+      "vf": "Mouvement",
+      "category": "04"
+    },
+    {
+      "vo": "Mv",
+      "vf": "Mvt",
+      "category": "04"
+    },
+    {
+      "vo": "Name",
+      "vf": "Nom",
+      "category": "04"
+    },
+    {
+      "vo": "Range",
+      "vf": "Portée",
+      "category": "04"
+    },
+    {
+      "vo": "range (distance)",
+      "vf": "portée",
+      "category": "04"
+    },
+    {
+      "vo": "Rend",
+      "vf": "Perforation",
+      "category": "04"
+    },
+    {
+      "vo": "Rend Values of '-'",
+      "vf": "Valeurs de Perforation de \"-\"",
+      "category": "04"
+    },
+    {
+      "vo": "Rnd",
+      "vf": "Perf",
+      "category": "04"
+    },
+    {
+      "vo": "Rng",
+      "vf": "Por",
+      "category": "04"
+    },
+    {
+      "vo": "Silver (weapon profile column)",
+      "vf": "Pièces d'argent",
+      "category": "04"
+    },
+    {
+      "vo": "Values",
+      "vf": "Valeurs",
+      "category": "04"
+    },
+    {
+      "vo": "Weapon",
+      "vf": "Arme",
+      "category": "04"
+    },
+    {
+      "vo": "Weapon Traits",
+      "vf": "Traits d'armes",
+      "category": "04"
+    },
+    {
+      "vo": "Weapon Values",
+      "vf": "Valeurs d'arme",
+      "category": "04"
+    },
+    {
+      "vo": "Willpower",
+      "vf": "Volonté",
+      "category": "04"
+    },
+    {
+      "vo": "Wl",
+      "vf": "Vlt",
+      "category": "04"
+    },
+    {
+      "vo": "'Before the Battle' Steps",
+      "vf": "Étapes \"Avant la bataille\"",
+      "category": "05"
+    },
+    {
+      "vo": "1 Move & 1 Action",
+      "vf": "1 Mouvement et 1 Action",
+      "category": "05"
+    },
+    {
+      "vo": "Action",
+      "vf": "Action",
+      "category": "05"
+    },
+    {
+      "vo": "activate",
+      "vf": "activer",
+      "category": "05"
+    },
+    {
+      "vo": "activating fighter",
+      "vf": "combattant en cours d'activation",
+      "category": "05"
+    },
+    {
+      "vo": "Activating Fighters",
+      "vf": "Activer les combattants",
+      "category": "05"
+    },
+    {
+      "vo": "activation",
+      "vf": "activation",
+      "category": "05"
+    },
+    {
+      "vo": "Advanced Moves",
+      "vf": "Mouvements avancés",
+      "category": "05"
+    },
+    {
+      "vo": "Arcane Action",
+      "vf": "action Arcanique",
+      "category": "05"
+    },
+    {
+      "vo": "attack action",
+      "vf": "action d'Attaque",
+      "category": "05"
+    },
+    {
+      "vo": "Before the Battle",
+      "vf": "Avant la bataille",
+      "category": "05"
+    },
+    {
+      "vo": "Begin the Battle",
+      "vf": "Commencer la bataille",
+      "category": "05"
+    },
+    {
+      "vo": "bonus action",
+      "vf": "action bonus",
+      "category": "05"
+    },
+    {
+      "vo": "Charge Move",
+      "vf": "Charge",
+      "category": "05"
+    },
+    {
+      "vo": "charged",
+      "vf": "a chargé",
+      "category": "05"
+    },
+    {
+      "vo": "climb",
+      "vf": "escalader",
+      "category": "05"
+    },
+    {
+      "vo": "Climbing (heading)",
+      "vf": "Escalade",
+      "category": "05"
+    },
+    {
+      "vo": "Climbing a Ladder",
+      "vf": "Escalader une échelle",
+      "category": "05"
+    },
+    {
+      "vo": "Climbing High Terrain",
+      "vf": "Escalader un terrain haut",
+      "category": "05"
+    },
+    {
+      "vo": "Determine Prepared Spells",
+      "vf": "Déterminer les sorts préparés",
+      "category": "05"
+    },
+    {
+      "vo": "Determine Scenario",
+      "vf": "Déterminer le scénario",
+      "category": "05"
+    },
+    {
+      "vo": "Determine the Scenario",
+      "vf": "Déterminer le scénario",
+      "category": "05"
+    },
+    {
+      "vo": "Determine the Underdog",
+      "vf": "Déterminer l'outsider",
+      "category": "05"
+    },
+    {
+      "vo": "Determine Underdog",
+      "vf": "Déterminer l'outsider",
+      "category": "05"
+    },
+    {
+      "vo": "Determining the Scenario",
+      "vf": "Déterminer le scénario",
+      "category": "05"
+    },
+    {
+      "vo": "Disengage Move",
+      "vf": "Désengagement",
+      "category": "05"
+    },
+    {
+      "vo": "End of Round Step",
+      "vf": "étape de fin de round",
+      "category": "05"
+    },
+    {
+      "vo": "Ending the Battle",
+      "vf": "Fin de la bataille",
+      "category": "05"
+    },
+    {
+      "vo": "fall",
+      "vf": "chuter",
+      "category": "05"
+    },
+    {
+      "vo": "Falling",
+      "vf": "Chute",
+      "category": "05"
+    },
+    {
+      "vo": "Falling Off Platforms",
+      "vf": "Chuter d'une plateforme",
+      "category": "05"
+    },
+    {
+      "vo": "Fighters Activate",
+      "vf": "Activation des combattants",
+      "category": "05"
+    },
+    {
+      "vo": "flee",
+      "vf": "partir en déroute",
+      "category": "05"
+    },
+    {
+      "vo": "flee test",
+      "vf": "test de déroute",
+      "category": "05"
+    },
+    {
+      "vo": "fly (verb)",
+      "vf": "voler",
+      "category": "05"
+    },
+    {
+      "vo": "Flying (heading)",
+      "vf": "Vol",
+      "category": "05"
+    },
+    {
+      "vo": "Follow the Scenario 'Before the Battle' Steps",
+      "vf": "Suivre les étapes \"Avant la bataille\" du scénario",
+      "category": "05"
+    },
+    {
+      "vo": "Hide Action",
+      "vf": "action Se cacher",
+      "category": "05"
+    },
+    {
+      "vo": "impact damage",
+      "vf": "dégâts d'impact",
+      "category": "05"
+    },
+    {
+      "vo": "jump",
+      "vf": "sauter",
+      "category": "05"
+    },
+    {
+      "vo": "Jumping",
+      "vf": "Sauter",
+      "category": "05"
+    },
+    {
+      "vo": "Ladders Blocked by Enemies",
+      "vf": "Échelles bloquées par des ennemis",
+      "category": "05"
+    },
+    {
+      "vo": "Melee Attack Action",
+      "vf": "action d'Attaque au corps à corps",
+      "category": "05"
+    },
+    {
+      "vo": "Move (activation)",
+      "vf": "Mouvement",
+      "category": "05"
+    },
+    {
+      "vo": "move (verb)",
+      "vf": "se déplacer",
+      "category": "05"
+    },
+    {
+      "vo": "Moving",
+      "vf": "Déplacement",
+      "category": "05"
+    },
+    {
+      "vo": "Moving Across Low Terrain",
+      "vf": "Se déplacer à travers un terrain bas",
+      "category": "05"
+    },
+    {
+      "vo": "Moving Through Closed Doors",
+      "vf": "Se déplacer à travers les portes fermées",
+      "category": "05"
+    },
+    {
+      "vo": "Moving Through Doors and Windows",
+      "vf": "Se déplacer à travers les portes et les fenêtres",
+      "category": "05"
+    },
+    {
+      "vo": "natural (dice result)",
+      "vf": "naturel",
+      "category": "05"
+    },
+    {
+      "vo": "natural roll",
+      "vf": "jet naturel",
+      "category": "05"
+    },
+    {
+      "vo": "Normal Move",
+      "vf": "Mouvement normal",
+      "category": "05"
+    },
+    {
+      "vo": "Other 'Before the Battle' Rules",
+      "vf": "Autres règles \"Avant la bataille\"",
+      "category": "05"
+    },
+    {
+      "vo": "Other Fighters",
+      "vf": "Autres combattants",
+      "category": "05"
+    },
+    {
+      "vo": "Platform Edges",
+      "vf": "Bords de plateforme",
+      "category": "05"
+    },
+    {
+      "vo": "Prepared Spells",
+      "vf": "Sorts préparés",
+      "category": "05"
+    },
+    {
+      "vo": "priority",
+      "vf": "priorité",
+      "category": "05"
+    },
+    {
+      "vo": "priority roll",
+      "vf": "jet de priorité",
+      "category": "05"
+    },
+    {
+      "vo": "Ranged Attack Action",
+      "vf": "action d'Attaque à distance",
+      "category": "05"
+    },
+    {
+      "vo": "re-roll",
+      "vf": "relance",
+      "category": "05"
+    },
+    {
+      "vo": "re-roll (verb)",
+      "vf": "relancer",
+      "category": "05"
+    },
+    {
+      "vo": "reload (verb)",
+      "vf": "recharger",
+      "category": "05"
+    },
+    {
+      "vo": "Resolve Any Other 'Before the Battle' Rules",
+      "vf": "Résoudre les autres règles \"Avant la bataille\"",
+      "category": "05"
+    },
+    {
+      "vo": "roll-off",
+      "vf": "jet de départage",
+      "category": "05"
+    },
+    {
+      "vo": "round",
+      "vf": "round",
+      "category": "05"
+    },
+    {
+      "vo": "Round Sequence",
+      "vf": "Séquence du round",
+      "category": "05"
+    },
+    {
+      "vo": "Run Move",
+      "vf": "Course",
+      "category": "05"
+    },
+    {
+      "vo": "scatter",
+      "vf": "dévier",
+      "category": "05"
+    },
+    {
+      "vo": "Scattering",
+      "vf": "Déviation",
+      "category": "05"
+    },
+    {
+      "vo": "Scattering Across Terrain",
+      "vf": "Dévier à travers un décor",
+      "category": "05"
+    },
+    {
+      "vo": "Sequencing",
+      "vf": "Ordre de résolution",
+      "category": "05"
+    },
+    {
+      "vo": "Set-Up",
+      "vf": "Mise en place",
+      "category": "05"
+    },
+    {
+      "vo": "Setting Up the Battle",
+      "vf": "Mise en place de la bataille",
+      "category": "05"
+    },
+    {
+      "vo": "Start of Round Step",
+      "vf": "étape de début de round",
+      "category": "05"
+    },
+    {
+      "vo": "surge activation",
+      "vf": "activation de sursaut",
+      "category": "05"
+    },
+    {
+      "vo": "turn",
+      "vf": "tour",
+      "category": "05"
+    },
+    {
+      "vo": "aura of godspeed",
+      "vf": "aura de célérité divine",
+      "category": "06"
+    },
+    {
+      "vo": "aura of holy strength",
+      "vf": "aura de force sacrée",
+      "category": "06"
+    },
+    {
+      "vo": "aura of rabid fervour",
+      "vf": "aura de ferveur enragée",
+      "category": "06"
+    },
+    {
+      "vo": "aura of shadows",
+      "vf": "aura d'ombres",
+      "category": "06"
+    },
+    {
+      "vo": "barrier",
+      "vf": "barrière",
+      "category": "06"
+    },
+    {
+      "vo": "blessed blades",
+      "vf": "lames bénies",
+      "category": "06"
+    },
+    {
+      "vo": "bloodied",
+      "vf": "ensanglanté",
+      "category": "06"
+    },
+    {
+      "vo": "carrying treasure",
+      "vf": "porte un trésor",
+      "category": "06"
+    },
+    {
+      "vo": "causes fear",
+      "vf": "cause la peur",
+      "category": "06"
+    },
+    {
+      "vo": "climbing",
+      "vf": "en train d'escalader",
+      "category": "06"
+    },
+    {
+      "vo": "condemned",
+      "vf": "condamné",
+      "category": "06"
+    },
+    {
+      "vo": "cursed",
+      "vf": "maudit",
+      "category": "06"
+    },
+    {
+      "vo": "demonic strength",
+      "vf": "force démoniaque",
+      "category": "06"
+    },
+    {
+      "vo": "disorientated",
+      "vf": "désorienté",
+      "category": "06"
+    },
+    {
+      "vo": "doomed",
+      "vf": "frappé de fatalité",
+      "category": "06"
+    },
+    {
+      "vo": "drawn power",
+      "vf": "pouvoir puisé",
+      "category": "06"
+    },
+    {
+      "vo": "drunk",
+      "vf": "soûl",
+      "category": "06"
+    },
+    {
+      "vo": "engaged",
+      "vf": "engagé",
+      "category": "06"
+    },
+    {
+      "vo": "engaged in melee",
+      "vf": "engagé au corps à corps",
+      "category": "06"
+    },
+    {
+      "vo": "entwined",
+      "vf": "empêtré",
+      "category": "06"
+    },
+    {
+      "vo": "ethereal",
+      "vf": "éthéré",
+      "category": "06"
+    },
+    {
+      "vo": "Fear",
+      "vf": "Peur",
+      "category": "06"
+    },
+    {
+      "vo": "fetid",
+      "vf": "fétide",
+      "category": "06"
+    },
+    {
+      "vo": "flying",
+      "vf": "en vol",
+      "category": "06"
+    },
+    {
+      "vo": "harried",
+      "vf": "harcelé",
+      "category": "06"
+    },
+    {
+      "vo": "hidden",
+      "vf": "caché",
+      "category": "06"
+    },
+    {
+      "vo": "holding treasure",
+      "vf": "porte un trésor",
+      "category": "06"
+    },
+    {
+      "vo": "ignited",
+      "vf": "enflammée",
+      "category": "06"
+    },
+    {
+      "vo": "in cover",
+      "vf": "à couvert",
+      "category": "06"
+    },
+    {
+      "vo": "in reserve",
+      "vf": "en réserve",
+      "category": "06"
+    },
+    {
+      "vo": "killed",
+      "vf": "tué",
+      "category": "06"
+    },
+    {
+      "vo": "masked in fog",
+      "vf": "noyé dans le brouillard",
+      "category": "06"
+    },
+    {
+      "vo": "mesmerise",
+      "vf": "hypnotiser",
+      "category": "06"
+    },
+    {
+      "vo": "mesmerised",
+      "vf": "hypnotisé",
+      "category": "06"
+    },
+    {
+      "vo": "mire",
+      "vf": "bourbier",
+      "category": "06"
+    },
+    {
+      "vo": "obscured",
+      "vf": "masqué",
+      "category": "06"
+    },
+    {
+      "vo": "pit",
+      "vf": "fosse",
+      "category": "06"
+    },
+    {
+      "vo": "poisoned",
+      "vf": "empoisonné",
+      "category": "06"
+    },
+    {
+      "vo": "protective shroud",
+      "vf": "linceul protecteur",
+      "category": "06"
+    },
+    {
+      "vo": "putrid blessing",
+      "vf": "bénédiction putride",
+      "category": "06"
+    },
+    {
+      "vo": "rotten armour",
+      "vf": "armure pourrie",
+      "category": "06"
+    },
+    {
+      "vo": "rotten insides",
+      "vf": "entrailles pourries",
+      "category": "06"
+    },
+    {
+      "vo": "souped-up",
+      "vf": "trafiquée",
+      "category": "06"
+    },
+    {
+      "vo": "swollen",
+      "vf": "boursouflé",
+      "category": "06"
+    },
+    {
+      "vo": "taken down",
+      "vf": "mis hors de combat",
+      "category": "06"
+    },
+    {
+      "vo": "taken out of action",
+      "vf": "mis hors de combat",
+      "category": "06"
+    },
+    {
+      "vo": "transform",
+      "vf": "se transformer",
+      "category": "06"
+    },
+    {
+      "vo": "visible",
+      "vf": "visible",
+      "category": "06"
+    },
+    {
+      "vo": "3\" Above or Below",
+      "vf": "3\" au-dessus ou au-dessous",
+      "category": "07"
+    },
+    {
+      "vo": "Allocate Damage",
+      "vf": "Allouer les dégâts",
+      "category": "07"
+    },
+    {
+      "vo": "Alternate Attacks and Parries",
+      "vf": "Alterner attaques et parades",
+      "category": "07"
+    },
+    {
+      "vo": "armour roll",
+      "vf": "jet d'armure",
+      "category": "07"
+    },
+    {
+      "vo": "attack",
+      "vf": "attaque",
+      "category": "07"
+    },
+    {
+      "vo": "attack (verb)",
+      "vf": "attaquer",
+      "category": "07"
+    },
+    {
+      "vo": "attack roll",
+      "vf": "jet d'attaque",
+      "category": "07"
+    },
+    {
+      "vo": "attacking fighter",
+      "vf": "attaquant",
+      "category": "07"
+    },
+    {
+      "vo": "automatically hit",
+      "vf": "touché automatiquement",
+      "category": "07"
+    },
+    {
+      "vo": "Backfire",
+      "vf": "Retour de flamme",
+      "category": "07"
+    },
+    {
+      "vo": "blast template",
+      "vf": "gabarit d'explosion",
+      "category": "07"
+    },
+    {
+      "vo": "Clogged",
+      "vf": "Encrassée",
+      "category": "07"
+    },
+    {
+      "vo": "Cover",
+      "vf": "Couvert",
+      "category": "07"
+    },
+    {
+      "vo": "critical hit",
+      "vf": "touche critique",
+      "category": "07"
+    },
+    {
+      "vo": "defending fighter",
+      "vf": "défenseur",
+      "category": "07"
+    },
+    {
+      "vo": "Determine Initiative",
+      "vf": "Déterminer l'initiative",
+      "category": "07"
+    },
+    {
+      "vo": "Engaged Fighters",
+      "vf": "Combattants engagés",
+      "category": "07"
+    },
+    {
+      "vo": "flame template",
+      "vf": "gabarit de flamme",
+      "category": "07"
+    },
+    {
+      "vo": "Flash-in-the-Pan",
+      "vf": "Long feu",
+      "category": "07"
+    },
+    {
+      "vo": "heal",
+      "vf": "soigner",
+      "category": "07"
+    },
+    {
+      "vo": "hit",
+      "vf": "touche",
+      "category": "07"
+    },
+    {
+      "vo": "hit (verb)",
+      "vf": "toucher",
+      "category": "07"
+    },
+    {
+      "vo": "hit roll",
+      "vf": "jet pour toucher",
+      "category": "07"
+    },
+    {
+      "vo": "initiative (melee)",
+      "vf": "initiative",
+      "category": "07"
+    },
+    {
+      "vo": "line of sight",
+      "vf": "ligne de vue",
+      "category": "07"
+    },
+    {
+      "vo": "Make Armour Rolls",
+      "vf": "Effectuer les jets d'armure",
+      "category": "07"
+    },
+    {
+      "vo": "Make Attack Rolls",
+      "vf": "Effectuer les jets d'attaque",
+      "category": "07"
+    },
+    {
+      "vo": "Making an Attack",
+      "vf": "Effectuer une attaque",
+      "category": "07"
+    },
+    {
+      "vo": "melee attack",
+      "vf": "attaque au corps à corps",
+      "category": "07"
+    },
+    {
+      "vo": "misfire (verb)",
+      "vf": "subir un incident de tir",
+      "category": "07"
+    },
+    {
+      "vo": "misfire roll",
+      "vf": "jet d'incident de tir",
+      "category": "07"
+    },
+    {
+      "vo": "misfire table",
+      "vf": "table d'incident de tir",
+      "category": "07"
+    },
+    {
+      "vo": "Misfiring",
+      "vf": "Incident de tir",
+      "category": "07"
+    },
+    {
+      "vo": "miss",
+      "vf": "échec",
+      "category": "07"
+    },
+    {
+      "vo": "negated",
+      "vf": "annulée",
+      "category": "07"
+    },
+    {
+      "vo": "No Cover",
+      "vf": "Pas de couvert",
+      "category": "07"
+    },
+    {
+      "vo": "off-hand attack",
+      "vf": "attaque de main secondaire",
+      "category": "07"
+    },
+    {
+      "vo": "off-hand weapon",
+      "vf": "arme de main secondaire",
+      "category": "07"
+    },
+    {
+      "vo": "parry",
+      "vf": "parade",
+      "category": "07"
+    },
+    {
+      "vo": "parry (verb)",
+      "vf": "parer",
+      "category": "07"
+    },
+    {
+      "vo": "parry roll",
+      "vf": "jet de parade",
+      "category": "07"
+    },
+    {
+      "vo": "Pick a Target",
+      "vf": "Choisir une cible",
+      "category": "07"
+    },
+    {
+      "vo": "Pick Weapons",
+      "vf": "Choisir les armes",
+      "category": "07"
+    },
+    {
+      "vo": "Placing the Blast Template",
+      "vf": "Placer le gabarit d'explosion",
+      "category": "07"
+    },
+    {
+      "vo": "Placing the Flame Template",
+      "vf": "Placer le gabarit de flamme",
+      "category": "07"
+    },
+    {
+      "vo": "ranged attack",
+      "vf": "attaque à distance",
+      "category": "07"
+    },
+    {
+      "vo": "Reloading",
+      "vf": "Rechargement",
+      "category": "07"
+    },
+    {
+      "vo": "Resolving Hits",
+      "vf": "Résolution des touches",
+      "category": "07"
+    },
+    {
+      "vo": "saved",
+      "vf": "sauvegardée",
+      "category": "07"
+    },
+    {
+      "vo": "Scattering Off Platforms",
+      "vf": "Déviation hors d'une plateforme",
+      "category": "07"
+    },
+    {
+      "vo": "successful attack",
+      "vf": "attaque réussie",
+      "category": "07"
+    },
+    {
+      "vo": "suffer damage",
+      "vf": "subir des dégâts",
+      "category": "07"
+    },
+    {
+      "vo": "target",
+      "vf": "cible",
+      "category": "07"
+    },
+    {
+      "vo": "target (verb)",
+      "vf": "cibler",
+      "category": "07"
+    },
+    {
+      "vo": "Unarmed Fighters",
+      "vf": "Combattants sans arme",
+      "category": "07"
+    },
+    {
+      "vo": "Visibility, Hiding & Cover",
+      "vf": "Visibilité, combattants cachés et couvert",
+      "category": "07"
+    },
+    {
+      "vo": "Arcane",
+      "vf": "Arcanique",
+      "category": "08"
+    },
+    {
+      "vo": "Blast",
+      "vf": "Explosion",
+      "category": "08"
+    },
+    {
+      "vo": "Bludgeon",
+      "vf": "Contondant",
+      "category": "08"
+    },
+    {
+      "vo": "Brace",
+      "vf": "Contre-charge",
+      "category": "08"
+    },
+    {
+      "vo": "Flame",
+      "vf": "Flamme",
+      "category": "08"
+    },
+    {
+      "vo": "Guard",
+      "vf": "Garde",
+      "category": "08"
+    },
+    {
+      "vo": "Heavy",
+      "vf": "Lourd",
+      "category": "08"
+    },
+    {
+      "vo": "Misfire",
+      "vf": "Incident de tir",
+      "category": "08"
+    },
+    {
+      "vo": "Natural Weapon",
+      "vf": "Arme naturelle",
+      "category": "08"
+    },
+    {
+      "vo": "Off-hand",
+      "vf": "Main secondaire",
+      "category": "08"
+    },
+    {
+      "vo": "One-use",
+      "vf": "Usage unique",
+      "category": "08"
+    },
+    {
+      "vo": "Poison",
+      "vf": "Poison",
+      "category": "08"
+    },
+    {
+      "vo": "Rare",
+      "vf": "Rare",
+      "category": "08"
+    },
+    {
+      "vo": "Reload",
+      "vf": "Rechargement",
+      "category": "08"
+    },
+    {
+      "vo": "Scare",
+      "vf": "Effroi",
+      "category": "08"
+    },
+    {
+      "vo": "Two-handed",
+      "vf": "À deux mains",
+      "category": "08"
+    },
+    {
+      "vo": "Unwieldy",
+      "vf": "Encombrant",
+      "category": "08"
+    },
+    {
+      "vo": "Volley",
+      "vf": "Salve",
+      "category": "08"
+    },
+    {
+      "vo": "Wrap",
+      "vf": "Contournement",
+      "category": "08"
+    },
+    {
+      "vo": "Arcane Explosion",
+      "vf": "Déflagration arcanique",
+      "category": "09"
+    },
+    {
+      "vo": "Attack Spell",
+      "vf": "Sort d'Attaque",
+      "category": "09"
+    },
+    {
+      "vo": "aura",
+      "vf": "aura",
+      "category": "09"
+    },
+    {
+      "vo": "Aura Spell",
+      "vf": "Sort d'Aura",
+      "category": "09"
+    },
+    {
+      "vo": "Cantrip Spell",
+      "vf": "Sort mineur",
+      "category": "09"
+    },
+    {
+      "vo": "cast a spell",
+      "vf": "lancer un sort",
+      "category": "09"
+    },
+    {
+      "vo": "cast again",
+      "vf": "lancer de nouveau",
+      "category": "09"
+    },
+    {
+      "vo": "caster",
+      "vf": "lanceur",
+      "category": "09"
+    },
+    {
+      "vo": "casting roll",
+      "vf": "jet de lancement",
+      "category": "09"
+    },
+    {
+      "vo": "Casting value",
+      "vf": "valeur de Lancement",
+      "category": "09"
+    },
+    {
+      "vo": "Critical Cast",
+      "vf": "Lancement critique",
+      "category": "09"
+    },
+    {
+      "vo": "Critical Casting value",
+      "vf": "valeur de Lancement critique",
+      "category": "09"
+    },
+    {
+      "vo": "critically cast",
+      "vf": "lancé de façon critique",
+      "category": "09"
+    },
+    {
+      "vo": "Drained Magic",
+      "vf": "Magie épuisée",
+      "category": "09"
+    },
+    {
+      "vo": "draw power",
+      "vf": "puiser du pouvoir",
+      "category": "09"
+    },
+    {
+      "vo": "Duplicate Spells",
+      "vf": "Sorts en doublon",
+      "category": "09"
+    },
+    {
+      "vo": "Enchant Spell",
+      "vf": "Sort d'Enchantement",
+      "category": "09"
+    },
+    {
+      "vo": "Healing Spell",
+      "vf": "Sort de Soin",
+      "category": "09"
+    },
+    {
+      "vo": "Hex Spell",
+      "vf": "Sort de Maléfice",
+      "category": "09"
+    },
+    {
+      "vo": "Inferno of Sorcery",
+      "vf": "Fournaise de sorcellerie",
+      "category": "09"
+    },
+    {
+      "vo": "know (a Spell Lore)",
+      "vf": "connaître",
+      "category": "09"
+    },
+    {
+      "vo": "miscast",
+      "vf": "fiasco",
+      "category": "09"
+    },
+    {
+      "vo": "miscast roll",
+      "vf": "jet de fiasco",
+      "category": "09"
+    },
+    {
+      "vo": "prepared spell",
+      "vf": "sort préparé",
+      "category": "09"
+    },
+    {
+      "vo": "Preparing Spells",
+      "vf": "Préparation des sorts",
+      "category": "09"
+    },
+    {
+      "vo": "signature spell",
+      "vf": "sort fétiche",
+      "category": "09"
+    },
+    {
+      "vo": "spell",
+      "vf": "sort",
+      "category": "09"
+    },
+    {
+      "vo": "spell keyword",
+      "vf": "mot-clé de sort",
+      "category": "09"
+    },
+    {
+      "vo": "Spell Lore",
+      "vf": "Domaine de magie",
+      "category": "09"
+    },
+    {
+      "vo": "spellcaster",
+      "vf": "lanceur de sorts",
+      "category": "09"
+    },
+    {
+      "vo": "Successfully Cast",
+      "vf": "Lancement réussi",
+      "category": "09"
+    },
+    {
+      "vo": "Summon Spell",
+      "vf": "Sort d'Invocation",
+      "category": "09"
+    },
+    {
+      "vo": "Uncontrolled Burst of Power",
+      "vf": "Déferlement de pouvoir incontrôlé",
+      "category": "09"
+    },
+    {
+      "vo": "battlefield",
+      "vf": "champ de bataille",
+      "category": "10"
+    },
+    {
+      "vo": "battlefield edge",
+      "vf": "bord du champ de bataille",
+      "category": "10"
+    },
+    {
+      "vo": "battlefield floor",
+      "vf": "sol du champ de bataille",
+      "category": "10"
+    },
+    {
+      "vo": "centre of the battlefield",
+      "vf": "centre du champ de bataille",
+      "category": "10"
+    },
+    {
+      "vo": "closed door",
+      "vf": "porte fermée",
+      "category": "10"
+    },
+    {
+      "vo": "deadly terrain",
+      "vf": "terrain mortel",
+      "category": "10"
+    },
+    {
+      "vo": "door",
+      "vf": "porte",
+      "category": "10"
+    },
+    {
+      "vo": "doorway",
+      "vf": "porte ouverte",
+      "category": "10"
+    },
+    {
+      "vo": "fence",
+      "vf": "clôture",
+      "category": "10"
+    },
+    {
+      "vo": "high terrain",
+      "vf": "terrain haut",
+      "category": "10"
+    },
+    {
+      "vo": "impassable terrain",
+      "vf": "terrain infranchissable",
+      "category": "10"
+    },
+    {
+      "vo": "ladder",
+      "vf": "échelle",
+      "category": "10"
+    },
+    {
+      "vo": "Ladders, Windows And Doors",
+      "vf": "Échelles, fenêtres et portes",
+      "category": "10"
+    },
+    {
+      "vo": "low terrain",
+      "vf": "terrain bas",
+      "category": "10"
+    },
+    {
+      "vo": "low wall",
+      "vf": "muret",
+      "category": "10"
+    },
+    {
+      "vo": "open door",
+      "vf": "porte ouverte",
+      "category": "10"
+    },
+    {
+      "vo": "platform",
+      "vf": "plateforme",
+      "category": "10"
+    },
+    {
+      "vo": "rubble",
+      "vf": "gravats",
+      "category": "10"
+    },
+    {
+      "vo": "solid terrain",
+      "vf": "décor solide",
+      "category": "10"
+    },
+    {
+      "vo": "terrain",
+      "vf": "décor",
+      "category": "10"
+    },
+    {
+      "vo": "Terrain Bases",
+      "vf": "Socles de décor",
+      "category": "10"
+    },
+    {
+      "vo": "terrain feature",
+      "vf": "élément de décor",
+      "category": "10"
+    },
+    {
+      "vo": "The Battlefield",
+      "vf": "Le champ de bataille",
+      "category": "10"
+    },
+    {
+      "vo": "The Battlefield vs The Battlefield Floor",
+      "vf": "Le champ de bataille et le sol du champ de bataille",
+      "category": "10"
+    },
+    {
+      "vo": "type of terrain",
+      "vf": "type de terrain",
+      "category": "10"
+    },
+    {
+      "vo": "wall",
+      "vf": "mur",
+      "category": "10"
+    },
+    {
+      "vo": "window",
+      "vf": "fenêtre",
+      "category": "10"
+    },
+    {
+      "vo": "Ambusher",
+      "vf": "Embusqué",
+      "category": "11"
+    },
+    {
+      "vo": "Arrival",
+      "vf": "Arrivée",
+      "category": "11"
+    },
+    {
+      "vo": "Arriving Reinforcements",
+      "vf": "Arrivée des renforts",
+      "category": "11"
+    },
+    {
+      "vo": "Attacker",
+      "vf": "Assaillant",
+      "category": "11"
+    },
+    {
+      "vo": "battle group",
+      "vf": "groupe de combat",
+      "category": "11"
+    },
+    {
+      "vo": "Bonus Experience",
+      "vf": "Expérience bonus",
+      "category": "11"
+    },
+    {
+      "vo": "chapel",
+      "vf": "chapelle",
+      "category": "11"
+    },
+    {
+      "vo": "chest",
+      "vf": "coffre",
+      "category": "11"
+    },
+    {
+      "vo": "claim (treasure)",
+      "vf": "revendiquer",
+      "category": "11"
+    },
+    {
+      "vo": "control (a quarter)",
+      "vf": "contrôler",
+      "category": "11"
+    },
+    {
+      "vo": "death mark",
+      "vf": "marque de mort",
+      "category": "11"
+    },
+    {
+      "vo": "Defender",
+      "vf": "Défenseur",
+      "category": "11"
+    },
+    {
+      "vo": "Deployment",
+      "vf": "Déploiement",
+      "category": "11"
+    },
+    {
+      "vo": "domination mark",
+      "vf": "marque de domination",
+      "category": "11"
+    },
+    {
+      "vo": "drop (treasure)",
+      "vf": "lâcher",
+      "category": "11"
+    },
+    {
+      "vo": "During the Battle",
+      "vf": "Pendant la bataille",
+      "category": "11"
+    },
+    {
+      "vo": "entry point",
+      "vf": "point d'entrée",
+      "category": "11"
+    },
+    {
+      "vo": "escape (with treasure)",
+      "vf": "s'échapper",
+      "category": "11"
+    },
+    {
+      "vo": "escape battlefield edge",
+      "vf": "bord d'évasion",
+      "category": "11"
+    },
+    {
+      "vo": "exploration roll",
+      "vf": "jet d'exploration",
+      "category": "11"
+    },
+    {
+      "vo": "home quarter",
+      "vf": "quartier de départ",
+      "category": "11"
+    },
+    {
+      "vo": "mark",
+      "vf": "marque",
+      "category": "11"
+    },
+    {
+      "vo": "No Control Area",
+      "vf": "Zone sans contrôle",
+      "category": "11"
+    },
+    {
+      "vo": "No Sight, No Sound",
+      "vf": "Ni vu ni entendu",
+      "category": "11"
+    },
+    {
+      "vo": "Outflank",
+      "vf": "Débordement",
+      "category": "11"
+    },
+    {
+      "vo": "pick up (treasure)",
+      "vf": "ramasser",
+      "category": "11"
+    },
+    {
+      "vo": "quarter",
+      "vf": "quartier",
+      "category": "11"
+    },
+    {
+      "vo": "reinforcement roll",
+      "vf": "jet de renforts",
+      "category": "11"
+    },
+    {
+      "vo": "reinforcements",
+      "vf": "renforts",
+      "category": "11"
+    },
+    {
+      "vo": "Reinforcements Roll",
+      "vf": "Jet de renforts",
+      "category": "11"
+    },
+    {
+      "vo": "Reinforcements Table",
+      "vf": "Table des renforts",
+      "category": "11"
+    },
+    {
+      "vo": "relic",
+      "vf": "relique",
+      "category": "11"
+    },
+    {
+      "vo": "relic table",
+      "vf": "table des reliques",
+      "category": "11"
+    },
+    {
+      "vo": "reserve",
+      "vf": "réserve",
+      "category": "11"
+    },
+    {
+      "vo": "sarcophagus",
+      "vf": "sarcophage",
+      "category": "11"
+    },
+    {
+      "vo": "scenario",
+      "vf": "scénario",
+      "category": "11"
+    },
+    {
+      "vo": "Scenario Table",
+      "vf": "Table des scénarios",
+      "category": "11"
+    },
+    {
+      "vo": "score",
+      "vf": "obtenir",
+      "category": "11"
+    },
+    {
+      "vo": "search party",
+      "vf": "groupe de fouille",
+      "category": "11"
+    },
+    {
+      "vo": "the hit",
+      "vf": "la Proie",
+      "category": "11"
+    },
+    {
+      "vo": "the street",
+      "vf": "la rue",
+      "category": "11"
+    },
+    {
+      "vo": "The Twist",
+      "vf": "Le Rebondissement",
+      "category": "11"
+    },
+    {
+      "vo": "treasure",
+      "vf": "trésor",
+      "category": "11"
+    },
+    {
+      "vo": "treasure table",
+      "vf": "table des trésors",
+      "category": "11"
+    },
+    {
+      "vo": "treasure token",
+      "vf": "pion trésor",
+      "category": "11"
+    },
+    {
+      "vo": "twist",
+      "vf": "rebondissement",
+      "category": "11"
+    },
+    {
+      "vo": "twist table",
+      "vf": "table des rebondissements",
+      "category": "11"
+    },
+    {
+      "vo": "victory conditions",
+      "vf": "conditions de victoire",
+      "category": "11"
+    },
+    {
+      "vo": "victory points",
+      "vf": "points de victoire",
+      "category": "11"
+    },
+    {
+      "vo": "Winning the Battle",
+      "vf": "Remporter la bataille",
+      "category": "11"
+    },
+    {
+      "vo": "A Deadly Encounter",
+      "vf": "Une rencontre mortelle",
+      "category": "12"
+    },
+    {
+      "vo": "Ambusher & Defender",
+      "vf": "Embusqué et Défenseur",
+      "category": "12"
+    },
+    {
+      "vo": "Attacker & Defender",
+      "vf": "Assaillant et Défenseur",
+      "category": "12"
+    },
+    {
+      "vo": "Claim Treasure",
+      "vf": "Revendiquer les trésors",
+      "category": "12"
+    },
+    {
+      "vo": "Claiming Treasure",
+      "vf": "Revendiquer un trésor",
+      "category": "12"
+    },
+    {
+      "vo": "Death Marks",
+      "vf": "Marques de mort",
+      "category": "12"
+    },
+    {
+      "vo": "Domination",
+      "vf": "Domination",
+      "category": "12"
+    },
+    {
+      "vo": "Dropping Treasure",
+      "vf": "Lâcher un trésor",
+      "category": "12"
+    },
+    {
+      "vo": "Escape the Ambushers",
+      "vf": "Échapper aux Embusqués",
+      "category": "12"
+    },
+    {
+      "vo": "Escaping with Treasure",
+      "vf": "S'échapper avec un trésor",
+      "category": "12"
+    },
+    {
+      "vo": "First Blood",
+      "vf": "Premier sang",
+      "category": "12"
+    },
+    {
+      "vo": "First to Step Inside",
+      "vf": "Premier à entrer",
+      "category": "12"
+    },
+    {
+      "vo": "Fleeing with Treasure",
+      "vf": "Partir en déroute avec un trésor",
+      "category": "12"
+    },
+    {
+      "vo": "Glimmers in the Dark",
+      "vf": "Lueurs dans les ténèbres",
+      "category": "12"
+    },
+    {
+      "vo": "Hold Ground",
+      "vf": "Tenir le terrain",
+      "category": "12"
+    },
+    {
+      "vo": "Hold the Centre",
+      "vf": "Tenir le centre",
+      "category": "12"
+    },
+    {
+      "vo": "No Easy Way Out",
+      "vf": "Aucune issue facile",
+      "category": "12"
+    },
+    {
+      "vo": "No Quarter",
+      "vf": "Pas de quartier",
+      "category": "12"
+    },
+    {
+      "vo": "Picking up Treasure",
+      "vf": "Ramasser un trésor",
+      "category": "12"
+    },
+    {
+      "vo": "Prying Off the Sarcophagus Lid",
+      "vf": "Forcer le couvercle du sarcophage",
+      "category": "12"
+    },
+    {
+      "vo": "Street of Death",
+      "vf": "La Rue de la mort",
+      "category": "12"
+    },
+    {
+      "vo": "The Chapel",
+      "vf": "La Chapelle",
+      "category": "12"
+    },
+    {
+      "vo": "The Find",
+      "vf": "La Trouvaille",
+      "category": "12"
+    },
+    {
+      "vo": "The Hit & Battle Groups",
+      "vf": "La Proie et les groupes de combat",
+      "category": "12"
+    },
+    {
+      "vo": "To The Hit or the Hitter",
+      "vf": "À la Proie ou au Tueur",
+      "category": "12"
+    },
+    {
+      "vo": "Unclaimed Treasure",
+      "vf": "Trésor non revendiqué",
+      "category": "12"
+    },
+    {
+      "vo": "A Brewing Storm",
+      "vf": "L'orage menace",
+      "category": "13"
+    },
+    {
+      "vo": "A Hidden Trove",
+      "vf": "Un trésor caché",
+      "category": "13"
+    },
+    {
+      "vo": "A Modest Find",
+      "vf": "Une modeste trouvaille",
+      "category": "13"
+    },
+    {
+      "vo": "A Stash of Silver",
+      "vf": "Un butin de pièces d'argent",
+      "category": "13"
+    },
+    {
+      "vo": "Barricaded Holdout",
+      "vf": "Retranchement barricadé",
+      "category": "13"
+    },
+    {
+      "vo": "Battle for the Tower",
+      "vf": "Bataille pour la tour",
+      "category": "13"
+    },
+    {
+      "vo": "Beggar's Desperation",
+      "vf": "Le Désespoir du mendiant",
+      "category": "13"
+    },
+    {
+      "vo": "blaze",
+      "vf": "brasier",
+      "category": "13"
+    },
+    {
+      "vo": "Blood Frenzy",
+      "vf": "Frénésie sanguinaire",
+      "category": "13"
+    },
+    {
+      "vo": "Coin Purse",
+      "vf": "Bourse",
+      "category": "13"
+    },
+    {
+      "vo": "Condemned",
+      "vf": "Condamné",
+      "category": "13"
+    },
+    {
+      "vo": "critical quarter",
+      "vf": "quartier critique",
+      "category": "13"
+    },
+    {
+      "vo": "Cursed Coin",
+      "vf": "Pièce maudite",
+      "category": "13"
+    },
+    {
+      "vo": "Defiant Stand",
+      "vf": "Résistance acharnée",
+      "category": "13"
+    },
+    {
+      "vo": "Delayed Arrival",
+      "vf": "Arrivée retardée",
+      "category": "13"
+    },
+    {
+      "vo": "Desecrated Ground",
+      "vf": "Terre profanée",
+      "category": "13"
+    },
+    {
+      "vo": "Drunk as an Eel",
+      "vf": "Soûl comme une grive",
+      "category": "13"
+    },
+    {
+      "vo": "Empty All Along",
+      "vf": "Vide depuis toujours",
+      "category": "13"
+    },
+    {
+      "vo": "False Riches",
+      "vf": "Fausses richesses",
+      "category": "13"
+    },
+    {
+      "vo": "forsaken quarter",
+      "vf": "quartier abandonné",
+      "category": "13"
+    },
+    {
+      "vo": "Grass sprouts",
+      "vf": "L'herbe pousse",
+      "category": "13"
+    },
+    {
+      "vo": "Heavy Downpour",
+      "vf": "Pluie battante",
+      "category": "13"
+    },
+    {
+      "vo": "Heavy Rain",
+      "vf": "Forte pluie",
+      "category": "13"
+    },
+    {
+      "vo": "Heirloom",
+      "vf": "Relique de famille",
+      "category": "13"
+    },
+    {
+      "vo": "Hidden Tunnel",
+      "vf": "Tunnel caché",
+      "category": "13"
+    },
+    {
+      "vo": "inferno",
+      "vf": "fournaise",
+      "category": "13"
+    },
+    {
+      "vo": "Light Rain",
+      "vf": "Pluie fine",
+      "category": "13"
+    },
+    {
+      "vo": "Old Debt Collector's House",
+      "vf": "La Maison du vieux collecteur de dettes",
+      "category": "13"
+    },
+    {
+      "vo": "On Fire",
+      "vf": "En feu",
+      "category": "13"
+    },
+    {
+      "vo": "Outflank (twist)",
+      "vf": "Débordement",
+      "category": "13"
+    },
+    {
+      "vo": "rain roll",
+      "vf": "jet de pluie",
+      "category": "13"
+    },
+    {
+      "vo": "Rolling Fog",
+      "vf": "Nappes de brouillard",
+      "category": "13"
+    },
+    {
+      "vo": "Rotten Black Mulch",
+      "vf": "Terreau noir pourri",
+      "category": "13"
+    },
+    {
+      "vo": "Saint Trickster's Game",
+      "vf": "Le Jeu de Saint Farceur",
+      "category": "13"
+    },
+    {
+      "vo": "Saint's Statue",
+      "vf": "La Statue du Saint",
+      "category": "13"
+    },
+    {
+      "vo": "Shadows Lurk Above",
+      "vf": "Des ombres rôdent en hauteur",
+      "category": "13"
+    },
+    {
+      "vo": "Show of Strength",
+      "vf": "Démonstration de force",
+      "category": "13"
+    },
+    {
+      "vo": "smouldering",
+      "vf": "couvant",
+      "category": "13"
+    },
+    {
+      "vo": "Surrounded on All Sides",
+      "vf": "Encerclés de toutes parts",
+      "category": "13"
+    },
+    {
+      "vo": "The Chest",
+      "vf": "Le Coffre",
+      "category": "13"
+    },
+    {
+      "vo": "The Critical Quarter",
+      "vf": "Le Quartier critique",
+      "category": "13"
+    },
+    {
+      "vo": "The Forsaken Quarter",
+      "vf": "Le Quartier abandonné",
+      "category": "13"
+    },
+    {
+      "vo": "The Saint's Sarcophagus",
+      "vf": "Le Sarcophage du Saint",
+      "category": "13"
+    },
+    {
+      "vo": "Thieves in the Dark",
+      "vf": "Voleurs dans les ténèbres",
+      "category": "13"
+    },
+    {
+      "vo": "Thunder Claps",
+      "vf": "Coups de tonnerre",
+      "category": "13"
+    },
+    {
+      "vo": "Tip-off",
+      "vf": "Avertissement",
+      "category": "13"
+    },
+    {
+      "vo": "Turf War",
+      "vf": "Guerre de territoire",
+      "category": "13"
+    },
+    {
+      "vo": "Unholy Curse",
+      "vf": "Malédiction impie",
+      "category": "13"
+    },
+    {
+      "vo": "Upturned Wagon",
+      "vf": "Chariot renversé",
+      "category": "13"
+    },
+    {
+      "vo": "Vow of Blood",
+      "vf": "Serment de sang",
+      "category": "13"
+    },
+    {
+      "vo": "advancement",
+      "vf": "progression",
+      "category": "14"
+    },
+    {
+      "vo": "Banished",
+      "vf": "Banni",
+      "category": "14"
+    },
+    {
+      "vo": "Battles Fought",
+      "vf": "Batailles livrées",
+      "category": "14"
+    },
+    {
+      "vo": "Beasts Injury Table",
+      "vf": "Table des blessures des Bêtes",
+      "category": "14"
+    },
+    {
+      "vo": "Blighted Cloister Epithets",
+      "vf": "Épithètes du Blighted Cloister",
+      "category": "14"
+    },
+    {
+      "vo": "bonus experience",
+      "vf": "expérience bonus",
+      "category": "14"
+    },
+    {
+      "vo": "Campaign Rules",
+      "vf": "Règles de campagne",
+      "category": "14"
+    },
+    {
+      "vo": "Death of a Leader",
+      "vf": "Mort d'un Chef",
+      "category": "14"
+    },
+    {
+      "vo": "Demon Injury Table",
+      "vf": "Table des blessures des Démons",
+      "category": "14"
+    },
+    {
+      "vo": "Eligible Champion",
+      "vf": "Champion éligible",
+      "category": "14"
+    },
+    {
+      "vo": "Enraged",
+      "vf": "Furieux",
+      "category": "14"
+    },
+    {
+      "vo": "epithet",
+      "vf": "épithète",
+      "category": "14"
+    },
+    {
+      "vo": "experience points",
+      "vf": "points d'expérience",
+      "category": "14"
+    },
+    {
+      "vo": "Fighters Lost",
+      "vf": "Combattants perdus",
+      "category": "14"
+    },
+    {
+      "vo": "Former Leader",
+      "vf": "Ancien Chef",
+      "category": "14"
+    },
+    {
+      "vo": "Fractured Essence",
+      "vf": "Essence fracturée",
+      "category": "14"
+    },
+    {
+      "vo": "Holdings Ransacked",
+      "vf": "Possessions saccagées",
+      "category": "14"
+    },
+    {
+      "vo": "House",
+      "vf": "Maison",
+      "category": "14"
+    },
+    {
+      "vo": "income",
+      "vf": "revenu",
+      "category": "14"
+    },
+    {
+      "vo": "injury",
+      "vf": "blessure",
+      "category": "14"
+    },
+    {
+      "vo": "Jars of Canal Leeches",
+      "vf": "Bocaux de sangsues des canaux",
+      "category": "14"
+    },
+    {
+      "vo": "Laid to Rest",
+      "vf": "Repos éternel",
+      "category": "14"
+    },
+    {
+      "vo": "lasting injury",
+      "vf": "blessure durable",
+      "category": "14"
+    },
+    {
+      "vo": "lasting injury table",
+      "vf": "table des blessures durables",
+      "category": "14"
+    },
+    {
+      "vo": "level",
+      "vf": "niveau",
+      "category": "14"
+    },
+    {
+      "vo": "level of Black Rot",
+      "vf": "niveau de Pourriture noire",
+      "category": "14"
+    },
+    {
+      "vo": "Names (name tables)",
+      "vf": "Noms",
+      "category": "14"
+    },
+    {
+      "vo": "permanent injury",
+      "vf": "blessure permanente",
+      "category": "14"
+    },
+    {
+      "vo": "promote",
+      "vf": "promouvoir",
+      "category": "14"
+    },
+    {
+      "vo": "Skeleton & Thrall Injury Table",
+      "vf": "Table des blessures des Squelettes et des Asservis",
+      "category": "14"
+    },
+    {
+      "vo": "Skeletons & Thralls",
+      "vf": "Squelettes et Asservis",
+      "category": "14"
+    },
+    {
+      "vo": "standard injury table",
+      "vf": "table des blessures standard",
+      "category": "14"
+    },
+    {
+      "vo": "Type",
+      "vf": "Type",
+      "category": "14"
+    },
+    {
+      "vo": "Unharmed",
+      "vf": "Intact",
+      "category": "14"
+    },
+    {
+      "vo": "Unscathed",
+      "vf": "Indemne",
+      "category": "14"
+    },
+    {
+      "vo": "Vial of Poison",
+      "vf": "Fiole de poison",
+      "category": "14"
+    },
+    {
+      "vo": "Victories Won",
+      "vf": "Victoires remportées",
+      "category": "14"
+    },
+    {
+      "vo": "Warband Name",
+      "vf": "Nom de la bande",
+      "category": "14"
+    },
+    {
+      "vo": "Wargear, Spells, Skills, Injuries, etc",
+      "vf": "Équipement, sorts, compétences, blessures, etc.",
+      "category": "14"
+    },
+    {
+      "vo": "Assassin's Apprentice",
+      "vf": "Assassin's Apprentice",
+      "category": "15"
+    },
+    {
+      "vo": "Barrow Champion",
+      "vf": "Barrow Champion",
+      "category": "15"
+    },
+    {
+      "vo": "Barrow Lord",
+      "vf": "Barrow Lord",
+      "category": "15"
+    },
+    {
+      "vo": "Bloat Fly",
+      "vf": "Bloat Fly",
+      "category": "15"
+    },
+    {
+      "vo": "Bloodcursed Courtesan",
+      "vf": "Bloodcursed Courtesan",
+      "category": "15"
+    },
+    {
+      "vo": "Bloodcursed Knight",
+      "vf": "Bloodcursed Knight",
+      "category": "15"
+    },
+    {
+      "vo": "Bloodcursed Noble",
+      "vf": "Bloodcursed Noble",
+      "category": "15"
+    },
+    {
+      "vo": "Cloister Champion",
+      "vf": "Cloister Champion",
+      "category": "15"
+    },
+    {
+      "vo": "Cloister Knight",
+      "vf": "Cloister Knight",
+      "category": "15"
+    },
+    {
+      "vo": "Cloister Sorcerer",
+      "vf": "Cloister Sorcerer",
+      "category": "15"
+    },
+    {
+      "vo": "Darkcloven Beastman",
+      "vf": "Darkcloven Beastman",
+      "category": "15"
+    },
+    {
+      "vo": "Darkcloven Shaman",
+      "vf": "Darkcloven Shaman",
+      "category": "15"
+    },
+    {
+      "vo": "Death Covens",
+      "vf": "Death Covens",
+      "category": "15"
+    },
+    {
+      "vo": "Demonic Rot-Colossal",
+      "vf": "Demonic Rot-Colossal",
+      "category": "15"
+    },
+    {
+      "vo": "Demonic Rot-Herald",
+      "vf": "Demonic Rot-Herald",
+      "category": "15"
+    },
+    {
+      "vo": "Demonic Rotspawn",
+      "vf": "Demonic Rotspawn",
+      "category": "15"
+    },
+    {
+      "vo": "Dire Bat",
+      "vf": "Dire Bat",
+      "category": "15"
+    },
+    {
+      "vo": "Dire Wolf",
+      "vf": "Dire Wolf",
+      "category": "15"
+    },
+    {
+      "vo": "Dreg Cultist",
+      "vf": "Dreg Cultist",
+      "category": "15"
+    },
+    {
+      "vo": "Gargoyle",
+      "vf": "Gargoyle",
+      "category": "15"
+    },
+    {
+      "vo": "Giant Rat",
+      "vf": "Giant Rat",
+      "category": "15"
+    },
+    {
+      "vo": "Guild Captain",
+      "vf": "Guild Captain",
+      "category": "15"
+    },
+    {
+      "vo": "Guild Champion",
+      "vf": "Guild Champion",
+      "category": "15"
+    },
+    {
+      "vo": "Guild Cleric",
+      "vf": "Guild Cleric",
+      "category": "15"
+    },
+    {
+      "vo": "Guild Mercenaries",
+      "vf": "Guild Mercenaries",
+      "category": "15"
+    },
+    {
+      "vo": "Guild Mercenary",
+      "vf": "Guild Mercenary",
+      "category": "15"
+    },
+    {
+      "vo": "Guild Recruit",
+      "vf": "Guild Recruit",
+      "category": "15"
+    },
+    {
+      "vo": "Guild Wizard",
+      "vf": "Guild Wizard",
+      "category": "15"
+    },
+    {
+      "vo": "High Sorcerer",
+      "vf": "High Sorcerer",
+      "category": "15"
+    },
+    {
+      "vo": "High Wizard of the Guild",
+      "vf": "High Wizard of the Guild",
+      "category": "15"
+    },
+    {
+      "vo": "Hunting Dog",
+      "vf": "Hunting Dog",
+      "category": "15"
+    },
+    {
+      "vo": "Ironfang Warlord",
+      "vf": "Ironfang Warlord",
+      "category": "15"
+    },
+    {
+      "vo": "Knight-Abbot",
+      "vf": "Knight-Abbot",
+      "category": "15"
+    },
+    {
+      "vo": "Lycanfell Beast",
+      "vf": "Lycanfell Beast",
+      "category": "15"
+    },
+    {
+      "vo": "Lycanfell Noble",
+      "vf": "Lycanfell Noble",
+      "category": "15"
+    },
+    {
+      "vo": "Mercenary Ogre",
+      "vf": "Mercenary Ogre",
+      "category": "15"
+    },
+    {
+      "vo": "Misbegotten",
+      "vf": "Misbegotten",
+      "category": "15"
+    },
+    {
+      "vo": "Necromancer",
+      "vf": "Necromancer",
+      "category": "15"
+    },
+    {
+      "vo": "Necromancer's Apprentice",
+      "vf": "Necromancer's Apprentice",
+      "category": "15"
+    },
+    {
+      "vo": "Nightfang Assassin",
+      "vf": "Nightfang Assassin",
+      "category": "15"
+    },
+    {
+      "vo": "Noble",
+      "vf": "Noble",
+      "category": "15"
+    },
+    {
+      "vo": "Plague Doctor",
+      "vf": "Plague Doctor",
+      "category": "15"
+    },
+    {
+      "vo": "Pox Priest",
+      "vf": "Pox Priest",
+      "category": "15"
+    },
+    {
+      "vo": "Pox Priest's Apprentice",
+      "vf": "Pox Priest's Apprentice",
+      "category": "15"
+    },
+    {
+      "vo": "Rat-Mutant",
+      "vf": "Rat-Mutant",
+      "category": "15"
+    },
+    {
+      "vo": "Rolling-Contraption",
+      "vf": "Rolling-Contraption",
+      "category": "15"
+    },
+    {
+      "vo": "Rot Demon",
+      "vf": "Rot Demon",
+      "category": "15"
+    },
+    {
+      "vo": "Rotling",
+      "vf": "Rotling",
+      "category": "15"
+    },
+    {
+      "vo": "Skeleton Warrior",
+      "vf": "Skeleton Warrior",
+      "category": "15"
+    },
+    {
+      "vo": "Sparkseer",
+      "vf": "Sparkseer",
+      "category": "15"
+    },
+    {
+      "vo": "Sparkseer's Apprentice",
+      "vf": "Sparkseer's Apprentice",
+      "category": "15"
+    },
+    {
+      "vo": "The Blighted Cloister",
+      "vf": "The Blighted Cloister",
+      "category": "15"
+    },
+    {
+      "vo": "Verminkin",
+      "vf": "Verminkin",
+      "category": "15"
+    },
+    {
+      "vo": "Verminkin Champion",
+      "vf": "Verminkin Champion",
+      "category": "15"
+    },
+    {
+      "vo": "Verminkin Warlock",
+      "vf": "Verminkin Warlock",
+      "category": "15"
+    },
+    {
+      "vo": "Verminkin Warrior",
+      "vf": "Verminkin Warrior",
+      "category": "15"
+    },
+    {
+      "vo": "Witch Hunter",
+      "vf": "Witch Hunter",
+      "category": "15"
+    },
+    {
+      "vo": "Witch Hunter's Apprentice",
+      "vf": "Witch Hunter's Apprentice",
+      "category": "15"
+    },
+    {
+      "vo": "Zombie",
+      "vf": "Zombie",
+      "category": "15"
+    },
+    {
+      "vo": "Zombie Ogre",
+      "vf": "Zombie Ogre",
+      "category": "15"
+    },
+    {
+      "vo": "Acolytes of Plague",
+      "vf": "Acolytes de la peste",
+      "category": "16"
+    },
+    {
+      "vo": "Aristocrats of Blood",
+      "vf": "Aristocrates du sang",
+      "category": "16"
+    },
+    {
+      "vo": "Awakened Lord",
+      "vf": "Seigneur éveillé",
+      "category": "16"
+    },
+    {
+      "vo": "Blessed Rabble",
+      "vf": "Populace bénie",
+      "category": "16"
+    },
+    {
+      "vo": "Disgraced Noble",
+      "vf": "Noble déchu",
+      "category": "16"
+    },
+    {
+      "vo": "Knights-Militant",
+      "vf": "Chevaliers militants",
+      "category": "16"
+    },
+    {
+      "vo": "Merciless Tyrant",
+      "vf": "Tyran impitoyable",
+      "category": "16"
+    },
+    {
+      "vo": "Perks",
+      "vf": "Avantages",
+      "category": "16"
+    },
+    {
+      "vo": "Priesthood of Sorcerers",
+      "vf": "Clergé de sorciers",
+      "category": "16"
+    },
+    {
+      "vo": "Restrictions",
+      "vf": "Restrictions",
+      "category": "16"
+    },
+    {
+      "vo": "Rogue Necromancer",
+      "vf": "Nécromancien renégat",
+      "category": "16"
+    },
+    {
+      "vo": "Rooftop Runners",
+      "vf": "Coureurs des toits",
+      "category": "16"
+    },
+    {
+      "vo": "Sparkseer Coven",
+      "vf": "Coven du Sparkseer",
+      "category": "16"
+    },
+    {
+      "vo": "Swords for Hire",
+      "vf": "Épées à louer",
+      "category": "16"
+    },
+    {
+      "vo": "The Anointed One",
+      "vf": "L'Oint",
+      "category": "16"
+    },
+    {
+      "vo": "The Hunt Descends",
+      "vf": "La chasse s'abat",
+      "category": "16"
+    },
+    {
+      "vo": "Witch Hunters Guild",
+      "vf": "Guilde des chasseurs de sorcières",
+      "category": "16"
+    },
+    {
+      "vo": "Wizard's Retinue",
+      "vf": "Suite du Sorcier",
+      "category": "16"
+    },
+    {
+      "vo": "A Howl in the Night",
+      "vf": "Un hurlement dans la nuit",
+      "category": "17"
+    },
+    {
+      "vo": "Ancient Barrows",
+      "vf": "Tumulus anciens",
+      "category": "17"
+    },
+    {
+      "vo": "Atonement for Sin",
+      "vf": "Expiation des péchés",
+      "category": "17"
+    },
+    {
+      "vo": "Banquet of Blood",
+      "vf": "Banquet de sang",
+      "category": "17"
+    },
+    {
+      "vo": "Barrow Offering",
+      "vf": "Offrande au tumulus",
+      "category": "17"
+    },
+    {
+      "vo": "Bestial Trophies",
+      "vf": "Trophées de Bêtes",
+      "category": "17"
+    },
+    {
+      "vo": "Blasphemous Study",
+      "vf": "Étude blasphématoire",
+      "category": "17"
+    },
+    {
+      "vo": "Brew Concoctions",
+      "vf": "Préparer des décoctions",
+      "category": "17"
+    },
+    {
+      "vo": "Canonise the Fallen",
+      "vf": "Canoniser les défunts",
+      "category": "17"
+    },
+    {
+      "vo": "Chapter House",
+      "vf": "Maison capitulaire",
+      "category": "17"
+    },
+    {
+      "vo": "Combat Drills",
+      "vf": "Exercices de combat",
+      "category": "17"
+    },
+    {
+      "vo": "Create a Zombie",
+      "vf": "Créer un Zombie",
+      "category": "17"
+    },
+    {
+      "vo": "Damnation",
+      "vf": "Damnation",
+      "category": "17"
+    },
+    {
+      "vo": "Demonic Ally",
+      "vf": "Allié démoniaque",
+      "category": "17"
+    },
+    {
+      "vo": "Demonic Communion",
+      "vf": "Communion démoniaque",
+      "category": "17"
+    },
+    {
+      "vo": "Desecrated Chapel",
+      "vf": "Chapelle profanée",
+      "category": "17"
+    },
+    {
+      "vo": "Dilapidated Manor",
+      "vf": "Manoir délabré",
+      "category": "17"
+    },
+    {
+      "vo": "Eager to Prove",
+      "vf": "Avides de faire leurs preuves",
+      "category": "17"
+    },
+    {
+      "vo": "Embalmer's Hall",
+      "vf": "Salle de l'embaumeur",
+      "category": "17"
+    },
+    {
+      "vo": "Embalmers' Hall",
+      "vf": "Salle de l'embaumeur",
+      "category": "17"
+    },
+    {
+      "vo": "engineering points",
+      "vf": "points d'ingénierie",
+      "category": "17"
+    },
+    {
+      "vo": "Fighting Pits",
+      "vf": "Fosses de combat",
+      "category": "17"
+    },
+    {
+      "vo": "Fortified Keep",
+      "vf": "Donjon fortifié",
+      "category": "17"
+    },
+    {
+      "vo": "Fortified Warren",
+      "vf": "Terrier fortifié",
+      "category": "17"
+    },
+    {
+      "vo": "Grand Pavilion",
+      "vf": "Grand pavillon",
+      "category": "17"
+    },
+    {
+      "vo": "Guild Barracks",
+      "vf": "Caserne de la Guilde",
+      "category": "17"
+    },
+    {
+      "vo": "Hidden Library",
+      "vf": "Bibliothèque cachée",
+      "category": "17"
+    },
+    {
+      "vo": "Hidden Vantage",
+      "vf": "Poste d'observation caché",
+      "category": "17"
+    },
+    {
+      "vo": "Immortal Slumber",
+      "vf": "Sommeil immortel",
+      "category": "17"
+    },
+    {
+      "vo": "Income",
+      "vf": "Revenu",
+      "category": "17"
+    },
+    {
+      "vo": "Living Saints",
+      "vf": "Saints vivants",
+      "category": "17"
+    },
+    {
+      "vo": "Mad Tinkerers",
+      "vf": "Bricoleurs fous",
+      "category": "17"
+    },
+    {
+      "vo": "Major Boon",
+      "vf": "Faveur majeure",
+      "category": "17"
+    },
+    {
+      "vo": "Martial Training",
+      "vf": "Entraînement martial",
+      "category": "17"
+    },
+    {
+      "vo": "Minor Boon",
+      "vf": "Faveur mineure",
+      "category": "17"
+    },
+    {
+      "vo": "Necromantic Study",
+      "vf": "Étude nécromantique",
+      "category": "17"
+    },
+    {
+      "vo": "Opulent Manor",
+      "vf": "Manoir opulent",
+      "category": "17"
+    },
+    {
+      "vo": "Prayers of Plague",
+      "vf": "Prières de peste",
+      "category": "17"
+    },
+    {
+      "vo": "Read Forbidden Scrolls",
+      "vf": "Lire les parchemins interdits",
+      "category": "17"
+    },
+    {
+      "vo": "Rickety Workshop",
+      "vf": "Atelier branlant",
+      "category": "17"
+    },
+    {
+      "vo": "Run the Roofs",
+      "vf": "Courir les toits",
+      "category": "17"
+    },
+    {
+      "vo": "Scry Ancient Scrolls",
+      "vf": "Scruter les parchemins anciens",
+      "category": "17"
+    },
+    {
+      "vo": "Search the City",
+      "vf": "Fouiller la Cité",
+      "category": "17"
+    },
+    {
+      "vo": "Secluded Scriptorium",
+      "vf": "Scriptorium isolé",
+      "category": "17"
+    },
+    {
+      "vo": "Silence (boon table)",
+      "vf": "Silence",
+      "category": "17"
+    },
+    {
+      "vo": "Sorcerous Study",
+      "vf": "Étude de la sorcellerie",
+      "category": "17"
+    },
+    {
+      "vo": "Street Pulpit",
+      "vf": "Chaire de rue",
+      "category": "17"
+    },
+    {
+      "vo": "Unholy Altar",
+      "vf": "Autel impie",
+      "category": "17"
+    },
+    {
+      "vo": "Venerate Living Saints",
+      "vf": "Vénérer les Saints vivants",
+      "category": "17"
+    },
+    {
+      "vo": "vintage wine",
+      "vf": "grand cru",
+      "category": "17"
+    },
+    {
+      "vo": "Vintage Wines",
+      "vf": "Grands crus",
+      "category": "17"
+    },
+    {
+      "vo": "Champion List",
+      "vf": "Liste des Champions",
+      "category": "18"
+    },
+    {
+      "vo": "Cleric List",
+      "vf": "Liste des Clerics",
+      "category": "18"
+    },
+    {
+      "vo": "Cloister Armoury",
+      "vf": "Armurerie du Cloître",
+      "category": "18"
+    },
+    {
+      "vo": "Contraption List",
+      "vf": "Liste des Engins",
+      "category": "18"
+    },
+    {
+      "vo": "Coven Armoury",
+      "vf": "Armurerie du Coven",
+      "category": "18"
+    },
+    {
+      "vo": "Dreg List",
+      "vf": "Liste des Dregs",
+      "category": "18"
+    },
+    {
+      "vo": "Fighter List",
+      "vf": "Liste des combattants",
+      "category": "18"
+    },
+    {
+      "vo": "Fighter Scrolls",
+      "vf": "Parchemins de combattants",
+      "category": "18"
+    },
+    {
+      "vo": "Fighters List",
+      "vf": "Liste des combattants",
+      "category": "18"
+    },
+    {
+      "vo": "Guild Armoury",
+      "vf": "Armurerie de la Guilde",
+      "category": "18"
+    },
+    {
+      "vo": "Main List",
+      "vf": "Liste principale",
+      "category": "18"
+    },
+    {
+      "vo": "Munitions List",
+      "vf": "Liste d'armement",
+      "category": "18"
+    },
+    {
+      "vo": "Ogre List",
+      "vf": "Liste des Ogres",
+      "category": "18"
+    },
+    {
+      "vo": "Practitioner Item List",
+      "vf": "Liste d'objets des Praticiens",
+      "category": "18"
+    },
+    {
+      "vo": "Practitioner List",
+      "vf": "Liste des Praticiens",
+      "category": "18"
+    },
+    {
+      "vo": "Rat-Mutant List",
+      "vf": "Liste des Rat-Mutants",
+      "category": "18"
+    },
+    {
+      "vo": "Sparkseer List",
+      "vf": "Liste des Sparkseers",
+      "category": "18"
+    },
+    {
+      "vo": "Vermin Armoury",
+      "vf": "Armurerie Verminkin",
+      "category": "18"
+    },
+    {
+      "vo": "Verminkin Armoury",
+      "vf": "Armurerie Verminkin",
+      "category": "18"
+    },
+    {
+      "vo": "Witch Hunter List",
+      "vf": "Liste des Witch Hunters",
+      "category": "18"
+    },
+    {
+      "vo": "Witch Hunters List",
+      "vf": "Liste des Witch Hunters",
+      "category": "18"
+    },
+    {
+      "vo": "Wizard List",
+      "vf": "Liste des Sorciers",
+      "category": "18"
+    },
+    {
+      "vo": "Zombie Ogre List",
+      "vf": "Liste des Zombie Ogres",
+      "category": "18"
+    },
+    {
+      "vo": "Arcane Staff",
+      "vf": "Bâton arcanique",
+      "category": "19"
+    },
+    {
+      "vo": "Axe",
+      "vf": "Hache",
+      "category": "19"
+    },
+    {
+      "vo": "Biting Fangs",
+      "vf": "Crocs mordants",
+      "category": "19"
+    },
+    {
+      "vo": "Club",
+      "vf": "Gourdin",
+      "category": "19"
+    },
+    {
+      "vo": "Club/Mace/Hammer",
+      "vf": "Gourdin/Masse/Marteau",
+      "category": "19"
+    },
+    {
+      "vo": "Crushing Bulk",
+      "vf": "Carcasse écrasante",
+      "category": "19"
+    },
+    {
+      "vo": "Cursed Blade",
+      "vf": "Lame maudite",
+      "category": "19"
+    },
+    {
+      "vo": "Cursed Sword",
+      "vf": "Épée maudite",
+      "category": "19"
+    },
+    {
+      "vo": "Dagger",
+      "vf": "Dague",
+      "category": "19"
+    },
+    {
+      "vo": "Dagger/Punch Dagger",
+      "vf": "Dague/Dague de poing",
+      "category": "19"
+    },
+    {
+      "vo": "Demonic Rot Blade",
+      "vf": "Lame de pourriture démoniaque",
+      "category": "19"
+    },
+    {
+      "vo": "Demonic Rot Maw",
+      "vf": "Gueule de pourriture démoniaque",
+      "category": "19"
+    },
+    {
+      "vo": "Demonic Rot Strike",
+      "vf": "Frappe de pourriture démoniaque",
+      "category": "19"
+    },
+    {
+      "vo": "Ensorcelled Halberd",
+      "vf": "Hallebarde ensorcelée",
+      "category": "19"
+    },
+    {
+      "vo": "Ensorcelled Weapon",
+      "vf": "Arme ensorcelée",
+      "category": "19"
+    },
+    {
+      "vo": "Flail",
+      "vf": "Fléau",
+      "category": "19"
+    },
+    {
+      "vo": "Great Club",
+      "vf": "Grand gourdin",
+      "category": "19"
+    },
+    {
+      "vo": "Great Demonic Rot Blade",
+      "vf": "Grande lame de pourriture démoniaque",
+      "category": "19"
+    },
+    {
+      "vo": "Great Mace",
+      "vf": "Grande masse",
+      "category": "19"
+    },
+    {
+      "vo": "Halberd",
+      "vf": "Hallebarde",
+      "category": "19"
+    },
+    {
+      "vo": "Heavy Axe",
+      "vf": "Hache lourde",
+      "category": "19"
+    },
+    {
+      "vo": "Heavy-Flail",
+      "vf": "Fléau lourd",
+      "category": "19"
+    },
+    {
+      "vo": "Iron Claw",
+      "vf": "Griffe de fer",
+      "category": "19"
+    },
+    {
+      "vo": "Nasty Bite",
+      "vf": "Morsure infecte",
+      "category": "19"
+    },
+    {
+      "vo": "Necrotic Bite",
+      "vf": "Morsure nécrotique",
+      "category": "19"
+    },
+    {
+      "vo": "Ogre Blade",
+      "vf": "Lame d'ogre",
+      "category": "19"
+    },
+    {
+      "vo": "Ogre Great Weapon",
+      "vf": "Grande arme d'ogre",
+      "category": "19"
+    },
+    {
+      "vo": "Ogre Mace",
+      "vf": "Masse d'ogre",
+      "category": "19"
+    },
+    {
+      "vo": "Oversized Claw",
+      "vf": "Griffe démesurée",
+      "category": "19"
+    },
+    {
+      "vo": "Poison Blade",
+      "vf": "Lame empoisonnée",
+      "category": "19"
+    },
+    {
+      "vo": "Proboscis",
+      "vf": "Trompe",
+      "category": "19"
+    },
+    {
+      "vo": "Rat-Mutant Blade",
+      "vf": "Lame de Rat-Mutant",
+      "category": "19"
+    },
+    {
+      "vo": "Spark-Drill",
+      "vf": "Foreuse à étincelles",
+      "category": "19"
+    },
+    {
+      "vo": "Spark-Powered Fists",
+      "vf": "Poings à étincelles",
+      "category": "19"
+    },
+    {
+      "vo": "Spear",
+      "vf": "Lance",
+      "category": "19"
+    },
+    {
+      "vo": "Stone Talons",
+      "vf": "Serres de pierre",
+      "category": "19"
+    },
+    {
+      "vo": "Sword",
+      "vf": "Épée",
+      "category": "19"
+    },
+    {
+      "vo": "Unarmed Strike",
+      "vf": "Frappe à mains nues",
+      "category": "19"
+    },
+    {
+      "vo": "Vicious Bite",
+      "vf": "Morsure féroce",
+      "category": "19"
+    },
+    {
+      "vo": "Warhammer",
+      "vf": "Marteau de guerre",
+      "category": "19"
+    },
+    {
+      "vo": "Wulfen Claws",
+      "vf": "Griffes de loup",
+      "category": "19"
+    },
+    {
+      "vo": "Zombie Bite",
+      "vf": "Morsure de zombie",
+      "category": "19"
+    },
+    {
+      "vo": "Zweihander",
+      "vf": "Espadon",
+      "category": "19"
+    },
+    {
+      "vo": "Arbalest",
+      "vf": "Arbalète lourde",
+      "category": "20"
+    },
+    {
+      "vo": "Arc-Lightning Gun",
+      "vf": "Lance-éclairs",
+      "category": "20"
+    },
+    {
+      "vo": "Blackpowder Pistol",
+      "vf": "Pistolet à poudre noire",
+      "category": "20"
+    },
+    {
+      "vo": "Blackpowder Rifle",
+      "vf": "Fusil à poudre noire",
+      "category": "20"
+    },
+    {
+      "vo": "Blowpipe",
+      "vf": "Sarbacane",
+      "category": "20"
+    },
+    {
+      "vo": "Blunderbuss",
+      "vf": "Tromblon",
+      "category": "20"
+    },
+    {
+      "vo": "Brace of Pistols",
+      "vf": "Paire de pistolets",
+      "category": "20"
+    },
+    {
+      "vo": "Crossbow",
+      "vf": "Arbalète",
+      "category": "20"
+    },
+    {
+      "vo": "Fire Bombs",
+      "vf": "Bombes incendiaires",
+      "category": "20"
+    },
+    {
+      "vo": "Flame Canister",
+      "vf": "Bonbonne à flammes",
+      "category": "20"
+    },
+    {
+      "vo": "Flame-Canister",
+      "vf": "Bonbonne à flammes",
+      "category": "20"
+    },
+    {
+      "vo": "Flamethrower",
+      "vf": "Lance-flammes",
+      "category": "20"
+    },
+    {
+      "vo": "Hand Crossbow",
+      "vf": "Arbalète de poing",
+      "category": "20"
+    },
+    {
+      "vo": "Heavy Gatling Gun",
+      "vf": "Gatling lourde",
+      "category": "20"
+    },
+    {
+      "vo": "Long Bow",
+      "vf": "Arc long",
+      "category": "20"
+    },
+    {
+      "vo": "Long Rifle",
+      "vf": "Fusil long",
+      "category": "20"
+    },
+    {
+      "vo": "Ogre Cannon",
+      "vf": "Canon d'ogre",
+      "category": "20"
+    },
+    {
+      "vo": "Ogre Pistol",
+      "vf": "Pistolet d'ogre",
+      "category": "20"
+    },
+    {
+      "vo": "Orb Bombs",
+      "vf": "Orbes explosifs",
+      "category": "20"
+    },
+    {
+      "vo": "Orb Launcher",
+      "vf": "Lance-orbes",
+      "category": "20"
+    },
+    {
+      "vo": "Repeater Pistol",
+      "vf": "Pistolet à répétition",
+      "category": "20"
+    },
+    {
+      "vo": "Rocket Launcher",
+      "vf": "Lance-roquettes",
+      "category": "20"
+    },
+    {
+      "vo": "Short Bow",
+      "vf": "Arc court",
+      "category": "20"
+    },
+    {
+      "vo": "Sling",
+      "vf": "Fronde",
+      "category": "20"
+    },
+    {
+      "vo": "Throwing Stars",
+      "vf": "Étoiles de jet",
+      "category": "20"
+    },
+    {
+      "vo": "Volley Rifle",
+      "vf": "Fusil à salves",
+      "category": "20"
+    },
+    {
+      "vo": "Cuirass",
+      "vf": "Cuirasse",
+      "category": "21"
+    },
+    {
+      "vo": "Full-Plate",
+      "vf": "Armure de plates",
+      "category": "21"
+    },
+    {
+      "vo": "Heavy Plating",
+      "vf": "Blindage lourd",
+      "category": "21"
+    },
+    {
+      "vo": "Ogre Armour",
+      "vf": "Armure d'ogre",
+      "category": "21"
+    },
+    {
+      "vo": "Warded Robes",
+      "vf": "Robe de protection",
+      "category": "21"
+    },
+    {
+      "vo": "Ancient Banner",
+      "vf": "Bannière ancienne",
+      "category": "22"
+    },
+    {
+      "vo": "Bestial Companion",
+      "vf": "Compagnon bestial",
+      "category": "22"
+    },
+    {
+      "vo": "Bomb Rat",
+      "vf": "Rat-bombe",
+      "category": "22"
+    },
+    {
+      "vo": "Bomb-Bolt",
+      "vf": "Carreau explosif",
+      "category": "22"
+    },
+    {
+      "vo": "Cauldron",
+      "vf": "Chaudron",
+      "category": "22"
+    },
+    {
+      "vo": "Clan Banner",
+      "vf": "Bannière de clan",
+      "category": "22"
+    },
+    {
+      "vo": "Cloister Icon",
+      "vf": "Icône du Cloître",
+      "category": "22"
+    },
+    {
+      "vo": "Demonic Familiar",
+      "vf": "Familier démoniaque",
+      "category": "22"
+    },
+    {
+      "vo": "Drive the Stake",
+      "vf": "Planter le pieu",
+      "category": "22"
+    },
+    {
+      "vo": "Drop Smoke Bomb",
+      "vf": "Lâcher la bombe fumigène",
+      "category": "22"
+    },
+    {
+      "vo": "Ensorcelled Bell",
+      "vf": "Cloche ensorcelée",
+      "category": "22"
+    },
+    {
+      "vo": "fuse length",
+      "vf": "longueur de mèche",
+      "category": "22"
+    },
+    {
+      "vo": "Gas Mask",
+      "vf": "Masque à gaz",
+      "category": "22"
+    },
+    {
+      "vo": "Grappling Hook",
+      "vf": "Grappin",
+      "category": "22"
+    },
+    {
+      "vo": "Grimoire",
+      "vf": "Grimoire",
+      "category": "22"
+    },
+    {
+      "vo": "Guild Banner",
+      "vf": "Bannière de la Guilde",
+      "category": "22"
+    },
+    {
+      "vo": "Harry",
+      "vf": "Harceler",
+      "category": "22"
+    },
+    {
+      "vo": "Invoke Ethereal Protection",
+      "vf": "Appeler la protection éthérée",
+      "category": "22"
+    },
+    {
+      "vo": "Lantern/Torch",
+      "vf": "Lanterne/Torche",
+      "category": "22"
+    },
+    {
+      "vo": "Loyal Companion",
+      "vf": "Compagnon fidèle",
+      "category": "22"
+    },
+    {
+      "vo": "Net",
+      "vf": "Filet",
+      "category": "22"
+    },
+    {
+      "vo": "Periscope",
+      "vf": "Périscope",
+      "category": "22"
+    },
+    {
+      "vo": "Set Up Bomb Rat",
+      "vf": "Placer le rat-bombe",
+      "category": "22"
+    },
+    {
+      "vo": "Shield",
+      "vf": "Bouclier",
+      "category": "22"
+    },
+    {
+      "vo": "Smoke Bomb",
+      "vf": "Bombe fumigène",
+      "category": "22"
+    },
+    {
+      "vo": "Spirit Guardian",
+      "vf": "Esprit gardien",
+      "category": "22"
+    },
+    {
+      "vo": "Torchlight/Lantern",
+      "vf": "Lanterne/Torche",
+      "category": "22"
+    },
+    {
+      "vo": "Wheel-Spikes",
+      "vf": "Pointes de roue",
+      "category": "22"
+    },
+    {
+      "vo": "Winged Familiar",
+      "vf": "Familier ailé",
+      "category": "22"
+    },
+    {
+      "vo": "Wooden Stakes",
+      "vf": "Pieux en bois",
+      "category": "22"
+    },
+    {
+      "vo": "Arcane Missile",
+      "vf": "Projectile arcanique",
+      "category": "23"
+    },
+    {
+      "vo": "Balefire",
+      "vf": "Feu funeste",
+      "category": "23"
+    },
+    {
+      "vo": "Bat Scream",
+      "vf": "Cri de chauve-souris",
+      "category": "23"
+    },
+    {
+      "vo": "Black Bile",
+      "vf": "Bile noire",
+      "category": "23"
+    },
+    {
+      "vo": "Black Mire",
+      "vf": "Bourbier noir",
+      "category": "23"
+    },
+    {
+      "vo": "Bless Thy Blade",
+      "vf": "Bénédiction des lames",
+      "category": "23"
+    },
+    {
+      "vo": "Bouncing Blast",
+      "vf": "Explosion rebondissante",
+      "category": "23"
+    },
+    {
+      "vo": "Chain Lightning",
+      "vf": "Chaîne d'éclairs",
+      "category": "23"
+    },
+    {
+      "vo": "Consecrated Ground",
+      "vf": "Terre consacrée",
+      "category": "23"
+    },
+    {
+      "vo": "Cursed Blades",
+      "vf": "Lames maudites",
+      "category": "23"
+    },
+    {
+      "vo": "Dark Vitality",
+      "vf": "Sombre vitalité",
+      "category": "23"
+    },
+    {
+      "vo": "Death Blast",
+      "vf": "Explosion de mort",
+      "category": "23"
+    },
+    {
+      "vo": "Demonic Lore of Rot",
+      "vf": "Domaine démoniaque de la Pourriture",
+      "category": "23"
+    },
+    {
+      "vo": "Demonic Strength",
+      "vf": "Force démoniaque",
+      "category": "23"
+    },
+    {
+      "vo": "Doom",
+      "vf": "Fatalité",
+      "category": "23"
+    },
+    {
+      "vo": "Draw Blood",
+      "vf": "Saignée",
+      "category": "23"
+    },
+    {
+      "vo": "Eldritch Barrier",
+      "vf": "Barrière occulte",
+      "category": "23"
+    },
+    {
+      "vo": "Erupting Sores",
+      "vf": "Plaies éruptives",
+      "category": "23"
+    },
+    {
+      "vo": "Ethereal Armour",
+      "vf": "Armure éthérée",
+      "category": "23"
+    },
+    {
+      "vo": "Fetid Blades",
+      "vf": "Lames fétides",
+      "category": "23"
+    },
+    {
+      "vo": "Flaming Weapon",
+      "vf": "Arme enflammée",
+      "category": "23"
+    },
+    {
+      "vo": "Gathering Shadows",
+      "vf": "Ombres grandissantes",
+      "category": "23"
+    },
+    {
+      "vo": "Godspeed",
+      "vf": "Célérité divine",
+      "category": "23"
+    },
+    {
+      "vo": "Healing Essence",
+      "vf": "Essence curative",
+      "category": "23"
+    },
+    {
+      "vo": "Holy Strength",
+      "vf": "Force sacrée",
+      "category": "23"
+    },
+    {
+      "vo": "Lore of Blessed Maggots",
+      "vf": "Domaine des Asticots bénis",
+      "category": "23"
+    },
+    {
+      "vo": "Lore of Blood",
+      "vf": "Domaine du Sang",
+      "category": "23"
+    },
+    {
+      "vo": "Lore of Necromancy",
+      "vf": "Domaine de la Nécromancie",
+      "category": "23"
+    },
+    {
+      "vo": "Lore of Poxes",
+      "vf": "Domaine des Véroles",
+      "category": "23"
+    },
+    {
+      "vo": "Lore of Sanctioned Magic",
+      "vf": "Domaine de la Magie autorisée",
+      "category": "23"
+    },
+    {
+      "vo": "Lore of the Saints",
+      "vf": "Domaine des Saints",
+      "category": "23"
+    },
+    {
+      "vo": "Lore of the Under-Tunnels",
+      "vf": "Domaine des Tunnels profonds",
+      "category": "23"
+    },
+    {
+      "vo": "Plague Bomb",
+      "vf": "Bombe de peste",
+      "category": "23"
+    },
+    {
+      "vo": "Plague Pit",
+      "vf": "Fosse de peste",
+      "category": "23"
+    },
+    {
+      "vo": "Plague Wind",
+      "vf": "Vent de peste",
+      "category": "23"
+    },
+    {
+      "vo": "Protective Shroud",
+      "vf": "Linceul protecteur",
+      "category": "23"
+    },
+    {
+      "vo": "Putrid Blessing",
+      "vf": "Bénédiction putride",
+      "category": "23"
+    },
+    {
+      "vo": "Rabid Fervour",
+      "vf": "Ferveur enragée",
+      "category": "23"
+    },
+    {
+      "vo": "Rain of Filth",
+      "vf": "Pluie d'immondices",
+      "category": "23"
+    },
+    {
+      "vo": "Raise Skeleton",
+      "vf": "Relever un Squelette",
+      "category": "23"
+    },
+    {
+      "vo": "Raise Zombie",
+      "vf": "Relever un Zombie",
+      "category": "23"
+    },
+    {
+      "vo": "Recall",
+      "vf": "Rappel",
+      "category": "23"
+    },
+    {
+      "vo": "Rotten Armour",
+      "vf": "Armure pourrie",
+      "category": "23"
+    },
+    {
+      "vo": "Rotten Insides",
+      "vf": "Entrailles pourries",
+      "category": "23"
+    },
+    {
+      "vo": "Sanctioned Magic",
+      "vf": "Magie autorisée",
+      "category": "23"
+    },
+    {
+      "vo": "Sanguine Spear",
+      "vf": "Lance sanguine",
+      "category": "23"
+    },
+    {
+      "vo": "Shadow Leap",
+      "vf": "Bond d'ombre",
+      "category": "23"
+    },
+    {
+      "vo": "Silence",
+      "vf": "Silence",
+      "category": "23"
+    },
+    {
+      "vo": "Spray of Vomit",
+      "vf": "Gerbe de vomi",
+      "category": "23"
+    },
+    {
+      "vo": "Summon Rotling",
+      "vf": "Invoquer un Rotling",
+      "category": "23"
+    },
+    {
+      "vo": "Swollen Form",
+      "vf": "Forme boursouflée",
+      "category": "23"
+    },
+    {
+      "vo": "Torrent of Fire",
+      "vf": "Torrent de feu",
+      "category": "23"
+    },
+    {
+      "vo": "Tunnel from Below",
+      "vf": "Tunnel venu d'en bas",
+      "category": "23"
+    },
+    {
+      "vo": "Twilight Translocation",
+      "vf": "Translocation crépusculaire",
+      "category": "23"
+    },
+    {
+      "vo": "Umbral Vortex",
+      "vf": "Vortex d'ombre",
+      "category": "23"
+    },
+    {
+      "vo": "Will of the Saints",
+      "vf": "Volonté des Saints",
+      "category": "23"
+    },
+    {
+      "vo": "Witchfire",
+      "vf": "Feu sorcier",
+      "category": "23"
+    },
+    {
+      "vo": "Witchfire Attack",
+      "vf": "Attaque de feu sorcier",
+      "category": "23"
+    },
+    {
+      "vo": "witchfire token",
+      "vf": "pion Feu sorcier",
+      "category": "23"
+    },
+    {
+      "vo": "Ambush",
+      "vf": "Embuscade",
+      "category": "24"
+    },
+    {
+      "vo": "Attack! Attack!",
+      "vf": "À l'attaque ! À l'attaque !",
+      "category": "24"
+    },
+    {
+      "vo": "Back Stabber",
+      "vf": "Coup dans le dos",
+      "category": "24"
+    },
+    {
+      "vo": "Black Blood",
+      "vf": "Sang noir",
+      "category": "24"
+    },
+    {
+      "vo": "Blackpowder Specialist",
+      "vf": "Spécialiste de la poudre noire",
+      "category": "24"
+    },
+    {
+      "vo": "Blessed by the Saints",
+      "vf": "Béni des Saints",
+      "category": "24"
+    },
+    {
+      "vo": "Blessings of Saint Rot",
+      "vf": "Bénédictions de Sainte Pourriture",
+      "category": "24"
+    },
+    {
+      "vo": "Chill Touch",
+      "vf": "Toucher glacial",
+      "category": "24"
+    },
+    {
+      "vo": "Cloud of Bats",
+      "vf": "Nuée de chauves-souris",
+      "category": "24"
+    },
+    {
+      "vo": "Crackshot",
+      "vf": "Fine gâchette",
+      "category": "24"
+    },
+    {
+      "vo": "Dark Aristocracy",
+      "vf": "Sombre aristocratie",
+      "category": "24"
+    },
+    {
+      "vo": "Death March",
+      "vf": "Marche de la mort",
+      "category": "24"
+    },
+    {
+      "vo": "Demonic Conduit",
+      "vf": "Conduit démoniaque",
+      "category": "24"
+    },
+    {
+      "vo": "Dirty Fighter",
+      "vf": "Combattant déloyal",
+      "category": "24"
+    },
+    {
+      "vo": "Drag Down Into the Earth",
+      "vf": "Entraîner sous terre",
+      "category": "24"
+    },
+    {
+      "vo": "Dread Aura",
+      "vf": "Aura de terreur",
+      "category": "24"
+    },
+    {
+      "vo": "Dual-weapon Wielder",
+      "vf": "Combattant à deux armes",
+      "category": "24"
+    },
+    {
+      "vo": "Duellist",
+      "vf": "Duelliste",
+      "category": "24"
+    },
+    {
+      "vo": "Escape Artist",
+      "vf": "Roi de l'évasion",
+      "category": "24"
+    },
+    {
+      "vo": "Explorer's Instincts",
+      "vf": "Instinct d'explorateur",
+      "category": "24"
+    },
+    {
+      "vo": "Fast Learner",
+      "vf": "Apprend vite",
+      "category": "24"
+    },
+    {
+      "vo": "Feint",
+      "vf": "Feinte",
+      "category": "24"
+    },
+    {
+      "vo": "Fight Till the End",
+      "vf": "Se battre jusqu'au bout",
+      "category": "24"
+    },
+    {
+      "vo": "From Unseen Quarter",
+      "vf": "Venu de nulle part",
+      "category": "24"
+    },
+    {
+      "vo": "Great Weapon Master",
+      "vf": "Maître des grandes armes",
+      "category": "24"
+    },
+    {
+      "vo": "Impetuous",
+      "vf": "Impétueux",
+      "category": "24"
+    },
+    {
+      "vo": "Infested with Maggots",
+      "vf": "Infesté d'asticots",
+      "category": "24"
+    },
+    {
+      "vo": "Kingsguard",
+      "vf": "Garde royale",
+      "category": "24"
+    },
+    {
+      "vo": "Last Rites",
+      "vf": "Derniers sacrements",
+      "category": "24"
+    },
+    {
+      "vo": "Leech Blood",
+      "vf": "Drain de sang",
+      "category": "24"
+    },
+    {
+      "vo": "Marksman",
+      "vf": "Tireur d'élite",
+      "category": "24"
+    },
+    {
+      "vo": "Master of Dark Science",
+      "vf": "Maître de la sombre science",
+      "category": "24"
+    },
+    {
+      "vo": "Masterful Schemes",
+      "vf": "Machinations magistrales",
+      "category": "24"
+    },
+    {
+      "vo": "Mesmeric Gaze",
+      "vf": "Regard hypnotique",
+      "category": "24"
+    },
+    {
+      "vo": "Old Dogs",
+      "vf": "Vieux briscards",
+      "category": "24"
+    },
+    {
+      "vo": "Ordained of the Cloister",
+      "vf": "Ordonnés du Cloître",
+      "category": "24"
+    },
+    {
+      "vo": "Point Blank Shot",
+      "vf": "Tir à bout portant",
+      "category": "24"
+    },
+    {
+      "vo": "Purveyor of Poisons",
+      "vf": "Empoisonneur",
+      "category": "24"
+    },
+    {
+      "vo": "Rallying Cry",
+      "vf": "Cri de ralliement",
+      "category": "24"
+    },
+    {
+      "vo": "Relentless Attacker",
+      "vf": "Attaquant implacable",
+      "category": "24"
+    },
+    {
+      "vo": "Right On Time",
+      "vf": "Pile à l'heure",
+      "category": "24"
+    },
+    {
+      "vo": "Rise Again",
+      "vf": "Se relever",
+      "category": "24"
+    },
+    {
+      "vo": "Rite of Contagion",
+      "vf": "Rite de contagion",
+      "category": "24"
+    },
+    {
+      "vo": "Shadow Lurker",
+      "vf": "Rôdeur des ombres",
+      "category": "24"
+    },
+    {
+      "vo": "Shepherd the Afflicted",
+      "vf": "Guider les affligés",
+      "category": "24"
+    },
+    {
+      "vo": "Shield Expert",
+      "vf": "Expert du bouclier",
+      "category": "24"
+    },
+    {
+      "vo": "Shooting Drills",
+      "vf": "Exercices de tir",
+      "category": "24"
+    },
+    {
+      "vo": "Shroud of Flies",
+      "vf": "Linceul de mouches",
+      "category": "24"
+    },
+    {
+      "vo": "Soldier's Cunning",
+      "vf": "Ruse de soldat",
+      "category": "24"
+    },
+    {
+      "vo": "Stand Ground",
+      "vf": "Tenir bon",
+      "category": "24"
+    },
+    {
+      "vo": "Steady Aim",
+      "vf": "Visée stable",
+      "category": "24"
+    },
+    {
+      "vo": "Supernatural Healing",
+      "vf": "Guérison surnaturelle",
+      "category": "24"
+    },
+    {
+      "vo": "The Black Benediction",
+      "vf": "La Bénédiction noire",
+      "category": "24"
+    },
+    {
+      "vo": "Too Cunning to Die",
+      "vf": "Trop rusé pour mourir",
+      "category": "24"
+    },
+    {
+      "vo": "Tough Bastard",
+      "vf": "Dur à cuire",
+      "category": "24"
+    },
+    {
+      "vo": "Toxic Miasma",
+      "vf": "Miasme toxique",
+      "category": "24"
+    },
+    {
+      "vo": "Tunnel Runners",
+      "vf": "Coureurs de tunnels",
+      "category": "24"
+    },
+    {
+      "vo": "Undying Lords",
+      "vf": "Seigneurs immortels",
+      "category": "24"
+    },
+    {
+      "vo": "Unholy Sermon",
+      "vf": "Sermon impie",
+      "category": "24"
+    },
+    {
+      "vo": "Unholy Strength",
+      "vf": "Force impie",
+      "category": "24"
+    },
+    {
+      "vo": "Unshakeable",
+      "vf": "Inébranlable",
+      "category": "24"
+    },
+    {
+      "vo": "Vector of Entropy",
+      "vf": "Vecteur d'entropie",
+      "category": "24"
+    },
+    {
+      "vo": "Vessel of Black Rot",
+      "vf": "Réceptacle de la Pourriture noire",
+      "category": "24"
+    },
+    {
+      "vo": "Veteran Skills",
+      "vf": "Compétences de vétéran",
+      "category": "24"
+    },
+    {
+      "vo": "Wall Scrambler",
+      "vf": "Grimpeur de murs",
+      "category": "24"
+    },
+    {
+      "vo": "Ambitious Warlord",
+      "vf": "Seigneur de guerre ambitieux",
+      "category": "25"
+    },
+    {
+      "vo": "Bat Wings",
+      "vf": "Ailes de chauve-souris",
+      "category": "25"
+    },
+    {
+      "vo": "Bestial Transformation",
+      "vf": "Transformation bestiale",
+      "category": "25"
+    },
+    {
+      "vo": "Blood Magic",
+      "vf": "Magie du sang",
+      "category": "25"
+    },
+    {
+      "vo": "Bloodline Mutations",
+      "vf": "Mutations de lignée",
+      "category": "25"
+    },
+    {
+      "vo": "Dark Spellcraft",
+      "vf": "Sombre art de la magie",
+      "category": "25"
+    },
+    {
+      "vo": "Darkcloven Magic",
+      "vf": "Magie Darkcloven",
+      "category": "25"
+    },
+    {
+      "vo": "Demonic Spellcraft",
+      "vf": "Art démoniaque de la magie",
+      "category": "25"
+    },
+    {
+      "vo": "Demonic Wards",
+      "vf": "Protections démoniaques",
+      "category": "25"
+    },
+    {
+      "vo": "Engineer",
+      "vf": "Ingénierie",
+      "category": "25"
+    },
+    {
+      "vo": "Guild Magic",
+      "vf": "Magie de la Guilde",
+      "category": "25"
+    },
+    {
+      "vo": "Holy Magic",
+      "vf": "Magie sacrée",
+      "category": "25"
+    },
+    {
+      "vo": "Hulking Form",
+      "vf": "Carrure massive",
+      "category": "25"
+    },
+    {
+      "vo": "Incredible Strength",
+      "vf": "Force incroyable",
+      "category": "25"
+    },
+    {
+      "vo": "Large and Heavy",
+      "vf": "Grand et lourd",
+      "category": "25"
+    },
+    {
+      "vo": "Lord of the Cloister",
+      "vf": "Seigneur du Cloître",
+      "category": "25"
+    },
+    {
+      "vo": "Mad Engineering",
+      "vf": "Ingénierie folle",
+      "category": "25"
+    },
+    {
+      "vo": "Martial Lineage",
+      "vf": "Lignée martiale",
+      "category": "25"
+    },
+    {
+      "vo": "Master of Dark Spellcraft",
+      "vf": "Maître du sombre art de la magie",
+      "category": "25"
+    },
+    {
+      "vo": "Master of Necromancy",
+      "vf": "Maître de la nécromancie",
+      "category": "25"
+    },
+    {
+      "vo": "Master of Plague Magic",
+      "vf": "Maître de la magie de peste",
+      "category": "25"
+    },
+    {
+      "vo": "Master of Spellcraft",
+      "vf": "Maître de l'art de la magie",
+      "category": "25"
+    },
+    {
+      "vo": "Noble Blood",
+      "vf": "Sang noble",
+      "category": "25"
+    },
+    {
+      "vo": "Noble Lineage",
+      "vf": "Noble lignée",
+      "category": "25"
+    },
+    {
+      "vo": "One-cut, One-kill",
+      "vf": "Un coup, un mort",
+      "category": "25"
+    },
+    {
+      "vo": "Patch You Up",
+      "vf": "Je te rafistole",
+      "category": "25"
+    },
+    {
+      "vo": "Patch-up",
+      "vf": "Rafistoler",
+      "category": "25"
+    },
+    {
+      "vo": "Ram Horns",
+      "vf": "Cornes de bélier",
+      "category": "25"
+    },
+    {
+      "vo": "Recite Holy Litanies",
+      "vf": "Réciter les litanies sacrées",
+      "category": "25"
+    },
+    {
+      "vo": "Sawbones",
+      "vf": "Chirurgien",
+      "category": "25"
+    },
+    {
+      "vo": "Seasoned Warrior",
+      "vf": "Guerrier aguerri",
+      "category": "25"
+    },
+    {
+      "vo": "Skilled Killer",
+      "vf": "Tueur accompli",
+      "category": "25"
+    },
+    {
+      "vo": "Sniff 'em Out",
+      "vf": "Débusquez-les !",
+      "category": "25"
+    },
+    {
+      "vo": "Soup-up",
+      "vf": "Trafiquer",
+      "category": "25"
+    },
+    {
+      "vo": "Spellcaster",
+      "vf": "Lanceur de sorts",
+      "category": "25"
+    },
+    {
+      "vo": "Spellcraft",
+      "vf": "Art de la magie",
+      "category": "25"
+    },
+    {
+      "vo": "Splat!",
+      "vf": "Splatch !",
+      "category": "25"
+    },
+    {
+      "vo": "Temperamental Transformation",
+      "vf": "Transformation capricieuse",
+      "category": "25"
+    },
+    {
+      "vo": "Tinkerer's Know-how",
+      "vf": "Savoir-faire de bricoleur",
+      "category": "25"
+    },
+    {
+      "vo": "Trackers",
+      "vf": "Pisteurs",
+      "category": "25"
+    },
+    {
+      "vo": "Trained Duellist",
+      "vf": "Duelliste entraîné",
+      "category": "25"
+    },
+    {
+      "vo": "Unpredictable Movement",
+      "vf": "Mouvement imprévisible",
+      "category": "25"
+    },
+    {
+      "vo": "Vampyric Bite",
+      "vf": "Morsure vampirique",
+      "category": "25"
+    },
+    {
+      "vo": "Vestiges of the Noble",
+      "vf": "Vestiges du Noble",
+      "category": "25"
+    },
+    {
+      "vo": "Veteran in Life",
+      "vf": "Vétéran de son vivant",
+      "category": "25"
+    },
+    {
+      "vo": "Veteran of the City",
+      "vf": "Vétéran de la Cité",
+      "category": "25"
+    },
+    {
+      "vo": "Wulfen Legs",
+      "vf": "Pattes de loup",
+      "category": "25"
+    },
+    {
+      "vo": "Acolyte of the Black Breath",
+      "vf": "Acolyte du Souffle noir",
+      "category": "26"
+    },
+    {
+      "vo": "Anointed of Corruption",
+      "vf": "Oint de la Corruption",
+      "category": "26"
+    },
+    {
+      "vo": "Apostle of Miasma",
+      "vf": "Apôtre du Miasme",
+      "category": "26"
+    },
+    {
+      "vo": "Ashen One",
+      "vf": "le Cendreux",
+      "category": "26"
+    },
+    {
+      "vo": "Bearer of the Seventh Pox",
+      "vf": "Porteur de la Septième Vérole",
+      "category": "26"
+    },
+    {
+      "vo": "Father of Maggots",
+      "vf": "Père des Asticots",
+      "category": "26"
+    },
+    {
+      "vo": "Fly-Crowned",
+      "vf": "le Couronné de mouches",
+      "category": "26"
+    },
+    {
+      "vo": "Giver of Blessed Sores",
+      "vf": "Dispensateur des Plaies bénies",
+      "category": "26"
+    },
+    {
+      "vo": "He of the Festering Throne",
+      "vf": "Celui du Trône purulent",
+      "category": "26"
+    },
+    {
+      "vo": "He Who Withereth All",
+      "vf": "Celui qui flétrit toute chose",
+      "category": "26"
+    },
+    {
+      "vo": "He Whose Breath Befouleth",
+      "vf": "Celui dont l'haleine empeste",
+      "category": "26"
+    },
+    {
+      "vo": "Keeper of the Ninth Sore",
+      "vf": "Gardien de la Neuvième Plaie",
+      "category": "26"
+    },
+    {
+      "vo": "Mire-Born",
+      "vf": "Né du bourbier",
+      "category": "26"
+    },
+    {
+      "vo": "O' the Thousand-Flies",
+      "vf": "aux Mille Mouches",
+      "category": "26"
+    },
+    {
+      "vo": "O' the Unclean Miracle",
+      "vf": "du Miracle impur",
+      "category": "26"
+    },
+    {
+      "vo": "Prince of Worms",
+      "vf": "Prince des Vers",
+      "category": "26"
+    },
+    {
+      "vo": "Rot Incarnate",
+      "vf": "la Pourriture incarnée",
+      "category": "26"
+    },
+    {
+      "vo": "Scion of the Black Pox",
+      "vf": "Rejeton de la Vérole noire",
+      "category": "26"
+    },
+    {
+      "vo": "Shepherd of Carrion",
+      "vf": "Berger de la Charogne",
+      "category": "26"
+    },
+    {
+      "vo": "the Bloated Pastor",
+      "vf": "le Pasteur bouffi",
+      "category": "26"
+    },
+    {
+      "vo": "the Crawling Host",
+      "vf": "la Légion rampante",
+      "category": "26"
+    },
+    {
+      "vo": "the Defiler of Altars",
+      "vf": "le Souilleur d'autels",
+      "category": "26"
+    },
+    {
+      "vo": "the Devourer of Flesh",
+      "vf": "le Dévoreur de chair",
+      "category": "26"
+    },
+    {
+      "vo": "the Ever-Hungry",
+      "vf": "l'Éternel Affamé",
+      "category": "26"
+    },
+    {
+      "vo": "the Festering Apostle",
+      "vf": "l'Apôtre purulent",
+      "category": "26"
+    },
+    {
+      "vo": "the Herald of the Last Plague",
+      "vf": "le Héraut de la Dernière Peste",
+      "category": "26"
+    },
+    {
+      "vo": "the Hollow-Eyed",
+      "vf": "l'Homme aux yeux caves",
+      "category": "26"
+    },
+    {
+      "vo": "the Mock Redeemer",
+      "vf": "le Faux Rédempteur",
+      "category": "26"
+    },
+    {
+      "vo": "the Page of Poxes",
+      "vf": "le Page des Véroles",
+      "category": "26"
+    },
+    {
+      "vo": "the Pale Reckoning",
+      "vf": "le Pâle Châtiment",
+      "category": "26"
+    },
+    {
+      "vo": "the Saint Defiled",
+      "vf": "le Saint souillé",
+      "category": "26"
+    },
+    {
+      "vo": "the Unclean",
+      "vf": "l'Impur",
+      "category": "26"
+    },
+    {
+      "vo": "the Unhallowed One",
+      "vf": "le Sacrilège",
+      "category": "26"
+    },
+    {
+      "vo": "the Unshriven",
+      "vf": "l'Impénitent",
+      "category": "26"
+    },
+    {
+      "vo": "the Withered Posie",
+      "vf": "le Bouquet flétri",
+      "category": "26"
+    },
+    {
+      "vo": "Warden of the Festering Covenant",
+      "vf": "Veilleur de l'Alliance purulente",
+      "category": "26"
+    },
+    {
+      "vo": "Battles",
+      "vf": "Batailles",
+      "category": "27"
+    },
+    {
+      "vo": "Black Death City - Reminder Sheet",
+      "vf": "Black Death City - Aide de jeu",
+      "category": "27"
+    },
+    {
+      "vo": "Campaigns",
+      "vf": "Campagnes",
+      "category": "27"
+    },
+    {
+      "vo": "Core Concepts",
+      "vf": "Concepts de base",
+      "category": "27"
+    },
+    {
+      "vo": "Explore the City",
+      "vf": "Explorer la Cité",
+      "category": "27"
+    },
+    {
+      "vo": "Fight Battles",
+      "vf": "Livrer des batailles",
+      "category": "27"
+    },
+    {
+      "vo": "How to use this book",
+      "vf": "Comment utiliser ce livre",
+      "category": "27"
+    },
+    {
+      "vo": "Introduction",
+      "vf": "Introduction",
+      "category": "27"
+    },
+    {
+      "vo": "Join the Community",
+      "vf": "Rejoignez la communauté",
+      "category": "27"
+    },
+    {
+      "vo": "Overview",
+      "vf": "Vue d'ensemble",
+      "category": "27"
+    },
+    {
+      "vo": "Recruit a Warband",
+      "vf": "Recruter une bande",
+      "category": "27"
+    },
+    {
+      "vo": "Reference",
+      "vf": "Référence",
+      "category": "27"
+    },
+    {
+      "vo": "Scenarios",
+      "vf": "Scénarios",
+      "category": "27"
+    },
+    {
+      "vo": "The Factions",
+      "vf": "Les Factions",
+      "category": "27"
+    },
+    {
+      "vo": "To be continued",
+      "vf": "À suivre",
+      "category": "27"
+    },
+    {
+      "vo": "Version Numbers",
+      "vf": "Numéros de version",
+      "category": "27"
+    },
+    {
+      "vo": "Warbands",
+      "vf": "Bandes",
+      "category": "27"
+    },
+    {
+      "vo": "What you will need",
+      "vf": "Ce dont vous aurez besoin",
+      "category": "27"
+    },
+    {
+      "vo": "What's to Come?",
+      "vf": "Et ensuite ?",
+      "category": "27"
+    }
+  ]
+}

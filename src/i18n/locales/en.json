@@ -1,0 +1,34 @@
+{
+  "_header": {
+    "file": "src/i18n/locales/en.json",
+    "role": "English interface strings. Every key must exist in fr.json (npm run check:i18n).",
+    "author": "Adrien Duclaud",
+    "created": "2026-10-12",
+    "license": "MIT"
+  },
+  "app": {
+    "title": "BDC Warband Manager",
+    "gameTitle": "Black Death City",
+    "tagline": "Warband builder and campaign tracker",
+    "skipToContent": "Skip to content"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "fr": "Français"
+  },
+  "home": {
+    "heading": "Your warbands",
+    "empty": "No warband yet. Gather your silver and venture into the City.",
+    "create": "New warband",
+    "import": "Import",
+    "comingSoon": "Available in a coming version",
+    "savedCount_one": "{{count}} warband saved on this device",
+    "savedCount_other": "{{count}} warbands saved on this device"
+  },
+  "footer": {
+    "disclaimer": "Unofficial fan-made tool for private use. Black Death City, its rules, texts and artwork belong to their author, Sam Pearson.",
+    "version": "Version {{version}}, rules playtest {{rules}}",
+    "offline": "Works offline once loaded."
+  }
+}
