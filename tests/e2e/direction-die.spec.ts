@@ -78,6 +78,9 @@ test.describe("phone", () => {
     await banner.getByRole("button", { name: "Tools and language" }).click();
     await banner.getByRole("link", { name: "Card backs" }).click();
     await expect(page).toHaveURL(/#\/card-backs$/);
+    await banner.getByRole("button", { name: "Tools and language" }).click();
+    await banner.getByRole("link", { name: "My warbands" }).click();
+    await expect(page).toHaveURL(/#\/$/);
     await expect(banner.getByRole("button", { name: "Tools and language" })).toHaveAttribute(
       "aria-expanded",
       "false",

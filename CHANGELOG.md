@@ -23,6 +23,8 @@ version is given separately (playtest v1.03).
 - French reminder sheet ("Reminder sheet" button in the header): the official
   reminder sheet translated into French on one A4 page, with the page numbers
   of the playtest v1.03 rules, ready to print.
+- "My warbands" button in the header (and the phone menu), back to the
+  warband list from any screen.
 
 ### Changed
 

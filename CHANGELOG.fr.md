@@ -24,6 +24,8 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 - Aide de jeu en français (bouton "Aide de jeu" dans l'en-tête) : la feuille
   d'aide de jeu officielle traduite sur une page A4, avec les numéros de page
   des règles de la version de test 1.03, prête à imprimer.
+- Bouton "Mes bandes" dans l'en-tête (et le menu sur téléphone), pour revenir
+  à la liste des bandes depuis n'importe quel écran.
 
 ### Modifié
 

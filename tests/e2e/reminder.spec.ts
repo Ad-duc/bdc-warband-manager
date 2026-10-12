@@ -1,7 +1,8 @@
 /*
  * File:        tests/e2e/reminder.spec.ts
  * Role:        French reminder sheet opened from the header: one A4 page in
- *              French whatever the interface language, printed on one page.
+ *              French whatever the interface language, printed on one page;
+ *              "My warbands" header button back to the warband list.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -32,4 +33,13 @@ test("reminder sheet from the header, in French, on one page", async ({ page, br
     const pages = pdf.toString("latin1").match(/\/Type\s*\/Page[^s]/g) ?? [];
     expect(pages.length).toBe(1);
   }
+});
+
+test("back to the warband list from the header", async ({ page }) => {
+  await page.goto("./#/reminder");
+  const home = page.getByRole("banner").getByRole("link", { name: "My warbands" });
+  await expect(home).not.toHaveAttribute("aria-current", "page");
+  await home.click();
+  await expect(page).toHaveURL(/#\/$/);
+  await expect(home).toHaveAttribute("aria-current", "page");
 });

@@ -1,7 +1,8 @@
 /*
  * File:        src/features/layout/HeaderTools.tsx
- * Role:        Tools of the header: direction dice, card back generator,
- *              reminder sheet, French rules reader and language selector. From
+ * Role:        Tools of the header: back to the warband list, direction
+ *              dice, card back generator, reminder sheet, French rules reader
+ *              and language selector. From
  *              the "sm" breakpoint they are shown as buttons (icons, labels
  *              from "xl");
  *              on phones they are grouped in one menu so the title keeps the
@@ -41,6 +42,12 @@ function Icon({ children }: { children: ReactNode }) {
   );
 }
 
+const HomeIcon = () => (
+  <Icon>
+    <path d="M4 20V9l8-6 8 6v11" />
+    <path d="M9 20v-6h6v6" />
+  </Icon>
+);
 const DieIcon = () => (
   <Icon>
     <rect x="3" y="3" width="18" height="18" rx="3" />
@@ -76,6 +83,7 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
   const wrapper = useRef<HTMLDivElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
 
+  const homeCurrent = route.name === "home" ? "page" : undefined;
   const backsCurrent = route.name === "cardBacks" ? "page" : undefined;
   const rulesCurrent = route.name === "rules" ? "page" : undefined;
   const reminderCurrent = route.name === "reminder" ? "page" : undefined;
@@ -114,6 +122,10 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
     <>
       {/* Tablets and computers: one button per tool */}
       <div className="hidden items-center gap-3 sm:flex xl:gap-4">
+        <a href={hrefFor({ name: "home" })} aria-current={homeCurrent} className={BUTTON}>
+          <HomeIcon />
+          <span className="sr-only xl:not-sr-only">{t("header.home")}</span>
+        </a>
         <button type="button" aria-haspopup="dialog" onClick={onOpenDie} className={BUTTON}>
           <DieIcon />
           <span className="sr-only xl:not-sr-only">{t("header.directionDie")}</span>
@@ -163,6 +175,15 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
           hidden={!menuOpen}
           className="absolute right-0 top-full z-30 mt-2 w-64 space-y-2 border-2 border-on-page bg-page p-2 shadow-lg"
         >
+          <a
+            href={hrefFor({ name: "home" })}
+            aria-current={homeCurrent}
+            className={MENU_ITEM}
+            onClick={close}
+          >
+            <HomeIcon />
+            {t("header.home")}
+          </a>
           <button
             type="button"
             aria-haspopup="dialog"
