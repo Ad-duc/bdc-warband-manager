@@ -26,7 +26,11 @@
     "check": "npm run typecheck && npm run lint && npm run format:check && npm run check:data && npm run check:i18n && npm run test",
     "build:glossary": "tsx scripts/build-glossary.ts",
     "generate:data": "tsx scripts/run-python.ts scripts/generators/generate.py",
-    "check:generated": "tsx scripts/run-python.ts scripts/generators/generate.py --check"
+    "check:generated": "tsx scripts/run-python.ts scripts/generators/generate.py --check",
+    "watch:check": "tsx scripts/run-python.ts scripts/watch/release.py check",
+    "watch:fetch": "tsx scripts/run-python.ts scripts/watch/release.py fetch",
+    "watch:mark": "tsx scripts/run-python.ts scripts/watch/release.py mark",
+    "watch:diff": "tsx scripts/run-python.ts scripts/watch/diff_versions.py"
   },
   "dependencies": {
     "dexie": "4.4.6",

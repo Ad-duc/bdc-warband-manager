@@ -114,8 +114,10 @@ never translated text, so an export does not depend on the interface language.
 ## Checking the data
 
 ```bash
-npm run check:data -- --sources "<folder holding the 02_... to 10_... .md files>"
+npm run check:data
 ```
 
-Without `--sources` (or the `BDC_SOURCES` variable) the script still validates
-schemas, references, prices and typography, and skips the Markdown comparison.
+The script validates schemas, references, prices and typography, then
+compares the data with the translated Markdown of `sources/fr/` (or of the
+folder given with `--sources` or `BDC_SOURCES`). If that folder is missing,
+the Markdown comparison is skipped with a warning.

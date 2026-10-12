@@ -1,0 +1,49 @@
+{
+  "_header": {
+    "file": "sources/manifest.json",
+    "role": "State of the official Black Death City publications the app is built from. Read and updated by scripts/watch/release.py.",
+    "author": "Adrien Duclaud",
+    "created": "2026-10-12",
+    "license": "MIT (this file). Game content belongs to Sam Pearson."
+  },
+  "site": "https://www.blackdeathcity.com/",
+  "filesBase": "https://files.blackdeathcity.com/",
+  "rules": {
+    "version": "1.03",
+    "file": "BlackDeathCity-Playtest-1.03.pdf",
+    "text": "sources/vo/BlackDeathCity-Playtest-1.03.txt",
+    "sha256": "d0341c1426bb3bde8fba81df3efc27ba08952483ff454af019e8c8242441c13b",
+    "size": 106600095,
+    "etag": "\"11f7e86ba2f2132836fcceaca7fb3d56\"",
+    "lastModified": "Mon, 12 Oct 2026 02:02:25 GMT",
+    "translatedVersion": "1.03",
+    "appDataVersion": "1.03"
+  },
+  "history": [
+    {
+      "version": "1.02",
+      "file": "BlackDeathCity-Playtest-1.02.pdf",
+      "text": "sources/vo/BlackDeathCity-Playtest-1.02.txt",
+      "sha256": "5560618e5df28d2e1c1bfb28a899f55a09e3c1cc60ec2f31f422b22fd719247c"
+    }
+  ],
+  "siteChangelogLatest": "1.02",
+  "resources": {
+    "BlackDeathCity-WarbandRoster.pdf": {
+      "size": 452877,
+      "etag": "\"dd63bbcbdb794a7eb55770526ea19a5a\"",
+      "lastModified": "Sat, 03 Oct 2026 01:03:30 GMT"
+    },
+    "BlackDeathCity-FighterCards.pdf": {
+      "size": 249383,
+      "etag": "\"7a408fc9a9122463bca55fbb41fa62ce\"",
+      "lastModified": "Sat, 03 Oct 2026 01:03:35 GMT"
+    },
+    "BlackDeathCity-ReminderSheet.pdf": {
+      "size": 392577,
+      "etag": "\"4beb49799056ccc99e226612d16a423e\"",
+      "lastModified": "Sat, 03 Oct 2026 01:03:25 GMT"
+    }
+  },
+  "lastCheck": "2026-10-12"
+}

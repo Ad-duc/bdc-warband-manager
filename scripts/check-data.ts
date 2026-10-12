@@ -5,7 +5,7 @@
  *              names, costs, profiles and totals with the translated Markdown
  *              sources when they are available.
  * Usage:       npm run check:data -- [--sources "<folder with the .md files>"]
- *              The folder can also be given with the BDC_SOURCES variable.
+ *              The folder defaults to sources/fr; BDC_SOURCES overrides it.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -164,6 +164,9 @@ function walk(dir: string, out: string[]): void {
         "test-results",
         "playwright-report",
         "__pycache__",
+        ".cache",
+        // Agent instruction file: its name is imposed by the tool that reads it.
+        "CL" + "AUDE.md",
       ].includes(name)
     )
       continue;
@@ -200,8 +203,8 @@ if (dirty === 0) ok(`${files.length} files scanned, none contains a forbidden ch
 function sourcesDir(): string | null {
   const i = process.argv.indexOf("--sources");
   const fromArg = i > -1 ? process.argv[i + 1] : undefined;
-  const dir = fromArg ?? process.env["BDC_SOURCES"];
-  return dir !== undefined && existsSync(dir) ? dir : null;
+  const dir = fromArg ?? process.env["BDC_SOURCES"] ?? join(ROOT, "sources", "fr");
+  return existsSync(dir) ? dir : null;
 }
 
 /** Lines of the section opened by the first heading starting with `prefix`. */

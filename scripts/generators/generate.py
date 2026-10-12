@@ -4,8 +4,8 @@ Role:     Rebuilds src/data/<faction>.json for the Verminkin, the Death Covens
           and The Blighted Cloister from the French translation files, then
           formats them with Prettier. The Guild Mercenaries and common.json
           are kept by hand and never overwritten.
-Usage:    npm run generate:data -- --sources "<Traduction FR folder>" [--only verminkin]
-          The folder can also be given with the BDC_SOURCES variable.
+Usage:    npm run generate:data [-- --sources "<Traduction FR folder>"] [--only verminkin]
+          The folder defaults to sources/fr; BDC_SOURCES or --sources override it.
 Author:   Adrien Duclaud
 Created:  2026-10-12
 License:  MIT
@@ -38,7 +38,8 @@ FACTIONS = {
 
 def main():
     parser = argparse.ArgumentParser(description="Rebuild faction data from the French translation.")
-    parser.add_argument("--sources", default=os.environ.get("BDC_SOURCES"), help="Traduction FR folder")
+    parser.add_argument("--sources", default=os.environ.get("BDC_SOURCES") or str(ROOT / "sources" / "fr"),
+                        help="Traduction FR folder (default: sources/fr)")
     parser.add_argument("--only", choices=sorted(FACTIONS), help="rebuild a single faction")
     parser.add_argument("--check", action="store_true", help="fail if a file would change, write nothing")
     args = parser.parse_args()
