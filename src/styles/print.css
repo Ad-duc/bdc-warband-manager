@@ -1,0 +1,201 @@
+/*
+ * File:        src/styles/print.css
+ * Role:        A4 print layout of the Warband Roster and the fighter cards.
+ *              On screen the pages are shown as A4 sheets; when printing, the
+ *              application frame is hidden and each sheet is one page.
+ *              Two styles: parchment (tinted background) and ink saver.
+ * Author:      Adrien Duclaud
+ * Created:     2026-10-12
+ * License:     MIT
+ */
+
+@page {
+  size: A4 portrait;
+  margin: 10mm;
+}
+
+.print-root {
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+.print-page {
+  box-sizing: border-box;
+  width: 190mm;
+  min-height: 277mm;
+  margin: 0 auto 8mm;
+  padding: 6mm;
+  background-color: var(--color-white);
+  color: var(--color-ink);
+  overflow: hidden;
+  break-after: page;
+}
+.print-page:last-child {
+  break-after: auto;
+}
+
+.print-parchment .print-page {
+  background-color: var(--color-parchment);
+  box-shadow: inset 0 0 12mm color-mix(in srgb, var(--color-mist) 60%, transparent);
+}
+
+.print-box {
+  position: relative;
+  border: 2px solid var(--color-ink);
+  background-color: var(--color-white);
+  padding: 2mm 3mm;
+}
+
+.print-line {
+  display: grid;
+  grid-template-columns: 28mm 1fr;
+  gap: 2mm;
+  border: 1px solid var(--color-ink);
+  min-height: 9mm;
+  padding: 1mm 2mm;
+  font-size: 8.5pt;
+}
+
+.print-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--color-ink);
+  background-color: var(--color-white);
+}
+.print-table th,
+.print-table td {
+  border: 1px solid var(--color-ink);
+  height: 10mm;
+  padding: 0 2mm;
+}
+
+.print-fighter {
+  box-sizing: border-box;
+  /* 5 blocks per page: (277 mm - 12 mm padding - 4 x 3 mm gaps) / 5 */
+  height: 50.6mm;
+  overflow: hidden;
+  border: 2px solid var(--color-ink);
+  background-color: var(--color-white);
+  padding: 1.5mm 2mm;
+  break-inside: avoid;
+}
+
+.print-cell {
+  border: 1.5px solid var(--color-ink);
+  padding: 1mm 1.5mm;
+  font-size: 7.5pt;
+}
+
+.print-stats,
+.print-weapons {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+  font-size: 8pt;
+}
+.print-stats th {
+  background-color: var(--color-ink);
+  color: var(--color-white);
+  font-weight: 400;
+  padding: 0.6mm 0;
+}
+.print-stats td {
+  border: 1px solid var(--color-ink);
+  height: 6mm;
+}
+.print-weapons {
+  border: 1.5px solid var(--color-ink);
+}
+.print-weapons th {
+  background-color: var(--color-stone);
+  border: 1px solid var(--color-ink);
+  font-weight: 700;
+  padding: 0.4mm 0;
+}
+.print-weapons td {
+  border: 1px solid var(--color-ink);
+  height: 4.4mm;
+  padding: 0 0.8mm;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.print-circle {
+  display: inline-block;
+  width: 3.4mm;
+  height: 3.4mm;
+  border: 1.5px solid var(--color-ink);
+  border-radius: 50%;
+  background-color: var(--color-white);
+}
+.print-circle-on {
+  background-color: var(--color-ink);
+}
+
+.print-cards-page {
+  display: grid;
+  grid-template-columns: repeat(3, 63mm);
+  grid-auto-rows: 88mm;
+  justify-content: center;
+  align-content: start;
+  padding: 0;
+  width: 190mm;
+}
+.print-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 63mm;
+  height: 88mm;
+  padding: 2mm;
+  border: 1px dashed var(--color-ink);
+  background-color: var(--color-white);
+  overflow: hidden;
+  break-inside: avoid;
+}
+.print-card .print-weapons td {
+  height: 3.6mm;
+}
+
+/* Ink saver: no tinted backgrounds, outlines instead of ink fills, no artwork */
+.print-ink-saver .print-stats th,
+.print-ink-saver .print-weapons th {
+  background-color: var(--color-white);
+  color: var(--color-ink);
+  border: 1px solid var(--color-ink);
+}
+.print-ink-saver .bg-ink {
+  background-color: var(--color-white);
+  color: var(--color-ink);
+  border: 1px solid var(--color-ink);
+}
+.print-ink-saver .print-decor {
+  display: none;
+}
+
+@media print {
+  html,
+  body {
+    background: var(--color-white) !important;
+    color-scheme: light;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .no-print {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+  .print-page {
+    margin: 0;
+    width: 190mm;
+    height: 277mm;
+    min-height: 0;
+  }
+}

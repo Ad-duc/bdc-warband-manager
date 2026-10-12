@@ -48,7 +48,10 @@
     "campaign": "Campagne",
     "campaignNamed": "Campagne de {{name}}",
     "edit": "Modifier",
-    "editNamed": "Modifier {{name}}"
+    "editNamed": "Modifier {{name}}",
+    "print": "Imprimer",
+    "printNamed": "Imprimer {{name}}",
+    "shareNamed": "Partager {{name}}"
   },
   "footer": {
     "disclaimer": "Outil de fan non officiel, à usage privé. Black Death City, ses règles, ses textes et ses illustrations appartiennent à leur auteur, Sam Pearson.",
@@ -442,6 +445,60 @@
       "jars_other": "Butin : {{count}} bocaux de sangsues des canaux",
       "ransacked_one": "{{count}} possession saccagée",
       "ransacked_other": "{{count}} possessions saccagées"
+    }
+  },
+  "share": {
+    "button": "Partager",
+    "copied": "Lien copié.",
+    "manual": "Lien de partage",
+    "invalid": "Ce lien de partage est abîmé ou vient d'une autre version.",
+    "title": "Bande partagée : {{name}}",
+    "readOnly": "Lecture seule. Enregistrez une copie pour la modifier sur cet appareil.",
+    "saveCopy": "Enregistrer une copie"
+  },
+  "print": {
+    "title": "Impression",
+    "content": "Contenu",
+    "contents": {
+      "roster": "Feuille de bande",
+      "cards": "Cartes de combattants",
+      "both": "Les deux"
+    },
+    "style": "Style",
+    "styles": {
+      "parchment": "Fond parchemin",
+      "ink-saver": "Économie d'encre"
+    },
+    "blank": "Ajouter des blocs combattant vierges jusqu'à 15",
+    "help": "La boîte de dialogue d'impression du navigateur imprime sur papier ou enregistre en PDF. Choisissez le format A4, l'échelle 100 % et activez les graphiques d'arrière-plan pour le fond parchemin.",
+    "print": "Imprimer",
+    "back": "Retour",
+    "warbandName": "Nom de la bande :",
+    "faction": "Faction :",
+    "origin": "Origine :",
+    "stash": "Butin :",
+    "leechJars": "Bocaux de sangsues des canaux",
+    "notesTitle": "Notes...",
+    "rating": "Valeur de bande",
+    "holdings": "Possessions",
+    "stronghold": "Repaire :",
+    "holding": "Possession {{n}} :",
+    "name": "Nom :",
+    "type": "Type :",
+    "cost": "Coût :",
+    "exp": "Exp :",
+    "wargearEtc": "Équipement, sorts, compétences, blessures, etc. :",
+    "blackRot": "Pourriture noire",
+    "blackRotValue_one": "{{count}} case de Pourriture noire cochée",
+    "blackRotValue_other": "{{count}} cases de Pourriture noire cochées",
+    "traits": "Traits :",
+    "notes": {
+      "wargear": "Équipement :",
+      "skills": "Compétences :",
+      "spells": "Sorts :",
+      "injuries": "Blessures :",
+      "promoted": "Chef promu.",
+      "moreWeapons": "Autres armes :"
     }
   }
 }

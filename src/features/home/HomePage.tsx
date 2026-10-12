@@ -19,6 +19,7 @@ import { findFaction, indexFaction, warbandRating } from "../../rules/index.ts";
 import { useFormatter } from "../../i18n/text.ts";
 import { useWizard } from "../../store/wizard.ts";
 import { ConfirmDialog } from "../common/ConfirmDialog.tsx";
+import { ShareButton } from "../share/ShareButton.tsx";
 import { createWarband, duplicateWarband, newId } from "../warbands/factory.ts";
 import { downloadExport, parseImport } from "../warbands/transfer.ts";
 
@@ -158,6 +159,14 @@ export function HomePage() {
                     >
                       {t("home.edit")}
                     </a>
+                    <a
+                      className="btn btn-sm"
+                      href={hrefFor({ name: "print", id: w.id })}
+                      aria-label={t("home.printNamed", { name: title })}
+                    >
+                      {t("home.print")}
+                    </a>
+                    <ShareButton warband={w} small label={t("home.shareNamed", { name: title })} />
                     <button
                       type="button"
                       className="btn btn-sm"

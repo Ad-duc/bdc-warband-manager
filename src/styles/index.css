@@ -10,6 +10,7 @@
  */
 
 @import "tailwindcss";
+@import "./print.css";
 
 @font-face {
   font-family: "Old Celtiberian";

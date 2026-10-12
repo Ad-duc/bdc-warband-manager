@@ -48,7 +48,10 @@
     "campaign": "Campaign",
     "campaignNamed": "Campaign of {{name}}",
     "edit": "Edit",
-    "editNamed": "Edit {{name}}"
+    "editNamed": "Edit {{name}}",
+    "print": "Print",
+    "printNamed": "Print {{name}}",
+    "shareNamed": "Share {{name}}"
   },
   "footer": {
     "disclaimer": "Unofficial fan-made tool for private use. Black Death City, its rules, texts and artwork belong to their author, Sam Pearson.",
@@ -442,6 +445,60 @@
       "jars_other": "Stash: {{count}} jars of Canal Leeches",
       "ransacked_one": "{{count}} holding ransacked",
       "ransacked_other": "{{count}} holdings ransacked"
+    }
+  },
+  "share": {
+    "button": "Share",
+    "copied": "Link copied.",
+    "manual": "Share link",
+    "invalid": "This share link is damaged or comes from another version.",
+    "title": "Shared warband: {{name}}",
+    "readOnly": "Read-only. Save a copy to edit it on this device.",
+    "saveCopy": "Save a copy"
+  },
+  "print": {
+    "title": "Print",
+    "content": "Content",
+    "contents": {
+      "roster": "Warband roster",
+      "cards": "Fighter cards",
+      "both": "Both"
+    },
+    "style": "Style",
+    "styles": {
+      "parchment": "Parchment background",
+      "ink-saver": "Ink saver"
+    },
+    "blank": "Add blank fighter blocks up to 15",
+    "help": "The browser print dialog prints on paper or saves as PDF. Set the paper to A4, scale 100%, and enable background graphics for the parchment style.",
+    "print": "Print",
+    "back": "Back",
+    "warbandName": "Warband Name:",
+    "faction": "Faction:",
+    "origin": "Origin:",
+    "stash": "Stash:",
+    "leechJars": "Jars of Canal Leeches",
+    "notesTitle": "Notes...",
+    "rating": "Warband Rating",
+    "holdings": "Holdings",
+    "stronghold": "Stronghold:",
+    "holding": "Holding {{n}}:",
+    "name": "Name:",
+    "type": "Type:",
+    "cost": "Cost:",
+    "exp": "Exp:",
+    "wargearEtc": "Wargear, Spells, Skills, Injuries, etc:",
+    "blackRot": "Black Rot",
+    "blackRotValue_one": "{{count}} box of Black Rot filled",
+    "blackRotValue_other": "{{count}} boxes of Black Rot filled",
+    "traits": "Traits:",
+    "notes": {
+      "wargear": "Wargear:",
+      "skills": "Skills:",
+      "spells": "Spells:",
+      "injuries": "Injuries:",
+      "promoted": "Promoted leader.",
+      "moreWeapons": "Other weapons:"
     }
   }
 }

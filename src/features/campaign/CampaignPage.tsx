@@ -26,6 +26,7 @@ import { useFormatter } from "../../i18n/text.ts";
 import { useWizard } from "../../store/wizard.ts";
 import { DiagnosticsPanel } from "../wizard/DiagnosticsPanel.tsx";
 import { BattleLog } from "./BattleLog.tsx";
+import { ShareButton } from "../share/ShareButton.tsx";
 import { FighterCard } from "./FighterCard.tsx";
 import {
   MAX_HOLDINGS,
@@ -177,6 +178,12 @@ function Overview({ warband, index, update }: { warband: Warband; index: Faction
           <h1 id="overview-heading" className="font-gothic text-4xl">
             {warband.name.trim() === "" ? t("home.unnamed") : warband.name}
           </h1>
+          <p className="no-print mt-1 flex flex-wrap gap-2">
+            <a className="btn btn-sm" href={hrefFor({ name: "print", id: warband.id })}>
+              {t("home.print")}
+            </a>
+            <ShareButton warband={warband} small />
+          </p>
           <p className="text-sm">
             {f.text(index.faction.name)} - {origin === undefined ? "-" : f.text(origin.name)} -{" "}
             {t(`campaign.mode.${warband.mode}`)}

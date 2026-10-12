@@ -21,12 +21,12 @@ export function Layout({ children }: { children: ReactNode }) {
     <div className="flex min-h-dvh flex-col">
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:bg-panel focus:p-2 focus:text-on-panel"
+        className="no-print sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:bg-panel focus:p-2 focus:text-on-panel"
       >
         {t("app.skipToContent")}
       </a>
 
-      <header className="border-b-2 border-rule">
+      <header className="no-print border-b-2 border-rule">
         <div className="mx-auto flex max-w-5xl items-center gap-4 px-4 py-3">
           <img src={`${BASE}images/logo.png`} alt="" width={56} height={63} className="h-14 w-auto" />
           <div className="flex-1">
@@ -43,7 +43,7 @@ export function Layout({ children }: { children: ReactNode }) {
         {children}
       </main>
 
-      <footer className="border-t-2 border-rule">
+      <footer className="no-print border-t-2 border-rule">
         <div className="mx-auto max-w-5xl space-y-1 px-4 py-4 text-sm text-on-page-muted">
           <p>{t("footer.disclaimer")}</p>
           <p>

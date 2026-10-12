@@ -77,11 +77,11 @@ used instead of the option.
 ```
 src/
   data/       game data (JSON) and zod schemas, see src/data/README.md
-  rules/      pure rules engine, no UI dependency (step 2)
+  rules/      pure rules engine, no UI dependency
   i18n/       i18next set-up, locales, generated glossary
   db/         Dexie database and versioned schema
   features/   one folder per screen
-  print/      print layouts (step 5)
+  print/      A4 roster and TCG card layouts
   styles/     Tailwind entry point and design tokens
 scripts/      data, i18n and glossary tools
 tests/        unit (vitest) and e2e (Playwright)
