@@ -142,7 +142,9 @@
     "info": "Information"
   },
   "common": {
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "readMore": "Read more",
+    "readLess": "Show less"
   },
   "units": {
     "silver": "{{value}}s",
@@ -269,9 +271,7 @@
     "name": "Warband name",
     "faction": {
       "legend": "Pick a faction",
-      "locked": "Remove every fighter to change faction.",
-      "readMore": "Read more",
-      "readLess": "Show less"
+      "locked": "Remove every fighter to change faction."
     },
     "origin": {
       "legend": "The origin tells how your warband came to the City. It imposes the leader and gives a stronghold.",

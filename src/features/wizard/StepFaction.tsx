@@ -9,10 +9,10 @@
  * License:     MIT
  */
 
-import { useLayoutEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { gameData } from "../../data/index.ts";
 import { useFormatter } from "../../i18n/text.ts";
+import { ClampedText } from "../common/ClampedText.tsx";
 import type { StepProps } from "./WizardPage.tsx";
 
 const BASE = import.meta.env.BASE_URL;
@@ -79,7 +79,7 @@ export function StepFaction({ warband, update }: StepProps) {
                   <label htmlFor={inputId} className="block cursor-pointer font-gothic text-2xl">
                     {f.text(faction.name)}
                   </label>
-                  <Description id={descId} text={f.text(faction.description)} />
+                  <ClampedText id={descId} text={f.text(faction.description)} className="text-sm" />
                 </div>
               </div>
             );
@@ -87,49 +87,5 @@ export function StepFaction({ warband, update }: StepProps) {
         </div>
       </fieldset>
     </div>
-  );
-}
-
-/** Description cut to three lines, with a toggle shown only when the text is longer. */
-function Description({ id, text }: { id: string; text: string }) {
-  const { t } = useTranslation();
-  const ref = useRef<HTMLParagraphElement>(null);
-  const [open, setOpen] = useState(false);
-  const [overflows, setOverflows] = useState(false);
-
-  useLayoutEffect(() => {
-    const el = ref.current;
-    if (el === null || open) return;
-    const measure = (): void => {
-      setOverflows(el.scrollHeight > el.clientHeight + 1);
-    };
-    measure();
-    if (typeof ResizeObserver === "undefined") return;
-    const observer = new ResizeObserver(measure);
-    observer.observe(el);
-    return () => {
-      observer.disconnect();
-    };
-  }, [open, text]);
-
-  return (
-    <>
-      <p id={id} ref={ref} className={`text-sm ${open ? "" : "line-clamp-3"}`}>
-        {text}
-      </p>
-      {(overflows || open) && (
-        <button
-          type="button"
-          aria-expanded={open}
-          aria-controls={id}
-          onClick={() => {
-            setOpen((o) => !o);
-          }}
-          className="min-h-11 text-sm font-bold underline underline-offset-4"
-        >
-          {open ? t("wizard.faction.readLess") : t("wizard.faction.readMore")}
-        </button>
-      )}
-    </>
   );
 }

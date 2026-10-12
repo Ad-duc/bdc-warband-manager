@@ -1,8 +1,9 @@
 /*
  * File:        tests/e2e/faction-step.spec.ts
- * Role:        First wizard step (French interface): one faction per row,
- *              long descriptions cut to three lines with a "read more" toggle
- *              that does not select the faction, short ones without toggle.
+ * Role:        First two wizard steps (French interface): one faction per
+ *              row, long faction descriptions and origin flavour texts cut to
+ *              three lines with a "read more" toggle that does not select the
+ *              card, short texts without toggle.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -36,4 +37,23 @@ test("long faction descriptions can be expanded", async ({ page }) => {
 
   // The short Guild Mercenaries text fits in three lines: no toggle.
   await expect(page.locator("#faction-guild-mercenaries-description + button")).toHaveCount(0);
+});
+
+test("origin flavour texts can be expanded", async ({ page }) => {
+  await page.goto("./");
+  await page.getByRole("button", { name: "Nouvelle bande" }).click();
+  await page.getByRole("radio", { name: /Death Covens/ }).check();
+  await page.getByRole("button", { name: "Suivant" }).click();
+
+  const first = page.getByRole("radio").first();
+  const flavourId = (await first.getAttribute("aria-describedby")) ?? "";
+  const toggle = page.locator(`button[aria-controls="${flavourId}"]`);
+  await expect(toggle).toHaveText("Lire la suite");
+  await toggle.click();
+  await expect(toggle).toHaveAttribute("aria-expanded", "true");
+  await expect(first).not.toBeChecked();
+
+  // The rules lines of the card still select the origin.
+  await page.getByText("Chef :").first().click();
+  await expect(first).toBeChecked();
 });
