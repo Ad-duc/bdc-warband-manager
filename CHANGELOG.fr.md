@@ -15,6 +15,20 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ## [Non publié]
 
+### Ajouté
+
+- Dé de direction (bouton "Dé de direction" dans l'en-tête), par-dessus
+  l'écran en cours : une flèche dans une direction quelconque et, en option,
+  les distances de déviation des règles (D6", D6x2", 3D6"), avec le détail des
+  dés.
+
+### Modifié
+
+- Sur téléphone, les outils de l'en-tête (dé de direction, dos de cartes,
+  lecteur des règles, langue) sont regroupés dans un seul menu et le titre
+  tient sur une ligne ; sur tablette, les boutons d'outils n'affichent que leur
+  icône, les libellés reviennent sur grand écran.
+
 ## [1.0.0] - 2026-10-12
 
 Première version complète, fondée sur la version de test 1.03 de Black Death

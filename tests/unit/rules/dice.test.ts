@@ -1,6 +1,7 @@
 /*
  * File:        tests/unit/rules/dice.test.ts
- * Role:        Dice helpers and starting experience rolls (simulated, manual).
+ * Role:        Dice helpers, starting experience rolls (simulated, manual) and
+ *              direction dice scatter rolls.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -14,7 +15,9 @@ import {
   randomName,
   rollD6,
   rollD66,
+  rollScatter,
   rollStartingExperience,
+  SCATTER_DISTANCES,
 } from "../../../src/rules/index.ts";
 import type { FighterProfile } from "../../../src/data/schema.ts";
 import { data, guild, sequence } from "../../fixtures/warbands.ts";
@@ -94,5 +97,37 @@ describe("starting experience", () => {
     expect(() => manualStartingExperience(profile("guild-recruit"), 2.5)).toThrow(RangeError);
     expect(() => manualStartingExperience(profile("guild-recruit"), null)).toThrow(RangeError);
     expect(() => manualStartingExperience(d3Profile, 4)).toThrow(RangeError);
+  });
+});
+
+describe("direction dice", () => {
+  it("any direction from 0 to 359 degrees, clockwise from the top", () => {
+    expect(rollScatter("none", sequence(0)).angle).toBe(0);
+    expect(rollScatter("none", sequence(0.5)).angle).toBe(180);
+    expect(rollScatter("none", sequence(0.9999)).angle).toBe(359);
+  });
+
+  it("direction only: no dice, no distance", () => {
+    expect(rollScatter("none", sequence(0.25))).toEqual({
+      angle: 90,
+      distance: "none",
+      dice: [],
+      inches: null,
+    });
+  });
+
+  it('D6", D6x2" and 3D6" distances of the rules', () => {
+    expect(rollScatter("d6", sequence(0.1, 0.5))).toMatchObject({ dice: [4], inches: 4 });
+    expect(rollScatter("d6x2", sequence(0.1, 0.5))).toMatchObject({ dice: [4], inches: 8 });
+    expect(rollScatter("3d6", sequence(0.1, 0, 0.5, 0.99))).toMatchObject({ dice: [1, 4, 6], inches: 11 });
+  });
+
+  it("every distance rolls with the default random source", () => {
+    for (const d of SCATTER_DISTANCES) {
+      const r = rollScatter(d);
+      expect(r.angle).toBeGreaterThanOrEqual(0);
+      expect(r.angle).toBeLessThan(360);
+      expect(r.distance).toBe(d);
+    }
   });
 });

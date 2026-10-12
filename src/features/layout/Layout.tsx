@@ -1,8 +1,8 @@
 /*
  * File:        src/features/layout/Layout.tsx
- * Role:        Common page frame: skip link; header with logo, title, links
- *              to the card back generator and the French rules reader, and
- *              language selector; main area;
+ * Role:        Common page frame: skip link; header with logo, title and
+ *              tools (direction dice, card back generator, French rules
+ *              reader, language selector, grouped in a menu on phones); main area;
  *              footer with the fan-made notice, the version, a link to the
  *              changelog and the support link. The frame fills the window:
  *              header and footer stay in place and only the area between them
@@ -13,11 +13,12 @@
  * License:     MIT
  */
 
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
-import { LanguageSwitcher } from "./LanguageSwitcher.tsx";
+import { HeaderTools } from "./HeaderTools.tsx";
 import { useGameData } from "../../data/useGameData.ts";
 import { hrefFor, useRoute } from "../../app/router.ts";
+import { DirectionDieDialog } from "../dice/DirectionDieDialog.tsx";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -28,6 +29,7 @@ export function Layout({ children }: { children: ReactNode }) {
   const { t } = useTranslation();
   const gameData = useGameData();
   const route = useRoute();
+  const [dieOpen, setDieOpen] = useState(false);
 
   return (
     <div className="relative flex h-dvh flex-col overflow-hidden print:h-auto print:overflow-visible">
@@ -53,50 +55,11 @@ export function Layout({ children }: { children: ReactNode }) {
             </a>
             <p className="truncate font-hand text-base text-on-page-muted sm:text-lg">{t("app.tagline")}</p>
           </div>
-          <a
-            href={hrefFor({ name: "cardBacks" })}
-            aria-current={route.name === "cardBacks" ? "page" : undefined}
-            className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 border-2 border-on-page px-2 text-sm hover:bg-on-page hover:text-page aria-[current=page]:bg-on-page aria-[current=page]:text-page sm:px-3"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <rect x="7" y="3" width="13" height="17" />
-              <path d="M4 6v15h12" />
-              <path d="M13.5 8l2.5 3.5-2.5 3.5-2.5-3.5z" />
-            </svg>
-            <span className="sr-only sm:not-sr-only">{t("header.cardBacks")}</span>
-          </a>
-          <a
-            href={hrefFor({ name: "rules", chapter: null })}
-            aria-current={route.name === "rules" ? "page" : undefined}
-            className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 border-2 border-on-page px-2 text-sm hover:bg-on-page hover:text-page aria-[current=page]:bg-on-page aria-[current=page]:text-page sm:px-3"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2z" />
-              <path d="M22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7z" />
-            </svg>
-            <span className="sr-only sm:not-sr-only">{t("header.rules")}</span>
-          </a>
-          <LanguageSwitcher />
+          <HeaderTools
+            onOpenDie={() => {
+              setDieOpen(true);
+            }}
+          />
         </div>
       </header>
 
@@ -105,6 +68,13 @@ export function Layout({ children }: { children: ReactNode }) {
           {children}
         </main>
       </div>
+
+      <DirectionDieDialog
+        open={dieOpen}
+        onClose={() => {
+          setDieOpen(false);
+        }}
+      />
 
       <footer className="no-print shrink-0 border-t-2 border-rule">
         <div className="mx-auto flex max-w-[120rem] items-center justify-between gap-3 px-4 py-2 text-xs text-on-page-muted sm:items-end sm:gap-4 sm:px-6 sm:py-4 sm:text-sm xl:px-10">

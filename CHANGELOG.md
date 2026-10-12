@@ -15,6 +15,19 @@ version is given separately (playtest v1.03).
 
 ## [Unreleased]
 
+### Added
+
+- Direction dice ("Direction dice" button in the header), over the current
+  screen: an arrow in any direction and, as an option, the scatter distances
+  of the rules (D6", D6x2", 3D6"), with the detail of the dice.
+
+### Changed
+
+- On phones the header tools (direction dice, card backs, rules reader,
+  language) are grouped in one menu, so the title stays on one line; on
+  tablets the tool buttons show their icon only, labels come back on large
+  screens.
+
 ## [1.0.0] - 2026-10-12
 
 First complete release, built on the Black Death City playtest v1.03.

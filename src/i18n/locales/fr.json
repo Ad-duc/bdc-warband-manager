@@ -13,7 +13,9 @@
   },
   "header": {
     "cardBacks": "Dos de cartes",
-    "rules": "Règles en français"
+    "rules": "Règles en français",
+    "directionDie": "Dé de direction",
+    "menu": "Outils et langue"
   },
   "language": {
     "label": "Langue",
@@ -480,6 +482,41 @@
     "title": "Bande partagée : {{name}}",
     "readOnly": "Lecture seule. Enregistrez une copie pour la modifier sur cet appareil.",
     "saveCopy": "Enregistrer une copie"
+  },
+  "directionDie": {
+    "title": "Dé de direction",
+    "intro": "Tournez le haut de l'écran vers un bord du champ de bataille : la flèche donne la direction de la déviation, comme un dé à flèches.",
+    "distance": "Distance",
+    "distances": {
+      "none": {
+        "label": "Direction seule",
+        "use": "(gabarit de flamme, distance donnée par la règle)"
+      },
+      "d6": {
+        "label": "D6\"",
+        "use": "(trait Effroi, sorts à gabarit, Proie soûle)"
+      },
+      "d6x2": {
+        "label": "D6x2\"",
+        "use": "(gabarit d'explosion raté)"
+      },
+      "3d6": {
+        "label": "3D6\"",
+        "use": "(pion trésor placé depuis le centre)"
+      }
+    },
+    "prompt": "Choisissez la distance, puis lancez.",
+    "notRolled": "Dé de direction, pas encore lancé",
+    "angle": "Flèche à {{angle}} degrés du haut de l'écran, sens horaire",
+    "directionOnly": "Direction tirée",
+    "detail": {
+      "single": "D6 = {{inches}}\"",
+      "double": "D6 = {{die}}, x2 = {{inches}}\"",
+      "sum": "{{dice}} = {{inches}}\""
+    },
+    "roll": "Lancer",
+    "rollAgain": "Relancer",
+    "close": "Fermer"
   },
   "cardBacks": {
     "title": "Générateur de dos de cartes",

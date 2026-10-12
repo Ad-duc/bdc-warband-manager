@@ -108,6 +108,13 @@ for (const locale of ["en-GB", "fr-FR"] as const) {
       await page.goto("./#/card-backs");
       await expect(page.getByTestId("print-card-back").first()).toBeVisible();
       await audit(page, "card back generator");
+      await page.getByRole("button", { name: fr ? "Dé de direction" : "Direction dice" }).click();
+      await page
+        .getByRole("dialog")
+        .getByRole("button", { name: fr ? "Lancer" : "Roll" })
+        .click();
+      await audit(page, "direction dice");
+      await page.keyboard.press("Escape");
       await page.goto("./#/warband/demo-1/campaign");
       await page.getByRole("button", { name: fr ? "Partager" : "Share" }).click();
       const field = page.getByLabel(fr ? "Lien de partage" : "Share link");

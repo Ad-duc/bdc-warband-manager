@@ -1,8 +1,9 @@
 /*
  * File:        src/rules/dice.ts
- * Role:        Dice helpers: injectable random source, D3/D6/D66 rolls and the
+ * Role:        Dice helpers: injectable random source, D3/D6/D66 rolls, the
  *              starting experience roll (simulated or entered by hand), whose
- *              detail is kept in the warband document.
+ *              detail is kept in the warband document, and the direction dice
+ *              used to scatter (free direction and the distances of the rules).
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -71,4 +72,32 @@ export function randomEpithet(
 /** Name from the faction D66 table. */
 export function randomName(entries: Record<string, string>, random: RandomSource = Math.random): string {
   return entries[rollD66(random)] ?? "";
+}
+
+/**
+ * Scatter distances found in the rules: direction only, D6" (Scare trait,
+ * most template spells, drunk Hit), D6x2" (missed blast template) and 3D6"
+ * (treasure token placed from the centre).
+ */
+export const SCATTER_DISTANCES = ["none", "d6", "d6x2", "3d6"] as const;
+export type ScatterDistance = (typeof SCATTER_DISTANCES)[number];
+
+export interface ScatterRoll {
+  /** Direction in whole degrees, 0 = top of the screen, clockwise, 0 to 359. */
+  angle: number;
+  distance: ScatterDistance;
+  /** D6 results read for the distance (empty for direction only). */
+  dice: number[];
+  /** Distance in inches, or null for direction only. */
+  inches: number | null;
+}
+
+/** Direction dice roll (any direction, as a dice with arrows) and its distance. */
+export function rollScatter(distance: ScatterDistance, random: RandomSource = Math.random): ScatterRoll {
+  const angle = Math.floor(random() * 360);
+  const count = distance === "3d6" ? 3 : distance === "none" ? 0 : 1;
+  const dice = Array.from({ length: count }, () => rollD6(random));
+  const sum = dice.reduce((a, b) => a + b, 0);
+  const inches = distance === "none" ? null : distance === "d6x2" ? sum * 2 : sum;
+  return { angle, distance, dice, inches };
 }

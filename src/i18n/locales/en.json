@@ -13,7 +13,9 @@
   },
   "header": {
     "cardBacks": "Card backs",
-    "rules": "French rules"
+    "rules": "French rules",
+    "directionDie": "Direction dice",
+    "menu": "Tools and language"
   },
   "language": {
     "label": "Language",
@@ -480,6 +482,41 @@
     "title": "Shared warband: {{name}}",
     "readOnly": "Read-only. Save a copy to edit it on this device.",
     "saveCopy": "Save a copy"
+  },
+  "directionDie": {
+    "title": "Direction dice",
+    "intro": "Turn the top of the screen towards a battlefield edge: the arrow gives the scatter direction, as a dice with arrows on its faces.",
+    "distance": "Distance",
+    "distances": {
+      "none": {
+        "label": "Direction only",
+        "use": "(flame template, a distance given by the rule)"
+      },
+      "d6": {
+        "label": "D6\"",
+        "use": "(Scare trait, template spells, drunk Hit)"
+      },
+      "d6x2": {
+        "label": "D6x2\"",
+        "use": "(missed blast template)"
+      },
+      "3d6": {
+        "label": "3D6\"",
+        "use": "(treasure token placed from the centre)"
+      }
+    },
+    "prompt": "Choose the distance, then roll.",
+    "notRolled": "Direction dice, not rolled yet",
+    "angle": "Arrow at {{angle}} degrees from the top of the screen, clockwise",
+    "directionOnly": "Direction rolled",
+    "detail": {
+      "single": "D6 = {{inches}}\"",
+      "double": "D6 = {{die}}, x2 = {{inches}}\"",
+      "sum": "{{dice}} = {{inches}}\""
+    },
+    "roll": "Roll",
+    "rollAgain": "Roll again",
+    "close": "Close"
   },
   "cardBacks": {
     "title": "Card back generator",
