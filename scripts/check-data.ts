@@ -155,14 +155,21 @@ const MENTION = new RegExp(
 function walk(dir: string, out: string[]): void {
   for (const name of readdirSync(dir)) {
     if (
-      ["node_modules", ".git", "dist", "dev-dist", "coverage", "test-results", "playwright-report"].includes(
-        name,
-      )
+      [
+        "node_modules",
+        ".git",
+        "dist",
+        "dev-dist",
+        "coverage",
+        "test-results",
+        "playwright-report",
+        "__pycache__",
+      ].includes(name)
     )
       continue;
     const path = join(dir, name);
     if (statSync(path).isDirectory()) walk(path, out);
-    else if (/\.(ts|tsx|js|json|md|css|html|yml|yaml)$/.test(name)) out.push(path);
+    else if (/\.(ts|tsx|js|mjs|json|md|css|html|yml|yaml|py)$/.test(name)) out.push(path);
   }
 }
 const files: string[] = [];
