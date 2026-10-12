@@ -1,19 +1,32 @@
 /*
  * File:        src/features/common/ClampedText.tsx
- * Role:        Long text cut to three lines with a "read more" / "show less"
- *              button. The button only appears when the text overflows, and
+ * Role:        Long text (plain or rich) cut to three lines with a "read more"
+ *              / "show less" button. The button only appears when the text overflows, and
  *              the overflow is measured again when the box is resized.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
  */
 
-import { useLayoutEffect, useRef, useState } from "react";
+import { useId, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 
+interface ClampedTextProps {
+  /** Id of the paragraph, for aria-describedby; generated when omitted. */
+  id?: string;
+  /** Plain text, or use children for rich content. */
+  text?: string;
+  children?: ReactNode;
+  /** Any value whose change means the content changed (the text in the current language). */
+  watch?: string;
+  className?: string;
+}
+
 /** Text cut to three lines, with a toggle shown only when the text is longer. */
-export function ClampedText({ id, text, className = "" }: { id: string; text: string; className?: string }) {
+export function ClampedText({ id, text, children, watch, className = "" }: ClampedTextProps) {
   const { t } = useTranslation();
+  const generated = useId();
+  const paragraphId = id ?? generated;
   const ref = useRef<HTMLParagraphElement>(null);
   const [open, setOpen] = useState(false);
   const [overflows, setOverflows] = useState(false);
@@ -31,18 +44,18 @@ export function ClampedText({ id, text, className = "" }: { id: string; text: st
     return () => {
       observer.disconnect();
     };
-  }, [open, text]);
+  }, [open, text, watch]);
 
   return (
     <>
-      <p id={id} ref={ref} className={`${className} ${open ? "" : "line-clamp-3"}`}>
-        {text}
+      <p id={paragraphId} ref={ref} className={`${className} ${open ? "" : "line-clamp-3"}`}>
+        {children ?? text}
       </p>
       {(overflows || open) && (
         <button
           type="button"
           aria-expanded={open}
-          aria-controls={id}
+          aria-controls={paragraphId}
           onClick={() => {
             setOpen((o) => !o);
           }}
