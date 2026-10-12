@@ -1,0 +1,1359 @@
+{
+  "_header": {
+    "file": "src/data/guild-mercenaries.json",
+    "role": "Guild Mercenaries faction data: origins, strongholds, campaign rules, names, fighters, Guild Armoury, skills, spell lores",
+    "author": "Adrien Duclaud",
+    "created": "2026-10-12",
+    "license": "MIT for the file structure. Game content belongs to Sam Pearson (Black Death City)."
+  },
+  "schemaVersion": 1,
+  "id": "guild-mercenaries",
+  "name": { "en": "Guild Mercenaries", "fr": "Guild Mercenaries" },
+  "description": {
+    "en": "There is no shortage of mercenary warbands willing to brave the cursed streets of the City in search of fortune. Financed by wealthy patrons or risking silver of their own, these adventurers seek riches, relics, and renown amidst its ruins.",
+    "fr": "Les bandes de mercenaires prêtes à braver les rues maudites de la Cité en quête de fortune ne manquent pas. Financés par de riches mécènes ou risquant leurs propres pièces d'argent, ces aventuriers cherchent richesses, reliques et renommée au milieu de ses ruines."
+  },
+  "armouryName": { "en": "Guild Armoury", "fr": "Armurerie de la Guilde" },
+  "sourceRef": { "page": 51, "md": "06_guild-mercenaries.md > Guild Mercenaries" },
+  "assets": { "shield": "bouclier_guild.png", "accentColor": null },
+
+  "origins": [
+    {
+      "id": "swords-for-hire",
+      "name": { "en": "Swords for Hire", "fr": "Épées à louer" },
+      "flavour": {
+        "en": "This warband works for the highest bidder and has secured a wealthy patron to fund their expedition. This is thanks to their infamous leader who has already proved their mettle, venturing into the City before and living to tell the tale.",
+        "fr": "Cette bande travaille pour le plus offrant et s'est assuré un riche mécène pour financer son expédition. Elle le doit à son chef de sinistre réputation, qui a déjà fait ses preuves en s'aventurant dans la Cité et en en revenant vivant pour le raconter."
+      },
+      "requiredLeaderId": "guild-captain",
+      "strongholdId": "guild-barracks",
+      "specialRules": [],
+      "sourceRef": { "page": 52, "md": "06_guild-mercenaries.md > Épées à louer" }
+    },
+    {
+      "id": "disgraced-noble",
+      "name": { "en": "Disgraced Noble", "fr": "Noble déchu" },
+      "flavour": {
+        "en": "With a tarnished reputation and spiralling debts, this noble has sold off various heirlooms to earn enough capital to raise a warband and enter the City in pursuit of rebuilding their fortune. Will their gamble pay off?",
+        "fr": "La réputation ternie et les dettes s'accumulant, ce noble a vendu divers biens de famille afin de réunir assez de capital pour lever une bande et entrer dans la Cité, dans l'espoir de rebâtir sa fortune. Son pari sera-t-il payant ?"
+      },
+      "requiredLeaderId": "noble",
+      "strongholdId": "dilapidated-manor",
+      "specialRules": [],
+      "sourceRef": { "page": 52, "md": "06_guild-mercenaries.md > Noble déchu" }
+    },
+    {
+      "id": "witch-hunters-guild",
+      "name": { "en": "Witch Hunters Guild", "fr": "Guilde des chasseurs de sorcières" },
+      "flavour": {
+        "en": "The City's fall has unleashed horrors long thought buried. Vampyres stalk the streets at night, necromancers plunder the plague pits, and demons answer forbidden summons. To the Witch Hunters Guild, there can be only one response. Armed with fire, faith, and cold steel, they march into the ruins to purge every trace of the unholy.",
+        "fr": "L'effondrement de la Cité a libéré des horreurs que l'on croyait enterrées depuis longtemps. Des vampires hantent les rues la nuit, des nécromanciens pillent les fosses de peste et des démons répondent à des appels interdits. Pour la Guilde des chasseurs de sorcières, il ne peut y avoir qu'une seule réponse. Armés du feu, de la foi et de l'acier froid, ils marchent dans les ruines pour y purger toute trace d'impiété."
+      },
+      "requiredLeaderId": "witch-hunter",
+      "strongholdId": "chapter-house",
+      "specialRules": [],
+      "sourceRef": { "page": 52, "md": "06_guild-mercenaries.md > Guilde des chasseurs de sorcières" }
+    },
+    {
+      "id": "wizards-retinue",
+      "name": { "en": "Wizard's Retinue", "fr": "Suite du Sorcier" },
+      "flavour": {
+        "en": "Led by a High Wizard of the Guild, this expedition to the City has been funded at their own expense, for they seek powerful arcane artefacts that have been lost with the destruction of the City.",
+        "fr": "Menée par un High Wizard of the Guild, cette expédition dans la Cité a été financée à ses propres frais, car il recherche de puissants artefacts arcaniques, perdus lors de la destruction de la Cité."
+      },
+      "requiredLeaderId": "high-wizard-of-the-guild",
+      "strongholdId": "hidden-library",
+      "specialRules": [],
+      "sourceRef": { "page": 52, "md": "06_guild-mercenaries.md > Suite du Sorcier" }
+    }
+  ],
+
+  "strongholds": [
+    {
+      "id": "guild-barracks",
+      "name": { "en": "Guild Barracks", "fr": "Caserne de la Guilde" },
+      "flavour": {
+        "en": "The Guild's old barracks still stand in the outer districts of the City. Though far from grand, they provide a place for fresh recruits and hardened veterans alike to drill between expeditions.",
+        "fr": "L'ancienne caserne de la Guilde se dresse toujours dans les districts extérieurs de la Cité. Sans avoir rien de grandiose, elle offre aux jeunes recrues comme aux vétérans endurcis un lieu où s'exercer entre deux expéditions."
+      },
+      "income": "3d6x5",
+      "rules": [
+        {
+          "id": "combat-drills",
+          "name": { "en": "Combat Drills", "fr": "Exercices de combat" },
+          "tag": null,
+          "text": {
+            "en": "In step 3 of the Aftermath sequence you can pick up to 3 friendly Henchmen to train. Each of those fighters earns d6 bonus experience.",
+            "fr": "À l'étape 3 de la séquence d'après-bataille, vous pouvez choisir jusqu'à 3 Hommes de main alliés à entraîner. Chacun de ces combattants gagne D6 d'expérience bonus."
+          }
+        },
+        {
+          "id": "eager-to-prove",
+          "name": { "en": "Eager to Prove", "fr": "Avides de faire leurs preuves" },
+          "tag": null,
+          "text": {
+            "en": "In step 6 of the Aftermath sequence, roll a dice. On a 6, a Guild Recruit arrives at the Guild Barracks. You can recruit a Guild Recruit to your warband for 0 silver.",
+            "fr": "À l'étape 6 de la séquence d'après-bataille, lancez un dé. Sur 6, un Guild Recruit arrive à la Caserne de la Guilde. Vous pouvez recruter un Guild Recruit dans votre bande pour 0 pièce d'argent."
+          }
+        }
+      ],
+      "trackers": [],
+      "sourceRef": { "page": 53, "md": "06_guild-mercenaries.md > Caserne de la Guilde" }
+    },
+    {
+      "id": "dilapidated-manor",
+      "name": { "en": "Dilapidated Manor", "fr": "Manoir délabré" },
+      "flavour": {
+        "en": "The noble's family owns a small run-down estate on the outskirts of the City. Here, they find a modest wine collection in the cellar which is quickly requisitioned.",
+        "fr": "La famille du noble possède un petit domaine délabré aux abords de la Cité. On y trouve, dans la cave, une modeste collection de vins, vite réquisitionnée."
+      },
+      "income": "3d6x5",
+      "rules": [
+        {
+          "id": "vintage-wines",
+          "name": { "en": "Vintage Wines", "fr": "Grands crus" },
+          "tag": null,
+          "text": {
+            "en": "When this holding is first added to a warband roster, it has 2d6 bottles of vintage wine. Make a note on your warband roster. Each time you collect income from this holding, after rolling the dice, you can choose to sell a bottle of vintage wine. If you do so, reduce the count by 1 and re-roll the dice. You must accept the second result.",
+            "fr": "Quand cette possession est ajoutée pour la première fois à une feuille de bande, elle contient 2D6 bouteilles de grand cru. Notez-le sur votre feuille de bande. Chaque fois que vous percevez le revenu de cette possession, après avoir lancé les dés, vous pouvez choisir de vendre une bouteille de grand cru. Dans ce cas, réduisez le compte de 1 et relancez les dés. Vous devez accepter le second résultat."
+          }
+        }
+      ],
+      "trackers": [
+        { "id": "vintage-wine", "name": { "en": "Bottles of vintage wine", "fr": "Bouteilles de grand cru" }, "initial": "2d6" }
+      ],
+      "sourceRef": { "page": 53, "md": "06_guild-mercenaries.md > Manoir délabré" }
+    },
+    {
+      "id": "chapter-house",
+      "name": { "en": "Chapter House", "fr": "Maison capitulaire" },
+      "flavour": {
+        "en": "Modest but fortified, the Chapter House serves not only as a base of operations in the city, but a place of penance and redemption.",
+        "fr": "Modeste mais fortifiée, la Maison capitulaire sert non seulement de base d'opérations dans la cité, mais aussi de lieu de pénitence et de rédemption."
+      },
+      "income": "3d6x5",
+      "rules": [
+        {
+          "id": "atonement-for-sin",
+          "name": { "en": "Atonement for Sin", "fr": "Expiation des péchés" },
+          "tag": null,
+          "text": {
+            "en": "If your warband lost the battle, in step 3 of the Aftermath sequence, make a Willpower test for each Witch Hunter and Priest in your warband. If they pass, they earn 5 bonus experience.",
+            "fr": "Si votre bande a perdu la bataille, à l'étape 3 de la séquence d'après-bataille, effectuez un test de Volonté pour chaque Witch Hunter et chaque Prêtre de votre bande. S'il le réussit, il gagne 5 d'expérience bonus."
+          }
+        }
+      ],
+      "trackers": [],
+      "sourceRef": { "page": 53, "md": "06_guild-mercenaries.md > Maison capitulaire" }
+    },
+    {
+      "id": "hidden-library",
+      "name": { "en": "Hidden Library", "fr": "Bibliothèque cachée" },
+      "flavour": {
+        "en": "At great expense, the guild has relocated many manuscripts and treatises on the arcane to a secret location within the city. From here, its wizards continue their study.",
+        "fr": "À grands frais, la guilde a transféré de nombreux manuscrits et traités sur les arcanes dans un lieu secret de la cité. De là, ses sorciers poursuivent leurs études."
+      },
+      "income": "3d6x5",
+      "rules": [
+        {
+          "id": "sorcerous-study",
+          "name": { "en": "Sorcerous Study", "fr": "Étude de la sorcellerie" },
+          "tag": null,
+          "text": {
+            "en": "Each battle, before you determine prepared spells, you can pick 1 friendly Wizard in your warband. Instead of randomly determining the spell they have prepared from a Spell Lore, you can pick.",
+            "fr": "À chaque bataille, avant de déterminer les sorts préparés, vous pouvez choisir 1 Sorcier allié de votre bande. Au lieu de déterminer au hasard le sort qu'il a préparé dans un Domaine de magie, vous pouvez le choisir."
+          }
+        }
+      ],
+      "trackers": [],
+      "sourceRef": { "page": 53, "md": "06_guild-mercenaries.md > Bibliothèque cachée" }
+    }
+  ],
+
+  "campaignRules": [
+    {
+      "id": "death-of-a-leader",
+      "name": { "en": "Death of a Leader", "fr": "Mort d'un Chef" },
+      "tag": null,
+      "text": {
+        "en": "During the campaign, if your leader is killed, and you choose to promote a champion (pg xx), the following champions are eligible.",
+        "fr": "Pendant la campagne, si votre chef est tué et que vous choisissez de promouvoir un champion (p. xx), les champions suivants sont éligibles."
+      }
+    }
+  ],
+  "leaderSuccession": [
+    { "formerLeaderId": "guild-captain", "eligibleChampionIds": ["guild-champion"] },
+    { "formerLeaderId": "noble", "eligibleChampionIds": ["guild-champion"] },
+    { "formerLeaderId": "witch-hunter", "eligibleChampionIds": ["witch-hunters-apprentice"] },
+    { "formerLeaderId": "high-wizard-of-the-guild", "eligibleChampionIds": ["guild-wizard"] }
+  ],
+
+  "nameTable": {
+    "die": "d66",
+    "sourceRef": { "page": 54, "md": "06_guild-mercenaries.md > Noms des Guild Mercenaries" },
+    "entries": {
+      "11": "Adalbert", "12": "Albrecht", "13": "Anton", "14": "Augustin", "15": "Balthasar", "16": "Benedikt",
+      "21": "Berthold", "22": "Dietrich", "23": "Eberhard", "24": "Erasmus", "25": "Fabian", "26": "Friedrich",
+      "31": "Georg", "32": "Gregor", "33": "Hans", "34": "Heinrich", "35": "Hieronymus", "36": "Isenbert",
+      "41": "Jakob", "42": "Johannes", "43": "Jörg", "44": "Karl", "45": "Kaspar", "46": "Kristof",
+      "51": "Konrad", "52": "Leonhard", "53": "Lorenz", "54": "Ludwig", "55": "Matthias", "56": "Nikolaus",
+      "61": "Oswald", "62": "Otto", "63": "Ulrich", "64": "Valentin", "65": "Wilhelm", "66": "Wolfram"
+    }
+  },
+
+  "fighters": [
+    {
+      "id": "guild-captain",
+      "name": { "en": "Guild Captain", "fr": "Guild Captain" },
+      "category": "leader",
+      "keywords": ["leader", "mercenary", "human"],
+      "cost": 140,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 3, "bw": 4, "ar": 6, "in": 4, "wl": 4, "lf": 6 },
+      "allowedWargearLists": ["main", "champion"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 60, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 2, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "veteran-of-the-city",
+          "name": { "en": "Veteran of the City", "fr": "Vétéran de la Cité" },
+          "tag": null,
+          "text": { "en": "When this fighter is recruited, pick 2 skills for them.", "fr": "Quand ce combattant est recruté, choisissez 2 compétences pour lui." }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Guild Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Guilde."
+      },
+      "quote": { "en": "Stay in formation, and you might live to see the next dawn.", "fr": "Restez en formation, et vous vivrez peut-être assez longtemps pour voir la prochaine aube." },
+      "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > Guild Captain" }
+    },
+    {
+      "id": "noble",
+      "name": { "en": "Noble", "fr": "Noble" },
+      "category": "leader",
+      "keywords": ["leader", "mercenary", "human", "aristocrat"],
+      "cost": 120,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 3, "bw": 4, "ar": 6, "in": 4, "wl": 3, "lf": 5 },
+      "allowedWargearLists": ["main", "champion"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 60, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 1, "fixedSkillIds": ["duellist"], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "trained-duellist",
+          "name": { "en": "Trained Duellist", "fr": "Duelliste entraîné" },
+          "tag": null,
+          "text": {
+            "en": "When this fighter is recruited, they already have the Duellist skill (pg xx). In addition, pick 1 skill for them.",
+            "fr": "Quand ce combattant est recruté, il possède déjà la compétence Duelliste (p. xx). De plus, choisissez 1 compétence pour lui."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Guild Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Guilde."
+      },
+      "quote": { "en": "I didn't come this far to die a beggar!", "fr": "Je ne suis pas venu jusqu'ici pour mourir comme un mendiant !" },
+      "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > Noble" }
+    },
+    {
+      "id": "witch-hunter",
+      "name": { "en": "Witch Hunter", "fr": "Witch Hunter" },
+      "category": "leader",
+      "keywords": ["leader", "mercenary", "human", "witch-hunter"],
+      "cost": 140,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 3, "bw": 4, "ar": 6, "in": 4, "wl": 4, "lf": 6 },
+      "allowedWargearLists": ["main", "champion", "witch-hunter"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 60, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 1, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "seasoned-warrior",
+          "name": { "en": "Seasoned Warrior", "fr": "Guerrier aguerri" },
+          "tag": null,
+          "text": { "en": "When this fighter is recruited, pick 1 skill for them.", "fr": "Quand ce combattant est recruté, choisissez 1 compétence pour lui." }
+        },
+        {
+          "id": "recite-holy-litanies",
+          "name": { "en": "Recite Holy Litanies", "fr": "Réciter les litanies sacrées" },
+          "tag": null,
+          "text": {
+            "en": "Once per battle, this fighter can make this action. If they do so, pick a visible enemy fighter within 12\" of this fighter to be the target, that target must be a Wizard, Priest, Demon or Undead. Roll a dice for this fighter and add its Willpower value to the result. The commanding player of the target does the same for their fighter. If the result for this fighter is equal or higher than the result for the target, the target suffers d3 damage.",
+            "fr": "Une fois par bataille, ce combattant peut effectuer cette action. Dans ce cas, choisissez comme cible un combattant ennemi visible à 12\" ou moins de ce combattant ; cette cible doit être un Sorcier, un Prêtre, un Démon ou un Mort-vivant. Lancez un dé pour ce combattant et ajoutez sa valeur de Volonté au résultat. Le joueur qui contrôle le combattant ciblé fait de même pour son combattant. Si le résultat de ce combattant est égal ou supérieur au résultat de la cible, la cible subit D3 dégâts."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List, Champion List and Witch Hunter List from the Guild Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale, de la Liste des Champions et de la Liste des Witch Hunters de l'Armurerie de la Guilde."
+      },
+      "quote": { "en": "Cast out the wretch. Burn the unholy.", "fr": "Chassez le misérable. Brûlez l'impie." },
+      "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > Witch Hunter" }
+    },
+    {
+      "id": "high-wizard-of-the-guild",
+      "name": { "en": "High Wizard of the Guild", "fr": "High Wizard of the Guild" },
+      "category": "leader",
+      "keywords": ["leader", "mercenary", "human", "wizard"],
+      "cost": 165,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 4, "bw": 6, "ar": 6, "in": 3, "wl": 5, "lf": 5 },
+      "allowedWargearLists": ["wizard"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 60, "dice": "d6" },
+      "knownSpellLoreIds": ["lore-of-sanctioned-magic"],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 2, "spellLoreId": "lore-of-sanctioned-magic" },
+      "specialRules": [
+        {
+          "id": "master-of-spellcraft",
+          "name": { "en": "Master of Spellcraft", "fr": "Maître de l'art de la magie" },
+          "tag": null,
+          "text": {
+            "en": "This fighter knows the Lore of Sanctioned Magic. When they are recruited, pick 2 spells from it to be their signature spells. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "fr": "Ce combattant connaît le Domaine de la Magie autorisée. Quand il est recruté, choisissez 2 sorts de ce domaine : ils deviennent ses sorts fétiches. De plus, au début de chaque bataille, il prépare 1 sort aléatoire de ce domaine."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Wizard List from the Guild Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Sorciers de l'Armurerie de la Guilde."
+      },
+      "quote": { "en": "I have spent a lifetime studying matters beyond your comprehension.", "fr": "J'ai passé mon existence à étudier des choses qui dépassent votre entendement." },
+      "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > High Wizard of the Guild" }
+    },
+    {
+      "id": "guild-wizard",
+      "name": { "en": "Guild Wizard", "fr": "Guild Wizard" },
+      "category": "champion",
+      "keywords": ["champion", "mercenary", "human", "wizard"],
+      "cost": 120,
+      "limit": 1,
+      "stats": { "mv": 5, "bl": 4, "bw": 6, "ar": 6, "in": 3, "wl": 4, "lf": 4 },
+      "allowedWargearLists": ["wizard"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 40, "dice": "d6" },
+      "knownSpellLoreIds": ["lore-of-sanctioned-magic"],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 1, "spellLoreId": "lore-of-sanctioned-magic" },
+      "specialRules": [
+        {
+          "id": "guild-magic",
+          "name": { "en": "Guild Magic", "fr": "Magie de la Guilde" },
+          "tag": null,
+          "text": {
+            "en": "This fighter knows the Lore of Sanctioned Magic. When they are recruited, pick 1 spell from it to be their signature spell. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "fr": "Ce combattant connaît le Domaine de la Magie autorisée. Quand il est recruté, choisissez 1 sort de ce domaine : il devient son sort fétiche. De plus, au début de chaque bataille, il prépare 1 sort aléatoire de ce domaine."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Wizard List from the Guild Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Sorciers de l'Armurerie de la Guilde."
+      },
+      "quote": { "en": "Magic cannot be tamed, even by one such as myself.", "fr": "La magie ne se laisse pas dompter, pas même par quelqu'un comme moi." },
+      "sourceRef": { "page": 67, "md": "06_guild-mercenaries.md > 0-1 Guild Wizard" }
+    },
+    {
+      "id": "guild-cleric",
+      "name": { "en": "Guild Cleric", "fr": "Guild Cleric" },
+      "category": "champion",
+      "keywords": ["champion", "mercenary", "human", "priest"],
+      "cost": 120,
+      "limit": 1,
+      "stats": { "mv": 5, "bl": 4, "bw": 6, "ar": 6, "in": 3, "wl": 4, "lf": 4 },
+      "allowedWargearLists": ["cleric"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 40, "dice": "d6" },
+      "knownSpellLoreIds": ["lore-of-the-saints"],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 1, "spellLoreId": "lore-of-the-saints" },
+      "specialRules": [
+        {
+          "id": "holy-magic",
+          "name": { "en": "Holy Magic", "fr": "Magie sacrée" },
+          "tag": null,
+          "text": {
+            "en": "This fighter knows the Lore of the Saints. When they are recruited, pick 1 spell from it to be their signature spell. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "fr": "Ce combattant connaît le Domaine des Saints. Quand il est recruté, choisissez 1 sort de ce domaine : il devient son sort fétiche. De plus, au début de chaque bataille, il prépare 1 sort aléatoire de ce domaine."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Cleric List from the Guild Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Clerics de l'Armurerie de la Guilde."
+      },
+      "quote": { "en": "The Saints walk beside those who keep the faith.", "fr": "Les Saints marchent aux côtés de ceux qui gardent la foi." },
+      "sourceRef": { "page": 67, "md": "06_guild-mercenaries.md > 0-1 Guild Cleric" }
+    },
+    {
+      "id": "guild-champion",
+      "name": { "en": "Guild Champion", "fr": "Guild Champion" },
+      "category": "champion",
+      "keywords": ["champion", "mercenary", "human"],
+      "cost": 90,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 3, "bw": 4, "ar": 6, "in": 3, "wl": 3, "lf": 5 },
+      "allowedWargearLists": ["main", "champion"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 40, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 1, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "seasoned-warrior",
+          "name": { "en": "Seasoned Warrior", "fr": "Guerrier aguerri" },
+          "tag": null,
+          "text": { "en": "When this fighter is recruited, pick 1 skill for them.", "fr": "Quand ce combattant est recruté, choisissez 1 compétence pour lui." }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Guild Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Guilde."
+      },
+      "quote": { "en": "Give the order, and I'll see it done.", "fr": "Donnez l'ordre, et ce sera fait." },
+      "sourceRef": { "page": 67, "md": "06_guild-mercenaries.md > Guild Champion" }
+    },
+    {
+      "id": "plague-doctor",
+      "name": { "en": "Plague Doctor", "fr": "Plague Doctor" },
+      "category": "champion",
+      "keywords": ["champion", "mercenary", "human"],
+      "cost": 65,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 4, "bw": 5, "ar": 6, "in": 3, "wl": 3, "lf": 4 },
+      "allowedWargearLists": ["main"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 40, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "patch-you-up",
+          "name": { "en": "Patch You Up", "fr": "Je te rafistole" },
+          "tag": "action",
+          "text": {
+            "en": "As an action, make a Willpower test for this fighter. If failed, the action ends. If passed, pick a friendly fighter within 1\" of them. That fighter heals 1 life point.",
+            "fr": "En tant qu'action, effectuez un test de Volonté pour ce combattant. S'il est raté, l'action prend fin. S'il est réussi, choisissez un combattant allié à 1\" ou moins de lui. Le combattant choisi est soigné de 1 point de vie."
+          }
+        },
+        {
+          "id": "sawbones",
+          "name": { "en": "Sawbones", "fr": "Chirurgien" },
+          "tag": null,
+          "text": {
+            "en": "Once in each aftermath sequence, if this fighter was not taken down during battle, they can oversee the recovery of another fighter. Pick a friendly fighter that was taken down. When rolling on the lasting injury table for that fighter, you can roll twice and pick either result.",
+            "fr": "Une fois par séquence d'après-bataille, si ce combattant n'a pas été mis hors de combat au cours de la bataille, il peut superviser le rétablissement d'un autre combattant. Choisissez un combattant allié qui a été mis hors de combat. Quand vous faites un jet sur la table des blessures durables pour le combattant choisi, vous pouvez faire deux jets et choisir l'un des deux résultats."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List from the Guild Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie de la Guilde."
+      },
+      "quote": { "en": "There's no saving this leg. We'll have to amputate it.", "fr": "Cette jambe est perdue. Il va falloir l'amputer." },
+      "sourceRef": { "page": 68, "md": "06_guild-mercenaries.md > Plague Doctor" }
+    },
+    {
+      "id": "witch-hunters-apprentice",
+      "name": { "en": "Witch Hunter's Apprentice", "fr": "Witch Hunter's Apprentice" },
+      "category": "champion",
+      "keywords": ["champion", "human", "mercenary", "witch-hunter"],
+      "cost": 80,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 4, "bw": 4, "ar": 6, "in": 3, "wl": 4, "lf": 5 },
+      "allowedWargearLists": ["main", "champion", "witch-hunter"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 40, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "recite-holy-litanies",
+          "name": { "en": "Recite Holy Litanies", "fr": "Réciter les litanies sacrées" },
+          "tag": "action",
+          "text": {
+            "en": "Once per battle, this fighter can make this action. If they do so, pick a visible enemy fighter within 12\" of this fighter to be the target, that target must be a Wizard, Priest, Demon or Undead. Roll a dice for this fighter and add its Willpower value to the result. The commanding player of the target does the same for their fighter. If the result for this fighter is equal or higher than the result for the target, the target suffers d3 damage.",
+            "fr": "Une fois par bataille, ce combattant peut effectuer cette action. Dans ce cas, choisissez comme cible un combattant ennemi visible à 12\" ou moins de ce combattant ; cette cible doit être un Sorcier, un Prêtre, un Démon ou un Mort-vivant. Lancez un dé pour ce combattant et ajoutez sa valeur de Volonté au résultat. Le joueur qui contrôle le combattant ciblé fait de même pour son combattant. Si le résultat de ce combattant est égal ou supérieur au résultat de la cible, la cible subit D3 dégâts."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List, Champion List and Witch Hunter List from the Guild Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale, de la Liste des Champions et de la Liste des Witch Hunters de l'Armurerie de la Guilde."
+      },
+      "quote": { "en": "Let not the wicked rest.", "fr": "Que les malfaisants ne trouvent aucun repos." },
+      "sourceRef": { "page": 68, "md": "06_guild-mercenaries.md > Witch Hunter's Apprentice" }
+    },
+    {
+      "id": "guild-mercenary",
+      "name": { "en": "Guild Mercenary", "fr": "Guild Mercenary" },
+      "category": "henchman",
+      "keywords": ["henchman", "mercenary", "human"],
+      "cost": 50,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 4, "bw": 4, "ar": 6, "in": 3, "wl": 3, "lf": 4 },
+      "allowedWargearLists": ["main", "munitions"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 20, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List and Munitions List from the Guild Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste d'armement de l'Armurerie de la Guilde."
+      },
+      "quote": { "en": "Fifty silver, and my blade is yours.", "fr": "Cinquante pièces d'argent, et ma lame est à vous." },
+      "sourceRef": { "page": 69, "md": "06_guild-mercenaries.md > Guild Mercenary" }
+    },
+    {
+      "id": "guild-recruit",
+      "name": { "en": "Guild Recruit", "fr": "Guild Recruit" },
+      "category": "henchman",
+      "keywords": ["henchman", "mercenary", "human"],
+      "cost": 30,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 5, "bw": 5, "ar": 6, "in": 2, "wl": 2, "lf": 3 },
+      "allowedWargearLists": ["main"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 0, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List from the Guild Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie de la Guilde."
+      },
+      "quote": { "en": "I'll earn my keep.", "fr": "Je mériterai ma solde." },
+      "sourceRef": { "page": 69, "md": "06_guild-mercenaries.md > Guild Recruit" }
+    },
+    {
+      "id": "mercenary-ogre",
+      "name": { "en": "Mercenary Ogre", "fr": "Mercenary Ogre" },
+      "category": "brute",
+      "keywords": ["brute", "mercenary", "ogre"],
+      "cost": 100,
+      "limit": null,
+      "stats": { "mv": 4, "bl": 4, "bw": 4, "ar": 6, "in": 2, "wl": 2, "lf": 8 },
+      "allowedWargearLists": ["ogre"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 20, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "incredible-strength",
+          "name": { "en": "Incredible Strength", "fr": "Force incroyable" },
+          "tag": null,
+          "text": {
+            "en": "This fighter ignores the Heavy and Unwieldy weapon traits on weapons they are equipped with.",
+            "fr": "Ce combattant ignore les traits d'armes Lourd et Encombrant des armes dont il est équipé."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Ogre List from the Guild Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Ogres de l'Armurerie de la Guilde."
+      },
+      "quote": { "en": "Whose bones you want me to break next, Boss?", "fr": "À qui je casse les os maintenant, Patron ?" },
+      "sourceRef": { "page": 70, "md": "06_guild-mercenaries.md > Mercenary Ogre" }
+    },
+    {
+      "id": "hunting-dog",
+      "name": { "en": "Hunting Dog", "fr": "Hunting Dog" },
+      "category": "beast",
+      "keywords": ["beast", "mercenary", "dog"],
+      "cost": 30,
+      "limit": null,
+      "stats": { "mv": 7, "bl": 3, "bw": null, "ar": 6, "in": 4, "wl": 1, "lf": 3 },
+      "allowedWargearLists": [],
+      "fixedWargearIds": ["vicious-bite"],
+      "startingExperience": { "base": 0, "dice": null },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "sniff-em-out",
+          "name": { "en": "Sniff 'em Out", "fr": "Débusquez-les !" },
+          "tag": null,
+          "text": {
+            "en": "Enemy fighters that are hidden are not hidden while they are within 9\" of this fighter.",
+            "fr": "Les combattants ennemis qui sont cachés ne sont pas cachés tant qu'ils sont à 9\" ou moins de ce combattant."
+          }
+        },
+        {
+          "id": "trackers",
+          "name": { "en": "Trackers", "fr": "Pisteurs" },
+          "tag": null,
+          "text": {
+            "en": "Each aftermath sequence, when you search the city, if your search party includes any Hunting Dogs, you can re-roll the exploration roll.",
+            "fr": "À chaque séquence d'après-bataille, quand vous fouillez la cité, si votre groupe de fouille comprend au moins un Hunting Dog, vous pouvez relancer le jet d'exploration."
+          }
+        }
+      ],
+      "wargearText": {
+        "en": "This fighter is equipped with a vicious bite (see below), they cannot be equipped with any other wargear.",
+        "fr": "Ce combattant est équipé d'une morsure féroce, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
+      },
+      "quote": null,
+      "sourceRef": { "page": 70, "md": "06_guild-mercenaries.md > Hunting Dog" }
+    }
+  ],
+
+  "wargear": [
+    {
+      "id": "arcane-staff", "name": { "en": "Arcane Staff", "fr": "Bâton arcanique" }, "kind": "melee", "cost": 10, "purchasable": true,
+      "profile": { "attacks": 2, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "arcane" }, { "key": "off-hand" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "axe", "name": { "en": "Axe", "fr": "Hache" }, "kind": "melee", "cost": 16, "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "off-hand" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "club-mace-hammer", "name": { "en": "Club/Mace/Hammer", "fr": "Gourdin/Masse/Marteau" }, "kind": "melee", "cost": 14, "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "bludgeon" }, { "key": "off-hand" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "dagger", "name": { "en": "Dagger", "fr": "Dague" }, "kind": "melee", "cost": 10, "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "off-hand" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "ensorcelled-weapon", "name": { "en": "Ensorcelled Weapon", "fr": "Arme ensorcelée" }, "kind": "melee", "cost": 26, "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "arcane" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null,
+      "designerNote": { "en": "You can use any weapon to represent the Ensorcelled Weapon.", "fr": "Vous pouvez utiliser n'importe quelle arme pour représenter l'Arme ensorcelée." },
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "flail", "name": { "en": "Flail", "fr": "Fléau" }, "kind": "melee", "cost": 14, "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "off-hand" }, { "key": "wrap" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "halberd", "name": { "en": "Halberd", "fr": "Hallebarde" }, "kind": "melee", "cost": 34, "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3+1" },
+      "traits": [{ "key": "brace" }, { "key": "two-handed" }, { "key": "unwieldy" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "heavy-axe", "name": { "en": "Heavy Axe", "fr": "Hache lourde" }, "kind": "melee", "cost": 40, "purchasable": true,
+      "profile": { "attacks": 3, "rend": -2, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "two-handed" }, { "key": "unwieldy" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "ogre-blade", "name": { "en": "Ogre Blade", "fr": "Lame d'ogre" }, "kind": "melee", "cost": 36, "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "off-hand" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "ogre-great-weapon", "name": { "en": "Ogre Great Weapon", "fr": "Grande arme d'ogre" }, "kind": "melee", "cost": 50, "purchasable": true,
+      "profile": { "attacks": 3, "rend": -2, "damage": 3, "critDamage": "d3+2" },
+      "traits": [{ "key": "two-handed" }, { "key": "unwieldy" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "ogre-mace", "name": { "en": "Ogre Mace", "fr": "Masse d'ogre" }, "kind": "melee", "cost": 38, "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "bludgeon" }, { "key": "off-hand" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "spear", "name": { "en": "Spear", "fr": "Lance" }, "kind": "melee", "cost": 16, "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "brace" }, { "key": "two-handed" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "sword", "name": { "en": "Sword", "fr": "Épée" }, "kind": "melee", "cost": 18, "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "guard" }, { "key": "off-hand" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "warhammer", "name": { "en": "Warhammer", "fr": "Marteau de guerre" }, "kind": "melee", "cost": 38, "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "bludgeon" }, { "key": "two-handed" }, { "key": "unwieldy" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "zweihander", "name": { "en": "Zweihander", "fr": "Espadon" }, "kind": "melee", "cost": 42, "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "guard" }, { "key": "two-handed" }, { "key": "unwieldy" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+    },
+    {
+      "id": "vicious-bite", "name": { "en": "Vicious Bite", "fr": "Morsure féroce" }, "kind": "melee", "cost": 0, "purchasable": false,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "natural-weapon" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 70, "md": "06_guild-mercenaries.md > Hunting Dog" }
+    },
+
+    {
+      "id": "arbalest", "name": { "en": "Arbalest", "fr": "Arbalète lourde" }, "kind": "ranged", "cost": 96, "purchasable": true,
+      "profile": { "range": 24, "attacks": 1, "rend": -2, "damage": 3, "critDamage": "d6+2" },
+      "traits": [{ "key": "heavy" }, { "key": "rare" }, { "key": "reload" }, { "key": "two-handed" }, { "key": "unwieldy" }],
+      "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "blackpowder-pistol", "name": { "en": "Blackpowder Pistol", "fr": "Pistolet à poudre noire" }, "kind": "ranged", "cost": 18, "purchasable": true,
+      "profile": { "range": 12, "attacks": 1, "rend": -1, "damage": 1, "critDamage": "d6" },
+      "traits": [{ "key": "misfire" }, { "key": "reload" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "blackpowder-rifle", "name": { "en": "Blackpowder Rifle", "fr": "Fusil à poudre noire" }, "kind": "ranged", "cost": 22, "purchasable": true,
+      "profile": { "range": 18, "attacks": 1, "rend": -1, "damage": 1, "critDamage": "d6" },
+      "traits": [{ "key": "misfire" }, { "key": "reload" }, { "key": "two-handed" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "blunderbuss", "name": { "en": "Blunderbuss", "fr": "Tromblon" }, "kind": "ranged", "cost": 15, "purchasable": true,
+      "profile": { "range": 8, "attacks": "d3", "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "misfire" }, { "key": "reload" }, { "key": "two-handed" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "brace-of-pistols", "name": { "en": "Brace of Pistols", "fr": "Paire de pistolets" }, "kind": "ranged", "cost": 32, "purchasable": true,
+      "profile": { "range": 12, "attacks": 2, "rend": -1, "damage": 1, "critDamage": "d6" },
+      "traits": [{ "key": "misfire" }, { "key": "reload" }, { "key": "two-handed" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "crossbow", "name": { "en": "Crossbow", "fr": "Arbalète" }, "kind": "ranged", "cost": 26, "purchasable": true,
+      "profile": { "range": 20, "attacks": 1, "rend": -1, "damage": 1, "critDamage": "d6" },
+      "traits": [{ "key": "reload" }, { "key": "two-handed" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "fire-bombs", "name": { "en": "Fire Bombs", "fr": "Bombes incendiaires" }, "kind": "ranged", "cost": 37, "purchasable": true,
+      "profile": { "range": 8, "attacks": 1, "rend": 0, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "blast" }, { "key": "one-use" }, { "key": "rare" }, { "key": "scare" }],
+      "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "flamethrower", "name": { "en": "Flamethrower", "fr": "Lance-flammes" }, "kind": "ranged", "cost": 88, "purchasable": true,
+      "profile": { "range": "flame", "attacks": 1, "rend": 0, "damage": "d3", "critDamage": null },
+      "traits": [{ "key": "flame" }, { "key": "rare" }, { "key": "reload" }, { "key": "scare" }, { "key": "two-handed" }],
+      "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "hand-crossbow", "name": { "en": "Hand Crossbow", "fr": "Arbalète de poing" }, "kind": "ranged", "cost": 16, "purchasable": true,
+      "profile": { "range": 12, "attacks": 1, "rend": 0, "damage": 1, "critDamage": "d6" },
+      "traits": [{ "key": "reload" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "long-bow", "name": { "en": "Long Bow", "fr": "Arc long" }, "kind": "ranged", "cost": 28, "purchasable": true,
+      "profile": { "range": 24, "attacks": 1, "rend": -1, "damage": 1, "critDamage": "d6" },
+      "traits": [{ "key": "heavy" }, { "key": "two-handed" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "long-rifle", "name": { "en": "Long Rifle", "fr": "Fusil long" }, "kind": "ranged", "cost": 90, "purchasable": true,
+      "profile": { "range": 30, "attacks": 1, "rend": -2, "damage": 2, "critDamage": "d6+2" },
+      "traits": [{ "key": "heavy" }, { "key": "misfire" }, { "key": "reload" }, { "key": "two-handed" }, { "key": "unwieldy" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "ogre-cannon", "name": { "en": "Ogre Cannon", "fr": "Canon d'ogre" }, "kind": "ranged", "cost": 105, "purchasable": true,
+      "profile": { "range": 18, "attacks": 1, "rend": -3, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "blast" }, { "key": "heavy" }, { "key": "misfire" }, { "key": "rare" }, { "key": "reload" }, { "key": "unwieldy" }, { "key": "two-handed" }],
+      "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "ogre-pistol", "name": { "en": "Ogre Pistol", "fr": "Pistolet d'ogre" }, "kind": "ranged", "cost": 30, "purchasable": true,
+      "profile": { "range": 16, "attacks": 1, "rend": -1, "damage": 2, "critDamage": "d6+1" },
+      "traits": [{ "key": "misfire" }, { "key": "reload" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "repeater-pistol", "name": { "en": "Repeater Pistol", "fr": "Pistolet à répétition" }, "kind": "ranged", "cost": 35, "purchasable": true,
+      "profile": { "range": 12, "attacks": 1, "rend": -1, "damage": 1, "critDamage": "d6" },
+      "traits": [{ "key": "misfire" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "short-bow", "name": { "en": "Short Bow", "fr": "Arc court" }, "kind": "ranged", "cost": 18, "purchasable": true,
+      "profile": { "range": 16, "attacks": 1, "rend": 0, "damage": 1, "critDamage": "d6" },
+      "traits": [{ "key": "two-handed" }],
+      "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+    {
+      "id": "volley-rifle", "name": { "en": "Volley Rifle", "fr": "Fusil à salves" }, "kind": "ranged", "cost": 75, "purchasable": true,
+      "profile": { "range": 16, "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d6" },
+      "traits": [{ "key": "misfire" }, { "key": "rare" }, { "key": "reload" }, { "key": "two-handed" }, { "key": "volley" }],
+      "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null, "text": null, "designerNote": null,
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+    },
+
+    {
+      "id": "cuirass", "name": { "en": "Cuirass", "fr": "Cuirasse" }, "kind": "armour", "cost": 20, "purchasable": true,
+      "profile": null, "traits": [], "armourValue": 5, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
+      "text": null, "designerNote": null,
+      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Cuirasse" }
+    },
+    {
+      "id": "warded-robes", "name": { "en": "Warded Robes", "fr": "Robe de protection" }, "kind": "armour", "cost": 10, "purchasable": true,
+      "profile": null, "traits": [], "armourValue": 6, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
+      "text": {
+        "en": "Roll a dice each time a fighter equipped with this armour is targeted by a spell cast by an enemy fighter. On a 4+, the spell has no effect on this fighter.",
+        "fr": "Lancez un dé chaque fois qu'un combattant équipé de cette armure est ciblé par un sort lancé par un combattant ennemi. Sur 4+, le sort n'a aucun effet sur ce combattant."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Robe de protection" }
+    },
+    {
+      "id": "full-plate", "name": { "en": "Full-plate", "fr": "Armure de plates" }, "kind": "armour", "cost": 40, "purchasable": true,
+      "profile": null, "traits": [], "armourValue": 4, "itemKeywords": [], "rarity": null, "requires": null,
+      "restrictions": [{ "type": "forbid-trait", "kind": "ranged", "trait": "two-handed", "exceptWargearIds": ["brace-of-pistols"] }],
+      "grantsAttack": null,
+      "text": {
+        "en": "Fighters equipped with this armour cannot be equipped with two-handed ranged weapons with the exception of a Brace of Pistols.",
+        "fr": "Les combattants équipés de cette armure ne peuvent pas être équipés d'armes à distance à deux mains, à l'exception d'une Paire de pistolets."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armure de plates" }
+    },
+    {
+      "id": "ogre-armour", "name": { "en": "Ogre Armour", "fr": "Armure d'ogre" }, "kind": "armour", "cost": 30, "purchasable": true,
+      "profile": null, "traits": [], "armourValue": 5, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
+      "text": null, "designerNote": null,
+      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armure d'ogre" }
+    },
+
+    {
+      "id": "bomb-bolt", "name": { "en": "Bomb-bolt", "fr": "Carreau explosif" }, "kind": "item", "cost": 25, "purchasable": true,
+      "profile": null, "traits": [], "armourValue": null, "itemKeywords": [], "rarity": 1,
+      "requires": { "anyOfWargearIds": ["crossbow"] }, "restrictions": [], "grantsAttack": null,
+      "text": {
+        "en": "This item requires the fighter to be equipped with a Crossbow. Once per battle, when this fighter makes a Ranged Attack action with their crossbow, they can use the bomb-bolt. If they do so, the weapon gains the following for the attack:\n- Improve the Rend value by 1.\n- Add 1 to the Damage and Critical Damage values.\n- The Blast weapon trait.",
+        "fr": "Cet objet exige que le combattant soit équipé d'une Arbalète. Une fois par bataille, quand ce combattant effectue une action d'Attaque à distance avec son arbalète, il peut utiliser le carreau explosif. Dans ce cas, l'arme gagne ce qui suit pour cette attaque :\n- Améliorez de 1 la valeur de Perforation.\n- Ajoutez 1 aux valeurs de Dégâts et de Dégâts critiques.\n- Le trait d'arme Explosion."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Carreau explosif" }
+    },
+    {
+      "id": "grappling-hook", "name": { "en": "Grappling Hook", "fr": "Grappin" }, "kind": "item", "cost": 5, "purchasable": true,
+      "profile": null, "traits": [], "armourValue": null, "itemKeywords": [], "rarity": 2, "requires": null, "restrictions": [], "grantsAttack": null,
+      "text": {
+        "en": "This fighter can climb high walls in the same manner as ladders.",
+        "fr": "Ce combattant peut escalader les hauts murs de la même manière que les échelles."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Grappin" }
+    },
+    {
+      "id": "grimoire", "name": { "en": "Grimoire", "fr": "Grimoire" }, "kind": "item", "cost": 15, "purchasable": true,
+      "profile": null, "traits": [], "armourValue": null, "itemKeywords": [], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
+      "text": {
+        "en": "Once per battle, after this fighter has made casting roll, you can re-roll the casting roll.",
+        "fr": "Une fois par bataille, après que ce combattant a effectué un jet de lancement, vous pouvez relancer le jet de lancement."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Grimoire" }
+    },
+    {
+      "id": "guild-banner", "name": { "en": "Guild Banner", "fr": "Bannière de la Guilde" }, "kind": "item", "cost": 25, "purchasable": true,
+      "profile": null, "traits": [], "armourValue": null, "itemKeywords": ["held-item"], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null,
+      "text": {
+        "en": "While this fighter is on the battlefield, you can re-roll flee tests. You can re-roll Willpower tests made by friendly fighters while they are within 12\" of this fighter and this fighter is visible to them.",
+        "fr": "Tant que ce combattant est sur le champ de bataille, vous pouvez relancer les tests de déroute. Vous pouvez relancer les tests de Volonté effectués par les combattants alliés tant qu'ils sont à 12\" ou moins de ce combattant et que ce combattant est visible pour eux."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Bannière de la Guilde" }
+    },
+    {
+      "id": "loyal-companion", "name": { "en": "Loyal Companion", "fr": "Compagnon fidèle" }, "kind": "item", "cost": 20, "purchasable": true,
+      "profile": null, "traits": [], "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [],
+      "grantsAttack": { "rend": -1, "damage": 1, "critDamage": "d3", "traits": [{ "key": "natural-weapon" }] },
+      "text": {
+        "en": "Each time the bearer makes a melee attack, they can make 1 additional attack with the following weapon.",
+        "fr": "Chaque fois que le porteur effectue une attaque au corps à corps, il peut effectuer 1 attaque supplémentaire avec l'arme suivante."
+      },
+      "designerNote": {
+        "en": "This item is designed for miniatures that feature other creatures such as leashed attack dogs on the same base. The Loyal Companion is not considered a separate fighter for any rules.",
+        "fr": "Cet objet est conçu pour les figurines qui comportent d'autres créatures sur le même socle, comme des chiens de guerre tenus en laisse. Le Compagnon fidèle n'est considéré comme un combattant distinct pour aucune règle."
+      },
+      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Compagnon fidèle" }
+    },
+    {
+      "id": "shield", "name": { "en": "Shield", "fr": "Bouclier" }, "kind": "item", "cost": 10, "purchasable": true,
+      "profile": null, "traits": [], "armourValue": null, "itemKeywords": ["held-item"], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
+      "text": {
+        "en": "Improve this fighter's Armour value by 1, to a maximum of 2+. (For example, 6+ becomes 5+).",
+        "fr": "Améliorez de 1 la valeur d'Armure de ce combattant, jusqu'à un maximum de 2+. (Par exemple, 6+ devient 5+)."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Bouclier" }
+    },
+    {
+      "id": "lantern-torch", "name": { "en": "Lantern/Torch", "fr": "Lanterne/Torche" }, "kind": "item", "cost": 4, "purchasable": true,
+      "profile": null, "traits": [], "armourValue": null, "itemKeywords": ["held-item"], "rarity": null, "requires": null, "restrictions": [], "grantsAttack": null,
+      "text": {
+        "en": "Worsen the Armour value of enemy Demon and Undead fighters by 1 while they are engaged with any fighters equipped with this item.",
+        "fr": "Dégradez de 1 la valeur d'Armure des combattants ennemis Démons et Morts-vivants tant qu'ils sont engagés avec au moins un combattant équipé de cet objet."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Lanterne/Torche" }
+    },
+    {
+      "id": "wooden-stakes", "name": { "en": "Wooden Stakes", "fr": "Pieux en bois" }, "kind": "item", "cost": 5, "purchasable": true,
+      "profile": null, "traits": [], "armourValue": null, "itemKeywords": [], "rarity": 1, "requires": null, "restrictions": [], "grantsAttack": null,
+      "text": {
+        "en": "Once per battle, while this fighter is engaged in melee with a Undead or Demon fighter that is bloodied, it can use the following bonus action.\nDrive the Stake [Bonus Action]: Pick an enemy Demon or Undead fighter this fighter is engaged in melee with, that is bloodied, to be the target. Roll a dice. On a 2+ the target is immediately taken down. In the aftermath of battle, this fighter earns 10 bonus experience.",
+        "fr": "Une fois par bataille, tant que ce combattant est engagé au corps à corps avec un combattant Mort-vivant ou Démon qui est ensanglanté, il peut utiliser l'action bonus suivante.\nPlanter le pieu [Action bonus] : choisissez comme cible un combattant ennemi Démon ou Mort-vivant avec lequel ce combattant est engagé au corps à corps et qui est ensanglanté. Lancez un dé. Sur 2+, la cible est immédiatement mise hors de combat. Lors de la séquence d'après-bataille, ce combattant gagne 10 d'expérience bonus."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Pieux en bois" }
+    }
+  ],
+
+  "armouryLists": [
+    {
+      "id": "main",
+      "name": { "en": "Main List", "fr": "Liste principale" },
+      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Liste principale" },
+      "entries": [
+        { "wargearId": "axe", "cost": 16 },
+        { "wargearId": "club-mace-hammer", "cost": 14 },
+        { "wargearId": "dagger", "cost": 10 },
+        { "wargearId": "flail", "cost": 14 },
+        { "wargearId": "halberd", "cost": 34 },
+        { "wargearId": "heavy-axe", "cost": 40 },
+        { "wargearId": "spear", "cost": 16 },
+        { "wargearId": "sword", "cost": 18 },
+        { "wargearId": "warhammer", "cost": 38 },
+        { "wargearId": "zweihander", "cost": 42 },
+        { "wargearId": "blackpowder-pistol", "cost": 18 },
+        { "wargearId": "blackpowder-rifle", "cost": 22 },
+        { "wargearId": "blunderbuss", "cost": 15 },
+        { "wargearId": "crossbow", "cost": 26 },
+        { "wargearId": "hand-crossbow", "cost": 16 },
+        { "wargearId": "long-bow", "cost": 28 },
+        { "wargearId": "short-bow", "cost": 18 },
+        { "wargearId": "cuirass", "cost": 20 },
+        { "wargearId": "grappling-hook", "cost": 5 },
+        { "wargearId": "shield", "cost": 10 }
+      ]
+    },
+    {
+      "id": "munitions",
+      "name": { "en": "Munitions List", "fr": "Liste d'armement" },
+      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Liste d'armement" },
+      "entries": [
+        { "wargearId": "arbalest", "cost": 96 },
+        { "wargearId": "flamethrower", "cost": 88 },
+        { "wargearId": "fire-bombs", "cost": 37 },
+        { "wargearId": "volley-rifle", "cost": 75 },
+        { "wargearId": "bomb-bolt", "cost": 25 }
+      ]
+    },
+    {
+      "id": "champion",
+      "name": { "en": "Champion List", "fr": "Liste des Champions" },
+      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Liste des Champions" },
+      "entries": [
+        { "wargearId": "brace-of-pistols", "cost": 32 },
+        { "wargearId": "long-rifle", "cost": 90 },
+        { "wargearId": "repeater-pistol", "cost": 35 },
+        { "wargearId": "full-plate", "cost": 40 },
+        { "wargearId": "guild-banner", "cost": 25 },
+        { "wargearId": "loyal-companion", "cost": 20 }
+      ]
+    },
+    {
+      "id": "ogre",
+      "name": { "en": "Ogre List", "fr": "Liste des Ogres" },
+      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Liste des Ogres" },
+      "entries": [
+        { "wargearId": "ogre-blade", "cost": 36 },
+        { "wargearId": "ogre-great-weapon", "cost": 50 },
+        { "wargearId": "ogre-mace", "cost": 38 },
+        { "wargearId": "arbalest", "cost": 96 },
+        { "wargearId": "ogre-cannon", "cost": 105 },
+        { "wargearId": "ogre-pistol", "cost": 30 },
+        { "wargearId": "ogre-armour", "cost": 30 },
+        { "wargearId": "shield", "cost": 10 }
+      ]
+    },
+    {
+      "id": "cleric",
+      "name": { "en": "Cleric List", "fr": "Liste des Clerics" },
+      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Liste des Clerics" },
+      "entries": [
+        { "wargearId": "arcane-staff", "cost": 10 },
+        { "wargearId": "club-mace-hammer", "cost": 14 },
+        { "wargearId": "warhammer", "cost": 38 },
+        { "wargearId": "cuirass", "cost": 20 },
+        { "wargearId": "full-plate", "cost": 40 },
+        { "wargearId": "warded-robes", "cost": 10 },
+        { "wargearId": "grimoire", "cost": 15 },
+        { "wargearId": "shield", "cost": 10 },
+        { "wargearId": "wooden-stakes", "cost": 5 }
+      ]
+    },
+    {
+      "id": "witch-hunter",
+      "name": { "en": "Witch Hunters List", "fr": "Liste des Witch Hunters" },
+      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Liste des Witch Hunters" },
+      "entries": [
+        { "wargearId": "lantern-torch", "cost": 4 },
+        { "wargearId": "wooden-stakes", "cost": 5 }
+      ]
+    },
+    {
+      "id": "wizard",
+      "name": { "en": "Wizard List", "fr": "Liste des Sorciers" },
+      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Liste des Sorciers" },
+      "entries": [
+        { "wargearId": "arcane-staff", "cost": 10 },
+        { "wargearId": "ensorcelled-weapon", "cost": 26 },
+        { "wargearId": "sword", "cost": 18 },
+        { "wargearId": "warded-robes", "cost": 10 },
+        { "wargearId": "grimoire", "cost": 15 }
+      ]
+    }
+  ],
+
+  "skillTables": [
+    {
+      "id": "old-dogs",
+      "name": { "en": "Old Dogs", "fr": "Vieux briscards" },
+      "eligibility": { "kind": "keywords", "anyOf": [["mercenary", "leader"], ["mercenary", "champion"]] },
+      "eligibilityLabel": { "en": "Mercenary Leaders and Champions only", "fr": "Chefs et Champions Mercenary uniquement" },
+      "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Vieux briscards" },
+      "skills": [
+        {
+          "id": "rallying-cry",
+          "name": { "en": "Rallying Cry", "fr": "Cri de ralliement" },
+          "text": {
+            "en": "Once per battle, this fighter can use the following bonus action.\nRallying Cry [Bonus Action]: This fighter heals 1 damage. In addition, at the end of the round, if this fighter is still on the battlefield, the commanding player does not need to take a Flee test for their warband.",
+            "fr": "Une fois par bataille, ce combattant peut utiliser l'action bonus suivante.\nCri de ralliement [Action bonus] : ce combattant est soigné de 1 dégât. De plus, à la fin du round, si ce combattant est toujours sur le champ de bataille, le joueur qui contrôle le combattant n'a pas besoin d'effectuer de test de déroute pour sa bande."
+          },
+          "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Cri de ralliement" }
+        },
+        {
+          "id": "point-blank-shot",
+          "name": { "en": "Point Blank Shot", "fr": "Tir à bout portant" },
+          "text": {
+            "en": "While this fighter is engaged in melee, they can attempt to make Ranged Attack action. To do so, they take an Initiative test. If passed they can make a Ranged Attack action but cannot use a Heavy weapon. The Ranged Attack action must target a fighter they are engaged in melee with. If failed, the action immediately ends.",
+            "fr": "Tant que ce combattant est engagé au corps à corps, il peut tenter d'effectuer une action d'Attaque à distance. Pour cela, il effectue un test d'Initiative. S'il le réussit, il peut effectuer une action d'Attaque à distance, mais ne peut pas utiliser une arme qui a le trait d'arme Lourd. L'action d'Attaque à distance doit cibler un combattant avec lequel il est engagé au corps à corps. S'il le rate, l'action prend fin immédiatement."
+          },
+          "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Tir à bout portant" }
+        },
+        {
+          "id": "crackshot",
+          "name": { "en": "Crackshot", "fr": "Fine gâchette" },
+          "text": {
+            "en": "When making a ranged attack action, this fighter scores a critical hit on a natural roll of a 5 or a 6.",
+            "fr": "Quand il effectue une action d'Attaque à distance, ce combattant obtient une touche critique sur un jet naturel de 5 ou de 6."
+          },
+          "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Fine gâchette" }
+        },
+        {
+          "id": "feint",
+          "name": { "en": "Feint", "fr": "Feinte" },
+          "text": {
+            "en": "Once per melee attack action, after an enemy has successfully parried one of this fighter's hits, this fighter can attempt a feint. To do so, roll a dice. If the roll equals or exceeds the parry roll, the hit is not parried and it becomes a critical hit.",
+            "fr": "Une fois par action d'Attaque au corps à corps, après qu'un ennemi a paré avec succès l'une des touches de ce combattant, ce combattant peut tenter une feinte. Pour cela, lancez un dé. Si le résultat est égal ou supérieur au jet de parade, la touche n'est pas parée et elle devient une touche critique."
+          },
+          "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Feinte" }
+        },
+        {
+          "id": "explorers-instincts",
+          "name": { "en": "Explorer's Instincts", "fr": "Instinct d'explorateur" },
+          "text": {
+            "en": "If this fighter is picked to lead a search party, you can re-roll one of the dice in the exploration roll (either the 'tens' or the 'units').",
+            "fr": "Si ce combattant est choisi pour mener un groupe de fouille, vous pouvez relancer l'un des dés du jet d'exploration (soit les \"dizaines\", soit les \"unités\")."
+          },
+          "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Instinct d'explorateur" }
+        },
+        {
+          "id": "right-on-time",
+          "name": { "en": "Right On Time", "fr": "Pile à l'heure" },
+          "text": {
+            "en": "You can re-roll reinforcement rolls made for a battle group that includes this fighter.",
+            "fr": "Vous pouvez relancer les jets de renforts effectués pour un groupe de combat qui comprend ce combattant."
+          },
+          "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Pile à l'heure" }
+        }
+      ]
+    },
+    {
+      "id": "soldiers-cunning",
+      "name": { "en": "Soldier's Cunning", "fr": "Ruse de soldat" },
+      "eligibility": { "kind": "keywords", "anyOf": [["mercenary"]] },
+      "eligibilityLabel": { "en": "Any Mercenary", "fr": "N'importe quel Mercenary" },
+      "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > Ruse de soldat" },
+      "skills": [
+        {
+          "id": "blackpowder-specialist",
+          "name": { "en": "Blackpowder Specialist", "fr": "Spécialiste de la poudre noire" },
+          "text": {
+            "en": "You can re-roll misfire rolls made for this fighter.",
+            "fr": "Vous pouvez relancer les jets d'incident de tir effectués pour ce combattant."
+          },
+          "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > Spécialiste de la poudre noire" }
+        },
+        {
+          "id": "shield-expert",
+          "name": { "en": "Shield Expert", "fr": "Expert du bouclier" },
+          "text": {
+            "en": "If this fighter is equipped with a shield, improve their Armour value by an additional 1 (to a maximum of 2+), while they are the defending fighter and the attacking fighter made a Charge move this activation.",
+            "fr": "Si ce combattant est équipé d'un bouclier, améliorez sa valeur d'Armure de 1 supplémentaire (jusqu'à un maximum de 2+), tant qu'il est le défenseur et que l'attaquant a effectué une Charge pendant cette activation."
+          },
+          "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > Expert du bouclier" }
+        },
+        {
+          "id": "marksman",
+          "name": { "en": "Marksman", "fr": "Tireur d'élite" },
+          "text": {
+            "en": "Add 3\" to the Range value of this fighter's ranged weapons (excluding those with the Flame weapon trait).",
+            "fr": "Ajoutez 3\" à la valeur de Portée des armes à distance de ce combattant, à l'exception de celles qui ont le trait d'arme Flamme."
+          },
+          "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > Tireur d'élite" }
+        },
+        {
+          "id": "fight-till-the-end",
+          "name": { "en": "Fight Till the End", "fr": "Se battre jusqu'au bout" },
+          "text": {
+            "en": "While this fighter is bloodied, add 1 to the Damage and Critical Damage value of their melee weapons.",
+            "fr": "Tant que ce combattant est ensanglanté, ajoutez 1 à la valeur de Dégâts et de Dégâts critiques de ses armes de corps à corps."
+          },
+          "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > Se battre jusqu'au bout" }
+        },
+        {
+          "id": "blessed-by-the-saints",
+          "name": { "en": "Blessed by the Saints", "fr": "Béni des Saints" },
+          "text": {
+            "en": "Each round, the first time this fighter is hit by an attack that is a critical hit, the hit is not a critical hit.",
+            "fr": "À chaque round, la première fois que ce combattant est touché par une attaque qui est une touche critique, la touche n'est pas une touche critique."
+          },
+          "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > Béni des Saints" }
+        },
+        {
+          "id": "stand-ground",
+          "name": { "en": "Stand Ground", "fr": "Tenir bon" },
+          "text": {
+            "en": "Once per battle, at the start of a melee attack action in which this fighter is the defending fighter and the attacking fighter charged in the same activation, this fighter can attempt to stand their ground. If they do so, their melee weapons gain the Brace and Bludgeon weapon traits until the end of the activation.",
+            "fr": "Une fois par bataille, au début d'une action d'Attaque au corps à corps dans laquelle ce combattant est le défenseur et où l'attaquant a chargé pendant la même activation, ce combattant peut tenter de tenir bon. Dans ce cas, ses armes de corps à corps gagnent les traits d'armes Contre-charge et Contondant jusqu'à la fin de l'activation."
+          },
+          "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > Tenir bon" }
+        }
+      ]
+    }
+  ],
+
+  "spellLores": [
+    {
+      "id": "lore-of-sanctioned-magic",
+      "name": { "en": "Lore of Sanctioned Magic", "fr": "Domaine de la Magie autorisée" },
+      "die": "d6",
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Domaine de la Magie autorisée" },
+      "spells": [
+        {
+          "id": "arcane-missile", "roll": 1,
+          "name": { "en": "Arcane Missile", "fr": "Projectile arcanique" },
+          "spellType": "attack", "castingValue": 7, "criticalCastValue": 10,
+          "text": {
+            "en": "Pick the closest visible enemy fighter within 15\" of the caster to be the target. That fighter is hit with the following attack.",
+            "fr": "Choisissez comme cible le combattant ennemi visible le plus proche à 15\" ou moins du lanceur. Ce combattant est touché par l'attaque suivante."
+          },
+          "criticalText": { "en": "Add 1 to the Damage value.", "fr": "Ajoutez 1 à la valeur de Dégâts." },
+          "attack": { "rend": -1, "damage": "d3" },
+          "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > 1 - Projectile arcanique" }
+        },
+        {
+          "id": "flaming-weapon", "roll": 2,
+          "name": { "en": "Flaming Weapon", "fr": "Arme enflammée" },
+          "spellType": "enchant", "castingValue": 7, "criticalCastValue": 10,
+          "text": {
+            "en": "Pick a visible friendly fighter within 6\" of the caster to be the target, then pick 1 of the target's melee weapons to be ignited until the end of the round. While a weapon is ignited:\n- It gains the Arcane Weapon Trait.\n- Improve its Rend characteristic by 1.",
+            "fr": "Choisissez comme cible un combattant allié visible à 6\" ou moins du lanceur, puis choisissez 1 des armes de corps à corps de la cible : elle est enflammée jusqu'à la fin du round. Tant qu'une arme est enflammée :\n- Elle gagne le trait d'arme Arcanique.\n- Améliorez de 1 sa caractéristique de Perforation."
+          },
+          "criticalText": { "en": "Increase the range of the spell from 6\" to 12\".", "fr": "Augmentez la portée du sort de 6\" à 12\"." },
+          "attack": null,
+          "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > 2 - Arme enflammée" }
+        },
+        {
+          "id": "eldritch-barrier", "roll": 3,
+          "name": { "en": "Eldritch Barrier", "fr": "Barrière occulte" },
+          "spellType": "cantrip", "castingValue": 7, "criticalCastValue": 10,
+          "text": {
+            "en": "Pick 2 visible points on a platform or the battlefield floor, each within 9\" of the caster, 6\" of each other and the same elevation. A barrier is drawn between these two points. The barrier remains in play until the end of the round or the caster is taken down. While the barrier is in play:\n- Subtract 1 from attack rolls for ranged attacks made that cross the barrier.\n- Fighters that are activated in the barrier or move across the barrier suffer d3 damage.",
+            "fr": "Choisissez 2 points visibles sur une plateforme ou sur le sol du champ de bataille, chacun à 9\" ou moins du lanceur, à 6\" ou moins l'un de l'autre et à la même hauteur. Une barrière est tracée entre ces deux points. La barrière reste en jeu jusqu'à la fin du round ou jusqu'à ce que le lanceur soit mis hors de combat. Tant que la barrière est en jeu :\n- Soustrayez 1 aux jets d'attaque des attaques à distance qui traversent la barrière.\n- Les combattants qui sont activés dans la barrière ou qui se déplacent à travers la barrière subissent D3 dégâts."
+          },
+          "criticalText": { "en": "The 2 points can be set up within 9\" of each other instead of 6\".", "fr": "Les 2 points peuvent être placés à 9\" ou moins l'un de l'autre, à la place de 6\"." },
+          "attack": null,
+          "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > 3 - Barrière occulte" }
+        },
+        {
+          "id": "silence", "roll": 4,
+          "name": { "en": "Silence", "fr": "Silence" },
+          "spellType": "hex", "castingValue": 7, "criticalCastValue": 10,
+          "text": {
+            "en": "Pick a visible enemy Wizard or Priest within 12\" to be the target. Until the end of the round, that fighter cannot make arcane actions.",
+            "fr": "Choisissez comme cible un Sorcier ou un Prêtre ennemi visible à 12\" ou moins. Jusqu'à la fin du round, ce combattant ne peut pas effectuer d'actions Arcaniques."
+          },
+          "criticalText": { "en": "Increase the range from 12\" to 18\".", "fr": "Augmentez la portée de 12\" à 18\"." },
+          "attack": null,
+          "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > 4 - Silence" }
+        },
+        {
+          "id": "torrent-of-fire", "roll": 5,
+          "name": { "en": "Torrent of Fire", "fr": "Torrent de feu" },
+          "spellType": "attack", "castingValue": 8, "criticalCastValue": 12,
+          "text": {
+            "en": "Place the flame template. Each fighter in its area is targeted and hit with the following attack.",
+            "fr": "Placez le gabarit de flamme. Chaque combattant situé dans sa zone est ciblé et touché par l'attaque suivante."
+          },
+          "criticalText": { "en": "The Rend value is -2.", "fr": "La valeur de Perforation est de -2." },
+          "attack": { "rend": -1, "damage": "d3+1" },
+          "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > 5 - Torrent de feu" }
+        },
+        {
+          "id": "umbral-vortex", "roll": 6,
+          "name": { "en": "Umbral Vortex", "fr": "Vortex d'ombre" },
+          "spellType": "attack", "castingValue": 9, "criticalCastValue": 13,
+          "text": {
+            "en": "Place the blast template centred on a visible point within 15\" of the caster, it then scatters d6\". Each fighter in its area is hit with the following attack. After the attacks have been resolved, the blast template remains where it is. It represents a vortex that remains in play until the end of the round. Line of sight cannot be drawn across the vortex for fighters on the same elevation. In addition, fighters who start their activation within the vortex, or move across it, are hit with the same attack. At the end of the round, remove the vortex.",
+            "fr": "Placez le gabarit d'explosion centré sur un point visible à 15\" ou moins du lanceur ; il dévie ensuite de D6\". Chaque combattant situé dans sa zone est touché par l'attaque suivante. Une fois les attaques résolues, le gabarit d'explosion reste là où il se trouve. Il représente un vortex qui reste en jeu jusqu'à la fin du round. Aucune ligne de vue ne peut être tracée à travers le vortex pour les combattants situés à la même hauteur. De plus, les combattants qui commencent leur activation dans le vortex, ou qui se déplacent à travers lui, sont touchés par la même attaque. À la fin du round, retirez le vortex."
+          },
+          "criticalText": { "en": "It does not scatter.", "fr": "Il ne dévie pas." },
+          "attack": { "rend": -1, "damage": "d3+1" },
+          "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > 6 - Vortex d'ombre" }
+        }
+      ]
+    },
+    {
+      "id": "lore-of-the-saints",
+      "name": { "en": "Lore of the Saints", "fr": "Domaine des Saints" },
+      "die": "d6",
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Domaine des Saints" },
+      "spells": [
+        {
+          "id": "healing-essence", "roll": 1,
+          "name": { "en": "Healing Essence", "fr": "Essence curative" },
+          "spellType": "healing", "castingValue": 6, "criticalCastValue": 10,
+          "text": {
+            "en": "Pick a visible friendly fighter within 15\" of the caster to be the target. Heal d3 life points to the target.",
+            "fr": "Choisissez comme cible un combattant allié visible à 15\" ou moins du lanceur. La cible est soignée de D3 points de vie."
+          },
+          "criticalText": { "en": "Heal 3 life points instead of d3.", "fr": "La cible est soignée de 3 points de vie à la place de D3." },
+          "attack": null,
+          "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > 1 - Essence curative" }
+        },
+        {
+          "id": "bless-thy-blade", "roll": 2,
+          "name": { "en": "Bless Thy Blade", "fr": "Bénédiction des lames" },
+          "spellType": "enchant", "castingValue": 7, "criticalCastValue": 10,
+          "text": {
+            "en": "Pick a visible friendly fighter within 9\" of the caster to have blessed blades until the end of the round. While a fighter has blessed blades, add 1 to hit rolls for melee attacks made by them.",
+            "fr": "Choisissez un combattant allié visible à 9\" ou moins du lanceur : il a des lames bénies jusqu'à la fin du round. Tant qu'un combattant a des lames bénies, ajoutez 1 aux jets pour toucher des attaques au corps à corps qu'il effectue."
+          },
+          "criticalText": { "en": "If critically cast, up to 2 friendly fighters can be picked instead of 1.", "fr": "Si le sort est lancé de façon critique, jusqu'à 2 combattants alliés peuvent être choisis à la place de 1." },
+          "attack": null,
+          "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > 2 - Bénédiction des lames" }
+        },
+        {
+          "id": "godspeed", "roll": 3,
+          "name": { "en": "Godspeed", "fr": "Célérité divine" },
+          "spellType": "aura", "castingValue": 6, "criticalCastValue": 10,
+          "text": {
+            "en": "Until the end of the round, the caster has a 9\" aura of godspeed. Friendly fighters who begin a move while they are within the aura add 1\" to the maximum distance they can move.",
+            "fr": "Jusqu'à la fin du round, le lanceur a une aura de célérité divine de 9\". Les combattants alliés qui commencent un Mouvement alors qu'ils sont dans l'aura ajoutent 1\" à la distance maximale dont ils peuvent se déplacer."
+          },
+          "criticalText": { "en": "Increase the range of the aura from 9\" to 12\".", "fr": "Augmentez la portée de l'aura de 9\" à 12\"." },
+          "attack": null,
+          "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > 3 - Célérité divine" }
+        },
+        {
+          "id": "will-of-the-saints", "roll": 4,
+          "name": { "en": "Will of The Saints", "fr": "Volonté des Saints" },
+          "spellType": "enchant", "castingValue": 7, "criticalCastValue": 10,
+          "text": {
+            "en": "Pick a visible friendly fighter within 15\" of the caster. That fighter has the Will of the Saints until the end of the round. While a fighter has the Will of the Saints, improve their Armour value by 1, to a maximum of 2+. (For example, 6+ becomes 5+).",
+            "fr": "Choisissez un combattant allié visible à 15\" ou moins du lanceur. Ce combattant a la Volonté des Saints jusqu'à la fin du round. Tant qu'un combattant a la Volonté des Saints, améliorez de 1 sa valeur d'Armure, jusqu'à un maximum de 2+. (Par exemple, 6+ devient 5+)."
+          },
+          "criticalText": { "en": "If critically cast, up to 2 friendly fighters can be picked instead of 1.", "fr": "Si le sort est lancé de façon critique, jusqu'à 2 combattants alliés peuvent être choisis à la place de 1." },
+          "attack": null,
+          "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > 4 - Volonté des Saints" }
+        },
+        {
+          "id": "holy-strength", "roll": 5,
+          "name": { "en": "Holy Strength", "fr": "Force sacrée" },
+          "spellType": "aura", "castingValue": 7, "criticalCastValue": 10,
+          "text": {
+            "en": "Until the end of the round, the caster has a 6\" aura of holy strength. Add 1 to the Critical Damage values of melee weapons used by friendly fighters while they are within the aura.",
+            "fr": "Jusqu'à la fin du round, le lanceur a une aura de force sacrée de 6\". Ajoutez 1 aux valeurs de Dégâts critiques des armes de corps à corps utilisées par les combattants alliés tant qu'ils sont dans l'aura."
+          },
+          "criticalText": { "en": "Increase the range of the aura from 6\" to 9\".", "fr": "Augmentez la portée de l'aura de 6\" à 9\"." },
+          "attack": null,
+          "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > 5 - Force sacrée" }
+        },
+        {
+          "id": "consecrated-ground", "roll": 6,
+          "name": { "en": "Consecrated Ground", "fr": "Terre consacrée" },
+          "spellType": "aura", "castingValue": 8, "criticalCastValue": 12,
+          "text": {
+            "en": "Pick a visible point on the battlefield floor within 12\" of the caster. While a friendly fighter is within 3\" of that point, their armour value is improved by 1. The spell remains in play. While this spell is in play, the caster must pass a Willpower test at the start of their activation, else the spell ends. If they attempt to cast this spell again while it is still in play, the first instance of it ends (even if they fail to cast it again). If the caster is taken down, the spell ends.",
+            "fr": "Choisissez un point visible sur le sol du champ de bataille à 12\" ou moins du lanceur. Tant qu'un combattant allié est à 3\" ou moins de ce point, sa valeur d'Armure est améliorée de 1. Le sort reste en jeu. Tant que ce sort est en jeu, le lanceur doit réussir un test de Volonté au début de son activation, sans quoi le sort prend fin. S'il tente de lancer de nouveau ce sort alors qu'il est encore en jeu, la première occurrence du sort prend fin, même s'il rate ce nouveau lancement. Si le lanceur est mis hors de combat, le sort prend fin."
+          },
+          "criticalText": {
+            "en": "While the spell is in play, friendly fighters are affected while they are within 6\" of that point, instead of 3\".",
+            "fr": "Tant que le sort est en jeu, les combattants alliés sont affectés tant qu'ils sont à 6\" ou moins de ce point, à la place de 3\"."
+          },
+          "attack": null,
+          "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > 6 - Terre consacrée" }
+        }
+      ]
+    }
+  ]
+}
