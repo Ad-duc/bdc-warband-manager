@@ -26,9 +26,6 @@ version is given separately (playtest v1.03).
 
 ### Changed
 
-- Factions listed one per row in the first wizard step; long descriptions are
-  cut to three lines with a "Read more" toggle, as are the origin flavour
-  texts of the second step.
 - Data scripts read the translation from `sources/fr/` by default; the CI now
   runs `check:generated` and compares the data with the translation.
 
@@ -73,6 +70,9 @@ First complete release, built on the Black Death City playtest v1.03.
 - Screens, game data and validation schemas are loaded on demand; a static
   header is painted before the JavaScript runs.
 - `npm run check:i18n` also reports unused interface strings.
+- Factions listed one per row in the first wizard step; long descriptions are
+  cut to three lines with a "Read more" toggle, as are the origin flavour
+  texts of the second step and the long special rules of the fighter scrolls.
 
 [Unreleased]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/Ad-duc/bdc-warband-manager/releases/tag/v1.0.0

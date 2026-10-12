@@ -3,7 +3,8 @@
  * Role:        First two wizard steps (French interface): one faction per
  *              row, long faction descriptions and origin flavour texts cut to
  *              three lines with a "read more" toggle that does not select the
- *              card, short texts without toggle.
+ *              card, short texts without toggle; the same for the long special
+ *              rules of the fighter scrolls.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -56,4 +57,22 @@ test("origin flavour texts can be expanded", async ({ page }) => {
   // The rules lines of the card still select the origin.
   await page.getByText("Chef :").first().click();
   await expect(first).toBeChecked();
+});
+
+test("long special rules of a scroll can be expanded", async ({ page }) => {
+  await page.goto("./");
+  await page.getByRole("button", { name: "Nouvelle bande" }).click();
+  await page.getByRole("radio", { name: /Death Covens/ }).check();
+  await page.getByRole("button", { name: "Suivant" }).click();
+  await page.getByRole("radio").first().check();
+  await page.getByRole("button", { name: "Suivant" }).click();
+
+  for (const summary of await page.locator("summary").all()) await summary.click();
+  const toggle = page.getByRole("button", { name: "Lire la suite" }).first();
+  await expect(toggle).toBeVisible();
+  await toggle.click();
+  await expect(page.getByRole("button", { name: "Réduire" }).first()).toHaveAttribute(
+    "aria-expanded",
+    "true",
+  );
 });

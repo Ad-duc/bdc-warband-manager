@@ -5,7 +5,8 @@
  *              fighters with name (D66 random name), starting experience (roll,
  *              re-roll or manual entry), options bought at recruitment
  *              (Misbegotten mutations) and removal. Alternate forms (Lycanfell
- *              Beast) are shown inside the scroll of their base profile.
+ *              Beast) are shown inside the scroll of their base profile. Long
+ *              special rules are cut to three lines with a "read more" toggle.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -27,6 +28,7 @@ import {
 } from "../../rules/index.ts";
 import { gameData } from "../../data/index.ts";
 import { useFormatter } from "../../i18n/text.ts";
+import { ClampedText } from "../common/ClampedText.tsx";
 import { StatsTable } from "../common/StatsTable.tsx";
 import { Term } from "../common/Term.tsx";
 import { createFighter } from "../warbands/factory.ts";
@@ -251,13 +253,15 @@ function ScrollBody({ profile }: { profile: FighterProfile }) {
         </p>
       )}
       {profile.specialRules.map((r) => (
-        <p key={r.id} className="whitespace-pre-line">
-          <strong>
-            <Term text={r.name} />
-            {r.tag !== null && ` [${t(`scroll.tag.${r.tag}`)}]`}
-          </strong>{" "}
-          {f.text(r.text)}
-        </p>
+        <div key={r.id} className="flex flex-col">
+          <ClampedText className="whitespace-pre-line" watch={f.text(r.text)}>
+            <strong>
+              <Term text={r.name} />
+              {r.tag !== null && ` [${t(`scroll.tag.${r.tag}`)}]`}
+            </strong>{" "}
+            {f.text(r.text)}
+          </ClampedText>
+        </div>
       ))}
       {profile.options?.choices.map((o) => (
         <p key={o.id} className="pl-4">
