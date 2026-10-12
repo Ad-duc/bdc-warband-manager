@@ -35,6 +35,7 @@ export function fighter(profileId: string, overrides: Partial<WarbandFighter> = 
     wargearIds: [],
     skillIds: [],
     spellIds: [],
+    optionIds: [],
     experience: 0,
     startingExperienceRoll: null,
     recruitCostPaid: null,

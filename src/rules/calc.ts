@@ -12,6 +12,7 @@
 import type {
   AttackProfile,
   BattleLogEntry,
+  FighterOption,
   FighterProfile,
   StatKey,
   Stats,
@@ -47,17 +48,36 @@ export function fighterWargearCost(index: FactionIndex, fighter: WarbandFighter)
   return fighter.wargearIds.reduce((sum, id) => sum + wargearPrice(index, profile, id), 0);
 }
 
-/** Value of a fighter for the warband rating: profile cost + wargear (assumption A11). */
-export function fighterValue(index: FactionIndex, fighter: WarbandFighter): number {
-  const profile = index.fighters.get(fighter.profileId);
-  return (profile?.cost ?? 0) + fighterWargearCost(index, fighter);
+/** Options of the profile picked for this fighter (Misbegotten mutations); unknown ids are skipped. */
+export function fighterOptions(index: FactionIndex, fighter: WarbandFighter): FighterOption[] {
+  const choices = index.fighters.get(fighter.profileId)?.options?.choices ?? [];
+  return fighter.optionIds
+    .map((id) => choices.find((c) => c.id === id))
+    .filter((o): o is FighterOption => o !== undefined);
 }
 
-/** Silver actually spent on a fighter: price paid (Eager to Prove: 0) + wargear. */
+function optionsCost(index: FactionIndex, fighter: WarbandFighter): number {
+  return fighterOptions(index, fighter).reduce((s, o) => s + o.cost, 0);
+}
+
+/** Value of a fighter for the warband rating: profile cost + options + wargear (assumption A11). */
+export function fighterValue(index: FactionIndex, fighter: WarbandFighter): number {
+  const profile = index.fighters.get(fighter.profileId);
+  return (profile?.cost ?? 0) + optionsCost(index, fighter) + fighterWargearCost(index, fighter);
+}
+
+/** Silver actually spent on a fighter: price paid (Eager to Prove: 0) + options + wargear. */
 export function fighterSpent(index: FactionIndex, fighter: WarbandFighter): number {
   const profile = index.fighters.get(fighter.profileId);
   const recruit = fighter.recruitCostPaid ?? profile?.cost ?? 0;
-  return recruit + fighterWargearCost(index, fighter);
+  return recruit + optionsCost(index, fighter) + fighterWargearCost(index, fighter);
+}
+
+/** Keywords of the profile plus those granted by its options (Bat Wings: Fly). */
+export function fighterKeywords(index: FactionIndex, fighter: WarbandFighter): string[] {
+  const base = index.fighters.get(fighter.profileId)?.keywords ?? [];
+  const extra = fighterOptions(index, fighter).flatMap((o) => o.addKeywords);
+  return [...new Set([...base, ...extra])];
 }
 
 export function activeFighters(warband: Warband): WarbandFighter[] {
@@ -133,9 +153,15 @@ export function effectiveStats(index: FactionIndex, fighter: WarbandFighter): St
     .map((id) => index.wargear.get(id))
     .filter((w): w is Wargear => w !== undefined);
   const mods = totalModifiers(fighter);
+  // Options replace characteristics before any modifier (Wulfen Legs: Move 7").
+  const base: Stats = { ...profile.stats };
+  for (const o of fighterOptions(index, fighter)) {
+    if (o.statSet.mv !== undefined) base.mv = o.statSet.mv;
+    if (o.statSet.lf !== undefined) base.lf = o.statSet.lf;
+  }
   for (const w of gear) for (const key of STAT_KEYS) mods[key] += w.statModifiers[key] ?? 0;
 
-  let armour = profile.stats.ar;
+  let armour = base.ar;
   const worn = gear.find((w) => w.kind === "armour");
   if (worn !== undefined) armour = worn.armourValue;
   const improvement = gear.reduce((s, w) => s + w.armourImprovement, 0);
@@ -148,16 +174,13 @@ export function effectiveStats(index: FactionIndex, fighter: WarbandFighter): St
   };
 
   const stats: Stats = {
-    mv:
-      typeof profile.stats.mv === "number"
-        ? Math.max(0, profile.stats.mv + mods.mv)
-        : addToDice(profile.stats.mv, mods.mv),
-    bl: target(profile.stats.bl, mods.bl),
-    bw: target(profile.stats.bw, mods.bw),
+    mv: typeof base.mv === "number" ? Math.max(0, base.mv + mods.mv) : addToDice(base.mv, mods.mv),
+    bl: target(base.bl, mods.bl),
+    bw: target(base.bw, mods.bw),
     ar: target(armour, mods.ar - improvement),
-    in: Math.max(0, profile.stats.in + mods.in),
-    wl: Math.max(0, profile.stats.wl + mods.wl),
-    lf: Math.max(1, profile.stats.lf + mods.lf),
+    in: Math.max(0, base.in + mods.in),
+    wl: Math.max(0, base.wl + mods.wl),
+    lf: Math.max(1, base.lf + mods.lf),
   };
   return stats;
 }

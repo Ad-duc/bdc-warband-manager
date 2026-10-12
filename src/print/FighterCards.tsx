@@ -35,7 +35,8 @@ function Card({ fighter }: { fighter: PrintFighter | null }) {
             <span className="block truncate text-[6.5pt]">{fighter?.type ?? ""}</span>
           </div>
           <div className="mt-[0.8mm] ml-auto w-[22mm] border border-ink px-[1mm] text-[7pt]">
-            <strong>{t("print.cost")}</strong> {fighter === null ? "" : f.number(fighter.cost)}
+            <strong>{t("print.cost")}</strong>{" "}
+            {fighter === null || fighter.cost === null ? "" : f.number(fighter.cost)}
           </div>
         </div>
       </div>
@@ -99,7 +100,8 @@ function Card({ fighter }: { fighter: PrintFighter | null }) {
       <div className="mt-[1mm] flex items-center justify-between gap-[1mm] text-[7pt]">
         <BlackRot boxes={fighter?.blackRot ?? 0} />
         <span className="flex-1 border border-ink px-[1mm]">
-          <strong>{t("print.exp")}</strong> {fighter === null ? "" : f.number(fighter.experience)}
+          <strong>{t("print.exp")}</strong>{" "}
+          {fighter === null || fighter.experience === null ? "" : f.number(fighter.experience)}
         </span>
       </div>
     </article>

@@ -93,6 +93,12 @@ an error, so a typo cannot slip through.
 ### Origins and characteristics
 
 - `profileLimits` (optional, default `[]`): profile limits replaced by the origin (Sparkseer Coven: 0-2 Rolling-Contraption).
+- `uncappedFighterIds` (optional, default `[]`): profiles that do not count towards their category limit (The Hunt Descends: Dire Wolves).
+- Fighter `options` (optional, default `null`): `{ max, choices }` bought at recruitment; a choice has a `cost`, a `statSet` (Move, Life) and `addKeywords` (Misbegotten mutations).
+- Fighter `formOf` (optional, default `null`): alternate form of another profile, never recruited (Lycanfell Beast).
+- Skill `onlyCategories` (optional, default `[]`): categories allowed to pick the skill (Kingsguard: champion).
+- Keyword `gainsNoExperience` (optional, default `false`): fighters with it never gain experience (Thrall).
+- Spell types: `attack`, `enchant`, `cantrip`, `hex`, `healing`, `aura`, `summon`.
 - `stats.mv` is a number of inches or a dice expression rolled for each move (Rolling-Contraption: `"2d6"`).
 - A JSON value of `critDamage` left out is printed "-" (Blast weapons since v1.03).
 

@@ -12,7 +12,7 @@
 import { useId, useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { Warband, WarbandFighter } from "../../data/schema.ts";
-import type { FactionIndex } from "../../rules/index.ts";
+import { gainsNoExperience, type FactionIndex } from "../../rules/index.ts";
 import { useFormatter } from "../../i18n/text.ts";
 import { fighterLabel } from "../warbands/factory.ts";
 import { ConfirmDialog } from "../common/ConfirmDialog.tsx";
@@ -36,6 +36,11 @@ export function BattleLog({
   const [confirmUndo, setConfirmUndo] = useState(false);
   const formId = useId();
   const active = warband.fighters.filter((x) => x.status === "active");
+  // Thralls never gain experience (p. 96): their input stays disabled.
+  const noXp = (x: WarbandFighter): boolean => {
+    const p = index.fighters.get(x.profileId);
+    return p !== undefined && gainsNoExperience(index, p);
+  };
   const nameOf = (x: WarbandFighter) =>
     fighterLabel(x, index.fighters.get(x.profileId)?.name[f.lang] ?? x.profileId);
   const byId = new Map(warband.fighters.map((x) => [x.instanceId, x]));
@@ -186,6 +191,8 @@ export function BattleLog({
                         type="number"
                         inputMode="numeric"
                         className="field w-20"
+                        disabled={noXp(x)}
+                        title={noXp(x) ? t("campaign.fighter.noExperience") : undefined}
                         aria-label={t("campaign.battle.xpFor", { name: nameOf(x) })}
                         value={draft.experience[x.instanceId] ?? ""}
                         onChange={(e) => {

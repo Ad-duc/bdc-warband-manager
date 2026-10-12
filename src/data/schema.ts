@@ -103,6 +103,8 @@ export const KeywordSchema = z
     name: LocalizedTextSchema,
     /** category = fighter type, fighter = other fighter keyword, item = wargear keyword */
     kind: z.enum(["category", "fighter", "item"]),
+    /** Fighters with this keyword never gain experience (Thrall, p. 96). */
+    gainsNoExperience: z.boolean().default(false),
   })
   .strict();
 
@@ -142,6 +144,8 @@ export const SkillSchema = z
   .object({
     id: IdSchema,
     name: LocalizedTextSchema,
+    /** Extra limit of a single skill (Kingsguard: champions only). Empty: no limit. */
+    onlyCategories: z.array(CategorySchema).default([]),
     text: LocalizedTextSchema,
     sourceRef: SourceRefSchema,
   })
@@ -361,6 +365,25 @@ export type Stats = z.infer<typeof StatsSchema>;
 export const STAT_KEYS = ["mv", "bl", "bw", "ar", "in", "wl", "lf"] as const;
 export type StatKey = (typeof STAT_KEYS)[number];
 
+/** Option bought when the fighter is recruited (Misbegotten bloodline mutations). */
+export const FighterOptionSchema = z
+  .object({
+    id: IdSchema,
+    name: LocalizedTextSchema,
+    cost: z.number().int().min(0),
+    /** Characteristics replaced by the option (Wulfen Legs: Move 7). */
+    statSet: z
+      .object({ mv: z.number().int().min(0), lf: z.number().int().min(1) })
+      .partial()
+      .strict()
+      .default({}),
+    /** Keywords gained (Bat Wings: Fly). */
+    addKeywords: z.array(IdSchema).default([]),
+    text: LocalizedTextSchema,
+  })
+  .strict();
+export type FighterOption = z.infer<typeof FighterOptionSchema>;
+
 export const FighterProfileSchema = z
   .object({
     id: IdSchema,
@@ -392,6 +415,17 @@ export const FighterProfileSchema = z
       })
       .strict(),
     specialRules: z.array(RuleSchema),
+    /** Options picked at recruitment, at most `max` of them. */
+    options: z
+      .object({ max: z.number().int().positive(), choices: z.array(FighterOptionSchema).min(1) })
+      .strict()
+      .nullable()
+      .default(null),
+    /**
+     * Alternate form of another profile (Lycanfell Beast of the Lycanfell Noble):
+     * never recruited, printed after the fighter it belongs to.
+     */
+    formOf: IdSchema.nullable().default(null),
     wargearText: LocalizedTextSchema,
     quote: LocalizedTextSchema.nullable(),
     sourceRef: SourceRefSchema,
@@ -441,6 +475,8 @@ export const OriginSchema = z
           .strict(),
       )
       .default([]),
+    /** Profiles that do not count towards their category limit (Dire Wolves, The Hunt Descends). */
+    uncappedFighterIds: z.array(IdSchema).default([]),
     sourceRef: SourceRefSchema,
   })
   .strict();
@@ -451,7 +487,7 @@ export const SpellSchema = z
     id: IdSchema,
     roll: z.number().int().positive(),
     name: LocalizedTextSchema,
-    spellType: z.enum(["attack", "enchant", "cantrip", "hex", "healing", "aura"]),
+    spellType: z.enum(["attack", "enchant", "cantrip", "hex", "healing", "aura", "summon"]),
     castingValue: z.number().int().positive(),
     criticalCastValue: z.number().int().positive(),
     text: LocalizedTextSchema,
@@ -562,6 +598,8 @@ export const WarbandFighterSchema = z
     wargearIds: z.array(IdSchema),
     skillIds: z.array(IdSchema),
     spellIds: z.array(IdSchema),
+    /** Options of the profile bought at recruitment (Misbegotten mutations). */
+    optionIds: z.array(IdSchema).default([]),
     experience: z.number().int().min(0),
     startingExperienceRoll: ExperienceRollSchema.nullable(),
     /** Silver actually paid when it differs from the profile (eg. Eager to Prove: 0). */
@@ -745,6 +783,8 @@ export function checkFactionIntegrity(faction: FactionData, common: CommonData):
       problems.push(`Origin ${o.id}: unknown stronghold "${o.strongholdId}"`);
     for (const l of o.profileLimits)
       if (!fighterIds.has(l.fighterId)) problems.push(`Origin ${o.id}: unknown fighter "${l.fighterId}"`);
+    for (const id of o.uncappedFighterIds)
+      if (!fighterIds.has(id)) problems.push(`Origin ${o.id}: unknown fighter "${id}"`);
   }
 
   for (const s of faction.leaderSuccession) {
@@ -768,6 +808,11 @@ export function checkFactionIntegrity(faction: FactionData, common: CommonData):
       if (!skillIdSet.has(s)) problems.push(`Fighter ${f.id}: unknown fixed skill "${s}"`);
     for (const l of f.knownSpellLoreIds)
       if (!loreIds.has(l)) problems.push(`Fighter ${f.id}: unknown spell lore "${l}"`);
+    if (f.formOf !== null && !fighterIds.has(f.formOf))
+      problems.push(`Fighter ${f.id}: unknown base profile "${f.formOf}"`);
+    for (const o of f.options?.choices ?? [])
+      for (const k of o.addKeywords)
+        if (!keywordKeys.has(k)) problems.push(`Fighter ${f.id}: option ${o.id} has unknown keyword "${k}"`);
     const g = f.recruitmentGrants;
     if (g.spells > 0 && (g.spellLoreId === null || !f.knownSpellLoreIds.includes(g.spellLoreId)))
       problems.push(`Fighter ${f.id}: signature spells must come from a known lore`);

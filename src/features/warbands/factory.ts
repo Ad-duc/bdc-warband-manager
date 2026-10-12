@@ -58,6 +58,7 @@ export function createFighter(profile: FighterProfile, random: RandomSource = Ma
     wargearIds: [...profile.fixedWargearIds],
     skillIds: [...profile.recruitmentGrants.fixedSkillIds],
     spellIds: [],
+    optionIds: [],
     experience: roll.total,
     startingExperienceRoll: roll,
     recruitCostPaid: null,

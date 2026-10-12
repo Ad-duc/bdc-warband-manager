@@ -36,7 +36,8 @@ export function loadGameData(): GameData {
       if (problems.length > 0) throw new Error(`${path}: ${problems.join("; ")}`);
       return faction;
     })
-    .sort((a, b) => a.name.en.localeCompare(b.name.en));
+    // Book order (Guild Mercenaries first), from the page of each faction chapter.
+    .sort((a, b) => a.sourceRef.page - b.sourceRef.page);
 
   return { common, factions };
 }

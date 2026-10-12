@@ -90,3 +90,18 @@ export function profileLimit(profile: FighterProfile, origin: Origin | undefined
   const override = origin?.profileLimits.find((l) => l.fighterId === profile.id);
   return override?.limit ?? profile.limit;
 }
+
+/** True when fighters of this profile never gain experience (Thrall keyword, p. 96). */
+export function gainsNoExperience(index: FactionIndex, profile: FighterProfile): boolean {
+  return index.common.keywords.some((k) => k.gainsNoExperience && profile.keywords.includes(k.key));
+}
+
+/** True when the origin takes this profile out of its category limit (Dire Wolves). */
+export function isUncapped(profile: FighterProfile, origin: Origin | undefined): boolean {
+  return origin?.uncappedFighterIds.includes(profile.id) ?? false;
+}
+
+/** Alternate forms of a profile (Lycanfell Beast for the Lycanfell Noble). */
+export function formsOf(index: FactionIndex, profileId: string): FighterProfile[] {
+  return [...index.fighters.values()].filter((p) => p.formOf === profileId);
+}

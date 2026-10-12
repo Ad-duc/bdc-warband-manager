@@ -65,7 +65,8 @@
       "unknownFighter": "Unknown fighter profile \"{{profile}}\".",
       "unknownWargear": "Unknown wargear \"{{wargear}}\".",
       "unknownSkill": "Unknown skill \"{{skill}}\".",
-      "unknownSpell": "Unknown spell \"{{spell}}\"."
+      "unknownSpell": "Unknown spell \"{{spell}}\".",
+      "unknownOption": "Unknown option \"{{option}}\"."
     },
     "budget": {
       "exceeded": "{{spent}} silver spent: the budget is {{starting}} silver.",
@@ -78,7 +79,8 @@
       "promotedLeader": "{{profile}} cannot be promoted to lead this warband.",
       "categoryMax": "{{count}} {{category}}: {{max}} at most.",
       "categoryMin": "{{count}} {{category}}: at least {{min}} required.",
-      "profileLimit": "{{count}} {{profile}}: limited to 0-{{max}}."
+      "profileLimit": "{{count}} {{profile}}: limited to 0-{{max}}.",
+      "notRecruitable": "{{profile}} is not recruited: it is a form of {{expected}}."
     },
     "wargear": {
       "notAllowed": "{{wargear}} is not in the wargear lists of this fighter.",
@@ -103,7 +105,8 @@
       "exceeded": "{{count}} fighters equipped with {{wargear}}: Rare 0-{{max}} in the warband."
     },
     "fighter": {
-      "unarmed": "No melee weapon: this fighter will use the Unarmed Strike."
+      "unarmed": "No melee weapon: this fighter will use the Unarmed Strike.",
+      "optionCount": "{{count}} option(s) picked, {{max}} allowed."
     },
     "weapon": {
       "oneUse": "{{wargear}} can make only 1 attack per battle."
@@ -115,7 +118,8 @@
       "duplicate": "{{skill}} is already held by another fighter of the warband.",
       "notEligible": "This fighter cannot take skills from {{table}} ({{skill}}).",
       "fixedMissing": "This fighter starts with {{skill}}.",
-      "recruitmentCount": "{{actual}} skill(s) picked, the profile grants {{expected}} at recruitment."
+      "recruitmentCount": "{{actual}} skill(s) picked, the profile grants {{expected}} at recruitment.",
+      "categoryOnly": "{{skill}} can only be picked for {{category}}."
     },
     "spell": {
       "notKnownLore": "{{spell}} is not part of a lore known by this fighter.",
@@ -128,6 +132,9 @@
     },
     "origin": {
       "missing": "No origin chosen yet."
+    },
+    "experience": {
+      "notGained": "This fighter does not gain experience ({{experience}} entered)."
     }
   },
   "severity": {
@@ -139,7 +146,8 @@
     "cancel": "Cancel"
   },
   "units": {
-    "silver": "{{value}}s"
+    "silver": "{{value}}s",
+    "silverPlus": "+{{value}} silver"
   },
   "budget": {
     "spent": "Spent",
@@ -223,7 +231,8 @@
     "cantrip": "Cantrip Spell",
     "hex": "Hex Spell",
     "healing": "Healing Spell",
-    "aura": "Aura Spell"
+    "aura": "Aura Spell",
+    "summon": "Summon Spell"
   },
   "scroll": {
     "keywords": "Keywords:",
@@ -233,7 +242,8 @@
     "tag": {
       "action": "Action",
       "bonus-action": "Bonus Action"
-    }
+    },
+    "form": "Form: {{name}}"
   },
   "roster": {
     "name": "Name",
@@ -268,7 +278,8 @@
       "leader": "Leader:",
       "stronghold": "Stronghold:",
       "income": "income {{income}} silver",
-      "profileLimit": "Your warband can include 0-{{limit}} {{name}}."
+      "profileLimit": "Your warband can include 0-{{limit}} {{name}}.",
+      "uncapped": "{{name}} does not count towards the {{category}} limit."
     },
     "fighters": {
       "counters": "Warband composition",
@@ -294,7 +305,8 @@
         "manual": "entered"
       },
       "reroll": "Roll again",
-      "manualDie": "Die result"
+      "manualDie": "Die result",
+      "options": "Options ({{picked}}/{{max}})"
     },
     "wargear": {
       "pickFighter": "Fighter to equip",
@@ -314,7 +326,8 @@
       "fixed": "Already known: {{skills}}.",
       "takenBy": "held by {{name}}",
       "spells": "Signature spells, {{lore}}: {{picked}} of {{expected}}",
-      "casting": "{{type}}, casting value {{value}}+, critical {{critical}}+"
+      "casting": "{{type}}, casting value {{value}}+, critical {{critical}}+",
+      "categoryOnly": "{{category}} only"
     },
     "rating": {
       "caption": "Fighters and their value",
@@ -404,7 +417,8 @@
       "removeInjury": "Remove",
       "addInjury": "Add an injury",
       "advancements": "Advancements",
-      "history": "History ({{count}})"
+      "history": "History ({{count}})",
+      "noExperience": "Does not gain experience (Thrall)."
     },
     "battle": {
       "title": "Battle log",
@@ -499,7 +513,9 @@
       "spells": "Spells:",
       "injuries": "Injuries:",
       "promoted": "Promoted leader.",
-      "moreWeapons": "Other weapons:"
+      "moreWeapons": "Other weapons:",
+      "options": "Options:",
+      "formOf": "Form of {{name}}"
     }
   }
 }

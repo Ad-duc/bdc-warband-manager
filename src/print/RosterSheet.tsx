@@ -155,11 +155,15 @@ export function FighterBlock({ fighter }: { fighter: PrintFighter | null }) {
         <div className="flex flex-col gap-[2mm]">
           <div className="print-cell h-[11mm]">
             <strong>{t("print.cost")}</strong>
-            <p className="text-center text-[11pt]">{fighter === null ? "" : f.number(fighter.cost)}</p>
+            <p className="text-center text-[11pt]">
+              {fighter === null || fighter.cost === null ? "" : f.number(fighter.cost)}
+            </p>
           </div>
           <div className="print-cell h-[11mm]">
             <strong>{t("print.exp")}</strong>
-            <p className="text-center text-[11pt]">{fighter === null ? "" : f.number(fighter.experience)}</p>
+            <p className="text-center text-[11pt]">
+              {fighter === null || fighter.experience === null ? "" : f.number(fighter.experience)}
+            </p>
           </div>
         </div>
         <div className="print-cell h-[24mm] overflow-hidden">

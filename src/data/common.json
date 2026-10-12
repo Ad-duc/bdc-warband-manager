@@ -58,6 +58,14 @@
     { "key": "assassin", "kind": "fighter", "name": { "en": "Assassin", "fr": "Assassin" } },
     { "key": "contraption", "kind": "fighter", "name": { "en": "Contraption", "fr": "Engin" } },
     { "key": "rat", "kind": "fighter", "name": { "en": "Rat", "fr": "Rat" } },
+    { "key": "vampyre", "kind": "fighter", "name": { "en": "Vampyre", "fr": "Vampire" } },
+    { "key": "werwulf", "kind": "fighter", "name": { "en": "Werwulf", "fr": "Loup-garou" } },
+    { "key": "skeleton", "kind": "fighter", "name": { "en": "Skeleton", "fr": "Squelette" } },
+    { "key": "zombie", "kind": "fighter", "name": { "en": "Zombie", "fr": "Zombie" } },
+    { "key": "thrall", "kind": "fighter", "name": { "en": "Thrall", "fr": "Asservi" }, "gainsNoExperience": true },
+    { "key": "gargoyle", "kind": "fighter", "name": { "en": "Gargoyle", "fr": "Gargoyle" } },
+    { "key": "bat", "kind": "fighter", "name": { "en": "Bat", "fr": "Chauve-souris" } },
+    { "key": "fly", "kind": "fighter", "name": { "en": "Fly", "fr": "Vol" } },
     { "key": "held-item", "kind": "item", "name": { "en": "Held Item", "fr": "Objet tenu" } }
   ],
 

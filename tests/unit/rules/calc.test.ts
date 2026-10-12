@@ -41,7 +41,7 @@ describe("costs", () => {
 
   it("the cheapest list price wins when a list differs", () => {
     const d = cloneData();
-    const gm = d.factions[0];
+    const gm = d.factions.find((x) => x.id === "guild-mercenaries");
     const ogre = gm?.armouryLists.find((l) => l.id === "ogre");
     const entry = ogre?.entries.find((e) => e.wargearId === "shield");
     if (gm === undefined || entry === undefined) throw new Error("data");
@@ -128,7 +128,7 @@ describe("weapon lines", () => {
 
   it("a dice Attacks value is not reduced", () => {
     const d = cloneData();
-    const gm = d.factions[0];
+    const gm = d.factions.find((x) => x.id === "guild-mercenaries");
     const spear = gm?.wargear.find((w) => w.id === "spear");
     if (gm === undefined || spear?.profile === null || spear === undefined) throw new Error("data");
     spear.profile.attacks = "d3";

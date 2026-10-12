@@ -190,6 +190,53 @@ experience, in the battle log.
 p. 91 prints "Brute, Verminkin, Ogre": the Ogre keyword is kept. v1.03 removed
 Incredible Strength, so the keyword has no effect in the app.
 
+## Death Covens
+
+### A27 - Lycanfell Beast (settled)
+
+p. 106: the Lycanfell Beast has no cost and no starting experience; it replaces
+the Lycanfell Noble when he transforms. Code: profile with `formOf:
+"lycanfell-noble"`. It is not in the wizard catalogue (shown inside the
+Noble's scroll), recruiting it raises `composition.notRecruitable`, and the
+print view adds its block right after the Noble: its own characteristics and
+Wulfen Claws, none of the Noble's wargear, skills or injuries (Vestiges of the
+Noble), no cost and no experience.
+
+### A28 - Misbegotten bloodline mutations (settled)
+
+p. 108: at recruitment, 1 mutation at most, each with a silver cost. Code:
+profile `options` (max 1). The cost is paid from the 1000 silver and counts in
+the warband rating like the profile cost (A11). Wulfen Legs and Hulking Form
+replace Move and Life before any modifier; Bat Wings add the Fly keyword.
+
+### A29 - Thralls and experience (settled)
+
+p. 96: "Fighters with the Thrall keyword do not gain experience." Code: the
+Thrall keyword carries `gainsNoExperience`; the campaign experience fields of
+Thralls are disabled and a Thrall with experience raises
+`experience.notGained`. Their starting experience is 0 anyway.
+
+### A30 - Dire Wolves of The Hunt Descends (settled)
+
+p. 94: any number of Dire Wolves, not counted towards the Beasts limit. Code:
+origin `uncappedFighterIds`; they still count towards the 15 fighters limit,
+which the sentence does not lift.
+
+### A31 - Kingsguard (settled)
+
+p. 104: "This skill can only be picked for a Champion." Code: skill
+`onlyCategories: ["champion"]`, checked with the effective category, so a
+Champion promoted to lead the warband can no longer pick it.
+
+### A32 - Effects outside the roster (settled)
+
+Summoned Zombies and Skeletons, witchfire tokens, Immortal Slumber and
+Supernatural Healing (temporary Leader), the Skeleton & Thrall injury table,
+the free Zombie (Embalmer's Hall) and Dire Wolf (Grand Pavilion): kept as rule
+texts. A free recruit in campaign mode costs nothing to the stash anyway (A18).
+Full-plate keeps the Guild text as in A23; the Coven Armoury has no ranged
+weapon at all.
+
 ## Data decisions
 
 ### D01 - Number of Guild Mercenaries profiles (data)
@@ -210,7 +257,12 @@ the quotes ("a attack", "it's Rend" and "actionmust" are fixed in v1.03 itself).
 Verminkin: "equal or less than than" and "in the template it is hit" (Bomb
 Rat), "it's Rend" (Engineer), "doomed ." (Doom), missing final stops (Rickety
 Workshop origin, Tunnel from Below). The single "half" character of Shadow
-Lurker is written 1/2". "Torchlight/Lantern" is stored as "Lantern/Torch", the
+Lurker is written 1/2". Death Covens: "from of the forest", "This fighters
+melee weapons", "killed. You can", "the attacking fighters suffers", "Once per
+battle fighter can use", "3 witchfire token", "Improve" in mid-sentence and the
+final colon of Ethereal Armour, "castor's", "a stone talons", "a biting fangs
+bite", the comma before "(pg xx)" of the summon spells, and the long s of the
+quotes. "Torchlight/Lantern" is stored as "Lantern/Torch", the
 list spelling. "Chapter house" is stored as "Chapter House".
 
 ### D04 - Club/Mace/Hammer (data)
@@ -255,3 +307,9 @@ Rules that print a small Rend / Damage table in the middle of a text (Bomb
 Rat, Splat!) keep it as a sentence at the end of the text: "Rend -2, Damage
 d3" / "Perforation -2, Dégâts D3". Spells keep their table in the `attack`
 field, as for the Guild Mercenaries.
+
+### D10 - Faction order (data)
+
+Factions are listed in book order (Guild Mercenaries, Verminkin, Death Covens,
+The Blighted Cloister), from the page of each chapter, so a new warband starts
+on the Guild Mercenaries as before.

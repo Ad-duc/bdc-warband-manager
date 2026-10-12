@@ -1,0 +1,1964 @@
+{
+  "_header": {
+    "file": "src/data/death-covens.json",
+    "role": "Death Covens faction data: origins, strongholds, campaign rules, names, fighters, Coven Armoury, skills, spell lores",
+    "author": "Adrien Duclaud",
+    "created": "2026-10-12",
+    "license": "MIT for the file structure. Game content belongs to Sam Pearson (Black Death City)."
+  },
+  "schemaVersion": 1,
+  "id": "death-covens",
+  "name": { "en": "Death Covens", "fr": "Death Covens" },
+  "description": {
+    "en": "The City is a place of death. The Black Rot has left the population decimated, with bodies piled high in the streets or cast into mass graves. Their stench now permeates the very soil where it has taken on a dark will of its own.\nEach night, as the sun sinks beneath the western horizon and the moon rises in its stead, the long dead awaken from their slumber. Ancient barrows beyond the City's eastern limits stir once more, while the soil of the City's many cemeteries churns with the rising dead.\nSuch a forsaken place has become a haven for the creatures of the night. Vampyres, once forced to conceal their cursed lineage, now stalk the streets openly. Necromancers, exiled from the lands of Men for their blasphemous craft, find not only sanctuary within the City but an endless supply of corpses to swell their ranks.\nThen there are those drawn from the far north, nobles with the blood of wolves coursing through their veins. They come seeking the thrill of the hunt amidst the City's ruin, and will not rest until they have had their fill.",
+    "fr": "La Cité est un lieu de mort. La Pourriture noire a décimé la population, laissant des corps entassés dans les rues ou jetés dans des charniers. Leur puanteur imprègne désormais le sol lui-même, où elle a acquis une sombre volonté propre.\nChaque nuit, quand le soleil sombre sous l'horizon à l'ouest et que la lune se lève à sa place, les morts de longue date s'éveillent de leur sommeil. Des tumulus anciens, au-delà des limites orientales de la Cité, s'agitent de nouveau, tandis que la terre des nombreux cimetières de la Cité bouillonne sous la poussée des morts qui se relèvent.\nUn lieu aussi abandonné est devenu un havre pour les créatures de la nuit. Les vampires, autrefois contraints de dissimuler leur lignée maudite, arpentent désormais les rues ouvertement. Les nécromanciens, exilés des terres des Hommes pour leur art blasphématoire, trouvent dans la Cité non seulement un refuge, mais aussi une source inépuisable de cadavres pour grossir leurs rangs.\nIl y a enfin ceux qui viennent du Grand Nord, des nobles dans les veines desquels coule le sang des loups. Ils viennent chercher le frisson de la chasse au milieu des ruines de la Cité, et ne connaîtront pas le repos avant d'être rassasiés."
+  },
+  "armouryName": { "en": "Coven Armoury", "fr": "Armurerie du Coven" },
+  "sourceRef": { "page": 93, "md": "08_death-covens.md > Death Covens" },
+  "assets": { "shield": "bouclier_death.png", "accentColor": null },
+
+  "origins": [
+    {
+      "id": "aristocrats-of-blood",
+      "name": { "en": "Aristocrats of Blood", "fr": "Aristocrates du sang" },
+      "flavour": {
+        "en": "For centuries, this noble house concealed its vampyric curse behind titles and wealth. With the City's fall, there is no longer any need for pretence. Their masquerade has ended. Now the revelry begins.",
+        "fr": "Pendant des siècles, cette maison noble a dissimulé sa malédiction vampirique derrière les titres et la fortune. Avec l'effondrement de la Cité, plus besoin de faux-semblants. Sa mascarade a pris fin. À présent, les réjouissances commencent."
+      },
+      "requiredLeaderId": "bloodcursed-noble",
+      "strongholdId": "opulent-manor",
+      "specialRules": [],
+      "profileLimits": [{ "fighterId": "bloodcursed-knight", "limit": 3 }],
+      "uncappedFighterIds": [],
+      "sourceRef": { "page": 94, "md": "08_death-covens.md > Aristocrates du sang" }
+    },
+    {
+      "id": "rogue-necromancer",
+      "name": { "en": "Rogue Necromancer", "fr": "Nécromancien renégat" },
+      "flavour": {
+        "en": "Outlawed and relentlessly pursued by the Witch Hunters Guild, this powerful Necromancer has sought refuge within the City, where the recent dead provide an endless supply of \"specimens\".",
+        "fr": "Mis hors la loi et traqué sans relâche par la Guilde des chasseurs de sorcières, ce puissant Necromancer a cherché refuge dans la Cité, où les morts récents lui fournissent une source inépuisable de \"spécimens\"."
+      },
+      "requiredLeaderId": "necromancer",
+      "strongholdId": "embalmers-hall",
+      "specialRules": [],
+      "profileLimits": [],
+      "uncappedFighterIds": [],
+      "sourceRef": { "page": 94, "md": "08_death-covens.md > Nécromancien renégat" }
+    },
+    {
+      "id": "the-hunt-descends",
+      "name": { "en": "The Hunt Descends", "fr": "La chasse s'abat" },
+      "flavour": {
+        "en": "From the snow-capped peaks and dark forests of the north, word has reached an ancient aristocrat of fresh hunting grounds.",
+        "fr": "Depuis les cimes enneigées et les sombres forêts du nord, la nouvelle de terrains de chasse inexplorés est parvenue jusqu'à un aristocrate des temps anciens."
+      },
+      "requiredLeaderId": "lycanfell-noble",
+      "strongholdId": "grand-pavilion",
+      "specialRules": [],
+      "profileLimits": [],
+      "uncappedFighterIds": ["dire-wolf"],
+      "sourceRef": { "page": 94, "md": "08_death-covens.md > La chasse s'abat" }
+    },
+    {
+      "id": "awakened-lord",
+      "name": { "en": "Awakened Lord", "fr": "Seigneur éveillé" },
+      "flavour": {
+        "en": "The City's fall stirred this ancient lord from his long slumber. To his banner gather clansmen still bound by oaths sworn in life. He vows to reclaim his former domain.",
+        "fr": "L'effondrement de la Cité a tiré ce seigneur des temps anciens de son long sommeil. Sous sa bannière se rassemblent les hommes de son clan, encore liés par les serments prêtés de leur vivant. Il jure de reconquérir son ancien fief."
+      },
+      "requiredLeaderId": "barrow-lord",
+      "strongholdId": "ancient-barrows",
+      "specialRules": [],
+      "profileLimits": [],
+      "uncappedFighterIds": [],
+      "sourceRef": { "page": 94, "md": "08_death-covens.md > Seigneur éveillé" }
+    }
+  ],
+
+  "strongholds": [
+    {
+      "id": "opulent-manor",
+      "name": { "en": "Opulent Manor", "fr": "Manoir opulent" },
+      "flavour": {
+        "en": "Situated in the noble's district, this estate has seemingly survived the plague untouched. Behind its high walls can be seen the glimmer of firelight, and the sounds of decadent feasting.",
+        "fr": "Située dans le district des nobles, cette propriété semble avoir traversé la peste intacte. Derrière ses hautes enceintes, on aperçoit la lueur des feux et l'on entend les échos de festins décadents."
+      },
+      "income": "3d6x5",
+      "rules": [
+        {
+          "id": "banquet-of-blood",
+          "name": { "en": "Banquet of Blood", "fr": "Banquet de sang" },
+          "tag": null,
+          "text": {
+            "en": "In step 3 of the Aftermath sequence pick up to 3 friendly Vampyre fighters to sit at the table. Each of those fighters earns d6 bonus experience. If you won the battle, each of those fighters earns 2d6 bonus experience instead.",
+            "fr": "À l'étape 3 de la séquence d'après-bataille, choisissez jusqu'à 3 combattants alliés Vampires qui prendront place à table. Chacun de ces combattants gagne D6 d'expérience bonus. Si vous avez gagné la bataille, chacun de ces combattants gagne, à la place, 2D6 d'expérience bonus."
+          }
+        }
+      ],
+      "trackers": [],
+      "sourceRef": { "page": 95, "md": "08_death-covens.md > Manoir opulent" }
+    },
+    {
+      "id": "embalmers-hall",
+      "name": { "en": "Embalmer's Hall", "fr": "Salle de l'embaumeur" },
+      "flavour": {
+        "en": "Shelves laden with fragrant herbs, posies, and hardened pine resin fill the Embalmers' Hall with a sweet aroma. Beneath it lingers the unmistakable stench of corpses.",
+        "fr": "Des étagères chargées d'herbes odorantes, de bouquets et de résine de pin durcie emplissent la Salle de l'embaumeur d'un parfum sucré. En dessous flotte la puanteur des cadavres, reconnaissable entre toutes."
+      },
+      "income": "3d6x5",
+      "rules": [
+        {
+          "id": "necromantic-study",
+          "name": { "en": "Necromantic Study", "fr": "Étude nécromantique" },
+          "tag": null,
+          "text": {
+            "en": "In each Aftermath sequence, pick 1 of the following:\n- Read Forbidden Scrolls: In step 3, your Leader gains 5 bonus experience.\n- Create a Zombie: In step 6, roll a dice. On a 5+, your Leader has successfully created a Zombie from one of the hall's corpses. You can recruit a Zombie to your warband for 0 silver.",
+            "fr": "À chaque séquence d'après-bataille, choisissez 1 des options suivantes :\n- Lire les parchemins interdits : à l'étape 3, votre Chef gagne 5 d'expérience bonus.\n- Créer un Zombie : à l'étape 6, lancez un dé. Sur 5+, votre Chef a réussi à créer un Zombie à partir de l'un des cadavres de la salle. Vous pouvez recruter un Zombie dans votre bande pour 0 pièce d'argent."
+          }
+        }
+      ],
+      "trackers": [],
+      "sourceRef": { "page": 95, "md": "08_death-covens.md > Salle de l'embaumeur" }
+    },
+    {
+      "id": "grand-pavilion",
+      "name": { "en": "Grand Pavilion", "fr": "Grand pavillon" },
+      "flavour": {
+        "en": "Hidden amongst the northern forests, the Lycanfell Noble's grand pavilion serves as the heart of his hunting court. Rich tapestries and grisly trophies adorn its walls, while iron braziers burn long into the night. Beyond the firelight, the howls of gathering wolves echo through the trees.",
+        "fr": "Dissimulé au cœur des forêts du nord, le grand pavillon du Lycanfell Noble est le centre de sa cour de chasse. De riches tapisseries et de sinistres trophées ornent ses parois, tandis que des braseros de fer brûlent jusque tard dans la nuit. Au-delà de la lueur des feux, les hurlements des loups qui se rassemblent résonnent entre les arbres."
+      },
+      "income": "3d6x5",
+      "rules": [
+        {
+          "id": "bestial-trophies",
+          "name": { "en": "Bestial Trophies", "fr": "Trophées de Bêtes" },
+          "tag": null,
+          "text": {
+            "en": "Each time a Beast that was taken down by your Leader is killed, your Leader earns 10 bonus experience.",
+            "fr": "Chaque fois qu'une Bête qui a été mise hors de combat par votre Chef est tuée, votre Chef gagne 10 d'expérience bonus."
+          }
+        },
+        {
+          "id": "a-howl-in-the-night",
+          "name": { "en": "A Howl in the Night", "fr": "Un hurlement dans la nuit" },
+          "tag": null,
+          "text": {
+            "en": "In step 6 of the Aftermath sequence, roll a dice. On a 6, a Dire Wolf emerges from the forest. You can recruit a Dire Wolf to your warband for 0 silver.",
+            "fr": "À l'étape 6 de la séquence d'après-bataille, lancez un dé. Sur 6, un Dire Wolf surgit de la forêt. Vous pouvez recruter un Dire Wolf dans votre bande pour 0 pièce d'argent."
+          }
+        }
+      ],
+      "trackers": [],
+      "sourceRef": { "page": 95, "md": "08_death-covens.md > Grand pavillon" }
+    },
+    {
+      "id": "ancient-barrows",
+      "name": { "en": "Ancient Barrows", "fr": "Tumulus anciens" },
+      "flavour": {
+        "en": "Set beneath the eastern hills on the City's outskirts, these ancient barrows have long stood silent. Now, rumours spread of the restless dead and an undead lord gathering his forgotten host, preparing to march upon the City once more.",
+        "fr": "Creusés sous les collines de l'est, aux abords de la Cité, ces tumulus anciens sont longtemps restés silencieux. À présent, des rumeurs parlent de morts sans repos et d'un seigneur mort-vivant qui rassemble son armée oubliée et se prépare à marcher de nouveau sur la Cité."
+      },
+      "income": "3d6x5",
+      "rules": [
+        {
+          "id": "barrow-offering",
+          "name": { "en": "Barrow Offering", "fr": "Offrande au tumulus" },
+          "tag": null,
+          "text": {
+            "en": "In step 5 of the Aftermath sequence, roll a dice. On a 6, mortals from the City have left an offering. Roll once on the treasure table (pg xx).",
+            "fr": "À l'étape 5 de la séquence d'après-bataille, lancez un dé. Sur 6, des mortels de la Cité ont laissé une offrande. Faites un seul jet sur la table des trésors (p. xx)."
+          }
+        },
+        {
+          "id": "immortal-slumber",
+          "name": { "en": "Immortal Slumber", "fr": "Sommeil immortel" },
+          "tag": null,
+          "text": {
+            "en": "If your Leader is Laid to Rest (see opposite), they are not removed from your warband. Instead they miss the next d3 battles as they slumber. Pick a Champion in your warband to be the Leader in their absence. That fighter temporarily gains the Leader keyword and loses the Champion keyword until the Leader returns.",
+            "fr": "Si votre Chef obtient le résultat Repos éternel, voir ci-dessous, il n'est pas retiré de votre bande. À la place, il manque les D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande pour être le Chef en son absence. Le combattant choisi gagne temporairement le mot-clé Chef et perd le mot-clé Champion jusqu'au retour du Chef."
+          }
+        }
+      ],
+      "trackers": [],
+      "sourceRef": { "page": 95, "md": "08_death-covens.md > Tumulus anciens" }
+    }
+  ],
+
+  "campaignRules": [
+    {
+      "id": "death-of-a-leader",
+      "name": { "en": "Death of a Leader", "fr": "Mort d'un Chef" },
+      "tag": null,
+      "text": {
+        "en": "During the campaign, if your leader is killed, and you choose to promote a champion (pg xx), the following champions are eligible:",
+        "fr": "Pendant la campagne, si votre chef est tué et que vous choisissez de promouvoir un champion (p. xx), les champions suivants sont éligibles :"
+      }
+    },
+    {
+      "id": "skeletons-and-thralls",
+      "name": { "en": "Skeletons & Thralls", "fr": "Squelettes et Asservis" },
+      "tag": null,
+      "text": {
+        "en": "Fighters with the Thrall keyword do not gain experience. They cannot advance levels.\nIn addition Skeletons and Thralls do not use the standard injury table (pg xx). Instead they use the following Skeleton & Thrall Injury Table (d6):\n1 - Laid to Rest: The undead creature is undone. Treat this result as killed (pg xx).\n2-6 - Unscathed: The fighter suffers no lasting effects.",
+        "fr": "Les combattants qui ont le mot-clé Asservi ne gagnent pas d'expérience. Ils ne peuvent pas gagner de niveau.\nDe plus, les Squelettes et les Asservis n'utilisent pas la table des blessures standard (p. xx). À la place, ils utilisent la Table des blessures des Squelettes et des Asservis suivante (D6) :\n1 - Repos éternel : la créature mort-vivante est défaite. Traitez ce résultat comme tué (p. xx).\n2-6 - Indemne : le combattant ne subit aucun effet durable."
+      }
+    }
+  ],
+
+  "leaderSuccession": [
+    { "formerLeaderId": "bloodcursed-noble", "eligibleChampionIds": ["bloodcursed-courtesan", "bloodcursed-knight"] },
+    { "formerLeaderId": "necromancer", "eligibleChampionIds": ["necromancers-apprentice"] },
+    { "formerLeaderId": "barrow-lord", "eligibleChampionIds": ["barrow-champion"] }
+  ],
+  "nameTable": {
+    "die": "d66",
+    "sourceRef": { "page": 96, "md": "08_death-covens.md > Noms des Death Coven" },
+    "entries": {
+      "11": "Alaric",
+      "12": "Barovyr",
+      "13": "Casimir",
+      "14": "Dargoi",
+      "15": "Dragomir",
+      "16": "Dragul",
+      "21": "Garganov",
+      "22": "Gavril",
+      "23": "Grigor",
+      "24": "Ilvar",
+      "25": "Karstig",
+      "26": "Kostan",
+      "31": "Lazar",
+      "32": "Lucian",
+      "33": "Marek",
+      "34": "Matei",
+      "35": "Mausar",
+      "36": "Mircea",
+      "41": "Morovin",
+      "42": "Morvane",
+      "43": "Nicolai",
+      "44": "Noskar",
+      "45": "Oleg",
+      "46": "Ossrik",
+      "51": "Radimir",
+      "52": "Radovan",
+      "53": "Sorin",
+      "54": "Stevrik",
+      "55": "Strigan",
+      "56": "Strigor",
+      "61": "Valek",
+      "62": "Vargoi",
+      "63": "Vasile",
+      "64": "Viktor",
+      "65": "Vrykan",
+      "66": "Zorvyr"
+    }
+  },
+
+  "fighters": [
+    {
+      "id": "bloodcursed-noble",
+      "name": { "en": "Bloodcursed Noble", "fr": "Bloodcursed Noble" },
+      "category": "leader",
+      "keywords": ["leader", "undead", "wizard", "vampyre", "aristocrat"],
+      "cost": 185,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 3, "bw": 5, "ar": 6, "in": 5, "wl": 4, "lf": 6 },
+      "allowedWargearLists": ["main", "champion"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 60, "dice": "d6" },
+      "knownSpellLoreIds": ["lore-of-blood"],
+      "recruitmentGrants": { "skills": 1, "fixedSkillIds": [], "spells": 1, "spellLoreId": "lore-of-blood" },
+      "specialRules": [
+        {
+          "id": "noble-blood",
+          "name": { "en": "Noble Blood", "fr": "Sang noble" },
+          "tag": null,
+          "text": {
+            "en": "When this fighter is recruited, pick 1 skill for them.",
+            "fr": "Quand ce combattant est recruté, choisissez 1 compétence pour lui."
+          }
+        },
+        {
+          "id": "spellcraft",
+          "name": { "en": "Spellcraft", "fr": "Art de la magie" },
+          "tag": null,
+          "text": {
+            "en": "This fighter knows the Lore of Blood. When they are recruited, pick 1 spell from it to be their signature spell. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "fr": "Ce combattant connaît le Domaine du Sang. Quand il est recruté, choisissez 1 sort de ce domaine : il devient son sort fétiche. De plus, au début de chaque bataille, il prépare 1 sort aléatoire de ce domaine."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Coven Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie du Coven."
+      },
+      "quote": { "en": "The City belongs to the night.", "fr": "La Cité appartient à la nuit." },
+      "sourceRef": { "page": 105, "md": "08_death-covens.md > Bloodcursed Noble" }
+    },
+    {
+      "id": "necromancer",
+      "name": { "en": "Necromancer", "fr": "Necromancer" },
+      "category": "leader",
+      "keywords": ["leader", "human", "wizard"],
+      "cost": 165,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 4, "bw": 6, "ar": 6, "in": 3, "wl": 5, "lf": 5 },
+      "allowedWargearLists": ["practitioner"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 60, "dice": "d6" },
+      "knownSpellLoreIds": ["lore-of-necromancy"],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 2, "spellLoreId": "lore-of-necromancy" },
+      "specialRules": [
+        {
+          "id": "master-of-necromancy",
+          "name": { "en": "Master of Necromancy", "fr": "Maître de la nécromancie" },
+          "tag": null,
+          "text": {
+            "en": "This fighter knows the Lore of Necromancy. When they are recruited, pick 2 spells from it to be their signature spells. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "fr": "Ce combattant connaît le Domaine de la Nécromancie. Quand il est recruté, choisissez 2 sorts de ce domaine : ils deviennent ses sorts fétiches. De plus, au début de chaque bataille, il prépare 1 sort aléatoire de ce domaine."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Practitioner List from the Coven Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie du Coven."
+      },
+      "quote": {
+        "en": "I have studied the art of death longer than you have drawn breath.",
+        "fr": "J'étudie l'art de la mort depuis plus longtemps que tu ne respires."
+      },
+      "sourceRef": { "page": 105, "md": "08_death-covens.md > Necromancer" }
+    },
+    {
+      "id": "lycanfell-noble",
+      "name": { "en": "Lycanfell Noble", "fr": "Lycanfell Noble" },
+      "category": "leader",
+      "keywords": ["leader", "undead", "werwulf", "aristocrat"],
+      "cost": 170,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 3, "bw": 4, "ar": 6, "in": 4, "wl": 4, "lf": 6 },
+      "allowedWargearLists": ["main", "champion"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 60, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 1, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "noble-blood",
+          "name": { "en": "Noble Blood", "fr": "Sang noble" },
+          "tag": null,
+          "text": {
+            "en": "When this fighter is recruited, pick 1 skill for them.",
+            "fr": "Quand ce combattant est recruté, choisissez 1 compétence pour lui."
+          }
+        },
+        {
+          "id": "bestial-transformation",
+          "name": { "en": "Bestial Transformation", "fr": "Transformation bestiale" },
+          "tag": null,
+          "text": {
+            "en": "Once per battle, at the start of this fighter's activation it can transform. If it does so, remove this fighter from the battlefield and set up the Lycanfell Beast at the same location (or as close to it as possible). Any damage the Lycanfell Noble has suffered, the Lycanfell Beast has also suffered.\nThe Lycanfell Beast immediately makes its activation.",
+            "fr": "Une fois par bataille, au début de l'activation de ce combattant, il peut se transformer. Dans ce cas, retirez ce combattant du champ de bataille et placez la Lycanfell Beast au même emplacement (ou aussi près que possible). Tous les dégâts que le Lycanfell Noble a subis, la Lycanfell Beast les a subis aussi.\nLa Lycanfell Beast effectue immédiatement son activation."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Coven Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie du Coven."
+      },
+      "quote": {
+        "en": "The wind bears the scent of blood. The hunt calls me once more.",
+        "fr": "Le vent charrie l'odeur du sang. La chasse m'appelle une fois encore."
+      },
+      "sourceRef": { "page": 106, "md": "08_death-covens.md > Lycanfell Noble" }
+    },
+    {
+      "id": "lycanfell-beast",
+      "name": { "en": "Lycanfell Beast", "fr": "Lycanfell Beast" },
+      "category": "leader",
+      "keywords": ["leader", "undead", "werwulf"],
+      "cost": 0,
+      "limit": null,
+      "stats": { "mv": 5, "bl": 2, "bw": 6, "ar": 5, "in": 5, "wl": 4, "lf": 8 },
+      "allowedWargearLists": [],
+      "fixedWargearIds": ["wulfen-claws"],
+      "startingExperience": { "base": 0, "dice": null },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "temperamental-transformation",
+          "name": { "en": "Temperamental Transformation", "fr": "Transformation capricieuse" },
+          "tag": null,
+          "text": {
+            "en": "Each time this fighter activates, at the end of its activation it must pass a Willpower test else the transformation ends.\nWhen the transformation ends, remove this fighter from the battlefield then set up the Lycanfell Noble at the same location (or as close to it as possible). Any damage the Lycanfell Beast has suffered, the Lycanfell Noble has also suffered. If this would reduce the Lycanfell Noble to zero life, they are taken down.",
+            "fr": "Chaque fois que ce combattant est activé, à la fin de son activation, il doit réussir un test de Volonté, sans quoi la transformation prend fin.\nQuand la transformation prend fin, retirez ce combattant du champ de bataille, puis placez le Lycanfell Noble au même emplacement (ou aussi près que possible). Tous les dégâts que la Lycanfell Beast a subis, le Lycanfell Noble les a subis aussi. Si cela devait réduire le Lycanfell Noble à zéro point de vie, il est mis hors de combat."
+          }
+        },
+        {
+          "id": "vestiges-of-the-noble",
+          "name": { "en": "Vestiges of the Noble", "fr": "Vestiges du Noble" },
+          "tag": null,
+          "text": {
+            "en": "While this fighter is on the battlefield, it is treated as a new fighter that is added to the warband. It has none of the Lycanfell Noble's wargear, skills or injuries etc. If the Lycanfell Noble was under the effects of a spell or another rule, this fighter is not affected. In addition, the following rules apply:\n- Scenarios: If the scenario gave the Lycanfell Noble a mark (such as being the Hit in Street of Death), this fighter has that mark.\n- Treasure: If the Lycanfell Noble was carrying treasure when it transformed, this fighter is carrying the treasure. Likewise, if this fighter is carrying treasure when the transformation ends, the Lycanfell Noble is now carrying that treasure.\n- Taken Down: If this fighter is taken down, the Lycanfell Noble is also taken down, (together they count as 1 for the purposes of flee tests).\n- Experience: Any bonus experience this fighter would have earned is granted to the Lycanfell Noble instead.",
+            "fr": "Tant que ce combattant est sur le champ de bataille, il est traité comme un nouveau combattant ajouté à la bande. Il n'a ni l'équipement, ni les compétences, ni les blessures du Lycanfell Noble, etc. Si le Lycanfell Noble subissait les effets d'un sort ou d'une autre règle, ce combattant n'est pas affecté. De plus, les règles suivantes s'appliquent :\n- Scénarios : si le scénario a donné une marque au Lycanfell Noble, par exemple être la Proie dans La Rue de la mort, ce combattant a cette marque.\n- Trésor : si le Lycanfell Noble porte un trésor au moment où il se transforme, c'est ce combattant qui le porte. De même, si ce combattant porte un trésor quand la transformation prend fin, c'est désormais le Lycanfell Noble qui le porte.\n- Mis hors de combat : si ce combattant est mis hors de combat, le Lycanfell Noble est lui aussi mis hors de combat ; ensemble, ils comptent pour 1 pour les tests de déroute.\n- Expérience : toute l'expérience bonus que ce combattant aurait gagnée est accordée, à la place, au Lycanfell Noble."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": "lycanfell-noble",
+      "wargearText": {
+        "en": "This fighter comes equipped with Wulfen Claws (see below).",
+        "fr": "Ce combattant est équipé de Griffes de loup, voir ci-dessous."
+      },
+      "quote": { "en": "Flesh... blood... marrow...", "fr": "Chair... sang... moelle..." },
+      "sourceRef": { "page": 106, "md": "08_death-covens.md > Lycanfell Beast" }
+    },
+    {
+      "id": "barrow-lord",
+      "name": { "en": "Barrow Lord", "fr": "Barrow Lord" },
+      "category": "leader",
+      "keywords": ["leader", "undead", "skeleton"],
+      "cost": 130,
+      "limit": null,
+      "stats": { "mv": 4, "bl": 3, "bw": 6, "ar": 6, "in": 3, "wl": 4, "lf": 6 },
+      "allowedWargearLists": ["main", "champion"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 60, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 2, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "noble-lineage",
+          "name": { "en": "Noble Lineage", "fr": "Noble lignée" },
+          "tag": null,
+          "text": {
+            "en": "When this fighter is recruited, pick 2 skills for them.",
+            "fr": "Quand ce combattant est recruté, choisissez 2 compétences pour lui."
+          }
+        },
+        {
+          "id": "unshakeable",
+          "name": { "en": "Unshakeable", "fr": "Inébranlable" },
+          "tag": null,
+          "text": {
+            "en": "This fighter ignores the Fear special rule and all rules that would make them scatter (eg. the Scare weapon trait).",
+            "fr": "Ce combattant ignore la règle spéciale Peur et toutes les règles qui le feraient dévier, par exemple le trait d'arme Effroi."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Coven Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie du Coven."
+      },
+      "quote": { "en": "I command thee to rise again.", "fr": "Je t'ordonne de te relever." },
+      "sourceRef": { "page": 107, "md": "08_death-covens.md > Barrow Lord" }
+    },
+    {
+      "id": "bloodcursed-courtesan",
+      "name": { "en": "Bloodcursed Courtesan", "fr": "Bloodcursed Courtesan" },
+      "category": "champion",
+      "keywords": ["champion", "undead", "wizard", "vampyre", "aristocrat"],
+      "cost": 125,
+      "limit": 1,
+      "stats": { "mv": 5, "bl": 4, "bw": 6, "ar": 6, "in": 5, "wl": 4, "lf": 4 },
+      "allowedWargearLists": ["practitioner"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 40, "dice": "d6" },
+      "knownSpellLoreIds": ["lore-of-blood"],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 1, "spellLoreId": "lore-of-blood" },
+      "specialRules": [
+        {
+          "id": "blood-magic",
+          "name": { "en": "Blood Magic", "fr": "Magie du sang" },
+          "tag": null,
+          "text": {
+            "en": "This fighter knows the Lore of Blood. When they are recruited, pick 1 spell from it to be their signature spell. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "fr": "Ce combattant connaît le Domaine du Sang. Quand il est recruté, choisissez 1 sort de ce domaine : il devient son sort fétiche. De plus, au début de chaque bataille, il prépare 1 sort aléatoire de ce domaine."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Practitioner List from the Coven Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie du Coven."
+      },
+      "quote": { "en": "Come hither... I insist.", "fr": "Approche... j'insiste." },
+      "sourceRef": { "page": 107, "md": "08_death-covens.md > Bloodcursed Courtesan" }
+    },
+    {
+      "id": "bloodcursed-knight",
+      "name": { "en": "Bloodcursed Knight", "fr": "Bloodcursed Knight" },
+      "category": "champion",
+      "keywords": ["champion", "undead", "vampyre", "aristocrat"],
+      "cost": 95,
+      "limit": 1,
+      "stats": { "mv": 5, "bl": 3, "bw": 5, "ar": 6, "in": 5, "wl": 4, "lf": 5 },
+      "allowedWargearLists": ["main", "champion"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 40, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 1, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "martial-lineage",
+          "name": { "en": "Martial Lineage", "fr": "Lignée martiale" },
+          "tag": null,
+          "text": {
+            "en": "When this fighter is recruited, pick 1 skill for them.",
+            "fr": "Quand ce combattant est recruté, choisissez 1 compétence pour lui."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Coven Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie du Coven."
+      },
+      "quote": {
+        "en": "Kneel, and I may grant you a swift death.",
+        "fr": "À genoux, et je t'accorderai peut-être une mort rapide."
+      },
+      "sourceRef": { "page": 108, "md": "08_death-covens.md > Bloodcursed Knight" }
+    },
+    {
+      "id": "misbegotten",
+      "name": { "en": "Misbegotten", "fr": "Misbegotten" },
+      "category": "champion",
+      "keywords": ["champion", "undead", "vampyre"],
+      "cost": 65,
+      "limit": 1,
+      "stats": { "mv": 5, "bl": 4, "bw": 5, "ar": 6, "in": 5, "wl": 2, "lf": 4 },
+      "allowedWargearLists": ["main", "champion"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 30, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "bloodline-mutations",
+          "name": { "en": "Bloodline Mutations", "fr": "Mutations de lignée" },
+          "tag": null,
+          "text": {
+            "en": "When this fighter is recruited, you can pick 1 of the following bloodline mutations, (each comes with a silver cost):",
+            "fr": "Quand ce combattant est recruté, vous pouvez choisir 1 des mutations de lignée suivantes ; chacune a un coût en pièces d'argent :"
+          }
+        }
+      ],
+      "options": {
+        "max": 1,
+        "choices": [
+          {
+            "id": "bat-wings",
+            "name": { "en": "Bat Wings", "fr": "Ailes de chauve-souris" },
+            "cost": 15,
+            "statSet": {},
+            "addKeywords": ["fly"],
+            "text": { "en": "This fighter has the Fly keyword.", "fr": "Ce combattant a le mot-clé Vol." }
+          },
+          {
+            "id": "wulfen-legs",
+            "name": { "en": "Wulfen Legs", "fr": "Pattes de loup" },
+            "cost": 10,
+            "statSet": { "mv": 7 },
+            "addKeywords": [],
+            "text": {
+              "en": "This fighter's Move value is 7\".",
+              "fr": "La valeur de Mouvement de ce combattant est de 7\"."
+            }
+          },
+          {
+            "id": "hulking-form",
+            "name": { "en": "Hulking Form", "fr": "Carrure massive" },
+            "cost": 30,
+            "statSet": { "lf": 8 },
+            "addKeywords": [],
+            "text": { "en": "This fighter's Life value is 8.", "fr": "La valeur de Vie de ce combattant est de 8." }
+          }
+        ]
+      },
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Coven Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie du Coven."
+      },
+      "quote": { "en": "No... look not upon me...", "fr": "Non... ne me regardez pas..." },
+      "sourceRef": { "page": 108, "md": "08_death-covens.md > Misbegotten" }
+    },
+    {
+      "id": "necromancers-apprentice",
+      "name": { "en": "Necromancer's Apprentice", "fr": "Necromancer's Apprentice" },
+      "category": "champion",
+      "keywords": ["champion", "human", "wizard"],
+      "cost": 120,
+      "limit": 1,
+      "stats": { "mv": 5, "bl": 4, "bw": 6, "ar": 6, "in": 3, "wl": 4, "lf": 4 },
+      "allowedWargearLists": ["practitioner"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 40, "dice": "d6" },
+      "knownSpellLoreIds": ["lore-of-necromancy"],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 1, "spellLoreId": "lore-of-necromancy" },
+      "specialRules": [
+        {
+          "id": "spellcraft",
+          "name": { "en": "Spellcraft", "fr": "Art de la magie" },
+          "tag": null,
+          "text": {
+            "en": "This fighter knows the Lore of Necromancy. When they are recruited, pick 1 spell from it to be their signature spell. In addition, at the start of each battle they prepare 1 random spell from it.",
+            "fr": "Ce combattant connaît le Domaine de la Nécromancie. Quand il est recruté, choisissez 1 sort de ce domaine : il devient son sort fétiche. De plus, au début de chaque bataille, il prépare 1 sort aléatoire de ce domaine."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Practitioner List from the Coven Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie du Coven."
+      },
+      "quote": {
+        "en": "The secrets of the grave shall be mine in time.",
+        "fr": "Les secrets de la tombe seront miens, le moment venu."
+      },
+      "sourceRef": { "page": 109, "md": "08_death-covens.md > Necromancer's Apprentice" }
+    },
+    {
+      "id": "barrow-champion",
+      "name": { "en": "Barrow Champion", "fr": "Barrow Champion" },
+      "category": "champion",
+      "keywords": ["champion", "undead", "skeleton"],
+      "cost": 85,
+      "limit": null,
+      "stats": { "mv": 4, "bl": 3, "bw": 6, "ar": 6, "in": 3, "wl": 4, "lf": 5 },
+      "allowedWargearLists": ["main", "champion"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 40, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 1, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "veteran-in-life",
+          "name": { "en": "Veteran in Life", "fr": "Vétéran de son vivant" },
+          "tag": null,
+          "text": {
+            "en": "When this fighter is recruited, pick 1 skill for them.",
+            "fr": "Quand ce combattant est recruté, choisissez 1 compétence pour lui."
+          }
+        },
+        {
+          "id": "unshakeable",
+          "name": { "en": "Unshakeable", "fr": "Inébranlable" },
+          "tag": null,
+          "text": {
+            "en": "This fighter ignores the Fear special rule and all rules that would make them scatter (eg. the Scare weapon trait).",
+            "fr": "Ce combattant ignore la règle spéciale Peur et toutes les règles qui le feraient dévier, par exemple le trait d'arme Effroi."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Coven Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie du Coven."
+      },
+      "quote": { "en": "Death does not relinquish duty.", "fr": "La mort ne délie pas du devoir." },
+      "sourceRef": { "page": 109, "md": "08_death-covens.md > Barrow Champion" }
+    },
+    {
+      "id": "skeleton-warrior",
+      "name": { "en": "Skeleton Warrior", "fr": "Skeleton Warrior" },
+      "category": "henchman",
+      "keywords": ["henchman", "undead", "skeleton", "thrall"],
+      "cost": 40,
+      "limit": null,
+      "stats": { "mv": 4, "bl": 4, "bw": 6, "ar": 6, "in": 3, "wl": 2, "lf": 4 },
+      "allowedWargearLists": ["main"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 0, "dice": null },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "unshakeable",
+          "name": { "en": "Unshakeable", "fr": "Inébranlable" },
+          "tag": null,
+          "text": {
+            "en": "This fighter ignores the Fear special rule and all rules that would make them scatter (eg. the Scare weapon trait).",
+            "fr": "Ce combattant ignore la règle spéciale Peur et toutes les règles qui le feraient dévier, par exemple le trait d'arme Effroi."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List from the Coven Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie du Coven."
+      },
+      "quote": null,
+      "sourceRef": { "page": 110, "md": "08_death-covens.md > Skeleton Warrior" }
+    },
+    {
+      "id": "zombie",
+      "name": { "en": "Zombie", "fr": "Zombie" },
+      "category": "henchman",
+      "keywords": ["henchman", "undead", "zombie", "thrall"],
+      "cost": 35,
+      "limit": null,
+      "stats": { "mv": 4, "bl": 5, "bw": 6, "ar": 6, "in": 1, "wl": 2, "lf": 4 },
+      "allowedWargearLists": [],
+      "fixedWargearIds": ["zombie-bite"],
+      "startingExperience": { "base": 0, "dice": null },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "unshakeable",
+          "name": { "en": "Unshakeable", "fr": "Inébranlable" },
+          "tag": null,
+          "text": {
+            "en": "This fighter ignores the Fear special rule and all rules that would make them scatter (eg. the Scare weapon trait).",
+            "fr": "Ce combattant ignore la règle spéciale Peur et toutes les règles qui le feraient dévier, par exemple le trait d'arme Effroi."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter is equipped with a zombie bite (see below), they cannot be equipped with any other wargear.",
+        "fr": "Ce combattant est équipé d'une morsure de zombie, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
+      },
+      "quote": null,
+      "sourceRef": { "page": 110, "md": "08_death-covens.md > Zombie" }
+    },
+    {
+      "id": "zombie-ogre",
+      "name": { "en": "Zombie Ogre", "fr": "Zombie Ogre" },
+      "category": "brute",
+      "keywords": ["brute", "undead", "zombie", "thrall"],
+      "cost": 95,
+      "limit": null,
+      "stats": { "mv": 4, "bl": 4, "bw": 6, "ar": 6, "in": 1, "wl": 2, "lf": 8 },
+      "allowedWargearLists": ["zombie-ogre"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 0, "dice": null },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "unshakeable",
+          "name": { "en": "Unshakeable", "fr": "Inébranlable" },
+          "tag": null,
+          "text": {
+            "en": "This fighter ignores the Fear special rule and all rules that would make them scatter (eg. the Scare weapon trait).",
+            "fr": "Ce combattant ignore la règle spéciale Peur et toutes les règles qui le feraient dévier, par exemple le trait d'arme Effroi."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Zombie Ogre List from the Coven Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Zombie Ogres de l'Armurerie du Coven."
+      },
+      "quote": null,
+      "sourceRef": { "page": 111, "md": "08_death-covens.md > Zombie Ogre" }
+    },
+    {
+      "id": "gargoyle",
+      "name": { "en": "Gargoyle", "fr": "Gargoyle" },
+      "category": "brute",
+      "keywords": ["brute", "undead", "gargoyle", "thrall", "fly"],
+      "cost": 150,
+      "limit": null,
+      "stats": { "mv": 6, "bl": 3, "bw": 6, "ar": 6, "in": 3, "wl": 3, "lf": 8 },
+      "allowedWargearLists": [],
+      "fixedWargearIds": ["stone-talons"],
+      "startingExperience": { "base": 0, "dice": null },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "unshakeable",
+          "name": { "en": "Unshakeable", "fr": "Inébranlable" },
+          "tag": null,
+          "text": {
+            "en": "This fighter ignores the Fear special rule and all rules that would make them scatter (eg. the Scare weapon trait).",
+            "fr": "Ce combattant ignore la règle spéciale Peur et toutes les règles qui le feraient dévier, par exemple le trait d'arme Effroi."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter is equipped with stone talons (see below), they cannot be equipped with any other wargear.",
+        "fr": "Ce combattant est équipé de serres de pierre, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
+      },
+      "quote": null,
+      "sourceRef": { "page": 111, "md": "08_death-covens.md > Gargoyle" }
+    },
+    {
+      "id": "dire-bat",
+      "name": { "en": "Dire Bat", "fr": "Dire Bat" },
+      "category": "beast",
+      "keywords": ["beast", "undead", "bat", "fly"],
+      "cost": 60,
+      "limit": null,
+      "stats": { "mv": 10, "bl": 5, "bw": null, "ar": 6, "in": 3, "wl": 1, "lf": 3 },
+      "allowedWargearLists": [],
+      "fixedWargearIds": ["biting-fangs"],
+      "startingExperience": { "base": 0, "dice": null },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "vampyric-bite",
+          "name": { "en": "Vampyric Bite", "fr": "Morsure vampirique" },
+          "tag": null,
+          "text": {
+            "en": "Each time an enemy suffers 1 or more damage from a melee attack made by this fighter, heal this fighter 1 life point.",
+            "fr": "Chaque fois qu'un ennemi subit 1 dégât ou plus à cause d'une attaque au corps à corps effectuée par ce combattant, ce combattant est soigné de 1 point de vie."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter is equipped with biting fangs (see below), they cannot be equipped with any other wargear.",
+        "fr": "Ce combattant est équipé de crocs mordants, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
+      },
+      "quote": null,
+      "sourceRef": { "page": 112, "md": "08_death-covens.md > Dire Bat" }
+    },
+    {
+      "id": "dire-wolf",
+      "name": { "en": "Dire Wolf", "fr": "Dire Wolf" },
+      "category": "beast",
+      "keywords": ["beast", "undead", "dog"],
+      "cost": 50,
+      "limit": null,
+      "stats": { "mv": 7, "bl": 3, "bw": null, "ar": 6, "in": 4, "wl": 1, "lf": 5 },
+      "allowedWargearLists": [],
+      "fixedWargearIds": ["necrotic-bite"],
+      "startingExperience": { "base": 0, "dice": null },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [
+        {
+          "id": "sniff-em-out",
+          "name": { "en": "Sniff 'em Out", "fr": "Débusquez-les !" },
+          "tag": null,
+          "text": {
+            "en": "Enemy fighters that are hidden are not hidden while they are within 9\" of this fighter.",
+            "fr": "Les combattants ennemis qui sont cachés ne sont pas cachés tant qu'ils sont à 9\" ou moins de ce combattant."
+          }
+        },
+        {
+          "id": "trackers",
+          "name": { "en": "Trackers", "fr": "Pisteurs" },
+          "tag": null,
+          "text": {
+            "en": "Each aftermath sequence, when you search the city, if your search party includes any Dire Wolves, you can re-roll the exploration roll.",
+            "fr": "À chaque séquence d'après-bataille, quand vous fouillez la cité, si votre groupe de fouille comprend au moins un Dire Wolf, vous pouvez relancer le jet d'exploration."
+          }
+        }
+      ],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter is equipped with a necrotic bite (see below), they cannot be equipped with any other wargear.",
+        "fr": "Ce combattant est équipé d'une morsure nécrotique, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
+      },
+      "quote": null,
+      "sourceRef": { "page": 112, "md": "08_death-covens.md > Dire Wolf" }
+    }
+  ],
+
+  "wargear": [
+    {
+      "id": "arcane-staff",
+      "name": { "en": "Arcane Staff", "fr": "Bâton arcanique" },
+      "kind": "melee",
+      "cost": 10,
+      "purchasable": true,
+      "profile": { "attacks": 2, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "arcane" }, { "key": "off-hand" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "axe",
+      "name": { "en": "Axe", "fr": "Hache" },
+      "kind": "melee",
+      "cost": 16,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "off-hand" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "biting-fangs",
+      "name": { "en": "Biting Fangs", "fr": "Crocs mordants" },
+      "kind": "melee",
+      "cost": 0,
+      "purchasable": false,
+      "profile": { "attacks": 4, "rend": 0, "damage": 1, "critDamage": 1 },
+      "traits": [{ "key": "natural-weapon" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 112, "md": "08_death-covens.md > Dire Bat" }
+    },
+    {
+      "id": "club-mace-hammer",
+      "name": { "en": "Club/Mace/Hammer", "fr": "Gourdin/Masse/Marteau" },
+      "kind": "melee",
+      "cost": 14,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "bludgeon" }, { "key": "off-hand" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "cursed-blade",
+      "name": { "en": "Cursed Blade", "fr": "Lame maudite" },
+      "kind": "melee",
+      "cost": 40,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "arcane" }, { "key": "guard" }, { "key": "off-hand" }, { "key": "poison" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "dagger",
+      "name": { "en": "Dagger", "fr": "Dague" },
+      "kind": "melee",
+      "cost": 10,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "off-hand" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "ensorcelled-weapon",
+      "name": { "en": "Ensorcelled Weapon", "fr": "Arme ensorcelée" },
+      "kind": "melee",
+      "cost": 26,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "arcane" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": {
+        "en": "You can use any weapon to represent the Ensorcelled Weapon.",
+        "fr": "Vous pouvez utiliser n'importe quelle arme pour représenter l'Arme ensorcelée."
+      },
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "flail",
+      "name": { "en": "Flail", "fr": "Fléau" },
+      "kind": "melee",
+      "cost": 14,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "off-hand" }, { "key": "wrap" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "great-mace",
+      "name": { "en": "Great Mace", "fr": "Grande masse" },
+      "kind": "melee",
+      "cost": 38,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "bludgeon" }, { "key": "two-handed" }, { "key": "unwieldy" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "halberd",
+      "name": { "en": "Halberd", "fr": "Hallebarde" },
+      "kind": "melee",
+      "cost": 34,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3+1" },
+      "traits": [{ "key": "brace" }, { "key": "two-handed" }, { "key": "unwieldy" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "heavy-axe",
+      "name": { "en": "Heavy Axe", "fr": "Hache lourde" },
+      "kind": "melee",
+      "cost": 40,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -2, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "two-handed" }, { "key": "unwieldy" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "necrotic-bite",
+      "name": { "en": "Necrotic Bite", "fr": "Morsure nécrotique" },
+      "kind": "melee",
+      "cost": 0,
+      "purchasable": false,
+      "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "natural-weapon" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 112, "md": "08_death-covens.md > Dire Wolf" }
+    },
+    {
+      "id": "ogre-blade",
+      "name": { "en": "Ogre Blade", "fr": "Lame d'ogre" },
+      "kind": "melee",
+      "cost": 36,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "off-hand" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "ogre-great-weapon",
+      "name": { "en": "Ogre Great Weapon", "fr": "Grande arme d'ogre" },
+      "kind": "melee",
+      "cost": 50,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -2, "damage": 3, "critDamage": "d3+2" },
+      "traits": [{ "key": "two-handed" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "ogre-mace",
+      "name": { "en": "Ogre Mace", "fr": "Masse d'ogre" },
+      "kind": "melee",
+      "cost": 38,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "bludgeon" }, { "key": "off-hand" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "spear",
+      "name": { "en": "Spear", "fr": "Lance" },
+      "kind": "melee",
+      "cost": 16,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "brace" }, { "key": "two-handed" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "stone-talons",
+      "name": { "en": "Stone Talons", "fr": "Serres de pierre" },
+      "kind": "melee",
+      "cost": 0,
+      "purchasable": false,
+      "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "bludgeon" }, { "key": "natural-weapon" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 111, "md": "08_death-covens.md > Gargoyle" }
+    },
+    {
+      "id": "sword",
+      "name": { "en": "Sword", "fr": "Épée" },
+      "kind": "melee",
+      "cost": 18,
+      "purchasable": true,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "guard" }, { "key": "off-hand" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+    },
+    {
+      "id": "wulfen-claws",
+      "name": { "en": "Wulfen Claws", "fr": "Griffes de loup" },
+      "kind": "melee",
+      "cost": 0,
+      "purchasable": false,
+      "profile": { "attacks": 3, "rend": -1, "damage": 2, "critDamage": "d3+1" },
+      "traits": [{ "key": "bludgeon" }, { "key": "natural-weapon" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 106, "md": "08_death-covens.md > Lycanfell Beast" }
+    },
+    {
+      "id": "zombie-bite",
+      "name": { "en": "Zombie Bite", "fr": "Morsure de zombie" },
+      "kind": "melee",
+      "cost": 0,
+      "purchasable": false,
+      "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
+      "traits": [{ "key": "natural-weapon" }, { "key": "poison" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 110, "md": "08_death-covens.md > Zombie" }
+    },
+    {
+      "id": "cuirass",
+      "name": { "en": "Cuirass", "fr": "Cuirasse" },
+      "kind": "armour",
+      "cost": 20,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": 5,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Cuirasse" }
+    },
+    {
+      "id": "warded-robes",
+      "name": { "en": "Warded Robes", "fr": "Robe de protection" },
+      "kind": "armour",
+      "cost": 10,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": 6,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "Roll a dice each time a fighter equipped with this armour is targeted by a spell cast by an enemy fighter. On a 4+, the spell has no effect on this fighter.",
+        "fr": "Lancez un dé chaque fois qu'un combattant équipé de cette armure est ciblé par un sort lancé par un combattant ennemi. Sur 4+, le sort n'a aucun effet sur ce combattant."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Robe de protection" }
+    },
+    {
+      "id": "full-plate",
+      "name": { "en": "Full-plate", "fr": "Armure de plates" },
+      "kind": "armour",
+      "cost": 40,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": 4,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [{ "type": "forbid-trait", "kind": "ranged", "trait": "two-handed", "exceptWargearIds": [] }],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "Fighters equipped with this armour cannot be equipped with two-handed ranged weapons with the exception of a Brace of Pistols.",
+        "fr": "Les combattants équipés de cette armure ne peuvent pas être équipés d'armes à distance à deux mains, à l'exception d'une Paire de pistolets."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Armure de plates" }
+    },
+    {
+      "id": "ancient-banner",
+      "name": { "en": "Ancient Banner", "fr": "Bannière ancienne" },
+      "kind": "item",
+      "cost": 25,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": ["held-item"],
+      "rarity": 1,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "While this fighter is on the battlefield, you can re-roll flee tests.\nYou can re-roll Willpower tests made by friendly fighters while they are within 12\" of this fighter and this fighter is visible to them.",
+        "fr": "Tant que ce combattant est sur le champ de bataille, vous pouvez relancer les tests de déroute.\nVous pouvez relancer les tests de Volonté effectués par les combattants alliés tant qu'ils sont à 12\" ou moins de ce combattant et que ce combattant est visible pour eux."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Bannière ancienne" }
+    },
+    {
+      "id": "bestial-companion",
+      "name": { "en": "Bestial Companion", "fr": "Compagnon bestial" },
+      "kind": "item",
+      "cost": 30,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": 1,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": { "rend": -1, "damage": 2, "critDamage": "d3+1", "traits": [{ "key": "natural-weapon" }] },
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "Each time this fighter makes a melee attack, they can make 1 additional attack with the following weapon:",
+        "fr": "Chaque fois que ce combattant effectue une attaque au corps à corps, il peut effectuer 1 attaque supplémentaire avec l'arme suivante :"
+      },
+      "designerNote": {
+        "en": "This item is designed for miniatures that feature other creatures such as dire wolves on the same base. The Bestial Companion is not considered a separate fighter for any rules.",
+        "fr": "Cet objet est conçu pour les figurines qui comportent d'autres créatures sur le même socle, comme des loups monstrueux. Le Compagnon bestial n'est considéré comme un combattant distinct pour aucune règle."
+      },
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Compagnon bestial" }
+    },
+    {
+      "id": "grimoire",
+      "name": { "en": "Grimoire", "fr": "Grimoire" },
+      "kind": "item",
+      "cost": 15,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": 1,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "Once per battle, after this fighter has made casting roll, you can re-roll the casting roll.",
+        "fr": "Une fois par bataille, après que ce combattant a effectué un jet de lancement, vous pouvez relancer le jet de lancement."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Grimoire" }
+    },
+    {
+      "id": "spirit-guardian",
+      "name": { "en": "Spirit Guardian", "fr": "Esprit gardien" },
+      "kind": "item",
+      "cost": 45,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": 1,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "Once per battle this fighter can use the following bonus action:\nInvoke Ethereal Protection [Bonus Action]: Until the end of the round, this fighter ignores Rend for attacks that target them. In addition, each time they make a successful armour roll against a melee attack, the attacking fighter suffers 1 damage.",
+        "fr": "Une fois par bataille, ce combattant peut utiliser l'action bonus suivante :\nAppeler la protection éthérée [Action bonus] : jusqu'à la fin du round, ce combattant ignore la Perforation des attaques qui le ciblent. De plus, chaque fois qu'il réussit un jet d'armure contre une attaque au corps à corps, l'attaquant subit 1 dégât."
+      },
+      "designerNote": {
+        "en": "This item is designed for miniatures that feature other creatures such as spirits and ghosts on the same base. The Spirit Guardian is not considered a separate fighter for any rules.",
+        "fr": "Cet objet est conçu pour les figurines qui comportent d'autres créatures sur le même socle, comme des esprits et des fantômes. L'Esprit gardien n'est considéré comme un combattant distinct pour aucune règle."
+      },
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Esprit gardien" }
+    },
+    {
+      "id": "shield",
+      "name": { "en": "Shield", "fr": "Bouclier" },
+      "kind": "item",
+      "cost": 10,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": null,
+      "armourImprovement": 1,
+      "itemKeywords": ["held-item"],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "Improve this fighter's Armour value by 1, to a maximum of 2+. (For example, 6+ becomes 5+).",
+        "fr": "Améliorez de 1 la valeur d'Armure de ce combattant, jusqu'à un maximum de 2+. (Par exemple, 6+ devient 5+)."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Bouclier" }
+    },
+    {
+      "id": "winged-familiar",
+      "name": { "en": "Winged Familiar", "fr": "Familier ailé" },
+      "kind": "item",
+      "cost": 12,
+      "purchasable": true,
+      "profile": null,
+      "traits": [],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": 1,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": {
+        "en": "Once per battle this fighter can use the following bonus action:\nHarry [Bonus Action]: Pick a visible enemy fighter within 24\". Until the end of the round, that enemy fighter is harried. While a fighter is harried, each time they make a Move or Action they must pass a Willpower test, else they lose that Move or Action.",
+        "fr": "Une fois par bataille, le combattant peut utiliser l'action bonus suivante :\nHarceler [Action bonus] : choisissez un combattant ennemi visible à 24\" ou moins. Jusqu'à la fin du round, ce combattant ennemi est harcelé. Tant qu'un combattant est harcelé, chaque fois qu'il effectue un Mouvement ou une Action, il doit réussir un test de Volonté, sans quoi il perd ce Mouvement ou cette Action."
+      },
+      "designerNote": null,
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Familier ailé" }
+    }
+  ],
+
+  "armouryLists": [
+    {
+      "id": "main",
+      "name": { "en": "Main List", "fr": "Liste principale" },
+      "sourceRef": { "page": 98, "md": "08_death-covens.md > Liste principale" },
+      "entries": [
+        { "wargearId": "axe", "cost": 16 },
+        { "wargearId": "club-mace-hammer", "cost": 14 },
+        { "wargearId": "dagger", "cost": 10 },
+        { "wargearId": "flail", "cost": 14 },
+        { "wargearId": "halberd", "cost": 34 },
+        { "wargearId": "spear", "cost": 16 },
+        { "wargearId": "sword", "cost": 18 },
+        { "wargearId": "cuirass", "cost": 20 },
+        { "wargearId": "shield", "cost": 10 }
+      ]
+    },
+    {
+      "id": "champion",
+      "name": { "en": "Champion List", "fr": "Liste des Champions" },
+      "sourceRef": { "page": 98, "md": "08_death-covens.md > Liste des Champions" },
+      "entries": [
+        { "wargearId": "cursed-blade", "cost": 40 },
+        { "wargearId": "great-mace", "cost": 38 },
+        { "wargearId": "heavy-axe", "cost": 40 },
+        { "wargearId": "full-plate", "cost": 40 },
+        { "wargearId": "ancient-banner", "cost": 25 },
+        { "wargearId": "bestial-companion", "cost": 30 },
+        { "wargearId": "spirit-guardian", "cost": 45 },
+        { "wargearId": "winged-familiar", "cost": 12 }
+      ]
+    },
+    {
+      "id": "zombie-ogre",
+      "name": { "en": "Zombie Ogre List", "fr": "Liste des Zombie Ogres" },
+      "sourceRef": { "page": 98, "md": "08_death-covens.md > Liste des Zombie Ogres" },
+      "entries": [
+        { "wargearId": "ogre-blade", "cost": 36 },
+        { "wargearId": "ogre-great-weapon", "cost": 50 },
+        { "wargearId": "ogre-mace", "cost": 38 },
+        { "wargearId": "shield", "cost": 10 }
+      ]
+    },
+    {
+      "id": "practitioner",
+      "name": { "en": "Practitioner List", "fr": "Liste des Praticiens" },
+      "sourceRef": { "page": 98, "md": "08_death-covens.md > Liste des Praticiens" },
+      "entries": [
+        { "wargearId": "arcane-staff", "cost": 10 },
+        { "wargearId": "ensorcelled-weapon", "cost": 26 },
+        { "wargearId": "sword", "cost": 18 },
+        { "wargearId": "cursed-blade", "cost": 40 },
+        { "wargearId": "warded-robes", "cost": 10 },
+        { "wargearId": "grimoire", "cost": 15 },
+        { "wargearId": "bestial-companion", "cost": 30 },
+        { "wargearId": "winged-familiar", "cost": 12 },
+        { "wargearId": "spirit-guardian", "cost": 45 }
+      ]
+    }
+  ],
+
+  "skillTables": [
+    {
+      "id": "dark-aristocracy",
+      "name": { "en": "Dark Aristocracy", "fr": "Sombre aristocratie" },
+      "eligibility": {
+        "kind": "keywords",
+        "anyOf": [
+          ["undead", "aristocrat", "leader"],
+          ["undead", "aristocrat", "champion"]
+        ]
+      },
+      "eligibilityLabel": {
+        "en": "Undead Aristocrat Leaders and Champions only",
+        "fr": "Chefs et Champions Morts-vivants Aristocrates uniquement"
+      },
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Sombre aristocratie" },
+      "skills": [
+        {
+          "id": "cloud-of-bats",
+          "name": { "en": "Cloud of Bats", "fr": "Nuée de chauves-souris" },
+          "text": {
+            "en": "Once per battle, this fighter can use the following bonus action:\nCloud of Bats [Bonus Action]: Remove the fighter from the battlefield, set them up again anywhere on the battlefield, wholly within 9\" horizontally of their previous location. They cannot be set up engaged in melee.",
+            "fr": "Une fois par bataille, ce combattant peut utiliser l'action bonus suivante :\nNuée de chauves-souris [Action bonus] : retirez le combattant du champ de bataille et placez-le de nouveau n'importe où sur le champ de bataille, entièrement à 9\" ou moins horizontalement de son emplacement précédent. Il ne peut pas être placé engagé au corps à corps."
+          },
+          "sourceRef": { "page": 103, "md": "08_death-covens.md > Nuée de chauves-souris" }
+        },
+        {
+          "id": "mesmeric-gaze",
+          "name": { "en": "Mesmeric Gaze", "fr": "Regard hypnotique" },
+          "text": {
+            "en": "Once per battle, when this fighter makes a Melee Attack action, it can attempt to mesmerise the defending fighter. If they do so, the commanding players each roll a dice and add their fighter's Willpower value to the score. If this fighter's total exceeds the defending fighter's total, they are mesmerised for that action. While they are mesmerised, subtract 1 from the Attacks value of their melee weapons (off-hand attacks are not affected).",
+            "fr": "Une fois par bataille, quand ce combattant effectue une action d'Attaque au corps à corps, il peut tenter d'hypnotiser le défenseur. Dans ce cas, le joueur qui contrôle le combattant, de chaque côté, lance un dé et ajoute la valeur de Volonté de son combattant au résultat. Si le total de ce combattant dépasse le total du défenseur, ce dernier est hypnotisé pour cette action. Tant qu'il est hypnotisé, soustrayez 1 à la valeur d'Attaques de ses armes de corps à corps ; les attaques de main secondaire ne sont pas affectées."
+          },
+          "sourceRef": { "page": 103, "md": "08_death-covens.md > Regard hypnotique" }
+        },
+        {
+          "id": "unholy-strength",
+          "name": { "en": "Unholy Strength", "fr": "Force impie" },
+          "text": {
+            "en": "This fighter's melee weapons gain the Bludgeon weapon trait.",
+            "fr": "Les armes de corps à corps de ce combattant gagnent le trait d'arme Contondant."
+          },
+          "sourceRef": { "page": 103, "md": "08_death-covens.md > Force impie" }
+        },
+        {
+          "id": "supernatural-healing",
+          "name": { "en": "Supernatural Healing", "fr": "Guérison surnaturelle" },
+          "text": {
+            "en": "This fighter cannot suffer permanent injuries. If they suffer a lasting injury it is always temporary.\nIn addition, if this fighter is killed, you can immediately make a Willpower test for them. If passed, they are not killed but must miss the next d3 battles as they slumber. Pick a Champion in your warband to be the Leader in their absence. That fighter temporarily gains the Leader keyword and loses the Champion keyword until the Leader returns.",
+            "fr": "Ce combattant ne peut pas subir de blessures permanentes. S'il subit une blessure durable, elle est toujours temporaire.\nDe plus, si ce combattant est tué, vous pouvez immédiatement effectuer un test de Volonté pour lui. S'il est réussi, il n'est pas tué, mais il doit manquer les D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande pour être le Chef en son absence. Le combattant choisi gagne temporairement le mot-clé Chef et perd le mot-clé Champion jusqu'au retour du Chef."
+          },
+          "sourceRef": { "page": 103, "md": "08_death-covens.md > Guérison surnaturelle" }
+        },
+        {
+          "id": "leech-blood",
+          "name": { "en": "Leech Blood", "fr": "Drain de sang" },
+          "text": {
+            "en": "Once per battle, this fighter can use the following bonus action:\nLeech Blood [Bonus Action]: Each enemy fighter within 9\" of this fighter must take a Willpower test. If they fail, they suffer 1 damage and this fighter heals 1 life.",
+            "fr": "Une fois par bataille, ce combattant peut utiliser l'action bonus suivante :\nDrain de sang [Action bonus] : chaque combattant ennemi à 9\" ou moins de ce combattant doit effectuer un test de Volonté. S'il le rate, il subit 1 dégât et ce combattant est soigné de 1 point de vie."
+          },
+          "sourceRef": { "page": 103, "md": "08_death-covens.md > Drain de sang" }
+        },
+        {
+          "id": "relentless-attacker",
+          "name": { "en": "Relentless Attacker", "fr": "Attaquant implacable" },
+          "text": {
+            "en": "Subtract 1 from parry rolls made against attacks made by this fighter.",
+            "fr": "Soustrayez 1 aux jets de parade effectués contre les attaques effectuées par ce combattant."
+          },
+          "sourceRef": { "page": 103, "md": "08_death-covens.md > Attaquant implacable" }
+        }
+      ]
+    },
+    {
+      "id": "undying-lords",
+      "name": { "en": "Undying Lords", "fr": "Seigneurs immortels" },
+      "eligibility": {
+        "kind": "keywords",
+        "anyOf": [
+          ["undead", "skeleton", "leader"],
+          ["undead", "skeleton", "champion"]
+        ]
+      },
+      "eligibilityLabel": {
+        "en": "Undead Skeleton Leaders and Champions only",
+        "fr": "Chefs et Champions Morts-vivants Squelettes uniquement"
+      },
+      "sourceRef": { "page": 104, "md": "08_death-covens.md > Seigneurs immortels" },
+      "skills": [
+        {
+          "id": "death-march",
+          "name": { "en": "Death March", "fr": "Marche de la mort" },
+          "text": {
+            "en": "Once per battle, this fighter can use the following bonus action:\nDeath March [Bonus Action]: Until the end of the round, add 2 to the Move value of friendly Thralls who begin a move while they are within 9\" of this fighter.",
+            "fr": "Une fois par bataille, ce combattant peut utiliser l'action bonus suivante :\nMarche de la mort [Action bonus] : jusqu'à la fin du round, ajoutez 2 à la valeur de Mouvement des Asservis alliés qui commencent un Mouvement alors qu'ils sont à 9\" ou moins de ce combattant."
+          },
+          "sourceRef": { "page": 104, "md": "08_death-covens.md > Marche de la mort" }
+        },
+        {
+          "id": "rise-again",
+          "name": { "en": "Rise Again", "fr": "Se relever" },
+          "text": {
+            "en": "When this fighter is taken down for the first time in battle, mark its location with a token. At the start of each subsequent round you can roll a dice, on a 6 the fighter returns.\nIf the fighter returns, set them up on the battlefield as close to the marked location as possible. They heal d3 life points. A fighter can only return once per battle in this manner.",
+            "fr": "Quand ce combattant est mis hors de combat pour la première fois au cours de la bataille, repérez son emplacement avec un pion. Au début de chaque round suivant, vous pouvez lancer un dé : sur 6, le combattant revient.\nSi le combattant revient, placez-le sur le champ de bataille aussi près que possible de l'emplacement repéré. Il est soigné de D3 points de vie. Un combattant ne peut revenir de cette manière qu'une fois par bataille."
+          },
+          "sourceRef": { "page": 104, "md": "08_death-covens.md > Se relever" }
+        },
+        {
+          "id": "chill-touch",
+          "name": { "en": "Chill Touch", "fr": "Toucher glacial" },
+          "text": {
+            "en": "Add 1 to the Critical Damage value of this fighter's melee weapons.",
+            "fr": "Ajoutez 1 à la valeur de Dégâts critiques des armes de corps à corps de ce combattant."
+          },
+          "sourceRef": { "page": 104, "md": "08_death-covens.md > Toucher glacial" }
+        },
+        {
+          "id": "dread-aura",
+          "name": { "en": "Dread Aura", "fr": "Aura de terreur" },
+          "text": {
+            "en": "This fighter causes fear. Enemy fighters that start their activation engaged in melee with a fighter that causes fear must pass a Willpower test. If they fail, their activation immediately ends.\nEnemy fighters that also cause fear can ignore this rule.",
+            "fr": "Ce combattant cause la peur. Les combattants ennemis qui commencent leur activation engagés au corps à corps avec un combattant qui cause la peur doivent réussir un test de Volonté. S'ils le ratent, leur activation prend fin immédiatement.\nUn combattant ennemi qui cause la peur lui aussi peut ignorer cette règle."
+          },
+          "sourceRef": { "page": 104, "md": "08_death-covens.md > Aura de terreur" }
+        },
+        {
+          "id": "drag-down-into-the-earth",
+          "name": { "en": "Drag Down Into the Earth", "fr": "Entraîner sous terre" },
+          "text": {
+            "en": "When this fighter is taken down while engaged in melee, pick 1 fighter it is engaged with, they suffer d3 damage.",
+            "fr": "Quand ce combattant est mis hors de combat alors qu'il est engagé au corps à corps, choisissez 1 combattant avec lequel il est engagé : le combattant choisi subit D3 dégâts."
+          },
+          "sourceRef": { "page": 104, "md": "08_death-covens.md > Entraîner sous terre" }
+        },
+        {
+          "id": "kingsguard",
+          "name": { "en": "Kingsguard", "fr": "Garde royale" },
+          "onlyCategories": ["champion"],
+          "text": {
+            "en": "This skill can only be picked for a Champion.\nIf an enemy fighter finishes a Charge Move engaged in melee with a friendly Leader, and this fighter is not engaged, this fighter can make a Charge Move. This fighter must finish that Charge Move engaged in melee with that enemy fighter. If it does so, the enemy fighter must target this fighter with any melee attack actions it makes this activation.",
+            "fr": "Cette compétence ne peut être choisie que pour un Champion.\nSi un combattant ennemi termine une Charge engagé au corps à corps avec un Chef allié, et que ce combattant n'est pas engagé, ce combattant peut effectuer une Charge. Ce combattant doit terminer cette Charge engagé au corps à corps avec ce combattant ennemi. Dans ce cas, le combattant ennemi doit cibler ce combattant avec toutes les actions d'Attaque au corps à corps qu'il effectue pendant cette activation."
+          },
+          "sourceRef": { "page": 104, "md": "08_death-covens.md > Garde royale" }
+        }
+      ]
+    }
+  ],
+
+  "spellLores": [
+    {
+      "id": "lore-of-necromancy",
+      "name": { "en": "Lore of Necromancy", "fr": "Domaine de la Nécromancie" },
+      "die": "d6",
+      "sourceRef": { "page": 101, "md": "08_death-covens.md > Domaine de la Nécromancie" },
+      "spells": [
+        {
+          "id": "witchfire",
+          "roll": 1,
+          "name": { "en": "Witchfire", "fr": "Feu sorcier" },
+          "spellType": "attack",
+          "castingValue": 8,
+          "criticalCastValue": 12,
+          "text": {
+            "en": "Place d3 witchfire tokens by the caster, to a maximum of 3. Once per activation, the caster can spend a witchfire token to make the following bonus action:\nWitchfire Attack [Bonus Action]: The closest visible enemy fighter within 12\" is targeted and hit with the following attack:",
+            "fr": "Placez D3 pions Feu sorcier à côté du lanceur, jusqu'à un maximum de 3. Une fois par activation, le lanceur peut dépenser un pion Feu sorcier pour effectuer l'action bonus suivante :\nAttaque de feu sorcier [Action bonus] : le combattant ennemi visible le plus proche à 12\" ou moins est ciblé et touché par l'attaque suivante :"
+          },
+          "criticalText": {
+            "en": "Place 3 witchfire tokens by the caster (to a maximum of 3) instead of d3.",
+            "fr": "Placez 3 pions Feu sorcier à côté du lanceur, jusqu'à un maximum de 3, à la place de D3."
+          },
+          "attack": { "rend": 0, "damage": "d3" },
+          "sourceRef": { "page": 101, "md": "08_death-covens.md > 1 - Feu sorcier" }
+        },
+        {
+          "id": "ethereal-armour",
+          "roll": 2,
+          "name": { "en": "Ethereal Armour", "fr": "Armure éthérée" },
+          "spellType": "enchant",
+          "castingValue": 8,
+          "criticalCastValue": 12,
+          "text": {
+            "en": "Pick a visible friendly fighter within 6\" of the caster to be the target, that fighter becomes ethereal until the end of the round. While a fighter is ethereal, improve its Armour value by 1 (to a maximum of 2+).",
+            "fr": "Choisissez comme cible un combattant allié visible à 6\" ou moins du lanceur : le combattant choisi devient éthéré jusqu'à la fin du round. Tant qu'un combattant est éthéré, améliorez de 1 sa valeur d'Armure, jusqu'à un maximum de 2+."
+          },
+          "criticalText": {
+            "en": "Increase the range of the spell from 6\" to 12\".",
+            "fr": "Augmentez la portée du sort de 6\" à 12\"."
+          },
+          "attack": null,
+          "sourceRef": { "page": 101, "md": "08_death-covens.md > 2 - Armure éthérée" }
+        },
+        {
+          "id": "raise-zombie",
+          "roll": 3,
+          "name": { "en": "Raise Zombie", "fr": "Relever un Zombie" },
+          "spellType": "summon",
+          "castingValue": 9,
+          "criticalCastValue": 12,
+          "text": {
+            "en": "A summoned Zombie fighter (pg xx) is added to the caster's warband until it is taken down. Set up the fighter within 3\" of the caster and not engaged in melee.\nA warband cannot have more than 3 summoned fighters at any time. If the caster's warband already has 3 summoned fighters, they cannot cast this spell.",
+            "fr": "Un combattant Zombie invoqué (p. xx) est ajouté à la bande du lanceur jusqu'à ce qu'il soit mis hors de combat. Placez le combattant à 3\" ou moins du lanceur et non engagé au corps à corps.\nUne bande ne peut jamais avoir plus de 3 combattants invoqués à la fois. Si la bande du lanceur a déjà 3 combattants invoqués, il ne peut pas lancer ce sort."
+          },
+          "criticalText": {
+            "en": "The fighter can be set up within 9\" of the caster and not engaged in melee.",
+            "fr": "Le combattant peut être placé à 9\" ou moins du lanceur et non engagé au corps à corps."
+          },
+          "attack": null,
+          "sourceRef": { "page": 101, "md": "08_death-covens.md > 3 - Relever un Zombie" }
+        },
+        {
+          "id": "twilight-translocation",
+          "roll": 4,
+          "name": { "en": "Twilight Translocation", "fr": "Translocation crépusculaire" },
+          "spellType": "cantrip",
+          "castingValue": 7,
+          "criticalCastValue": 12,
+          "text": {
+            "en": "Pick another visible friendly fighter within 6\" of the caster to be the target, remove them from the battlefield and set them up again, anywhere on the battlefield within 15\" of the caster and not engaged in melee.",
+            "fr": "Choisissez comme cible un autre combattant allié visible à 6\" ou moins du lanceur, retirez-le du champ de bataille et placez-le de nouveau n'importe où sur le champ de bataille, à 15\" ou moins du lanceur et non engagé au corps à corps."
+          },
+          "criticalText": {
+            "en": "When setting up the fighter, increase the range to 18\".",
+            "fr": "Au moment de placer le combattant, augmentez la portée à 18\"."
+          },
+          "attack": null,
+          "sourceRef": { "page": 101, "md": "08_death-covens.md > 4 - Translocation crépusculaire" }
+        },
+        {
+          "id": "death-blast",
+          "roll": 5,
+          "name": { "en": "Death Blast", "fr": "Explosion de mort" },
+          "spellType": "attack",
+          "castingValue": 9,
+          "criticalCastValue": 12,
+          "text": {
+            "en": "Place the blast template centred on a point within 12\" of the caster, it then scatters d6\".\nEach fighter in the template is targeted and hit with the following attack:",
+            "fr": "Placez le gabarit d'explosion centré sur un point à 12\" ou moins du lanceur ; il dévie ensuite de D6\".\nChaque combattant situé dans le gabarit est ciblé et touché par l'attaque suivante :"
+          },
+          "criticalText": { "en": "It does not scatter.", "fr": "Il ne dévie pas." },
+          "attack": { "rend": -1, "damage": "d3+1" },
+          "sourceRef": { "page": 101, "md": "08_death-covens.md > 5 - Explosion de mort" }
+        },
+        {
+          "id": "balefire",
+          "roll": 6,
+          "name": { "en": "Balefire", "fr": "Feu funeste" },
+          "spellType": "attack",
+          "castingValue": 9,
+          "criticalCastValue": 13,
+          "text": {
+            "en": "Place the flame template from the caster. Each fighter in the template is targeted and hit with the following attack:",
+            "fr": "Placez le gabarit de flamme à partir du lanceur. Chaque combattant situé dans le gabarit est ciblé et touché par l'attaque suivante :"
+          },
+          "criticalText": { "en": "Add 1 to the Damage value.", "fr": "Ajoutez 1 à la valeur de Dégâts." },
+          "attack": { "rend": -2, "damage": "d3" },
+          "sourceRef": { "page": 101, "md": "08_death-covens.md > 6 - Feu funeste" }
+        }
+      ]
+    },
+    {
+      "id": "lore-of-blood",
+      "name": { "en": "Lore of Blood", "fr": "Domaine du Sang" },
+      "die": "d6",
+      "sourceRef": { "page": 102, "md": "08_death-covens.md > Domaine du Sang" },
+      "spells": [
+        {
+          "id": "draw-blood",
+          "roll": 1,
+          "name": { "en": "Draw Blood", "fr": "Saignée" },
+          "spellType": "attack",
+          "castingValue": 7,
+          "criticalCastValue": 10,
+          "text": {
+            "en": "Pick the closest visible enemy fighter within 9\" of the casting fighter to be the target. That fighter suffers 1 damage and the caster heals 1 point of life.",
+            "fr": "Choisissez comme cible le combattant ennemi visible le plus proche à 9\" ou moins du combattant qui lance le sort. Le combattant choisi subit 1 dégât et le lanceur est soigné de 1 point de vie."
+          },
+          "criticalText": {
+            "en": "The target suffers 2 damage and the caster heals 2 points of life instead.",
+            "fr": "À la place, la cible subit 2 dégâts et le lanceur est soigné de 2 points de vie."
+          },
+          "attack": null,
+          "sourceRef": { "page": 102, "md": "08_death-covens.md > 1 - Saignée" }
+        },
+        {
+          "id": "cursed-blades",
+          "roll": 2,
+          "name": { "en": "Cursed Blades", "fr": "Lames maudites" },
+          "spellType": "enchant",
+          "castingValue": 7,
+          "criticalCastValue": 10,
+          "text": {
+            "en": "Pick a friendly fighter within 6\" of the caster to be the target, then pick 1 of the target's melee weapons to be cursed until the end of the round. While a weapon is cursed it gains the Arcane and Poison weapon traits.",
+            "fr": "Choisissez comme cible un combattant allié à 6\" ou moins du lanceur, puis choisissez 1 des armes de corps à corps de la cible : elle est maudite jusqu'à la fin du round. Tant qu'une arme est maudite, elle gagne les traits d'armes Arcanique et Poison."
+          },
+          "criticalText": {
+            "en": "Increase the range of the spell from 6\" to 12\".",
+            "fr": "Augmentez la portée du sort de 6\" à 12\"."
+          },
+          "attack": null,
+          "sourceRef": { "page": 102, "md": "08_death-covens.md > 2 - Lames maudites" }
+        },
+        {
+          "id": "raise-skeleton",
+          "roll": 3,
+          "name": { "en": "Raise Skeleton", "fr": "Relever un Squelette" },
+          "spellType": "summon",
+          "castingValue": 10,
+          "criticalCastValue": 14,
+          "text": {
+            "en": "A summoned Skeleton fighter (pg xx) is added to the caster's warband until it is taken down. Set up the fighter within 3\" of the caster and not engaged in melee.\nThe Skeleton is equipped with a Cuirass and a Shield as well as 1 of the following melee weapons: Club, Spear or Sword.\nA warband cannot have more than 3 summoned fighters at any time. If the caster's warband already has 3 summoned fighters, they cannot cast this spell.",
+            "fr": "Un combattant Squelette invoqué (p. xx) est ajouté à la bande du lanceur jusqu'à ce qu'il soit mis hors de combat. Placez le combattant à 3\" ou moins du lanceur et non engagé au corps à corps.\nLe Squelette est équipé d'une Cuirasse et d'un Bouclier, ainsi que de 1 des armes de corps à corps suivantes : Gourdin, Lance ou Épée.\nUne bande ne peut jamais avoir plus de 3 combattants invoqués à la fois. Si la bande du lanceur a déjà 3 combattants invoqués, il ne peut pas lancer ce sort."
+          },
+          "criticalText": {
+            "en": "The fighter can be set up within 9\" of the caster and not engaged in melee.",
+            "fr": "Le combattant peut être placé à 9\" ou moins du lanceur et non engagé au corps à corps."
+          },
+          "attack": null,
+          "sourceRef": { "page": 102, "md": "08_death-covens.md > 3 - Relever un Squelette" }
+        },
+        {
+          "id": "recall",
+          "roll": 4,
+          "name": { "en": "Recall", "fr": "Rappel" },
+          "spellType": "cantrip",
+          "castingValue": 7,
+          "criticalCastValue": 10,
+          "text": {
+            "en": "Pick a friendly Thrall on the battlefield to be the target. Remove them from the battlefield and set them up again within 3\" of the caster and not engaged in melee.",
+            "fr": "Choisissez comme cible un Asservi allié sur le champ de bataille. Retirez-le du champ de bataille et placez-le de nouveau à 3\" ou moins du lanceur et non engagé au corps à corps."
+          },
+          "criticalText": {
+            "en": "You can pick up to 2 friendly Thralls instead of 1.",
+            "fr": "Vous pouvez choisir jusqu'à 2 Asservis alliés à la place de 1."
+          },
+          "attack": null,
+          "sourceRef": { "page": 102, "md": "08_death-covens.md > 4 - Rappel" }
+        },
+        {
+          "id": "bat-scream",
+          "roll": 5,
+          "name": { "en": "Bat Scream", "fr": "Cri de chauve-souris" },
+          "spellType": "hex",
+          "castingValue": 8,
+          "criticalCastValue": 10,
+          "text": {
+            "en": "Place the flame template from the caster. Each fighter in its area is targeted. Each targeted fighter suffers 1 damage. In addition they must pass a Willpower test else they become disorientated until the end of the round. While a fighter is disorientated, subtract 1 from their attack and parry rolls.",
+            "fr": "Placez le gabarit de flamme à partir du lanceur. Chaque combattant situé dans sa zone est ciblé. Chaque combattant ciblé subit 1 dégât. De plus, il doit réussir un test de Volonté, sans quoi il devient désorienté jusqu'à la fin du round. Tant qu'un combattant est désorienté, soustrayez 1 à ses jets d'attaque et à ses jets de parade."
+          },
+          "criticalText": {
+            "en": "Subtract 1 from the Willpower tests targeted fighters make.",
+            "fr": "Soustrayez 1 aux tests de Volonté effectués par les combattants ciblés."
+          },
+          "attack": null,
+          "sourceRef": { "page": 102, "md": "08_death-covens.md > 5 - Cri de chauve-souris" }
+        },
+        {
+          "id": "sanguine-spear",
+          "roll": 6,
+          "name": { "en": "Sanguine Spear", "fr": "Lance sanguine" },
+          "spellType": "attack",
+          "castingValue": 10,
+          "criticalCastValue": 14,
+          "text": {
+            "en": "Draw a line from the caster, 12\" long and 1\" wide. Each visible enemy fighter the line passes through is hit by the following attack:\nFor each point of damage a target suffers, heal the caster 1 life point.",
+            "fr": "Tracez une ligne à partir du lanceur, longue de 12\" et large de 1\". Chaque combattant ennemi visible que la ligne traverse est touché par l'attaque suivante :\nPour chaque point de dégâts subi par une cible, le lanceur est soigné de 1 point de vie."
+          },
+          "criticalText": { "en": "Increase the range to 15\".", "fr": "Augmentez la portée à 15\"." },
+          "attack": { "rend": -2, "damage": "d3" },
+          "sourceRef": { "page": 102, "md": "08_death-covens.md > 6 - Lance sanguine" }
+        }
+      ]
+    }
+  ]
+}

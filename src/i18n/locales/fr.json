@@ -65,7 +65,8 @@
       "unknownFighter": "Profil de combattant inconnu \"{{profile}}\".",
       "unknownWargear": "Équipement inconnu \"{{wargear}}\".",
       "unknownSkill": "Compétence inconnue \"{{skill}}\".",
-      "unknownSpell": "Sort inconnu \"{{spell}}\"."
+      "unknownSpell": "Sort inconnu \"{{spell}}\".",
+      "unknownOption": "Option inconnue \"{{option}}\"."
     },
     "budget": {
       "exceeded": "{{spent}} pa dépensées : le budget est de {{starting}} pa.",
@@ -78,7 +79,8 @@
       "promotedLeader": "{{profile}} ne peut pas être promu chef de cette bande.",
       "categoryMax": "{{count}} {{category}} : {{max}} au maximum.",
       "categoryMin": "{{count}} {{category}} : au moins {{min}} requis.",
-      "profileLimit": "{{count}} {{profile}} : limité à 0-{{max}}."
+      "profileLimit": "{{count}} {{profile}} : limité à 0-{{max}}.",
+      "notRecruitable": "{{profile}} ne se recrute pas : c'est une forme de {{expected}}."
     },
     "wargear": {
       "notAllowed": "{{wargear}} ne figure pas dans les listes d'équipement de ce combattant.",
@@ -103,7 +105,8 @@
       "exceeded": "{{count}} combattants équipés de {{wargear}} : Rare 0-{{max}} dans la bande."
     },
     "fighter": {
-      "unarmed": "Aucune arme de corps à corps : ce combattant utilisera la Frappe à mains nues."
+      "unarmed": "Aucune arme de corps à corps : ce combattant utilisera la Frappe à mains nues.",
+      "optionCount": "{{count}} option(s) choisie(s), {{max}} autorisée(s)."
     },
     "weapon": {
       "oneUse": "{{wargear}} ne permet qu'1 attaque par bataille."
@@ -115,7 +118,8 @@
       "duplicate": "{{skill}} est déjà possédée par un autre combattant de la bande.",
       "notEligible": "Ce combattant ne peut pas prendre de compétence dans {{table}} ({{skill}}).",
       "fixedMissing": "Ce combattant commence avec {{skill}}.",
-      "recruitmentCount": "{{actual}} compétence(s) choisie(s), le profil en accorde {{expected}} au recrutement."
+      "recruitmentCount": "{{actual}} compétence(s) choisie(s), le profil en accorde {{expected}} au recrutement.",
+      "categoryOnly": "{{skill}} ne peut être choisie que pour les {{category}}."
     },
     "spell": {
       "notKnownLore": "{{spell}} n'appartient à aucun domaine connu de ce combattant.",
@@ -128,6 +132,9 @@
     },
     "origin": {
       "missing": "Aucune origine choisie."
+    },
+    "experience": {
+      "notGained": "Ce combattant ne gagne pas d'expérience ({{experience}} saisie)."
     }
   },
   "severity": {
@@ -139,7 +146,8 @@
     "cancel": "Annuler"
   },
   "units": {
-    "silver": "{{value}} pa"
+    "silver": "{{value}} pa",
+    "silverPlus": "+{{value}} pa"
   },
   "budget": {
     "spent": "Dépensé",
@@ -223,7 +231,8 @@
     "cantrip": "Sort mineur",
     "hex": "Sort de Maléfice",
     "healing": "Sort de Soin",
-    "aura": "Sort d'Aura"
+    "aura": "Sort d'Aura",
+    "summon": "Sort d'Invocation"
   },
   "scroll": {
     "keywords": "Mots-clés :",
@@ -233,7 +242,8 @@
     "tag": {
       "action": "Action",
       "bonus-action": "Action bonus"
-    }
+    },
+    "form": "Forme : {{name}}"
   },
   "roster": {
     "name": "Nom",
@@ -268,7 +278,8 @@
       "leader": "Chef :",
       "stronghold": "Repaire :",
       "income": "revenu {{income}} pa",
-      "profileLimit": "Votre bande peut inclure 0-{{limit}} {{name}}."
+      "profileLimit": "Votre bande peut inclure 0-{{limit}} {{name}}.",
+      "uncapped": "{{name}} ne compte pas dans la limite des {{category}}."
     },
     "fighters": {
       "counters": "Composition de la bande",
@@ -294,7 +305,8 @@
         "manual": "saisi"
       },
       "reroll": "Relancer",
-      "manualDie": "Résultat du dé"
+      "manualDie": "Résultat du dé",
+      "options": "Options ({{picked}}/{{max}})"
     },
     "wargear": {
       "pickFighter": "Combattant à équiper",
@@ -314,7 +326,8 @@
       "fixed": "Déjà connue(s) : {{skills}}.",
       "takenBy": "possédée par {{name}}",
       "spells": "Sorts fétiches, {{lore}} : {{picked}} sur {{expected}}",
-      "casting": "{{type}}, valeur de lancement {{value}}+, critique {{critical}}+"
+      "casting": "{{type}}, valeur de lancement {{value}}+, critique {{critical}}+",
+      "categoryOnly": "{{category}} uniquement"
     },
     "rating": {
       "caption": "Combattants et leur valeur",
@@ -404,7 +417,8 @@
       "removeInjury": "Retirer",
       "addInjury": "Ajouter une blessure",
       "advancements": "Progression",
-      "history": "Historique ({{count}})"
+      "history": "Historique ({{count}})",
+      "noExperience": "Ne gagne pas d'expérience (Asservi)."
     },
     "battle": {
       "title": "Journal de batailles",
@@ -499,7 +513,9 @@
       "spells": "Sorts :",
       "injuries": "Blessures :",
       "promoted": "Chef promu.",
-      "moreWeapons": "Autres armes :"
+      "moreWeapons": "Autres armes :",
+      "options": "Options :",
+      "formOf": "Forme de {{name}}"
     }
   }
 }

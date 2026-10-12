@@ -16,7 +16,9 @@ import { formatDice, formatRange, formatRend } from "../i18n/text.ts";
 import {
   activeFighters,
   effectiveStats,
+  fighterOptions,
   fighterValue,
+  formsOf,
   weaponLines,
   type FactionIndex,
 } from "../rules/index.ts";
@@ -43,8 +45,9 @@ export interface PrintFighter {
   name: string;
   type: string;
   category: string;
-  cost: number;
-  experience: number;
+  /** null for an alternate form (Lycanfell Beast): no cost, no experience. */
+  cost: number | null;
+  experience: number | null;
   stats: Stats | null;
   weapons: PrintWeapon[];
   notes: string[];
@@ -60,6 +63,9 @@ export interface PrintLabels {
   injuries: string;
   promoted: string;
   moreWeapons: string;
+  options: string;
+  /** "Form of {{name}}" with {{name}} replaced by the fighter's label. */
+  formOf: (name: string) => string;
 }
 
 const pick = (text: LocalizedText, lang: Language): string => text[lang];
@@ -111,9 +117,11 @@ export function buildPrintFighter(
     return s === undefined ? id : pick(s.spell.name, lang);
   });
   const injuries = fighter.injuries.map((i) => i.text.trim()).filter((x) => x !== "");
+  const options = fighterOptions(index, fighter).map((o) => pick(o.name, lang));
 
   const notes: string[] = [];
   if (fighter.promotedToLeader) notes.push(labels.promoted);
+  if (options.length > 0) notes.push(`${labels.options} ${options.join(", ")}`);
   if (otherGear.length > 0) notes.push(`${labels.wargear} ${otherGear.join(", ")}`);
   if (overflow.length > 0) notes.push(`${labels.moreWeapons} ${overflow.join(", ")}`);
   if (skills.length > 0) notes.push(`${labels.skills} ${skills.join(", ")}`);
@@ -134,7 +142,49 @@ export function buildPrintFighter(
   };
 }
 
-/** Active fighters only; with `blank`, empty blocks complete the roster up to 15. */
+/**
+ * Block of an alternate form (Lycanfell Beast) printed right after its fighter:
+ * the form's own profile and natural weapons, none of the fighter's wargear,
+ * skills or injuries (Vestiges of the Noble), no cost and no experience.
+ */
+export function buildFormFighter(
+  index: FactionIndex,
+  fighter: WarbandFighter,
+  formId: string,
+  lang: Language,
+  labels: PrintLabels,
+): PrintFighter {
+  const form = index.fighters.get(formId);
+  const base = buildPrintFighter(
+    index,
+    {
+      ...fighter,
+      profileId: formId,
+      wargearIds: [...(form?.fixedWargearIds ?? [])],
+      skillIds: [],
+      spellIds: [],
+      optionIds: [],
+      injuries: [],
+      statModifiers: {},
+      promotedToLeader: false,
+      blackRot: 0,
+    },
+    lang,
+    labels,
+  );
+  const owner =
+    fighter.customName.trim() ||
+    pick(index.fighters.get(fighter.profileId)?.name ?? { en: "", fr: "" }, lang);
+  return {
+    ...base,
+    id: `${fighter.instanceId}-${formId}`,
+    cost: null,
+    experience: null,
+    notes: [labels.formOf(owner)],
+  };
+}
+
+/** Active fighters, each followed by its alternate forms; with `blank`, empty blocks complete the roster up to 15. */
 export function buildPrintFighters(
   index: FactionIndex,
   warband: Warband,
@@ -142,9 +192,10 @@ export function buildPrintFighters(
   labels: PrintLabels,
   blank: boolean,
 ): (PrintFighter | null)[] {
-  const list: (PrintFighter | null)[] = activeFighters(warband).map((f) =>
+  const list: (PrintFighter | null)[] = activeFighters(warband).flatMap((f) => [
     buildPrintFighter(index, f, lang, labels),
-  );
+    ...formsOf(index, f.profileId).map((form) => buildFormFighter(index, f, form.id, lang, labels)),
+  ]);
   if (blank) while (list.length < index.common.recruitment.maxFighters) list.push(null);
   return list;
 }

@@ -50,6 +50,8 @@ export function PrintView({ warband, backHref }: { warband: Warband; backHref: s
     injuries: t("print.notes.injuries"),
     promoted: t("print.notes.promoted"),
     moreWeapons: t("print.notes.moreWeapons"),
+    options: t("print.notes.options"),
+    formOf: (name) => t("print.notes.formOf", { name }),
   };
   const fighters = buildPrintFighters(index, warband, f.lang, labels, blank);
 

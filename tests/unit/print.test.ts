@@ -24,6 +24,8 @@ const labels: PrintLabels = {
   injuries: "Blessures :",
   promoted: "Chef promu.",
   moreWeapons: "Autres armes :",
+  options: "Options :",
+  formOf: (name) => `Forme de ${name}`,
 };
 
 describe("print model", () => {

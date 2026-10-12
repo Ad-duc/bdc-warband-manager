@@ -53,6 +53,17 @@ export function StepOrigin({ warband, index, update }: StepProps) {
                 {stronghold !== undefined &&
                   ` (${t("wizard.origin.income", { income: f.dice(stronghold.income) })})`}
               </span>
+              {origin.uncappedFighterIds.map((id) => {
+                const fighter = faction.fighters.find((x) => x.id === id);
+                return (
+                  <span key={id} className="text-sm">
+                    {t("wizard.origin.uncapped", {
+                      name: fighter === undefined ? id : f.text(fighter.name),
+                      category: t(`categories.${fighter?.category ?? "beast"}_other`),
+                    })}
+                  </span>
+                );
+              })}
               {origin.profileLimits.map((l) => {
                 const fighter = faction.fighters.find((x) => x.id === l.fighterId);
                 return (

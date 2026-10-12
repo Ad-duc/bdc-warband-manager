@@ -12,7 +12,7 @@
 import { useId } from "react";
 import { useTranslation } from "react-i18next";
 import type { Warband, WarbandFighter } from "../../data/schema.ts";
-import { effectiveStats, fighterValue, type FactionIndex } from "../../rules/index.ts";
+import { effectiveStats, fighterValue, gainsNoExperience, type FactionIndex } from "../../rules/index.ts";
 import { useFormatter } from "../../i18n/text.ts";
 import { StatsTable } from "../common/StatsTable.tsx";
 import { fighterLabel } from "../warbands/factory.ts";
@@ -87,37 +87,43 @@ export function FighterCard({
       </dl>
 
       <div className="mt-3 flex flex-wrap items-end gap-4">
-        <div>
-          <label htmlFor={xpId} className="block text-sm font-bold">
-            {t("campaign.fighter.experience")}
-          </label>
-          <div className="flex items-center gap-1">
-            <input
-              id={xpId}
-              type="number"
-              inputMode="numeric"
-              min={0}
-              className="field w-24"
-              value={fighter.experience}
-              onChange={(e) => {
-                onChange({ ...fighter, experience: Math.max(0, Math.trunc(Number(e.target.value) || 0)) });
-              }}
-            />
-            {XP_STEPS.map((step) => (
-              <button
-                key={step}
-                type="button"
-                className="btn btn-sm"
-                aria-label={t("campaign.fighter.addXp", { count: step, name })}
-                onClick={() => {
-                  onChange({ ...fighter, experience: Math.max(0, fighter.experience + step) });
+        {gainsNoExperience(index, profile) ? (
+          <p className="text-sm" data-testid="no-experience">
+            <strong>{t("campaign.fighter.experience")}</strong> {t("campaign.fighter.noExperience")}
+          </p>
+        ) : (
+          <div>
+            <label htmlFor={xpId} className="block text-sm font-bold">
+              {t("campaign.fighter.experience")}
+            </label>
+            <div className="flex items-center gap-1">
+              <input
+                id={xpId}
+                type="number"
+                inputMode="numeric"
+                min={0}
+                className="field w-24"
+                value={fighter.experience}
+                onChange={(e) => {
+                  onChange({ ...fighter, experience: Math.max(0, Math.trunc(Number(e.target.value) || 0)) });
                 }}
-              >
-                {step > 0 ? `+${step}` : step}
-              </button>
-            ))}
+              />
+              {XP_STEPS.map((step) => (
+                <button
+                  key={step}
+                  type="button"
+                  className="btn btn-sm"
+                  aria-label={t("campaign.fighter.addXp", { count: step, name })}
+                  onClick={() => {
+                    onChange({ ...fighter, experience: Math.max(0, fighter.experience + step) });
+                  }}
+                >
+                  {step > 0 ? `+${step}` : step}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         <fieldset>
           <legend className="text-sm font-bold">{t("campaign.fighter.blackRot")}</legend>

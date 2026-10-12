@@ -178,7 +178,7 @@ describe("wargear", () => {
 
   it("a purchasable item sold in no list is not allowed", () => {
     const d = cloneData();
-    const gm = d.factions[0];
+    const gm = d.factions.find((x) => x.id === "guild-mercenaries");
     if (gm === undefined) throw new Error("no faction");
     gm.armouryLists = gm.armouryLists.map((l) => ({
       ...l,
@@ -298,7 +298,7 @@ describe("skills", () => {
 
   it("a promoted henchman gains the Leader keyword for eligibility", () => {
     const d = cloneData();
-    const gm = d.factions[0];
+    const gm = d.factions.find((x) => x.id === "guild-mercenaries");
     if (gm === undefined) throw new Error("no faction");
     gm.leaderSuccession.push({ formerLeaderId: "guild-captain", eligibleChampionIds: ["guild-mercenary"] });
     const leader = mercenary({ promotedToLeader: true, skillIds: ["rallying-cry"] });
@@ -313,7 +313,7 @@ describe("skills", () => {
 
   it("eligibility by explicit fighter list", () => {
     const d = cloneData();
-    const gm = d.factions[0];
+    const gm = d.factions.find((x) => x.id === "guild-mercenaries");
     const table = gm?.skillTables[0];
     if (table === undefined) throw new Error("no table");
     table.eligibility = { kind: "fighters", fighterIds: ["guild-captain"] };

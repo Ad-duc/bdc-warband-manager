@@ -257,7 +257,8 @@ interface FactionLayout {
   names: string;
   armouryStart: string;
   melee: string;
-  ranged: string;
+  /** null when the faction has no ranged weapon page (Death Covens). */
+  ranged: string | null;
   armourItems: string;
   skillSections: string[];
   loreSections: string[];
@@ -287,6 +288,17 @@ const LAYOUTS: Record<string, FactionLayout> = {
     skillSections: ["Machinations magistrales", "Coureurs de tunnels"],
     loreSections: ["Domaine des Tunnels profonds", "Domaine des Véroles"],
     naturalWeaponsInMeleeTable: true,
+  },
+  "death-covens": {
+    file: "08_death-covens.md",
+    names: "Noms des Death Coven",
+    armouryStart: "## Armurerie du Coven (*Coven Armoury*)",
+    melee: "Armurerie du Coven - Armes de corps à corps",
+    ranged: null,
+    armourItems: "Armurerie du Coven - Armures et objets",
+    skillSections: ["Sombre aristocratie", "Seigneurs immortels"],
+    loreSections: ["Domaine de la Nécromancie", "Domaine du Sang"],
+    naturalWeaponsInMeleeTable: false,
   },
 };
 
@@ -339,10 +351,12 @@ function compareFaction(dir: string, f: FactionData, c: CommonData): void {
   const listRows = tableRows(section(md, 2, "Liste des combattants"))
     .filter((r) => r[0] !== "Combattant")
     .map((r) => `${fighterKey(r[0] ?? "")}=${cost(r[1] ?? "")}`);
+  // Alternate forms (Lycanfell Beast) have no entry in the list and no starting experience.
+  const recruitable = f.fighters.filter((x) => x.formOf === null);
   compareSets(
     "Fighters list (name=cost)",
     listRows,
-    f.fighters.map((x) => `${fighterKey(x.name.en)}=${x.cost}`),
+    recruitable.map((x) => `${fighterKey(x.name.en)}=${x.cost}`),
   );
 
   // The scrolls chapter holds several "##" sub-headings, so it is cut by hand.
@@ -379,7 +393,7 @@ function compareFaction(dir: string, f: FactionData, c: CommonData): void {
   compareSets(
     "Starting experience (in scroll order)",
     xpRows.map((v, i) => `${i + 1}:${v}`),
-    f.fighters.map((x, i) => {
+    recruitable.map((x, i) => {
       const e = x.startingExperience;
       const v =
         e.dice === null
@@ -425,7 +439,10 @@ function compareFaction(dir: string, f: FactionData, c: CommonData): void {
         return `${w.id}: ${frValue(p.attacks)} ${frRend(p.rend)} ${frValue(p.damage)} ${frValue(p.critDamage)} | ${frTraits(w, c)} | ${w.cost}`;
       }),
   );
-  const ranged = tableRows(section(md, 2, layout.ranged)).filter((r) => r.length === 8 && r[0] !== "Nom");
+  const ranged =
+    layout.ranged === null
+      ? []
+      : tableRows(section(md, 2, layout.ranged)).filter((r) => r.length === 8 && r[0] !== "Nom");
   compareSets(
     "Ranged weapon profiles",
     ranged.map(

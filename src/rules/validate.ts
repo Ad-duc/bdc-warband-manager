@@ -8,7 +8,15 @@
  * License:     MIT
  */
 
-import type { FighterProfile, Origin, SkillTable, Wargear, Warband, WarbandFighter } from "../data/schema.ts";
+import type {
+  FighterProfile,
+  Origin,
+  Skill,
+  SkillTable,
+  Wargear,
+  Warband,
+  WarbandFighter,
+} from "../data/schema.ts";
 import { RULES, type RuleCode } from "./catalog.ts";
 import { activeFighters, recruitmentBudget } from "./calc.ts";
 import {
@@ -16,7 +24,9 @@ import {
   findFaction,
   hasTrait,
   indexFaction,
+  gainsNoExperience,
   isHeldItem,
+  isUncapped,
   profileLimit,
   type FactionIndex,
 } from "./lookup.ts";
@@ -111,8 +121,18 @@ function checkComposition(
       );
   }
 
+  for (const r of resolved)
+    if (r.profile.formOf !== null)
+      push(
+        "composition.notRecruitable",
+        { profile: r.profile.id, expected: r.profile.formOf },
+        r.fighter.instanceId,
+      );
+
   for (const category of ["champion", "henchman", "brute", "beast"] as const) {
-    const count = resolved.filter((r) => effectiveCategory(r.fighter, r.profile) === category).length;
+    const count = resolved.filter(
+      (r) => effectiveCategory(r.fighter, r.profile) === category && !isUncapped(r.profile, origin),
+    ).length;
     const { min, max } = composition[category];
     if (count < min) push("composition.categoryMin", { category, count, min });
     if (max !== null && count > max) push("composition.categoryMax", { category, count, max });
@@ -144,6 +164,15 @@ function checkFighter(
     if (w === undefined) push("data.unknownWargear", { wargear: wargearId }, id);
     else gear.push(w);
   }
+
+  const choices = profile.options?.choices ?? [];
+  for (const optionId of fighter.optionIds)
+    if (!choices.some((c) => c.id === optionId)) push("data.unknownOption", { option: optionId }, id);
+  const maxOptions = profile.options?.max ?? 0;
+  if (fighter.optionIds.length > maxOptions)
+    push("fighter.optionCount", { count: fighter.optionIds.length, max: maxOptions }, id);
+  if (fighter.experience > 0 && gainsNoExperience(index, profile))
+    push("experience.notGained", { experience: fighter.experience }, id);
 
   checkWargear(index, fighter, profile, gear, push);
   checkSkills(index, fighter, profile, mode, push);
@@ -234,6 +263,13 @@ export function isEligible(fighter: WarbandFighter, profile: FighterProfile, tab
   return e.anyOf.some((group) => group.every((k) => keywords.has(k)));
 }
 
+/** True when a skill limited to some categories (Kingsguard: champions) fits this fighter. */
+export function fitsSkillCategory(fighter: WarbandFighter, profile: FighterProfile, skill: Skill): boolean {
+  return (
+    skill.onlyCategories.length === 0 || skill.onlyCategories.includes(effectiveCategory(fighter, profile))
+  );
+}
+
 function checkSkills(
   index: FactionIndex,
   fighter: WarbandFighter,
@@ -248,6 +284,8 @@ function checkSkills(
     if (entry === undefined) push("data.unknownSkill", { skill: skillId }, id);
     else if (!fixed.includes(skillId) && !isEligible(fighter, profile, entry.table))
       push("skill.notEligible", { skill: skillId, table: entry.table.id }, id);
+    else if (!fitsSkillCategory(fighter, profile, entry.skill))
+      push("skill.categoryOnly", { skill: skillId, category: entry.skill.onlyCategories.join(",") }, id);
   }
   for (const skillId of fixed)
     if (!fighter.skillIds.includes(skillId)) push("skill.fixedMissing", { skill: skillId }, id);

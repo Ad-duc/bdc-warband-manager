@@ -10,7 +10,7 @@
 
 import { useTranslation } from "react-i18next";
 import type { WarbandFighter } from "../../data/schema.ts";
-import { isEligible } from "../../rules/index.ts";
+import { fitsSkillCategory, isEligible } from "../../rules/index.ts";
 import { useFormatter } from "../../i18n/text.ts";
 import { Term } from "../common/Term.tsx";
 import { fighterLabel } from "../warbands/factory.ts";
@@ -87,14 +87,15 @@ export function StepSkills({ warband, index, update }: StepProps) {
                         const mine = fighter.skillIds.includes(skill.id);
                         const fixed = g.fixedSkillIds.includes(skill.id);
                         const taken = holder !== undefined && holder.instanceId !== fighter.instanceId;
+                        const wrongCategory = !fitsSkillCategory(fighter, profile, skill);
                         return (
                           <li key={skill.id}>
-                            <label className={`flex gap-2 ${taken ? "opacity-60" : ""}`}>
+                            <label className={`flex gap-2 ${taken || wrongCategory ? "opacity-60" : ""}`}>
                               <input
                                 type="checkbox"
                                 className="mt-1 size-5 shrink-0"
                                 checked={mine}
-                                disabled={fixed || (taken && !mine)}
+                                disabled={fixed || ((taken || wrongCategory) && !mine)}
                                 onChange={() => {
                                   toggle(fighter, "skillIds", skill.id);
                                 }}
@@ -104,6 +105,12 @@ export function StepSkills({ warband, index, update }: StepProps) {
                                   <Term text={skill.name} />
                                 </strong>
                                 {taken && ` (${t("wizard.skills.takenBy", { name: label(holder) })})`}
+                                {wrongCategory &&
+                                  ` (${t("wizard.skills.categoryOnly", {
+                                    category: skill.onlyCategories
+                                      .map((c) => t(`categories.${c}_other`))
+                                      .join(", "),
+                                  })})`}
                                 <span className="block text-sm">{f.text(skill.text)}</span>
                               </span>
                             </label>

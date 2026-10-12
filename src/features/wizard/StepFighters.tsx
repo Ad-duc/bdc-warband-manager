@@ -3,7 +3,9 @@
  * Role:        Step 3: recruitment. Category counters, catalogue filtered by
  *              category with the full scroll of each profile, then the recruited
  *              fighters with name (D66 random name), starting experience (roll,
- *              re-roll or manual entry) and removal.
+ *              re-roll or manual entry), options bought at recruitment
+ *              (Misbegotten mutations) and removal. Alternate forms (Lycanfell
+ *              Beast) are shown inside the scroll of their base profile.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -14,6 +16,9 @@ import { useTranslation } from "react-i18next";
 import type { Category, FighterProfile, WarbandFighter } from "../../data/schema.ts";
 import {
   effectiveCategory,
+  fighterOptions,
+  formsOf,
+  isUncapped,
   manualStartingExperience,
   profileLimit,
   randomName,
@@ -24,6 +29,7 @@ import { useFormatter } from "../../i18n/text.ts";
 import { StatsTable } from "../common/StatsTable.tsx";
 import { Term } from "../common/Term.tsx";
 import { createFighter } from "../warbands/factory.ts";
+import type { FactionIndex } from "../../rules/index.ts";
 import type { StepProps } from "./WizardPage.tsx";
 
 const CATEGORIES: readonly Category[] = ["leader", "champion", "henchman", "brute", "beast"];
@@ -34,11 +40,13 @@ export function StepFighters({ warband, index, update }: StepProps) {
   const [filter, setFilter] = useState<Category | "all">("all");
   const active = warband.fighters.filter((x) => x.status === "active");
   const composition = index.common.recruitment.composition;
+  const origin = index.faction.origins.find((o) => o.id === warband.originId);
 
+  // Fighters taken out of their category limit by the origin (Dire Wolves) are not counted.
   const countOf = (c: Category) =>
     active.filter((x) => {
       const p = index.fighters.get(x.profileId);
-      return p !== undefined && effectiveCategory(x, p) === c;
+      return p !== undefined && effectiveCategory(x, p) === c && !isUncapped(p, origin);
     }).length;
 
   const replace = (instanceId: string, patch: Partial<WarbandFighter>) => {
@@ -48,7 +56,9 @@ export function StepFighters({ warband, index, update }: StepProps) {
     }));
   };
 
-  const profiles = index.faction.fighters.filter((p) => filter === "all" || p.category === filter);
+  const profiles = index.faction.fighters.filter(
+    (p) => p.formOf === null && (filter === "all" || p.category === filter),
+  );
 
   return (
     <div className="space-y-6">
@@ -101,10 +111,8 @@ export function StepFighters({ warband, index, update }: StepProps) {
               <ProfileEntry
                 key={p.id}
                 profile={p}
-                limit={profileLimit(
-                  p,
-                  index.faction.origins.find((o) => o.id === warband.originId),
-                )}
+                limit={profileLimit(p, origin)}
+                forms={formsOf(index, p.id)}
                 onAdd={() => {
                   update((w) => ({ ...w, fighters: [...w.fighters, createFighter(p)] }));
                 }}
@@ -143,7 +151,12 @@ export function StepFighters({ warband, index, update }: StepProps) {
                         fighters: w.fighters.filter((x) => x.instanceId !== fighter.instanceId),
                       }));
                     }}
-                    costLabel={t("units.silver", { value: f.number(profile.cost) })}
+                    costLabel={t("units.silver", {
+                      value: f.number(
+                        profile.cost + fighterOptions(index, fighter).reduce((sum, o) => sum + o.cost, 0),
+                      ),
+                    })}
+                    index={index}
                   />
                 );
               })}
@@ -158,15 +171,16 @@ export function StepFighters({ warband, index, update }: StepProps) {
 function ProfileEntry({
   profile,
   limit,
+  forms,
   onAdd,
 }: {
   profile: FighterProfile;
   limit: number | null;
+  forms: FighterProfile[];
   onAdd: () => void;
 }) {
   const { t } = useTranslation();
   const f = useFormatter();
-  const xp = profile.startingExperience;
 
   return (
     <li className="border-2 border-on-panel">
@@ -183,28 +197,13 @@ function ProfileEntry({
             </span>
           </summary>
           <div className="mt-2 space-y-2 text-sm">
-            <KeywordLine keywords={profile.keywords} />
-            <StatsTable stats={profile.stats} caption={f.text(profile.name)} />
-            <p>
-              <strong>{t("scroll.wargear")}</strong> {f.text(profile.wargearText)}
-            </p>
-            <p>
-              <strong>{t("scroll.startingExperience")}</strong>{" "}
-              {xp.dice === null ? xp.base : xp.base === 0 ? f.dice(xp.dice) : `${xp.base}+${f.dice(xp.dice)}`}
-            </p>
-            {profile.specialRules.map((r) => (
-              <p key={r.id}>
-                <strong>
-                  <Term text={r.name} />
-                  {r.tag !== null && ` [${t(`scroll.tag.${r.tag}`)}]`}
-                </strong>{" "}
-                {f.text(r.text)}
-              </p>
+            <ScrollBody profile={profile} />
+            {forms.map((form) => (
+              <section key={form.id} className="border-t-2 border-on-panel pt-2" data-testid="profile-form">
+                <h3 className="font-gothic text-lg">{t("scroll.form", { name: f.text(form.name) })}</h3>
+                <ScrollBody profile={form} />
+              </section>
             ))}
-            {profile.quote !== null && (
-              <blockquote className="text-center font-gothic text-lg">"{f.text(profile.quote)}"</blockquote>
-            )}
-            <p className="text-xs">{t("scroll.source", { page: profile.sourceRef.page })}</p>
           </div>
         </details>
         <button
@@ -217,6 +216,49 @@ function ProfileEntry({
         </button>
       </div>
     </li>
+  );
+}
+
+/** Keywords, characteristics, wargear, experience, options, rules and quote of a scroll. */
+function ScrollBody({ profile }: { profile: FighterProfile }) {
+  const { t } = useTranslation();
+  const f = useFormatter();
+  const xp = profile.startingExperience;
+  return (
+    <>
+      <KeywordLine keywords={profile.keywords} />
+      <StatsTable stats={profile.stats} caption={f.text(profile.name)} />
+      <p>
+        <strong>{t("scroll.wargear")}</strong> {f.text(profile.wargearText)}
+      </p>
+      {profile.formOf === null && (
+        <p>
+          <strong>{t("scroll.startingExperience")}</strong>{" "}
+          {xp.dice === null ? xp.base : xp.base === 0 ? f.dice(xp.dice) : `${xp.base}+${f.dice(xp.dice)}`}
+        </p>
+      )}
+      {profile.specialRules.map((r) => (
+        <p key={r.id} className="whitespace-pre-line">
+          <strong>
+            <Term text={r.name} />
+            {r.tag !== null && ` [${t(`scroll.tag.${r.tag}`)}]`}
+          </strong>{" "}
+          {f.text(r.text)}
+        </p>
+      ))}
+      {profile.options?.choices.map((o) => (
+        <p key={o.id} className="pl-4">
+          <strong>
+            <Term text={o.name} />
+          </strong>{" "}
+          ({t("units.silverPlus", { value: f.number(o.cost) })}) {f.text(o.text)}
+        </p>
+      ))}
+      {profile.quote !== null && (
+        <blockquote className="text-center font-gothic text-lg">"{f.text(profile.quote)}"</blockquote>
+      )}
+      <p className="text-xs">{t("scroll.source", { page: profile.sourceRef.page })}</p>
+    </>
   );
 }
 
@@ -250,6 +292,7 @@ function RecruitedFighter({
   onRandomName,
   onRemove,
   costLabel,
+  index,
 }: {
   fighter: WarbandFighter;
   profile: FighterProfile;
@@ -257,6 +300,7 @@ function RecruitedFighter({
   onRandomName: () => void;
   onRemove: () => void;
   costLabel: string;
+  index: FactionIndex;
 }) {
   const { t } = useTranslation();
   const f = useFormatter();
@@ -360,6 +404,67 @@ function RecruitedFighter({
           )}
         </div>
       </div>
+
+      {profile.options !== null && (
+        <OptionsPicker
+          fighter={fighter}
+          profile={profile}
+          index={index}
+          onChange={(optionIds) => {
+            onChange({ optionIds });
+          }}
+        />
+      )}
     </li>
+  );
+}
+
+/** Options bought at recruitment, at most `options.max` of them. */
+function OptionsPicker({
+  fighter,
+  profile,
+  index,
+  onChange,
+}: {
+  fighter: WarbandFighter;
+  profile: FighterProfile;
+  index: FactionIndex;
+  onChange: (optionIds: string[]) => void;
+}) {
+  const { t } = useTranslation();
+  const f = useFormatter();
+  const options = profile.options;
+  if (options === null) return null;
+  const picked = fighterOptions(index, fighter).map((o) => o.id);
+  return (
+    <fieldset className="mt-3">
+      <legend className="text-sm font-bold">
+        {t("wizard.fighters.options", { picked: picked.length, max: options.max })}
+      </legend>
+      <ul className="mt-1 space-y-1">
+        {options.choices.map((o) => {
+          const on = picked.includes(o.id);
+          return (
+            <li key={o.id}>
+              <label className="flex gap-2">
+                <input
+                  type="checkbox"
+                  className="mt-1 size-5 shrink-0"
+                  checked={on}
+                  disabled={!on && picked.length >= options.max}
+                  onChange={() => {
+                    onChange(on ? picked.filter((id) => id !== o.id) : [...picked, o.id]);
+                  }}
+                />
+                <span>
+                  <strong>{f.text(o.name)}</strong> ({t("units.silverPlus", { value: f.number(o.cost) })}){" "}
+                  <span className="text-sm">{f.text(o.text)}</span>
+                </span>
+              </label>
+            </li>
+          );
+        })}
+      </ul>
+    </fieldset>
   );
 }

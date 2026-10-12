@@ -25,6 +25,7 @@ const GENERAL = "05_bandes-regles-generales.md";
 const CONCEPTS = "02_concepts-de-base.md";
 const BATTLES = "03_batailles.md";
 const GM = "06_guild-mercenaries.md";
+const DC = "08_death-covens.md";
 
 export const RULES = {
   "data.unknownFaction": {
@@ -46,6 +47,11 @@ export const RULES = {
     severity: "error",
     modes: BOTH,
     ref: { page: 50, md: `${GENERAL} > Étape 4 - Acheter l'équipement` },
+  },
+  "data.unknownOption": {
+    severity: "error",
+    modes: BOTH,
+    ref: { page: 108, md: `${DC} > Misbegotten` },
   },
   "data.unknownSkill": { severity: "error", modes: BOTH, ref: { page: 51, md: `${GENERAL} > Compétences` } },
   "data.unknownSpell": {
@@ -70,6 +76,12 @@ export const RULES = {
     ref: { page: 49, md: `${GENERAL} > Mille pièces d'argent` },
   },
 
+  "composition.notRecruitable": {
+    severity: "error",
+    modes: BOTH,
+    ref: { page: 106, md: `${DC} > Lycanfell Beast` },
+    assumption: "A27",
+  },
   "composition.maxFighters": {
     severity: "error",
     modes: BOTH,
@@ -185,6 +197,11 @@ export const RULES = {
     assumption: "A08",
   },
   "skill.notEligible": { severity: "error", modes: BOTH, ref: { page: 51, md: `${GENERAL} > Restrictions` } },
+  "skill.categoryOnly": {
+    severity: "error",
+    modes: BOTH,
+    ref: { page: 104, md: `${DC} > Garde royale` },
+  },
   "skill.fixedMissing": {
     severity: "error",
     modes: BOTH,
@@ -219,6 +236,18 @@ export const RULES = {
     modes: BOTH,
     ref: { page: 68, md: `${GM} > High Wizard of the Guild` },
     assumption: "A09",
+  },
+
+  "fighter.optionCount": {
+    severity: "error",
+    modes: BOTH,
+    ref: { page: 108, md: `${DC} > Misbegotten` },
+  },
+  "experience.notGained": {
+    severity: "error",
+    modes: BOTH,
+    ref: { page: 96, md: `${DC} > Squelettes et Asservis` },
+    assumption: "A29",
   },
 
   "blackRot.full": {
