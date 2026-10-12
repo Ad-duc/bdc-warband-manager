@@ -144,6 +144,20 @@ export function HomePage() {
                     </p>
                   </div>
                   <div className="flex flex-wrap gap-2">
+                    <a
+                      className="btn btn-sm"
+                      href={hrefFor({ name: "campaign", id: w.id })}
+                      aria-label={t("home.campaignNamed", { name: title })}
+                    >
+                      {t("home.campaign")}
+                    </a>
+                    <a
+                      className="btn btn-sm"
+                      href={hrefFor({ name: "wizard", id: w.id })}
+                      aria-label={t("home.editNamed", { name: title })}
+                    >
+                      {t("home.edit")}
+                    </a>
                     <button
                       type="button"
                       className="btn btn-sm"

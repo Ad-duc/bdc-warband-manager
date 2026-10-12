@@ -106,6 +106,7 @@
 @layer components {
   /* Parchment panel: light centre, darkened worn edges */
   .panel-parchment {
+    color-scheme: light;
     background-color: var(--color-panel);
     color: var(--color-on-panel);
     box-shadow:

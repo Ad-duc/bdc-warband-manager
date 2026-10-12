@@ -44,7 +44,11 @@
       "newer-version": "Ce fichier vient d'une version plus récente de l'application.",
       "empty": "Ce fichier ne contient aucune bande.",
       "invalid": "Ce fichier n'est pas une bande valide : {{detail}}"
-    }
+    },
+    "campaign": "Campagne",
+    "campaignNamed": "Campagne de {{name}}",
+    "edit": "Modifier",
+    "editNamed": "Modifier {{name}}"
   },
   "footer": {
     "disclaimer": "Outil de fan non officiel, à usage privé. Black Death City, ses règles, ses textes et ses illustrations appartiennent à leur auteur, Sam Pearson.",
@@ -316,6 +320,128 @@
       "stronghold": "Repaire",
       "blocked": "Corrigez les erreurs avant de terminer la bande.",
       "finish": "Terminer la bande"
+    }
+  },
+  "campaign": {
+    "fighters": "Combattants ({{count}})",
+    "gone": "Combattants morts ou retirés ({{count}})",
+    "editRoster": "Recruter, équiper ou changer les compétences",
+    "notes": "Notes",
+    "ratingDetail": "dont",
+    "ratingParts": "{{cost}} pa + {{xp}} d'expérience",
+    "decrease": "Diminuer {{label}}",
+    "increase": "Augmenter {{label}}",
+    "mode": {
+      "recruitment": "recrutement",
+      "campaign": "campagne"
+    },
+    "status": {
+      "active": "Actif",
+      "dead": "Mort",
+      "retired": "Retiré"
+    },
+    "result": {
+      "victory": "Victoire",
+      "defeat": "Défaite",
+      "draw": "Égalité"
+    },
+    "counters": {
+      "title": "Compteurs",
+      "battlesFought": "Batailles livrées",
+      "victories": "Victoires remportées",
+      "holdingsRansacked": "Possessions saccagées",
+      "fightersLost": "Combattants perdus",
+      "fromLog": "Journal : {{value}}"
+    },
+    "stash": {
+      "title": "Butin",
+      "silver": "Pièces d'argent du butin",
+      "leechJars": "Bocaux de sangsues des canaux",
+      "empty": "Aucun objet dans le butin.",
+      "item_one": "{{name}}",
+      "item_other": "{{name}} x{{count}}",
+      "removeNamed": "Retirer {{name}} du butin",
+      "addWargear": "Équipement",
+      "pick": "Choisir un objet",
+      "other": "Autre objet",
+      "add": "Ajouter"
+    },
+    "holdings": {
+      "title": "Repaire et possessions",
+      "chapter5": "Les possessions sont détaillées au Chapitre 5, pas encore paru : champs libres d'ici là.",
+      "label": "Possession {{n}}",
+      "notes": "Notes sur la possession {{n}}",
+      "remove": "Retirer",
+      "add": "Ajouter une possession ({{count}}/{{max}})"
+    },
+    "stats": {
+      "unchanged": "inchangé",
+      "improved_one": "amélioré de {{count}}",
+      "improved_other": "amélioré de {{count}}",
+      "worsened_one": "dégradé de {{count}}",
+      "worsened_other": "dégradé de {{count}}",
+      "improve": "Améliorer {{stat}}",
+      "worsen": "Dégrader {{stat}}"
+    },
+    "fighter": {
+      "effectiveStats": "Caractéristiques de {{name}}",
+      "wargear": "Équipement :",
+      "skills": "Compétences et sorts :",
+      "experience": "Expérience",
+      "addXp": "{{count}} d'expérience pour {{name}}",
+      "blackRot": "Pourriture noire",
+      "blackRotBox": "Case {{box}} de Pourriture noire de {{name}}",
+      "status": "Statut",
+      "promoted": "Promu chef",
+      "injuriesAndAdvances": "Blessures et progression ({{injuries}} blessure(s))",
+      "chapter5": "La table des blessures durables et la progression sont au Chapitre 5, pas encore paru : décrivez-les librement et indiquez leur effet sur les caractéristiques.",
+      "injury": "Blessure {{n}}",
+      "injuryEffects": "Effet sur les caractéristiques",
+      "removeInjury": "Retirer",
+      "addInjury": "Ajouter une blessure",
+      "advancements": "Progression",
+      "history": "Historique ({{count}})"
+    },
+    "battle": {
+      "title": "Journal de batailles",
+      "new": "Nouvelle bataille",
+      "undo": "Annuler la dernière bataille",
+      "undoTitle": "Annuler la dernière bataille ?",
+      "undoMessage": "L'expérience, les pertes, les gains et les compteurs de cette bataille seront annulés.",
+      "empty": "Aucune bataille enregistrée. La première fait passer la bande en mode campagne.",
+      "date": "Date",
+      "scenario": "Scénario",
+      "opponent": "Adversaire",
+      "result": "Résultat",
+      "perFighter": "Combattants",
+      "xpGained": "Expérience gagnée",
+      "lost": "Perdu",
+      "xpFor": "Expérience gagnée par {{name}}",
+      "lostFor": "{{name}} est perdu",
+      "silver": "Pièces d'argent gagnées (ou dépensées, en négatif)",
+      "leechJars": "Bocaux de sangsues des canaux gagnés",
+      "holdingsRansacked": "Possessions saccagées",
+      "notes": "Notes",
+      "review": "Vérifier",
+      "apply": "Appliquer la bataille",
+      "historyBattle": "Bataille : {{scenario}} contre {{opponent}}",
+      "historyXp_one": "{{count}} d'expérience",
+      "historyXp_other": "{{count}} d'expérience",
+      "historyLost": "perdu",
+      "entryDeltas": "{{xp}} d'expérience, {{silver}} pa, {{jars}} bocal(aux), {{lost}} combattant(s) perdu(s)"
+    },
+    "summary": {
+      "title": "Récapitulatif des changements",
+      "result": "Résultat : {{result}}",
+      "xp_one": "{{name}} : {{count}} d'expérience",
+      "xp_other": "{{name}} : {{count}} d'expérience",
+      "lost": "{{name}} est perdu",
+      "silver_one": "Butin : {{count}} pa",
+      "silver_other": "Butin : {{count}} pa",
+      "jars_one": "Butin : {{count}} bocal de sangsues des canaux",
+      "jars_other": "Butin : {{count}} bocaux de sangsues des canaux",
+      "ransacked_one": "{{count}} possession saccagée",
+      "ransacked_other": "{{count}} possessions saccagées"
     }
   }
 }

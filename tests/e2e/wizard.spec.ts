@@ -81,6 +81,11 @@ test("create a valid Swords for Hire warband", async ({ page }) => {
   );
   await page.getByRole("button", { name: "Terminer la bande" }).click();
 
+  // The campaign dashboard opens, with 5 silver in the stash
+  await expect(page.getByRole("heading", { level: 1, name: "Les Lames de Rennes" })).toBeVisible();
+  await expect(page.getByTestId("stash-silver")).toHaveValue("5");
+  await page.getByRole("button", { name: "Retour aux bandes" }).click();
+
   // Saved on the device
   const list = page.getByTestId("warband-list");
   await expect(list).toContainText("Les Lames de Rennes");

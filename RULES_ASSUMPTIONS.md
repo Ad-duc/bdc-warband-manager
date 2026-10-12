@@ -119,6 +119,31 @@ The brief asked for a warning on "ranged weapons without possible reload".
 Decision 2026-10-12: an info message on weapons with the One-use trait
 (Fire Bombs): 1 attack per battle (p. 27).
 
+### A17 - Start of campaign mode (settled)
+
+The book does not say when the recruitment rules stop applying. Decision
+2026-10-12: the first battle recorded in the log switches the warband to
+campaign mode; undoing that battle switches it back to recruitment.
+
+### A18 - Purchases during the campaign (open)
+
+Chapter 5 (income, trading) is not published. Fighters and wargear added in
+campaign mode are not taken from the stash automatically: the stash silver is
+edited by hand, or entered as negative silver in a battle.
+
+### A19 - Fighters lost in battle (open)
+
+"Fighters lost" is a roster counter without rules in v1.02. A fighter ticked
+as lost in a battle gets the status "dead", leaves the warband rating and is
+kept in the "dead or retired" list with its history. The status can be
+changed by hand (eg. back to active once Chapter 5 says a fighter recovers).
+
+### A20 - Injuries and advancements (open)
+
+The lasting injury table and advancements belong to Chapter 5. Both are free
+text with optional effects on the characteristics, entered with
+"improve" / "worsen" buttons (stored as raw deltas, -1 Blade meaning 4+ to 3+).
+
 ## Data decisions
 
 ### D01 - Number of Guild Mercenaries profiles (data)

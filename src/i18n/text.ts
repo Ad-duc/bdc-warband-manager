@@ -45,6 +45,7 @@ export interface Formatter {
   text: (t: LocalizedText) => string;
   number: (n: number) => string;
   date: (iso: string) => string;
+  day: (iso: string) => string;
   dice: (v: number | string | null | undefined) => string;
 }
 
@@ -60,6 +61,10 @@ export function useFormatter(): Formatter {
     number: (n) => new Intl.NumberFormat(locale).format(n).replace(/[\u00A0\u202F]/g, " "),
     date: (iso) =>
       new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeStyle: "short" }).format(new Date(iso)),
+    day: (iso) =>
+      new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeZone: "UTC" })
+        .format(new Date(iso))
+        .replace(/[\u00A0\u202F]/g, " "),
     dice: (v) => formatDice(v, lang),
   };
 }

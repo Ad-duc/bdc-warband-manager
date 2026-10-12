@@ -102,7 +102,7 @@ export function StepRating({
         disabled={blocked}
         onClick={() => {
           update((w) => ({ ...w, stash: { ...w.stash, silver: Math.max(0, budget.remaining) } }));
-          navigate({ name: "home" });
+          navigate({ name: "campaign", id: warband.id });
         }}
       >
         {t("wizard.rating.finish")}

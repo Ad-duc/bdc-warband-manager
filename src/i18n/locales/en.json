@@ -44,7 +44,11 @@
       "newer-version": "This file comes from a newer version of the app.",
       "empty": "This file holds no warband.",
       "invalid": "This file is not a valid warband: {{detail}}"
-    }
+    },
+    "campaign": "Campaign",
+    "campaignNamed": "Campaign of {{name}}",
+    "edit": "Edit",
+    "editNamed": "Edit {{name}}"
   },
   "footer": {
     "disclaimer": "Unofficial fan-made tool for private use. Black Death City, its rules, texts and artwork belong to their author, Sam Pearson.",
@@ -316,6 +320,128 @@
       "stronghold": "Stronghold",
       "blocked": "Fix the errors before completing the warband.",
       "finish": "Complete the warband"
+    }
+  },
+  "campaign": {
+    "fighters": "Fighters ({{count}})",
+    "gone": "Dead or retired fighters ({{count}})",
+    "editRoster": "Recruit, equip or change skills",
+    "notes": "Notes",
+    "ratingDetail": "of which",
+    "ratingParts": "{{cost}} silver + {{xp}} experience",
+    "decrease": "Decrease {{label}}",
+    "increase": "Increase {{label}}",
+    "mode": {
+      "recruitment": "recruitment",
+      "campaign": "campaign"
+    },
+    "status": {
+      "active": "Active",
+      "dead": "Dead",
+      "retired": "Retired"
+    },
+    "result": {
+      "victory": "Victory",
+      "defeat": "Defeat",
+      "draw": "Draw"
+    },
+    "counters": {
+      "title": "Counters",
+      "battlesFought": "Battles fought",
+      "victories": "Victories won",
+      "holdingsRansacked": "Holdings ransacked",
+      "fightersLost": "Fighters lost",
+      "fromLog": "Battle log: {{value}}"
+    },
+    "stash": {
+      "title": "Stash",
+      "silver": "Silver in the stash",
+      "leechJars": "Jars of Canal Leeches",
+      "empty": "No item in the stash.",
+      "item_one": "{{name}}",
+      "item_other": "{{name}} x{{count}}",
+      "removeNamed": "Take {{name}} out of the stash",
+      "addWargear": "Wargear",
+      "pick": "Pick an item",
+      "other": "Other item",
+      "add": "Add"
+    },
+    "holdings": {
+      "title": "Stronghold and holdings",
+      "chapter5": "Holdings are detailed in Chapter 5, not released yet: free fields until then.",
+      "label": "Holding {{n}}",
+      "notes": "Notes on holding {{n}}",
+      "remove": "Remove",
+      "add": "Add a holding ({{count}}/{{max}})"
+    },
+    "stats": {
+      "unchanged": "unchanged",
+      "improved_one": "improved by {{count}}",
+      "improved_other": "improved by {{count}}",
+      "worsened_one": "worsened by {{count}}",
+      "worsened_other": "worsened by {{count}}",
+      "improve": "Improve {{stat}}",
+      "worsen": "Worsen {{stat}}"
+    },
+    "fighter": {
+      "effectiveStats": "Characteristics of {{name}}",
+      "wargear": "Wargear:",
+      "skills": "Skills and spells:",
+      "experience": "Experience",
+      "addXp": "{{count}} experience for {{name}}",
+      "blackRot": "Black Rot",
+      "blackRotBox": "Black Rot box {{box}} of {{name}}",
+      "status": "Status",
+      "promoted": "Promoted to leader",
+      "injuriesAndAdvances": "Injuries and advancements ({{injuries}} injuries)",
+      "chapter5": "The lasting injury table and advancements are in Chapter 5, not released yet: describe them freely and set their effect on the characteristics.",
+      "injury": "Injury {{n}}",
+      "injuryEffects": "Effect on the characteristics",
+      "removeInjury": "Remove",
+      "addInjury": "Add an injury",
+      "advancements": "Advancements",
+      "history": "History ({{count}})"
+    },
+    "battle": {
+      "title": "Battle log",
+      "new": "New battle",
+      "undo": "Undo the last battle",
+      "undoTitle": "Undo the last battle?",
+      "undoMessage": "Experience, losses, gains and counters of that battle will be reverted.",
+      "empty": "No battle recorded yet. The first one moves the warband to campaign mode.",
+      "date": "Date",
+      "scenario": "Scenario",
+      "opponent": "Opponent",
+      "result": "Result",
+      "perFighter": "Fighters",
+      "xpGained": "Experience gained",
+      "lost": "Lost",
+      "xpFor": "Experience gained by {{name}}",
+      "lostFor": "{{name}} is lost",
+      "silver": "Silver gained (or spent, negative)",
+      "leechJars": "Jars of Canal Leeches gained",
+      "holdingsRansacked": "Holdings ransacked",
+      "notes": "Notes",
+      "review": "Review",
+      "apply": "Apply the battle",
+      "historyBattle": "Battle: {{scenario}} against {{opponent}}",
+      "historyXp_one": "+{{count}} experience",
+      "historyXp_other": "{{count}} experience",
+      "historyLost": "lost",
+      "entryDeltas": "{{xp}} experience, {{silver}} silver, {{jars}} jar(s), {{lost}} fighter(s) lost"
+    },
+    "summary": {
+      "title": "Summary of the changes",
+      "result": "Result: {{result}}",
+      "xp_one": "{{name}}: {{count}} experience",
+      "xp_other": "{{name}}: {{count}} experience",
+      "lost": "{{name}} is lost",
+      "silver_one": "Stash: {{count}} silver",
+      "silver_other": "Stash: {{count}} silver",
+      "jars_one": "Stash: {{count}} jar of Canal Leeches",
+      "jars_other": "Stash: {{count}} jars of Canal Leeches",
+      "ransacked_one": "{{count}} holding ransacked",
+      "ransacked_other": "{{count}} holdings ransacked"
     }
   }
 }
