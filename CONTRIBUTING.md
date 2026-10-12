@@ -19,8 +19,7 @@ Requirements:
 - Node.js 22 or later (`node --version`).
 - Python 3.10 or later, only to run the data generators (`python3 --version`,
   or `py --version` on Windows).
-- The "Traduction FR" folder of the translation project, only to compare or
-  rebuild the game data. It is not part of this repository.
+- `pdftotext` (poppler-utils), only to import a new rules version.
 
 ```bash
 npm ci
@@ -51,13 +50,15 @@ To change a generated faction, change its generator (or the translation), never
 the JSON directly, then:
 
 ```bash
-npm run generate:data -- --sources "<Traduction FR folder>"
-npm run generate:data -- --sources "<Traduction FR folder>" --only verminkin
-npm run check:generated -- --sources "<Traduction FR folder>"   # writes nothing, fails if a file is out of date
-npm run check:data -- --sources "<Traduction FR folder>"
+npm run generate:data
+npm run generate:data -- --only verminkin
+npm run check:generated   # writes nothing, fails if a file is out of date
+npm run check:data
 ```
 
-The variable `BDC_SOURCES` can replace `--sources`. Prettier formats the
+The translation is read from `sources/fr/`; `--sources <folder>` or the
+variable `BDC_SOURCES` point to another folder. A new rules version is
+imported with the procedure of `docs/RULES_UPDATE.md`. Prettier formats the
 generated files, so they can be compared line by line in a review.
 
 Rules that need a reading (a contradiction between a table and a text, a

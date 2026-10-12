@@ -17,7 +17,18 @@ version is given separately (playtest v1.03).
 
 ### Added
 
+- Rules watcher: `scripts/watch/release.py` (check, fetch, mark) and
+  `scripts/watch/diff_versions.py`, npm scripts `watch:*`, procedure
+  `docs/RULES_UPDATE.md` followed by a weekly scheduled agent run that opens a
+  pull request for each new official rules version.
+- `sources/`: extracted English text of playtest v1.02 and v1.03, French
+  translation and glossary, translation guidelines, release manifest.
 - "Buy me a coffee" support link in the bottom-right corner of the footer.
+
+### Changed
+
+- Data scripts read the translation from `sources/fr/` by default; the CI now
+  runs `check:generated` and compares the data with the translation.
 
 ## [1.0.0] - 2026-10-12
 

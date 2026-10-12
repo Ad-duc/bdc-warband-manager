@@ -53,26 +53,38 @@ npm run dev          # http://localhost:5173/bdc-warband-manager/
 
 ## Commands
 
-| Command                                         | Purpose                                                                                         |
-| ----------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `npm run dev`                                   | Development server                                                                              |
-| `npm run build`                                 | Type check then production build in `dist/`                                                     |
-| `npm run preview`                               | Serve the production build                                                                      |
-| `npm run typecheck`                             | TypeScript 7 strict check                                                                       |
-| `npm run lint`                                  | ESLint (also forbids hard-coded JSX text)                                                       |
-| `npm run format` / `format:check`               | Prettier                                                                                        |
-| `npm test` / `test:coverage`                    | Unit tests (vitest)                                                                             |
-| `npm run test:e2e`                              | End-to-end tests (Playwright, Chromium and Firefox)                                             |
-| `npm run check:data`                            | Validate `src/data/*.json`; add `-- --sources <folder>` to compare with the translated Markdown |
-| `npm run check:i18n`                            | Same keys in `en.json` and `fr.json`, every `t()` key exists, no unused key                     |
-| `npm run generate:data -- --sources <folder>`   | Rebuild the Verminkin, Death Covens and Blighted Cloister data from the translation (Python)    |
-| `npm run check:generated -- --sources <folder>` | Fail if a generated data file is out of date; writes nothing                                    |
-| `npm run build:glossary -- --sources <folder>`  | Regenerate `src/i18n/glossary.json` from `00_glossaire.md`                                      |
-| `npm run check`                                 | Everything above except the end-to-end tests                                                    |
+| Command                                | Purpose                                                                                      |
+| -------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `npm run dev`                          | Development server                                                                           |
+| `npm run build`                        | Type check then production build in `dist/`                                                  |
+| `npm run preview`                      | Serve the production build                                                                   |
+| `npm run typecheck`                    | TypeScript 7 strict check                                                                    |
+| `npm run lint`                         | ESLint (also forbids hard-coded JSX text)                                                    |
+| `npm run format` / `format:check`      | Prettier                                                                                     |
+| `npm test` / `test:coverage`           | Unit tests (vitest)                                                                          |
+| `npm run test:e2e`                     | End-to-end tests (Playwright, Chromium and Firefox)                                          |
+| `npm run check:data`                   | Validate `src/data/*.json` and compare it with the translated Markdown of `sources/fr/`      |
+| `npm run check:i18n`                   | Same keys in `en.json` and `fr.json`, every `t()` key exists, no unused key                  |
+| `npm run generate:data`                | Rebuild the Verminkin, Death Covens and Blighted Cloister data from the translation (Python) |
+| `npm run check:generated`              | Fail if a generated data file is out of date; writes nothing                                 |
+| `npm run build:glossary`               | Regenerate `src/i18n/glossary.json` from `00_glossaire.md`                                   |
+| `npm run check`                        | Everything above except the end-to-end tests                                                 |
+| `npm run watch:check`                  | Look for a new official rules version or resource (exit 10 or 11 when something is new)      |
+| `npm run watch:fetch -- --version <v>` | Download a rules PDF, extract its text to `sources/vo/`, update `sources/manifest.json`      |
+| `npm run watch:diff`                   | Paragraph diff of the previous and current rules text into `.cache/watch/`                   |
+| `npm run watch:mark`                   | Record the version followed by the translation (`--translated`) and the data (`--app-data`)  |
 
-The `--sources` folder is the "Traduction FR" folder of the translation
-project. It is not part of this repository; the variable `BDC_SOURCES` can be
-used instead of the option.
+The translation and the extracted rules text live in `sources/` (see
+`sources/README.md`). The data scripts read `sources/fr/` by default;
+`--sources <folder>` or the variable `BDC_SOURCES` point them elsewhere.
+
+## Rules watcher
+
+A scheduled agent run checks every week for a new Black Death City
+publication. When one is out, it follows `docs/RULES_UPDATE.md`: downloads
+the PDF, compares the text with the previous version, updates the French
+translation and the game data, runs every check and opens a pull request
+labelled `rules-watch`. Nothing reaches `main` without a review.
 
 ## Project layout
 
@@ -85,7 +97,9 @@ src/
   features/   one folder per screen
   print/      A4 roster and TCG card layouts
   styles/     Tailwind entry point and design tokens
-scripts/      data, i18n and glossary tools, Python data generators
+scripts/      data, i18n and glossary tools, Python data generators, rules watcher
+sources/      extracted rules text, French translation, release manifest
+docs/         maintenance procedures (rules update)
 tests/        unit (vitest) and e2e (Playwright)
 public/       local fonts, images, PWA icons
 ```

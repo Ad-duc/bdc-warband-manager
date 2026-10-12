@@ -3,7 +3,8 @@
  * Role:        Generates src/i18n/glossary.json (VO > VF terms) from the
  *              translation glossary 00_glossaire.md. Only the numbered
  *              categories are kept; decisions, notes and annexes are skipped.
- * Usage:       npm run build:glossary -- --sources "<folder with 00_glossaire.md>"
+ * Usage:       npm run build:glossary [-- --sources "<folder with 00_glossaire.md>"]
+ *              The folder defaults to sources/fr; BDC_SOURCES overrides it.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -16,9 +17,10 @@ const ROOT = resolve(import.meta.dirname, "..");
 const OUT = join(ROOT, "src", "i18n", "glossary.json");
 
 const i = process.argv.indexOf("--sources");
-const dir = (i > -1 ? process.argv[i + 1] : undefined) ?? process.env["BDC_SOURCES"];
-if (dir === undefined || !existsSync(join(dir, "00_glossaire.md"))) {
-  console.error("00_glossaire.md not found: pass --sources <folder> or set BDC_SOURCES");
+const dir =
+  (i > -1 ? process.argv[i + 1] : undefined) ?? process.env["BDC_SOURCES"] ?? join(ROOT, "sources", "fr");
+if (!existsSync(join(dir, "00_glossaire.md"))) {
+  console.error(`00_glossaire.md not found in ${dir}: pass --sources <folder> or set BDC_SOURCES`);
   process.exit(1);
 }
 
