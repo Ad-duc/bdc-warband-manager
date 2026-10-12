@@ -23,6 +23,7 @@ version is given separately (playtest v1.03).
   pull request for each new official rules version.
 - `sources/`: extracted English text of playtest v1.02 and v1.03, French
   translation and glossary, translation guidelines, release manifest.
+- "Buy me a coffee" support link in the bottom-right corner of the footer.
 
 ### Changed
 
