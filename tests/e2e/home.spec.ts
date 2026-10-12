@@ -2,8 +2,8 @@
  * File:        tests/e2e/home.spec.ts
  * Role:        Smoke test of the built app: themed home page, language switch
  *              kept after reload, local fonts served, service worker active,
- *              fixed header and footer on large screens (no page scroll when
- *              the content fits, only the area between them scrolls).
+ *              fixed header and footer on phones and large screens (the page
+ *              itself never scrolls, only the area between them).
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -38,16 +38,23 @@ test("a service worker controls the page", async ({ page }) => {
   expect(scope).toContain("/bdc-warband-manager/");
 });
 
-test("header and footer stay in place on large screens", async ({ page }) => {
-  await page.setViewportSize({ width: 1440, height: 900 });
-  await page.goto("./");
-  const pageScroll = await page.evaluate(() => document.documentElement.scrollHeight - window.innerHeight);
-  expect(pageScroll).toBe(0);
+for (const [width, height] of [
+  [360, 740],
+  [1440, 900],
+] as const) {
+  test(`header and footer stay in place at ${width}x${height}`, async ({ page }) => {
+    const pageScroll = (): Promise<number> =>
+      page.evaluate(() => document.documentElement.scrollHeight - window.innerHeight);
+    await page.setViewportSize({ width, height });
+    await page.goto("./");
+    expect(await pageScroll()).toBe(0);
 
-  await page.getByRole("button", { name: "New warband" }).click();
-  await page.mouse.move(720, 450);
-  await page.mouse.wheel(0, 3000);
-  await expect(page.getByRole("banner")).toBeInViewport();
-  await expect(page.getByRole("contentinfo")).toBeInViewport();
-  expect(await page.evaluate(() => window.scrollY)).toBe(0);
-});
+    await page.getByRole("button", { name: "New warband" }).click();
+    await page.mouse.move(width / 2, height / 2);
+    await page.mouse.wheel(0, 3000);
+    await expect(page.getByRole("banner")).toBeInViewport();
+    await expect(page.getByRole("contentinfo")).toBeInViewport();
+    expect(await pageScroll()).toBe(0);
+    expect(await page.evaluate(() => window.scrollY)).toBe(0);
+  });
+}

@@ -2,9 +2,9 @@
  * File:        src/features/layout/Layout.tsx
  * Role:        Common page frame: skip link, header with logo, title and
  *              language selector, main area, footer with the fan-made notice
- *              and the support link. From the md breakpoint the frame fills the
- *              window: header and footer stay in place and only the area
- *              between them scrolls. Phones and print keep the normal flow.
+ *              and the support link. The frame fills the window: header and
+ *              footer stay in place and only the area between them scrolls.
+ *              Both are more compact on phones; print keeps the normal flow.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -25,7 +25,7 @@ export function Layout({ children }: { children: ReactNode }) {
   const gameData = useGameData();
 
   return (
-    <div className="flex min-h-dvh flex-col md:h-dvh md:overflow-hidden print:h-auto print:overflow-visible">
+    <div className="relative flex h-dvh flex-col overflow-hidden print:h-auto print:overflow-visible">
       <a
         href="#main"
         className="no-print sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:bg-panel focus:p-2 focus:text-on-panel"
@@ -34,26 +34,32 @@ export function Layout({ children }: { children: ReactNode }) {
       </a>
 
       <header className="no-print shrink-0 border-b-2 border-rule">
-        <div className="mx-auto flex max-w-[120rem] items-center gap-4 px-4 py-3 sm:px-6 xl:px-10">
-          <img src={`${BASE}images/logo.webp`} alt="" width={56} height={63} className="h-14 w-auto" />
-          <div className="flex-1">
-            <a href="#/" className="block font-gothic text-3xl leading-none">
+        <div className="mx-auto flex max-w-[120rem] items-center gap-3 px-4 py-2 sm:gap-4 sm:px-6 sm:py-3 xl:px-10">
+          <img
+            src={`${BASE}images/logo.webp`}
+            alt=""
+            width={56}
+            height={63}
+            className="h-10 w-auto sm:h-14"
+          />
+          <div className="min-w-0 flex-1">
+            <a href="#/" className="block font-gothic text-2xl leading-none sm:text-3xl">
               {t("app.gameTitle")}
             </a>
-            <p className="font-hand text-lg text-on-page-muted">{t("app.tagline")}</p>
+            <p className="truncate font-hand text-base text-on-page-muted sm:text-lg">{t("app.tagline")}</p>
           </div>
           <LanguageSwitcher />
         </div>
       </header>
 
-      <div className="flex-1 md:min-h-0 md:overflow-y-auto print:overflow-visible">
+      <div className="relative min-h-0 flex-1 overflow-y-auto print:overflow-visible">
         <main id="main" className="mx-auto w-full max-w-[120rem] px-4 py-8 sm:px-6 xl:px-10">
           {children}
         </main>
       </div>
 
       <footer className="no-print shrink-0 border-t-2 border-rule">
-        <div className="mx-auto flex max-w-[120rem] flex-col gap-4 px-4 py-4 text-sm text-on-page-muted sm:flex-row sm:items-end sm:justify-between sm:px-6 xl:px-10">
+        <div className="mx-auto flex max-w-[120rem] items-center justify-between gap-3 px-4 py-2 text-xs text-on-page-muted sm:items-end sm:gap-4 sm:px-6 sm:py-4 sm:text-sm xl:px-10">
           <div className="space-y-1">
             <p>{t("footer.disclaimer")}</p>
             <p>
@@ -69,7 +75,7 @@ export function Layout({ children }: { children: ReactNode }) {
             href={SUPPORT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-11 shrink-0 items-center gap-2 self-end border-2 border-on-page px-3 text-on-page hover:bg-on-page hover:text-page"
+            className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 border-2 border-on-page px-3 text-on-page hover:bg-on-page hover:text-page"
           >
             <svg
               viewBox="0 0 24 24"
@@ -86,7 +92,7 @@ export function Layout({ children }: { children: ReactNode }) {
               <path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17" />
               <path d="M8 3v3M12 3v3" />
             </svg>
-            {t("footer.support")}
+            <span className="sr-only sm:not-sr-only">{t("footer.support")}</span>
             <span className="sr-only">{t("footer.newTab")}</span>
           </a>
         </div>

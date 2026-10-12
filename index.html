@@ -20,13 +20,15 @@
   <body>
     <div id="root">
       <!-- Static shell painted before the JavaScript runs; React replaces it on first render. -->
-      <div class="flex min-h-dvh flex-col md:h-dvh md:overflow-hidden">
+      <div class="flex h-dvh flex-col overflow-hidden">
         <header class="no-print shrink-0 border-b-2 border-rule">
-          <div class="mx-auto flex max-w-[120rem] items-center gap-4 px-4 py-3 sm:px-6 xl:px-10">
-            <img src="/images/logo.webp" alt="" width="56" height="63" class="h-14 w-auto" />
-            <div class="flex-1">
-              <span class="block font-gothic text-3xl leading-none">Black Death City</span>
-              <p id="shell-tagline" class="font-hand text-lg text-on-page-muted">
+          <div
+            class="mx-auto flex max-w-[120rem] items-center gap-3 px-4 py-2 sm:gap-4 sm:px-6 sm:py-3 xl:px-10"
+          >
+            <img src="/images/logo.webp" alt="" width="56" height="63" class="h-10 w-auto sm:h-14" />
+            <div class="min-w-0 flex-1">
+              <span class="block font-gothic text-2xl leading-none sm:text-3xl">Black Death City</span>
+              <p id="shell-tagline" class="truncate font-hand text-base text-on-page-muted sm:text-lg">
                 Warband builder and campaign tracker
               </p>
             </div>
