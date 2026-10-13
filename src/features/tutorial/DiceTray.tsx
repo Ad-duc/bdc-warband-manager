@@ -2,7 +2,7 @@
  * File:        src/features/tutorial/DiceTray.tsx
  * Role:        Attack rolls of a tutorial step, grouped by fighter and weapon.
  *              The result of each roll (miss, hit, critical hit) comes from the
- *              Blade of the fighter; what happened to it (parried, discarded,
+ *              Blade of the fighter, or its Bow for a ranged weapon; what happened to it (parried, discarded,
  *              attack resolved) is drawn on the die and spelled out for screen
  *              readers. A legend explains the marks.
  * Author:      Adrien Duclaud
@@ -12,7 +12,7 @@
 
 import { useTranslation } from "react-i18next";
 import { useFormatter } from "../../i18n/text.ts";
-import { dieResult, type DieResult, type ResolvedFighter } from "../../tutorial/model.ts";
+import { attackValue, dieResult, type DieResult, type ResolvedFighter } from "../../tutorial/model.ts";
 import type { Die } from "../../tutorial/schema.ts";
 
 type Status = Die["status"];
@@ -130,7 +130,10 @@ export function DiceTray({
                 </p>
                 <ul className="flex flex-wrap gap-3">
                   {group.dice.map((die, i) => {
-                    const result = dieResult(die.value, group.owner?.stats.bl ?? null);
+                    const result = dieResult(
+                      die.value,
+                      group.owner === undefined ? null : attackValue(group.owner, die.weapon),
+                    );
                     const parts = [t(`tutorial.dice.result.${result}`)];
                     if (die.offHand) parts.push(t("tutorial.dice.offHand"));
                     if (die.status !== "rolled") parts.push(t(`tutorial.dice.status.${die.status}`));

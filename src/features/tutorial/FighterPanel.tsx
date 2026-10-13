@@ -1,8 +1,8 @@
 /*
  * File:        src/features/tutorial/FighterPanel.tsx
  * Role:        Card of a tutorial fighter, laid out like a fighter scroll:
- *              name, wargear, characteristics after wargear, melee weapons
- *              with their profile and traits, and the life points left at the
+ *              name, wargear, characteristics after wargear, weapons with
+ *              their profile (range column for a ranged weapon) and traits, and the life points left at the
  *              current step (filled boxes, crossed out when lost).
  * Author:      Adrien Duclaud
  * Created:     2026-10-13
@@ -11,7 +11,7 @@
 
 import { useTranslation } from "react-i18next";
 import type { CommonData } from "../../data/schema.ts";
-import { formatRend, useFormatter } from "../../i18n/text.ts";
+import { formatRange, formatRend, useFormatter } from "../../i18n/text.ts";
 import type { ResolvedFighter } from "../../tutorial/model.ts";
 import { StatsTable } from "../common/StatsTable.tsx";
 import { Term } from "../common/Term.tsx";
@@ -33,6 +33,7 @@ export function FighterPanel({
   const max = fighter.stats.lf;
   const headingId = `tutorial-fighter-${fighter.lesson.id}`;
   const traitName = (key: string) => common.weaponTraits.find((x) => x.key === key)?.name;
+  const ranged = fighter.weapons.some((w) => w.kind === "ranged");
 
   return (
     <article
@@ -62,6 +63,11 @@ export function FighterPanel({
           <thead>
             <tr>
               <th scope="col">{t("weapon.name")}</th>
+              {ranged && (
+                <th scope="col" className="text-center">
+                  {t("weapon.rng")}
+                </th>
+              )}
               <th scope="col" className="text-center">
                 {t("weapon.atk")}
               </th>
@@ -83,6 +89,11 @@ export function FighterPanel({
                 <th scope="row" className="font-bold">
                   {f.text(w.name)}
                 </th>
+                {ranged && (
+                  <td className="text-center tabular-nums">
+                    {w.profile === null ? "-" : formatRange(w.profile, t("weapon.flame"))}
+                  </td>
+                )}
                 <td className="text-center tabular-nums">{f.dice(w.profile?.attacks)}</td>
                 <td className="text-center tabular-nums">{formatRend(w.profile?.rend ?? 0)}</td>
                 <td className="text-center tabular-nums">{f.dice(w.profile?.damage)}</td>

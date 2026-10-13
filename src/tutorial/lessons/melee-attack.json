@@ -9,6 +9,7 @@
   "id": "melee-attack",
   "title": "Attaque au corps à corps",
   "summary": "Un Guild Mercenary charge un Verminkin Warrior : les cinq étapes de l'action d'Attaque au corps à corps, puis les six échanges d'attaques et de parades de l'exemple du livre.",
+  "origin": "book",
   "sourceRef": {
     "page": 25,
     "md": "03_batailles.md > Exemple d'action d'Attaque au corps à corps"
@@ -31,7 +32,8 @@
         "height": 1.2,
         "label": "Maison effondrée"
       }
-    ]
+    ],
+    "ruler": [0.4, 5.6]
   },
   "fighters": [
     {
@@ -40,7 +42,10 @@
       "faction": "guild-mercenaries",
       "profile": "guild-mercenary",
       "wargear": ["sword", "shield", "cuirass"],
+      "label": null,
+      "boardLabel": null,
       "base": 25,
+      "card": true,
       "wargearLabels": {}
     },
     {
@@ -49,7 +54,10 @@
       "faction": "verminkin",
       "profile": "verminkin-warrior",
       "wargear": ["axe", "dagger"],
+      "label": null,
+      "boardLabel": null,
       "base": 25,
+      "card": true,
       "wargearLabels": {
         "dagger": "Dague"
       }

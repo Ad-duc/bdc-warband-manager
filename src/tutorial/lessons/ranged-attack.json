@@ -1,0 +1,593 @@
+{
+  "_header": {
+    "file": "src/tutorial/lessons/ranged-attack.json",
+    "role": "Tutorial lesson: the ranged attack action, house example built from the rules (illustrative dice values)",
+    "author": "Adrien Duclaud",
+    "created": "2026-10-13",
+    "license": "MIT (structure). The game rules belong to Sam Pearson."
+  },
+  "id": "ranged-attack",
+  "title": "Attaque à distance",
+  "summary": "Un Guild Mercenary armé d'un Arc court choisit sa cible parmi trois Verminkin : portée, ennemi engagé, cible masquée et couvert, puis le jet d'attaque, l'armure et les dégâts.",
+  "origin": "house",
+  "sourceRef": {
+    "page": 28,
+    "md": "03_batailles.md > Action d'Attaque à distance"
+  },
+  "board": {
+    "width": 22,
+    "height": 13,
+    "terrain": [
+      {
+        "x": 6.9,
+        "y": 2.1,
+        "width": 0.6,
+        "height": 1.8,
+        "label": "Muret"
+      },
+      {
+        "x": 16,
+        "y": 1,
+        "width": 4.5,
+        "height": 3,
+        "label": "Maison effondrée"
+      }
+    ],
+    "ruler": [18, 12.2]
+  },
+  "fighters": [
+    {
+      "id": "merc",
+      "side": "a",
+      "faction": "guild-mercenaries",
+      "profile": "guild-mercenary",
+      "wargear": ["short-bow"],
+      "label": null,
+      "boardLabel": "Mercenary",
+      "base": 25,
+      "card": true,
+      "wargearLabels": {}
+    },
+    {
+      "id": "recruit",
+      "side": "a",
+      "faction": "guild-mercenaries",
+      "profile": "guild-recruit",
+      "wargear": ["sword"],
+      "label": null,
+      "boardLabel": "Recruit",
+      "base": 25,
+      "card": false,
+      "wargearLabels": {}
+    },
+    {
+      "id": "vermin-a",
+      "side": "b",
+      "faction": "verminkin",
+      "profile": "verminkin-warrior",
+      "wargear": ["axe"],
+      "label": "Verminkin Warrior A",
+      "boardLabel": "Verminkin A",
+      "base": 25,
+      "card": true,
+      "wargearLabels": {}
+    },
+    {
+      "id": "vermin-b",
+      "side": "b",
+      "faction": "verminkin",
+      "profile": "verminkin-warrior",
+      "wargear": ["axe"],
+      "label": "Verminkin Warrior B",
+      "boardLabel": "Verminkin B",
+      "base": 25,
+      "card": false,
+      "wargearLabels": {}
+    },
+    {
+      "id": "vermin-c",
+      "side": "b",
+      "faction": "verminkin",
+      "profile": "verminkin-warrior",
+      "wargear": ["axe"],
+      "label": "Verminkin Warrior C",
+      "boardLabel": "Verminkin C",
+      "base": 25,
+      "card": false,
+      "wargearLabels": {}
+    }
+  ],
+  "steps": [
+    {
+      "banner": "Mise en situation",
+      "title": "Un archer en embuscade",
+      "text": [
+        "C'est l'activation du **Guild Mercenary**, armé d'un **Arc court**. Il n'est pas **engagé au corps à corps** : il peut effectuer une **action d'Attaque à distance**.",
+        "Trois Verminkin Warriors sont en vue. Le premier se bat contre une recrue de sa bande, le deuxième s'abrite derrière un muret, le troisième avance à découvert.",
+        "Le livre n'imprime pas d'exemple pour cette action : cette leçon est un **exemple maison** construit à partir des règles, avec des valeurs de dés choisies pour l'illustration."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-action-d-attaque-a-distance",
+        "label": "Action d'Attaque à distance"
+      },
+      "positions": {
+        "merc": [2, 7],
+        "vermin-a": [8.4, 2.2],
+        "vermin-b": [14, 12],
+        "vermin-c": [5, 11],
+        "recruit": [6, 11]
+      },
+      "life": {
+        "merc": 4,
+        "vermin-a": 4,
+        "vermin-b": 4,
+        "vermin-c": 4,
+        "recruit": 3
+      },
+      "focus": ["merc"],
+      "initiative": null,
+      "annotations": [],
+      "dice": null,
+      "event": null,
+      "recap": null
+    },
+    {
+      "banner": "Étape 1 - Choisir une cible",
+      "title": "L'arme et sa portée",
+      "text": [
+        "Le joueur choisit d'abord l'arme à distance utilisée : l'Arc court, qui a une **Portée** de 16\".",
+        "La cible doit se trouver dans la limite de cette Portée. Les trois Verminkin sont à 5\", 8\" et 13\" : tous sont à portée."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-1-choisir-une-cible-2",
+        "label": "1. Choisir une cible"
+      },
+      "positions": {
+        "merc": [2, 7],
+        "vermin-a": [8.4, 2.2],
+        "vermin-b": [14, 12],
+        "vermin-c": [5, 11],
+        "recruit": [6, 11]
+      },
+      "life": {
+        "merc": 4,
+        "vermin-a": 4,
+        "vermin-b": 4,
+        "vermin-c": 4,
+        "recruit": 3
+      },
+      "focus": ["merc"],
+      "initiative": null,
+      "annotations": [
+        {
+          "kind": "range",
+          "fighter": "merc",
+          "inches": 16,
+          "label": "Portée 16\""
+        },
+        {
+          "kind": "measure",
+          "from": "merc",
+          "to": "vermin-c",
+          "label": "5\""
+        },
+        {
+          "kind": "measure",
+          "from": "merc",
+          "to": "vermin-a",
+          "label": "8\""
+        },
+        {
+          "kind": "measure",
+          "from": "merc",
+          "to": "vermin-b",
+          "label": "13\""
+        }
+      ],
+      "dice": null,
+      "event": null,
+      "recap": null
+    },
+    {
+      "banner": "Étape 1 - Choisir une cible",
+      "title": "Un ennemi engagé ne compte pas",
+      "text": [
+        "La cible doit être le **combattant ennemi visible le plus proche qui n'est pas engagé au corps à corps**.",
+        "Le Verminkin Warrior C est le plus proche (5\"), mais il est à 1\" ou moins de la recrue : il est engagé au corps à corps et ne peut pas être choisi."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-1-choisir-une-cible-2",
+        "label": "1. Choisir une cible"
+      },
+      "positions": {
+        "merc": [2, 7],
+        "vermin-a": [8.4, 2.2],
+        "vermin-b": [14, 12],
+        "vermin-c": [5, 11],
+        "recruit": [6, 11]
+      },
+      "life": {
+        "merc": 4,
+        "vermin-a": 4,
+        "vermin-b": 4,
+        "vermin-c": 4,
+        "recruit": 3
+      },
+      "focus": ["merc", "vermin-c"],
+      "initiative": null,
+      "annotations": [
+        {
+          "kind": "sight",
+          "from": "merc",
+          "to": "vermin-c",
+          "state": "excluded",
+          "label": "Engagé, 5\""
+        },
+        {
+          "kind": "measure",
+          "from": "merc",
+          "to": "vermin-a",
+          "label": "8\""
+        },
+        {
+          "kind": "measure",
+          "from": "merc",
+          "to": "vermin-b",
+          "label": "13\""
+        }
+      ],
+      "dice": null,
+      "event": null,
+      "recap": null
+    },
+    {
+      "banner": "Étape 1 - Choisir une cible",
+      "title": "Le plus proche est masqué",
+      "text": [
+        "Le combattant éligible le plus proche est donc le Verminkin Warrior A, à 8\". Il est visible, mais le muret cache une partie de son corps : il est **masqué**.",
+        "Dans ce cas, la règle autorise à cibler à la place le combattant éligible le plus proche qui n'est **pas masqué** : ici le Verminkin Warrior B, à 13\", à découvert."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-1-choisir-une-cible-2",
+        "label": "1. Choisir une cible"
+      },
+      "positions": {
+        "merc": [2, 7],
+        "vermin-a": [8.4, 2.2],
+        "vermin-b": [14, 12],
+        "vermin-c": [5, 11],
+        "recruit": [6, 11]
+      },
+      "life": {
+        "merc": 4,
+        "vermin-a": 4,
+        "vermin-b": 4,
+        "vermin-c": 4,
+        "recruit": 3
+      },
+      "focus": ["vermin-a", "vermin-b"],
+      "initiative": null,
+      "annotations": [
+        {
+          "kind": "sight",
+          "from": "merc",
+          "to": "vermin-c",
+          "state": "excluded",
+          "label": "Engagé, 5\""
+        },
+        {
+          "kind": "sight",
+          "from": "merc",
+          "to": "vermin-a",
+          "state": "obscured",
+          "label": "Masqué, 8\""
+        },
+        {
+          "kind": "sight",
+          "from": "merc",
+          "to": "vermin-b",
+          "state": "clear",
+          "label": "Dégagé, 13\""
+        }
+      ],
+      "dice": null,
+      "event": null,
+      "recap": null
+    },
+    {
+      "banner": "Étape 1 - Choisir une cible",
+      "title": "Viser malgré le muret",
+      "text": [
+        "Le joueur garde le Verminkin Warrior A comme cible : c'est le plus proche, il en a le droit.",
+        "Comme la cible est masquée pour l'attaquant, elle est **à couvert** pour cette attaque : sa valeur d'**Armure** est améliorée de 1, jusqu'à 2+ au mieux. Son Armure de 6+ devient 5+."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-couvert",
+        "label": "Couvert"
+      },
+      "positions": {
+        "merc": [2, 7],
+        "vermin-a": [8.4, 2.2],
+        "vermin-b": [14, 12],
+        "vermin-c": [5, 11],
+        "recruit": [6, 11]
+      },
+      "life": {
+        "merc": 4,
+        "vermin-a": 4,
+        "vermin-b": 4,
+        "vermin-c": 4,
+        "recruit": 3
+      },
+      "focus": ["merc", "vermin-a"],
+      "initiative": null,
+      "annotations": [
+        {
+          "kind": "sight",
+          "from": "merc",
+          "to": "vermin-a",
+          "state": "obscured",
+          "label": "Tir"
+        }
+      ],
+      "dice": null,
+      "event": null,
+      "recap": null
+    },
+    {
+      "banner": "Étape 2 - Effectuer les jets d'attaque",
+      "title": "Un dé pour l'Arc court",
+      "text": [
+        "Le joueur lance autant de dés que la valeur d'**Attaques** de l'arme : 1 pour l'Arc court.",
+        "Un **6 naturel** est une **touche critique**. Un résultat égal ou supérieur à la valeur d'**Arc** du tireur est une **touche** : 4+ pour le Mercenary. Le dé donne 5 : une touche."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-2-effectuer-les-jets-d-attaque",
+        "label": "2. Effectuer les jets d'attaque"
+      },
+      "positions": {
+        "merc": [2, 7],
+        "vermin-a": [8.4, 2.2],
+        "vermin-b": [14, 12],
+        "vermin-c": [5, 11],
+        "recruit": [6, 11]
+      },
+      "life": {
+        "merc": 4,
+        "vermin-a": 4,
+        "vermin-b": 4,
+        "vermin-c": 4,
+        "recruit": 3
+      },
+      "focus": ["merc"],
+      "initiative": null,
+      "annotations": [
+        {
+          "kind": "sight",
+          "from": "merc",
+          "to": "vermin-a",
+          "state": "obscured",
+          "label": "Tir"
+        }
+      ],
+      "dice": [
+        {
+          "owner": "merc",
+          "weapon": "short-bow",
+          "value": 5,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": true
+        }
+      ],
+      "event": "Jet d'attaque : 5, touche (Arc 4+).",
+      "recap": null
+    },
+    {
+      "banner": "Étape 2 - Effectuer les jets d'attaque",
+      "title": "Pas de surplomb ici",
+      "text": [
+        "Un tireur placé à 3\" ou plus, à la verticale, au-dessus de sa cible est **en surplomb** : il ajoute 1 à ses jets d'attaque.",
+        "Ici, le Mercenary et le Verminkin sont au même niveau : pas de bonus, le 5 reste un 5."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-surplomb",
+        "label": "Surplomb"
+      },
+      "positions": {
+        "merc": [2, 7],
+        "vermin-a": [8.4, 2.2],
+        "vermin-b": [14, 12],
+        "vermin-c": [5, 11],
+        "recruit": [6, 11]
+      },
+      "life": {
+        "merc": 4,
+        "vermin-a": 4,
+        "vermin-b": 4,
+        "vermin-c": 4,
+        "recruit": 3
+      },
+      "focus": ["merc"],
+      "initiative": null,
+      "annotations": [
+        {
+          "kind": "sight",
+          "from": "merc",
+          "to": "vermin-a",
+          "state": "obscured",
+          "label": "Tir"
+        }
+      ],
+      "dice": [
+        {
+          "owner": "merc",
+          "weapon": "short-bow",
+          "value": 5,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        }
+      ],
+      "event": null,
+      "recap": null
+    },
+    {
+      "banner": "Résolution - Jet d'armure",
+      "title": "Le couvert ne suffit pas",
+      "text": [
+        "La touche est résolue. La cible fait un **jet d'armure** : il lui faut 5+ grâce au couvert, et l'Arc court n'a pas de **Perforation**.",
+        "Le dé donne 3 : le jet d'armure est raté."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-1-effectuer-un-jet-d-armure",
+        "label": "1. Effectuer un jet d'armure"
+      },
+      "positions": {
+        "merc": [2, 7],
+        "vermin-a": [8.4, 2.2],
+        "vermin-b": [14, 12],
+        "vermin-c": [5, 11],
+        "recruit": [6, 11]
+      },
+      "life": {
+        "merc": 4,
+        "vermin-a": 4,
+        "vermin-b": 4,
+        "vermin-c": 4,
+        "recruit": 3
+      },
+      "focus": ["vermin-a"],
+      "initiative": null,
+      "annotations": [
+        {
+          "kind": "sight",
+          "from": "merc",
+          "to": "vermin-a",
+          "state": "obscured",
+          "label": "Tir"
+        }
+      ],
+      "dice": [
+        {
+          "owner": "merc",
+          "weapon": "short-bow",
+          "value": 5,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        }
+      ],
+      "event": "Jet d'armure : 3, raté (5+ à couvert).",
+      "recap": null
+    },
+    {
+      "banner": "Résolution - Dégâts",
+      "title": "1 dégât",
+      "text": [
+        "La cible subit les **Dégâts** de l'Arc court, soit 1. Une touche critique aurait infligé ses **Dégâts critiques**, 1D6.",
+        "Le Verminkin Warrior A passe de 4 à 3 points de vie."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-2-allouer-les-degats",
+        "label": "2. Allouer les dégâts"
+      },
+      "positions": {
+        "merc": [2, 7],
+        "vermin-a": [8.4, 2.2],
+        "vermin-b": [14, 12],
+        "vermin-c": [5, 11],
+        "recruit": [6, 11]
+      },
+      "life": {
+        "merc": 4,
+        "vermin-a": 3,
+        "vermin-b": 4,
+        "vermin-c": 4,
+        "recruit": 3
+      },
+      "focus": ["vermin-a"],
+      "initiative": null,
+      "annotations": [
+        {
+          "kind": "sight",
+          "from": "merc",
+          "to": "vermin-a",
+          "state": "obscured",
+          "label": "Tir"
+        }
+      ],
+      "dice": [
+        {
+          "owner": "merc",
+          "weapon": "short-bow",
+          "value": 5,
+          "offHand": false,
+          "status": "used",
+          "highlight": true
+        }
+      ],
+      "event": "Le Verminkin Warrior A passe de 4 à 3 points de vie.",
+      "recap": null
+    },
+    {
+      "banner": "Bilan",
+      "title": "Fin de l'action",
+      "text": [
+        "Chaque attaque a été résolue : l'action d'Attaque à distance prend fin.",
+        "À retenir : la cible est l'ennemi visible le plus proche qui n'est pas engagé ; si celui-ci est masqué, on peut viser le plus proche qui ne l'est pas ; une cible masquée est à couvert (+1 à l'Armure) ; le surplomb donne +1 aux jets d'attaque."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-action-d-attaque-a-distance",
+        "label": "Action d'Attaque à distance"
+      },
+      "positions": {
+        "merc": [2, 7],
+        "vermin-a": [8.4, 2.2],
+        "vermin-b": [14, 12],
+        "vermin-c": [5, 11],
+        "recruit": [6, 11]
+      },
+      "life": {
+        "merc": 4,
+        "vermin-a": 3,
+        "vermin-b": 4,
+        "vermin-c": 4,
+        "recruit": 3
+      },
+      "focus": [],
+      "initiative": null,
+      "annotations": [
+        {
+          "kind": "sight",
+          "from": "merc",
+          "to": "vermin-a",
+          "state": "obscured",
+          "label": "Tir"
+        }
+      ],
+      "dice": [
+        {
+          "owner": "merc",
+          "weapon": "short-bow",
+          "value": 5,
+          "offHand": false,
+          "status": "used",
+          "highlight": false
+        }
+      ],
+      "event": null,
+      "recap": null
+    }
+  ]
+}

@@ -22,6 +22,12 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
   dessus, avec les cartes des combattants, les jets d'attaque, les points de
   vie restants et un lien vers la règle de chaque étape. Boutons précédent et
   suivant, flèches du clavier, et étape conservée dans l'adresse.
+- Leçon d'attaque à distance dans le tutoriel : un exemple maison construit à
+  partir des règles (p. 28), avec des valeurs de dés choisies pour
+  l'illustration : portée de l'arme, ennemi visible le plus proche non engagé
+  au corps à corps, exception de la cible masquée, couvert, puis jet d'Arc,
+  jet d'armure et dégâts. Le plateau montre la portée, les distances et les
+  lignes de vue.
 - Le lecteur des règles s'ouvre directement sur une section d'un chapitre
   (`#/rules/<chapitre>/<section>`).
 
