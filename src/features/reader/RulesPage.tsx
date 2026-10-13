@@ -4,18 +4,62 @@
  *              (side column on large screens, drop-down list on phones),
  *              contents of the current chapter with jumps to its sections,
  *              chapter text and previous / next links. Works offline. The
- *              first heading of the chapter file is the page title.
+ *              first heading of the chapter file is the page title. Each
+ *              section has a "suggest a correction" link to a pre-filled GitHub
+ *              issue, which quotes the passage selected in that section.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
  */
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState, type MouseEvent } from "react";
+import type { TFunction } from "i18next";
 import { useTranslation } from "react-i18next";
 import { hrefFor, navigate } from "../../app/router.ts";
 import { currentLanguage } from "../../i18n/index.ts";
 import { CHAPTERS, findChapter, loadChapter, type Chapter } from "./chapters.ts";
-import { renderChapter, type RenderedChapter } from "./markdown.ts";
+import { editUrl, issueUrl, trimQuote, type FeedbackTarget } from "./feedback.ts";
+import { renderChapter, type Heading, type RenderedChapter } from "./markdown.ts";
+
+interface Selected {
+  text: string;
+  headingId: string;
+}
+
+function pageUrl(chapter: Chapter): string {
+  return new URL(hrefFor({ name: "rules", chapter: chapter.id }), window.location.href).href;
+}
+
+function targetFor(chapter: Chapter, heading: Heading | undefined, quote?: string): FeedbackTarget {
+  return {
+    chapterTitle: chapter.title,
+    file: chapter.file,
+    section: heading?.text ?? "",
+    line: heading?.line ?? 1,
+    pageUrl: pageUrl(chapter),
+    ...(quote === undefined ? {} : { quote }),
+  };
+}
+
+function render(chapter: Chapter, markdown: string, t: TFunction): RenderedChapter {
+  return renderChapter(markdown, {
+    feedbackLink: (heading) => ({
+      href: issueUrl(targetFor(chapter, heading)),
+      text: t("reader.feedback.link"),
+      label: t("reader.feedback.linkFor", { section: heading.text }),
+    }),
+  });
+}
+
+/** Last heading (level 2 to 4) placed before a node of the chapter text. */
+function headingBefore(root: HTMLElement, node: Node): string | null {
+  let found: string | null = null;
+  for (const h of root.querySelectorAll("h2, h3, h4")) {
+    if (h.compareDocumentPosition(node) & Node.DOCUMENT_POSITION_FOLLOWING) found = h.id;
+    else break;
+  }
+  return found;
+}
 
 type State =
   | { status: "loading" }
@@ -37,6 +81,27 @@ export function RulesPage({ chapterId }: { chapterId: string | null }) {
   const { t } = useTranslation();
   const chapter = findChapter(chapterId);
   const [state, setState] = useState<State>({ status: "loading" });
+  const [selected, setSelected] = useState<Selected | null>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  // Remembers the last passage selected in the chapter text: clicking a link
+  // collapses the selection before the click is handled.
+  useEffect(() => {
+    const onChange = () => {
+      const root = contentRef.current;
+      const selection = document.getSelection();
+      if (root === null || selection === null || selection.isCollapsed || selection.anchorNode === null)
+        return;
+      if (!root.contains(selection.anchorNode)) return;
+      const text = trimQuote(selection.toString());
+      const headingId = headingBefore(root, selection.anchorNode);
+      if (text !== "" && headingId !== null) setSelected({ text, headingId });
+    };
+    document.addEventListener("selectionchange", onChange);
+    return () => {
+      document.removeEventListener("selectionchange", onChange);
+    };
+  }, []);
 
   useEffect(() => {
     if (chapter === undefined) return;
@@ -44,7 +109,8 @@ export function RulesPage({ chapterId }: { chapterId: string | null }) {
     loadChapter(chapter)
       .then((markdown) => {
         if (!active) return;
-        setState({ status: "ready", id: chapter.id, chapter: renderChapter(markdown) });
+        setState({ status: "ready", id: chapter.id, chapter: render(chapter, markdown, t) });
+        setSelected(null);
         scrollToTop();
       })
       .catch(() => {
@@ -53,7 +119,7 @@ export function RulesPage({ chapterId }: { chapterId: string | null }) {
     return () => {
       active = false;
     };
-  }, [chapter]);
+  }, [chapter, t]);
 
   const index = chapter === undefined ? -1 : CHAPTERS.indexOf(chapter);
   const previous = index > 0 ? CHAPTERS[index - 1] : undefined;
@@ -61,6 +127,18 @@ export function RulesPage({ chapterId }: { chapterId: string | null }) {
   // A state left by the previous chapter counts as loading.
   const ready = state.status === "ready" && state.id === chapter?.id ? state.chapter : null;
   const failed = state.status === "error" && state.id === chapter?.id;
+  const headingOf = (id: string): Heading | undefined => ready?.headings.find((h) => h.id === id);
+  const selectedHeading = selected === null ? undefined : headingOf(selected.headingId);
+
+  // A section link quotes the passage selected in that section.
+  const onContentClick = (event: MouseEvent<HTMLDivElement>) => {
+    if (!(event.target instanceof Element) || chapter === undefined) return;
+    const link = event.target.closest<HTMLAnchorElement>("a[data-heading]");
+    const id = link?.dataset["heading"];
+    if (link === null || id === undefined) return;
+    const quote = selected?.headingId === id ? selected.text : undefined;
+    link.href = issueUrl(targetFor(chapter, headingOf(id), quote));
+  };
 
   return (
     <div className="grid gap-6 lg:grid-cols-[16rem_minmax(0,1fr)] xl:gap-10">
@@ -68,7 +146,12 @@ export function RulesPage({ chapterId }: { chapterId: string | null }) {
 
       <article lang="fr" className="panel-parchment min-w-0 p-4 sm:p-8" aria-busy={ready === null}>
         <p className="mb-4 text-sm text-on-panel-muted" lang={currentLanguage()}>
-          {t("reader.notice")}
+          {t("reader.notice")} {t("reader.feedback.notice")}{" "}
+          {chapter !== undefined && (
+            <a className="underline" href={editUrl(chapter.file)} target="_blank" rel="noopener">
+              {t("reader.feedback.edit")}
+            </a>
+          )}
         </p>
         {chapter === undefined && <p role="alert">{t("reader.notFound")}</p>}
         {failed && <p role="alert">{t("reader.error")}</p>}
@@ -76,9 +159,26 @@ export function RulesPage({ chapterId }: { chapterId: string | null }) {
         {ready !== null && (
           <>
             {ready.sections.length > 1 && <Contents chapter={ready} />}
-            <div className="reader-content" dangerouslySetInnerHTML={{ __html: ready.html }} />
+            <div
+              ref={contentRef}
+              className="reader-content"
+              onClick={onContentClick}
+              dangerouslySetInnerHTML={{ __html: ready.html }}
+            />
           </>
         )}
+        <div aria-live="polite" className="sticky bottom-0 z-10">
+          {chapter !== undefined && selected !== null && selectedHeading !== undefined && (
+            <SelectionBar
+              quote={selected.text}
+              section={selectedHeading.text}
+              href={issueUrl(targetFor(chapter, selectedHeading, selected.text))}
+              onClear={() => {
+                setSelected(null);
+              }}
+            />
+          )}
+        </div>
         {chapter !== undefined && (
           <nav
             aria-label={t("reader.pager")}
@@ -175,5 +275,34 @@ function Contents({ chapter }: { chapter: RenderedChapter }) {
         ))}
       </ol>
     </details>
+  );
+}
+
+/** Passage selected in the chapter, with a link to suggest a correction for it. */
+function SelectionBar({
+  quote,
+  section,
+  href,
+  onClear,
+}: {
+  quote: string;
+  section: string;
+  href: string;
+  onClear: () => void;
+}) {
+  const { t } = useTranslation();
+  return (
+    <div className="mt-4 flex flex-wrap items-center gap-3 border-2 border-on-panel bg-panel p-3 text-sm shadow-lg">
+      <p className="w-full min-w-0 sm:w-auto sm:flex-1">
+        <strong>{t("reader.feedback.selected", { section })}</strong>{" "}
+        <span className="line-clamp-2 italic">{quote}</span>
+      </p>
+      <a className="btn btn-sm btn-solid" href={href} target="_blank" rel="noopener">
+        {t("reader.feedback.suggest")}
+      </a>
+      <button type="button" className="btn btn-sm" onClick={onClear}>
+        {t("reader.feedback.clear")}
+      </button>
+    </div>
   );
 }

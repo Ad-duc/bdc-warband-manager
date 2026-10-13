@@ -43,6 +43,12 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
   féminin à côté du bouton "Au hasard". Les Death Covens suivent la règle du
   livre ("-a" ajouté à un nom qui se termine par une consonne, p. 96) ; les
   autres factions utilisent des tables D66 maison, non officielles.
+- Retours sur la traduction dans le lecteur de règles : le lien "Proposer
+  une correction" sous chaque titre ouvre un ticket GitHub déjà rempli
+  (formulaire `traduction`), le passage sélectionné est cité, et chaque
+  chapitre renvoie à la page de modification de son fichier. Les tickets
+  acceptés sont appliqués par une demande de fusion
+  (`docs/TRANSLATION_FEEDBACK.md`).
 - Nom de bande au hasard à côté du champ "Nom de la bande", tiré de tables
   maison propres à la faction choisie (non officielles).
 

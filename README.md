@@ -41,7 +41,9 @@ règles et les nouveautés du jeu.
   format carte à jouer avec leurs dos, et une aide de jeu en français sur une
   page.
 - **Lire les règles en français** : la traduction complète, chapitre par
-  chapitre, avec sommaire et glossaire VO-VF.
+  chapitre, avec sommaire et glossaire VO-VF. Une faute, une règle mal
+  traduite ? Le lien "Proposer une correction" sous chaque titre ouvre un
+  ticket GitHub déjà rempli (sélectionnez d'abord le passage pour le citer).
 - **Lancer le dé de direction** pour les déviations, avec les distances des
   règles.
 - **Partager une bande** par un simple lien en lecture seule, ou l'exporter et
@@ -93,8 +95,8 @@ opened. Official game website:
   prepared spells) and group campaigns with standings.
 - Printable A4 roster, playing-card size fighter cards with their backs, and
   a one-page French reminder sheet.
-- French translation of the rules, direction dice, read-only share links and
-  JSON export.
+- French translation of the rules (with a link to report a correction on
+  GitHub), direction dice, read-only share links and JSON export.
 
 Your warbands are stored in your browser only; nothing is sent to a server.
 Black Death City and its content belong to Sam Pearson; this project is not

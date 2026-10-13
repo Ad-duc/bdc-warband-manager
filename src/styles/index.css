@@ -213,6 +213,19 @@
     font-size: 0.65em;
     font-weight: 400;
   }
+  /* Feedback link under each heading, to a pre-filled GitHub issue */
+  .reader-content .reader-feedback {
+    margin: -0.75rem 0 0.25rem;
+    text-align: right;
+    font-size: 0.8125rem;
+  }
+  .reader-content .reader-feedback a {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
   .reader-content h1 {
     margin: 0 0 1rem;
     font-size: 2.25rem;

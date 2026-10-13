@@ -41,6 +41,11 @@ version is given separately (playtest v1.03).
   button. The Death Covens follow the book rule ("-a" added to a name ending
   in a consonant, p. 96); the other factions use house D66 tables, not
   official.
+- Translation feedback in the rules reader: a "Suggest a correction" link
+  under each heading opens a pre-filled GitHub issue (form `traduction`), the
+  selected passage is quoted, and each chapter links to the edit page of its
+  file. Accepted issues are applied by a pull request
+  (`docs/TRANSLATION_FEEDBACK.md`).
 - Random warband name next to the "Warband name" field, drawn from house
   tables of the selected faction (in French, not official).
 

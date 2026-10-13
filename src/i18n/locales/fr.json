@@ -601,7 +601,16 @@
     "next": "(chapitre suivant)",
     "loading": "Chargement du chapitre...",
     "error": "Ce chapitre n'a pas pu être chargé. Rechargez la page avec une connexion.",
-    "notFound": "Chapitre inconnu. Choisissez-en un dans la liste."
+    "notFound": "Chapitre inconnu. Choisissez-en un dans la liste.",
+    "feedback": {
+      "notice": "Une faute, une règle mal traduite ? Proposez une correction depuis le lien sous chaque titre (sélectionnez d'abord le passage pour le citer), ou",
+      "edit": "modifiez le fichier sur GitHub.",
+      "link": "Proposer une correction",
+      "linkFor": "Proposer une correction pour la section {{section}} (GitHub, nouvel onglet)",
+      "selected": "Passage sélectionné ({{section}}) :",
+      "suggest": "Proposer une correction",
+      "clear": "Annuler"
+    }
   },
   "changelog": {
     "loading": "Chargement des nouveautés...",

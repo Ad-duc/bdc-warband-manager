@@ -1,0 +1,70 @@
+# File:     .github/ISSUE_TEMPLATE/traduction.yml
+# Role:     Issue form for a comment or a correction on the French translation
+#           of the rules (sources/fr). The "Proposer une correction" links of
+#           the rules reader open it with the chapter, the section, the source
+#           line and the selected passage filled in.
+# Author:   Adrien Duclaud
+# Created:  2026-10-13
+# License:  MIT
+
+name: Correction de traduction
+description: Signaler une faute ou proposer une meilleure traduction des règles en français.
+title: "Traduction : "
+labels: ["traduction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de relire la traduction ! Une proposition par ticket, si possible.
+        Les choix de vocabulaire déjà faits sont dans le glossaire (`sources/fr/00_glossaire.md`).
+  - type: input
+    id: chapitre
+    attributes:
+      label: Chapitre
+      placeholder: "Concepts de base"
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      placeholder: "Mouvement"
+  - type: input
+    id: source
+    attributes:
+      label: Fichier source
+      description: Lien vers la ligne du titre de la section dans sources/fr.
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type de remarque
+      options:
+        - Faute (orthographe, grammaire, typographie)
+        - Contresens ou règle mal traduite
+        - Terme du glossaire
+        - Formulation plus claire
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: passage
+    attributes:
+      label: Texte actuel
+      description: Le passage concerné, tel qu'il est dans la traduction.
+  - type: textarea
+    id: proposition
+    attributes:
+      label: Proposition
+      description: Le texte que vous proposez à la place.
+    validations:
+      required: true
+  - type: textarea
+    id: commentaire
+    attributes:
+      label: Commentaire
+      description: Pourquoi ce changement ? Une page de la VO, une règle liée, une source.
+  - type: input
+    id: credit
+    attributes:
+      label: Nom à citer (facultatif)
+      description: Pseudo à citer dans la page Nouveautés si la correction est retenue. Laisser vide pour ne pas être cité.

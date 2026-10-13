@@ -601,7 +601,16 @@
     "next": "(next chapter)",
     "loading": "Loading the chapter...",
     "error": "This chapter could not be loaded. Reload the page while online.",
-    "notFound": "Unknown chapter. Pick one from the list."
+    "notFound": "Unknown chapter. Pick one from the list.",
+    "feedback": {
+      "notice": "A typo, a rule badly translated? Suggest a correction from the link under each heading (select the passage first to quote it), or",
+      "edit": "edit the file on GitHub.",
+      "link": "Suggest a correction",
+      "linkFor": "Suggest a correction for the section {{section}} (GitHub, new tab)",
+      "selected": "Selected passage ({{section}}):",
+      "suggest": "Suggest a correction",
+      "clear": "Cancel"
+    }
   },
   "changelog": {
     "loading": "Loading the changelog...",

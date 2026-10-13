@@ -19,7 +19,7 @@ export function Markdown({
   idPrefix: string;
   className?: string;
 }) {
-  const html = useMemo(() => renderChapter(text, idPrefix).html, [text, idPrefix]);
+  const html = useMemo(() => renderChapter(text, { prefix: idPrefix }).html, [text, idPrefix]);
   return (
     <div lang="fr" className={`reader-content ${className}`} dangerouslySetInnerHTML={{ __html: html }} />
   );

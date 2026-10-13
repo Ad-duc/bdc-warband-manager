@@ -65,6 +65,10 @@ variable `BDC_SOURCES` point to another folder. A new rules version is
 imported with the procedure of `docs/RULES_UPDATE.md`. Prettier formats the
 generated files, so they can be compared line by line in a review.
 
+Comments and corrections on the French translation come as GitHub issues
+opened from the rules reader (form `traduction`); they are sorted and applied
+as described in [docs/TRANSLATION_FEEDBACK.md](docs/TRANSLATION_FEEDBACK.md).
+
 Rules that need a reading (a contradiction between a table and a text, a
 missing price) are written down in `RULES_ASSUMPTIONS.md` with an id
 (`A40`, `D11`), the page, the chosen reading and the open question. Tests

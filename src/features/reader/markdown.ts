@@ -4,7 +4,8 @@
  *              reader: GitHub tables, an id on every heading so the contents
  *              list can jump to it, wide tables wrapped in a scrolling box,
  *              raw HTML escaped rather than rendered, and every die written
- *              with its count (1D6).
+ *              with its count (1D6). Optionally, a feedback link after each
+ *              heading (rules reader), built from the heading and its line.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -18,10 +19,25 @@ export interface Section {
   text: string;
 }
 
+export interface Heading extends Section {
+  depth: number;
+  /** 1-based line of the heading in the Markdown source. */
+  line: number;
+}
+
 export interface RenderedChapter {
   html: string;
   /** Second-level headings, for the contents list. */
   sections: Section[];
+  /** Every heading, with its source line. */
+  headings: Heading[];
+}
+
+export interface RenderOptions {
+  /** Keeps the heading ids unique when several fragments share a page. */
+  prefix?: string;
+  /** Adds a link after each heading of level 2 to 4 (href and text). */
+  feedbackLink?: (heading: Heading) => { href: string; text: string; label: string };
 }
 
 const ESCAPES: Record<string, string> = {
@@ -56,10 +72,12 @@ export function slugify(text: string): string {
   );
 }
 
-/** `prefix` keeps the heading ids unique when several fragments share a page. */
-export function renderChapter(markdown: string, prefix = "s"): RenderedChapter {
+export function renderChapter(markdown: string, options: RenderOptions = {}): RenderedChapter {
+  const { prefix = "s", feedbackLink } = options;
   const used = new Map<string, number>();
   const sections: Section[] = [];
+  const headings: Heading[] = [];
+  const lines = new WeakMap<object, number>();
   const idFor = (text: string): string => {
     const base = `${prefix}-${slugify(text)}`;
     const count = used.get(base) ?? 0;
@@ -70,10 +88,20 @@ export function renderChapter(markdown: string, prefix = "s"): RenderedChapter {
   const marked = new Marked({ gfm: true });
   marked.use({
     renderer: {
-      heading({ tokens, depth, text }: Tokens.Heading): string {
+      heading(token: Tokens.Heading): string {
+        const { tokens, depth, text } = token;
         const id = idFor(text);
-        if (depth === 2) sections.push({ id, text: plainHeading(text) });
-        return `<h${depth} id="${id}" tabindex="-1">${this.parser.parseInline(tokens)}</h${depth}>\n`;
+        const heading: Heading = { id, text: plainHeading(text), depth, line: lines.get(token) ?? 0 };
+        headings.push(heading);
+        if (depth === 2) sections.push({ id, text: heading.text });
+        const out = `<h${depth} id="${id}" tabindex="-1">${this.parser.parseInline(tokens)}</h${depth}>\n`;
+        if (feedbackLink === undefined || depth < 2 || depth > 4) return out;
+        const link = feedbackLink(heading);
+        return (
+          out +
+          `<p class="reader-feedback"><a href="${escapeHtml(link.href)}" target="_blank" rel="noopener"` +
+          ` data-heading="${id}" aria-label="${escapeHtml(link.label)}">${escapeHtml(link.text)}</a></p>\n`
+        );
       },
       html({ text }: Tokens.HTML | Tokens.Tag): string {
         return escapeHtml(text);
@@ -81,9 +109,17 @@ export function renderChapter(markdown: string, prefix = "s"): RenderedChapter {
     },
   });
 
+  // Top-level tokens keep their raw text: the line of a heading is the number
+  // of line breaks before it, plus one.
+  const tokens = marked.lexer(withDiceCount(markdown));
+  let line = 1;
+  for (const token of tokens) {
+    lines.set(token, line);
+    line += (token.raw.match(/\n/g) ?? []).length;
+  }
   const html = marked
-    .parser(marked.lexer(withDiceCount(markdown)))
+    .parser(tokens)
     .replaceAll("<table>", '<div class="reader-table"><table>')
     .replaceAll("</table>", "</table></div>");
-  return { html, sections };
+  return { html, sections, headings };
 }

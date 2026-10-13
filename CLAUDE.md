@@ -20,6 +20,12 @@ other habit: pull request only, never merge, never invent a rule, no AI
 mention, no typographic characters, commits authored by the owner without
 trailers.
 
+## Translation feedback
+
+When asked to sort or apply community feedback on the French translation,
+follow `docs/TRANSLATION_FEEDBACK.md`. The hard rules of `docs/RULES_UPDATE.md`
+apply.
+
 ## Conventions
 
 - Code, comments, identifiers, commits: English. Messages to Adrien and pull

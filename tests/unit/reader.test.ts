@@ -2,8 +2,9 @@
  * File:        tests/unit/reader.test.ts
  * Role:        French rules reader: every translation chapter of sources/fr
  *              is listed and loads, Markdown rendering (heading ids, contents
- *              list, wrapped tables, escaped raw HTML), the rules routes, and
- *              the changelog shown in the app (same versions in both languages).
+ *              list, wrapped tables, escaped raw HTML, source line of each
+ *              heading, feedback links), the rules routes, and the changelog
+ *              shown in the app (same versions in both languages).
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -30,6 +31,17 @@ describe("chapters", () => {
     for (const chapter of CHAPTERS) {
       const { html } = renderChapter(await loadChapter(chapter));
       expect(html, chapter.file).toMatch(/^<h1 id="s-[a-z0-9-]+" tabindex="-1">/);
+    }
+  });
+
+  it("gives each heading its line in the translation file", async () => {
+    for (const chapter of CHAPTERS) {
+      const markdown = await loadChapter(chapter);
+      const lines = markdown.split("\n");
+      const { headings } = renderChapter(markdown);
+      expect(headings.length, chapter.file).toBeGreaterThan(0);
+      for (const h of headings)
+        expect(lines[h.line - 1], `${chapter.file}:${h.line}`).toMatch(new RegExp(`^#{${h.depth}} `));
     }
   });
 
@@ -76,6 +88,25 @@ describe("markdown rendering", () => {
     expect(html).toContain("</table></div>");
     expect(html).not.toContain("<script>");
     expect(html).toContain("&lt;script&gt;");
+  });
+
+  it("adds a feedback link after headings of level 2 to 4 only", () => {
+    const { html, headings } = renderChapter(sample, {
+      feedbackLink: (h) => ({
+        href: `https://example.org/?s=${h.id}&l=${h.line}`,
+        text: "Corriger",
+        label: `Corriger ${h.text}`,
+      }),
+    });
+    expect(headings.map((h) => [h.id, h.depth, h.line])).toEqual([
+      ["s-chapitre-2-batailles", 1, 1],
+      ["s-le-round", 2, 3],
+      ["s-le-round-2", 2, 9],
+    ]);
+    expect(html.match(/class="reader-feedback"/g)).toHaveLength(2);
+    expect(html).toContain('href="https://example.org/?s=s-le-round&amp;l=3"');
+    expect(html).toContain('data-heading="s-le-round" aria-label="Corriger Le round">Corriger</a>');
+    expect(renderChapter(sample).html).not.toContain("reader-feedback");
   });
 
   it("cleans heading texts", () => {

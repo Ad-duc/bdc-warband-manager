@@ -83,6 +83,13 @@ the PDF, compares the text with the previous version, updates the French
 translation and the game data, runs every check and opens a pull request
 labelled `rules-watch`. Nothing reaches `main` without a review.
 
+## Translation feedback
+
+The rules reader links every section to a pre-filled GitHub issue form
+(`.github/ISSUE_TEMPLATE/traduction.yml`, label `traduction`). Accepted
+issues are applied to `sources/fr` by a pull request, as described in
+[`TRANSLATION_FEEDBACK.md`](TRANSLATION_FEEDBACK.md).
+
 ## Project layout
 
 ```
@@ -96,7 +103,7 @@ src/
   styles/     Tailwind entry point and design tokens
 scripts/      data, i18n and glossary tools, Python data generators, rules watcher
 sources/      extracted rules text, French translation, release manifest
-docs/         maintenance procedures (rules update)
+docs/         maintenance procedures (rules update, translation feedback)
 tests/        unit (vitest) and e2e (Playwright)
 public/       local fonts, images, PWA icons
 ```
