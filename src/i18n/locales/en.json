@@ -495,11 +495,11 @@
         "use": "(flame template, a distance given by the rule)"
       },
       "d6": {
-        "label": "D6\"",
+        "label": "1D6\"",
         "use": "(Scare trait, template spells, drunk Hit)"
       },
       "d6x2": {
-        "label": "D6x2\"",
+        "label": "1D6x2\"",
         "use": "(missed blast template)"
       },
       "3d6": {
@@ -512,8 +512,8 @@
     "angle": "Arrow at {{angle}} degrees from the top of the screen, clockwise",
     "directionOnly": "Direction rolled",
     "detail": {
-      "single": "D6 = {{inches}}\"",
-      "double": "D6 = {{die}}, x2 = {{inches}}\"",
+      "single": "1D6 = {{inches}}\"",
+      "double": "1D6 = {{die}}, x2 = {{inches}}\"",
       "sum": "{{dice}} = {{inches}}\""
     },
     "roll": "Roll",

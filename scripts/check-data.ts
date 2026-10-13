@@ -201,17 +201,33 @@ if (dirty === 0) ok(`${files.length} files scanned, none contains a forbidden ch
 
 // Dice notation: every die states its number of dice (1D6), see src/i18n/dice.ts.
 // "npm run fix:dice" rewrites the files that fail this check.
-function bareDice(value: unknown, key: string | null, path: string, out: string[]): string[] {
-  if (Array.isArray(value)) value.forEach((v, i) => bareDice(v, key, `${path}[${i}]`, out));
+// Data files: only the localized texts and headings ("dice": "d6" is a machine value).
+// Interface and print text files: every string value.
+function bareDice(value: unknown, key: string | null, path: string, out: string[], all: boolean): string[] {
+  if (Array.isArray(value)) value.forEach((v, i) => bareDice(v, key, `${path}[${i}]`, out, all));
   else if (typeof value === "object" && value !== null)
-    for (const [k, v] of Object.entries(value)) bareDice(v, k, path === "" ? k : `${path}.${k}`, out);
-  else if (typeof value === "string" && (key === "en" || key === "fr" || key === "md") && hasBareDie(value))
+    for (const [k, v] of Object.entries(value)) bareDice(v, k, path === "" ? k : `${path}.${k}`, out, all);
+  else if (
+    typeof value === "string" &&
+    (all || key === "en" || key === "fr" || key === "md") &&
+    hasBareDie(value)
+  )
     out.push(path);
   return out;
 }
 let diceFaults = 0;
-for (const file of ["common.json", ...factionFiles]) {
-  for (const path of bareDice(loadJson(join(DATA_DIR, file)), null, "", [])) {
+const textFiles: [string, boolean][] = [
+  ...["common.json", ...factionFiles].map((f): [string, boolean] => [join("src", "data", f), false]),
+  ...readdirSync(join(ROOT, "src", "i18n", "locales")).map((f): [string, boolean] => [
+    join("src", "i18n", "locales", f),
+    true,
+  ]),
+  ...readdirSync(join(ROOT, "src", "print"))
+    .filter((f) => f.endsWith(".json"))
+    .map((f): [string, boolean] => [join("src", "print", f), true]),
+];
+for (const [file, all] of textFiles) {
+  for (const path of bareDice(loadJson(join(ROOT, file)), null, "", [], all)) {
     diceFaults += 1;
     fail(`${file}: ${path} has a die without its number of dice (run npm run fix:dice)`);
   }
@@ -229,7 +245,8 @@ if (existsSync(translationDir)) {
       });
   }
 }
-if (diceFaults === 0) ok("Every die of the data texts and of the translation states its number of dice");
+if (diceFaults === 0)
+  ok("Every die of the data texts, interface strings, print texts and translation states its number of dice");
 
 /* ------------------------------------------------------------------------- */
 /* 3. Comparison with the Markdown sources                                   */

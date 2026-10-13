@@ -1,9 +1,10 @@
 """
 File:     scripts/generators/fix_dice.py
 Role:     Writes every die with its number of dice in the French translation
-          (sources/fr/*.md) and in the texts of the data files
-          (src/data/*.json): "D6" -> "1D6". Machine fields such as "dice":
-          "d6" are left as they are. Run it after importing a new
+          (sources/fr/*.md), the texts of the data files (src/data/*.json),
+          the interface strings (src/i18n/locales) and the print texts
+          (src/print/*.json): "D6" -> "1D6". Machine fields such as "dice":
+          "d6" and JSON keys are left as they are. Run it after importing a new
           translation; check-data reports any die left without its count.
 Usage:    npm run fix:dice [-- --check]
 Author:   Adrien Duclaud
@@ -17,7 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from dice import fix_json_text, with_dice_count  # noqa: E402
+from dice import fix_json_text, fix_json_values, with_dice_count  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -29,6 +30,8 @@ def main():
 
     targets = [(p, with_dice_count) for p in sorted((ROOT / "sources" / "fr").glob("*.md"))]
     targets += [(p, fix_json_text) for p in sorted((ROOT / "src" / "data").glob("*.json"))]
+    targets += [(p, fix_json_values) for p in sorted((ROOT / "src" / "i18n" / "locales").glob("*.json"))]
+    targets += [(p, fix_json_values) for p in sorted((ROOT / "src" / "print").glob("*.json"))]
     changed = []
     for path, fix in targets:
         text = path.read_text(encoding="utf8")

@@ -3,7 +3,7 @@
  * Role:        Direction dice opened from the header, over the current screen:
  *              an arrow pointing in any direction (as a dice with arrows on
  *              its faces) and, as an option, the scatter distance of the rules
- *              (D6", D6x2" or 3D6"). Native <dialog> (focus trap, Escape to
+ *              (1D6", 1D6x2" or 3D6"). Native <dialog> (focus trap, Escape to
  *              close); the result is announced to screen readers.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12

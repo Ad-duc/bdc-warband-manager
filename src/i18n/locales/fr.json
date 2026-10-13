@@ -495,11 +495,11 @@
         "use": "(gabarit de flamme, distance donnée par la règle)"
       },
       "d6": {
-        "label": "D6\"",
+        "label": "1D6\"",
         "use": "(trait Effroi, sorts à gabarit, Proie soûle)"
       },
       "d6x2": {
-        "label": "D6x2\"",
+        "label": "1D6x2\"",
         "use": "(gabarit d'explosion raté)"
       },
       "3d6": {
@@ -512,8 +512,8 @@
     "angle": "Flèche à {{angle}} degrés du haut de l'écran, sens horaire",
     "directionOnly": "Direction tirée",
     "detail": {
-      "single": "D6 = {{inches}}\"",
-      "double": "D6 = {{die}}, x2 = {{inches}}\"",
+      "single": "1D6 = {{inches}}\"",
+      "double": "1D6 = {{die}}, x2 = {{inches}}\"",
       "sum": "{{dice}} = {{inches}}\""
     },
     "roll": "Lancer",

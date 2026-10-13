@@ -89,7 +89,7 @@ Voir les règles complètes aux pages xx-xx.
 
 | | |
 |---|---|
-| **Puiser du pouvoir (*Draw Power*) :** | +1 1D6 au jet de lancement (*casting roll*) à la prochaine activation |
+| **Puiser du pouvoir (*Draw Power*) :** | +1D6 au jet de lancement (*casting roll*) à la prochaine activation |
 | **Lancer un sort (*Cast a Spell*) :** | Jet de lancement (*casting roll*) = 1D6 + Volonté (*Willpower*) |
 | **Fiasco (*Miscast*) du jet de lancement (*Casting Roll*) :** | **1 dé** = 1 naturel (*natural*) ; **2+ dés** = n'importe quel double |
 

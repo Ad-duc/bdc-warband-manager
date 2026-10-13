@@ -19,7 +19,7 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 - Dé de direction (bouton "Dé de direction" dans l'en-tête), par-dessus
   l'écran en cours : une flèche dans une direction quelconque et, en option,
-  les distances de déviation des règles (D6", D6x2", 3D6"), avec le détail des
+  les distances de déviation des règles (1D6", 1D6x2", 3D6"), avec le détail des
   dés.
 - Aide de jeu en français (bouton "Aide de jeu" dans l'en-tête) : la feuille
   d'aide de jeu officielle traduite sur une page A4, avec les numéros de page

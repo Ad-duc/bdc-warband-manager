@@ -20,6 +20,7 @@ describe("withDiceCount", () => {
     expect(withDiceCount('60+D6, Move + D6"')).toBe('60+1D6, Move + 1D6"');
     expect(withDiceCount("scatter D6x2, D6x10 silver")).toBe("scatter 1D6x2, 1D6x10 silver");
     expect(withDiceCount("(D12)")).toBe("(1D12)");
+    expect(withDiceCount("+1 D6 au jet")).toBe("+1D6 au jet");
   });
 
   it("keeps counted dice, D66 tables and other words", () => {
@@ -30,7 +31,7 @@ describe("withDiceCount", () => {
   it("detects a die without its count", () => {
     expect(hasBareDie("roll 1D6")).toBe(false);
     expect(hasBareDie("roll D6")).toBe(true);
-    expect(hasBareDie("roll D6")).toBe(true);
+    expect(hasBareDie("roll 2D6")).toBe(false);
   });
 });
 

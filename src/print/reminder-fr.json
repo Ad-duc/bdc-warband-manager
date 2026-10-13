@@ -29,7 +29,7 @@
     ]
   },
   "reinforcements": {
-    "die": "D6",
+    "die": "1D6",
     "title": "Jet de renforts",
     "rows": [
       [
@@ -54,7 +54,7 @@
     "note": "Voir les règles complètes p. 29-30.",
     "rows": [
       ["Arcanique", "Touches critiques sur 5+"],
-      ["Explosion", "Gabarit d'explosion. En cas d'échec, dévie de D6x2\""],
+      ["Explosion", "Gabarit d'explosion. En cas d'échec, dévie de 1D6x2\""],
       ["Contondant", "Les touches critiques sauvegardées infligent 1 dégât"],
       ["Contre-charge", "Initiative contre les combattants qui chargent"],
       ["Flamme", "Gabarit de flamme. Touche automatique"],
@@ -70,7 +70,7 @@
       ],
       ["Rare", "Limité au nombre indiqué"],
       ["Rechargement", "Renoncer à un Mouvement ou une Action pour recharger"],
-      ["Effroi", "Les combattants non engagés réussissent un test de Volonté ou dévient de D6\""],
+      ["Effroi", "Les combattants non engagés réussissent un test de Volonté ou dévient de 1D6\""],
       ["À deux mains", "1 par combattant. Pas d'attaque de main secondaire"],
       ["Encombrant", "-1 aux jets d'attaque"],
       ["Salve", "Plusieurs cibles à 3\" ou moins"],
@@ -78,13 +78,13 @@
     ]
   },
   "misfire": {
-    "die": "D6",
+    "die": "1D6",
     "title": "Jet d'incident de tir",
     "rows": [
       [
         "1",
         "Retour de flamme",
-        "le combattant subit D3 dégâts {sep} l'arme ne peut plus être utilisée pendant la bataille."
+        "le combattant subit 1D3 dégâts {sep} l'arme ne peut plus être utilisée pendant la bataille."
       ],
       ["2", "Encrassée", "l'arme ne peut plus être utilisée pendant la bataille."],
       ["3-6", "Long feu", "l'attaque est ratée, comme d'habitude."]
@@ -101,8 +101,8 @@
     "label": "Mouvements",
     "rows": [
       ["Mouvement normal", "*Valeur de Mouvement en pouces*"],
-      ["Course", "*+D6\" {sep} ne peut pas terminer à moins de 1\" d'un ennemi*"],
-      ["Charge", "*+D6\" {sep} doit terminer à moins de 1\" d'un ennemi*"],
+      ["Course", "*+1D6\" {sep} ne peut pas terminer à moins de 1\" d'un ennemi*"],
+      ["Charge", "*+1D6\" {sep} doit terminer à moins de 1\" d'un ennemi*"],
       [
         "Désengagement",
         "*Test d'Initiative {sep} Mouvement de 3\" {sep} doit terminer à plus de 1\" de tous les ennemis*"
@@ -124,7 +124,7 @@
     "rows": [
       "**1. Choisir une cible**",
       "**2. Choisir les armes**",
-      "**3. Déterminer l'initiative** *(celui qui a chargé, ou Ini + D6)*",
+      "**3. Déterminer l'initiative** *(celui qui a chargé, ou Ini + 1D6)*",
       "**4. Effectuer les jets d'attaque**",
       "**5. Alterner attaques et parades** *(jet de parade 2+)*"
     ]
@@ -140,8 +140,8 @@
   "arcane": {
     "label": "Action Arcanique",
     "rows": [
-      ["Puiser du pouvoir :", "+1 D6 au jet de lancement à la prochaine activation"],
-      ["Lancer un sort :", "Jet de lancement = D6 + Volonté"],
+      ["Puiser du pouvoir :", "+1D6 au jet de lancement à la prochaine activation"],
+      ["Lancer un sort :", "Jet de lancement = 1D6 + Volonté"],
       ["Fiasco du jet de lancement :", "**1 dé** = *1 naturel*{br}**2+ dés** = *n'importe quel double*"]
     ]
   },
@@ -152,12 +152,12 @@
       [
         "2",
         "Fournaise de sorcellerie",
-        "le sort est raté {sep} le lanceur est mis hors de combat {sep} centrez le gabarit d'explosion sur lui {sep} tous les autres combattants situés dessous subissent D6 dégâts."
+        "le sort est raté {sep} le lanceur est mis hors de combat {sep} centrez le gabarit d'explosion sur lui {sep} tous les autres combattants situés dessous subissent 1D6 dégâts."
       ],
       [
         "3-5",
         "Déflagration arcanique",
-        "le sort est raté {sep} centrez le gabarit d'explosion sur le lanceur. Tous les combattants situés dessous subissent D3 dégâts."
+        "le sort est raté {sep} centrez le gabarit d'explosion sur le lanceur. Tous les combattants situés dessous subissent 1D3 dégâts."
       ],
       [
         "6-7",
@@ -167,7 +167,7 @@
       [
         "8+",
         "Déferlement de pouvoir incontrôlé",
-        "le lanceur subit D3 dégâts {sep} s'il n'est pas mis hors de combat, le sort est lancé de façon critique."
+        "le lanceur subit 1D3 dégâts {sep} s'il n'est pas mis hors de combat, le sort est lancé de façon critique."
       ]
     ]
   }
