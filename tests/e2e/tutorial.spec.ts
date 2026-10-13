@@ -39,9 +39,7 @@ test("lesson list from the header, then the melee lesson step by step", async ({
   await page.keyboard.press("ArrowRight");
   await expect(page).toHaveURL(/#\/tutorial\/melee-attack\/5$/);
   await expect(page.getByRole("img", { name: "Hache, 6 : Touche critique" })).toBeVisible();
-  await expect(
-    page.getByRole("img", { name: "Dague/Dague de poing, 5 : Touche, main secondaire" }),
-  ).toBeVisible();
+  await expect(page.getByRole("img", { name: "Dague, 5 : Touche, main secondaire" })).toBeVisible();
   await page.keyboard.press("ArrowLeft");
   await expect(page).toHaveURL(/#\/tutorial\/melee-attack\/4$/);
 });

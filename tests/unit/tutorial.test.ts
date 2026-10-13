@@ -165,6 +165,20 @@ describe("melee lesson (book example, p. 25)", () => {
     expect(last?.dice?.every((d) => d.status !== "rolled")).toBe(true);
   });
 
+  it("names the dagger as the book example does, keeping the English name", () => {
+    const dagger = vermin?.wargear.find((w) => w.id === "dagger");
+    expect(dagger?.name).toEqual({ en: "Dagger/Punch Dagger", fr: "Dague" });
+    expect(merc?.wargear.map((w) => w.name.fr)).toEqual(["Épée", "Bouclier", "Cuirasse"]);
+  });
+
+  it("reports a label for wargear the fighter does not carry", () => {
+    const broken = {
+      ...lesson,
+      fighters: lesson.fighters.map((f) => (f.id === "merc" ? { ...f, wargearLabels: { axe: "Hache" } } : f)),
+    };
+    expect(resolveFighters(broken, gameData).problems).toEqual(['merc: label for wargear "axe" not carried']);
+  });
+
   it("sorts the printed rolls as the book does", () => {
     const rolls = lesson.steps[firstDiceStep(lesson)]?.dice ?? [];
     const results = (owner: string, blade: number | null) =>

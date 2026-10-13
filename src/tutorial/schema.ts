@@ -29,6 +29,11 @@ export const LessonFighterSchema = z
     wargear: z.array(IdSchema).min(1),
     /** Base diameter in millimetres. */
     base: z.number().int().positive(),
+    /**
+     * Short French names used in the lesson instead of the armoury names, by
+     * wargear id (eg. "Dague" for "Dague/Dague de poing", as in the book example).
+     */
+    wargearLabels: z.record(IdSchema, z.string().min(1)),
   })
   .strict();
 export type LessonFighter = z.infer<typeof LessonFighterSchema>;

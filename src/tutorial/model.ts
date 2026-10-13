@@ -2,9 +2,9 @@
  * File:        src/tutorial/model.ts
  * Role:        Pure helpers of the tutorial: result of an attack roll from the
  *              Blade value, fighters of a lesson resolved against the game data
- *              (profile, wargear, characteristics after wargear), first step
- *              with dice, and splitting of the step texts into plain and bold
- *              runs. No React, so the lessons can be checked in unit tests.
+ *              (profile, wargear with the short names of the lesson,
+ *              characteristics after wargear), first step with dice, and
+ *              splitting of the step texts into plain and bold runs. No React, so the lessons can be checked in unit tests.
  * Author:      Adrien Duclaud
  * Created:     2026-10-13
  * License:     MIT
@@ -59,8 +59,14 @@ export function resolveFighters(
     for (const id of f.wargear) {
       const item = index.wargear.get(id);
       if (item === undefined) problems.push(`${f.id}: unknown wargear "${id}" in ${f.faction}`);
-      else wargear.push(item);
+      else {
+        // A lesson label replaces the French armoury name; the English name stays for the tooltip.
+        const label = f.wargearLabels[id];
+        wargear.push(label === undefined ? item : { ...item, name: { ...item.name, fr: label } });
+      }
     }
+    for (const id of Object.keys(f.wargearLabels))
+      if (!f.wargear.includes(id)) problems.push(`${f.id}: label for wargear "${id}" not carried`);
     const instance = { ...createFighter(profile, () => 0), wargearIds: f.wargear };
     const stats = effectiveStats(index, instance) ?? profile.stats;
     fighters.push({

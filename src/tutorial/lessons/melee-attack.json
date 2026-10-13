@@ -40,7 +40,8 @@
       "faction": "guild-mercenaries",
       "profile": "guild-mercenary",
       "wargear": ["sword", "shield", "cuirass"],
-      "base": 25
+      "base": 25,
+      "wargearLabels": {}
     },
     {
       "id": "vermin",
@@ -48,7 +49,10 @@
       "faction": "verminkin",
       "profile": "verminkin-warrior",
       "wargear": ["axe", "dagger"],
-      "base": 25
+      "base": 25,
+      "wargearLabels": {
+        "dagger": "Dague"
+      }
     }
   ],
   "steps": [
