@@ -15,6 +15,16 @@ version is given separately (playtest v1.03).
 
 ## [Unreleased]
 
+### Added
+
+- Rules tutorial ("Tutorial" in the header): the melee attack example of the
+  book (p. 25) replayed in 12 steps on a board seen from above, with the
+  fighter cards, the attack rolls, the life points left and a link to the
+  rule of each step. Previous and next buttons, arrow keys, and the step kept
+  in the address.
+- The rules reader opens a chapter at a given section
+  (`#/rules/<chapter>/<section>`).
+
 ## [1.1.0] - 2026-10-13
 
 Preparing a battle, group campaigns and name generators, still on the Black

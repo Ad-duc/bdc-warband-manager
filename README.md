@@ -44,6 +44,9 @@ règles et les nouveautés du jeu.
   chapitre, avec sommaire et glossaire VO-VF. Une faute, une règle mal
   traduite ? Le lien "Proposer une correction" sous chaque titre ouvre un
   ticket GitHub déjà rempli (sélectionnez d'abord le passage pour le citer).
+- **Apprendre les règles en image** : le tutoriel rejoue pas à pas l'exemple
+  d'attaque au corps à corps du livre sur un plateau vu de dessus, avec les
+  dés, les points de vie et un lien vers la règle de chaque étape.
 - **Lancer le dé de direction** pour les déviations, avec les distances des
   règles.
 - **Partager une bande** par un simple lien en lecture seule, ou l'exporter et
@@ -97,6 +100,8 @@ opened. Official game website:
   a one-page French reminder sheet.
 - French translation of the rules (with a link to report a correction on
   GitHub), direction dice, read-only share links and JSON export.
+- Rules tutorial: the melee attack example of the book replayed step by step
+  on a board seen from above.
 
 Your warbands are stored in your browser only; nothing is sent to a server.
 Black Death City and its content belong to Sam Pearson; this project is not

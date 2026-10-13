@@ -15,6 +15,16 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ## [Non publié]
 
+### Ajouté
+
+- Tutoriel des règles ("Tutoriel" dans l'en-tête) : l'exemple d'attaque au
+  corps à corps du livre (p. 25) rejoué en 12 étapes sur un plateau vu de
+  dessus, avec les cartes des combattants, les jets d'attaque, les points de
+  vie restants et un lien vers la règle de chaque étape. Boutons précédent et
+  suivant, flèches du clavier, et étape conservée dans l'adresse.
+- Le lecteur des règles s'ouvre directement sur une section d'un chapitre
+  (`#/rules/<chapitre>/<section>`).
+
 ## [1.1.0] - 2026-10-13
 
 Préparation des batailles, campagnes de groupe et générateurs de noms,

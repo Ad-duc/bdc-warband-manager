@@ -1,0 +1,918 @@
+{
+  "_header": {
+    "file": "src/tutorial/lessons/melee-attack.json",
+    "role": "Tutorial lesson: the melee attack action, replaying the example printed in the book step by step",
+    "author": "Adrien Duclaud",
+    "created": "2026-10-13",
+    "license": "MIT (structure). The game rules belong to Sam Pearson."
+  },
+  "id": "melee-attack",
+  "title": "Attaque au corps à corps",
+  "summary": "Un Guild Mercenary charge un Verminkin Warrior : les cinq étapes de l'action d'Attaque au corps à corps, puis les six échanges d'attaques et de parades de l'exemple du livre.",
+  "sourceRef": {
+    "page": 25,
+    "md": "03_batailles.md > Exemple d'action d'Attaque au corps à corps"
+  },
+  "board": {
+    "width": 10,
+    "height": 6,
+    "terrain": [
+      {
+        "x": 0.6,
+        "y": 0.6,
+        "width": 2.2,
+        "height": 0.7,
+        "label": "Mur en ruine"
+      },
+      {
+        "x": 7,
+        "y": 4.2,
+        "width": 2,
+        "height": 1.2,
+        "label": "Maison effondrée"
+      }
+    ]
+  },
+  "fighters": [
+    {
+      "id": "merc",
+      "side": "a",
+      "faction": "guild-mercenaries",
+      "profile": "guild-mercenary",
+      "wargear": ["sword", "shield", "cuirass"],
+      "base": 25,
+      "wargearLabels": {}
+    },
+    {
+      "id": "vermin",
+      "side": "b",
+      "faction": "verminkin",
+      "profile": "verminkin-warrior",
+      "wargear": ["axe", "dagger"],
+      "base": 25,
+      "wargearLabels": {
+        "dagger": "Dague"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "banner": "Mise en situation",
+      "title": "Le Mercenary vient de charger",
+      "text": [
+        "C'est l'activation du **Guild Mercenary**. Il a effectué un mouvement de **Charge** et termine socle contre socle avec un **Verminkin Warrior** ennemi : les deux combattants sont **engagés au corps à corps**.",
+        "Comme action, il effectue une **action d'Attaque au corps à corps**. Elle se déroule en cinq étapes, que cette leçon suit dans l'ordre."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-charge",
+        "label": "Charge"
+      },
+      "positions": {
+        "merc": [4.3, 2.6],
+        "vermin": [5.3, 2.6]
+      },
+      "life": {
+        "merc": 4,
+        "vermin": 4
+      },
+      "focus": ["merc"],
+      "initiative": null,
+      "annotations": [
+        {
+          "kind": "charge",
+          "fighter": "merc",
+          "from": [1.2, 3.4]
+        }
+      ],
+      "dice": null,
+      "event": null,
+      "recap": null
+    },
+    {
+      "banner": "Étape 1 - Choisir une cible",
+      "title": "Désigner l'attaquant et le défenseur",
+      "text": [
+        "Le joueur du Mercenary choisit comme **cible** un combattant ennemi engagé au corps à corps avec lui : le Verminkin Warrior.",
+        "Le Mercenary devient l'**attaquant**, le Verminkin le **défenseur**. Les deux combattants feront des jets d'attaque pendant cette action."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-1-choisir-une-cible",
+        "label": "1. Choisir une cible"
+      },
+      "positions": {
+        "merc": [4.3, 2.6],
+        "vermin": [5.3, 2.6]
+      },
+      "life": {
+        "merc": 4,
+        "vermin": 4
+      },
+      "focus": ["merc", "vermin"],
+      "initiative": null,
+      "annotations": [],
+      "dice": null,
+      "event": null,
+      "recap": null
+    },
+    {
+      "banner": "Étape 2 - Choisir les armes",
+      "title": "Une arme, ou deux avec la main secondaire",
+      "text": [
+        "En commençant par l'attaquant, chaque joueur choisit l'arme de corps à corps de son combattant. Le Mercenary prend son **Épée**.",
+        "Le Verminkin porte deux armes : il choisit la **Hache**, et la **Dague** comme **arme de main secondaire** (trait Main secondaire, sans arme à deux mains)."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-2-choisir-les-armes",
+        "label": "2. Choisir les armes"
+      },
+      "positions": {
+        "merc": [4.3, 2.6],
+        "vermin": [5.3, 2.6]
+      },
+      "life": {
+        "merc": 4,
+        "vermin": 4
+      },
+      "focus": ["merc", "vermin"],
+      "initiative": null,
+      "annotations": [],
+      "dice": null,
+      "event": null,
+      "recap": null
+    },
+    {
+      "banner": "Étape 3 - Déterminer l'initiative",
+      "title": "La charge donne l'initiative",
+      "text": [
+        "Le Mercenary **a chargé** pendant cette activation : il a l'**initiative**, sans jet de dé.",
+        "Sans charge, chaque joueur lancerait un dé et ajouterait l'Initiative de son combattant ; l'attaquant gagnerait les égalités."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-3-determiner-l-initiative",
+        "label": "3. Déterminer l'initiative"
+      },
+      "positions": {
+        "merc": [4.3, 2.6],
+        "vermin": [5.3, 2.6]
+      },
+      "life": {
+        "merc": 4,
+        "vermin": 4
+      },
+      "focus": ["merc"],
+      "initiative": "merc",
+      "annotations": [],
+      "dice": null,
+      "event": null,
+      "recap": null
+    },
+    {
+      "banner": "Étape 4 - Jets d'attaque",
+      "title": "Lancer et trier les dés",
+      "text": [
+        "Les deux joueurs lancent leurs dés en même temps. L'Épée et la Hache ont 3 Attaques : 3 dés chacune. La Dague en main secondaire ajoute **1 seul dé**, quelle que soit sa valeur d'Attaques.",
+        "Un **6 naturel** est une **touche critique**. Un résultat égal ou supérieur à la **Lame** est une **touche** (4+ pour le Mercenary, 5+ pour le Verminkin). Les autres résultats sont des **échecs**."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-4-effectuer-les-jets-d-attaque",
+        "label": "4. Effectuer les jets d'attaque"
+      },
+      "positions": {
+        "merc": [4.3, 2.6],
+        "vermin": [5.3, 2.6]
+      },
+      "life": {
+        "merc": 4,
+        "vermin": 4
+      },
+      "focus": ["merc", "vermin"],
+      "initiative": "merc",
+      "annotations": [],
+      "dice": [
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 1,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 4,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 6,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 6,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "dagger",
+          "value": 5,
+          "offHand": true,
+          "status": "rolled",
+          "highlight": false
+        }
+      ],
+      "event": "Mercenary : 1 échec, 1 touche, 1 touche critique. Verminkin : 3 touches (dont la Dague) et 1 touche critique.",
+      "recap": null
+    },
+    {
+      "banner": "Étape 5 - Échange I",
+      "title": "Le Mercenary pare grâce à la Garde",
+      "text": [
+        "Les combattants alternent maintenant **attaques** et **parades**, en commençant par celui qui a l'initiative.",
+        "Le Mercenary choisit de **parer**. Il devrait défausser une de ses réussites, mais le trait **Garde** de l'Épée lui permet de défausser son **échec** à la place. La parade réussit : il défausse une touche de la **Hache**, plus dangereuse que la Dague car elle a une Perforation de -1."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-garde",
+        "label": "Garde"
+      },
+      "positions": {
+        "merc": [4.3, 2.6],
+        "vermin": [5.3, 2.6]
+      },
+      "life": {
+        "merc": 4,
+        "vermin": 4
+      },
+      "focus": ["merc"],
+      "initiative": "merc",
+      "annotations": [
+        {
+          "kind": "exchange",
+          "from": "merc",
+          "to": "vermin",
+          "label": "Parade"
+        }
+      ],
+      "dice": [
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 1,
+          "offHand": false,
+          "status": "discarded",
+          "highlight": true
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 4,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 6,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "parried",
+          "highlight": true
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 6,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "dagger",
+          "value": 5,
+          "offHand": true,
+          "status": "rolled",
+          "highlight": false
+        }
+      ],
+      "event": "Parade réussie (le livre ne donne pas la valeur du dé).",
+      "recap": null
+    },
+    {
+      "banner": "Étape 5 - Échange II",
+      "title": "Le Verminkin frappe à la Hache",
+      "text": [
+        "Au tour du Verminkin. Il **attaque** avec la touche restante de sa Hache. Le Mercenary fait un **jet d'armure** : avec la Perforation de -1, son Armure de 4+ ne sauve plus que sur 5+.",
+        "Le jet est raté : il subit les **Dégâts** de la Hache, soit 1."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-perforation",
+        "label": "Perforation"
+      },
+      "positions": {
+        "merc": [4.3, 2.6],
+        "vermin": [5.3, 2.6]
+      },
+      "life": {
+        "merc": 3,
+        "vermin": 4
+      },
+      "focus": ["vermin"],
+      "initiative": "merc",
+      "annotations": [
+        {
+          "kind": "exchange",
+          "from": "vermin",
+          "to": "merc",
+          "label": "Attaque"
+        }
+      ],
+      "dice": [
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 1,
+          "offHand": false,
+          "status": "discarded",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 4,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 6,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "parried",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "used",
+          "highlight": true
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 6,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "dagger",
+          "value": 5,
+          "offHand": true,
+          "status": "rolled",
+          "highlight": false
+        }
+      ],
+      "event": "Jet d'armure raté. Le Mercenary passe de 4 à 3 points de vie.",
+      "recap": null
+    },
+    {
+      "banner": "Étape 5 - Échange III",
+      "title": "La touche critique du Mercenary",
+      "text": [
+        "Le Mercenary attaque avec sa **touche critique**. Le Verminkin rate son jet d'armure.",
+        "Une touche critique inflige les **Dégâts critiques** de l'arme au lieu de ses Dégâts : 1D3 pour l'Épée. Le dé donne 3."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-2-allouer-les-degats",
+        "label": "2. Allouer les dégâts"
+      },
+      "positions": {
+        "merc": [4.3, 2.6],
+        "vermin": [5.3, 2.6]
+      },
+      "life": {
+        "merc": 3,
+        "vermin": 1
+      },
+      "focus": ["merc"],
+      "initiative": "merc",
+      "annotations": [
+        {
+          "kind": "exchange",
+          "from": "merc",
+          "to": "vermin",
+          "label": "Attaque critique"
+        }
+      ],
+      "dice": [
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 1,
+          "offHand": false,
+          "status": "discarded",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 4,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 6,
+          "offHand": false,
+          "status": "used",
+          "highlight": true
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "parried",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "used",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 6,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "dagger",
+          "value": 5,
+          "offHand": true,
+          "status": "rolled",
+          "highlight": false
+        }
+      ],
+      "event": "Dégâts critiques : 3. Le Verminkin passe de 4 à 1 point de vie.",
+      "recap": null
+    },
+    {
+      "banner": "Étape 5 - Échange IV",
+      "title": "Le Verminkin tente une parade",
+      "text": [
+        "Acculé, le Verminkin essaie de **parer** la dernière touche du Mercenary. Il défausse une de ses réussites, sa touche de Dague, puis lance le dé de parade.",
+        "Sur 1, la parade est ratée : c'est le cas ici, et la touche défaussée est perdue."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-5-alterner-attaques-et-parades",
+        "label": "5. Alterner attaques et parades"
+      },
+      "positions": {
+        "merc": [4.3, 2.6],
+        "vermin": [5.3, 2.6]
+      },
+      "life": {
+        "merc": 3,
+        "vermin": 1
+      },
+      "focus": ["vermin"],
+      "initiative": "merc",
+      "annotations": [
+        {
+          "kind": "exchange",
+          "from": "vermin",
+          "to": "merc",
+          "label": "Parade"
+        }
+      ],
+      "dice": [
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 1,
+          "offHand": false,
+          "status": "discarded",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 4,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 6,
+          "offHand": false,
+          "status": "used",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "parried",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "used",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 6,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "dagger",
+          "value": 5,
+          "offHand": true,
+          "status": "discarded",
+          "highlight": true
+        }
+      ],
+      "event": "Jet de parade : 1, parade ratée.",
+      "recap": null
+    },
+    {
+      "banner": "Étape 5 - Échange V",
+      "title": "L'armure tient",
+      "text": [
+        "Le Mercenary veut porter le coup fatal avec sa dernière **touche**.",
+        "Le Verminkin réussit son **jet d'armure** (6+) : l'attaque est sauvegardée et annulée. Il reste dans le combat avec 1 point de vie."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-1-effectuer-un-jet-d-armure",
+        "label": "1. Effectuer un jet d'armure"
+      },
+      "positions": {
+        "merc": [4.3, 2.6],
+        "vermin": [5.3, 2.6]
+      },
+      "life": {
+        "merc": 3,
+        "vermin": 1
+      },
+      "focus": ["merc"],
+      "initiative": "merc",
+      "annotations": [
+        {
+          "kind": "exchange",
+          "from": "merc",
+          "to": "vermin",
+          "label": "Attaque"
+        }
+      ],
+      "dice": [
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 1,
+          "offHand": false,
+          "status": "discarded",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 4,
+          "offHand": false,
+          "status": "used",
+          "highlight": true
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 6,
+          "offHand": false,
+          "status": "used",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "parried",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "used",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 6,
+          "offHand": false,
+          "status": "rolled",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "dagger",
+          "value": 5,
+          "offHand": true,
+          "status": "discarded",
+          "highlight": false
+        }
+      ],
+      "event": "Jet d'armure réussi, attaque sauvegardée.",
+      "recap": null
+    },
+    {
+      "banner": "Étape 5 - Échange VI",
+      "title": "Dernière touche critique",
+      "text": [
+        "Il reste au Verminkin la **touche critique** de sa Hache. Le Mercenary rate son jet d'armure.",
+        "Les Dégâts critiques de la Hache valent 1D3 : le dé donne 1. Le Mercenary encaisse."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-2-allouer-les-degats",
+        "label": "2. Allouer les dégâts"
+      },
+      "positions": {
+        "merc": [4.3, 2.6],
+        "vermin": [5.3, 2.6]
+      },
+      "life": {
+        "merc": 2,
+        "vermin": 1
+      },
+      "focus": ["vermin"],
+      "initiative": "merc",
+      "annotations": [
+        {
+          "kind": "exchange",
+          "from": "vermin",
+          "to": "merc",
+          "label": "Attaque critique"
+        }
+      ],
+      "dice": [
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 1,
+          "offHand": false,
+          "status": "discarded",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 4,
+          "offHand": false,
+          "status": "used",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 6,
+          "offHand": false,
+          "status": "used",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "parried",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "used",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 6,
+          "offHand": false,
+          "status": "used",
+          "highlight": true
+        },
+        {
+          "owner": "vermin",
+          "weapon": "dagger",
+          "value": 5,
+          "offHand": true,
+          "status": "discarded",
+          "highlight": false
+        }
+      ],
+      "event": "Dégâts critiques : 1. Le Mercenary passe de 3 à 2 points de vie.",
+      "recap": null
+    },
+    {
+      "banner": "Bilan",
+      "title": "Fin de l'action",
+      "text": [
+        "Plus aucune touche à jouer : l'action d'Attaque au corps à corps prend fin. Personne n'est **hors de combat**, mais les deux combattants sont blessés et restent engagés."
+      ],
+      "rulesRef": {
+        "chapter": "batailles",
+        "section": "s-exemple-d-action-d-attaque-au-corps-a-corps",
+        "label": "Exemple d'action d'Attaque au corps à corps"
+      },
+      "positions": {
+        "merc": [4.3, 2.6],
+        "vermin": [5.3, 2.6]
+      },
+      "life": {
+        "merc": 2,
+        "vermin": 1
+      },
+      "focus": [],
+      "initiative": null,
+      "annotations": [],
+      "dice": [
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 1,
+          "offHand": false,
+          "status": "discarded",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 4,
+          "offHand": false,
+          "status": "used",
+          "highlight": false
+        },
+        {
+          "owner": "merc",
+          "weapon": "sword",
+          "value": 6,
+          "offHand": false,
+          "status": "used",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "parried",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 5,
+          "offHand": false,
+          "status": "used",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "axe",
+          "value": 6,
+          "offHand": false,
+          "status": "used",
+          "highlight": false
+        },
+        {
+          "owner": "vermin",
+          "weapon": "dagger",
+          "value": 5,
+          "offHand": true,
+          "status": "discarded",
+          "highlight": false
+        }
+      ],
+      "event": null,
+      "recap": [
+        {
+          "exchange": "I",
+          "fighter": "merc",
+          "result": "Parade réussie"
+        },
+        {
+          "exchange": "II",
+          "fighter": "vermin",
+          "result": "Attaque : 1 dégât"
+        },
+        {
+          "exchange": "III",
+          "fighter": "merc",
+          "result": "Attaque : 3 dégâts"
+        },
+        {
+          "exchange": "IV",
+          "fighter": "vermin",
+          "result": "Parade ratée"
+        },
+        {
+          "exchange": "V",
+          "fighter": "merc",
+          "result": "Attaque sauvegardée"
+        },
+        {
+          "exchange": "VI",
+          "fighter": "vermin",
+          "result": "Attaque : 1 dégât"
+        }
+      ]
+    }
+  ]
+}

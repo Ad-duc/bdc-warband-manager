@@ -4,9 +4,9 @@
  *              French interface: home, each wizard step (with an open scroll), the
  *              campaign dashboard (open injuries and battle form), the print
  *              view, the shared page, the rules reader, the changelog, the
- *              scenarios, the battle set-up, a group campaign and the
- *              confirmation dialog. WCAG 2.2 A and AA rules; any violation
- *              fails the test with its details.
+ *              scenarios, the battle set-up, a group campaign, the rules
+ *              tutorial and the confirmation dialog. WCAG 2.2 A and AA
+ *              rules; any violation fails the test with its details.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -102,6 +102,19 @@ for (const locale of ["fr-FR"] as const) {
       await page.getByRole("button", { name: "Nouvelle campagne" }).click();
       await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
       await audit(page, "group campaign");
+    });
+
+    test("rules tutorial", async ({ page }) => {
+      await page.goto("./#/tutorial");
+      await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+      await audit(page, "tutorial lessons");
+      await page.goto("./#/tutorial/melee-attack/6");
+      await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+      await expect(page.getByRole("img", { name: /Touche critique/ }).first()).toBeVisible();
+      await audit(page, "tutorial step");
+      await page.goto("./#/tutorial/melee-attack/12");
+      await expect(page.getByRole("table", { name: /Récapitulatif/ })).toBeVisible();
+      await audit(page, "tutorial last step");
     });
 
     test("changelog", async ({ page }) => {

@@ -18,7 +18,8 @@
     "directionDie": "Dé de direction",
     "menu": "Outils",
     "reminder": "Aide de jeu",
-    "battle": "Préparer une bataille"
+    "battle": "Préparer une bataille",
+    "tutorial": "Tutoriel"
   },
   "home": {
     "heading": "Vos bandes",
@@ -751,5 +752,73 @@
     },
     "femaleHouseNote": "Les symboles masculin et féminin choisissent le nom tiré au hasard ; les noms féminins viennent de tables maison, non officielles.",
     "femaleBookNote": "Les symboles masculin et féminin choisissent le nom tiré au hasard ; un nom féminin suit la règle du livre : \"-a\" ajouté à un nom qui se termine par une consonne (p. 96)."
+  },
+  "tutorial": {
+    "title": "Tutoriel",
+    "intro": "Des exemples du livre rejoués pas à pas sur un plateau vu de dessus : position des combattants, jets de dés et résultat de chaque étape, avec un lien vers la règle correspondante.",
+    "lessonMeta": "{{count}} étapes - d'après l'exemple de la page {{page}} du livre",
+    "start": "Commencer",
+    "startLesson": "Commencer la leçon {{title}}",
+    "backToList": "Toutes les leçons",
+    "notFound": "Cette leçon n'existe pas.",
+    "dataError": "Cette leçon fait référence à des données de jeu introuvables.",
+    "source": "D'après l'exemple de la page {{page}} du livre",
+    "steps": "Étapes de la leçon",
+    "stepLink": "Étape {{n}} : {{name}}",
+    "counter": "Étape {{step}} sur {{count}}",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "restart": "Recommencer",
+    "keyboard": "Flèches gauche et droite du clavier pour changer d'étape",
+    "readRule": "Lire la règle : {{section}}",
+    "event": "Résultat :",
+    "board": {
+      "title": "Plateau vu de dessus",
+      "description": "Combattants : {{fighters}}. Mis en évidence : {{focus}}.",
+      "nobody": "aucun",
+      "inch": "1 pouce",
+      "start": "départ",
+      "charge": "Charge",
+      "initiative": "initiative",
+      "initiativeMark": "I",
+      "sideSolid": "{{name}} : socle plein",
+      "sideHatched": "{{name}} : socle hachuré",
+      "scale": "1 carreau = 1 pouce"
+    },
+    "fighter": {
+      "stats": "Caractéristiques de {{name}} avec son équipement",
+      "weapons": "Armes de {{name}}",
+      "life": "Points de vie",
+      "lifeLabel": "Points de vie : {{value}} sur {{max}}",
+      "lifeValue": "{{value}} / {{max}}"
+    },
+    "dice": {
+      "title": "Jets d'attaque",
+      "empty": "Les dés sont lancés à l'étape {{step}}.",
+      "group": "{{name}} - {{weapon}}",
+      "groupOffHand": "{{name}} - {{weapon}} en main secondaire",
+      "label": "{{weapon}}, {{value}} : {{state}}",
+      "offHand": "main secondaire",
+      "legend": "Légende des dés",
+      "legendOffHand": "Main secondaire",
+      "legendCancelled": "Parée ou défaussée",
+      "legendUsed": "Attaque résolue",
+      "result": {
+        "miss": "Échec",
+        "hit": "Touche",
+        "crit": "Touche critique"
+      },
+      "status": {
+        "parried": "parée",
+        "discarded": "défaussée",
+        "used": "attaque résolue"
+      }
+    },
+    "recap": {
+      "caption": "Récapitulatif des échanges",
+      "exchange": "Échange",
+      "fighter": "Combattant",
+      "result": "Résultat"
+    }
   }
 }

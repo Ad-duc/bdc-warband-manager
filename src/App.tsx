@@ -3,7 +3,7 @@
  * Role:        Root component: page layout and the screen of the current
  *              route (home, creation wizard, campaign dashboard, print view,
  *              shared warband, French rules reader, changelog, scenarios,
- *              battle set-up or group campaign). Screens other than the home
+ *              battle set-up, group campaign or rules tutorial). Screens other than the home
  *              page are loaded on demand to keep the first download small.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
@@ -44,6 +44,9 @@ const BattleSetupPage = lazy(async () => ({
 const GroupCampaignPage = lazy(async () => ({
   default: (await import("./features/groups/GroupCampaignPage.tsx")).GroupCampaignPage,
 }));
+const TutorialPage = lazy(async () => ({
+  default: (await import("./features/tutorial/TutorialPage.tsx")).TutorialPage,
+}));
 const RulesPage = lazy(async () => ({
   default: (await import("./features/reader/RulesPage.tsx")).RulesPage,
 }));
@@ -58,7 +61,8 @@ export function App() {
         {route.name === "campaign" && <CampaignPage id={route.id} />}
         {route.name === "print" && <PrintPage id={route.id} />}
         {route.name === "shared" && <SharedPage payload={route.payload} />}
-        {route.name === "rules" && <RulesPage chapterId={route.chapter} />}
+        {route.name === "rules" && <RulesPage chapterId={route.chapter} sectionId={route.section ?? null} />}
+        {route.name === "tutorial" && <TutorialPage lessonId={route.lesson} step={route.step} />}
         {route.name === "changelog" && <ChangelogPage />}
         {route.name === "cardBacks" && <CardBacksPage />}
         {route.name === "reminder" && <ReminderPage />}

@@ -6,7 +6,9 @@
  *              chapter text and previous / next links. Works offline. The
  *              first heading of the chapter file is the page title. Each
  *              section has a "suggest a correction" link to a pre-filled GitHub
- *              issue, which quotes the passage selected in that section.
+ *              issue, which quotes the passage selected in that section. An
+ *              address with a section ("#/rules/batailles/s-garde") opens the
+ *              chapter at that heading (links from the tutorial).
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -77,7 +79,7 @@ function jumpTo(id: string): void {
   target.focus({ preventScroll: true });
 }
 
-export function RulesPage({ chapterId }: { chapterId: string | null }) {
+export function RulesPage({ chapterId, sectionId }: { chapterId: string | null; sectionId: string | null }) {
   const { t } = useTranslation();
   const chapter = findChapter(chapterId);
   const [state, setState] = useState<State>({ status: "loading" });
@@ -120,6 +122,12 @@ export function RulesPage({ chapterId }: { chapterId: string | null }) {
       active = false;
     };
   }, [chapter, t]);
+
+  // A section in the address: jump to its heading once the chapter text is in the page.
+  const shownId = state.status === "ready" ? state.id : null;
+  useEffect(() => {
+    if (shownId !== null && shownId === chapter?.id && sectionId !== null) jumpTo(sectionId);
+  }, [shownId, chapter, sectionId]);
 
   const index = chapter === undefined ? -1 : CHAPTERS.indexOf(chapter);
   const previous = index > 0 ? CHAPTERS[index - 1] : undefined;

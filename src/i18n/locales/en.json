@@ -18,7 +18,8 @@
     "directionDie": "Direction dice",
     "menu": "Tools",
     "reminder": "Reminder sheet",
-    "battle": "Prepare a battle"
+    "battle": "Prepare a battle",
+    "tutorial": "Tutorial"
   },
   "home": {
     "heading": "Your warbands",
@@ -751,5 +752,73 @@
     },
     "femaleHouseNote": "The male and female symbols choose the random name; female names come from house tables, not official.",
     "femaleBookNote": "The male and female symbols choose the random name; a female name follows the book rule: \"-a\" added to a name ending in a consonant (p. 96)."
+  },
+  "tutorial": {
+    "title": "Tutorial",
+    "intro": "Examples of the book replayed step by step on a board seen from above: where the fighters stand, the dice rolled and the outcome of each step, with a link to the matching rule.",
+    "lessonMeta": "{{count}} steps - from the example on page {{page}} of the book",
+    "start": "Start",
+    "startLesson": "Start the lesson {{title}}",
+    "backToList": "All lessons",
+    "notFound": "This lesson does not exist.",
+    "dataError": "This lesson refers to game data that cannot be found.",
+    "source": "From the example on page {{page}} of the book",
+    "steps": "Steps of the lesson",
+    "stepLink": "Step {{n}}: {{name}}",
+    "counter": "Step {{step}} of {{count}}",
+    "previous": "Previous",
+    "next": "Next",
+    "restart": "Start again",
+    "keyboard": "Left and right arrow keys change the step",
+    "readRule": "Read the rule: {{section}}",
+    "event": "Outcome:",
+    "board": {
+      "title": "Board seen from above",
+      "description": "Fighters: {{fighters}}. Highlighted: {{focus}}.",
+      "nobody": "none",
+      "inch": "1 inch",
+      "start": "start",
+      "charge": "Charge",
+      "initiative": "initiative",
+      "initiativeMark": "I",
+      "sideSolid": "{{name}}: solid base",
+      "sideHatched": "{{name}}: hatched base",
+      "scale": "1 square = 1 inch"
+    },
+    "fighter": {
+      "stats": "Characteristics of {{name}} with their wargear",
+      "weapons": "Weapons of {{name}}",
+      "life": "Life points",
+      "lifeLabel": "Life points: {{value}} of {{max}}",
+      "lifeValue": "{{value}} / {{max}}"
+    },
+    "dice": {
+      "title": "Attack rolls",
+      "empty": "The dice are rolled at step {{step}}.",
+      "group": "{{name}} - {{weapon}}",
+      "groupOffHand": "{{name}} - {{weapon}} as off-hand weapon",
+      "label": "{{weapon}}, {{value}}: {{state}}",
+      "offHand": "off-hand",
+      "legend": "Dice key",
+      "legendOffHand": "Off-hand",
+      "legendCancelled": "Parried or discarded",
+      "legendUsed": "Attack resolved",
+      "result": {
+        "miss": "Miss",
+        "hit": "Hit",
+        "crit": "Critical hit"
+      },
+      "status": {
+        "parried": "parried",
+        "discarded": "discarded",
+        "used": "attack resolved"
+      }
+    },
+    "recap": {
+      "caption": "Summary of the exchanges",
+      "exchange": "Exchange",
+      "fighter": "Fighter",
+      "result": "Outcome"
+    }
   }
 }
