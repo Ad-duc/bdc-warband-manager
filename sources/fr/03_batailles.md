@@ -148,7 +148,7 @@ Un combattant (*fighter*) peut effectuer une **Course** (*Run Move*) si :
 - il n'est pas engagé au corps à corps (*engaged in melee*), et
 - il n'a effectué aucune action pendant cette activation.
 
-Quand un combattant (*fighter*) effectue une Course (*Run Move*), il peut se déplacer (*move*) sur le champ de bataille (*battlefield*) d'une distance maximale en pouces allant jusqu'à sa valeur de Mouvement (*Move*) + D6" supplémentaires. Ce faisant, il ne peut pas se déplacer (*move*) à 1" ou moins d'un combattant ennemi (*enemy fighter*). Un combattant (*fighter*) qui effectue une Course (*Run Move*) ne peut pas effectuer d'action pendant cette activation.
+Quand un combattant (*fighter*) effectue une Course (*Run Move*), il peut se déplacer (*move*) sur le champ de bataille (*battlefield*) d'une distance maximale en pouces allant jusqu'à sa valeur de Mouvement (*Move*) + 1D6" supplémentaires. Ce faisant, il ne peut pas se déplacer (*move*) à 1" ou moins d'un combattant ennemi (*enemy fighter*). Un combattant (*fighter*) qui effectue une Course (*Run Move*) ne peut pas effectuer d'action pendant cette activation.
 
 ### Charge (*Charge Move*)
 
@@ -157,7 +157,7 @@ Un combattant (*fighter*) peut effectuer une **Charge** (*Charge Move*) si :
 - il n'est pas engagé au corps à corps (*engaged in melee*), et
 - il n'a effectué aucune action pendant cette activation.
 
-Quand un combattant (*fighter*) effectue une Charge (*Charge Move*), il peut se déplacer (*move*) sur le champ de bataille (*battlefield*) d'une distance maximale en pouces égale à sa valeur de Mouvement (*Move*) + D6" supplémentaires. Il doit terminer ce Mouvement (*Move*) à 1" ou moins d'un ou plusieurs combattants ennemis (*enemy fighter*). On dit alors que le combattant (*fighter*) **a chargé** (*charged*).
+Quand un combattant (*fighter*) effectue une Charge (*Charge Move*), il peut se déplacer (*move*) sur le champ de bataille (*battlefield*) d'une distance maximale en pouces égale à sa valeur de Mouvement (*Move*) + 1D6" supplémentaires. Il doit terminer ce Mouvement (*Move*) à 1" ou moins d'un ou plusieurs combattants ennemis (*enemy fighter*). On dit alors que le combattant (*fighter*) **a chargé** (*charged*).
 
 S'il lui est impossible de terminer à 1" ou moins d'un combattant ennemi (*enemy fighter*), il ne se déplace (*move*) pas du tout : la Charge (*Charge Move*) est ratée et l'activation du combattant (*fighter*) prend fin immédiatement.
 
@@ -216,7 +216,7 @@ Si un combattant (*fighter*) **chute** (*fall*), il se déplace (*move*) vertica
 
 Si un combattant (*fighter*) se déplace (*move*) de 3" ou plus verticalement vers le bas en chutant (*fall*), il subit des dégâts d'impact (*impact damage*) (voir ci-dessous).
 
-Si un combattant (*fighter*) chute (*fall*) sur d'autres combattants (*fighter*), chaque combattant (*fighter*) sur lequel il chute (*fall*) est déplacé (*move*) vers l'extérieur pour faire de la place au combattant (*fighter*) qui chute (*fall*). Déplacez (*move*) ces combattants (*fighter*) vers l'extérieur, par la distance la plus courte, jusqu'à ce qu'ils soient à plus de 1" du combattant (*fighter*) qui a chuté (*fall*). Ensuite, chacun de ces combattants (*fighter*) doit réussir un test d'Initiative, sinon il subit D3 dégâts (*damage*).
+Si un combattant (*fighter*) chute (*fall*) sur d'autres combattants (*fighter*), chaque combattant (*fighter*) sur lequel il chute (*fall*) est déplacé (*move*) vers l'extérieur pour faire de la place au combattant (*fighter*) qui chute (*fall*). Déplacez (*move*) ces combattants (*fighter*) vers l'extérieur, par la distance la plus courte, jusqu'à ce qu'ils soient à plus de 1" du combattant (*fighter*) qui a chuté (*fall*). Ensuite, chacun de ces combattants (*fighter*) doit réussir un test d'Initiative, sinon il subit 1D3 dégâts (*damage*).
 
 #### Dégâts d'impact (*Impact Damage*)
 
@@ -424,7 +424,7 @@ Il défausse son échec (*miss*) et effectue un jet de parade (*parry roll*). C'
 
 **(II) :** c'est maintenant le tour du Verminkin Warrior. Il effectue une attaque (*attack*) avec la touche (*hit*) restante de la Hache (*Axe*). Le Guild Mercenary rate son jet d'armure (*armour roll*) et subit des dégâts (*suffer damage*) égaux à la valeur de Dégâts (*Damage*) de la Hache (*Axe*), soit 1. Il reste maintenant 3 points de vie (*life point*) au Guild Mercenary.
 
-**(III) :** c'est le tour du Guild Mercenary. Il attaque avec sa touche critique (*critical hit*). Le Verminkin Warrior rate son jet d'armure (*armour roll*). La valeur de Dégâts critiques (*Critical Damage*) d'une Épée (*Sword*) est D3. Le joueur qui contrôle le Guild Mercenary (*commanding player*) lance un dé pour déterminer les dégâts (*damage*) et obtient 3. Le Verminkin Warrior subit 3 dégâts (*damage*) et il lui reste 1 point de vie (*life point*).
+**(III) :** c'est le tour du Guild Mercenary. Il attaque avec sa touche critique (*critical hit*). Le Verminkin Warrior rate son jet d'armure (*armour roll*). La valeur de Dégâts critiques (*Critical Damage*) d'une Épée (*Sword*) est 1D3. Le joueur qui contrôle le Guild Mercenary (*commanding player*) lance un dé pour déterminer les dégâts (*damage*) et obtient 3. Le Verminkin Warrior subit 3 dégâts (*damage*) et il lui reste 1 point de vie (*life point*).
 
 **(IV) :** la main repasse au Verminkin Warrior, désormais acculé. Il effectue une parade (*parry*) pour tenter de défausser l'attaque (*attack*) restante du Guild Mercenary. Il effectue le jet de parade (*parry roll*), mais obtient un 1. La parade (*parry*) est ratée.
 
@@ -514,7 +514,7 @@ Les jets d'attaque (*attack roll*) effectués avec cette arme obtiennent des tou
 
 ### Explosion (*Blast*)
 
-*(Gabarit d'explosion. En cas d'échec, dévie de D6x2")*
+*(Gabarit d'explosion. En cas d'échec, dévie de 1D6x2")*
 
 Cette arme utilise le gabarit d'explosion (*blast template*) (p. xx).
 
@@ -554,11 +554,11 @@ Cette arme ne peut pas être utilisée pour effectuer une attaque (*attack*) si 
 
 Si l'un des jets d'attaque (*attack roll*) d'une attaque à distance (*ranged attack*) effectuée avec cette arme donne un 1 naturel (*natural*), l'arme subit un incident de tir (*misfire*). Une fois les autres jets d'attaque (*attack roll*) résolus, effectuez un **jet d'incident de tir** (*misfire roll*) sur la table ci-dessous :
 
-**Jet d'incident de tir (*Misfire Roll*) - D6**
+**Jet d'incident de tir (*Misfire Roll*) - 1D6**
 
 | Résultat | Effet |
 |---|---|
-| 1 | **Retour de flamme (*Backfire*) :** l'arme explose entre les mains du tireur. Le combattant (*fighter*) subit D3 dégâts (*damage*). Cette arme ne peut plus être utilisée pendant cette bataille. |
+| 1 | **Retour de flamme (*Backfire*) :** l'arme explose entre les mains du tireur. Le combattant (*fighter*) subit 1D3 dégâts (*damage*). Cette arme ne peut plus être utilisée pendant cette bataille. |
 | 2 | **Encrassée (*Clogged*) :** des résidus de poudre noire (*blackpowder*) obstruent le canal d'allumage. Cette arme ne peut plus être utilisée pendant cette bataille. |
 | 3-6 | **Long feu (*Flash-in-the-Pan*) :** la poudre d'amorce s'enflamme, mais la charge principale ne part pas. L'attaque (*attack*) est un échec (*miss*), comme d'habitude. |
 
@@ -602,9 +602,9 @@ Cette arme commence la bataille chargée. Chaque fois que cette arme est utilis�
 
 ### Effroi (*Scare*)
 
-*(Les combattants non engagés réussissent un test de Volonté ou dévient de D6")*
+*(Les combattants non engagés réussissent un test de Volonté ou dévient de 1D6")*
 
-Une fois qu'une attaque (*attack*) de cette arme a été résolue, chaque combattant (*fighter*) touché (*hit*) par l'attaque (*attack*) et qui n'est pas engagé au corps à corps (*engaged in melee*) effectue un test de Volonté (*Willpower*). S'il le rate, il dévie (*scatter*) de D6".
+Une fois qu'une attaque (*attack*) de cette arme a été résolue, chaque combattant (*fighter*) touché (*hit*) par l'attaque (*attack*) et qui n'est pas engagé au corps à corps (*engaged in melee*) effectue un test de Volonté (*Willpower*). S'il le rate, il dévie (*scatter*) de 1D6".
 
 ### À deux mains (*Two-Handed*)
 
@@ -648,7 +648,7 @@ Les attaques (*attack*) qui utilisent le gabarit d'explosion (*blast template*) 
 
 **Incident de tir (*Misfiring*) :** si l'arme utilisée pour effectuer l'attaque (*attack*) a aussi le trait d'arme (*weapon trait*) Incident de tir (*Misfire*) et qu'elle **subit un incident de tir** (*misfire*), le gabarit d'explosion (*blast template*) est retiré et l'incident de tir (*misfire*) est résolu.
 
-**Échec (*Miss*) :** si l'attaque (*attack*) est un **échec** (*miss*), mais qu'il n'y a pas d'incident de tir (*misfire*), le gabarit d'explosion (*blast template*) **dévie (*scatter*) de D6x2"** et il est résolu comme une attaque réussie (*successful attack*).
+**Échec (*Miss*) :** si l'attaque (*attack*) est un **échec** (*miss*), mais qu'il n'y a pas d'incident de tir (*misfire*), le gabarit d'explosion (*blast template*) **dévie (*scatter*) de 1D6x2"** et il est résolu comme une attaque réussie (*successful attack*).
 
 **Pas de touches critiques (*No Critical Hits*) :** les attaques (*attack*) effectuées avec une arme dotée du trait Explosion (*Blast*) n'obtiennent pas de touches critiques (*critical hit*).
 
@@ -746,10 +746,10 @@ Si le sort (*spell*) tourne au fiasco (*miscast*), effectuez un **jet de fiasco*
 
 | Résultat | Effet |
 |---|---|
-| 2 | **Fournaise de sorcellerie (*Inferno of Sorcery*) :** le lanceur (*caster*) disparaît dans une explosion de feu funeste (*balefire*). Le sort (*spell*) est **raté** et le lanceur (*caster*) est immédiatement mis hors de combat (*taken down*). Avant que le lanceur (*caster*) soit retiré du champ de bataille (*battlefield*), centrez sur lui le gabarit d'explosion (*blast template*). Tous les autres combattants (*fighter*) situés dans la zone subissent D6 dégâts (*damage*). |
-| 3-5 | **Déflagration arcanique (*Arcane Explosion*) :** l'air autour du lanceur (*caster*) s'embrase de feux occultes. Le sort (*spell*) est **raté**. De plus, centrez le gabarit d'explosion (*blast template*) sur le lanceur (*caster*). Tous les combattants (*fighter*) situés dans la zone subissent D3 dégâts (*damage*). |
+| 2 | **Fournaise de sorcellerie (*Inferno of Sorcery*) :** le lanceur (*caster*) disparaît dans une explosion de feu funeste (*balefire*). Le sort (*spell*) est **raté** et le lanceur (*caster*) est immédiatement mis hors de combat (*taken down*). Avant que le lanceur (*caster*) soit retiré du champ de bataille (*battlefield*), centrez sur lui le gabarit d'explosion (*blast template*). Tous les autres combattants (*fighter*) situés dans la zone subissent 1D6 dégâts (*damage*). |
+| 3-5 | **Déflagration arcanique (*Arcane Explosion*) :** l'air autour du lanceur (*caster*) s'embrase de feux occultes. Le sort (*spell*) est **raté**. De plus, centrez le gabarit d'explosion (*blast template*) sur le lanceur (*caster*). Tous les combattants (*fighter*) situés dans la zone subissent 1D3 dégâts (*damage*). |
 | 6-7 | **Magie épuisée (*Drained Magic*) :** le puits d'énergie arcanique auquel ce lanceur (*caster*) fait appel se tarit. Le sort (*spell*) est **raté**. Le lanceur (*caster*) ne peut plus utiliser d'actions Arcaniques (*Arcane Action*) jusqu'à la fin de la bataille. |
-| 8+ | **Déferlement de pouvoir incontrôlé (*Uncontrolled Burst of Power*) :** le lanceur (*caster*) hurle de douleur en cherchant à dompter la sorcellerie qui déferle en lui. Le lanceur (*caster*) subit D3 dégâts (*damage*). S'il n'est pas mis hors de combat (*taken down*), le sort (*spell*) est **lancé de façon critique** (*critically cast*). |
+| 8+ | **Déferlement de pouvoir incontrôlé (*Uncontrolled Burst of Power*) :** le lanceur (*caster*) hurle de douleur en cherchant à dompter la sorcellerie qui déferle en lui. Le lanceur (*caster*) subit 1D3 dégâts (*damage*). S'il n'est pas mis hors de combat (*taken down*), le sort (*spell*) est **lancé de façon critique** (*critically cast*). |
 
 ### Lancement réussi (*Successfully Cast*)
 
@@ -847,7 +847,7 @@ Choix valables pour tout le lot :
 
 - Types de Mouvement : la VO les écrit en minuscules dans le texte ("normal move", "run move") et avec majuscules dans les titres. J'ai gardé partout les formes à majuscule de ton glossaire : Mouvement normal, Course, Charge, Désengagement. Même chose pour "1 move or 1 action" (p. 19), écrit "1 Mouvement (*Move*) ou 1 Action".
 - Traits d'armes (p. 29 et 30) : le résumé en italique sous chaque titre reprend mot pour mot la formulation de l'annexe A du glossaire, sans terme original à l'intérieur. Un résumé diffère des rappels dans la VO et est traduit tel qu'il est écrit ici : Poison ("Until healed or 1 life remains").
-- Tables de jets : colonnes "Résultat" et "Effet", selon ta consigne. Le nom de la table et le dé, que la VO met en en-tête ("d6 | Misfire Roll"), sont sur une ligne en gras au-dessus.
+- Tables de jets : colonnes "Résultat" et "Effet", selon ta consigne. Le nom de la table et le dé, que la VO met en en-tête ("1D6 | Misfire Roll"), sont sur une ligne en gras au-dessus.
 - "touching" (un décor, une échelle, un autre combattant) est rendu par "au contact de" ou "entrer en contact", pour réserver "toucher" à *hit*.
 - Mot courant non marqué, ajouté à la liste : "connaître" (*know*).
 

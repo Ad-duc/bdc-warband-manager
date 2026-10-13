@@ -2,7 +2,8 @@
  * File:        src/i18n/index.ts
  * Role:        i18next initialisation: English and French resources, language
  *              detection (saved choice first, then browser language) and sync of
- *              the <html lang> attribute.
+ *              the <html lang> attribute. A post-processor writes every die
+ *              with its count (1D6).
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -11,6 +12,7 @@
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
+import { withDiceCount } from "./dice.ts";
 import en from "./locales/en.json";
 import fr from "./locales/fr.json";
 
@@ -29,6 +31,7 @@ export function currentLanguage(): Language {
 }
 
 void i18n
+  .use({ type: "postProcessor", name: "dice", process: (value: string) => withDiceCount(value) })
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
@@ -36,6 +39,8 @@ void i18n
     supportedLngs: [...SUPPORTED_LANGUAGES],
     nonExplicitSupportedLngs: true,
     fallbackLng: "en",
+    // Every interface string states the number of dice of a roll (1D6).
+    postProcess: ["dice"],
     interpolation: { escapeValue: false },
     detection: {
       order: ["localStorage", "navigator"],

@@ -21,7 +21,7 @@
 4. **Étape de fin de round (*End of Round Step*)**
 5. **Test de déroute (*Flee Test*)** : 5+ combattants (*fighter*) ensanglantés (*bloodied*) ou mis hors de combat (*taken down*), sur un résultat de 1
 
-**Jet de renforts (*Reinforcements Roll*) - D6**
+**Jet de renforts (*Reinforcements Roll*) - 1D6**
 
 | Résultat | Effet |
 |---|---|
@@ -36,7 +36,7 @@ Voir les règles complètes aux pages xx-xx.
 | Trait | Rappel |
 |---|---|
 | Arcanique (*Arcane*) | Touches critiques sur 5+ |
-| Explosion (*Blast*) | Gabarit d'explosion. En cas d'échec, dévie de D6x2" |
+| Explosion (*Blast*) | Gabarit d'explosion. En cas d'échec, dévie de 1D6x2" |
 | Contondant (*Bludgeon*) | Les touches critiques sauvegardées infligent 1 dégât |
 | Contre-charge (*Brace*) | Initiative contre les combattants qui chargent |
 | Flamme (*Flame*) | Gabarit de flamme. Touche automatique |
@@ -49,17 +49,17 @@ Voir les règles complètes aux pages xx-xx.
 | Poison | Les touches critiques empoisonnent. Subit 1 dégât à chaque activation. Prend fin si soigné ou s'il reste 1 point de vie |
 | Rare | Limité au nombre indiqué |
 | Rechargement (*Reload*) | Renoncer à un Mouvement ou une Action pour recharger |
-| Effroi (*Scare*) | Les combattants non engagés réussissent un test de Volonté ou dévient de D6" |
+| Effroi (*Scare*) | Les combattants non engagés réussissent un test de Volonté ou dévient de 1D6" |
 | À deux mains (*Two-handed*) | 1 par combattant. Pas d'attaque de main secondaire |
 | Encombrant (*Unwieldy*) | -1 aux jets d'attaque |
 | Salve (*Volley*) | Plusieurs cibles à 3" ou moins |
 | Contournement (*Wrap*) | Ne peut ni parer ni être parée |
 
-**Jet d'incident de tir (*Misfire Roll*) - D6**
+**Jet d'incident de tir (*Misfire Roll*) - 1D6**
 
 | Résultat | Effet |
 |---|---|
-| 1 | **Retour de flamme (*Backfire*) :** le combattant (*fighter*) subit D3 dégâts (*damage*) ; l'arme ne peut plus être utilisée pendant la bataille. |
+| 1 | **Retour de flamme (*Backfire*) :** le combattant (*fighter*) subit 1D3 dégâts (*damage*) ; l'arme ne peut plus être utilisée pendant la bataille. |
 | 2 | **Encrassée (*Clogged*) :** l'arme ne peut plus être utilisée pendant la bataille. |
 | 3-6 | **Long feu (*Flash-in-the-Pan*) :** l'attaque (*attack*) est ratée, comme d'habitude |
 
@@ -75,7 +75,7 @@ Voir les règles complètes aux pages xx-xx.
 
 1. **Choisir une cible (*Pick a Target*)**
 2. **Choisir les armes (*Pick Weapons*)**
-3. **Déterminer l'initiative (*Determine Initiative*)** : celui qui a chargé (*charged*), ou Ini (*In*) + D6
+3. **Déterminer l'initiative (*Determine Initiative*)** : celui qui a chargé (*charged*), ou Ini (*In*) + 1D6
 4. **Effectuer les jets d'attaque (*Make Attack Rolls*)**
 5. **Alterner attaques et parades (*Alternate Attacks and Parries*)** : jet de parade (*parry roll*) 2+
 
@@ -89,18 +89,18 @@ Voir les règles complètes aux pages xx-xx.
 
 | | |
 |---|---|
-| **Puiser du pouvoir (*Draw Power*) :** | +1 D6 au jet de lancement (*casting roll*) à la prochaine activation |
-| **Lancer un sort (*Cast a Spell*) :** | Jet de lancement (*casting roll*) = D6 + Volonté (*Willpower*) |
+| **Puiser du pouvoir (*Draw Power*) :** | +1 1D6 au jet de lancement (*casting roll*) à la prochaine activation |
+| **Lancer un sort (*Cast a Spell*) :** | Jet de lancement (*casting roll*) = 1D6 + Volonté (*Willpower*) |
 | **Fiasco (*Miscast*) du jet de lancement (*Casting Roll*) :** | **1 dé** = 1 naturel (*natural*) ; **2+ dés** = n'importe quel double |
 
 **Jet de fiasco (*Miscast Roll*) - 2D6**
 
 | Résultat | Effet |
 |---|---|
-| 2 | **Fournaise de sorcellerie (*Inferno of Sorcery*) :** le sort (*spell*) est raté ; le lanceur (*caster*) est mis hors de combat (*taken down*) ; centrez le gabarit d'explosion (*blast template*) sur lui ; tous les autres combattants (*fighter*) situés dessous subissent D6 dégâts (*damage*). |
-| 3-5 | **Déflagration arcanique (*Arcane Explosion*) :** le sort (*spell*) est raté ; centrez le gabarit d'explosion (*blast template*) sur le lanceur (*caster*). Tous les combattants (*fighter*) situés dessous subissent D3 dégâts (*damage*). |
+| 2 | **Fournaise de sorcellerie (*Inferno of Sorcery*) :** le sort (*spell*) est raté ; le lanceur (*caster*) est mis hors de combat (*taken down*) ; centrez le gabarit d'explosion (*blast template*) sur lui ; tous les autres combattants (*fighter*) situés dessous subissent 1D6 dégâts (*damage*). |
+| 3-5 | **Déflagration arcanique (*Arcane Explosion*) :** le sort (*spell*) est raté ; centrez le gabarit d'explosion (*blast template*) sur le lanceur (*caster*). Tous les combattants (*fighter*) situés dessous subissent 1D3 dégâts (*damage*). |
 | 6-7 | **Magie épuisée (*Drained Magic*) :** le sort (*spell*) est raté ; le lanceur (*caster*) ne peut plus utiliser d'actions Arcaniques (*Arcane Action*) jusqu'à la fin de la bataille. |
-| 8+ | **Déferlement de pouvoir incontrôlé (*Uncontrolled Burst of Power*) :** le lanceur (*caster*) subit D3 dégâts (*damage*) ; s'il n'est pas mis hors de combat (*taken down*), le sort (*spell*) est lancé de façon critique (*critically cast*). |
+| 8+ | **Déferlement de pouvoir incontrôlé (*Uncontrolled Burst of Power*) :** le lanceur (*caster*) subit 1D3 dégâts (*damage*) ; s'il n'est pas mis hors de combat (*taken down*), le sort (*spell*) est lancé de façon critique (*critically cast*). |
 
 [Encadré sans titre, signalé par une icône de goutte : il résume l'état Ensanglanté (*Bloodied*).]
 
@@ -113,8 +113,8 @@ Tant que le combattant (*fighter*) n'a plus que 1 point de vie (*life point*) :
 | | |
 |---|---|
 | **Mouvement normal (*Normal Move*)** | Valeur de Mouvement (*Move*) en pouces |
-| **Course (*Run Move*)** | +D6" ; ne peut pas terminer à moins de 1" d'un ennemi (*enemy*) |
-| **Charge (*Charge Move*)** | +D6" ; doit terminer à moins de 1" d'un ennemi (*enemy*) |
+| **Course (*Run Move*)** | +1D6" ; ne peut pas terminer à moins de 1" d'un ennemi (*enemy*) |
+| **Charge (*Charge Move*)** | +1D6" ; doit terminer à moins de 1" d'un ennemi (*enemy*) |
 | **Désengagement (*Disengage Move*)** | Test d'Initiative ; Mouvement (*Move*) de 3" ; doit terminer à plus de 1" de tous les ennemis (*enemy*) |
 
 ## Feuille de bande (*Warband Roster*)
@@ -220,7 +220,7 @@ Seule la p. 133 porte un numéro imprimé dans ce lot ; les autres numéros sont
 - p. 134 : jet d'incident de tir, résultat 3-6 : "Attack fails as normal.", là où la p. 29 écrit "The attack misses as normal" : traduit tel quel par "l'attaque est ratée".
 - p. 134 : jet de fiasco, résultats 2 et 3-5 : "Centre the blast template on them" : "sur lui" au résultat 2, où le lanceur vient d'être nommé, et "sur le lanceur" au résultat 3-5, où la VO ne le nomme pas (formulation du lot 03). "All fighters under" : "situés dessous". Au résultat 6-7, "for the rest of battle" : "jusqu'à la fin de la bataille", comme au lot 03.
 - p. 134 : "Can if:" est rendu par "Possible si :". "Hidden: Not visible to enemies they are in cover from" : "non visible pour les ennemis par rapport auxquels il est à couvert".
-- p. 134 : "(Charger or In + d6)" emploie l'abréviation "In" de la feuille de bande : "celui qui a chargé, ou Ini + D6". "(5+ fighters bloodied or taken down, roll of a 1)" est rendu par une incise après deux-points.
+- p. 134 : "(Charger or In + 1D6)" emploie l'abréviation "In" de la feuille de bande : "celui qui a chargé, ou Ini + 1D6". "(5+ fighters bloodied or taken down, roll of a 1)" est rendu par une incise après deux-points.
 - p. 134 : rappels des traits : "-1 to Attack Rolls" porte des majuscules ici : formulation unique de l'annexe A.
 - p. 134 : encadré des Mouvements : la v1.03 termine désormais les lignes de la Course et du Désengagement par un point ; "<1"" et ">1"" sont rendus par "à moins de 1"" et "à plus de 1"".
 - p. 135 à 140 : la feuille de bande et les cartes de combattants sont des pages à remplir, sans titre dans la VO. Les titres "Feuille de bande", "Combattants de la feuille de bande" et "Cartes de combattants", ainsi que les textes entre crochets, sont de moi. Les 18 cartes portent chacune un pictogramme de type de combattant, que je décris entre crochets. Je décris un bloc une seule fois et j'indique combien de fois il est répété : c'est pourquoi le lot contient les nombres 5, 15, 9, 18 et 3, absents de la VO.

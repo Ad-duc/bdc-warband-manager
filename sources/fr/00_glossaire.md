@@ -129,9 +129,9 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | commanding player | joueur qui contrôle le combattant | Général | La VO alterne "commanding player" et "controlling player" pour la même notion : une seule VF. Forme courte : "son joueur". |
 | controlling player | joueur qui contrôle le combattant | Général | Même VF que "commanding player". Remplacé partout par "commanding player" en v1.03. |
 | cost | coût | Général |  |
-| d12 | D12 | Général |  |
-| d3 | D3 | Général |  |
-| d6 | D6 | Général |  |
+| 1D12 | 1D12 | Général |  |
+| 1D3 | 1D3 | Général |  |
+| 1D6 | 1D6 | Général |  |
 | d66 | D66 | Général |  |
 | Designer's Note | Note du concepteur | Général | Imposé. |
 | dice | dé | Général |  |
@@ -1383,7 +1383,7 @@ Ces rappels reviennent dans une quinzaine d'encadrés du livre. La VO les fait l
 | Trait (VO) | Trait (VF) | Rappel (VO) | Rappel (VF) |
 |---|---|---|---|
 | Arcane | Arcanique | Critical hits on 5+ | Touches critiques sur 5+ |
-| Blast | Explosion | Blast template. Miss scatters d6x2" | Gabarit d'explosion. En cas d'échec, dévie de D6x2" |
+| Blast | Explosion | Blast template. Miss scatters 1D6x2" | Gabarit d'explosion. En cas d'échec, dévie de 1D6x2" |
 | Bludgeon | Contondant | Critical hits deal 1 damage when saved | Les touches critiques sauvegardées infligent 1 dégât |
 | Brace | Contre-charge | Initiative vs charging fighters | Initiative contre les combattants qui chargent |
 | Flame | Flamme | Flame template. Auto-hits | Gabarit de flamme. Touche automatique |
@@ -1396,7 +1396,7 @@ Ces rappels reviennent dans une quinzaine d'encadrés du livre. La VO les fait l
 | Poison | Poison | Critical hits poison. Suffer 1 damage when activated. Ends when healed or 1 life remains | Les touches critiques empoisonnent. Subit 1 dégât à chaque activation. Prend fin si soigné ou s'il reste 1 point de vie |
 | Rare | Rare | Limited by the number listed | Limité au nombre indiqué |
 | Reload | Rechargement | Forgo a Move or Action to reload | Renoncer à un Mouvement ou une Action pour recharger |
-| Scare | Effroi | Unengaged fighters pass Willpower test or scatter d6" | Les combattants non engagés réussissent un test de Volonté ou dévient de D6" |
+| Scare | Effroi | Unengaged fighters pass Willpower test or scatter 1D6" | Les combattants non engagés réussissent un test de Volonté ou dévient de 1D6" |
 | Two-handed | À deux mains | 1 per fighter. No off-hand attack | 1 par combattant. Pas d'attaque de main secondaire |
 | Unwieldy | Encombrant | -1 to attack rolls | -1 aux jets d'attaque |
 | Volley | Salve | Multiple targets within 3" | Plusieurs cibles à 3" ou moins |

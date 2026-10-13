@@ -8,7 +8,7 @@ Chaque bataille de Black Death City se joue selon un **scénario**. Le scénario
 
 Pour déterminer le scénario, faites un jet sur la table ci-dessous :
 
-**Scénario - D6**
+**Scénario - 1D6**
 
 | Résultat | Effet |
 |---|---|
@@ -35,7 +35,7 @@ Si des groupes de combat (*battle group*) commencent en réserve (*in reserve*),
 
 Les renforts (*reinforcements*) arrivent pendant l'**étape de début de round** (*Start of Round Step*). Le joueur qui a la priorité (*priority*) choisit 1 de ses groupes de combat (*battle group*) en réserve (*in reserve*) et effectue un **jet de renforts** (*reinforcement roll*) sur la table ci-dessous pour chaque combattant (*fighter*) de ce groupe de combat (*battle group*). Son adversaire fait ensuite de même.
 
-**Table des renforts (*Reinforcements Table*) - D6**
+**Table des renforts (*Reinforcements Table*) - 1D6**
 
 | Résultat | Effet |
 |---|---|
@@ -113,7 +113,7 @@ Les renforts (*reinforcements*) commencent à arriver à partir du début du **3
 
 #### Remporter la bataille (*Winning the Battle*)
 
-**Tenir le centre (*Hold the Centre*) :** à la fin de n'importe quel round, si une bande (*warband*) a des combattants (*fighter*) à 6" ou moins horizontalement du centre du champ de bataille (*centre of the battlefield*) et qu'aucun combattant ennemi (*enemy fighter*) ne s'y trouve, cette bande (*warband*) obtient **D3 points de victoire** (*victory points*).
+**Tenir le centre (*Hold the Centre*) :** à la fin de n'importe quel round, si une bande (*warband*) a des combattants (*fighter*) à 6" ou moins horizontalement du centre du champ de bataille (*centre of the battlefield*) et qu'aucun combattant ennemi (*enemy fighter*) ne s'y trouve, cette bande (*warband*) obtient **1D3 points de victoire** (*victory points*).
 
 **Marques de mort (*Death Marks*) :** chaque fois qu'un combattant ennemi (*enemy fighter*) est mis hors de combat (*taken down*), la bande (*warband*) adverse obtient **1 point de victoire** (*victory points*).
 
@@ -136,7 +136,7 @@ Sinon, la bataille prend fin quand une bande (*warband*) part en déroute (*flee
 - 6", rayon du cercle central : Tenir le centre (*Hold the Centre*)
 - 12", rayon de la zone du coin inférieur droit
 
-### Rebondissements (*Twists*) - D6
+### Rebondissements (*Twists*) - 1D6
 
 #### 1 - L'orage menace (*A Brewing Storm*)
 
@@ -155,7 +155,7 @@ Un poste d'observation se dresse au centre de ce district : une vieille tour, qu
 
 Lors de la mise en place du champ de bataille (*battlefield*), placez au centre un élément de décor (*terrain feature*) représentant une tour.
 
-Tant qu'une bande (*warband*) a des Chefs (*Leader*) ou des Champions entièrement à 6" ou moins horizontalement du centre du champ de bataille (*centre of the battlefield*), elle peut réussir automatiquement son test de déroute (*flee test*). De plus, si une bande (*warband*) obtient des points de victoire (*victory points*) pour "Tenir le centre (*Hold the Centre*)" (voir ci-dessus), elle obtient 3 points de victoire (*victory points*) à la place de D3.
+Tant qu'une bande (*warband*) a des Chefs (*Leader*) ou des Champions entièrement à 6" ou moins horizontalement du centre du champ de bataille (*centre of the battlefield*), elle peut réussir automatiquement son test de déroute (*flee test*). De plus, si une bande (*warband*) obtient des points de victoire (*victory points*) pour "Tenir le centre (*Hold the Centre*)" (voir ci-dessus), elle obtient 3 points de victoire (*victory points*) à la place de 1D3.
 
 Le vainqueur de la bataille peut utiliser la tour pour reconnaître la cité alentour. Pour représenter cela, le vainqueur de la bataille peut relancer (*re-roll*) son **jet d'exploration** (*exploration roll*) (p. xx).
 
@@ -185,12 +185,12 @@ Tant qu'une bande (*warband*) a des Chefs (*Leader*) ou des Champions à 3" ou m
 
 Le vainqueur de la bataille revendique (*claim*) le coffre (*chest*). Après la bataille, il fait un jet sur la table ci-dessous pour découvrir le contenu du coffre (*chest*).
 
-**D6**
+**1D6**
 
 | Résultat | Effet |
 |---|---|
 | 1 | **Vide depuis toujours (*Empty All Along*) :** le coffre (*chest*) est vide. |
-| 2-5 | **Une modeste trouvaille (*A Modest Find*) :** le coffre (*chest*) contient D6x10 pièces d'argent (*silver*). |
+| 2-5 | **Une modeste trouvaille (*A Modest Find*) :** le coffre (*chest*) contient 1D6x10 pièces d'argent (*silver*). |
 | 6 | **Un butin de pièces d'argent (*A Stash of Silver*) :** le coffre (*chest*) contient 3D6x5 pièces d'argent (*silver*). |
 
 ## Scénario II - Lueurs dans les ténèbres (*Scenario II - Glimmers in the Dark*)
@@ -248,11 +248,11 @@ Sinon, la bataille prend fin quand une bande (*warband*) part en déroute (*flee
 - 8", rayon du cercle central : Trésor (*Treasure*)
 - 12", rayon de la zone du coin inférieur droit
 
-### Rebondissements (*Twists*) - D6
+### Rebondissements (*Twists*) - 1D6
 
 #### 1 - Pièce maudite (*Cursed Coin*)
 
-À la fin de l'activation d'un combattant (*fighter*), s'il porte un trésor (*holding treasure*), il doit réussir un test de Volonté (*Willpower*), sinon il subit D3 dégâts (*damage*). Aucun test n'est effectué pour voir s'il lâche (*drop*) le trésor (*treasure*) après avoir subi ces dégâts (*damage*).
+À la fin de l'activation d'un combattant (*fighter*), s'il porte un trésor (*holding treasure*), il doit réussir un test de Volonté (*Willpower*), sinon il subit 1D3 dégâts (*damage*). Aucun test n'est effectué pour voir s'il lâche (*drop*) le trésor (*treasure*) après avoir subi ces dégâts (*damage*).
 
 Les combattants (*fighter*) Démons (*Demon*) et Morts-vivants (*Undead*) ne sont pas affectés.
 
@@ -341,7 +341,7 @@ Sinon, la bataille prend fin quand une bande (*warband*) part en déroute (*flee
 - 6", rayon du cercle central : Zone sans contrôle (*No Control Area*)
 - 9", rayon de la zone du coin inférieur droit
 
-### Rebondissements (*Twists*) - D6
+### Rebondissements (*Twists*) - 1D6
 
 #### 1 - Nappes de brouillard (*Rolling Fog*)
 
@@ -375,7 +375,7 @@ Un joueur obtient 1 marque de domination (*domination mark*) supplémentaire qua
 
 #### 6 - La Statue du Saint (*Saint's Statue*)
 
-Placez une statue au centre du champ de bataille (*centre of the battlefield*). Un combattant (*fighter*) qui termine son activation à 6" ou moins du centre du champ de bataille (*centre of the battlefield*) est soigné (*heal*) de D3 points de vie (*life point*).
+Placez une statue au centre du champ de bataille (*centre of the battlefield*). Un combattant (*fighter*) qui termine son activation à 6" ou moins du centre du champ de bataille (*centre of the battlefield*) est soigné (*heal*) de 1D3 points de vie (*life point*).
 
 Les combattants (*fighter*) Démons (*Demon*) et Morts-vivants (*Undead*) ne sont pas affectés.
 
@@ -446,7 +446,7 @@ Les trésors (*treasure*) de la Chapelle (*chapel*) sont particulièrement préc
 - 16", hauteur du rectangle central
 - 9", rayon de la zone du coin inférieur droit
 
-### Rebondissements (*Twists*) - D3
+### Rebondissements (*Twists*) - 1D3
 
 #### 1 - Un trésor caché (*A Hidden Trove*)
 
@@ -460,7 +460,7 @@ Les statues ont été abattues, leurs yeux arrachés. Toutes les autres effigies
 
 La première fois qu'un combattant (*fighter*) est mis hors de combat (*taken down*) alors qu'il se trouve dans la chapelle (*chapel*), l'un des joueurs lance un dé sur la table ci-dessous :
 
-**D6**
+**1D6**
 
 | Résultat | Effet |
 |---|---|
@@ -482,11 +482,11 @@ Si la bataille prend fin avant que le couvercle soit forcé, la bande (*warband*
 
 Quand le couvercle est forcé avec succès, faites un jet sur la table ci-dessous :
 
-**D6**
+**1D6**
 
 | Résultat | Effet |
 |---|---|
-| 1 | **Malédiction impie (*Unholy Curse*) :** un hurlement à glacer le sang jaillit du sarcophage (*sarcophagus*). Le combattant (*fighter*) qui a forcé le couvercle subit D6 dégâts (*damage*). Chaque autre combattant (*fighter*) situé dans la chapelle (*chapel*) doit réussir un test de Volonté (*Willpower*), sinon il subit D6 dégâts (*damage*). Les combattants (*fighter*) Démons (*Demon*) et Morts-vivants (*Undead*) ne sont affectés dans aucun des deux cas. |
+| 1 | **Malédiction impie (*Unholy Curse*) :** un hurlement à glacer le sang jaillit du sarcophage (*sarcophagus*). Le combattant (*fighter*) qui a forcé le couvercle subit 1D6 dégâts (*damage*). Chaque autre combattant (*fighter*) situé dans la chapelle (*chapel*) doit réussir un test de Volonté (*Willpower*), sinon il subit 1D6 dégâts (*damage*). Les combattants (*fighter*) Démons (*Demon*) et Morts-vivants (*Undead*) ne sont affectés dans aucun des deux cas. |
 | 2-4 | **Terreau noir pourri (*Rotten Black Mulch*) :** il n'y a rien à l'intérieur, à part un terreau saumâtre qui dégage une odeur épouvantable. Aucune récompense. |
 | 5 | **Bourse (*Coin Purse*) :** dans le sarcophage (*sarcophagus*) repose une bourse lourde d'argent ancien. Le combattant (*fighter*) qui a forcé le couvercle ramasse (*pick up*) un pion trésor (*treasure token*) (p. xx). Ce trésor (*treasure*) vaut 3D6x5 pièces d'argent (*silver*). S'il porte déjà un trésor (*treasure*), il lâche (*drop*) le trésor (*treasure*) qu'il portait, puis ramasse (*pick up*) ce nouveau trésor (*treasure*). |
 | 6 | **Relique de famille (*Heirloom*) :** serrée entre les mains squelettiques de la dépouille du Saint repose une relique (*relic*) de grande valeur. À la fin de la bataille, la bande (*warband*) victorieuse peut faire un jet sur la **table des reliques** (*relic table*), p. xx. |
@@ -564,11 +564,11 @@ Sinon, si la bande (*warband*) de l'Embusqué (*Ambusher*) part en déroute (*fl
 - 4-5, sur le bord de droite
 - 1, sur le bord du bas
 
-### Rebondissements (*Twists*) - D6
+### Rebondissements (*Twists*) - 1D6
 
 #### 1 - Soûl comme une grive (*Drunk as an Eel*)
 
-La Proie (*the hit*) commence la bataille soûle (*drunk*). Tant qu'elle est soûle (*drunk*), chaque fois qu'elle est choisie pour être activée (*activate*), un dé est lancé. Sur 1-5, elle dévie (*scatter*) de D6" et son activation prend fin. Sur 6, elle dessoûle et n'est plus soûle (*drunk*) : elle peut être activée (*activate*) normalement.
+La Proie (*the hit*) commence la bataille soûle (*drunk*). Tant qu'elle est soûle (*drunk*), chaque fois qu'elle est choisie pour être activée (*activate*), un dé est lancé. Sur 1-5, elle dévie (*scatter*) de 1D6" et son activation prend fin. Sur 6, elle dessoûle et n'est plus soûle (*drunk*) : elle peut être activée (*activate*) normalement.
 
 Dès que la Proie (*the hit*) subit des dégâts (*suffer damage*) ou est engagée au corps à corps (*engaged in melee*), elle dessoûle et n'est plus soûle (*drunk*).
 
@@ -677,7 +677,7 @@ Sinon, la bataille prend fin quand une bande (*warband*) part en déroute (*flee
 - La Trouvaille (*The Find*), sous le carré central
 - 6", rayon de la zone du coin inférieur droit
 
-### Rebondissements (*Twists*) - D6
+### Rebondissements (*Twists*) - 1D6
 
 #### 1 - En feu (*On Fire*)
 
@@ -685,7 +685,7 @@ Un incendie s'est déclaré dans la possession (*holding*) et menace de s'étend
 
 Au départ, le feu est couvant (*smouldering*) et n'a aucun effet. Au début de chaque round, un dé est lancé. Sur 4+, le feu devient un brasier (*blaze*). Lors des rounds suivants, si le feu est un brasier (*blaze*) et qu'un 4+ est obtenu une fois de plus, il devient une fournaise (*inferno*) (et plus aucun dé n'est lancé pour lui pendant cette bataille).
 
-**Brasier (*Blaze*) :** chaque fois qu'un combattant (*fighter*) termine un Mouvement (*Move*) au cours duquel il est passé dans la possession (*holding*), il subit D3 dégâts (*damage*).
+**Brasier (*Blaze*) :** chaque fois qu'un combattant (*fighter*) termine un Mouvement (*Move*) au cours duquel il est passé dans la possession (*holding*), il subit 1D3 dégâts (*damage*).
 
 **Fournaise (*Inferno*) :** en plus de l'effet "brasier (*blaze*)", à la fin de chaque round, lancez un dé pour chaque pion trésor (*treasure token*) situé dans la possession (*holding*). Sur 4+, il est détruit et retiré du champ de bataille (*battlefield*).
 
@@ -697,7 +697,7 @@ La bande (*warband*) du Défenseur (*Defender*) n'effectue pas de tests de déro
 
 Lors de la mise en place du champ de bataille (*battlefield*), mettez de côté 3 sections de mur (*wall*), chacune longue de 5" au maximum.
 
-Quand le Défenseur (*Defender*) place des combattants (*fighter*) pendant le Déploiement (*Deployment*), il peut lancer un D3 et placer autant de sections de mur (*wall*) sur le bord de la possession (*holding*).
+Quand le Défenseur (*Defender*) place des combattants (*fighter*) pendant le Déploiement (*Deployment*), il peut lancer un 1D3 et placer autant de sections de mur (*wall*) sur le bord de la possession (*holding*).
 
 #### 4 - Arrivée retardée (*Delayed Arrival*)
 
@@ -734,7 +734,7 @@ Choix valables pour tout le lot :
 - Renvois de mise en page : "the twist table opposite" et "(see left)" sont rendus par "ci-dessous" et "voir ci-dessus", puisque la table suit le scénario dans ce fichier.
 - Cartes : la description entre crochets est de moi. Les étiquettes et les distances inscrites sur la carte sont listées en dessous.
 - Paragraphes identiques d'un scénario à l'autre (Le Rebondissement, Déploiement, fin de bataille par déroute) : même traduction mot pour mot à chaque fois.
-- Tables de jets : colonnes "Résultat" et "Effet". Les tables du coffre, de la Terre profanée et du sarcophage n'ont pas de titre dans la VO, seulement "d6" : la ligne en gras indique donc uniquement le dé.
+- Tables de jets : colonnes "Résultat" et "Effet". Les tables du coffre, de la Terre profanée et du sarcophage n'ont pas de titre dans la VO, seulement "1D6" : la ligne en gras indique donc uniquement le dé.
 - Rangs des rounds : "3rd round", "2nd round", "6th round" sont écrits "3e round", "2e round", "6e round".
 - "wholly within X" horizontally of" est rendu partout par "entièrement à X" ou moins horizontalement de".
 - "the city" est écrit sans majuscule dans les introductions des scénarios I à V : "la cité", sans terme original, alors que "the City" reste "la Cité (*the City*)".
@@ -742,7 +742,7 @@ Choix valables pour tout le lot :
 Points relevés page par page :
 
 - p. 35 : le bandeau de la VO indique "Chapter Three" et le chiffre romain "III". Coquille de la VO : "a desperate fight survival" (il manque "for").
-- p. 35 : la table des scénarios a pour en-têtes "d6" et "Scenario" dans la VO.
+- p. 35 : la table des scénarios a pour en-têtes "1D6" et "Scenario" dans la VO.
 - p. 36 : ordre de lecture reconstitué : colonne de gauche (Réserve, Arrivée des renforts, Trésor, Ramasser un trésor), puis colonne de droite (Lâcher un trésor, Revendiquer un trésor et ses trois sous-rubriques).
 - p. 36 : la v1.03 ajoute le point final de la phrase de "Claiming Treasure" et un "and" dans le résultat Arrivée de la table de renforts : "et à plus de 6"".
 - p. 36 : "whenever a fighter takes damage" : la VO dit ici "takes damage" et non "suffers damage". Même VF, avec le terme original *damage*.
@@ -750,7 +750,7 @@ Points relevés page par page :
 - p. 37 : "+10 First Blood ... earns 10 bonus experience" : j'ai écrit "gagne 10 d'expérience bonus", sans ajouter "points", que la VO n'emploie qu'au scénario V.
 - p. 38 : dans Condamné, la v1.03 écrit "the commanding player of that warband" : "le joueur qui contrôle cette bande".
 - p. 38 : coquille de la VO dans Le Coffre : "places chest" (article manquant).
-- p. 38 : la VO écrit "d6 x 10" et "3d6 x 5" avec des espaces dans la table du coffre, et "2d6x5" ailleurs : j'ai écrit "D6x10" et "3D6x5", selon ta notation.
+- p. 38 : la VO écrit "1D6 x 10" et "3D6 x 5" avec des espaces dans la table du coffre, et "2D6x5" ailleurs : j'ai écrit "1D6x10" et "3D6x5", selon ta notation.
 - p. 40 : Pièce maudite : "Willpower" prend sa majuscule en v1.03 : "test de Volonté".
 - p. 42 : dans Nappes de brouillard, "a few yards" est rendu par "quelques pas", pour ne pas introduire d'unité de mesure. "obscuring" est rendu par "dissimulent", pour réserver "masqué" à *obscured*.
 - p. 42 : coquille de la VO dans Le Quartier critique : "From the the 3rd round".

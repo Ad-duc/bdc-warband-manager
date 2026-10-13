@@ -63,7 +63,7 @@ p. 61: no two-handed ranged weapon except the Brace of Pistols. Encoded as a
 
 p. 61: requires a Crossbow, not the Arbalest (translator note p. 61). Since
 v1.03 the item no longer modifies the Crossbow: it gives its own ranged profile
-(20", 1, -1, d3+1, -, Blast) usable once per battle. The app shows it as an
+(20", 1, -1, 1D3+1, -, Blast) usable once per battle. The app shows it as an
 extra ranged weapon line.
 
 ### A08 - Recruitment skills (settled)
@@ -161,9 +161,9 @@ than the plural spelling of p. 74.
 
 ### A22 - Move value rolled for each move (settled)
 
-p. 92: the Rolling-Contraption has a Move value of 2d6". Code: the Move is
-stored as the dice expression "2d6" and displayed 2D6" in French; a Move
-modifier is carried by the expression (eg. "2d6-1"), never rolled in advance.
+p. 92: the Rolling-Contraption has a Move value of 2D6". Code: the Move is
+stored as the dice expression "2D6" and displayed 2D6" in French; a Move
+modifier is carried by the expression (eg. "2D6-1"), never rolled in advance.
 
 ### A23 - Full-plate in the Verminkin Armoury (open)
 
@@ -181,7 +181,7 @@ Rend -2; the Splat! attack stays described in the special rule text.
 
 ### A25 - Battle-time effects not tracked (settled)
 
-Engineering points (d3, 3 with Mad Tinkerers), the Giant Rat summoned by a
+Engineering points (1D3, 3 with Mad Tinkerers), the Giant Rat summoned by a
 Bomb Rat, entwined and doomed fighters, the Fighting Pits fight: none of these
 is stored on the roster. Fighting Pits experience is entered like any bonus
 experience, in the battle log.
@@ -355,7 +355,7 @@ translation.
 
 Rules that print a small Rend / Damage table in the middle of a text (Bomb
 Rat, Splat!) keep it as a sentence at the end of the text: "Rend -2, Damage
-d3" / "Perforation -2, Dégâts D3". Spells keep their table in the `attack`
+1D3" / "Perforation -2, Dégâts 1D3". Spells keep their table in the `attack`
 field, as for the Guild Mercenaries.
 
 ### D10 - Faction order (data)

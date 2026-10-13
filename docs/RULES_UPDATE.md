@@ -154,6 +154,7 @@ npm run -s watch:mark -- --translated <version>
   test in `tests/unit/rules/`.
 
 ```bash
+npm run fix:dice         # every die with its count (1D6) in sources/fr and the data
 npm run generate:data
 npm run build:glossary
 npm run check            # typecheck, lint, format, data, i18n, unit tests

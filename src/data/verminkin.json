@@ -109,8 +109,8 @@
           "name": { "en": "Run the Roofs", "fr": "Courir les toits" },
           "tag": null,
           "text": {
-            "en": "If the scenario instructs you to set up fighters near an entry point (for example, wholly within 6\" of an entry point) you can pick up to d3 of those fighters to instead be set up on the roofs. If you do so, these fighters can be set up anywhere on the battlefield that is wholly within 12\" horizontally of the centre of the battlefield, is more than 9\" from all enemy fighters, and isn't on the battlefield floor.",
-            "fr": "Si le scénario vous demande de placer des combattants près d'un point d'entrée, par exemple entièrement à 6\" ou moins d'un point d'entrée, vous pouvez choisir jusqu'à D3 de ces combattants pour les placer, à la place, sur les toits. Dans ce cas, ces combattants peuvent être placés n'importe où sur le champ de bataille, à un endroit qui est entièrement à 12\" ou moins horizontalement du centre du champ de bataille, à plus de 9\" de tous les combattants ennemis et qui n'est pas sur le sol du champ de bataille."
+            "en": "If the scenario instructs you to set up fighters near an entry point (for example, wholly within 6\" of an entry point) you can pick up to 1D3 of those fighters to instead be set up on the roofs. If you do so, these fighters can be set up anywhere on the battlefield that is wholly within 12\" horizontally of the centre of the battlefield, is more than 9\" from all enemy fighters, and isn't on the battlefield floor.",
+            "fr": "Si le scénario vous demande de placer des combattants près d'un point d'entrée, par exemple entièrement à 6\" ou moins d'un point d'entrée, vous pouvez choisir jusqu'à 1D3 de ces combattants pour les placer, à la place, sur les toits. Dans ce cas, ces combattants peuvent être placés n'importe où sur le champ de bataille, à un endroit qui est entièrement à 12\" ou moins horizontalement du centre du champ de bataille, à plus de 9\" de tous les combattants ennemis et qui n'est pas sur le sol du champ de bataille."
           }
         }
       ],
@@ -131,8 +131,8 @@
           "name": { "en": "Mad Tinkerers", "fr": "Bricoleurs fous" },
           "tag": null,
           "text": {
-            "en": "- When making an injury roll for a friendly Contraption, you can roll twice and pick either result.\n- Before each battle begins, you can pick 1 friendly Sparkseer. That fighter starts the battle with 3 engineering points instead of d3.",
-            "fr": "- Quand vous effectuez un jet de blessure pour un Engin allié, vous pouvez faire deux jets et choisir l'un des deux résultats.\n- Avant le début de chaque bataille, vous pouvez choisir 1 Sparkseer allié. Le combattant choisi commence la bataille avec 3 points d'ingénierie à la place de D3."
+            "en": "- When making an injury roll for a friendly Contraption, you can roll twice and pick either result.\n- Before each battle begins, you can pick 1 friendly Sparkseer. That fighter starts the battle with 3 engineering points instead of 1D3.",
+            "fr": "- Quand vous effectuez un jet de blessure pour un Engin allié, vous pouvez faire deux jets et choisir l'un des deux résultats.\n- Avant le début de chaque bataille, vous pouvez choisir 1 Sparkseer allié. Le combattant choisi commence la bataille avec 3 points d'ingénierie à la place de 1D3."
           }
         }
       ],
@@ -358,8 +358,8 @@
           "name": { "en": "Mad Engineering", "fr": "Ingénierie folle" },
           "tag": null,
           "text": {
-            "en": "This fighter begins the battle with d3 engineering points. Once per activation, if this fighter is not engaged in melee, they can spend one of their engineering points to make the following bonus action:\nEngineer [Bonus Action]: Pick a friendly fighter within 1\" of this fighter, that is not engaged in melee, to be the target and then pick one of the following options:\n- Patch-up: If the target is a Contraption, it heals d3 life.\n- Soup-up: Pick 1 of the target's ranged weapons to be souped-up until the end of the round. While a weapon is souped-up, increase its Rend value by 1. However if it misfires, treat the result as backfire (do not roll on the table).",
-            "fr": "Ce combattant commence la bataille avec D3 points d'ingénierie. Une fois par activation, si ce combattant n'est pas engagé au corps à corps, il peut dépenser un de ses points d'ingénierie pour effectuer l'action bonus suivante :\nIngénierie [Action bonus] : choisissez comme cible un combattant allié à 1\" ou moins de ce combattant et non engagé au corps à corps, puis choisissez l'une des options suivantes :\n- Rafistoler : si la cible est un Engin, elle est soignée de D3 points de vie.\n- Trafiquer : choisissez 1 des armes à distance de la cible : elle est trafiquée jusqu'à la fin du round. Tant qu'une arme est trafiquée, augmentez de 1 sa valeur de Perforation. Cependant, si elle subit un incident de tir, traitez le résultat comme un retour de flamme, sans faire de jet sur la table."
+            "en": "This fighter begins the battle with 1D3 engineering points. Once per activation, if this fighter is not engaged in melee, they can spend one of their engineering points to make the following bonus action:\nEngineer [Bonus Action]: Pick a friendly fighter within 1\" of this fighter, that is not engaged in melee, to be the target and then pick one of the following options:\n- Patch-up: If the target is a Contraption, it heals 1D3 life.\n- Soup-up: Pick 1 of the target's ranged weapons to be souped-up until the end of the round. While a weapon is souped-up, increase its Rend value by 1. However if it misfires, treat the result as backfire (do not roll on the table).",
+            "fr": "Ce combattant commence la bataille avec 1D3 points d'ingénierie. Une fois par activation, si ce combattant n'est pas engagé au corps à corps, il peut dépenser un de ses points d'ingénierie pour effectuer l'action bonus suivante :\nIngénierie [Action bonus] : choisissez comme cible un combattant allié à 1\" ou moins de ce combattant et non engagé au corps à corps, puis choisissez l'une des options suivantes :\n- Rafistoler : si la cible est un Engin, elle est soignée de 1D3 points de vie.\n- Trafiquer : choisissez 1 des armes à distance de la cible : elle est trafiquée jusqu'à la fin du round. Tant qu'une arme est trafiquée, augmentez de 1 sa valeur de Perforation. Cependant, si elle subit un incident de tir, traitez le résultat comme un retour de flamme, sans faire de jet sur la table."
           }
         }
       ],
@@ -521,8 +521,8 @@
           "name": { "en": "Mad Engineering", "fr": "Ingénierie folle" },
           "tag": null,
           "text": {
-            "en": "This fighter begins the battle with d3 engineering points. Once per activation, if this fighter is not engaged in melee, they can spend one of their engineering points to make the following bonus action:\nEngineer [Bonus Action]: Pick a friendly fighter within 1\" of this fighter, that is not engaged in melee, to be the target and then pick one of the following options:\n- Patch-up: If the target is a Contraption, it heals d3 life.\n- Soup-up: Pick 1 of the target's ranged weapons to be souped-up until the end of the round. While a weapon is souped-up, increase its Rend value by 1. However if it misfires, treat the result as backfire (do not roll on the table).",
-            "fr": "Ce combattant commence la bataille avec D3 points d'ingénierie. Une fois par activation, si ce combattant n'est pas engagé au corps à corps, il peut dépenser un de ses points d'ingénierie pour effectuer l'action bonus suivante :\nIngénierie [Action bonus] : choisissez comme cible un combattant allié à 1\" ou moins de ce combattant et non engagé au corps à corps, puis choisissez l'une des options suivantes :\n- Rafistoler : si la cible est un Engin, elle est soignée de D3 points de vie.\n- Trafiquer : choisissez 1 des armes à distance de la cible : elle est trafiquée jusqu'à la fin du round. Tant qu'une arme est trafiquée, augmentez de 1 sa valeur de Perforation. Cependant, si elle subit un incident de tir, traitez le résultat comme un retour de flamme, sans faire de jet sur la table."
+            "en": "This fighter begins the battle with 1D3 engineering points. Once per activation, if this fighter is not engaged in melee, they can spend one of their engineering points to make the following bonus action:\nEngineer [Bonus Action]: Pick a friendly fighter within 1\" of this fighter, that is not engaged in melee, to be the target and then pick one of the following options:\n- Patch-up: If the target is a Contraption, it heals 1D3 life.\n- Soup-up: Pick 1 of the target's ranged weapons to be souped-up until the end of the round. While a weapon is souped-up, increase its Rend value by 1. However if it misfires, treat the result as backfire (do not roll on the table).",
+            "fr": "Ce combattant commence la bataille avec 1D3 points d'ingénierie. Une fois par activation, si ce combattant n'est pas engagé au corps à corps, il peut dépenser un de ses points d'ingénierie pour effectuer l'action bonus suivante :\nIngénierie [Action bonus] : choisissez comme cible un combattant allié à 1\" ou moins de ce combattant et non engagé au corps à corps, puis choisissez l'une des options suivantes :\n- Rafistoler : si la cible est un Engin, elle est soignée de 1D3 points de vie.\n- Trafiquer : choisissez 1 des armes à distance de la cible : elle est trafiquée jusqu'à la fin du round. Tant qu'une arme est trafiquée, augmentez de 1 sa valeur de Perforation. Cependant, si elle subit un incident de tir, traitez le résultat comme un retour de flamme, sans faire de jet sur la table."
           }
         }
       ],
@@ -597,8 +597,8 @@
           "name": { "en": "Unpredictable Movement", "fr": "Mouvement imprévisible" },
           "tag": null,
           "text": {
-            "en": "This fighter has a Move value of 2d6\". Each time it makes a move, roll the dice to determine its Move value for that move, (for example, if this fighter makes a Run Move, first roll 2d6\" to determine its Move value, then roll an additional d6 and add it to the Move value as normal).",
-            "fr": "Ce combattant a une valeur de Mouvement de 2D6\". Chaque fois qu'il effectue un Mouvement, lancez les dés pour déterminer sa valeur de Mouvement pour ce Mouvement. Par exemple, si ce combattant effectue une Course, lancez d'abord 2D6\" pour déterminer sa valeur de Mouvement, puis lancez un D6 supplémentaire et ajoutez-le à la valeur de Mouvement, normalement."
+            "en": "This fighter has a Move value of 2D6\". Each time it makes a move, roll the dice to determine its Move value for that move, (for example, if this fighter makes a Run Move, first roll 2D6\" to determine its Move value, then roll an additional 1D6 and add it to the Move value as normal).",
+            "fr": "Ce combattant a une valeur de Mouvement de 2D6\". Chaque fois qu'il effectue un Mouvement, lancez les dés pour déterminer sa valeur de Mouvement pour ce Mouvement. Par exemple, si ce combattant effectue une Course, lancez d'abord 2D6\" pour déterminer sa valeur de Mouvement, puis lancez un 1D6 supplémentaire et ajoutez-le à la valeur de Mouvement, normalement."
           }
         },
         {
@@ -1400,8 +1400,8 @@
       "statModifiers": {},
       "weaponImprovements": [],
       "text": {
-        "en": "Once per battle, while this fighter is not engaged in melee, they can make the following bonus action:\nSet Up Bomb Rat [Bonus Action]: A Giant Rat is summoned and added to the commanding player's warband. Set up the Giant Rat fighter within 3\" of the fighter and choose a number between 1 and 6. This number is the fuse length. Use a dice placed next to the Giant Rat to track the fuse length.\nEach time that Giant Rat activates, roll a dice. If the roll is greater than the fuse length, the bomb detonates. If the roll is equal or less than the fuse length, the Giant Rat is activated as normal and the fuse length is reduced by 1 (to a minimum of 1).\nWhen the bomb detonates, the blast template is centred on the Giant Rat. Each other fighter in the template is hit with the following attack, then the Giant Rat is taken down (it does not count towards flee tests): Rend -2, Damage d3.\nIf the Giant Rat is taken down and the bomb has not yet detonated, roll a dice as above to see if it detonates or not.",
-        "fr": "Une fois par bataille, tant que ce combattant n'est pas engagé au corps à corps, il peut effectuer l'action bonus suivante :\nPlacer le rat-bombe [Action bonus] : un Giant Rat est invoqué et ajouté à la bande du joueur qui contrôle le combattant. Placez le combattant Giant Rat à 3\" ou moins du combattant et choisissez un nombre entre 1 et 6. Ce nombre est la longueur de mèche. Utilisez un dé posé à côté du Giant Rat pour suivre la longueur de mèche.\nChaque fois que ce Giant Rat est activé, lancez un dé. Si le résultat est supérieur à la longueur de mèche, la bombe explose. Si le résultat est égal ou inférieur à la longueur de mèche, le Giant Rat est activé normalement et la longueur de mèche est réduite de 1 (jusqu'à un minimum de 1).\nQuand la bombe explose, le gabarit d'explosion est centré sur le Giant Rat. Chaque autre combattant situé dans le gabarit est touché par l'attaque suivante, puis le Giant Rat est mis hors de combat, sans compter pour les tests de déroute : Perforation -2, Dégâts D3.\nSi le Giant Rat est mis hors de combat alors que la bombe n'a pas encore explosé, lancez un dé comme ci-dessus pour voir si elle explose ou non."
+        "en": "Once per battle, while this fighter is not engaged in melee, they can make the following bonus action:\nSet Up Bomb Rat [Bonus Action]: A Giant Rat is summoned and added to the commanding player's warband. Set up the Giant Rat fighter within 3\" of the fighter and choose a number between 1 and 6. This number is the fuse length. Use a dice placed next to the Giant Rat to track the fuse length.\nEach time that Giant Rat activates, roll a dice. If the roll is greater than the fuse length, the bomb detonates. If the roll is equal or less than the fuse length, the Giant Rat is activated as normal and the fuse length is reduced by 1 (to a minimum of 1).\nWhen the bomb detonates, the blast template is centred on the Giant Rat. Each other fighter in the template is hit with the following attack, then the Giant Rat is taken down (it does not count towards flee tests): Rend -2, Damage 1D3.\nIf the Giant Rat is taken down and the bomb has not yet detonated, roll a dice as above to see if it detonates or not.",
+        "fr": "Une fois par bataille, tant que ce combattant n'est pas engagé au corps à corps, il peut effectuer l'action bonus suivante :\nPlacer le rat-bombe [Action bonus] : un Giant Rat est invoqué et ajouté à la bande du joueur qui contrôle le combattant. Placez le combattant Giant Rat à 3\" ou moins du combattant et choisissez un nombre entre 1 et 6. Ce nombre est la longueur de mèche. Utilisez un dé posé à côté du Giant Rat pour suivre la longueur de mèche.\nChaque fois que ce Giant Rat est activé, lancez un dé. Si le résultat est supérieur à la longueur de mèche, la bombe explose. Si le résultat est égal ou inférieur à la longueur de mèche, le Giant Rat est activé normalement et la longueur de mèche est réduite de 1 (jusqu'à un minimum de 1).\nQuand la bombe explose, le gabarit d'explosion est centré sur le Giant Rat. Chaque autre combattant situé dans le gabarit est touché par l'attaque suivante, puis le Giant Rat est mis hors de combat, sans compter pour les tests de déroute : Perforation -2, Dégâts 1D3.\nSi le Giant Rat est mis hors de combat alors que la bombe n'a pas encore explosé, lancez un dé comme ci-dessus pour voir si elle explose ou non."
       },
       "designerNote": null,
       "sourceRef": { "page": 81, "md": "07_verminkin.md > Rat-bombe" }
@@ -1820,8 +1820,8 @@
           "id": "impetuous",
           "name": { "en": "Impetuous", "fr": "Impétueux" },
           "text": {
-            "en": "The first time this fighter makes a Move in battle, it can move an additional d6\".",
-            "fr": "La première fois que ce combattant effectue un Mouvement au cours de la bataille, il peut se déplacer de D6\" supplémentaires."
+            "en": "The first time this fighter makes a Move in battle, it can move an additional 1D6\".",
+            "fr": "La première fois que ce combattant effectue un Mouvement au cours de la bataille, il peut se déplacer de 1D6\" supplémentaires."
           },
           "sourceRef": { "page": 86, "md": "07_verminkin.md > Impétueux" }
         },
@@ -1847,7 +1847,7 @@
           "id": "escape-artist",
           "name": { "en": "Escape Artist", "fr": "Roi de l'évasion" },
           "text": {
-            "en": "Once per battle, if this fighter is engaged in melee, this fighter can use the following bonus action:\nEscape Artist [Bonus Action]: Remove this fighter from the battlefield and set it up again wholly within 2d6\" of its previous position and not engaged in melee.",
+            "en": "Once per battle, if this fighter is engaged in melee, this fighter can use the following bonus action:\nEscape Artist [Bonus Action]: Remove this fighter from the battlefield and set it up again wholly within 2D6\" of its previous position and not engaged in melee.",
             "fr": "Une fois par bataille, si ce combattant est engagé au corps à corps, ce combattant peut utiliser l'action bonus suivante :\nRoi de l'évasion [Action bonus] : retirez ce combattant du champ de bataille et placez-le de nouveau entièrement à 2D6\" ou moins de sa position précédente et non engagé au corps à corps."
           },
           "sourceRef": { "page": 86, "md": "07_verminkin.md > Roi de l'évasion" }
@@ -1940,8 +1940,8 @@
           "castingValue": 8,
           "criticalCastValue": 12,
           "text": {
-            "en": "Place the blast template centred on the battlefield floor within 12\" of the caster. Then scatter the blast template d6\". You can pick d3 friendly fighters in Reserve to be set up on the battlefield floor, in the template and not engaged in melee.",
-            "fr": "Placez le gabarit d'explosion centré sur le sol du champ de bataille à 12\" ou moins du lanceur. Faites ensuite dévier le gabarit d'explosion de D6\". Vous pouvez choisir D3 combattants alliés en Réserve pour les placer sur le sol du champ de bataille, dans le gabarit et non engagés au corps à corps."
+            "en": "Place the blast template centred on the battlefield floor within 12\" of the caster. Then scatter the blast template 1D6\". You can pick 1D3 friendly fighters in Reserve to be set up on the battlefield floor, in the template and not engaged in melee.",
+            "fr": "Placez le gabarit d'explosion centré sur le sol du champ de bataille à 12\" ou moins du lanceur. Faites ensuite dévier le gabarit d'explosion de 1D6\". Vous pouvez choisir 1D3 combattants alliés en Réserve pour les placer sur le sol du champ de bataille, dans le gabarit et non engagés au corps à corps."
           },
           "criticalText": {
             "en": "Increase the range from 12\" to 15\".",
@@ -1976,8 +1976,8 @@
           "castingValue": 9,
           "criticalCastValue": 12,
           "text": {
-            "en": "Place the blast template centred on a visible point within 15\" of the caster, it then scatters d6\".\nEach fighter in its area is hit with the following attack:\nThen, the blast scatters d6\" again, and every fighter in its area is targeted and hit with the above attack, (it is possible for the same fighter to be hit with an attack both times).",
-            "fr": "Placez le gabarit d'explosion centré sur un point visible à 15\" ou moins du lanceur ; il dévie ensuite de D6\".\nChaque combattant situé dans sa zone est touché par l'attaque suivante :\nEnsuite, le gabarit d'explosion dévie de nouveau de D6\", et chaque combattant situé dans sa zone est ciblé et touché par l'attaque ci-dessus. Un même combattant peut être touché par une attaque les deux fois."
+            "en": "Place the blast template centred on a visible point within 15\" of the caster, it then scatters 1D6\".\nEach fighter in its area is hit with the following attack:\nThen, the blast scatters 1D6\" again, and every fighter in its area is targeted and hit with the above attack, (it is possible for the same fighter to be hit with an attack both times).",
+            "fr": "Placez le gabarit d'explosion centré sur un point visible à 15\" ou moins du lanceur ; il dévie ensuite de 1D6\".\nChaque combattant situé dans sa zone est touché par l'attaque suivante :\nEnsuite, le gabarit d'explosion dévie de nouveau de 1D6\", et chaque combattant situé dans sa zone est ciblé et touché par l'attaque ci-dessus. Un même combattant peut être touché par une attaque les deux fois."
           },
           "criticalText": {
             "en": "When the blast template is first placed, it does not scatter.",
@@ -2006,8 +2006,8 @@
             "fr": "Placez le gabarit de flamme à partir du lanceur. Chaque combattant situé dans sa zone est ciblé et touché par l'attaque suivante :"
           },
           "criticalText": {
-            "en": "The Damage value is d3 instead of 1.",
-            "fr": "La valeur de Dégâts est de D3 à la place de 1."
+            "en": "The Damage value is 1D3 instead of 1.",
+            "fr": "La valeur de Dégâts est de 1D3 à la place de 1."
           },
           "attack": { "rend": -1, "damage": 1 },
           "sourceRef": { "page": 84, "md": "07_verminkin.md > 1 - Gerbe de vomi" }
@@ -2089,8 +2089,8 @@
           "castingValue": 8,
           "criticalCastValue": 12,
           "text": {
-            "en": "Place the blast template centred on a visible point within 12\" of the caster, it then scatters d6\".\nEach fighter in its area is hit with the following attack:\nEach fighter hit by the spell becomes poisoned, (see Poison weapon trait).",
-            "fr": "Placez le gabarit d'explosion centré sur un point visible à 12\" ou moins du lanceur ; il dévie ensuite de D6\".\nChaque combattant situé dans sa zone est touché par l'attaque suivante :\nChaque combattant touché par le sort devient empoisonné, voir le trait d'arme Poison."
+            "en": "Place the blast template centred on a visible point within 12\" of the caster, it then scatters 1D6\".\nEach fighter in its area is hit with the following attack:\nEach fighter hit by the spell becomes poisoned, (see Poison weapon trait).",
+            "fr": "Placez le gabarit d'explosion centré sur un point visible à 12\" ou moins du lanceur ; il dévie ensuite de 1D6\".\nChaque combattant situé dans sa zone est touché par l'attaque suivante :\nChaque combattant touché par le sort devient empoisonné, voir le trait d'arme Poison."
           },
           "criticalText": { "en": "It does not scatter.", "fr": "Il ne dévie pas." },
           "attack": { "rend": 0, "damage": "d3" },

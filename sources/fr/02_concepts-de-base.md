@@ -38,7 +38,7 @@ Si une règle mentionne **le champ de bataille** (*battlefield*), cela inclut le
 
 Black Death City utilise 2 types de dés : des dés à six faces standards et des **dés de direction** (*direction dice*), c'est-à-dire des dés portant une flèche sur chacune de leurs faces.
 
-Les dés à six faces standards sont appelés **D6** ou simplement **dés**. Si une règle mentionne **2D6, 3D6** et ainsi de suite, lancez autant de dés et additionnez les résultats. Si une règle exige un jet de dé d'un certain nombre ou plus, par exemple 3 ou plus, cela s'abrège en **3+**.
+Les dés à six faces standards sont appelés **1D6** ou simplement **dés**. Si une règle mentionne **2D6, 3D6** et ainsi de suite, lancez autant de dés et additionnez les résultats. Si une règle exige un jet de dé d'un certain nombre ou plus, par exemple 3 ou plus, cela s'abrège en **3+**.
 
 ### Modificateurs et jets naturels (*Modifiers and Natural Rolls*)
 
@@ -46,17 +46,17 @@ Les jets de dés sont souvent **modifiés** d'une façon ou d'une autre. Par exe
 
 Si une règle mentionne un **jet naturel** (*natural roll*), elle désigne le jet de dé sans tenir compte d'aucun modificateur. Par exemple, lors des jets d'attaque (*attack roll*) (p. xx), les jets naturels (*natural roll*) de 6 sont des **touches critiques** (*critical hit*). Cela signifie que si le dé lancé indique un 6, c'est une touche critique (*critical hit*), quels que soient les modificateurs.
 
-### D3
+### 1D3
 
-Pour lancer un D3, lancez un dé à six faces et divisez le total par deux, en arrondissant au supérieur. Par exemple, un jet de 3 ou 4 sur le dé donne un 2.
+Pour lancer un 1D3, lancez un dé à six faces et divisez le total par deux, en arrondissant au supérieur. Par exemple, un jet de 3 ou 4 sur le dé donne un 2.
 
 ### D66
 
 Pour lancer un D66, lancez deux fois un dé à six faces. Le premier jet détermine la dizaine et le second jet détermine l'unité. Par exemple, si vous faites un 3 suivi d'un 5, le jet de D66 donne 35.
 
-### D6x2
+### 1D6x2
 
-Un autre jet de dé courant est le D6x2, ou un jet de dé similaire qui utilise une multiplication (comme 2D6x5). Pour ces jets de dés, lancez d'abord les dés, puis multipliez le résultat par le nombre indiqué. Par exemple, si la règle demande D6x2", un jet de dé de 5 donne 10 pouces.
+Un autre jet de dé courant est le 1D6x2, ou un jet de dé similaire qui utilise une multiplication (comme 2D6x5). Pour ces jets de dés, lancez d'abord les dés, puis multipliez le résultat par le nombre indiqué. Par exemple, si la règle demande 1D6x2", un jet de dé de 5 donne 10 pouces.
 
 ## Jets de départage (*Roll-offs*)
 
@@ -74,7 +74,7 @@ Il existe des règles supplémentaires pour la **déviation (*scattering*) des c
 
 **Note du concepteur (*Designer's Note*) :** certains dés de direction (*direction dice*) ont une face marquée "HIT". Ces faces ne s'utilisent pas différemment : servez-vous de la petite flèche située au-dessus de HIT pour déterminer la direction.
 
-Si vous n'avez pas de dé de direction (*direction dice*), un dé à douze faces (D12) peut être utilisé à la place. Désignez un bord du champ de bataille (*battlefield edge*) comme étant "12 heures" et lancez le D12, en utilisant les heures d'une horloge pour déterminer la direction.
+Si vous n'avez pas de dé de direction (*direction dice*), un dé à douze faces (1D12) peut être utilisé à la place. Désignez un bord du champ de bataille (*battlefield edge*) comme étant "12 heures" et lancez le 1D12, en utilisant les heures d'une horloge pour déterminer la direction.
 
 ## Visibilité (*Visibility*)
 
@@ -116,7 +116,7 @@ Voici un exemple de parchemin (*scroll*), celui d'un Guild Wizard :
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Sorciers (*Wizard List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -239,17 +239,17 @@ Chaque **arme** possède un profil qui détaille ses valeurs et ses traits d'arm
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|
-| Gourdin (*Club*) | 3 | - | 1 | D3 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 14 pa |
-| Dague (*Dagger*) | 3 | - | 1 | D3 | Main secondaire (*Off-hand*) | 10 pa |
-| Épée (*Sword*) | 3 | - | 1 | D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
+| Gourdin (*Club*) | 3 | - | 1 | 1D3 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 14 pa |
+| Dague (*Dagger*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*) | 10 pa |
+| Épée (*Sword*) | 3 | - | 1 | 1D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
 
 ### Armes à distance (*Ranged Weapons*)
 
 | Nom | Portée | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|---|
-| Arbalète de poing (*Hand Crossbow*) | 12" | 1 | - | 1 | D6 | Rechargement (*Reload*) | 16 pa |
-| Arc long (*Long Bow*) | 24" | 1 | -1 | 1 | D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 28 pa |
-| Fusil long (*Long Rifle*) | 30" | 1 | -2 | 2 | D6+2 | Lourd (*Heavy*), Incident de tir (*Misfire*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 90 pa |
+| Arbalète de poing (*Hand Crossbow*) | 12" | 1 | - | 1 | 1D6 | Rechargement (*Reload*) | 16 pa |
+| Arc long (*Long Bow*) | 24" | 1 | -1 | 1 | 1D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 28 pa |
+| Fusil long (*Long Rifle*) | 30" | 1 | -2 | 2 | 1D6+2 | Lourd (*Heavy*), Incident de tir (*Misfire*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 90 pa |
 
 ## Valeurs d'arme (*Weapon Values*)
 
@@ -397,7 +397,7 @@ Un décor (*terrain*) peut comporter des échelles (*ladder*), des fenêtres (*w
 
 ### Terrain mortel (*Deadly Terrain*)
 
-Les murs (*wall*) et clôtures (*fence*) hérissés de pointes, les fosses (*pit*) d'acide bouillonnant et autres lieux tout aussi malsains sont du **terrain mortel** (*deadly terrain*). Si un combattant (*fighter*) se déplace (*move*) à travers un terrain mortel (*deadly terrain*) ou chute (*fall*) dessus, il subit **D3 dégâts** (*damage*).
+Les murs (*wall*) et clôtures (*fence*) hérissés de pointes, les fosses (*pit*) d'acide bouillonnant et autres lieux tout aussi malsains sont du **terrain mortel** (*deadly terrain*). Si un combattant (*fighter*) se déplace (*move*) à travers un terrain mortel (*deadly terrain*) ou chute (*fall*) dessus, il subit **1D3 dégâts** (*damage*).
 
 Les joueurs devraient convenir des décors (*terrain*) qui constituent du terrain mortel (*deadly terrain*) au moment de la mise en place du champ de bataille (*battlefield*).
 
@@ -476,9 +476,9 @@ Choix de mise en forme valables pour tout le lot :
 Points relevés page par page :
 
 - p. 7 : le bandeau de la VO indique "Chapter One" et le chiffre romain "I". Le paragraphe d'ambiance, en gras italique dans la VO, est rendu en gras.
-- p. 8 : ordre de lecture reconstitué sur deux colonnes : la rubrique D6x2, en haut de la colonne de droite, vient après D3 et D66.
+- p. 8 : ordre de lecture reconstitué sur deux colonnes : la rubrique 1D6x2, en haut de la colonne de droite, vient après 1D3 et D66.
 - p. 8 : la VO écrit ici les dimensions du champ de bataille avec le symbole ("36" by 36""), alors que la p. 4 les écrit en toutes lettres. Les deux formes sont conservées.
-- p. 8 : "2d6, 3d6 and so on" est suivi d'un tiret demi-cadratin dans la VO : remplacé par une virgule.
+- p. 8 : "2D6, 3D6 and so on" est suivi d'un tiret demi-cadratin dans la VO : remplacé par une virgule.
 - p. 8 : coquilles de la VO sans effet sur le sens : "When the rules asks", et point final manquant après "blast templates scattering (pg xx)".
 - p. 8 : "HIT" est laissé en anglais, c'est l'inscription gravée sur certains dés de direction.
 - p. 8 : le paragraphe sur le dé à douze faces est en italique dans la VO, comme la note du concepteur qui le précède : il en fait sans doute partie. Je l'ai laissé à la suite.

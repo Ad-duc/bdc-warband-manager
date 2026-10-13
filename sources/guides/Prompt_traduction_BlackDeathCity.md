@@ -167,7 +167,8 @@ Terrain et scénarios
   OU ÉGAL à la valeur. Ne l'inverse jamais.
 - "Improve / worsen" une Armure ou une Perforation : garde la logique de la VO
   (améliorer une Armure 6+ donne 5+).
-- Dés : D6, 2D6, D3, D66, D6x2, 3D6x5. Les seuils restent "4+".
+- Dés : toujours avec le nombre de dés : 1D6, 2D6, 1D3, 1D6x2, 3D6x5 (jamais
+  "D6" seul). Les tables D66 gardent leur nom. Les seuils restent "4+".
 - Distances : toujours en pouces avec le symbole ", jamais converties en cm.
 - Ne change aucun chiffre, coût, portée, profil ou résultat de table.
 
@@ -210,7 +211,7 @@ Terrain et scénarios
   > Citation du combattant
 
 - Armes : un tableau Markdown par liste, mêmes colonnes que la VO, dans le même
-  ordre. Tables de jets (D6, 2D6, D66) : tableaux Résultat | Effet.
+  ordre. Tables de jets (1D6, 2D6, D66) : tableaux Résultat | Effet.
 - À la fin de chaque lot, deux sections :
   ## Ajouts au glossaire (tableau VO | VF | Catégorie, ou "Aucun")
   ## Notes du traducteur (liste : page, problème constaté dans la VO, choix fait)

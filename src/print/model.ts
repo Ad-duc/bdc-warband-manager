@@ -12,6 +12,7 @@
 
 import type { LocalizedText, Stats, Warband, WarbandFighter } from "../data/schema.ts";
 import type { Language } from "../i18n/index.ts";
+import { withDiceCount } from "../i18n/dice.ts";
 import { formatDice, formatRange, formatRend } from "../i18n/text.ts";
 import {
   activeFighters,
@@ -68,7 +69,7 @@ export interface PrintLabels {
   formOf: (name: string) => string;
 }
 
-const pick = (text: LocalizedText, lang: Language): string => text[lang];
+const pick = (text: LocalizedText, lang: Language): string => withDiceCount(text[lang]);
 
 export function buildPrintFighter(
   index: FactionIndex,
@@ -95,10 +96,10 @@ export function buildPrintFighter(
     return {
       name: isGranted ? `${name} (+1)` : name,
       rng: line.kind === "ranged" ? formatRange(line.profile, labels.flame) : "-",
-      atk: formatDice(line.profile.attacks ?? 1, lang),
+      atk: formatDice(line.profile.attacks ?? 1),
       rnd: formatRend(line.profile.rend),
-      dmg: formatDice(line.profile.damage, lang),
-      crit: formatDice(line.profile.critDamage, lang),
+      dmg: formatDice(line.profile.damage),
+      crit: formatDice(line.profile.critDamage),
       traits,
     };
   });

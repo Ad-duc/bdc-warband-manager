@@ -12,6 +12,8 @@ License:  MIT
 import json
 import re
 
+from dice import fix_value
+
 
 def T(en, fr):
     return {"en": en, "fr": fr}
@@ -226,11 +228,12 @@ ORDER = ["_header", "schemaVersion", "id", "name", "description", "armouryName",
 
 
 def to_json(data):
-    """JSON text in the key order of the data files, with a blank line before each top-level list.
+    """JSON text in the key order of the data files, with a blank line before each top-level list
+    and every die of the texts written with its count (1D6).
 
     Prettier (objectWrap: collapse) then gives the final layout.
     """
-    ordered = {k: data[k] for k in ORDER if k in data}
+    ordered = fix_value({k: data[k] for k in ORDER if k in data})
     lines = json.dumps(ordered, ensure_ascii=False, indent=2).split("\n")
     out = []
     for line in lines:

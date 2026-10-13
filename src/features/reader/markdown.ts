@@ -3,13 +3,15 @@
  * Role:        Turns a translation chapter (Markdown) into HTML for the rules
  *              reader: GitHub tables, an id on every heading so the contents
  *              list can jump to it, wide tables wrapped in a scrolling box,
- *              and raw HTML escaped rather than rendered.
+ *              raw HTML escaped rather than rendered, and every die written
+ *              with its count (1D6).
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
  */
 
 import { Marked, type Tokens } from "marked";
+import { withDiceCount } from "../../i18n/dice.ts";
 
 export interface Section {
   id: string;
@@ -79,7 +81,7 @@ export function renderChapter(markdown: string): RenderedChapter {
   });
 
   const html = marked
-    .parser(marked.lexer(markdown))
+    .parser(marked.lexer(withDiceCount(markdown)))
     .replaceAll("<table>", '<div class="reader-table"><table>')
     .replaceAll("</table>", "</table></div>");
   return { html, sections };

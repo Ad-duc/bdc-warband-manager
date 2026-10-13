@@ -1,9 +1,10 @@
 /*
  * File:        scripts/check-data.ts
  * Role:        Validates src/data/*.json against the zod schemas, checks cross
- *              references, list prices and forbidden characters, then compares
- *              names, costs, profiles and totals with the translated Markdown
- *              sources when they are available.
+ *              references, list prices, forbidden characters and the dice
+ *              notation (1D6, never a bare D6), then compares names, costs,
+ *              profiles and totals with the translated Markdown sources when
+ *              they are available.
  * Usage:       npm run check:data -- [--sources "<folder with the .md files>"]
  *              The folder defaults to sources/fr; BDC_SOURCES overrides it.
  * Author:      Adrien Duclaud
@@ -14,6 +15,8 @@
 import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, relative, resolve } from "node:path";
 import { z } from "zod";
+import { hasBareDie } from "../src/i18n/dice.ts";
+import { formatDice } from "../src/i18n/text.ts";
 import {
   CommonDataSchema,
   FactionDataSchema,
@@ -196,6 +199,38 @@ for (const path of files) {
 }
 if (dirty === 0) ok(`${files.length} files scanned, none contains a forbidden character or mention`);
 
+// Dice notation: every die states its number of dice (1D6), see src/i18n/dice.ts.
+// "npm run fix:dice" rewrites the files that fail this check.
+function bareDice(value: unknown, key: string | null, path: string, out: string[]): string[] {
+  if (Array.isArray(value)) value.forEach((v, i) => bareDice(v, key, `${path}[${i}]`, out));
+  else if (typeof value === "object" && value !== null)
+    for (const [k, v] of Object.entries(value)) bareDice(v, k, path === "" ? k : `${path}.${k}`, out);
+  else if (typeof value === "string" && (key === "en" || key === "fr" || key === "md") && hasBareDie(value))
+    out.push(path);
+  return out;
+}
+let diceFaults = 0;
+for (const file of ["common.json", ...factionFiles]) {
+  for (const path of bareDice(loadJson(join(DATA_DIR, file)), null, "", [])) {
+    diceFaults += 1;
+    fail(`${file}: ${path} has a die without its number of dice (run npm run fix:dice)`);
+  }
+}
+const translationDir = join(ROOT, "sources", "fr");
+if (existsSync(translationDir)) {
+  for (const name of readdirSync(translationDir).filter((n) => n.endsWith(".md"))) {
+    readFileSync(join(translationDir, name), "utf8")
+      .split("\n")
+      .forEach((line, i) => {
+        if (hasBareDie(line)) {
+          diceFaults += 1;
+          fail(`sources/fr/${name}:${i + 1} has a die without its number of dice (run npm run fix:dice)`);
+        }
+      });
+  }
+}
+if (diceFaults === 0) ok("Every die of the data texts and of the translation states its number of dice");
+
 /* ------------------------------------------------------------------------- */
 /* 3. Comparison with the Markdown sources                                   */
 /* ------------------------------------------------------------------------- */
@@ -237,9 +272,9 @@ const tableRows = (lines: string[]): string[][] =>
     );
 
 /** Formats a JSON value the way the French Markdown prints it. */
+/** Dice and values as the translation prints them: "d3" -> "1D3". */
 function frValue(v: number | string | null | undefined): string {
-  if (v === null || v === undefined) return "-";
-  return String(v).toUpperCase().replace(/^D/, "D");
+  return formatDice(v);
 }
 function frRend(r: number): string {
   return r === 0 ? "-" : String(r);
@@ -421,11 +456,7 @@ function compareFaction(dir: string, f: FactionData, c: CommonData): void {
     recruitable.map((x, i) => {
       const e = x.startingExperience;
       const v =
-        e.dice === null
-          ? String(e.base)
-          : e.base === 0
-            ? e.dice.toUpperCase()
-            : `${e.base}+${e.dice.toUpperCase()}`;
+        e.dice === null ? String(e.base) : e.base === 0 ? frValue(e.dice) : `${e.base}+${frValue(e.dice)}`;
       return `${i + 1}:${v}`;
     }),
   );
@@ -559,7 +590,7 @@ function checkMdRefs(dir: string, label: string, value: unknown): void {
             .filter((l) => /^#{1,6} /.test(l))
             .flatMap((l) => {
               const h = l.replace(/^#+ /, "").trim();
-              const noPrice = h.replace(/ - (\d+ pa|D6|D3|2D6|D66)$/, "");
+              const noPrice = h.replace(/ - (\d+ pa|\d*D(3|6|12|66))$/, "");
               return [h, noPrice, stripTerms(h), stripTerms(noPrice), stripTerms(h).replace(/^0-\d+ /, "")];
             }),
         ),

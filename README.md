@@ -68,6 +68,7 @@ npm run dev          # http://localhost:5173/bdc-warband-manager/
 | `npm run check:i18n`                   | Same keys in `en.json` and `fr.json`, every `t()` key exists, no unused key                  |
 | `npm run generate:data`                | Rebuild the Verminkin, Death Covens and Blighted Cloister data from the translation (Python) |
 | `npm run check:generated`              | Fail if a generated data file is out of date; writes nothing                                 |
+| `npm run fix:dice`                     | Write every die with its number of dice (1D6) in `sources/fr` and the data texts             |
 | `npm run build:glossary`               | Regenerate `src/i18n/glossary.json` from `00_glossaire.md`                                   |
 | `npm run check`                        | Everything above except the end-to-end tests                                                 |
 | `npm run watch:check`                  | Look for a new official rules version or resource (exit 10 or 11 when something is new)      |

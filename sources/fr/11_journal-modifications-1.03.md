@@ -53,22 +53,22 @@ Version de test v1.03, publiée le 12/10/2026. Ce journal liste les changements 
 | Élément | v1.02 | v1.03 |
 |---|---|---|
 | Arbalète lourde | 96 pa, Lourd, Rare 0-1, Rechargement, À deux mains, Encombrant | 90 pa, Lourd, Rare 0-1, À deux mains |
-| Pistolet à poudre noire | Dégâts 1, critiques D6 | Dégâts 2, critiques D6+1 |
-| Fusil à poudre noire | Dégâts 1, critiques D6, 22 pa | Dégâts 2, critiques D6+1, 24 pa |
+| Pistolet à poudre noire | Dégâts 1, critiques 1D6 | Dégâts 2, critiques 1D6+1 |
+| Fusil à poudre noire | Dégâts 1, critiques 1D6, 22 pa | Dégâts 2, critiques 1D6+1, 24 pa |
 | Tromblon | 15 pa | 14 pa |
-| Paire de pistolets | Dégâts 1, critiques D6, 32 pa | Dégâts 2, critiques D6+1, 30 pa |
+| Paire de pistolets | Dégâts 1, critiques 1D6, 32 pa | Dégâts 2, critiques 1D6+1, 30 pa |
 | Arbalète | 26 pa | 20 pa |
-| Bombes incendiaires | Dégâts 2, critiques D3+1, 37 pa | Dégâts D3+1, critiques -, 34 pa |
-| Lance-flammes | Dégâts D3, 88 pa | Dégâts D3+1, 80 pa |
+| Bombes incendiaires | Dégâts 2, critiques 1D3+1, 37 pa | Dégâts 1D3+1, critiques -, 34 pa |
+| Lance-flammes | Dégâts 1D3, 88 pa | Dégâts 1D3+1, 80 pa |
 | Arc long | 28 pa | 26 pa |
 | Fusil long | Rechargement et Encombrant, 90 pa | Lourd, Incident de tir, À deux mains, 70 pa |
-| Arbalète lourde d'ogre | Absente (Arbalète lourde dans la Liste des Ogres) | Nouvelle arme : 24", 1, -2, 3, D6+2, Rare 0-1, Rechargement, À deux mains, 90 pa |
-| Canon d'ogre | Dégâts 2, critiques D3+1, Lourd, Encombrant, 105 pa | Dégâts D6+1, critiques -, sans Lourd ni Encombrant, 112 pa |
-| Pistolet d'ogre | Dégâts 2, critiques D6+1 | Dégâts 3, critiques D6+2 |
-| Pistolet à répétition | Dégâts 1, critiques D6, 35 pa | Dégâts 2, critiques D6+1, 30 pa |
+| Arbalète lourde d'ogre | Absente (Arbalète lourde dans la Liste des Ogres) | Nouvelle arme : 24", 1, -2, 3, 1D6+2, Rare 0-1, Rechargement, À deux mains, 90 pa |
+| Canon d'ogre | Dégâts 2, critiques 1D3+1, Lourd, Encombrant, 105 pa | Dégâts 1D6+1, critiques -, sans Lourd ni Encombrant, 112 pa |
+| Pistolet d'ogre | Dégâts 2, critiques 1D6+1 | Dégâts 3, critiques 1D6+2 |
+| Pistolet à répétition | Dégâts 1, critiques 1D6, 35 pa | Dégâts 2, critiques 1D6+1, 30 pa |
 | Arc court | 18 pa | 16 pa |
-| Fusil à salves | Dégâts 1, critiques D6 | Dégâts 2, critiques D6+1 |
-| Carreau explosif | Modifie l'arbalète (+1 Perforation, +1 Dégâts, Explosion) | Profil propre : 20", 1, -1, D3+1, -, Explosion |
+| Fusil à salves | Dégâts 1, critiques 1D6 | Dégâts 2, critiques 1D6+1 |
+| Carreau explosif | Modifie l'arbalète (+1 Perforation, +1 Dégâts, Explosion) | Profil propre : 20", 1, -1, 1D3+1, -, Explosion |
 | Grimoire | Objet | Objet, Rare : 0-1 |
 | Béni des Saints | La touche n'est pas critique | L'attaque n'est pas une touche critique |
 | Tenir bon | Peut tenter de tenir bon | Peut tenir bon |
@@ -83,14 +83,14 @@ Version de test v1.03, publiée le 12/10/2026. Ce journal liste les changements 
 | Sparkseer (Tyran impitoyable) | Engager | Recruter |
 | Foreuse à étincelles, Poings à étincelles | Encombrant | Trait supprimé |
 | Lance-éclairs | Sans Arcanique, Encombrant, 100 pa | Arcanique, sans Encombrant, 90 pa |
-| Pistolet à poudre noire | Dégâts 1, critiques D6 | Dégâts 2, critiques D6+1 |
-| Bonbonne à flammes | Dégâts D3 | Dégâts D3+1 ; nom écrit "Flame-Canister" partout |
+| Pistolet à poudre noire | Dégâts 1, critiques 1D6 | Dégâts 2, critiques 1D6+1 |
+| Bonbonne à flammes | Dégâts 1D3 | Dégâts 1D3+1 ; nom écrit "Flame-Canister" partout |
 | Gatling lourde | Encombrant | Trait supprimé |
 | Fusil long | Rechargement et Encombrant, 90 pa | Lourd, Incident de tir, À deux mains, 70 pa |
-| Orbes explosifs | Dégâts 2, critiques D3+1 | Dégâts D3+1, critiques - |
-| Lance-orbes | Dégâts 2, critiques D3+1, Encombrant, 120 pa | Dégâts D3+1, critiques -, sans Encombrant, 100 pa |
-| Pistolet à répétition | Dégâts 1, critiques D6, 35 pa | Dégâts 2, critiques D6+1, 30 pa |
-| Lance-roquettes | Dégâts 2, critiques D6+1, Encombrant, 105 pa | Dégâts D6+1, critiques -, sans Encombrant, 75 pa |
+| Orbes explosifs | Dégâts 2, critiques 1D3+1 | Dégâts 1D3+1, critiques - |
+| Lance-orbes | Dégâts 2, critiques 1D3+1, Encombrant, 120 pa | Dégâts 1D3+1, critiques -, sans Encombrant, 100 pa |
+| Pistolet à répétition | Dégâts 1, critiques 1D6, 35 pa | Dégâts 2, critiques 1D6+1, 30 pa |
+| Lance-roquettes | Dégâts 2, critiques 1D6+1, Encombrant, 105 pa | Dégâts 1D6+1, critiques -, sans Encombrant, 75 pa |
 | Fronde | 15 pa | 12 pa |
 | Étoiles de jet | 12 pa | 10 pa |
 | Explosion rebondissante, Bombe de peste | Point quelconque, attaque réussie | Point visible ; les combattants dans la zone sont touchés par l'attaque |
@@ -106,7 +106,7 @@ Version de test v1.03, publiée le 12/10/2026. Ce journal liste les changements 
 | Grimoire | Objet | Objet, Rare : 0-1 |
 | Sort à gabarit (p. 101) | Attaque réussie | Attaque |
 | Zombie Ogre | Force incroyable | Règle supprimée (garde Inébranlable) |
-| Gargoyle, Serres de pierre | Dégâts critiques D6+1 | Dégâts critiques D3+1 |
+| Gargoyle, Serres de pierre | Dégâts critiques 1D6+1 | Dégâts critiques 1D3+1 |
 | Encadré des Bêtes | Rappel Poison | Rappel supprimé |
 
 ## The Blighted Cloister (lot 09)

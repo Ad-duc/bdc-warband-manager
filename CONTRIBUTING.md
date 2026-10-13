@@ -95,6 +95,10 @@ interaction goes with an end-to-end test and is added to
 - **Typography.** Straight quotes and apostrophes, simple hyphen, no em dash,
   no non-breaking, thin or invisible space. `npm run check:data` scans the data
   and the generators for these characters.
+- **Dice.** Every roll states its number of dice: `1D6`, `2D6`, `1D3+1`,
+  never a bare `D6` (D66 tables keep their name). The app applies the rule on
+  display, `npm run check:data` rejects a bare die in the data texts and in
+  `sources/fr`, and `npm run fix:dice` rewrites them.
 - **No generated-by markers.** No mention of an assistant or a generator tool
   in files, metadata or commit messages.
 - **Identifiers** are English kebab-case and never change once published:
@@ -127,6 +131,7 @@ le dossier "Traduction FR" pour comparer ou régénérer les données.
 3. Avant chaque envoi : `npm run check`, puis `npm run test:e2e`, et une ligne
    dans `CHANGELOG.md` et sa traduction dans `CHANGELOG.fr.md`.
 4. Conventions : en-tête dans chaque fichier, code et commentaires en anglais,
-   aucun texte en dur dans le JSX, aucun tiret cadratin ni espace insécable,
+   aucun texte en dur dans le JSX, dés toujours avec leur nombre (1D6, jamais
+   D6 seul ; `npm run fix:dice` corrige), aucun tiret cadratin ni espace insécable,
    aucune mention d'outil de génération.
 5. Les choix d'interprétation des règles vont dans `RULES_ASSUMPTIONS.md`.

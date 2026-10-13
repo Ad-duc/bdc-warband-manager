@@ -52,7 +52,7 @@ Chaque faction dispose d'une liste de combattants (*fighter*) qui peuvent être 
 
 #### Expérience de départ (*Starting Experience*)
 
-Chaque fois qu'un combattant (*fighter*) est recruté dans votre bande (*warband*), il dispose d'un certain montant d'expérience de départ (*starting experience*). Il s'agit souvent d'un montant aléatoire, comme 20+D6. Vous en saurez plus sur l'expérience (*experience*) aux pages xx-xx.
+Chaque fois qu'un combattant (*fighter*) est recruté dans votre bande (*warband*), il dispose d'un certain montant d'expérience de départ (*starting experience*). Il s'agit souvent d'un montant aléatoire, comme 20+1D6. Vous en saurez plus sur l'expérience (*experience*) aux pages xx-xx.
 
 ### Étape 4 - Acheter l'équipement (*Step 4 - Buy Wargear*)
 
@@ -112,7 +112,7 @@ Chaque fois que ce combattant (*fighter*) est activé (*activate*) alors qu'il e
 
 ### Apprend vite (*Fast Learner*)
 
-Lors de la séquence d'après-bataille (*aftermath sequence*) de chaque bataille, ce combattant (*fighter*) gagne D6 d'expérience bonus (*bonus experience*).
+Lors de la séquence d'après-bataille (*aftermath sequence*) de chaque bataille, ce combattant (*fighter*) gagne 1D6 d'expérience bonus (*bonus experience*).
 
 ### Duelliste (*Duellist*)
 

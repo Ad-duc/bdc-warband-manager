@@ -91,8 +91,8 @@
           "name": { "en": "Martial Training", "fr": "Entraînement martial" },
           "tag": null,
           "text": {
-            "en": "In step 3 of the Aftermath sequence you can pick up to 3 friendly Knight fighters to take part in martial training. Each of those fighters earns d6 bonus experience.",
-            "fr": "À l'étape 3 de la séquence d'après-bataille, vous pouvez choisir jusqu'à 3 combattants alliés Chevaliers pour prendre part à l'entraînement martial. Chacun de ces combattants gagne D6 d'expérience bonus."
+            "en": "In step 3 of the Aftermath sequence you can pick up to 3 friendly Knight fighters to take part in martial training. Each of those fighters earns 1D6 bonus experience.",
+            "fr": "À l'étape 3 de la séquence d'après-bataille, vous pouvez choisir jusqu'à 3 combattants alliés Chevaliers pour prendre part à l'entraînement martial. Chacun de ces combattants gagne 1D6 d'expérience bonus."
           }
         },
         {
@@ -150,7 +150,7 @@
           "name": { "en": "Demonic Communion", "fr": "Communion démoniaque" },
           "tag": null,
           "text": {
-            "en": "Before the Aftermath sequence, roll on the table below. If you won the battle, roll 3d6. If you lost, roll 2d6:\n2 - Damnation: Your leader is killed. You can add a Demonic Rotspawn to your warband without paying any silver. It bears the name of your former leader.\n3-8 - Silence: No effect.\n9-12 - Minor Boon: Your leader earns 10 bonus experience.\n13-15 - Demonic Ally: You can add a Rot Demon or a Rotling to your warband without paying any silver.\n16+ - Major Boon: Your leader earns 30 bonus experience.",
+            "en": "Before the Aftermath sequence, roll on the table below. If you won the battle, roll 3D6. If you lost, roll 2D6:\n2 - Damnation: Your leader is killed. You can add a Demonic Rotspawn to your warband without paying any silver. It bears the name of your former leader.\n3-8 - Silence: No effect.\n9-12 - Minor Boon: Your leader earns 10 bonus experience.\n13-15 - Demonic Ally: You can add a Rot Demon or a Rotling to your warband without paying any silver.\n16+ - Major Boon: Your leader earns 30 bonus experience.",
             "fr": "Avant la séquence d'après-bataille, faites un jet sur la table ci-dessous. Si vous avez gagné la bataille, lancez 3D6. Si vous avez perdu, lancez 2D6 :\n2 - Damnation : votre chef est tué. Vous pouvez ajouter un Demonic Rotspawn à votre bande sans dépenser de pièces d'argent. Il porte le nom de votre ancien chef.\n3-8 - Silence : aucun effet.\n9-12 - Faveur mineure : votre chef gagne 10 d'expérience bonus.\n13-15 - Allié démoniaque : vous pouvez ajouter un Rot Demon ou un Rotling à votre bande sans dépenser de pièces d'argent.\n16+ - Faveur majeure : votre chef gagne 30 d'expérience bonus."
           }
         }
@@ -1620,8 +1620,8 @@
           "castingValue": 8,
           "criticalCastValue": 12,
           "text": {
-            "en": "The closest visible enemy fighter within 9\" is targeted and suffers d3 damage. If they are not taken down, they must pass a Willpower test, else scatter d6\".",
-            "fr": "Le combattant ennemi visible le plus proche à 9\" ou moins est ciblé et subit D3 dégâts. S'il n'est pas mis hors de combat, il doit réussir un test de Volonté, sans quoi il dévie de D6\"."
+            "en": "The closest visible enemy fighter within 9\" is targeted and suffers 1D3 damage. If they are not taken down, they must pass a Willpower test, else scatter 1D6\".",
+            "fr": "Le combattant ennemi visible le plus proche à 9\" ou moins est ciblé et subit 1D3 dégâts. S'il n'est pas mis hors de combat, il doit réussir un test de Volonté, sans quoi il dévie de 1D6\"."
           },
           "criticalText": { "en": "Increase the range to 12\".", "fr": "Augmentez la portée à 12\"." },
           "attack": null,
@@ -1635,8 +1635,8 @@
           "castingValue": 7,
           "criticalCastValue": 12,
           "text": {
-            "en": "Place the blast template centred on a point within 12\" of the caster, it then scatters d6\".\nEach fighter in the template is targeted and heals d3 life.",
-            "fr": "Placez le gabarit d'explosion centré sur un point à 12\" ou moins du lanceur ; il dévie ensuite de D6\".\nChaque combattant situé dans le gabarit est ciblé et est soigné de D3 points de vie."
+            "en": "Place the blast template centred on a point within 12\" of the caster, it then scatters 1D6\".\nEach fighter in the template is targeted and heals 1D3 life.",
+            "fr": "Placez le gabarit d'explosion centré sur un point à 12\" ou moins du lanceur ; il dévie ensuite de 1D6\".\nChaque combattant situé dans le gabarit est ciblé et est soigné de 1D3 points de vie."
           },
           "criticalText": { "en": "It does not scatter.", "fr": "Il ne dévie pas." },
           "attack": null,
@@ -1778,8 +1778,8 @@
           "castingValue": 9,
           "criticalCastValue": 14,
           "text": {
-            "en": "Place the blast template centred on a visible point on the battlefield floor within 9\" of the caster. A pit opens here. In an order chosen by the commanding player of the caster, each fighter in the template is removed from the battlefield and set up again at the edge of the pit by its commanding player, not engaged in melee. If there is no space, they are set up as close to the edge of the pit as possible, not engaged in melee.\nAfter being set up, the fighter must pass an Initiative test else suffer d3 damage and become poisoned (see the Poison weapon trait).\nThe pit remains in play until the end of the round. Fighters cannot move across the pit while they are on the battlefield floor. Any treasure tokens on the pit are destroyed.",
-            "fr": "Placez le gabarit d'explosion centré sur un point visible sur le sol du champ de bataille à 9\" ou moins du lanceur. Une fosse s'ouvre à cet endroit. Dans un ordre choisi par le joueur qui contrôle le combattant ayant lancé le sort, chaque combattant situé dans le gabarit est retiré du champ de bataille et placé de nouveau au bord de la fosse par le joueur qui contrôle le combattant en question, non engagé au corps à corps. S'il n'y a pas la place, il est placé aussi près que possible du bord de la fosse, non engagé au corps à corps.\nAprès avoir été placé, le combattant doit réussir un test d'Initiative, sans quoi il subit D3 dégâts et devient empoisonné, voir le trait d'arme Poison.\nLa fosse reste en jeu jusqu'à la fin du round. Les combattants ne peuvent pas se déplacer à travers la fosse tant qu'ils sont sur le sol du champ de bataille. Tous les pions trésor situés sur la fosse sont détruits."
+            "en": "Place the blast template centred on a visible point on the battlefield floor within 9\" of the caster. A pit opens here. In an order chosen by the commanding player of the caster, each fighter in the template is removed from the battlefield and set up again at the edge of the pit by its commanding player, not engaged in melee. If there is no space, they are set up as close to the edge of the pit as possible, not engaged in melee.\nAfter being set up, the fighter must pass an Initiative test else suffer 1D3 damage and become poisoned (see the Poison weapon trait).\nThe pit remains in play until the end of the round. Fighters cannot move across the pit while they are on the battlefield floor. Any treasure tokens on the pit are destroyed.",
+            "fr": "Placez le gabarit d'explosion centré sur un point visible sur le sol du champ de bataille à 9\" ou moins du lanceur. Une fosse s'ouvre à cet endroit. Dans un ordre choisi par le joueur qui contrôle le combattant ayant lancé le sort, chaque combattant situé dans le gabarit est retiré du champ de bataille et placé de nouveau au bord de la fosse par le joueur qui contrôle le combattant en question, non engagé au corps à corps. S'il n'y a pas la place, il est placé aussi près que possible du bord de la fosse, non engagé au corps à corps.\nAprès avoir été placé, le combattant doit réussir un test d'Initiative, sans quoi il subit 1D3 dégâts et devient empoisonné, voir le trait d'arme Poison.\nLa fosse reste en jeu jusqu'à la fin du round. Les combattants ne peuvent pas se déplacer à travers la fosse tant qu'ils sont sur le sol du champ de bataille. Tous les pions trésor situés sur la fosse sont détruits."
           },
           "criticalText": { "en": "Increase the range from 9\" to 12\".", "fr": "Augmentez la portée de 9\" à 12\"." },
           "attack": null,

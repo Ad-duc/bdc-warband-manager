@@ -89,7 +89,7 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), vous commencez 
 
 **Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
 
-**Courir les toits (*Run the Roofs*) :** si le scénario vous demande de placer des combattants (*fighter*) près d'un point d'entrée (*entry point*), par exemple entièrement à 6" ou moins d'un point d'entrée (*entry point*), vous pouvez choisir jusqu'à D3 de ces combattants (*fighter*) pour les placer, à la place, sur les toits. Dans ce cas, ces combattants (*fighter*) peuvent être placés n'importe où sur le champ de bataille (*battlefield*), à un endroit qui est entièrement à 12" ou moins horizontalement du centre du champ de bataille (*centre of the battlefield*), à plus de 9" de tous les combattants ennemis (*enemy fighter*) et qui n'est pas sur le sol du champ de bataille (*battlefield floor*).
+**Courir les toits (*Run the Roofs*) :** si le scénario vous demande de placer des combattants (*fighter*) près d'un point d'entrée (*entry point*), par exemple entièrement à 6" ou moins d'un point d'entrée (*entry point*), vous pouvez choisir jusqu'à 1D3 de ces combattants (*fighter*) pour les placer, à la place, sur les toits. Dans ce cas, ces combattants (*fighter*) peuvent être placés n'importe où sur le champ de bataille (*battlefield*), à un endroit qui est entièrement à 12" ou moins horizontalement du centre du champ de bataille (*centre of the battlefield*), à plus de 9" de tous les combattants ennemis (*enemy fighter*) et qui n'est pas sur le sol du champ de bataille (*battlefield floor*).
 
 ### Atelier branlant (*Rickety Workshop*)
 
@@ -100,7 +100,7 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), vous commencez 
 **Bricoleurs fous (*Mad Tinkerers*) :**
 
 - Quand vous effectuez un jet de blessure (*injury roll*) pour un Engin (*Contraption*) allié (*friendly*), vous pouvez faire deux jets et choisir l'un des deux résultats.
-- Avant le début de chaque bataille, vous pouvez choisir 1 Sparkseer allié (*friendly*). Le combattant (*fighter*) choisi commence la bataille avec 3 points d'ingénierie (*engineering points*) à la place de D3.
+- Avant le début de chaque bataille, vous pouvez choisir 1 Sparkseer allié (*friendly*). Le combattant (*fighter*) choisi commence la bataille avec 3 points d'ingénierie (*engineering points*) à la place de 1D3.
 
 ### Terrier fortifié (*Fortified Warren*)
 
@@ -341,25 +341,25 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|
-| Bâton arcanique (*Arcane Staff*) | 2 | - | 1 | D3 | Arcanique (*Arcane*), Main secondaire (*Off-hand*) | 10 pa |
-| Hache (*Axe*) | 3 | -1 | 1 | D3 | Main secondaire (*Off-hand*) | 16 pa |
-| Gourdin/Masse/Marteau (*Club/Mace/Hammer*) | 3 | - | 1 | D3 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 14 pa |
-| Carcasse écrasante (*Crushing Bulk*) | 3 | -1 | 2 | D3+1 | Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*) | - |
-| Dague/Dague de poing (*Dagger/Punch Dagger*) | 3 | - | 1 | D3 | Main secondaire (*Off-hand*) | 10 pa |
-| Hallebarde ensorcelée (*Ensorcelled Halberd*) | 3 | -1 | 1 | D3+1 | Arcanique (*Arcane*), Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 52 pa |
-| Arme ensorcelée (*Ensorcelled Weapon*) | 3 | -1 | 1 | D3 | Arcanique (*Arcane*) | 26 pa |
-| Fléau (*Flail*) | 3 | - | 1 | D3 | Main secondaire (*Off-hand*), Contournement (*Wrap*) | 14 pa |
-| Hallebarde (*Halberd*) | 3 | -1 | 1 | D3+1 | Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 34 pa |
-| Fléau lourd (*Heavy-Flail*) | 3 | -1 | 2 | D3+1 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*), Contournement (*Wrap*) | 38 pa |
+| Bâton arcanique (*Arcane Staff*) | 2 | - | 1 | 1D3 | Arcanique (*Arcane*), Main secondaire (*Off-hand*) | 10 pa |
+| Hache (*Axe*) | 3 | -1 | 1 | 1D3 | Main secondaire (*Off-hand*) | 16 pa |
+| Gourdin/Masse/Marteau (*Club/Mace/Hammer*) | 3 | - | 1 | 1D3 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 14 pa |
+| Carcasse écrasante (*Crushing Bulk*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*) | - |
+| Dague/Dague de poing (*Dagger/Punch Dagger*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*) | 10 pa |
+| Hallebarde ensorcelée (*Ensorcelled Halberd*) | 3 | -1 | 1 | 1D3+1 | Arcanique (*Arcane*), Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 52 pa |
+| Arme ensorcelée (*Ensorcelled Weapon*) | 3 | -1 | 1 | 1D3 | Arcanique (*Arcane*) | 26 pa |
+| Fléau (*Flail*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*), Contournement (*Wrap*) | 14 pa |
+| Hallebarde (*Halberd*) | 3 | -1 | 1 | 1D3+1 | Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 34 pa |
+| Fléau lourd (*Heavy-Flail*) | 3 | -1 | 2 | 1D3+1 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*), Contournement (*Wrap*) | 38 pa |
 | Griffe de fer (*Iron Claw*) | 4 | - | 1 | 1 | Main secondaire (*Off-hand*) | 12 pa |
 | Morsure infecte (*Nasty Bite*) | 4 | - | 1 | 1 | Arme naturelle (*Natural Weapon*), Poison | - |
-| Griffe démesurée (*Oversized Claw*) | 3 | - | 2 | D3+1 | Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*) | - |
-| Lame empoisonnée (*Poison Blade*) | 3 | -1 | 1 | D3 | Garde (*Guard*), Main secondaire (*Off-hand*), Poison | 20 pa |
-| Lame de Rat-Mutant (*Rat-Mutant Blade*) | 3 | -1 | 2 | D3+1 | Main secondaire (*Off-hand*) | 36 pa |
-| Foreuse à étincelles (*Spark-Drill*) | 3 | -3 | 1 | D3+1 | Arcanique (*Arcane*), À deux mains (*Two-handed*) | 62 pa |
-| Poings à étincelles (*Spark-Powered Fists*) | 3 | -2 | 2 | D3+1 | Arcanique (*Arcane*), Contondant (*Bludgeon*), À deux mains (*Two-handed*) | 60 pa |
-| Lance (*Spear*) | 3 | - | 1 | D3 | Contre-charge (*Brace*), À deux mains (*Two-handed*) | 16 pa |
-| Épée (*Sword*) | 3 | - | 1 | D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
+| Griffe démesurée (*Oversized Claw*) | 3 | - | 2 | 1D3+1 | Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*) | - |
+| Lame empoisonnée (*Poison Blade*) | 3 | -1 | 1 | 1D3 | Garde (*Guard*), Main secondaire (*Off-hand*), Poison | 20 pa |
+| Lame de Rat-Mutant (*Rat-Mutant Blade*) | 3 | -1 | 2 | 1D3+1 | Main secondaire (*Off-hand*) | 36 pa |
+| Foreuse à étincelles (*Spark-Drill*) | 3 | -3 | 1 | 1D3+1 | Arcanique (*Arcane*), À deux mains (*Two-handed*) | 62 pa |
+| Poings à étincelles (*Spark-Powered Fists*) | 3 | -2 | 2 | 1D3+1 | Arcanique (*Arcane*), Contondant (*Bludgeon*), À deux mains (*Two-handed*) | 60 pa |
+| Lance (*Spear*) | 3 | - | 1 | 1D3 | Contre-charge (*Brace*), À deux mains (*Two-handed*) | 16 pa |
+| Épée (*Sword*) | 3 | - | 1 | 1D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
 
 **Rappels des traits d'armes (*Weapon Trait Reminders*)**
 
@@ -382,17 +382,17 @@ Voir les règles complètes aux pages xx-xx.
 
 | Nom | Portée | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|---|
-| Lance-éclairs (*Arc-Lightning Gun*) | 18" | 6 | - | 1 | D3 | Arcanique (*Arcane*), Lourd (*Heavy*), Incident de tir (*Misfire*), Rare 0-1, À deux mains (*Two-handed*), Salve (*Volley*) | 90 pa |
-| Pistolet à poudre noire (*Blackpowder Pistol*) | 12" | 1 | -1 | 2 | D6+1 | Incident de tir (*Misfire*), Rechargement (*Reload*) | 18 pa |
-| Bonbonne à flammes (*Flame-Canister*) | Flamme (*Flame*) | 1 | - | D3+1 | - | Flamme (*Flame*), Usage unique (*One-use*), Rare 0-2, Effroi (*Scare*) | 50 pa |
-| Gatling lourde (*Heavy Gatling Gun*) | 16" | 3 | -1 | 2 | D6+1 | Lourd (*Heavy*), Incident de tir (*Misfire*), Rare 0-1, À deux mains (*Two-handed*), Salve (*Volley*) | 110 pa |
-| Fusil long (*Long Rifle*) | 30" | 1 | -2 | 2 | D6+2 | Lourd (*Heavy*), Incident de tir (*Misfire*), À deux mains (*Two-handed*) | 70 pa |
-| Orbes explosifs (*Orb Bombs*) | 8" | 1 | - | D3+1 | - | Explosion (*Blast*), Usage unique (*One-use*), Rare 0-5 | 32 pa |
-| Lance-orbes (*Orb Launcher*) | 20" | 1 | - | D3+1 | - | Explosion (*Blast*), Incident de tir (*Misfire*), Rare 0-1, Rechargement (*Reload*), À deux mains (*Two-handed*) | 100 pa |
-| Pistolet à répétition (*Repeater Pistol*) | 12" | 1 | -1 | 2 | D6+1 | Incident de tir (*Misfire*) | 30 pa |
-| Lance-roquettes (*Rocket Launcher*) | 30" | 1 | -1 | D6+1 | - | Explosion (*Blast*), Lourd (*Heavy*), Incident de tir (*Misfire*), Usage unique (*One-use*), Rare 0-1, À deux mains (*Two-handed*) | 75 pa |
-| Fronde (*Sling*) | 16" | 1 | - | 1 | D3 | - | 12 pa |
-| Étoiles de jet (*Throwing Stars*) | 8" | 1 | - | 1 | D3 | Poison | 10 pa |
+| Lance-éclairs (*Arc-Lightning Gun*) | 18" | 6 | - | 1 | 1D3 | Arcanique (*Arcane*), Lourd (*Heavy*), Incident de tir (*Misfire*), Rare 0-1, À deux mains (*Two-handed*), Salve (*Volley*) | 90 pa |
+| Pistolet à poudre noire (*Blackpowder Pistol*) | 12" | 1 | -1 | 2 | 1D6+1 | Incident de tir (*Misfire*), Rechargement (*Reload*) | 18 pa |
+| Bonbonne à flammes (*Flame-Canister*) | Flamme (*Flame*) | 1 | - | 1D3+1 | - | Flamme (*Flame*), Usage unique (*One-use*), Rare 0-2, Effroi (*Scare*) | 50 pa |
+| Gatling lourde (*Heavy Gatling Gun*) | 16" | 3 | -1 | 2 | 1D6+1 | Lourd (*Heavy*), Incident de tir (*Misfire*), Rare 0-1, À deux mains (*Two-handed*), Salve (*Volley*) | 110 pa |
+| Fusil long (*Long Rifle*) | 30" | 1 | -2 | 2 | 1D6+2 | Lourd (*Heavy*), Incident de tir (*Misfire*), À deux mains (*Two-handed*) | 70 pa |
+| Orbes explosifs (*Orb Bombs*) | 8" | 1 | - | 1D3+1 | - | Explosion (*Blast*), Usage unique (*One-use*), Rare 0-5 | 32 pa |
+| Lance-orbes (*Orb Launcher*) | 20" | 1 | - | 1D3+1 | - | Explosion (*Blast*), Incident de tir (*Misfire*), Rare 0-1, Rechargement (*Reload*), À deux mains (*Two-handed*) | 100 pa |
+| Pistolet à répétition (*Repeater Pistol*) | 12" | 1 | -1 | 2 | 1D6+1 | Incident de tir (*Misfire*) | 30 pa |
+| Lance-roquettes (*Rocket Launcher*) | 30" | 1 | -1 | 1D6+1 | - | Explosion (*Blast*), Lourd (*Heavy*), Incident de tir (*Misfire*), Usage unique (*One-use*), Rare 0-1, À deux mains (*Two-handed*) | 75 pa |
+| Fronde (*Sling*) | 16" | 1 | - | 1 | 1D3 | - | 12 pa |
+| Étoiles de jet (*Throwing Stars*) | 8" | 1 | - | 1 | 1D3 | Poison | 10 pa |
 
 **Rappels des traits d'armes (*Weapon Trait Reminders*)**
 
@@ -401,7 +401,7 @@ Voir les règles complètes aux pages xx-xx.
 | Trait | Rappel |
 |---|---|
 | Arcanique (*Arcane*) | Touches critiques sur 5+ |
-| Explosion (*Blast*) | Gabarit d'explosion. En cas d'échec, dévie de D6x2" |
+| Explosion (*Blast*) | Gabarit d'explosion. En cas d'échec, dévie de 1D6x2" |
 | Flamme (*Flame*) | Gabarit de flamme. Touche automatique |
 | Lourd (*Heavy*) | Mouvement ou Attaque |
 | Incident de tir (*Misfire*) | Sur un 1 naturel |
@@ -409,7 +409,7 @@ Voir les règles complètes aux pages xx-xx.
 | Poison | Les touches critiques empoisonnent. Subit 1 dégât à chaque activation. Prend fin si soigné ou s'il reste 1 point de vie |
 | Rare | Limité au nombre indiqué |
 | Rechargement (*Reload*) | Renoncer à un Mouvement ou une Action pour recharger |
-| Effroi (*Scare*) | Les combattants non engagés réussissent un test de Volonté ou dévient de D6" |
+| Effroi (*Scare*) | Les combattants non engagés réussissent un test de Volonté ou dévient de 1D6" |
 | À deux mains (*Two-handed*) | 1 par combattant. Pas d'attaque de main secondaire |
 | Salve (*Volley*) | Plusieurs cibles à 3" ou moins |
 
@@ -447,7 +447,7 @@ Quand la bombe explose, le gabarit d'explosion (*blast template*) est centré su
 
 | Perforation | Dégâts |
 |---|---|
-| -2 | D3 |
+| -2 | 1D3 |
 
 Si le Giant Rat est mis hors de combat (*taken down*) alors que la bombe n'a pas encore explosé, lancez un dé comme ci-dessus pour voir si elle explose ou non.
 
@@ -527,7 +527,7 @@ Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), p
 
 ## Domaines de magie des Verminkin (*Verminkin Spell Lores*)
 
-## Domaine des Tunnels profonds (*Lore of the Under-Tunnels*) - D6
+## Domaine des Tunnels profonds (*Lore of the Under-Tunnels*) - 1D6
 
 ### 1 - Bond d'ombre (*Shadow Leap*)
 
@@ -561,7 +561,7 @@ Le combattant ennemi (*enemy fighter*) visible le plus proche à 12" ou moins es
 
 | Perforation | Dégâts |
 |---|---|
-| -1 | D3 |
+| -1 | 1D3 |
 
 Ensuite, choisissez comme nouvelle cible (*target*) un autre combattant ennemi (*enemy fighter*) à 3" ou moins de la cible (*target*) précédente et visible pour elle. Il est touché (*hit*) par la même attaque (*attack*).
 
@@ -573,7 +573,7 @@ Sort mineur (*Cantrip Spell*)
 
 **Valeur de Lancement (*Casting Value*) [8+]**
 
-Placez le gabarit d'explosion (*blast template*) centré sur le sol du champ de bataille (*battlefield floor*) à 12" ou moins du lanceur (*caster*). Faites ensuite dévier (*scatter*) le gabarit d'explosion (*blast template*) de D6". Vous pouvez choisir D3 combattants alliés (*friendly fighter*) en Réserve (*Reserve*) pour les placer sur le sol du champ de bataille (*battlefield floor*), dans le gabarit et non engagés au corps à corps (*engaged in melee*).
+Placez le gabarit d'explosion (*blast template*) centré sur le sol du champ de bataille (*battlefield floor*) à 12" ou moins du lanceur (*caster*). Faites ensuite dévier (*scatter*) le gabarit d'explosion (*blast template*) de 1D6". Vous pouvez choisir 1D3 combattants alliés (*friendly fighter*) en Réserve (*Reserve*) pour les placer sur le sol du champ de bataille (*battlefield floor*), dans le gabarit et non engagés au corps à corps (*engaged in melee*).
 
 **Lancement critique (*Critical Cast*) [12+] :** augmentez la portée (*range*) de 12" à 15".
 
@@ -593,19 +593,19 @@ Sort d'Attaque (*Attack Spell*)
 
 **Valeur de Lancement (*Casting Value*) [9+]**
 
-Placez le gabarit d'explosion (*blast template*) centré sur un point visible à 15" ou moins du lanceur (*caster*) ; il dévie (*scatter*) ensuite de D6".
+Placez le gabarit d'explosion (*blast template*) centré sur un point visible à 15" ou moins du lanceur (*caster*) ; il dévie (*scatter*) ensuite de 1D6".
 
 Chaque combattant (*fighter*) situé dans sa zone est touché (*hit*) par l'attaque (*attack*) suivante :
 
 | Perforation | Dégâts |
 |---|---|
-| -1 | D3 |
+| -1 | 1D3 |
 
-Ensuite, le gabarit d'explosion (*blast template*) dévie (*scatter*) de nouveau de D6", et chaque combattant (*fighter*) situé dans sa zone est ciblé (*target*) et touché (*hit*) par l'attaque (*attack*) ci-dessus. Un même combattant (*fighter*) peut être touché (*hit*) par une attaque (*attack*) les deux fois.
+Ensuite, le gabarit d'explosion (*blast template*) dévie (*scatter*) de nouveau de 1D6", et chaque combattant (*fighter*) situé dans sa zone est ciblé (*target*) et touché (*hit*) par l'attaque (*attack*) ci-dessus. Un même combattant (*fighter*) peut être touché (*hit*) par une attaque (*attack*) les deux fois.
 
 **Lancement critique (*Critical Cast*) [12+] :** quand le gabarit d'explosion (*blast template*) est placé pour la première fois, il ne dévie (*scatter*) pas.
 
-## Domaine des Véroles (*Lore of Poxes*) - D6
+## Domaine des Véroles (*Lore of Poxes*) - 1D6
 
 ### 1 - Gerbe de vomi (*Spray of Vomit*)
 
@@ -619,7 +619,7 @@ Placez le gabarit de flamme (*flame template*) à partir du lanceur (*caster*). 
 |---|---|
 | -1 | 1 |
 
-**Lancement critique (*Critical Cast*) [10+] :** la valeur de Dégâts (*Damage*) est de D3 à la place de 1.
+**Lancement critique (*Critical Cast*) [10+] :** la valeur de Dégâts (*Damage*) est de 1D3 à la place de 1.
 
 ### 2 - Lames fétides (*Fetid Blades*)
 
@@ -676,13 +676,13 @@ Sort d'Attaque (*Attack Spell*)
 
 **Valeur de Lancement (*Casting Value*) [8+]**
 
-Placez le gabarit d'explosion (*blast template*) centré sur un point visible à 12" ou moins du lanceur (*caster*) ; il dévie (*scatter*) ensuite de D6".
+Placez le gabarit d'explosion (*blast template*) centré sur un point visible à 12" ou moins du lanceur (*caster*) ; il dévie (*scatter*) ensuite de 1D6".
 
 Chaque combattant (*fighter*) situé dans sa zone est touché (*hit*) par l'attaque (*attack*) suivante :
 
 | Perforation | Dégâts |
 |---|---|
-| - | D3 |
+| - | 1D3 |
 
 Chaque combattant (*fighter*) touché (*hit*) par le sort (*spell*) devient empoisonné (*poisoned*), voir le trait d'arme (*weapon trait*) Poison.
 
@@ -726,7 +726,7 @@ N'importe quel combattant (*fighter*) Verminkin
 
 ### Impétueux (*Impetuous*)
 
-La première fois que ce combattant (*fighter*) effectue un Mouvement (*Move*) au cours de la bataille, il peut se déplacer (*move*) de D6" supplémentaires.
+La première fois que ce combattant (*fighter*) effectue un Mouvement (*Move*) au cours de la bataille, il peut se déplacer (*move*) de 1D6" supplémentaires.
 
 ### Grimpeur de murs (*Wall Scrambler*)
 
@@ -764,7 +764,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie Verminkin (*Verminkin Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
@@ -782,7 +782,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie Verminkin (*Verminkin Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
@@ -801,7 +801,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie Verminkin (*Verminkin Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
@@ -819,14 +819,14 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*), de la Liste des Champions (*Champion List*) et de la Liste des Sparkseers (*Sparkseer List*) de l'Armurerie Verminkin (*Verminkin Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
 - **Savoir-faire de bricoleur (*Tinkerer's Know-how*) :** quand ce combattant (*fighter*) est recruté, choisissez 1 compétence (*skill*) pour lui.
-- **Ingénierie folle (*Mad Engineering*) :** ce combattant (*fighter*) commence la bataille avec **D3 points d'ingénierie** (*engineering points*). Une fois par activation, si ce combattant (*fighter*) n'est pas engagé au corps à corps (*engaged in melee*), il peut dépenser un de ses points d'ingénierie (*engineering points*) pour effectuer l'action bonus (*bonus action*) suivante :
+- **Ingénierie folle (*Mad Engineering*) :** ce combattant (*fighter*) commence la bataille avec **1D3 points d'ingénierie** (*engineering points*). Une fois par activation, si ce combattant (*fighter*) n'est pas engagé au corps à corps (*engaged in melee*), il peut dépenser un de ses points d'ingénierie (*engineering points*) pour effectuer l'action bonus (*bonus action*) suivante :
 - **Ingénierie (*Engineer*) [Action bonus (*Bonus Action*)] :** choisissez comme cible (*target*) un combattant allié (*friendly fighter*) à 1" ou moins de ce combattant (*fighter*) et non engagé au corps à corps (*engaged in melee*), puis choisissez l'une des options suivantes :
-  - Rafistoler (*Patch-up*) : si la cible (*target*) est un Engin (*Contraption*), elle est soignée (*heal*) de D3 points de vie (*life point*).
+  - Rafistoler (*Patch-up*) : si la cible (*target*) est un Engin (*Contraption*), elle est soignée (*heal*) de 1D3 points de vie (*life point*).
   - Trafiquer (*Soup-up*) : choisissez 1 des armes à distance (*ranged weapon*) de la cible (*target*) : elle est trafiquée (*souped-up*) jusqu'à la fin du round. Tant qu'une arme est trafiquée (*souped-up*), augmentez de 1 sa valeur de Perforation (*Rend*). Cependant, si elle subit un incident de tir (*misfire*), traitez le résultat comme un retour de flamme (*backfire*), sans faire de jet sur la table.
 
 > "Encore un réglage... juste un..."
@@ -843,7 +843,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie Verminkin (*Verminkin Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -861,7 +861,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie Verminkin (*Verminkin Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -879,7 +879,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie Verminkin (*Verminkin Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -897,7 +897,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie Verminkin (*Verminkin Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -915,13 +915,13 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*), de la Liste des Champions (*Champion List*) et de la Liste des Sparkseers (*Sparkseer List*) de l'Armurerie Verminkin (*Verminkin Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
-- **Ingénierie folle (*Mad Engineering*) :** ce combattant (*fighter*) commence la bataille avec **D3 points d'ingénierie** (*engineering points*). Une fois par activation, si ce combattant (*fighter*) n'est pas engagé au corps à corps (*engaged in melee*), il peut dépenser un de ses points d'ingénierie (*engineering points*) pour effectuer l'action bonus (*bonus action*) suivante :
+- **Ingénierie folle (*Mad Engineering*) :** ce combattant (*fighter*) commence la bataille avec **1D3 points d'ingénierie** (*engineering points*). Une fois par activation, si ce combattant (*fighter*) n'est pas engagé au corps à corps (*engaged in melee*), il peut dépenser un de ses points d'ingénierie (*engineering points*) pour effectuer l'action bonus (*bonus action*) suivante :
 - **Ingénierie (*Engineer*) [Action bonus (*Bonus Action*)] :** choisissez comme cible (*target*) un combattant allié (*friendly fighter*) à 1" ou moins de ce combattant (*fighter*) et non engagé au corps à corps (*engaged in melee*), puis choisissez l'une des options suivantes :
-  - Rafistoler (*Patch-up*) : si la cible (*target*) est un Engin (*Contraption*), elle est soignée (*heal*) de D3 points de vie (*life point*).
+  - Rafistoler (*Patch-up*) : si la cible (*target*) est un Engin (*Contraption*), elle est soignée (*heal*) de 1D3 points de vie (*life point*).
   - Trafiquer (*Soup-up*) : choisissez 1 des armes à distance (*ranged weapon*) de la cible (*target*) : elle est trafiquée (*souped-up*) jusqu'à la fin du round. Tant qu'une arme est trafiquée (*souped-up*), augmentez de 1 sa valeur de Perforation (*Rend*). Cependant, si elle subit un incident de tir (*misfire*), traitez le résultat comme un retour de flamme (*backfire*), sans faire de jet sur la table.
 
 > "Hmmm... cette vis est sans doute inutile..."
@@ -938,7 +938,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) de l'Armurerie Verminkin (*Verminkin Armoury*).
 
-**Expérience de départ :** D6.
+**Expérience de départ :** 1D6.
 
 > "Nous surgissons d'en bas !"
 
@@ -954,11 +954,11 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 **Équipement :** ce combattant (*fighter*) est équipé de l'arme de corps à corps (*melee weapon*) Griffe démesurée (*Oversized Claw*). De plus, il peut être équipé de l'équipement (*wargear*) de la Liste des Rat-Mutants (*Rat-Mutant List*) de l'Armurerie Verminkin (*Verminkin Armoury*).
 
-**Expérience de départ :** 20+D6.
+**Expérience de départ :** 20+1D6.
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
-| Griffe démesurée (*Oversized Claw*) | 3 | - | 2 | D3+1 | Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*) |
+| Griffe démesurée (*Oversized Claw*) | 3 | - | 2 | 1D3+1 | Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*) |
 
 > "Tête... fait mal..."
 
@@ -972,11 +972,11 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 **Équipement :** ce combattant (*fighter*) est équipé de l'arme de corps à corps (*melee weapon*) Carcasse écrasante (*Crushing Bulk*). De plus, il peut être équipé de l'équipement (*wargear*) de la Liste des Engins (*Contraption List*) de l'Armurerie Verminkin (*Verminkin Armoury*).
 
-**Expérience de départ :** 20+D6.
+**Expérience de départ :** 20+1D6.
 
 **Règles spéciales :**
 
-- **Mouvement imprévisible (*Unpredictable Movement*) :** ce combattant (*fighter*) a une valeur de Mouvement (*Move*) de 2D6". Chaque fois qu'il effectue un Mouvement (*Move*), lancez les dés pour déterminer sa valeur de Mouvement (*Move*) pour ce Mouvement (*Move*). Par exemple, si ce combattant (*fighter*) effectue une Course (*Run Move*), lancez d'abord 2D6" pour déterminer sa valeur de Mouvement (*Move*), puis lancez un D6 supplémentaire et ajoutez-le à la valeur de Mouvement (*Move*), normalement.
+- **Mouvement imprévisible (*Unpredictable Movement*) :** ce combattant (*fighter*) a une valeur de Mouvement (*Move*) de 2D6". Chaque fois qu'il effectue un Mouvement (*Move*), lancez les dés pour déterminer sa valeur de Mouvement (*Move*) pour ce Mouvement (*Move*). Par exemple, si ce combattant (*fighter*) effectue une Course (*Run Move*), lancez d'abord 2D6" pour déterminer sa valeur de Mouvement (*Move*), puis lancez un 1D6 supplémentaire et ajoutez-le à la valeur de Mouvement (*Move*), normalement.
 - **Splatch ! (*Splat!*) :** après que ce combattant (*fighter*) a terminé une Charge (*Charge Move*), choisissez 1 combattant ennemi (*enemy fighter*) avec lequel il est engagé (*engaged*). Le combattant (*fighter*) choisi est touché (*hit*) 3 fois par l'attaque (*attack*) suivante :
 
 | Perforation | Dégâts |
@@ -987,7 +987,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
-| Carcasse écrasante (*Crushing Bulk*) | 3 | -1 | 2 | D3+1 | Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*) |
+| Carcasse écrasante (*Crushing Bulk*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*) |
 
 > "Scriiiiiiiiiiiiii- !"
 
@@ -1059,7 +1059,7 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 85 : la ligne "Verminkin Leaders and Champions only" est rendue par "Chefs et Champions Verminkin uniquement" ; p. 86, "Any Verminkin fighter" par "N'importe quel combattant Verminkin".
 - p. 86 : Rôdeur des ombres : la VO écrit la fraction avec un seul caractère : écrit 1/2".
 - p. 87 : parchemin du Nightfang Assassin : Tueur accompli est placé avant Un coup, un mort. "its melee attack rolls" est rendu par "ses jets d'attaque des attaques au corps à corps".
-- p. 88 et 90 : Ingénierie : la VO écrit "it's Rend value" et dit "increase" et non "improve" : "augmentez de 1". Pour la Perforation, cela revient à passer de -1 à -2. "heals d3 life" : "soignée de D3 points de vie". Les guillemets de 'backfire' ne sont pas repris. Les deux options sont présentées en sous-liste.
+- p. 88 et 90 : Ingénierie : la VO écrit "it's Rend value" et dit "increase" et non "improve" : "augmentez de 1". Pour la Perforation, cela revient à passer de -1 à -2. "heals 1D3 life" : "soignée de 1D3 points de vie". Les guillemets de 'backfire' ne sont pas repris. Les deux options sont présentées en sous-liste.
 - p. 89 : "manling" est rendu par "petits hommes".
 - p. 91 : le Verminkin Warrior n'a pas de règle spéciale : la rubrique n'apparaît pas.
 - p. 91 : la v1.03 retire la règle Force incroyable (*Incredible Strength*) du Rat-Mutant, qui n'a plus de règle spéciale.

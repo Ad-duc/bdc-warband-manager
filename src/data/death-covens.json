@@ -91,8 +91,8 @@
           "name": { "en": "Banquet of Blood", "fr": "Banquet de sang" },
           "tag": null,
           "text": {
-            "en": "In step 3 of the Aftermath sequence pick up to 3 friendly Vampyre fighters to sit at the table. Each of those fighters earns d6 bonus experience. If you won the battle, each of those fighters earns 2d6 bonus experience instead.",
-            "fr": "À l'étape 3 de la séquence d'après-bataille, choisissez jusqu'à 3 combattants alliés Vampires qui prendront place à table. Chacun de ces combattants gagne D6 d'expérience bonus. Si vous avez gagné la bataille, chacun de ces combattants gagne, à la place, 2D6 d'expérience bonus."
+            "en": "In step 3 of the Aftermath sequence pick up to 3 friendly Vampyre fighters to sit at the table. Each of those fighters earns 1D6 bonus experience. If you won the battle, each of those fighters earns 2D6 bonus experience instead.",
+            "fr": "À l'étape 3 de la séquence d'après-bataille, choisissez jusqu'à 3 combattants alliés Vampires qui prendront place à table. Chacun de ces combattants gagne 1D6 d'expérience bonus. Si vous avez gagné la bataille, chacun de ces combattants gagne, à la place, 2D6 d'expérience bonus."
           }
         }
       ],
@@ -175,8 +175,8 @@
           "name": { "en": "Immortal Slumber", "fr": "Sommeil immortel" },
           "tag": null,
           "text": {
-            "en": "If your Leader is Laid to Rest (see opposite), they are not removed from your warband. Instead they miss the next d3 battles as they slumber. Pick a Champion in your warband to be the Leader in their absence. That fighter temporarily gains the Leader keyword and loses the Champion keyword until the Leader returns.",
-            "fr": "Si votre Chef obtient le résultat Repos éternel, voir ci-dessous, il n'est pas retiré de votre bande. À la place, il manque les D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande pour être le Chef en son absence. Le combattant choisi gagne temporairement le mot-clé Chef et perd le mot-clé Champion jusqu'au retour du Chef."
+            "en": "If your Leader is Laid to Rest (see opposite), they are not removed from your warband. Instead they miss the next 1D3 battles as they slumber. Pick a Champion in your warband to be the Leader in their absence. That fighter temporarily gains the Leader keyword and loses the Champion keyword until the Leader returns.",
+            "fr": "Si votre Chef obtient le résultat Repos éternel, voir ci-dessous, il n'est pas retiré de votre bande. À la place, il manque les 1D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande pour être le Chef en son absence. Le combattant choisi gagne temporairement le mot-clé Chef et perd le mot-clé Champion jusqu'au retour du Chef."
           }
         }
       ],
@@ -200,8 +200,8 @@
       "name": { "en": "Skeletons & Thralls", "fr": "Squelettes et Asservis" },
       "tag": null,
       "text": {
-        "en": "Fighters with the Thrall keyword do not gain experience. They cannot advance levels.\nIn addition Skeletons and Thralls do not use the standard injury table (pg xx). Instead they use the following Skeleton & Thrall Injury Table (d6):\n1 - Laid to Rest: The undead creature is undone. Treat this result as killed (pg xx).\n2-6 - Unscathed: The fighter suffers no lasting effects.",
-        "fr": "Les combattants qui ont le mot-clé Asservi ne gagnent pas d'expérience. Ils ne peuvent pas gagner de niveau.\nDe plus, les Squelettes et les Asservis n'utilisent pas la table des blessures standard (p. xx). À la place, ils utilisent la Table des blessures des Squelettes et des Asservis suivante (D6) :\n1 - Repos éternel : la créature mort-vivante est défaite. Traitez ce résultat comme tué (p. xx).\n2-6 - Indemne : le combattant ne subit aucun effet durable."
+        "en": "Fighters with the Thrall keyword do not gain experience. They cannot advance levels.\nIn addition Skeletons and Thralls do not use the standard injury table (pg xx). Instead they use the following Skeleton & Thrall Injury Table (1D6):\n1 - Laid to Rest: The undead creature is undone. Treat this result as killed (pg xx).\n2-6 - Unscathed: The fighter suffers no lasting effects.",
+        "fr": "Les combattants qui ont le mot-clé Asservi ne gagnent pas d'expérience. Ils ne peuvent pas gagner de niveau.\nDe plus, les Squelettes et les Asservis n'utilisent pas la table des blessures standard (p. xx). À la place, ils utilisent la Table des blessures des Squelettes et des Asservis suivante (1D6) :\n1 - Repos éternel : la créature mort-vivante est défaite. Traitez ce résultat comme tué (p. xx).\n2-6 - Indemne : le combattant ne subit aucun effet durable."
       }
     }
   ],
@@ -1636,8 +1636,8 @@
           "id": "supernatural-healing",
           "name": { "en": "Supernatural Healing", "fr": "Guérison surnaturelle" },
           "text": {
-            "en": "This fighter cannot suffer permanent injuries. If they suffer a lasting injury it is always temporary.\nIn addition, if this fighter is killed, you can immediately make a Willpower test for them. If passed, they are not killed but must miss the next d3 battles as they slumber. Pick a Champion in your warband to be the Leader in their absence. That fighter temporarily gains the Leader keyword and loses the Champion keyword until the Leader returns.",
-            "fr": "Ce combattant ne peut pas subir de blessures permanentes. S'il subit une blessure durable, elle est toujours temporaire.\nDe plus, si ce combattant est tué, vous pouvez immédiatement effectuer un test de Volonté pour lui. S'il est réussi, il n'est pas tué, mais il doit manquer les D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande pour être le Chef en son absence. Le combattant choisi gagne temporairement le mot-clé Chef et perd le mot-clé Champion jusqu'au retour du Chef."
+            "en": "This fighter cannot suffer permanent injuries. If they suffer a lasting injury it is always temporary.\nIn addition, if this fighter is killed, you can immediately make a Willpower test for them. If passed, they are not killed but must miss the next 1D3 battles as they slumber. Pick a Champion in your warband to be the Leader in their absence. That fighter temporarily gains the Leader keyword and loses the Champion keyword until the Leader returns.",
+            "fr": "Ce combattant ne peut pas subir de blessures permanentes. S'il subit une blessure durable, elle est toujours temporaire.\nDe plus, si ce combattant est tué, vous pouvez immédiatement effectuer un test de Volonté pour lui. S'il est réussi, il n'est pas tué, mais il doit manquer les 1D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande pour être le Chef en son absence. Le combattant choisi gagne temporairement le mot-clé Chef et perd le mot-clé Champion jusqu'au retour du Chef."
           },
           "sourceRef": { "page": 103, "md": "08_death-covens.md > Guérison surnaturelle" }
         },
@@ -1690,8 +1690,8 @@
           "id": "rise-again",
           "name": { "en": "Rise Again", "fr": "Se relever" },
           "text": {
-            "en": "When this fighter is taken down for the first time in battle, mark its location with a token. At the start of each subsequent round you can roll a dice, on a 6 the fighter returns.\nIf the fighter returns, set them up on the battlefield as close to the marked location as possible. They heal d3 life points. A fighter can only return once per battle in this manner.",
-            "fr": "Quand ce combattant est mis hors de combat pour la première fois au cours de la bataille, repérez son emplacement avec un pion. Au début de chaque round suivant, vous pouvez lancer un dé : sur 6, le combattant revient.\nSi le combattant revient, placez-le sur le champ de bataille aussi près que possible de l'emplacement repéré. Il est soigné de D3 points de vie. Un combattant ne peut revenir de cette manière qu'une fois par bataille."
+            "en": "When this fighter is taken down for the first time in battle, mark its location with a token. At the start of each subsequent round you can roll a dice, on a 6 the fighter returns.\nIf the fighter returns, set them up on the battlefield as close to the marked location as possible. They heal 1D3 life points. A fighter can only return once per battle in this manner.",
+            "fr": "Quand ce combattant est mis hors de combat pour la première fois au cours de la bataille, repérez son emplacement avec un pion. Au début de chaque round suivant, vous pouvez lancer un dé : sur 6, le combattant revient.\nSi le combattant revient, placez-le sur le champ de bataille aussi près que possible de l'emplacement repéré. Il est soigné de 1D3 points de vie. Un combattant ne peut revenir de cette manière qu'une fois par bataille."
           },
           "sourceRef": { "page": 104, "md": "08_death-covens.md > Se relever" }
         },
@@ -1717,8 +1717,8 @@
           "id": "drag-down-into-the-earth",
           "name": { "en": "Drag Down Into the Earth", "fr": "Entraîner sous terre" },
           "text": {
-            "en": "When this fighter is taken down while engaged in melee, pick 1 fighter it is engaged with, they suffer d3 damage.",
-            "fr": "Quand ce combattant est mis hors de combat alors qu'il est engagé au corps à corps, choisissez 1 combattant avec lequel il est engagé : le combattant choisi subit D3 dégâts."
+            "en": "When this fighter is taken down while engaged in melee, pick 1 fighter it is engaged with, they suffer 1D3 damage.",
+            "fr": "Quand ce combattant est mis hors de combat alors qu'il est engagé au corps à corps, choisissez 1 combattant avec lequel il est engagé : le combattant choisi subit 1D3 dégâts."
           },
           "sourceRef": { "page": 104, "md": "08_death-covens.md > Entraîner sous terre" }
         },
@@ -1751,12 +1751,12 @@
           "castingValue": 8,
           "criticalCastValue": 12,
           "text": {
-            "en": "Place d3 witchfire tokens by the caster, to a maximum of 3. Once per activation, the caster can spend a witchfire token to make the following bonus action:\nWitchfire Attack [Bonus Action]: The closest visible enemy fighter within 12\" is targeted and hit with the following attack:",
-            "fr": "Placez D3 pions Feu sorcier à côté du lanceur, jusqu'à un maximum de 3. Une fois par activation, le lanceur peut dépenser un pion Feu sorcier pour effectuer l'action bonus suivante :\nAttaque de feu sorcier [Action bonus] : le combattant ennemi visible le plus proche à 12\" ou moins est ciblé et touché par l'attaque suivante :"
+            "en": "Place 1D3 witchfire tokens by the caster, to a maximum of 3. Once per activation, the caster can spend a witchfire token to make the following bonus action:\nWitchfire Attack [Bonus Action]: The closest visible enemy fighter within 12\" is targeted and hit with the following attack:",
+            "fr": "Placez 1D3 pions Feu sorcier à côté du lanceur, jusqu'à un maximum de 3. Une fois par activation, le lanceur peut dépenser un pion Feu sorcier pour effectuer l'action bonus suivante :\nAttaque de feu sorcier [Action bonus] : le combattant ennemi visible le plus proche à 12\" ou moins est ciblé et touché par l'attaque suivante :"
           },
           "criticalText": {
-            "en": "Place 3 witchfire tokens by the caster (to a maximum of 3) instead of d3.",
-            "fr": "Placez 3 pions Feu sorcier à côté du lanceur, jusqu'à un maximum de 3, à la place de D3."
+            "en": "Place 3 witchfire tokens by the caster (to a maximum of 3) instead of 1D3.",
+            "fr": "Placez 3 pions Feu sorcier à côté du lanceur, jusqu'à un maximum de 3, à la place de 1D3."
           },
           "attack": { "rend": 0, "damage": "d3" },
           "sourceRef": { "page": 101, "md": "08_death-covens.md > 1 - Feu sorcier" }
@@ -1823,8 +1823,8 @@
           "castingValue": 9,
           "criticalCastValue": 12,
           "text": {
-            "en": "Place the blast template centred on a point within 12\" of the caster, it then scatters d6\".\nEach fighter in the template is targeted and hit with the following attack:",
-            "fr": "Placez le gabarit d'explosion centré sur un point à 12\" ou moins du lanceur ; il dévie ensuite de D6\".\nChaque combattant situé dans le gabarit est ciblé et touché par l'attaque suivante :"
+            "en": "Place the blast template centred on a point within 12\" of the caster, it then scatters 1D6\".\nEach fighter in the template is targeted and hit with the following attack:",
+            "fr": "Placez le gabarit d'explosion centré sur un point à 12\" ou moins du lanceur ; il dévie ensuite de 1D6\".\nChaque combattant situé dans le gabarit est ciblé et touché par l'attaque suivante :"
           },
           "criticalText": { "en": "It does not scatter.", "fr": "Il ne dévie pas." },
           "attack": { "rend": -1, "damage": "d3+1" },

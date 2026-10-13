@@ -33,6 +33,10 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
   lecteur des règles, langue) sont regroupés dans un seul menu et le titre
   tient sur une ligne ; sur tablette, les boutons d'outils n'affichent que leur
   icône, les libellés reviennent sur grand écran.
+- Chaque dé indique son nombre de dés (1D6, 1D3+1, jamais D6 seul) dans
+  l'application, les feuilles imprimées, le lecteur des règles, les textes
+  des données et la traduction française ; les tables D66 gardent leur nom.
+  `npm run fix:dice` applique la règle et `npm run check:data` la vérifie.
 
 ## [1.0.0] - 2026-10-12
 

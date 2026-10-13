@@ -80,7 +80,7 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), vous commencez 
 
 **Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
 
-**Entraînement martial (*Martial Training*) :** à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir jusqu'à 3 combattants alliés (*friendly fighter*) Chevaliers (*Knight*) pour prendre part à l'entraînement martial (*martial training*). Chacun de ces combattants (*fighter*) gagne D6 d'expérience bonus (*bonus experience*).
+**Entraînement martial (*Martial Training*) :** à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir jusqu'à 3 combattants alliés (*friendly fighter*) Chevaliers (*Knight*) pour prendre part à l'entraînement martial (*martial training*). Chacun de ces combattants (*fighter*) gagne 1D6 d'expérience bonus (*bonus experience*).
 
 **Fouiller la Cité (*Search the City*) :** à l'étape 5 de la séquence d'après-bataille (*aftermath sequence*), si vous avez gagné la bataille, vous gagnez 1 relance (*re-roll*) supplémentaire quand vous fouillez la Cité (*search the City*).
 
@@ -298,29 +298,29 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement une épithèt
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|
-| Bâton arcanique (*Arcane Staff*) | 2 | - | 1 | D3 | Arcanique (*Arcane*), Main secondaire (*Off-hand*) | 10 pa |
-| Hache (*Axe*) | 3 | -1 | 1 | D3 | Main secondaire (*Off-hand*) | 16 pa |
-| Gourdin/Masse/Marteau (*Club/Mace/Hammer*) | 3 | - | 1 | D3 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 14 pa |
-| Dague (*Dagger*) | 3 | - | 1 | D3 | Main secondaire (*Off-hand*) | 10 pa |
-| Lame de pourriture démoniaque (*Demonic Rot Blade*) | 3 | -1 | 1 | D3 | Arcanique (*Arcane*), Garde (*Guard*), Poison | 45 pa |
-| Gueule de pourriture démoniaque (*Demonic Rot Maw*) | 3 | -1 | 2 | D3+1 | Arcanique (*Arcane*), Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*), Poison | - |
-| Frappe de pourriture démoniaque (*Demonic Rot Strike*) | 3 | -1 | 1 | D3 | Arcanique (*Arcane*), Arme naturelle (*Natural Weapon*), Poison | - |
-| Arme ensorcelée (*Ensorcelled Weapon*) | 3 | -1 | 1 | D3 | Arcanique (*Arcane*) | 26 pa |
-| Fléau (*Flail*) | 3 | - | 1 | D3 | Main secondaire (*Off-hand*), Contournement (*Wrap*) | 14 pa |
-| Grande lame de pourriture démoniaque (*Great Demonic Rot Blade*) | 3 | -2 | 3 | D3+2 | Arcanique (*Arcane*), Contondant (*Bludgeon*), Poison, À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 70 pa |
-| Grand gourdin (*Great Club*) | 3 | -1 | 2 | D3+1 | Contondant (*Bludgeon*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 38 pa |
-| Hallebarde (*Halberd*) | 3 | -1 | 1 | D3+1 | Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 34 pa |
-| Hache lourde (*Heavy Axe*) | 3 | -2 | 2 | D3+1 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 40 pa |
+| Bâton arcanique (*Arcane Staff*) | 2 | - | 1 | 1D3 | Arcanique (*Arcane*), Main secondaire (*Off-hand*) | 10 pa |
+| Hache (*Axe*) | 3 | -1 | 1 | 1D3 | Main secondaire (*Off-hand*) | 16 pa |
+| Gourdin/Masse/Marteau (*Club/Mace/Hammer*) | 3 | - | 1 | 1D3 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 14 pa |
+| Dague (*Dagger*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*) | 10 pa |
+| Lame de pourriture démoniaque (*Demonic Rot Blade*) | 3 | -1 | 1 | 1D3 | Arcanique (*Arcane*), Garde (*Guard*), Poison | 45 pa |
+| Gueule de pourriture démoniaque (*Demonic Rot Maw*) | 3 | -1 | 2 | 1D3+1 | Arcanique (*Arcane*), Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*), Poison | - |
+| Frappe de pourriture démoniaque (*Demonic Rot Strike*) | 3 | -1 | 1 | 1D3 | Arcanique (*Arcane*), Arme naturelle (*Natural Weapon*), Poison | - |
+| Arme ensorcelée (*Ensorcelled Weapon*) | 3 | -1 | 1 | 1D3 | Arcanique (*Arcane*) | 26 pa |
+| Fléau (*Flail*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*), Contournement (*Wrap*) | 14 pa |
+| Grande lame de pourriture démoniaque (*Great Demonic Rot Blade*) | 3 | -2 | 3 | 1D3+2 | Arcanique (*Arcane*), Contondant (*Bludgeon*), Poison, À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 70 pa |
+| Grand gourdin (*Great Club*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 38 pa |
+| Hallebarde (*Halberd*) | 3 | -1 | 1 | 1D3+1 | Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 34 pa |
+| Hache lourde (*Heavy Axe*) | 3 | -2 | 2 | 1D3+1 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 40 pa |
 | Trompe (*Proboscis*) | 3 | - | 1 | 1 | Arme naturelle (*Natural Weapon*), Poison | - |
-| Lance (*Spear*) | 3 | - | 1 | D3 | Contre-charge (*Brace*), À deux mains (*Two-handed*) | 16 pa |
-| Épée (*Sword*) | 3 | - | 1 | D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
+| Lance (*Spear*) | 3 | - | 1 | 1D3 | Contre-charge (*Brace*), À deux mains (*Two-handed*) | 16 pa |
+| Épée (*Sword*) | 3 | - | 1 | 1D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
 
 ## Armurerie du Cloître - Armes à distance (*Cloister Armoury - Ranged Weapons*)
 
 | Nom | Portée | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|---|
-| Fronde (*Sling*) | 16" | 1 | - | 1 | D3 | - | 14 pa |
-| Sarbacane (*Blowpipe*) | 12" | 1 | - | 1 | D3 | Poison | 16 pa |
+| Fronde (*Sling*) | 16" | 1 | - | 1 | 1D3 | - | 14 pa |
+| Sarbacane (*Blowpipe*) | 12" | 1 | - | 1 | 1D3 | Poison | 16 pa |
 
 **Rappels des traits d'armes (*Weapon Trait Reminders*)**
 
@@ -380,7 +380,7 @@ Chaque fois que ce combattant (*fighter*) effectue une attaque au corps à corps
 
 | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|
-| - | 1 | D3 | Arcanique (*Arcane*), Arme naturelle (*Natural Weapon*), Poison |
+| - | 1 | 1D3 | Arcanique (*Arcane*), Arme naturelle (*Natural Weapon*), Poison |
 
 **Note du concepteur (*Designer's Note*) :** cet objet (*item*) est conçu pour les figurines qui comportent d'autres petites créatures démoniaques sur le même socle. Le familier démoniaque (*demonic familiar*) n'est considéré comme un combattant (*fighter*) distinct pour aucune règle.
 
@@ -412,7 +412,7 @@ Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), p
 
 ## Domaines de magie du Blighted Cloister (*Blighted Cloister Spell Lores*)
 
-## Domaine des Asticots bénis (*Lore of Blessed Maggots*) - D6
+## Domaine des Asticots bénis (*Lore of Blessed Maggots*) - 1D6
 
 ### 1 - Forme boursouflée (*Swollen Form*)
 
@@ -440,7 +440,7 @@ Sort d'Attaque (*Attack Spell*)
 
 **Valeur de Lancement (*Casting Value*) [8+]**
 
-Le combattant ennemi (*enemy fighter*) visible le plus proche à 9" ou moins est ciblé (*target*) et subit D3 dégâts (*damage*). S'il n'est pas mis hors de combat (*taken down*), il doit réussir un test de Volonté (*Willpower*), sans quoi il dévie (*scatter*) de D6".
+Le combattant ennemi (*enemy fighter*) visible le plus proche à 9" ou moins est ciblé (*target*) et subit 1D3 dégâts (*damage*). S'il n'est pas mis hors de combat (*taken down*), il doit réussir un test de Volonté (*Willpower*), sans quoi il dévie (*scatter*) de 1D6".
 
 **Lancement critique (*Critical Cast*) [12+] :** augmentez la portée (*range*) à 12".
 
@@ -459,9 +459,9 @@ Sort de Soin (*Healing Spell*)
 
 **Valeur de Lancement (*Casting Value*) [7+]**
 
-Placez le gabarit d'explosion (*blast template*) centré sur un point à 12" ou moins du lanceur (*caster*) ; il dévie (*scatter*) ensuite de D6".
+Placez le gabarit d'explosion (*blast template*) centré sur un point à 12" ou moins du lanceur (*caster*) ; il dévie (*scatter*) ensuite de 1D6".
 
-Chaque combattant (*fighter*) situé dans le gabarit est ciblé (*target*) et est soigné (*heal*) de D3 points de vie (*life point*).
+Chaque combattant (*fighter*) situé dans le gabarit est ciblé (*target*) et est soigné (*heal*) de 1D3 points de vie (*life point*).
 
 **Lancement critique (*Critical Cast*) [12+] :** il ne dévie (*scatter*) pas.
 
@@ -485,11 +485,11 @@ Placez le gabarit de flamme (*flame template*) à partir du lanceur (*caster*). 
 
 | Perforation | Dégâts |
 |---|---|
-| -1 | D3 |
+| -1 | 1D3 |
 
 **Lancement critique (*Critical Cast*) [14+] :** chaque combattant (*fighter*) touché (*hit*) par l'attaque (*attack*) doit réussir un test de Volonté (*Willpower*), sans quoi il devient empoisonné (*poisoned*), voir le trait d'arme (*weapon trait*) Poison.
 
-## Domaine démoniaque de la Pourriture (*Demonic Lore of Rot*) - D6
+## Domaine démoniaque de la Pourriture (*Demonic Lore of Rot*) - 1D6
 
 ### 1 - Invoquer un Rotling (*Summon Rotling*)
 
@@ -551,7 +551,7 @@ Sort mineur (*Cantrip Spell*)
 
 Placez le gabarit d'explosion (*blast template*) centré sur un point visible sur le sol du champ de bataille (*battlefield floor*) à 9" ou moins du lanceur (*caster*). Une fosse (*pit*) s'ouvre à cet endroit. Dans un ordre choisi par le joueur qui contrôle le combattant (*commanding player*) ayant lancé le sort (*spell*), chaque combattant (*fighter*) situé dans le gabarit est retiré du champ de bataille (*battlefield*) et placé de nouveau au bord de la fosse (*pit*) par le joueur qui contrôle le combattant (*commanding player*) en question, non engagé au corps à corps (*engaged in melee*). S'il n'y a pas la place, il est placé aussi près que possible du bord de la fosse (*pit*), non engagé au corps à corps (*engaged in melee*).
 
-Après avoir été placé, le combattant (*fighter*) doit réussir un test d'Initiative, sans quoi il subit D3 dégâts (*damage*) et devient empoisonné (*poisoned*), voir le trait d'arme (*weapon trait*) Poison.
+Après avoir été placé, le combattant (*fighter*) doit réussir un test d'Initiative, sans quoi il subit 1D3 dégâts (*damage*) et devient empoisonné (*poisoned*), voir le trait d'arme (*weapon trait*) Poison.
 
 La fosse (*pit*) reste en jeu jusqu'à la fin du round. Les combattants (*fighter*) ne peuvent pas se déplacer (*move*) à travers la fosse (*pit*) tant qu'ils sont sur le sol du champ de bataille (*battlefield floor*). Tous les pions trésor (*treasure token*) situés sur la fosse (*pit*) sont détruits.
 
@@ -633,7 +633,7 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 **Équipement :** ce combattant (*fighter*) est équipé d'une Armure de plates (*Full-Plate*), comprise dans son coût de recrutement (*recruit cost*). Il peut être équipé d'équipement (*wargear*) supplémentaire de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Cloître (*Cloister Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
@@ -651,7 +651,7 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) et de la Liste d'objets des Praticiens (*Practitioner Item List*) de l'Armurerie du Cloître (*Cloister Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
@@ -671,7 +671,7 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) et de la Liste d'objets des Praticiens (*Practitioner Item List*) de l'Armurerie du Cloître (*Cloister Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -689,7 +689,7 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 **Équipement :** ce combattant (*fighter*) est équipé d'une Armure de plates (*Full-Plate*), comprise dans son coût de recrutement (*recruit cost*). Il peut être équipé d'équipement (*wargear*) supplémentaire de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Cloître (*Cloister Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -707,7 +707,7 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) et de la Liste d'objets des Praticiens (*Practitioner Item List*) de l'Armurerie du Cloître (*Cloister Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -730,7 +730,7 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 **Équipement :** ce combattant (*fighter*) est équipé d'une Lame de pourriture démoniaque (*Demonic Rot Blade*), comprise dans son coût de recrutement (*recruit cost*). Il peut être équipé d'équipement (*wargear*) supplémentaire de la Liste d'objets des Praticiens (*Practitioner Item List*) de l'Armurerie du Cloître (*Cloister Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -754,7 +754,7 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 **Équipement :** ce combattant (*fighter*) est équipé d'une Armure de plates (*Full-Plate*), comprise dans son coût de recrutement (*recruit cost*). Il peut être équipé d'équipement (*wargear*) supplémentaire de la Liste principale (*Main List*) de l'Armurerie du Cloître (*Cloister Armoury*).
 
-**Expérience de départ :** 30+D6.
+**Expérience de départ :** 30+1D6.
 
 > "Ma lame sert les Saints vivants (*Living Saints*)."
 
@@ -768,7 +768,7 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Dregs (*Dreg List*) de l'Armurerie du Cloître (*Cloister Armoury*).
 
-**Expérience de départ :** D6.
+**Expérience de départ :** 1D6.
 
 > "Les affligés hériteront de la Cité (*the City*)."
 
@@ -782,7 +782,7 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) de l'Armurerie du Cloître (*Cloister Armoury*).
 
-**Expérience de départ :** 20+D6.
+**Expérience de départ :** 20+1D6.
 
 **Règles spéciales :**
 
@@ -804,7 +804,7 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 **Équipement :** ce combattant (*fighter*) est équipé d'une Lame de pourriture démoniaque (*Demonic Rot Blade*), comprise dans son coût de recrutement (*recruit cost*). Il ne peut être équipé d'aucun autre équipement (*wargear*).
 
-**Expérience de départ :** 30+D6.
+**Expérience de départ :** 30+1D6.
 
 **Règles spéciales :**
 
@@ -838,7 +838,7 @@ Voir les règles complètes aux pages xx-xx.
 
 **Équipement :** ce combattant (*fighter*) est équipé d'une Gueule de pourriture démoniaque (*Demonic Rot Maw*), voir ci-dessous ; il ne peut être équipé d'aucun autre équipement (*wargear*).
 
-**Expérience de départ :** 30+D6.
+**Expérience de départ :** 30+1D6.
 
 **Règles spéciales :**
 
@@ -849,7 +849,7 @@ Voir les règles complètes aux pages xx-xx.
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
-| Gueule de pourriture démoniaque (*Demonic Rot Maw*) | 3 | -1 | 2 | D3+1 | Arcanique (*Arcane*), Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*), Poison |
+| Gueule de pourriture démoniaque (*Demonic Rot Maw*) | 3 | -1 | 2 | 1D3+1 | Arcanique (*Arcane*), Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*), Poison |
 
 > "Rassasiez... ma... faim..."
 
@@ -863,7 +863,7 @@ Voir les règles complètes aux pages xx-xx.
 
 **Équipement :** ce combattant (*fighter*) est équipé d'une Grande lame de pourriture démoniaque (*Great Demonic Rot Blade*), comprise dans son coût de recrutement (*recruit cost*). Il ne peut être équipé d'aucun autre équipement (*wargear*).
 
-**Expérience de départ :** 30+D6.
+**Expérience de départ :** 30+1D6.
 
 **Règles spéciales :**
 
@@ -906,7 +906,7 @@ Voir les règles complètes aux pages xx-xx.
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
-| Frappe de pourriture démoniaque (*Demonic Rot Strike*) | 3 | - | 1 | D3 | Arcanique (*Arcane*), Arme naturelle (*Natural Weapon*), Poison |
+| Frappe de pourriture démoniaque (*Demonic Rot Strike*) | 3 | - | 1 | 1D3 | Arcanique (*Arcane*), Arme naturelle (*Natural Weapon*), Poison |
 
 **Rappels des traits d'armes (*Weapon Trait Reminders*)**
 
@@ -954,7 +954,7 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 120 : Chaudron : la mention "[Action]", en gras, ouvre le texte ; "pick a spell ... to be prepared" est rendu par "ce sort devient un sort préparé". L'Armure de plates cite les armes à distance à deux mains et la Paire de pistolets, alors que cette armurerie n'en propose pas (ses deux armes à distance, la Fronde et la Sarbacane, n'ont pas le trait À deux mains). Le texte du Grimoire écrit "has made casting roll", sans article.
 - p. 121 et 122 : Forme boursouflée et Bénédiction putride (p. 121), Force démoniaque et Linceul protecteur (p. 122) : "That fighter" est rendu par "Le combattant choisi". Plusieurs lancements critiques n'ont pas de point final (Forme boursouflée, Plaies éruptives, et p. 122 Entrailles pourries, Linceul protecteur).
 - p. 121 : Bourbier noir : "Subtract 2", sans symbole de pouce ; "a non-Cloister fighter" : "un combattant non Cloister". Plaies éruptives ne précise pas "of the caster" après la distance (comme Entrailles pourries p. 122).
-- p. 121 : Pluie d'immondices est un Sort de Soin qui cible chaque combattant du gabarit, sans distinguer alliés et ennemis : traduit tel quel. "heals d3 life" : "soigné de D3 points de vie".
+- p. 121 : Pluie d'immondices est un Sort de Soin qui cible chaque combattant du gabarit, sans distinguer alliés et ennemis : traduit tel quel. "heals 1D3 life" : "soigné de 1D3 points de vie".
 - p. 121 : Bénédiction putride : "the casting fighter" ; ponctuation doublée après "target" ; "Melee Weapons" avec majuscules. L'encadré des rappels est placé après le sort 3.
 - p. 122 : Invoquer un Rotling : virgule en trop après "(pg xx)". Force démoniaque : "Melee Weapons" avec majuscules. Entrailles pourries : "a fighter with rotten insides's activation".
 - p. 122 : Vent de peste : "Subtract 1 from any Willpower tests" est traduit littéralement ; comme pour Cri de chauve-souris (p. 102), la VO ne dit pas si le 1 se retire du jet ou de la valeur. Linceul protecteur : "has protective shroud", sans article.

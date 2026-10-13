@@ -51,7 +51,7 @@ describe("print model", () => {
     });
     expect(p.stats).toEqual({ mv: 5, bl: 3, bw: 4, ar: 4, in: 4, wl: 4, lf: 6 });
     expect(p.weapons).toEqual([
-      { name: "Épée", rng: "-", atk: "3", rnd: "-", dmg: "1", crit: "D3", traits: "Garde, Main secondaire" },
+      { name: "Épée", rng: "-", atk: "3", rnd: "-", dmg: "1", crit: "1D3", traits: "Garde, Main secondaire" },
     ]);
     expect(p.notes).toEqual([
       "Équipement : Cuirasse, Bouclier",

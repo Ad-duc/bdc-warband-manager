@@ -32,6 +32,10 @@ version is given separately (playtest v1.03).
   language) are grouped in one menu, so the title stays on one line; on
   tablets the tool buttons show their icon only, labels come back on large
   screens.
+- Every die states its number of dice (1D6, 1D3+1, never a bare D6) in the
+  app, the printed sheets, the rules reader, the data texts and the French
+  translation; D66 tables keep their name. `npm run fix:dice` applies the rule
+  and `npm run check:data` enforces it.
 
 ## [1.0.0] - 2026-10-12
 

@@ -81,7 +81,7 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), elle commence a
 
 **Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
 
-**Exercices de combat (*Combat Drills*) :** à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir jusqu'à 3 Hommes de main (*Henchman*) alliés (*friendly*) à entraîner. Chacun de ces combattants (*fighter*) gagne D6 d'expérience bonus (*bonus experience*).
+**Exercices de combat (*Combat Drills*) :** à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir jusqu'à 3 Hommes de main (*Henchman*) alliés (*friendly*) à entraîner. Chacun de ces combattants (*fighter*) gagne 1D6 d'expérience bonus (*bonus experience*).
 
 **Avides de faire leurs preuves (*Eager to Prove*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), lancez un dé. Sur 6, un Guild Recruit arrive à la Caserne de la Guilde (*Guild Barracks*). Vous pouvez recruter un Guild Recruit dans votre bande (*warband*) pour 0 pièce d'argent (*silver*).
 
@@ -356,21 +356,21 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|
-| Bâton arcanique (*Arcane Staff*) | 2 | - | 1 | D3 | Arcanique (*Arcane*), Main secondaire (*Off-hand*) | 10 pa |
-| Hache (*Axe*) | 3 | -1 | 1 | D3 | Main secondaire (*Off-hand*) | 16 pa |
-| Gourdin/Masse/Marteau (*Club/Mace/Hammer*) | 3 | - | 1 | D3 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 14 pa |
-| Dague (*Dagger*) | 3 | - | 1 | D3 | Main secondaire (*Off-hand*) | 10 pa |
-| Arme ensorcelée (*Ensorcelled Weapon*) | 3 | -1 | 1 | D3 | Arcanique (*Arcane*) | 26 pa |
-| Fléau (*Flail*) | 3 | - | 1 | D3 | Main secondaire (*Off-hand*), Contournement (*Wrap*) | 14 pa |
-| Hallebarde (*Halberd*) | 3 | -1 | 1 | D3+1 | Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 34 pa |
-| Hache lourde (*Heavy Axe*) | 3 | -2 | 2 | D3+1 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 40 pa |
-| Lame d'ogre (*Ogre Blade*) | 3 | -1 | 2 | D3+1 | Main secondaire (*Off-hand*) | 36 pa |
-| Grande arme d'ogre (*Ogre Great Weapon*) | 3 | -2 | 3 | D3+2 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 50 pa |
-| Masse d'ogre (*Ogre Mace*) | 3 | -1 | 2 | D3+1 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 38 pa |
-| Lance (*Spear*) | 3 | - | 1 | D3 | Contre-charge (*Brace*), À deux mains (*Two-handed*) | 16 pa |
-| Épée (*Sword*) | 3 | - | 1 | D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
-| Marteau de guerre (*Warhammer*) | 3 | -1 | 2 | D3+1 | Contondant (*Bludgeon*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 38 pa |
-| Espadon (*Zweihander*) | 3 | -1 | 2 | D3+1 | Garde (*Guard*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 42 pa |
+| Bâton arcanique (*Arcane Staff*) | 2 | - | 1 | 1D3 | Arcanique (*Arcane*), Main secondaire (*Off-hand*) | 10 pa |
+| Hache (*Axe*) | 3 | -1 | 1 | 1D3 | Main secondaire (*Off-hand*) | 16 pa |
+| Gourdin/Masse/Marteau (*Club/Mace/Hammer*) | 3 | - | 1 | 1D3 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 14 pa |
+| Dague (*Dagger*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*) | 10 pa |
+| Arme ensorcelée (*Ensorcelled Weapon*) | 3 | -1 | 1 | 1D3 | Arcanique (*Arcane*) | 26 pa |
+| Fléau (*Flail*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*), Contournement (*Wrap*) | 14 pa |
+| Hallebarde (*Halberd*) | 3 | -1 | 1 | 1D3+1 | Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 34 pa |
+| Hache lourde (*Heavy Axe*) | 3 | -2 | 2 | 1D3+1 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 40 pa |
+| Lame d'ogre (*Ogre Blade*) | 3 | -1 | 2 | 1D3+1 | Main secondaire (*Off-hand*) | 36 pa |
+| Grande arme d'ogre (*Ogre Great Weapon*) | 3 | -2 | 3 | 1D3+2 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 50 pa |
+| Masse d'ogre (*Ogre Mace*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 38 pa |
+| Lance (*Spear*) | 3 | - | 1 | 1D3 | Contre-charge (*Brace*), À deux mains (*Two-handed*) | 16 pa |
+| Épée (*Sword*) | 3 | - | 1 | 1D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
+| Marteau de guerre (*Warhammer*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 38 pa |
+| Espadon (*Zweihander*) | 3 | -1 | 2 | 1D3+1 | Garde (*Guard*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 42 pa |
 
 **Rappels des traits d'armes (*Weapon Trait Reminders*)**
 
@@ -391,23 +391,23 @@ Voir les règles complètes aux pages xx-xx.
 
 | Nom | Portée | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|---|
-| Arbalète lourde (*Arbalest*) | 24" | 1 | -2 | 3 | D6+2 | Lourd (*Heavy*), Rare 0-1, À deux mains (*Two-handed*) | 90 pa |
-| Pistolet à poudre noire (*Blackpowder Pistol*) | 12" | 1 | -1 | 2 | D6+1 | Incident de tir (*Misfire*), Rechargement (*Reload*) | 18 pa |
-| Fusil à poudre noire (*Blackpowder Rifle*) | 18" | 1 | -1 | 2 | D6+1 | Incident de tir (*Misfire*), Rechargement (*Reload*), À deux mains (*Two-handed*) | 24 pa |
-| Tromblon (*Blunderbuss*) | 8" | D3 | - | 1 | D3 | Incident de tir (*Misfire*), Rechargement (*Reload*), À deux mains (*Two-handed*) | 14 pa |
-| Paire de pistolets (*Brace of Pistols*) | 12" | 2 | -1 | 2 | D6+1 | Incident de tir (*Misfire*), Rechargement (*Reload*), À deux mains (*Two-handed*) | 30 pa |
-| Arbalète (*Crossbow*) | 20" | 1 | -1 | 1 | D6 | Rechargement (*Reload*), À deux mains (*Two-handed*) | 20 pa |
-| Bombes incendiaires (*Fire Bombs*) | 8" | 1 | - | D3+1 | - | Explosion (*Blast*), Usage unique (*One-use*), Rare 0-1, Effroi (*Scare*) | 34 pa |
-| Lance-flammes (*Flamethrower*) | Flamme (*Flame*) | 1 | - | D3+1 | - | Flamme (*Flame*), Rare 0-1, Rechargement (*Reload*), Effroi (*Scare*), À deux mains (*Two-handed*) | 80 pa |
-| Arbalète de poing (*Hand Crossbow*) | 12" | 1 | - | 1 | D6 | Rechargement (*Reload*) | 16 pa |
-| Arc long (*Long Bow*) | 24" | 1 | -1 | 1 | D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 26 pa |
-| Fusil long (*Long Rifle*) | 30" | 1 | -2 | 2 | D6+2 | Lourd (*Heavy*), Incident de tir (*Misfire*), À deux mains (*Two-handed*) | 70 pa |
-| Arbalète lourde d'ogre (*Ogre Arbalest*) | 24" | 1 | -2 | 3 | D6+2 | Rare 0-1, Rechargement (*Reload*), À deux mains (*Two-handed*) | 90 pa |
-| Canon d'ogre (*Ogre Cannon*) | 18" | 1 | -3 | D6+1 | - | Explosion (*Blast*), Incident de tir (*Misfire*), Rare 0-1, Rechargement (*Reload*), À deux mains (*Two-handed*) | 112 pa |
-| Pistolet d'ogre (*Ogre Pistol*) | 16" | 1 | -1 | 3 | D6+2 | Incident de tir (*Misfire*), Rechargement (*Reload*) | 30 pa |
-| Pistolet à répétition (*Repeater Pistol*) | 12" | 1 | -1 | 2 | D6+1 | Incident de tir (*Misfire*) | 30 pa |
-| Arc court (*Short Bow*) | 16" | 1 | - | 1 | D6 | À deux mains (*Two-handed*) | 16 pa |
-| Fusil à salves (*Volley Rifle*) | 16" | 3 | -1 | 2 | D6+1 | Incident de tir (*Misfire*), Rare 0-1, Rechargement (*Reload*), À deux mains (*Two-handed*), Salve (*Volley*) | 75 pa |
+| Arbalète lourde (*Arbalest*) | 24" | 1 | -2 | 3 | 1D6+2 | Lourd (*Heavy*), Rare 0-1, À deux mains (*Two-handed*) | 90 pa |
+| Pistolet à poudre noire (*Blackpowder Pistol*) | 12" | 1 | -1 | 2 | 1D6+1 | Incident de tir (*Misfire*), Rechargement (*Reload*) | 18 pa |
+| Fusil à poudre noire (*Blackpowder Rifle*) | 18" | 1 | -1 | 2 | 1D6+1 | Incident de tir (*Misfire*), Rechargement (*Reload*), À deux mains (*Two-handed*) | 24 pa |
+| Tromblon (*Blunderbuss*) | 8" | 1D3 | - | 1 | 1D3 | Incident de tir (*Misfire*), Rechargement (*Reload*), À deux mains (*Two-handed*) | 14 pa |
+| Paire de pistolets (*Brace of Pistols*) | 12" | 2 | -1 | 2 | 1D6+1 | Incident de tir (*Misfire*), Rechargement (*Reload*), À deux mains (*Two-handed*) | 30 pa |
+| Arbalète (*Crossbow*) | 20" | 1 | -1 | 1 | 1D6 | Rechargement (*Reload*), À deux mains (*Two-handed*) | 20 pa |
+| Bombes incendiaires (*Fire Bombs*) | 8" | 1 | - | 1D3+1 | - | Explosion (*Blast*), Usage unique (*One-use*), Rare 0-1, Effroi (*Scare*) | 34 pa |
+| Lance-flammes (*Flamethrower*) | Flamme (*Flame*) | 1 | - | 1D3+1 | - | Flamme (*Flame*), Rare 0-1, Rechargement (*Reload*), Effroi (*Scare*), À deux mains (*Two-handed*) | 80 pa |
+| Arbalète de poing (*Hand Crossbow*) | 12" | 1 | - | 1 | 1D6 | Rechargement (*Reload*) | 16 pa |
+| Arc long (*Long Bow*) | 24" | 1 | -1 | 1 | 1D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 26 pa |
+| Fusil long (*Long Rifle*) | 30" | 1 | -2 | 2 | 1D6+2 | Lourd (*Heavy*), Incident de tir (*Misfire*), À deux mains (*Two-handed*) | 70 pa |
+| Arbalète lourde d'ogre (*Ogre Arbalest*) | 24" | 1 | -2 | 3 | 1D6+2 | Rare 0-1, Rechargement (*Reload*), À deux mains (*Two-handed*) | 90 pa |
+| Canon d'ogre (*Ogre Cannon*) | 18" | 1 | -3 | 1D6+1 | - | Explosion (*Blast*), Incident de tir (*Misfire*), Rare 0-1, Rechargement (*Reload*), À deux mains (*Two-handed*) | 112 pa |
+| Pistolet d'ogre (*Ogre Pistol*) | 16" | 1 | -1 | 3 | 1D6+2 | Incident de tir (*Misfire*), Rechargement (*Reload*) | 30 pa |
+| Pistolet à répétition (*Repeater Pistol*) | 12" | 1 | -1 | 2 | 1D6+1 | Incident de tir (*Misfire*) | 30 pa |
+| Arc court (*Short Bow*) | 16" | 1 | - | 1 | 1D6 | À deux mains (*Two-handed*) | 16 pa |
+| Fusil à salves (*Volley Rifle*) | 16" | 3 | -1 | 2 | 1D6+1 | Incident de tir (*Misfire*), Rare 0-1, Rechargement (*Reload*), À deux mains (*Two-handed*), Salve (*Volley*) | 75 pa |
 
 **Rappels des traits d'armes (*Weapon Trait Reminders*)**
 
@@ -415,14 +415,14 @@ Voir les règles complètes aux pages xx-xx.
 
 | Trait | Rappel |
 |---|---|
-| Explosion (*Blast*) | Gabarit d'explosion. En cas d'échec, dévie de D6x2" |
+| Explosion (*Blast*) | Gabarit d'explosion. En cas d'échec, dévie de 1D6x2" |
 | Flamme (*Flame*) | Gabarit de flamme. Touche automatique |
 | Lourd (*Heavy*) | Mouvement ou Attaque |
 | Incident de tir (*Misfire*) | Sur un 1 naturel |
 | Usage unique (*One-use*) | 1 attaque par bataille |
 | Rare | Limité au nombre indiqué |
 | Rechargement (*Reload*) | Renoncer à un Mouvement ou une Action pour recharger |
-| Effroi (*Scare*) | Les combattants non engagés réussissent un test de Volonté ou dévient de D6" |
+| Effroi (*Scare*) | Les combattants non engagés réussissent un test de Volonté ou dévient de 1D6" |
 | À deux mains (*Two-handed*) | 1 par combattant. Pas d'attaque de main secondaire |
 | Salve (*Volley*) | Plusieurs cibles à 3" ou moins |
 
@@ -458,7 +458,7 @@ Une fois par bataille, ce combattant (*fighter*) peut effectuer une action d'Att
 
 | Portée | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
-| 20" | 1 | -1 | D3+1 | - | Explosion (*Blast*) |
+| 20" | 1 | -1 | 1D3+1 | - | Explosion (*Blast*) |
 
 ### Grappin (*Grappling Hook*) - 5 pa
 
@@ -488,7 +488,7 @@ Chaque fois que le porteur (*bearer*) effectue une attaque au corps à corps (*m
 
 | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|
-| -1 | 1 | D3 | Arme naturelle (*Natural Weapon*) |
+| -1 | 1 | 1D3 | Arme naturelle (*Natural Weapon*) |
 
 **Note du concepteur (*Designer's Note*) :** cet objet (*item*) est conçu pour les figurines qui comportent d'autres créatures sur le même socle, comme des chiens de guerre tenus en laisse. Le Compagnon fidèle (*Loyal Companion*) n'est considéré comme un combattant (*fighter*) distinct pour aucune règle.
 
@@ -522,7 +522,7 @@ Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), p
 
 ## Domaines de magie des Guild Mercenaries (*Guild Mercenaries Spell Lores*)
 
-## Domaine de la Magie autorisée (*Lore of Sanctioned Magic*) - D6
+## Domaine de la Magie autorisée (*Lore of Sanctioned Magic*) - 1D6
 
 ### 1 - Projectile arcanique (*Arcane Missile*)
 
@@ -534,7 +534,7 @@ Choisissez comme cible (*target*) le combattant ennemi (*enemy fighter*) visible
 
 | Perforation | Dégâts |
 |---|---|
-| -1 | D3 |
+| -1 | 1D3 |
 
 **Lancement critique (*Critical Cast*) [10+] :** ajoutez 1 à la valeur de Dégâts (*Damage*).
 
@@ -562,7 +562,7 @@ Choisissez 2 points visibles sur une plateforme (*platform*) ou sur le sol du ch
 La barrière (*barrier*) reste en jeu jusqu'à la fin du round ou jusqu'à ce que le lanceur (*caster*) soit mis hors de combat (*taken down*). Tant que la barrière (*barrier*) est en jeu :
 
 - Soustrayez 1 aux jets d'attaque (*attack roll*) des attaques à distance (*ranged attack*) qui traversent la barrière (*barrier*).
-- Les combattants (*fighter*) qui sont activés (*activate*) dans la barrière (*barrier*) ou qui se déplacent (*move*) à travers la barrière (*barrier*) subissent D3 dégâts (*damage*).
+- Les combattants (*fighter*) qui sont activés (*activate*) dans la barrière (*barrier*) ou qui se déplacent (*move*) à travers la barrière (*barrier*) subissent 1D3 dégâts (*damage*).
 
 **Lancement critique (*Critical Cast*) [10+] :** les 2 points peuvent être placés à 9" ou moins l'un de l'autre, à la place de 6".
 
@@ -586,7 +586,7 @@ Placez le gabarit de flamme (*flame template*). Chaque combattant (*fighter*) si
 
 | Perforation | Dégâts |
 |---|---|
-| -1 | D3+1 |
+| -1 | 1D3+1 |
 
 **Lancement critique (*Critical Cast*) [12+] :** la valeur de Perforation (*Rend*) est de -2.
 
@@ -596,13 +596,13 @@ Sort d'Attaque (*Attack Spell*)
 
 **Valeur de Lancement (*Casting Value*) [9+]**
 
-Placez le gabarit d'explosion (*blast template*) centré sur un point visible à 15" ou moins du lanceur (*caster*) ; il dévie (*scatter*) ensuite de D6".
+Placez le gabarit d'explosion (*blast template*) centré sur un point visible à 15" ou moins du lanceur (*caster*) ; il dévie (*scatter*) ensuite de 1D6".
 
 Chaque combattant (*fighter*) situé dans sa zone est touché (*hit*) par l'attaque (*attack*) suivante :
 
 | Perforation | Dégâts |
 |---|---|
-| -1 | D3+1 |
+| -1 | 1D3+1 |
 
 Une fois les attaques (*attack*) résolues, le gabarit d'explosion (*blast template*) reste là où il se trouve. Il représente un vortex qui reste en jeu jusqu'à la fin du round.
 
@@ -612,7 +612,7 @@ Aucune ligne de vue (*line of sight*) ne peut être tracée à travers le vortex
 
 **Lancement critique (*Critical Cast*) [13+] :** il ne dévie (*scatter*) pas.
 
-## Domaine des Saints (*Lore of the Saints*) - D6
+## Domaine des Saints (*Lore of the Saints*) - 1D6
 
 ### 1 - Essence curative (*Healing Essence*)
 
@@ -620,9 +620,9 @@ Sort de Soin (*Healing Spell*)
 
 **Valeur de Lancement (*Casting Value*) [6+]**
 
-Choisissez comme cible (*target*) un combattant allié (*friendly fighter*) visible à 15" ou moins du lanceur (*caster*). La cible (*target*) est soignée (*heal*) de D3 points de vie (*life point*).
+Choisissez comme cible (*target*) un combattant allié (*friendly fighter*) visible à 15" ou moins du lanceur (*caster*). La cible (*target*) est soignée (*heal*) de 1D3 points de vie (*life point*).
 
-**Lancement critique (*Critical Cast*) [10+] :** la cible (*target*) est soignée (*heal*) de 3 points de vie (*life point*) à la place de D3.
+**Lancement critique (*Critical Cast*) [10+] :** la cible (*target*) est soignée (*heal*) de 3 points de vie (*life point*) à la place de 1D3.
 
 ### 2 - Bénédiction des lames (*Bless Thy Blade*)
 
@@ -752,7 +752,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
@@ -770,7 +770,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
@@ -788,12 +788,12 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*), de la Liste des Champions (*Champion List*) et de la Liste des Witch Hunters (*Witch Hunter List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
 - **Guerrier aguerri (*Seasoned Warrior*) :** quand ce combattant (*fighter*) est recruté, choisissez 1 compétence (*skill*) pour lui.
-- **Réciter les litanies sacrées (*Recite Holy Litanies*) [Action] :** une fois par bataille, ce combattant (*fighter*) peut effectuer cette action. Dans ce cas, choisissez comme cible (*target*) un combattant ennemi (*enemy fighter*) visible à 12" ou moins de ce combattant (*fighter*) ; cette cible (*target*) doit être un Sorcier (*Wizard*), un Prêtre (*Priest*), un Démon (*Demon*) ou un Mort-vivant (*Undead*). Lancez un dé pour ce combattant (*fighter*) et ajoutez sa valeur de Volonté (*Willpower*) au résultat. Le joueur qui contrôle le combattant (*commanding player*) ciblé (*target*) fait de même pour son combattant (*fighter*). Si le résultat de ce combattant (*fighter*) est égal ou supérieur au résultat de la cible (*target*), la cible (*target*) subit D3 dégâts (*damage*).
+- **Réciter les litanies sacrées (*Recite Holy Litanies*) [Action] :** une fois par bataille, ce combattant (*fighter*) peut effectuer cette action. Dans ce cas, choisissez comme cible (*target*) un combattant ennemi (*enemy fighter*) visible à 12" ou moins de ce combattant (*fighter*) ; cette cible (*target*) doit être un Sorcier (*Wizard*), un Prêtre (*Priest*), un Démon (*Demon*) ou un Mort-vivant (*Undead*). Lancez un dé pour ce combattant (*fighter*) et ajoutez sa valeur de Volonté (*Willpower*) au résultat. Le joueur qui contrôle le combattant (*commanding player*) ciblé (*target*) fait de même pour son combattant (*fighter*). Si le résultat de ce combattant (*fighter*) est égal ou supérieur au résultat de la cible (*target*), la cible (*target*) subit 1D3 dégâts (*damage*).
 
 > "Chassez le misérable. Brûlez l'impie."
 
@@ -807,7 +807,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Sorciers (*Wizard List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
@@ -827,7 +827,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Sorciers (*Wizard List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -845,7 +845,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Clerics (*Cleric List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -863,7 +863,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -881,7 +881,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -900,11 +900,11 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*), de la Liste des Champions (*Champion List*) et de la Liste des Witch Hunters (*Witch Hunter List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
-- **Réciter les litanies sacrées (*Recite Holy Litanies*) [Action] :** une fois par bataille, ce combattant (*fighter*) peut effectuer cette action. Dans ce cas, choisissez comme cible (*target*) un combattant ennemi (*enemy fighter*) visible à 12" ou moins de ce combattant (*fighter*) ; cette cible (*target*) doit être un Sorcier (*Wizard*), un Prêtre (*Priest*), un Démon (*Demon*) ou un Mort-vivant (*Undead*). Lancez un dé pour ce combattant (*fighter*) et ajoutez sa valeur de Volonté (*Willpower*) au résultat. Le joueur qui contrôle le combattant (*commanding player*) ciblé (*target*) fait de même pour son combattant (*fighter*). Si le résultat de ce combattant (*fighter*) est égal ou supérieur au résultat de la cible (*target*), la cible (*target*) subit D3 dégâts (*damage*).
+- **Réciter les litanies sacrées (*Recite Holy Litanies*) [Action] :** une fois par bataille, ce combattant (*fighter*) peut effectuer cette action. Dans ce cas, choisissez comme cible (*target*) un combattant ennemi (*enemy fighter*) visible à 12" ou moins de ce combattant (*fighter*) ; cette cible (*target*) doit être un Sorcier (*Wizard*), un Prêtre (*Priest*), un Démon (*Demon*) ou un Mort-vivant (*Undead*). Lancez un dé pour ce combattant (*fighter*) et ajoutez sa valeur de Volonté (*Willpower*) au résultat. Le joueur qui contrôle le combattant (*commanding player*) ciblé (*target*) fait de même pour son combattant (*fighter*). Si le résultat de ce combattant (*fighter*) est égal ou supérieur au résultat de la cible (*target*), la cible (*target*) subit 1D3 dégâts (*damage*).
 
 > "Que les malfaisants ne trouvent aucun repos."
 
@@ -920,7 +920,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste d'armement (*Munitions List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
-**Expérience de départ :** 20+D6.
+**Expérience de départ :** 20+1D6.
 
 > "Cinquante pièces d'argent (*silver*), et ma lame est à vous."
 
@@ -934,7 +934,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
-**Expérience de départ :** D6.
+**Expérience de départ :** 1D6.
 
 > "Je mériterai ma solde."
 
@@ -950,7 +950,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Ogres (*Ogre List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
-**Expérience de départ :** 20+D6.
+**Expérience de départ :** 20+1D6.
 
 > "À qui je casse les os maintenant, Patron ?"
 
@@ -975,7 +975,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
-| Morsure féroce (*Vicious Bite*) | 3 | - | 1 | D3 | Arme naturelle (*Natural Weapon*) |
+| Morsure féroce (*Vicious Bite*) | 3 | - | 1 | 1D3 | Arme naturelle (*Natural Weapon*) |
 
 ---
 

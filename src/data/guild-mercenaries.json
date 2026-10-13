@@ -83,8 +83,8 @@
           "name": { "en": "Combat Drills", "fr": "Exercices de combat" },
           "tag": null,
           "text": {
-            "en": "In step 3 of the Aftermath sequence you can pick up to 3 friendly Henchmen to train. Each of those fighters earns d6 bonus experience.",
-            "fr": "À l'étape 3 de la séquence d'après-bataille, vous pouvez choisir jusqu'à 3 Hommes de main alliés à entraîner. Chacun de ces combattants gagne D6 d'expérience bonus."
+            "en": "In step 3 of the Aftermath sequence you can pick up to 3 friendly Henchmen to train. Each of those fighters earns 1D6 bonus experience.",
+            "fr": "À l'étape 3 de la séquence d'après-bataille, vous pouvez choisir jusqu'à 3 Hommes de main alliés à entraîner. Chacun de ces combattants gagne 1D6 d'expérience bonus."
           }
         },
         {
@@ -114,7 +114,7 @@
           "name": { "en": "Vintage Wines", "fr": "Grands crus" },
           "tag": null,
           "text": {
-            "en": "When this holding is first added to a warband roster, it has 2d6 bottles of vintage wine. Make a note on your warband roster. Each time you collect income from this holding, after rolling the dice, you can choose to sell a bottle of vintage wine. If you do so, reduce the count by 1 and re-roll the dice. You must accept the second result.",
+            "en": "When this holding is first added to a warband roster, it has 2D6 bottles of vintage wine. Make a note on your warband roster. Each time you collect income from this holding, after rolling the dice, you can choose to sell a bottle of vintage wine. If you do so, reduce the count by 1 and re-roll the dice. You must accept the second result.",
             "fr": "Quand cette possession est ajoutée pour la première fois à une feuille de bande, elle contient 2D6 bouteilles de grand cru. Notez-le sur votre feuille de bande. Chaque fois que vous percevez le revenu de cette possession, après avoir lancé les dés, vous pouvez choisir de vendre une bouteille de grand cru. Dans ce cas, réduisez le compte de 1 et relancez les dés. Vous devez accepter le second résultat."
           }
         }
@@ -332,8 +332,8 @@
           "name": { "en": "Recite Holy Litanies", "fr": "Réciter les litanies sacrées" },
           "tag": "action",
           "text": {
-            "en": "Once per battle, this fighter can make this action. If they do so, pick a visible enemy fighter within 12\" of this fighter to be the target, that target must be a Wizard, Priest, Demon or Undead. Roll a dice for this fighter and add its Willpower value to the result. The commanding player of the target does the same for their fighter. If the result for this fighter is equal or higher than the result for the target, the target suffers d3 damage.",
-            "fr": "Une fois par bataille, ce combattant peut effectuer cette action. Dans ce cas, choisissez comme cible un combattant ennemi visible à 12\" ou moins de ce combattant ; cette cible doit être un Sorcier, un Prêtre, un Démon ou un Mort-vivant. Lancez un dé pour ce combattant et ajoutez sa valeur de Volonté au résultat. Le joueur qui contrôle le combattant ciblé fait de même pour son combattant. Si le résultat de ce combattant est égal ou supérieur au résultat de la cible, la cible subit D3 dégâts."
+            "en": "Once per battle, this fighter can make this action. If they do so, pick a visible enemy fighter within 12\" of this fighter to be the target, that target must be a Wizard, Priest, Demon or Undead. Roll a dice for this fighter and add its Willpower value to the result. The commanding player of the target does the same for their fighter. If the result for this fighter is equal or higher than the result for the target, the target suffers 1D3 damage.",
+            "fr": "Une fois par bataille, ce combattant peut effectuer cette action. Dans ce cas, choisissez comme cible un combattant ennemi visible à 12\" ou moins de ce combattant ; cette cible doit être un Sorcier, un Prêtre, un Démon ou un Mort-vivant. Lancez un dé pour ce combattant et ajoutez sa valeur de Volonté au résultat. Le joueur qui contrôle le combattant ciblé fait de même pour son combattant. Si le résultat de ce combattant est égal ou supérieur au résultat de la cible, la cible subit 1D3 dégâts."
           }
         }
       ],
@@ -539,8 +539,8 @@
           "name": { "en": "Recite Holy Litanies", "fr": "Réciter les litanies sacrées" },
           "tag": "action",
           "text": {
-            "en": "Once per battle, this fighter can make this action. If they do so, pick a visible enemy fighter within 12\" of this fighter to be the target, that target must be a Wizard, Priest, Demon or Undead. Roll a dice for this fighter and add its Willpower value to the result. The commanding player of the target does the same for their fighter. If the result for this fighter is equal or higher than the result for the target, the target suffers d3 damage.",
-            "fr": "Une fois par bataille, ce combattant peut effectuer cette action. Dans ce cas, choisissez comme cible un combattant ennemi visible à 12\" ou moins de ce combattant ; cette cible doit être un Sorcier, un Prêtre, un Démon ou un Mort-vivant. Lancez un dé pour ce combattant et ajoutez sa valeur de Volonté au résultat. Le joueur qui contrôle le combattant ciblé fait de même pour son combattant. Si le résultat de ce combattant est égal ou supérieur au résultat de la cible, la cible subit D3 dégâts."
+            "en": "Once per battle, this fighter can make this action. If they do so, pick a visible enemy fighter within 12\" of this fighter to be the target, that target must be a Wizard, Priest, Demon or Undead. Roll a dice for this fighter and add its Willpower value to the result. The commanding player of the target does the same for their fighter. If the result for this fighter is equal or higher than the result for the target, the target suffers 1D3 damage.",
+            "fr": "Une fois par bataille, ce combattant peut effectuer cette action. Dans ce cas, choisissez comme cible un combattant ennemi visible à 12\" ou moins de ce combattant ; cette cible doit être un Sorcier, un Prêtre, un Démon ou un Mort-vivant. Lancez un dé pour ce combattant et ajoutez sa valeur de Volonté au résultat. Le joueur qui contrôle le combattant ciblé fait de même pour son combattant. Si le résultat de ce combattant est égal ou supérieur au résultat de la cible, la cible subit 1D3 dégâts."
           }
         }
       ],
@@ -1869,8 +1869,8 @@
           "castingValue": 7,
           "criticalCastValue": 10,
           "text": {
-            "en": "Pick 2 visible points on a platform or the battlefield floor, each within 9\" of the caster, 6\" of each other and the same elevation. A barrier is drawn between these two points. The barrier remains in play until the end of the round or the caster is taken down. While the barrier is in play:\n- Subtract 1 from attack rolls for ranged attacks made that cross the barrier.\n- Fighters that are activated in the barrier or move across the barrier suffer d3 damage.",
-            "fr": "Choisissez 2 points visibles sur une plateforme ou sur le sol du champ de bataille, chacun à 9\" ou moins du lanceur, à 6\" ou moins l'un de l'autre et à la même hauteur. Une barrière est tracée entre ces deux points. La barrière reste en jeu jusqu'à la fin du round ou jusqu'à ce que le lanceur soit mis hors de combat. Tant que la barrière est en jeu :\n- Soustrayez 1 aux jets d'attaque des attaques à distance qui traversent la barrière.\n- Les combattants qui sont activés dans la barrière ou qui se déplacent à travers la barrière subissent D3 dégâts."
+            "en": "Pick 2 visible points on a platform or the battlefield floor, each within 9\" of the caster, 6\" of each other and the same elevation. A barrier is drawn between these two points. The barrier remains in play until the end of the round or the caster is taken down. While the barrier is in play:\n- Subtract 1 from attack rolls for ranged attacks made that cross the barrier.\n- Fighters that are activated in the barrier or move across the barrier suffer 1D3 damage.",
+            "fr": "Choisissez 2 points visibles sur une plateforme ou sur le sol du champ de bataille, chacun à 9\" ou moins du lanceur, à 6\" ou moins l'un de l'autre et à la même hauteur. Une barrière est tracée entre ces deux points. La barrière reste en jeu jusqu'à la fin du round ou jusqu'à ce que le lanceur soit mis hors de combat. Tant que la barrière est en jeu :\n- Soustrayez 1 aux jets d'attaque des attaques à distance qui traversent la barrière.\n- Les combattants qui sont activés dans la barrière ou qui se déplacent à travers la barrière subissent 1D3 dégâts."
           },
           "criticalText": {
             "en": "The 2 points can be set up within 9\" of each other instead of 6\".",
@@ -1920,8 +1920,8 @@
           "castingValue": 9,
           "criticalCastValue": 13,
           "text": {
-            "en": "Place the blast template centred on a visible point within 15\" of the caster, it then scatters d6\". Each fighter in its area is hit with the following attack: After the attacks have been resolved, the blast template remains where it is. It represents a vortex that remains in play until the end of the round. Line of sight cannot be drawn across the vortex for fighters on the same elevation. In addition, fighters who start their activation within the vortex, or move across it, are hit with the same attack. At the end of the round, remove the vortex.",
-            "fr": "Placez le gabarit d'explosion centré sur un point visible à 15\" ou moins du lanceur ; il dévie ensuite de D6\". Chaque combattant situé dans sa zone est touché par l'attaque suivante : Une fois les attaques résolues, le gabarit d'explosion reste là où il se trouve. Il représente un vortex qui reste en jeu jusqu'à la fin du round. Aucune ligne de vue ne peut être tracée à travers le vortex pour les combattants situés à la même hauteur. De plus, les combattants qui commencent leur activation dans le vortex, ou qui se déplacent à travers lui, sont touchés par la même attaque. À la fin du round, retirez le vortex."
+            "en": "Place the blast template centred on a visible point within 15\" of the caster, it then scatters 1D6\". Each fighter in its area is hit with the following attack: After the attacks have been resolved, the blast template remains where it is. It represents a vortex that remains in play until the end of the round. Line of sight cannot be drawn across the vortex for fighters on the same elevation. In addition, fighters who start their activation within the vortex, or move across it, are hit with the same attack. At the end of the round, remove the vortex.",
+            "fr": "Placez le gabarit d'explosion centré sur un point visible à 15\" ou moins du lanceur ; il dévie ensuite de 1D6\". Chaque combattant situé dans sa zone est touché par l'attaque suivante : Une fois les attaques résolues, le gabarit d'explosion reste là où il se trouve. Il représente un vortex qui reste en jeu jusqu'à la fin du round. Aucune ligne de vue ne peut être tracée à travers le vortex pour les combattants situés à la même hauteur. De plus, les combattants qui commencent leur activation dans le vortex, ou qui se déplacent à travers lui, sont touchés par la même attaque. À la fin du round, retirez le vortex."
           },
           "criticalText": { "en": "It does not scatter.", "fr": "Il ne dévie pas." },
           "attack": { "rend": -1, "damage": "d3+1" },
@@ -1943,12 +1943,12 @@
           "castingValue": 6,
           "criticalCastValue": 10,
           "text": {
-            "en": "Pick a visible friendly fighter within 15\" of the caster to be the target. Heal d3 life points to the target.",
-            "fr": "Choisissez comme cible un combattant allié visible à 15\" ou moins du lanceur. La cible est soignée de D3 points de vie."
+            "en": "Pick a visible friendly fighter within 15\" of the caster to be the target. Heal 1D3 life points to the target.",
+            "fr": "Choisissez comme cible un combattant allié visible à 15\" ou moins du lanceur. La cible est soignée de 1D3 points de vie."
           },
           "criticalText": {
-            "en": "Heal 3 life points instead of d3.",
-            "fr": "La cible est soignée de 3 points de vie à la place de D3."
+            "en": "Heal 3 life points instead of 1D3.",
+            "fr": "La cible est soignée de 3 points de vie à la place de 1D3."
           },
           "attack": null,
           "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > 1 - Essence curative" }

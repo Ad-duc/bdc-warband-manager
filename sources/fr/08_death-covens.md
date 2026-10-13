@@ -83,7 +83,7 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), elle commence a
 
 **Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
 
-**Banquet de sang (*Banquet of Blood*) :** à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), choisissez jusqu'à 3 combattants alliés (*friendly fighter*) Vampires (*Vampyre*) qui prendront place à table. Chacun de ces combattants (*fighter*) gagne D6 d'expérience bonus (*bonus experience*). Si vous avez gagné la bataille, chacun de ces combattants (*fighter*) gagne, à la place, 2D6 d'expérience bonus (*bonus experience*).
+**Banquet de sang (*Banquet of Blood*) :** à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), choisissez jusqu'à 3 combattants alliés (*friendly fighter*) Vampires (*Vampyre*) qui prendront place à table. Chacun de ces combattants (*fighter*) gagne 1D6 d'expérience bonus (*bonus experience*). Si vous avez gagné la bataille, chacun de ces combattants (*fighter*) gagne, à la place, 2D6 d'expérience bonus (*bonus experience*).
 
 ### Salle de l'embaumeur (*Embalmer's Hall*)
 
@@ -114,7 +114,7 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), elle commence a
 
 **Offrande au tumulus (*Barrow Offering*) :** à l'étape 5 de la séquence d'après-bataille (*aftermath sequence*), lancez un dé. Sur 6, des mortels de la Cité (*the City*) ont laissé une offrande. Faites un seul jet sur la table des trésors (*treasure table*) (p. xx).
 
-**Sommeil immortel (*Immortal Slumber*) :** si votre Chef (*Leader*) obtient le résultat Repos éternel (*Laid to Rest*), voir ci-dessous, il n'est pas retiré de votre bande (*warband*). À la place, il manque les D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande (*warband*) pour être le Chef (*Leader*) en son absence. Le combattant (*fighter*) choisi gagne temporairement le mot-clé (*keyword*) Chef (*Leader*) et perd le mot-clé (*keyword*) Champion jusqu'au retour du Chef (*Leader*).
+**Sommeil immortel (*Immortal Slumber*) :** si votre Chef (*Leader*) obtient le résultat Repos éternel (*Laid to Rest*), voir ci-dessous, il n'est pas retiré de votre bande (*warband*). À la place, il manque les 1D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande (*warband*) pour être le Chef (*Leader*) en son absence. Le combattant (*fighter*) choisi gagne temporairement le mot-clé (*keyword*) Chef (*Leader*) et perd le mot-clé (*keyword*) Champion jusqu'au retour du Chef (*Leader*).
 
 ## Règles de campagne des Death Coven (*Death Coven Campaign Rules*)
 
@@ -136,7 +136,7 @@ Les combattants (*fighter*) qui ont le mot-clé (*keyword*) Asservi (*Thrall*) n
 
 De plus, les Squelettes (*Skeleton*) et les Asservis (*Thrall*) n'utilisent pas la table des blessures standard (*standard injury table*) (p. xx). À la place, ils utilisent la Table des blessures des Squelettes et des Asservis (*Skeleton & Thrall Injury Table*) suivante :
 
-**Table des blessures des Squelettes et des Asservis (*Skeleton & Thrall Injury Table*) - D6**
+**Table des blessures des Squelettes et des Asservis (*Skeleton & Thrall Injury Table*) - 1D6**
 
 | Résultat | Effet |
 |---|---|
@@ -299,21 +299,21 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|
-| Bâton arcanique (*Arcane Staff*) | 2 | - | 1 | D3 | Arcanique (*Arcane*), Main secondaire (*Off-hand*) | 10 pa |
-| Hache (*Axe*) | 3 | -1 | 1 | D3 | Main secondaire (*Off-hand*) | 16 pa |
-| Gourdin/Masse/Marteau (*Club/Mace/Hammer*) | 3 | - | 1 | D3 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 14 pa |
-| Lame maudite (*Cursed Blade*) | 3 | -1 | 1 | D3 | Arcanique (*Arcane*), Garde (*Guard*), Main secondaire (*Off-hand*), Poison | 40 pa |
-| Dague (*Dagger*) | 3 | - | 1 | D3 | Main secondaire (*Off-hand*) | 10 pa |
-| Arme ensorcelée (*Ensorcelled Weapon*) | 3 | -1 | 1 | D3 | Arcanique (*Arcane*) | 26 pa |
-| Fléau (*Flail*) | 3 | - | 1 | D3 | Main secondaire (*Off-hand*), Contournement (*Wrap*) | 14 pa |
-| Grande masse (*Great Mace*) | 3 | -1 | 2 | D3+1 | Contondant (*Bludgeon*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 38 pa |
-| Hallebarde (*Halberd*) | 3 | -1 | 1 | D3+1 | Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 34 pa |
-| Hache lourde (*Heavy Axe*) | 3 | -2 | 2 | D3+1 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 40 pa |
-| Lame d'ogre (*Ogre Blade*) | 3 | -1 | 2 | D3+1 | Main secondaire (*Off-hand*) | 36 pa |
-| Grande arme d'ogre (*Ogre Great Weapon*) | 3 | -2 | 3 | D3+2 | À deux mains (*Two-handed*) | 50 pa |
-| Masse d'ogre (*Ogre Mace*) | 3 | -1 | 2 | D3+1 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 38 pa |
-| Lance (*Spear*) | 3 | - | 1 | D3 | Contre-charge (*Brace*), À deux mains (*Two-handed*) | 16 pa |
-| Épée (*Sword*) | 3 | - | 1 | D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
+| Bâton arcanique (*Arcane Staff*) | 2 | - | 1 | 1D3 | Arcanique (*Arcane*), Main secondaire (*Off-hand*) | 10 pa |
+| Hache (*Axe*) | 3 | -1 | 1 | 1D3 | Main secondaire (*Off-hand*) | 16 pa |
+| Gourdin/Masse/Marteau (*Club/Mace/Hammer*) | 3 | - | 1 | 1D3 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 14 pa |
+| Lame maudite (*Cursed Blade*) | 3 | -1 | 1 | 1D3 | Arcanique (*Arcane*), Garde (*Guard*), Main secondaire (*Off-hand*), Poison | 40 pa |
+| Dague (*Dagger*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*) | 10 pa |
+| Arme ensorcelée (*Ensorcelled Weapon*) | 3 | -1 | 1 | 1D3 | Arcanique (*Arcane*) | 26 pa |
+| Fléau (*Flail*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*), Contournement (*Wrap*) | 14 pa |
+| Grande masse (*Great Mace*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 38 pa |
+| Hallebarde (*Halberd*) | 3 | -1 | 1 | 1D3+1 | Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 34 pa |
+| Hache lourde (*Heavy Axe*) | 3 | -2 | 2 | 1D3+1 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 40 pa |
+| Lame d'ogre (*Ogre Blade*) | 3 | -1 | 2 | 1D3+1 | Main secondaire (*Off-hand*) | 36 pa |
+| Grande arme d'ogre (*Ogre Great Weapon*) | 3 | -2 | 3 | 1D3+2 | À deux mains (*Two-handed*) | 50 pa |
+| Masse d'ogre (*Ogre Mace*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 38 pa |
+| Lance (*Spear*) | 3 | - | 1 | 1D3 | Contre-charge (*Brace*), À deux mains (*Two-handed*) | 16 pa |
+| Épée (*Sword*) | 3 | - | 1 | 1D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
 
 **Rappels des traits d'armes (*Weapon Trait Reminders*)**
 
@@ -366,7 +366,7 @@ Chaque fois que ce combattant (*fighter*) effectue une attaque au corps à corps
 
 | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|
-| -1 | 2 | D3+1 | Arme naturelle (*Natural Weapon*) |
+| -1 | 2 | 1D3+1 | Arme naturelle (*Natural Weapon*) |
 
 **Note du concepteur (*Designer's Note*) :** cet objet (*item*) est conçu pour les figurines qui comportent d'autres créatures sur le même socle, comme des loups monstrueux. Le Compagnon bestial (*Bestial Companion*) n'est considéré comme un combattant (*fighter*) distinct pour aucune règle.
 
@@ -402,7 +402,7 @@ Une fois par bataille, le combattant (*fighter*) peut utiliser l'action bonus (*
 
 ## Domaines de magie des Death Covens (*Death Covens Spell Lores*)
 
-## Domaine de la Nécromancie (*Lore of Necromancy*) - D6
+## Domaine de la Nécromancie (*Lore of Necromancy*) - 1D6
 
 ### 1 - Feu sorcier (*Witchfire*)
 
@@ -410,15 +410,15 @@ Sort d'Attaque (*Attack Spell*)
 
 **Valeur de Lancement (*Casting Value*) [8+]**
 
-Placez D3 pions Feu sorcier (*witchfire token*) à côté du lanceur (*caster*), jusqu'à un maximum de 3. Une fois par activation, le lanceur (*caster*) peut dépenser un pion Feu sorcier (*witchfire token*) pour effectuer l'action bonus (*bonus action*) suivante :
+Placez 1D3 pions Feu sorcier (*witchfire token*) à côté du lanceur (*caster*), jusqu'à un maximum de 3. Une fois par activation, le lanceur (*caster*) peut dépenser un pion Feu sorcier (*witchfire token*) pour effectuer l'action bonus (*bonus action*) suivante :
 
 **Attaque de feu sorcier (*Witchfire Attack*) [Action bonus (*Bonus Action*)] :** le combattant ennemi (*enemy fighter*) visible le plus proche à 12" ou moins est ciblé (*target*) et touché (*hit*) par l'attaque (*attack*) suivante :
 
 | Perforation | Dégâts |
 |---|---|
-| - | D3 |
+| - | 1D3 |
 
-**Lancement critique (*Critical Cast*) [12+] :** placez 3 pions Feu sorcier (*witchfire token*) à côté du lanceur (*caster*), jusqu'à un maximum de 3, à la place de D3.
+**Lancement critique (*Critical Cast*) [12+] :** placez 3 pions Feu sorcier (*witchfire token*) à côté du lanceur (*caster*), jusqu'à un maximum de 3, à la place de 1D3.
 
 ### 2 - Armure éthérée (*Ethereal Armour*)
 
@@ -458,13 +458,13 @@ Sort d'Attaque (*Attack Spell*)
 
 **Valeur de Lancement (*Casting Value*) [9+]**
 
-Placez le gabarit d'explosion (*blast template*) centré sur un point à 12" ou moins du lanceur (*caster*) ; il dévie (*scatter*) ensuite de D6".
+Placez le gabarit d'explosion (*blast template*) centré sur un point à 12" ou moins du lanceur (*caster*) ; il dévie (*scatter*) ensuite de 1D6".
 
 Chaque combattant (*fighter*) situé dans le gabarit est ciblé (*target*) et touché (*hit*) par l'attaque (*attack*) suivante :
 
 | Perforation | Dégâts |
 |---|---|
-| -1 | D3+1 |
+| -1 | 1D3+1 |
 
 **Lancement critique (*Critical Cast*) [12+] :** il ne dévie (*scatter*) pas.
 
@@ -478,11 +478,11 @@ Placez le gabarit de flamme (*flame template*) à partir du lanceur (*caster*). 
 
 | Perforation | Dégâts |
 |---|---|
-| -2 | D3 |
+| -2 | 1D3 |
 
 **Lancement critique (*Critical Cast*) [13+] :** ajoutez 1 à la valeur de Dégâts (*Damage*).
 
-## Domaine du Sang (*Lore of Blood*) - D6
+## Domaine du Sang (*Lore of Blood*) - 1D6
 
 ### 1 - Saignée (*Draw Blood*)
 
@@ -548,7 +548,7 @@ Tracez une ligne à partir du lanceur (*caster*), longue de 12" et large de 1". 
 
 | Perforation | Dégâts |
 |---|---|
-| -2 | D3 |
+| -2 | 1D3 |
 
 Pour chaque point de dégâts (*damage*) subi par une cible (*target*), le lanceur (*caster*) est soigné (*heal*) de 1 point de vie (*life point*).
 
@@ -587,7 +587,7 @@ Les armes de corps à corps (*melee weapon*) de ce combattant (*fighter*) gagnen
 
 Ce combattant (*fighter*) ne peut pas subir de blessures permanentes (*permanent injury*). S'il subit une blessure durable (*lasting injury*), elle est toujours temporaire.
 
-De plus, si ce combattant (*fighter*) est tué (*killed*), vous pouvez immédiatement effectuer un test de Volonté (*Willpower*) pour lui. S'il est réussi, il n'est pas tué (*killed*), mais il doit manquer les D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande (*warband*) pour être le Chef (*Leader*) en son absence. Le combattant (*fighter*) choisi gagne temporairement le mot-clé (*keyword*) Chef (*Leader*) et perd le mot-clé (*keyword*) Champion jusqu'au retour du Chef (*Leader*).
+De plus, si ce combattant (*fighter*) est tué (*killed*), vous pouvez immédiatement effectuer un test de Volonté (*Willpower*) pour lui. S'il est réussi, il n'est pas tué (*killed*), mais il doit manquer les 1D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande (*warband*) pour être le Chef (*Leader*) en son absence. Le combattant (*fighter*) choisi gagne temporairement le mot-clé (*keyword*) Chef (*Leader*) et perd le mot-clé (*keyword*) Champion jusqu'au retour du Chef (*Leader*).
 
 ### Drain de sang (*Leech Blood*)
 
@@ -613,7 +613,7 @@ Une fois par bataille, ce combattant (*fighter*) peut utiliser l'action bonus (*
 
 Quand ce combattant (*fighter*) est mis hors de combat (*taken down*) pour la première fois au cours de la bataille, repérez son emplacement avec un pion. Au début de chaque round suivant, vous pouvez lancer un dé : sur 6, le combattant (*fighter*) revient.
 
-Si le combattant (*fighter*) revient, placez-le sur le champ de bataille (*battlefield*) aussi près que possible de l'emplacement repéré. Il est soigné (*heal*) de D3 points de vie (*life point*). Un combattant (*fighter*) ne peut revenir de cette manière qu'une fois par bataille.
+Si le combattant (*fighter*) revient, placez-le sur le champ de bataille (*battlefield*) aussi près que possible de l'emplacement repéré. Il est soigné (*heal*) de 1D3 points de vie (*life point*). Un combattant (*fighter*) ne peut revenir de cette manière qu'une fois par bataille.
 
 ### Toucher glacial (*Chill Touch*)
 
@@ -627,7 +627,7 @@ Un combattant ennemi (*enemy fighter*) qui cause la peur (*causes fear*) lui aus
 
 ### Entraîner sous terre (*Drag Down Into the Earth*)
 
-Quand ce combattant (*fighter*) est mis hors de combat (*taken down*) alors qu'il est engagé au corps à corps (*engaged in melee*), choisissez 1 combattant (*fighter*) avec lequel il est engagé (*engaged*) : le combattant (*fighter*) choisi subit D3 dégâts (*damage*).
+Quand ce combattant (*fighter*) est mis hors de combat (*taken down*) alors qu'il est engagé au corps à corps (*engaged in melee*), choisissez 1 combattant (*fighter*) avec lequel il est engagé (*engaged*) : le combattant (*fighter*) choisi subit 1D3 dégâts (*damage*).
 
 ### Garde royale (*Kingsguard*)
 
@@ -649,7 +649,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Coven (*Coven Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
@@ -668,7 +668,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie du Coven (*Coven Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
@@ -686,7 +686,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Coven (*Coven Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
@@ -720,7 +720,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
-| Griffes de loup (*Wulfen Claws*) | 3 | -1 | 2 | D3+1 | Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*) |
+| Griffes de loup (*Wulfen Claws*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*) |
 
 > "Chair... sang... moelle..."
 
@@ -734,7 +734,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Coven (*Coven Armoury*).
 
-**Expérience de départ :** 60+D6.
+**Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
@@ -755,7 +755,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie du Coven (*Coven Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -773,7 +773,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Coven (*Coven Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -791,7 +791,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Coven (*Coven Armoury*).
 
-**Expérience de départ :** 30+D6.
+**Expérience de départ :** 30+1D6.
 
 **Règles spéciales :**
 
@@ -812,7 +812,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie du Coven (*Coven Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -830,7 +830,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Coven (*Coven Armoury*).
 
-**Expérience de départ :** 40+D6.
+**Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
@@ -875,7 +875,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
-| Morsure de zombie (*Zombie Bite*) | 3 | - | 1 | D3 | Arme naturelle (*Natural Weapon*), Poison |
+| Morsure de zombie (*Zombie Bite*) | 3 | - | 1 | 1D3 | Arme naturelle (*Natural Weapon*), Poison |
 
 ## Brutes
 
@@ -913,7 +913,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
-| Serres de pierre (*Stone Talons*) | 3 | -1 | 2 | D3+1 | Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*) |
+| Serres de pierre (*Stone Talons*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*) |
 
 ## Bêtes (*Beasts*)
 
@@ -956,7 +956,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
-| Morsure nécrotique (*Necrotic Bite*) | 3 | -1 | 1 | D3 | Arme naturelle (*Natural Weapon*) |
+| Morsure nécrotique (*Necrotic Bite*) | 3 | -1 | 1 | 1D3 | Arme naturelle (*Natural Weapon*) |
 
 **Rappels des traits d'armes (*Weapon Trait Reminders*)**
 
@@ -995,7 +995,7 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 95 : Sommeil immortel : "(see opposite)" renvoie à la page d'en face : rendu par "voir ci-dessous". "That fighter" est rendu par "Le combattant choisi".
 - p. 96 : le titre et le texte écrivent "Death Coven" au singulier (quatre fois) : singulier conservé. La phrase d'introduction ne dit pas "additional", contrairement aux autres factions.
 - p. 96 : la table de la Mort d'un Chef n'a pas de ligne pour le Lycanfell Noble : rien n'a été ajouté.
-- p. 96 : la table des blessures a pour en-têtes "d6" et son propre titre : rendue par une ligne de titre et les en-têtes "Résultat | Effet". Les guillemets de 'killed' et de 'House' ne sont pas repris.
+- p. 96 : la table des blessures a pour en-têtes "1D6" et son propre titre : rendue par une ligne de titre et les en-têtes "Résultat | Effet". Les guillemets de 'killed' et de 'House' ne sont pas repris.
 - p. 96 : la VO écrit "an Death Coven fighter" et "a name ending in a constant" pour "consonant" : "consonne". La table D66 des noms n'est pas traduite, comme convenu.
 - p. 97 et 98 : en-têtes "Combattant | Coût" et "Nom | Pièces d'argent" ajoutés, parce qu'un tableau Markdown en exige une ligne.
 - p. 98 : la v1.03 corrige la Liste des Praticiens, qui propose désormais une "Cursed Blade" (et non plus une "Cursed Sword" sans profil) : "Lame maudite" partout.
@@ -1025,7 +1025,7 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 107 : "I command thee to rise again" : anglais ancien rendu en français d'aujourd'hui, avec le tutoiement.
 - p. 108 : Misbegotten : les coûts "(+15 silver)" sont écrits "(+15 pa)" ; la parenthèse d'introduction est rendue par une proposition.
 - p. 105 et 109 : sur les parchemins du Bloodcursed Noble et du Barrow Champion, l'ordre des règles spéciales est celui de la colonne de droite (Sang noble puis Art de la magie ; Vétéran de son vivant puis Inébranlable).
-- p. 111 : la v1.03 retire la règle Force incroyable (*Incredible Strength*) du Zombie Ogre, qui garde Inébranlable. La valeur de Dégâts critiques des Serres de pierre de la Gargoyle passe de D6+1 à D3+1.
+- p. 111 : la v1.03 retire la règle Force incroyable (*Incredible Strength*) du Zombie Ogre, qui garde Inébranlable. La valeur de Dégâts critiques des Serres de pierre de la Gargoyle passe de 1D6+1 à 1D3+1.
 - p. 112 : la v1.03 retire le rappel du trait Poison de l'encadré des Bêtes, qu'aucune n'utilise.
 - p. 110 à 112 : "Starting Experience: 0" n'a pas de point final et il manque une ponctuation après "(see below)". La VO écrit "a stone talons" et "a biting fangs bite" : "serres de pierre" et "crocs mordants". Les profils des armes naturelles n'ont pas de colonne "Silver".
 - p. 112 : Dire Wolf : la règle Pisteurs est coupée par un point, comme chez le Hunting Dog (p. 72) : une seule phrase. "the city" y est sans majuscule ; "Dire Wolves" est rendu par "au moins un Dire Wolf".

@@ -152,8 +152,8 @@ describe("characteristics", () => {
     expect(effectiveStats(index, fighter("rolling-contraption"))?.mv).toBe("2d6");
     const slowed = fighter("rolling-contraption", { statModifiers: { mv: -1 } });
     expect(effectiveStats(index, slowed)?.mv).toBe("2d6-1");
-    expect(formatStat("mv", "2d6", "fr")).toBe('2D6"');
-    expect(formatStat("mv", 6, "en")).toBe('6"');
+    expect(formatStat("mv", "2d6")).toBe('2D6"');
+    expect(formatStat("mv", 6)).toBe('6"');
   });
 
   it("adds flat modifiers to dice expressions", () => {

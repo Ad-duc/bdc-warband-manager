@@ -146,7 +146,7 @@ export function FighterBlock({ fighter }: { fighter: PrintFighter | null }) {
             <tbody>
               <tr>
                 {STAT_KEYS.map((k) => (
-                  <td key={k}>{fighter?.stats ? formatStat(k, fighter.stats[k], f.lang) : ""}</td>
+                  <td key={k}>{fighter?.stats ? formatStat(k, fighter.stats[k]) : ""}</td>
                 ))}
               </tr>
             </tbody>

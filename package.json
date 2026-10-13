@@ -27,6 +27,7 @@
     "build:glossary": "tsx scripts/build-glossary.ts",
     "generate:data": "tsx scripts/run-python.ts scripts/generators/generate.py",
     "check:generated": "tsx scripts/run-python.ts scripts/generators/generate.py --check",
+    "fix:dice": "tsx scripts/run-python.ts scripts/generators/fix_dice.py",
     "watch:check": "tsx scripts/run-python.ts scripts/watch/release.py check",
     "watch:fetch": "tsx scripts/run-python.ts scripts/watch/release.py fetch",
     "watch:mark": "tsx scripts/run-python.ts scripts/watch/release.py mark",

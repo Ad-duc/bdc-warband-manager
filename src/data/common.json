@@ -83,8 +83,8 @@
       "key": "blast",
       "name": { "en": "Blast", "fr": "Explosion" },
       "reminder": {
-        "en": "Blast template. Miss scatters d6x2\"",
-        "fr": "Gabarit d'explosion. En cas d'échec, dévie de D6x2\""
+        "en": "Blast template. Miss scatters 1D6x2\"",
+        "fr": "Gabarit d'explosion. En cas d'échec, dévie de 1D6x2\""
       },
       "fullRuleRef": { "page": 29, "md": "03_batailles.md > Explosion" }
     },
@@ -173,8 +173,8 @@
       "key": "scare",
       "name": { "en": "Scare", "fr": "Effroi" },
       "reminder": {
-        "en": "Unengaged fighters pass Willpower test or scatter d6\"",
-        "fr": "Les combattants non engagés réussissent un test de Volonté ou dévient de D6\""
+        "en": "Unengaged fighters pass Willpower test or scatter 1D6\"",
+        "fr": "Les combattants non engagés réussissent un test de Volonté ou dévient de 1D6\""
       },
       "fullRuleRef": { "page": 30, "md": "03_batailles.md > Effroi" }
     },
@@ -294,8 +294,8 @@
           "id": "fast-learner",
           "name": { "en": "Fast Learner", "fr": "Apprend vite" },
           "text": {
-            "en": "In the Aftermath sequence of each battle, this fighter earns d6 bonus experience.",
-            "fr": "Lors de la séquence d'après-bataille de chaque bataille, ce combattant gagne D6 d'expérience bonus."
+            "en": "In the Aftermath sequence of each battle, this fighter earns 1D6 bonus experience.",
+            "fr": "Lors de la séquence d'après-bataille de chaque bataille, ce combattant gagne 1D6 d'expérience bonus."
           },
           "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Apprend vite" }
         },

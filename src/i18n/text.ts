@@ -10,17 +10,18 @@
 
 import { useTranslation } from "react-i18next";
 import type { AttackProfile, LocalizedText, StatKey } from "../data/schema.ts";
+import { withDiceCount } from "./dice.ts";
 import { isLanguage, type Language } from "./index.ts";
 
+/** Text in the given language, with the number of dice of every roll stated. */
 export function pick(text: LocalizedText, lang: Language): string {
-  return text[lang];
+  return withDiceCount(text[lang]);
 }
 
-/** "d3+1" stays lower case in English and becomes "D3+1" in French. */
-export function formatDice(value: number | string | null | undefined, lang: Language): string {
+/** Dice expression as shown in both languages: "d3+1" -> "1D3+1", "2d6" -> "2D6". */
+export function formatDice(value: number | string | null | undefined): string {
   if (value === null || value === undefined) return "-";
-  const s = String(value);
-  return lang === "fr" ? s.replace(/d/g, "D") : s;
+  return withDiceCount(String(value)).replace(/(\d)d(\d)/g, "$1D$2");
 }
 
 export function formatRend(rend: number): string {
@@ -33,9 +34,9 @@ export function formatRange(profile: AttackProfile, flameLabel: string): string 
 }
 
 /** Characteristic as printed: 5", 3+, 4, or "-". */
-export function formatStat(key: StatKey, value: number | string | null, lang: Language): string {
+export function formatStat(key: StatKey, value: number | string | null): string {
   if (value === null) return "-";
-  if (key === "mv") return `${formatDice(value, lang)}"`;
+  if (key === "mv") return `${formatDice(value)}"`;
   if (key === "bl" || key === "bw" || key === "ar") return `${value}+`;
   return String(value);
 }
@@ -65,6 +66,6 @@ export function useFormatter(): Formatter {
       new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeZone: "UTC" })
         .format(new Date(iso))
         .replace(/[\u00A0\u202F]/g, " "),
-    dice: (v) => formatDice(v, lang),
+    dice: (v) => formatDice(v),
   };
 }
