@@ -1,7 +1,8 @@
 /*
  * File:        src/features/wizard/StepWargear.tsx
- * Role:        Step 4: wargear. One fighter at a time, only the armoury lists
- *              allowed by the profile, with weapon profiles, traits and prices.
+ * Role:        Step 4: wargear. One fighter at a time (picked by name, with
+ *              its category under it), only the armoury lists allowed by the
+ *              profile, with weapon profiles, traits and prices.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -10,7 +11,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { FighterProfile, Wargear, WarbandFighter } from "../../data/schema.ts";
-import { fighterWargearCost, wargearPrice, type FactionIndex } from "../../rules/index.ts";
+import { effectiveCategory, fighterWargearCost, wargearPrice, type FactionIndex } from "../../rules/index.ts";
 import { formatRange, formatRend, useFormatter } from "../../i18n/text.ts";
 import { TraitList } from "../common/TraitList.tsx";
 import { fighterLabel } from "../warbands/factory.ts";
@@ -37,6 +38,11 @@ export function StepWargear({ warband, index, update }: StepProps) {
   };
   const name = (x: WarbandFighter) =>
     fighterLabel(x, index.fighters.get(x.profileId)?.name[f.lang] ?? x.profileId);
+  /** Category shown under the name: Chef, Champion, Homme de main... */
+  const category = (x: WarbandFighter): string => {
+    const p = index.fighters.get(x.profileId);
+    return p === undefined ? "" : t(`categories.${effectiveCategory(x, p)}_one`);
+  };
 
   return (
     <div className="space-y-5">
@@ -46,12 +52,13 @@ export function StepWargear({ warband, index, update }: StepProps) {
             key={x.instanceId}
             type="button"
             aria-pressed={x.instanceId === selected.instanceId}
-            className="btn btn-sm aria-pressed:bg-on-panel aria-pressed:text-panel"
+            className="btn btn-sm flex-col !gap-0 py-1 leading-tight aria-pressed:bg-on-panel aria-pressed:text-panel"
             onClick={() => {
               setSelectedId(x.instanceId);
             }}
           >
-            {name(x)}
+            <span>{name(x)}</span>
+            <span className="text-xs font-normal">{category(x)}</span>
           </button>
         ))}
       </div>
