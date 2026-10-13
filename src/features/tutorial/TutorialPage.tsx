@@ -54,7 +54,9 @@ function LessonList() {
             <h2 className="font-gothic text-2xl">{lesson.title}</h2>
             <p>{lesson.summary}</p>
             <p className="text-sm text-on-panel-muted">
-              {t("tutorial.lessonMeta", { count: lesson.steps.length, page: lesson.sourceRef.page })}
+              {lesson.origin === "book"
+                ? t("tutorial.lessonMetaBook", { count: lesson.steps.length, page: lesson.sourceRef.page })
+                : t("tutorial.lessonMetaHouse", { count: lesson.steps.length, page: lesson.sourceRef.page })}
             </p>
             <a
               className="btn btn-solid self-start"
@@ -141,7 +143,9 @@ function LessonPlayer({ lesson, gameData, step }: { lesson: Lesson; gameData: Ga
             {lesson.title}
           </h1>
           <p className="text-sm italic text-on-page-muted">
-            {t("tutorial.source", { page: lesson.sourceRef.page })}
+            {lesson.origin === "book"
+              ? t("tutorial.sourceBook", { page: lesson.sourceRef.page })
+              : t("tutorial.sourceHouse", { page: lesson.sourceRef.page })}
           </p>
         </div>
         <nav aria-label={t("tutorial.steps")}>
@@ -176,15 +180,17 @@ function LessonPlayer({ lesson, gameData, step }: { lesson: Lesson; gameData: Ga
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
         <TutorialBoard lesson={lesson} step={current} fighters={fighters} />
         <div className="flex min-w-0 flex-col gap-4">
-          {fighters.map((fighter) => (
-            <FighterPanel
-              key={fighter.lesson.id}
-              fighter={fighter}
-              life={current.life[fighter.lesson.id] ?? fighter.stats.lf}
-              active={current.focus.includes(fighter.lesson.id)}
-              common={gameData.common}
-            />
-          ))}
+          {fighters
+            .filter((fighter) => fighter.lesson.card)
+            .map((fighter) => (
+              <FighterPanel
+                key={fighter.lesson.id}
+                fighter={fighter}
+                life={current.life[fighter.lesson.id] ?? fighter.stats.lf}
+                active={current.focus.includes(fighter.lesson.id)}
+                common={gameData.common}
+              />
+            ))}
         </div>
       </div>
 

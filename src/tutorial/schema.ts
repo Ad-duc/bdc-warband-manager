@@ -4,7 +4,9 @@
  *              a board seen from above, the fighters taken from the game data
  *              and a list of steps. Every step holds its full state (positions,
  *              life points, dice, annotations) so that any step can be shown
- *              on its own. Strict schemas: an unknown property is an error.
+ *              on its own. A lesson follows an example printed in the book, or
+ *              is a house example built from the rules (illustrative dice).
+ *              Strict schemas: an unknown property is an error.
  * Author:      Adrien Duclaud
  * Created:     2026-10-13
  * License:     MIT
@@ -27,8 +29,14 @@ export const LessonFighterSchema = z
     profile: IdSchema,
     /** Wargear ids of the faction, in the order of the book example. */
     wargear: z.array(IdSchema).min(1),
+    /** Name shown in the lesson when several fighters share a profile ("Verminkin Warrior A"). */
+    label: z.string().min(1).nullable(),
+    /** Short name written on the board when the full name would not fit ("Verminkin A"). */
+    boardLabel: z.string().min(1).nullable(),
     /** Base diameter in millimetres. */
     base: z.number().int().positive(),
+    /** True when the fighter has a card next to the board. */
+    card: z.boolean(),
     /**
      * Short French names used in the lesson instead of the armoury names, by
      * wargear id (eg. "Dague" for "Dague/Dague de poing", as in the book example).
@@ -91,6 +99,33 @@ export const AnnotationSchema = z.discriminatedUnion("kind", [
     .strict(),
   z
     .object({
+      kind: z.literal("range"),
+      fighter: IdSchema,
+      /** Range of the weapon, in inches. */
+      inches: z.number().positive(),
+      label: z.string().min(1),
+    })
+    .strict(),
+  z
+    .object({
+      kind: z.literal("measure"),
+      from: IdSchema,
+      to: IdSchema,
+      label: z.string().min(1),
+    })
+    .strict(),
+  z
+    .object({
+      kind: z.literal("sight"),
+      from: IdSchema,
+      to: IdSchema,
+      /** clear: visible; obscured: visible but partly hidden; excluded: cannot be picked. */
+      state: z.enum(["clear", "obscured", "excluded"]),
+      label: z.string().min(1),
+    })
+    .strict(),
+  z
+    .object({
       kind: z.literal("exchange"),
       from: IdSchema,
       to: IdSchema,
@@ -140,13 +175,17 @@ export const LessonSchema = z
     id: IdSchema,
     title: z.string().min(1),
     summary: z.string().min(1),
-    /** Example of the book the lesson follows. */
+    /** "book": example printed in the book; "house": example built from the rules, dice values illustrative. */
+    origin: z.enum(["book", "house"]),
+    /** Example of the book the lesson follows, or the rules a house example is built from. */
     sourceRef: SourceRefSchema,
     board: z
       .object({
         width: z.number().positive(),
         height: z.number().positive(),
         terrain: z.array(TerrainSchema),
+        /** Left end of the 1 inch scale bar, in inches. */
+        ruler: PointSchema,
       })
       .strict(),
     fighters: z.array(LessonFighterSchema).min(1),

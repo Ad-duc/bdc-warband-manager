@@ -1,10 +1,11 @@
 /*
  * File:        src/tutorial/model.ts
  * Role:        Pure helpers of the tutorial: result of an attack roll from the
- *              Blade value, fighters of a lesson resolved against the game data
+ *              Blade or Bow value, fighters of a lesson resolved against the game data
  *              (profile, wargear with the short names of the lesson,
  *              characteristics after wargear), first step with dice, and
- *              splitting of the step texts into plain and bold runs. No React, so the lessons can be checked in unit tests.
+ *              splitting of the step texts into plain and bold runs. No React, so the
+ *              lessons can be checked in unit tests.
  * Author:      Adrien Duclaud
  * Created:     2026-10-13
  * License:     MIT
@@ -19,11 +20,17 @@ import type { Lesson, LessonFighter } from "./schema.ts";
 
 export type DieResult = "miss" | "hit" | "crit";
 
-/** A natural 6 is a critical hit; a roll equal to or above the Blade value is a hit (p. 24). */
+/** A natural 6 is a critical hit; a roll equal to or above the Blade or Bow value is a hit (p. 24, 28). */
 export function dieResult(value: number, blade: number | null): DieResult {
   if (value === 6) return "crit";
   if (blade !== null && value >= blade) return "hit";
   return "miss";
+}
+
+/** Characteristic the attack rolls of a weapon are compared with: Bow for a ranged weapon, Blade otherwise. */
+export function attackValue(fighter: ResolvedFighter, weaponId: string): number | null {
+  const weapon = fighter.wargear.find((w) => w.id === weaponId);
+  return weapon?.kind === "ranged" ? fighter.stats.bw : fighter.stats.bl;
 }
 
 export interface ResolvedFighter {
@@ -72,7 +79,7 @@ export function resolveFighters(
     fighters.push({
       lesson: f,
       profile,
-      name: profile.name,
+      name: f.label === null ? profile.name : { en: f.label, fr: f.label },
       stats,
       wargear,
       weapons: wargear.filter((w) => w.kind === "melee" || w.kind === "ranged"),
