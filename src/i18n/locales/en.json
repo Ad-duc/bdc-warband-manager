@@ -317,7 +317,15 @@
       "manualDie": "Die result",
       "options": "Options ({{picked}}/{{max}})",
       "randomEpithet": "Epithet",
-      "randomEpithetFor": "Random epithet for {{name}}"
+      "randomEpithetFor": "Random epithet for {{name}}",
+      "blocked": {
+        "maxFighters": "Warband full: {{max}} fighters at most.",
+        "leaderTaken": "The warband already has its Leader.",
+        "leaderOrigin": "The origin imposes {{name}} as Leader.",
+        "categoryMax": "Limit reached: {{max}} {{label}} at most.",
+        "profileLimit": "Profile limit reached: {{max}} at most.",
+        "budget": "Not enough silver: {{cost}}s, {{remaining}}s left."
+      }
     },
     "wargear": {
       "pickFighter": "Fighter to equip",

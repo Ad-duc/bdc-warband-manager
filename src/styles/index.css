@@ -141,6 +141,13 @@
     background-color: var(--color-on-panel);
     color: var(--color-panel);
   }
+  /* Greyed out when a rule forbids the action (Recruit at its limit) */
+  .btn-solid:disabled {
+    opacity: 1;
+    border-color: var(--color-mist);
+    background-color: var(--color-stone);
+    color: var(--color-charcoal);
+  }
   .btn-sm {
     min-height: 2.25rem;
     padding: 0.125rem 0.625rem;

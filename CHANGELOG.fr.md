@@ -48,6 +48,10 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ### Modifié
 
+- Les boutons "Recruter" de la troisième étape sont grisés, avec la raison
+  en dessous, quand les règles interdisent un combattant de plus : bande
+  complète, Chef déjà recruté ou différent de celui imposé par l'origine,
+  limite de catégorie ou de profil atteinte, argent restant insuffisant.
 - Origines présentées une par ligne à la deuxième étape, comme les factions.
 - Sur téléphone, les outils de l'en-tête (dé de direction, dos de cartes,
   lecteur des règles, langue) sont regroupés dans un seul menu et le titre

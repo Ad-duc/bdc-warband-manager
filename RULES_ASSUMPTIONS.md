@@ -322,6 +322,16 @@ French), are house tables, written in the style of the book tables and marked
 as not official in the interface. They live in
 `src/features/names/houseNames.ts`, outside the faction data files.
 
+### A43 - Recruit buttons greyed out (settled)
+
+The wizard greys out "Recruit" when one more fighter would break a
+recruitment rule of p. 50 (15 fighters, exactly 1 Leader, category maximums,
+0-X profile limits and their origin overrides, the Leader imposed by the
+origin) or cost more than the silver left (fighters and wargear already
+bought, p. 49). Fighters taken out of their category limit by the origin
+(Dire Wolves) are not counted. The diagnostics panel keeps reporting the
+same rules for a warband imported or built before this change.
+
 ## Data decisions
 
 ### D01 - Number of Guild Mercenaries profiles (data)

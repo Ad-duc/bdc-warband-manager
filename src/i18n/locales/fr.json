@@ -317,7 +317,15 @@
       "manualDie": "Résultat du dé",
       "options": "Options ({{picked}}/{{max}})",
       "randomEpithet": "Épithète",
-      "randomEpithetFor": "Épithète au hasard pour {{name}}"
+      "randomEpithetFor": "Épithète au hasard pour {{name}}",
+      "blocked": {
+        "maxFighters": "Bande complète : {{max}} combattants au maximum.",
+        "leaderTaken": "La bande a déjà son Chef.",
+        "leaderOrigin": "L'origine impose {{name}} comme Chef.",
+        "categoryMax": "Limite atteinte : {{max}} {{label}} au maximum.",
+        "profileLimit": "Limite du profil atteinte : {{max}} au maximum.",
+        "budget": "Pas assez d'argent : {{cost}} pa, il reste {{remaining}} pa."
+      }
     },
     "wargear": {
       "pickFighter": "Combattant à équiper",

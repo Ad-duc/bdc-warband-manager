@@ -33,10 +33,7 @@ test("female names from the house table and the Death Covens rule", async ({ pag
   await page.getByRole("button", { name: "Suivant" }).click();
   await page.getByRole("radio").first().check();
   await page.getByRole("button", { name: "Suivant" }).click();
-  await page
-    .getByRole("button", { name: /^Recruter / })
-    .first()
-    .click();
+  // The origin has already recruited its leader.
 
   const fighter = page.getByTestId("recruited-fighter").first();
   const male = fighter.getByRole("button", { name: "Nom masculin" });
@@ -57,10 +54,7 @@ test("Death Covens female names end with -a or a vowel", async ({ page }) => {
   await page.getByRole("button", { name: "Suivant" }).click();
   await page.getByRole("radio").first().check();
   await page.getByRole("button", { name: "Suivant" }).click();
-  await page
-    .getByRole("button", { name: /^Recruter / })
-    .first()
-    .click();
+  // The origin has already recruited its leader.
   await expect(page.getByText(/règle du livre/)).toBeVisible();
 
   const fighter = page.getByTestId("recruited-fighter").first();

@@ -46,6 +46,10 @@ version is given separately (playtest v1.03).
 
 ### Changed
 
+- The "Recruit" buttons of the third wizard step are greyed out, with the
+  reason below, when the rules forbid one more fighter: full warband, leader
+  already recruited or not the one imposed by the origin, category or profile
+  limit reached, not enough silver left.
 - Origins listed one per row in the second wizard step, as the factions.
 - On phones the header tools (direction dice, card backs, rules reader,
   language) are grouped in one menu, so the title stays on one line; on

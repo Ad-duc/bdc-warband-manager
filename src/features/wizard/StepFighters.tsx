@@ -23,7 +23,9 @@ import {
   manualStartingExperience,
   profileLimit,
   randomEpithet,
+  recruitBlockers,
   rollStartingExperience,
+  type RecruitBlocker,
 } from "../../rules/index.ts";
 import { gameData } from "../../data/index.ts";
 import { useFormatter } from "../../i18n/text.ts";
@@ -116,6 +118,8 @@ export function StepFighters({ warband, index, update }: StepProps) {
                 key={p.id}
                 profile={p}
                 limit={profileLimit(p, origin)}
+                blocker={recruitBlockers(index, warband, p, origin)[0] ?? null}
+                index={index}
                 forms={formsOf(index, p.id)}
                 onAdd={() => {
                   update((w) => ({ ...w, fighters: [...w.fighters, createFighter(p)] }));
@@ -197,15 +201,49 @@ function ProfileEntry({
   profile,
   limit,
   forms,
+  blocker,
+  index,
   onAdd,
 }: {
   profile: FighterProfile;
   limit: number | null;
   forms: FighterProfile[];
+  /** First rule that forbids one more fighter of this profile, or null. */
+  blocker: RecruitBlocker | null;
+  index: FactionIndex;
   onAdd: () => void;
 }) {
   const { t } = useTranslation();
   const f = useFormatter();
+  const reasonId = useId();
+  const reason = blocker === null ? null : blockerText(blocker);
+
+  function blockerText(b: RecruitBlocker): string {
+    switch (b.code) {
+      case "maxFighters":
+        return t("wizard.fighters.blocked.maxFighters", { max: b.max });
+      case "leaderTaken":
+        return t("wizard.fighters.blocked.leaderTaken");
+      case "leaderOrigin": {
+        const expected = index.fighters.get(b.expected);
+        return t("wizard.fighters.blocked.leaderOrigin", {
+          name: expected === undefined ? b.expected : f.text(expected.name),
+        });
+      }
+      case "categoryMax":
+        return t("wizard.fighters.blocked.categoryMax", {
+          max: b.max,
+          label: t(`categories.${b.category}_other`),
+        });
+      case "profileLimit":
+        return t("wizard.fighters.blocked.profileLimit", { max: b.max });
+      case "budget":
+        return t("wizard.fighters.blocked.budget", {
+          cost: f.number(b.cost),
+          remaining: f.number(b.remaining),
+        });
+    }
+  }
 
   return (
     <li className="border-2 border-on-panel">
@@ -235,10 +273,17 @@ function ProfileEntry({
           type="button"
           className="btn btn-solid btn-sm"
           onClick={onAdd}
+          disabled={reason !== null}
+          aria-describedby={reason === null ? undefined : reasonId}
           aria-label={t("wizard.fighters.addNamed", { name: f.text(profile.name) })}
         >
           {t("wizard.fighters.add")}
         </button>
+        {reason !== null && (
+          <p id={reasonId} className="w-full text-right text-sm italic" data-testid="recruit-blocked">
+            {reason}
+          </p>
+        )}
       </div>
     </li>
   );
