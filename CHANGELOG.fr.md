@@ -15,6 +15,15 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ## [Non publié]
 
+### Corrigé
+
+- Une nouvelle version de l'application remplace désormais l'ancienne toute
+  seule : l'application vérifie s'il existe une mise à jour quand son onglet
+  revient au premier plan et toutes les 15 minutes, puis recharge la page sur
+  la nouvelle version, au même écran. Il n'est plus nécessaire de vider le
+  cache du navigateur après une publication. Les bandes enregistrées ne sont
+  pas touchées.
+
 ## [1.2.0] - 2026-10-13
 
 Tutoriel des règles, toujours sur la version de test 1.03 de Black Death City.

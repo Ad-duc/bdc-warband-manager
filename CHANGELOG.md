@@ -15,6 +15,14 @@ version is given separately (playtest v1.03).
 
 ## [Unreleased]
 
+### Fixed
+
+- A new version of the app now replaces the old one by itself: the app checks
+  for an update when its tab comes back to the foreground and every 15 minutes,
+  and reloads the page on the new version, at the same screen. Clearing the
+  browser cache after a deployment is no longer needed. Saved warbands are not
+  affected.
+
 ## [1.2.0] - 2026-10-13
 
 Rules tutorial, still on the Black Death City playtest v1.03.
