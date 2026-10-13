@@ -58,7 +58,7 @@ export function App() {
         {route.name === "campaign" && <CampaignPage id={route.id} />}
         {route.name === "print" && <PrintPage id={route.id} />}
         {route.name === "shared" && <SharedPage payload={route.payload} />}
-        {route.name === "rules" && <RulesPage chapterId={route.chapter} />}
+        {route.name === "rules" && <RulesPage chapterId={route.chapter} sectionId={route.section ?? null} />}
         {route.name === "changelog" && <ChangelogPage />}
         {route.name === "cardBacks" && <CardBacksPage />}
         {route.name === "reminder" && <ReminderPage />}

@@ -4,7 +4,10 @@
  *              Routes: "#/" home, "#/warband/<id>" creation wizard,
  *              "#/warband/<id>/campaign" campaign dashboard,
  *              "#/warband/<id>/print" print view, "#w=<data>" shared warband,
- *              "#/rules" and "#/rules/<chapter>" French rules reader,
+ *              "#/rules", "#/rules/<chapter>" and "#/rules/<chapter>/<section>"
+ *              French rules reader (the section is a heading id),
+ *              "#/tutorial", "#/tutorial/<lesson>" and
+ *              "#/tutorial/<lesson>/<step>" rules tutorial (1-based step),
  *              "#/changelog" history of the application versions,
  *              "#/card-backs" stand-alone card back generator,
  *              "#/reminder" French reminder sheet, "#/scenarios" and
@@ -24,7 +27,8 @@ export type Route =
   | { name: "campaign"; id: string }
   | { name: "print"; id: string }
   | { name: "shared"; payload: string }
-  | { name: "rules"; chapter: string | null }
+  | { name: "rules"; chapter: string | null; section?: string }
+  | { name: "tutorial"; lesson: string | null; step: number | null }
   | { name: "changelog" }
   | { name: "cardBacks" }
   | { name: "reminder" }
@@ -49,8 +53,20 @@ export function parseHash(hash: string): Route {
     };
   const group = /^#\/campaigns\/([A-Za-z0-9-]+)$/.exec(hash);
   if (group?.[1] !== undefined) return { name: "groupCampaign", id: group[1] };
-  const rules = /^#\/rules(?:\/([a-z0-9-]+))?$/.exec(hash);
-  if (rules !== null) return { name: "rules", chapter: rules[1] ?? null };
+  const rules = /^#\/rules(?:\/([a-z0-9-]+)(?:\/(s-[a-z0-9-]+))?)?$/.exec(hash);
+  if (rules !== null) {
+    const chapter = rules[1] ?? null;
+    return rules[2] === undefined
+      ? { name: "rules", chapter }
+      : { name: "rules", chapter, section: rules[2] };
+  }
+  const tutorial = /^#\/tutorial(?:\/([a-z0-9-]+)(?:\/([1-9][0-9]{0,2}))?)?$/.exec(hash);
+  if (tutorial !== null)
+    return {
+      name: "tutorial",
+      lesson: tutorial[1] ?? null,
+      step: tutorial[2] === undefined ? null : Number(tutorial[2]),
+    };
   const match = /^#\/warband\/([A-Za-z0-9-]+)(?:\/(campaign|print))?$/.exec(hash);
   if (match?.[1] !== undefined) {
     const id = match[1];
@@ -72,7 +88,13 @@ export function hrefFor(route: Route): string {
     case "shared":
       return `#w=${route.payload}`;
     case "rules":
-      return route.chapter === null ? "#/rules" : `#/rules/${route.chapter}`;
+      if (route.chapter === null) return "#/rules";
+      return route.section === undefined
+        ? `#/rules/${route.chapter}`
+        : `#/rules/${route.chapter}/${route.section}`;
+    case "tutorial":
+      if (route.lesson === null) return "#/tutorial";
+      return route.step === null ? `#/tutorial/${route.lesson}` : `#/tutorial/${route.lesson}/${route.step}`;
     case "changelog":
       return "#/changelog";
     case "cardBacks":
