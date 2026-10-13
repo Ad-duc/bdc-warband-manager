@@ -22,6 +22,11 @@ version is given separately (playtest v1.03).
   fighter cards, the attack rolls, the life points left and a link to the
   rule of each step. Previous and next buttons, arrow keys, and the step kept
   in the address.
+- Ranged attack lesson in the tutorial: a house example built from the rules
+  (p. 28), with illustrative dice values: weapon range, the closest visible
+  enemy not engaged in melee, the obscured target exception, cover, then the
+  Bow roll, the armour roll and the damage. The board shows the range, the
+  distances and the lines of sight.
 - The rules reader opens a chapter at a given section
   (`#/rules/<chapter>/<section>`).
 
