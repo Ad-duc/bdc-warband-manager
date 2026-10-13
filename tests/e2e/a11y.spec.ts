@@ -115,6 +115,9 @@ for (const locale of ["fr-FR"] as const) {
       await page.goto("./#/tutorial/melee-attack/12");
       await expect(page.getByRole("table", { name: /Récapitulatif/ })).toBeVisible();
       await audit(page, "tutorial last step");
+      await page.goto("./#/tutorial/ranged-attack/4");
+      await expect(page.getByText('Masqué, 8"')).toBeVisible();
+      await audit(page, "ranged tutorial step");
     });
 
     test("changelog", async ({ page }) => {

@@ -5,7 +5,9 @@
  *              stays consistent from one step to the next (positions, life
  *              points that never go up, dice that keep their values and whose
  *              count follows the Attacks of the weapons). The melee lesson
- *              matches the example printed in the book. Also the helpers of
+ *              matches the example printed in the book; the ranged house
+ *              example keeps its distances, range and cover consistent with
+ *              the rules. Also the helpers of
  *              src/tutorial/model.ts and the tutorial and rules routes.
  * Author:      Adrien Duclaud
  * Created:     2026-10-13
@@ -19,7 +21,14 @@ import { hasTrait } from "../../src/rules/lookup.ts";
 import { CHAPTERS, loadChapter } from "../../src/features/reader/chapters.ts";
 import { plainHeading, renderChapter } from "../../src/features/reader/markdown.ts";
 import { LESSONS, findLesson } from "../../src/tutorial/index.ts";
-import { clampStep, dieResult, firstDiceStep, resolveFighters, textRuns } from "../../src/tutorial/model.ts";
+import {
+  attackValue,
+  clampStep,
+  dieResult,
+  firstDiceStep,
+  resolveFighters,
+  textRuns,
+} from "../../src/tutorial/model.ts";
 
 describe("lessons", () => {
   it("has unique ids and a header naming its own file", () => {
@@ -71,7 +80,7 @@ describe("lessons", () => {
         for (const id of step.focus) expect(ids, where).toContain(id);
         if (step.initiative !== null) expect(ids, where).toContain(step.initiative);
         for (const a of step.annotations) {
-          if (a.kind === "charge") expect(ids, where).toContain(a.fighter);
+          if (a.kind === "charge" || a.kind === "range") expect(ids, where).toContain(a.fighter);
           else
             expect(
               [a.from, a.to].every((id) => ids.includes(id)),
@@ -87,13 +96,13 @@ describe("lessons", () => {
             expect(life, where).toBeLessThanOrEqual(previousLife[fighter.lesson.id] ?? 0);
         }
         previousLife = step.life;
-        // Rolls are made with a melee weapon of their owner; once made, they keep their values.
+        // Rolls are made with a weapon of their owner; once made, they keep their values.
         if (step.dice !== null) {
           for (const die of step.dice) {
             const owner = fighters.find((f) => f.lesson.id === die.owner);
             expect(owner, where).toBeDefined();
             expect(
-              owner?.weapons.some((w) => w.id === die.weapon && w.kind === "melee"),
+              owner?.weapons.some((w) => w.id === die.weapon),
               where,
             ).toBe(true);
           }
@@ -111,7 +120,27 @@ describe("lessons", () => {
         previousDice = step.dice;
       }
       expect(lesson.steps.filter((s) => s.recap !== null).length).toBeLessThanOrEqual(1);
+      expect(
+        fighters.some((f) => f.lesson.card),
+        lesson.id,
+      ).toBe(true);
     }
+  });
+
+  it("writes measured distances that match the positions, to the nearest inch", () => {
+    for (const lesson of LESSONS)
+      for (const [i, step] of lesson.steps.entries())
+        for (const a of step.annotations) {
+          if (a.kind !== "measure" && a.kind !== "sight") continue;
+          const inches = /(\d+)"/.exec(a.label)?.[1];
+          if (inches === undefined) continue;
+          const [p, q] = [step.positions[a.from], step.positions[a.to]];
+          if (p === undefined || q === undefined)
+            throw new Error(`${lesson.id} step ${i + 1}: missing position`);
+          expect(Math.round(Math.hypot(q[0] - p[0], q[1] - p[1])), `${lesson.id} step ${i + 1}`).toBe(
+            Number(inches),
+          );
+        }
   });
 
   it("rolls as many dice as the Attacks of the weapons, one for an off-hand weapon", () => {
@@ -121,6 +150,7 @@ describe("lessons", () => {
       const { fighters } = resolveFighters(lesson, gameData);
       for (const fighter of fighters) {
         const own = first.dice.filter((d) => d.owner === fighter.lesson.id);
+        if (own.length === 0) continue;
         const main = own.filter((d) => !d.offHand);
         const off = own.filter((d) => d.offHand);
         const weapon = fighter.weapons.find((w) => w.id === main[0]?.weapon);
@@ -185,6 +215,57 @@ describe("melee lesson (book example, p. 25)", () => {
       rolls.filter((d) => d.owner === owner).map((d) => dieResult(d.value, blade));
     expect(results("merc", merc?.stats.bl ?? null)).toEqual(["miss", "hit", "crit"]);
     expect(results("vermin", vermin?.stats.bl ?? null)).toEqual(["hit", "hit", "crit", "hit"]);
+  });
+});
+
+describe("ranged lesson (house example, p. 28)", () => {
+  const lesson = findLesson("ranged-attack");
+  if (lesson === undefined) throw new Error("ranged-attack lesson missing");
+  const { fighters } = resolveFighters(lesson, gameData);
+  const fighter = (id: string) => {
+    const found = fighters.find((f) => f.lesson.id === id);
+    if (found === undefined) throw new Error(id);
+    return found;
+  };
+  const distance = (a: string, b: string): number => {
+    const [p, q] = [lesson.steps[0]?.positions[a], lesson.steps[0]?.positions[b]];
+    if (p === undefined || q === undefined) throw new Error(`${a} ${b}`);
+    return Math.hypot(q[0] - p[0], q[1] - p[1]);
+  };
+
+  it("is a house example, after the melee lesson", () => {
+    expect(lesson.origin).toBe("house");
+    expect(LESSONS.map((l) => l.id)).toEqual(["melee-attack", "ranged-attack"]);
+  });
+
+  it("keeps every Verminkin in range of the Short Bow, the engaged one within 1 inch of the recruit", () => {
+    const bow = fighter("merc").weapons.find((w) => w.id === "short-bow");
+    expect(bow?.kind).toBe("ranged");
+    const range = bow?.profile?.range;
+    for (const id of ["vermin-a", "vermin-b", "vermin-c"])
+      expect(distance("merc", id)).toBeLessThanOrEqual(Number(range));
+    expect(distance("vermin-c", "recruit")).toBeLessThanOrEqual(1);
+    expect(distance("merc", "vermin-c")).toBeLessThan(distance("merc", "vermin-a"));
+    expect(distance("merc", "vermin-a")).toBeLessThan(distance("merc", "vermin-b"));
+  });
+
+  it("rolls against the Bow value and applies cover, then 1 damage", () => {
+    const roll = lesson.steps[firstDiceStep(lesson)]?.dice?.[0];
+    expect(roll?.weapon).toBe("short-bow");
+    expect(attackValue(fighter("merc"), "short-bow")).toBe(4);
+    expect(attackValue(fighter("merc"), "unknown")).toBe(fighter("merc").stats.bl);
+    expect(dieResult(roll?.value ?? 0, attackValue(fighter("merc"), "short-bow"))).toBe("hit");
+    expect(fighter("vermin-a").stats.ar).toBe(6);
+    expect(lesson.steps.at(-1)?.life).toMatchObject({ "vermin-a": 3, "vermin-b": 4, "vermin-c": 4 });
+  });
+
+  it("names the three Verminkin apart and shows two cards", () => {
+    expect(["vermin-a", "vermin-b", "vermin-c"].map((id) => fighter(id).name.fr)).toEqual([
+      "Verminkin Warrior A",
+      "Verminkin Warrior B",
+      "Verminkin Warrior C",
+    ]);
+    expect(fighters.filter((f) => f.lesson.card).map((f) => f.lesson.id)).toEqual(["merc", "vermin-a"]);
   });
 });
 
