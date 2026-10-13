@@ -15,16 +15,12 @@ version is given separately (playtest v1.03).
 
 ## [Unreleased]
 
-### Added
+## [1.1.0] - 2026-10-13
 
-- Direction dice ("Direction dice" button in the header), over the current
-  screen: an arrow in any direction and, as an option, the scatter distances
-  of the rules (1D6", 1D6x2", 3D6"), with the detail of the dice.
-- French reminder sheet ("Reminder sheet" button in the header): the official
-  reminder sheet translated into French on one A4 page, with the page numbers
-  of the playtest v1.03 rules, ready to print.
-- "My warbands" button in the header (and the phone menu), back to the
-  warband list from any screen.
+Preparing a battle, group campaigns and name generators, still on the Black
+Death City playtest v1.03.
+
+### Added
 
 - Battle set-up assistant ("Prepare a battle" in the header, on a warband's
   campaign dashboard and in a group campaign): warbands and underdog, scenario
@@ -33,21 +29,29 @@ version is given separately (playtest v1.03).
   warband's battle log or in the group campaign.
 - Scenario reference: the scenario table, the shared rules and the six
   scenarios with their twists, from the French translation.
-- Link to the official Black Death City website in the footer.
 - Group campaigns on the home page: warbands of the app or of other players,
   battles fought and standings. Chapter 5 "Campaigns" is not published yet, so
   no campaign rule is applied.
+- Direction dice ("Direction dice" button in the header), over the current
+  screen: an arrow in any direction and, as an option, the scatter distances
+  of the rules (1D6", 1D6x2", 3D6"), with the detail of the dice.
+- French reminder sheet ("Reminder sheet" button in the header): the official
+  reminder sheet translated into French on one A4 page, with the page numbers
+  of the playtest v1.03 rules, ready to print.
+- "My warbands" button in the header (and the phone menu), back to the
+  warband list from any screen.
 - Female fighter names: a male and a female symbol next to the random name
   button. The Death Covens follow the book rule ("-a" added to a name ending
   in a consonant, p. 96); the other factions use house D66 tables, not
   official.
+- Random warband name next to the "Warband name" field, drawn from house
+  tables of the selected faction (in French, not official).
 - Translation feedback in the rules reader: a "Suggest a correction" link
   under each heading opens a pre-filled GitHub issue (form `traduction`), the
   selected passage is quoted, and each chapter links to the edit page of its
   file. Accepted issues are applied by a pull request
   (`docs/TRANSLATION_FEEDBACK.md`).
-- Random warband name next to the "Warband name" field, drawn from house
-  tables of the selected faction (in French, not official).
+- Link to the official Black Death City website in the footer.
 
 ### Changed
 
@@ -56,14 +60,15 @@ version is given separately (playtest v1.03).
   already recruited or not the one imposed by the origin, category or profile
   limit reached, not enough silver left.
 - Origins listed one per row in the second wizard step, as the factions.
-- On phones the header tools (direction dice, card backs, rules reader,
-  language) are grouped in one menu, so the title stays on one line; on
-  tablets the tool buttons show their icon only, labels come back on large
-  screens.
+- The wargear step shows the category (Leader, Champion, Henchman...) under
+  each fighter name of the fighter picker.
 - Every die states its number of dice (1D6, 1D3+1, never a bare D6) in the
   app, the printed sheets, the rules reader, the data texts and the French
   translation; D66 tables keep their name. `npm run fix:dice` applies the rule
   and `npm run check:data` enforces it.
+- On phones the header tools are grouped in one menu, so the title stays on
+  one line; on tablets the tool buttons show their icon only, labels come
+  back on large screens.
 - The interface is in French only: the language selector is gone and an
   English browser gets the French screens (the English strings stay in
   `en.json`).
@@ -146,5 +151,6 @@ First complete release, built on the Black Death City playtest v1.03.
   use Trattatello, easier to read than Old Celtiberian. Old Celtiberian is
   kept for the header title, the rules reader and the printed sheets.
 
-[Unreleased]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Ad-duc/bdc-warband-manager/releases/tag/v1.0.0

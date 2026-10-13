@@ -15,17 +15,12 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ## [Non publié]
 
-### Ajouté
+## [1.1.0] - 2026-10-13
 
-- Dé de direction (bouton "Dé de direction" dans l'en-tête), par-dessus
-  l'écran en cours : une flèche dans une direction quelconque et, en option,
-  les distances de déviation des règles (1D6", 1D6x2", 3D6"), avec le détail des
-  dés.
-- Aide de jeu en français (bouton "Aide de jeu" dans l'en-tête) : la feuille
-  d'aide de jeu officielle traduite sur une page A4, avec les numéros de page
-  des règles de la version de test 1.03, prête à imprimer.
-- Bouton "Mes bandes" dans l'en-tête (et le menu sur téléphone), pour revenir
-  à la liste des bandes depuis n'importe quel écran.
+Préparation des batailles, campagnes de groupe et générateurs de noms,
+toujours sur la version de test 1.03 de Black Death City.
+
+### Ajouté
 
 - Assistant de préparation de bataille ("Préparer une bataille" dans
   l'en-tête, sur le tableau de campagne d'une bande et dans une campagne de
@@ -35,22 +30,31 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
   journal d'une bande ou dans la campagne de groupe.
 - Fiche des scénarios : la table des scénarios, les règles communes et les
   six scénarios avec leurs rebondissements, tirés de la traduction française.
-- Lien vers le site officiel de Black Death City dans le pied de page.
 - Campagnes de groupe sur l'accueil : bandes de l'application ou d'autres
   joueurs, batailles livrées et classement. Le chapitre 5 "Campagnes" n'est
   pas encore publié : aucune règle de campagne n'est appliquée.
+- Dé de direction (bouton "Dé de direction" dans l'en-tête), par-dessus
+  l'écran en cours : une flèche dans une direction quelconque et, en option,
+  les distances de déviation des règles (1D6", 1D6x2", 3D6"), avec le détail
+  des dés.
+- Aide de jeu en français (bouton "Aide de jeu" dans l'en-tête) : la feuille
+  d'aide de jeu officielle traduite sur une page A4, avec les numéros de page
+  des règles de la version de test 1.03, prête à imprimer.
+- Bouton "Mes bandes" dans l'en-tête (et le menu sur téléphone), pour revenir
+  à la liste des bandes depuis n'importe quel écran.
 - Noms féminins pour les combattants : un symbole masculin et un symbole
   féminin à côté du bouton "Au hasard". Les Death Covens suivent la règle du
   livre ("-a" ajouté à un nom qui se termine par une consonne, p. 96) ; les
   autres factions utilisent des tables D66 maison, non officielles.
+- Nom de bande au hasard à côté du champ "Nom de la bande", tiré de tables
+  maison propres à la faction choisie (non officielles).
 - Retours sur la traduction dans le lecteur de règles : le lien "Proposer
   une correction" sous chaque titre ouvre un ticket GitHub déjà rempli
   (formulaire `traduction`), le passage sélectionné est cité, et chaque
   chapitre renvoie à la page de modification de son fichier. Les tickets
   acceptés sont appliqués par une demande de fusion
   (`docs/TRANSLATION_FEEDBACK.md`).
-- Nom de bande au hasard à côté du champ "Nom de la bande", tiré de tables
-  maison propres à la faction choisie (non officielles).
+- Lien vers le site officiel de Black Death City dans le pied de page.
 
 ### Modifié
 
@@ -59,14 +63,15 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
   complète, Chef déjà recruté ou différent de celui imposé par l'origine,
   limite de catégorie ou de profil atteinte, argent restant insuffisant.
 - Origines présentées une par ligne à la deuxième étape, comme les factions.
-- Sur téléphone, les outils de l'en-tête (dé de direction, dos de cartes,
-  lecteur des règles, langue) sont regroupés dans un seul menu et le titre
-  tient sur une ligne ; sur tablette, les boutons d'outils n'affichent que leur
-  icône, les libellés reviennent sur grand écran.
+- L'étape de l'équipement affiche le type (Chef, Champion, Homme de main...)
+  sous le nom de chaque combattant du sélecteur.
 - Chaque dé indique son nombre de dés (1D6, 1D3+1, jamais D6 seul) dans
   l'application, les feuilles imprimées, le lecteur des règles, les textes
   des données et la traduction française ; les tables D66 gardent leur nom.
   `npm run fix:dice` applique la règle et `npm run check:data` la vérifie.
+- Sur téléphone, les outils de l'en-tête sont regroupés dans un seul menu et
+  le titre tient sur une ligne ; sur tablette, les boutons d'outils
+  n'affichent que leur icône, les libellés reviennent sur grand écran.
 - L'interface est uniquement en français : le choix de la langue disparaît et
   un navigateur en anglais affiche les écrans en français (les textes anglais
   restent dans `en.json`).
@@ -164,5 +169,6 @@ City.
   Celtiberian reste pour le titre de l'en-tête, le lecteur des règles et les
   feuilles imprimées.
 
-[Non publié]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.0.0...HEAD
+[Non publié]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Ad-duc/bdc-warband-manager/releases/tag/v1.0.0
