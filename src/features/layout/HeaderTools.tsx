@@ -2,7 +2,7 @@
  * File:        src/features/layout/HeaderTools.tsx
  * Role:        Tools of the header: back to the warband list, direction
  *              dice, battle set-up, card back generator, reminder sheet,
- *              French rules reader. From
+ *              French rules reader, rules tutorial. From
  *              the "sm" breakpoint they are shown as buttons (icons, labels
  *              from "xl");
  *              on phones they are grouped in one menu so the title keeps the
@@ -73,6 +73,14 @@ const BattleIcon = () => (
     <path d="M20 4L10 14M10 14l-2 2M7 13l4 4M4 20l3-3" />
   </Icon>
 );
+const TutorialIcon = () => (
+  <Icon>
+    <rect x="3" y="4" width="18" height="16" />
+    <circle cx="9" cy="12" r="2.5" />
+    <circle cx="15" cy="12" r="2.5" />
+    <path d="M11.5 12h1" />
+  </Icon>
+);
 const RulesIcon = () => (
   <Icon>
     <path d="M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2z" />
@@ -91,6 +99,8 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
   const homeCurrent = route.name === "home" ? "page" : undefined;
   const backsCurrent = route.name === "cardBacks" ? "page" : undefined;
   const rulesCurrent = route.name === "rules" ? "page" : undefined;
+  const tutorialCurrent = route.name === "tutorial" ? "page" : undefined;
+  const tutorialHref = hrefFor({ name: "tutorial", lesson: null, step: null });
   const reminderCurrent = route.name === "reminder" ? "page" : undefined;
   const battleCurrent = route.name === "battle" || route.name === "scenarios" ? "page" : undefined;
   const battleHref = hrefFor({ name: "battle", warbandId: null, campaignId: null });
@@ -152,6 +162,10 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
         <a href={hrefFor({ name: "rules", chapter: null })} aria-current={rulesCurrent} className={BUTTON}>
           <RulesIcon />
           <span className="sr-only xl:not-sr-only">{t("header.rules")}</span>
+        </a>
+        <a href={tutorialHref} aria-current={tutorialCurrent} className={BUTTON}>
+          <TutorialIcon />
+          <span className="sr-only xl:not-sr-only">{t("header.tutorial")}</span>
         </a>
       </div>
 
@@ -236,6 +250,10 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
           >
             <RulesIcon />
             {t("header.rules")}
+          </a>
+          <a href={tutorialHref} aria-current={tutorialCurrent} className={MENU_ITEM} onClick={close}>
+            <TutorialIcon />
+            {t("header.tutorial")}
           </a>
         </div>
       </div>
