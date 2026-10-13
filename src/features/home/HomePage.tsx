@@ -20,6 +20,7 @@ import { useFormatter } from "../../i18n/text.ts";
 import { useWizard } from "../../store/wizard.ts";
 import { ConfirmDialog } from "../common/ConfirmDialog.tsx";
 import { ShareButton } from "../share/ShareButton.tsx";
+import { GroupCampaignsSection } from "../groups/GroupCampaignsSection.tsx";
 import { createWarband, duplicateWarband, newId } from "../warbands/factory.ts";
 import { downloadExport } from "../warbands/export.ts";
 
@@ -219,6 +220,7 @@ export function HomePage() {
           setToDelete(null);
         }}
       />
+      <GroupCampaignsSection />
     </section>
   );
 }

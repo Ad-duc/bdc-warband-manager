@@ -13,3 +13,4 @@ export * from "./lookup.ts";
 export * from "./dice.ts";
 export * from "./calc.ts";
 export * from "./validate.ts";
+export * from "./battle.ts";

@@ -3,13 +3,14 @@
  * Role:        Battle log: list of the recorded battles, "New battle" form
  *              (scenario, opponent, result, experience per fighter, losses,
  *              gains) with a summary shown before applying everything at once,
- *              and undo of the last battle.
+ *              and undo of the last battle. A battle prepared with the set-up
+ *              assistant opens the form with its scenario and opponent.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
  */
 
-import { useId, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { Warband, WarbandFighter } from "../../data/schema.ts";
 import { gainsNoExperience, type FactionIndex } from "../../rules/index.ts";
@@ -17,6 +18,7 @@ import { useFormatter } from "../../i18n/text.ts";
 import { fighterLabel } from "../warbands/factory.ts";
 import { ConfirmDialog } from "../common/ConfirmDialog.tsx";
 import { applyBattle, emptyBattle, toLogEntry, undoLastBattle, type BattleDraft } from "./campaign.ts";
+import { clearPrefill, peekPrefill } from "../battle/handoff.ts";
 
 const RESULTS = ["victory", "defeat", "draw"] as const;
 
@@ -31,7 +33,16 @@ export function BattleLog({
 }) {
   const { t } = useTranslation();
   const f = useFormatter();
-  const [draft, setDraft] = useState<BattleDraft | null>(null);
+  // A battle prepared with the set-up assistant opens the form already filled in.
+  const [draft, setDraft] = useState<BattleDraft | null>(() => {
+    const prefill = peekPrefill(warband.id);
+    return prefill === null
+      ? null
+      : { ...emptyBattle(), scenario: prefill.scenario, opponent: prefill.opponent, notes: prefill.notes };
+  });
+  useEffect(() => {
+    if (peekPrefill(warband.id) !== null) clearPrefill();
+  }, [warband.id]);
   const [reviewing, setReviewing] = useState(false);
   const [confirmUndo, setConfirmUndo] = useState(false);
   const formId = useId();

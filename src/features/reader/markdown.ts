@@ -56,11 +56,12 @@ export function slugify(text: string): string {
   );
 }
 
-export function renderChapter(markdown: string): RenderedChapter {
+/** `prefix` keeps the heading ids unique when several fragments share a page. */
+export function renderChapter(markdown: string, prefix = "s"): RenderedChapter {
   const used = new Map<string, number>();
   const sections: Section[] = [];
   const idFor = (text: string): string => {
-    const base = `s-${slugify(text)}`;
+    const base = `${prefix}-${slugify(text)}`;
     const count = used.get(base) ?? 0;
     used.set(base, count + 1);
     return count === 0 ? base : `${base}-${count + 1}`;

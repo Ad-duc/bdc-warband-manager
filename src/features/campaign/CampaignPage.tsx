@@ -185,6 +185,12 @@ function Overview({ warband, index, update }: { warband: Warband; index: Faction
               {t("home.print")}
             </a>
             <ShareButton warband={warband} small />
+            <a
+              className="btn btn-sm btn-solid"
+              href={hrefFor({ name: "battle", warbandId: warband.id, campaignId: null })}
+            >
+              {t("scenarios.setUp")}
+            </a>
           </p>
           <p className="text-sm">
             {f.text(index.faction.name)} - {origin === undefined ? "-" : f.text(origin.name)} -{" "}

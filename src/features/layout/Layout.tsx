@@ -1,8 +1,8 @@
 /*
  * File:        src/features/layout/Layout.tsx
  * Role:        Common page frame: skip link; header with logo, title and
- *              tools (direction dice, card back generator, French rules
- *              reader, language selector, grouped in a menu on phones); main area;
+ *              tools (see HeaderTools.tsx, grouped in a menu on phones); main
+ *              area;
  *              footer with the fan-made notice, the version, a link to the
  *              changelog and the support link. The frame fills the window:
  *              header and footer stay in place and only the area between them

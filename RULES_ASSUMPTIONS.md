@@ -283,6 +283,33 @@ des Vers"), in the interface language.
 at 0, named "Ancient scrolls tally" / "Total des parchemins anciens" by the
 app (the book gives it no name).
 
+### A40 - Battle set-up assistant (settled)
+
+The assistant follows "Setting Up the Battle" (p. 17) and the scenarios
+(Chapter 3). Readings:
+
+- Underdog: the lower warband rating; a tie is settled by a roll-off whose
+  winner is the underdog (rerolled while equal).
+- Battle groups: sizes as equal as possible ("Battle Groups", p. 35),
+  computed from the active fighters of a saved warband or the number typed in.
+  The number of groups comes from the "Each warband is split into N battle
+  groups" sentence; Street of Death splits its warbands its own way (the
+  Defender's hit and escort), so the assistant shows the text and lets the
+  players set the number. Who goes in which group is the players' choice; the
+  random split is only a convenience.
+- Prepared spells (p. 34): 1 roll on each known spell lore, signature spells
+  always prepared, a roll on a signature spell has no effect and is not
+  re-rolled. Lores gained otherwise than by the profile are not rolled.
+- Twist tables are rolled with their own die (1D6, or 1D3 for The Chapel).
+
+### A41 - Group campaigns without campaign rules (settled)
+
+Chapter 5 "Campaigns" is not published in playtest v1.03. A group campaign
+only records its warbands (saved in the app or typed in) and the battles they
+fought (scenario, twist, underdog, winner or draw), with a standings table that
+counts battles, victories, draws and defeats. No campaign rule is invented;
+the aftermath of a battle stays in each warband's battle log.
+
 ## Data decisions
 
 ### D01 - Number of Guild Mercenaries profiles (data)

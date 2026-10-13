@@ -703,13 +703,48 @@ export const WarbandSchema = z
   .strict();
 export type Warband = z.infer<typeof WarbandSchema>;
 
-/** Campaign arbiter document: modelled now, screen planned after step 7. */
+/**
+ * Group campaign: the warbands of a gaming group and the battles they fought.
+ * A participant is a warband saved in this app (warbandId) or a guest warband
+ * kept by another player (name, faction and rating typed in). Chapter 5
+ * "Campaigns" of the rules is not published yet: no campaign rule is applied,
+ * the document only records who fought whom, the scenario and the result.
+ */
+export const CampaignParticipantSchema = z
+  .object({
+    id: z.string().min(1),
+    warbandId: z.string().min(1).nullable(),
+    name: z.string(),
+    factionId: IdSchema.nullable(),
+    /** Warband rating of a guest warband; a local warband uses its live rating. */
+    rating: z.number().int().min(0).nullable(),
+  })
+  .strict();
+export type CampaignParticipant = z.infer<typeof CampaignParticipantSchema>;
+
+export const CampaignBattleSchema = z
+  .object({
+    id: z.string().min(1),
+    date: z.iso.datetime(),
+    /** Scenario number (1 to 6) and twist roll, null when not recorded. */
+    scenario: z.number().int().min(1).max(6).nullable(),
+    twist: z.number().int().min(1).max(6).nullable(),
+    participantIds: z.tuple([z.string().min(1), z.string().min(1)]),
+    underdogId: z.string().min(1).nullable(),
+    /** null for a draw. */
+    winnerId: z.string().min(1).nullable(),
+    notes: z.string(),
+  })
+  .strict();
+export type CampaignBattle = z.infer<typeof CampaignBattleSchema>;
+
 export const CampaignSchema = z
   .object({
     schemaVersion: z.literal(1),
     id: z.string().min(1),
     name: z.string(),
-    warbandIds: z.array(z.string().min(1)),
+    participants: z.array(CampaignParticipantSchema),
+    battles: z.array(CampaignBattleSchema),
     notes: z.string(),
     createdAt: z.iso.datetime(),
     updatedAt: z.iso.datetime(),

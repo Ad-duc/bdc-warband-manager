@@ -2,8 +2,9 @@
  * File:        src/App.tsx
  * Role:        Root component: page layout and the screen of the current
  *              route (home, creation wizard, campaign dashboard, print view,
- *              shared warband, French rules reader or changelog). Screens other than the home page are
- *              loaded on demand to keep the first download small.
+ *              shared warband, French rules reader, changelog, scenarios,
+ *              battle set-up or group campaign). Screens other than the home
+ *              page are loaded on demand to keep the first download small.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -34,6 +35,15 @@ const CardBacksPage = lazy(async () => ({
 const ReminderPage = lazy(async () => ({
   default: (await import("./print/ReminderPage.tsx")).ReminderPage,
 }));
+const ScenariosPage = lazy(async () => ({
+  default: (await import("./features/scenarios/ScenariosPage.tsx")).ScenariosPage,
+}));
+const BattleSetupPage = lazy(async () => ({
+  default: (await import("./features/battle/BattleSetupPage.tsx")).BattleSetupPage,
+}));
+const GroupCampaignPage = lazy(async () => ({
+  default: (await import("./features/groups/GroupCampaignPage.tsx")).GroupCampaignPage,
+}));
 const RulesPage = lazy(async () => ({
   default: (await import("./features/reader/RulesPage.tsx")).RulesPage,
 }));
@@ -52,6 +62,15 @@ export function App() {
         {route.name === "changelog" && <ChangelogPage />}
         {route.name === "cardBacks" && <CardBacksPage />}
         {route.name === "reminder" && <ReminderPage />}
+        {route.name === "scenarios" && <ScenariosPage number={route.number} />}
+        {route.name === "battle" && (
+          <BattleSetupPage
+            key={`${route.warbandId ?? ""}-${route.campaignId ?? ""}`}
+            warbandId={route.warbandId}
+            campaignId={route.campaignId}
+          />
+        )}
+        {route.name === "groupCampaign" && <GroupCampaignPage id={route.id} />}
       </Suspense>
       {route.name === "home" && <HomePage />}
     </Layout>

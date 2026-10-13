@@ -1,8 +1,8 @@
 /*
  * File:        src/features/layout/HeaderTools.tsx
  * Role:        Tools of the header: back to the warband list, direction
- *              dice, card back generator, reminder sheet, French rules reader
- *              and language selector. From
+ *              dice, battle set-up, card back generator, reminder sheet,
+ *              French rules reader and language selector. From
  *              the "sm" breakpoint they are shown as buttons (icons, labels
  *              from "xl");
  *              on phones they are grouped in one menu so the title keeps the
@@ -68,6 +68,12 @@ const ReminderIcon = () => (
     <path d="M8.5 11h7M8.5 14.5h7M8.5 18h4" />
   </Icon>
 );
+const BattleIcon = () => (
+  <Icon>
+    <path d="M4 4l10 10M14 14l2 2M17 13l-4 4M20 20l-3-3" />
+    <path d="M20 4L10 14M10 14l-2 2M7 13l4 4M4 20l3-3" />
+  </Icon>
+);
 const RulesIcon = () => (
   <Icon>
     <path d="M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2z" />
@@ -87,6 +93,8 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
   const backsCurrent = route.name === "cardBacks" ? "page" : undefined;
   const rulesCurrent = route.name === "rules" ? "page" : undefined;
   const reminderCurrent = route.name === "reminder" ? "page" : undefined;
+  const battleCurrent = route.name === "battle" || route.name === "scenarios" ? "page" : undefined;
+  const battleHref = hrefFor({ name: "battle", warbandId: null, campaignId: null });
 
   /* Closes the phone menu on Escape (focus back on its button) and on a click outside. */
   useEffect(() => {
@@ -133,6 +141,10 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
         <a href={hrefFor({ name: "cardBacks" })} aria-current={backsCurrent} className={BUTTON}>
           <BacksIcon />
           <span className="sr-only xl:not-sr-only">{t("header.cardBacks")}</span>
+        </a>
+        <a href={battleHref} aria-current={battleCurrent} className={BUTTON}>
+          <BattleIcon />
+          <span className="sr-only xl:not-sr-only">{t("header.battle")}</span>
         </a>
         <a href={hrefFor({ name: "reminder" })} aria-current={reminderCurrent} className={BUTTON}>
           <ReminderIcon />
@@ -204,6 +216,10 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
           >
             <BacksIcon />
             {t("header.cardBacks")}
+          </a>
+          <a href={battleHref} aria-current={battleCurrent} className={MENU_ITEM} onClick={close}>
+            <BattleIcon />
+            {t("header.battle")}
           </a>
           <a
             href={hrefFor({ name: "reminder" })}

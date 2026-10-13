@@ -3,7 +3,8 @@
  * Role:        Accessibility audit with axe-core on every screen, in both
  *              languages: home, each wizard step (with an open scroll), the
  *              campaign dashboard (open injuries and battle form), the print
- *              view, the shared page, the rules reader, the changelog and the
+ *              view, the shared page, the rules reader, the changelog, the
+ *              scenarios, the battle set-up, a group campaign and the
  *              confirmation dialog. WCAG 2.2 A and AA rules; any violation
  *              fails the test with its details.
  * Author:      Adrien Duclaud
@@ -85,6 +86,25 @@ for (const locale of ["en-GB", "fr-FR"] as const) {
       await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
       await page.locator("summary").first().click();
       await audit(page, "rules reader");
+    });
+
+    test("scenarios, battle set-up and group campaign", async ({ page }) => {
+      await page.goto("./#/scenarios");
+      await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+      await audit(page, "scenarios");
+      await page.goto("./#/scenarios/5");
+      await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+      await audit(page, "scenario page");
+      await importDemo(page);
+      await page.goto("./#/battle?warband=demo-1");
+      await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+      await page.getByRole("button", { name: fr ? /table des scénarios/ : /scenario table/ }).click();
+      await page.getByRole("button", { name: fr ? /table des rebondissements/ : /twist table/ }).click();
+      await audit(page, "battle set-up");
+      await page.goto("./");
+      await page.getByRole("button", { name: fr ? "Nouvelle campagne" : "New campaign" }).click();
+      await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+      await audit(page, "group campaign");
     });
 
     test("changelog", async ({ page }) => {

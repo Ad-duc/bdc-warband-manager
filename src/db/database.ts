@@ -61,6 +61,15 @@ export async function deleteWarband(target: BdcDatabase, id: string): Promise<vo
   await target.warbands.delete(id);
 }
 
+/** Group campaigns sorted by last update, most recent first. */
+export async function listCampaigns(target: BdcDatabase): Promise<Campaign[]> {
+  return target.campaigns.orderBy("updatedAt").reverse().toArray();
+}
+
+export async function deleteCampaign(target: BdcDatabase, id: string): Promise<void> {
+  await target.campaigns.delete(id);
+}
+
 export async function saveCampaign(target: BdcDatabase, campaign: Campaign): Promise<string> {
   const { CampaignSchema } = await schemas();
   return target.campaigns.put(CampaignSchema.parse(campaign));

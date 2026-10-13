@@ -26,6 +26,17 @@ version is given separately (playtest v1.03).
 - "My warbands" button in the header (and the phone menu), back to the
   warband list from any screen.
 
+- Battle set-up assistant ("Prepare a battle" in the header, on a warband's
+  campaign dashboard and in a group campaign): warbands and underdog, scenario
+  and twist rolled or chosen, battle group sizes with a random split, prepared
+  spells, what happens during and after the battle, then the record in a
+  warband's battle log or in the group campaign.
+- Scenario reference: the scenario table, the shared rules and the six
+  scenarios with their twists, from the French translation.
+- Group campaigns on the home page: warbands of the app or of other players,
+  battles fought and standings. Chapter 5 "Campaigns" is not published yet, so
+  no campaign rule is applied.
+
 ### Changed
 
 - On phones the header tools (direction dice, card backs, rules reader,

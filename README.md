@@ -28,6 +28,12 @@ téléphone, et reste utilisable sans connexion une fois ouverte.
 - **Suivre une campagne** : journal des batailles (avec annulation),
   expérience, blessures, progressions, Pourriture noire, possessions, réserve
   et compteurs du repaire.
+- **Préparer une bataille** pas à pas : outsider, scénario et rebondissement
+  (tirés au dé ou choisis), groupes de combat, sorts préparés, conditions de
+  victoire et expérience bonus, puis enregistrement du résultat. Les six
+  scénarios sont aussi consultables en entier.
+- **Mener une campagne de groupe** : réunissez les bandes de vos joueurs,
+  notez chaque bataille et suivez le classement.
 - **Imprimer** la feuille de bande au format A4, les cartes de combattants au
   format carte à jouer avec leurs dos, et une aide de jeu en français sur une
   page.
@@ -78,6 +84,8 @@ and French, on desktop, tablet and phone, and usable offline once opened.
   factions.
 - Campaign tracking: battle log with undo, experience, injuries,
   advancements, Black Rot, holdings, stash and stronghold counters.
+- Battle set-up assistant (underdog, scenario and twist, battle groups,
+  prepared spells) and group campaigns with standings.
 - Printable A4 roster, playing-card size fighter cards with their backs, and
   a one-page French reminder sheet.
 - French translation of the rules, direction dice, read-only share links and

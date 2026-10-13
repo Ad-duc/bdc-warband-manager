@@ -27,6 +27,18 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 - Bouton "Mes bandes" dans l'en-tête (et le menu sur téléphone), pour revenir
   à la liste des bandes depuis n'importe quel écran.
 
+- Assistant de préparation de bataille ("Préparer une bataille" dans
+  l'en-tête, sur le tableau de campagne d'une bande et dans une campagne de
+  groupe) : bandes et outsider, scénario et rebondissement tirés ou choisis,
+  taille des groupes de combat avec répartition au hasard, sorts préparés, ce
+  qui se passe pendant et après la bataille, puis l'enregistrement dans le
+  journal d'une bande ou dans la campagne de groupe.
+- Fiche des scénarios : la table des scénarios, les règles communes et les
+  six scénarios avec leurs rebondissements, tirés de la traduction française.
+- Campagnes de groupe sur l'accueil : bandes de l'application ou d'autres
+  joueurs, batailles livrées et classement. Le chapitre 5 "Campagnes" n'est
+  pas encore publié : aucune règle de campagne n'est appliquée.
+
 ### Modifié
 
 - Sur téléphone, les outils de l'en-tête (dé de direction, dos de cartes,
