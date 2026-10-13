@@ -109,7 +109,7 @@ Rule readings and open questions are kept in
 
 ## Quality
 
-- Accessibility: axe-core audit of every screen in English and French (WCAG
+- Accessibility: axe-core audit of every screen of the French interface (WCAG
   2.2 A and AA) in the end-to-end tests, no violation.
 - Lighthouse 13.5 on the home page: accessibility, best practices and SEO
   100; performance 99 on desktop. On mobile the score is 88 to 93 with

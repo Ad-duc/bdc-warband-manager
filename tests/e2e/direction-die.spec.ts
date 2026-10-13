@@ -56,7 +56,7 @@ test.describe("phone", () => {
     const box = await title.boundingBox();
     expect(box?.height ?? 0).toBeLessThan(40);
 
-    const menu = banner.getByRole("button", { name: "Outils et langue" });
+    const menu = banner.getByRole("button", { name: "Outils" });
     await menu.click();
     await expect(menu).toHaveAttribute("aria-expanded", "true");
     await expect(banner.getByRole("link", { name: "Dos de cartes" })).toBeVisible();
@@ -65,25 +65,17 @@ test.describe("phone", () => {
     await expect(menu).toBeFocused();
 
     await menu.click();
-    await banner.getByRole("button", { name: "English" }).click();
-    await expect(banner.getByRole("button", { name: "Tools and language" })).toBeVisible();
-    await banner.getByRole("button", { name: "Direction dice" }).click();
-    await expect(page.getByRole("dialog", { name: "Direction dice" })).toBeVisible();
-    await expect(banner.getByRole("button", { name: "Tools and language" })).toHaveAttribute(
-      "aria-expanded",
-      "false",
-    );
+    await banner.getByRole("button", { name: "Dé de direction" }).click();
+    await expect(page.getByRole("dialog", { name: "Dé de direction" })).toBeVisible();
+    await expect(banner.getByRole("button", { name: "Outils" })).toHaveAttribute("aria-expanded", "false");
     await page.keyboard.press("Escape");
 
-    await banner.getByRole("button", { name: "Tools and language" }).click();
-    await banner.getByRole("link", { name: "Card backs" }).click();
+    await banner.getByRole("button", { name: "Outils" }).click();
+    await banner.getByRole("link", { name: "Dos de cartes" }).click();
     await expect(page).toHaveURL(/#\/card-backs$/);
-    await banner.getByRole("button", { name: "Tools and language" }).click();
-    await banner.getByRole("link", { name: "My warbands" }).click();
+    await banner.getByRole("button", { name: "Outils" }).click();
+    await banner.getByRole("link", { name: "Mes bandes" }).click();
     await expect(page).toHaveURL(/#\/$/);
-    await expect(banner.getByRole("button", { name: "Tools and language" })).toHaveAttribute(
-      "aria-expanded",
-      "false",
-    );
+    await expect(banner.getByRole("button", { name: "Outils" })).toHaveAttribute("aria-expanded", "false");
   });
 });

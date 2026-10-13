@@ -6,12 +6,15 @@
   Created:  2026-10-12
   License:  MIT
 -->
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0B0B0B" />
-    <meta name="description" content="Unofficial fan-made warband builder for Black Death City." />
+    <meta
+      name="description"
+      content="Outil de fan non officiel pour créer et suivre ses bandes de Black Death City."
+    />
     <link rel="icon" type="image/png" href="/icons/favicon-64.png" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <link rel="preload" href="/fonts/old-celtiberian.woff2" as="font" type="font/woff2" crossorigin />
@@ -29,7 +32,7 @@
             <div class="min-w-0 flex-1">
               <span class="block font-gothic text-2xl leading-none sm:text-3xl">Black Death City</span>
               <p id="shell-tagline" class="truncate font-hand text-base text-on-page-muted sm:text-lg">
-                Warband builder and campaign tracker
+                Création de bandes et suivi de campagne
               </p>
             </div>
             <div class="h-11 w-[5.75rem]"></div>
@@ -37,19 +40,6 @@
         </header>
         <main class="flex-1"></main>
       </div>
-      <script>
-        // Shows the tagline in the language the application will pick (saved choice, then browser).
-        try {
-          var lng = localStorage.getItem("bdc.language") || navigator.language || "en";
-          if (lng.slice(0, 2) === "fr") {
-            document.documentElement.lang = "fr";
-            document.getElementById("shell-tagline").textContent =
-              "Cr\u00e9ation de bandes et suivi de campagne";
-          }
-        } catch (e) {
-          // Storage unavailable: keep the English tagline.
-        }
-      </script>
     </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

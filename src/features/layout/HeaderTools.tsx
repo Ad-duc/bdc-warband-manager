@@ -2,7 +2,7 @@
  * File:        src/features/layout/HeaderTools.tsx
  * Role:        Tools of the header: back to the warband list, direction
  *              dice, battle set-up, card back generator, reminder sheet,
- *              French rules reader and language selector. From
+ *              French rules reader. From
  *              the "sm" breakpoint they are shown as buttons (icons, labels
  *              from "xl");
  *              on phones they are grouped in one menu so the title keeps the
@@ -16,7 +16,6 @@
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { hrefFor, useRoute } from "../../app/router.ts";
-import { LanguageSwitcher } from "./LanguageSwitcher.tsx";
 
 const BUTTON =
   "inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 border-2 border-on-page px-2 text-sm hover:bg-on-page hover:text-page aria-[current=page]:bg-on-page aria-[current=page]:text-page xl:px-3";
@@ -154,7 +153,6 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
           <RulesIcon />
           <span className="sr-only xl:not-sr-only">{t("header.rules")}</span>
         </a>
-        <LanguageSwitcher />
       </div>
 
       {/* Phones: the same tools in one menu */}
@@ -239,10 +237,6 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
             <RulesIcon />
             {t("header.rules")}
           </a>
-          <div className="flex items-center justify-between gap-2 pt-1">
-            <span className="text-sm text-on-page-muted">{t("language.label")}</span>
-            <LanguageSwitcher />
-          </div>
         </div>
       </div>
     </>

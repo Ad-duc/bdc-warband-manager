@@ -1,7 +1,7 @@
 /*
  * File:        tests/e2e/a11y.spec.ts
- * Role:        Accessibility audit with axe-core on every screen, in both
- *              languages: home, each wizard step (with an open scroll), the
+ * Role:        Accessibility audit with axe-core on every screen of the
+ *              French interface: home, each wizard step (with an open scroll), the
  *              campaign dashboard (open injuries and battle form), the print
  *              view, the shared page, the rules reader, the changelog, the
  *              scenarios, the battle set-up, a group campaign and the
@@ -35,10 +35,9 @@ async function importDemo(page: Page): Promise<void> {
   await expect(page.getByTestId("warband-list")).toBeVisible();
 }
 
-for (const locale of ["en-GB", "fr-FR"] as const) {
+for (const locale of ["fr-FR"] as const) {
   test.describe(`screens in ${locale}`, () => {
     test.use({ locale });
-    const fr = locale === "fr-FR";
 
     test("home and confirmation dialog", async ({ page }) => {
       await page.goto("./");
@@ -46,7 +45,7 @@ for (const locale of ["en-GB", "fr-FR"] as const) {
       await importDemo(page);
       await audit(page, "home");
       await page
-        .getByRole("button", { name: fr ? /^Supprimer/ : /^Delete/ })
+        .getByRole("button", { name: /^Supprimer/ })
         .first()
         .click();
       await expect(page.getByRole("dialog")).toBeVisible();
@@ -57,16 +56,14 @@ for (const locale of ["en-GB", "fr-FR"] as const) {
       await importDemo(page);
       await page.goto("./#/warband/demo-1");
       await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-      const steps = fr
-        ? ["Faction", "Origine", "Combattants", "Équipement", "Compétences", "Valeur"]
-        : ["Faction", "Origin", "Fighters", "Wargear", "Skills", "Rating"];
+      const steps = ["Faction", "Origine", "Combattants", "Équipement", "Compétences", "Valeur"];
       for (const step of steps) {
         await page
           .getByRole("button", { name: new RegExp(step) })
           .first()
           .click();
         await expect(page.getByRole("heading", { level: 1 })).toHaveText(step);
-        if (step === "Combattants" || step === "Fighters") await page.locator("summary").first().click();
+        if (step === "Combattants") await page.locator("summary").first().click();
         await audit(page, `wizard ${step}`);
       }
     });
@@ -77,7 +74,7 @@ for (const locale of ["en-GB", "fr-FR"] as const) {
       await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
       await page.locator("summary").first().click();
       await audit(page, "campaign");
-      await page.getByRole("button", { name: fr ? "Nouvelle bataille" : "New battle" }).click();
+      await page.getByRole("button", { name: "Nouvelle bataille" }).click();
       await audit(page, "campaign battle form");
     });
 
@@ -98,11 +95,11 @@ for (const locale of ["en-GB", "fr-FR"] as const) {
       await importDemo(page);
       await page.goto("./#/battle?warband=demo-1");
       await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-      await page.getByRole("button", { name: fr ? /table des scénarios/ : /scenario table/ }).click();
-      await page.getByRole("button", { name: fr ? /table des rebondissements/ : /twist table/ }).click();
+      await page.getByRole("button", { name: /table des scénarios/ }).click();
+      await page.getByRole("button", { name: /table des rebondissements/ }).click();
       await audit(page, "battle set-up");
       await page.goto("./");
-      await page.getByRole("button", { name: fr ? "Nouvelle campagne" : "New campaign" }).click();
+      await page.getByRole("button", { name: "Nouvelle campagne" }).click();
       await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
       await audit(page, "group campaign");
     });
@@ -118,12 +115,12 @@ for (const locale of ["en-GB", "fr-FR"] as const) {
       await page.goto("./#/warband/demo-1/print");
       await expect(page.getByTestId("print-page").first()).toBeVisible();
       await audit(page, "print");
-      await page.getByRole("radio", { name: fr ? "Les deux" : "Both" }).check();
-      await page.getByRole("radio", { name: fr ? "Économie d'encre" : "Ink saver" }).check();
+      await page.getByRole("radio", { name: "Les deux" }).check();
+      await page.getByRole("radio", { name: "Économie d'encre" }).check();
       await audit(page, "print cards, ink saver");
-      await page.getByLabel(fr ? /Imprimer les dos/ : /Print the backs/).check();
-      await page.getByLabel(fr ? "Nom de la bande au dos" : "Warband name on the backs").check();
-      await page.getByRole("radio", { name: fr ? "Fond parchemin" : "Parchment background" }).check();
+      await page.getByLabel(/Imprimer les dos/).check();
+      await page.getByLabel("Nom de la bande au dos").check();
+      await page.getByRole("radio", { name: "Fond parchemin" }).check();
       await audit(page, "print cards with backs");
       await page.goto("./#/card-backs");
       await expect(page.getByTestId("print-card-back").first()).toBeVisible();
@@ -131,16 +128,13 @@ for (const locale of ["en-GB", "fr-FR"] as const) {
       await page.goto("./#/reminder");
       await expect(page.getByTestId("reminder-sheet")).toBeVisible();
       await audit(page, "reminder sheet");
-      await page.getByRole("button", { name: fr ? "Dé de direction" : "Direction dice" }).click();
-      await page
-        .getByRole("dialog")
-        .getByRole("button", { name: fr ? "Lancer" : "Roll" })
-        .click();
+      await page.getByRole("button", { name: "Dé de direction" }).click();
+      await page.getByRole("dialog").getByRole("button", { name: "Lancer" }).click();
       await audit(page, "direction dice");
       await page.keyboard.press("Escape");
       await page.goto("./#/warband/demo-1/campaign");
-      await page.getByRole("button", { name: fr ? "Partager" : "Share" }).click();
-      const field = page.getByLabel(fr ? "Lien de partage" : "Share link");
+      await page.getByRole("button", { name: "Partager" }).click();
+      const field = page.getByLabel("Lien de partage");
       if (await field.isVisible().catch(() => false)) {
         await audit(page, "share field");
         await page.goto(await field.inputValue());
@@ -155,14 +149,12 @@ for (const locale of ["en-GB", "fr-FR"] as const) {
     for (const faction of ["Verminkin", "Death Covens", "The Blighted Cloister"]) {
       test(faction, async ({ page }) => {
         await page.goto("./");
-        await page
-          .getByRole("button", { name: locale === "fr-FR" ? "Nouvelle bande" : "New warband" })
-          .click();
+        await page.getByRole("button", { name: "Nouvelle bande" }).click();
         await page.getByRole("radio", { name: new RegExp(faction) }).check();
-        await page.getByRole("button", { name: locale === "fr-FR" ? "Suivant" : "Next" }).click();
+        await page.getByRole("button", { name: "Suivant" }).click();
         await audit(page, `${faction} origins`);
         await page.getByRole("radio").first().check();
-        await page.getByRole("button", { name: locale === "fr-FR" ? "Suivant" : "Next" }).click();
+        await page.getByRole("button", { name: "Suivant" }).click();
         for (const summary of await page.locator("summary").all()) await summary.click();
         await audit(page, `${faction} fighters`);
       });

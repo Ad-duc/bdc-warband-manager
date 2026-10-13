@@ -16,14 +16,9 @@
     "cardBacks": "Dos de cartes",
     "rules": "Règles en français",
     "directionDie": "Dé de direction",
-    "menu": "Outils et langue",
+    "menu": "Outils",
     "reminder": "Aide de jeu",
     "battle": "Préparer une bataille"
-  },
-  "language": {
-    "label": "Langue",
-    "en": "English",
-    "fr": "Français"
   },
   "home": {
     "heading": "Vos bandes",
@@ -67,7 +62,8 @@
     "offline": "Fonctionne hors ligne une fois chargé.",
     "support": "Offrez-moi un café",
     "newTab": "(s'ouvre dans un nouvel onglet)",
-    "changelog": "Nouveautés"
+    "changelog": "Nouveautés",
+    "official": "Site officiel de Black Death City"
   },
   "rules": {
     "data": {
@@ -609,7 +605,6 @@
     "overview": "Vue d'ensemble",
     "list": "Liste des scénarios",
     "setUp": "Préparer une bataille",
-    "frenchOnly": "Les textes des scénarios viennent de la traduction française.",
     "notFound": "Scénario inconnu. Choisissez-en un dans la liste.",
     "table": "Table des scénarios",
     "scenario": "Scénario",

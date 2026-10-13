@@ -16,14 +16,9 @@
     "cardBacks": "Card backs",
     "rules": "French rules",
     "directionDie": "Direction dice",
-    "menu": "Tools and language",
+    "menu": "Tools",
     "reminder": "Reminder sheet",
     "battle": "Prepare a battle"
-  },
-  "language": {
-    "label": "Language",
-    "en": "English",
-    "fr": "Français"
   },
   "home": {
     "heading": "Your warbands",
@@ -67,7 +62,8 @@
     "offline": "Works offline once loaded.",
     "support": "Buy me a coffee",
     "newTab": "(opens in a new tab)",
-    "changelog": "What's new"
+    "changelog": "What's new",
+    "official": "Official Black Death City website"
   },
   "rules": {
     "data": {
@@ -609,7 +605,6 @@
     "overview": "Overview",
     "list": "Scenario list",
     "setUp": "Set up a battle",
-    "frenchOnly": "The scenario texts come from the French translation and are shown in French for now.",
     "notFound": "Unknown scenario. Pick one from the list.",
     "table": "Scenario table",
     "scenario": "Scenario",

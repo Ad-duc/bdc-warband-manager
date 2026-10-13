@@ -31,8 +31,8 @@ export default defineConfig({
       manifest: {
         name: "BDC Warband Manager",
         short_name: "BDC Warbands",
-        description: "Unofficial fan-made warband builder and campaign tracker for Black Death City.",
-        lang: "en",
+        description: "Outil de fan non officiel pour créer et suivre ses bandes de Black Death City.",
+        lang: "fr",
         start_url: BASE_PATH,
         scope: BASE_PATH,
         display: "standalone",

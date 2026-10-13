@@ -82,9 +82,6 @@ export function ScenariosPage({ number }: { number: number | null }) {
       </div>
 
       <article className="panel-parchment min-w-0 p-4 sm:p-8">
-        {currentLanguage() === "en" && (
-          <p className="mb-4 text-sm text-on-panel-muted">{t("scenarios.frenchOnly")}</p>
-        )}
         {number !== null && scenario === undefined && <p role="alert">{t("scenarios.notFound")}</p>}
         {number === null && <Overview />}
         {scenario !== undefined && <ScenarioView scenario={scenario} />}

@@ -35,6 +35,7 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
   journal d'une bande ou dans la campagne de groupe.
 - Fiche des scénarios : la table des scénarios, les règles communes et les
   six scénarios avec leurs rebondissements, tirés de la traduction française.
+- Lien vers le site officiel de Black Death City dans le pied de page.
 - Campagnes de groupe sur l'accueil : bandes de l'application ou d'autres
   joueurs, batailles livrées et classement. Le chapitre 5 "Campagnes" n'est
   pas encore publié : aucune règle de campagne n'est appliquée.
@@ -49,6 +50,9 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
   l'application, les feuilles imprimées, le lecteur des règles, les textes
   des données et la traduction française ; les tables D66 gardent leur nom.
   `npm run fix:dice` applique la règle et `npm run check:data` la vérifie.
+- L'interface est uniquement en français : le choix de la langue disparaît et
+  un navigateur en anglais affiche les écrans en français (les textes anglais
+  restent dans `en.json`).
 - Le README présente l'application en ligne aux joueurs (en français, avec une
   partie en anglais) ; les informations de développement sont passées dans
   `docs/DEVELOPMENT.md`.

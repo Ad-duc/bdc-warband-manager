@@ -10,13 +10,13 @@
 
 import { expect, test } from "@playwright/test";
 
-test.use({ locale: "en-GB" });
+test.use({ locale: "fr-FR" });
 
 test("reminder sheet from the header, in French, on one page", async ({ page, browserName }) => {
   await page.goto("./");
-  await page.getByRole("banner").getByRole("link", { name: "Reminder sheet" }).click();
+  await page.getByRole("banner").getByRole("link", { name: "Aide de jeu" }).click();
   await expect(page).toHaveURL(/#\/reminder$/);
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Reminder sheet (French)");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Aide de jeu");
   const sheet = page.getByTestId("reminder-sheet");
   await expect(sheet).toHaveAttribute("lang", "fr");
   await expect(sheet.getByRole("heading", { name: "Black Death City - Aide de jeu" })).toBeVisible();
@@ -37,7 +37,7 @@ test("reminder sheet from the header, in French, on one page", async ({ page, br
 
 test("back to the warband list from the header", async ({ page }) => {
   await page.goto("./#/reminder");
-  const home = page.getByRole("banner").getByRole("link", { name: "My warbands" });
+  const home = page.getByRole("banner").getByRole("link", { name: "Mes bandes" });
   await expect(home).not.toHaveAttribute("aria-current", "page");
   await home.click();
   await expect(page).toHaveURL(/#\/$/);

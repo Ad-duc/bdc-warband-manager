@@ -88,7 +88,9 @@ interaction goes with an end-to-end test and is added to
 - **Headers.** Every file starts with a header: file, role, author, created,
   license (and usage for scripts). JSON files use a `_header` object.
 - **Language.** Code, identifiers, comments, commit messages and scripts are in
-  English. The interface is bilingual.
+  English. The interface is shown in French only; the English strings are
+  kept in `en.json` with the same keys so that English can come back by
+  setting `lng` in `src/i18n/index.ts` and restoring a language selector.
 - **Interface strings.** No text is written in JSX: every string is a key of
   `src/i18n/locales/en.json` and `fr.json`. Both files keep the same keys;
   `npm run check:i18n` fails on a missing, empty or unused key. A key built at

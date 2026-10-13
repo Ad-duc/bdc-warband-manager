@@ -3,8 +3,8 @@
  * Role:        Common page frame: skip link; header with logo, title and
  *              tools (see HeaderTools.tsx, grouped in a menu on phones); main
  *              area;
- *              footer with the fan-made notice, the version, a link to the
- *              changelog and the support link. The frame fills the window:
+ *              footer with the fan-made notice, a link to the official website,
+ *              the version, a link to the changelog and the support link. The frame fills the window:
  *              header and footer stay in place and only the area between them
  *              scrolls. Both are more compact on phones; print keeps the
  *              normal flow.
@@ -21,6 +21,9 @@ import { hrefFor, useRoute } from "../../app/router.ts";
 import { DirectionDieDialog } from "../dice/DirectionDieDialog.tsx";
 
 const BASE = import.meta.env.BASE_URL;
+
+/** Official website of the game, quoted in the introduction of the rules. */
+const OFFICIAL_URL = "https://www.blackdeathcity.com/";
 
 /** Optional support link shown in the bottom-right corner of the footer. */
 const SUPPORT_URL = "https://buymeacoffee.com/ad.duc";
@@ -79,7 +82,18 @@ export function Layout({ children }: { children: ReactNode }) {
       <footer className="no-print shrink-0 border-t-2 border-rule">
         <div className="mx-auto flex max-w-[120rem] items-center justify-between gap-3 px-4 py-2 text-xs text-on-page-muted sm:items-end sm:gap-4 sm:px-6 sm:py-4 sm:text-sm xl:px-10">
           <div className="space-y-1">
-            <p>{t("footer.disclaimer")}</p>
+            <p>
+              {t("footer.disclaimer")}{" "}
+              <a
+                href={OFFICIAL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-2 hover:text-on-page"
+              >
+                {t("footer.official")}
+                <span className="sr-only"> {t("footer.newTab")}</span>
+              </a>
+            </p>
             <p>
               {t("footer.version", {
                 version: __APP_VERSION__,

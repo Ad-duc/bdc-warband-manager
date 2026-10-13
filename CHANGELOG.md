@@ -33,6 +33,7 @@ version is given separately (playtest v1.03).
   warband's battle log or in the group campaign.
 - Scenario reference: the scenario table, the shared rules and the six
   scenarios with their twists, from the French translation.
+- Link to the official Black Death City website in the footer.
 - Group campaigns on the home page: warbands of the app or of other players,
   battles fought and standings. Chapter 5 "Campaigns" is not published yet, so
   no campaign rule is applied.
@@ -47,6 +48,9 @@ version is given separately (playtest v1.03).
   app, the printed sheets, the rules reader, the data texts and the French
   translation; D66 tables keep their name. `npm run fix:dice` applies the rule
   and `npm run check:data` enforces it.
+- The interface is in French only: the language selector is gone and an
+  English browser gets the French screens (the English strings stay in
+  `en.json`).
 - The README presents the online app for players (in French, with an English
   section); the developer information moved to `docs/DEVELOPMENT.md`.
 
