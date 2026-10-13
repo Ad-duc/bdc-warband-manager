@@ -1,6 +1,7 @@
 /*
  * File:        src/features/wizard/StepFaction.tsx
- * Role:        Step 1: warband name and faction. Every faction file of
+ * Role:        Step 1: warband name (typed or drawn from the house tables
+ *              of the selected faction) and faction. Every faction file of
  *              src/data is listed; the faction can be changed while the
  *              warband has no fighter. One faction per row; long descriptions
  *              are cut to three lines with a "read more" toggle.
@@ -13,14 +14,19 @@ import { useTranslation } from "react-i18next";
 import { gameData } from "../../data/index.ts";
 import { useFormatter } from "../../i18n/text.ts";
 import { ClampedText } from "../common/ClampedText.tsx";
+import { randomWarbandName, WARBAND_NAME_TABLES } from "../names/houseNames.ts";
 import type { StepProps } from "./WizardPage.tsx";
 
 const BASE = import.meta.env.BASE_URL;
+
+const warbandNameFor = (factionId: string): boolean => factionId in WARBAND_NAME_TABLES;
 
 export function StepFaction({ warband, update }: StepProps) {
   const { t } = useTranslation();
   const f = useFormatter();
   const locked = warband.fighters.length > 0;
+  const selected = gameData.factions.find((x) => x.id === warband.factionId);
+  const factionName = selected === undefined ? "" : f.text(selected.name);
 
   return (
     <div className="space-y-6">
@@ -28,16 +34,32 @@ export function StepFaction({ warband, update }: StepProps) {
         <label htmlFor="warband-name" className="mb-1 block font-bold">
           {t("wizard.name")}
         </label>
-        <input
-          id="warband-name"
-          className="field"
-          value={warband.name}
-          maxLength={80}
-          onChange={(e) => {
-            const name = e.target.value;
-            update((w) => ({ ...w, name }));
-          }}
-        />
+        <div className="flex flex-wrap gap-2">
+          <input
+            id="warband-name"
+            className="field min-w-0 flex-1 basis-48"
+            value={warband.name}
+            maxLength={80}
+            onChange={(e) => {
+              const name = e.target.value;
+              update((w) => ({ ...w, name }));
+            }}
+          />
+          {warbandNameFor(warband.factionId) && (
+            <button
+              type="button"
+              className="btn shrink-0"
+              aria-label={t("names.randomWarbandFor", { faction: factionName })}
+              onClick={() => {
+                const name = randomWarbandName(warband.factionId);
+                if (name !== null) update((w) => ({ ...w, name }));
+              }}
+            >
+              {t("names.randomWarband")}
+            </button>
+          )}
+        </div>
+        {warbandNameFor(warband.factionId) && <p className="mt-1 text-sm">{t("names.houseNote")}</p>}
       </div>
 
       <fieldset>

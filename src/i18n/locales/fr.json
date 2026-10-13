@@ -722,5 +722,17 @@
     "noScenario": "Scénario non noté",
     "wonBy": "gagnée par {{name}}",
     "removeBattle": "Retirer"
+  },
+  "names": {
+    "randomWarband": "Nom au hasard",
+    "randomWarbandFor": "Nom de bande au hasard pour la faction {{faction}}",
+    "houseNote": "Les noms de bande au hasard viennent de tables maison, non officielles.",
+    "genderFor": "Type de nom pour {{name}}",
+    "gender": {
+      "male": "Nom masculin",
+      "female": "Nom féminin"
+    },
+    "femaleHouseNote": "Les symboles masculin et féminin choisissent le nom tiré au hasard ; les noms féminins viennent de tables maison, non officielles.",
+    "femaleBookNote": "Les symboles masculin et féminin choisissent le nom tiré au hasard ; un nom féminin suit la règle du livre : \"-a\" ajouté à un nom qui se termine par une consonne (p. 96)."
   }
 }

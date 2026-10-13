@@ -2,7 +2,7 @@
  * File:        src/features/wizard/StepFighters.tsx
  * Role:        Step 3: recruitment. Category counters, catalogue filtered by
  *              category with the full scroll of each profile, then the recruited
- *              fighters with name (D66 random name), starting experience (roll,
+ *              fighters with name (D66 random name, male or female), starting experience (roll,
  *              re-roll or manual entry), options bought at recruitment
  *              (Misbegotten mutations) and removal. Alternate forms (Lycanfell
  *              Beast) are shown inside the scroll of their base profile. Long
@@ -23,12 +23,13 @@ import {
   manualStartingExperience,
   profileLimit,
   randomEpithet,
-  randomName,
   rollStartingExperience,
 } from "../../rules/index.ts";
 import { gameData } from "../../data/index.ts";
 import { useFormatter } from "../../i18n/text.ts";
 import { ClampedText } from "../common/ClampedText.tsx";
+import { GenderToggle } from "../names/GenderToggle.tsx";
+import { randomFighterName, type NameGender } from "../names/houseNames.ts";
 import { StatsTable } from "../common/StatsTable.tsx";
 import { Term } from "../common/Term.tsx";
 import { createFighter } from "../warbands/factory.ts";
@@ -131,51 +132,60 @@ export function StepFighters({ warband, index, update }: StepProps) {
           {active.length === 0 ? (
             <p>{t("wizard.fighters.none")}</p>
           ) : (
-            <ul className="space-y-3">
-              {active.map((fighter) => {
-                const profile = index.fighters.get(fighter.profileId);
-                if (profile === undefined) return null;
-                return (
-                  <RecruitedFighter
-                    key={fighter.instanceId}
-                    fighter={fighter}
-                    profile={profile}
-                    onChange={(patch) => {
-                      replace(fighter.instanceId, patch);
-                    }}
-                    onRandomName={() => {
-                      replace(fighter.instanceId, {
-                        customName: randomName(index.faction.nameTable.entries),
-                      });
-                    }}
-                    onRandomEpithet={
-                      index.faction.epithetTable === null
-                        ? null
-                        : () => {
-                            const epithet = randomEpithet(index.faction.epithetTable?.entries);
-                            if (epithet === undefined) return;
-                            const base = fighter.customName.trim();
-                            replace(fighter.instanceId, {
-                              customName: base === "" ? f.text(epithet) : `${base}, ${f.text(epithet)}`,
-                            });
-                          }
-                    }
-                    onRemove={() => {
-                      update((w) => ({
-                        ...w,
-                        fighters: w.fighters.filter((x) => x.instanceId !== fighter.instanceId),
-                      }));
-                    }}
-                    costLabel={t("units.silver", {
-                      value: f.number(
-                        profile.cost + fighterOptions(index, fighter).reduce((sum, o) => sum + o.cost, 0),
-                      ),
-                    })}
-                    index={index}
-                  />
-                );
-              })}
-            </ul>
+            <>
+              <p className="mb-2 text-sm">
+                {t(index.faction.id === "death-covens" ? "names.femaleBookNote" : "names.femaleHouseNote")}
+              </p>
+              <ul className="space-y-3">
+                {active.map((fighter) => {
+                  const profile = index.fighters.get(fighter.profileId);
+                  if (profile === undefined) return null;
+                  return (
+                    <RecruitedFighter
+                      key={fighter.instanceId}
+                      fighter={fighter}
+                      profile={profile}
+                      onChange={(patch) => {
+                        replace(fighter.instanceId, patch);
+                      }}
+                      onRandomName={(gender) => {
+                        replace(fighter.instanceId, {
+                          customName: randomFighterName(
+                            index.faction.id,
+                            index.faction.nameTable.entries,
+                            gender,
+                          ),
+                        });
+                      }}
+                      onRandomEpithet={
+                        index.faction.epithetTable === null
+                          ? null
+                          : () => {
+                              const epithet = randomEpithet(index.faction.epithetTable?.entries);
+                              if (epithet === undefined) return;
+                              const base = fighter.customName.trim();
+                              replace(fighter.instanceId, {
+                                customName: base === "" ? f.text(epithet) : `${base}, ${f.text(epithet)}`,
+                              });
+                            }
+                      }
+                      onRemove={() => {
+                        update((w) => ({
+                          ...w,
+                          fighters: w.fighters.filter((x) => x.instanceId !== fighter.instanceId),
+                        }));
+                      }}
+                      costLabel={t("units.silver", {
+                        value: f.number(
+                          profile.cost + fighterOptions(index, fighter).reduce((sum, o) => sum + o.cost, 0),
+                        ),
+                      })}
+                      index={index}
+                    />
+                  );
+                })}
+              </ul>
+            </>
           )}
         </section>
       </div>
@@ -315,7 +325,7 @@ function RecruitedFighter({
   fighter: WarbandFighter;
   profile: FighterProfile;
   onChange: (patch: Partial<WarbandFighter>) => void;
-  onRandomName: () => void;
+  onRandomName: (gender: NameGender) => void;
   /** null when the faction has no epithet table. */
   onRandomEpithet: (() => void) | null;
   onRemove: () => void;
@@ -326,6 +336,7 @@ function RecruitedFighter({
   const f = useFormatter();
   const nameId = useId();
   const dieId = useId();
+  const [gender, setGender] = useState<NameGender>("male");
   const roll = fighter.startingExperienceRoll;
   const label = f.text(profile.name);
 
@@ -353,20 +364,23 @@ function RecruitedFighter({
           <label htmlFor={nameId} className="block text-sm font-bold">
             {t("wizard.fighters.name")}
           </label>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <input
               id={nameId}
-              className="field"
+              className="field min-w-0 flex-1 basis-40"
               value={fighter.customName}
               maxLength={60}
               onChange={(e) => {
                 onChange({ customName: e.target.value });
               }}
             />
+            <GenderToggle value={gender} onChange={setGender} fighterLabel={label} />
             <button
               type="button"
               className="btn btn-sm shrink-0"
-              onClick={onRandomName}
+              onClick={() => {
+                onRandomName(gender);
+              }}
               aria-label={t("wizard.fighters.randomNameFor", { name: label })}
             >
               {t("wizard.fighters.randomName")}

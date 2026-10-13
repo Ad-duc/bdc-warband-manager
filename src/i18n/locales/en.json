@@ -722,5 +722,17 @@
     "noScenario": "Scenario not recorded",
     "wonBy": "won by {{name}}",
     "removeBattle": "Remove"
+  },
+  "names": {
+    "randomWarband": "Random name",
+    "randomWarbandFor": "Random warband name for the {{faction}} faction",
+    "houseNote": "Random warband names come from house tables, not official.",
+    "genderFor": "Kind of name for {{name}}",
+    "gender": {
+      "male": "Male name",
+      "female": "Female name"
+    },
+    "femaleHouseNote": "The male and female symbols choose the random name; female names come from house tables, not official.",
+    "femaleBookNote": "The male and female symbols choose the random name; a female name follows the book rule: \"-a\" added to a name ending in a consonant (p. 96)."
   }
 }

@@ -24,7 +24,8 @@ règles et les nouveautés du jeu.
 - **Créer une bande** en six étapes guidées : faction, origine, combattants,
   équipement, compétences, valeur de bande. Les règles de recrutement sont
   vérifiées en direct (budget, limites de profils, équipement autorisé) et
-  chaque message renvoie à la page du livre.
+  chaque message renvoie à la page du livre. Noms au hasard pour la bande et
+  pour chaque combattant, masculins ou féminins.
 - **Jouer avec les quatre factions** de la version de test : Guild Mercenaries,
   Verminkin, Death Covens et The Blighted Cloister.
 - **Suivre une campagne** : journal des batailles (avec annulation),
@@ -85,7 +86,7 @@ opened. Official game website:
 [blackdeathcity.com](https://www.blackdeathcity.com/).
 
 - Six-step warband builder with live rule checks, for the four playtest
-  factions.
+  factions, with random warband names and male or female fighter names.
 - Campaign tracking: battle log with undo, experience, injuries,
   advancements, Black Rot, holdings, stash and stronghold counters.
 - Battle set-up assistant (underdog, scenario and twist, battle groups,

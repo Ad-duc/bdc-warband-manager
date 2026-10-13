@@ -39,6 +39,12 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 - Campagnes de groupe sur l'accueil : bandes de l'application ou d'autres
   joueurs, batailles livrées et classement. Le chapitre 5 "Campagnes" n'est
   pas encore publié : aucune règle de campagne n'est appliquée.
+- Noms féminins pour les combattants : un symbole masculin et un symbole
+  féminin à côté du bouton "Au hasard". Les Death Covens suivent la règle du
+  livre ("-a" ajouté à un nom qui se termine par une consonne, p. 96) ; les
+  autres factions utilisent des tables D66 maison, non officielles.
+- Nom de bande au hasard à côté du champ "Nom de la bande", tiré de tables
+  maison propres à la faction choisie (non officielles).
 
 ### Modifié
 

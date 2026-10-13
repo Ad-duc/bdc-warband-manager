@@ -37,6 +37,12 @@ version is given separately (playtest v1.03).
 - Group campaigns on the home page: warbands of the app or of other players,
   battles fought and standings. Chapter 5 "Campaigns" is not published yet, so
   no campaign rule is applied.
+- Female fighter names: a male and a female symbol next to the random name
+  button. The Death Covens follow the book rule ("-a" added to a name ending
+  in a consonant, p. 96); the other factions use house D66 tables, not
+  official.
+- Random warband name next to the "Warband name" field, drawn from house
+  tables of the selected faction (in French, not official).
 
 ### Changed
 

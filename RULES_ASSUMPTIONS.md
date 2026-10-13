@@ -310,6 +310,18 @@ fought (scenario, twist, underdog, winner or draw), with a standings table that
 counts battles, victories, draws and defeats. No campaign rule is invented;
 the aftermath of a battle stays in each warband's battle log.
 
+### A42 - Female names and warband names (settled)
+
+The book gives one D66 name table per faction and a single rule for female
+names, in the Death Covens chapter (p. 96): "you can make a name sound more
+feminine by adding '-a' to a name ending in a consonant (eg. Barovyr becomes
+Barovyra)". The app applies this rule to the Death Covens only. The female
+D66 tables of the Guild Mercenaries, the Verminkin and The Blighted Cloister,
+and the warband name tables of every faction (a head and a complement, in
+French), are house tables, written in the style of the book tables and marked
+as not official in the interface. They live in
+`src/features/names/houseNames.ts`, outside the faction data files.
+
 ## Data decisions
 
 ### D01 - Number of Guild Mercenaries profiles (data)
