@@ -9,8 +9,8 @@
 # Agent instructions
 
 BDC Warband Manager is a static React PWA built from the Black Death City
-playtest rules. Read `README.md`, `CONTRIBUTING.md` and `src/data/README.md`
-before changing anything.
+playtest rules. Read `README.md`, `docs/DEVELOPMENT.md`, `CONTRIBUTING.md` and
+`src/data/README.md` before changing anything.
 
 ## Rules watcher
 

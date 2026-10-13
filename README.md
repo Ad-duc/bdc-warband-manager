@@ -1,6 +1,7 @@
 <!--
   File:     README.md
-  Role:     Project overview, set-up and commands (English, with a French section)
+  Role:     Presentation of the online app for players (French, with an
+            English section); developer information is in docs/DEVELOPMENT.md
   Author:   Adrien Duclaud
   Created:  2026-10-12
   License:  MIT
@@ -8,154 +9,81 @@
 
 # BDC Warband Manager
 
-Unofficial fan-made warband builder and campaign tracker for **Black Death City**
-(playtest v1.03). Static, installable web app (PWA) that works offline, in
-English and French.
+**Créez et suivez vos bandes de Black Death City, directement dans votre
+navigateur : [ad-duc.github.io/bdc-warband-manager](https://ad-duc.github.io/bdc-warband-manager/)**
 
-> **Fan-made, unofficial.** Black Death City, its rules, texts, names and
-> artwork belong to their author, Sam Pearson. This project is not affiliated
-> with or endorsed by the author. It is meant for private use by a gaming
-> group. The fonts Old Celtiberian (Woodcutter Manero) and Trattatello (James
-> Grieshaber) are free for non-commercial use only.
+Outil de fan, non officiel et gratuit, fondé sur la version de test 1.03 des
+règles. Rien à installer, aucun compte à créer : ouvrez le lien, c'est prêt.
+L'application fonctionne en français et en anglais, sur ordinateur, tablette et
+téléphone, et reste utilisable sans connexion une fois ouverte.
 
-## Features (planned by step)
+## Ce que vous pouvez faire
 
-| Step | Content                                                  | Status |
-| ---- | -------------------------------------------------------- | ------ |
-| 0    | Data schemas, Guild Mercenaries data, data checker       | done   |
-| 1    | Project skeleton, theme, i18n, local storage, PWA, tests | done   |
-| 2    | Rules engine and its tests                               | done   |
-| 3    | Warband creation wizard                                  | done   |
-| 4    | Campaign tracking                                        | done   |
-| 5    | Printing, export, sharing                                | done   |
-| 6    | Verminkin, Death Covens, The Blighted Cloister           | done   |
-| 7    | Accessibility, performance, contribution guide           | done   |
+- **Créer une bande** en six étapes guidées : faction, origine, combattants,
+  équipement, compétences, valeur de bande. Les règles de recrutement sont
+  vérifiées en direct (budget, limites de profils, équipement autorisé) et
+  chaque message renvoie à la page du livre.
+- **Jouer avec les quatre factions** de la version de test : Guild Mercenaries,
+  Verminkin, Death Covens et The Blighted Cloister.
+- **Suivre une campagne** : journal des batailles (avec annulation),
+  expérience, blessures, progressions, Pourriture noire, possessions, réserve
+  et compteurs du repaire.
+- **Imprimer** la feuille de bande au format A4, les cartes de combattants au
+  format carte à jouer avec leurs dos, et une aide de jeu en français sur une
+  page.
+- **Lire les règles en français** : la traduction complète, chapitre par
+  chapitre, avec sommaire et glossaire VO-VF.
+- **Lancer le dé de direction** pour les déviations, avec les distances des
+  règles.
+- **Partager une bande** par un simple lien en lecture seule, ou l'exporter et
+  l'importer en fichier JSON.
 
-## Stack
+## Bon à savoir
 
-Vite 8, React 19, TypeScript 7 (strict), Tailwind CSS 4, i18next 26 with
-react-i18next 17, zustand 5, zod 4, Dexie 4 (IndexedDB), marked 18 (rules
-reader), vite-plugin-pwa 2, vitest 5, Playwright 1.64, ESLint 10 with
-typescript-eslint, Prettier 3.
+- **Vos bandes restent chez vous** : elles sont enregistrées dans votre
+  navigateur, sur votre appareil. Rien n'est envoyé à un serveur, y compris
+  dans les liens de partage. Pensez à exporter vos bandes pour les garder ou
+  les passer sur un autre appareil.
+- **Installer l'application** : depuis le navigateur, choisissez "Installer"
+  ou "Ajouter à l'écran d'accueil" pour l'ouvrir comme une application.
+- **Nouveautés** : le lien en bas de chaque page affiche l'historique des
+  versions.
 
-TypeScript is installed twice on purpose: `typescript-native` (7.0.2) runs the
-type check, `typescript` (6.0.3) is only there for typescript-eslint, which does
-not support TypeScript 7 yet. Remove the second one when typescript-eslint
-accepts 7.x.
+## Avertissement
 
-## Getting started
+Black Death City, ses règles, ses textes, ses noms et ses illustrations
+appartiennent à leur auteur, Sam Pearson. Ce projet n'est ni affilié ni
+approuvé par l'auteur ; il est destiné à un usage privé entre joueurs. Les
+polices Old Celtiberian (Woodcutter Manero) et Trattatello (James Grieshaber)
+sont libres pour un usage non commercial uniquement.
 
-Requirements: Node.js 22 or later.
+Le code est sous licence MIT (voir [LICENSE](LICENSE)) ; le contenu du jeu et
+les illustrations ne sont pas couverts par cette licence.
 
-```bash
-npm ci
-npm run dev          # http://localhost:5173/bdc-warband-manager/
-```
-
-## Commands
-
-| Command                                | Purpose                                                                                      |
-| -------------------------------------- | -------------------------------------------------------------------------------------------- |
-| `npm run dev`                          | Development server                                                                           |
-| `npm run build`                        | Type check then production build in `dist/`                                                  |
-| `npm run preview`                      | Serve the production build                                                                   |
-| `npm run typecheck`                    | TypeScript 7 strict check                                                                    |
-| `npm run lint`                         | ESLint (also forbids hard-coded JSX text)                                                    |
-| `npm run format` / `format:check`      | Prettier                                                                                     |
-| `npm test` / `test:coverage`           | Unit tests (vitest)                                                                          |
-| `npm run test:e2e`                     | End-to-end tests (Playwright, Chromium and Firefox)                                          |
-| `npm run check:data`                   | Validate `src/data/*.json` and compare it with the translated Markdown of `sources/fr/`      |
-| `npm run check:i18n`                   | Same keys in `en.json` and `fr.json`, every `t()` key exists, no unused key                  |
-| `npm run generate:data`                | Rebuild the Verminkin, Death Covens and Blighted Cloister data from the translation (Python) |
-| `npm run check:generated`              | Fail if a generated data file is out of date; writes nothing                                 |
-| `npm run fix:dice`                     | Write every die with its number of dice (1D6) in `sources/fr` and the data texts             |
-| `npm run build:glossary`               | Regenerate `src/i18n/glossary.json` from `00_glossaire.md`                                   |
-| `npm run check`                        | Everything above except the end-to-end tests                                                 |
-| `npm run watch:check`                  | Look for a new official rules version or resource (exit 10 or 11 when something is new)      |
-| `npm run watch:fetch -- --version <v>` | Download a rules PDF, extract its text to `sources/vo/`, update `sources/manifest.json`      |
-| `npm run watch:diff`                   | Paragraph diff of the previous and current rules text into `.cache/watch/`                   |
-| `npm run watch:mark`                   | Record the version followed by the translation (`--translated`) and the data (`--app-data`)  |
-
-The translation and the extracted rules text live in `sources/` (see
-`sources/README.md`). The data scripts read `sources/fr/` by default;
-`--sources <folder>` or the variable `BDC_SOURCES` point them elsewhere.
-
-## Rules watcher
-
-A scheduled agent run checks every week for a new Black Death City
-publication. When one is out, it follows `docs/RULES_UPDATE.md`: downloads
-the PDF, compares the text with the previous version, updates the French
-translation and the game data, runs every check and opens a pull request
-labelled `rules-watch`. Nothing reaches `main` without a review.
-
-## Project layout
-
-```
-src/
-  data/       game data (JSON) and zod schemas, see src/data/README.md
-  rules/      pure rules engine, no UI dependency
-  i18n/       i18next set-up, locales, generated glossary
-  db/         Dexie database and versioned schema
-  features/   one folder per screen
-  print/      A4 roster and TCG card layouts
-  styles/     Tailwind entry point and design tokens
-scripts/      data, i18n and glossary tools, Python data generators, rules watcher
-sources/      extracted rules text, French translation, release manifest
-docs/         maintenance procedures (rules update)
-tests/        unit (vitest) and e2e (Playwright)
-public/       local fonts, images, PWA icons
-```
-
-Rule readings and open questions are kept in `RULES_ASSUMPTIONS.md`. See
-`CONTRIBUTING.md` before changing anything and `CHANGELOG.md` (French:
-`CHANGELOG.fr.md`) for the history.
-
-## Quality
-
-- Accessibility: axe-core audit of every screen in English and French (WCAG
-  2.2 A and AA) in the end-to-end tests, no violation.
-- Lighthouse 13.5 on the home page: accessibility, best practices and SEO
-  100; performance 99 on desktop. On mobile the score is 88 to 93 with
-  applied throttling (`--throttling-method=devtools`) and 75 to 90 with the
-  default simulated throttling, on a slow measuring machine. The first visit
-  downloads about 0.6 MB; later visits are served by the service worker.
-
-## Deployment
-
-The CI workflow (`.github/workflows/ci.yml`) runs every check and, on `main`,
-publishes `dist/` to GitHub Pages. In the repository settings, set
-**Pages > Source** to **GitHub Actions**. GitHub Pages is free for public
-repositories; a private repository needs a paid plan.
-
-## License
-
-Code under the MIT license, see `LICENSE`. Game content and artwork are not
-covered by this license.
+Pour contribuer ou faire tourner le projet sur votre machine, voir
+[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) et
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
-## En français
+## In English
 
-**BDC Warband Manager** est un outil de fan, non officiel, pour créer et suivre
-des bandes de **Black Death City** (version de test 1.03). C'est une application
-web statique, installable et utilisable hors ligne, en anglais et en français.
+**Build and track your Black Death City warbands in your browser:
+[ad-duc.github.io/bdc-warband-manager](https://ad-duc.github.io/bdc-warband-manager/)**
 
-Black Death City, ses règles, ses textes et ses illustrations appartiennent à
-leur auteur, Sam Pearson. Ce projet n'est ni affilié ni approuvé par l'auteur et
-reste destiné à un usage privé.
+Unofficial, free fan-made tool based on the playtest v1.03 rules, in English
+and French, on desktop, tablet and phone, and usable offline once opened.
 
-Démarrage rapide :
+- Six-step warband builder with live rule checks, for the four playtest
+  factions.
+- Campaign tracking: battle log with undo, experience, injuries,
+  advancements, Black Rot, holdings, stash and stronghold counters.
+- Printable A4 roster, playing-card size fighter cards with their backs, and
+  a one-page French reminder sheet.
+- French translation of the rules, direction dice, read-only share links and
+  JSON export.
 
-```bash
-npm ci
-npm run dev
-```
-
-Avant chaque envoi : `npm run check`, puis `npm run test:e2e`. Pour comparer les
-données aux fichiers de traduction :
-`npm run check:data -- --sources "<dossier Traduction FR>"`.
-
-Les choix d'interprétation des règles sont consignés dans
-`RULES_ASSUMPTIONS.md`. Le format des données est décrit dans
-`src/data/README.md`, la façon de contribuer dans `CONTRIBUTING.md` et
-l'historique dans `CHANGELOG.fr.md`.
+Your warbands are stored in your browser only; nothing is sent to a server.
+Black Death City and its content belong to Sam Pearson; this project is not
+affiliated with or endorsed by the author. Developer guide:
+[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md).

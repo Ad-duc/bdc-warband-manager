@@ -145,7 +145,8 @@ npm run -s watch:mark -- --translated <version>
   `sourceVersion` in `common.json` (`playtest-<version>`).
 - Record each structural decision in `RULES_ASSUMPTIONS.md` (new `Dnn` entry
   "Move to playtest v<version> (data)", as `D08` did for v1.03).
-- Update the version quoted in `README.md` (English and French sections),
+- Update the version quoted in `README.md` (French and English sections),
+  `docs/DEVELOPMENT.md`,
   `package.json` (`description`), `CHANGELOG.md` (`[Unreleased]`) with its
   French twin `CHANGELOG.fr.md` (`[Non publié]`) and the
   campaign notice texts of `common.json` when they quote the version.

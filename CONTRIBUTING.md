@@ -11,6 +11,8 @@
 
 Thank you for helping. This project is a fan-made tool for a private gaming
 group: keep changes small, tested and faithful to the rules book.
+The stack, every npm command, the project layout and the deployment are
+described in [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md).
 
 ## Set-up
 

@@ -36,6 +36,8 @@ version is given separately (playtest v1.03).
   app, the printed sheets, the rules reader, the data texts and the French
   translation; D66 tables keep their name. `npm run fix:dice` applies the rule
   and `npm run check:data` enforces it.
+- The README presents the online app for players (in French, with an English
+  section); the developer information moved to `docs/DEVELOPMENT.md`.
 
 ## [1.0.0] - 2026-10-12
 

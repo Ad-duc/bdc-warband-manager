@@ -37,6 +37,9 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
   l'application, les feuilles imprimées, le lecteur des règles, les textes
   des données et la traduction française ; les tables D66 gardent leur nom.
   `npm run fix:dice` applique la règle et `npm run check:data` la vérifie.
+- Le README présente l'application en ligne aux joueurs (en français, avec une
+  partie en anglais) ; les informations de développement sont passées dans
+  `docs/DEVELOPMENT.md`.
 
 ## [1.0.0] - 2026-10-12
 
