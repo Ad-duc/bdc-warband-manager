@@ -15,6 +15,10 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ## [Non publié]
 
+## [1.2.0] - 2026-10-13
+
+Tutoriel des règles, toujours sur la version de test 1.03 de Black Death City.
+
 ### Ajouté
 
 - Tutoriel des règles ("Tutoriel" dans l'en-tête) : l'exemple d'attaque au
@@ -179,6 +183,7 @@ City.
   Celtiberian reste pour le titre de l'en-tête, le lecteur des règles et les
   feuilles imprimées.
 
-[Non publié]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.1.0...HEAD
+[Non publié]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Ad-duc/bdc-warband-manager/releases/tag/v1.0.0

@@ -15,6 +15,10 @@ version is given separately (playtest v1.03).
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-10-13
+
+Rules tutorial, still on the Black Death City playtest v1.03.
+
 ### Added
 
 - Rules tutorial ("Tutorial" in the header): the melee attack example of the
@@ -161,6 +165,7 @@ First complete release, built on the Black Death City playtest v1.03.
   use Trattatello, easier to read than Old Celtiberian. Old Celtiberian is
   kept for the header title, the rules reader and the printed sheets.
 
-[Unreleased]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Ad-duc/bdc-warband-manager/releases/tag/v1.0.0
