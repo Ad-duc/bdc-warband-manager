@@ -46,6 +46,7 @@ version is given separately (playtest v1.03).
 
 ### Changed
 
+- Origins listed one per row in the second wizard step, as the factions.
 - On phones the header tools (direction dice, card backs, rules reader,
   language) are grouped in one menu, so the title stays on one line; on
   tablets the tool buttons show their icon only, labels come back on large

@@ -1,8 +1,8 @@
 /*
  * File:        src/features/wizard/StepOrigin.tsx
  * Role:        Step 2: origin. Picking one sets the stronghold (and its
- *              trackers) and recruits the imposed leader. Flavour texts are cut
- *              to three lines with a "read more" toggle.
+ *              trackers) and recruits the imposed leader. One origin per row;
+ *              flavour texts are cut to three lines with a "read more" toggle.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -22,7 +22,7 @@ export function StepOrigin({ warband, index, update }: StepProps) {
   return (
     <fieldset>
       <legend className="mb-3">{t("wizard.origin.legend")}</legend>
-      <div className="grid gap-3 md:grid-cols-2 2xl:grid-cols-4">
+      <div className="grid gap-3">
         {faction.origins.map((origin) => {
           const leader = faction.fighters.find((x) => x.id === origin.requiredLeaderId);
           const stronghold = faction.strongholds.find((s) => s.id === origin.strongholdId);

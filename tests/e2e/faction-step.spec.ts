@@ -1,10 +1,10 @@
 /*
  * File:        tests/e2e/faction-step.spec.ts
- * Role:        First two wizard steps (French interface): one faction per
- *              row, long faction descriptions and origin flavour texts cut to
- *              three lines with a "read more" toggle that does not select the
- *              card, short texts without toggle; the same for the long special
- *              rules of the fighter scrolls.
+ * Role:        First two wizard steps (French interface): one faction and one
+ *              origin per row, long faction descriptions and origin flavour
+ *              texts cut to three lines with a "read more" toggle that does not
+ *              select the card, short texts without toggle; the same for the
+ *              long special rules of the fighter scrolls.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -41,21 +41,32 @@ test("long faction descriptions can be expanded", async ({ page }) => {
 });
 
 test("origin flavour texts can be expanded", async ({ page }) => {
+  // One origin per row: the texts are only cut on a phone width.
+  await page.setViewportSize({ width: 360, height: 740 });
   await page.goto("./");
   await page.getByRole("button", { name: "Nouvelle bande" }).click();
   await page.getByRole("radio", { name: /Death Covens/ }).check();
   await page.getByRole("button", { name: "Suivant" }).click();
 
-  const first = page.getByRole("radio").first();
-  const flavourId = (await first.getAttribute("aria-describedby")) ?? "";
-  const toggle = page.locator(`button[aria-controls="${flavourId}"]`);
+  // One origin per row, as for the factions.
+  const tops = await page
+    .getByRole("radio")
+    .evaluateAll((els) => els.map((e) => e.getBoundingClientRect().top));
+  expect([...tops].sort((a, b) => a - b)).toEqual(tops);
+  expect(new Set(tops).size).toBe(tops.length);
+
+  // Take the first origin whose text is cut.
+  const toggle = page.locator(`button[aria-controls$="-flavour"]`).first();
+  const flavourId = (await toggle.getAttribute("aria-controls")) ?? "";
+  const first = page.locator(`input[type="radio"][aria-describedby="${flavourId}"]`);
   await expect(toggle).toHaveText("Lire la suite");
   await toggle.click();
   await expect(toggle).toHaveAttribute("aria-expanded", "true");
   await expect(first).not.toBeChecked();
 
   // The rules lines of the card still select the origin.
-  await page.getByText("Chef :").first().click();
+  const inputId = (await first.getAttribute("id")) ?? "";
+  await page.locator(`label[for="${inputId}"]`).getByText("Chef :").click();
   await expect(first).toBeChecked();
 });
 

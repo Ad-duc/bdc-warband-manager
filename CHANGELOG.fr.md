@@ -48,6 +48,7 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ### Modifié
 
+- Origines présentées une par ligne à la deuxième étape, comme les factions.
 - Sur téléphone, les outils de l'en-tête (dé de direction, dos de cartes,
   lecteur des règles, langue) sont regroupés dans un seul menu et le titre
   tient sur une ligne ; sur tablette, les boutons d'outils n'affichent que leur
