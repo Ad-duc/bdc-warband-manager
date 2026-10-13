@@ -1,7 +1,8 @@
 /*
  * File:        vite.config.ts
  * Role:        Vite build configuration: React, Tailwind CSS, PWA (offline
- *              cache and manifest) and the GitHub Pages base path.
+ *              cache, manifest, automatic updates) and the GitHub Pages base
+ *              path.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -25,8 +26,10 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
+      // A new version takes over and reloads the page (src/pwa.ts checks for one).
       registerType: "autoUpdate",
-      injectRegister: "script-defer",
+      // Registered from src/main.tsx through virtual:pwa-register.
+      injectRegister: false,
       includeAssets: ["icons/favicon-64.png", "icons/apple-touch-icon.png"],
       manifest: {
         name: "BDC Warband Manager",
@@ -49,6 +52,10 @@ export default defineConfig({
         globPatterns: ["**/*.{js,css,html,png,webp,svg,woff2,json,webmanifest}"],
         maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
         navigateFallback: `${BASE_PATH}index.html`,
+        // A new worker takes control of the open pages at once, so the page can reload on it.
+        clientsClaim: true,
+        skipWaiting: true,
+        cleanupOutdatedCaches: true,
       },
     }),
   ],
