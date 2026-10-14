@@ -4,7 +4,8 @@
  *              origin per row, long faction descriptions and origin flavour
  *              texts cut to three lines with a "read more" toggle that does not
  *              select the card, short texts without toggle; the same for the
- *              long special rules of the fighter scrolls.
+ *              long special rules of the fighter scrolls. Closed faction cards
+ *              share one height and each radio is centred on its shield.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -38,6 +39,29 @@ test("long faction descriptions can be expanded", async ({ page }) => {
 
   // The short Guild Mercenaries text fits in three lines: no toggle.
   await expect(page.locator("#faction-guild-mercenaries-description + button")).toHaveCount(0);
+});
+
+test("closed faction cards share one height, radio centred on the shield", async ({ page }) => {
+  await page.goto("./");
+  await page.getByRole("button", { name: "Nouvelle bande" }).click();
+
+  const cards = page.locator("fieldset .grid > div");
+  await expect(cards).toHaveCount(4);
+  const heights = (): Promise<number[]> =>
+    cards.evaluateAll((els) => els.map((e) => Math.round(e.getBoundingClientRect().height)));
+  expect(new Set(await heights()).size).toBe(1);
+  // On a phone the long names wrap: the cards keep one height.
+  await page.setViewportSize({ width: 360, height: 740 });
+  await expect.poll(async () => new Set(await heights()).size).toBe(1);
+
+  for (const card of await cards.all()) {
+    const radio = (await card.getByRole("radio").boundingBox()) ?? { y: 0, height: 0 };
+    const shield = (await card.locator("img").boundingBox()) ?? { y: 0, height: 0 };
+    const cardBox = (await card.boundingBox()) ?? { y: 0, height: 0 };
+    // The shield sits at the top of the card, the radio on its middle.
+    expect(Math.abs(shield.y - cardBox.y)).toBeLessThan(20);
+    expect(Math.abs(radio.y + radio.height / 2 - (shield.y + shield.height / 2))).toBeLessThanOrEqual(1);
+  }
 });
 
 test("origin flavour texts can be expanded", async ({ page }) => {

@@ -19,6 +19,8 @@ version is given separately (playtest v1.03).
 
 - In the creation wizard, the budget frame (silver spent and left, warband
   rating) now sits in the side column, above the checks panel.
+- Faction step: the shield sits at the top of each card, the radio button
+  is centred on the shield, and every closed card has the same height.
 - The faction and fighter names are now in French, like the rest of the
   translation: Mercenaires de la Guilde, Vermigènes, Cabales de la Mort, Le
   Cloître gangrené, Capitaine de la Guilde, Maître artificier, Bâtard du sang...
