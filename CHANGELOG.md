@@ -30,6 +30,9 @@ version is given separately (playtest v1.03).
   and reloads the page on the new version, at the same screen. Clearing the
   browser cache after a deployment is no longer needed. Saved warbands are not
   affected.
+- Rules reader: the cost column of the fighter lists and armoury lists now
+  keeps the same width in every table, so the costs line up from one list to
+  the next instead of shifting with the longest name of each table.
 
 ## [1.2.0] - 2026-10-13
 

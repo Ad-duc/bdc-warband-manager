@@ -300,6 +300,14 @@
   .reader-table tbody tr:nth-child(even) {
     background-color: var(--color-bone);
   }
+  /* A cost column keeps the same width in every list of a chapter, so the
+     costs line up from one table to the next instead of following the
+     longest name of each table. */
+  .reader-table-cost th:last-child,
+  .reader-table-cost td:last-child {
+    width: 7.5rem;
+    white-space: nowrap;
+  }
 
   /* Ornamental separator from the style guide assets */
   .ornament {

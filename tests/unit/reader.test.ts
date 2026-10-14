@@ -84,10 +84,20 @@ describe("markdown rendering", () => {
 
   it("wraps tables in a scrolling box and escapes raw HTML", () => {
     const { html } = renderChapter(sample);
-    expect(html).toContain('<div class="reader-table"><table>');
+    expect(html).toContain('<div class="reader-table reader-table-cost"><table>');
     expect(html).toContain("</table></div>");
     expect(html).not.toContain("<script>");
     expect(html).toContain("&lt;script&gt;");
+  });
+
+  it("marks the tables whose last column is a cost", () => {
+    const cost = ["| Combattant | Coût |", "|---|---|", "| Noble | 120 pa |"].join("\n");
+    expect(renderChapter(cost).html).toContain('<div class="reader-table reader-table-cost"><table>');
+    const armoury = ["| Nom | Pièces d'argent |", "|---|---|", "| Dague | 5 pa |"].join("\n");
+    expect(renderChapter(armoury).html).toContain('class="reader-table reader-table-cost"');
+    const stats = ["| Mouvement | Vie |", "|---|---|", "| 4 | 3 |"].join("\n");
+    expect(renderChapter(stats).html).toContain('<div class="reader-table"><table>');
+    expect(renderChapter(stats).html).not.toContain("reader-table-cost");
   });
 
   it("adds a feedback link after headings of level 2 to 4 only", () => {

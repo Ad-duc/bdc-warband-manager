@@ -32,6 +32,10 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
   la nouvelle version, au même écran. Il n'est plus nécessaire de vider le
   cache du navigateur après une publication. Les bandes enregistrées ne sont
   pas touchées.
+- Lecteur de règles : la colonne des coûts des listes de combattants et des
+  listes d'armurerie garde désormais la même largeur dans tous les tableaux,
+  de sorte que les coûts s'alignent d'une liste à l'autre au lieu de se
+  décaler selon le nom le plus long de chaque tableau.
 
 ## [1.2.0] - 2026-10-13
 
