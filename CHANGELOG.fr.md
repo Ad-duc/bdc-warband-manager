@@ -17,6 +17,9 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ### Modifié
 
+- Dans l'assistant de création, le cadre du budget (pa dépensées et restantes,
+  valeur de bande) est désormais dans la colonne de droite, au-dessus du cadre
+  des vérifications.
 - Les noms des factions et des combattants sont désormais en français, comme
   le reste de la traduction : Mercenaires de la Guilde, Vermigènes, Cabales de
   la Mort, Le Cloître gangrené, Capitaine de la Guilde, Maître artificier,
