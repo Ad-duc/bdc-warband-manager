@@ -33,7 +33,7 @@ export function DiagnosticsPanel({
 
   return (
     <aside aria-labelledby="diag-heading" className="panel-parchment self-start p-4">
-      <h2 id="diag-heading" className="font-hand text-2xl">
+      <h2 id="diag-heading" className="title-section">
         {t("diagnostics.title")}
       </h2>
       <p className="text-sm" aria-live="polite" data-testid="diagnostics-summary">

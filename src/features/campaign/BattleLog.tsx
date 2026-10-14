@@ -87,7 +87,7 @@ export function BattleLog({
 
   return (
     <section aria-labelledby="log-heading" className="space-y-3">
-      <h2 id="log-heading" className="band text-2xl">
+      <h2 id="log-heading" className="band title-section">
         {t("campaign.battle.title")}
       </h2>
 
@@ -123,7 +123,7 @@ export function BattleLog({
             setReviewing(true);
           }}
         >
-          <h3 id={`${formId}-title`} className="font-hand text-2xl">
+          <h3 id={`${formId}-title`} className="title-sub">
             {t("campaign.battle.new")}
           </h3>
           <div className="grid gap-3 sm:grid-cols-3">

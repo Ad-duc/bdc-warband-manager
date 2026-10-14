@@ -83,7 +83,7 @@ export function CampaignPage({ id }: { id: string }) {
       <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_20rem] 2xl:grid-cols-[minmax(0,1fr)_24rem]">
         <div className="min-w-0 space-y-4">
           <section aria-labelledby="fighters-heading" className="panel-parchment space-y-3 p-4">
-            <h2 id="fighters-heading" className="band text-2xl">
+            <h2 id="fighters-heading" className="band title-section">
               {t("campaign.fighters", { count: active.length })}
             </h2>
             <div className="grid gap-3 2xl:grid-cols-2 2xl:items-start">
@@ -132,7 +132,7 @@ export function CampaignPage({ id }: { id: string }) {
           <Stash warband={warband} index={index} update={update} />
 
           <section aria-labelledby="notes-heading" className="panel-parchment p-4">
-            <h2 id="notes-heading" className="band text-2xl">
+            <h2 id="notes-heading" className="band title-section">
               {t("campaign.notes")}
             </h2>
             <textarea
@@ -177,7 +177,7 @@ function Overview({ warband, index, update }: { warband: Warband; index: Faction
       <div className="flex flex-wrap items-center gap-4">
         <img src={`${BASE}images/${index.faction.assets.shield}`} alt="" className="h-20 w-auto" />
         <div className="min-w-0 flex-1">
-          <h1 id="overview-heading" className="font-hand text-4xl">
+          <h1 id="overview-heading" className="title-page">
             {warband.name.trim() === "" ? t("home.unnamed") : warband.name}
           </h1>
           <p className="no-print mt-1 flex flex-wrap gap-2">
@@ -331,7 +331,7 @@ function Holdings({ warband, index, update }: { warband: Warband; index: Faction
 
   return (
     <section aria-labelledby="holdings-heading" className="panel-parchment space-y-3 p-4">
-      <h2 id="holdings-heading" className="band text-2xl">
+      <h2 id="holdings-heading" className="band title-section">
         {t("campaign.holdings.title")}
       </h2>
       {stronghold !== undefined && (
@@ -408,7 +408,7 @@ function Stash({ warband, index, update }: { warband: Warband; index: FactionInd
 
   return (
     <section aria-labelledby="stash-heading" className="panel-parchment space-y-3 p-4">
-      <h2 id="stash-heading" className="band text-2xl">
+      <h2 id="stash-heading" className="band title-section">
         {t("campaign.stash.title")}
       </h2>
       {warband.stash.items.length === 0 ? (

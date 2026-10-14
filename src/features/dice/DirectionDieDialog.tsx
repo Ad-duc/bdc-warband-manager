@@ -56,7 +56,7 @@ export function DirectionDieDialog({ open, onClose }: { open: boolean; onClose: 
       }}
       className="panel-parchment m-auto w-[min(28rem,calc(100vw-2rem))] p-5 backdrop:bg-ink/80"
     >
-      <h2 id={titleId} className="font-hand text-2xl">
+      <h2 id={titleId} className="title-section">
         {t("directionDie.title")}
       </h2>
       <p className="mt-1 text-sm">{t("directionDie.intro")}</p>

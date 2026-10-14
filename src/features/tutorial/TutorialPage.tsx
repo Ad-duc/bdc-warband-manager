@@ -46,12 +46,12 @@ function LessonList() {
   const { t } = useTranslation();
   return (
     <div className="mx-auto max-w-4xl space-y-6">
-      <h1 className="font-hand text-4xl">{t("tutorial.title")}</h1>
+      <h1 className="title-page">{t("tutorial.title")}</h1>
       <p className="max-w-prose text-on-page-muted">{t("tutorial.intro")}</p>
       <ul className="grid gap-4 sm:grid-cols-2">
         {LESSONS.map((lesson) => (
           <li key={lesson.id} lang="fr" className="panel-parchment flex flex-col gap-3 p-4">
-            <h2 className="font-gothic text-2xl">{lesson.title}</h2>
+            <h2 className="title-section font-gothic">{lesson.title}</h2>
             <p>{lesson.summary}</p>
             <p className="text-sm text-on-panel-muted">
               {lesson.origin === "book"
@@ -139,7 +139,7 @@ function LessonPlayer({ lesson, gameData, step }: { lesson: Lesson; gameData: Ga
           >
             {t("tutorial.backToList")}
           </a>
-          <h1 lang="fr" className="font-hand text-4xl">
+          <h1 lang="fr" className="title-page">
             {lesson.title}
           </h1>
           <p className="text-sm italic text-on-page-muted">
@@ -200,7 +200,7 @@ function LessonPlayer({ lesson, gameData, step }: { lesson: Lesson; gameData: Ga
         <div aria-live="polite" lang="fr">
           <p className="band mt-3 inline-block pr-6 text-xl">{current.banner}</p>
           <div className="flex flex-col gap-3 p-4 pt-3">
-            <h2 id="tutorial-step-title" className="text-2xl font-bold">
+            <h2 id="tutorial-step-title" className="title-section">
               {current.title}
             </h2>
             {current.text.map((paragraph) => (

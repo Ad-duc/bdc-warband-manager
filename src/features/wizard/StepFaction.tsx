@@ -105,7 +105,7 @@ export function StepFaction({ warband, update }: StepProps) {
                 <div className="min-w-0 flex-1">
                   <label
                     htmlFor={inputId}
-                    className="block min-h-[2lh] cursor-pointer font-hand text-2xl sm:min-h-0"
+                    className="block min-h-[2lh] cursor-pointer title-section sm:min-h-0"
                   >
                     {f.text(faction.name)}
                   </label>

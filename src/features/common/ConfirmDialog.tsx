@@ -46,7 +46,7 @@ export function ConfirmDialog({
       }}
       className="panel-parchment m-auto max-w-md p-6 backdrop:bg-ink/80"
     >
-      <h2 id={titleId} className="font-hand text-2xl">
+      <h2 id={titleId} className="title-section">
         {title}
       </h2>
       <p className="mt-2">{message}</p>

@@ -61,7 +61,7 @@ export function StepSkills({ warband, index, update }: StepProps) {
             aria-labelledby={`skills-${fighter.instanceId}`}
             className="border-2 border-on-panel p-3"
           >
-            <h2 id={`skills-${fighter.instanceId}`} className="font-hand text-2xl">
+            <h2 id={`skills-${fighter.instanceId}`} className="title-section">
               {label(fighter)}
             </h2>
             <p className="text-sm">
@@ -77,7 +77,7 @@ export function StepSkills({ warband, index, update }: StepProps) {
                 .filter((table) => isEligible(fighter, profile, table))
                 .map((table) => (
                   <fieldset key={table.id} className="mt-3">
-                    <legend className="band w-full text-lg">
+                    <legend className="band title-sub w-full">
                       {f.text(table.name)}{" "}
                       <span className="font-body text-sm">({f.text(table.eligibilityLabel)})</span>
                     </legend>
@@ -123,7 +123,7 @@ export function StepSkills({ warband, index, update }: StepProps) {
 
             {lore !== undefined && g.spells > 0 && (
               <fieldset className="mt-3">
-                <legend className="band w-full text-lg">
+                <legend className="band title-sub w-full">
                   {t("wizard.skills.spells", {
                     lore: f.text(lore.name),
                     picked: fighter.spellIds.length,

@@ -17,6 +17,8 @@ version is given separately (playtest v1.03).
 
 ### Changed
 
+- Headings now follow one type scale on every screen: page titles, section
+  titles and sub-titles have the same size and font wherever they appear.
 - In the creation wizard, the budget frame (silver spent and left, warband
   rating) now sits in the side column, above the checks panel.
 - Faction step: the shield sits at the top of each card, the radio button

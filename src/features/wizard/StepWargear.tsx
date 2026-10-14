@@ -64,7 +64,7 @@ export function StepWargear({ warband, index, update }: StepProps) {
       </div>
 
       <section aria-labelledby="carried-heading">
-        <h2 id="carried-heading" className="font-hand text-2xl">
+        <h2 id="carried-heading" className="title-section">
           {t("wizard.wargear.carried", { name: name(selected) })}
         </h2>
         <p className="text-sm">
@@ -110,7 +110,7 @@ export function StepWargear({ warband, index, update }: StepProps) {
           if (list === undefined) return null;
           return (
             <section key={list.id} aria-labelledby={`list-${list.id}`}>
-              <h2 id={`list-${list.id}`} className="band text-xl">
+              <h2 id={`list-${list.id}`} className="band title-section">
                 {f.text(list.name)}
               </h2>
               <div className="grid gap-x-6 min-[100rem]:grid-cols-2 min-[100rem]:items-start">

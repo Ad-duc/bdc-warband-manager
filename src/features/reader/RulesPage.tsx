@@ -218,7 +218,7 @@ function ChapterNav({ current }: { current: Chapter | undefined }) {
   const { t } = useTranslation();
   return (
     <div className="lg:sticky lg:top-0 lg:self-start">
-      <p className="mb-3 font-gothic text-3xl">{t("reader.title")}</p>
+      <p className="title-section mb-3">{t("reader.title")}</p>
 
       <div className="lg:hidden">
         <label htmlFor="reader-chapter" className="mb-1 block font-bold">

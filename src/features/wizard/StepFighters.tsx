@@ -94,7 +94,7 @@ export function StepFighters({ warband, index, update }: StepProps) {
 
       <div className="grid gap-6 xl:grid-cols-2 xl:items-start">
         <section aria-labelledby="catalogue-heading">
-          <h2 id="catalogue-heading" className="font-hand text-2xl">
+          <h2 id="catalogue-heading" className="title-section">
             {t("wizard.fighters.catalogue")}
           </h2>
           <div role="group" aria-label={t("wizard.fighters.filter")} className="my-2 flex flex-wrap gap-1">
@@ -130,7 +130,7 @@ export function StepFighters({ warband, index, update }: StepProps) {
         </section>
 
         <section aria-labelledby="roster-heading">
-          <h2 id="roster-heading" className="font-hand text-2xl">
+          <h2 id="roster-heading" className="title-section">
             {t("wizard.fighters.roster", { count: active.length })}
           </h2>
           {active.length === 0 ? (
@@ -263,7 +263,7 @@ function ProfileEntry({
             <ScrollBody profile={profile} />
             {forms.map((form) => (
               <section key={form.id} className="border-t-2 border-on-panel pt-2" data-testid="profile-form">
-                <h3 className="font-hand text-lg">{t("scroll.form", { name: f.text(form.name) })}</h3>
+                <h3 className="title-sub">{t("scroll.form", { name: f.text(form.name) })}</h3>
                 <ScrollBody profile={form} />
               </section>
             ))}

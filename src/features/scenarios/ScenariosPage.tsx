@@ -27,7 +27,7 @@ export function ScenariosPage({ number }: { number: number | null }) {
   return (
     <div className="grid gap-6 lg:grid-cols-[16rem_minmax(0,1fr)] xl:gap-10">
       <div className="lg:sticky lg:top-0 lg:self-start">
-        <p className="mb-3 font-hand text-3xl">{t("scenarios.title")}</p>
+        <p className="title-section mb-3">{t("scenarios.title")}</p>
         <div className="lg:hidden">
           <label htmlFor="scenario-pick" className="mb-1 block font-bold">
             {t("scenarios.pick")}
@@ -95,9 +95,9 @@ function Overview() {
   const chapter = scenarioChapter();
   return (
     <div lang="fr">
-      <h1 className="mb-4 font-hand text-4xl">{chapter.title}</h1>
+      <h1 className="title-page mb-4">{chapter.title}</h1>
       <Markdown text={chapter.intro} idPrefix="intro" />
-      <h2 className="mb-2 mt-6 font-hand text-2xl" lang={currentLanguage()}>
+      <h2 className="title-section mb-2 mt-6" lang={currentLanguage()}>
         {t("scenarios.table")}
       </h2>
       <div className="reader-table">
@@ -130,7 +130,7 @@ function Overview() {
       </div>
       {chapter.shared.map((section, i) => (
         <section key={section.title} aria-labelledby={`shared-${i}`}>
-          <h2 id={`shared-${i}`} className="mb-2 mt-8 border-b-2 border-on-panel font-hand text-2xl">
+          <h2 id={`shared-${i}`} className="title-section mb-2 mt-8 border-b-2 border-on-panel">
             {section.title}
           </h2>
           <Markdown text={section.markdown} idPrefix={`shared-${i}`} />
@@ -145,10 +145,13 @@ export function ScenarioView({ scenario, headingLevel = 1 }: { scenario: Scenari
   const Title = headingLevel === 1 ? "h1" : "h2";
   const Sub = headingLevel === 1 ? "h2" : "h3";
   const Item = headingLevel === 1 ? "h3" : "h4";
+  // Type scale: the class follows the heading level, not the component
+  const titleClass = headingLevel === 1 ? "title-page" : "title-section";
+  const subClass = headingLevel === 1 ? "title-section" : "title-sub";
   const key = `sc${scenario.number}`;
   return (
     <div lang="fr">
-      <Title className="font-hand text-4xl">
+      <Title className={titleClass}>
         {scenario.number}. {scenario.title}
       </Title>
       <p className="mb-4 text-sm italic">{scenario.originalTitle}</p>
@@ -156,12 +159,12 @@ export function ScenarioView({ scenario, headingLevel = 1 }: { scenario: Scenari
       {PHASES.map((phase) =>
         scenario.phases[phase].length === 0 ? null : (
           <section key={phase}>
-            <Sub className="mb-2 mt-8 border-b-2 border-on-panel font-hand text-2xl" lang={currentLanguage()}>
+            <Sub className={`${subClass} mb-2 mt-8 border-b-2 border-on-panel`} lang={currentLanguage()}>
               {t(`scenarios.phase.${phase}`)}
             </Sub>
             {scenario.phases[phase].map((section, i) => (
               <div key={section.title}>
-                <Item className="mb-1 mt-4 font-bold">{section.title}</Item>
+                <Item className="title-sub mb-1 mt-4">{section.title}</Item>
                 <Markdown text={section.markdown} idPrefix={`${key}-${phase}-${i}`} />
               </div>
             ))}
@@ -170,19 +173,19 @@ export function ScenarioView({ scenario, headingLevel = 1 }: { scenario: Scenari
       )}
       {scenario.map !== "" && (
         <section>
-          <Sub className="mb-2 mt-8 border-b-2 border-on-panel font-hand text-2xl" lang={currentLanguage()}>
+          <Sub className={`${subClass} mb-2 mt-8 border-b-2 border-on-panel`} lang={currentLanguage()}>
             {t("scenarios.map")}
           </Sub>
           <Markdown text={scenario.map} idPrefix={`${key}-map`} />
         </section>
       )}
       <section>
-        <Sub className="mb-2 mt-8 border-b-2 border-on-panel font-hand text-2xl" lang={currentLanguage()}>
+        <Sub className={`${subClass} mb-2 mt-8 border-b-2 border-on-panel`} lang={currentLanguage()}>
           {t("scenarios.twists", { die: scenario.twistDie })}
         </Sub>
         {scenario.twists.map((twist) => (
           <div key={twist.roll}>
-            <Item className="mb-1 mt-4 font-bold">
+            <Item className="title-sub mb-1 mt-4">
               {twist.roll} - {twist.title}
             </Item>
             <Markdown text={twist.markdown} idPrefix={`${key}-twist-${twist.roll}`} />
