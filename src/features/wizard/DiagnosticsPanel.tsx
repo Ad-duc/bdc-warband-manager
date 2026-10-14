@@ -32,7 +32,7 @@ export function DiagnosticsPanel({
   const count = (s: Diagnostic["severity"]) => diagnostics.filter((d) => d.severity === s).length;
 
   return (
-    <aside aria-labelledby="diag-heading" className="panel-parchment self-start p-4 lg:sticky lg:top-24">
+    <aside aria-labelledby="diag-heading" className="panel-parchment self-start p-4">
       <h2 id="diag-heading" className="font-hand text-2xl">
         {t("diagnostics.title")}
       </h2>

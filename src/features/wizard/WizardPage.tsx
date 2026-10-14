@@ -1,7 +1,8 @@
 /*
  * File:        src/features/wizard/WizardPage.tsx
- * Role:        Creation wizard frame: step navigation with progress, budget bar
- *              always visible, current step and the live diagnostics panel.
+ * Role:        Creation wizard frame: step navigation with progress, current
+ *              step and a side column with the budget frame above the live
+ *              diagnostics panel.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -111,7 +112,6 @@ export function WizardPage({ id }: { id: string }) {
         />
       </nav>
 
-      <BudgetBar warband={warband} index={index} />
       {saveError !== null && (
         <p role="alert" className="panel-parchment p-3">
           {t("wizard.saveError", { error: saveError })}
@@ -159,7 +159,12 @@ export function WizardPage({ id }: { id: string }) {
             )}
           </div>
         </section>
-        <DiagnosticsPanel diagnostics={diagnostics} warband={warband} index={index} />
+        {/* Side column. Below lg it dissolves so the budget frame can sit
+            first and stay sticky above the step, as before. */}
+        <div className="contents lg:sticky lg:top-4 lg:block lg:space-y-4 lg:self-start">
+          <BudgetBar warband={warband} index={index} />
+          <DiagnosticsPanel diagnostics={diagnostics} warband={warband} index={index} />
+        </div>
       </div>
     </div>
   );
