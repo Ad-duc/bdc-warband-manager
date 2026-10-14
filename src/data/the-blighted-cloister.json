@@ -8,13 +8,13 @@
   },
   "schemaVersion": 1,
   "id": "the-blighted-cloister",
-  "name": { "en": "The Blighted Cloister", "fr": "The Blighted Cloister" },
+  "name": { "en": "The Blighted Cloister", "fr": "Le Cloître gangrené" },
   "description": {
     "en": "The Blighted Cloister are a secretive monastic order of knights and sorcerer-priests who believe the Black Rot to be not a curse but a blessing bestowed upon the City. Behind the high stone-walls of their abbeys they nurse the sick and disease-ridden with no intention to cure them. Instead, they are nurtured into swollen vessels of pestilence and venerated as living saints.\nWithin the Cloister's innermost circles, their creed has descended further into blasphemy. Prayers have given way to dark pacts, and hymns to whispered invocations. The Black Rot has drawn the eyes of demonic entities who seek to walk the mortal world to sow plague and disease. These demons grant strength to the knights of the Cloister, transforming them into bloated and rotten creatures that tower over lesser men. The price is their soul, and as the demonic corruption twists their insides there are few who retain their sanity for long.",
-    "fr": "The Blighted Cloister est un ordre monastique secret de chevaliers et de prêtres-sorciers, qui voient dans la Pourriture noire non pas une malédiction, mais une bénédiction accordée à la Cité. Derrière les hautes enceintes de pierre de leurs abbayes, ils prennent soin des malades et des pestiférés sans aucune intention de les guérir. Ils les entretiennent au contraire jusqu'à en faire des réceptacles boursouflés de pestilence, vénérés comme des saints vivants.\nDans les cercles les plus fermés du Cloître, leur credo a sombré plus loin encore dans le blasphème. Les prières ont cédé la place aux sombres pactes, et les hymnes aux invocations murmurées. La Pourriture noire a attiré le regard d'entités démoniaques qui cherchent à fouler le monde des mortels pour y semer la peste et la maladie. Ces démons donnent de la force aux chevaliers du Cloître et font d'eux des créatures bouffies et pourries, qui dominent de toute leur taille les hommes ordinaires. Le prix en est leur âme, et tandis que la corruption démoniaque leur tord les entrailles, rares sont ceux qui gardent longtemps la raison."
+    "fr": "Le Cloître gangrené est un ordre monastique secret de chevaliers et de prêtres-sorciers, qui voient dans la Pourriture noire non pas une malédiction, mais une bénédiction accordée à la Cité. Derrière les hautes enceintes de pierre de leurs abbayes, ils prennent soin des malades et des pestiférés sans aucune intention de les guérir. Ils les entretiennent au contraire jusqu'à en faire des réceptacles boursouflés de pestilence, vénérés comme des saints vivants.\nDans les cercles les plus fermés du Cloître, leur credo a sombré plus loin encore dans le blasphème. Les prières ont cédé la place aux sombres pactes, et les hymnes aux invocations murmurées. La Pourriture noire a attiré le regard d'entités démoniaques qui cherchent à fouler le monde des mortels pour y semer la peste et la maladie. Ces démons donnent de la force aux chevaliers du Cloître et font d'eux des créatures bouffies et pourries, qui dominent de toute leur taille les hommes ordinaires. Le prix en est leur âme, et tandis que la corruption démoniaque leur tord les entrailles, rares sont ceux qui gardent longtemps la raison."
   },
   "armouryName": { "en": "Cloister Armoury", "fr": "Armurerie du Cloître" },
-  "sourceRef": { "page": 113, "md": "09_the-blighted-cloister.md > The Blighted Cloister" },
+  "sourceRef": { "page": 113, "md": "09_the-blighted-cloister.md > Le Cloître gangrené" },
   "assets": { "shield": "bouclier_cloister.webp", "accentColor": null },
 
   "origins": [
@@ -113,7 +113,7 @@
       "name": { "en": "Secluded Scriptorium", "fr": "Scriptorium isolé" },
       "flavour": {
         "en": "By candlelight, the High Sorcerer oversees a host of hooded scribes as they translate forgotten manuscripts and corrupt works of medicine into foul treatises on plague and poison.",
-        "fr": "À la lueur des chandelles, le High Sorcerer surveille une armée de scribes encapuchonnés, qui traduisent des manuscrits oubliés et dévoient des ouvrages de médecine pour en faire d'immondes traités sur la peste et le poison."
+        "fr": "À la lueur des chandelles, le Grand Sorcier surveille une armée de scribes encapuchonnés, qui traduisent des manuscrits oubliés et dévoient des ouvrages de médecine pour en faire d'immondes traités sur la peste et le poison."
       },
       "income": "3d6x5",
       "rules": [
@@ -123,7 +123,7 @@
           "tag": null,
           "text": {
             "en": "In each Aftermath sequence, you can pick 1 of the following:\n- Scry Ancient Scrolls: Roll a dice for each Wizard in your warband. Record an ongoing tally on your Warband Roster. Each time the tally exceeds a multiple of 20, you can pick a Wizard in your warband to earn enough experience to receive their next advancement.\n- Brew Concoctions: Roll a dice for each Wizard in your warband. For each roll of 5+, you can add 1 Vial of Poison item (pg xx) to your stash.",
-            "fr": "À chaque séquence d'après-bataille, vous pouvez choisir 1 des options suivantes :\n- Scruter les parchemins anciens : lancez un dé pour chaque Sorcier de votre bande. Tenez un total cumulé sur votre feuille de bande. Chaque fois que le total dépasse un multiple de 20, vous pouvez choisir un Sorcier de votre bande : il gagne assez d'expérience pour obtenir sa prochaine progression.\n- Préparer des décoctions : lancez un dé pour chaque Sorcier de votre bande. Pour chaque résultat de 5+, vous pouvez ajouter 1 objet Fiole de poison (p. xx) à votre butin."
+            "fr": "À chaque séquence d'après-bataille, vous pouvez choisir 1 des options suivantes :\n- Scruter les parchemins anciens : lancez un dé pour chaque Magicien de votre bande. Tenez un total cumulé sur votre feuille de bande. Chaque fois que le total dépasse un multiple de 20, vous pouvez choisir un Magicien de votre bande : il gagne assez d'expérience pour obtenir sa prochaine progression.\n- Préparer des décoctions : lancez un dé pour chaque Magicien de votre bande. Pour chaque résultat de 5+, vous pouvez ajouter 1 objet Fiole de poison (p. xx) à votre butin."
           }
         }
       ],
@@ -151,7 +151,7 @@
           "tag": null,
           "text": {
             "en": "Before the Aftermath sequence, roll on the table below. If you won the battle, roll 3D6. If you lost, roll 2D6:\n2 - Damnation: Your leader is killed. You can add a Demonic Rotspawn to your warband without paying any silver. It bears the name of your former leader.\n3-8 - Silence: No effect.\n9-12 - Minor Boon: Your leader earns 10 bonus experience.\n13-15 - Demonic Ally: You can add a Rot Demon or a Rotling to your warband without paying any silver.\n16+ - Major Boon: Your leader earns 30 bonus experience.",
-            "fr": "Avant la séquence d'après-bataille, faites un jet sur la table ci-dessous. Si vous avez gagné la bataille, lancez 3D6. Si vous avez perdu, lancez 2D6 :\n2 - Damnation : votre chef est tué. Vous pouvez ajouter un Demonic Rotspawn à votre bande sans dépenser de pièces d'argent. Il porte le nom de votre ancien chef.\n3-8 - Silence : aucun effet.\n9-12 - Faveur mineure : votre chef gagne 10 d'expérience bonus.\n13-15 - Allié démoniaque : vous pouvez ajouter un Rot Demon ou un Rotling à votre bande sans dépenser de pièces d'argent.\n16+ - Faveur majeure : votre chef gagne 30 d'expérience bonus."
+            "fr": "Avant la séquence d'après-bataille, faites un jet sur la table ci-dessous. Si vous avez gagné la bataille, lancez 3D6. Si vous avez perdu, lancez 2D6 :\n2 - Damnation : votre chef est tué. Vous pouvez ajouter un Rejeton de la Pourriture à votre bande sans dépenser de pièces d'argent. Il porte le nom de votre ancien chef.\n3-8 - Silence : aucun effet.\n9-12 - Faveur mineure : votre chef gagne 10 d'expérience bonus.\n13-15 - Allié démoniaque : vous pouvez ajouter un Démon de la Pourriture ou un Pourrisson à votre bande sans dépenser de pièces d'argent.\n16+ - Faveur majeure : votre chef gagne 30 d'expérience bonus."
           }
         }
       ],
@@ -173,7 +173,7 @@
           "tag": null,
           "text": {
             "en": "Each time a Dreg Cultist in this warband earns a level of Black Rot, they earn 5 additional experience.",
-            "fr": "Chaque fois qu'un Dreg Cultist de cette bande gagne un niveau de Pourriture noire, il gagne 5 d'expérience supplémentaire."
+            "fr": "Chaque fois qu'un Cultiste de la lie de cette bande gagne un niveau de Pourriture noire, il gagne 5 d'expérience supplémentaire."
           }
         },
         {
@@ -182,7 +182,7 @@
           "tag": null,
           "text": {
             "en": "Each time a fighter in this warband is killed, every Dreg Cultist in this warband earns 10 additional bonus experience in step 3 of the aftermath sequence.",
-            "fr": "Chaque fois qu'un combattant de cette bande est tué, chaque Dreg Cultist de cette bande gagne 10 d'expérience bonus supplémentaire à l'étape 3 de la séquence d'après-bataille."
+            "fr": "Chaque fois qu'un combattant de cette bande est tué, chaque Cultiste de la lie de cette bande gagne 10 d'expérience bonus supplémentaire à l'étape 3 de la séquence d'après-bataille."
           }
         }
       ],
@@ -203,11 +203,11 @@
     },
     {
       "id": "rot-demons",
-      "name": { "en": "Rot Demons", "fr": "Rot Demons" },
+      "name": { "en": "Rot Demons", "fr": "Démons de la Pourriture" },
       "tag": null,
       "text": {
         "en": "Fighters with the Demon keyword do not use the standard injury table (pg xx). Instead they use the following Demon Injury Table (d66):\nThe exception to this are Rotlings which use the Beasts Injury Table (pg xx).\n11-16 - Banished: The demon is banished from the mortal world for 666 years. Remove it from your warband roster. All its wargear is lost.\n21-36 - Fractured Essence: The demon's grip on its corporeal form is momentarily unravelled. The demon misses the next battle.\n41-65 - Unharmed: Mortal weapons are not enough to deal lasting harm to a creature such as this. The demon suffers no lasting effects.\n66 - Enraged: The demon suffers no lasting effects. In addition, in step 3 of the Aftermath sequence, after earning experience, they earn bonus experience to reach the next level.",
-        "fr": "Les combattants qui ont le mot-clé Démon n'utilisent pas la table des blessures standard (p. xx). À la place, ils utilisent la Table des blessures des Démons suivante (D66) :\nFont exception les Rotlings, qui utilisent la Table des blessures des Bêtes (p. xx).\n11-16 - Banni : le démon est banni du monde des mortels pour 666 ans. Retirez-le de votre feuille de bande. Tout son équipement est perdu.\n21-36 - Essence fracturée : l'emprise du démon sur sa forme corporelle se défait un instant. Le démon manque la prochaine bataille.\n41-65 - Intact : les armes des mortels ne suffisent pas à infliger un mal durable à une telle créature. Le démon ne subit aucun effet durable.\n66 - Furieux : le démon ne subit aucun effet durable. De plus, à l'étape 3 de la séquence d'après-bataille, après avoir gagné de l'expérience, il gagne assez d'expérience bonus pour atteindre le niveau suivant."
+        "fr": "Les combattants qui ont le mot-clé Démon n'utilisent pas la table des blessures standard (p. xx). À la place, ils utilisent la Table des blessures des Démons suivante (D66) :\nFont exception les Pourrissons, qui utilisent la Table des blessures des Bêtes (p. xx).\n11-16 - Banni : le démon est banni du monde des mortels pour 666 ans. Retirez-le de votre feuille de bande. Tout son équipement est perdu.\n21-36 - Essence fracturée : l'emprise du démon sur sa forme corporelle se défait un instant. Le démon manque la prochaine bataille.\n41-65 - Intact : les armes des mortels ne suffisent pas à infliger un mal durable à une telle créature. Le démon ne subit aucun effet durable.\n66 - Furieux : le démon ne subit aucun effet durable. De plus, à l'étape 3 de la séquence d'après-bataille, après avoir gagné de l'expérience, il gagne assez d'expérience bonus pour atteindre le niveau suivant."
       }
     }
   ],
@@ -218,7 +218,7 @@
   ],
   "nameTable": {
     "die": "d66",
-    "sourceRef": { "page": 116, "md": "09_the-blighted-cloister.md > Noms du Blighted Cloister" },
+    "sourceRef": { "page": 116, "md": "09_the-blighted-cloister.md > Noms du Cloître gangrené" },
     "entries": {
       "11": "Agabus",
       "12": "Anselm",
@@ -260,7 +260,7 @@
   },
   "epithetTable": {
     "die": "d66",
-    "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Épithètes du Blighted Cloister" },
+    "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Épithètes du Cloître gangrené" },
     "entries": {
       "11": { "en": "Acolyte of the Black Breath", "fr": "Acolyte du Souffle noir" },
       "12": { "en": "Anointed of Corruption", "fr": "Oint de la Corruption" },
@@ -304,7 +304,7 @@
   "fighters": [
     {
       "id": "knight-abbot",
-      "name": { "en": "Knight-Abbot", "fr": "Knight-Abbot" },
+      "name": { "en": "Knight-Abbot", "fr": "Chevalier-Abbé" },
       "category": "leader",
       "keywords": ["leader", "cloister", "human", "knight"],
       "cost": 190,
@@ -334,11 +334,11 @@
         "en": "Blessed are they whom the Black Rot hath chosen.",
         "fr": "Bénis soient ceux que la Pourriture noire a choisis."
       },
-      "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > Knight-Abbot" }
+      "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > Chevalier-Abbé" }
     },
     {
       "id": "high-sorcerer",
-      "name": { "en": "High Sorcerer", "fr": "High Sorcerer" },
+      "name": { "en": "High Sorcerer", "fr": "Grand Sorcier" },
       "category": "leader",
       "keywords": ["leader", "cloister", "human", "wizard"],
       "cost": 175,
@@ -365,11 +365,11 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens et de la Liste d'objets des Praticiens de l'Armurerie du Cloître."
       },
       "quote": { "en": "Count thy afflictions as blessings.", "fr": "Tiens tes afflictions pour des bénédictions." },
-      "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > High Sorcerer" }
+      "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > Grand Sorcier" }
     },
     {
       "id": "cloister-sorcerer",
-      "name": { "en": "Cloister Sorcerer", "fr": "Cloister Sorcerer" },
+      "name": { "en": "Cloister Sorcerer", "fr": "Sorcier du Cloître" },
       "category": "champion",
       "keywords": ["champion", "cloister", "human", "wizard"],
       "cost": 140,
@@ -396,11 +396,11 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens et de la Liste d'objets des Praticiens de l'Armurerie du Cloître."
       },
       "quote": { "en": "I'll see thy flesh boil and burn.", "fr": "Je verrai ta chair bouillir et brûler." },
-      "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > Cloister Sorcerer" }
+      "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > Sorcier du Cloître" }
     },
     {
       "id": "cloister-champion",
-      "name": { "en": "Cloister Champion", "fr": "Cloister Champion" },
+      "name": { "en": "Cloister Champion", "fr": "Champion du Cloître" },
       "category": "champion",
       "keywords": ["champion", "cloister", "human", "knight"],
       "cost": 145,
@@ -427,11 +427,11 @@
         "fr": "Ce combattant est équipé d'une Armure de plates, comprise dans son coût de recrutement. Il peut être équipé d'équipement supplémentaire de la Liste principale et de la Liste des Champions de l'Armurerie du Cloître."
       },
       "quote": { "en": "Corruption grants me strength.", "fr": "La corruption me donne de la force." },
-      "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > Cloister Champion" }
+      "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > Champion du Cloître" }
     },
     {
       "id": "darkcloven-shaman",
-      "name": { "en": "Darkcloven Shaman", "fr": "Darkcloven Shaman" },
+      "name": { "en": "Darkcloven Shaman", "fr": "Chaman Sabot-Noir" },
       "category": "champion",
       "keywords": ["champion", "cloister", "beastman", "wizard"],
       "cost": 145,
@@ -445,7 +445,7 @@
       "specialRules": [
         {
           "id": "darkcloven-magic",
-          "name": { "en": "Darkcloven Magic", "fr": "Magie Darkcloven" },
+          "name": { "en": "Darkcloven Magic", "fr": "Magie Sabot-Noir" },
           "tag": null,
           "text": {
             "en": "This fighter knows the Lore of Blessed Maggots and the Demonic Lore of Rot. However, when they are recruited they have no signature spells. At the start of each battle they prepare 1 random spell from each lore.",
@@ -470,11 +470,11 @@
         "en": "Tonight the herd shall feast on blood and marrow.",
         "fr": "Ce soir, la harde se repaîtra de sang et de moelle."
       },
-      "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Darkcloven Shaman" }
+      "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Chaman Sabot-Noir" }
     },
     {
       "id": "demonic-rot-herald",
-      "name": { "en": "Demonic Rot-Herald", "fr": "Demonic Rot-Herald" },
+      "name": { "en": "Demonic Rot-Herald", "fr": "Héraut de la Pourriture" },
       "category": "champion",
       "keywords": ["champion", "cloister", "demon", "wizard"],
       "cost": 175,
@@ -522,11 +522,11 @@
         "en": "Thy flesh and thy soul shall know corruption, mortal.",
         "fr": "Ta chair et ton âme connaîtront la corruption, mortel."
       },
-      "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Demonic Rot-Herald" }
+      "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Héraut de la Pourriture" }
     },
     {
       "id": "cloister-knight",
-      "name": { "en": "Cloister Knight", "fr": "Cloister Knight" },
+      "name": { "en": "Cloister Knight", "fr": "Chevalier du Cloître" },
       "category": "henchman",
       "keywords": ["henchman", "cloister", "human", "knight"],
       "cost": 95,
@@ -543,11 +543,11 @@
         "fr": "Ce combattant est équipé d'une Armure de plates, comprise dans son coût de recrutement. Il peut être équipé d'équipement supplémentaire de la Liste principale de l'Armurerie du Cloître."
       },
       "quote": { "en": "My blade serves the Living Saints.", "fr": "Ma lame sert les Saints vivants." },
-      "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Cloister Knight" }
+      "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Chevalier du Cloître" }
     },
     {
       "id": "dreg-cultist",
-      "name": { "en": "Dreg Cultist", "fr": "Dreg Cultist" },
+      "name": { "en": "Dreg Cultist", "fr": "Cultiste de la lie" },
       "category": "henchman",
       "keywords": ["henchman", "cloister", "human"],
       "cost": 30,
@@ -561,14 +561,14 @@
       "specialRules": [],
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List and Dreg List from the Cloister Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Dregs de l'Armurerie du Cloître."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste de la lie de l'Armurerie du Cloître."
       },
       "quote": { "en": "The afflicted shall inherit the City.", "fr": "Les affligés hériteront de la Cité." },
-      "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Dreg Cultist" }
+      "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Cultiste de la lie" }
     },
     {
       "id": "darkcloven-beastman",
-      "name": { "en": "Darkcloven Beastman", "fr": "Darkcloven Beastman" },
+      "name": { "en": "Darkcloven Beastman", "fr": "Homme-bête Sabot-Noir" },
       "category": "henchman",
       "keywords": ["henchman", "cloister", "beastman"],
       "cost": 55,
@@ -595,11 +595,11 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie du Cloître."
       },
       "quote": { "en": "Feast on flesh!", "fr": "Repaissez-vous de chair !" },
-      "sourceRef": { "page": 129, "md": "09_the-blighted-cloister.md > Darkcloven Beastman" }
+      "sourceRef": { "page": 129, "md": "09_the-blighted-cloister.md > Homme-bête Sabot-Noir" }
     },
     {
       "id": "rot-demon",
-      "name": { "en": "Rot Demon", "fr": "Rot Demon" },
+      "name": { "en": "Rot Demon", "fr": "Démon de la Pourriture" },
       "category": "henchman",
       "keywords": ["henchman", "cloister", "demon"],
       "cost": 120,
@@ -638,11 +638,11 @@
         "en": "Once more do I tread the mortal plane.",
         "fr": "Une fois encore, je foule le plan des mortels."
       },
-      "sourceRef": { "page": 129, "md": "09_the-blighted-cloister.md > Rot Demon" }
+      "sourceRef": { "page": 129, "md": "09_the-blighted-cloister.md > Démon de la Pourriture" }
     },
     {
       "id": "demonic-rotspawn",
-      "name": { "en": "Demonic Rotspawn", "fr": "Demonic Rotspawn" },
+      "name": { "en": "Demonic Rotspawn", "fr": "Rejeton de la Pourriture" },
       "category": "brute",
       "keywords": ["brute", "cloister", "demon"],
       "cost": 130,
@@ -678,11 +678,11 @@
         "fr": "Ce combattant est équipé d'une Gueule de pourriture démoniaque, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": { "en": "Sate... my... hunger...", "fr": "Rassasiez... ma... faim..." },
-      "sourceRef": { "page": 130, "md": "09_the-blighted-cloister.md > Demonic Rotspawn" }
+      "sourceRef": { "page": 130, "md": "09_the-blighted-cloister.md > Rejeton de la Pourriture" }
     },
     {
       "id": "demonic-rot-colossal",
-      "name": { "en": "Demonic Rot-Colossal", "fr": "Demonic Rot-Colossal" },
+      "name": { "en": "Demonic Rot-Colossal", "fr": "Colosse de la Pourriture" },
       "category": "brute",
       "keywords": ["brute", "cloister", "demon"],
       "cost": 200,
@@ -718,11 +718,11 @@
         "fr": "Ce combattant est équipé d'une Grande lame de pourriture démoniaque, comprise dans son coût de recrutement. Il ne peut être équipé d'aucun autre équipement."
       },
       "quote": { "en": "Come hither, little mortal.", "fr": "Approche, petit mortel." },
-      "sourceRef": { "page": 130, "md": "09_the-blighted-cloister.md > Demonic Rot-Colossal" }
+      "sourceRef": { "page": 130, "md": "09_the-blighted-cloister.md > Colosse de la Pourriture" }
     },
     {
       "id": "bloat-fly",
-      "name": { "en": "Bloat Fly", "fr": "Bloat Fly" },
+      "name": { "en": "Bloat Fly", "fr": "Mouche bouffie" },
       "category": "beast",
       "keywords": ["beast", "cloister", "fly"],
       "cost": 50,
@@ -739,11 +739,11 @@
         "fr": "Ce combattant est équipé d'une trompe, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": null,
-      "sourceRef": { "page": 131, "md": "09_the-blighted-cloister.md > Bloat Fly" }
+      "sourceRef": { "page": 131, "md": "09_the-blighted-cloister.md > Mouche bouffie" }
     },
     {
       "id": "rotling",
-      "name": { "en": "Rotling", "fr": "Rotling" },
+      "name": { "en": "Rotling", "fr": "Pourrisson" },
       "category": "beast",
       "keywords": ["beast", "cloister", "demon"],
       "cost": 25,
@@ -760,7 +760,7 @@
         "fr": "Ce combattant est équipé d'une frappe de pourriture démoniaque, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": null,
-      "sourceRef": { "page": 131, "md": "09_the-blighted-cloister.md > Rotling" }
+      "sourceRef": { "page": 131, "md": "09_the-blighted-cloister.md > Pourrisson" }
     }
   ],
 
@@ -1406,8 +1406,8 @@
     },
     {
       "id": "dreg",
-      "name": { "en": "Dreg List", "fr": "Liste des Dregs" },
-      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Liste des Dregs" },
+      "name": { "en": "Dreg List", "fr": "Liste de la lie" },
+      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Liste de la lie" },
       "entries": [
         { "wargearId": "blowpipe", "cost": 16 },
         { "wargearId": "sling", "cost": 14 }
@@ -1450,7 +1450,7 @@
       },
       "eligibilityLabel": {
         "en": "Cloister Leaders and Champions only",
-        "fr": "Chefs et Champions Cloister uniquement"
+        "fr": "Chefs et Champions Cloître uniquement"
       },
       "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Ordonnés du Cloître" },
       "skills": [
@@ -1514,7 +1514,7 @@
       "id": "blessings-of-saint-rot",
       "name": { "en": "Blessings of Saint Rot", "fr": "Bénédictions de Sainte Pourriture" },
       "eligibility": { "kind": "keywords", "anyOf": [["cloister"]] },
-      "eligibilityLabel": { "en": "Any Cloister fighter", "fr": "N'importe quel combattant Cloister" },
+      "eligibilityLabel": { "en": "Any Cloister fighter", "fr": "N'importe quel combattant Cloître" },
       "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Bénédictions de Sainte Pourriture" },
       "skills": [
         {
@@ -1603,7 +1603,7 @@
           "criticalCastValue": 12,
           "text": {
             "en": "Pick a visible point on the battlefield floor within 6\" of the caster. Until the end of the round, the battlefield floor within 6\" of that point is a mire. Subtract 2 from the maximum distance a non-Cloister fighter can move each time they move across the mire.",
-            "fr": "Choisissez un point visible sur le sol du champ de bataille à 6\" ou moins du lanceur. Jusqu'à la fin du round, le sol du champ de bataille à 6\" ou moins de ce point est un bourbier. Soustrayez 2 à la distance maximale dont un combattant non Cloister peut se déplacer chaque fois qu'il se déplace à travers le bourbier."
+            "fr": "Choisissez un point visible sur le sol du champ de bataille à 6\" ou moins du lanceur. Jusqu'à la fin du round, le sol du champ de bataille à 6\" ou moins de ce point est un bourbier. Soustrayez 2 à la distance maximale dont un combattant non Cloître peut se déplacer chaque fois qu'il se déplace à travers le bourbier."
           },
           "criticalText": {
             "en": "The battlefield floor within 9\" of that point is a mire, instead of 6\".",
@@ -1689,20 +1689,20 @@
         {
           "id": "summon-rotling",
           "roll": 1,
-          "name": { "en": "Summon Rotling", "fr": "Invoquer un Rotling" },
+          "name": { "en": "Summon Rotling", "fr": "Invoquer un Pourrisson" },
           "spellType": "summon",
           "castingValue": 9,
           "criticalCastValue": 14,
           "text": {
             "en": "A summoned Rotling fighter (pg xx) is added to the caster's warband until it is taken down. Set up the fighter within 3\" of the caster and not engaged in melee.\nA warband cannot have more than 3 summoned fighters at any time. If the caster's warband already has 3 summoned fighters, they cannot cast this spell.",
-            "fr": "Un combattant Rotling invoqué (p. xx) est ajouté à la bande du lanceur jusqu'à ce qu'il soit mis hors de combat. Placez le combattant à 3\" ou moins du lanceur et non engagé au corps à corps.\nUne bande ne peut jamais avoir plus de 3 combattants invoqués à la fois. Si la bande du lanceur a déjà 3 combattants invoqués, il ne peut pas lancer ce sort."
+            "fr": "Un combattant Pourrisson invoqué (p. xx) est ajouté à la bande du lanceur jusqu'à ce qu'il soit mis hors de combat. Placez le combattant à 3\" ou moins du lanceur et non engagé au corps à corps.\nUne bande ne peut jamais avoir plus de 3 combattants invoqués à la fois. Si la bande du lanceur a déjà 3 combattants invoqués, il ne peut pas lancer ce sort."
           },
           "criticalText": {
             "en": "The fighter can be set up within 9\" of the caster and not engaged in melee.",
             "fr": "Le combattant peut être placé à 9\" ou moins du lanceur et non engagé au corps à corps."
           },
           "attack": null,
-          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 1 - Invoquer un Rotling" }
+          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 1 - Invoquer un Pourrisson" }
         },
         {
           "id": "demonic-strength",

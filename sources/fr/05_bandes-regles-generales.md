@@ -23,10 +23,10 @@ Au début de la campagne, vous disposez de 1000 pièces d'argent (*silver*) pour
 
 La version de test de Black Death City propose actuellement 4 factions parmi lesquelles choisir :
 
-- **Guild Mercenaries** - page xx
-- **Verminkin** - page xx
-- **Death Covens** - page xx
-- **The Blighted Cloister** - page xx
+- **Mercenaires de la Guilde (*Guild Mercenaries*)** - page xx
+- **Vermigènes (*Verminkin*)** - page xx
+- **Cabales de la Mort (*Death Covens*)** - page xx
+- **Le Cloître gangrené (*The Blighted Cloister*)** - page xx
 
 ### Étape 2 - Choisir une origine (*Step 2 - Pick an Origin*)
 
@@ -38,17 +38,17 @@ Chaque faction dispose d'une liste de combattants (*fighter*) qui peuvent être 
 
 **1 Chef (*Leader*) :** chaque faction propose plusieurs Chefs (*Leader*) parmi lesquels choisir. Vous devez recruter 1 combattant (*fighter*) Chef (*Leader*) pour votre bande (*warband*). Ni plus, ni moins.
 
-**0-3 Champions :** moins expérimentés que le Chef (*Leader*) de votre bande (*warband*), les Champions sont des combattants (*fighter*) habiles, qui regroupent aussi bien des combattants (*fighter*) vétérans que des lanceurs de sorts (*spellcaster*), comme les sorciers (*wizard*) ou les prêtres (*priest*). Vous pouvez inclure jusqu'à 3 Champions dans votre bande (*warband*).
+**0-3 Champions :** moins expérimentés que le Chef (*Leader*) de votre bande (*warband*), les Champions sont des combattants (*fighter*) habiles, qui regroupent aussi bien des combattants (*fighter*) vétérans que des lanceurs de sorts (*spellcaster*), comme les magiciens (*wizard*) ou les prêtres (*priest*). Vous pouvez inclure jusqu'à 3 Champions dans votre bande (*warband*).
 
 **5+ Hommes de main (*Henchman*) :** chaque faction dispose d'un éventail de combattants (*fighter*) ordinaires, désignés comme Hommes de main (*Henchman*). Ils forment l'ossature de votre bande (*warband*) et, à ce titre, vous devez recruter au moins 5 Hommes de main (*Henchman*).
 
-**0-2 Brutes :** les grands combattants (*fighter*), comme les Mercenary Ogres et les Gargoyles, sont désignés comme Brutes. Une bande (*warband*) ne peut inclure que 2 Brutes.
+**0-2 Brutes :** les grands combattants (*fighter*), comme les Ogres mercenaires (*Mercenary Ogre*) et les Gargouilles (*Gargoyle*), sont désignés comme Brutes. Une bande (*warband*) ne peut inclure que 2 Brutes.
 
-**0-3 Bêtes (*Beast*) :** les Hunting Dogs, les Giant Rats et autres créatures du même genre sont désignés comme Bêtes (*Beast*). Une bande (*warband*) peut inclure jusqu'à 3 Bêtes (*Beast*).
+**0-3 Bêtes (*Beast*) :** les Chiens de chasse (*Hunting Dog*), les Rats géants (*Giant Rat*) et autres créatures du même genre sont désignés comme Bêtes (*Beast*). Une bande (*warband*) peut inclure jusqu'à 3 Bêtes (*Beast*).
 
 **Limite de 15 combattants (*15 Fighters Limit*) :** une bande (*warband*) ne peut jamais dépasser 15 combattants (*fighter*) au total.
 
-**Restrictions spécifiques (*Specific Restrictions*) :** certains combattants (*fighter*) peuvent avoir une restriction spécifique à côté de leur nom sur leur profil de combattant (*fighter*). Par exemple, la mention "0-1" figure à côté du nom du Guild Wizard sur son parchemin (*scroll*), ce qui signifie que vous ne pouvez recruter qu'un seul combattant (*fighter*) de ce type dans votre bande (*warband*).
+**Restrictions spécifiques (*Specific Restrictions*) :** certains combattants (*fighter*) peuvent avoir une restriction spécifique à côté de leur nom sur leur profil de combattant (*fighter*). Par exemple, la mention "0-1" figure à côté du nom du Magicien de la Guilde (*Guild Wizard*) sur son parchemin (*scroll*), ce qui signifie que vous ne pouvez recruter qu'un seul combattant (*fighter*) de ce type dans votre bande (*warband*).
 
 #### Expérience de départ (*Starting Experience*)
 

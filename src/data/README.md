@@ -18,16 +18,16 @@ an error, so a typo cannot slip through.
 
 ## General conventions
 
-| Topic                 | Rule                                                                                                                                                                   |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Identifiers           | English kebab-case, stable, never translated: `two-handed`, `guild-captain`.                                                                                           |
-| Texts                 | Every displayable text is `{ "en": "...", "fr": "..." }`.                                                                                                              |
-| Names kept in English | Faction names, fighter names and keywords identical to them (`Mercenary`, `Witch Hunter`) carry the same value in `en` and `fr`. The checker enforces it for fighters. |
-| French texts          | Clean text without the `(*original term*)` parentheses of the translation files. The interface shows the original term in a tooltip from the keyword and trait tables. |
-| Typography            | Straight quotes and apostrophes, simple hyphen, no em dash, no non-breaking or invisible space. The checker scans every file.                                          |
-| Header                | JSON has no comments, so each file starts with a `_header` object (file, role, author, created, license).                                                              |
-| Traceability          | Every entity has a `sourceRef`: `page` is the page printed in the VO playtest v1.03, `md` is `<file> > <heading>` in the French translation.                           |
-| Book cross references | "pg xx" / "p. xx" are kept as printed: the playtest has no page numbers there.                                                                                         |
+| Topic                 | Rule                                                                                                                                                                                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Identifiers           | English kebab-case, stable, never translated: `two-handed`, `guild-captain`.                                                                                                                                                                                       |
+| Texts                 | Every displayable text is `{ "en": "...", "fr": "..." }`.                                                                                                                                                                                                          |
+| Translated names      | Faction names, fighter names and keywords identical to them are translated like any other term (`Guild Captain` / `Capitaine de la Guilde`, `Witch Hunter` / `Chasseur de sorcières`). The generators read the French fighter name from the heading of its scroll. |
+| French texts          | Clean text without the `(*original term*)` parentheses of the translation files. The interface shows the original term in a tooltip from the keyword and trait tables.                                                                                             |
+| Typography            | Straight quotes and apostrophes, simple hyphen, no em dash, no non-breaking or invisible space. The checker scans every file.                                                                                                                                      |
+| Header                | JSON has no comments, so each file starts with a `_header` object (file, role, author, created, license).                                                                                                                                                          |
+| Traceability          | Every entity has a `sourceRef`: `page` is the page printed in the VO playtest v1.03, `md` is `<file> > <heading>` in the French translation.                                                                                                                       |
+| Book cross references | "pg xx" / "p. xx" are kept as printed: the playtest has no page numbers there.                                                                                                                                                                                     |
 
 ## Value encoding
 

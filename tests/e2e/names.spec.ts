@@ -17,7 +17,7 @@ test.use({ locale: "fr-FR" });
 test("random warband name follows the selected faction", async ({ page }) => {
   await page.goto("./");
   await page.getByRole("button", { name: "Nouvelle bande" }).click();
-  await page.getByRole("radio", { name: /Verminkin/ }).check();
+  await page.getByRole("radio", { name: /Vermigènes/ }).check();
   await page.getByRole("button", { name: /^Nom de bande au hasard/ }).click();
   const name = await page.getByLabel("Nom de la bande").inputValue();
   const table = WARBAND_NAME_TABLES["verminkin"];
@@ -29,7 +29,7 @@ test("random warband name follows the selected faction", async ({ page }) => {
 test("female names from the house table and the Death Covens rule", async ({ page }) => {
   await page.goto("./");
   await page.getByRole("button", { name: "Nouvelle bande" }).click();
-  await page.getByRole("radio", { name: /Guild Mercenaries/ }).check();
+  await page.getByRole("radio", { name: /Mercenaires de la Guilde/ }).check();
   await page.getByRole("button", { name: "Suivant" }).click();
   await page.getByRole("radio").first().check();
   await page.getByRole("button", { name: "Suivant" }).click();
@@ -50,7 +50,7 @@ test("female names from the house table and the Death Covens rule", async ({ pag
 test("Death Covens female names end with -a or a vowel", async ({ page }) => {
   await page.goto("./");
   await page.getByRole("button", { name: "Nouvelle bande" }).click();
-  await page.getByRole("radio", { name: /Death Covens/ }).check();
+  await page.getByRole("radio", { name: /Cabales de la Mort/ }).check();
   await page.getByRole("button", { name: "Suivant" }).click();
   await page.getByRole("radio").first().check();
   await page.getByRole("button", { name: "Suivant" }).click();

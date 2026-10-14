@@ -142,7 +142,7 @@ describe("Lycanfell Beast", () => {
       labels,
       false,
     );
-    expect(blocks.map((b) => b?.type)).toEqual(["Lycanfell Noble", "Lycanfell Beast"]);
+    expect(blocks.map((b) => b?.type)).toEqual(["Noble lycanthrope", "Bête lycanthrope"]);
     const beast = blocks[1];
     expect(beast).toMatchObject({ id: "noble-lycanfell-beast", cost: null, experience: null });
     expect(beast?.notes).toEqual(["Forme de Vargoi"]);

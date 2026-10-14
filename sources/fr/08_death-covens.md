@@ -1,4 +1,4 @@
-# Death Covens
+# Cabales de la Mort (*Death Covens*)
 
 > La Cité (*the City*) est un lieu de mort. La Pourriture noire (*Black Rot*) a décimé la population, laissant des corps entassés dans les rues ou jetés dans des charniers. Leur puanteur imprègne désormais le sol lui-même, où elle a acquis une sombre volonté propre.
 >
@@ -8,16 +8,16 @@
 >
 > Il y a enfin ceux qui viennent du Grand Nord, des nobles dans les veines desquels coule le sang des loups. Ils viennent chercher le frisson de la chasse au milieu des ruines de la Cité (*the City*), et ne connaîtront pas le repos avant d'être rassasiés.
 
-Cette section contient toutes les règles pour recruter une bande (*warband*) de Death Covens. Vous trouverez dans les pages suivantes :
+Cette section contient toutes les règles pour recruter une bande (*warband*) des Cabales de la Mort (*Death Covens*). Vous trouverez dans les pages suivantes :
 
 - **Origines (*Origins*)** (p. xx)
 - **Repaires (*Strongholds*)** (p. xx)
 - **Règles de campagne (*Campaign Rules*)** (p. xx)
-- **Liste des combattants des Death Covens (*Death Covens Fighter List*)** (p. xx)
-- **L'Armurerie du Coven (*The Coven Armoury*)** (p. xx-xx)
-- **Domaines de magie des Death Covens (*Death Covens Spell Lores*)** (p. xx)
-- **Compétences des Death Covens (*Death Covens Skills*)** (p. xx)
-- **Parchemins de combattants des Death Covens (*Death Covens Fighter Scrolls*)** (p. xx-xx)
+- **Liste des combattants des Cabales de la Mort (*Death Covens Fighter List*)** (p. xx)
+- **L'Armurerie de la Cabale (*The Coven Armoury*)** (p. xx-xx)
+- **Domaines de magie des Cabales de la Mort (*Death Covens Spell Lores*)** (p. xx)
+- **Compétences des Cabales de la Mort (*Death Covens Skills*)** (p. xx)
+- **Parchemins de combattants des Cabales de la Mort (*Death Covens Fighter Scrolls*)** (p. xx-xx)
 
 ## Origines (*Origins*)
 
@@ -29,20 +29,20 @@ Avant d'engager le moindre combattant (*fighter*), choisissez une origine (*orig
 
 **Restrictions**
 
-**Chef (*Leader*) :** vous devez recruter un **Bloodcursed Noble** pour diriger votre bande (*warband*) au début de la campagne.
+**Chef (*Leader*) :** vous devez recruter un **Noble au sang maudit (*Bloodcursed Noble*)** pour diriger votre bande (*warband*) au début de la campagne.
 
 **Règles spéciales (*Special Rules*)**
 
 - Vous commencez la campagne avec le repaire (*stronghold*) **Manoir opulent** (*Opulent Manor*).
-- Votre bande (*warband*) peut inclure 0-3 Bloodcursed Knights.
+- Votre bande (*warband*) peut inclure 0-3 Chevaliers au sang maudit (*Bloodcursed Knight*).
 
 ### Nécromancien renégat (*Rogue Necromancer*)
 
-> Mis hors la loi et traqué sans relâche par la Guilde des chasseurs de sorcières (*Witch Hunters Guild*), ce puissant Necromancer a cherché refuge dans la Cité (*the City*), où les morts récents lui fournissent une source inépuisable de "spécimens".
+> Mis hors la loi et traqué sans relâche par la Guilde des chasseurs de sorcières (*Witch Hunters Guild*), ce puissant Nécromancien (*Necromancer*) a cherché refuge dans la Cité (*the City*), où les morts récents lui fournissent une source inépuisable de "spécimens".
 
 **Restrictions**
 
-**Chef (*Leader*) :** vous devez recruter un **Necromancer** pour diriger votre bande (*warband*) au début de la campagne.
+**Chef (*Leader*) :** vous devez recruter un **Nécromancien (*Necromancer*)** pour diriger votre bande (*warband*) au début de la campagne.
 
 **Règles spéciales (*Special Rules*)**
 
@@ -54,12 +54,12 @@ Vous commencez la campagne avec le repaire (*stronghold*) **Salle de l'embaumeur
 
 **Restrictions**
 
-**Chef (*Leader*) :** vous devez recruter un **Lycanfell Noble** pour diriger votre bande (*warband*) au début de la campagne.
+**Chef (*Leader*) :** vous devez recruter un **Noble lycanthrope (*Lycanfell Noble*)** pour diriger votre bande (*warband*) au début de la campagne.
 
 **Règles spéciales (*Special Rules*)**
 
 - Vous commencez la campagne avec le repaire (*stronghold*) **Grand pavillon** (*Grand Pavilion*).
-- Votre bande (*warband*) peut inclure n'importe quel nombre de Dire Wolves ; ils ne comptent pas dans votre limite de Bêtes (*Beasts*).
+- Votre bande (*warband*) peut inclure n'importe quel nombre de Loups sinistres (*Dire Wolf*) ; ils ne comptent pas dans votre limite de Bêtes (*Beasts*).
 
 ### Seigneur éveillé (*Awakened Lord*)
 
@@ -67,7 +67,7 @@ Vous commencez la campagne avec le repaire (*stronghold*) **Salle de l'embaumeur
 
 **Restrictions**
 
-**Chef (*Leader*) :** vous devez recruter un **Barrow Lord** pour diriger votre bande (*warband*) au début de la campagne.
+**Chef (*Leader*) :** vous devez recruter un **Seigneur des tumulus (*Barrow Lord*)** pour diriger votre bande (*warband*) au début de la campagne.
 
 **Règles spéciales (*Special Rules*)**
 
@@ -98,13 +98,13 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), elle commence a
 
 ### Grand pavillon (*Grand Pavilion*)
 
-> Dissimulé au cœur des forêts du nord, le grand pavillon (*grand pavilion*) du Lycanfell Noble est le centre de sa cour de chasse. De riches tapisseries et de sinistres trophées ornent ses parois, tandis que des braseros de fer brûlent jusque tard dans la nuit. Au-delà de la lueur des feux, les hurlements des loups qui se rassemblent résonnent entre les arbres.
+> Dissimulé au cœur des forêts du nord, le grand pavillon (*grand pavilion*) du Noble lycanthrope (*Lycanfell Noble*) est le centre de sa cour de chasse. De riches tapisseries et de sinistres trophées ornent ses parois, tandis que des braseros de fer brûlent jusque tard dans la nuit. Au-delà de la lueur des feux, les hurlements des loups qui se rassemblent résonnent entre les arbres.
 
 **Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
 
 **Trophées de Bêtes (*Bestial Trophies*) :** chaque fois qu'une Bête (*Beast*) qui a été mise hors de combat (*taken down*) par votre Chef (*Leader*) est tuée (*killed*), votre Chef (*Leader*) gagne 10 d'expérience bonus (*bonus experience*).
 
-**Un hurlement dans la nuit (*A Howl in the Night*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), lancez un dé. Sur 6, un Dire Wolf surgit de la forêt. Vous pouvez recruter un Dire Wolf dans votre bande (*warband*) pour 0 pièce d'argent (*silver*).
+**Un hurlement dans la nuit (*A Howl in the Night*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), lancez un dé. Sur 6, un Loup sinistre (*Dire Wolf*) surgit de la forêt. Vous pouvez recruter un Loup sinistre (*Dire Wolf*) dans votre bande (*warband*) pour 0 pièce d'argent (*silver*).
 
 ### Tumulus anciens (*Ancient Barrows*)
 
@@ -116,9 +116,9 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), elle commence a
 
 **Sommeil immortel (*Immortal Slumber*) :** si votre Chef (*Leader*) obtient le résultat Repos éternel (*Laid to Rest*), voir ci-dessous, il n'est pas retiré de votre bande (*warband*). À la place, il manque les 1D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande (*warband*) pour être le Chef (*Leader*) en son absence. Le combattant (*fighter*) choisi gagne temporairement le mot-clé (*keyword*) Chef (*Leader*) et perd le mot-clé (*keyword*) Champion jusqu'au retour du Chef (*Leader*).
 
-## Règles de campagne des Death Coven (*Death Coven Campaign Rules*)
+## Règles de campagne des Cabales de la Mort (*Death Coven Campaign Rules*)
 
-Pendant la campagne, les bandes (*warband*) de Death Coven ont les règles spéciales (*special rule*) suivantes :
+Pendant la campagne, les bandes (*warband*) des Cabales de la Mort (*Death Covens*) ont les règles spéciales (*special rule*) suivantes :
 
 ### Mort d'un Chef (*Death of a Leader*)
 
@@ -126,9 +126,9 @@ Pendant la campagne, si votre chef (*Leader*) est tué (*killed*) et que vous ch
 
 | Ancien Chef (*Former Leader*) | Champion éligible (*Eligible Champion*) |
 |---|---|
-| Bloodcursed Noble | Bloodcursed Courtesan ou Bloodcursed Knight |
-| Necromancer | Necromancer's Apprentice |
-| Barrow Lord | Barrow Champion |
+| Noble au sang maudit (*Bloodcursed Noble*) | Courtisane au sang maudit (*Bloodcursed Courtesan*) ou Chevalier au sang maudit (*Bloodcursed Knight*) |
+| Nécromancien (*Necromancer*) | Apprenti nécromancien (*Necromancer's Apprentice*) |
+| Seigneur des tumulus (*Barrow Lord*) | Champion des tumulus (*Barrow Champion*) |
 
 ### Squelettes et Asservis (*Skeletons & Thralls*)
 
@@ -143,9 +143,9 @@ De plus, les Squelettes (*Skeleton*) et les Asservis (*Thrall*) n'utilisent pas 
 | 1 | **Repos éternel (*Laid to Rest*) :** la créature mort-vivante (*undead*) est défaite. Traitez ce résultat comme tué (*killed*) (p. xx). |
 | 2-6 | **Indemne (*Unscathed*) :** le combattant (*fighter*) ne subit aucun effet durable. |
 
-### Noms des Death Coven (*Death Coven Names*)
+### Noms des Cabales de la Mort (*Death Coven Names*)
 
-Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) Death Coven. Ces noms peuvent aussi servir à créer une Maison (*House*), par exemple la Maison (*House*) Dragul. Enfin, vous pouvez donner une sonorité plus féminine à un nom en ajoutant "-a" à un nom qui se termine par une consonne (par exemple, Barovyr devient Barovyra).
+Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) des Cabales de la Mort (*Death Covens*). Ces noms peuvent aussi servir à créer une Maison (*House*), par exemple la Maison (*House*) Dragul. Enfin, vous pouvez donner une sonorité plus féminine à un nom en ajoutant "-a" à un nom qui se termine par une consonne (par exemple, Barovyr devient Barovyra).
 
 | D66 | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
@@ -156,49 +156,49 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | 50 | Radimir | Radovan | Sorin | Stevrik | Strigan | Strigor |
 | 60 | Valek | Vargoi | Vasile | Viktor | Vrykan | Zorvyr |
 
-## Liste des combattants des Death Covens (*Death Covens Fighters List*)
+## Liste des combattants des Cabales de la Mort (*Death Covens Fighters List*)
 
 **Chefs (*Leaders*) (1)**
 
 | Combattant | Coût |
 |---|---|
-| Bloodcursed Noble | 185 pa |
-| Necromancer | 165 pa |
-| Lycanfell Noble | 170 pa |
-| Barrow Lord | 130 pa |
+| Noble au sang maudit (*Bloodcursed Noble*) | 185 pa |
+| Nécromancien (*Necromancer*) | 165 pa |
+| Noble lycanthrope (*Lycanfell Noble*) | 170 pa |
+| Seigneur des tumulus (*Barrow Lord*) | 130 pa |
 
 **Champions (0-3)**
 
 | Combattant | Coût |
 |---|---|
-| 0-1 Bloodcursed Courtesan | 125 pa |
-| 0-1 Bloodcursed Knight | 95 pa |
-| 0-1 Misbegotten | 65 pa |
-| 0-1 Necromancer's Apprentice | 120 pa |
-| Barrow Champion | 85 pa |
+| 0-1 Courtisane au sang maudit (*Bloodcursed Courtesan*) | 125 pa |
+| 0-1 Chevalier au sang maudit (*Bloodcursed Knight*) | 95 pa |
+| 0-1 Bâtard du sang (*Misbegotten*) | 65 pa |
+| 0-1 Apprenti nécromancien (*Necromancer's Apprentice*) | 120 pa |
+| Champion des tumulus (*Barrow Champion*) | 85 pa |
 
 **Hommes de main (*Henchmen*) (5+)**
 
 | Combattant | Coût |
 |---|---|
-| Skeleton Warrior | 40 pa |
+| Guerrier squelette (*Skeleton Warrior*) | 40 pa |
 | Zombie | 35 pa |
 
 **Brutes (0-2)**
 
 | Combattant | Coût |
 |---|---|
-| Zombie Ogre | 95 pa |
-| Gargoyle | 150 pa |
+| Ogre zombie (*Zombie Ogre*) | 95 pa |
+| Gargouille (*Gargoyle*) | 150 pa |
 
 **Bêtes (*Beasts*) (0-3)**
 
 | Combattant | Coût |
 |---|---|
-| Dire Wolf | 50 pa |
-| Dire Bat | 60 pa |
+| Loup sinistre (*Dire Wolf*) | 50 pa |
+| Chauve-souris sinistre (*Dire Bat*) | 60 pa |
 
-## Armurerie du Coven (*Coven Armoury*)
+## Armurerie de la Cabale (*Coven Armoury*)
 
 ### Liste principale (*Main List*)
 
@@ -251,7 +251,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Esprit gardien (*Spirit Guardian*) | 45 pa |
 | Familier ailé (*Winged Familiar*) | 12 pa |
 
-### Liste des Zombie Ogres (*Zombie Ogre List*)
+### Liste des Ogres zombies (*Zombie Ogre List*)
 
 **Armes de corps à corps (*Melee Weapons*)**
 
@@ -295,7 +295,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Familier ailé (*Winged Familiar*) | 12 pa |
 | Esprit gardien (*Spirit Guardian*) | 45 pa |
 
-## Armurerie du Coven - Armes de corps à corps (*Coven Armoury - Melee Weapons*)
+## Armurerie de la Cabale - Armes de corps à corps (*Coven Armoury - Melee Weapons*)
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|
@@ -332,7 +332,7 @@ Voir les règles complètes aux pages xx-xx.
 | Encombrant (*Unwieldy*) | -1 aux jets d'attaque |
 | Contournement (*Wrap*) | Ne peut ni parer ni être parée |
 
-## Armurerie du Coven - Armures et objets (*Coven Armoury - Armour & Items*)
+## Armurerie de la Cabale - Armures et objets (*Coven Armoury - Armour & Items*)
 
 ### Cuirasse (*Cuirass*) - 20 pa
 
@@ -400,7 +400,7 @@ Une fois par bataille, le combattant (*fighter*) peut utiliser l'action bonus (*
 
 **Harceler (*Harry*) [Action bonus (*Bonus Action*)] :** choisissez un combattant ennemi (*enemy fighter*) visible à 24" ou moins. Jusqu'à la fin du round, ce combattant ennemi (*enemy fighter*) est harcelé (*harried*). Tant qu'un combattant (*fighter*) est harcelé (*harried*), chaque fois qu'il effectue un Mouvement (*Move*) ou une Action, il doit réussir un test de Volonté (*Willpower*), sans quoi il perd ce Mouvement (*Move*) ou cette Action.
 
-## Domaines de magie des Death Covens (*Death Covens Spell Lores*)
+## Domaines de magie des Cabales de la Mort (*Death Covens Spell Lores*)
 
 ## Domaine de la Nécromancie (*Lore of Necromancy*) - 1D6
 
@@ -563,7 +563,7 @@ Voir les règles complètes aux pages xx-xx.
 | Arcanique (*Arcane*) | Touches critiques sur 5+ |
 | Poison | Les touches critiques empoisonnent. Subit 1 dégât à chaque activation. Prend fin si soigné ou s'il reste 1 point de vie |
 
-## Compétences des Death Covens (*Death Covens Skills*)
+## Compétences des Cabales de la Mort (*Death Covens Skills*)
 
 ## Sombre aristocratie (*Dark Aristocracy*)
 
@@ -635,19 +635,19 @@ Cette compétence (*skill*) ne peut être choisie que pour un Champion.
 
 Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) engagé au corps à corps (*engaged in melee*) avec un Chef (*Leader*) allié (*friendly*), et que ce combattant (*fighter*) n'est pas engagé (*engaged*), ce combattant (*fighter*) peut effectuer une Charge (*Charge Move*). Ce combattant (*fighter*) doit terminer cette Charge (*Charge Move*) engagé au corps à corps (*engaged in melee*) avec ce combattant ennemi (*enemy fighter*). Dans ce cas, le combattant ennemi (*enemy fighter*) doit cibler (*target*) ce combattant (*fighter*) avec toutes les actions d'Attaque au corps à corps (*Melee Attack Action*) qu'il effectue pendant cette activation.
 
-## Parchemins de combattants des Death Covens (*Death Covens Fighter Scrolls*)
+## Parchemins de combattants des Cabales de la Mort (*Death Covens Fighter Scrolls*)
 
 ## Chefs (*Leaders*)
 
-### Bloodcursed Noble
+### Noble au sang maudit (*Bloodcursed Noble*)
 
-*Chef, Mort-vivant, Sorcier, Vampire, Aristocrate* (*Leader, Undead, Wizard, Vampyre, Aristocrat*) - 185 pa
+*Chef, Mort-vivant, Magicien, Vampire, Aristocrate* (*Leader, Undead, Wizard, Vampyre, Aristocrat*) - 185 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 5" | 3+ | 5+ | 6+ | 5 | 4 | 6 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Coven (*Coven Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie de la Cabale (*Coven Armoury*).
 
 **Expérience de départ :** 60+1D6.
 
@@ -658,15 +658,15 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 > "La Cité (*the City*) appartient à la nuit."
 
-### Necromancer
+### Nécromancien (*Necromancer*)
 
-*Chef, Humain, Sorcier* (*Leader, Human, Wizard*) - 165 pa
+*Chef, Humain, Magicien* (*Leader, Human, Wizard*) - 165 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 5" | 4+ | 6+ | 6+ | 3 | 5 | 5 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie du Coven (*Coven Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie de la Cabale (*Coven Armoury*).
 
 **Expérience de départ :** 60+1D6.
 
@@ -676,7 +676,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 > "J'étudie l'art de la mort depuis plus longtemps que tu ne respires."
 
-### Lycanfell Noble
+### Noble lycanthrope (*Lycanfell Noble*)
 
 *Chef, Mort-vivant, Loup-garou, Aristocrate* (*Leader, Undead, Werwulf, Aristocrat*) - 170 pa
 
@@ -684,20 +684,20 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 |---|---|---|---|---|---|---|
 | 5" | 3+ | 4+ | 6+ | 4 | 4 | 6 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Coven (*Coven Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie de la Cabale (*Coven Armoury*).
 
 **Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
 - **Sang noble (*Noble Blood*) :** quand ce combattant (*fighter*) est recruté, choisissez 1 compétence (*skill*) pour lui.
-- **Transformation bestiale (*Bestial Transformation*) :** une fois par bataille, au début de l'activation de ce combattant (*fighter*), il peut se transformer (*transform*). Dans ce cas, retirez ce combattant (*fighter*) du champ de bataille (*battlefield*) et placez la Lycanfell Beast au même emplacement (ou aussi près que possible). Tous les dégâts (*damage*) que le Lycanfell Noble a subis, la Lycanfell Beast les a subis aussi.
+- **Transformation bestiale (*Bestial Transformation*) :** une fois par bataille, au début de l'activation de ce combattant (*fighter*), il peut se transformer (*transform*). Dans ce cas, retirez ce combattant (*fighter*) du champ de bataille (*battlefield*) et placez la Bête lycanthrope (*Lycanfell Beast*) au même emplacement (ou aussi près que possible). Tous les dégâts (*damage*) que le Noble lycanthrope (*Lycanfell Noble*) a subis, la Bête lycanthrope (*Lycanfell Beast*) les a subis aussi.
 
-  La Lycanfell Beast effectue immédiatement son activation.
+  La Bête lycanthrope (*Lycanfell Beast*) effectue immédiatement son activation.
 
 > "Le vent charrie l'odeur du sang. La chasse m'appelle une fois encore."
 
-### Lycanfell Beast
+### Bête lycanthrope (*Lycanfell Beast*)
 
 *Chef, Mort-vivant, Loup-garou* (*Leader, Undead, Werwulf*)
 
@@ -711,12 +711,12 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 - **Transformation capricieuse (*Temperamental Transformation*) :** chaque fois que ce combattant (*fighter*) est activé (*activate*), à la fin de son activation, il doit réussir un test de Volonté (*Willpower*), sans quoi la transformation prend fin.
 
-  Quand la transformation prend fin, retirez ce combattant (*fighter*) du champ de bataille (*battlefield*), puis placez le Lycanfell Noble au même emplacement (ou aussi près que possible). Tous les dégâts (*damage*) que la Lycanfell Beast a subis, le Lycanfell Noble les a subis aussi. Si cela devait réduire le Lycanfell Noble à zéro point de vie (*life point*), il est mis hors de combat (*taken down*).
-- **Vestiges du Noble (*Vestiges of the Noble*) :** tant que ce combattant (*fighter*) est sur le champ de bataille (*battlefield*), il est traité comme un nouveau combattant (*fighter*) ajouté à la bande (*warband*). Il n'a ni l'équipement (*wargear*), ni les compétences (*skill*), ni les blessures (*injury*) du Lycanfell Noble, etc. Si le Lycanfell Noble subissait les effets d'un sort (*spell*) ou d'une autre règle, ce combattant (*fighter*) n'est pas affecté. De plus, les règles suivantes s'appliquent :
-  - **Scénarios (*Scenarios*) :** si le scénario a donné une marque (*mark*) au Lycanfell Noble, par exemple être la Proie (*the Hit*) dans La Rue de la mort (*Street of Death*), ce combattant (*fighter*) a cette marque (*mark*).
-  - **Trésor (*Treasure*) :** si le Lycanfell Noble porte un trésor (*carrying treasure*) au moment où il se transforme (*transform*), c'est ce combattant (*fighter*) qui le porte. De même, si ce combattant (*fighter*) porte un trésor (*carrying treasure*) quand la transformation prend fin, c'est désormais le Lycanfell Noble qui le porte.
-  - **Mis hors de combat (*Taken Down*) :** si ce combattant (*fighter*) est mis hors de combat (*taken down*), le Lycanfell Noble est lui aussi mis hors de combat (*taken down*) ; ensemble, ils comptent pour 1 pour les tests de déroute (*flee test*).
-  - **Expérience (*Experience*) :** toute l'expérience bonus (*bonus experience*) que ce combattant (*fighter*) aurait gagnée est accordée, à la place, au Lycanfell Noble.
+  Quand la transformation prend fin, retirez ce combattant (*fighter*) du champ de bataille (*battlefield*), puis placez le Noble lycanthrope (*Lycanfell Noble*) au même emplacement (ou aussi près que possible). Tous les dégâts (*damage*) que la Bête lycanthrope (*Lycanfell Beast*) a subis, le Noble lycanthrope (*Lycanfell Noble*) les a subis aussi. Si cela devait réduire le Noble lycanthrope (*Lycanfell Noble*) à zéro point de vie (*life point*), il est mis hors de combat (*taken down*).
+- **Vestiges du Noble (*Vestiges of the Noble*) :** tant que ce combattant (*fighter*) est sur le champ de bataille (*battlefield*), il est traité comme un nouveau combattant (*fighter*) ajouté à la bande (*warband*). Il n'a ni l'équipement (*wargear*), ni les compétences (*skill*), ni les blessures (*injury*) du Noble lycanthrope (*Lycanfell Noble*), etc. Si le Noble lycanthrope (*Lycanfell Noble*) subissait les effets d'un sort (*spell*) ou d'une autre règle, ce combattant (*fighter*) n'est pas affecté. De plus, les règles suivantes s'appliquent :
+  - **Scénarios (*Scenarios*) :** si le scénario a donné une marque (*mark*) au Noble lycanthrope (*Lycanfell Noble*), par exemple être la Proie (*the Hit*) dans La Rue de la mort (*Street of Death*), ce combattant (*fighter*) a cette marque (*mark*).
+  - **Trésor (*Treasure*) :** si le Noble lycanthrope (*Lycanfell Noble*) porte un trésor (*carrying treasure*) au moment où il se transforme (*transform*), c'est ce combattant (*fighter*) qui le porte. De même, si ce combattant (*fighter*) porte un trésor (*carrying treasure*) quand la transformation prend fin, c'est désormais le Noble lycanthrope (*Lycanfell Noble*) qui le porte.
+  - **Mis hors de combat (*Taken Down*) :** si ce combattant (*fighter*) est mis hors de combat (*taken down*), le Noble lycanthrope (*Lycanfell Noble*) est lui aussi mis hors de combat (*taken down*) ; ensemble, ils comptent pour 1 pour les tests de déroute (*flee test*).
+  - **Expérience (*Experience*) :** toute l'expérience bonus (*bonus experience*) que ce combattant (*fighter*) aurait gagnée est accordée, à la place, au Noble lycanthrope (*Lycanfell Noble*).
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
@@ -724,7 +724,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 > "Chair... sang... moelle..."
 
-### Barrow Lord
+### Seigneur des tumulus (*Barrow Lord*)
 
 *Chef, Mort-vivant, Squelette* (*Leader, Undead, Skeleton*) - 130 pa
 
@@ -732,7 +732,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 |---|---|---|---|---|---|---|
 | 4" | 3+ | 6+ | 6+ | 3 | 4 | 6 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Coven (*Coven Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie de la Cabale (*Coven Armoury*).
 
 **Expérience de départ :** 60+1D6.
 
@@ -745,15 +745,15 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 ## Champions
 
-### 0-1 Bloodcursed Courtesan
+### 0-1 Courtisane au sang maudit (*Bloodcursed Courtesan*)
 
-*Champion, Mort-vivant, Sorcier, Vampire, Aristocrate* (*Champion, Undead, Wizard, Vampyre, Aristocrat*) - 125 pa
+*Champion, Mort-vivant, Magicien, Vampire, Aristocrate* (*Champion, Undead, Wizard, Vampyre, Aristocrat*) - 125 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 5" | 4+ | 6+ | 6+ | 5 | 4 | 4 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie du Coven (*Coven Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie de la Cabale (*Coven Armoury*).
 
 **Expérience de départ :** 40+1D6.
 
@@ -763,7 +763,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 > "Approche... j'insiste."
 
-### 0-1 Bloodcursed Knight
+### 0-1 Chevalier au sang maudit (*Bloodcursed Knight*)
 
 *Champion, Mort-vivant, Vampire, Aristocrate* (*Champion, Undead, Vampyre, Aristocrat*) - 95 pa
 
@@ -771,7 +771,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 |---|---|---|---|---|---|---|
 | 5" | 3+ | 5+ | 6+ | 5 | 4 | 5 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Coven (*Coven Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie de la Cabale (*Coven Armoury*).
 
 **Expérience de départ :** 40+1D6.
 
@@ -781,7 +781,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 > "À genoux, et je t'accorderai peut-être une mort rapide."
 
-### 0-1 Misbegotten
+### 0-1 Bâtard du sang (*Misbegotten*)
 
 *Champion, Mort-vivant, Vampire* (*Champion, Undead, Vampyre*) - 65 pa
 
@@ -789,7 +789,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 |---|---|---|---|---|---|---|
 | 5" | 4+ | 5+ | 6+ | 5 | 2 | 4 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Coven (*Coven Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie de la Cabale (*Coven Armoury*).
 
 **Expérience de départ :** 30+1D6.
 
@@ -802,15 +802,15 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 > "Non... ne me regardez pas..."
 
-### 0-1 Necromancer's Apprentice
+### 0-1 Apprenti nécromancien (*Necromancer's Apprentice*)
 
-*Champion, Humain, Sorcier* (*Champion, Human, Wizard*) - 120 pa
+*Champion, Humain, Magicien* (*Champion, Human, Wizard*) - 120 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 5" | 4+ | 6+ | 6+ | 3 | 4 | 4 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie du Coven (*Coven Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie de la Cabale (*Coven Armoury*).
 
 **Expérience de départ :** 40+1D6.
 
@@ -820,7 +820,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 > "Les secrets de la tombe seront miens, le moment venu."
 
-### Barrow Champion
+### Champion des tumulus (*Barrow Champion*)
 
 *Champion, Mort-vivant, Squelette* (*Champion, Undead, Skeleton*) - 85 pa
 
@@ -828,7 +828,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 |---|---|---|---|---|---|---|
 | 4" | 3+ | 6+ | 6+ | 3 | 4 | 5 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie du Coven (*Coven Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie de la Cabale (*Coven Armoury*).
 
 **Expérience de départ :** 40+1D6.
 
@@ -841,7 +841,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 ## Hommes de main (*Henchmen*)
 
-### Skeleton Warrior
+### Guerrier squelette (*Skeleton Warrior*)
 
 *Homme de main, Mort-vivant, Squelette, Asservi* (*Henchman, Undead, Skeleton, Thrall*) - 40 pa
 
@@ -849,7 +849,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 |---|---|---|---|---|---|---|
 | 4" | 4+ | 6+ | 6+ | 3 | 2 | 4 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) de l'Armurerie du Coven (*Coven Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) de l'Armurerie de la Cabale (*Coven Armoury*).
 
 **Expérience de départ :** 0.
 
@@ -879,7 +879,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 ## Brutes
 
-### Zombie Ogre
+### Ogre zombie (*Zombie Ogre*)
 
 *Brute, Mort-vivant, Zombie, Asservi* (*Brute, Undead, Zombie, Thrall*) - 95 pa
 
@@ -887,7 +887,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 |---|---|---|---|---|---|---|
 | 4" | 4+ | 6+ | 6+ | 1 | 2 | 8 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Zombie Ogres (*Zombie Ogre List*) de l'Armurerie du Coven (*Coven Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Ogres zombies (*Zombie Ogre List*) de l'Armurerie de la Cabale (*Coven Armoury*).
 
 **Expérience de départ :** 0.
 
@@ -895,9 +895,9 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 - **Inébranlable (*Unshakeable*) :** ce combattant (*fighter*) ignore la règle spéciale (*special rule*) Peur (*Fear*) et toutes les règles qui le feraient dévier (*scatter*), par exemple le trait d'arme (*weapon trait*) Effroi (*Scare*).
 
-### Gargoyle
+### Gargouille (*Gargoyle*)
 
-*Brute, Mort-vivant, Gargoyle, Asservi, Vol* (*Brute, Undead, Gargoyle, Thrall, Fly*) - 150 pa
+*Brute, Mort-vivant, Gargouille, Asservi, Vol* (*Brute, Undead, Gargoyle, Thrall, Fly*) - 150 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -917,7 +917,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 ## Bêtes (*Beasts*)
 
-### Dire Bat
+### Chauve-souris sinistre (*Dire Bat*)
 
 *Bête, Mort-vivant, Chauve-souris, Vol* (*Beast, Undead, Bat, Fly*) - 60 pa
 
@@ -937,7 +937,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 |---|---|---|---|---|---|
 | Crocs mordants (*Biting Fangs*) | 4 | - | 1 | 1 | Arme naturelle (*Natural Weapon*) |
 
-### Dire Wolf
+### Loup sinistre (*Dire Wolf*)
 
 *Bête, Mort-vivant, Chien* (*Beast, Undead, Dog*) - 50 pa
 
@@ -952,7 +952,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 **Règles spéciales :**
 
 - **Débusquez-les ! (*Sniff 'em Out*) :** les combattants ennemis (*enemy fighter*) qui sont cachés (*hidden*) ne sont pas cachés (*hidden*) tant qu'ils sont à 9" ou moins de ce combattant (*fighter*).
-- **Pisteurs (*Trackers*) :** à chaque séquence d'après-bataille (*aftermath sequence*), quand vous fouillez la cité, si votre groupe de fouille (*search party*) comprend au moins un Dire Wolf, vous pouvez relancer (*re-roll*) le jet d'exploration (*exploration roll*).
+- **Pisteurs (*Trackers*) :** à chaque séquence d'après-bataille (*aftermath sequence*), quand vous fouillez la cité, si votre groupe de fouille (*search party*) comprend au moins un Loup sinistre (*Dire Wolf*), vous pouvez relancer (*re-roll*) le jet d'exploration (*exploration roll*).
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
@@ -983,7 +983,7 @@ Voir les règles complètes aux pages xx-xx.
 
 Les numéros de page sont ceux imprimés dans la VO v1.03.
 
-- Ensemble du lot : même mise en forme que pour les factions précédentes. Les encadrés en grille (origines p. 94, repaires p. 95) sont lus ligne par ligne ; les listes de l'armurerie (p. 98) colonne par colonne : Liste principale, Liste des Champions, Liste des Zombie Ogres, Liste des Praticiens ; les armures, les objets et les compétences colonne de gauche puis colonne de droite.
+- Ensemble du lot : même mise en forme que pour les factions précédentes. Les encadrés en grille (origines p. 94, repaires p. 95) sont lus ligne par ligne ; les listes de l'armurerie (p. 98) colonne par colonne : Liste principale, Liste des Champions, Liste des Ogres zombies (*Zombie Ogre*), Liste des Praticiens ; les armures, les objets et les compétences colonne de gauche puis colonne de droite.
 - Ensemble du lot : cette faction n'a ni page d'armes à distance ni encadré "Objets tenus". Les Hommes de main, les Brutes et les Bêtes n'ont pas de citation. Les citations sont rendues en français d'aujourd'hui.
 - p. 93 : le sommaire écrit "Campaign Rules" sans nom de faction et "Death Covens Fighter List", alors que la page s'intitule "Fighters List" : même VF.
 - p. 93 : "Vampyres" et "Necromancers", noms communs du texte d'ambiance, sont rendus par "vampires" et "nécromanciens". "an endless supply" est rendu par "une source inépuisable", pour réserver "réserve" au terme de jeu.
@@ -994,7 +994,7 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 95 : "emerges from of the forest" (mot en trop). "Roll once on the treasure table" est rendu par "Faites un seul jet". La table des trésors est absente de la v1.03.
 - p. 95 : Sommeil immortel : "(see opposite)" renvoie à la page d'en face : rendu par "voir ci-dessous". "That fighter" est rendu par "Le combattant choisi".
 - p. 96 : le titre et le texte écrivent "Death Coven" au singulier (quatre fois) : singulier conservé. La phrase d'introduction ne dit pas "additional", contrairement aux autres factions.
-- p. 96 : la table de la Mort d'un Chef n'a pas de ligne pour le Lycanfell Noble : rien n'a été ajouté.
+- p. 96 : la table de la Mort d'un Chef n'a pas de ligne pour le Noble lycanthrope (*Lycanfell Noble*) : rien n'a été ajouté.
 - p. 96 : la table des blessures a pour en-têtes "1D6" et son propre titre : rendue par une ligne de titre et les en-têtes "Résultat | Effet". Les guillemets de 'killed' et de 'House' ne sont pas repris.
 - p. 96 : la VO écrit "an Death Coven fighter" et "a name ending in a constant" pour "consonant" : "consonne". La table D66 des noms n'est pas traduite, comme convenu.
 - p. 97 et 98 : en-têtes "Combattant | Coût" et "Nom | Pièces d'argent" ajoutés, parce qu'un tableau Markdown en exige une ligne.
@@ -1002,7 +1002,7 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 99 : la Grande arme d'ogre perd le trait Encombrant en v1.03. La VO écrit ici "Full-plate".
 - p. 99 : l'encadré des rappels cite le trait Arme naturelle alors qu'aucune arme du tableau ne le possède : reproduit tel quel.
 - p. 100 : l'Armure de plates cite les armes à distance et la Paire de pistolets, absentes de cette armurerie : texte conservé.
-- p. 100 : le texte du Grimoire écrit "has made casting roll", sans article, comme chez les Guild Mercenaries (p. 61). Il porte désormais "Rare: 0-1".
+- p. 100 : le texte du Grimoire écrit "has made casting roll", sans article, comme chez les Mercenaires de la Guilde (*Guild Mercenaries*) (p. 61). Il porte désormais "Rare: 0-1".
 - p. 101 : la v1.03 supprime "successful" dans le sort qui touche chaque combattant du gabarit : "l'attaque suivante".
 - p. 100 : le Compagnon bestial dit "this fighter" là où le Compagnon fidèle (p. 61) dit "the bearer" : traduit tel quel. "dire wolves", sans majuscules, est rendu par "loups monstrueux".
 - p. 100 : Esprit gardien : "the attacking fighters suffers" (accord fautif) : "l'attaquant subit". Familier ailé : "Rare 0-1" sans deux-points ; "Once per battle fighter can use" (il manque "this") : "le combattant". Harceler ne précise pas "of this fighter" après la distance.
@@ -1020,12 +1020,12 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 103 : Force impie : "This fighters melee weapons" sans apostrophe. Guérison surnaturelle : "if this fighter is killed. You can..." (point à la place d'une virgule) : une seule phrase. La règle parle du "Leader" alors que la compétence peut aussi être donnée à un Champion : traduit tel quel.
 - p. 104 : Se relever : "mark its location with a token" est rendu par "repérez son emplacement avec un pion", pour réserver "marque" au terme de scénario. Garde royale dit "not engaged" seul : "n'est pas engagé".
 - p. 106 : "transform" est en italique dans la VO, comme un terme de jeu : "se transformer", ajouté au glossaire.
-- p. 106 : la Lycanfell Beast n'a ni coût ni expérience de départ. La règle Vestiges du Noble est à cheval sur les deux colonnes : texte remis dans l'ordre. "zero life" est rendu par "zéro point de vie".
+- p. 106 : la Bête lycanthrope (*Lycanfell Beast*) n'a ni coût ni expérience de départ. La règle Vestiges du Noble est à cheval sur les deux colonnes : texte remis dans l'ordre. "zero life" est rendu par "zéro point de vie".
 - p. 106 : Vestiges du Noble : la VO écrit "Wargear, Skills or Injuries" avec majuscules : termes originaux donnés au singulier, comme ailleurs. Les guillemets de 'Hit' ne sont pas repris. "carrying treasure" est une variante de "holding treasure" : même VF. La parenthèse de "Taken Down" est rendue par une proposition ; "Flee Tests" porte des majuscules.
 - p. 107 : "I command thee to rise again" : anglais ancien rendu en français d'aujourd'hui, avec le tutoiement.
-- p. 108 : Misbegotten : les coûts "(+15 silver)" sont écrits "(+15 pa)" ; la parenthèse d'introduction est rendue par une proposition.
-- p. 105 et 109 : sur les parchemins du Bloodcursed Noble et du Barrow Champion, l'ordre des règles spéciales est celui de la colonne de droite (Sang noble puis Art de la magie ; Vétéran de son vivant puis Inébranlable).
-- p. 111 : la v1.03 retire la règle Force incroyable (*Incredible Strength*) du Zombie Ogre, qui garde Inébranlable. La valeur de Dégâts critiques des Serres de pierre de la Gargoyle passe de 1D6+1 à 1D3+1.
+- p. 108 : Bâtard du sang (*Misbegotten*) : les coûts "(+15 silver)" sont écrits "(+15 pa)" ; la parenthèse d'introduction est rendue par une proposition.
+- p. 105 et 109 : sur les parchemins du Noble au sang maudit (*Bloodcursed Noble*) et du Champion des tumulus (*Barrow Champion*), l'ordre des règles spéciales est celui de la colonne de droite (Sang noble puis Art de la magie ; Vétéran de son vivant puis Inébranlable).
+- p. 111 : la v1.03 retire la règle Force incroyable (*Incredible Strength*) de l'Ogre zombie (*Zombie Ogre*), qui garde Inébranlable. La valeur de Dégâts critiques des Serres de pierre de la Gargouille (*Gargoyle*) passe de 1D6+1 à 1D3+1.
 - p. 112 : la v1.03 retire le rappel du trait Poison de l'encadré des Bêtes, qu'aucune n'utilise.
 - p. 110 à 112 : "Starting Experience: 0" n'a pas de point final et il manque une ponctuation après "(see below)". La VO écrit "a stone talons" et "a biting fangs bite" : "serres de pierre" et "crocs mordants". Les profils des armes naturelles n'ont pas de colonne "Silver".
-- p. 112 : Dire Wolf : la règle Pisteurs est coupée par un point, comme chez le Hunting Dog (p. 72) : une seule phrase. "the city" y est sans majuscule ; "Dire Wolves" est rendu par "au moins un Dire Wolf".
+- p. 112 : Loup sinistre (*Dire Wolf*) : la règle Pisteurs est coupée par un point, comme chez le Chien de chasse (*Hunting Dog*) (p. 72) : une seule phrase. "the city" y est sans majuscule ; "Dire Wolves" est rendu par "au moins un Dire Wolf".

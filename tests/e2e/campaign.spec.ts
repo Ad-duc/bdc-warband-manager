@@ -23,14 +23,14 @@ test("record and undo a battle", async ({ page }) => {
 
   await page.getByRole("button", { name: "Nouvelle bataille" }).click();
   await page.getByLabel("Scénario").fill("Dans les fosses");
-  await page.getByLabel("Adversaire").fill("Verminkin");
+  await page.getByLabel("Adversaire").fill("Vermigènes");
   await page.getByLabel("Expérience gagnée par Konrad").fill("5");
-  await page.getByLabel("Guild Mercenary est perdu").first().check();
+  await page.getByLabel("Mercenaire de la Guilde est perdu").first().check();
   await page.getByLabel(/^Pièces d'argent gagnées/).fill("40");
   await page.getByRole("button", { name: "Vérifier" }).click();
   const summary = page.getByTestId("battle-summary");
   await expect(summary).toContainText("Konrad : 5 d'expérience");
-  await expect(summary).toContainText("Guild Mercenary est perdu");
+  await expect(summary).toContainText("Mercenaire de la Guilde est perdu");
   await expect(summary).toContainText("Butin : 40 pa");
   await page.getByRole("button", { name: "Appliquer la bataille" }).click();
 

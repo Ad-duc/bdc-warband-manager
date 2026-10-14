@@ -65,7 +65,7 @@
     },
     {
       "id": "15",
-      "name": "Factions et combattants (VO conservée)"
+      "name": "Factions et combattants"
     },
     {
       "id": "16",
@@ -109,7 +109,7 @@
     },
     {
       "id": "26",
-      "name": "Épithètes du Blighted Cloister"
+      "name": "Épithètes du Cloître gangrené"
     },
     {
       "id": "27",
@@ -248,18 +248,18 @@
       "category": "01"
     },
     {
-      "vo": "d12",
-      "vf": "D12",
+      "vo": "1D12",
+      "vf": "1D12",
       "category": "01"
     },
     {
-      "vo": "d3",
-      "vf": "D3",
+      "vo": "1D3",
+      "vf": "1D3",
       "category": "01"
     },
     {
-      "vo": "d6",
-      "vf": "D6",
+      "vo": "1D6",
+      "vf": "1D6",
       "category": "01"
     },
     {
@@ -909,7 +909,7 @@
     },
     {
       "vo": "Cloister",
-      "vf": "Cloister",
+      "vf": "Cloître",
       "category": "03"
     },
     {
@@ -934,7 +934,7 @@
     },
     {
       "vo": "Gargoyle",
-      "vf": "Gargoyle",
+      "vf": "Gargouille",
       "category": "03"
     },
     {
@@ -974,7 +974,7 @@
     },
     {
       "vo": "Mercenary",
-      "vf": "Mercenary",
+      "vf": "Mercenaire",
       "category": "03"
     },
     {
@@ -1019,7 +1019,7 @@
     },
     {
       "vo": "Verminkin",
-      "vf": "Verminkin",
+      "vf": "Vermigène",
       "category": "03"
     },
     {
@@ -1029,12 +1029,12 @@
     },
     {
       "vo": "Witch Hunter",
-      "vf": "Witch Hunter",
+      "vf": "Chasseur de sorcières",
       "category": "03"
     },
     {
       "vo": "Wizard",
-      "vf": "Sorcier",
+      "vf": "Magicien",
       "category": "03"
     },
     {
@@ -3239,7 +3239,7 @@
     },
     {
       "vo": "Blighted Cloister Epithets",
-      "vf": "Épithètes du Blighted Cloister",
+      "vf": "Épithètes du Cloître gangrené",
       "category": "14"
     },
     {
@@ -3414,202 +3414,202 @@
     },
     {
       "vo": "Assassin's Apprentice",
-      "vf": "Assassin's Apprentice",
+      "vf": "Apprenti assassin",
       "category": "15"
     },
     {
       "vo": "Barrow Champion",
-      "vf": "Barrow Champion",
+      "vf": "Champion des tumulus",
       "category": "15"
     },
     {
       "vo": "Barrow Lord",
-      "vf": "Barrow Lord",
+      "vf": "Seigneur des tumulus",
       "category": "15"
     },
     {
       "vo": "Bloat Fly",
-      "vf": "Bloat Fly",
+      "vf": "Mouche bouffie",
       "category": "15"
     },
     {
       "vo": "Bloodcursed Courtesan",
-      "vf": "Bloodcursed Courtesan",
+      "vf": "Courtisane au sang maudit",
       "category": "15"
     },
     {
       "vo": "Bloodcursed Knight",
-      "vf": "Bloodcursed Knight",
+      "vf": "Chevalier au sang maudit",
       "category": "15"
     },
     {
       "vo": "Bloodcursed Noble",
-      "vf": "Bloodcursed Noble",
+      "vf": "Noble au sang maudit",
       "category": "15"
     },
     {
       "vo": "Cloister Champion",
-      "vf": "Cloister Champion",
+      "vf": "Champion du Cloître",
       "category": "15"
     },
     {
       "vo": "Cloister Knight",
-      "vf": "Cloister Knight",
+      "vf": "Chevalier du Cloître",
       "category": "15"
     },
     {
       "vo": "Cloister Sorcerer",
-      "vf": "Cloister Sorcerer",
+      "vf": "Sorcier du Cloître",
       "category": "15"
     },
     {
       "vo": "Darkcloven Beastman",
-      "vf": "Darkcloven Beastman",
+      "vf": "Homme-bête Sabot-Noir",
       "category": "15"
     },
     {
       "vo": "Darkcloven Shaman",
-      "vf": "Darkcloven Shaman",
+      "vf": "Chaman Sabot-Noir",
       "category": "15"
     },
     {
       "vo": "Death Covens",
-      "vf": "Death Covens",
+      "vf": "Cabales de la Mort",
       "category": "15"
     },
     {
       "vo": "Demonic Rot-Colossal",
-      "vf": "Demonic Rot-Colossal",
+      "vf": "Colosse de la Pourriture",
       "category": "15"
     },
     {
       "vo": "Demonic Rot-Herald",
-      "vf": "Demonic Rot-Herald",
+      "vf": "Héraut de la Pourriture",
       "category": "15"
     },
     {
       "vo": "Demonic Rotspawn",
-      "vf": "Demonic Rotspawn",
+      "vf": "Rejeton de la Pourriture",
       "category": "15"
     },
     {
       "vo": "Dire Bat",
-      "vf": "Dire Bat",
+      "vf": "Chauve-souris sinistre",
       "category": "15"
     },
     {
       "vo": "Dire Wolf",
-      "vf": "Dire Wolf",
+      "vf": "Loup sinistre",
       "category": "15"
     },
     {
       "vo": "Dreg Cultist",
-      "vf": "Dreg Cultist",
+      "vf": "Cultiste de la lie",
       "category": "15"
     },
     {
       "vo": "Gargoyle",
-      "vf": "Gargoyle",
+      "vf": "Gargouille",
       "category": "15"
     },
     {
       "vo": "Giant Rat",
-      "vf": "Giant Rat",
+      "vf": "Rat géant",
       "category": "15"
     },
     {
       "vo": "Guild Captain",
-      "vf": "Guild Captain",
+      "vf": "Capitaine de la Guilde",
       "category": "15"
     },
     {
       "vo": "Guild Champion",
-      "vf": "Guild Champion",
+      "vf": "Champion de la Guilde",
       "category": "15"
     },
     {
       "vo": "Guild Cleric",
-      "vf": "Guild Cleric",
+      "vf": "Clerc de la Guilde",
       "category": "15"
     },
     {
       "vo": "Guild Mercenaries",
-      "vf": "Guild Mercenaries",
+      "vf": "Mercenaires de la Guilde",
       "category": "15"
     },
     {
       "vo": "Guild Mercenary",
-      "vf": "Guild Mercenary",
+      "vf": "Mercenaire de la Guilde",
       "category": "15"
     },
     {
       "vo": "Guild Recruit",
-      "vf": "Guild Recruit",
+      "vf": "Recrue de la Guilde",
       "category": "15"
     },
     {
       "vo": "Guild Wizard",
-      "vf": "Guild Wizard",
+      "vf": "Magicien de la Guilde",
       "category": "15"
     },
     {
       "vo": "High Sorcerer",
-      "vf": "High Sorcerer",
+      "vf": "Grand Sorcier",
       "category": "15"
     },
     {
       "vo": "High Wizard of the Guild",
-      "vf": "High Wizard of the Guild",
+      "vf": "Grand Magicien de la Guilde",
       "category": "15"
     },
     {
       "vo": "Hunting Dog",
-      "vf": "Hunting Dog",
+      "vf": "Chien de chasse",
       "category": "15"
     },
     {
       "vo": "Ironfang Warlord",
-      "vf": "Ironfang Warlord",
+      "vf": "Seigneur de guerre Croc-de-Fer",
       "category": "15"
     },
     {
       "vo": "Knight-Abbot",
-      "vf": "Knight-Abbot",
+      "vf": "Chevalier-Abbé",
       "category": "15"
     },
     {
       "vo": "Lycanfell Beast",
-      "vf": "Lycanfell Beast",
+      "vf": "Bête lycanthrope",
       "category": "15"
     },
     {
       "vo": "Lycanfell Noble",
-      "vf": "Lycanfell Noble",
+      "vf": "Noble lycanthrope",
       "category": "15"
     },
     {
       "vo": "Mercenary Ogre",
-      "vf": "Mercenary Ogre",
+      "vf": "Ogre mercenaire",
       "category": "15"
     },
     {
       "vo": "Misbegotten",
-      "vf": "Misbegotten",
+      "vf": "Bâtard du sang",
       "category": "15"
     },
     {
       "vo": "Necromancer",
-      "vf": "Necromancer",
+      "vf": "Nécromancien",
       "category": "15"
     },
     {
       "vo": "Necromancer's Apprentice",
-      "vf": "Necromancer's Apprentice",
+      "vf": "Apprenti nécromancien",
       "category": "15"
     },
     {
       "vo": "Nightfang Assassin",
-      "vf": "Nightfang Assassin",
+      "vf": "Assassin Croc-de-Nuit",
       "category": "15"
     },
     {
@@ -3619,87 +3619,87 @@
     },
     {
       "vo": "Plague Doctor",
-      "vf": "Plague Doctor",
+      "vf": "Médecin de peste",
       "category": "15"
     },
     {
       "vo": "Pox Priest",
-      "vf": "Pox Priest",
+      "vf": "Prêtre de la Vérole",
       "category": "15"
     },
     {
       "vo": "Pox Priest's Apprentice",
-      "vf": "Pox Priest's Apprentice",
+      "vf": "Apprenti prêtre de la Vérole",
       "category": "15"
     },
     {
       "vo": "Rat-Mutant",
-      "vf": "Rat-Mutant",
+      "vf": "Rat-mutant",
       "category": "15"
     },
     {
       "vo": "Rolling-Contraption",
-      "vf": "Rolling-Contraption",
+      "vf": "Engin roulant",
       "category": "15"
     },
     {
       "vo": "Rot Demon",
-      "vf": "Rot Demon",
+      "vf": "Démon de la Pourriture",
       "category": "15"
     },
     {
       "vo": "Rotling",
-      "vf": "Rotling",
+      "vf": "Pourrisson",
       "category": "15"
     },
     {
       "vo": "Skeleton Warrior",
-      "vf": "Skeleton Warrior",
+      "vf": "Guerrier squelette",
       "category": "15"
     },
     {
       "vo": "Sparkseer",
-      "vf": "Sparkseer",
+      "vf": "Maître artificier",
       "category": "15"
     },
     {
       "vo": "Sparkseer's Apprentice",
-      "vf": "Sparkseer's Apprentice",
+      "vf": "Apprenti artificier",
       "category": "15"
     },
     {
       "vo": "The Blighted Cloister",
-      "vf": "The Blighted Cloister",
+      "vf": "Le Cloître gangrené",
       "category": "15"
     },
     {
       "vo": "Verminkin",
-      "vf": "Verminkin",
+      "vf": "Vermigènes",
       "category": "15"
     },
     {
       "vo": "Verminkin Champion",
-      "vf": "Verminkin Champion",
+      "vf": "Champion vermigène",
       "category": "15"
     },
     {
       "vo": "Verminkin Warlock",
-      "vf": "Verminkin Warlock",
+      "vf": "Sorcier vermigène",
       "category": "15"
     },
     {
       "vo": "Verminkin Warrior",
-      "vf": "Verminkin Warrior",
+      "vf": "Guerrier vermigène",
       "category": "15"
     },
     {
       "vo": "Witch Hunter",
-      "vf": "Witch Hunter",
+      "vf": "Chasseur de sorcières",
       "category": "15"
     },
     {
       "vo": "Witch Hunter's Apprentice",
-      "vf": "Witch Hunter's Apprentice",
+      "vf": "Apprenti chasseur de sorcières",
       "category": "15"
     },
     {
@@ -3709,7 +3709,7 @@
     },
     {
       "vo": "Zombie Ogre",
-      "vf": "Zombie Ogre",
+      "vf": "Ogre zombie",
       "category": "15"
     },
     {
@@ -3774,7 +3774,7 @@
     },
     {
       "vo": "Sparkseer Coven",
-      "vf": "Coven du Sparkseer",
+      "vf": "Cabale du Maître artificier",
       "category": "16"
     },
     {
@@ -3799,7 +3799,7 @@
     },
     {
       "vo": "Wizard's Retinue",
-      "vf": "Suite du Sorcier",
+      "vf": "Suite du Magicien",
       "category": "16"
     },
     {
@@ -4064,7 +4064,7 @@
     },
     {
       "vo": "Cleric List",
-      "vf": "Liste des Clerics",
+      "vf": "Liste des Clercs",
       "category": "18"
     },
     {
@@ -4079,12 +4079,12 @@
     },
     {
       "vo": "Coven Armoury",
-      "vf": "Armurerie du Coven",
+      "vf": "Armurerie de la Cabale",
       "category": "18"
     },
     {
       "vo": "Dreg List",
-      "vf": "Liste des Dregs",
+      "vf": "Liste de la lie",
       "category": "18"
     },
     {
@@ -4134,42 +4134,42 @@
     },
     {
       "vo": "Rat-Mutant List",
-      "vf": "Liste des Rat-Mutants",
+      "vf": "Liste des Rats-mutants",
       "category": "18"
     },
     {
       "vo": "Sparkseer List",
-      "vf": "Liste des Sparkseers",
+      "vf": "Liste des Artificiers",
       "category": "18"
     },
     {
       "vo": "Vermin Armoury",
-      "vf": "Armurerie Verminkin",
+      "vf": "Armurerie vermigène",
       "category": "18"
     },
     {
       "vo": "Verminkin Armoury",
-      "vf": "Armurerie Verminkin",
+      "vf": "Armurerie vermigène",
       "category": "18"
     },
     {
       "vo": "Witch Hunter List",
-      "vf": "Liste des Witch Hunters",
+      "vf": "Liste des Chasseurs de sorcières",
       "category": "18"
     },
     {
       "vo": "Witch Hunters List",
-      "vf": "Liste des Witch Hunters",
+      "vf": "Liste des Chasseurs de sorcières",
       "category": "18"
     },
     {
       "vo": "Wizard List",
-      "vf": "Liste des Sorciers",
+      "vf": "Liste des Magiciens",
       "category": "18"
     },
     {
       "vo": "Zombie Ogre List",
-      "vf": "Liste des Zombie Ogres",
+      "vf": "Liste des Ogres zombies",
       "category": "18"
     },
     {
@@ -4329,7 +4329,7 @@
     },
     {
       "vo": "Rat-Mutant Blade",
-      "vf": "Lame de Rat-Mutant",
+      "vf": "Lame de Rat-mutant",
       "category": "19"
     },
     {
@@ -4944,7 +4944,7 @@
     },
     {
       "vo": "Summon Rotling",
-      "vf": "Invoquer un Rotling",
+      "vf": "Invoquer un Pourrisson",
       "category": "23"
     },
     {
@@ -5349,7 +5349,7 @@
     },
     {
       "vo": "Darkcloven Magic",
-      "vf": "Magie Darkcloven",
+      "vf": "Magie Sabot-Noir",
       "category": "25"
     },
     {

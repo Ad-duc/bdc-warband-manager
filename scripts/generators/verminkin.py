@@ -43,8 +43,8 @@ def build(md_path):
         return common_gear(src, gid, en, fr, kind, cost, page, md, **kw)
 
 
-    MELEE_MD = "Armurerie Verminkin - Armes de corps à corps"
-    RANGED_MD = "Armurerie Verminkin - Armes à distance"
+    MELEE_MD = "Armurerie vermigène - Armes de corps à corps"
+    RANGED_MD = "Armurerie vermigène - Armes à distance"
 
 
     def melee(gid, en, fr, cost, a, r, d, c, traits, **kw):
@@ -71,7 +71,7 @@ def build(md_path):
         },
         "schemaVersion": 1,
         "id": "verminkin",
-        "name": T("Verminkin", "Verminkin"),
+        "name": T("Verminkin", "Vermigènes"),
         "description": T(
             "Deep below the City lies a labyrinth of tunnels and old sewers that is the domain of the Verminkin. "
             "They are a race of insidious rat-men, long twisted by the dark sorceries that rise from the void-chasm below. "
@@ -83,8 +83,8 @@ def build(md_path):
             "each seeks to claw its way to dominance over the others.",
             "\n".join(intro),
         ),
-        "armouryName": T("Verminkin Armoury", "Armurerie Verminkin"),
-        "sourceRef": ref(73, "Verminkin"),
+        "armouryName": T("Verminkin Armoury", "Armurerie vermigène"),
+        "sourceRef": ref(73, "Vermigènes"),
         "assets": {"shield": "bouclier_verminkin.webp", "accentColor": None},
     }
 
@@ -98,7 +98,7 @@ def build(md_path):
         ("rooftop-runners", "Rooftop Runners", "Coureurs des toits", "nightfang-assassin", "hidden-vantage",
          "Relishing their freedom from the tunnels below, this warband has taken to the rooftops of the city, operating "
          "under nightfall as assassins, thieves and smugglers.", []),
-        ("sparkseer-coven", "Sparkseer Coven", "Coven du Sparkseer", "sparkseer", "rickety-workshop",
+        ("sparkseer-coven", "Sparkseer Coven", "Cabale du Maître artificier", "sparkseer", "rickety-workshop",
          "This warband is led by a genius and slightly insane Sparkseer. These Verminkin scour the ruins of the City for "
          "scrap metals and alchemic ingredients to repurpose them into elaborate weapons and contraptions.",
          [{"fighterId": "rolling-contraption", "limit": 2}]),
@@ -188,12 +188,12 @@ def build(md_path):
         {"formerLeaderId": "sparkseer", "eligibleChampionIds": ["sparkseers-apprentice"]},
     ]
     names = {}
-    for l in section("Noms des Verminkin"):
+    for l in section("Noms des Vermigènes"):
         cells = [c.strip() for c in l.strip("|").split("|")]
         if l.startswith("|") and re.match(r"^\d0$", cells[0]):
             for col, name in enumerate(cells[1:], start=1):
                 names[f"{cells[0][0]}{col}"] = name
-    data["nameTable"] = {"die": "d66", "sourceRef": ref(76, "Noms des Verminkin"), "entries": names}
+    data["nameTable"] = {"die": "d66", "sourceRef": ref(76, "Noms des Vermigènes"), "entries": names}
 
     # ----------------------------------------------------------------------------
     # Wargear
@@ -210,7 +210,7 @@ def build(md_path):
         melee("axe", "Axe", "Hache", 16, 3, -1, 1, "d3", ["off-hand"]),
         melee("club-mace-hammer", "Club/Mace/Hammer", "Gourdin/Masse/Marteau", 14, 3, 0, 1, "d3", ["bludgeon", "off-hand"]),
         melee("crushing-bulk", "Crushing Bulk", "Carcasse écrasante", 0, 3, -1, 2, "d3+1", ["bludgeon", "natural-weapon"],
-              purchasable=False, page=92, md="Rolling-Contraption"),
+              purchasable=False, page=92, md="Engin roulant"),
         melee("dagger", "Dagger/Punch Dagger", "Dague/Dague de poing", 10, 3, 0, 1, "d3", ["off-hand"]),
         melee("ensorcelled-halberd", "Ensorcelled Halberd", "Hallebarde ensorcelée", 52, 3, -1, 1, "d3+1",
               ["arcane", "brace", "two-handed", "unwieldy"]),
@@ -221,11 +221,11 @@ def build(md_path):
         melee("heavy-flail", "Heavy-Flail", "Fléau lourd", 38, 3, -1, 2, "d3+1", ["two-handed", "unwieldy", "wrap"]),
         melee("iron-claw", "Iron Claw", "Griffe de fer", 12, 4, 0, 1, 1, ["off-hand"]),
         melee("nasty-bite", "Nasty Bite", "Morsure infecte", 0, 4, 0, 1, 1, ["natural-weapon", "poison"],
-              purchasable=False, page=92, md="Giant Rat"),
+              purchasable=False, page=92, md="Rat géant"),
         melee("oversized-claw", "Oversized Claw", "Griffe démesurée", 0, 3, 0, 2, "d3+1", ["bludgeon", "natural-weapon"],
-              purchasable=False, page=91, md="Rat-Mutant"),
+              purchasable=False, page=91, md="Rat-mutant"),
         melee("poison-blade", "Poison Blade", "Lame empoisonnée", 20, 3, -1, 1, "d3", ["guard", "off-hand", "poison"]),
-        melee("rat-mutant-blade", "Rat-Mutant Blade", "Lame de Rat-Mutant", 36, 3, -1, 2, "d3+1", ["off-hand"]),
+        melee("rat-mutant-blade", "Rat-Mutant Blade", "Lame de Rat-mutant", 36, 3, -1, 2, "d3+1", ["off-hand"]),
         melee("spark-drill", "Spark-Drill", "Foreuse à étincelles", 62, 3, -3, 1, "d3+1", ["arcane", "two-handed"]),
         melee("spark-powered-fists", "Spark-Powered Fists", "Poings à étincelles", 60, 3, -2, 2, "d3+1",
               ["arcane", "bludgeon", "two-handed"]),
@@ -328,9 +328,9 @@ def build(md_path):
     by_fr = {w["name"]["fr"]: w for w in wargear}
     LISTS = [
         ("main", "Main List", "Liste principale"),
-        ("rat-mutant", "Rat-Mutant List", "Liste des Rat-Mutants"),
+        ("rat-mutant", "Rat-Mutant List", "Liste des Rats-mutants"),
         ("champion", "Champion List", "Liste des Champions"),
-        ("sparkseer", "Sparkseer List", "Liste des Sparkseers"),
+        ("sparkseer", "Sparkseer List", "Liste des Artificiers"),
         ("contraption", "Contraption List", "Liste des Engins"),
         ("practitioner", "Practitioner List", "Liste des Praticiens"),
     ]
@@ -478,7 +478,7 @@ def build(md_path):
         data["fighters"].append(
             {
                 "id": fid,
-                "name": T(name, name),
+                "name": T(name, src.fr_name(name)),
                 "category": cat,
                 "keywords": kws,
                 "cost": cost,
@@ -493,7 +493,7 @@ def build(md_path):
                 "specialRules": special,
                 "wargearText": T(wg_en, wargear_fr),
                 "quote": None if quote_en is None else T(quote_en, q),
-                "sourceRef": ref(SCROLL_PAGES[fid], name),
+                "sourceRef": ref(SCROLL_PAGES[fid], src.fr_name(name)),
             }
         )
 
@@ -547,10 +547,10 @@ def build(md_path):
     TABLES = [
         ("masterful-schemes", "Masterful Schemes", "Machinations magistrales", 85,
          {"kind": "keywords", "anyOf": [["verminkin", "leader"], ["verminkin", "champion"]]},
-         T("Verminkin Leaders and Champions only", "Chefs et Champions Verminkin uniquement")),
+         T("Verminkin Leaders and Champions only", "Chefs et Champions Vermigènes uniquement")),
         ("tunnel-runners", "Tunnel Runners", "Coureurs de tunnels", 86,
          {"kind": "keywords", "anyOf": [["verminkin"]]},
-         T("Any Verminkin fighter", "N'importe quel combattant Verminkin")),
+         T("Any Verminkin fighter", "N'importe quel combattant Vermigène")),
     ]
     data["skillTables"] = []
     for tid, en, fr, page, elig, label in TABLES:

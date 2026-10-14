@@ -1,19 +1,19 @@
-# The Blighted Cloister
+# Le Cloître gangrené (*The Blighted Cloister*)
 
-> The Blighted Cloister est un ordre monastique secret de chevaliers et de prêtres-sorciers, qui voient dans la Pourriture noire (*Black Rot*) non pas une malédiction, mais une bénédiction accordée à la Cité (*the City*). Derrière les hautes enceintes de pierre de leurs abbayes, ils prennent soin des malades et des pestiférés sans aucune intention de les guérir. Ils les entretiennent au contraire jusqu'à en faire des réceptacles boursouflés (*swollen*) de pestilence, vénérés comme des saints vivants (*living saints*).
+> Le Cloître gangrené (*The Blighted Cloister*) est un ordre monastique secret de chevaliers et de prêtres-sorciers, qui voient dans la Pourriture noire (*Black Rot*) non pas une malédiction, mais une bénédiction accordée à la Cité (*the City*). Derrière les hautes enceintes de pierre de leurs abbayes, ils prennent soin des malades et des pestiférés sans aucune intention de les guérir. Ils les entretiennent au contraire jusqu'à en faire des réceptacles boursouflés (*swollen*) de pestilence, vénérés comme des saints vivants (*living saints*).
 >
 > Dans les cercles les plus fermés du Cloître (*the Cloister*), leur credo a sombré plus loin encore dans le blasphème. Les prières ont cédé la place aux sombres pactes, et les hymnes aux invocations murmurées. La Pourriture noire (*Black Rot*) a attiré le regard d'entités démoniaques qui cherchent à fouler le monde des mortels pour y semer la peste et la maladie. Ces démons (*demon*) donnent de la force aux chevaliers du Cloître (*the Cloister*) et font d'eux des créatures bouffies et pourries, qui dominent de toute leur taille les hommes ordinaires. Le prix en est leur âme, et tandis que la corruption démoniaque leur tord les entrailles, rares sont ceux qui gardent longtemps la raison.
 
-Cette section contient toutes les règles pour recruter une bande (*warband*) du Blighted Cloister. Vous trouverez dans les pages suivantes :
+Cette section contient toutes les règles pour recruter une bande (*warband*) du Cloître gangrené (*The Blighted Cloister*). Vous trouverez dans les pages suivantes :
 
 - **Origines (*Origins*)** (p. xx)
 - **Repaires (*Strongholds*)** (p. xx)
 - **Règles de campagne (*Campaign Rules*)** (p. xx)
-- **Liste des combattants du Blighted Cloister (*Blighted Cloister Fighter List*)** (p. xx)
+- **Liste des combattants du Cloître gangrené (*Blighted Cloister Fighter List*)** (p. xx)
 - **L'Armurerie du Cloître (*The Cloister Armoury*)** (p. xx-xx)
-- **Domaines de magie du Blighted Cloister (*Blighted Cloister Spell Lores*)** (p. xx)
-- **Compétences du Blighted Cloister (*Blighted Cloister Skills*)** (p. xx)
-- **Parchemins de combattants du Blighted Cloister (*Blighted Cloister Fighter Scrolls*)** (p. xx-xx)
+- **Domaines de magie du Cloître gangrené (*Blighted Cloister Spell Lores*)** (p. xx)
+- **Compétences du Cloître gangrené (*Blighted Cloister Skills*)** (p. xx)
+- **Parchemins de combattants du Cloître gangrené (*Blighted Cloister Fighter Scrolls*)** (p. xx-xx)
 
 ## Origines (*Origins*)
 
@@ -25,12 +25,12 @@ Avant d'engager le moindre combattant (*fighter*), choisissez une origine (*orig
 
 **Restrictions**
 
-**Chef (*Leader*) :** vous devez recruter un **Knight-Abbot** pour diriger votre bande (*warband*) au début de la campagne.
+**Chef (*Leader*) :** vous devez recruter un **Chevalier-Abbé (*Knight-Abbot*)** pour diriger votre bande (*warband*) au début de la campagne.
 
 **Avantages (*Perks*)**
 
 - Vous commencez la campagne avec le repaire (*stronghold*) **Donjon fortifié** (*Fortified Keep*).
-- Votre bande (*warband*) peut recruter n'importe quel nombre de Cloister Knights.
+- Votre bande (*warband*) peut recruter n'importe quel nombre de Chevaliers du Cloître (*Cloister Knight*).
 
 ### Clergé de sorciers (*Priesthood of Sorcerers*)
 
@@ -38,12 +38,12 @@ Avant d'engager le moindre combattant (*fighter*), choisissez une origine (*orig
 
 **Restrictions**
 
-**Chef (*Leader*) :** vous devez recruter un **High Sorcerer** pour diriger votre bande (*warband*) au début de la campagne.
+**Chef (*Leader*) :** vous devez recruter un **Grand Sorcier (*High Sorcerer*)** pour diriger votre bande (*warband*) au début de la campagne.
 
 **Avantages (*Perks*)**
 
 - Vous commencez la campagne avec le repaire (*stronghold*) **Scriptorium isolé** (*Secluded Scriptorium*).
-- Votre bande (*warband*) peut recruter 0-2 Cloister Sorcerers.
+- Votre bande (*warband*) peut recruter 0-2 Sorciers du Cloître (*Cloister Sorcerer*).
 
 ### L'Oint (*The Anointed One*)
 
@@ -51,12 +51,12 @@ Avant d'engager le moindre combattant (*fighter*), choisissez une origine (*orig
 
 **Restrictions**
 
-**Chef (*Leader*) :** vous devez recruter un **Knight-Abbot** pour diriger votre bande (*warband*) au début de la campagne.
+**Chef (*Leader*) :** vous devez recruter un **Chevalier-Abbé (*Knight-Abbot*)** pour diriger votre bande (*warband*) au début de la campagne.
 
 **Avantages (*Perks*)**
 
 - Vous commencez la campagne avec le repaire (*stronghold*) **Autel impie** (*Unholy Altar*).
-- Votre bande (*warband*) peut recruter n'importe quel nombre de Rot Demons.
+- Votre bande (*warband*) peut recruter n'importe quel nombre de Démons de la Pourriture (*Rot Demon*).
 
 ### Populace bénie (*Blessed Rabble*)
 
@@ -64,7 +64,7 @@ Avant d'engager le moindre combattant (*fighter*), choisissez une origine (*orig
 
 **Restrictions**
 
-**Chef (*Leader*) :** vous devez recruter un **High Sorcerer** pour diriger votre bande (*warband*) au début de la campagne.
+**Chef (*Leader*) :** vous devez recruter un **Grand Sorcier (*High Sorcerer*)** pour diriger votre bande (*warband*) au début de la campagne.
 
 **Avantages (*Perks*)**
 
@@ -86,14 +86,14 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), vous commencez 
 
 ### Scriptorium isolé (*Secluded Scriptorium*)
 
-> À la lueur des chandelles, le High Sorcerer surveille une armée de scribes encapuchonnés, qui traduisent des manuscrits oubliés et dévoient des ouvrages de médecine pour en faire d'immondes traités sur la peste et le poison.
+> À la lueur des chandelles, le Grand Sorcier (*High Sorcerer*) surveille une armée de scribes encapuchonnés, qui traduisent des manuscrits oubliés et dévoient des ouvrages de médecine pour en faire d'immondes traités sur la peste et le poison.
 
 **Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
 
 **Étude blasphématoire (*Blasphemous Study*) :** à chaque séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir 1 des options suivantes :
 
-- Scruter les parchemins anciens (*Scry Ancient Scrolls*) : lancez un dé pour chaque Sorcier (*Wizard*) de votre bande (*warband*). Tenez un total cumulé sur votre feuille de bande (*Warband Roster*). Chaque fois que le total dépasse un multiple de 20, vous pouvez choisir un Sorcier (*Wizard*) de votre bande (*warband*) : il gagne assez d'expérience (*experience*) pour obtenir sa prochaine progression (*advancement*).
-- Préparer des décoctions (*Brew Concoctions*) : lancez un dé pour chaque Sorcier (*Wizard*) de votre bande (*warband*). Pour chaque résultat de 5+, vous pouvez ajouter 1 objet (*item*) Fiole de poison (*Vial of Poison*) (p. xx) à votre butin (*stash*).
+- Scruter les parchemins anciens (*Scry Ancient Scrolls*) : lancez un dé pour chaque Magicien (*Wizard*) de votre bande (*warband*). Tenez un total cumulé sur votre feuille de bande (*Warband Roster*). Chaque fois que le total dépasse un multiple de 20, vous pouvez choisir un Magicien (*Wizard*) de votre bande (*warband*) : il gagne assez d'expérience (*experience*) pour obtenir sa prochaine progression (*advancement*).
+- Préparer des décoctions (*Brew Concoctions*) : lancez un dé pour chaque Magicien (*Wizard*) de votre bande (*warband*). Pour chaque résultat de 5+, vous pouvez ajouter 1 objet (*item*) Fiole de poison (*Vial of Poison*) (p. xx) à votre butin (*stash*).
 
 ### Autel impie (*Unholy Altar*)
 
@@ -105,10 +105,10 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), vous commencez 
 
 | Résultat | Effet |
 |---|---|
-| 2 | **Damnation :** votre chef (*Leader*) est tué (*killed*). Vous pouvez ajouter un Demonic Rotspawn à votre bande (*warband*) sans dépenser de pièces d'argent (*silver*). Il porte le nom de votre ancien chef (*Leader*). |
+| 2 | **Damnation :** votre chef (*Leader*) est tué (*killed*). Vous pouvez ajouter un Rejeton de la Pourriture (*Demonic Rotspawn*) à votre bande (*warband*) sans dépenser de pièces d'argent (*silver*). Il porte le nom de votre ancien chef (*Leader*). |
 | 3-8 | **Silence :** aucun effet. |
 | 9-12 | **Faveur mineure (*Minor Boon*) :** votre chef (*Leader*) gagne 10 d'expérience bonus (*bonus experience*). |
-| 13-15 | **Allié démoniaque (*Demonic Ally*) :** vous pouvez ajouter un Rot Demon ou un Rotling à votre bande (*warband*) sans dépenser de pièces d'argent (*silver*). |
+| 13-15 | **Allié démoniaque (*Demonic Ally*) :** vous pouvez ajouter un Démon de la Pourriture (*Rot Demon*) ou un Pourrisson (*Rotling*) à votre bande (*warband*) sans dépenser de pièces d'argent (*silver*). |
 | 16+ | **Faveur majeure (*Major Boon*) :** votre chef (*Leader*) gagne 30 d'expérience bonus (*bonus experience*). |
 
 ### Chaire de rue (*Street Pulpit*)
@@ -117,13 +117,13 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), vous commencez 
 
 **Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
 
-**Vénérer les Saints vivants (*Venerate Living Saints*) :** chaque fois qu'un Dreg Cultist de cette bande (*warband*) gagne un niveau de Pourriture noire (*level of Black Rot*), il gagne 5 d'expérience (*experience*) supplémentaire.
+**Vénérer les Saints vivants (*Venerate Living Saints*) :** chaque fois qu'un Cultiste de la lie (*Dreg Cultist*) de cette bande (*warband*) gagne un niveau de Pourriture noire (*level of Black Rot*), il gagne 5 d'expérience (*experience*) supplémentaire.
 
-**Canoniser les défunts (*Canonise the Fallen*) :** chaque fois qu'un combattant (*fighter*) de cette bande (*warband*) est tué (*killed*), chaque Dreg Cultist de cette bande (*warband*) gagne 10 d'expérience bonus (*bonus experience*) supplémentaire à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*).
+**Canoniser les défunts (*Canonise the Fallen*) :** chaque fois qu'un combattant (*fighter*) de cette bande (*warband*) est tué (*killed*), chaque Cultiste de la lie (*Dreg Cultist*) de cette bande (*warband*) gagne 10 d'expérience bonus (*bonus experience*) supplémentaire à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*).
 
-## Règles de campagne du Blighted Cloister (*Blighted Cloister Campaign Rules*)
+## Règles de campagne du Cloître gangrené (*Blighted Cloister Campaign Rules*)
 
-Pendant la campagne, les bandes (*warband*) du Blighted Cloister ont les règles spéciales (*special rule*) supplémentaires suivantes :
+Pendant la campagne, les bandes (*warband*) du Cloître gangrené (*The Blighted Cloister*) ont les règles spéciales (*special rule*) supplémentaires suivantes :
 
 ### Mort d'un Chef (*Death of a Leader*)
 
@@ -131,14 +131,14 @@ Pendant la campagne, si votre chef (*Leader*) est tué (*killed*) et que vous ch
 
 | Ancien Chef (*Former Leader*) | Champion éligible (*Eligible Champion*) |
 |---|---|
-| Knight-Abbot | Cloister Champion |
-| High Sorcerer | Cloister Sorcerer |
+| Chevalier-Abbé (*Knight-Abbot*) | Champion du Cloître (*Cloister Champion*) |
+| Grand Sorcier (*High Sorcerer*) | Sorcier du Cloître (*Cloister Sorcerer*) |
 
-### Rot Demons
+### Démons de la Pourriture (*Rot Demon*)
 
 Les combattants (*fighter*) qui ont le mot-clé (*keyword*) Démon (*Demon*) n'utilisent pas la table des blessures standard (*standard injury table*) (p. xx). À la place, ils utilisent la Table des blessures des Démons (*Demon Injury Table*) suivante :
 
-Font exception les Rotlings, qui utilisent la Table des blessures des Bêtes (*Beasts Injury Table*) (p. xx).
+Font exception les Pourrissons (*Rotling*), qui utilisent la Table des blessures des Bêtes (*Beasts Injury Table*) (p. xx).
 
 **Table des blessures des Démons (*Demon Injury Table*) - D66**
 
@@ -149,9 +149,9 @@ Font exception les Rotlings, qui utilisent la Table des blessures des Bêtes (*B
 | 41-65 | **Intact (*Unharmed*) :** les armes des mortels ne suffisent pas à infliger un mal durable à une telle créature. Le démon (*demon*) ne subit aucun effet durable. |
 | 66 | **Furieux (*Enraged*) :** le démon (*demon*) ne subit aucun effet durable. De plus, à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), après avoir gagné de l'expérience (*experience*), il gagne assez d'expérience bonus (*bonus experience*) pour atteindre le niveau (*level*) suivant. |
 
-### Noms du Blighted Cloister (*Blighted Cloister Names*)
+### Noms du Cloître gangrené (*Blighted Cloister Names*)
 
-Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) du Blighted Cloister.
+Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) du Cloître gangrené (*The Blighted Cloister*).
 
 | D66 | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
@@ -162,46 +162,46 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | 50 | Pusian | Putrian | Raban | Remigius | Rotmar | Septimus |
 | 60 | Severin | Silvan | Tertius | Theophilus | Vermian | Zacharias |
 
-## Liste des combattants du Blighted Cloister (*Blighted Cloister Fighters List*)
+## Liste des combattants du Cloître gangrené (*Blighted Cloister Fighters List*)
 
 **Chefs (*Leaders*) (1)**
 
 | Combattant | Coût |
 |---|---|
-| Knight-Abbot | 190 pa |
-| High Sorcerer | 175 pa |
+| Chevalier-Abbé (*Knight-Abbot*) | 190 pa |
+| Grand Sorcier (*High Sorcerer*) | 175 pa |
 
 **Champions (0-3)**
 
 | Combattant | Coût |
 |---|---|
-| 0-1 Cloister Sorcerer | 140 pa |
-| Cloister Champion | 145 pa |
-| 0-1 Darkcloven Shaman | 145 pa |
-| 0-1 Demonic Rot-Herald | 175 pa |
+| 0-1 Sorcier du Cloître (*Cloister Sorcerer*) | 140 pa |
+| Champion du Cloître (*Cloister Champion*) | 145 pa |
+| 0-1 Chaman Sabot-Noir (*Darkcloven Shaman*) | 145 pa |
+| 0-1 Héraut de la Pourriture (*Demonic Rot-Herald*) | 175 pa |
 
 **Hommes de main (*Henchmen*) (5+)**
 
 | Combattant | Coût |
 |---|---|
-| 0-3 Cloister Knight | 95 pa |
-| Dreg Cultist | 30 pa |
-| Darkcloven Beastmen | 55 pa |
-| 0-3 Rot Demon | 120 pa |
+| 0-3 Chevalier du Cloître (*Cloister Knight*) | 95 pa |
+| Cultiste de la lie (*Dreg Cultist*) | 30 pa |
+| Hommes-bêtes Sabot-Noir (*Darkcloven Beastman*) | 55 pa |
+| 0-3 Démon de la Pourriture (*Rot Demon*) | 120 pa |
 
 **Brutes (0-2)**
 
 | Combattant | Coût |
 |---|---|
-| Demonic Rotspawn | 130 pa |
-| Demonic Rot-Colossal | 200 pa |
+| Rejeton de la Pourriture (*Demonic Rotspawn*) | 130 pa |
+| Colosse de la Pourriture (*Demonic Rot-Colossal*) | 200 pa |
 
 **Bêtes (*Beasts*) (0-3)**
 
 | Combattant | Coût |
 |---|---|
-| Bloat Fly | 50 pa |
-| Rotling | 25 pa |
+| Mouche bouffie (*Bloat Fly*) | 50 pa |
+| Pourrisson (*Rotling*) | 25 pa |
 
 ## Armurerie du Cloître (*Cloister Armoury*)
 
@@ -243,7 +243,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 |---|---|
 | Armure de plates (*Full-plate*) | 40 pa |
 
-### Liste des Dregs (*Dreg List*)
+### Liste de la lie (*Dreg List*)
 
 **Armes à distance (*Ranged Weapons*)**
 
@@ -281,9 +281,9 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Familier démoniaque (*Demonic Familiar*) | 30 pa |
 | Cloche ensorcelée (*Ensorcelled Bell*) | 10 pa |
 
-### Épithètes du Blighted Cloister (*Blighted Cloister Epithets*)
+### Épithètes du Cloître gangrené (*Blighted Cloister Epithets*)
 
-Vous pouvez utiliser la table ci-dessous pour générer rapidement une épithète (*epithet*) pour un combattant (*fighter*) de renom ou un démon (*demon*) du Blighted Cloister.
+Vous pouvez utiliser la table ci-dessous pour générer rapidement une épithète (*epithet*) pour un combattant (*fighter*) de renom ou un démon (*demon*) du Cloître gangrené (*The Blighted Cloister*).
 
 | D66 | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
@@ -410,7 +410,7 @@ Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), p
 
 **Armes à distance à deux mains (*Two-Handed Ranged Weapons*) :** un combattant (*fighter*) ne peut pas être équipé à la fois d'un objet tenu (*held item*) et d'une arme à distance (*ranged weapon*) à deux mains (*Two-handed*).
 
-## Domaines de magie du Blighted Cloister (*Blighted Cloister Spell Lores*)
+## Domaines de magie du Cloître gangrené (*Blighted Cloister Spell Lores*)
 
 ## Domaine des Asticots bénis (*Lore of Blessed Maggots*) - 1D6
 
@@ -430,7 +430,7 @@ Sort de Maléfice (*Hex Spell*)
 
 **Valeur de Lancement (*Casting Value*) [8+]**
 
-Choisissez un point visible sur le sol du champ de bataille (*battlefield floor*) à 6" ou moins du lanceur (*caster*). Jusqu'à la fin du round, le sol du champ de bataille (*battlefield floor*) à 6" ou moins de ce point est un bourbier (*mire*). Soustrayez 2 à la distance maximale dont un combattant (*fighter*) non Cloister peut se déplacer (*move*) chaque fois qu'il se déplace (*move*) à travers le bourbier (*mire*).
+Choisissez un point visible sur le sol du champ de bataille (*battlefield floor*) à 6" ou moins du lanceur (*caster*). Jusqu'à la fin du round, le sol du champ de bataille (*battlefield floor*) à 6" ou moins de ce point est un bourbier (*mire*). Soustrayez 2 à la distance maximale dont un combattant (*fighter*) non Cloître (*Cloister*) peut se déplacer (*move*) chaque fois qu'il se déplace (*move*) à travers le bourbier (*mire*).
 
 **Lancement critique (*Critical Cast*) [12+] :** le sol du champ de bataille (*battlefield floor*) à 9" ou moins de ce point est un bourbier (*mire*), à la place de 6".
 
@@ -491,13 +491,13 @@ Placez le gabarit de flamme (*flame template*) à partir du lanceur (*caster*). 
 
 ## Domaine démoniaque de la Pourriture (*Demonic Lore of Rot*) - 1D6
 
-### 1 - Invoquer un Rotling (*Summon Rotling*)
+### 1 - Invoquer un Pourrisson (*Summon Rotling*)
 
 Sort d'Invocation (*Summon Spell*)
 
 **Valeur de Lancement (*Casting Value*) [9+]**
 
-Un combattant (*fighter*) Rotling invoqué (*summoned*) (p. xx) est ajouté à la bande (*warband*) du lanceur (*caster*) jusqu'à ce qu'il soit mis hors de combat (*taken down*). Placez le combattant (*fighter*) à 3" ou moins du lanceur (*caster*) et non engagé au corps à corps (*engaged in melee*).
+Un combattant (*fighter*) Pourrisson (*Rotling*) invoqué (*summoned*) (p. xx) est ajouté à la bande (*warband*) du lanceur (*caster*) jusqu'à ce qu'il soit mis hors de combat (*taken down*). Placez le combattant (*fighter*) à 3" ou moins du lanceur (*caster*) et non engagé au corps à corps (*engaged in melee*).
 
 Une bande (*warband*) ne peut jamais avoir plus de 3 combattants (*fighter*) invoqués (*summoned*) à la fois. Si la bande (*warband*) du lanceur (*caster*) a déjà 3 combattants (*fighter*) invoqués (*summoned*), il ne peut pas lancer ce sort (*spell*).
 
@@ -557,11 +557,11 @@ La fosse (*pit*) reste en jeu jusqu'à la fin du round. Les combattants (*fighte
 
 **Lancement critique (*Critical Cast*) [14+] :** augmentez la portée (*range*) de 9" à 12".
 
-## Compétences du Blighted Cloister (*Blighted Cloister Skills*)
+## Compétences du Cloître gangrené (*Blighted Cloister Skills*)
 
 ## Ordonnés du Cloître (*Ordained of the Cloister*)
 
-Chefs (*Leader*) et Champions Cloister uniquement
+Chefs (*Leader*) et Champions Cloître (*Cloister*) uniquement
 
 ### Guider les affligés (*Shepherd the Afflicted*)
 
@@ -593,7 +593,7 @@ Soustrayez 1 aux valeurs de Dégâts (*Damage*) et de Dégâts critiques (*Criti
 
 ## Bénédictions de Sainte Pourriture (*Blessings of Saint Rot*)
 
-N'importe quel combattant (*fighter*) Cloister
+N'importe quel combattant (*fighter*) Cloître (*Cloister*)
 
 ### Infesté d'asticots (*Infested with Maggots*)
 
@@ -619,13 +619,13 @@ Quand ce combattant (*fighter*) est mis hors de combat (*taken down*), lancez un
 
 Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fighter*), jusqu'à un minimum de "-", tant qu'ils sont engagés au corps à corps (*engaged in melee*) avec ce combattant (*fighter*).
 
-## Parchemins de combattants du Blighted Cloister (*The Blighted Cloister Fighter Scrolls*)
+## Parchemins de combattants du Cloître gangrené (*The Blighted Cloister Fighter Scrolls*)
 
 ## Chefs (*Leaders*)
 
-### Knight-Abbot
+### Chevalier-Abbé (*Knight-Abbot*)
 
-*Chef, Cloister, Humain, Chevalier* (*Leader, Cloister, Human, Knight*) - 190 pa
+*Chef, Cloître, Humain, Chevalier* (*Leader, Cloister, Human, Knight*) - 190 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -641,9 +641,9 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 > "Bénis soient ceux que la Pourriture noire (*Black Rot*) a choisis."
 
-### High Sorcerer
+### Grand Sorcier (*High Sorcerer*)
 
-*Chef, Cloister, Humain, Sorcier* (*Leader, Cloister, Human, Wizard*) - 175 pa
+*Chef, Cloître, Humain, Magicien* (*Leader, Cloister, Human, Wizard*) - 175 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -661,9 +661,9 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 ## Champions
 
-### 0-1 Cloister Sorcerer
+### 0-1 Sorcier du Cloître (*Cloister Sorcerer*)
 
-*Champion, Cloister, Humain, Sorcier* (*Champion, Cloister, Human, Wizard*) - 140 pa
+*Champion, Cloître, Humain, Magicien* (*Champion, Cloister, Human, Wizard*) - 140 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -679,9 +679,9 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 > "Je verrai ta chair bouillir et brûler."
 
-### Cloister Champion
+### Champion du Cloître (*Cloister Champion*)
 
-*Champion, Cloister, Humain, Chevalier* (*Champion, Cloister, Human, Knight*) - 145 pa
+*Champion, Cloître, Humain, Chevalier* (*Champion, Cloister, Human, Knight*) - 145 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -697,9 +697,9 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 > "La corruption me donne de la force."
 
-### 0-1 Darkcloven Shaman
+### 0-1 Chaman Sabot-Noir (*Darkcloven Shaman*)
 
-*Champion, Cloister, Homme-bête, Sorcier* (*Champion, Cloister, Beastman, Wizard*) - 145 pa
+*Champion, Cloître, Homme-bête, Magicien* (*Champion, Cloister, Beastman, Wizard*) - 145 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -711,7 +711,7 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 **Règles spéciales :**
 
-- **Magie Darkcloven (*Darkcloven Magic*) :** ce combattant (*fighter*) connaît le Domaine des Asticots bénis (*Lore of Blessed Maggots*) et le Domaine démoniaque de la Pourriture (*Demonic Lore of Rot*). Cependant, quand il est recruté, il n'a aucun sort fétiche (*signature spell*). Au début de chaque bataille, il prépare 1 sort (*spell*) aléatoire de chaque domaine.
+- **Magie Sabot-Noir (*Darkcloven Magic*) :** ce combattant (*fighter*) connaît le Domaine des Asticots bénis (*Lore of Blessed Maggots*) et le Domaine démoniaque de la Pourriture (*Demonic Lore of Rot*). Cependant, quand il est recruté, il n'a aucun sort fétiche (*signature spell*). Au début de chaque bataille, il prépare 1 sort (*spell*) aléatoire de chaque domaine.
 - **Cornes de bélier (*Ram Horns*) :** après que ce combattant (*fighter*) a terminé une Charge (*Charge Move*), choisissez comme cible (*target*) 1 combattant ennemi (*enemy fighter*) engagé au corps à corps (*engaged in melee*) avec lui. La cible (*target*) est touchée (*hit*) par 2 attaques (*attack*) comme suit :
 
 | Perforation | Dégâts |
@@ -720,9 +720,9 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 > "Ce soir, la harde se repaîtra de sang et de moelle."
 
-### 0-1 Demonic Rot-Herald
+### 0-1 Héraut de la Pourriture (*Demonic Rot-Herald*)
 
-*Champion, Cloister, Démon, Sorcier* (*Champion, Cloister, Demon, Wizard*) - 175 pa
+*Champion, Cloître, Démon, Magicien* (*Champion, Cloister, Demon, Wizard*) - 175 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -744,9 +744,9 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 ## Hommes de main (*Henchmen*)
 
-### 0-3 Cloister Knight
+### 0-3 Chevalier du Cloître (*Cloister Knight*)
 
-*Homme de main, Cloister, Humain, Chevalier* (*Henchman, Cloister, Human, Knight*) - 95 pa
+*Homme de main, Cloître, Humain, Chevalier* (*Henchman, Cloister, Human, Knight*) - 95 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -758,23 +758,23 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 > "Ma lame sert les Saints vivants (*Living Saints*)."
 
-### Dreg Cultist
+### Cultiste de la lie (*Dreg Cultist*)
 
-*Homme de main, Cloister, Humain* (*Henchman, Cloister, Human*) - 30 pa
+*Homme de main, Cloître, Humain* (*Henchman, Cloister, Human*) - 30 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 5" | 5+ | 5+ | 6+ | 2 | 2 | 3 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Dregs (*Dreg List*) de l'Armurerie du Cloître (*Cloister Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste de la lie (*Dreg List*) de l'Armurerie du Cloître (*Cloister Armoury*).
 
 **Expérience de départ :** 1D6.
 
 > "Les affligés hériteront de la Cité (*the City*)."
 
-### Darkcloven Beastman
+### Homme-bête Sabot-Noir (*Darkcloven Beastman*)
 
-*Homme de main, Cloister, Homme-bête* (*Henchman, Cloister, Beastman*) - 55 pa
+*Homme de main, Cloître, Homme-bête* (*Henchman, Cloister, Beastman*) - 55 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -794,9 +794,9 @@ Dégradez de 1 la valeur d'Armure (*Armour*) des combattants ennemis (*enemy fig
 
 > "Repaissez-vous de chair !"
 
-### 0-3 Rot Demon
+### 0-3 Démon de la Pourriture (*Rot Demon*)
 
-*Homme de main, Cloister, Démon* (*Henchman, Cloister, Demon*) - 120 pa
+*Homme de main, Cloître, Démon* (*Henchman, Cloister, Demon*) - 120 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -828,9 +828,9 @@ Voir les règles complètes aux pages xx-xx.
 
 ## Brutes
 
-### Demonic Rotspawn
+### Rejeton de la Pourriture (*Demonic Rotspawn*)
 
-*Brute, Cloister, Démon* (*Brute, Cloister, Demon*) - 130 pa
+*Brute, Cloître, Démon* (*Brute, Cloister, Demon*) - 130 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -853,9 +853,9 @@ Voir les règles complètes aux pages xx-xx.
 
 > "Rassasiez... ma... faim..."
 
-### Demonic Rot-Colossal
+### Colosse de la Pourriture (*Demonic Rot-Colossal*)
 
-*Brute, Cloister, Démon* (*Brute, Cloister, Demon*) - 200 pa
+*Brute, Cloître, Démon* (*Brute, Cloister, Demon*) - 200 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -876,9 +876,9 @@ Voir les règles complètes aux pages xx-xx.
 
 ## Bêtes (*Beasts*)
 
-### Bloat Fly
+### Mouche bouffie (*Bloat Fly*)
 
-*Bête, Cloister, Vol* (*Beast, Cloister, Fly*) - 50 pa
+*Bête, Cloître, Vol* (*Beast, Cloister, Fly*) - 50 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -892,9 +892,9 @@ Voir les règles complètes aux pages xx-xx.
 |---|---|---|---|---|---|
 | Trompe (*Proboscis*) | 3 | - | 1 | 1 | Arme naturelle (*Natural Weapon*), Poison |
 
-### Rotling
+### Pourrisson (*Rotling*)
 
-*Bête, Cloister, Démon* (*Beast, Cloister, Demon*) - 25 pa
+*Bête, Cloître, Démon* (*Beast, Cloister, Demon*) - 25 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -931,41 +931,41 @@ Voir les règles complètes aux pages xx-xx.
 
 Les numéros de page sont ceux imprimés dans la VO v1.03.
 
-- Ensemble du lot : même mise en forme que pour les factions précédentes. Les encadrés en grille (origines p. 114, repaires p. 115) sont lus ligne par ligne ; les listes de l'armurerie (p. 118) colonne par colonne : Liste principale, Liste des Champions, Liste des Dregs, Liste des Praticiens, Liste d'objets des Praticiens ; les armures, les objets et les compétences colonne de gauche puis colonne de droite.
+- Ensemble du lot : même mise en forme que pour les factions précédentes. Les encadrés en grille (origines p. 114, repaires p. 115) sont lus ligne par ligne ; les listes de l'armurerie (p. 118) colonne par colonne : Liste principale, Liste des Champions, Liste de la lie, Liste des Praticiens, Liste d'objets des Praticiens ; les armures, les objets et les compétences colonne de gauche puis colonne de droite.
 - Ensemble du lot : la table des épithètes (p. 118) est traduite, comme convenu, avec les 36 VF de ton glossaire et le terme original dans chaque case. La table D66 des noms (p. 116) n'est pas traduite. Les citations sont rendues en français d'aujourd'hui.
 - p. 113 : "The Blighted Cloister are" est au pluriel dans la VO : singulier en VF. "they nurse the sick" est rendu par "ils prennent soin des malades" et "transforming them" par "font d'eux", pour réserver "soigner" et "se transformer" aux termes de jeu. "living saints" est ici sans majuscules.
 - p. 113 : le sommaire écrit "Campaign Rules" sans nom de faction et "Blighted Cloister Fighter List", alors que la page s'intitule "Fighters List" : même VF.
 - p. 114 : les origines de cette faction ont une rubrique "Perks" là où les autres écrivent "Special Rules" : "Avantages". Elles disent "can recruit" là où les autres disent "can include" : "peut recruter".
 - p. 114 : "This band of knights" est rendu par "Cette troupe de chevaliers" et "have claimed" par "s'est emparée", pour réserver "bande" et "revendiquer" aux termes de jeu ; "the mark of a demonic patron" par "le sceau d'un maître démoniaque", pour réserver "marque".
-- p. 114 : la v1.03 corrige L'Oint, qui demande désormais de recruter un "Knight-Abbot" (et non plus un "Knight-Abbot Noble"). Deux origines (Clergé de sorciers et Populace bénie) ont le High Sorcerer pour chef.
+- p. 114 : la v1.03 corrige L'Oint, qui demande désormais de recruter un "Knight-Abbot" (et non plus un "Knight-Abbot Noble"). Deux origines (Clergé de sorciers et Populace bénie) ont le Grand Sorcier (*High Sorcerer*) pour chef.
 - p. 114 : la VO écrit "Cloister Knights", "Cloister Sorcerers" et "Rot Demons" au pluriel : noms reproduits tels quels. "the city" est sans majuscule dans le texte de la Populace bénie ; "Ignited with fervour" est rendu par "Embrasés de ferveur".
 - p. 115 : la VO écrit "Holdings and Strongholds" avec majuscules, et "Aftermath sequence" tantôt avec, tantôt sans majuscule : même VF. Le renvoi au Chapitre 5, absent de la v1.03, est conservé.
 - p. 115 : l'option "Scry Ancient Scrolls" se termine par une virgule : point rétabli. La "Vial of Poison" est un objet non décrit dans la v1.03. "walls" et "hidden sanctum" sont rendus par "parois" et "sanctuaire dissimulé".
 - p. 115 : la table de la Communion démoniaque n'a ni titre ni en-têtes : en-têtes "Résultat | Effet" ajoutés. La VO y écrit "Your leader" sans majuscule. "without paying any silver" est rendu par "sans dépenser de pièces d'argent".
 - p. 115 : Chaire de rue : "earn 5 additional experience" puis "10 additional bonus experience" : traduits tels quels. Le "niveau de Pourriture noire" renvoie à une règle de campagne absente de la v1.03.
-- p. 116 : le titre de la page est en capitales. La rubrique "Rot Demons" porte le nom du combattant au pluriel : conservé. La phrase sur les Rotlings est placée entre l'introduction et la table, comme sur la page. La "Beasts Injury Table" est absente de la v1.03.
+- p. 116 : le titre de la page est en capitales. La rubrique "Rot Demons" porte le nom du combattant au pluriel : conservé. La phrase sur les Pourrissons (*Rotling*) est placée entre l'introduction et la table, comme sur la page. La "Beasts Injury Table" est absente de la v1.03.
 - p. 116 : la table des blessures a pour en-têtes "d66" et son propre titre : rendue par une ligne de titre et les en-têtes "Résultat | Effet". Au résultat 66, "in Step 3 of the Aftermath Sequence. After earning experience..." est coupé par un point : une seule phrase.
-- p. 117 : la liste écrit "Darkcloven Beastmen", le parchemin (p. 129) "Darkcloven Beastman" : reproduit tel quel. Le Rotling coûte désormais 25 pa dans la liste et sur son parchemin (p. 131), au lieu de 20 et 30 pa en v1.02.
+- p. 117 : la liste écrit "Darkcloven Beastmen", le parchemin (p. 129) "Darkcloven Beastman" : reproduit tel quel. Le Pourrisson (*Rotling*) coûte désormais 25 pa dans la liste et sur son parchemin (p. 131), au lieu de 20 et 30 pa en v1.02.
 - p. 117 et 118 : en-têtes "Combattant | Coût" et "Nom | Pièces d'argent" ajoutés, parce qu'un tableau Markdown en exige une ligne.
 - p. 118 : la Liste des Champions écrit "Full-plate", la description de la p. 120 "Full-Plate" : même VF.
-- p. 118 : la Liste principale n'a pas de rubrique d'armures : la Cuirasse, décrite p. 120, ne figure dans aucune liste. Le Familier démoniaque coûte 30 pa dans la liste et "(20 silver)" dans sa description (p. 120) : les deux valeurs sont reproduites. La Fronde coûte ici 14 pa, et 15 pa chez les Verminkin (p. 78 et 80).
+- p. 118 : la Liste principale n'a pas de rubrique d'armures : la Cuirasse, décrite p. 120, ne figure dans aucune liste. Le Familier démoniaque coûte 30 pa dans la liste et "(20 silver)" dans sa description (p. 120) : les deux valeurs sont reproduites. La Fronde coûte ici 14 pa, et 15 pa chez les Vermigènes (*Verminkin*) (p. 78 et 80).
 - p. 119 : le tableau des armes à distance donne la Fronde avant la Sarbacane, et "-" pour les traits de la Fronde. Un seul encadré de rappels suit les deux tableaux ; il cite le trait Lourd, qu'aucune arme de la page ne possède, et écrit "-1 to Attack Rolls" avec majuscules : formulation unique de l'annexe A.
-- p. 119 : la Frappe de pourriture démoniaque a une Perforation de -1 dans ce tableau et de "-" sur le parchemin du Rotling (p. 131) : les deux valeurs sont reproduites.
+- p. 119 : la Frappe de pourriture démoniaque a une Perforation de -1 dans ce tableau et de "-" sur le parchemin du Pourrisson (*Rotling*) (p. 131) : les deux valeurs sont reproduites.
 - p. 120 : Chaudron : la mention "[Action]", en gras, ouvre le texte ; "pick a spell ... to be prepared" est rendu par "ce sort devient un sort préparé". L'Armure de plates cite les armes à distance à deux mains et la Paire de pistolets, alors que cette armurerie n'en propose pas (ses deux armes à distance, la Fronde et la Sarbacane, n'ont pas le trait À deux mains). Le texte du Grimoire écrit "has made casting roll", sans article.
 - p. 121 et 122 : Forme boursouflée et Bénédiction putride (p. 121), Force démoniaque et Linceul protecteur (p. 122) : "That fighter" est rendu par "Le combattant choisi". Plusieurs lancements critiques n'ont pas de point final (Forme boursouflée, Plaies éruptives, et p. 122 Entrailles pourries, Linceul protecteur).
-- p. 121 : Bourbier noir : "Subtract 2", sans symbole de pouce ; "a non-Cloister fighter" : "un combattant non Cloister". Plaies éruptives ne précise pas "of the caster" après la distance (comme Entrailles pourries p. 122).
+- p. 121 : Bourbier noir : "Subtract 2", sans symbole de pouce ; "a non-Cloister fighter" : "un combattant non Cloître". Plaies éruptives ne précise pas "of the caster" après la distance (comme Entrailles pourries p. 122).
 - p. 121 : Pluie d'immondices est un Sort de Soin qui cible chaque combattant du gabarit, sans distinguer alliés et ennemis : traduit tel quel. "heals 1D3 life" : "soigné de 1D3 points de vie".
 - p. 121 : Bénédiction putride : "the casting fighter" ; ponctuation doublée après "target" ; "Melee Weapons" avec majuscules. L'encadré des rappels est placé après le sort 3.
-- p. 122 : Invoquer un Rotling : virgule en trop après "(pg xx)". Force démoniaque : "Melee Weapons" avec majuscules. Entrailles pourries : "a fighter with rotten insides's activation".
+- p. 122 : Invoquer un Pourrisson (*Rotling*) : virgule en trop après "(pg xx)". Force démoniaque : "Melee Weapons" avec majuscules. Entrailles pourries : "a fighter with rotten insides's activation".
 - p. 122 : Vent de peste : "Subtract 1 from any Willpower tests" est traduit littéralement ; comme pour Cri de chauve-souris (p. 102), la VO ne dit pas si le 1 se retire du jet ou de la valeur. Linceul protecteur : "has protective shroud", sans article.
 - p. 122 : Fosse de peste : "the commanding player of the caster" et "its commanding player" sont rendus par "le joueur qui contrôle le combattant ayant lancé le sort" et "le joueur qui contrôle le combattant en question", pour garder le terme de ton glossaire. Les parenthèses renvoyant au trait Poison sont rendues par une incise.
-- p. 123 : la ligne "Cloister Leaders and Champions only" est rendue par "Chefs et Champions Cloister uniquement" ; p. 124, "Any Cloister fighter" par "N'importe quel combattant Cloister".
+- p. 123 : la ligne "Cloister Leaders and Champions only" est rendue par "Chefs et Champions Cloître uniquement" ; p. 124, "Any Cloister fighter" par "N'importe quel combattant Cloître".
 - p. 123 : Guider les affligés : "Add 1", sans symbole de pouce. Rite de contagion et Sermon impie disent "not engaged" seul : "n'est pas engagé". Sermon impie écrit "Attack rolls" avec majuscule.
 - p. 124 : Réceptacle de la Pourriture noire : "Of a 4+" pour "On a 4+" (toujours en v1.03). Le renvoi au trait "Poisoned" est corrigé en "Poison" en v1.03.
 - p. 125 : le titre de la page est "The Blighted Cloister Fighter Scrolls". Dans les rubriques d'équipement, "(included in their recruit cost)" est rendu par une incise.
-- p. 127 : parchemin du Darkcloven Shaman : Magie Darkcloven est placée avant Cornes de bélier, qui occupe la colonne de droite.
+- p. 127 : parchemin du Chaman Sabot-Noir (*Darkcloven Shaman*) : Magie Sabot-Noir est placée avant Cornes de bélier, qui occupe la colonne de droite.
 - p. 127, 129 et 130 : la règle Peur reprend la formulation de l'Aura de terreur du lot 08 (p. 104), dont le texte est identique en VO.
-- p. 128 : le Cloister Knight et le Dreg Cultist n'ont pas de règle spéciale : la rubrique n'apparaît pas.
-- p. 130 : la v1.03 retire la règle Force incroyable (*Incredible Strength*) du Demonic Rot-Colossal.
+- p. 128 : le Chevalier du Cloître (*Cloister Knight*) et le Cultiste de la lie (*Dreg Cultist*) n'ont pas de règle spéciale : la rubrique n'apparaît pas.
+- p. 130 : la v1.03 retire la règle Force incroyable (*Incredible Strength*) du Colosse de la Pourriture (*Demonic Rot-Colossal*).
 - p. 120 : le Grimoire porte désormais "Rare: 0-1".
-- p. 130 et 131 : il manque une ponctuation après "(see below)" (Demonic Rotspawn, Bloat Fly, Rotling) ; p. 131, "Starting Experience: 0" n'a pas de point final. Le Rotling porte le mot-clé Démon mais son parchemin ne lui donne ni Protections démoniaques ni Peur : rien n'a été ajouté. Les Bêtes n'ont pas de citation et leurs profils d'armes n'ont pas de colonne "Silver".
+- p. 130 et 131 : il manque une ponctuation après "(see below)" (Rejeton de la Pourriture (*Demonic Rotspawn*), Mouche bouffie (*Bloat Fly*), Pourrisson (*Rotling*)) ; p. 131, "Starting Experience: 0" n'a pas de point final. Le Pourrisson (*Rotling*) porte le mot-clé Démon mais son parchemin ne lui donne ni Protections démoniaques ni Peur : rien n'a été ajouté. Les Bêtes n'ont pas de citation et leurs profils d'armes n'ont pas de colonne "Silver".

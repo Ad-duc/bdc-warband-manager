@@ -34,7 +34,7 @@ test("long faction descriptions can be expanded", async ({ page }) => {
   await expect(toggle).toHaveAttribute("aria-expanded", "true");
   await expect(toggle).toHaveText("Réduire");
   expect((await description.boundingBox())?.height ?? 0).toBeGreaterThan(closed);
-  await expect(page.getByRole("radio", { name: /Death Covens/ })).not.toBeChecked();
+  await expect(page.getByRole("radio", { name: /Cabales de la Mort/ })).not.toBeChecked();
 
   // The short Guild Mercenaries text fits in three lines: no toggle.
   await expect(page.locator("#faction-guild-mercenaries-description + button")).toHaveCount(0);
@@ -45,7 +45,7 @@ test("origin flavour texts can be expanded", async ({ page }) => {
   await page.setViewportSize({ width: 360, height: 740 });
   await page.goto("./");
   await page.getByRole("button", { name: "Nouvelle bande" }).click();
-  await page.getByRole("radio", { name: /Death Covens/ }).check();
+  await page.getByRole("radio", { name: /Cabales de la Mort/ }).check();
   await page.getByRole("button", { name: "Suivant" }).click();
 
   // One origin per row, as for the factions.
@@ -73,7 +73,7 @@ test("origin flavour texts can be expanded", async ({ page }) => {
 test("long special rules of a scroll can be expanded", async ({ page }) => {
   await page.goto("./");
   await page.getByRole("button", { name: "Nouvelle bande" }).click();
-  await page.getByRole("radio", { name: /Death Covens/ }).check();
+  await page.getByRole("radio", { name: /Cabales de la Mort/ }).check();
   await page.getByRole("button", { name: "Suivant" }).click();
   await page.getByRole("radio").first().check();
   await page.getByRole("button", { name: "Suivant" }).click();

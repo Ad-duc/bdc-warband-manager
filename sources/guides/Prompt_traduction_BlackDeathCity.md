@@ -46,10 +46,10 @@ Tu travailles par étapes et tu t'arrêtes à la fin de chaque étape.
   03 Chapitre 2 - Batailles
   04 Chapitre 3 - Scénarios
   05 Chapitre 4 - Règles générales de bande et compétences de vétéran
-  06 Chapitre 4 - Guild Mercenaries
-  07 Chapitre 4 - Verminkin
-  08 Chapitre 4 - Death Covens
-  09 Chapitre 4 - The Blighted Cloister
+  06 Chapitre 4 - Mercenaires de la Guilde (Guild Mercenaries)
+  07 Chapitre 4 - Vermigènes (Verminkin)
+  08 Chapitre 4 - Cabales de la Mort (Death Covens)
+  09 Chapitre 4 - Le Cloître gangrené (The Blighted Cloister)
   10 Chapitre 6 - Aide de jeu et feuille de bande
 - Un fichier Markdown par lot, nommé "NN_titre-court.md".
 - Si un lot est trop long pour un seul message, coupe à une limite de section,
@@ -62,16 +62,24 @@ Tu travailles par étapes et tu t'arrêtes à la fin de chaque étape.
 1. Mots-clés de règles : traduits selon le glossaire. À la première occurrence dans
    chaque lot, donne la VO entre parenthèses et en italique : Ensanglanté
    (*Bloodied*). Ensuite, le terme français seul.
-2. Restent en anglais, sans traduction : le titre du jeu, les noms de factions
-   (Guild Mercenaries, Verminkin, Death Covens, The Blighted Cloister), les noms de
-   combattants (Guild Captain, Pox Priest, Rot Demon...) et les mots-clés identiques
-   à un nom de faction ou de combattant (Verminkin, Cloister...).
+2. Seul le titre du jeu reste en anglais. Les noms de combattants sont traduits
+   (glossaire, décision H19), avec le nom anglais au singulier entre parenthèses à
+   chaque occurrence : Capitaine de la Guilde (*Guild Captain*), Prêtre de la Vérole
+   (*Pox Priest*), Démon de la Pourriture (*Rot Demon*). Les mots-clés identiques à un
+   nom de combattant suivent la même VF : Chasseur de sorcières (*Witch Hunter*),
+   Gargouille (*Gargoyle*).
+   Les noms de factions et leurs mots-clés sont traduits (glossaire, décision H17),
+   avec le terme anglais entre parenthèses à chaque occurrence :
+   Mercenaires de la Guilde (*Guild Mercenaries*), Vermigènes (*Verminkin*),
+   Cabales de la Mort (*Death Covens*), Le Cloître gangrené (*The Blighted Cloister*) ;
+   mots-clés Mercenaire (*Mercenary*), Vermigène (*Verminkin*), Cloître (*Cloister*) ;
+   "coven" (nom commun) devient "cabale" (Armurerie de la Cabale, Cabale du Sparkseer).
 3. Sont traduits : sorts, domaines de magie, compétences, objets, armes, armures,
    traits d'armes, repaires, origines, scénarios, rebondissements. Dans le titre de
    chaque entrée, donne la VO entre parenthèses : ### Projectile arcanique
    (*Arcane Missile*).
 4. Les tables de noms de combattants (D66) ne sont pas traduites. La table
-   d'épithètes du Blighted Cloister est traduite.
+   d'épithètes du Cloître gangrené est traduite.
 5. Garde les majuscules de la VO sur les termes de jeu (Mouvement, Volonté, Chef).
 6. Les rappels de traits d'armes, répétés à plusieurs endroits du livre, doivent être
    mot pour mot identiques à chaque occurrence.
@@ -91,7 +99,7 @@ Général
 Types de combattants et mots-clés
 - Leader = Chef | Champion = Champion | Henchman = Homme de main
 - Brute = Brute | Beast = Bête
-- Wizard = Sorcier | Priest = Prêtre | Undead = Mort-vivant | Demon = Démon
+- Wizard = Magicien (H18) | Warlock = Sorcier | Priest = Prêtre | Undead = Mort-vivant | Demon = Démon
 - Thrall = Asservi | Fly = Vol | Contraption = Engin | summoned = invoqué
 
 Valeurs
@@ -200,8 +208,8 @@ Terrain et scénarios
   (sort, compétence, objet, combattant).
 - Profils de combattants, toujours dans ce modèle :
 
-  ### 0-1 Guild Wizard
-  *Champion, Mercenary, Humain, Sorcier* - 120 pa
+  ### 0-1 Magicien de la Guilde (*Guild Wizard*)
+  *Champion, Mercenaire, Humain, Magicien* (*Champion, Mercenary, Human, Wizard*) - 120 pa
   | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
   |---|---|---|---|---|---|---|
   | 5" | 4+ | 6+ | 6+ | 3 | 4 | 4 |

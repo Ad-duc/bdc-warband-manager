@@ -70,7 +70,7 @@ Ces batailles sont reliées en un récit continu appelé **campagne**, où l'iss
 
 Pour jouer à Black Death City, vous aurez besoin des éléments suivants :
 
-- **Des figurines :** les combattants (*fighter*) de la bande (*warband*) d'un joueur sont représentés par des figurines. Le jeu est conçu pour des figurines à l'échelle 25mm-30mm. Une fois qu'un joueur a choisi la faction dont sa bande (*warband*) est issue, il peut utiliser n'importe quelles figurines appropriées de sa collection pour représenter les combattants (*fighter*). Les combattants (*fighter*) de taille humaine devraient être montés sur un socle de 25mm à 40mm. Les combattants (*fighter*) plus grands (comme les Mercenary Ogres et autres brutes) peuvent être montés sur un socle de 40mm à 60mm. Les socles peuvent être ronds ou carrés.
+- **Des figurines :** les combattants (*fighter*) de la bande (*warband*) d'un joueur sont représentés par des figurines. Le jeu est conçu pour des figurines à l'échelle 25mm-30mm. Une fois qu'un joueur a choisi la faction dont sa bande (*warband*) est issue, il peut utiliser n'importe quelles figurines appropriées de sa collection pour représenter les combattants (*fighter*). Les combattants (*fighter*) de taille humaine devraient être montés sur un socle de 25mm à 40mm. Les combattants (*fighter*) plus grands (comme les Ogres mercenaires (*Mercenary Ogre*) et autres brutes) peuvent être montés sur un socle de 40mm à 60mm. Les socles peuvent être ronds ou carrés.
 
 - **Un champ de bataille (*battlefield*) et des décors (*terrain*) :** le jeu est conçu pour être joué sur un champ de bataille (*battlefield*) de 36 pouces sur 36 pouces (3 pieds sur 3 pieds), mais il peut aussi fonctionner sur un champ de bataille (*battlefield*) de 30 pouces sur 44 pouces. Ce sont deux formats standards, utilisés dans d'autres jeux, et l'on trouve à la vente un large choix de tapis de jeu.
 
@@ -94,10 +94,10 @@ Pour jouer à Black Death City, vous aurez besoin des éléments suivants :
 
 [Illustration : quatre blasons, chacun accompagné du nom d'une faction.]
 
-- Guild Mercenaries
-- Verminkin
-- Death Covens
-- The Blighted Cloister
+- Mercenaires de la Guilde (*Guild Mercenaries*)
+- Vermigènes (*Verminkin*)
+- Cabales de la Mort (*Death Covens*)
+- Le Cloître gangrené (*The Blighted Cloister*)
 
 ## Comment utiliser ce livre... (*How to use this book...*)
 

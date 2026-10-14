@@ -840,7 +840,6 @@ export function checkFactionIntegrity(faction: FactionData, common: CommonData):
   }
 
   for (const f of faction.fighters) {
-    if (f.name.en !== f.name.fr) problems.push(`Fighter ${f.id}: name must be identical in EN and FR`);
     if (!f.keywords.includes(f.category))
       problems.push(`Fighter ${f.id}: keywords must include its category "${f.category}"`);
     for (const k of f.keywords)

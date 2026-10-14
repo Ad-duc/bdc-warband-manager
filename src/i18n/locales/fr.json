@@ -681,7 +681,7 @@
     "drawGroup": "Tirer le groupe déployé en premier",
     "groupDrawn": "Le groupe {{group}} est déployé en premier.",
     "group": "Groupe {{group}} :",
-    "spellsRule": "Chaque Sorcier ou Prêtre prépare 1 sort aléatoire de chaque Domaine de magie qu'il connaît ; ses sorts fétiches sont toujours préparés, et un jet qui tombe sur un sort fétiche n'a aucun effet et n'est pas relancé.",
+    "spellsRule": "Chaque Magicien ou Prêtre prépare 1 sort aléatoire de chaque Domaine de magie qu'il connaît ; ses sorts fétiches sont toujours préparés, et un jet qui tombe sur un sort fétiche n'a aucun effet et n'est pas relancé.",
     "noCaster": "Aucun lanceur dans cette bande.",
     "rollSpells": "Tirer les sorts préparés",
     "signature": "fétiche : {{spells}}.",
