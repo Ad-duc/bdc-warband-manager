@@ -2,7 +2,9 @@
  * File:        src/features/common/ClampedText.tsx
  * Role:        Long text (plain or rich) cut to three lines with a "read more"
  *              / "show less" button. The button only appears when the text overflows, and
- *              the overflow is measured again when the box is resized.
+ *              the overflow is measured again when the box is resized. With
+ *              `uniform`, the closed text always takes three lines and the
+ *              button line is kept, so that a list of cards has one height.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -20,10 +22,19 @@ interface ClampedTextProps {
   /** Any value whose change means the content changed (the text in the current language). */
   watch?: string;
   className?: string;
+  /** Keep three lines and the button line while closed, even for a short text. */
+  uniform?: boolean;
 }
 
 /** Text cut to three lines, with a toggle shown only when the text is longer. */
-export function ClampedText({ id, text, children, watch, className = "" }: ClampedTextProps) {
+export function ClampedText({
+  id,
+  text,
+  children,
+  watch,
+  className = "",
+  uniform = false,
+}: ClampedTextProps) {
   const { t } = useTranslation();
   const generated = useId();
   const paragraphId = id ?? generated;
@@ -48,9 +59,14 @@ export function ClampedText({ id, text, children, watch, className = "" }: Clamp
 
   return (
     <>
-      <p id={paragraphId} ref={ref} className={`${className} ${open ? "" : "line-clamp-3"}`}>
+      <p
+        id={paragraphId}
+        ref={ref}
+        className={`${className} ${open ? "" : "line-clamp-3"} ${uniform && !open ? "min-h-[3lh]" : ""}`}
+      >
         {children ?? text}
       </p>
+      {uniform && !overflows && !open && <span aria-hidden="true" className="block min-h-11" />}
       {(overflows || open) && (
         <button
           type="button"

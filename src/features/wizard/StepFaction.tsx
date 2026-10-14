@@ -4,7 +4,9 @@
  *              of the selected faction) and faction. Every faction file of
  *              src/data is listed; the faction can be changed while the
  *              warband has no fighter. One faction per row; long descriptions
- *              are cut to three lines with a "read more" toggle.
+ *              are cut to three lines with a "read more" toggle. The shield
+ *              sits at the top, the radio is centred on it, and every closed
+ *              card has the same height.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -74,34 +76,40 @@ export function StepFaction({ warband, update }: StepProps) {
                 key={faction.id}
                 className="flex gap-3 border-2 border-on-panel p-3 has-[:checked]:bg-bone"
               >
-                <input
-                  id={inputId}
-                  type="radio"
-                  name="faction"
-                  value={faction.id}
-                  aria-describedby={descId}
-                  checked={warband.factionId === faction.id}
-                  disabled={locked && warband.factionId !== faction.id}
-                  onChange={() => {
-                    update((w) => ({
-                      ...w,
-                      factionId: faction.id,
-                      originId: null,
-                      strongholdId: null,
-                      strongholdTrackers: {},
-                    }));
-                  }}
-                  className="mt-1 size-5 shrink-0"
-                />
+                {/* Same height as the shield, so that the radio is centred on it. */}
+                <div className="flex h-20 shrink-0 items-center">
+                  <input
+                    id={inputId}
+                    type="radio"
+                    name="faction"
+                    value={faction.id}
+                    aria-describedby={descId}
+                    checked={warband.factionId === faction.id}
+                    disabled={locked && warband.factionId !== faction.id}
+                    onChange={() => {
+                      update((w) => ({
+                        ...w,
+                        factionId: faction.id,
+                        originId: null,
+                        strongholdId: null,
+                        strongholdTrackers: {},
+                      }));
+                    }}
+                    className="size-5"
+                  />
+                </div>
                 {/* Fixed-width box so that every description starts at the same place. */}
                 <label htmlFor={inputId} className="flex w-20 shrink-0 cursor-pointer justify-center">
                   <img src={`${BASE}images/${faction.assets.shield}`} alt="" className="h-20 w-auto" />
                 </label>
                 <div className="min-w-0 flex-1">
-                  <label htmlFor={inputId} className="block cursor-pointer font-hand text-2xl">
+                  <label
+                    htmlFor={inputId}
+                    className="block min-h-[2lh] cursor-pointer font-hand text-2xl sm:min-h-0"
+                  >
                     {f.text(faction.name)}
                   </label>
-                  <ClampedText id={descId} text={f.text(faction.description)} className="text-sm" />
+                  <ClampedText id={descId} text={f.text(faction.description)} className="text-sm" uniform />
                 </div>
               </div>
             );
