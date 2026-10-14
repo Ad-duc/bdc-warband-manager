@@ -21,7 +21,7 @@ Version de test v1.03, publiée le 12/10/2026. Ce journal liste les changements 
 | 23 | Jets d'attaque réussis | Le 6 naturel ou le seuil de Lame obtiennent une touche | Mêmes seuils, mais ces jets sont désormais des "jets d'attaque réussis" |
 | 24 | Parade | Utiliser une touche, puis parer une touche adverse | Défausser un jet d'attaque réussi, puis, sur 2+, choisir un jet d'attaque réussi adverse à parer |
 | 24 | Résolution des touches | Section "Resolving Hits", jets d'armure pour chaque touche | Section "Resolving Attacks" : la cible effectue un jet d'armure par attaque ; la mention d'une Armure de "-" disparaît |
-| 25-26 | Exemple | Absent | Nouvel exemple complet (Guild Mercenary contre Verminkin Warrior) |
+| 25-26 | Exemple | Absent | Nouvel exemple complet (Mercenaire de la Guilde (*Guild Mercenary*) contre Guerrier vermigène (*Verminkin Warrior*)) |
 | 28 | Action d'Attaque à distance | "controlling player" | "commanding player" ; nouvelle règle Surplomb : à 3" ou plus au-dessus de la cible, +1 aux jets d'attaque |
 | 29 | Contre-charge | Redite sur le défenseur | "Si un combattant utilise cette arme alors qu'il est le défenseur" |
 | 29 | Lourd | Pendant son activation, avec règle de rechargement | Pendant la même activation ; la règle de rechargement est supprimée |
@@ -48,7 +48,7 @@ Version de test v1.03, publiée le 12/10/2026. Ce journal liste les changements 
 - p. 51 : Exercices de tir : "renoncer à" un Mouvement ou une Action, avec renvoi au trait Rechargement.
 - p. 51 : Duelliste : peut parer les touches critiques avec n'importe quelle attaque réussie (et non plus n'importe quelle touche).
 
-## Guild Mercenaries (lot 06)
+## Mercenaires de la Guilde (*Guild Mercenaries*) (lot 06)
 
 | Élément | v1.02 | v1.03 |
 |---|---|---|
@@ -72,15 +72,15 @@ Version de test v1.03, publiée le 12/10/2026. Ce journal liste les changements 
 | Grimoire | Objet | Objet, Rare : 0-1 |
 | Béni des Saints | La touche n'est pas critique | L'attaque n'est pas une touche critique |
 | Tenir bon | Peut tenter de tenir bon | Peut tenir bon |
-| Witch Hunter | Réciter les litanies sacrées sans [Action] | Avec [Action] |
-| Mercenary Ogre | Force incroyable | Règle supprimée |
+| Chasseur de sorcières (*Witch Hunter*) | Réciter les litanies sacrées sans [Action] | Avec [Action] |
+| Ogre mercenaire (*Mercenary Ogre*) | Force incroyable | Règle supprimée |
 | Manoir délabré (origine) | Renvoi "(p. xx)" | Renvoi supprimé |
 
-## Verminkin (lot 07)
+## Vermigènes (*Verminkin*) (lot 07)
 
 | Élément | v1.02 | v1.03 |
 |---|---|---|
-| Sparkseer (Tyran impitoyable) | Engager | Recruter |
+| Maître artificier (*Sparkseer*) (Tyran impitoyable) | Engager | Recruter |
 | Foreuse à étincelles, Poings à étincelles | Encombrant | Trait supprimé |
 | Lance-éclairs | Sans Arcanique, Encombrant, 100 pa | Arcanique, sans Encombrant, 90 pa |
 | Pistolet à poudre noire | Dégâts 1, critiques 1D6 | Dégâts 2, critiques 1D6+1 |
@@ -95,9 +95,9 @@ Version de test v1.03, publiée le 12/10/2026. Ce journal liste les changements 
 | Étoiles de jet | 12 pa | 10 pa |
 | Explosion rebondissante, Bombe de peste | Point quelconque, attaque réussie | Point visible ; les combattants dans la zone sont touchés par l'attaque |
 | Gerbe de vomi | Attaque réussie | Attaque |
-| Rat-Mutant | Force incroyable | Règle supprimée |
+| Rat-mutant (*Rat-Mutant*) | Force incroyable | Règle supprimée |
 
-## Death Covens (lot 08)
+## Cabales de la Mort (*Death Covens*) (lot 08)
 
 | Élément | v1.02 | v1.03 |
 |---|---|---|
@@ -105,19 +105,19 @@ Version de test v1.03, publiée le 12/10/2026. Ce journal liste les changements 
 | Grande arme d'ogre | Encombrant | Trait supprimé |
 | Grimoire | Objet | Objet, Rare : 0-1 |
 | Sort à gabarit (p. 101) | Attaque réussie | Attaque |
-| Zombie Ogre | Force incroyable | Règle supprimée (garde Inébranlable) |
-| Gargoyle, Serres de pierre | Dégâts critiques 1D6+1 | Dégâts critiques 1D3+1 |
+| Ogre zombie (*Zombie Ogre*) | Force incroyable | Règle supprimée (garde Inébranlable) |
+| Gargouille (*Gargoyle*), Serres de pierre | Dégâts critiques 1D6+1 | Dégâts critiques 1D3+1 |
 | Encadré des Bêtes | Rappel Poison | Rappel supprimé |
 
-## The Blighted Cloister (lot 09)
+## Le Cloître gangrené (*The Blighted Cloister*) (lot 09)
 
 | Élément | v1.02 | v1.03 |
 |---|---|---|
-| L'Oint | Knight-Abbot Noble | Knight-Abbot |
-| Rotling | 20 pa (liste) et 30 pa (parchemin) | 25 pa partout |
+| L'Oint | Chevalier-Abbé (*Knight-Abbot*) Noble | Chevalier-Abbé (*Knight-Abbot*) |
+| Pourrisson (*Rotling*) | 20 pa (liste) et 30 pa (parchemin) | 25 pa partout |
 | Grimoire | Objet | Objet, Rare : 0-1 |
 | Réceptacle de la Pourriture noire | Renvoi au trait "Poisoned" | Renvoi au trait "Poison" |
-| Demonic Rot-Colossal | Force incroyable | Règle supprimée |
+| Colosse de la Pourriture (*Demonic Rot-Colossal*) | Force incroyable | Règle supprimée |
 
 ## Aide de jeu (lot 10)
 

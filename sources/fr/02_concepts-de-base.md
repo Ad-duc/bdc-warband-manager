@@ -104,17 +104,17 @@ Dans la plupart des cas, les règles sont résolues une par une. Cependant, il a
 
 Chaque combattant (*fighter*) possède un **parchemin** (*scroll*) qui indique ses **valeurs**, ses **mots-clés** (*keyword*), ses **règles spéciales** (*special rule*) et d'autres informations.
 
-Voici un exemple de parchemin (*scroll*), celui d'un Guild Wizard :
+Voici un exemple de parchemin (*scroll*), celui d'un Magicien de la Guilde (*Guild Wizard*) :
 
-### 0-1 Guild Wizard
+### 0-1 Magicien de la Guilde (*Guild Wizard*)
 
-*Champion, Mercenary, Humain, Sorcier* (*Champion, Mercenary, Human, Wizard*) - 120 pa
+*Champion, Mercenaire, Humain, Magicien* (*Champion, Mercenary, Human, Wizard*) - 120 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 5" | 4+ | 6+ | 6+ | 3 | 4 | 4 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Sorciers (*Wizard List*) de l'Armurerie de la Guilde (*Guild Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Magiciens (*Wizard List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
 **Expérience de départ :** 40+1D6.
 
@@ -134,11 +134,11 @@ La valeur de Mouvement (*Move*) d'un combattant (*fighter*) détermine la distan
 
 ### Lame (*Blade*)
 
-La valeur de Lame (*Blade*) d'un combattant (*fighter*) détermine son habileté avec les armes de corps à corps (*melee weapon*). Plus le nombre est bas, mieux c'est. Cette valeur indique le jet de dé nécessaire pour obtenir une touche (*hit*) avec une arme de corps à corps (*melee weapon*). Par exemple, quand le Guild Wizard effectue une attaque au corps à corps (*melee attack*), chaque jet de 4 ou plus obtient une touche (*hit*).
+La valeur de Lame (*Blade*) d'un combattant (*fighter*) détermine son habileté avec les armes de corps à corps (*melee weapon*). Plus le nombre est bas, mieux c'est. Cette valeur indique le jet de dé nécessaire pour obtenir une touche (*hit*) avec une arme de corps à corps (*melee weapon*). Par exemple, quand le Magicien de la Guilde (*Guild Wizard*) effectue une attaque au corps à corps (*melee attack*), chaque jet de 4 ou plus obtient une touche (*hit*).
 
 ### Arc (*Bow*)
 
-Comme pour la valeur de Lame (*Blade*), la valeur d'Arc (*Bow*) d'un combattant (*fighter*) détermine son habileté avec les armes à distance (*ranged weapon*). Plus le nombre est bas, mieux c'est. Cette valeur indique le jet de dé nécessaire pour obtenir une touche (*hit*) avec une arme à distance (*ranged weapon*). Par exemple, quand le Guild Wizard effectue une attaque à distance (*ranged attack*), seuls les jets de 6 ou plus obtiennent une touche (*hit*), ce qui signifie qu'il n'est pas très habile avec les armes à distance (*ranged weapon*).
+Comme pour la valeur de Lame (*Blade*), la valeur d'Arc (*Bow*) d'un combattant (*fighter*) détermine son habileté avec les armes à distance (*ranged weapon*). Plus le nombre est bas, mieux c'est. Cette valeur indique le jet de dé nécessaire pour obtenir une touche (*hit*) avec une arme à distance (*ranged weapon*). Par exemple, quand le Magicien de la Guilde (*Guild Wizard*) effectue une attaque à distance (*ranged attack*), seuls les jets de 6 ou plus obtiennent une touche (*hit*), ce qui signifie qu'il n'est pas très habile avec les armes à distance (*ranged weapon*).
 
 ### Armure (*Armour*)
 
@@ -188,17 +188,17 @@ Tant qu'il ne reste que 1 point de vie (*life point*) à un combattant (*fighter
 
 ### Mots-clés (*Keywords*)
 
-Sous le titre d'un combattant (*fighter*) figurent plusieurs mots-clés (*keyword*) en italique. Le Guild Wizard a Champion, Mercenary, Humain (*Human*) et Sorcier (*Wizard*).
+Sous le titre d'un combattant (*fighter*) figurent plusieurs mots-clés (*keyword*) en italique. Le Magicien de la Guilde (*Guild Wizard*) a Champion, Mercenaire (*Mercenary*), Humain (*Human*) et Magicien (*Wizard*).
 
-Une règle peut ne s'appliquer qu'aux combattants (*fighter*) dotés d'un certain mot-clé (*keyword*). Par exemple, si une règle indique "choisissez un Sorcier (*Wizard*) ennemi (*enemy*) visible comme cible (*target*)", seuls les combattants ennemis (*enemy fighter*) dotés du mot-clé (*keyword*) Sorcier (*Wizard*) pourraient être choisis.
+Une règle peut ne s'appliquer qu'aux combattants (*fighter*) dotés d'un certain mot-clé (*keyword*). Par exemple, si une règle indique "choisissez un Magicien (*Wizard*) ennemi (*enemy*) visible comme cible (*target*)", seuls les combattants ennemis (*enemy fighter*) dotés du mot-clé (*keyword*) Magicien (*Wizard*) pourraient être choisis.
 
 ### Règles spéciales (*Special Rules*)
 
-Les combattants (*fighter*) puissants ont souvent 1 ou plusieurs règles spéciales (*special rule*) sur leur profil de combattant (*fighter*). Par exemple, le Guild Wizard est capable de lancer des sorts (*cast a spell*) du domaine de magie (*Spell Lore*) de la Magie autorisée (*Sanctioned Magic*).
+Les combattants (*fighter*) puissants ont souvent 1 ou plusieurs règles spéciales (*special rule*) sur leur profil de combattant (*fighter*). Par exemple, le Magicien de la Guilde (*Guild Wizard*) est capable de lancer des sorts (*cast a spell*) du domaine de magie (*Spell Lore*) de la Magie autorisée (*Sanctioned Magic*).
 
 ### Limites (*Limits*)
 
-Certains combattants (*fighter*) sont limités dans votre bande (*warband*), comme l'indique un nombre à côté de leur titre. Une bande (*warband*) ne peut pas compter plus de 1 Guild Wizard, comme l'indique le "0-1".
+Certains combattants (*fighter*) sont limités dans votre bande (*warband*), comme l'indique un nombre à côté de leur titre. Une bande (*warband*) ne peut pas compter plus de 1 Magicien de la Guilde (*Guild Wizard*), comme l'indique le "0-1".
 
 ### Coût de recrutement (*Recruit Cost*)
 
@@ -484,7 +484,7 @@ Points relevés page par page :
 - p. 8 : le paragraphe sur le dé à douze faces est en italique dans la VO, comme la note du concepteur qui le précède : il en fait sans doute partie. Je l'ai laissé à la suite.
 - p. 9 : la VO écrit 360 suivi du symbole degré. J'ai écrit "360 degrés" pour éviter un caractère spécial.
 - p. 9 : "hidden from view" est rendu par "dissimulées à la vue", pour réserver "caché" à l'état de jeu (*hidden*).
-- p. 10 : "120 silver to recruit" devient "120 pa", selon ton modèle. La citation du Guild Wizard, écrite avec des s longs, est rendue en français d'aujourd'hui.
+- p. 10 : "120 silver to recruit" devient "120 pa", selon ton modèle. La citation du Magicien de la Guilde (*Guild Wizard*), écrite avec des s longs, est rendue en français d'aujourd'hui.
 - p. 11 : ordre de lecture reconstitué : colonne de gauche (Mouvement, Lame, Arc, Armure et son encadré), puis colonne de droite (Initiative, Volonté, encadré des tests, Vie).
 - p. 11 : "their skills with the arcane" est rendu par "sa maîtrise des arcanes", pour réserver "compétence" à *skill*. "laid low by their wounds" est rendu par "terrassé par ses plaies", pour réserver "blessure" à *injury*.
 - p. 12 : "they can make a move or an action" est écrit sans majuscules dans la VO. J'ai écrit "un Mouvement (*Move*) ou une Action", avec les majuscules du glossaire, puisqu'il s'agit des deux composantes de l'activation.

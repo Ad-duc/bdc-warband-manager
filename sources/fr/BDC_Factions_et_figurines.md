@@ -9,12 +9,12 @@ Le jeu n'impose aucune gamme de figurines (25-30 mm, socles ronds ou carrés). L
 
 | Faction | Style | Exemples de figurines |
 |---|---|---|
-| Guild Mercenaries | Humains polyvalents, poudre noire, chasseurs de sorcières, ogre mercenaire | Freeguild des Cités de Sigmar, anciennes troupes de l'Empire, mercenaires Mordheim, soldats Frostgrave (North Star), un Ogor pour l'ogre |
-| Verminkin | Hommes-rats rapides, poison, assassins, machines instables | Clanrats et Night Runners skavens, Gutter Runners pour les assassins, Rat Ogor en brute, rats géants en bêtes |
-| Death Covens | Vampires, nécromant, loup-garou, squelettes et zombies | Soulblight Gravelords (vampire, nécromancien, Deathrattle Skeletons, Deadwalker Zombies), Dire Wolves ou chauves-souris en bêtes |
-| The Blighted Cloister | Chevaliers pestiférés en armure lourde, démons de la peste, hommes-bêtes, cultistes, peu de tir | Putrid Blightkings, Plaguebearers, Gors hommes-bêtes, cultistes de Nurgle, boîte Warhammer Quest: Darkwater (source d'inspiration de la faction) |
+| Mercenaires de la Guilde (*Guild Mercenaries*) | Humains polyvalents, poudre noire, chasseurs de sorcières, ogre mercenaire | Freeguild des Cités de Sigmar, anciennes troupes de l'Empire, mercenaires Mordheim, soldats Frostgrave (North Star), un Ogor pour l'ogre |
+| Vermigènes (*Verminkin*) | Hommes-rats rapides, poison, assassins, machines instables | Clanrats et Night Runners skavens, Gutter Runners pour les assassins, Rat Ogor en brute, rats géants en bêtes |
+| Cabales de la Mort (*Death Covens*) | Vampires, nécromant, loup-garou, squelettes et zombies | Soulblight Gravelords (vampire, nécromancien, Deathrattle Skeletons, Deadwalker Zombies), Loups sinistres (*Dire Wolf*) ou chauves-souris en bêtes |
+| Le Cloître gangrené (*The Blighted Cloister*) | Chevaliers pestiférés en armure lourde, démons de la peste, hommes-bêtes, cultistes, peu de tir | Putrid Blightkings, Plaguebearers, Gors hommes-bêtes, cultistes de Nurgle, boîte Warhammer Quest: Darkwater (source d'inspiration de la faction) |
 
-Noms de combattants relevés dans les règles (liste partielle) : Guild Captain, Pox Priest, Rot Demon.
+Noms de combattants relevés dans les règles (liste partielle) : Capitaine de la Guilde (*Guild Captain*), Prêtre de la Vérole (*Pox Priest*), Démon de la Pourriture (*Rot Demon*).
 
 ## Composition d'une bande (rappel)
 

@@ -1,4 +1,4 @@
-# Guild Mercenaries
+# Mercenaires de la Guilde (*Guild Mercenaries*)
 
 > Les bandes (*warband*) de mercenaires prêtes à braver les rues maudites de la Cité (*the City*) en quête de fortune ne manquent pas. Financés par de riches mécènes ou risquant leurs propres pièces d'argent (*silver*), ces aventuriers cherchent richesses, reliques (*relic*) et renommée au milieu de ses ruines.
 >
@@ -8,16 +8,16 @@
 >
 > Chaque expédition hors de leur repaire (*stronghold*) est des plus périlleuses, car la Cité (*the City*) abrite des horreurs aussi bien humaines qu'inhumaines. Des créatures monstrueuses, que l'on croyait sorties du folklore, rôdent dans l'ombre, tandis que des hommes désespérés ne se montrent pas moins meurtriers, prêts à trahir un compagnon et à trancher une gorge pour une poignée de pièces d'argent (*silver*), ou à arracher à une main mourante un trésor (*treasure*) durement gagné.
 
-Cette section contient toutes les règles pour recruter une bande (*warband*) de Guild Mercenaries. Vous trouverez dans les pages suivantes :
+Cette section contient toutes les règles pour recruter une bande (*warband*) de Mercenaires de la Guilde (*Guild Mercenaries*). Vous trouverez dans les pages suivantes :
 
 - **Origines (*Origins*)** (p. xx)
 - **Repaires (*Strongholds*)** (p. xx)
 - **Règles de campagne (*Campaign Rules*)** (p. xx)
-- **Liste des combattants des Guild Mercenaries (*Guild Mercenaries Fighter List*)** (p. xx)
+- **Liste des combattants des Mercenaires de la Guilde (*Guild Mercenaries Fighter List*)** (p. xx)
 - **L'Armurerie de la Guilde (*The Guild Armoury*)** (p. xx-xx)
-- **Domaines de magie des Guild Mercenaries (*Guild Mercenaries Spell Lores*)** (p. xx)
-- **Compétences des Guild Mercenaries (*Guild Mercenaries Skills*)** (p. xx)
-- **Parchemins de combattants des Guild Mercenaries (*Guild Mercenaries Fighter Scrolls*)** (p. xx-xx)
+- **Domaines de magie des Mercenaires de la Guilde (*Guild Mercenaries Spell Lores*)** (p. xx)
+- **Compétences des Mercenaires de la Guilde (*Guild Mercenaries Skills*)** (p. xx)
+- **Parchemins de combattants des Mercenaires de la Guilde (*Guild Mercenaries Fighter Scrolls*)** (p. xx-xx)
 
 ## Origines (*Origins*)
 
@@ -29,7 +29,7 @@ Avant d'engager le moindre combattant (*fighter*), choisissez une origine (*orig
 
 **Restrictions**
 
-**Chef (*Leader*) :** vous devez engager un **Guild Captain** pour diriger votre bande (*warband*) au début de la campagne.
+**Chef (*Leader*) :** vous devez engager un **Capitaine de la Guilde (*Guild Captain*)** pour diriger votre bande (*warband*) au début de la campagne.
 
 **Règles spéciales (*Special Rules*)**
 
@@ -53,19 +53,19 @@ Vous commencez la campagne avec le repaire (*stronghold*) **Manoir délabré** (
 
 **Restrictions**
 
-**Chef (*Leader*) :** vous devez engager un **Witch Hunter** pour diriger votre bande (*warband*) au début de la campagne.
+**Chef (*Leader*) :** vous devez engager un **Chasseur de sorcières (*Witch Hunter*)** pour diriger votre bande (*warband*) au début de la campagne.
 
 **Règles spéciales (*Special Rules*)**
 
 Vous commencez la campagne avec le repaire (*stronghold*) **Maison capitulaire** (*Chapter House*).
 
-### Suite du Sorcier (*Wizard's Retinue*)
+### Suite du Magicien (*Wizard's Retinue*)
 
-> Menée par un High Wizard of the Guild, cette expédition dans la Cité (*the City*) a été financée à ses propres frais, car il recherche de puissants artefacts arcaniques, perdus lors de la destruction de la Cité (*the City*).
+> Menée par un Grand Magicien de la Guilde (*High Wizard of the Guild*), cette expédition dans la Cité (*the City*) a été financée à ses propres frais, car il recherche de puissants artefacts arcaniques, perdus lors de la destruction de la Cité (*the City*).
 
 **Restrictions**
 
-**Chef (*Leader*) :** vous devez engager un **High Wizard of the Guild** pour diriger votre bande (*warband*) au début de la campagne.
+**Chef (*Leader*) :** vous devez engager un **Grand Magicien de la Guilde (*High Wizard of the Guild*)** pour diriger votre bande (*warband*) au début de la campagne.
 
 **Règles spéciales (*Special Rules*)**
 
@@ -83,7 +83,7 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), elle commence a
 
 **Exercices de combat (*Combat Drills*) :** à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir jusqu'à 3 Hommes de main (*Henchman*) alliés (*friendly*) à entraîner. Chacun de ces combattants (*fighter*) gagne 1D6 d'expérience bonus (*bonus experience*).
 
-**Avides de faire leurs preuves (*Eager to Prove*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), lancez un dé. Sur 6, un Guild Recruit arrive à la Caserne de la Guilde (*Guild Barracks*). Vous pouvez recruter un Guild Recruit dans votre bande (*warband*) pour 0 pièce d'argent (*silver*).
+**Avides de faire leurs preuves (*Eager to Prove*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), lancez un dé. Sur 6, une Recrue de la Guilde (*Guild Recruit*) arrive à la Caserne de la Guilde (*Guild Barracks*). Vous pouvez recruter une Recrue de la Guilde (*Guild Recruit*) dans votre bande (*warband*) pour 0 pièce d'argent (*silver*).
 
 ### Manoir délabré (*Dilapidated Manor*)
 
@@ -101,19 +101,19 @@ Chaque fois que vous percevez le revenu (*income*) de cette possession (*holding
 
 **Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
 
-**Expiation des péchés (*Atonement for Sin*) :** si votre bande (*warband*) a perdu la bataille, à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), effectuez un test de Volonté (*Willpower*) pour chaque Witch Hunter et chaque Prêtre (*Priest*) de votre bande (*warband*). S'il le réussit, il gagne 5 d'expérience bonus (*bonus experience*).
+**Expiation des péchés (*Atonement for Sin*) :** si votre bande (*warband*) a perdu la bataille, à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), effectuez un test de Volonté (*Willpower*) pour chaque Chasseur de sorcières (*Witch Hunter*) et chaque Prêtre (*Priest*) de votre bande (*warband*). S'il le réussit, il gagne 5 d'expérience bonus (*bonus experience*).
 
 ### Bibliothèque cachée (*Hidden Library*)
 
-> À grands frais, la guilde a transféré de nombreux manuscrits et traités sur les arcanes dans un lieu secret de la cité. De là, ses sorciers (*Wizard*) poursuivent leurs études.
+> À grands frais, la guilde a transféré de nombreux manuscrits et traités sur les arcanes dans un lieu secret de la cité. De là, ses magiciens (*Wizard*) poursuivent leurs études.
 
 **Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
 
-**Étude de la sorcellerie (*Sorcerous Study*) :** à chaque bataille, avant de déterminer les sorts préparés (*prepared spell*), vous pouvez choisir 1 Sorcier (*Wizard*) allié (*friendly*) de votre bande (*warband*). Au lieu de déterminer au hasard le sort (*spell*) qu'il a préparé dans un Domaine de magie (*Spell Lore*), vous pouvez le choisir.
+**Étude de la sorcellerie (*Sorcerous Study*) :** à chaque bataille, avant de déterminer les sorts préparés (*prepared spell*), vous pouvez choisir 1 Magicien (*Wizard*) allié (*friendly*) de votre bande (*warband*). Au lieu de déterminer au hasard le sort (*spell*) qu'il a préparé dans un Domaine de magie (*Spell Lore*), vous pouvez le choisir.
 
-## Règles de campagne des Guild Mercenaries (*Guild Mercenaries Campaign Rules*)
+## Règles de campagne des Mercenaires de la Guilde (*Guild Mercenaries Campaign Rules*)
 
-Pendant la campagne, les bandes (*warband*) de Guild Mercenaries ont les règles spéciales (*special rule*) supplémentaires suivantes :
+Pendant la campagne, les bandes (*warband*) de Mercenaires de la Guilde (*Guild Mercenaries*) ont les règles spéciales (*special rule*) supplémentaires suivantes :
 
 ### Mort d'un Chef (*Death of a Leader*)
 
@@ -121,14 +121,14 @@ Pendant la campagne, si votre chef (*Leader*) est tué (*killed*) et que vous ch
 
 | Ancien Chef (*Former Leader*) | Champion éligible (*Eligible Champion*) |
 |---|---|
-| Guild Captain | Guild Champion |
-| Noble | Guild Champion |
-| Witch Hunter | Witch Hunter's Apprentice |
-| High Wizard | Guild Wizard |
+| Capitaine de la Guilde (*Guild Captain*) | Champion de la Guilde (*Guild Champion*) |
+| Noble | Champion de la Guilde (*Guild Champion*) |
+| Chasseur de sorcières (*Witch Hunter*) | Apprenti chasseur de sorcières (*Witch Hunter's Apprentice*) |
+| Grand Magicien (*High Wizard*) | Magicien de la Guilde (*Guild Wizard*) |
 
-### Noms des Guild Mercenaries (*Guild Mercenary Names*)
+### Noms des Mercenaires de la Guilde (*Guild Mercenary Names*)
 
-Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) des Guild Mercenaries.
+Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) des Mercenaires de la Guilde (*Guild Mercenaries*).
 
 | D66 | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
@@ -139,45 +139,45 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | 50 | Konrad | Leonhard | Lorenz | Ludwig | Matthias | Nikolaus |
 | 60 | Oswald | Otto | Ulrich | Valentin | Wilhelm | Wolfram |
 
-## Liste des combattants des Guild Mercenaries (*Guild Mercenaries Fighters List*)
+## Liste des combattants des Mercenaires de la Guilde (*Guild Mercenaries Fighters List*)
 
 **Chefs (*Leaders*) (1)**
 
 | Combattant | Coût |
 |---|---|
-| Guild Captain | 140 pa |
+| Capitaine de la Guilde (*Guild Captain*) | 140 pa |
 | Noble | 120 pa |
-| Witch Hunter | 140 pa |
-| High Wizard of the Guild | 165 pa |
+| Chasseur de sorcières (*Witch Hunter*) | 140 pa |
+| Grand Magicien de la Guilde (*High Wizard of the Guild*) | 165 pa |
 
 **Champions (0-3)**
 
 | Combattant | Coût |
 |---|---|
-| 0-1 Guild Wizard | 120 pa |
-| 0-1 Guild Cleric | 120 pa |
-| Guild Champion | 90 pa |
-| Plague Doctor | 65 pa |
-| Witch Hunter's Apprentice | 80 pa |
+| 0-1 Magicien de la Guilde (*Guild Wizard*) | 120 pa |
+| 0-1 Clerc de la Guilde (*Guild Cleric*) | 120 pa |
+| Champion de la Guilde (*Guild Champion*) | 90 pa |
+| Médecin de peste (*Plague Doctor*) | 65 pa |
+| Apprenti chasseur de sorcières (*Witch Hunter's Apprentice*) | 80 pa |
 
 **Hommes de main (*Henchmen*) (5+)**
 
 | Combattant | Coût |
 |---|---|
-| Guild Mercenary | 50 pa |
-| Guild Recruit | 30 pa |
+| Mercenaire de la Guilde (*Guild Mercenary*) | 50 pa |
+| Recrue de la Guilde (*Guild Recruit*) | 30 pa |
 
 **Brutes (0-2)**
 
 | Combattant | Coût |
 |---|---|
-| Mercenary Ogre | 100 pa |
+| Ogre mercenaire (*Mercenary Ogre*) | 100 pa |
 
 **Bêtes (*Beasts*) (0-3)**
 
 | Combattant | Coût |
 |---|---|
-| Hunting Dog | 30 pa |
+| Chien de chasse (*Hunting Dog*) | 30 pa |
 
 ## Armurerie de la Guilde (*Guild Armoury*)
 
@@ -293,7 +293,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 |---|---|
 | Bouclier (*Shield*) | 10 pa |
 
-### Liste des Clerics (*Cleric List*)
+### Liste des Clercs (*Cleric List*)
 
 **Armes de corps à corps (*Melee Weapons*)**
 
@@ -319,7 +319,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Bouclier (*Shield*) | 10 pa |
 | Pieux en bois (*Wooden Stakes*) | 5 pa |
 
-### Liste des Witch Hunters (*Witch Hunters List*)
+### Liste des Chasseurs de sorcières (*Witch Hunters List*)
 
 **Objets (*Items*)**
 
@@ -328,7 +328,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Lanterne/Torche (*Lantern/Torch*) | 4 pa |
 | Pieux en bois (*Wooden Stakes*) | 5 pa |
 
-### Liste des Sorciers (*Wizard List*)
+### Liste des Magiciens (*Wizard List*)
 
 **Armes de corps à corps (*Melee Weapons*)**
 
@@ -520,7 +520,7 @@ Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), p
 
 **Armes à distance à deux mains (*Two-Handed Ranged Weapons*) :** un combattant (*fighter*) ne peut pas être équipé à la fois d'un objet tenu (*held item*) et d'une arme à distance (*ranged weapon*) à deux mains (*Two-handed*).
 
-## Domaines de magie des Guild Mercenaries (*Guild Mercenaries Spell Lores*)
+## Domaines de magie des Mercenaires de la Guilde (*Guild Mercenaries Spell Lores*)
 
 ## Domaine de la Magie autorisée (*Lore of Sanctioned Magic*) - 1D6
 
@@ -572,7 +572,7 @@ Sort de Maléfice (*Hex Spell*)
 
 **Valeur de Lancement (*Casting Value*) [7+]**
 
-Choisissez comme cible (*target*) un Sorcier (*Wizard*) ou un Prêtre (*Priest*) ennemi (*enemy*) visible à 12" ou moins. Jusqu'à la fin du round, ce combattant (*fighter*) ne peut pas effectuer d'actions Arcaniques (*Arcane Action*).
+Choisissez comme cible (*target*) un Magicien (*Wizard*) ou un Prêtre (*Priest*) ennemi (*enemy*) visible à 12" ou moins. Jusqu'à la fin du round, ce combattant (*fighter*) ne peut pas effectuer d'actions Arcaniques (*Arcane Action*).
 
 **Lancement critique (*Critical Cast*) [10+] :** augmentez la portée (*range*) de 12" à 18".
 
@@ -678,11 +678,11 @@ Si le lanceur (*caster*) est mis hors de combat (*taken down*), le sort (*spell*
 
 **Lancement critique (*Critical Cast*) [12+] :** tant que le sort (*spell*) est en jeu, les combattants alliés (*friendly fighter*) sont affectés tant qu'ils sont à 6" ou moins de ce point, à la place de 3".
 
-## Compétences des Guild Mercenaries (*Guild Mercenaries Skills*)
+## Compétences des Mercenaires de la Guilde (*Guild Mercenaries Skills*)
 
 ## Vieux briscards (*Old Dogs*)
 
-Chefs (*Leader*) et Champions Mercenary uniquement
+Chefs (*Leader*) et Champions Mercenaires (*Mercenary*) uniquement
 
 ### Cri de ralliement (*Rallying Cry*)
 
@@ -712,7 +712,7 @@ Vous pouvez relancer (*re-roll*) les jets de renforts (*reinforcement roll*) eff
 
 ## Ruse de soldat (*Soldier's Cunning*)
 
-N'importe quel Mercenary
+N'importe quel Mercenaire (*Mercenary*)
 
 ### Spécialiste de la poudre noire (*Blackpowder Specialist*)
 
@@ -738,13 +738,13 @@ Tant que ce combattant (*fighter*) est ensanglanté (*bloodied*), ajoutez 1 à l
 
 Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Melee Attack Action*) dans laquelle ce combattant (*fighter*) est le défenseur (*defending fighter*) et où l'attaquant (*attacking fighter*) a chargé (*charged*) pendant la même activation, ce combattant (*fighter*) peut tenir bon (*stand ground*). Dans ce cas, ses armes de corps à corps (*melee weapon*) gagnent les traits d'armes (*weapon trait*) Contre-charge (*Brace*) et Contondant (*Bludgeon*) jusqu'à la fin de l'activation.
 
-## Parchemins de combattants des Guild Mercenaries (*Guild Mercenaries Fighter Scrolls*)
+## Parchemins de combattants des Mercenaires de la Guilde (*Guild Mercenaries Fighter Scrolls*)
 
 ## Chefs (*Leaders*)
 
-### Guild Captain
+### Capitaine de la Guilde (*Guild Captain*)
 
-*Chef, Mercenary, Humain* (*Leader, Mercenary, Human*) - 140 pa
+*Chef, Mercenaire, Humain* (*Leader, Mercenary, Human*) - 140 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -762,7 +762,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 ### Noble
 
-*Chef, Mercenary, Humain, Aristocrate* (*Leader, Mercenary, Human, Aristocrat*) - 120 pa
+*Chef, Mercenaire, Humain, Aristocrate* (*Leader, Mercenary, Human, Aristocrat*) - 120 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -778,34 +778,34 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 > "Je ne suis pas venu jusqu'ici pour mourir comme un mendiant !"
 
-### Witch Hunter
+### Chasseur de sorcières (*Witch Hunter*)
 
-*Chef, Mercenary, Humain, Witch Hunter* (*Leader, Mercenary, Human, Witch Hunter*) - 140 pa
+*Chef, Mercenaire, Humain, Chasseur de sorcières* (*Leader, Mercenary, Human, Witch Hunter*) - 140 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 5" | 3+ | 4+ | 6+ | 4 | 4 | 6 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*), de la Liste des Champions (*Champion List*) et de la Liste des Witch Hunters (*Witch Hunter List*) de l'Armurerie de la Guilde (*Guild Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*), de la Liste des Champions (*Champion List*) et de la Liste des Chasseurs de sorcières (*Witch Hunter List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
 **Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
 - **Guerrier aguerri (*Seasoned Warrior*) :** quand ce combattant (*fighter*) est recruté, choisissez 1 compétence (*skill*) pour lui.
-- **Réciter les litanies sacrées (*Recite Holy Litanies*) [Action] :** une fois par bataille, ce combattant (*fighter*) peut effectuer cette action. Dans ce cas, choisissez comme cible (*target*) un combattant ennemi (*enemy fighter*) visible à 12" ou moins de ce combattant (*fighter*) ; cette cible (*target*) doit être un Sorcier (*Wizard*), un Prêtre (*Priest*), un Démon (*Demon*) ou un Mort-vivant (*Undead*). Lancez un dé pour ce combattant (*fighter*) et ajoutez sa valeur de Volonté (*Willpower*) au résultat. Le joueur qui contrôle le combattant (*commanding player*) ciblé (*target*) fait de même pour son combattant (*fighter*). Si le résultat de ce combattant (*fighter*) est égal ou supérieur au résultat de la cible (*target*), la cible (*target*) subit 1D3 dégâts (*damage*).
+- **Réciter les litanies sacrées (*Recite Holy Litanies*) [Action] :** une fois par bataille, ce combattant (*fighter*) peut effectuer cette action. Dans ce cas, choisissez comme cible (*target*) un combattant ennemi (*enemy fighter*) visible à 12" ou moins de ce combattant (*fighter*) ; cette cible (*target*) doit être un Magicien (*Wizard*), un Prêtre (*Priest*), un Démon (*Demon*) ou un Mort-vivant (*Undead*). Lancez un dé pour ce combattant (*fighter*) et ajoutez sa valeur de Volonté (*Willpower*) au résultat. Le joueur qui contrôle le combattant (*commanding player*) ciblé (*target*) fait de même pour son combattant (*fighter*). Si le résultat de ce combattant (*fighter*) est égal ou supérieur au résultat de la cible (*target*), la cible (*target*) subit 1D3 dégâts (*damage*).
 
 > "Chassez le misérable. Brûlez l'impie."
 
-### High Wizard of the Guild
+### Grand Magicien de la Guilde (*High Wizard of the Guild*)
 
-*Chef, Mercenary, Humain, Sorcier* (*Leader, Mercenary, Human, Wizard*) - 165 pa
+*Chef, Mercenaire, Humain, Magicien* (*Leader, Mercenary, Human, Wizard*) - 165 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 5" | 4+ | 6+ | 6+ | 3 | 5 | 5 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Sorciers (*Wizard List*) de l'Armurerie de la Guilde (*Guild Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Magiciens (*Wizard List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
 **Expérience de départ :** 60+1D6.
 
@@ -817,15 +817,15 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 ## Champions
 
-### 0-1 Guild Wizard
+### 0-1 Magicien de la Guilde (*Guild Wizard*)
 
-*Champion, Mercenary, Humain, Sorcier* (*Champion, Mercenary, Human, Wizard*) - 120 pa
+*Champion, Mercenaire, Humain, Magicien* (*Champion, Mercenary, Human, Wizard*) - 120 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 5" | 4+ | 6+ | 6+ | 3 | 4 | 4 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Sorciers (*Wizard List*) de l'Armurerie de la Guilde (*Guild Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Magiciens (*Wizard List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
 **Expérience de départ :** 40+1D6.
 
@@ -835,15 +835,15 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 > "La magie ne se laisse pas dompter, pas même par quelqu'un comme moi."
 
-### 0-1 Guild Cleric
+### 0-1 Clerc de la Guilde (*Guild Cleric*)
 
-*Champion, Mercenary, Humain, Prêtre* (*Champion, Mercenary, Human, Priest*) - 120 pa
+*Champion, Mercenaire, Humain, Prêtre* (*Champion, Mercenary, Human, Priest*) - 120 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 5" | 4+ | 6+ | 6+ | 3 | 4 | 4 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Clerics (*Cleric List*) de l'Armurerie de la Guilde (*Guild Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Clercs (*Cleric List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
 **Expérience de départ :** 40+1D6.
 
@@ -853,9 +853,9 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 > "Les Saints (*the Saints*) marchent aux côtés de ceux qui gardent la foi."
 
-### Guild Champion
+### Champion de la Guilde (*Guild Champion*)
 
-*Champion, Mercenary, Humain* (*Champion, Mercenary, Human*) - 90 pa
+*Champion, Mercenaire, Humain* (*Champion, Mercenary, Human*) - 90 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -871,9 +871,9 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 > "Donnez l'ordre, et ce sera fait."
 
-### Plague Doctor
+### Médecin de peste (*Plague Doctor*)
 
-*Champion, Mercenary, Humain* (*Champion, Mercenary, Human*) - 65 pa
+*Champion, Mercenaire, Humain* (*Champion, Mercenary, Human*) - 65 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -890,29 +890,29 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 > "Cette jambe est perdue. Il va falloir l'amputer."
 
-### Witch Hunter's Apprentice
+### Apprenti chasseur de sorcières (*Witch Hunter's Apprentice*)
 
-*Champion, Humain, Mercenary, Witch Hunter* (*Champion, Human, Mercenary, Witch Hunter*) - 80 pa
+*Champion, Humain, Mercenaire, Chasseur de sorcières* (*Champion, Human, Mercenary, Witch Hunter*) - 80 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 5" | 4+ | 4+ | 6+ | 3 | 4 | 5 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*), de la Liste des Champions (*Champion List*) et de la Liste des Witch Hunters (*Witch Hunter List*) de l'Armurerie de la Guilde (*Guild Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*), de la Liste des Champions (*Champion List*) et de la Liste des Chasseurs de sorcières (*Witch Hunter List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
 **Expérience de départ :** 40+1D6.
 
 **Règles spéciales :**
 
-- **Réciter les litanies sacrées (*Recite Holy Litanies*) [Action] :** une fois par bataille, ce combattant (*fighter*) peut effectuer cette action. Dans ce cas, choisissez comme cible (*target*) un combattant ennemi (*enemy fighter*) visible à 12" ou moins de ce combattant (*fighter*) ; cette cible (*target*) doit être un Sorcier (*Wizard*), un Prêtre (*Priest*), un Démon (*Demon*) ou un Mort-vivant (*Undead*). Lancez un dé pour ce combattant (*fighter*) et ajoutez sa valeur de Volonté (*Willpower*) au résultat. Le joueur qui contrôle le combattant (*commanding player*) ciblé (*target*) fait de même pour son combattant (*fighter*). Si le résultat de ce combattant (*fighter*) est égal ou supérieur au résultat de la cible (*target*), la cible (*target*) subit 1D3 dégâts (*damage*).
+- **Réciter les litanies sacrées (*Recite Holy Litanies*) [Action] :** une fois par bataille, ce combattant (*fighter*) peut effectuer cette action. Dans ce cas, choisissez comme cible (*target*) un combattant ennemi (*enemy fighter*) visible à 12" ou moins de ce combattant (*fighter*) ; cette cible (*target*) doit être un Magicien (*Wizard*), un Prêtre (*Priest*), un Démon (*Demon*) ou un Mort-vivant (*Undead*). Lancez un dé pour ce combattant (*fighter*) et ajoutez sa valeur de Volonté (*Willpower*) au résultat. Le joueur qui contrôle le combattant (*commanding player*) ciblé (*target*) fait de même pour son combattant (*fighter*). Si le résultat de ce combattant (*fighter*) est égal ou supérieur au résultat de la cible (*target*), la cible (*target*) subit 1D3 dégâts (*damage*).
 
 > "Que les malfaisants ne trouvent aucun repos."
 
 ## Hommes de main (*Henchmen*)
 
-### Guild Mercenary
+### Mercenaire de la Guilde (*Guild Mercenary*)
 
-*Homme de main, Mercenary, Humain* (*Henchman, Mercenary, Human*) - 50 pa
+*Homme de main, Mercenaire, Humain* (*Henchman, Mercenary, Human*) - 50 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -924,9 +924,9 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 > "Cinquante pièces d'argent (*silver*), et ma lame est à vous."
 
-### Guild Recruit
+### Recrue de la Guilde (*Guild Recruit*)
 
-*Homme de main, Mercenary, Humain* (*Henchman, Mercenary, Human*) - 30 pa
+*Homme de main, Mercenaire, Humain* (*Henchman, Mercenary, Human*) - 30 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -940,9 +940,9 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 ## Brutes
 
-### Mercenary Ogre
+### Ogre mercenaire (*Mercenary Ogre*)
 
-*Brute, Mercenary, Ogre* - 100 pa
+*Brute, Mercenaire, Ogre* (*Brute, Mercenary, Ogre*) - 100 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -956,9 +956,9 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 ## Bêtes (*Beasts*)
 
-### Hunting Dog
+### Chien de chasse (*Hunting Dog*)
 
-*Bête, Mercenary, Chien* (*Beast, Mercenary, Dog*) - 30 pa
+*Bête, Mercenaire, Chien* (*Beast, Mercenary, Dog*) - 30 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -971,7 +971,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 **Règles spéciales :**
 
 - **Débusquez-les ! (*Sniff 'em Out*) :** les combattants ennemis (*enemy fighter*) qui sont cachés (*hidden*) ne sont pas cachés (*hidden*) tant qu'ils sont à 9" ou moins de ce combattant (*fighter*).
-- **Pisteurs (*Trackers*) :** à chaque séquence d'après-bataille (*aftermath sequence*), quand vous fouillez la cité, si votre groupe de fouille (*search party*) comprend au moins un Hunting Dog, vous pouvez relancer (*re-roll*) le jet d'exploration (*exploration roll*).
+- **Pisteurs (*Trackers*) :** à chaque séquence d'après-bataille (*aftermath sequence*), quand vous fouillez la cité, si votre groupe de fouille (*search party*) comprend au moins un Chien de chasse (*Hunting Dog*), vous pouvez relancer (*re-roll*) le jet d'exploration (*exploration roll*).
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
@@ -989,14 +989,14 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 | lasting injury table | table des blessures durables | Campagne et feuille de bande |
 | vintage wine | grand cru | Repaires et règles de repaire |
 | Fighter List | Liste des combattants | Armureries et listes d'équipement |
-| Witch Hunter List | Liste des Witch Hunters | Armureries et listes d'équipement |
+| Chasseur de sorcières (*Witch Hunter*) List | Liste des Chasseurs de sorcières (*Witch Hunter*) | Armureries et listes d'équipement |
 | Torchlight/Lantern | Lanterne/Torche | Objets |
 
 ## Notes du traducteur
 
 Les numéros de page sont ceux imprimés dans la VO v1.03.
 
-- Ensemble du lot : les encadrés disposés en grille (origines p. 54, repaires p. 55) sont lus ligne par ligne, ce qui garde le même ordre pour les origines, les repaires et les chefs. Les listes de l'armurerie (p. 58) sont lues colonne par colonne : Liste principale, Liste d'armement, Liste des Champions, Liste des Ogres, Liste des Clerics, Liste des Witch Hunters, Liste des Sorciers.
+- Ensemble du lot : les encadrés disposés en grille (origines p. 54, repaires p. 55) sont lus ligne par ligne, ce qui garde le même ordre pour les origines, les repaires et les chefs. Les listes de l'armurerie (p. 58) sont lues colonne par colonne : Liste principale, Liste d'armement, Liste des Champions, Liste des Ogres, Liste des Clercs, Liste des Chasseurs de sorcières (*Witch Hunter*), Liste des Magiciens.
 - Ensemble du lot : les citations des combattants sont en anglais ancien et en caractères gothiques dans la VO. Elles sont rendues en français d'aujourd'hui.
 - p. 53 : le sommaire écrit "Guild Mercenaries Fighter List" alors que la page s'intitule "Guild Mercenaries Fighters List" : même VF, "Liste des combattants".
 - p. 53 : "a mundane life" est rendu par "une existence ordinaire", pour réserver "vie" au terme de jeu.
@@ -1006,11 +1006,11 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 55 : "You can find out more about holdings and strongholds in Chapter 5" renvoie à un chapitre qui n'existe pas dans la v1.03. Le renvoi est conservé.
 - p. 55 : la VO écrit "the city" et "the guild" sans majuscule, trois fois dans deux textes d'ambiance : minuscules conservées.
 - p. 56 : la table de la Mort d'un Chef écrit "High Wizard" pour "High Wizard of the Guild" : forme courte conservée.
-- p. 56 : le titre "Guild Mercenary Names" est au singulier dans la VO : "Noms des Guild Mercenaries", la VF de ton glossaire. La table D66 des noms n'est pas traduite, comme convenu.
+- p. 56 : le titre "Guild Mercenary Names" est au singulier dans la VO : "Noms des Mercenaires de la Guilde", la VF de ton glossaire. La table D66 des noms n'est pas traduite, comme convenu.
 - p. 57 et 58 : les listes de la VO n'ont pas de ligne d'en-tête. J'ai ajouté "Combattant | Coût" et "Nom | Pièces d'argent" parce qu'un tableau Markdown en exige une.
 - p. 58 : la VO écrit ici "Full-plate" et "Bomb-bolt", et "Full-Plate" et "Bomb-Bolt" p. 61 : même VF.
 - p. 58 : la liste écrit "Lantern/Torch" alors que la description de l'objet (p. 62) s'intitule "Torchlight/Lantern" : même VF, "Lanterne/Torche".
-- p. 58 : la page s'intitule "Witch Hunters List", les parchemins (p. 68 et 70) écrivent "Witch Hunter List" : même VF, "Liste des Witch Hunters".
+- p. 58 : la page s'intitule "Witch Hunters List", les parchemins (p. 68 et 70) écrivent "Witch Hunter List" : même VF, "Liste des Chasseurs de sorcières".
 - p. 59 : le rappel du trait Arcanique est écrit "Critical hit on 5+" au singulier : j'ai repris la formulation unique de l'annexe A, "Touches critiques sur 5+".
 - p. 60 : dans les traits du Canon d'ogre, il manque toujours une virgule entre "Rare 0-1" et "Reload" : virgule rétablie.
 - p. 58 et 60 : la v1.03 remplace l'Arbalète lourde de la Liste des Ogres par une nouvelle arme, l'Arbalète lourde d'ogre (*Ogre Arbalest*), ajoutée au tableau des armes à distance. L'Arbalète lourde (*Arbalest*) reste dans la Liste d'armement.
@@ -1031,19 +1031,19 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 64 : le titre écrit "Will of The Saints" et le texte "Will of the Saints". Le lancement critique est noté "[1o+]" avec la lettre o : écrit "[10+]".
 - p. 64 : Bénédiction des lames parle de "hit rolls" alors que le livre dit "attack rolls" : traduit tel quel par "jets pour toucher".
 - p. 64 : Terre consacrée écrit "armour value" sans majuscule : il s'agit de la valeur d'Armure, écrite avec sa majuscule. La parenthèse "(even if they fail to cast it again)" est rendue par une incise.
-- p. 65 et 66 : ordre de lecture des compétences : colonne de gauche, puis colonne de droite. Les lignes "Mercenary Leaders and Champions only" et "Any Mercenary" sont rendues par "Chefs et Champions Mercenary uniquement" et "N'importe quel Mercenary".
+- p. 65 et 66 : ordre de lecture des compétences : colonne de gauche, puis colonne de droite. Les lignes "Mercenary Leaders and Champions only" et "Any Mercenary" sont rendues par "Chefs et Champions Mercenaires uniquement" et "N'importe quel Mercenaire".
 - p. 65 : Tir à bout portant : les coquilles de la v1.02 (article manquant, "actionmust") sont corrigées en v1.03. Fine gâchette écrit "ranged attack action" sans majuscules : même VF.
 - p. 65 : Cri de ralliement dit "heals 1 damage" alors que le livre dit ailleurs "heal X life point" : traduit tel quel par "soigné de 1 dégât". "a Heavy weapon" est rendu par "une arme qui a le trait d'arme Lourd", pour garder le nom du trait invariable.
 - p. 66 : la parenthèse de Tireur d'élite est rendue par une incise, pour ne pas imbriquer de parenthèses avec les termes originaux.
 - p. 66 : Béni des Saints : en v1.03, c'est "l'attaque" et non plus "la touche" qui n'est pas une touche critique. Tenir bon : "can attempt to stand their ground" devient "can stand their ground".
-- p. 68 : sur le parchemin du Witch Hunter, "Recite Holy Litanies" est désormais suivi de "[Action]", comme chez le Witch Hunter's Apprentice (p. 70).
+- p. 68 : sur le parchemin du Chasseur de sorcières (*Witch Hunter*), "Recite Holy Litanies" est désormais suivi de "[Action]", comme chez l'Apprenti chasseur de sorcières (*Witch Hunter's Apprentice*) (p. 70).
 - p. 68 et 70 : "The commanding player of the target" est rendu par "Le joueur qui contrôle le combattant ciblé", pour garder le terme de ton glossaire.
-- p. 70 : les mots-clés du Witch Hunter's Apprentice sont dans l'ordre "Champion, Human, Mercenary, Witch Hunter" : ordre de la VO conservé.
-- p. 70 : "That fighter" et "for that fighter" (Je te rafistole, Chirurgien) sont rendus par "le combattant choisi", pour ne pas le confondre avec le Plague Doctor.
+- p. 70 : les mots-clés de l'Apprenti chasseur de sorcières (*Witch Hunter's Apprentice*) sont dans l'ordre "Champion, Human, Mercenary, Witch Hunter" : ordre de la VO conservé.
+- p. 70 : "That fighter" et "for that fighter" (Je te rafistole, Chirurgien) sont rendus par "le combattant choisi", pour ne pas le confondre avec le Médecin de peste (*Plague Doctor*).
 - p. 70 : "during battle" est rendu par "au cours de la bataille" et "roll twice and pick either result" par "faire deux jets et choisir l'un des deux résultats".
 - p. 70 : la "lasting injury table" est une table de campagne absente de la v1.03.
-- p. 71 : le Guild Mercenary et le Guild Recruit n'ont pas de règle spéciale : la rubrique n'apparaît pas.
-- p. 72 : la v1.03 retire la règle Force incroyable (*Incredible Strength*) du Mercenary Ogre, qui n'a plus de règle spéciale : la rubrique n'apparaît plus.
-- p. 72 : les trois mots-clés du Mercenary Ogre sont identiques en VO et en VF : ils ne sont donc pas répétés entre parenthèses.
-- p. 72 : Hunting Dog : il manque une ponctuation après "(see below)", et "Starting Experience: 0" n'a pas de point final. La règle Pisteurs est coupée par un point ("when you search the city. If your search party...") : j'ai rétabli une seule phrase. "the city" y est sans majuscule.
-- p. 72 : le profil de la Morsure féroce n'a pas de colonne "Silver" dans la VO. Le Hunting Dog n'a pas de citation.
+- p. 71 : le Mercenaire de la Guilde (*Guild Mercenary*) et la Recrue de la Guilde (*Guild Recruit*) n'ont pas de règle spéciale : la rubrique n'apparaît pas.
+- p. 72 : la v1.03 retire la règle Force incroyable (*Incredible Strength*) de l'Ogre mercenaire (*Mercenary Ogre*), qui n'a plus de règle spéciale : la rubrique n'apparaît plus.
+- p. 72 : les trois mots-clés de l'Ogre mercenaire (*Mercenary Ogre*) sont identiques en VO et en VF : ils ne sont donc pas répétés entre parenthèses.
+- p. 72 : Chien de chasse (*Hunting Dog*) : il manque une ponctuation après "(see below)", et "Starting Experience: 0" n'a pas de point final. La règle Pisteurs est coupée par un point ("when you search the city. If your search party...") : j'ai rétabli une seule phrase. "the city" y est sans majuscule.
+- p. 72 : le profil de la Morsure féroce n'a pas de colonne "Silver" dans la VO. Le Chien de chasse (*Hunting Dog*) n'a pas de citation.

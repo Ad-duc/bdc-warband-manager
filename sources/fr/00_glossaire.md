@@ -1,6 +1,6 @@
 # Black Death City - Playtest v1.03 : glossaire VO > VF
 
-Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné.
+Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné. Mis à jour le 13/10/2026 (version 6) : noms de factions, mots-clés de faction et nom commun "coven" traduits (décision H17). Mis à jour le 14/10/2026 (version 7) : Wizard devient Magicien (décision H18). Mis à jour le 14/10/2026 (version 8) : noms de combattants traduits (décision H19).
 
 ## Ligne directrice
 
@@ -20,16 +20,16 @@ Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les aj
 
 - Le glossaire compte 1142 entrées réparties en 27 catégories. Il est trié par catégorie, puis par ordre alphabétique de la VO.
 - "Imposé" : terme repris tel quel de ton glossaire de départ.
-- "VO conservée" : nom de faction, nom de combattant ou mot-clé identique, laissé en anglais. Ces noms gardent aussi le pluriel anglais de la VO (Dire Wolves, Rot Demons).
+- "VO conservée" : terme laissé en anglais. Depuis les décisions H17 et H19, les noms de factions, leurs mots-clés et les noms de combattants sont traduits, avec le terme anglais entre parenthèses à chaque occurrence.
 - "Tranché (Hn)" : point que tu as arbitré. "Voir Hn" : entrée qui découle de cette décision.
 - Les numéros de page cités sont ceux imprimés dans la VO (page du PDF = page imprimée + 1).
 - Majuscules : la VF garde les majuscules de la VO sur les termes de jeu. Les titres d'entrées (sorts, compétences, objets, rebondissements) ne prennent la majuscule qu'au premier mot, et au premier nom quand ils commencent par un article défini (La Chapelle, Le Coffre).
 
-## Décisions prises (H1 à H16)
+## Décisions prises (H1 à H19)
 
 | Réf. | VO | VF retenue |
 |---|---|---|
-| H1 | the Guild, the Cloister, witch hunter (noms communs tirés de noms conservés en VO) | la Guilde, le Cloître, chasseur de sorcières, et leurs composés : Bannière de la Guilde, Caserne de la Guilde, Icône du Cloître, Seigneur du Cloître, Guilde des chasseurs de sorcières. Les noms de factions, les noms de combattants et les mots-clés restent en VO. |
+| H1 | the Guild, the Cloister, witch hunter (noms communs tirés de noms conservés en VO) | la Guilde, le Cloître, chasseur de sorcières, et leurs composés : Bannière de la Guilde, Caserne de la Guilde, Icône du Cloître, Seigneur du Cloître, Guilde des chasseurs de sorcières. Les noms de factions, leurs mots-clés (voir H17) et les noms de combattants (voir H19) sont traduits. |
 | H2 | Vampyre, Werwulf | Vampire, Loup-garou |
 | H3 | Aristocrat, Assassin, Bat, Beastman, Dog, Knight, Skeleton | Aristocrate, Assassin, Chauve-souris, Homme-bête, Chien, Chevalier, Squelette |
 | H4 | Doom / doomed | Fatalité / frappé de fatalité |
@@ -45,6 +45,9 @@ Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les aj
 | H14 | quarter (scénario III) | quartier |
 | H15 | Balefire | Feu funeste |
 | H16 | Will of the Saints | Volonté des Saints |
+| H17 | Guild Mercenaries, Verminkin, Death Covens, The Blighted Cloister (noms de factions), mots-clés Mercenary, Verminkin, Cloister, et le nom commun coven | Mercenaires de la Guilde, Vermigènes, Cabales de la Mort, Le Cloître gangrené ; mots-clés Mercenaire, Vermigène, Cloître ; coven devient cabale (Armurerie de la Cabale, Cabale du Maître artificier). Le terme anglais suit chaque occurrence entre parenthèses. Les noms de combattants restent en VO. Décision du 13/10/2026. |
+| H18 | Wizard, Warlock, Sorcerer | Wizard = Magicien (mot-clé et composés : Liste des Magiciens, Suite du Magicien) ; Warlock = Sorcier ; Sorcerer = sorcier (Clergé de sorciers, prêtres-sorciers). Remplace "Sorcier" pour Wizard. Décision du 14/10/2026. |
+| H19 | Noms de combattants (56 noms) | Traduits, avec le nom anglais au singulier entre parenthèses à chaque occurrence : Capitaine de la Guilde (*Guild Captain*). Choix notables : Mercenaire de la Guilde (même nom que la faction, comme en VO), Maître artificier (*Sparkseer*), Bâtard du sang (*Misbegotten*), Sorcier vermigène (*Verminkin Warlock*), démons "de la Pourriture" en forme courte. Les tables de noms D66 ne sont pas traduites. Décision du 14/10/2026. |
 
 ## Changements depuis la version 1
 
@@ -85,7 +88,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | 12 | Scénarios : titres et objectifs | 26 |
 | 13 | Rebondissements et tables de scénario | 50 |
 | 14 | Campagne et feuille de bande | 39 |
-| 15 | Factions et combattants (VO conservée) | 60 |
+| 15 | Factions et combattants | 60 |
 | 16 | Origines | 18 |
 | 17 | Repaires et règles de repaire | 51 |
 | 18 | Armureries et listes d'équipement | 23 |
@@ -96,7 +99,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | 23 | Domaines de magie et sorts | 59 |
 | 24 | Compétences | 65 |
 | 25 | Règles spéciales de combattants | 47 |
-| 26 | Épithètes du Blighted Cloister | 36 |
+| 26 | Épithètes du Cloître gangrené | 36 |
 | 27 | Structure du livre | 19 |
 
 ## 01. Général
@@ -150,7 +153,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | friendly | allié | Général | Imposé. "friendly fighter" = combattant allié. |
 | Friendly and Enemy Fighters | Combattants alliés et ennemis | Général | Ajout du lot 02. Rubrique p. 7. |
 | friendly fighter | combattant allié | Général | Ajout du lot 02. Composé de "friendly" (imposé). |
-| Guilder | Guildien | Général | Terme d'ambiance : nom que les Verminkin donnent aux membres de la Guilde. Voir H1. |
+| Guilder | Guildien | Général | Terme d'ambiance : nom que les Vermigènes donnent aux membres de la Guilde. Voir H1. |
 | held item | objet tenu | Général | Imposé. Mot-clé d'objet : Objet tenu. |
 | hire | engager | Général | La VO alterne "hire" et "recruit". |
 | holding | possession | Général | Imposé. Ne pas confondre avec "holding treasure" (porter un trésor). |
@@ -205,8 +208,8 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | template | gabarit | Général |  |
 | test | test | Général | "Initiative test" = test d'Initiative ; "Willpower test" = test de Volonté. |
 | the City | la Cité | Général | Imposé. |
-| the Cloister | le Cloître | Général | Tranché (H1). L'ordre monastique, dans le texte courant. Le nom de faction "The Blighted Cloister" et le mot-clé "Cloister" restent en VO. |
-| the Guild | la Guilde | Général | Tranché (H1). L'organisation, dans le texte courant. Le nom de faction "Guild Mercenaries" et les noms de combattants restent en VO. |
+| the Cloister | le Cloître | Général | Tranché (H1). L'ordre monastique, dans le texte courant. Faction : Le Cloître gangrené ; mot-clé : Cloître (voir H17). |
+| the Guild | la Guilde | Général | Tranché (H1). L'organisation, dans le texte courant. Faction : Mercenaires de la Guilde (voir H17) ; les noms de combattants restent en VO. |
 | the Saints | les Saints | Général | Majuscule conservée, comme pour "Living Saints" = Saints vivants. |
 | token | pion | Général | Par cohérence avec "treasure token" = pion trésor (imposé). |
 | Two-Handed Melee Weapons | Armes de corps à corps à deux mains | Général | Ajout du lot 02. Sous-règle des objets tenus (p. 15). |
@@ -216,7 +219,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | version number | numéro de version | Général |  |
 | vertical distance | distance verticale | Général |  |
 | visibility | visibilité | Général |  |
-| void-chasm | gouffre du néant | Général | Terme d'ambiance (Verminkin). |
+| void-chasm | gouffre du néant | Général | Terme d'ambiance (Vermigènes). |
 | warband | bande | Général | Imposé. |
 | warband rating | valeur de bande | Général | Imposé. |
 | Warband Roster | feuille de bande | Général |  |
@@ -266,17 +269,17 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 |---|---|---|---|
 | Aristocrat | Aristocrate | Types de combattants et mots-clés | Mot-clé de combattant. Tranché (H3). |
 | Assassin | Assassin | Types de combattants et mots-clés | Mot-clé de combattant. Identique en VO et en VF. |
-| Bat | Chauve-souris | Types de combattants et mots-clés | Mot-clé de combattant (Dire Bat). Tranché (H3). |
+| Bat | Chauve-souris | Types de combattants et mots-clés | Mot-clé de combattant (Chauve-souris sinistre). Tranché (H3). |
 | Beast | Bête | Types de combattants et mots-clés | Imposé. Pluriel de rubrique : Bêtes. |
 | Beastman | Homme-bête | Types de combattants et mots-clés | Mot-clé de combattant. Tranché (H3). |
 | Brute | Brute | Types de combattants et mots-clés | Imposé. |
 | Champion | Champion | Types de combattants et mots-clés | Imposé. |
-| Cloister | Cloister | Types de combattants et mots-clés | VO conservée (mot-clé identique au nom de faction). |
+| Cloister | Cloître | Types de combattants et mots-clés | Mot-clé de faction. Tranché (H17). |
 | Contraption | Engin | Types de combattants et mots-clés | Imposé. |
 | Demon | Démon | Types de combattants et mots-clés | Imposé. |
-| Dog | Chien | Types de combattants et mots-clés | Mot-clé de combattant (Hunting Dog, Dire Wolf). Tranché (H3). |
-| Fly | Vol | Types de combattants et mots-clés | Imposé. Attention : le Bloat Fly (une mouche) a aussi le mot-clé Vol. |
-| Gargoyle | Gargoyle | Types de combattants et mots-clés | VO conservée (mot-clé identique au nom du combattant). |
+| Dog | Chien | Types de combattants et mots-clés | Mot-clé de combattant (Chien de chasse, Loup sinistre). Tranché (H3). |
+| Fly | Vol | Types de combattants et mots-clés | Imposé. Attention : la Mouche bouffie (une mouche) a aussi le mot-clé Vol. |
+| Gargoyle | Gargouille | Types de combattants et mots-clés | Tranché (H19). Mot-clé identique au nom du combattant. |
 | Held Item | Objet tenu | Types de combattants et mots-clés | Mot-clé d'objet. |
 | Henchman | Homme de main | Types de combattants et mots-clés | Imposé. Pluriel : Hommes de main (la VO écrit aussi "Henchmen" comme mot-clé, p. 50). |
 | Henchmen | Hommes de main | Types de combattants et mots-clés | Ajout du lot 06. Pluriel de rubrique de "Henchman" (liste des combattants et parchemins). |
@@ -284,8 +287,8 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Item | Objet | Types de combattants et mots-clés | Mot-clé d'objet. |
 | Knight | Chevalier | Types de combattants et mots-clés | Mot-clé de combattant. Tranché (H3). |
 | Leader | Chef | Types de combattants et mots-clés | Imposé. |
-| Mercenary | Mercenary | Types de combattants et mots-clés | VO conservée, d'après le modèle de profil imposé. |
-| Ogre | Ogre | Types de combattants et mots-clés | Mot-clé de combattant (porté aussi par le Rat-Mutant). Identique en VO et en VF. |
+| Mercenary | Mercenaire | Types de combattants et mots-clés | Mot-clé de faction. Tranché (H17). Pluriel : Mercenaires. |
+| Ogre | Ogre | Types de combattants et mots-clés | Mot-clé de combattant (porté aussi par le Rat-mutant). Identique en VO et en VF. |
 | Priest | Prêtre | Types de combattants et mots-clés | Imposé. |
 | Rat | Rat | Types de combattants et mots-clés | Mot-clé de combattant. Identique en VO et en VF. |
 | Skeleton | Squelette | Types de combattants et mots-clés | Mot-clé de combattant. Tranché (H3). |
@@ -293,10 +296,10 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Thrall | Asservi | Types de combattants et mots-clés | Imposé. |
 | Undead | Mort-vivant | Types de combattants et mots-clés | Imposé. |
 | Vampyre | Vampire | Types de combattants et mots-clés | Tranché (H2). La graphie archaïsante de la VO n'est pas reprise. |
-| Verminkin | Verminkin | Types de combattants et mots-clés | VO conservée (mot-clé identique au nom de faction). |
+| Verminkin | Vermigène | Types de combattants et mots-clés | Mot-clé de faction. Tranché (H17). Pluriel : Vermigènes. |
 | Werwulf | Loup-garou | Types de combattants et mots-clés | Tranché (H2). La forme archaïsante de la VO n'est pas reprise. |
-| Witch Hunter | Witch Hunter | Types de combattants et mots-clés | VO conservée (mot-clé identique au nom du combattant). |
-| Wizard | Sorcier | Types de combattants et mots-clés | Imposé. |
+| Witch Hunter | Chasseur de sorcières | Types de combattants et mots-clés | Tranché (H19). Mot-clé identique au nom du combattant. |
+| Wizard | Magicien | Types de combattants et mots-clés | Tranché (H18). Remplace "Sorcier" du glossaire de départ. |
 | Zombie | Zombie | Types de combattants et mots-clés | Identique en VO et en VF (mot-clé et nom de combattant). |
 
 ## 04. Valeurs et profils
@@ -606,7 +609,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | spell | sort | Magie | Imposé. |
 | spell keyword | mot-clé de sort | Magie |  |
 | Spell Lore | Domaine de magie | Magie | Imposé. "Lore of X" = Domaine de X. |
-| spellcaster | lanceur de sorts | Magie | Ajout du lot 05. Terme général (p. 50) ; la règle spéciale du Verminkin Warlock s'écrit Lanceur de sorts. |
+| spellcaster | lanceur de sorts | Magie | Ajout du lot 05. Terme général (p. 50) ; la règle spéciale du Sorcier vermigène s'écrit Lanceur de sorts. |
 | Successfully Cast | Lancement réussi | Magie |  |
 | Summon Spell | Sort d'Invocation | Magie | Imposé. |
 | Uncontrolled Burst of Power | Déferlement de pouvoir incontrôlé | Magie | Résultat 8+ du jet de fiasco. "sursaut" est réservé à "surge activation". |
@@ -792,7 +795,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Banished | Banni | Campagne et feuille de bande | Table des blessures des Démons, résultat 11-16. |
 | Battles Fought | Batailles livrées | Campagne et feuille de bande | Champ de la feuille de bande. |
 | Beasts Injury Table | Table des blessures des Bêtes | Campagne et feuille de bande | Citée p. 116 ; absente de la v1.03. |
-| Blighted Cloister Epithets | Épithètes du Blighted Cloister | Campagne et feuille de bande | Table D66 traduite (catégorie 26). |
+| Blighted Cloister Epithets | Épithètes du Cloître gangrené | Campagne et feuille de bande | Table D66 traduite (catégorie 26). |
 | bonus experience | expérience bonus | Campagne et feuille de bande |  |
 | Campaign Rules | Règles de campagne | Campagne et feuille de bande |  |
 | Death of a Leader | Mort d'un Chef | Campagne et feuille de bande |  |
@@ -805,7 +808,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Former Leader | Ancien Chef | Campagne et feuille de bande |  |
 | Fractured Essence | Essence fracturée | Campagne et feuille de bande | Table des blessures des Démons, résultat 21-36. |
 | Holdings Ransacked | Possessions saccagées | Campagne et feuille de bande | Champ de la feuille de bande. |
-| House | Maison | Campagne et feuille de bande | Maison noble des Death Covens ("House Dragul" = Maison Dragul). |
+| House | Maison | Campagne et feuille de bande | Maison noble des Cabales de la Mort ("House Dragul" = Maison Dragul). |
 | income | revenu | Campagne et feuille de bande | "collect income" = percevoir le revenu. |
 | injury | blessure | Campagne et feuille de bande |  |
 | Jars of Canal Leeches | Bocaux de sangsues des canaux | Campagne et feuille de bande | Champ de la feuille de bande, sous le butin ; aucune règle associée dans la v1.03. |
@@ -814,11 +817,11 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | lasting injury table | table des blessures durables | Campagne et feuille de bande | Ajout du lot 06. Table de campagne citée p. 70, absente de la v1.03. |
 | level | niveau | Campagne et feuille de bande | "advance levels" = gagner des niveaux. |
 | level of Black Rot | niveau de Pourriture noire | Campagne et feuille de bande | Règle de campagne à venir (case "Black Rot" de la feuille de bande). |
-| Names (name tables) | Noms | Campagne et feuille de bande | "Guild Mercenary Names" = Noms des Guild Mercenaries, etc. Le contenu de ces tables D66 n'est pas traduit. |
+| Names (name tables) | Noms | Campagne et feuille de bande | "Guild Mercenary Names" = Noms des Mercenaires de la Guilde, etc. Le contenu de ces tables D66 n'est pas traduit. |
 | permanent injury | blessure permanente | Campagne et feuille de bande |  |
 | promote | promouvoir | Campagne et feuille de bande |  |
 | Skeleton & Thrall Injury Table | Table des blessures des Squelettes et des Asservis | Campagne et feuille de bande |  |
-| Skeletons & Thralls | Squelettes et Asservis | Campagne et feuille de bande | Rubrique des règles de campagne des Death Covens. |
+| Skeletons & Thralls | Squelettes et Asservis | Campagne et feuille de bande | Rubrique des règles de campagne des Cabales de la Mort. |
 | standard injury table | table des blessures standard | Campagne et feuille de bande |  |
 | Type | Type | Campagne et feuille de bande | Champ de la feuille de bande. |
 | Unharmed | Intact | Campagne et feuille de bande | Table des blessures des Démons, résultat 41-65. |
@@ -828,100 +831,100 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Warband Name | Nom de la bande | Campagne et feuille de bande | Champ de la feuille de bande. |
 | Wargear, Spells, Skills, Injuries, etc | Équipement, sorts, compétences, blessures, etc. | Campagne et feuille de bande | Champ de la feuille de bande. |
 
-## 15. Factions et combattants (VO conservée)
+## 15. Factions et combattants
 
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
-| Assassin's Apprentice | Assassin's Apprentice | Factions et combattants (VO conservée) | VO conservée. Combattant Verminkin. |
-| Barrow Champion | Barrow Champion | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. |
-| Barrow Lord | Barrow Lord | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. |
-| Bloat Fly | Bloat Fly | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. |
-| Bloodcursed Courtesan | Bloodcursed Courtesan | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. |
-| Bloodcursed Knight | Bloodcursed Knight | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. |
-| Bloodcursed Noble | Bloodcursed Noble | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. |
-| Cloister Champion | Cloister Champion | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. |
-| Cloister Knight | Cloister Knight | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. |
-| Cloister Sorcerer | Cloister Sorcerer | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. |
-| Darkcloven Beastman | Darkcloven Beastman | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. La liste p. 117 écrit "Darkcloven Beastmen". |
-| Darkcloven Shaman | Darkcloven Shaman | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. |
-| Death Covens | Death Covens | Factions et combattants (VO conservée) | VO conservée. Faction. La VO écrit aussi "Death Coven" au singulier (p. 96). |
-| Demonic Rot-Colossal | Demonic Rot-Colossal | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. |
-| Demonic Rot-Herald | Demonic Rot-Herald | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. |
-| Demonic Rotspawn | Demonic Rotspawn | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. |
-| Dire Bat | Dire Bat | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. |
-| Dire Wolf | Dire Wolf | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. |
-| Dreg Cultist | Dreg Cultist | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. |
-| Gargoyle | Gargoyle | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. |
-| Giant Rat | Giant Rat | Factions et combattants (VO conservée) | VO conservée. Combattant Verminkin. |
-| Guild Captain | Guild Captain | Factions et combattants (VO conservée) | VO conservée. Combattant Guild Mercenaries. |
-| Guild Champion | Guild Champion | Factions et combattants (VO conservée) | VO conservée. Combattant Guild Mercenaries. |
-| Guild Cleric | Guild Cleric | Factions et combattants (VO conservée) | VO conservée. Combattant Guild Mercenaries. |
-| Guild Mercenaries | Guild Mercenaries | Factions et combattants (VO conservée) | VO conservée. Faction. |
-| Guild Mercenary | Guild Mercenary | Factions et combattants (VO conservée) | VO conservée. Combattant Guild Mercenaries. |
-| Guild Recruit | Guild Recruit | Factions et combattants (VO conservée) | VO conservée. Combattant Guild Mercenaries. |
-| Guild Wizard | Guild Wizard | Factions et combattants (VO conservée) | VO conservée. Combattant Guild Mercenaries. |
-| High Sorcerer | High Sorcerer | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. |
-| High Wizard of the Guild | High Wizard of the Guild | Factions et combattants (VO conservée) | VO conservée. Combattant Guild Mercenaries. La VO écrit aussi "High Wizard" (p. 56). |
-| Hunting Dog | Hunting Dog | Factions et combattants (VO conservée) | VO conservée. Combattant Guild Mercenaries. |
-| Ironfang Warlord | Ironfang Warlord | Factions et combattants (VO conservée) | VO conservée. Combattant Verminkin. |
-| Knight-Abbot | Knight-Abbot | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. L'origine L'Oint cite un "Knight-Abbot Noble" (p. 114). |
-| Lycanfell Beast | Lycanfell Beast | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens (forme transformée). |
-| Lycanfell Noble | Lycanfell Noble | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. |
-| Mercenary Ogre | Mercenary Ogre | Factions et combattants (VO conservée) | VO conservée. Combattant Guild Mercenaries. |
-| Misbegotten | Misbegotten | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. |
-| Necromancer | Necromancer | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. Le nom commun "necromancer" du texte d'ambiance devient "nécromancien". |
-| Necromancer's Apprentice | Necromancer's Apprentice | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. |
-| Nightfang Assassin | Nightfang Assassin | Factions et combattants (VO conservée) | VO conservée. Combattant Verminkin. |
-| Noble | Noble | Factions et combattants (VO conservée) | VO conservée (identique en VF). Combattant Guild Mercenaries. |
-| Plague Doctor | Plague Doctor | Factions et combattants (VO conservée) | VO conservée. Combattant Guild Mercenaries. |
-| Pox Priest | Pox Priest | Factions et combattants (VO conservée) | VO conservée. Combattant Verminkin. |
-| Pox Priest's Apprentice | Pox Priest's Apprentice | Factions et combattants (VO conservée) | VO conservée. Combattant Verminkin. La VO écrit aussi "Pox Priest Apprentices" (p. 74). |
-| Rat-Mutant | Rat-Mutant | Factions et combattants (VO conservée) | VO conservée. Combattant Verminkin. La liste p. 77 écrit "Rat Mutant". |
-| Rolling-Contraption | Rolling-Contraption | Factions et combattants (VO conservée) | VO conservée. Combattant Verminkin. La VO écrit aussi "Rolling Contraptions" (p. 74). |
-| Rot Demon | Rot Demon | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. |
-| Rotling | Rotling | Factions et combattants (VO conservée) | VO conservée. Combattant Blighted Cloister. |
-| Skeleton Warrior | Skeleton Warrior | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. |
-| Sparkseer | Sparkseer | Factions et combattants (VO conservée) | VO conservée. Combattant Verminkin. |
-| Sparkseer's Apprentice | Sparkseer's Apprentice | Factions et combattants (VO conservée) | VO conservée. Combattant Verminkin. |
-| The Blighted Cloister | The Blighted Cloister | Factions et combattants (VO conservée) | VO conservée. Faction. Forme courte en VO : "Blighted Cloister". |
-| Verminkin | Verminkin | Factions et combattants (VO conservée) | VO conservée. Faction. |
-| Verminkin Champion | Verminkin Champion | Factions et combattants (VO conservée) | VO conservée. Combattant Verminkin. |
-| Verminkin Warlock | Verminkin Warlock | Factions et combattants (VO conservée) | VO conservée. Combattant Verminkin. |
-| Verminkin Warrior | Verminkin Warrior | Factions et combattants (VO conservée) | VO conservée. Combattant Verminkin. |
-| Witch Hunter | Witch Hunter | Factions et combattants (VO conservée) | VO conservée. Combattant Guild Mercenaries. |
-| Witch Hunter's Apprentice | Witch Hunter's Apprentice | Factions et combattants (VO conservée) | VO conservée. Combattant Guild Mercenaries. |
-| Zombie | Zombie | Factions et combattants (VO conservée) | VO conservée (identique en VF). Combattant Death Covens. |
-| Zombie Ogre | Zombie Ogre | Factions et combattants (VO conservée) | VO conservée. Combattant Death Covens. |
+| Assassin's Apprentice | Apprenti assassin | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Barrow Champion | Champion des tumulus | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
+| Barrow Lord | Seigneur des tumulus | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
+| Bloat Fly | Mouche bouffie | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
+| Bloodcursed Courtesan | Courtisane au sang maudit | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
+| Bloodcursed Knight | Chevalier au sang maudit | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
+| Bloodcursed Noble | Noble au sang maudit | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
+| Cloister Champion | Champion du Cloître | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
+| Cloister Knight | Chevalier du Cloître | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
+| Cloister Sorcerer | Sorcier du Cloître | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
+| Darkcloven Beastman | Homme-bête Sabot-Noir | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. La liste p. 117 écrit "Darkcloven Beastmen". |
+| Darkcloven Shaman | Chaman Sabot-Noir | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
+| Death Covens | Cabales de la Mort | Factions et combattants | Faction. Tranché (H17). La VO écrit aussi "Death Coven" au singulier (p. 96) : Cabale de la Mort. |
+| Demonic Rot-Colossal | Colosse de la Pourriture | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
+| Demonic Rot-Herald | Héraut de la Pourriture | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
+| Demonic Rotspawn | Rejeton de la Pourriture | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
+| Dire Bat | Chauve-souris sinistre | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
+| Dire Wolf | Loup sinistre | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
+| Dreg Cultist | Cultiste de la lie | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
+| Gargoyle | Gargouille | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
+| Giant Rat | Rat géant | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Guild Captain | Capitaine de la Guilde | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
+| Guild Champion | Champion de la Guilde | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
+| Guild Cleric | Clerc de la Guilde | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
+| Guild Mercenaries | Mercenaires de la Guilde | Factions et combattants | Faction. Tranché (H17). Mot-clé : Mercenaire (Mercenary). |
+| Guild Mercenary | Mercenaire de la Guilde | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
+| Guild Recruit | Recrue de la Guilde | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
+| Guild Wizard | Magicien de la Guilde | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
+| High Sorcerer | Grand Sorcier | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
+| High Wizard of the Guild | Grand Magicien de la Guilde | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. La VO écrit aussi "High Wizard" (p. 56). |
+| Hunting Dog | Chien de chasse | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
+| Ironfang Warlord | Seigneur de guerre Croc-de-Fer | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Knight-Abbot | Chevalier-Abbé | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. L'origine L'Oint cite un "Knight-Abbot Noble" (p. 114). |
+| Lycanfell Beast | Bête lycanthrope | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort (forme transformée). |
+| Lycanfell Noble | Noble lycanthrope | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
+| Mercenary Ogre | Ogre mercenaire | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
+| Misbegotten | Bâtard du sang | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
+| Necromancer | Nécromancien | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. Le nom commun "necromancer" du texte d'ambiance devient "nécromancien". |
+| Necromancer's Apprentice | Apprenti nécromancien | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
+| Nightfang Assassin | Assassin Croc-de-Nuit | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Noble | Noble | Factions et combattants | VO conservée (identique en VF). Combattant des Mercenaires de la Guilde. |
+| Plague Doctor | Médecin de peste | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
+| Pox Priest | Prêtre de la Vérole | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Pox Priest's Apprentice | Apprenti prêtre de la Vérole | Factions et combattants | Tranché (H19). Combattant des Vermigènes. La VO écrit aussi "Pox Priest Apprentices" (p. 74). |
+| Rat-Mutant | Rat-mutant | Factions et combattants | Tranché (H19). Combattant des Vermigènes. La liste p. 77 écrit "Rat Mutant". |
+| Rolling-Contraption | Engin roulant | Factions et combattants | Tranché (H19). Combattant des Vermigènes. La VO écrit aussi "Rolling Contraptions" (p. 74). |
+| Rot Demon | Démon de la Pourriture | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
+| Rotling | Pourrisson | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
+| Skeleton Warrior | Guerrier squelette | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
+| Sparkseer | Maître artificier | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Sparkseer's Apprentice | Apprenti artificier | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| The Blighted Cloister | Le Cloître gangrené | Factions et combattants | Faction. Tranché (H17). Forme courte en VO : "Blighted Cloister". Mot-clé : Cloître. |
+| Verminkin | Vermigènes | Factions et combattants | Faction. Tranché (H17). Mot-clé : Vermigène. |
+| Verminkin Champion | Champion vermigène | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Verminkin Warlock | Sorcier vermigène | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Verminkin Warrior | Guerrier vermigène | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Witch Hunter | Chasseur de sorcières | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
+| Witch Hunter's Apprentice | Apprenti chasseur de sorcières | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
+| Zombie | Zombie | Factions et combattants | VO conservée (identique en VF). Combattant des Cabales de la Mort. |
+| Zombie Ogre | Ogre zombie | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
 
 ## 16. Origines
 
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
-| Acolytes of Plague | Acolytes de la peste | Origines | Origine Verminkin. |
-| Aristocrats of Blood | Aristocrates du sang | Origines | Origine Death Covens. |
-| Awakened Lord | Seigneur éveillé | Origines | Origine Death Covens. |
-| Blessed Rabble | Populace bénie | Origines | Origine Blighted Cloister. |
-| Disgraced Noble | Noble déchu | Origines | Origine Guild Mercenaries. |
-| Knights-Militant | Chevaliers militants | Origines | Origine Blighted Cloister. |
-| Merciless Tyrant | Tyran impitoyable | Origines | Origine Verminkin. |
-| Perks | Avantages | Origines | Rubrique des origines du Blighted Cloister ; les autres factions écrivent "Special Rules". |
-| Priesthood of Sorcerers | Clergé de sorciers | Origines | Origine Blighted Cloister. Nom commun traduit (voir H1) ; les combattants restent "High Sorcerer" et "Cloister Sorcerer". |
+| Acolytes of Plague | Acolytes de la peste | Origines | Origine des Vermigènes. |
+| Aristocrats of Blood | Aristocrates du sang | Origines | Origine des Cabales de la Mort. |
+| Awakened Lord | Seigneur éveillé | Origines | Origine des Cabales de la Mort. |
+| Blessed Rabble | Populace bénie | Origines | Origine du Cloître gangrené. |
+| Disgraced Noble | Noble déchu | Origines | Origine des Mercenaires de la Guilde. |
+| Knights-Militant | Chevaliers militants | Origines | Origine du Cloître gangrené. |
+| Merciless Tyrant | Tyran impitoyable | Origines | Origine des Vermigènes. |
+| Perks | Avantages | Origines | Rubrique des origines du Cloître gangrené ; les autres factions écrivent "Special Rules". |
+| Priesthood of Sorcerers | Clergé de sorciers | Origines | Origine du Cloître gangrené. Nom commun traduit (voir H1 et H18 : sorcerer = sorcier) ; les combattants restent "High Sorcerer" et "Cloister Sorcerer". |
 | Restrictions | Restrictions | Origines | Rubrique des origines. |
-| Rogue Necromancer | Nécromancien renégat | Origines | Origine Death Covens. Nom commun traduit (voir H1) ; le combattant reste "Necromancer". |
-| Rooftop Runners | Coureurs des toits | Origines | Origine Verminkin. |
-| Sparkseer Coven | Coven du Sparkseer | Origines | Origine Verminkin. "coven" conservé comme nom commun (voir H1). |
-| Swords for Hire | Épées à louer | Origines | Origine Guild Mercenaries. |
-| The Anointed One | L'Oint | Origines | Origine Blighted Cloister. |
-| The Hunt Descends | La chasse s'abat | Origines | Origine Death Covens. |
-| Witch Hunters Guild | Guilde des chasseurs de sorcières | Origines | Origine Guild Mercenaries. Nom commun traduit (voir H1) ; le combattant reste "Witch Hunter". |
-| Wizard's Retinue | Suite du Sorcier | Origines | Origine Guild Mercenaries. |
+| Rogue Necromancer | Nécromancien renégat | Origines | Origine des Cabales de la Mort. Nom commun traduit (voir H1) ; le combattant reste "Necromancer". |
+| Rooftop Runners | Coureurs des toits | Origines | Origine des Vermigènes. |
+| Sparkseer Coven | Cabale du Maître artificier | Origines | Origine des Vermigènes. "coven" traduit par "cabale" (voir H17). |
+| Swords for Hire | Épées à louer | Origines | Origine des Mercenaires de la Guilde. |
+| The Anointed One | L'Oint | Origines | Origine du Cloître gangrené. |
+| The Hunt Descends | La chasse s'abat | Origines | Origine des Cabales de la Mort. |
+| Witch Hunters Guild | Guilde des chasseurs de sorcières | Origines | Origine des Mercenaires de la Guilde. Nom commun traduit (voir H1) ; le combattant reste "Witch Hunter". |
+| Wizard's Retinue | Suite du Magicien | Origines | Origine des Mercenaires de la Guilde. |
 
 ## 17. Repaires et règles de repaire
 
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
 | A Howl in the Night | Un hurlement dans la nuit | Repaires et règles de repaire | Règle du Grand pavillon. |
-| Ancient Barrows | Tumulus anciens | Repaires et règles de repaire | Repaire Death Covens. |
+| Ancient Barrows | Tumulus anciens | Repaires et règles de repaire | Repaire des Cabales de la Mort. |
 | Atonement for Sin | Expiation des péchés | Repaires et règles de repaire | Règle de la Maison capitulaire. |
 | Banquet of Blood | Banquet de sang | Repaires et règles de repaire | Règle du Manoir opulent. |
 | Barrow Offering | Offrande au tumulus | Repaires et règles de repaire | Règle des Tumulus anciens. |
@@ -929,25 +932,25 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Blasphemous Study | Étude blasphématoire | Repaires et règles de repaire | Règle du Scriptorium isolé. |
 | Brew Concoctions | Préparer des décoctions | Repaires et règles de repaire | Option de l'Étude blasphématoire. |
 | Canonise the Fallen | Canoniser les défunts | Repaires et règles de repaire | Règle de la Chaire de rue. |
-| Chapter House | Maison capitulaire | Repaires et règles de repaire | Repaire Guild Mercenaries. La VO écrit aussi "Chapter house". |
+| Chapter House | Maison capitulaire | Repaires et règles de repaire | Repaire des Mercenaires de la Guilde. La VO écrit aussi "Chapter house". |
 | Combat Drills | Exercices de combat | Repaires et règles de repaire | Règle de la Caserne de la Guilde. |
 | Create a Zombie | Créer un Zombie | Repaires et règles de repaire | Option de l'Étude nécromantique. |
 | Damnation | Damnation | Repaires et règles de repaire | Table de la Communion démoniaque, résultat 2. |
 | Demonic Ally | Allié démoniaque | Repaires et règles de repaire | Table de la Communion démoniaque, résultat 13-15. |
 | Demonic Communion | Communion démoniaque | Repaires et règles de repaire | Règle de l'Autel impie. |
-| Desecrated Chapel | Chapelle profanée | Repaires et règles de repaire | Repaire Verminkin. |
-| Dilapidated Manor | Manoir délabré | Repaires et règles de repaire | Repaire Guild Mercenaries. |
+| Desecrated Chapel | Chapelle profanée | Repaires et règles de repaire | Repaire des Vermigènes. |
+| Dilapidated Manor | Manoir délabré | Repaires et règles de repaire | Repaire des Mercenaires de la Guilde. |
 | Eager to Prove | Avides de faire leurs preuves | Repaires et règles de repaire | Règle de la Caserne de la Guilde. |
-| Embalmer's Hall | Salle de l'embaumeur | Repaires et règles de repaire | Repaire Death Covens. La VO écrit aussi "Embalmers' Hall". |
+| Embalmer's Hall | Salle de l'embaumeur | Repaires et règles de repaire | Repaire des Cabales de la Mort. La VO écrit aussi "Embalmers' Hall". |
 | Embalmers' Hall | Salle de l'embaumeur | Repaires et règles de repaire | Ajout du lot 08. Variante de "Embalmer's Hall" dans le texte d'ambiance du repaire (p. 95). |
 | engineering points | points d'ingénierie | Repaires et règles de repaire | Règles Bricoleurs fous et Ingénierie folle. |
 | Fighting Pits | Fosses de combat | Repaires et règles de repaire | Règle du Terrier fortifié. |
-| Fortified Keep | Donjon fortifié | Repaires et règles de repaire | Repaire Blighted Cloister. |
-| Fortified Warren | Terrier fortifié | Repaires et règles de repaire | Repaire Verminkin. |
-| Grand Pavilion | Grand pavillon | Repaires et règles de repaire | Repaire Death Covens. |
-| Guild Barracks | Caserne de la Guilde | Repaires et règles de repaire | Repaire Guild Mercenaries. Voir H1. |
-| Hidden Library | Bibliothèque cachée | Repaires et règles de repaire | Repaire Guild Mercenaries. |
-| Hidden Vantage | Poste d'observation caché | Repaires et règles de repaire | Repaire Verminkin. |
+| Fortified Keep | Donjon fortifié | Repaires et règles de repaire | Repaire du Cloître gangrené. |
+| Fortified Warren | Terrier fortifié | Repaires et règles de repaire | Repaire des Vermigènes. |
+| Grand Pavilion | Grand pavillon | Repaires et règles de repaire | Repaire des Cabales de la Mort. |
+| Guild Barracks | Caserne de la Guilde | Repaires et règles de repaire | Repaire des Mercenaires de la Guilde. Voir H1. |
+| Hidden Library | Bibliothèque cachée | Repaires et règles de repaire | Repaire des Mercenaires de la Guilde. |
+| Hidden Vantage | Poste d'observation caché | Repaires et règles de repaire | Repaire des Vermigènes. |
 | Immortal Slumber | Sommeil immortel | Repaires et règles de repaire | Règle des Tumulus anciens. |
 | Income | Revenu | Repaires et règles de repaire | Ligne de profil des repaires. |
 | Living Saints | Saints vivants | Repaires et règles de repaire | "the Saints" = les Saints. |
@@ -956,18 +959,18 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Martial Training | Entraînement martial | Repaires et règles de repaire | Règle du Donjon fortifié. |
 | Minor Boon | Faveur mineure | Repaires et règles de repaire | Table de la Communion démoniaque, résultat 9-12. |
 | Necromantic Study | Étude nécromantique | Repaires et règles de repaire | Règle de la Salle de l'embaumeur. |
-| Opulent Manor | Manoir opulent | Repaires et règles de repaire | Repaire Death Covens. |
+| Opulent Manor | Manoir opulent | Repaires et règles de repaire | Repaire des Cabales de la Mort. |
 | Prayers of Plague | Prières de peste | Repaires et règles de repaire | Règle de la Chapelle profanée. |
 | Read Forbidden Scrolls | Lire les parchemins interdits | Repaires et règles de repaire | Option de l'Étude nécromantique. |
-| Rickety Workshop | Atelier branlant | Repaires et règles de repaire | Repaire Verminkin. |
+| Rickety Workshop | Atelier branlant | Repaires et règles de repaire | Repaire des Vermigènes. |
 | Run the Roofs | Courir les toits | Repaires et règles de repaire | Règle du Poste d'observation caché. |
 | Scry Ancient Scrolls | Scruter les parchemins anciens | Repaires et règles de repaire | Option de l'Étude blasphématoire. |
 | Search the City | Fouiller la Cité | Repaires et règles de repaire | Règle du Donjon fortifié. |
-| Secluded Scriptorium | Scriptorium isolé | Repaires et règles de repaire | Repaire Blighted Cloister. |
+| Secluded Scriptorium | Scriptorium isolé | Repaires et règles de repaire | Repaire du Cloître gangrené. |
 | Silence (boon table) | Silence | Repaires et règles de repaire | Table de la Communion démoniaque, résultat 3-8 ; même VF que le sort homonyme. |
 | Sorcerous Study | Étude de la sorcellerie | Repaires et règles de repaire | Règle de la Bibliothèque cachée. |
-| Street Pulpit | Chaire de rue | Repaires et règles de repaire | Repaire Blighted Cloister. |
-| Unholy Altar | Autel impie | Repaires et règles de repaire | Repaire Blighted Cloister. |
+| Street Pulpit | Chaire de rue | Repaires et règles de repaire | Repaire du Cloître gangrené. |
+| Unholy Altar | Autel impie | Repaires et règles de repaire | Repaire du Cloître gangrené. |
 | Venerate Living Saints | Vénérer les Saints vivants | Repaires et règles de repaire | Règle de la Chaire de rue. |
 | vintage wine | grand cru | Repaires et règles de repaire | Ajout du lot 06. Bouteille de grand cru (règle Grands crus du Manoir délabré). |
 | Vintage Wines | Grands crus | Repaires et règles de repaire | Règle du Manoir délabré. "bottle of vintage wine" = bouteille de grand cru. |
@@ -977,11 +980,11 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
 | Champion List | Liste des Champions | Armureries et listes d'équipement | Toutes les armureries. |
-| Cleric List | Liste des Clerics | Armureries et listes d'équipement | Armurerie de la Guilde. Reprend le nom du combattant Guild Cleric. |
+| Cleric List | Liste des Clercs | Armureries et listes d'équipement | Armurerie de la Guilde. Reprend le nom du combattant Clerc de la Guilde. |
 | Cloister Armoury | Armurerie du Cloître | Armureries et listes d'équipement | Voir H1. |
-| Contraption List | Liste des Engins | Armureries et listes d'équipement | Armurerie Verminkin. |
-| Coven Armoury | Armurerie du Coven | Armureries et listes d'équipement | Voir H1. |
-| Dreg List | Liste des Dregs | Armureries et listes d'équipement | Armurerie du Cloître. Reprend le nom du combattant Dreg Cultist. |
+| Contraption List | Liste des Engins | Armureries et listes d'équipement | Armurerie vermigène. |
+| Coven Armoury | Armurerie de la Cabale | Armureries et listes d'équipement | Voir H1 et H17. |
+| Dreg List | Liste de la lie | Armureries et listes d'équipement | Armurerie du Cloître. Reprend le nom du combattant Cultiste de la lie. |
 | Fighter List | Liste des combattants | Armureries et listes d'équipement | Ajout du lot 06. Variante de "Fighters List" employée dans le sommaire de faction (p. 53). |
 | Fighter Scrolls | Parchemins de combattants | Armureries et listes d'équipement | Rubrique de faction. |
 | Fighters List | Liste des combattants | Armureries et listes d'équipement | Rubrique de faction. La VO écrit aussi "Fighter List". |
@@ -990,15 +993,15 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Munitions List | Liste d'armement | Armureries et listes d'équipement | Armurerie de la Guilde. "munitions" serait un faux ami : la liste contient quatre armes et un seul projectile. |
 | Ogre List | Liste des Ogres | Armureries et listes d'équipement | Armurerie de la Guilde. |
 | Practitioner Item List | Liste d'objets des Praticiens | Armureries et listes d'équipement | Armurerie du Cloître. |
-| Practitioner List | Liste des Praticiens | Armureries et listes d'équipement | Armureries Verminkin, du Coven et du Cloître. |
-| Rat-Mutant List | Liste des Rat-Mutants | Armureries et listes d'équipement | Armurerie Verminkin. Reprend le nom du combattant. |
-| Sparkseer List | Liste des Sparkseers | Armureries et listes d'équipement | Armurerie Verminkin. Reprend le nom du combattant. |
-| Vermin Armoury | Armurerie Verminkin | Armureries et listes d'équipement | Ajout du lot 07. Variante de "Verminkin Armoury" employée dans les titres des p. 78 à 80. |
-| Verminkin Armoury | Armurerie Verminkin | Armureries et listes d'équipement | Les titres des p. 78 à 80 écrivent "Vermin Armoury" : même VF. |
-| Witch Hunter List | Liste des Witch Hunters | Armureries et listes d'équipement | Ajout du lot 06. Variante de "Witch Hunters List" employée dans les parchemins (p. 68 et 70). |
-| Witch Hunters List | Liste des Witch Hunters | Armureries et listes d'équipement | Armurerie de la Guilde. Reprend le nom du combattant. La VO écrit aussi "Witch Hunter List". |
-| Wizard List | Liste des Sorciers | Armureries et listes d'équipement | Armurerie de la Guilde. |
-| Zombie Ogre List | Liste des Zombie Ogres | Armureries et listes d'équipement | Armurerie du Coven. Reprend le nom du combattant. |
+| Practitioner List | Liste des Praticiens | Armureries et listes d'équipement | Armureries vermigène, de la Cabale et du Cloître. |
+| Rat-Mutant List | Liste des Rats-mutants | Armureries et listes d'équipement | Armurerie vermigène. Reprend le nom du combattant. |
+| Sparkseer List | Liste des Artificiers | Armureries et listes d'équipement | Armurerie vermigène. Reprend le nom du combattant. |
+| Vermin Armoury | Armurerie vermigène | Armureries et listes d'équipement | Ajout du lot 07. Variante de "Verminkin Armoury" employée dans les titres des p. 78 à 80. Voir H17. |
+| Verminkin Armoury | Armurerie vermigène | Armureries et listes d'équipement | Les titres des p. 78 à 80 écrivent "Vermin Armoury" : même VF. Voir H17. |
+| Witch Hunter List | Liste des Chasseurs de sorcières | Armureries et listes d'équipement | Ajout du lot 06. Variante de "Witch Hunters List" employée dans les parchemins (p. 68 et 70). |
+| Witch Hunters List | Liste des Chasseurs de sorcières | Armureries et listes d'équipement | Armurerie de la Guilde. Reprend le nom du combattant. La VO écrit aussi "Witch Hunter List". |
+| Wizard List | Liste des Magiciens | Armureries et listes d'équipement | Armurerie de la Guilde. Voir H18. |
+| Zombie Ogre List | Liste des Ogres zombies | Armureries et listes d'équipement | Armurerie de la Cabale. Reprend le nom du combattant. |
 
 ## 19. Armes de corps à corps
 
@@ -1006,17 +1009,17 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 |---|---|---|---|
 | Arcane Staff | Bâton arcanique | Armes de corps à corps |  |
 | Axe | Hache | Armes de corps à corps |  |
-| Biting Fangs | Crocs mordants | Armes de corps à corps | Arme naturelle du Dire Bat. |
+| Biting Fangs | Crocs mordants | Armes de corps à corps | Arme naturelle de la Chauve-souris sinistre. |
 | Club | Gourdin | Armes de corps à corps | Exemple p. 14 et équipement du Squelette invoqué. |
 | Club/Mace/Hammer | Gourdin/Masse/Marteau | Armes de corps à corps |  |
-| Crushing Bulk | Carcasse écrasante | Armes de corps à corps | Arme naturelle du Rolling-Contraption. "Carcasse" pour ne pas réemployer "Masse" (Mace). |
-| Cursed Blade | Lame maudite | Armes de corps à corps | Armurerie du Coven. |
+| Crushing Bulk | Carcasse écrasante | Armes de corps à corps | Arme naturelle de l'Engin roulant. "Carcasse" pour ne pas réemployer "Masse" (Mace). |
+| Cursed Blade | Lame maudite | Armes de corps à corps | Armurerie de la Cabale. |
 | Cursed Sword | Épée maudite | Armes de corps à corps | v1.02 uniquement : remplacée par "Cursed Blade" dans la Liste des Praticiens en v1.03. |
 | Dagger | Dague | Armes de corps à corps |  |
-| Dagger/Punch Dagger | Dague/Dague de poing | Armes de corps à corps | Armurerie Verminkin. |
+| Dagger/Punch Dagger | Dague/Dague de poing | Armes de corps à corps | Armurerie vermigène. |
 | Demonic Rot Blade | Lame de pourriture démoniaque | Armes de corps à corps |  |
-| Demonic Rot Maw | Gueule de pourriture démoniaque | Armes de corps à corps | Arme naturelle du Demonic Rotspawn. |
-| Demonic Rot Strike | Frappe de pourriture démoniaque | Armes de corps à corps | Arme naturelle du Rotling. |
+| Demonic Rot Maw | Gueule de pourriture démoniaque | Armes de corps à corps | Arme naturelle du Rejeton de la Pourriture. |
+| Demonic Rot Strike | Frappe de pourriture démoniaque | Armes de corps à corps | Arme naturelle du Pourrisson. |
 | Ensorcelled Halberd | Hallebarde ensorcelée | Armes de corps à corps |  |
 | Ensorcelled Weapon | Arme ensorcelée | Armes de corps à corps |  |
 | Flail | Fléau | Armes de corps à corps |  |
@@ -1027,24 +1030,24 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Heavy Axe | Hache lourde | Armes de corps à corps | Ne possède pas le trait Lourd. |
 | Heavy-Flail | Fléau lourd | Armes de corps à corps | Ne possède pas le trait Lourd. |
 | Iron Claw | Griffe de fer | Armes de corps à corps |  |
-| Nasty Bite | Morsure infecte | Armes de corps à corps | Arme naturelle du Giant Rat. |
-| Necrotic Bite | Morsure nécrotique | Armes de corps à corps | Arme naturelle du Dire Wolf. |
+| Nasty Bite | Morsure infecte | Armes de corps à corps | Arme naturelle du Rat géant. |
+| Necrotic Bite | Morsure nécrotique | Armes de corps à corps | Arme naturelle du Loup sinistre. |
 | Ogre Blade | Lame d'ogre | Armes de corps à corps |  |
 | Ogre Great Weapon | Grande arme d'ogre | Armes de corps à corps |  |
 | Ogre Mace | Masse d'ogre | Armes de corps à corps |  |
-| Oversized Claw | Griffe démesurée | Armes de corps à corps | Arme naturelle du Rat-Mutant. |
+| Oversized Claw | Griffe démesurée | Armes de corps à corps | Arme naturelle du Rat-mutant. |
 | Poison Blade | Lame empoisonnée | Armes de corps à corps |  |
-| Proboscis | Trompe | Armes de corps à corps | Arme naturelle du Bloat Fly. |
-| Rat-Mutant Blade | Lame de Rat-Mutant | Armes de corps à corps |  |
+| Proboscis | Trompe | Armes de corps à corps | Arme naturelle de la Mouche bouffie. |
+| Rat-Mutant Blade | Lame de Rat-mutant | Armes de corps à corps |  |
 | Spark-Drill | Foreuse à étincelles | Armes de corps à corps |  |
 | Spark-Powered Fists | Poings à étincelles | Armes de corps à corps |  |
 | Spear | Lance | Armes de corps à corps |  |
-| Stone Talons | Serres de pierre | Armes de corps à corps | Arme naturelle de la Gargoyle. |
+| Stone Talons | Serres de pierre | Armes de corps à corps | Arme naturelle de la Gargouille. |
 | Sword | Épée | Armes de corps à corps |  |
 | Unarmed Strike | Frappe à mains nues | Armes de corps à corps | Arme des combattants désarmés. |
-| Vicious Bite | Morsure féroce | Armes de corps à corps | Arme naturelle du Hunting Dog. |
+| Vicious Bite | Morsure féroce | Armes de corps à corps | Arme naturelle du Chien de chasse. |
 | Warhammer | Marteau de guerre | Armes de corps à corps |  |
-| Wulfen Claws | Griffes de loup | Armes de corps à corps | Arme naturelle de la Lycanfell Beast. |
+| Wulfen Claws | Griffes de loup | Armes de corps à corps | Arme naturelle de la Bête lycanthrope. |
 | Zombie Bite | Morsure de zombie | Armes de corps à corps | Arme naturelle du Zombie. |
 | Zweihander | Espadon | Armes de corps à corps | Tranché (H9). Le mot allemand de la VO n'est pas repris. |
 
@@ -1061,7 +1064,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Brace of Pistols | Paire de pistolets | Armes à distance |  |
 | Crossbow | Arbalète | Armes à distance |  |
 | Fire Bombs | Bombes incendiaires | Armes à distance |  |
-| Flame Canister | Bonbonne à flammes | Armes à distance | Ajout du lot 07. Variante sans trait d'union de "Flame-Canister" (Liste des Rat-Mutants, p. 78). |
+| Flame Canister | Bonbonne à flammes | Armes à distance | Ajout du lot 07. Variante sans trait d'union de "Flame-Canister" (Liste des Rats-mutants, p. 78). |
 | Flame-Canister | Bonbonne à flammes | Armes à distance | La VO écrit aussi "Flame Canister". |
 | Flamethrower | Lance-flammes | Armes à distance |  |
 | Hand Crossbow | Arbalète de poing | Armes à distance |  |
@@ -1086,7 +1089,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 |---|---|---|---|
 | Cuirass | Cuirasse | Armures |  |
 | Full-Plate | Armure de plates | Armures | Tranché (H7). La VO écrit aussi "Full-plate". |
-| Heavy Plating | Blindage lourd | Armures | Armurerie Verminkin. |
+| Heavy Plating | Blindage lourd | Armures | Armurerie vermigène. |
 | Ogre Armour | Armure d'ogre | Armures |  |
 | Warded Robes | Robe de protection | Armures | "ward" = protection (voir Protections démoniaques). |
 
@@ -1094,12 +1097,12 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
-| Ancient Banner | Bannière ancienne | Objets | Armurerie du Coven. |
-| Bestial Companion | Compagnon bestial | Objets | Armurerie du Coven. |
-| Bomb Rat | Rat-bombe | Objets | Armurerie Verminkin. |
+| Ancient Banner | Bannière ancienne | Objets | Armurerie de la Cabale. |
+| Bestial Companion | Compagnon bestial | Objets | Armurerie de la Cabale. |
+| Bomb Rat | Rat-bombe | Objets | Armurerie vermigène. |
 | Bomb-Bolt | Carreau explosif | Objets | La VO écrit aussi "Bomb-bolt". |
 | Cauldron | Chaudron | Objets | Armurerie du Cloître. |
-| Clan Banner | Bannière de clan | Objets | Armurerie Verminkin. |
+| Clan Banner | Bannière de clan | Objets | Armurerie vermigène. |
 | Cloister Icon | Icône du Cloître | Objets | Voir H1. |
 | Demonic Familiar | Familier démoniaque | Objets | Armurerie du Cloître. |
 | Drive the Stake | Planter le pieu | Objets | Action bonus des Pieux en bois. |
@@ -1119,10 +1122,10 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Set Up Bomb Rat | Placer le rat-bombe | Objets | Action bonus du Rat-bombe. |
 | Shield | Bouclier | Objets |  |
 | Smoke Bomb | Bombe fumigène | Objets |  |
-| Spirit Guardian | Esprit gardien | Objets | Armurerie du Coven. |
+| Spirit Guardian | Esprit gardien | Objets | Armurerie de la Cabale. |
 | Torchlight/Lantern | Lanterne/Torche | Objets | Ajout du lot 06. Variante de "Lantern/Torch" employée dans le titre de l'objet (p. 62). |
-| Wheel-Spikes | Pointes de roue | Objets | Armurerie Verminkin. |
-| Winged Familiar | Familier ailé | Objets | Armurerie du Coven. |
+| Wheel-Spikes | Pointes de roue | Objets | Armurerie vermigène. |
+| Winged Familiar | Familier ailé | Objets | Armurerie de la Cabale. |
 | Wooden Stakes | Pieux en bois | Objets |  |
 
 ## 23. Domaines de magie et sorts
@@ -1141,7 +1144,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Cursed Blades | Lames maudites | Domaines de magie et sorts | Sang, 2. |
 | Dark Vitality | Sombre vitalité | Domaines de magie et sorts | Véroles, 5. |
 | Death Blast | Explosion de mort | Domaines de magie et sorts | Nécromancie, 5. |
-| Demonic Lore of Rot | Domaine démoniaque de la Pourriture | Domaines de magie et sorts | Domaine du Blighted Cloister. |
+| Demonic Lore of Rot | Domaine démoniaque de la Pourriture | Domaines de magie et sorts | Domaine du Cloître gangrené. |
 | Demonic Strength | Force démoniaque | Domaines de magie et sorts | Pourriture, 2. |
 | Doom | Fatalité | Domaines de magie et sorts | Tranché (H4). Tunnels profonds, 2. |
 | Draw Blood | Saignée | Domaines de magie et sorts | Sang, 1. |
@@ -1154,13 +1157,13 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Godspeed | Célérité divine | Domaines de magie et sorts | Saints, 3. |
 | Healing Essence | Essence curative | Domaines de magie et sorts | Saints, 1. |
 | Holy Strength | Force sacrée | Domaines de magie et sorts | Saints, 5. |
-| Lore of Blessed Maggots | Domaine des Asticots bénis | Domaines de magie et sorts | Domaine du Blighted Cloister. |
-| Lore of Blood | Domaine du Sang | Domaines de magie et sorts | Domaine des Death Covens. |
-| Lore of Necromancy | Domaine de la Nécromancie | Domaines de magie et sorts | Domaine des Death Covens. |
-| Lore of Poxes | Domaine des Véroles | Domaines de magie et sorts | Domaine des Verminkin. "pox" = vérole. |
-| Lore of Sanctioned Magic | Domaine de la Magie autorisée | Domaines de magie et sorts | Tranché (H10). Domaine des Guild Mercenaries. |
-| Lore of the Saints | Domaine des Saints | Domaines de magie et sorts | Domaine des Guild Mercenaries. |
-| Lore of the Under-Tunnels | Domaine des Tunnels profonds | Domaines de magie et sorts | Domaine des Verminkin. |
+| Lore of Blessed Maggots | Domaine des Asticots bénis | Domaines de magie et sorts | Domaine du Cloître gangrené. |
+| Lore of Blood | Domaine du Sang | Domaines de magie et sorts | Domaine des Cabales de la Mort. |
+| Lore of Necromancy | Domaine de la Nécromancie | Domaines de magie et sorts | Domaine des Cabales de la Mort. |
+| Lore of Poxes | Domaine des Véroles | Domaines de magie et sorts | Domaine des Vermigènes. "pox" = vérole. |
+| Lore of Sanctioned Magic | Domaine de la Magie autorisée | Domaines de magie et sorts | Tranché (H10). Domaine des Mercenaires de la Guilde. |
+| Lore of the Saints | Domaine des Saints | Domaines de magie et sorts | Domaine des Mercenaires de la Guilde. |
+| Lore of the Under-Tunnels | Domaine des Tunnels profonds | Domaines de magie et sorts | Domaine des Vermigènes. |
 | Plague Bomb | Bombe de peste | Domaines de magie et sorts | Véroles, 6. |
 | Plague Pit | Fosse de peste | Domaines de magie et sorts | Pourriture, 6. "pit" = fosse. |
 | Plague Wind | Vent de peste | Domaines de magie et sorts | Pourriture, 4. |
@@ -1178,7 +1181,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Shadow Leap | Bond d'ombre | Domaines de magie et sorts | Tunnels profonds, 1. |
 | Silence | Silence | Domaines de magie et sorts | Magie autorisée, 4. |
 | Spray of Vomit | Gerbe de vomi | Domaines de magie et sorts | Véroles, 1. "Gerbe" plutôt que "Jet", réservé aux jets de dés. |
-| Summon Rotling | Invoquer un Rotling | Domaines de magie et sorts | Pourriture, 1. |
+| Summon Rotling | Invoquer un Pourrisson | Domaines de magie et sorts | Pourriture, 1. |
 | Swollen Form | Forme boursouflée | Domaines de magie et sorts | Asticots bénis, 1. |
 | Torrent of Fire | Torrent de feu | Domaines de magie et sorts | Magie autorisée, 5. |
 | Tunnel from Below | Tunnel venu d'en bas | Domaines de magie et sorts | Tunnels profonds, 4. |
@@ -1199,11 +1202,11 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Black Blood | Sang noir | Compétences | Bénédictions de Sainte Pourriture. |
 | Blackpowder Specialist | Spécialiste de la poudre noire | Compétences | Ruse de soldat. |
 | Blessed by the Saints | Béni des Saints | Compétences | Ruse de soldat. |
-| Blessings of Saint Rot | Bénédictions de Sainte Pourriture | Compétences | Table de compétences du Blighted Cloister (tout combattant Cloister). "Sainte" par accord avec Pourriture ; la VO ne précise pas le genre. |
+| Blessings of Saint Rot | Bénédictions de Sainte Pourriture | Compétences | Table de compétences du Cloître gangrené (tout combattant Cloître). "Sainte" par accord avec Pourriture ; la VO ne précise pas le genre. |
 | Chill Touch | Toucher glacial | Compétences | Seigneurs immortels. Ta correction. |
 | Cloud of Bats | Nuée de chauves-souris | Compétences | Sombre aristocratie. Compétence et action bonus du même nom. |
 | Crackshot | Fine gâchette | Compétences | Vieux briscards. |
-| Dark Aristocracy | Sombre aristocratie | Compétences | Table de compétences des Death Covens (Chefs et Champions Morts-vivants Aristocrates). |
+| Dark Aristocracy | Sombre aristocratie | Compétences | Table de compétences des Cabales de la Mort (Chefs et Champions Morts-vivants Aristocrates). |
 | Death March | Marche de la mort | Compétences | Seigneurs immortels. Compétence et action bonus du même nom. |
 | Demonic Conduit | Conduit démoniaque | Compétences | Ordonnés du Cloître. |
 | Dirty Fighter | Combattant déloyal | Compétences | Machinations magistrales. |
@@ -1225,10 +1228,10 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Leech Blood | Drain de sang | Compétences | Sombre aristocratie. Compétence et action bonus du même nom. |
 | Marksman | Tireur d'élite | Compétences | Ruse de soldat. |
 | Master of Dark Science | Maître de la sombre science | Compétences | Machinations magistrales. |
-| Masterful Schemes | Machinations magistrales | Compétences | Table de compétences des Verminkin (Chefs et Champions Verminkin). |
+| Masterful Schemes | Machinations magistrales | Compétences | Table de compétences des Vermigènes (Chefs et Champions Vermigènes). |
 | Mesmeric Gaze | Regard hypnotique | Compétences | Sombre aristocratie. |
-| Old Dogs | Vieux briscards | Compétences | Table de compétences des Guild Mercenaries (Chefs et Champions Mercenary). |
-| Ordained of the Cloister | Ordonnés du Cloître | Compétences | Table de compétences du Blighted Cloister (Chefs et Champions Cloister). Voir H1. |
+| Old Dogs | Vieux briscards | Compétences | Table de compétences des Mercenaires de la Guilde (Chefs et Champions Mercenaires). |
+| Ordained of the Cloister | Ordonnés du Cloître | Compétences | Table de compétences du Cloître gangrené (Chefs et Champions Cloître). Voir H1. |
 | Point Blank Shot | Tir à bout portant | Compétences | Vieux briscards. |
 | Purveyor of Poisons | Empoisonneur | Compétences | Machinations magistrales. |
 | Rallying Cry | Cri de ralliement | Compétences | Vieux briscards. Compétence et action bonus du même nom. |
@@ -1241,7 +1244,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Shield Expert | Expert du bouclier | Compétences | Ruse de soldat. |
 | Shooting Drills | Exercices de tir | Compétences | Compétences de vétéran. |
 | Shroud of Flies | Linceul de mouches | Compétences | Bénédictions de Sainte Pourriture. |
-| Soldier's Cunning | Ruse de soldat | Compétences | Table de compétences des Guild Mercenaries (tout Mercenary). |
+| Soldier's Cunning | Ruse de soldat | Compétences | Table de compétences des Mercenaires de la Guilde (tout Mercenaire). |
 | Stand Ground | Tenir bon | Compétences | Ruse de soldat. À distinguer de "Hold Ground" = Tenir le terrain. |
 | Steady Aim | Visée stable | Compétences | Compétences de vétéran. |
 | Supernatural Healing | Guérison surnaturelle | Compétences | Sombre aristocratie. |
@@ -1249,11 +1252,11 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Too Cunning to Die | Trop rusé pour mourir | Compétences | Machinations magistrales. |
 | Tough Bastard | Dur à cuire | Compétences | Compétences de vétéran. |
 | Toxic Miasma | Miasme toxique | Compétences | Bénédictions de Sainte Pourriture. |
-| Tunnel Runners | Coureurs de tunnels | Compétences | Table de compétences des Verminkin (tout combattant Verminkin). |
-| Undying Lords | Seigneurs immortels | Compétences | Table de compétences des Death Covens (Chefs et Champions Morts-vivants Squelettes). |
+| Tunnel Runners | Coureurs de tunnels | Compétences | Table de compétences des Vermigènes (tout combattant Vermigène). |
+| Undying Lords | Seigneurs immortels | Compétences | Table de compétences des Cabales de la Mort (Chefs et Champions Morts-vivants Squelettes). |
 | Unholy Sermon | Sermon impie | Compétences | Ordonnés du Cloître. Compétence et action bonus du même nom. |
 | Unholy Strength | Force impie | Compétences | Sombre aristocratie. |
-| Unshakeable | Inébranlable | Compétences | Compétences de vétéran ; aussi règle spéciale de plusieurs combattants des Death Covens. |
+| Unshakeable | Inébranlable | Compétences | Compétences de vétéran ; aussi règle spéciale de plusieurs combattants des Cabales de la Mort. |
 | Vector of Entropy | Vecteur d'entropie | Compétences | Bénédictions de Sainte Pourriture. |
 | Vessel of Black Rot | Réceptacle de la Pourriture noire | Compétences | Bénédictions de Sainte Pourriture. |
 | Veteran Skills | Compétences de vétéran | Compétences | Table de compétences ouverte à tout combattant. |
@@ -1263,94 +1266,94 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
-| Ambitious Warlord | Seigneur de guerre ambitieux | Règles spéciales de combattants | Ironfang Warlord. |
-| Bat Wings | Ailes de chauve-souris | Règles spéciales de combattants | Mutation de lignée du Misbegotten. |
-| Bestial Transformation | Transformation bestiale | Règles spéciales de combattants | Lycanfell Noble. |
-| Blood Magic | Magie du sang | Règles spéciales de combattants | Bloodcursed Courtesan. |
-| Bloodline Mutations | Mutations de lignée | Règles spéciales de combattants | Misbegotten. |
-| Dark Spellcraft | Sombre art de la magie | Règles spéciales de combattants | Cloister Sorcerer. |
-| Darkcloven Magic | Magie Darkcloven | Règles spéciales de combattants | Darkcloven Shaman. "Darkcloven" conservé (nom de combattant). |
-| Demonic Spellcraft | Art démoniaque de la magie | Règles spéciales de combattants | Demonic Rot-Herald. |
-| Demonic Wards | Protections démoniaques | Règles spéciales de combattants | Demonic Rot-Herald, Rot Demon, Demonic Rotspawn, Demonic Rot-Colossal. |
-| Engineer | Ingénierie | Règles spéciales de combattants | Action bonus du Sparkseer et de son apprenti. |
-| Guild Magic | Magie de la Guilde | Règles spéciales de combattants | Guild Wizard. Voir H1. |
-| Holy Magic | Magie sacrée | Règles spéciales de combattants | Guild Cleric et Pox Priest's Apprentice. |
-| Hulking Form | Carrure massive | Règles spéciales de combattants | Mutation de lignée du Misbegotten. |
-| Incredible Strength | Force incroyable | Règles spéciales de combattants | v1.02 uniquement (Mercenary Ogre, Rat-Mutant, Zombie Ogre, Demonic Rot-Colossal) : supprimée en v1.03. |
-| Large and Heavy | Grand et lourd | Règles spéciales de combattants | Rolling-Contraption. |
-| Lord of the Cloister | Seigneur du Cloître | Règles spéciales de combattants | Knight-Abbot et Cloister Champion. Voir H1. |
-| Mad Engineering | Ingénierie folle | Règles spéciales de combattants | Sparkseer et Sparkseer's Apprentice. |
-| Martial Lineage | Lignée martiale | Règles spéciales de combattants | Bloodcursed Knight. |
-| Master of Dark Spellcraft | Maître du sombre art de la magie | Règles spéciales de combattants | High Sorcerer. |
-| Master of Necromancy | Maître de la nécromancie | Règles spéciales de combattants | Necromancer. |
-| Master of Plague Magic | Maître de la magie de peste | Règles spéciales de combattants | Pox Priest. |
-| Master of Spellcraft | Maître de l'art de la magie | Règles spéciales de combattants | High Wizard of the Guild. |
-| Noble Blood | Sang noble | Règles spéciales de combattants | Bloodcursed Noble et Lycanfell Noble. |
-| Noble Lineage | Noble lignée | Règles spéciales de combattants | Barrow Lord. |
-| One-cut, One-kill | Un coup, un mort | Règles spéciales de combattants | Nightfang Assassin et Assassin's Apprentice. |
-| Patch You Up | Je te rafistole | Règles spéciales de combattants | Action du Plague Doctor. |
+| Ambitious Warlord | Seigneur de guerre ambitieux | Règles spéciales de combattants | Seigneur de guerre Croc-de-Fer. |
+| Bat Wings | Ailes de chauve-souris | Règles spéciales de combattants | Mutation de lignée du Bâtard du sang. |
+| Bestial Transformation | Transformation bestiale | Règles spéciales de combattants | Noble lycanthrope. |
+| Blood Magic | Magie du sang | Règles spéciales de combattants | Courtisane au sang maudit. |
+| Bloodline Mutations | Mutations de lignée | Règles spéciales de combattants | Bâtard du sang. |
+| Dark Spellcraft | Sombre art de la magie | Règles spéciales de combattants | Sorcier du Cloître. |
+| Darkcloven Magic | Magie Sabot-Noir | Règles spéciales de combattants | Chaman Sabot-Noir. Reprend le nom du combattant (voir H19). |
+| Demonic Spellcraft | Art démoniaque de la magie | Règles spéciales de combattants | Héraut de la Pourriture. |
+| Demonic Wards | Protections démoniaques | Règles spéciales de combattants | Héraut de la Pourriture, Démon de la Pourriture, Rejeton de la Pourriture, Colosse de la Pourriture. |
+| Engineer | Ingénierie | Règles spéciales de combattants | Action bonus du Maître artificier et de son apprenti. |
+| Guild Magic | Magie de la Guilde | Règles spéciales de combattants | Magicien de la Guilde. Voir H1. |
+| Holy Magic | Magie sacrée | Règles spéciales de combattants | Clerc de la Guilde et Apprenti prêtre de la Vérole. |
+| Hulking Form | Carrure massive | Règles spéciales de combattants | Mutation de lignée du Bâtard du sang. |
+| Incredible Strength | Force incroyable | Règles spéciales de combattants | v1.02 uniquement (Ogre mercenaire, Rat-mutant, Ogre zombie, Colosse de la Pourriture) : supprimée en v1.03. |
+| Large and Heavy | Grand et lourd | Règles spéciales de combattants | Engin roulant. |
+| Lord of the Cloister | Seigneur du Cloître | Règles spéciales de combattants | Chevalier-Abbé et Champion du Cloître. Voir H1. |
+| Mad Engineering | Ingénierie folle | Règles spéciales de combattants | Maître artificier et Apprenti artificier. |
+| Martial Lineage | Lignée martiale | Règles spéciales de combattants | Chevalier au sang maudit. |
+| Master of Dark Spellcraft | Maître du sombre art de la magie | Règles spéciales de combattants | Grand Sorcier. |
+| Master of Necromancy | Maître de la nécromancie | Règles spéciales de combattants | Nécromancien. |
+| Master of Plague Magic | Maître de la magie de peste | Règles spéciales de combattants | Prêtre de la Vérole. |
+| Master of Spellcraft | Maître de l'art de la magie | Règles spéciales de combattants | Grand Magicien de la Guilde. |
+| Noble Blood | Sang noble | Règles spéciales de combattants | Noble au sang maudit et Noble lycanthrope. |
+| Noble Lineage | Noble lignée | Règles spéciales de combattants | Seigneur des tumulus. |
+| One-cut, One-kill | Un coup, un mort | Règles spéciales de combattants | Assassin Croc-de-Nuit et Apprenti assassin. |
+| Patch You Up | Je te rafistole | Règles spéciales de combattants | Action du Médecin de peste. |
 | Patch-up | Rafistoler | Règles spéciales de combattants | Option de l'action bonus Ingénierie. |
-| Ram Horns | Cornes de bélier | Règles spéciales de combattants | Darkcloven Shaman et Darkcloven Beastman. |
-| Recite Holy Litanies | Réciter les litanies sacrées | Règles spéciales de combattants | Action du Witch Hunter et de son apprenti. |
-| Sawbones | Chirurgien | Règles spéciales de combattants | Plague Doctor. Ta correction : "sawbones" désigne un chirurgien. |
-| Seasoned Warrior | Guerrier aguerri | Règles spéciales de combattants | Witch Hunter, Guild Champion, Verminkin Champion. |
-| Skilled Killer | Tueur accompli | Règles spéciales de combattants | Nightfang Assassin. |
-| Sniff 'em Out | Débusquez-les ! | Règles spéciales de combattants | Hunting Dog et Dire Wolf. |
+| Ram Horns | Cornes de bélier | Règles spéciales de combattants | Chaman Sabot-Noir et Homme-bête Sabot-Noir. |
+| Recite Holy Litanies | Réciter les litanies sacrées | Règles spéciales de combattants | Action du Chasseur de sorcières et de son apprenti. |
+| Sawbones | Chirurgien | Règles spéciales de combattants | Médecin de peste. Ta correction : "sawbones" désigne un chirurgien. |
+| Seasoned Warrior | Guerrier aguerri | Règles spéciales de combattants | Chasseur de sorcières, Champion de la Guilde, Champion vermigène. |
+| Skilled Killer | Tueur accompli | Règles spéciales de combattants | Assassin Croc-de-Nuit. |
+| Sniff 'em Out | Débusquez-les ! | Règles spéciales de combattants | Chien de chasse et Loup sinistre. |
 | Soup-up | Trafiquer | Règles spéciales de combattants | Tranché (H12). Option de l'action bonus Ingénierie. |
-| Spellcaster | Lanceur de sorts | Règles spéciales de combattants | Verminkin Warlock. |
-| Spellcraft | Art de la magie | Règles spéciales de combattants | Bloodcursed Noble et Necromancer's Apprentice. |
-| Splat! | Splatch ! | Règles spéciales de combattants | Rolling-Contraption. |
-| Temperamental Transformation | Transformation capricieuse | Règles spéciales de combattants | Lycanfell Beast. |
-| Tinkerer's Know-how | Savoir-faire de bricoleur | Règles spéciales de combattants | Sparkseer. |
-| Trackers | Pisteurs | Règles spéciales de combattants | Hunting Dog et Dire Wolf. |
+| Spellcaster | Lanceur de sorts | Règles spéciales de combattants | Sorcier vermigène. |
+| Spellcraft | Art de la magie | Règles spéciales de combattants | Noble au sang maudit et Apprenti nécromancien. |
+| Splat! | Splatch ! | Règles spéciales de combattants | Engin roulant. |
+| Temperamental Transformation | Transformation capricieuse | Règles spéciales de combattants | Bête lycanthrope. |
+| Tinkerer's Know-how | Savoir-faire de bricoleur | Règles spéciales de combattants | Maître artificier. |
+| Trackers | Pisteurs | Règles spéciales de combattants | Chien de chasse et Loup sinistre. |
 | Trained Duellist | Duelliste entraîné | Règles spéciales de combattants | Noble. |
-| Unpredictable Movement | Mouvement imprévisible | Règles spéciales de combattants | Rolling-Contraption. |
-| Vampyric Bite | Morsure vampirique | Règles spéciales de combattants | Dire Bat. Voir H2. |
-| Vestiges of the Noble | Vestiges du Noble | Règles spéciales de combattants | Lycanfell Beast. |
-| Veteran in Life | Vétéran de son vivant | Règles spéciales de combattants | Barrow Champion. |
-| Veteran of the City | Vétéran de la Cité | Règles spéciales de combattants | Guild Captain. |
-| Wulfen Legs | Pattes de loup | Règles spéciales de combattants | Mutation de lignée du Misbegotten. |
+| Unpredictable Movement | Mouvement imprévisible | Règles spéciales de combattants | Engin roulant. |
+| Vampyric Bite | Morsure vampirique | Règles spéciales de combattants | Chauve-souris sinistre. Voir H2. |
+| Vestiges of the Noble | Vestiges du Noble | Règles spéciales de combattants | Bête lycanthrope. |
+| Veteran in Life | Vétéran de son vivant | Règles spéciales de combattants | Champion des tumulus. |
+| Veteran of the City | Vétéran de la Cité | Règles spéciales de combattants | Capitaine de la Guilde. |
+| Wulfen Legs | Pattes de loup | Règles spéciales de combattants | Mutation de lignée du Bâtard du sang. |
 
-## 26. Épithètes du Blighted Cloister
+## 26. Épithètes du Cloître gangrené
 
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
-| Acolyte of the Black Breath | Acolyte du Souffle noir | Épithètes du Blighted Cloister | D66 : 11. |
-| Anointed of Corruption | Oint de la Corruption | Épithètes du Blighted Cloister | D66 : 12. |
-| Apostle of Miasma | Apôtre du Miasme | Épithètes du Blighted Cloister | D66 : 13. |
-| Ashen One | le Cendreux | Épithètes du Blighted Cloister | D66 : 14. |
-| Bearer of the Seventh Pox | Porteur de la Septième Vérole | Épithètes du Blighted Cloister | D66 : 15. |
-| Father of Maggots | Père des Asticots | Épithètes du Blighted Cloister | D66 : 16. |
-| Fly-Crowned | le Couronné de mouches | Épithètes du Blighted Cloister | D66 : 21. |
-| Giver of Blessed Sores | Dispensateur des Plaies bénies | Épithètes du Blighted Cloister | D66 : 22. |
-| He of the Festering Throne | Celui du Trône purulent | Épithètes du Blighted Cloister | D66 : 23. |
-| He Who Withereth All | Celui qui flétrit toute chose | Épithètes du Blighted Cloister | D66 : 24. |
-| He Whose Breath Befouleth | Celui dont l'haleine empeste | Épithètes du Blighted Cloister | D66 : 25. |
-| Keeper of the Ninth Sore | Gardien de la Neuvième Plaie | Épithètes du Blighted Cloister | D66 : 26. |
-| Mire-Born | Né du bourbier | Épithètes du Blighted Cloister | D66 : 31. |
-| O' the Thousand-Flies | aux Mille Mouches | Épithètes du Blighted Cloister | D66 : 32. |
-| O' the Unclean Miracle | du Miracle impur | Épithètes du Blighted Cloister | D66 : 33. |
-| Prince of Worms | Prince des Vers | Épithètes du Blighted Cloister | D66 : 34. |
-| Rot Incarnate | la Pourriture incarnée | Épithètes du Blighted Cloister | D66 : 35. |
-| Scion of the Black Pox | Rejeton de la Vérole noire | Épithètes du Blighted Cloister | D66 : 36. |
-| Shepherd of Carrion | Berger de la Charogne | Épithètes du Blighted Cloister | D66 : 41. |
-| the Bloated Pastor | le Pasteur bouffi | Épithètes du Blighted Cloister | D66 : 42. |
-| the Crawling Host | la Légion rampante | Épithètes du Blighted Cloister | D66 : 43. |
-| the Defiler of Altars | le Souilleur d'autels | Épithètes du Blighted Cloister | D66 : 44. |
-| the Devourer of Flesh | le Dévoreur de chair | Épithètes du Blighted Cloister | D66 : 45. |
-| the Ever-Hungry | l'Éternel Affamé | Épithètes du Blighted Cloister | D66 : 46. |
-| the Festering Apostle | l'Apôtre purulent | Épithètes du Blighted Cloister | D66 : 51. |
-| the Herald of the Last Plague | le Héraut de la Dernière Peste | Épithètes du Blighted Cloister | D66 : 52. |
-| the Hollow-Eyed | l'Homme aux yeux caves | Épithètes du Blighted Cloister | D66 : 53. |
-| the Mock Redeemer | le Faux Rédempteur | Épithètes du Blighted Cloister | D66 : 54. |
-| the Page of Poxes | le Page des Véroles | Épithètes du Blighted Cloister | D66 : 55. |
-| the Pale Reckoning | le Pâle Châtiment | Épithètes du Blighted Cloister | D66 : 56. |
-| the Saint Defiled | le Saint souillé | Épithètes du Blighted Cloister | D66 : 61. |
-| the Unclean | l'Impur | Épithètes du Blighted Cloister | D66 : 62. |
-| the Unhallowed One | le Sacrilège | Épithètes du Blighted Cloister | D66 : 63. |
-| the Unshriven | l'Impénitent | Épithètes du Blighted Cloister | D66 : 64. |
-| the Withered Posie | le Bouquet flétri | Épithètes du Blighted Cloister | D66 : 65. |
-| Warden of the Festering Covenant | Veilleur de l'Alliance purulente | Épithètes du Blighted Cloister | D66 : 66. |
+| Acolyte of the Black Breath | Acolyte du Souffle noir | Épithètes du Cloître gangrené | D66 : 11. |
+| Anointed of Corruption | Oint de la Corruption | Épithètes du Cloître gangrené | D66 : 12. |
+| Apostle of Miasma | Apôtre du Miasme | Épithètes du Cloître gangrené | D66 : 13. |
+| Ashen One | le Cendreux | Épithètes du Cloître gangrené | D66 : 14. |
+| Bearer of the Seventh Pox | Porteur de la Septième Vérole | Épithètes du Cloître gangrené | D66 : 15. |
+| Father of Maggots | Père des Asticots | Épithètes du Cloître gangrené | D66 : 16. |
+| Fly-Crowned | le Couronné de mouches | Épithètes du Cloître gangrené | D66 : 21. |
+| Giver of Blessed Sores | Dispensateur des Plaies bénies | Épithètes du Cloître gangrené | D66 : 22. |
+| He of the Festering Throne | Celui du Trône purulent | Épithètes du Cloître gangrené | D66 : 23. |
+| He Who Withereth All | Celui qui flétrit toute chose | Épithètes du Cloître gangrené | D66 : 24. |
+| He Whose Breath Befouleth | Celui dont l'haleine empeste | Épithètes du Cloître gangrené | D66 : 25. |
+| Keeper of the Ninth Sore | Gardien de la Neuvième Plaie | Épithètes du Cloître gangrené | D66 : 26. |
+| Mire-Born | Né du bourbier | Épithètes du Cloître gangrené | D66 : 31. |
+| O' the Thousand-Flies | aux Mille Mouches | Épithètes du Cloître gangrené | D66 : 32. |
+| O' the Unclean Miracle | du Miracle impur | Épithètes du Cloître gangrené | D66 : 33. |
+| Prince of Worms | Prince des Vers | Épithètes du Cloître gangrené | D66 : 34. |
+| Rot Incarnate | la Pourriture incarnée | Épithètes du Cloître gangrené | D66 : 35. |
+| Scion of the Black Pox | Rejeton de la Vérole noire | Épithètes du Cloître gangrené | D66 : 36. |
+| Shepherd of Carrion | Berger de la Charogne | Épithètes du Cloître gangrené | D66 : 41. |
+| the Bloated Pastor | le Pasteur bouffi | Épithètes du Cloître gangrené | D66 : 42. |
+| the Crawling Host | la Légion rampante | Épithètes du Cloître gangrené | D66 : 43. |
+| the Defiler of Altars | le Souilleur d'autels | Épithètes du Cloître gangrené | D66 : 44. |
+| the Devourer of Flesh | le Dévoreur de chair | Épithètes du Cloître gangrené | D66 : 45. |
+| the Ever-Hungry | l'Éternel Affamé | Épithètes du Cloître gangrené | D66 : 46. |
+| the Festering Apostle | l'Apôtre purulent | Épithètes du Cloître gangrené | D66 : 51. |
+| the Herald of the Last Plague | le Héraut de la Dernière Peste | Épithètes du Cloître gangrené | D66 : 52. |
+| the Hollow-Eyed | l'Homme aux yeux caves | Épithètes du Cloître gangrené | D66 : 53. |
+| the Mock Redeemer | le Faux Rédempteur | Épithètes du Cloître gangrené | D66 : 54. |
+| the Page of Poxes | le Page des Véroles | Épithètes du Cloître gangrené | D66 : 55. |
+| the Pale Reckoning | le Pâle Châtiment | Épithètes du Cloître gangrené | D66 : 56. |
+| the Saint Defiled | le Saint souillé | Épithètes du Cloître gangrené | D66 : 61. |
+| the Unclean | l'Impur | Épithètes du Cloître gangrené | D66 : 62. |
+| the Unhallowed One | le Sacrilège | Épithètes du Cloître gangrené | D66 : 63. |
+| the Unshriven | l'Impénitent | Épithètes du Cloître gangrené | D66 : 64. |
+| the Withered Posie | le Bouquet flétri | Épithètes du Cloître gangrené | D66 : 65. |
+| Warden of the Festering Covenant | Veilleur de l'Alliance purulente | Épithètes du Cloître gangrené | D66 : 66. |
 
 ## 27. Structure du livre
 
