@@ -3,6 +3,7 @@
  * Role:        Turns a translation chapter (Markdown) into HTML for the rules
  *              reader: GitHub tables, an id on every heading so the contents
  *              list can jump to it, wide tables wrapped in a scrolling box,
+ *              cost columns marked so they line up from one list to the next,
  *              raw HTML escaped rather than rendered, and every die written
  *              with its count (1D6). Optionally, a feedback link after each
  *              heading (rules reader), built from the heading and its line.
@@ -47,6 +48,9 @@ const ESCAPES: Record<string, string> = {
   '"': "&quot;",
   "'": "&#39;",
 };
+
+/** Headers of a cost column, as written in the French translation. */
+const COST_HEADERS = new Set(["Coût", "Pièces d'argent", "Prix"]);
 
 export function escapeHtml(text: string): string {
   return text.replace(/[&<>"']/g, (c) => ESCAPES[c] ?? c);
@@ -106,6 +110,21 @@ export function renderChapter(markdown: string, options: RenderOptions = {}): Re
       html({ text }: Tokens.HTML | Tokens.Tag): string {
         return escapeHtml(text);
       },
+      // Every table sits in a scrolling box. A table whose last column is a
+      // cost gets a second class: the stylesheet gives that column a fixed
+      // width, so the costs of the successive lists of a chapter line up.
+      table(token: Tokens.Table): string {
+        const cells = (row: Tokens.TableCell[]): string => row.map((cell) => this.tablecell(cell)).join("");
+        const head = this.tablerow({ text: cells(token.header) });
+        const body = token.rows.map((row) => this.tablerow({ text: cells(row) })).join("");
+        const last = plainHeading(token.header.at(-1)?.text ?? "");
+        const classes = COST_HEADERS.has(last) ? "reader-table reader-table-cost" : "reader-table";
+        return (
+          `<div class="${classes}"><table>\n<thead>\n${head}</thead>\n` +
+          (body === "" ? "" : `<tbody>${body}</tbody>`) +
+          "</table></div>\n"
+        );
+      },
     },
   });
 
@@ -117,9 +136,6 @@ export function renderChapter(markdown: string, options: RenderOptions = {}): Re
     lines.set(token, line);
     line += (token.raw.match(/\n/g) ?? []).length;
   }
-  const html = marked
-    .parser(tokens)
-    .replaceAll("<table>", '<div class="reader-table"><table>')
-    .replaceAll("</table>", "</table></div>");
+  const html = marked.parser(tokens);
   return { html, sections, headings };
 }
