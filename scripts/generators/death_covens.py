@@ -43,7 +43,7 @@ def build(md_path):
         },
         "schemaVersion": 1,
         "id": "death-covens",
-        "name": T("Death Covens", "Death Covens"),
+        "name": T("Death Covens", "Cabales de la Mort"),
         "description": T(
             "The City is a place of death. The Black Rot has left the population decimated, with bodies piled high in "
             "the streets or cast into mass graves. Their stench now permeates the very soil where it has taken on a dark "
@@ -60,8 +60,8 @@ def build(md_path):
             "had their fill.",
             "\n".join(intro),
         ),
-        "armouryName": T("Coven Armoury", "Armurerie du Coven"),
-        "sourceRef": src.ref(93, "Death Covens"),
+        "armouryName": T("Coven Armoury", "Armurerie de la Cabale"),
+        "sourceRef": src.ref(93, "Cabales de la Mort"),
         "assets": {"shield": "bouclier_death.webp", "accentColor": None},
     }
 
@@ -180,13 +180,13 @@ def build(md_path):
         {"formerLeaderId": "necromancer", "eligibleChampionIds": ["necromancers-apprentice"]},
         {"formerLeaderId": "barrow-lord", "eligibleChampionIds": ["barrow-champion"]},
     ]
-    data["nameTable"] = {"die": "d66", "sourceRef": src.ref(96, "Noms des Death Coven"),
-                         "entries": src.names("Noms des Death Coven")}
+    data["nameTable"] = {"die": "d66", "sourceRef": src.ref(96, "Noms des Cabales de la Mort"),
+                         "entries": src.names("Noms des Cabales de la Mort")}
 
     # ----------------------------------------------------------------------------
     # Wargear
     # ----------------------------------------------------------------------------
-    MEL = "Armurerie du Coven - Armes de corps à corps"
+    MEL = "Armurerie de la Cabale - Armes de corps à corps"
     NOTE_ENS = T("You can use any weapon to represent the Ensorcelled Weapon.",
                  "Vous pouvez utiliser n'importe quelle arme pour représenter l'Arme ensorcelée.")
 
@@ -199,7 +199,7 @@ def build(md_path):
         m("arcane-staff", "Arcane Staff", "Bâton arcanique", 10, 2, 0, 1, "d3", ["arcane", "off-hand"]),
         m("axe", "Axe", "Hache", 16, 3, -1, 1, "d3", ["off-hand"]),
         m("biting-fangs", "Biting Fangs", "Crocs mordants", 0, 4, 0, 1, 1, ["natural-weapon"],
-          page=112, md_ref="Dire Bat", purchasable=False),
+          page=112, md_ref="Chauve-souris sinistre", purchasable=False),
         m("club-mace-hammer", "Club/Mace/Hammer", "Gourdin/Masse/Marteau", 14, 3, 0, 1, "d3", ["bludgeon", "off-hand"]),
         m("cursed-blade", "Cursed Blade", "Lame maudite", 40, 3, -1, 1, "d3", ["arcane", "guard", "off-hand", "poison"]),
         m("dagger", "Dagger", "Dague", 10, 3, 0, 1, "d3", ["off-hand"]),
@@ -209,16 +209,16 @@ def build(md_path):
         m("halberd", "Halberd", "Hallebarde", 34, 3, -1, 1, "d3+1", ["brace", "two-handed", "unwieldy"]),
         m("heavy-axe", "Heavy Axe", "Hache lourde", 40, 3, -2, 2, "d3+1", ["two-handed", "unwieldy"]),
         m("necrotic-bite", "Necrotic Bite", "Morsure nécrotique", 0, 3, -1, 1, "d3", ["natural-weapon"],
-          page=112, md_ref="Dire Wolf", purchasable=False),
+          page=112, md_ref="Loup sinistre", purchasable=False),
         m("ogre-blade", "Ogre Blade", "Lame d'ogre", 36, 3, -1, 2, "d3+1", ["off-hand"]),
         m("ogre-great-weapon", "Ogre Great Weapon", "Grande arme d'ogre", 50, 3, -2, 3, "d3+2", ["two-handed"]),
         m("ogre-mace", "Ogre Mace", "Masse d'ogre", 38, 3, -1, 2, "d3+1", ["bludgeon", "off-hand"]),
         m("spear", "Spear", "Lance", 16, 3, 0, 1, "d3", ["brace", "two-handed"]),
         m("stone-talons", "Stone Talons", "Serres de pierre", 0, 3, -1, 2, "d3+1", ["bludgeon", "natural-weapon"],
-          page=111, md_ref="Gargoyle", purchasable=False),
+          page=111, md_ref="Gargouille", purchasable=False),
         m("sword", "Sword", "Épée", 18, 3, 0, 1, "d3", ["guard", "off-hand"]),
         m("wulfen-claws", "Wulfen Claws", "Griffes de loup", 0, 3, -1, 2, "d3+1", ["bludgeon", "natural-weapon"],
-          page=106, md_ref="Lycanfell Beast", purchasable=False),
+          page=106, md_ref="Bête lycanthrope", purchasable=False),
         m("zombie-bite", "Zombie Bite", "Morsure de zombie", 0, 3, 0, 1, "d3", ["natural-weapon", "poison"],
           page=110, md_ref="Zombie", purchasable=False),
     ]
@@ -272,7 +272,7 @@ def build(md_path):
     LISTS = [
         ("main", "Main List", "Liste principale"),
         ("champion", "Champion List", "Liste des Champions"),
-        ("zombie-ogre", "Zombie Ogre List", "Liste des Zombie Ogres"),
+        ("zombie-ogre", "Zombie Ogre List", "Liste des Ogres zombies"),
         ("practitioner", "Practitioner List", "Liste des Praticiens"),
     ]
     data["armouryLists"] = [
@@ -427,7 +427,7 @@ def build(md_path):
         data["fighters"].append(
             {
                 "id": fid,
-                "name": T(name, name),
+                "name": T(name, src.fr_name(name)),
                 "category": cat,
                 "keywords": kws,
                 "cost": cost,
@@ -444,7 +444,7 @@ def build(md_path):
                 "formOf": "lycanfell-noble" if fid == "lycanfell-beast" else None,
                 "wargearText": T(wg_en, src.wargear_text(lines)),
                 "quote": None if quote_en is None else T(quote_en, q),
-                "sourceRef": src.ref(page, name),
+                "sourceRef": src.ref(page, src.fr_name(name)),
             }
         )
 

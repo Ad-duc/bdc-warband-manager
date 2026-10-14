@@ -17,27 +17,27 @@ test("start a The Hunt Descends warband", async ({ page }) => {
   await page.goto("./");
   await page.getByRole("button", { name: "Nouvelle bande" }).click();
   await page.getByLabel("Nom de la bande").fill("La Meute");
-  await page.getByRole("radio", { name: /Death Covens/ }).check();
+  await page.getByRole("radio", { name: /Cabales de la Mort/ }).check();
   await page.getByRole("button", { name: "Suivant" }).click();
 
   await page.getByRole("radio", { name: /La chasse s'abat/ }).check();
-  await expect(page.getByText("Dire Wolf ne compte pas dans la limite des Bêtes.")).toBeVisible();
+  await expect(page.getByText("Loup sinistre ne compte pas dans la limite des Bêtes.")).toBeVisible();
   await page.getByRole("button", { name: "Suivant" }).click();
 
   // The Lycanfell Beast is not in the catalogue but inside the Noble's scroll.
-  await expect(page.getByRole("button", { name: "Recruter Lycanfell Beast", exact: true })).toHaveCount(0);
-  await page.locator("summary", { hasText: "Lycanfell Noble" }).click();
-  await expect(page.getByTestId("profile-form")).toContainText("Forme : Lycanfell Beast");
+  await expect(page.getByRole("button", { name: "Recruter Bête lycanthrope", exact: true })).toHaveCount(0);
+  await page.locator("summary", { hasText: "Noble lycanthrope" }).click();
+  await expect(page.getByTestId("profile-form")).toContainText("Forme : Bête lycanthrope");
 
   // Four Dire Wolves: the Beasts counter ignores them.
   for (let i = 0; i < 4; i += 1)
-    await page.getByRole("button", { name: "Recruter Dire Wolf", exact: true }).click();
+    await page.getByRole("button", { name: "Recruter Loup sinistre", exact: true }).click();
   await expect(page.getByTestId("category-counters")).toContainText("0/3 Bêtes");
   await expect(page.getByRole("complementary")).not.toContainText("3 au maximum");
 
   // Misbegotten with Wulfen Legs: 65 + 10 silver.
-  await page.getByRole("button", { name: "Recruter Misbegotten", exact: true }).click();
-  const misbegotten = page.getByTestId("recruited-fighter").filter({ hasText: "Misbegotten" });
+  await page.getByRole("button", { name: "Recruter Bâtard du sang", exact: true }).click();
+  const misbegotten = page.getByTestId("recruited-fighter").filter({ hasText: "Bâtard du sang" });
   await misbegotten.getByRole("checkbox", { name: /Pattes de loup/ }).check();
   await expect(misbegotten).toContainText("75 pa");
   await expect(misbegotten.getByRole("checkbox", { name: /Carrure massive/ })).toBeDisabled();

@@ -17,27 +17,27 @@ test("start a Knights-Militant warband", async ({ page }) => {
   await page.goto("./");
   await page.getByRole("button", { name: "Nouvelle bande" }).click();
   await page.getByLabel("Nom de la bande").fill("Les Pieux");
-  await page.getByRole("radio", { name: /The Blighted Cloister/ }).check();
+  await page.getByRole("radio", { name: /Le Cloître gangrené/ }).check();
   await page.getByRole("button", { name: "Suivant" }).click();
 
   await page.getByRole("radio", { name: /Chevaliers militants/ }).check();
   await expect(
-    page.getByText("Votre bande peut recruter n'importe quel nombre de Cloister Knight."),
+    page.getByText("Votre bande peut recruter n'importe quel nombre de Chevalier du Cloître."),
   ).toBeVisible();
   await page.getByRole("button", { name: "Suivant" }).click();
 
   // No "0-3" in front of the Cloister Knight with this origin.
-  const knight = page.locator("summary", { hasText: "Cloister Knight" });
+  const knight = page.locator("summary", { hasText: "Chevalier du Cloître" });
   await expect(knight).not.toContainText("0-3");
   for (let i = 0; i < 4; i += 1)
-    await page.getByRole("button", { name: "Recruter Cloister Knight", exact: true }).click();
+    await page.getByRole("button", { name: "Recruter Chevalier du Cloître", exact: true }).click();
   await expect(page.getByRole("complementary")).not.toContainText("limité à 0-");
 
   // The Knight-Abbot imposed by the origin gets a name and an epithet.
-  const abbot = page.getByTestId("recruited-fighter").filter({ hasText: "Knight-Abbot" });
+  const abbot = page.getByTestId("recruited-fighter").filter({ hasText: "Chevalier-Abbé" });
   const name = abbot.getByLabel("Nom", { exact: true });
   await name.fill("Gideon");
-  await abbot.getByRole("button", { name: "Épithète au hasard pour Knight-Abbot" }).click();
+  await abbot.getByRole("button", { name: "Épithète au hasard pour Chevalier-Abbé" }).click();
   await expect(name).toHaveValue(/^Gideon, \S/);
 
   // His Full-Plate is already carried, at no cost.

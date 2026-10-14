@@ -45,7 +45,7 @@ def build(md_path):
         },
         "schemaVersion": 1,
         "id": "the-blighted-cloister",
-        "name": T("The Blighted Cloister", "The Blighted Cloister"),
+        "name": T("The Blighted Cloister", "Le Cloître gangrené"),
         "description": T(
             "The Blighted Cloister are a secretive monastic order of knights and sorcerer-priests who believe the Black "
             "Rot to be not a curse but a blessing bestowed upon the City. Behind the high stone-walls of their abbeys "
@@ -60,7 +60,7 @@ def build(md_path):
             "\n".join(intro),
         ),
         "armouryName": T("Cloister Armoury", "Armurerie du Cloître"),
-        "sourceRef": src.ref(113, "The Blighted Cloister"),
+        "sourceRef": src.ref(113, "Le Cloître gangrené"),
         "assets": {"shield": "bouclier_cloister.webp", "accentColor": None},
     }
 
@@ -178,13 +178,13 @@ def build(md_path):
     # ----------------------------------------------------------------------------
     # Campaign rules, names, epithets
     # ----------------------------------------------------------------------------
-    demons_fr = src.paragraphs(src.section("Rot Demons"))
+    demons_fr = src.paragraphs(src.section("Démons de la Pourriture"))
     demons_fr = [p for p in demons_fr if not p.startswith("Table des blessures des Démons")]
     data["campaignRules"] = [
         rule("death-of-a-leader", "Death of a Leader", "Mort d'un Chef",
              "During the campaign, if your leader is killed, and you choose to promote a champion (pg xx), the following "
              "champions are eligible:", src.paragraphs(src.section("Mort d'un Chef"))[0]),
-        rule("rot-demons", "Rot Demons", "Rot Demons",
+        rule("rot-demons", "Rot Demons", "Démons de la Pourriture",
              "Fighters with the Demon keyword do not use the standard injury table (pg xx). Instead they use the "
              "following Demon Injury Table (d66):\n"
              "The exception to this are Rotlings which use the Beasts Injury Table (pg xx).\n"
@@ -198,22 +198,22 @@ def build(md_path):
              "earning experience, they earn bonus experience to reach the next level.",
              "\n".join(demons_fr).replace("Table des blessures des Démons suivante :",
                                           "Table des blessures des Démons suivante (D66) :")
-             + "\n" + "\n".join(table_lines("Rot Demons"))),
+             + "\n" + "\n".join(table_lines("Démons de la Pourriture"))),
     ]
     data["leaderSuccession"] = [
         {"formerLeaderId": "knight-abbot", "eligibleChampionIds": ["cloister-champion"]},
         {"formerLeaderId": "high-sorcerer", "eligibleChampionIds": ["cloister-sorcerer"]},
     ]
-    data["nameTable"] = {"die": "d66", "sourceRef": src.ref(116, "Noms du Blighted Cloister"),
-                         "entries": src.names("Noms du Blighted Cloister")}
+    data["nameTable"] = {"die": "d66", "sourceRef": src.ref(116, "Noms du Cloître gangrené"),
+                         "entries": src.names("Noms du Cloître gangrené")}
     epithets = {}
-    for l in src.section("Épithètes du Blighted Cloister"):
+    for l in src.section("Épithètes du Cloître gangrené"):
         cells = [c.strip() for c in l.strip("|").split("|")]
         if l.startswith("|") and re.match(r"^\d0$", cells[0]):
             for col, cell in enumerate(cells[1:], start=1):
                 m = re.match(r"^(.*?)\s*\(\*(.+?)\*\)$", cell)
                 epithets[f"{cells[0][0]}{col}"] = T(m.group(2), m.group(1))
-    data["epithetTable"] = {"die": "d66", "sourceRef": src.ref(118, "Épithètes du Blighted Cloister"),
+    data["epithetTable"] = {"die": "d66", "sourceRef": src.ref(118, "Épithètes du Cloître gangrené"),
                             "entries": epithets}
 
     # ----------------------------------------------------------------------------
@@ -302,7 +302,7 @@ def build(md_path):
     LISTS = [
         ("main", "Main List", "Liste principale"),
         ("champion", "Champion List", "Liste des Champions"),
-        ("dreg", "Dreg List", "Liste des Dregs"),
+        ("dreg", "Dreg List", "Liste de la lie"),
         ("practitioner", "Practitioner List", "Liste des Praticiens"),
         ("practitioner-items", "Practitioner Item List", "Liste d'objets des Praticiens"),
     ]
@@ -361,7 +361,7 @@ def build(md_path):
         ("darkcloven-shaman", "Darkcloven Shaman", "champion", ["champion", "cloister", "beastman", "wizard"], 145, 1,
          (6, 4, 6, 6, 4, 4, 5), ["practitioner", "practitioner-items"], [], (40, "d6"),
          ["lore-of-blessed-maggots", "demonic-lore-of-rot"], (0, 0, None),
-         [("darkcloven-magic", "Darkcloven Magic", "Magie Darkcloven",
+         [("darkcloven-magic", "Darkcloven Magic", "Magie Sabot-Noir",
            "This fighter knows the Lore of Blessed Maggots and the Demonic Lore of Rot. However, when they are "
            "recruited they have no signature spells. At the start of each battle they prepare 1 random spell from each "
            "lore."), RAM],
@@ -423,7 +423,7 @@ def build(md_path):
         data["fighters"].append(
             {
                 "id": fid,
-                "name": T(name, name),
+                "name": T(name, src.fr_name(name)),
                 "category": cat,
                 "keywords": kws,
                 "cost": cost,
@@ -438,7 +438,7 @@ def build(md_path):
                 "specialRules": special,
                 "wargearText": T(wg_en, src.wargear_text(lines)),
                 "quote": None if quote_en is None else T(quote_en, q),
-                "sourceRef": src.ref(page, name),
+                "sourceRef": src.ref(page, src.fr_name(name)),
             }
         )
 
@@ -488,9 +488,9 @@ def build(md_path):
     TABLES = [
         ("ordained-of-the-cloister", "Ordained of the Cloister", "Ordonnés du Cloître", 123,
          {"kind": "keywords", "anyOf": [["cloister", "leader"], ["cloister", "champion"]]},
-         T("Cloister Leaders and Champions only", "Chefs et Champions Cloister uniquement")),
+         T("Cloister Leaders and Champions only", "Chefs et Champions Cloître uniquement")),
         ("blessings-of-saint-rot", "Blessings of Saint Rot", "Bénédictions de Sainte Pourriture", 124,
-         {"kind": "keywords", "anyOf": [["cloister"]]}, T("Any Cloister fighter", "N'importe quel combattant Cloister")),
+         {"kind": "keywords", "anyOf": [["cloister"]]}, T("Any Cloister fighter", "N'importe quel combattant Cloître")),
     ]
     data["skillTables"] = []
     for tid, en, fr, page, elig, label in TABLES:
@@ -530,7 +530,7 @@ def build(md_path):
              "weapon trait).", {"rend": -1, "damage": "d3"}),
         ],
         "demonic-lore-of-rot": [
-            (1, "summon-rotling", "Summon Rotling", "Invoquer un Rotling", "summon", 9, 14,
+            (1, "summon-rotling", "Summon Rotling", "Invoquer un Pourrisson", "summon", 9, 14,
              "A summoned Rotling fighter (pg xx) is added to the caster's warband until it is taken down. Set up the "
              "fighter within 3\" of the caster and not engaged in melee.\n"
              "A warband cannot have more than 3 summoned fighters at any time. If the caster's warband already has 3 "

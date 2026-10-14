@@ -18,7 +18,7 @@ test("create a valid Swords for Hire warband", async ({ page }) => {
 
   // 1. Faction and name
   await page.getByLabel("Nom de la bande").fill("Les Lames de Rennes");
-  await expect(page.getByRole("radio", { name: /Guild Mercenaries/ })).toBeChecked();
+  await expect(page.getByRole("radio", { name: /Mercenaires de la Guilde/ })).toBeChecked();
   await page.getByRole("button", { name: "Suivant" }).click();
 
   // 2. Origin: the Guild Captain is recruited automatically
@@ -26,11 +26,11 @@ test("create a valid Swords for Hire warband", async ({ page }) => {
   await page.getByRole("button", { name: "Suivant" }).click();
 
   // 3. Fighters
-  for (const name of ["Guild Champion", "Plague Doctor"])
+  for (const name of ["Champion de la Guilde", "Médecin de peste"])
     await page.getByRole("button", { name: `Recruter ${name}`, exact: true }).click();
   for (let i = 0; i < 5; i += 1)
-    await page.getByRole("button", { name: "Recruter Guild Mercenary", exact: true }).click();
-  await page.getByRole("button", { name: "Recruter Mercenary Ogre", exact: true }).click();
+    await page.getByRole("button", { name: "Recruter Mercenaire de la Guilde", exact: true }).click();
+  await page.getByRole("button", { name: "Recruter Ogre mercenaire", exact: true }).click();
   await expect(page.getByTestId("recruited-fighter")).toHaveCount(9);
   await expect(page.getByTestId("category-counters")).toContainText("1/1 Chefs");
   await expect(page.getByTestId("category-counters")).toContainText("5/5+ Hommes de main");
@@ -51,24 +51,26 @@ test("create a valid Swords for Hire warband", async ({ page }) => {
         .first()
         .click();
   };
-  await equip("Guild Captain", 0, ["Épée", "Cuirasse", "Bouclier"]);
-  await equip("Guild Champion", 0, ["Espadon", "Cuirasse"]);
-  await equip("Plague Doctor", 0, ["Dague"]);
-  for (let i = 0; i < 5; i += 1) await equip("Guild Mercenary", i, ["Lance", "Cuirasse"]);
-  await equip("Mercenary Ogre", 0, ["Grande arme d'ogre"]);
+  await equip("Capitaine de la Guilde", 0, ["Épée", "Cuirasse", "Bouclier"]);
+  await equip("Champion de la Guilde", 0, ["Espadon", "Cuirasse"]);
+  await equip("Médecin de peste", 0, ["Dague"]);
+  for (let i = 0; i < 5; i += 1) await equip("Mercenaire de la Guilde", i, ["Lance", "Cuirasse"]);
+  await equip("Ogre mercenaire", 0, ["Grande arme d'ogre"]);
   await expect(page.getByTestId("budget-spent")).toHaveText("995 pa");
   await page.getByRole("button", { name: "Suivant" }).click();
 
   // 5. Skills
-  const captain = page.getByRole("region", { name: "Guild Captain" });
+  const captain = page.getByRole("region", { name: "Capitaine de la Guilde" });
   await captain.getByRole("checkbox", { name: /^Cri de ralliement/ }).check();
   await captain.getByRole("checkbox", { name: /^Fine gâchette/ }).check();
   await page
-    .getByRole("region", { name: "Guild Champion" })
+    .getByRole("region", { name: "Champion de la Guilde" })
     .getByRole("checkbox", { name: /^Feinte/ })
     .check();
   await expect(
-    page.getByRole("region", { name: "Guild Champion" }).getByRole("checkbox", { name: /^Fine gâchette/ }),
+    page
+      .getByRole("region", { name: "Champion de la Guilde" })
+      .getByRole("checkbox", { name: /^Fine gâchette/ }),
   ).toBeDisabled();
   await page.getByRole("button", { name: "Suivant" }).click();
 

@@ -8,13 +8,13 @@
   },
   "schemaVersion": 1,
   "id": "death-covens",
-  "name": { "en": "Death Covens", "fr": "Death Covens" },
+  "name": { "en": "Death Covens", "fr": "Cabales de la Mort" },
   "description": {
     "en": "The City is a place of death. The Black Rot has left the population decimated, with bodies piled high in the streets or cast into mass graves. Their stench now permeates the very soil where it has taken on a dark will of its own.\nEach night, as the sun sinks beneath the western horizon and the moon rises in its stead, the long dead awaken from their slumber. Ancient barrows beyond the City's eastern limits stir once more, while the soil of the City's many cemeteries churns with the rising dead.\nSuch a forsaken place has become a haven for the creatures of the night. Vampyres, once forced to conceal their cursed lineage, now stalk the streets openly. Necromancers, exiled from the lands of Men for their blasphemous craft, find not only sanctuary within the City but an endless supply of corpses to swell their ranks.\nThen there are those drawn from the far north, nobles with the blood of wolves coursing through their veins. They come seeking the thrill of the hunt amidst the City's ruin, and will not rest until they have had their fill.",
     "fr": "La Cité est un lieu de mort. La Pourriture noire a décimé la population, laissant des corps entassés dans les rues ou jetés dans des charniers. Leur puanteur imprègne désormais le sol lui-même, où elle a acquis une sombre volonté propre.\nChaque nuit, quand le soleil sombre sous l'horizon à l'ouest et que la lune se lève à sa place, les morts de longue date s'éveillent de leur sommeil. Des tumulus anciens, au-delà des limites orientales de la Cité, s'agitent de nouveau, tandis que la terre des nombreux cimetières de la Cité bouillonne sous la poussée des morts qui se relèvent.\nUn lieu aussi abandonné est devenu un havre pour les créatures de la nuit. Les vampires, autrefois contraints de dissimuler leur lignée maudite, arpentent désormais les rues ouvertement. Les nécromanciens, exilés des terres des Hommes pour leur art blasphématoire, trouvent dans la Cité non seulement un refuge, mais aussi une source inépuisable de cadavres pour grossir leurs rangs.\nIl y a enfin ceux qui viennent du Grand Nord, des nobles dans les veines desquels coule le sang des loups. Ils viennent chercher le frisson de la chasse au milieu des ruines de la Cité, et ne connaîtront pas le repos avant d'être rassasiés."
   },
-  "armouryName": { "en": "Coven Armoury", "fr": "Armurerie du Coven" },
-  "sourceRef": { "page": 93, "md": "08_death-covens.md > Death Covens" },
+  "armouryName": { "en": "Coven Armoury", "fr": "Armurerie de la Cabale" },
+  "sourceRef": { "page": 93, "md": "08_death-covens.md > Cabales de la Mort" },
   "assets": { "shield": "bouclier_death.webp", "accentColor": null },
 
   "origins": [
@@ -37,7 +37,7 @@
       "name": { "en": "Rogue Necromancer", "fr": "Nécromancien renégat" },
       "flavour": {
         "en": "Outlawed and relentlessly pursued by the Witch Hunters Guild, this powerful Necromancer has sought refuge within the City, where the recent dead provide an endless supply of \"specimens\".",
-        "fr": "Mis hors la loi et traqué sans relâche par la Guilde des chasseurs de sorcières, ce puissant Necromancer a cherché refuge dans la Cité, où les morts récents lui fournissent une source inépuisable de \"spécimens\"."
+        "fr": "Mis hors la loi et traqué sans relâche par la Guilde des chasseurs de sorcières, ce puissant Nécromancien a cherché refuge dans la Cité, où les morts récents lui fournissent une source inépuisable de \"spécimens\"."
       },
       "requiredLeaderId": "necromancer",
       "strongholdId": "embalmers-hall",
@@ -126,7 +126,7 @@
       "name": { "en": "Grand Pavilion", "fr": "Grand pavillon" },
       "flavour": {
         "en": "Hidden amongst the northern forests, the Lycanfell Noble's grand pavilion serves as the heart of his hunting court. Rich tapestries and grisly trophies adorn its walls, while iron braziers burn long into the night. Beyond the firelight, the howls of gathering wolves echo through the trees.",
-        "fr": "Dissimulé au cœur des forêts du nord, le grand pavillon du Lycanfell Noble est le centre de sa cour de chasse. De riches tapisseries et de sinistres trophées ornent ses parois, tandis que des braseros de fer brûlent jusque tard dans la nuit. Au-delà de la lueur des feux, les hurlements des loups qui se rassemblent résonnent entre les arbres."
+        "fr": "Dissimulé au cœur des forêts du nord, le grand pavillon du Noble lycanthrope est le centre de sa cour de chasse. De riches tapisseries et de sinistres trophées ornent ses parois, tandis que des braseros de fer brûlent jusque tard dans la nuit. Au-delà de la lueur des feux, les hurlements des loups qui se rassemblent résonnent entre les arbres."
       },
       "income": "3d6x5",
       "rules": [
@@ -145,7 +145,7 @@
           "tag": null,
           "text": {
             "en": "In step 6 of the Aftermath sequence, roll a dice. On a 6, a Dire Wolf emerges from the forest. You can recruit a Dire Wolf to your warband for 0 silver.",
-            "fr": "À l'étape 6 de la séquence d'après-bataille, lancez un dé. Sur 6, un Dire Wolf surgit de la forêt. Vous pouvez recruter un Dire Wolf dans votre bande pour 0 pièce d'argent."
+            "fr": "À l'étape 6 de la séquence d'après-bataille, lancez un dé. Sur 6, un Loup sinistre surgit de la forêt. Vous pouvez recruter un Loup sinistre dans votre bande pour 0 pièce d'argent."
           }
         }
       ],
@@ -213,7 +213,7 @@
   ],
   "nameTable": {
     "die": "d66",
-    "sourceRef": { "page": 96, "md": "08_death-covens.md > Noms des Death Coven" },
+    "sourceRef": { "page": 96, "md": "08_death-covens.md > Noms des Cabales de la Mort" },
     "entries": {
       "11": "Alaric",
       "12": "Barovyr",
@@ -257,7 +257,7 @@
   "fighters": [
     {
       "id": "bloodcursed-noble",
-      "name": { "en": "Bloodcursed Noble", "fr": "Bloodcursed Noble" },
+      "name": { "en": "Bloodcursed Noble", "fr": "Noble au sang maudit" },
       "category": "leader",
       "keywords": ["leader", "undead", "wizard", "vampyre", "aristocrat"],
       "cost": 185,
@@ -292,14 +292,14 @@
       "formOf": null,
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Coven Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie du Coven."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Cabale."
       },
       "quote": { "en": "The City belongs to the night.", "fr": "La Cité appartient à la nuit." },
-      "sourceRef": { "page": 105, "md": "08_death-covens.md > Bloodcursed Noble" }
+      "sourceRef": { "page": 105, "md": "08_death-covens.md > Noble au sang maudit" }
     },
     {
       "id": "necromancer",
-      "name": { "en": "Necromancer", "fr": "Necromancer" },
+      "name": { "en": "Necromancer", "fr": "Nécromancien" },
       "category": "leader",
       "keywords": ["leader", "human", "wizard"],
       "cost": 165,
@@ -325,17 +325,17 @@
       "formOf": null,
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Practitioner List from the Coven Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie du Coven."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie de la Cabale."
       },
       "quote": {
         "en": "I have studied the art of death longer than you have drawn breath.",
         "fr": "J'étudie l'art de la mort depuis plus longtemps que tu ne respires."
       },
-      "sourceRef": { "page": 105, "md": "08_death-covens.md > Necromancer" }
+      "sourceRef": { "page": 105, "md": "08_death-covens.md > Nécromancien" }
     },
     {
       "id": "lycanfell-noble",
-      "name": { "en": "Lycanfell Noble", "fr": "Lycanfell Noble" },
+      "name": { "en": "Lycanfell Noble", "fr": "Noble lycanthrope" },
       "category": "leader",
       "keywords": ["leader", "undead", "werwulf", "aristocrat"],
       "cost": 170,
@@ -362,7 +362,7 @@
           "tag": null,
           "text": {
             "en": "Once per battle, at the start of this fighter's activation it can transform. If it does so, remove this fighter from the battlefield and set up the Lycanfell Beast at the same location (or as close to it as possible). Any damage the Lycanfell Noble has suffered, the Lycanfell Beast has also suffered.\nThe Lycanfell Beast immediately makes its activation.",
-            "fr": "Une fois par bataille, au début de l'activation de ce combattant, il peut se transformer. Dans ce cas, retirez ce combattant du champ de bataille et placez la Lycanfell Beast au même emplacement (ou aussi près que possible). Tous les dégâts que le Lycanfell Noble a subis, la Lycanfell Beast les a subis aussi.\nLa Lycanfell Beast effectue immédiatement son activation."
+            "fr": "Une fois par bataille, au début de l'activation de ce combattant, il peut se transformer. Dans ce cas, retirez ce combattant du champ de bataille et placez la Bête lycanthrope au même emplacement (ou aussi près que possible). Tous les dégâts que le Noble lycanthrope a subis, la Bête lycanthrope les a subis aussi.\nLa Bête lycanthrope effectue immédiatement son activation."
           }
         }
       ],
@@ -370,17 +370,17 @@
       "formOf": null,
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Coven Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie du Coven."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Cabale."
       },
       "quote": {
         "en": "The wind bears the scent of blood. The hunt calls me once more.",
         "fr": "Le vent charrie l'odeur du sang. La chasse m'appelle une fois encore."
       },
-      "sourceRef": { "page": 106, "md": "08_death-covens.md > Lycanfell Noble" }
+      "sourceRef": { "page": 106, "md": "08_death-covens.md > Noble lycanthrope" }
     },
     {
       "id": "lycanfell-beast",
-      "name": { "en": "Lycanfell Beast", "fr": "Lycanfell Beast" },
+      "name": { "en": "Lycanfell Beast", "fr": "Bête lycanthrope" },
       "category": "leader",
       "keywords": ["leader", "undead", "werwulf"],
       "cost": 0,
@@ -398,7 +398,7 @@
           "tag": null,
           "text": {
             "en": "Each time this fighter activates, at the end of its activation it must pass a Willpower test else the transformation ends.\nWhen the transformation ends, remove this fighter from the battlefield then set up the Lycanfell Noble at the same location (or as close to it as possible). Any damage the Lycanfell Beast has suffered, the Lycanfell Noble has also suffered. If this would reduce the Lycanfell Noble to zero life, they are taken down.",
-            "fr": "Chaque fois que ce combattant est activé, à la fin de son activation, il doit réussir un test de Volonté, sans quoi la transformation prend fin.\nQuand la transformation prend fin, retirez ce combattant du champ de bataille, puis placez le Lycanfell Noble au même emplacement (ou aussi près que possible). Tous les dégâts que la Lycanfell Beast a subis, le Lycanfell Noble les a subis aussi. Si cela devait réduire le Lycanfell Noble à zéro point de vie, il est mis hors de combat."
+            "fr": "Chaque fois que ce combattant est activé, à la fin de son activation, il doit réussir un test de Volonté, sans quoi la transformation prend fin.\nQuand la transformation prend fin, retirez ce combattant du champ de bataille, puis placez le Noble lycanthrope au même emplacement (ou aussi près que possible). Tous les dégâts que la Bête lycanthrope a subis, le Noble lycanthrope les a subis aussi. Si cela devait réduire le Noble lycanthrope à zéro point de vie, il est mis hors de combat."
           }
         },
         {
@@ -407,7 +407,7 @@
           "tag": null,
           "text": {
             "en": "While this fighter is on the battlefield, it is treated as a new fighter that is added to the warband. It has none of the Lycanfell Noble's wargear, skills or injuries etc. If the Lycanfell Noble was under the effects of a spell or another rule, this fighter is not affected. In addition, the following rules apply:\n- Scenarios: If the scenario gave the Lycanfell Noble a mark (such as being the Hit in Street of Death), this fighter has that mark.\n- Treasure: If the Lycanfell Noble was carrying treasure when it transformed, this fighter is carrying the treasure. Likewise, if this fighter is carrying treasure when the transformation ends, the Lycanfell Noble is now carrying that treasure.\n- Taken Down: If this fighter is taken down, the Lycanfell Noble is also taken down, (together they count as 1 for the purposes of flee tests).\n- Experience: Any bonus experience this fighter would have earned is granted to the Lycanfell Noble instead.",
-            "fr": "Tant que ce combattant est sur le champ de bataille, il est traité comme un nouveau combattant ajouté à la bande. Il n'a ni l'équipement, ni les compétences, ni les blessures du Lycanfell Noble, etc. Si le Lycanfell Noble subissait les effets d'un sort ou d'une autre règle, ce combattant n'est pas affecté. De plus, les règles suivantes s'appliquent :\n- Scénarios : si le scénario a donné une marque au Lycanfell Noble, par exemple être la Proie dans La Rue de la mort, ce combattant a cette marque.\n- Trésor : si le Lycanfell Noble porte un trésor au moment où il se transforme, c'est ce combattant qui le porte. De même, si ce combattant porte un trésor quand la transformation prend fin, c'est désormais le Lycanfell Noble qui le porte.\n- Mis hors de combat : si ce combattant est mis hors de combat, le Lycanfell Noble est lui aussi mis hors de combat ; ensemble, ils comptent pour 1 pour les tests de déroute.\n- Expérience : toute l'expérience bonus que ce combattant aurait gagnée est accordée, à la place, au Lycanfell Noble."
+            "fr": "Tant que ce combattant est sur le champ de bataille, il est traité comme un nouveau combattant ajouté à la bande. Il n'a ni l'équipement, ni les compétences, ni les blessures du Noble lycanthrope, etc. Si le Noble lycanthrope subissait les effets d'un sort ou d'une autre règle, ce combattant n'est pas affecté. De plus, les règles suivantes s'appliquent :\n- Scénarios : si le scénario a donné une marque au Noble lycanthrope, par exemple être la Proie dans La Rue de la mort, ce combattant a cette marque.\n- Trésor : si le Noble lycanthrope porte un trésor au moment où il se transforme, c'est ce combattant qui le porte. De même, si ce combattant porte un trésor quand la transformation prend fin, c'est désormais le Noble lycanthrope qui le porte.\n- Mis hors de combat : si ce combattant est mis hors de combat, le Noble lycanthrope est lui aussi mis hors de combat ; ensemble, ils comptent pour 1 pour les tests de déroute.\n- Expérience : toute l'expérience bonus que ce combattant aurait gagnée est accordée, à la place, au Noble lycanthrope."
           }
         }
       ],
@@ -418,11 +418,11 @@
         "fr": "Ce combattant est équipé de Griffes de loup, voir ci-dessous."
       },
       "quote": { "en": "Flesh... blood... marrow...", "fr": "Chair... sang... moelle..." },
-      "sourceRef": { "page": 106, "md": "08_death-covens.md > Lycanfell Beast" }
+      "sourceRef": { "page": 106, "md": "08_death-covens.md > Bête lycanthrope" }
     },
     {
       "id": "barrow-lord",
-      "name": { "en": "Barrow Lord", "fr": "Barrow Lord" },
+      "name": { "en": "Barrow Lord", "fr": "Seigneur des tumulus" },
       "category": "leader",
       "keywords": ["leader", "undead", "skeleton"],
       "cost": 130,
@@ -457,14 +457,14 @@
       "formOf": null,
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Coven Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie du Coven."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Cabale."
       },
       "quote": { "en": "I command thee to rise again.", "fr": "Je t'ordonne de te relever." },
-      "sourceRef": { "page": 107, "md": "08_death-covens.md > Barrow Lord" }
+      "sourceRef": { "page": 107, "md": "08_death-covens.md > Seigneur des tumulus" }
     },
     {
       "id": "bloodcursed-courtesan",
-      "name": { "en": "Bloodcursed Courtesan", "fr": "Bloodcursed Courtesan" },
+      "name": { "en": "Bloodcursed Courtesan", "fr": "Courtisane au sang maudit" },
       "category": "champion",
       "keywords": ["champion", "undead", "wizard", "vampyre", "aristocrat"],
       "cost": 125,
@@ -490,14 +490,14 @@
       "formOf": null,
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Practitioner List from the Coven Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie du Coven."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie de la Cabale."
       },
       "quote": { "en": "Come hither... I insist.", "fr": "Approche... j'insiste." },
-      "sourceRef": { "page": 107, "md": "08_death-covens.md > Bloodcursed Courtesan" }
+      "sourceRef": { "page": 107, "md": "08_death-covens.md > Courtisane au sang maudit" }
     },
     {
       "id": "bloodcursed-knight",
-      "name": { "en": "Bloodcursed Knight", "fr": "Bloodcursed Knight" },
+      "name": { "en": "Bloodcursed Knight", "fr": "Chevalier au sang maudit" },
       "category": "champion",
       "keywords": ["champion", "undead", "vampyre", "aristocrat"],
       "cost": 95,
@@ -523,17 +523,17 @@
       "formOf": null,
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Coven Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie du Coven."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Cabale."
       },
       "quote": {
         "en": "Kneel, and I may grant you a swift death.",
         "fr": "À genoux, et je t'accorderai peut-être une mort rapide."
       },
-      "sourceRef": { "page": 108, "md": "08_death-covens.md > Bloodcursed Knight" }
+      "sourceRef": { "page": 108, "md": "08_death-covens.md > Chevalier au sang maudit" }
     },
     {
       "id": "misbegotten",
-      "name": { "en": "Misbegotten", "fr": "Misbegotten" },
+      "name": { "en": "Misbegotten", "fr": "Bâtard du sang" },
       "category": "champion",
       "keywords": ["champion", "undead", "vampyre"],
       "cost": 65,
@@ -590,14 +590,14 @@
       "formOf": null,
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Coven Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie du Coven."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Cabale."
       },
       "quote": { "en": "No... look not upon me...", "fr": "Non... ne me regardez pas..." },
-      "sourceRef": { "page": 108, "md": "08_death-covens.md > Misbegotten" }
+      "sourceRef": { "page": 108, "md": "08_death-covens.md > Bâtard du sang" }
     },
     {
       "id": "necromancers-apprentice",
-      "name": { "en": "Necromancer's Apprentice", "fr": "Necromancer's Apprentice" },
+      "name": { "en": "Necromancer's Apprentice", "fr": "Apprenti nécromancien" },
       "category": "champion",
       "keywords": ["champion", "human", "wizard"],
       "cost": 120,
@@ -623,17 +623,17 @@
       "formOf": null,
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Practitioner List from the Coven Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie du Coven."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie de la Cabale."
       },
       "quote": {
         "en": "The secrets of the grave shall be mine in time.",
         "fr": "Les secrets de la tombe seront miens, le moment venu."
       },
-      "sourceRef": { "page": 109, "md": "08_death-covens.md > Necromancer's Apprentice" }
+      "sourceRef": { "page": 109, "md": "08_death-covens.md > Apprenti nécromancien" }
     },
     {
       "id": "barrow-champion",
-      "name": { "en": "Barrow Champion", "fr": "Barrow Champion" },
+      "name": { "en": "Barrow Champion", "fr": "Champion des tumulus" },
       "category": "champion",
       "keywords": ["champion", "undead", "skeleton"],
       "cost": 85,
@@ -668,14 +668,14 @@
       "formOf": null,
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Coven Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie du Coven."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Cabale."
       },
       "quote": { "en": "Death does not relinquish duty.", "fr": "La mort ne délie pas du devoir." },
-      "sourceRef": { "page": 109, "md": "08_death-covens.md > Barrow Champion" }
+      "sourceRef": { "page": 109, "md": "08_death-covens.md > Champion des tumulus" }
     },
     {
       "id": "skeleton-warrior",
-      "name": { "en": "Skeleton Warrior", "fr": "Skeleton Warrior" },
+      "name": { "en": "Skeleton Warrior", "fr": "Guerrier squelette" },
       "category": "henchman",
       "keywords": ["henchman", "undead", "skeleton", "thrall"],
       "cost": 40,
@@ -701,10 +701,10 @@
       "formOf": null,
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List from the Coven Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie du Coven."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie de la Cabale."
       },
       "quote": null,
-      "sourceRef": { "page": 110, "md": "08_death-covens.md > Skeleton Warrior" }
+      "sourceRef": { "page": 110, "md": "08_death-covens.md > Guerrier squelette" }
     },
     {
       "id": "zombie",
@@ -741,7 +741,7 @@
     },
     {
       "id": "zombie-ogre",
-      "name": { "en": "Zombie Ogre", "fr": "Zombie Ogre" },
+      "name": { "en": "Zombie Ogre", "fr": "Ogre zombie" },
       "category": "brute",
       "keywords": ["brute", "undead", "zombie", "thrall"],
       "cost": 95,
@@ -767,14 +767,14 @@
       "formOf": null,
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Zombie Ogre List from the Coven Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Zombie Ogres de l'Armurerie du Coven."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Ogres zombies de l'Armurerie de la Cabale."
       },
       "quote": null,
-      "sourceRef": { "page": 111, "md": "08_death-covens.md > Zombie Ogre" }
+      "sourceRef": { "page": 111, "md": "08_death-covens.md > Ogre zombie" }
     },
     {
       "id": "gargoyle",
-      "name": { "en": "Gargoyle", "fr": "Gargoyle" },
+      "name": { "en": "Gargoyle", "fr": "Gargouille" },
       "category": "brute",
       "keywords": ["brute", "undead", "gargoyle", "thrall", "fly"],
       "cost": 150,
@@ -803,11 +803,11 @@
         "fr": "Ce combattant est équipé de serres de pierre, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": null,
-      "sourceRef": { "page": 111, "md": "08_death-covens.md > Gargoyle" }
+      "sourceRef": { "page": 111, "md": "08_death-covens.md > Gargouille" }
     },
     {
       "id": "dire-bat",
-      "name": { "en": "Dire Bat", "fr": "Dire Bat" },
+      "name": { "en": "Dire Bat", "fr": "Chauve-souris sinistre" },
       "category": "beast",
       "keywords": ["beast", "undead", "bat", "fly"],
       "cost": 60,
@@ -836,11 +836,11 @@
         "fr": "Ce combattant est équipé de crocs mordants, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": null,
-      "sourceRef": { "page": 112, "md": "08_death-covens.md > Dire Bat" }
+      "sourceRef": { "page": 112, "md": "08_death-covens.md > Chauve-souris sinistre" }
     },
     {
       "id": "dire-wolf",
-      "name": { "en": "Dire Wolf", "fr": "Dire Wolf" },
+      "name": { "en": "Dire Wolf", "fr": "Loup sinistre" },
       "category": "beast",
       "keywords": ["beast", "undead", "dog"],
       "cost": 50,
@@ -867,7 +867,7 @@
           "tag": null,
           "text": {
             "en": "Each aftermath sequence, when you search the city, if your search party includes any Dire Wolves, you can re-roll the exploration roll.",
-            "fr": "À chaque séquence d'après-bataille, quand vous fouillez la cité, si votre groupe de fouille comprend au moins un Dire Wolf, vous pouvez relancer le jet d'exploration."
+            "fr": "À chaque séquence d'après-bataille, quand vous fouillez la cité, si votre groupe de fouille comprend au moins un Loup sinistre, vous pouvez relancer le jet d'exploration."
           }
         }
       ],
@@ -878,7 +878,7 @@
         "fr": "Ce combattant est équipé d'une morsure nécrotique, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": null,
-      "sourceRef": { "page": 112, "md": "08_death-covens.md > Dire Wolf" }
+      "sourceRef": { "page": 112, "md": "08_death-covens.md > Loup sinistre" }
     }
   ],
 
@@ -902,7 +902,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "axe",
@@ -923,7 +923,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "biting-fangs",
@@ -944,7 +944,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 112, "md": "08_death-covens.md > Dire Bat" }
+      "sourceRef": { "page": 112, "md": "08_death-covens.md > Chauve-souris sinistre" }
     },
     {
       "id": "club-mace-hammer",
@@ -965,7 +965,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "cursed-blade",
@@ -986,7 +986,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "dagger",
@@ -1007,7 +1007,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "ensorcelled-weapon",
@@ -1031,7 +1031,7 @@
         "en": "You can use any weapon to represent the Ensorcelled Weapon.",
         "fr": "Vous pouvez utiliser n'importe quelle arme pour représenter l'Arme ensorcelée."
       },
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "flail",
@@ -1052,7 +1052,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "great-mace",
@@ -1073,7 +1073,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "halberd",
@@ -1094,7 +1094,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "heavy-axe",
@@ -1115,7 +1115,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "necrotic-bite",
@@ -1136,7 +1136,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 112, "md": "08_death-covens.md > Dire Wolf" }
+      "sourceRef": { "page": 112, "md": "08_death-covens.md > Loup sinistre" }
     },
     {
       "id": "ogre-blade",
@@ -1157,7 +1157,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "ogre-great-weapon",
@@ -1178,7 +1178,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "ogre-mace",
@@ -1199,7 +1199,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "spear",
@@ -1220,7 +1220,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "stone-talons",
@@ -1241,7 +1241,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 111, "md": "08_death-covens.md > Gargoyle" }
+      "sourceRef": { "page": 111, "md": "08_death-covens.md > Gargouille" }
     },
     {
       "id": "sword",
@@ -1262,7 +1262,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie du Coven - Armes de corps à corps" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "wulfen-claws",
@@ -1283,7 +1283,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 106, "md": "08_death-covens.md > Lycanfell Beast" }
+      "sourceRef": { "page": 106, "md": "08_death-covens.md > Bête lycanthrope" }
     },
     {
       "id": "zombie-bite",
@@ -1561,8 +1561,8 @@
     },
     {
       "id": "zombie-ogre",
-      "name": { "en": "Zombie Ogre List", "fr": "Liste des Zombie Ogres" },
-      "sourceRef": { "page": 98, "md": "08_death-covens.md > Liste des Zombie Ogres" },
+      "name": { "en": "Zombie Ogre List", "fr": "Liste des Ogres zombies" },
+      "sourceRef": { "page": 98, "md": "08_death-covens.md > Liste des Ogres zombies" },
       "entries": [
         { "wargearId": "ogre-blade", "cost": 36 },
         { "wargearId": "ogre-great-weapon", "cost": 50 },

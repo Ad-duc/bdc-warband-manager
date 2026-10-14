@@ -310,6 +310,11 @@ function frRange(p: AttackProfile): string {
  * Fighter names are compared without the "0-x" prefix, hyphens, case and the
  * plural of the lists ("Rat Mutant", "Darkcloven Beastmen").
  */
+/** English name of a "[0-n ]Nom (*Name*)" fighter heading or list cell, keeping the "0-n " limit. */
+const fighterVo = (s: string): string => {
+  const m = /^(0-\d+ )?.*?\(\*([^*]+)\*\)\s*$/.exec(s.trim());
+  return m ? `${m[1] ?? ""}${m[2] ?? ""}` : s.trim();
+};
 const fighterKey = (s: string): string =>
   s
     .replace(/^0-\d+ /, "")
@@ -335,7 +340,7 @@ interface FactionLayout {
 const LAYOUTS: Record<string, FactionLayout> = {
   "guild-mercenaries": {
     file: "06_guild-mercenaries.md",
-    names: "Noms des Guild Mercenaries",
+    names: "Noms des Mercenaires de la Guilde",
     armouryStart: "## Armurerie de la Guilde (*Guild Armoury*)",
     melee: "Armurerie de la Guilde - Armes de corps à corps",
     ranged: "Armurerie de la Guilde - Armes à distance",
@@ -346,29 +351,29 @@ const LAYOUTS: Record<string, FactionLayout> = {
   },
   verminkin: {
     file: "07_verminkin.md",
-    names: "Noms des Verminkin",
-    armouryStart: "## Armurerie Verminkin (*Vermin Armoury*)",
-    melee: "Armurerie Verminkin - Armes de corps à corps",
-    ranged: "Armurerie Verminkin - Armes à distance",
-    armourItems: "Armurerie Verminkin - Armures et objets",
+    names: "Noms des Vermigènes",
+    armouryStart: "## Armurerie vermigène (*Vermin Armoury*)",
+    melee: "Armurerie vermigène - Armes de corps à corps",
+    ranged: "Armurerie vermigène - Armes à distance",
+    armourItems: "Armurerie vermigène - Armures et objets",
     skillSections: ["Machinations magistrales", "Coureurs de tunnels"],
     loreSections: ["Domaine des Tunnels profonds", "Domaine des Véroles"],
     naturalWeaponsInMeleeTable: true,
   },
   "death-covens": {
     file: "08_death-covens.md",
-    names: "Noms des Death Coven",
-    armouryStart: "## Armurerie du Coven (*Coven Armoury*)",
-    melee: "Armurerie du Coven - Armes de corps à corps",
+    names: "Noms des Cabales de la Mort",
+    armouryStart: "## Armurerie de la Cabale (*Coven Armoury*)",
+    melee: "Armurerie de la Cabale - Armes de corps à corps",
     ranged: null,
-    armourItems: "Armurerie du Coven - Armures et objets",
+    armourItems: "Armurerie de la Cabale - Armures et objets",
     skillSections: ["Sombre aristocratie", "Seigneurs immortels"],
     loreSections: ["Domaine de la Nécromancie", "Domaine du Sang"],
     naturalWeaponsInMeleeTable: false,
   },
   "the-blighted-cloister": {
     file: "09_the-blighted-cloister.md",
-    names: "Noms du Blighted Cloister",
+    names: "Noms du Cloître gangrené",
     armouryStart: "## Armurerie du Cloître (*Cloister Armoury*)",
     melee: "Armurerie du Cloître - Armes de corps à corps",
     ranged: "Armurerie du Cloître - Armes à distance",
@@ -427,7 +432,7 @@ function compareFaction(dir: string, f: FactionData, c: CommonData): void {
   // Fighter list and scrolls
   const listRows = tableRows(section(md, 2, "Liste des combattants"))
     .filter((r) => r[0] !== "Combattant")
-    .map((r) => `${fighterKey(r[0] ?? "")}=${cost(r[1] ?? "")}`);
+    .map((r) => `${fighterKey(fighterVo(r[0] ?? ""))}=${cost(r[1] ?? "")}`);
   // Alternate forms (Lycanfell Beast) have no entry in the list and no starting experience.
   const recruitable = f.fighters.filter((x) => x.formOf === null);
   compareSets(
@@ -440,7 +445,7 @@ function compareFaction(dir: string, f: FactionData, c: CommonData): void {
   const scrollStart = md.findIndex((l) => l.startsWith("## Parchemins de combattants"));
   const scrollEnd = md.findIndex((l) => l.startsWith("## Ajouts au glossaire"));
   const scrollLines = md.slice(scrollStart + 1, scrollEnd);
-  const scrollNames = headings(scrollLines, 3);
+  const scrollNames = headings(scrollLines, 3).map(fighterVo);
   compareSets(
     "Fighter scrolls (name, 0-x limit)",
     scrollNames.map((n) => n.replace(/^0-(\d+) (.*)$/, "$2 [0-$1]")),
@@ -450,7 +455,7 @@ function compareFaction(dir: string, f: FactionData, c: CommonData): void {
   for (let i = 0; i < scrollLines.length; i += 1) {
     const line = scrollLines[i] ?? "";
     if (!line.startsWith("### ")) continue;
-    const name = line.slice(4).replace(/^0-\d+ /, "");
+    const name = fighterVo(line.slice(4)).replace(/^0-\d+ /, "");
     const rows = tableRows(scrollLines.slice(i, i + 8)).filter((r) => r[0] !== "Mouvement");
     const s = rows[0];
     if (s) statRows.push(`${name}: ${s.join(" ")}`);

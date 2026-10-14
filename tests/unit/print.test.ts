@@ -44,7 +44,7 @@ describe("print model", () => {
     const p = buildPrintFighter(index, { ...captain, customName: "Konrad" }, "fr", labels);
     expect(p).toMatchObject({
       name: "Konrad",
-      type: "Guild Captain",
+      type: "Capitaine de la Guilde",
       category: "leader",
       cost: 188,
       experience: 63,

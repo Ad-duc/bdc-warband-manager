@@ -15,6 +15,15 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ## [Non publié]
 
+### Modifié
+
+- Les noms des factions et des combattants sont désormais en français, comme
+  le reste de la traduction : Mercenaires de la Guilde, Vermigènes, Cabales de
+  la Mort, Le Cloître gangrené, Capitaine de la Guilde, Maître artificier,
+  Bâtard du sang... Le nom anglais reste entre parenthèses dans le lecteur de
+  règles. Le mot-clé Wizard devient Magicien. Les bandes enregistrées ne sont
+  pas touchées.
+
 ### Corrigé
 
 - Une nouvelle version de l'application remplace désormais l'ancienne toute

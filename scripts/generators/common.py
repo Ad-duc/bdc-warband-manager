@@ -167,11 +167,26 @@ class Source:
                     names[f"{cells[0][0]}{col}"] = name
         return names
 
-    def scroll(self, name):
-        heading = next(
-            l[4:] for l in self.md if l.startswith("### ") and re.sub(r"^0-\d+ ", "", l[4:]) == name
+    @staticmethod
+    def heading_names(heading):
+        """French and English names of a '### [0-n ]Nom (*Name*)' heading (the same name twice without VO)."""
+        h = re.sub(r"^0-\d+ ", "", heading)
+        m = re.match(r"^(.*?) \(\*(.+?)\*\)$", h)
+        return (m.group(1), m.group(2)) if m else (h, h)
+
+    def scroll_heading(self, name):
+        """Heading of the scroll of the fighter named 'name' in English (in the fighter scrolls section)."""
+        start = next((i for i, l in enumerate(self.md) if l.startswith("## Parchemins")), 0)
+        return next(
+            l[4:] for l in self.md[start:] if l.startswith("### ") and name in self.heading_names(l[4:])
         )
-        return self.section(heading)
+
+    def scroll(self, name):
+        return self.section(self.scroll_heading(name))
+
+    def fr_name(self, name):
+        """French name of a fighter, read from the heading of its scroll."""
+        return self.heading_names(self.scroll_heading(name))[0]
 
     @staticmethod
     def wargear_text(lines):

@@ -15,35 +15,35 @@ test.use({ locale: "fr-FR" });
 test("recruit buttons follow the recruitment limits", async ({ page }) => {
   await page.goto("./");
   await page.getByRole("button", { name: "Nouvelle bande" }).click();
-  await page.getByRole("radio", { name: /Guild Mercenaries/ }).check();
+  await page.getByRole("radio", { name: /Mercenaires de la Guilde/ }).check();
   await page.getByRole("button", { name: "Suivant" }).click();
   await page.getByRole("radio", { name: /Guilde des chasseurs de sorcières/ }).check();
   await page.getByRole("button", { name: "Suivant" }).click();
 
   // The origin recruited its Witch Hunter: no other leader can be added.
   const recruit = (name: string) => page.getByRole("button", { name: `Recruter ${name}`, exact: true });
-  await expect(recruit("Witch Hunter")).toBeDisabled();
-  await expect(recruit("Witch Hunter")).toHaveAccessibleDescription("La bande a déjà son Chef.");
-  await expect(recruit("Guild Captain")).toBeDisabled();
+  await expect(recruit("Chasseur de sorcières")).toBeDisabled();
+  await expect(recruit("Chasseur de sorcières")).toHaveAccessibleDescription("La bande a déjà son Chef.");
+  await expect(recruit("Capitaine de la Guilde")).toBeDisabled();
 
   // 0-1 Guild Wizard.
-  await expect(recruit("Guild Wizard")).toBeEnabled();
-  await recruit("Guild Wizard").click();
-  await expect(recruit("Guild Wizard")).toBeDisabled();
-  await expect(recruit("Guild Wizard")).toHaveAccessibleDescription(
+  await expect(recruit("Magicien de la Guilde")).toBeEnabled();
+  await recruit("Magicien de la Guilde").click();
+  await expect(recruit("Magicien de la Guilde")).toBeDisabled();
+  await expect(recruit("Magicien de la Guilde")).toHaveAccessibleDescription(
     "Limite du profil atteinte : 1 au maximum.",
   );
 
   // Three Champions at most.
-  await recruit("Guild Champion").click();
-  await recruit("Guild Champion").click();
-  await expect(recruit("Guild Champion")).toBeDisabled();
-  await expect(recruit("Plague Doctor")).toHaveAccessibleDescription(
+  await recruit("Champion de la Guilde").click();
+  await recruit("Champion de la Guilde").click();
+  await expect(recruit("Champion de la Guilde")).toBeDisabled();
+  await expect(recruit("Médecin de peste")).toHaveAccessibleDescription(
     "Limite atteinte : 3 Champions au maximum.",
   );
 
   // Removing a fighter frees the slot again.
-  await page.getByRole("button", { name: "Renvoyer Guild Wizard" }).click();
-  await expect(recruit("Guild Champion")).toBeEnabled();
-  await expect(recruit("Guild Mercenary")).toBeEnabled();
+  await page.getByRole("button", { name: "Renvoyer Magicien de la Guilde" }).click();
+  await expect(recruit("Champion de la Guilde")).toBeEnabled();
+  await expect(recruit("Mercenaire de la Guilde")).toBeEnabled();
 });
