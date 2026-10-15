@@ -78,7 +78,7 @@
       "name": { "en": "Desecrated Chapel", "fr": "Chapelle profanée" },
       "flavour": {
         "en": "This once holy place now has walls blackened with mould and dripping filth. It has become an epicentre of the Black Rot. A place where the Pox Priest and his apprentices practise dark communion.",
-        "fr": "Les parois de ce lieu jadis sacré sont désormais noircies de moisissure et ruissellent d'immondices. Il est devenu un épicentre de la Pourriture noire. Un lieu où le Prêtre de la Vérole et ses apprentis pratiquent une sombre communion."
+        "fr": "Les parois de ce lieu jadis sacré sont désormais noircies de moisissure et ruissellent d'immondices. Il est devenu un épicentre de la Pourriture noire. Un lieu où le Prêtre Véroleux et ses apprentis pratiquent une sombre communion."
       },
       "income": "3d6x5",
       "rules": [
@@ -227,7 +227,7 @@
   "fighters": [
     {
       "id": "pox-priest",
-      "name": { "en": "Pox Priest", "fr": "Prêtre de la Vérole" },
+      "name": { "en": "Pox Priest", "fr": "Prêtre Véroleux" },
       "category": "leader",
       "keywords": ["leader", "verminkin", "priest"],
       "cost": 170,
@@ -254,7 +254,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie des Vermineux."
       },
       "quote": { "en": "Scurry forth, and bear the Black Rot!", "fr": "Élancez-vous, et portez la Pourriture noire !" },
-      "sourceRef": { "page": 87, "md": "07_verminkin.md > Prêtre de la Vérole" }
+      "sourceRef": { "page": 87, "md": "07_verminkin.md > Prêtre Véroleux" }
     },
     {
       "id": "nightfang-assassin",
@@ -408,7 +408,7 @@
     },
     {
       "id": "pox-priests-apprentice",
-      "name": { "en": "Pox Priest's Apprentice", "fr": "Apprenti prêtre de la Vérole" },
+      "name": { "en": "Pox Priest's Apprentice", "fr": "Apprenti véroleux" },
       "category": "champion",
       "keywords": ["champion", "verminkin", "priest"],
       "cost": 125,
@@ -438,7 +438,7 @@
         "en": "Bring them boils! Bring them death!",
         "fr": "Apportez-leur les furoncles ! Apportez-leur la mort !"
       },
-      "sourceRef": { "page": 89, "md": "07_verminkin.md > Apprenti prêtre de la Vérole" }
+      "sourceRef": { "page": 89, "md": "07_verminkin.md > Apprenti véroleux" }
     },
     {
       "id": "verminkin-champion",

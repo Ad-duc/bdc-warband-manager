@@ -14,7 +14,7 @@ Le jeu n'impose aucune gamme de figurines (25-30 mm, socles ronds ou carrés). L
 | Cabales de la Mort (*Death Covens*) | Vampires, nécromant, loup-garou, squelettes et zombies | Soulblight Gravelords (vampire, nécromancien, Deathrattle Skeletons, Deadwalker Zombies), Loups sinistres (*Dire Wolf*) ou chauves-souris en bêtes |
 | Le Cloître gangrené (*The Blighted Cloister*) | Chevaliers pestiférés en armure lourde, démons de la peste, hommes-bêtes, cultistes, peu de tir | Putrid Blightkings, Plaguebearers, Gors hommes-bêtes, cultistes de Nurgle, boîte Warhammer Quest: Darkwater (source d'inspiration de la faction) |
 
-Noms de combattants relevés dans les règles (liste partielle) : Capitaine de la Guilde (*Guild Captain*), Prêtre de la Vérole (*Pox Priest*), Démon de la Pourriture (*Rot Demon*).
+Noms de combattants relevés dans les règles (liste partielle) : Capitaine de la Guilde (*Guild Captain*), Prêtre Véroleux (*Pox Priest*), Démon de la Pourriture (*Rot Demon*).
 
 ## Composition d'une bande (rappel)
 

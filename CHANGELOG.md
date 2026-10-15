@@ -25,12 +25,16 @@ version is given separately (playtest v1.03).
   is centred on the shield, and every closed card has the same height.
 - The faction and fighter names are now in French, like the rest of the
   translation: Mercenaires de la Guilde, Vermineux, Cabales de la Mort, Le
-  Cloître gangrené, Capitaine de la Guilde, Maître artificier, Bâtard du sang...
+  Cloître gangrené, Capitaine de la Guilde, Maître artificier, Prêtre Véroleux,
+  Bâtard du sang...
   The English name stays in parentheses in the rules reader. The Wizard
   keyword becomes Magicien. Saved warbands are not affected.
 
 ### Fixed
 
+- Translation fixes (#12, #13): the Verminkin faction is now named Vermineux
+  in French, and the Pox Priest becomes the Prêtre Véroleux, with his
+  Apprenti véroleux.
 - A new version of the app now replaces the old one by itself: the app checks
   for an update when its tab comes back to the foreground and every 15 minutes,
   and reloads the page on the new version, at the same screen. Clearing the

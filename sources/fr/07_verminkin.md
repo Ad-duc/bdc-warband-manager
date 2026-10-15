@@ -27,12 +27,12 @@ Avant d'engager le moindre combattant (*fighter*), choisissez une origine (*orig
 
 **Restrictions**
 
-**Chef (*Leader*) :** vous devez recruter un **Prêtre de la Vérole (*Pox Priest*)** pour diriger votre bande (*warband*) au début de la campagne.
+**Chef (*Leader*) :** vous devez recruter un **Prêtre Véroleux (*Pox Priest*)** pour diriger votre bande (*warband*) au début de la campagne.
 
 **Règles spéciales (*Special Rules*)**
 
 - Vous commencez la campagne avec le repaire (*stronghold*) **Chapelle profanée** (*Desecrated Chapel*).
-- Votre bande (*warband*) peut inclure 0-2 Apprentis prêtres de la Vérole (*Pox Priest's Apprentice*).
+- Votre bande (*warband*) peut inclure 0-2 Apprentis véroleux (*Pox Priest's Apprentice*).
 
 ### Coureurs des toits (*Rooftop Runners*)
 
@@ -77,7 +77,7 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), vous commencez 
 
 ### Chapelle profanée (*Desecrated Chapel*)
 
-> Les parois de ce lieu jadis sacré sont désormais noircies de moisissure et ruissellent d'immondices. Il est devenu un épicentre de la Pourriture noire (*Black Rot*). Un lieu où le Prêtre de la Vérole (*Pox Priest*) et ses apprentis pratiquent une sombre communion.
+> Les parois de ce lieu jadis sacré sont désormais noircies de moisissure et ruissellent d'immondices. Il est devenu un épicentre de la Pourriture noire (*Black Rot*). Un lieu où le Prêtre Véroleux (*Pox Priest*) et ses apprentis pratiquent une sombre communion.
 
 **Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
 
@@ -122,7 +122,7 @@ Pendant la campagne, si votre chef (*Leader*) est tué (*killed*) et que vous ch
 
 | Ancien Chef (*Former Leader*) | Champion éligible (*Eligible Champion*) |
 |---|---|
-| Prêtre de la Vérole (*Pox Priest*) | Apprenti prêtre de la Vérole (*Pox Priest's Apprentice*) |
+| Prêtre Véroleux (*Pox Priest*) | Apprenti véroleux (*Pox Priest's Apprentice*) |
 | Assassin Croc-de-Nuit (*Nightfang Assassin*) | Apprenti assassin (*Assassin's Apprentice*) |
 | Seigneur de guerre Croc-de-Fer (*Ironfang Warlord*) | Champion vermineux (*Verminkin Champion*) |
 | Maître artificier (*Sparkseer*) | Apprenti artificier (*Sparkseer's Apprentice*) |
@@ -146,7 +146,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 
 | Combattant | Coût |
 |---|---|
-| Prêtre de la Vérole (*Pox Priest*) | 170 pa |
+| Prêtre Véroleux (*Pox Priest*) | 170 pa |
 | Assassin Croc-de-Nuit (*Nightfang Assassin*) | 140 pa |
 | Seigneur de guerre Croc-de-Fer (*Ironfang Warlord*) | 135 pa |
 | Maître artificier (*Sparkseer*) | 130 pa |
@@ -156,7 +156,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Combattant | Coût |
 |---|---|
 | 0-1 Sorcier vermineux (*Verminkin Warlock*) | 125 pa |
-| 0-1 Apprenti prêtre de la Vérole (*Pox Priest's Apprentice*) | 125 pa |
+| 0-1 Apprenti véroleux (*Pox Priest's Apprentice*) | 125 pa |
 | Apprenti assassin (*Assassin's Apprentice*) | 90 pa |
 | Champion vermineux (*Verminkin Champion*) | 95 pa |
 | 0-2 Apprenti artificier (*Sparkseer's Apprentice*) | 85 pa |
@@ -754,7 +754,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 ## Chefs (*Leaders*)
 
-### Prêtre de la Vérole (*Pox Priest*)
+### Prêtre Véroleux (*Pox Priest*)
 
 *Chef, Vermineux, Prêtre* (*Leader, Verminkin, Priest*) - 170 pa
 
@@ -851,7 +851,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 > "Le gouffre du néant (*void-chasm*) me murmure des choses..."
 
-### 0-1 Apprenti prêtre de la Vérole (*Pox Priest's Apprentice*)
+### 0-1 Apprenti véroleux (*Pox Priest's Apprentice*)
 
 *Champion, Vermineux, Prêtre* (*Champion, Verminkin, Priest*) - 125 pa
 

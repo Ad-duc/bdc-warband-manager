@@ -1,6 +1,6 @@
 # Black Death City - Playtest v1.03 : glossaire VO > VF
 
-Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné. Mis à jour le 13/10/2026 (version 6) : noms de factions, mots-clés de faction et nom commun "coven" traduits (décision H17). Mis à jour le 14/10/2026 (version 7) : Wizard devient Magicien (décision H18). Mis à jour le 14/10/2026 (version 8) : noms de combattants traduits (décision H19). Mis à jour le 15/10/2026 (version 9) : Vermigènes devient Vermineux (décision H20).
+Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné. Mis à jour le 13/10/2026 (version 6) : noms de factions, mots-clés de faction et nom commun "coven" traduits (décision H17). Mis à jour le 14/10/2026 (version 7) : Wizard devient Magicien (décision H18). Mis à jour le 14/10/2026 (version 8) : noms de combattants traduits (décision H19). Mis à jour le 15/10/2026 (version 9) : Vermigènes devient Vermineux (décision H20), Prêtre Véroleux devient Prêtre Véroleux (décision H21).
 
 ## Ligne directrice
 
@@ -25,7 +25,7 @@ Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les aj
 - Les numéros de page cités sont ceux imprimés dans la VO (page du PDF = page imprimée + 1).
 - Majuscules : la VF garde les majuscules de la VO sur les termes de jeu. Les titres d'entrées (sorts, compétences, objets, rebondissements) ne prennent la majuscule qu'au premier mot, et au premier nom quand ils commencent par un article défini (La Chapelle, Le Coffre).
 
-## Décisions prises (H1 à H20)
+## Décisions prises (H1 à H21)
 
 | Réf. | VO | VF retenue |
 |---|---|---|
@@ -48,7 +48,8 @@ Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les aj
 | H17 | Guild Mercenaries, Verminkin, Death Covens, The Blighted Cloister (noms de factions), mots-clés Mercenary, Verminkin, Cloister, et le nom commun coven | Mercenaires de la Guilde, Vermineux, Cabales de la Mort, Le Cloître gangrené ; mots-clés Mercenaire, Vermineux, Cloître ; coven devient cabale (Armurerie de la Cabale, Cabale du Maître artificier). Le terme anglais suit chaque occurrence entre parenthèses. Les noms de combattants restent en VO. Décision du 13/10/2026. |
 | H18 | Wizard, Warlock, Sorcerer | Wizard = Magicien (mot-clé et composés : Liste des Magiciens, Suite du Magicien) ; Warlock = Sorcier ; Sorcerer = sorcier (Clergé de sorciers, prêtres-sorciers). Remplace "Sorcier" pour Wizard. Décision du 14/10/2026. |
 | H19 | Noms de combattants (56 noms) | Traduits, avec le nom anglais au singulier entre parenthèses à chaque occurrence : Capitaine de la Guilde (*Guild Captain*). Choix notables : Mercenaire de la Guilde (même nom que la faction, comme en VO), Maître artificier (*Sparkseer*), Bâtard du sang (*Misbegotten*), Sorcier vermineux (*Verminkin Warlock*), démons "de la Pourriture" en forme courte. Les tables de noms D66 ne sont pas traduites. Décision du 14/10/2026. |
-| H20 | Verminkin | Vermineux (nom de faction, mot-clé et adjectif, invariable : un Guerrier vermineux, les Vermineux, Armurerie des Vermineux). Remplace "Vermigènes" (H17), terme employé dans la VF de Mordheim. Décision du 15/10/2026. |
+| H20 | Verminkin | Vermineux (nom de faction, mot-clé et adjectif, invariable : un Guerrier vermineux, les Vermineux, Armurerie des Vermineux). Remplace "Vermigènes" (H17), terme employé dans la VF de Mordheim. Pox Priest devient Prêtre Véroleux et Pox Priest's Apprentice Apprenti véroleux (porteur de la maladie plutôt que clergé, voir H19). Décision du 15/10/2026. |
+| H21 | Pox Priest, Pox Priest's Apprentice | Prêtre Véroleux, Apprenti véroleux. Remplacent "Prêtre Véroleux" et "Apprenti véroleux" (H19) : porteur de maladie plutôt que clergé, en écho à Vermineux. Décision du 15/10/2026. |
 
 ## Changements depuis la version 1
 
@@ -878,8 +879,8 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Nightfang Assassin | Assassin Croc-de-Nuit | Factions et combattants | Tranché (H19). Combattant des Vermineux. |
 | Noble | Noble | Factions et combattants | VO conservée (identique en VF). Combattant des Mercenaires de la Guilde. |
 | Plague Doctor | Médecin de peste | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
-| Pox Priest | Prêtre de la Vérole | Factions et combattants | Tranché (H19). Combattant des Vermineux. |
-| Pox Priest's Apprentice | Apprenti prêtre de la Vérole | Factions et combattants | Tranché (H19). Combattant des Vermineux. La VO écrit aussi "Pox Priest Apprentices" (p. 74). |
+| Pox Priest | Prêtre Véroleux | Factions et combattants | Tranché (H19). Combattant des Vermineux. |
+| Pox Priest's Apprentice | Apprenti véroleux | Factions et combattants | Tranché (H19). Combattant des Vermineux. La VO écrit aussi "Pox Priest Apprentices" (p. 74). |
 | Rat-Mutant | Rat-mutant | Factions et combattants | Tranché (H19). Combattant des Vermineux. La liste p. 77 écrit "Rat Mutant". |
 | Rolling-Contraption | Engin roulant | Factions et combattants | Tranché (H19). Combattant des Vermineux. La VO écrit aussi "Rolling Contraptions" (p. 74). |
 | Rot Demon | Démon de la Pourriture | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
@@ -1278,7 +1279,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Demonic Wards | Protections démoniaques | Règles spéciales de combattants | Héraut de la Pourriture, Démon de la Pourriture, Rejeton de la Pourriture, Colosse de la Pourriture. |
 | Engineer | Ingénierie | Règles spéciales de combattants | Action bonus du Maître artificier et de son apprenti. |
 | Guild Magic | Magie de la Guilde | Règles spéciales de combattants | Magicien de la Guilde. Voir H1. |
-| Holy Magic | Magie sacrée | Règles spéciales de combattants | Clerc de la Guilde et Apprenti prêtre de la Vérole. |
+| Holy Magic | Magie sacrée | Règles spéciales de combattants | Clerc de la Guilde et Apprenti véroleux. |
 | Hulking Form | Carrure massive | Règles spéciales de combattants | Mutation de lignée du Bâtard du sang. |
 | Incredible Strength | Force incroyable | Règles spéciales de combattants | v1.02 uniquement (Ogre mercenaire, Rat-mutant, Ogre zombie, Colosse de la Pourriture) : supprimée en v1.03. |
 | Large and Heavy | Grand et lourd | Règles spéciales de combattants | Engin roulant. |
@@ -1287,7 +1288,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Martial Lineage | Lignée martiale | Règles spéciales de combattants | Chevalier au sang maudit. |
 | Master of Dark Spellcraft | Maître du sombre art de la magie | Règles spéciales de combattants | Grand Sorcier. |
 | Master of Necromancy | Maître de la nécromancie | Règles spéciales de combattants | Nécromancien. |
-| Master of Plague Magic | Maître de la magie de peste | Règles spéciales de combattants | Prêtre de la Vérole. |
+| Master of Plague Magic | Maître de la magie de peste | Règles spéciales de combattants | Prêtre Véroleux. |
 | Master of Spellcraft | Maître de l'art de la magie | Règles spéciales de combattants | Grand Magicien de la Guilde. |
 | Noble Blood | Sang noble | Règles spéciales de combattants | Noble au sang maudit et Noble lycanthrope. |
 | Noble Lineage | Noble lignée | Règles spéciales de combattants | Seigneur des tumulus. |
