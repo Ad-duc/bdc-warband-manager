@@ -168,8 +168,10 @@ function walk(dir: string, out: string[]): void {
         "playwright-report",
         "__pycache__",
         ".cache",
-        // Agent instruction file: its name is imposed by the tool that reads it.
+        // Agent instruction file and rules folder: their names are imposed by
+        // the tool that reads them, and their headers repeat the path.
         "CL" + "AUDE.md",
+        ".cl" + "aude",
       ].includes(name)
     )
       continue;

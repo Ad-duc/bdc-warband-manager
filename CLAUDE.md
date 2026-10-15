@@ -124,6 +124,9 @@ Run the e2e tests for any change to a screen. With a preinstalled Chromium:
 
 ## Git and GitHub
 
+Branch naming, commit style and the pull request routine are detailed in
+`.claude/rules/git-workflow.md`; the rules below take precedence over it.
+
 - Commits are authored and committed as "Adrien Duclaud" (the repository
   `git config` sets it), with no co-author or tool trailer.
 - Pull requests are the rule for procedures and for any change that needs a
