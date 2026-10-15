@@ -31,7 +31,7 @@ export function GroupCampaignsSection() {
 
   return (
     <section aria-labelledby="groups-heading" className="mt-10 border-t-2 border-on-panel pt-6">
-      <h2 id="groups-heading" className="text-center font-hand text-3xl">
+      <h2 id="groups-heading" className="title-section text-center">
         {t("groups.heading")}
       </h2>
       <p className="mx-auto mt-2 max-w-3xl text-center text-sm">{t("groups.intro")}</p>
@@ -66,7 +66,7 @@ export function GroupCampaignsSection() {
           {campaigns.map((c) => (
             <li key={c.id} className="flex flex-wrap items-center gap-3 border-2 border-on-panel p-3">
               <a
-                className="min-w-0 flex-1 font-hand text-2xl underline-offset-4 hover:underline"
+                className="title-section min-w-0 flex-1 underline-offset-4 hover:underline"
                 href={hrefFor({ name: "groupCampaign", id: c.id })}
               >
                 {c.name || t("groups.unnamed")}

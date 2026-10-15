@@ -103,6 +103,23 @@ interaction goes with an end-to-end test and is added to
 - **Typography.** Straight quotes and apostrophes, simple hyphen, no em dash,
   no non-breaking, thin or invisible space. `npm run check:data` scans the data
   and the generators for these characters.
+- **Type scale.** Screens use three title levels, defined in
+  `src/styles/index.css`, and nothing else sets the size of a heading:
+
+  | Level         | Class           | Look                      | Used for                                                         |
+  | ------------- | --------------- | ------------------------- | ---------------------------------------------------------------- |
+  | Page title    | `title-page`    | handwritten, 2.25rem      | every `h1`, wizard step titles included                          |
+  | Section title | `title-section` | handwritten, 1.5rem       | every `h2`, dialog titles, card names (faction, origin, warband) |
+  | Sub-title     | `title-sub`     | body font, bold, 1.125rem | `h3` to `h6`, legends of a group of fields                       |
+
+  A black band adds `band` to the level (`band title-section`) and keeps the
+  handwritten font. Only `font-gothic` may be added on top of a level (fighter
+  names, style guide). Body text is `text-sm` and tables use `.table-bdc`.
+  Print layouts (`src/print`, `print.css`, `reminder.css`) keep their sizes in
+  points, and the rules reader keeps the book hierarchy (`.reader-content`).
+  `npm run check:ui` fails on a heading without the class of its level or
+  with its own size, weight or font.
+
 - **Dice.** Every roll states its number of dice: `1D6`, `2D6`, `1D3+1`,
   never a bare `D6` (D66 tables keep their name). The app applies the rule on
   display, `npm run check:data` rejects a bare die in the data texts and in

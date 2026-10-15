@@ -259,7 +259,7 @@ export function BattleSetupPage({
 
   const chapter = scenarioChapter();
   const step = (n: number, key: string) => (
-    <h2 className="band text-2xl">
+    <h2 className="band title-section">
       {n}. {t(`battle.step.${key}`)}
     </h2>
   );
@@ -268,7 +268,7 @@ export function BattleSetupPage({
     <div className="mx-auto max-w-6xl space-y-6">
       <header className="flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h1 className="font-hand text-4xl">{t("battle.title")}</h1>
+          <h1 className="title-page">{t("battle.title")}</h1>
           {campaign !== null && campaign !== undefined && (
             <p>
               {t("battle.forCampaign")}{" "}
@@ -503,7 +503,7 @@ export function BattleSetupPage({
               .filter((s) => !s.title.startsWith("Le Rebondissement"))
               .map((section, i) => (
                 <div key={section.title} lang="fr">
-                  <h3 className="font-bold">{section.title}</h3>
+                  <h3 className="title-sub">{section.title}</h3>
                   <Markdown text={section.markdown} idPrefix={`setup-before-${i}`} />
                 </div>
               ))}
@@ -525,7 +525,7 @@ export function BattleSetupPage({
                     className="space-y-2 border-2 border-on-panel p-3"
                     data-testid={`groups-${key}`}
                   >
-                    <h3 className="font-bold">
+                    <h3 className="title-sub">
                       {t("battle.groupsOf", { name: side.label || t(`battle.side.${key}`) })}
                     </h3>
                     <label className="flex items-center gap-2">
@@ -603,7 +603,7 @@ export function BattleSetupPage({
               const prepared = spells[key];
               return (
                 <div key={key} className="space-y-2">
-                  <h3 className="font-bold">{side.label}</h3>
+                  <h3 className="title-sub">{side.label}</h3>
                   {list.length === 0 ? (
                     <p className="text-sm">{t("battle.noCaster")}</p>
                   ) : (
@@ -670,7 +670,7 @@ export function BattleSetupPage({
             )}
             {scenario.phases.during.map((section, i) => (
               <div key={section.title} lang="fr">
-                <h3 className="font-bold">{section.title}</h3>
+                <h3 className="title-sub">{section.title}</h3>
                 <Markdown text={section.markdown} idPrefix={`setup-during-${i}`} />
               </div>
             ))}
@@ -681,7 +681,7 @@ export function BattleSetupPage({
             {step(7, "after")}
             {scenario.phases.campaign.map((section, i) => (
               <div key={section.title} lang="fr">
-                <h3 className="font-bold">{section.title}</h3>
+                <h3 className="title-sub">{section.title}</h3>
                 <Markdown text={section.markdown} idPrefix={`setup-after-${i}`} />
               </div>
             ))}
@@ -694,7 +694,7 @@ export function BattleSetupPage({
                   void saveToCampaign(campaign);
                 }}
               >
-                <h3 id={`${formId}-title`} className="font-bold">
+                <h3 id={`${formId}-title`} className="title-sub">
                   {t("battle.recordCampaign")}
                 </h3>
                 <fieldset>

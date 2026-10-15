@@ -47,7 +47,7 @@ export function FighterPanel({
             fighter.lesson.side === "a" ? "bg-on-panel" : "bg-white"
           }`}
         />
-        <h2 id={headingId} className="font-gothic text-2xl leading-tight">
+        <h2 id={headingId} className="title-section font-gothic leading-tight">
           {name}
         </h2>
       </div>

@@ -59,7 +59,7 @@ tests/          unit (vitest) and e2e (Playwright)
 ```bash
 npm ci
 npm run dev                 # http://localhost:5173/bdc-warband-manager/
-npm run check               # typecheck, lint, format, data, i18n, unit tests
+npm run check               # typecheck, lint, format, data, i18n, type scale, unit tests
 npm run check:generated     # generated faction files match their generators
 npm run test:coverage       # 100% required on src/rules
 npm run test:e2e            # Playwright, Chromium and Firefox, with axe-core
@@ -89,6 +89,10 @@ Run the e2e tests for any change to a screen. With a preinstalled Chromium:
   of an ellipsis character, no em or en dash, no non-breaking, thin or
   zero-width space. `npm run check:data` scans the repository for them and for
   any mention of an AI tool.
+- **Type scale.** Every heading uses the class of its level and nothing else
+  sets its size: `title-page` for `h1`, `title-section` for `h2`, `title-sub`
+  for `h3` to `h6` (`src/styles/index.css`). The full table and the
+  exceptions are in `CONTRIBUTING.md`; `npm run check:ui` enforces it.
 - **Dice.** Every roll states its count: `1D6`, `2D6`, `1D3+1`, never a bare
   `D6`; D66 tables keep their name.
 - **Rules.** Never invent a rule. A reading of an unclear text goes into

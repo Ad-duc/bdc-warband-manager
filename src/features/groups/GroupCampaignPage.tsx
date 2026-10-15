@@ -68,7 +68,7 @@ export function GroupCampaignPage({ id }: { id: string }) {
   return (
     <div className="mx-auto max-w-6xl space-y-6">
       <section className="panel-parchment space-y-3 p-4 sm:p-6" aria-labelledby="group-heading">
-        <h1 id="group-heading" className="font-hand text-4xl">
+        <h1 id="group-heading" className="title-page">
           {campaign.name || t("groups.unnamed")}
         </h1>
         <div className="grid gap-3 md:grid-cols-2">
@@ -122,7 +122,7 @@ export function GroupCampaignPage({ id }: { id: string }) {
       </section>
 
       <section className="panel-parchment space-y-3 p-4 sm:p-6" aria-labelledby="participants-heading">
-        <h2 id="participants-heading" className="band text-2xl">
+        <h2 id="participants-heading" className="band title-section">
           {t("groups.participants")}
         </h2>
         {campaign.participants.length === 0 ? (
@@ -195,7 +195,7 @@ export function GroupCampaignPage({ id }: { id: string }) {
               setLocalPick("");
             }}
           >
-            <h3 id={`${formId}-local`} className="font-bold">
+            <h3 id={`${formId}-local`} className="title-sub">
               {t("groups.addLocal")}
             </h3>
             <label className="block">
@@ -235,7 +235,7 @@ export function GroupCampaignPage({ id }: { id: string }) {
               setGuest({ name: "", factionId: "", rating: "" });
             }}
           >
-            <h3 id={`${formId}-guest`} className="font-bold">
+            <h3 id={`${formId}-guest`} className="title-sub">
               {t("groups.addGuest")}
             </h3>
             <label className="block">
@@ -288,7 +288,7 @@ export function GroupCampaignPage({ id }: { id: string }) {
       </section>
 
       <section className="panel-parchment space-y-3 p-4 sm:p-6" aria-labelledby="standings-heading">
-        <h2 id="standings-heading" className="band text-2xl">
+        <h2 id="standings-heading" className="band title-section">
           {t("groups.standings")}
         </h2>
         {table.length === 0 ? (
@@ -324,7 +324,7 @@ export function GroupCampaignPage({ id }: { id: string }) {
       </section>
 
       <section className="panel-parchment space-y-3 p-4 sm:p-6" aria-labelledby="battles-heading">
-        <h2 id="battles-heading" className="band text-2xl">
+        <h2 id="battles-heading" className="band title-section">
           {t("groups.battles")}
         </h2>
         {campaign.battles.length === 0 ? (
@@ -338,7 +338,7 @@ export function GroupCampaignPage({ id }: { id: string }) {
               return (
                 <li key={b.id} className="flex flex-wrap items-start gap-3 border-2 border-on-panel p-3">
                   <div className="min-w-0 flex-1">
-                    <p className="font-bold">
+                    <p className="title-sub">
                       {t("groups.versus", { a: nameOf(participant(a)), b: nameOf(participant(c)) })}
                     </p>
                     <p className="text-sm">

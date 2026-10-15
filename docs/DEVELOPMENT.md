@@ -61,6 +61,7 @@ npm run dev          # http://localhost:5173/bdc-warband-manager/
 | `npm run test:e2e`                     | End-to-end tests (Playwright, Chromium and Firefox)                                          |
 | `npm run check:data`                   | Validate `src/data/*.json` and compare it with the translated Markdown of `sources/fr/`      |
 | `npm run check:i18n`                   | Same keys in `en.json` and `fr.json`, every `t()` key exists, no unused key                  |
+| `npm run check:ui`                     | Every heading uses the title class of its level (type scale, see `CONTRIBUTING.md`)          |
 | `npm run generate:data`                | Rebuild the Verminkin, Death Covens and Blighted Cloister data from the translation (Python) |
 | `npm run check:generated`              | Fail if a generated data file is out of date; writes nothing                                 |
 | `npm run fix:dice`                     | Write every die with its number of dice (1D6) in `sources/fr` and the data texts             |

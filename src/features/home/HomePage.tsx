@@ -67,7 +67,7 @@ export function HomePage() {
 
   return (
     <section aria-labelledby="home-heading" className="panel-parchment mx-auto max-w-7xl p-6 sm:p-10">
-      <h1 id="home-heading" className="text-center font-hand text-4xl sm:text-5xl">
+      <h1 id="home-heading" className="title-page text-center">
         {t("home.heading")}
       </h1>
       <div className="ornament my-4" aria-hidden="true" />
@@ -136,7 +136,7 @@ export function HomePage() {
                   <div className="min-w-0 flex-1">
                     <a
                       href={hrefFor({ name: "wizard", id: w.id })}
-                      className="font-hand text-2xl underline-offset-4 hover:underline"
+                      className="title-section underline-offset-4 hover:underline"
                     >
                       {title}
                     </a>

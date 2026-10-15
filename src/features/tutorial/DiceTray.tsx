@@ -113,7 +113,7 @@ export function DiceTray({
 
   return (
     <section aria-labelledby="tutorial-dice" className="panel-parchment flex flex-col gap-3 p-4">
-      <h2 id="tutorial-dice" className="text-sm font-bold uppercase tracking-wider">
+      <h2 id="tutorial-dice" className="title-section">
         {t("tutorial.dice.title")}
       </h2>
       {dice === null ? (

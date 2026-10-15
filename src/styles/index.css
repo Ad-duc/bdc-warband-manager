@@ -189,11 +189,41 @@
     background-color: var(--color-bone);
   }
 
-  /* Category band: ink background, white handwritten text */
+  /*
+   * Typographic scale of the screens (CONTRIBUTING.md, "Type scale"). Every heading
+   * uses one of these three levels and nothing else sets its size, so that a
+   * level looks the same on every screen. Print layouts keep their own sizes
+   * in points (print.css, reminder.css).
+   */
+  .title-page {
+    font-family: var(--font-hand);
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+  }
+  .title-section {
+    font-family: var(--font-hand);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+  .title-sub {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+  }
+
+  /*
+   * Category band: ink background, white handwritten text. Declared after
+   * the title levels so that a band keeps the handwritten font whatever its
+   * level (band title-section, band title-sub).
+   */
   .band {
     background-color: var(--color-ink);
     color: var(--color-white);
     font-family: var(--font-hand);
+    font-weight: 400;
     padding: 0.25rem 0.75rem;
   }
 
