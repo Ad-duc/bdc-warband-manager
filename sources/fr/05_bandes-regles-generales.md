@@ -24,7 +24,7 @@ Au début de la campagne, vous disposez de 1000 pièces d'argent (*silver*) pour
 La version de test de Black Death City propose actuellement 4 factions parmi lesquelles choisir :
 
 - **Mercenaires de la Guilde (*Guild Mercenaries*)** - page xx
-- **Vermigènes (*Verminkin*)** - page xx
+- **Vermineux (*Verminkin*)** - page xx
 - **Cabales de la Mort (*Death Covens*)** - page xx
 - **Le Cloître gangrené (*The Blighted Cloister*)** - page xx
 

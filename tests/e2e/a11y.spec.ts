@@ -162,7 +162,7 @@ for (const locale of ["fr-FR"] as const) {
 
   test.describe(`faction catalogues in ${locale}`, () => {
     test.use({ locale });
-    for (const faction of ["Vermigènes", "Cabales de la Mort", "Le Cloître gangrené"]) {
+    for (const faction of ["Vermineux", "Cabales de la Mort", "Le Cloître gangrené"]) {
       test(faction, async ({ page }) => {
         await page.goto("./");
         await page.getByRole("button", { name: "Nouvelle bande" }).click();

@@ -21,7 +21,7 @@ Version de test v1.03, publiée le 12/10/2026. Ce journal liste les changements 
 | 23 | Jets d'attaque réussis | Le 6 naturel ou le seuil de Lame obtiennent une touche | Mêmes seuils, mais ces jets sont désormais des "jets d'attaque réussis" |
 | 24 | Parade | Utiliser une touche, puis parer une touche adverse | Défausser un jet d'attaque réussi, puis, sur 2+, choisir un jet d'attaque réussi adverse à parer |
 | 24 | Résolution des touches | Section "Resolving Hits", jets d'armure pour chaque touche | Section "Resolving Attacks" : la cible effectue un jet d'armure par attaque ; la mention d'une Armure de "-" disparaît |
-| 25-26 | Exemple | Absent | Nouvel exemple complet (Mercenaire de la Guilde (*Guild Mercenary*) contre Guerrier vermigène (*Verminkin Warrior*)) |
+| 25-26 | Exemple | Absent | Nouvel exemple complet (Mercenaire de la Guilde (*Guild Mercenary*) contre Guerrier vermineux (*Verminkin Warrior*)) |
 | 28 | Action d'Attaque à distance | "controlling player" | "commanding player" ; nouvelle règle Surplomb : à 3" ou plus au-dessus de la cible, +1 aux jets d'attaque |
 | 29 | Contre-charge | Redite sur le défenseur | "Si un combattant utilise cette arme alors qu'il est le défenseur" |
 | 29 | Lourd | Pendant son activation, avec règle de rechargement | Pendant la même activation ; la règle de rechargement est supprimée |
@@ -76,7 +76,7 @@ Version de test v1.03, publiée le 12/10/2026. Ce journal liste les changements 
 | Ogre mercenaire (*Mercenary Ogre*) | Force incroyable | Règle supprimée |
 | Manoir délabré (origine) | Renvoi "(p. xx)" | Renvoi supprimé |
 
-## Vermigènes (*Verminkin*) (lot 07)
+## Vermineux (*Verminkin*) (lot 07)
 
 | Élément | v1.02 | v1.03 |
 |---|---|---|

@@ -17,7 +17,7 @@ test.use({ locale: "fr-FR" });
 test("random warband name follows the selected faction", async ({ page }) => {
   await page.goto("./");
   await page.getByRole("button", { name: "Nouvelle bande" }).click();
-  await page.getByRole("radio", { name: /Vermigènes/ }).check();
+  await page.getByRole("radio", { name: /Vermineux/ }).check();
   await page.getByRole("button", { name: /^Nom de bande au hasard/ }).click();
   const name = await page.getByLabel("Nom de la bande").inputValue();
   const table = WARBAND_NAME_TABLES["verminkin"];

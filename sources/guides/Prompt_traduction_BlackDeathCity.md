@@ -47,7 +47,7 @@ Tu travailles par étapes et tu t'arrêtes à la fin de chaque étape.
   04 Chapitre 3 - Scénarios
   05 Chapitre 4 - Règles générales de bande et compétences de vétéran
   06 Chapitre 4 - Mercenaires de la Guilde (Guild Mercenaries)
-  07 Chapitre 4 - Vermigènes (Verminkin)
+  07 Chapitre 4 - Vermineux (Verminkin)
   08 Chapitre 4 - Cabales de la Mort (Death Covens)
   09 Chapitre 4 - Le Cloître gangrené (The Blighted Cloister)
   10 Chapitre 6 - Aide de jeu et feuille de bande
@@ -70,9 +70,9 @@ Tu travailles par étapes et tu t'arrêtes à la fin de chaque étape.
    Gargouille (*Gargoyle*).
    Les noms de factions et leurs mots-clés sont traduits (glossaire, décision H17),
    avec le terme anglais entre parenthèses à chaque occurrence :
-   Mercenaires de la Guilde (*Guild Mercenaries*), Vermigènes (*Verminkin*),
+   Mercenaires de la Guilde (*Guild Mercenaries*), Vermineux (*Verminkin*),
    Cabales de la Mort (*Death Covens*), Le Cloître gangrené (*The Blighted Cloister*) ;
-   mots-clés Mercenaire (*Mercenary*), Vermigène (*Verminkin*), Cloître (*Cloister*) ;
+   mots-clés Mercenaire (*Mercenary*), Vermineux (*Verminkin*), Cloître (*Cloister*) ;
    "coven" (nom commun) devient "cabale" (Armurerie de la Cabale, Cabale du Sparkseer).
 3. Sont traduits : sorts, domaines de magie, compétences, objets, armes, armures,
    traits d'armes, repaires, origines, scénarios, rebondissements. Dans le titre de

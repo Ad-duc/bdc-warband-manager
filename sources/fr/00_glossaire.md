@@ -1,6 +1,6 @@
 # Black Death City - Playtest v1.03 : glossaire VO > VF
 
-Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné. Mis à jour le 13/10/2026 (version 6) : noms de factions, mots-clés de faction et nom commun "coven" traduits (décision H17). Mis à jour le 14/10/2026 (version 7) : Wizard devient Magicien (décision H18). Mis à jour le 14/10/2026 (version 8) : noms de combattants traduits (décision H19).
+Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné. Mis à jour le 13/10/2026 (version 6) : noms de factions, mots-clés de faction et nom commun "coven" traduits (décision H17). Mis à jour le 14/10/2026 (version 7) : Wizard devient Magicien (décision H18). Mis à jour le 14/10/2026 (version 8) : noms de combattants traduits (décision H19). Mis à jour le 15/10/2026 (version 9) : Vermigènes devient Vermineux (décision H20).
 
 ## Ligne directrice
 
@@ -25,7 +25,7 @@ Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les aj
 - Les numéros de page cités sont ceux imprimés dans la VO (page du PDF = page imprimée + 1).
 - Majuscules : la VF garde les majuscules de la VO sur les termes de jeu. Les titres d'entrées (sorts, compétences, objets, rebondissements) ne prennent la majuscule qu'au premier mot, et au premier nom quand ils commencent par un article défini (La Chapelle, Le Coffre).
 
-## Décisions prises (H1 à H19)
+## Décisions prises (H1 à H20)
 
 | Réf. | VO | VF retenue |
 |---|---|---|
@@ -45,9 +45,10 @@ Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les aj
 | H14 | quarter (scénario III) | quartier |
 | H15 | Balefire | Feu funeste |
 | H16 | Will of the Saints | Volonté des Saints |
-| H17 | Guild Mercenaries, Verminkin, Death Covens, The Blighted Cloister (noms de factions), mots-clés Mercenary, Verminkin, Cloister, et le nom commun coven | Mercenaires de la Guilde, Vermigènes, Cabales de la Mort, Le Cloître gangrené ; mots-clés Mercenaire, Vermigène, Cloître ; coven devient cabale (Armurerie de la Cabale, Cabale du Maître artificier). Le terme anglais suit chaque occurrence entre parenthèses. Les noms de combattants restent en VO. Décision du 13/10/2026. |
+| H17 | Guild Mercenaries, Verminkin, Death Covens, The Blighted Cloister (noms de factions), mots-clés Mercenary, Verminkin, Cloister, et le nom commun coven | Mercenaires de la Guilde, Vermineux, Cabales de la Mort, Le Cloître gangrené ; mots-clés Mercenaire, Vermineux, Cloître ; coven devient cabale (Armurerie de la Cabale, Cabale du Maître artificier). Le terme anglais suit chaque occurrence entre parenthèses. Les noms de combattants restent en VO. Décision du 13/10/2026. |
 | H18 | Wizard, Warlock, Sorcerer | Wizard = Magicien (mot-clé et composés : Liste des Magiciens, Suite du Magicien) ; Warlock = Sorcier ; Sorcerer = sorcier (Clergé de sorciers, prêtres-sorciers). Remplace "Sorcier" pour Wizard. Décision du 14/10/2026. |
-| H19 | Noms de combattants (56 noms) | Traduits, avec le nom anglais au singulier entre parenthèses à chaque occurrence : Capitaine de la Guilde (*Guild Captain*). Choix notables : Mercenaire de la Guilde (même nom que la faction, comme en VO), Maître artificier (*Sparkseer*), Bâtard du sang (*Misbegotten*), Sorcier vermigène (*Verminkin Warlock*), démons "de la Pourriture" en forme courte. Les tables de noms D66 ne sont pas traduites. Décision du 14/10/2026. |
+| H19 | Noms de combattants (56 noms) | Traduits, avec le nom anglais au singulier entre parenthèses à chaque occurrence : Capitaine de la Guilde (*Guild Captain*). Choix notables : Mercenaire de la Guilde (même nom que la faction, comme en VO), Maître artificier (*Sparkseer*), Bâtard du sang (*Misbegotten*), Sorcier vermineux (*Verminkin Warlock*), démons "de la Pourriture" en forme courte. Les tables de noms D66 ne sont pas traduites. Décision du 14/10/2026. |
+| H20 | Verminkin | Vermineux (nom de faction, mot-clé et adjectif, invariable : un Guerrier vermineux, les Vermineux, Armurerie des Vermineux). Remplace "Vermigènes" (H17), terme employé dans la VF de Mordheim. Décision du 15/10/2026. |
 
 ## Changements depuis la version 1
 
@@ -153,7 +154,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | friendly | allié | Général | Imposé. "friendly fighter" = combattant allié. |
 | Friendly and Enemy Fighters | Combattants alliés et ennemis | Général | Ajout du lot 02. Rubrique p. 7. |
 | friendly fighter | combattant allié | Général | Ajout du lot 02. Composé de "friendly" (imposé). |
-| Guilder | Guildien | Général | Terme d'ambiance : nom que les Vermigènes donnent aux membres de la Guilde. Voir H1. |
+| Guilder | Guildien | Général | Terme d'ambiance : nom que les Vermineux donnent aux membres de la Guilde. Voir H1. |
 | held item | objet tenu | Général | Imposé. Mot-clé d'objet : Objet tenu. |
 | hire | engager | Général | La VO alterne "hire" et "recruit". |
 | holding | possession | Général | Imposé. Ne pas confondre avec "holding treasure" (porter un trésor). |
@@ -219,7 +220,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | version number | numéro de version | Général |  |
 | vertical distance | distance verticale | Général |  |
 | visibility | visibilité | Général |  |
-| void-chasm | gouffre du néant | Général | Terme d'ambiance (Vermigènes). |
+| void-chasm | gouffre du néant | Général | Terme d'ambiance (Vermineux). |
 | warband | bande | Général | Imposé. |
 | warband rating | valeur de bande | Général | Imposé. |
 | Warband Roster | feuille de bande | Général |  |
@@ -296,7 +297,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Thrall | Asservi | Types de combattants et mots-clés | Imposé. |
 | Undead | Mort-vivant | Types de combattants et mots-clés | Imposé. |
 | Vampyre | Vampire | Types de combattants et mots-clés | Tranché (H2). La graphie archaïsante de la VO n'est pas reprise. |
-| Verminkin | Vermigène | Types de combattants et mots-clés | Mot-clé de faction. Tranché (H17). Pluriel : Vermigènes. |
+| Verminkin | Vermineux | Types de combattants et mots-clés | Mot-clé de faction. Tranché (H17). Pluriel : Vermineux. |
 | Werwulf | Loup-garou | Types de combattants et mots-clés | Tranché (H2). La forme archaïsante de la VO n'est pas reprise. |
 | Witch Hunter | Chasseur de sorcières | Types de combattants et mots-clés | Tranché (H19). Mot-clé identique au nom du combattant. |
 | Wizard | Magicien | Types de combattants et mots-clés | Tranché (H18). Remplace "Sorcier" du glossaire de départ. |
@@ -609,7 +610,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | spell | sort | Magie | Imposé. |
 | spell keyword | mot-clé de sort | Magie |  |
 | Spell Lore | Domaine de magie | Magie | Imposé. "Lore of X" = Domaine de X. |
-| spellcaster | lanceur de sorts | Magie | Ajout du lot 05. Terme général (p. 50) ; la règle spéciale du Sorcier vermigène s'écrit Lanceur de sorts. |
+| spellcaster | lanceur de sorts | Magie | Ajout du lot 05. Terme général (p. 50) ; la règle spéciale du Sorcier vermineux s'écrit Lanceur de sorts. |
 | Successfully Cast | Lancement réussi | Magie |  |
 | Summon Spell | Sort d'Invocation | Magie | Imposé. |
 | Uncontrolled Burst of Power | Déferlement de pouvoir incontrôlé | Magie | Résultat 8+ du jet de fiasco. "sursaut" est réservé à "surge activation". |
@@ -835,7 +836,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
-| Assassin's Apprentice | Apprenti assassin | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Assassin's Apprentice | Apprenti assassin | Factions et combattants | Tranché (H19). Combattant des Vermineux. |
 | Barrow Champion | Champion des tumulus | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
 | Barrow Lord | Seigneur des tumulus | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
 | Bloat Fly | Mouche bouffie | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
@@ -855,7 +856,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Dire Wolf | Loup sinistre | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
 | Dreg Cultist | Cultiste de la lie | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
 | Gargoyle | Gargouille | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
-| Giant Rat | Rat géant | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Giant Rat | Rat géant | Factions et combattants | Tranché (H19). Combattant des Vermineux. |
 | Guild Captain | Capitaine de la Guilde | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
 | Guild Champion | Champion de la Guilde | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
 | Guild Cleric | Clerc de la Guilde | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
@@ -866,7 +867,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | High Sorcerer | Grand Sorcier | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
 | High Wizard of the Guild | Grand Magicien de la Guilde | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. La VO écrit aussi "High Wizard" (p. 56). |
 | Hunting Dog | Chien de chasse | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
-| Ironfang Warlord | Seigneur de guerre Croc-de-Fer | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Ironfang Warlord | Seigneur de guerre Croc-de-Fer | Factions et combattants | Tranché (H19). Combattant des Vermineux. |
 | Knight-Abbot | Chevalier-Abbé | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. L'origine L'Oint cite un "Knight-Abbot Noble" (p. 114). |
 | Lycanfell Beast | Bête lycanthrope | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort (forme transformée). |
 | Lycanfell Noble | Noble lycanthrope | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
@@ -874,23 +875,23 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Misbegotten | Bâtard du sang | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
 | Necromancer | Nécromancien | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. Le nom commun "necromancer" du texte d'ambiance devient "nécromancien". |
 | Necromancer's Apprentice | Apprenti nécromancien | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
-| Nightfang Assassin | Assassin Croc-de-Nuit | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Nightfang Assassin | Assassin Croc-de-Nuit | Factions et combattants | Tranché (H19). Combattant des Vermineux. |
 | Noble | Noble | Factions et combattants | VO conservée (identique en VF). Combattant des Mercenaires de la Guilde. |
 | Plague Doctor | Médecin de peste | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
-| Pox Priest | Prêtre de la Vérole | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
-| Pox Priest's Apprentice | Apprenti prêtre de la Vérole | Factions et combattants | Tranché (H19). Combattant des Vermigènes. La VO écrit aussi "Pox Priest Apprentices" (p. 74). |
-| Rat-Mutant | Rat-mutant | Factions et combattants | Tranché (H19). Combattant des Vermigènes. La liste p. 77 écrit "Rat Mutant". |
-| Rolling-Contraption | Engin roulant | Factions et combattants | Tranché (H19). Combattant des Vermigènes. La VO écrit aussi "Rolling Contraptions" (p. 74). |
+| Pox Priest | Prêtre de la Vérole | Factions et combattants | Tranché (H19). Combattant des Vermineux. |
+| Pox Priest's Apprentice | Apprenti prêtre de la Vérole | Factions et combattants | Tranché (H19). Combattant des Vermineux. La VO écrit aussi "Pox Priest Apprentices" (p. 74). |
+| Rat-Mutant | Rat-mutant | Factions et combattants | Tranché (H19). Combattant des Vermineux. La liste p. 77 écrit "Rat Mutant". |
+| Rolling-Contraption | Engin roulant | Factions et combattants | Tranché (H19). Combattant des Vermineux. La VO écrit aussi "Rolling Contraptions" (p. 74). |
 | Rot Demon | Démon de la Pourriture | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
 | Rotling | Pourrisson | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. |
 | Skeleton Warrior | Guerrier squelette | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
-| Sparkseer | Maître artificier | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
-| Sparkseer's Apprentice | Apprenti artificier | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Sparkseer | Maître artificier | Factions et combattants | Tranché (H19). Combattant des Vermineux. |
+| Sparkseer's Apprentice | Apprenti artificier | Factions et combattants | Tranché (H19). Combattant des Vermineux. |
 | The Blighted Cloister | Le Cloître gangrené | Factions et combattants | Faction. Tranché (H17). Forme courte en VO : "Blighted Cloister". Mot-clé : Cloître. |
-| Verminkin | Vermigènes | Factions et combattants | Faction. Tranché (H17). Mot-clé : Vermigène. |
-| Verminkin Champion | Champion vermigène | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
-| Verminkin Warlock | Sorcier vermigène | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
-| Verminkin Warrior | Guerrier vermigène | Factions et combattants | Tranché (H19). Combattant des Vermigènes. |
+| Verminkin | Vermineux | Factions et combattants | Faction. Tranché (H17). Mot-clé : Vermineux. |
+| Verminkin Champion | Champion vermineux | Factions et combattants | Tranché (H19). Combattant des Vermineux. |
+| Verminkin Warlock | Sorcier vermineux | Factions et combattants | Tranché (H19). Combattant des Vermineux. |
+| Verminkin Warrior | Guerrier vermineux | Factions et combattants | Tranché (H19). Combattant des Vermineux. |
 | Witch Hunter | Chasseur de sorcières | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
 | Witch Hunter's Apprentice | Apprenti chasseur de sorcières | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
 | Zombie | Zombie | Factions et combattants | VO conservée (identique en VF). Combattant des Cabales de la Mort. |
@@ -900,19 +901,19 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
-| Acolytes of Plague | Acolytes de la peste | Origines | Origine des Vermigènes. |
+| Acolytes of Plague | Acolytes de la peste | Origines | Origine des Vermineux. |
 | Aristocrats of Blood | Aristocrates du sang | Origines | Origine des Cabales de la Mort. |
 | Awakened Lord | Seigneur éveillé | Origines | Origine des Cabales de la Mort. |
 | Blessed Rabble | Populace bénie | Origines | Origine du Cloître gangrené. |
 | Disgraced Noble | Noble déchu | Origines | Origine des Mercenaires de la Guilde. |
 | Knights-Militant | Chevaliers militants | Origines | Origine du Cloître gangrené. |
-| Merciless Tyrant | Tyran impitoyable | Origines | Origine des Vermigènes. |
+| Merciless Tyrant | Tyran impitoyable | Origines | Origine des Vermineux. |
 | Perks | Avantages | Origines | Rubrique des origines du Cloître gangrené ; les autres factions écrivent "Special Rules". |
 | Priesthood of Sorcerers | Clergé de sorciers | Origines | Origine du Cloître gangrené. Nom commun traduit (voir H1 et H18 : sorcerer = sorcier) ; les combattants restent "High Sorcerer" et "Cloister Sorcerer". |
 | Restrictions | Restrictions | Origines | Rubrique des origines. |
 | Rogue Necromancer | Nécromancien renégat | Origines | Origine des Cabales de la Mort. Nom commun traduit (voir H1) ; le combattant reste "Necromancer". |
-| Rooftop Runners | Coureurs des toits | Origines | Origine des Vermigènes. |
-| Sparkseer Coven | Cabale du Maître artificier | Origines | Origine des Vermigènes. "coven" traduit par "cabale" (voir H17). |
+| Rooftop Runners | Coureurs des toits | Origines | Origine des Vermineux. |
+| Sparkseer Coven | Cabale du Maître artificier | Origines | Origine des Vermineux. "coven" traduit par "cabale" (voir H17). |
 | Swords for Hire | Épées à louer | Origines | Origine des Mercenaires de la Guilde. |
 | The Anointed One | L'Oint | Origines | Origine du Cloître gangrené. |
 | The Hunt Descends | La chasse s'abat | Origines | Origine des Cabales de la Mort. |
@@ -938,7 +939,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Damnation | Damnation | Repaires et règles de repaire | Table de la Communion démoniaque, résultat 2. |
 | Demonic Ally | Allié démoniaque | Repaires et règles de repaire | Table de la Communion démoniaque, résultat 13-15. |
 | Demonic Communion | Communion démoniaque | Repaires et règles de repaire | Règle de l'Autel impie. |
-| Desecrated Chapel | Chapelle profanée | Repaires et règles de repaire | Repaire des Vermigènes. |
+| Desecrated Chapel | Chapelle profanée | Repaires et règles de repaire | Repaire des Vermineux. |
 | Dilapidated Manor | Manoir délabré | Repaires et règles de repaire | Repaire des Mercenaires de la Guilde. |
 | Eager to Prove | Avides de faire leurs preuves | Repaires et règles de repaire | Règle de la Caserne de la Guilde. |
 | Embalmer's Hall | Salle de l'embaumeur | Repaires et règles de repaire | Repaire des Cabales de la Mort. La VO écrit aussi "Embalmers' Hall". |
@@ -946,11 +947,11 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | engineering points | points d'ingénierie | Repaires et règles de repaire | Règles Bricoleurs fous et Ingénierie folle. |
 | Fighting Pits | Fosses de combat | Repaires et règles de repaire | Règle du Terrier fortifié. |
 | Fortified Keep | Donjon fortifié | Repaires et règles de repaire | Repaire du Cloître gangrené. |
-| Fortified Warren | Terrier fortifié | Repaires et règles de repaire | Repaire des Vermigènes. |
+| Fortified Warren | Terrier fortifié | Repaires et règles de repaire | Repaire des Vermineux. |
 | Grand Pavilion | Grand pavillon | Repaires et règles de repaire | Repaire des Cabales de la Mort. |
 | Guild Barracks | Caserne de la Guilde | Repaires et règles de repaire | Repaire des Mercenaires de la Guilde. Voir H1. |
 | Hidden Library | Bibliothèque cachée | Repaires et règles de repaire | Repaire des Mercenaires de la Guilde. |
-| Hidden Vantage | Poste d'observation caché | Repaires et règles de repaire | Repaire des Vermigènes. |
+| Hidden Vantage | Poste d'observation caché | Repaires et règles de repaire | Repaire des Vermineux. |
 | Immortal Slumber | Sommeil immortel | Repaires et règles de repaire | Règle des Tumulus anciens. |
 | Income | Revenu | Repaires et règles de repaire | Ligne de profil des repaires. |
 | Living Saints | Saints vivants | Repaires et règles de repaire | "the Saints" = les Saints. |
@@ -962,7 +963,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Opulent Manor | Manoir opulent | Repaires et règles de repaire | Repaire des Cabales de la Mort. |
 | Prayers of Plague | Prières de peste | Repaires et règles de repaire | Règle de la Chapelle profanée. |
 | Read Forbidden Scrolls | Lire les parchemins interdits | Repaires et règles de repaire | Option de l'Étude nécromantique. |
-| Rickety Workshop | Atelier branlant | Repaires et règles de repaire | Repaire des Vermigènes. |
+| Rickety Workshop | Atelier branlant | Repaires et règles de repaire | Repaire des Vermineux. |
 | Run the Roofs | Courir les toits | Repaires et règles de repaire | Règle du Poste d'observation caché. |
 | Scry Ancient Scrolls | Scruter les parchemins anciens | Repaires et règles de repaire | Option de l'Étude blasphématoire. |
 | Search the City | Fouiller la Cité | Repaires et règles de repaire | Règle du Donjon fortifié. |
@@ -982,7 +983,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Champion List | Liste des Champions | Armureries et listes d'équipement | Toutes les armureries. |
 | Cleric List | Liste des Clercs | Armureries et listes d'équipement | Armurerie de la Guilde. Reprend le nom du combattant Clerc de la Guilde. |
 | Cloister Armoury | Armurerie du Cloître | Armureries et listes d'équipement | Voir H1. |
-| Contraption List | Liste des Engins | Armureries et listes d'équipement | Armurerie vermigène. |
+| Contraption List | Liste des Engins | Armureries et listes d'équipement | Armurerie des Vermineux. |
 | Coven Armoury | Armurerie de la Cabale | Armureries et listes d'équipement | Voir H1 et H17. |
 | Dreg List | Liste de la lie | Armureries et listes d'équipement | Armurerie du Cloître. Reprend le nom du combattant Cultiste de la lie. |
 | Fighter List | Liste des combattants | Armureries et listes d'équipement | Ajout du lot 06. Variante de "Fighters List" employée dans le sommaire de faction (p. 53). |
@@ -993,11 +994,11 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Munitions List | Liste d'armement | Armureries et listes d'équipement | Armurerie de la Guilde. "munitions" serait un faux ami : la liste contient quatre armes et un seul projectile. |
 | Ogre List | Liste des Ogres | Armureries et listes d'équipement | Armurerie de la Guilde. |
 | Practitioner Item List | Liste d'objets des Praticiens | Armureries et listes d'équipement | Armurerie du Cloître. |
-| Practitioner List | Liste des Praticiens | Armureries et listes d'équipement | Armureries vermigène, de la Cabale et du Cloître. |
-| Rat-Mutant List | Liste des Rats-mutants | Armureries et listes d'équipement | Armurerie vermigène. Reprend le nom du combattant. |
-| Sparkseer List | Liste des Artificiers | Armureries et listes d'équipement | Armurerie vermigène. Reprend le nom du combattant. |
-| Vermin Armoury | Armurerie vermigène | Armureries et listes d'équipement | Ajout du lot 07. Variante de "Verminkin Armoury" employée dans les titres des p. 78 à 80. Voir H17. |
-| Verminkin Armoury | Armurerie vermigène | Armureries et listes d'équipement | Les titres des p. 78 à 80 écrivent "Vermin Armoury" : même VF. Voir H17. |
+| Practitioner List | Liste des Praticiens | Armureries et listes d'équipement | Armureries des Vermineux, de la Cabale et du Cloître. |
+| Rat-Mutant List | Liste des Rats-mutants | Armureries et listes d'équipement | Armurerie des Vermineux. Reprend le nom du combattant. |
+| Sparkseer List | Liste des Artificiers | Armureries et listes d'équipement | Armurerie des Vermineux. Reprend le nom du combattant. |
+| Vermin Armoury | Armurerie des Vermineux | Armureries et listes d'équipement | Ajout du lot 07. Variante de "Verminkin Armoury" employée dans les titres des p. 78 à 80. Voir H17. |
+| Verminkin Armoury | Armurerie des Vermineux | Armureries et listes d'équipement | Les titres des p. 78 à 80 écrivent "Vermin Armoury" : même VF. Voir H17. |
 | Witch Hunter List | Liste des Chasseurs de sorcières | Armureries et listes d'équipement | Ajout du lot 06. Variante de "Witch Hunters List" employée dans les parchemins (p. 68 et 70). |
 | Witch Hunters List | Liste des Chasseurs de sorcières | Armureries et listes d'équipement | Armurerie de la Guilde. Reprend le nom du combattant. La VO écrit aussi "Witch Hunter List". |
 | Wizard List | Liste des Magiciens | Armureries et listes d'équipement | Armurerie de la Guilde. Voir H18. |
@@ -1016,7 +1017,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Cursed Blade | Lame maudite | Armes de corps à corps | Armurerie de la Cabale. |
 | Cursed Sword | Épée maudite | Armes de corps à corps | v1.02 uniquement : remplacée par "Cursed Blade" dans la Liste des Praticiens en v1.03. |
 | Dagger | Dague | Armes de corps à corps |  |
-| Dagger/Punch Dagger | Dague/Dague de poing | Armes de corps à corps | Armurerie vermigène. |
+| Dagger/Punch Dagger | Dague/Dague de poing | Armes de corps à corps | Armurerie des Vermineux. |
 | Demonic Rot Blade | Lame de pourriture démoniaque | Armes de corps à corps |  |
 | Demonic Rot Maw | Gueule de pourriture démoniaque | Armes de corps à corps | Arme naturelle du Rejeton de la Pourriture. |
 | Demonic Rot Strike | Frappe de pourriture démoniaque | Armes de corps à corps | Arme naturelle du Pourrisson. |
@@ -1089,7 +1090,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 |---|---|---|---|
 | Cuirass | Cuirasse | Armures |  |
 | Full-Plate | Armure de plates | Armures | Tranché (H7). La VO écrit aussi "Full-plate". |
-| Heavy Plating | Blindage lourd | Armures | Armurerie vermigène. |
+| Heavy Plating | Blindage lourd | Armures | Armurerie des Vermineux. |
 | Ogre Armour | Armure d'ogre | Armures |  |
 | Warded Robes | Robe de protection | Armures | "ward" = protection (voir Protections démoniaques). |
 
@@ -1099,10 +1100,10 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 |---|---|---|---|
 | Ancient Banner | Bannière ancienne | Objets | Armurerie de la Cabale. |
 | Bestial Companion | Compagnon bestial | Objets | Armurerie de la Cabale. |
-| Bomb Rat | Rat-bombe | Objets | Armurerie vermigène. |
+| Bomb Rat | Rat-bombe | Objets | Armurerie des Vermineux. |
 | Bomb-Bolt | Carreau explosif | Objets | La VO écrit aussi "Bomb-bolt". |
 | Cauldron | Chaudron | Objets | Armurerie du Cloître. |
-| Clan Banner | Bannière de clan | Objets | Armurerie vermigène. |
+| Clan Banner | Bannière de clan | Objets | Armurerie des Vermineux. |
 | Cloister Icon | Icône du Cloître | Objets | Voir H1. |
 | Demonic Familiar | Familier démoniaque | Objets | Armurerie du Cloître. |
 | Drive the Stake | Planter le pieu | Objets | Action bonus des Pieux en bois. |
@@ -1124,7 +1125,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Smoke Bomb | Bombe fumigène | Objets |  |
 | Spirit Guardian | Esprit gardien | Objets | Armurerie de la Cabale. |
 | Torchlight/Lantern | Lanterne/Torche | Objets | Ajout du lot 06. Variante de "Lantern/Torch" employée dans le titre de l'objet (p. 62). |
-| Wheel-Spikes | Pointes de roue | Objets | Armurerie vermigène. |
+| Wheel-Spikes | Pointes de roue | Objets | Armurerie des Vermineux. |
 | Winged Familiar | Familier ailé | Objets | Armurerie de la Cabale. |
 | Wooden Stakes | Pieux en bois | Objets |  |
 
@@ -1160,10 +1161,10 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Lore of Blessed Maggots | Domaine des Asticots bénis | Domaines de magie et sorts | Domaine du Cloître gangrené. |
 | Lore of Blood | Domaine du Sang | Domaines de magie et sorts | Domaine des Cabales de la Mort. |
 | Lore of Necromancy | Domaine de la Nécromancie | Domaines de magie et sorts | Domaine des Cabales de la Mort. |
-| Lore of Poxes | Domaine des Véroles | Domaines de magie et sorts | Domaine des Vermigènes. "pox" = vérole. |
+| Lore of Poxes | Domaine des Véroles | Domaines de magie et sorts | Domaine des Vermineux. "pox" = vérole. |
 | Lore of Sanctioned Magic | Domaine de la Magie autorisée | Domaines de magie et sorts | Tranché (H10). Domaine des Mercenaires de la Guilde. |
 | Lore of the Saints | Domaine des Saints | Domaines de magie et sorts | Domaine des Mercenaires de la Guilde. |
-| Lore of the Under-Tunnels | Domaine des Tunnels profonds | Domaines de magie et sorts | Domaine des Vermigènes. |
+| Lore of the Under-Tunnels | Domaine des Tunnels profonds | Domaines de magie et sorts | Domaine des Vermineux. |
 | Plague Bomb | Bombe de peste | Domaines de magie et sorts | Véroles, 6. |
 | Plague Pit | Fosse de peste | Domaines de magie et sorts | Pourriture, 6. "pit" = fosse. |
 | Plague Wind | Vent de peste | Domaines de magie et sorts | Pourriture, 4. |
@@ -1228,7 +1229,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Leech Blood | Drain de sang | Compétences | Sombre aristocratie. Compétence et action bonus du même nom. |
 | Marksman | Tireur d'élite | Compétences | Ruse de soldat. |
 | Master of Dark Science | Maître de la sombre science | Compétences | Machinations magistrales. |
-| Masterful Schemes | Machinations magistrales | Compétences | Table de compétences des Vermigènes (Chefs et Champions Vermigènes). |
+| Masterful Schemes | Machinations magistrales | Compétences | Table de compétences des Vermineux (Chefs et Champions Vermineux). |
 | Mesmeric Gaze | Regard hypnotique | Compétences | Sombre aristocratie. |
 | Old Dogs | Vieux briscards | Compétences | Table de compétences des Mercenaires de la Guilde (Chefs et Champions Mercenaires). |
 | Ordained of the Cloister | Ordonnés du Cloître | Compétences | Table de compétences du Cloître gangrené (Chefs et Champions Cloître). Voir H1. |
@@ -1252,7 +1253,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Too Cunning to Die | Trop rusé pour mourir | Compétences | Machinations magistrales. |
 | Tough Bastard | Dur à cuire | Compétences | Compétences de vétéran. |
 | Toxic Miasma | Miasme toxique | Compétences | Bénédictions de Sainte Pourriture. |
-| Tunnel Runners | Coureurs de tunnels | Compétences | Table de compétences des Vermigènes (tout combattant Vermigène). |
+| Tunnel Runners | Coureurs de tunnels | Compétences | Table de compétences des Vermineux (tout combattant Vermineux). |
 | Undying Lords | Seigneurs immortels | Compétences | Table de compétences des Cabales de la Mort (Chefs et Champions Morts-vivants Squelettes). |
 | Unholy Sermon | Sermon impie | Compétences | Ordonnés du Cloître. Compétence et action bonus du même nom. |
 | Unholy Strength | Force impie | Compétences | Sombre aristocratie. |
@@ -1296,11 +1297,11 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Ram Horns | Cornes de bélier | Règles spéciales de combattants | Chaman Sabot-Noir et Homme-bête Sabot-Noir. |
 | Recite Holy Litanies | Réciter les litanies sacrées | Règles spéciales de combattants | Action du Chasseur de sorcières et de son apprenti. |
 | Sawbones | Chirurgien | Règles spéciales de combattants | Médecin de peste. Ta correction : "sawbones" désigne un chirurgien. |
-| Seasoned Warrior | Guerrier aguerri | Règles spéciales de combattants | Chasseur de sorcières, Champion de la Guilde, Champion vermigène. |
+| Seasoned Warrior | Guerrier aguerri | Règles spéciales de combattants | Chasseur de sorcières, Champion de la Guilde, Champion vermineux. |
 | Skilled Killer | Tueur accompli | Règles spéciales de combattants | Assassin Croc-de-Nuit. |
 | Sniff 'em Out | Débusquez-les ! | Règles spéciales de combattants | Chien de chasse et Loup sinistre. |
 | Soup-up | Trafiquer | Règles spéciales de combattants | Tranché (H12). Option de l'action bonus Ingénierie. |
-| Spellcaster | Lanceur de sorts | Règles spéciales de combattants | Sorcier vermigène. |
+| Spellcaster | Lanceur de sorts | Règles spéciales de combattants | Sorcier vermineux. |
 | Spellcraft | Art de la magie | Règles spéciales de combattants | Noble au sang maudit et Apprenti nécromancien. |
 | Splat! | Splatch ! | Règles spéciales de combattants | Engin roulant. |
 | Temperamental Transformation | Transformation capricieuse | Règles spéciales de combattants | Bête lycanthrope. |

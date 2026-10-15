@@ -23,7 +23,7 @@ test("record and undo a battle", async ({ page }) => {
 
   await page.getByRole("button", { name: "Nouvelle bataille" }).click();
   await page.getByLabel("Scénario").fill("Dans les fosses");
-  await page.getByLabel("Adversaire").fill("Vermigènes");
+  await page.getByLabel("Adversaire").fill("Vermineux");
   await page.getByLabel("Expérience gagnée par Konrad").fill("5");
   await page.getByLabel("Mercenaire de la Guilde est perdu").first().check();
   await page.getByLabel(/^Pièces d'argent gagnées/).fill("40");

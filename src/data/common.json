@@ -54,7 +54,7 @@
     { "key": "dog", "kind": "fighter", "name": { "en": "Dog", "fr": "Chien" } },
     { "key": "undead", "kind": "fighter", "name": { "en": "Undead", "fr": "Mort-vivant" } },
     { "key": "demon", "kind": "fighter", "name": { "en": "Demon", "fr": "Démon" } },
-    { "key": "verminkin", "kind": "fighter", "name": { "en": "Verminkin", "fr": "Vermigène" } },
+    { "key": "verminkin", "kind": "fighter", "name": { "en": "Verminkin", "fr": "Vermineux" } },
     { "key": "assassin", "kind": "fighter", "name": { "en": "Assassin", "fr": "Assassin" } },
     { "key": "contraption", "kind": "fighter", "name": { "en": "Contraption", "fr": "Engin" } },
     { "key": "rat", "kind": "fighter", "name": { "en": "Rat", "fr": "Rat" } },
