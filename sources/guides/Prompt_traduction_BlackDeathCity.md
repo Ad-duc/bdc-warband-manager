@@ -64,7 +64,7 @@ Tu travailles par étapes et tu t'arrêtes à la fin de chaque étape.
    (*Bloodied*). Ensuite, le terme français seul.
 2. Seul le titre du jeu reste en anglais. Les noms de combattants sont traduits
    (glossaire, décision H19), avec le nom anglais au singulier entre parenthèses à
-   chaque occurrence : Capitaine de la Guilde (*Guild Captain*), Prêtre de la Vérole
+   chaque occurrence : Capitaine de la Guilde (*Guild Captain*), Prêtre Véroleux
    (*Pox Priest*), Démon de la Pourriture (*Rot Demon*). Les mots-clés identiques à un
    nom de combattant suivent la même VF : Chasseur de sorcières (*Witch Hunter*),
    Gargouille (*Gargoyle*).

@@ -28,12 +28,15 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 - Les noms des factions et des combattants sont désormais en français, comme
   le reste de la traduction : Mercenaires de la Guilde, Vermineux, Cabales de
   la Mort, Le Cloître gangrené, Capitaine de la Guilde, Maître artificier,
-  Bâtard du sang... Le nom anglais reste entre parenthèses dans le lecteur de
-  règles. Le mot-clé Wizard devient Magicien. Les bandes enregistrées ne sont
-  pas touchées.
+  Prêtre Véroleux, Bâtard du sang... Le nom anglais reste entre parenthèses
+  dans le lecteur de règles. Le mot-clé Wizard devient Magicien. Les bandes
+  enregistrées ne sont pas touchées.
 
 ### Corrigé
 
+- Corrections de la traduction (#12, #13) : la faction Verminkin s'appelle
+  désormais Vermineux, et le Pox Priest devient le Prêtre Véroleux, avec son
+  Apprenti véroleux.
 - Une nouvelle version de l'application remplace désormais l'ancienne toute
   seule : l'application vérifie s'il existe une mise à jour quand son onglet
   revient au premier plan et toutes les 15 minutes, puis recharge la page sur
