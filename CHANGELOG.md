@@ -32,6 +32,9 @@ version is given separately (playtest v1.03).
 
 ### Fixed
 
+- The reminder sheet now adapts to the screen: no more horizontal scroll on a
+  phone or a tablet, its columns stack on narrow screens. The printed A4
+  page is unchanged.
 - Translation fixes (#12, #13): the Verminkin faction is now named Vermineux
   in French, and the Pox Priest becomes the Prêtre Véroleux, with his
   Apprenti véroleux.
