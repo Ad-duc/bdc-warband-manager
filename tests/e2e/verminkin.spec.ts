@@ -18,7 +18,7 @@ test("start a Sparkseer Coven warband", async ({ page }) => {
   await page.getByRole("button", { name: "Nouvelle bande" }).click();
 
   await page.getByLabel("Nom de la bande").fill("Les Rongeurs");
-  await page.getByRole("radio", { name: /Vermigènes/ }).check();
+  await page.getByRole("radio", { name: /Vermineux/ }).check();
   await page.getByRole("button", { name: "Suivant" }).click();
 
   const coven = page.getByRole("radio", { name: /Cabale du Maître artificier/ });

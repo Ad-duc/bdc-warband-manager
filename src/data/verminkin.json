@@ -8,13 +8,13 @@
   },
   "schemaVersion": 1,
   "id": "verminkin",
-  "name": { "en": "Verminkin", "fr": "Vermigènes" },
+  "name": { "en": "Verminkin", "fr": "Vermineux" },
   "description": {
     "en": "Deep below the City lies a labyrinth of tunnels and old sewers that is the domain of the Verminkin. They are a race of insidious rat-men, long twisted by the dark sorceries that rise from the void-chasm below. The City's destruction has emboldened them to emerge at last, swarming onto the streets above to stake their claim.\nCreatures of ambush and deception, Verminkin prefer to operate from the shadows, waiting with prying eyes until their enemies' backs are turned before they strike.\nThis deceitful nature may have spared the City from being wholly overrun, for the Verminkin are as quick to betray their own as their enemies, and bitter infighting is not uncommon between the different factions as each seeks to claw its way to dominance over the others.",
-    "fr": "Loin sous la Cité s'étend un labyrinthe de tunnels et de vieux égouts : le territoire des Vermigènes. C'est une race d'hommes-rats sournois, depuis longtemps déformés par les sombres sorcelleries qui montent du gouffre du néant, en contrebas. La destruction de la Cité les a enhardis au point de se montrer enfin : ils déferlent dans les rues d'en haut pour s'y tailler leur part.\nCréatures d'embuscade et de tromperie, les Vermigènes préfèrent agir depuis l'ombre : ils épient leurs ennemis et attendent qu'ils aient le dos tourné pour frapper.\nCette nature fourbe a peut-être évité à la Cité d'être entièrement submergée, car les Vermigènes trahissent les leurs aussi vite que leurs ennemis, et les luttes intestines acharnées ne sont pas rares entre les différentes factions, chacune cherchant à se hisser, à coups de griffes, au-dessus des autres."
+    "fr": "Loin sous la Cité s'étend un labyrinthe de tunnels et de vieux égouts : le territoire des Vermineux. C'est une race d'hommes-rats sournois, depuis longtemps déformés par les sombres sorcelleries qui montent du gouffre du néant, en contrebas. La destruction de la Cité les a enhardis au point de se montrer enfin : ils déferlent dans les rues d'en haut pour s'y tailler leur part.\nCréatures d'embuscade et de tromperie, les Vermineux préfèrent agir depuis l'ombre : ils épient leurs ennemis et attendent qu'ils aient le dos tourné pour frapper.\nCette nature fourbe a peut-être évité à la Cité d'être entièrement submergée, car les Vermineux trahissent les leurs aussi vite que leurs ennemis, et les luttes intestines acharnées ne sont pas rares entre les différentes factions, chacune cherchant à se hisser, à coups de griffes, au-dessus des autres."
   },
-  "armouryName": { "en": "Verminkin Armoury", "fr": "Armurerie vermigène" },
-  "sourceRef": { "page": 73, "md": "07_verminkin.md > Vermigènes" },
+  "armouryName": { "en": "Verminkin Armoury", "fr": "Armurerie des Vermineux" },
+  "sourceRef": { "page": 73, "md": "07_verminkin.md > Vermineux" },
   "assets": { "shield": "bouclier_verminkin.webp", "accentColor": null },
 
   "origins": [
@@ -49,7 +49,7 @@
       "name": { "en": "Sparkseer Coven", "fr": "Cabale du Maître artificier" },
       "flavour": {
         "en": "This warband is led by a genius and slightly insane Sparkseer. These Verminkin scour the ruins of the City for scrap metals and alchemic ingredients to repurpose them into elaborate weapons and contraptions.",
-        "fr": "Cette bande est menée par un Maître artificier génial et légèrement fou. Ces Vermigènes écument les ruines de la Cité en quête de ferraille et d'ingrédients alchimiques, dont ils font des armes et des engins élaborés."
+        "fr": "Cette bande est menée par un Maître artificier génial et légèrement fou. Ces Vermineux écument les ruines de la Cité en quête de ferraille et d'ingrédients alchimiques, dont ils font des armes et des engins élaborés."
       },
       "requiredLeaderId": "sparkseer",
       "strongholdId": "rickety-workshop",
@@ -183,7 +183,7 @@
   ],
   "nameTable": {
     "die": "d66",
-    "sourceRef": { "page": 76, "md": "07_verminkin.md > Noms des Vermigènes" },
+    "sourceRef": { "page": 76, "md": "07_verminkin.md > Noms des Vermineux" },
     "entries": {
       "11": "Bizzrecht",
       "12": "Bratzik",
@@ -251,7 +251,7 @@
       ],
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Practitioner List from the Verminkin Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie vermigène."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie des Vermineux."
       },
       "quote": { "en": "Scurry forth, and bear the Black Rot!", "fr": "Élancez-vous, et portez la Pourriture noire !" },
       "sourceRef": { "page": 87, "md": "07_verminkin.md > Prêtre de la Vérole" }
@@ -291,7 +291,7 @@
       ],
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Verminkin Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie vermigène."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie des Vermineux."
       },
       "quote": { "en": "Splatter the cobbles with their blood!", "fr": "Éclaboussez les pavés de leur sang !" },
       "sourceRef": { "page": 87, "md": "07_verminkin.md > Assassin Croc-de-Nuit" }
@@ -322,7 +322,7 @@
       ],
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Verminkin Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie vermigène."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie des Vermineux."
       },
       "quote": {
         "en": "Bring me the head of a Guilder, or I'll take yours!",
@@ -365,14 +365,14 @@
       ],
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List, Champion List and Sparkseer List from the Verminkin Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale, de la Liste des Champions et de la Liste des Artificiers de l'Armurerie vermigène."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale, de la Liste des Champions et de la Liste des Artificiers de l'Armurerie des Vermineux."
       },
       "quote": { "en": "One more adjustment... just one...", "fr": "Encore un réglage... juste un..." },
       "sourceRef": { "page": 88, "md": "07_verminkin.md > Maître artificier" }
     },
     {
       "id": "verminkin-warlock",
-      "name": { "en": "Verminkin Warlock", "fr": "Sorcier vermigène" },
+      "name": { "en": "Verminkin Warlock", "fr": "Sorcier vermineux" },
       "category": "champion",
       "keywords": ["champion", "verminkin", "wizard"],
       "cost": 125,
@@ -401,10 +401,10 @@
       ],
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Practitioner List from the Verminkin Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie vermigène."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie des Vermineux."
       },
       "quote": { "en": "The void-chasm whispers to me...", "fr": "Le gouffre du néant me murmure des choses..." },
-      "sourceRef": { "page": 89, "md": "07_verminkin.md > Sorcier vermigène" }
+      "sourceRef": { "page": 89, "md": "07_verminkin.md > Sorcier vermineux" }
     },
     {
       "id": "pox-priests-apprentice",
@@ -432,7 +432,7 @@
       ],
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Practitioner List from the Verminkin Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie vermigène."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie des Vermineux."
       },
       "quote": {
         "en": "Bring them boils! Bring them death!",
@@ -442,7 +442,7 @@
     },
     {
       "id": "verminkin-champion",
-      "name": { "en": "Verminkin Champion", "fr": "Champion vermigène" },
+      "name": { "en": "Verminkin Champion", "fr": "Champion vermineux" },
       "category": "champion",
       "keywords": ["champion", "verminkin"],
       "cost": 95,
@@ -466,10 +466,10 @@
       ],
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Verminkin Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie vermigène."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie des Vermineux."
       },
       "quote": { "en": "Let not a manling live!", "fr": "Ne laissez vivre aucun de ces petits hommes !" },
-      "sourceRef": { "page": 89, "md": "07_verminkin.md > Champion vermigène" }
+      "sourceRef": { "page": 89, "md": "07_verminkin.md > Champion vermineux" }
     },
     {
       "id": "assassins-apprentice",
@@ -497,7 +497,7 @@
       ],
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List and Champion List from the Verminkin Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie vermigène."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie des Vermineux."
       },
       "quote": { "en": "You won't see me coming, Guilder...", "fr": "Tu ne me verras pas venir, Guildien..." },
       "sourceRef": { "page": 90, "md": "07_verminkin.md > Apprenti assassin" }
@@ -528,7 +528,7 @@
       ],
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List, Champion List and Sparkseer List from the Verminkin Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale, de la Liste des Champions et de la Liste des Artificiers de l'Armurerie vermigène."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale, de la Liste des Champions et de la Liste des Artificiers de l'Armurerie des Vermineux."
       },
       "quote": {
         "en": "Hmmm... this screw is probably unnecessary...",
@@ -538,7 +538,7 @@
     },
     {
       "id": "verminkin-warrior",
-      "name": { "en": "Verminkin Warrior", "fr": "Guerrier vermigène" },
+      "name": { "en": "Verminkin Warrior", "fr": "Guerrier vermineux" },
       "category": "henchman",
       "keywords": ["henchman", "verminkin"],
       "cost": 40,
@@ -552,10 +552,10 @@
       "specialRules": [],
       "wargearText": {
         "en": "This fighter can be equipped with wargear from the Main List from the Verminkin Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie vermigène."
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie des Vermineux."
       },
       "quote": { "en": "We rise from below!", "fr": "Nous surgissons d'en bas !" },
-      "sourceRef": { "page": 91, "md": "07_verminkin.md > Guerrier vermigène" }
+      "sourceRef": { "page": 91, "md": "07_verminkin.md > Guerrier vermineux" }
     },
     {
       "id": "rat-mutant",
@@ -573,7 +573,7 @@
       "specialRules": [],
       "wargearText": {
         "en": "This fighter is equipped with an Oversized Claw melee weapon. In addition, it can be equipped with wargear from the Rat-Mutant List from the Verminkin Armoury.",
-        "fr": "Ce combattant est équipé de l'arme de corps à corps Griffe démesurée. De plus, il peut être équipé de l'équipement de la Liste des Rats-mutants de l'Armurerie vermigène."
+        "fr": "Ce combattant est équipé de l'arme de corps à corps Griffe démesurée. De plus, il peut être équipé de l'équipement de la Liste des Rats-mutants de l'Armurerie des Vermineux."
       },
       "quote": { "en": "Head... hurts...", "fr": "Tête... fait mal..." },
       "sourceRef": { "page": 91, "md": "07_verminkin.md > Rat-mutant" }
@@ -622,7 +622,7 @@
       ],
       "wargearText": {
         "en": "This fighter is equipped with Crushing Bulk melee weapon. In addition, it can be equipped with wargear from the Contraption List from the Verminkin Armoury.",
-        "fr": "Ce combattant est équipé de l'arme de corps à corps Carcasse écrasante. De plus, il peut être équipé de l'équipement de la Liste des Engins de l'Armurerie vermigène."
+        "fr": "Ce combattant est équipé de l'arme de corps à corps Carcasse écrasante. De plus, il peut être équipé de l'équipement de la Liste des Engins de l'Armurerie des Vermineux."
       },
       "quote": { "en": "Screeeeeeeeeeeee-!", "fr": "Scriiiiiiiiiiiiii- !" },
       "sourceRef": { "page": 92, "md": "07_verminkin.md > Engin roulant" }
@@ -670,7 +670,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "axe",
@@ -691,7 +691,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "club-mace-hammer",
@@ -712,7 +712,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "crushing-bulk",
@@ -754,7 +754,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "ensorcelled-halberd",
@@ -775,7 +775,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "ensorcelled-weapon",
@@ -799,7 +799,7 @@
         "en": "You can use any weapon to represent the Ensorcelled Weapon.",
         "fr": "Vous pouvez utiliser n'importe quelle arme pour représenter l'Arme ensorcelée."
       },
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "flail",
@@ -820,7 +820,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "halberd",
@@ -841,7 +841,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "heavy-flail",
@@ -862,7 +862,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "iron-claw",
@@ -883,7 +883,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "nasty-bite",
@@ -946,7 +946,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "rat-mutant-blade",
@@ -967,7 +967,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "spark-drill",
@@ -988,7 +988,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "spark-powered-fists",
@@ -1009,7 +1009,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "spear",
@@ -1030,7 +1030,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "sword",
@@ -1051,7 +1051,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie vermigène - Armes de corps à corps" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "arc-lightning-gun",
@@ -1079,7 +1079,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie vermigène - Armes à distance" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "blackpowder-pistol",
@@ -1100,7 +1100,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie vermigène - Armes à distance" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "flame-canister",
@@ -1121,7 +1121,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie vermigène - Armes à distance" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "heavy-gatling-gun",
@@ -1148,7 +1148,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie vermigène - Armes à distance" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "long-rifle",
@@ -1169,7 +1169,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie vermigène - Armes à distance" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "orb-bombs",
@@ -1190,7 +1190,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie vermigène - Armes à distance" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "orb-launcher",
@@ -1217,7 +1217,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie vermigène - Armes à distance" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "repeater-pistol",
@@ -1238,7 +1238,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie vermigène - Armes à distance" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "rocket-launcher",
@@ -1266,7 +1266,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie vermigène - Armes à distance" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "sling",
@@ -1287,7 +1287,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie vermigène - Armes à distance" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "throwing-stars",
@@ -1308,7 +1308,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie vermigène - Armes à distance" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "heavy-plating",
@@ -1749,7 +1749,7 @@
       },
       "eligibilityLabel": {
         "en": "Verminkin Leaders and Champions only",
-        "fr": "Chefs et Champions Vermigènes uniquement"
+        "fr": "Chefs et Champions Vermineux uniquement"
       },
       "sourceRef": { "page": 85, "md": "07_verminkin.md > Machinations magistrales" },
       "skills": [
@@ -1813,7 +1813,7 @@
       "id": "tunnel-runners",
       "name": { "en": "Tunnel Runners", "fr": "Coureurs de tunnels" },
       "eligibility": { "kind": "keywords", "anyOf": [["verminkin"]] },
-      "eligibilityLabel": { "en": "Any Verminkin fighter", "fr": "N'importe quel combattant Vermigène" },
+      "eligibilityLabel": { "en": "Any Verminkin fighter", "fr": "N'importe quel combattant Vermineux" },
       "sourceRef": { "page": 86, "md": "07_verminkin.md > Coureurs de tunnels" },
       "skills": [
         {

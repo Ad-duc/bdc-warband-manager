@@ -371,11 +371,11 @@ Pour chaque attaque (*attack*) qui n'a pas été sauvegardée (*saved*) par l'ar
 
 ## Exemple d'action d'Attaque au corps à corps (*Example Melee Attack Action*)
 
-C'est l'activation du Mercenaire de la Guilde (*Guild Mercenary*). Il a effectué une Charge (*Charge Move*) et a terminé engagé au corps à corps (*engaged in melee*) avec un Guerrier vermigène (*Verminkin Warrior*) ennemi (*enemy*).
+C'est l'activation du Mercenaire de la Guilde (*Guild Mercenary*). Il a effectué une Charge (*Charge Move*) et a terminé engagé au corps à corps (*engaged in melee*) avec un Guerrier vermineux (*Verminkin Warrior*) ennemi (*enemy*).
 
-Le Mercenaire de la Guilde (*Guild Mercenary*) est équipé d'une Épée (*Sword*), d'un Bouclier (*Shield*) et d'une Cuirasse (*Cuirass*), ce qui lui donne une valeur d'Armure (*Armour*) de 4+. Le Guerrier vermigène (*Verminkin Warrior*) est équipé d'une Hache (*Axe*) et d'une Dague (*Dagger*). Il a une valeur d'Armure (*Armour*) de 6+.
+Le Mercenaire de la Guilde (*Guild Mercenary*) est équipé d'une Épée (*Sword*), d'un Bouclier (*Shield*) et d'une Cuirasse (*Cuirass*), ce qui lui donne une valeur d'Armure (*Armour*) de 4+. Le Guerrier vermineux (*Verminkin Warrior*) est équipé d'une Hache (*Axe*) et d'une Dague (*Dagger*). Il a une valeur d'Armure (*Armour*) de 6+.
 
-| | Mercenaire de la Guilde (*Guild Mercenary*) | Guerrier vermigène (*Verminkin Warrior*) |
+| | Mercenaire de la Guilde (*Guild Mercenary*) | Guerrier vermineux (*Verminkin Warrior*) |
 |---|---|---|
 | Équipement (*Wargear*) | Épée (*Sword*), Bouclier (*Shield*), Cuirasse (*Cuirass*) | Hache (*Axe*), Dague (*Dagger*) |
 | Lame (*Blade*) | 4+ | 5+ |
@@ -384,11 +384,11 @@ Le Mercenaire de la Guilde (*Guild Mercenary*) est équipé d'une Épée (*Sword
 
 ### Étape 1 (*Step 1*)
 
-Le Mercenaire de la Guilde (*Guild Mercenary*) effectue une action d'Attaque au corps à corps (*Melee Attack Action*) et choisit le Guerrier vermigène (*Verminkin Warrior*) comme cible (*target*).
+Le Mercenaire de la Guilde (*Guild Mercenary*) effectue une action d'Attaque au corps à corps (*Melee Attack Action*) et choisit le Guerrier vermineux (*Verminkin Warrior*) comme cible (*target*).
 
 ### Étape 2 (*Step 2*)
 
-Le Mercenaire de la Guilde (*Guild Mercenary*) choisit d'utiliser son Épée (*Sword*). Comme le Guerrier vermigène (*Verminkin Warrior*) a 2 armes de corps à corps (*melee weapon*), il choisit d'utiliser la Hache (*Axe*), et la Dague (*Dagger*) comme arme de main secondaire (*off-hand weapon*).
+Le Mercenaire de la Guilde (*Guild Mercenary*) choisit d'utiliser son Épée (*Sword*). Comme le Guerrier vermineux (*Verminkin Warrior*) a 2 armes de corps à corps (*melee weapon*), il choisit d'utiliser la Hache (*Axe*), et la Dague (*Dagger*) comme arme de main secondaire (*off-hand weapon*).
 
 ### Étape 3 (*Step 3*)
 
@@ -398,19 +398,19 @@ Comme le Mercenaire de la Guilde (*Guild Mercenary*) a chargé (*charged*) penda
 
 Les deux combattants (*fighter*) effectuent leurs jets d'attaque (*attack roll*) simultanément.
 
-L'Épée (*Sword*) et la Hache (*Axe*) ont chacune une valeur d'Attaques (*Attacks*) de 3 : 3 dés sont donc lancés pour chaque combattant (*fighter*). De plus, 1 dé supplémentaire est lancé pour le Guerrier vermigène (*Verminkin Warrior*), car il utilise une Dague (*Dagger*) pour effectuer une attaque de main secondaire (*off-hand attack*).
+L'Épée (*Sword*) et la Hache (*Axe*) ont chacune une valeur d'Attaques (*Attacks*) de 3 : 3 dés sont donc lancés pour chaque combattant (*fighter*). De plus, 1 dé supplémentaire est lancé pour le Guerrier vermineux (*Verminkin Warrior*), car il utilise une Dague (*Dagger*) pour effectuer une attaque de main secondaire (*off-hand attack*).
 
 Un dé d'une autre couleur (blanc) est utilisé pour que les joueurs sachent quelle attaque (*attack*) est effectuée par la Dague (*Dagger*).
 
 Le Mercenaire de la Guilde (*Guild Mercenary*) a une valeur de Lame (*Blade*) de 4+ : ses jets d'attaque (*attack roll*) de 4-5 obtiennent une touche (*hit*). Ses jets d'attaque (*attack roll*) de 6 naturel (*natural*) obtiennent une touche critique (*critical hit*).
 
-Le Guerrier vermigène (*Verminkin Warrior*) a une valeur de Lame (*Blade*) de 5+ : ses jets d'attaque (*attack roll*) de 5 obtiennent une touche (*hit*) et ses jets d'attaque (*attack roll*) de 6 naturel (*natural*) obtiennent une touche critique (*critical hit*).
+Le Guerrier vermineux (*Verminkin Warrior*) a une valeur de Lame (*Blade*) de 5+ : ses jets d'attaque (*attack roll*) de 5 obtiennent une touche (*hit*) et ses jets d'attaque (*attack roll*) de 6 naturel (*natural*) obtiennent une touche critique (*critical hit*).
 
 Les jets d'attaque (*attack roll*) du Mercenaire de la Guilde (*Guild Mercenary*) sont 1, 4 et 6 : soit 1 échec (*miss*), 1 touche (*hit*) et 1 touche critique (*critical hit*).
 
-Les jets d'attaque (*attack roll*) de la Hache (*Axe*) du Guerrier vermigène (*Verminkin Warrior*) sont 5, 5 et 6 : soit 2 touches (*hit*) et 1 touche critique (*critical hit*). De plus, le jet d'attaque (*attack roll*) de la Dague (*Dagger*) est lui aussi un 5, ce qui donne une autre touche (*hit*).
+Les jets d'attaque (*attack roll*) de la Hache (*Axe*) du Guerrier vermineux (*Verminkin Warrior*) sont 5, 5 et 6 : soit 2 touches (*hit*) et 1 touche critique (*critical hit*). De plus, le jet d'attaque (*attack roll*) de la Dague (*Dagger*) est lui aussi un 5, ce qui donne une autre touche (*hit*).
 
-[Schéma : les dés de chaque combattant (*fighter*). Mercenaire de la Guilde (*Guild Mercenary*) : 1, 4, 6. Guerrier vermigène (*Verminkin Warrior*) : 5, 5, 6 pour la Hache (*Axe*), et un dé blanc sur 5 pour la Dague (*Dagger*).]
+[Schéma : les dés de chaque combattant (*fighter*). Mercenaire de la Guilde (*Guild Mercenary*) : 1, 4, 6. Guerrier vermineux (*Verminkin Warrior*) : 5, 5, 6 pour la Hache (*Axe*), et un dé blanc sur 5 pour la Dague (*Dagger*).]
 
 ### Étape 5 (*Step 5*)
 
@@ -420,19 +420,19 @@ Les combattants (*fighter*) effectuent maintenant en alternance des attaques (*a
 
 Normalement, pour parer (*parry*), le combattant (*fighter*) doit défausser l'un de ses jets d'attaque réussis (*successful attack roll*). Cependant, l'Épée (*Sword*) a le trait d'arme (*weapon trait*) Garde (*Guard*), qui permet au combattant (*fighter*) de défausser un échec (*miss*) pour parer (*parry*) une touche (*hit*).
 
-Il défausse son échec (*miss*) et effectue un jet de parade (*parry roll*). C'est une réussite. Il choisit de parer (*parry*) l'une des touches (*hit*) de la Hache (*Axe*) du Guerrier vermigène (*Verminkin Warrior*), car elle a une meilleure valeur de Perforation (*Rend*) que la Dague (*Dagger*). Cette touche (*hit*) est défaussée.
+Il défausse son échec (*miss*) et effectue un jet de parade (*parry roll*). C'est une réussite. Il choisit de parer (*parry*) l'une des touches (*hit*) de la Hache (*Axe*) du Guerrier vermineux (*Verminkin Warrior*), car elle a une meilleure valeur de Perforation (*Rend*) que la Dague (*Dagger*). Cette touche (*hit*) est défaussée.
 
-**(II) :** c'est maintenant le tour du Guerrier vermigène (*Verminkin Warrior*). Il effectue une attaque (*attack*) avec la touche (*hit*) restante de la Hache (*Axe*). Le Mercenaire de la Guilde (*Guild Mercenary*) rate son jet d'armure (*armour roll*) et subit des dégâts (*suffer damage*) égaux à la valeur de Dégâts (*Damage*) de la Hache (*Axe*), soit 1. Il reste maintenant 3 points de vie (*life point*) au Mercenaire de la Guilde (*Guild Mercenary*).
+**(II) :** c'est maintenant le tour du Guerrier vermineux (*Verminkin Warrior*). Il effectue une attaque (*attack*) avec la touche (*hit*) restante de la Hache (*Axe*). Le Mercenaire de la Guilde (*Guild Mercenary*) rate son jet d'armure (*armour roll*) et subit des dégâts (*suffer damage*) égaux à la valeur de Dégâts (*Damage*) de la Hache (*Axe*), soit 1. Il reste maintenant 3 points de vie (*life point*) au Mercenaire de la Guilde (*Guild Mercenary*).
 
-**(III) :** c'est le tour du Mercenaire de la Guilde (*Guild Mercenary*). Il attaque avec sa touche critique (*critical hit*). Le Guerrier vermigène (*Verminkin Warrior*) rate son jet d'armure (*armour roll*). La valeur de Dégâts critiques (*Critical Damage*) d'une Épée (*Sword*) est 1D3. Le joueur qui contrôle le Mercenaire de la Guilde (*Guild Mercenary*) (*commanding player*) lance un dé pour déterminer les dégâts (*damage*) et obtient 3. Le Guerrier vermigène (*Verminkin Warrior*) subit 3 dégâts (*damage*) et il lui reste 1 point de vie (*life point*).
+**(III) :** c'est le tour du Mercenaire de la Guilde (*Guild Mercenary*). Il attaque avec sa touche critique (*critical hit*). Le Guerrier vermineux (*Verminkin Warrior*) rate son jet d'armure (*armour roll*). La valeur de Dégâts critiques (*Critical Damage*) d'une Épée (*Sword*) est 1D3. Le joueur qui contrôle le Mercenaire de la Guilde (*Guild Mercenary*) (*commanding player*) lance un dé pour déterminer les dégâts (*damage*) et obtient 3. Le Guerrier vermineux (*Verminkin Warrior*) subit 3 dégâts (*damage*) et il lui reste 1 point de vie (*life point*).
 
-**(IV) :** la main repasse au Guerrier vermigène (*Verminkin Warrior*), désormais acculé. Il effectue une parade (*parry*) pour tenter de défausser l'attaque (*attack*) restante du Mercenaire de la Guilde (*Guild Mercenary*). Il effectue le jet de parade (*parry roll*), mais obtient un 1. La parade (*parry*) est ratée.
+**(IV) :** la main repasse au Guerrier vermineux (*Verminkin Warrior*), désormais acculé. Il effectue une parade (*parry*) pour tenter de défausser l'attaque (*attack*) restante du Mercenaire de la Guilde (*Guild Mercenary*). Il effectue le jet de parade (*parry roll*), mais obtient un 1. La parade (*parry*) est ratée.
 
 **(V) :** le Mercenaire de la Guilde (*Guild Mercenary*) cherche maintenant à porter le coup fatal, en utilisant sa touche (*hit*) restante pour effectuer une attaque (*attack*).
 
-À son grand dépit, le Guerrier vermigène (*Verminkin Warrior*) réussit son jet d'armure (*armour roll*), ce qui le maintient dans le combat.
+À son grand dépit, le Guerrier vermineux (*Verminkin Warrior*) réussit son jet d'armure (*armour roll*), ce qui le maintient dans le combat.
 
-**(VI) :** c'est le tour du Guerrier vermigène (*Verminkin Warrior*). La touche critique (*critical hit*) de la Hache (*Axe*) lui reste. C'est sa chance de mettre le Mercenaire de la Guilde (*Guild Mercenary*) hors de combat (*taken down*).
+**(VI) :** c'est le tour du Guerrier vermineux (*Verminkin Warrior*). La touche critique (*critical hit*) de la Hache (*Axe*) lui reste. C'est sa chance de mettre le Mercenaire de la Guilde (*Guild Mercenary*) hors de combat (*taken down*).
 
 Le Mercenaire de la Guilde (*Guild Mercenary*) rate son jet d'armure (*armour roll*), mais le jet de Dégâts critiques (*Critical Damage*) donne 1. Il reste 2 points de vie (*life point*) au Mercenaire de la Guilde (*Guild Mercenary*).
 
@@ -443,11 +443,11 @@ Comme il ne reste plus aucune touche (*hit*), l'action d'Attaque au corps à cor
 | Tour | Combattant | Résultat |
 |---|---|---|
 | I | Mercenaire de la Guilde (*Guild Mercenary*) | Parade (*Parry*) réussie |
-| II | Guerrier vermigène (*Verminkin Warrior*) | Attaque (*Attack*) : 1 dégât (*damage*) |
+| II | Guerrier vermineux (*Verminkin Warrior*) | Attaque (*Attack*) : 1 dégât (*damage*) |
 | III | Mercenaire de la Guilde (*Guild Mercenary*) | Attaque (*Attack*) : 3 dégâts (*damage*) |
-| IV | Guerrier vermigène (*Verminkin Warrior*) | Parade (*Parry*) ratée |
+| IV | Guerrier vermineux (*Verminkin Warrior*) | Parade (*Parry*) ratée |
 | V | Mercenaire de la Guilde (*Guild Mercenary*) | Attaque (*Attack*) sauvegardée (*saved*) |
-| VI | Guerrier vermigène (*Verminkin Warrior*) | Attaque (*Attack*) : 1 dégât (*damage*) |
+| VI | Guerrier vermineux (*Verminkin Warrior*) | Attaque (*Attack*) : 1 dégât (*damage*) |
 
 ## Action Se cacher (*Hide Action*)
 
@@ -879,11 +879,11 @@ Points relevés page par page :
 - p. 25-26 : nouvel exemple d'action d'Attaque au corps à corps. Le profil des deux combattants, présenté en vignettes dans la VO, est rendu par un tableau. Les étiquettes du schéma de l'étape 5 (I à VI) sont reprises dans un récapitulatif en fin d'exemple.
 - p. 25 : coquilles de la VO : "made a charged this activation" (pour "made a charge" ou "charged") et "simultaenously". Traduit selon le sens évident.
 - p. 26 : coquilles de la VO : "succesfull" et "Critcal". "now on the backfoot" est rendu par "désormais acculé".
-- p. 26 : l'exemple ne dit pas ce que devient la touche obtenue par la Dague du Guerrier vermigène (*Verminkin Warrior*) ; on comprend qu'elle est défaussée pour la parade (IV). Rien n'est ajouté.
+- p. 26 : l'exemple ne dit pas ce que devient la touche obtenue par la Dague du Guerrier vermineux (*Verminkin Warrior*) ; on comprend qu'elle est défaussée pour la parade (IV). Rien n'est ajouté.
 - p. 26 : à l'étape 4, la VO écrit "attack rolls of a 4-5 will score a hit" pour une Lame de 4+ : le 6 naturel est traité à part comme touche critique, conformément à la règle.
 - p. 27 : "to mask one's approach" est rendu par "dissimuler", pour réserver "masqué" à *obscured*. "the Archer" porte une majuscule dans la VO : conservée. Faute d'accord dans la VO : "If a hidden fighter moves and are no longer touching terrain".
 - p. 28 : la v1.03 emploie désormais "commanding player" partout (au lieu de "controlling player"). Une seule VF : "le joueur qui contrôle le combattant".
-- p. 28 : "Vantage" (nouveau en v1.03) est rendu par "Surplomb" : le combattant est "en surplomb". "Poste d'observation" est déjà pris par le repaire vermigène (*Verminkin*) "Hidden Vantage".
+- p. 28 : "Vantage" (nouveau en v1.03) est rendu par "Surplomb" : le combattant est "en surplomb". "Poste d'observation" est déjà pris par le repaire vermineux (*Verminkin*) "Hidden Vantage".
 - p. 29 : Contre-charge : la redite de la v1.02 ("If the defending fighter uses this weapon while they are the defending fighter") est corrigée en v1.03 ("If a fighter uses this weapon...").
 - p. 29 : Lourd perd en v1.03 sa règle de rechargement ("Can still reload before or after"), et Rechargement passe de "Spend" à "Forgo" : rendu par "renoncer à". Rechargement gagne deux phrases (arme chargée en début de bataille, pas de rechargement au corps à corps).
 - p. 29 et 30 : les points finaux manquants en v1.02 (table d'incident de tir, trait Effroi) sont ajoutés en v1.03 : ajoutés en VF.

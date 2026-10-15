@@ -26,7 +26,7 @@ test("card back generator from the header", async ({ page }) => {
   await expect(page.getByTestId("print-card-back")).toHaveCount(9);
   await expect(page.getByTestId("print-back-warband")).toHaveCount(0);
 
-  await page.getByRole("radio", { name: "Vermigènes" }).check();
+  await page.getByRole("radio", { name: "Vermineux" }).check();
   await expect(page.getByTestId("print-card-back").first()).toContainText("Verminkin");
   await page.getByLabel("Nom de la bande (facultatif)").fill("Les Rats du Port");
   await expect(page.getByTestId("print-back-warband").first()).toHaveText("Les Rats du Port");

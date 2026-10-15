@@ -26,7 +26,7 @@ export const CHAPTERS: readonly Chapter[] = [
   { id: "scenarios", file: "04_scenarios.md", title: "Scénarios" },
   { id: "bandes", file: "05_bandes-regles-generales.md", title: "Bandes : règles générales" },
   { id: "guild-mercenaries", file: "06_guild-mercenaries.md", title: "Mercenaires de la Guilde" },
-  { id: "verminkin", file: "07_verminkin.md", title: "Vermigènes" },
+  { id: "verminkin", file: "07_verminkin.md", title: "Vermineux" },
   { id: "death-covens", file: "08_death-covens.md", title: "Cabales de la Mort" },
   { id: "the-blighted-cloister", file: "09_the-blighted-cloister.md", title: "Le Cloître gangrené" },
   { id: "reference", file: "10_aide-de-jeu.md", title: "Référence" },

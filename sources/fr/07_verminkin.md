@@ -1,21 +1,21 @@
-# Vermigènes (*Verminkin*)
+# Vermineux (*Verminkin*)
 
-> Loin sous la Cité (*the City*) s'étend un labyrinthe de tunnels et de vieux égouts : le territoire des Vermigènes (*Verminkin*). C'est une race d'hommes-rats sournois, depuis longtemps déformés par les sombres sorcelleries qui montent du gouffre du néant (*void-chasm*), en contrebas. La destruction de la Cité (*the City*) les a enhardis au point de se montrer enfin : ils déferlent dans les rues d'en haut pour s'y tailler leur part.
+> Loin sous la Cité (*the City*) s'étend un labyrinthe de tunnels et de vieux égouts : le territoire des Vermineux (*Verminkin*). C'est une race d'hommes-rats sournois, depuis longtemps déformés par les sombres sorcelleries qui montent du gouffre du néant (*void-chasm*), en contrebas. La destruction de la Cité (*the City*) les a enhardis au point de se montrer enfin : ils déferlent dans les rues d'en haut pour s'y tailler leur part.
 >
-> Créatures d'embuscade et de tromperie, les Vermigènes (*Verminkin*) préfèrent agir depuis l'ombre : ils épient leurs ennemis (*enemy*) et attendent qu'ils aient le dos tourné pour frapper.
+> Créatures d'embuscade et de tromperie, les Vermineux (*Verminkin*) préfèrent agir depuis l'ombre : ils épient leurs ennemis (*enemy*) et attendent qu'ils aient le dos tourné pour frapper.
 >
-> Cette nature fourbe a peut-être évité à la Cité (*the City*) d'être entièrement submergée, car les Vermigènes (*Verminkin*) trahissent les leurs aussi vite que leurs ennemis (*enemy*), et les luttes intestines acharnées ne sont pas rares entre les différentes factions, chacune cherchant à se hisser, à coups de griffes, au-dessus des autres.
+> Cette nature fourbe a peut-être évité à la Cité (*the City*) d'être entièrement submergée, car les Vermineux (*Verminkin*) trahissent les leurs aussi vite que leurs ennemis (*enemy*), et les luttes intestines acharnées ne sont pas rares entre les différentes factions, chacune cherchant à se hisser, à coups de griffes, au-dessus des autres.
 
-Cette section contient toutes les règles pour recruter une bande (*warband*) de Vermigènes (*Verminkin*). Vous trouverez dans les pages suivantes :
+Cette section contient toutes les règles pour recruter une bande (*warband*) de Vermineux (*Verminkin*). Vous trouverez dans les pages suivantes :
 
 - **Origines (*Origins*)** (p. xx)
 - **Repaires (*Strongholds*)** (p. xx)
-- **Règles de campagne des Vermigènes (*Verminkin Campaign Rules*)** (p. xx)
-- **Liste des combattants des Vermigènes (*Verminkin Fighter List*)** (p. xx)
-- **L'Armurerie vermigène (*The Verminkin Armoury*)** (p. xx-xx)
-- **Domaines de magie des Vermigènes (*Verminkin Spell Lores*)** (p. xx)
-- **Compétences des Vermigènes (*Verminkin Skills*)** (p. xx)
-- **Parchemins de combattants des Vermigènes (*Verminkin Fighter Scrolls*)** (p. xx-xx)
+- **Règles de campagne des Vermineux (*Verminkin Campaign Rules*)** (p. xx)
+- **Liste des combattants des Vermineux (*Verminkin Fighter List*)** (p. xx)
+- **L'Armurerie des Vermineux (*The Verminkin Armoury*)** (p. xx-xx)
+- **Domaines de magie des Vermineux (*Verminkin Spell Lores*)** (p. xx)
+- **Compétences des Vermineux (*Verminkin Skills*)** (p. xx)
+- **Parchemins de combattants des Vermineux (*Verminkin Fighter Scrolls*)** (p. xx-xx)
 
 ## Origines (*Origins*)
 
@@ -48,7 +48,7 @@ Vous commencez la campagne avec le repaire (*stronghold*) **Poste d'observation 
 
 ### Cabale du Maître artificier (*Sparkseer Coven*)
 
-> Cette bande (*warband*) est menée par un Maître artificier (*Sparkseer*) génial et légèrement fou. Ces Vermigènes (*Verminkin*) écument les ruines de la Cité (*the City*) en quête de ferraille et d'ingrédients alchimiques, dont ils font des armes et des engins (*contraption*) élaborés.
+> Cette bande (*warband*) est menée par un Maître artificier (*Sparkseer*) génial et légèrement fou. Ces Vermineux (*Verminkin*) écument les ruines de la Cité (*the City*) en quête de ferraille et d'ingrédients alchimiques, dont ils font des armes et des engins (*contraption*) élaborés.
 
 **Restrictions**
 
@@ -112,9 +112,9 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), vous commencez 
 
 Choisissez 1 des combattants (*fighter*) : vous le jouez, et votre adversaire joue l'autre. Les 2 combattants (*fighter*) sont placés engagés au corps à corps (*engaged in melee*). Effectuez un jet de départage (*roll-off*), puis alternez les actions d'Attaque au corps à corps (*Melee Attack Action*), en commençant par le vainqueur. Les combattants (*fighter*) ne peuvent effectuer aucune autre action ni aucun autre Mouvement (*Move*). Continuez d'alterner les actions d'Attaque au corps à corps (*Melee Attack Action*) jusqu'à ce que 1 combattant (*fighter*) soit mis hors de combat (*taken down*). Ce dernier subit une blessure (*injury*) normalement. L'autre combattant (*fighter*) est le vainqueur et gagne 10 d'expérience bonus (*bonus experience*).
 
-## Règles de campagne des Vermigènes (*Verminkin Campaign Rules*)
+## Règles de campagne des Vermineux (*Verminkin Campaign Rules*)
 
-Pendant la campagne, les bandes (*warband*) de Vermigènes (*Verminkin*) ont les règles spéciales (*special rule*) supplémentaires suivantes :
+Pendant la campagne, les bandes (*warband*) de Vermineux (*Verminkin*) ont les règles spéciales (*special rule*) supplémentaires suivantes :
 
 ### Mort d'un Chef (*Death of a Leader*)
 
@@ -124,12 +124,12 @@ Pendant la campagne, si votre chef (*Leader*) est tué (*killed*) et que vous ch
 |---|---|
 | Prêtre de la Vérole (*Pox Priest*) | Apprenti prêtre de la Vérole (*Pox Priest's Apprentice*) |
 | Assassin Croc-de-Nuit (*Nightfang Assassin*) | Apprenti assassin (*Assassin's Apprentice*) |
-| Seigneur de guerre Croc-de-Fer (*Ironfang Warlord*) | Champion vermigène (*Verminkin Champion*) |
+| Seigneur de guerre Croc-de-Fer (*Ironfang Warlord*) | Champion vermineux (*Verminkin Champion*) |
 | Maître artificier (*Sparkseer*) | Apprenti artificier (*Sparkseer's Apprentice*) |
 
-### Noms des Vermigènes (*Verminkin Names*)
+### Noms des Vermineux (*Verminkin Names*)
 
-Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) Vermigène (*Verminkin*) :
+Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) Vermineux (*Verminkin*) :
 
 | D66 | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
@@ -140,7 +140,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | 50 | Skrabbs | Skrik | Skrittitch | Skrott | Skurrik | Snatchzit |
 | 60 | Snikk | Snivvel | Theivik | Tik-Tik | Vritch | Zikkrik |
 
-## Liste des combattants des Vermigènes (*Verminkin Fighters List*)
+## Liste des combattants des Vermineux (*Verminkin Fighters List*)
 
 **Chefs (*Leaders*) (1)**
 
@@ -155,17 +155,17 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 
 | Combattant | Coût |
 |---|---|
-| 0-1 Sorcier vermigène (*Verminkin Warlock*) | 125 pa |
+| 0-1 Sorcier vermineux (*Verminkin Warlock*) | 125 pa |
 | 0-1 Apprenti prêtre de la Vérole (*Pox Priest's Apprentice*) | 125 pa |
 | Apprenti assassin (*Assassin's Apprentice*) | 90 pa |
-| Champion vermigène (*Verminkin Champion*) | 95 pa |
+| Champion vermineux (*Verminkin Champion*) | 95 pa |
 | 0-2 Apprenti artificier (*Sparkseer's Apprentice*) | 85 pa |
 
 **Hommes de main (*Henchmen*) (5+)**
 
 | Combattant | Coût |
 |---|---|
-| Guerrier vermigène (*Verminkin Warrior*) | 40 pa |
+| Guerrier vermineux (*Verminkin Warrior*) | 40 pa |
 
 **Brutes (0-2)**
 
@@ -180,7 +180,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 |---|---|
 | Rat géant (*Giant Rat*) | 20 pa |
 
-## Armurerie vermigène (*Vermin Armoury*)
+## Armurerie des Vermineux (*Vermin Armoury*)
 
 ### Liste principale (*Main List*)
 
@@ -337,7 +337,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Grimoire | 15 pa |
 | Cloche ensorcelée (*Ensorcelled Bell*) | 10 pa |
 
-## Armurerie vermigène - Armes de corps à corps (*Vermin Armoury - Melee Weapons*)
+## Armurerie des Vermineux - Armes de corps à corps (*Vermin Armoury - Melee Weapons*)
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|
@@ -378,7 +378,7 @@ Voir les règles complètes aux pages xx-xx.
 | Encombrant (*Unwieldy*) | -1 aux jets d'attaque |
 | Contournement (*Wrap*) | Ne peut ni parer ni être parée |
 
-## Armurerie vermigène - Armes à distance (*Vermin Armoury - Ranged Weapons*)
+## Armurerie des Vermineux - Armes à distance (*Vermin Armoury - Ranged Weapons*)
 
 | Nom | Portée | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|---|
@@ -413,7 +413,7 @@ Voir les règles complètes aux pages xx-xx.
 | À deux mains (*Two-handed*) | 1 par combattant. Pas d'attaque de main secondaire |
 | Salve (*Volley*) | Plusieurs cibles à 3" ou moins |
 
-## Armurerie vermigène - Armures et objets (*Verminkin Armoury - Armour & Items*)
+## Armurerie des Vermineux - Armures et objets (*Verminkin Armoury - Armour & Items*)
 
 ### Blindage lourd (*Heavy Plating*) - 30 pa
 
@@ -525,7 +525,7 @@ Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), p
 
 **Armes à distance à deux mains (*Two-Handed Ranged Weapons*) :** un combattant (*fighter*) ne peut pas être équipé à la fois d'un objet tenu (*held item*) et d'une arme à distance (*ranged weapon*) à deux mains (*Two-handed*).
 
-## Domaines de magie des Vermigènes (*Verminkin Spell Lores*)
+## Domaines de magie des Vermineux (*Verminkin Spell Lores*)
 
 ## Domaine des Tunnels profonds (*Lore of the Under-Tunnels*) - 1D6
 
@@ -688,11 +688,11 @@ Chaque combattant (*fighter*) touché (*hit*) par le sort (*spell*) devient empo
 
 **Lancement critique (*Critical Cast*) [12+] :** il ne dévie (*scatter*) pas.
 
-## Compétences des Vermigènes (*Verminkin Skills*)
+## Compétences des Vermineux (*Verminkin Skills*)
 
 ## Machinations magistrales (*Masterful Schemes*)
 
-Chefs (*Leader*) et Champions Vermigènes (*Verminkin*) uniquement
+Chefs (*Leader*) et Champions Vermineux (*Verminkin*) uniquement
 
 ### Empoisonneur (*Purveyor of Poisons*)
 
@@ -722,7 +722,7 @@ Si ce combattant (*fighter*) commence la bataille en réserve (*in reserve*), qu
 
 ## Coureurs de tunnels (*Tunnel Runners*)
 
-N'importe quel combattant (*fighter*) Vermigène (*Verminkin*)
+N'importe quel combattant (*fighter*) Vermineux (*Verminkin*)
 
 ### Impétueux (*Impetuous*)
 
@@ -750,19 +750,19 @@ Améliorez de 1 la valeur de Perforation (*Rend*) des armes de corps à corps (*
 
 Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*), il n'est pas visible pour les combattants ennemis (*enemy fighter*) situés à plus de 9".
 
-## Parchemins de combattants des Vermigènes (*Verminkin Fighter Scrolls*)
+## Parchemins de combattants des Vermineux (*Verminkin Fighter Scrolls*)
 
 ## Chefs (*Leaders*)
 
 ### Prêtre de la Vérole (*Pox Priest*)
 
-*Chef, Vermigène, Prêtre* (*Leader, Verminkin, Priest*) - 170 pa
+*Chef, Vermineux, Prêtre* (*Leader, Verminkin, Priest*) - 170 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 6" | 4+ | 6+ | 6+ | 4 | 5 | 5 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie vermigène (*Verminkin Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie des Vermineux (*Verminkin Armoury*).
 
 **Expérience de départ :** 60+1D6.
 
@@ -774,13 +774,13 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 ### Assassin Croc-de-Nuit (*Nightfang Assassin*)
 
-*Chef, Vermigène, Assassin* (*Leader, Verminkin, Assassin*) - 140 pa
+*Chef, Vermineux, Assassin* (*Leader, Verminkin, Assassin*) - 140 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 6" | 3+ | 4+ | 6+ | 4 | 3 | 6 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie vermigène (*Verminkin Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie des Vermineux (*Verminkin Armoury*).
 
 **Expérience de départ :** 60+1D6.
 
@@ -793,13 +793,13 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 ### Seigneur de guerre Croc-de-Fer (*Ironfang Warlord*)
 
-*Chef, Vermigène* (*Leader, Verminkin*) - 135 pa
+*Chef, Vermineux* (*Leader, Verminkin*) - 135 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 6" | 3+ | 4+ | 6+ | 4 | 3 | 6 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie vermigène (*Verminkin Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie des Vermineux (*Verminkin Armoury*).
 
 **Expérience de départ :** 60+1D6.
 
@@ -811,13 +811,13 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 ### Maître artificier (*Sparkseer*)
 
-*Chef, Vermigène* (*Leader, Verminkin*) - 130 pa
+*Chef, Vermineux* (*Leader, Verminkin*) - 130 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 6" | 4+ | 4+ | 6+ | 4 | 3 | 5 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*), de la Liste des Champions (*Champion List*) et de la Liste des Artificiers (*Sparkseer List*) de l'Armurerie vermigène (*Verminkin Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*), de la Liste des Champions (*Champion List*) et de la Liste des Artificiers (*Sparkseer List*) de l'Armurerie des Vermineux (*Verminkin Armoury*).
 
 **Expérience de départ :** 60+1D6.
 
@@ -833,15 +833,15 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 ## Champions
 
-### 0-1 Sorcier vermigène (*Verminkin Warlock*)
+### 0-1 Sorcier vermineux (*Verminkin Warlock*)
 
-*Champion, Vermigène, Magicien* (*Champion, Verminkin, Wizard*) - 125 pa
+*Champion, Vermineux, Magicien* (*Champion, Verminkin, Wizard*) - 125 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 6" | 4+ | 6+ | 6+ | 4 | 4 | 4 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie vermigène (*Verminkin Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie des Vermineux (*Verminkin Armoury*).
 
 **Expérience de départ :** 40+1D6.
 
@@ -853,13 +853,13 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 ### 0-1 Apprenti prêtre de la Vérole (*Pox Priest's Apprentice*)
 
-*Champion, Vermigène, Prêtre* (*Champion, Verminkin, Priest*) - 125 pa
+*Champion, Vermineux, Prêtre* (*Champion, Verminkin, Priest*) - 125 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 6" | 4+ | 6+ | 6+ | 4 | 4 | 4 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie vermigène (*Verminkin Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste des Praticiens (*Practitioner List*) de l'Armurerie des Vermineux (*Verminkin Armoury*).
 
 **Expérience de départ :** 40+1D6.
 
@@ -869,15 +869,15 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 > "Apportez-leur les furoncles ! Apportez-leur la mort !"
 
-### Champion vermigène (*Verminkin Champion*)
+### Champion vermineux (*Verminkin Champion*)
 
-*Champion, Vermigène* (*Champion, Verminkin*) - 95 pa
+*Champion, Vermineux* (*Champion, Verminkin*) - 95 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 6" | 3+ | 4+ | 6+ | 4 | 3 | 5 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie vermigène (*Verminkin Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie des Vermineux (*Verminkin Armoury*).
 
 **Expérience de départ :** 40+1D6.
 
@@ -889,13 +889,13 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 ### Apprenti assassin (*Assassin's Apprentice*)
 
-*Champion, Vermigène, Assassin* (*Champion, Verminkin, Assassin*) - 90 pa
+*Champion, Vermineux, Assassin* (*Champion, Verminkin, Assassin*) - 90 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 6" | 4+ | 4+ | 6+ | 4 | 3 | 5 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie vermigène (*Verminkin Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie des Vermineux (*Verminkin Armoury*).
 
 **Expérience de départ :** 40+1D6.
 
@@ -907,13 +907,13 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 ### 0-2 Apprenti artificier (*Sparkseer's Apprentice*)
 
-*Champion, Vermigène* (*Champion, Verminkin*) - 85 pa
+*Champion, Vermineux* (*Champion, Verminkin*) - 85 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 6" | 4+ | 4+ | 6+ | 4 | 3 | 4 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*), de la Liste des Champions (*Champion List*) et de la Liste des Artificiers (*Sparkseer List*) de l'Armurerie vermigène (*Verminkin Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*), de la Liste des Champions (*Champion List*) et de la Liste des Artificiers (*Sparkseer List*) de l'Armurerie des Vermineux (*Verminkin Armoury*).
 
 **Expérience de départ :** 40+1D6.
 
@@ -928,15 +928,15 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 ## Hommes de main (*Henchmen*)
 
-### Guerrier vermigène (*Verminkin Warrior*)
+### Guerrier vermineux (*Verminkin Warrior*)
 
-*Homme de main, Vermigène* (*Henchman, Verminkin*) - 40 pa
+*Homme de main, Vermineux* (*Henchman, Verminkin*) - 40 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 6" | 5+ | 5+ | 6+ | 4 | 2 | 4 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) de l'Armurerie vermigène (*Verminkin Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) de l'Armurerie des Vermineux (*Verminkin Armoury*).
 
 **Expérience de départ :** 1D6.
 
@@ -946,13 +946,13 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 ### Rat-mutant (*Rat-Mutant*)
 
-*Brute, Vermigène, Ogre* (*Brute, Verminkin, Ogre*) - 105 pa
+*Brute, Vermineux, Ogre* (*Brute, Verminkin, Ogre*) - 105 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 5" | 4+ | 4+ | 6+ | 2 | 2 | 8 |
 
-**Équipement :** ce combattant (*fighter*) est équipé de l'arme de corps à corps (*melee weapon*) Griffe démesurée (*Oversized Claw*). De plus, il peut être équipé de l'équipement (*wargear*) de la Liste des Rats-mutants (*Rat-Mutant List*) de l'Armurerie vermigène (*Verminkin Armoury*).
+**Équipement :** ce combattant (*fighter*) est équipé de l'arme de corps à corps (*melee weapon*) Griffe démesurée (*Oversized Claw*). De plus, il peut être équipé de l'équipement (*wargear*) de la Liste des Rats-mutants (*Rat-Mutant List*) de l'Armurerie des Vermineux (*Verminkin Armoury*).
 
 **Expérience de départ :** 20+1D6.
 
@@ -964,13 +964,13 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 ### 0-1 Engin roulant (*Rolling-Contraption*)
 
-*Brute, Vermigène, Engin* (*Brute, Verminkin, Contraption*) - 150 pa
+*Brute, Vermineux, Engin* (*Brute, Verminkin, Contraption*) - 150 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 2D6" | 4+ | 4+ | 4+ | 1 | 3 | 8 |
 
-**Équipement :** ce combattant (*fighter*) est équipé de l'arme de corps à corps (*melee weapon*) Carcasse écrasante (*Crushing Bulk*). De plus, il peut être équipé de l'équipement (*wargear*) de la Liste des Engins (*Contraption List*) de l'Armurerie vermigène (*Verminkin Armoury*).
+**Équipement :** ce combattant (*fighter*) est équipé de l'arme de corps à corps (*melee weapon*) Carcasse écrasante (*Crushing Bulk*). De plus, il peut être équipé de l'équipement (*wargear*) de la Liste des Engins (*Contraption List*) de l'Armurerie des Vermineux (*Verminkin Armoury*).
 
 **Expérience de départ :** 20+1D6.
 
@@ -995,7 +995,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 ### Rat géant (*Giant Rat*)
 
-*Bête, Vermigène, Rat* (*Beast, Verminkin, Rat*) - 20 pa
+*Bête, Vermineux, Rat* (*Beast, Verminkin, Rat*) - 20 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
@@ -1015,7 +1015,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 | VO | VF | Catégorie |
 |---|---|---|
-| Vermin Armoury | Armurerie vermigène | Armureries et listes d'équipement |
+| Vermin Armoury | Armurerie des Vermineux | Armureries et listes d'équipement |
 | Flame Canister | Bonbonne à flammes | Armes à distance |
 
 ## Notes du traducteur
@@ -1023,9 +1023,9 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 Les numéros de page sont ceux imprimés dans la VO v1.03.
 
 - Ensemble du lot : même mise en forme que pour les Mercenaires de la Guilde (*Guild Mercenaries*). Les encadrés en grille (origines p. 74, repaires p. 75) sont lus ligne par ligne ; les listes de l'armurerie (p. 78) colonne par colonne : Liste principale, Liste des Rats-mutants (*Rat-Mutant*), Liste des Champions, Liste des Artificiers, Liste des Engins, Liste des Praticiens ; les armures, les objets et les compétences colonne de gauche puis colonne de droite.
-- Ensemble du lot : quand tous les mots-clés d'un combattant sont identiques en VO et en VF (Champion vermigène (*Verminkin Champion*), Apprenti assassin (*Assassin's Apprentice*), Apprenti artificier (*Sparkseer's Apprentice*), Rat-mutant (*Rat-Mutant*)), ils ne sont pas répétés entre parenthèses.
+- Ensemble du lot : quand tous les mots-clés d'un combattant sont identiques en VO et en VF (Champion vermineux (*Verminkin Champion*), Apprenti assassin (*Assassin's Apprentice*), Apprenti artificier (*Sparkseer's Apprentice*), Rat-mutant (*Rat-Mutant*)), ils ne sont pas répétés entre parenthèses.
 - p. 73 : le sommaire écrit "Verminkin Fighter List" alors que la page s'intitule "Verminkin Fighters List" : même VF.
-- p. 73 : "the domain of the Verminkin" est rendu par "le territoire des Vermigènes", pour réserver "domaine" aux Domaines de magie. "to stake their claim" est une image : "s'y tailler leur part", sans terme original.
+- p. 73 : "the domain of the Verminkin" est rendu par "le territoire des Vermineux", pour réserver "domaine" aux Domaines de magie. "to stake their claim" est une image : "s'y tailler leur part", sans terme original.
 - p. 74 : la VO écrit "the city" sans majuscule dans deux textes d'ambiance (et p. 75 pour l'Atelier branlant) : minuscule conservée.
 - p. 74 : la VO écrit "Pox Priest Apprentices" et "Rolling Contraptions", alors que les combattants s'appellent "Pox Priest's Apprentice" et "Rolling-Contraption" : noms reproduits tels qu'ils sont écrits ici.
 - p. 74 : la v1.03 écrit désormais "You must recruit a Sparkseer", comme pour les trois autres chefs : "recruter" partout. Il manque le point final après "Rickety Workshop stronghold".
@@ -1037,14 +1037,14 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 76 : le titre de la page est en capitales dans la VO. La table D66 des noms n'est pas traduite, comme convenu.
 - p. 77 : la liste écrit "Rat Mutant" sans trait d'union et "Rolling-Contraption" sans "0-1", alors que les parchemins (p. 91 et 92) s'intitulent "Rat-Mutant" et "0-1 Rolling-Contraption" : reproduit tel quel.
 - p. 77 et 78 : en-têtes "Combattant | Coût" et "Nom | Pièces d'argent" ajoutés, parce qu'un tableau Markdown en exige une ligne.
-- p. 78 à 80 : les titres écrivent "Vermin Armoury", celui de la p. 81 et les parchemins "Verminkin Armoury" : même VF, "Armurerie vermigène".
+- p. 78 à 80 : les titres écrivent "Vermin Armoury", celui de la p. 81 et les parchemins "Verminkin Armoury" : même VF, "Armurerie des Vermineux".
 - p. 78 : la v1.03 écrit "Flame-Canister" avec trait d'union dans toutes les listes. La VO écrit ici "Full-plate".
 - p. 79 et 80 : le trait Encombrant disparaît de toutes les armes à distance et de la Foreuse et des Poings à étincelles en v1.03 ; son rappel est retiré de l'encadré des armes à distance. Le Lance-éclairs gagne le trait Arcanique. Le Fusil long perd Rechargement.
 - p. 80 : les armes à Explosion ont désormais une valeur de Dégâts égale à leurs anciens Dégâts critiques et "-" en Dégâts critiques (Orbes explosifs, Lance-orbes, Lance-roquettes).
 - p. 80 : la Fronde a "-" dans la colonne des traits. L'encadré des rappels cite le trait Arcanique alors qu'aucune arme à distance de la page ne le possède : reproduit tel quel.
 - p. 81 : les armures sont notées "Armour (5+)", et "Armour value 5+" chez les Mercenaires de la Guilde (*Guild Mercenaries*) (p. 61) : reproduit tel quel.
 - p. 81 : Blindage lourd : "Subtract 1 from the Move value", sans symbole de pouce : reproduit tel quel.
-- p. 81 : l'Armure de plates cite la Paire de pistolets, qui ne figure pas dans l'Armurerie vermigène (*Verminkin Armoury*) : texte conservé.
+- p. 81 : l'Armure de plates cite la Paire de pistolets, qui ne figure pas dans l'Armurerie des Vermineux (*Verminkin Armoury*) : texte conservé.
 - p. 81 : Rat-bombe : "Rare 0-1" sans deux-points ; "equal or less than than" (mot doublé) ; "Each other fighter in the template it is hit" (mot en trop). "detonates" est rendu par "explose". La parenthèse "(it does not count towards flee tests)" est rendue par une incise.
 - p. 82 : le Grimoire porte "Item, Rare: 0-1", comme désormais celui des Mercenaires de la Guilde (*Guild Mercenaries*) (p. 61) et de la p. 15.
 - p. 82 : les parenthèses du Filet et du Périscope sont rendues par des incises, pour ne pas imbriquer de parenthèses avec les termes originaux. Les guillemets de 'Splat!' (Pointes de roue) ne sont pas repris.
@@ -1056,12 +1056,12 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 84 : Lames fétides ne précise pas "visible", contrairement à Arme enflammée (p. 63) : rien n'a été ajouté. Bombe de peste : la v1.03 ajoute "on a visible point" et supprime "targeted" et "successful". Gerbe de vomi perd aussi "successful" mais garde "targeted and hit".
 - p. 84 : Sombre vitalité dit "heals 1 life" : "soigné de 1 point de vie". Armure pourrie dit "for the rest of the round" : "pour le reste du round".
 - p. 84 : l'encadré des rappels de traits est placé après le sort 3, en bas de la colonne de gauche.
-- p. 85 : la ligne "Verminkin Leaders and Champions only" est rendue par "Chefs et Champions Vermigènes uniquement" ; p. 86, "Any Verminkin fighter" par "N'importe quel combattant Vermigène".
+- p. 85 : la ligne "Verminkin Leaders and Champions only" est rendue par "Chefs et Champions Vermineux uniquement" ; p. 86, "Any Verminkin fighter" par "N'importe quel combattant Vermineux".
 - p. 86 : Rôdeur des ombres : la VO écrit la fraction avec un seul caractère : écrit 1/2".
 - p. 87 : parchemin de l'Assassin Croc-de-Nuit (*Nightfang Assassin*) : Tueur accompli est placé avant Un coup, un mort. "its melee attack rolls" est rendu par "ses jets d'attaque des attaques au corps à corps".
 - p. 88 et 90 : Ingénierie : la VO écrit "it's Rend value" et dit "increase" et non "improve" : "augmentez de 1". Pour la Perforation, cela revient à passer de -1 à -2. "heals 1D3 life" : "soignée de 1D3 points de vie". Les guillemets de 'backfire' ne sont pas repris. Les deux options sont présentées en sous-liste.
 - p. 89 : "manling" est rendu par "petits hommes".
-- p. 91 : le Guerrier vermigène (*Verminkin Warrior*) n'a pas de règle spéciale : la rubrique n'apparaît pas.
+- p. 91 : le Guerrier vermineux (*Verminkin Warrior*) n'a pas de règle spéciale : la rubrique n'apparaît pas.
 - p. 91 : la v1.03 retire la règle Force incroyable (*Incredible Strength*) du Rat-mutant (*Rat-Mutant*), qui n'a plus de règle spéciale.
 - p. 92 : Engin roulant (*Rolling-Contraption*) : "equipped with Crushing Bulk melee weapon" sans article ; "set-up" avec trait d'union ; "Charge move" sans majuscule ; "engaged" seul. L'exemple entre parenthèses de Mouvement imprévisible est rendu par une phrase.
 - p. 92 : Rat géant (*Giant Rat*) : il manque une ponctuation après "(see below)" et "Starting Experience: 0" n'a pas de point final. Il n'a ni règle spéciale ni citation.

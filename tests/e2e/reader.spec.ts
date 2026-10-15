@@ -62,6 +62,6 @@ test("chapters are available offline", async ({ page, context }) => {
   await page.reload();
   await context.setOffline(true);
   await page.goto("./#/rules/verminkin");
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Vermigènes (Verminkin)");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Vermineux (Verminkin)");
   await context.setOffline(false);
 });

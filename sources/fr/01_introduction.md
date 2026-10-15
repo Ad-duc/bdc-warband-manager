@@ -95,7 +95,7 @@ Pour jouer à Black Death City, vous aurez besoin des éléments suivants :
 [Illustration : quatre blasons, chacun accompagné du nom d'une faction.]
 
 - Mercenaires de la Guilde (*Guild Mercenaries*)
-- Vermigènes (*Verminkin*)
+- Vermineux (*Verminkin*)
 - Cabales de la Mort (*Death Covens*)
 - Le Cloître gangrené (*The Blighted Cloister*)
 

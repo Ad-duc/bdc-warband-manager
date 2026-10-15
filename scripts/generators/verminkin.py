@@ -43,8 +43,8 @@ def build(md_path):
         return common_gear(src, gid, en, fr, kind, cost, page, md, **kw)
 
 
-    MELEE_MD = "Armurerie vermigène - Armes de corps à corps"
-    RANGED_MD = "Armurerie vermigène - Armes à distance"
+    MELEE_MD = "Armurerie des Vermineux - Armes de corps à corps"
+    RANGED_MD = "Armurerie des Vermineux - Armes à distance"
 
 
     def melee(gid, en, fr, cost, a, r, d, c, traits, **kw):
@@ -71,7 +71,7 @@ def build(md_path):
         },
         "schemaVersion": 1,
         "id": "verminkin",
-        "name": T("Verminkin", "Vermigènes"),
+        "name": T("Verminkin", "Vermineux"),
         "description": T(
             "Deep below the City lies a labyrinth of tunnels and old sewers that is the domain of the Verminkin. "
             "They are a race of insidious rat-men, long twisted by the dark sorceries that rise from the void-chasm below. "
@@ -83,8 +83,8 @@ def build(md_path):
             "each seeks to claw its way to dominance over the others.",
             "\n".join(intro),
         ),
-        "armouryName": T("Verminkin Armoury", "Armurerie vermigène"),
-        "sourceRef": ref(73, "Vermigènes"),
+        "armouryName": T("Verminkin Armoury", "Armurerie des Vermineux"),
+        "sourceRef": ref(73, "Vermineux"),
         "assets": {"shield": "bouclier_verminkin.webp", "accentColor": None},
     }
 
@@ -188,12 +188,12 @@ def build(md_path):
         {"formerLeaderId": "sparkseer", "eligibleChampionIds": ["sparkseers-apprentice"]},
     ]
     names = {}
-    for l in section("Noms des Vermigènes"):
+    for l in section("Noms des Vermineux"):
         cells = [c.strip() for c in l.strip("|").split("|")]
         if l.startswith("|") and re.match(r"^\d0$", cells[0]):
             for col, name in enumerate(cells[1:], start=1):
                 names[f"{cells[0][0]}{col}"] = name
-    data["nameTable"] = {"die": "d66", "sourceRef": ref(76, "Noms des Vermigènes"), "entries": names}
+    data["nameTable"] = {"die": "d66", "sourceRef": ref(76, "Noms des Vermineux"), "entries": names}
 
     # ----------------------------------------------------------------------------
     # Wargear
@@ -547,10 +547,10 @@ def build(md_path):
     TABLES = [
         ("masterful-schemes", "Masterful Schemes", "Machinations magistrales", 85,
          {"kind": "keywords", "anyOf": [["verminkin", "leader"], ["verminkin", "champion"]]},
-         T("Verminkin Leaders and Champions only", "Chefs et Champions Vermigènes uniquement")),
+         T("Verminkin Leaders and Champions only", "Chefs et Champions Vermineux uniquement")),
         ("tunnel-runners", "Tunnel Runners", "Coureurs de tunnels", 86,
          {"kind": "keywords", "anyOf": [["verminkin"]]},
-         T("Any Verminkin fighter", "N'importe quel combattant Vermigène")),
+         T("Any Verminkin fighter", "N'importe quel combattant Vermineux")),
     ]
     data["skillTables"] = []
     for tid, en, fr, page, elig, label in TABLES:

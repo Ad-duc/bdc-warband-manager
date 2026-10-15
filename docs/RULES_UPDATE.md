@@ -113,7 +113,7 @@ and "CONTRÔLE AVANT ENVOI"). In short:
   form: `bande (*warband*)`.
 - Faction names, fighter names and the keywords identical to them are
   translated (glossary decisions H17 and H19), with the English name in
-  parentheses like any other term: `Vermigènes (*Verminkin*)`,
+  parentheses like any other term: `Vermineux (*Verminkin*)`,
   `Capitaine de la Guilde (*Guild Captain*)`. Only the game title stays in
   English.
 - Only the paragraphs touched by a rule, data or wording change are edited;
