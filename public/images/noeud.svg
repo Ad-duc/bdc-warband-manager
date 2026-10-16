@@ -1,0 +1,29 @@
+<!--
+  File:     public/images/noeud.svg
+  Role:     Small cross knot placed in the middle of the bottom line of the
+            parchment panel frames, redrawn after the ornament of the
+            rulebook frames.
+  Author:   Adrien Duclaud
+  Created:  2026-10-16
+  License:  MIT
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <path id="arm" d="M14.2 13.6 L12 7.5 Q10.6 4.4 9.2 1.6 L12.6 3.4 L15 0.8 L17.4 3.4 L20.8 1.6 Q19.4 4.4 18 7.5 L15.8 13.6 Z"/>
+    <g id="ray">
+      <path d="M16.2 16.2 L25.4 25.4" stroke="#0b0b0b" stroke-width="1.1"/>
+      <path d="M29 29 L23.4 27.6 L25.6 25.6 L27.6 23.4 Z"/>
+    </g>
+  </defs>
+  <g fill="#0b0b0b">
+    <use href="#arm"/>
+    <use href="#arm" transform="rotate(90 15 15)"/>
+    <use href="#arm" transform="rotate(180 15 15)"/>
+    <use href="#arm" transform="rotate(270 15 15)"/>
+    <use href="#ray"/>
+    <use href="#ray" transform="rotate(90 15 15)"/>
+    <use href="#ray" transform="rotate(180 15 15)"/>
+    <use href="#ray" transform="rotate(270 15 15)"/>
+    <rect x="13.4" y="13.4" width="3.2" height="3.2" transform="rotate(45 15 15)"/>
+  </g>
+</svg>

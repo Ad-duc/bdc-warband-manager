@@ -109,15 +109,43 @@
 }
 
 @layer components {
-  /* Parchment panel: light centre, darkened worn edges */
+  /*
+   * Parchment panel, after the pages of the rulebook: light centre, worn
+   * grey edges, an ink frame drawn inside the edge and a small cross knot
+   * in the middle of its bottom line.
+   * The texture is a black layer with an alpha channel laid over the panel
+   * colour, cut in nine slices (border-image ... fill) so that the worn
+   * edges keep their thickness whatever the size of the panel.
+   */
   .panel-parchment {
     color-scheme: light;
     accent-color: var(--color-ink);
     background-color: var(--color-panel);
     color: var(--color-on-panel);
-    box-shadow:
-      inset 0 0 60px color-mix(in srgb, var(--color-mist) 70%, transparent),
-      0 0 0 2px var(--color-ink);
+    border-image: url("/images/parchemin.webp") 22% fill / 56px / 0 stretch round;
+    box-shadow: 0 0 0 2px var(--color-ink);
+  }
+  /* Dialogs stay in the top layer: only ordinary panels become a containing block */
+  .panel-parchment:not(dialog) {
+    position: relative;
+  }
+  .panel-parchment::before {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 2px solid var(--color-on-panel);
+    pointer-events: none;
+  }
+  .panel-parchment::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    width: 22px;
+    height: 22px;
+    transform: translate(-50%, 50%);
+    background: url("/images/noeud.svg") center / contain no-repeat;
+    pointer-events: none;
   }
 
   /* Buttons: dark on parchment panels, light on the dark page */

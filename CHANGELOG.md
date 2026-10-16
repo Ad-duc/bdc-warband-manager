@@ -17,6 +17,9 @@ version is given separately (playtest v1.03).
 
 ### Changed
 
+- Parchment panels now look like the pages of the rulebook: worn grey
+  edges, an ink frame inside the edge and a small cross knot in the middle
+  of its bottom line.
 - Headings now follow one type scale on every screen: page titles, section
   titles and sub-titles have the same size and font wherever they appear.
 - In the creation wizard, the budget frame (silver spent and left, warband
