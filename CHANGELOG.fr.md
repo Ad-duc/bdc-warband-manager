@@ -17,6 +17,9 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ### Modifié
 
+- Les cadres parchemin reprennent l'aspect des pages du livre de règles :
+  bords gris usés, filet noir à l'intérieur du bord et petit noeud en croix
+  au milieu de sa ligne du bas.
 - Les titres suivent une seule échelle sur tous les écrans : titres de page,
   de section et sous-titres ont la même taille et la même police partout.
 - Dans l'assistant de création, le cadre du budget (pa dépensées et restantes,
