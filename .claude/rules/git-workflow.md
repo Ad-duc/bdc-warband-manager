@@ -57,7 +57,8 @@ heading`.
 
 1. `git fetch origin main` and `git rebase origin/main` (other sessions may
    have pushed meanwhile; on a changelog conflict keep both sides).
-2. `npm run check` and `npm run check:generated` must pass.
+2. `npm run check` must pass (the pre-push hook runs it; the pre-commit hook
+   runs the fast part, `npm run check:fast`).
 3. `npm run test:e2e` for any change to a screen, a route or the PWA.
 4. User-visible change: one line under `[Unreleased]` in `CHANGELOG.md` and
    the same line, in French, under `[Non publié]` in `CHANGELOG.fr.md`.

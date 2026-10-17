@@ -67,7 +67,9 @@ npm run dev          # http://localhost:5173/bdc-warband-manager/
 | `npm run check:generated`              | Fail if a generated data file is out of date; writes nothing                                 |
 | `npm run fix:dice`                     | Write every die with its number of dice (1D6) in `sources/fr` and the data texts             |
 | `npm run build:glossary`               | Regenerate `src/i18n/glossary.json` from `00_glossaire.md`                                   |
-| `npm run check`                        | Everything above except the end-to-end tests                                                 |
+| `npm run check:fast`                   | Type check, Prettier, data, interface strings and type scale; run by the pre-commit hook     |
+| `npm run check`                        | Everything above except the end-to-end tests; run by the pre-push hook and the CI            |
+| `npm run prepare`                      | Point git at the versioned hooks of `.githooks/` (done by `npm ci`, skipped on the CI)       |
 | `npm run watch:check`                  | Look for a new official rules version or resource (exit 10 or 11 when something is new)      |
 | `npm run watch:fetch -- --version <v>` | Download a rules PDF, extract its text to `sources/vo/`, update `sources/manifest.json`      |
 | `npm run watch:diff`                   | Paragraph diff of the previous and current rules text into `.cache/watch/`                   |

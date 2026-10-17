@@ -25,7 +25,8 @@
     "check:data": "tsx scripts/check-data.ts",
     "check:i18n": "tsx scripts/check-i18n.ts",
     "check:ui": "tsx scripts/check-ui.ts",
-    "check": "npm run typecheck && npm run lint && npm run format:check && npm run check:data && npm run check:i18n && npm run check:ui && npm run test",
+    "check:fast": "npm run typecheck && npm run format:check && npm run check:data && npm run check:i18n && npm run check:ui",
+    "check": "npm run check:fast && npm run lint && npm run check:generated && npm run test:coverage",
     "build:glossary": "tsx scripts/build-glossary.ts",
     "generate:data": "tsx scripts/run-python.ts scripts/generators/generate.py",
     "check:generated": "tsx scripts/run-python.ts scripts/generators/generate.py --check",
@@ -34,7 +35,8 @@
     "watch:fetch": "tsx scripts/run-python.ts scripts/watch/release.py fetch",
     "watch:mark": "tsx scripts/run-python.ts scripts/watch/release.py mark",
     "watch:diff": "tsx scripts/run-python.ts scripts/watch/diff_versions.py",
-    "postinstall": "tsx scripts/patch-stryker-vitest.ts"
+    "postinstall": "tsx scripts/patch-stryker-vitest.ts",
+    "prepare": "tsx scripts/install-hooks.ts"
   },
   "dependencies": {
     "dexie": "4.4.6",

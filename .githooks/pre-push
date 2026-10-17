@@ -1,0 +1,13 @@
+#!/bin/sh
+# File:     .githooks/pre-push
+# Role:     Full check before every push, the same one the CI runs apart from
+#           the end-to-end tests: fast checks, lint, generated data files and
+#           unit tests with 100% coverage of the rules engine.
+#           Installed by "npm ci" through scripts/install-hooks.ts.
+# Author:   Adrien Duclaud
+# Created:  2026-10-17
+# License:  MIT
+
+set -e
+echo "pre-push: npm run check"
+npm run -s check
