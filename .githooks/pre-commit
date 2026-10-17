@@ -1,0 +1,13 @@
+#!/bin/sh
+# File:     .githooks/pre-commit
+# Role:     Fast checks before every commit (about ten seconds): type check,
+#           Prettier, data, interface strings and type scale. The slow checks
+#           (lint, generated files, unit tests with coverage) run on push.
+#           Installed by "npm ci" through scripts/install-hooks.ts.
+# Author:   Adrien Duclaud
+# Created:  2026-10-17
+# License:  MIT
+
+set -e
+echo "pre-commit: npm run check:fast"
+npm run -s check:fast
