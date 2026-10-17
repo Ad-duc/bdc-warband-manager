@@ -21,6 +21,7 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:e2e": "playwright test",
+    "test:mutation": "stryker run",
     "check:data": "tsx scripts/check-data.ts",
     "check:i18n": "tsx scripts/check-i18n.ts",
     "check:ui": "tsx scripts/check-ui.ts",
@@ -34,6 +35,7 @@
     "watch:fetch": "tsx scripts/run-python.ts scripts/watch/release.py fetch",
     "watch:mark": "tsx scripts/run-python.ts scripts/watch/release.py mark",
     "watch:diff": "tsx scripts/run-python.ts scripts/watch/diff_versions.py",
+    "postinstall": "tsx scripts/patch-stryker-vitest.ts",
     "prepare": "tsx scripts/install-hooks.ts"
   },
   "dependencies": {
@@ -51,6 +53,8 @@
     "@axe-core/playwright": "4.13.0",
     "@eslint/js": "10.0.1",
     "@playwright/test": "1.64.0",
+    "@stryker-mutator/core": "10.0.0",
+    "@stryker-mutator/vitest-runner": "10.0.0",
     "@tailwindcss/vite": "4.3.3",
     "@testing-library/jest-dom": "7.0.1",
     "@testing-library/react": "16.3.3",
@@ -76,5 +80,8 @@
     "vite-plugin-pwa": "2.0.0",
     "vitest": "5.0.4",
     "workbox-window": "7.4.1"
+  },
+  "overrides": {
+    "qs": "6.16.1"
   }
 }

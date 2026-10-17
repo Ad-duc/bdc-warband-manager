@@ -9,3 +9,5 @@ public
 src/i18n/glossary.json
 .cache
 sources
+reports
+.stryker-tmp
