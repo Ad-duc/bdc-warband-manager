@@ -702,7 +702,7 @@
     "heading": "Group campaigns",
     "intro": "Gather the warbands of your gaming group, saved in this app or kept by other players, and record the battles they fight. Chapter 5 \"Campaigns\" of the rules is not published yet: the campaign only keeps the results, no rule is applied.",
     "name": "Campaign name",
-    "namePlaceholder": "Name of the new campaign",
+    "namePlaceholder": "E.g. The City sewers",
     "create": "New campaign",
     "unnamed": "Unnamed campaign",
     "summary_one": "{{warbands}} warbands, {{count}} battle",

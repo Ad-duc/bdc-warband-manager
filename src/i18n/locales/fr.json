@@ -702,7 +702,7 @@
     "heading": "Campagnes de groupe",
     "intro": "Réunissez les bandes de votre groupe de jeu, enregistrées dans l'application ou tenues par d'autres joueurs, et notez les batailles qu'elles livrent. Le chapitre 5 \"Campagnes\" des règles n'est pas encore publié : la campagne garde seulement les résultats, aucune règle n'est appliquée.",
     "name": "Nom de la campagne",
-    "namePlaceholder": "Nom de la nouvelle campagne",
+    "namePlaceholder": "Ex. : Les égouts de la Cité",
     "create": "Nouvelle campagne",
     "unnamed": "Campagne sans nom",
     "summary_one": "{{warbands}} bandes, {{count}} bataille",
