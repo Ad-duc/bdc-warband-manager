@@ -30,8 +30,9 @@ Technical guide of BDC Warband Manager. The app itself is described in the
 
 Vite 8, React 19, TypeScript 7 (strict), Tailwind CSS 4, i18next 26 with
 react-i18next 17, zustand 5, zod 4, Dexie 4 (IndexedDB), marked 18 (rules
-reader), vite-plugin-pwa 2, vitest 5, Playwright 1.64, ESLint 10 with
-typescript-eslint, Prettier 3.
+reader), vite-plugin-pwa 2, vitest 5 with fast-check 4 (property based tests
+of the rules engine), Playwright 1.64, ESLint 10 with typescript-eslint,
+Prettier 3.
 
 TypeScript is installed twice on purpose: `typescript-native` (7.0.2) runs the
 type check, `typescript` (6.0.3) is only there for typescript-eslint, which does
