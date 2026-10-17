@@ -59,8 +59,8 @@ tests/          unit (vitest) and e2e (Playwright)
 ```bash
 npm ci
 npm run dev                 # http://localhost:5173/bdc-warband-manager/
-npm run check               # typecheck, lint, format, data, i18n, type scale, unit tests
-npm run check:generated     # generated faction files match their generators
+npm run check:fast          # typecheck, format, data, i18n, type scale (pre-commit hook)
+npm run check               # check:fast, lint, generated files, unit tests with coverage (pre-push hook)
 npm run test:coverage       # 100% required on src/rules, src/db, src/store; 90% on src/print
 npm run test:e2e            # Playwright, Chromium and Firefox, with axe-core
 npm run generate:data       # rebuild verminkin, death-covens, the-blighted-cloister
@@ -68,7 +68,10 @@ npm run fix:dice            # write every die with its count (1D6)
 npm run format              # Prettier on the whole repository
 ```
 
-`npm run check` and `npm run check:generated` must pass before any commit.
+`npm run check` must pass before any push; it is what the CI runs apart from
+the e2e tests. `npm ci` installs the git hooks of `.githooks/` (`core.hooksPath`):
+pre-commit runs `check:fast`, pre-push runs `check`. Never bypass them
+(`--no-verify`) and never weaken a check to make it pass: report the failure.
 Run the e2e tests for any change to a screen. With a preinstalled Chromium:
 `PLAYWRIGHT_CHROMIUM_PATH=<path> npx playwright test --project=chromium`.
 

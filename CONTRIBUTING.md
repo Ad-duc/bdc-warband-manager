@@ -33,7 +33,9 @@ npx playwright install --with-deps chromium firefox   # once, for the e2e tests
 
 1. Create a branch from `main`.
 2. Make the change, with its tests.
-3. Run `npm run check`, then `npm run test:e2e`.
+3. Run `npm run check`, then `npm run test:e2e`. The git hooks installed by
+   `npm ci` run `npm run check:fast` at each commit and `npm run check` at
+   each push; do not bypass them.
 4. Add a line under `[Unreleased]` in `CHANGELOG.md` and the same line, in
    French, under `[Non publié]` in `CHANGELOG.fr.md`. Both files are shown in
    the app ("What's new" page) and must list the same versions.
@@ -81,7 +83,8 @@ refer to these ids.
 | `npm test`              | Unit tests (vitest)                                                                            |
 | `npm run test:coverage` | Same, with 100% coverage required on `src/rules`, `src/db` and `src/store`, 90% on `src/print` |
 | `npm run test:e2e`      | Playwright on Chromium and Firefox, including the axe-core audit                               |
-| `npm run check`         | Type check, lint, format, data, interface strings and unit tests                               |
+| `npm run check:fast`    | Type check, format, data, interface strings, type scale (pre-commit)                           |
+| `npm run check`         | `check:fast`, lint, generated files, unit tests with coverage (pre-push)                       |
 
 A new rule goes with a unit test in `tests/unit/rules/`. A new screen or a new
 interaction goes with an end-to-end test and is added to
