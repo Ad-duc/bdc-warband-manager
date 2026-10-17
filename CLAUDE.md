@@ -61,7 +61,7 @@ npm ci
 npm run dev                 # http://localhost:5173/bdc-warband-manager/
 npm run check:fast          # typecheck, format, data, i18n, type scale (pre-commit hook)
 npm run check               # check:fast, lint, generated files, unit tests with coverage (pre-push hook)
-npm run test:coverage       # 100% required on src/rules
+npm run test:coverage       # 100% required on src/rules, src/db, src/store; 90% on src/print
 npm run test:e2e            # Playwright, Chromium and Firefox, with axe-core
 npm run test:mutation       # Stryker on src/rules, about 20 minutes, report in reports/mutation/
 npm run generate:data       # rebuild verminkin, death-covens, the-blighted-cloister
@@ -113,6 +113,8 @@ Run the e2e tests for any change to a screen. With a preinstalled Chromium:
   `WARBAND_SCHEMA_VERSION` and adds a migration; a database change adds a new
   Dexie version, existing versions are never edited.
 - **Tests.** A new rule goes with a unit test in `tests/unit/rules/`. The
+  database, the wizard store and the print layouts are unit tested under
+  jsdom too (`vitest.config.ts` sets the thresholds per folder). The
   mutation score of `src/rules` (Stryker, weekly workflow and
   `npm run test:mutation`) must stay at 80 or more; a survived mutant is a
   missing assertion, not a reason to lower the threshold. A new
