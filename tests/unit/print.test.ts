@@ -17,7 +17,7 @@ import {
   type PrintLabels,
 } from "../../src/print/model.ts";
 import { decodeWarband, encodeWarband, shareUrl, SHARE_PREFIX } from "../../src/features/share/share.ts";
-import { parseHash } from "../../src/app/router.ts";
+import { hrefFor, parseHash } from "../../src/app/router.ts";
 import { tokenize } from "../../src/print/richText.ts";
 import reminder from "../../src/print/reminder-fr.json";
 import { indexFaction } from "../../src/rules/index.ts";
@@ -131,6 +131,11 @@ describe("share links", () => {
 describe("duplex card backs", () => {
   it("the stand-alone generator has its own route", () => {
     expect(parseHash("#/card-backs")).toEqual({ name: "cardBacks" });
+  });
+
+  it("the direction dice has its own route", () => {
+    expect(parseHash("#/dice")).toEqual({ name: "dice" });
+    expect(hrefFor({ name: "dice" })).toBe("#/dice");
   });
 
   it("a full page gets 9 backs", () => {

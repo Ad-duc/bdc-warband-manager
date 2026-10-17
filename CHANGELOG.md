@@ -17,6 +17,8 @@ version is given separately (playtest v1.03).
 
 ### Changed
 
+- The direction dice now opens as a screen of its own (header button)
+  instead of a window over the current page.
 - Parchment panels now look like the pages of the rulebook: worn grey
   edges, an ink frame inside the edge and a small cross knot in the middle
   of its bottom line.

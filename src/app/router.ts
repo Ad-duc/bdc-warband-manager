@@ -10,6 +10,7 @@
  *              "#/tutorial/<lesson>/<step>" rules tutorial (1-based step),
  *              "#/changelog" history of the application versions,
  *              "#/card-backs" stand-alone card back generator,
+ *              "#/dice" direction dice,
  *              "#/reminder" French reminder sheet, "#/scenarios" and
  *              "#/scenarios/<n>" scenario reference, "#/battle" battle set-up
  *              (optionally "?warband=<id>" or "?campaign=<id>"),
@@ -31,6 +32,7 @@ export type Route =
   | { name: "tutorial"; lesson: string | null; step: number | null }
   | { name: "changelog" }
   | { name: "cardBacks" }
+  | { name: "dice" }
   | { name: "reminder" }
   | { name: "scenarios"; number: number | null }
   | { name: "battle"; warbandId: string | null; campaignId: string | null }
@@ -40,6 +42,7 @@ export function parseHash(hash: string): Route {
   if (hash.startsWith("#w=")) return { name: "shared", payload: hash.slice(3) };
   if (hash === "#/changelog") return { name: "changelog" };
   if (hash === "#/card-backs") return { name: "cardBacks" };
+  if (hash === "#/dice") return { name: "dice" };
   if (hash === "#/reminder") return { name: "reminder" };
   const scenarios = /^#\/scenarios(?:\/([1-9]))?$/.exec(hash);
   if (scenarios !== null)
@@ -99,6 +102,8 @@ export function hrefFor(route: Route): string {
       return "#/changelog";
     case "cardBacks":
       return "#/card-backs";
+    case "dice":
+      return "#/dice";
     case "reminder":
       return "#/reminder";
     case "scenarios":

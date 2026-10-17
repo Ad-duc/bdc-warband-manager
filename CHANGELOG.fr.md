@@ -17,6 +17,8 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ### Modifié
 
+- Le dé de direction s'affiche désormais dans un écran à part (bouton du
+  bandeau) au lieu d'une fenêtre par-dessus la page en cours.
 - Les cadres parchemin reprennent l'aspect des pages du livre de règles :
   bords gris usés, filet noir à l'intérieur du bord et petit noeud en croix
   au milieu de sa ligne du bas.

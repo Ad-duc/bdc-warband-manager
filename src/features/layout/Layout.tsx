@@ -13,12 +13,11 @@
  * License:     MIT
  */
 
-import { useState, type ReactNode } from "react";
+import type { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { HeaderTools } from "./HeaderTools.tsx";
 import { useGameData } from "../../data/useGameData.ts";
 import { hrefFor, useRoute } from "../../app/router.ts";
-import { DirectionDieDialog } from "../dice/DirectionDieDialog.tsx";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -32,7 +31,6 @@ export function Layout({ children }: { children: ReactNode }) {
   const { t } = useTranslation();
   const gameData = useGameData();
   const route = useRoute();
-  const [dieOpen, setDieOpen] = useState(false);
 
   return (
     <div className="relative flex h-dvh flex-col overflow-hidden print:h-auto print:overflow-visible">
@@ -58,11 +56,7 @@ export function Layout({ children }: { children: ReactNode }) {
             </a>
             <p className="truncate font-hand text-base text-on-page-muted sm:text-lg">{t("app.tagline")}</p>
           </div>
-          <HeaderTools
-            onOpenDie={() => {
-              setDieOpen(true);
-            }}
-          />
+          <HeaderTools />
         </div>
       </header>
 
@@ -71,13 +65,6 @@ export function Layout({ children }: { children: ReactNode }) {
           {children}
         </main>
       </div>
-
-      <DirectionDieDialog
-        open={dieOpen}
-        onClose={() => {
-          setDieOpen(false);
-        }}
-      />
 
       <footer className="no-print shrink-0 border-t-2 border-rule">
         <div className="mx-auto flex max-w-[120rem] items-center justify-between gap-3 px-4 py-2 text-xs text-on-page-muted sm:items-end sm:gap-4 sm:px-6 sm:py-4 sm:text-sm xl:px-10">

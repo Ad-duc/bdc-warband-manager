@@ -144,10 +144,9 @@ for (const locale of ["fr-FR"] as const) {
       await page.goto("./#/reminder");
       await expect(page.getByTestId("reminder-sheet")).toBeVisible();
       await audit(page, "reminder sheet");
-      await page.getByRole("button", { name: "Dé de direction" }).click();
-      await page.getByRole("dialog").getByRole("button", { name: "Lancer" }).click();
+      await page.goto("./#/dice");
+      await page.getByRole("button", { name: "Lancer" }).click();
       await audit(page, "direction dice");
-      await page.keyboard.press("Escape");
       await page.goto("./#/warband/demo-1/campaign");
       await page.getByRole("button", { name: "Partager" }).click();
       const field = page.getByLabel("Lien de partage");
