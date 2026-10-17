@@ -166,6 +166,9 @@ function walk(dir: string, out: string[]): void {
         "coverage",
         "test-results",
         "playwright-report",
+        // Stryker: generated report and sandbox
+        "reports",
+        ".stryker-tmp",
         "__pycache__",
         ".cache",
         // Agent instruction file and rules folder: their names are imposed by
