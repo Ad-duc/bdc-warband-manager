@@ -523,8 +523,7 @@
       "sum": "{{dice}} = {{inches}}\""
     },
     "roll": "Roll",
-    "rollAgain": "Roll again",
-    "close": "Close"
+    "rollAgain": "Roll again"
   },
   "cardBacks": {
     "title": "Card back generator",

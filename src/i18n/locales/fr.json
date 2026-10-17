@@ -523,8 +523,7 @@
       "sum": "{{dice}} = {{inches}}\""
     },
     "roll": "Lancer",
-    "rollAgain": "Relancer",
-    "close": "Fermer"
+    "rollAgain": "Relancer"
   },
   "cardBacks": {
     "title": "Générateur de dos de cartes",

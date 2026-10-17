@@ -88,7 +88,7 @@ const RulesIcon = () => (
   </Icon>
 );
 
-export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
+export function HeaderTools() {
   const { t } = useTranslation();
   const route = useRoute();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -98,6 +98,7 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
 
   const homeCurrent = route.name === "home" ? "page" : undefined;
   const backsCurrent = route.name === "cardBacks" ? "page" : undefined;
+  const diceCurrent = route.name === "dice" ? "page" : undefined;
   const rulesCurrent = route.name === "rules" ? "page" : undefined;
   const tutorialCurrent = route.name === "tutorial" ? "page" : undefined;
   const tutorialHref = hrefFor({ name: "tutorial", lesson: null, step: null });
@@ -143,10 +144,10 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
           <HomeIcon />
           <span className="sr-only xl:not-sr-only">{t("header.home")}</span>
         </a>
-        <button type="button" aria-haspopup="dialog" onClick={onOpenDie} className={BUTTON}>
+        <a href={hrefFor({ name: "dice" })} aria-current={diceCurrent} className={BUTTON}>
           <DieIcon />
           <span className="sr-only xl:not-sr-only">{t("header.directionDie")}</span>
-        </button>
+        </a>
         <a href={hrefFor({ name: "cardBacks" })} aria-current={backsCurrent} className={BUTTON}>
           <BacksIcon />
           <span className="sr-only xl:not-sr-only">{t("header.cardBacks")}</span>
@@ -208,18 +209,15 @@ export function HeaderTools({ onOpenDie }: { onOpenDie: () => void }) {
             <HomeIcon />
             {t("header.home")}
           </a>
-          <button
-            type="button"
-            aria-haspopup="dialog"
+          <a
+            href={hrefFor({ name: "dice" })}
+            aria-current={diceCurrent}
             className={MENU_ITEM}
-            onClick={() => {
-              close();
-              onOpenDie();
-            }}
+            onClick={close}
           >
             <DieIcon />
             {t("header.directionDie")}
-          </button>
+          </a>
           <a
             href={hrefFor({ name: "cardBacks" })}
             aria-current={backsCurrent}

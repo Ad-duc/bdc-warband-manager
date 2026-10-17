@@ -1,34 +1,26 @@
 /*
- * File:        src/features/dice/DirectionDieDialog.tsx
- * Role:        Direction dice opened from the header, over the current screen:
- *              an arrow pointing in any direction (as a dice with arrows on
- *              its faces) and, as an option, the scatter distance of the rules
- *              (1D6", 1D6x2" or 3D6"). Native <dialog> (focus trap, Escape to
- *              close); the result is announced to screen readers.
+ * File:        src/features/dice/DirectionDiePage.tsx
+ * Role:        Direction dice screen ("#/dice", header button): an arrow
+ *              pointing in any direction (as a dice with arrows on its faces)
+ *              and, as an option, the scatter distance of the rules (1D6",
+ *              1D6x2" or 3D6"). Shown in the page itself, not over it; the
+ *              result is announced to screen readers.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
  */
 
-import { useEffect, useId, useRef, useState } from "react";
+import { useId, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { SCATTER_DISTANCES, rollScatter, type ScatterDistance, type ScatterRoll } from "../../rules/dice.ts";
 
-export function DirectionDieDialog({ open, onClose }: { open: boolean; onClose: () => void }) {
+export function DirectionDiePage() {
   const { t } = useTranslation();
-  const ref = useRef<HTMLDialogElement>(null);
   const titleId = useId();
   const [distance, setDistance] = useState<ScatterDistance>("d6");
   const [roll, setRoll] = useState<ScatterRoll | null>(null);
   /* Full turns added at each roll so the arrow visibly spins to its new angle. */
   const [turns, setTurns] = useState(0);
-
-  useEffect(() => {
-    const dialog = ref.current;
-    if (dialog === null) return;
-    if (open && !dialog.open) dialog.showModal();
-    if (!open && dialog.open) dialog.close();
-  }, [open]);
 
   const doRoll = (): void => {
     setRoll(rollScatter(distance));
@@ -46,19 +38,14 @@ export function DirectionDieDialog({ open, onClose }: { open: boolean; onClose: 
           : t("directionDie.detail.single", { inches: roll.inches });
 
   return (
-    <dialog
-      ref={ref}
+    <section
       aria-labelledby={titleId}
       data-testid="direction-die"
-      onCancel={(e) => {
-        e.preventDefault();
-        onClose();
-      }}
-      className="panel-parchment m-auto w-[min(28rem,calc(100vw-2rem))] p-5 backdrop:bg-ink/80"
+      className="panel-parchment mx-auto w-full max-w-xl p-5 sm:p-6"
     >
-      <h2 id={titleId} className="title-section">
+      <h1 id={titleId} className="title-page">
         {t("directionDie.title")}
-      </h2>
+      </h1>
       <p className="mt-1 text-sm">{t("directionDie.intro")}</p>
 
       <fieldset className="mt-3">
@@ -84,11 +71,11 @@ export function DirectionDieDialog({ open, onClose }: { open: boolean; onClose: 
         </div>
       </fieldset>
 
-      <div className="mt-4 flex items-center gap-4">
+      <div className="mt-5 flex flex-col items-center gap-4 sm:flex-row">
         <svg
           viewBox="-50 -50 100 100"
-          width="112"
-          height="112"
+          width="160"
+          height="160"
           className="shrink-0"
           role="img"
           aria-label={
@@ -109,7 +96,11 @@ export function DirectionDieDialog({ open, onClose }: { open: boolean; onClose: 
             <path d="M0 -36 L14 -12 L5 -12 L5 36 L-5 36 L-5 -12 L-14 -12 Z" fill="var(--color-white)" />
           </g>
         </svg>
-        <div aria-live="polite" className="min-w-0 flex-1" data-testid="direction-result">
+        <div
+          aria-live="polite"
+          className="min-w-0 flex-1 text-center sm:text-left"
+          data-testid="direction-result"
+        >
           {roll === null ? (
             <p className="text-sm">{t("directionDie.prompt")}</p>
           ) : (
@@ -124,14 +115,11 @@ export function DirectionDieDialog({ open, onClose }: { open: boolean; onClose: 
         </div>
       </div>
 
-      <div className="mt-4 flex justify-end gap-2">
-        <button type="button" className="btn" onClick={onClose}>
-          {t("directionDie.close")}
-        </button>
+      <div className="mt-5 flex justify-end">
         <button type="button" className="btn btn-solid" onClick={doRoll}>
           {roll === null ? t("directionDie.roll") : t("directionDie.rollAgain")}
         </button>
       </div>
-    </dialog>
+    </section>
   );
 }
