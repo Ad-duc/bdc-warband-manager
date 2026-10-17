@@ -61,7 +61,7 @@ npm ci
 npm run dev                 # http://localhost:5173/bdc-warband-manager/
 npm run check               # typecheck, lint, format, data, i18n, type scale, unit tests
 npm run check:generated     # generated faction files match their generators
-npm run test:coverage       # 100% required on src/rules
+npm run test:coverage       # 100% required on src/rules, src/db, src/store; 90% on src/print
 npm run test:e2e            # Playwright, Chromium and Firefox, with axe-core
 npm run generate:data       # rebuild verminkin, death-covens, the-blighted-cloister
 npm run fix:dice            # write every die with its count (1D6)
@@ -108,7 +108,9 @@ Run the e2e tests for any change to a screen. With a preinstalled Chromium:
 - **Saved documents.** A change to the warband format bumps
   `WARBAND_SCHEMA_VERSION` and adds a migration; a database change adds a new
   Dexie version, existing versions are never edited.
-- **Tests.** A new rule goes with a unit test in `tests/unit/rules/`. A new
+- **Tests.** A new rule goes with a unit test in `tests/unit/rules/`. The
+  database, the wizard store and the print layouts are unit tested under
+  jsdom too (`vitest.config.ts` sets the thresholds per folder). A new
   screen or interaction goes with an e2e test and an entry in
   `tests/e2e/a11y.spec.ts`. Controls have a visible label or an `aria-label`,
   touch targets are at least 44 px.
