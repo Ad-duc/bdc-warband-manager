@@ -78,13 +78,13 @@ refer to these ids.
 
 ## Tests
 
-| Command                 | What it covers                                                           |
-| ----------------------- | ------------------------------------------------------------------------ |
-| `npm test`              | Unit tests (vitest)                                                      |
-| `npm run test:coverage` | Same, with 100% coverage required on `src/rules`                         |
-| `npm run test:e2e`      | Playwright on Chromium and Firefox, including the axe-core audit         |
-| `npm run check:fast`    | Type check, format, data, interface strings, type scale (pre-commit)     |
-| `npm run check`         | `check:fast`, lint, generated files, unit tests with coverage (pre-push) |
+| Command                 | What it covers                                                                                 |
+| ----------------------- | ---------------------------------------------------------------------------------------------- |
+| `npm test`              | Unit tests (vitest)                                                                            |
+| `npm run test:coverage` | Same, with 100% coverage required on `src/rules`, `src/db` and `src/store`, 90% on `src/print` |
+| `npm run test:e2e`      | Playwright on Chromium and Firefox, including the axe-core audit                               |
+| `npm run check:fast`    | Type check, format, data, interface strings, type scale (pre-commit)                           |
+| `npm run check`         | `check:fast`, lint, generated files, unit tests with coverage (pre-push)                       |
 
 A new rule goes with a unit test in `tests/unit/rules/`. A new screen or a new
 interaction goes with an end-to-end test and is added to
