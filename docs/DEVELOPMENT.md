@@ -30,8 +30,8 @@ Technical guide of BDC Warband Manager. The app itself is described in the
 
 Vite 8, React 19, TypeScript 7 (strict), Tailwind CSS 4, i18next 26 with
 react-i18next 17, zustand 5, zod 4, Dexie 4 (IndexedDB), marked 18 (rules
-reader), vite-plugin-pwa 2, vitest 5, Playwright 1.64, ESLint 10 with
-typescript-eslint, Prettier 3.
+reader), vite-plugin-pwa 2, vitest 5, Stryker 10 (mutation testing of the
+rules engine), Playwright 1.64, ESLint 10 with typescript-eslint, Prettier 3.
 
 TypeScript is installed twice on purpose: `typescript-native` (7.0.2) runs the
 type check, `typescript` (6.0.3) is only there for typescript-eslint, which does
@@ -59,6 +59,7 @@ npm run dev          # http://localhost:5173/bdc-warband-manager/
 | `npm run format` / `format:check`      | Prettier                                                                                     |
 | `npm test` / `test:coverage`           | Unit tests (vitest)                                                                          |
 | `npm run test:e2e`                     | End-to-end tests (Playwright, Chromium and Firefox)                                          |
+| `npm run test:mutation`                | Mutation testing of `src/rules` with Stryker (about 20 minutes); HTML report in `reports/`   |
 | `npm run check:data`                   | Validate `src/data/*.json` and compare it with the translated Markdown of `sources/fr/`      |
 | `npm run check:i18n`                   | Same keys in `en.json` and `fr.json`, every `t()` key exists, no unused key                  |
 | `npm run check:ui`                     | Every heading uses the title class of its level (type scale, see `CONTRIBUTING.md`)          |

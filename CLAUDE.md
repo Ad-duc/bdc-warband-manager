@@ -37,7 +37,7 @@ trailers.
 
 Vite, React, TypeScript (type check with `typescript-native`), Tailwind,
 i18next, zustand, zod, Dexie (IndexedDB), vite-plugin-pwa, marked, vitest,
-Playwright with axe-core. Python 3 for the data generators and the rules
+Stryker (mutation testing), Playwright with axe-core. Python 3 for the data generators and the rules
 watcher. Node 22 or later.
 
 ```
@@ -63,6 +63,7 @@ npm run check               # typecheck, lint, format, data, i18n, type scale, u
 npm run check:generated     # generated faction files match their generators
 npm run test:coverage       # 100% required on src/rules
 npm run test:e2e            # Playwright, Chromium and Firefox, with axe-core
+npm run test:mutation       # Stryker on src/rules, about 20 minutes, report in reports/mutation/
 npm run generate:data       # rebuild verminkin, death-covens, the-blighted-cloister
 npm run fix:dice            # write every die with its count (1D6)
 npm run format              # Prettier on the whole repository
@@ -108,7 +109,10 @@ Run the e2e tests for any change to a screen. With a preinstalled Chromium:
 - **Saved documents.** A change to the warband format bumps
   `WARBAND_SCHEMA_VERSION` and adds a migration; a database change adds a new
   Dexie version, existing versions are never edited.
-- **Tests.** A new rule goes with a unit test in `tests/unit/rules/`. A new
+- **Tests.** A new rule goes with a unit test in `tests/unit/rules/`. The
+  mutation score of `src/rules` (Stryker, weekly workflow and
+  `npm run test:mutation`) must stay at 80 or more; a survived mutant is a
+  missing assertion, not a reason to lower the threshold. A new
   screen or interaction goes with an e2e test and an entry in
   `tests/e2e/a11y.spec.ts`. Controls have a visible label or an `aria-label`,
   touch targets are at least 44 px.
@@ -143,4 +147,5 @@ Branch naming, commit style and the pull request routine are detailed in
 - Never rewrite history, force push or merge a pull request without an
   explicit request from Adrien naming the action.
 - The CI (`.github/workflows/ci.yml`) runs every check and the e2e tests, and
-  deploys `main` to GitHub Pages.
+  deploys `main` to GitHub Pages. `mutation.yml` runs Stryker every Monday
+  and on demand.

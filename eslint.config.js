@@ -15,7 +15,18 @@ import reactRefresh from "eslint-plugin-react-refresh";
 import globals from "globals";
 
 export default tseslint.config(
-  { ignores: ["dist", "coverage", "dev-dist", "playwright-report", "test-results", "node_modules"] },
+  {
+    ignores: [
+      "dist",
+      "coverage",
+      "dev-dist",
+      "playwright-report",
+      "test-results",
+      "node_modules",
+      "reports",
+      ".stryker-tmp",
+    ],
+  },
   js.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
   {

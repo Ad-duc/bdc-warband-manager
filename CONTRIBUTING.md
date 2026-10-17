@@ -76,12 +76,13 @@ refer to these ids.
 
 ## Tests
 
-| Command                 | What it covers                                                   |
-| ----------------------- | ---------------------------------------------------------------- |
-| `npm test`              | Unit tests (vitest)                                              |
-| `npm run test:coverage` | Same, with 100% coverage required on `src/rules`                 |
-| `npm run test:e2e`      | Playwright on Chromium and Firefox, including the axe-core audit |
-| `npm run check`         | Type check, lint, format, data, interface strings and unit tests |
+| Command                 | What it covers                                                              |
+| ----------------------- | --------------------------------------------------------------------------- |
+| `npm test`              | Unit tests (vitest)                                                         |
+| `npm run test:coverage` | Same, with 100% coverage required on `src/rules`                            |
+| `npm run test:mutation` | Stryker on `src/rules`: about 20 minutes, the score must stay at 80 or more |
+| `npm run test:e2e`      | Playwright on Chromium and Firefox, including the axe-core audit            |
+| `npm run check`         | Type check, lint, format, data, interface strings and unit tests            |
 
 A new rule goes with a unit test in `tests/unit/rules/`. A new screen or a new
 interaction goes with an end-to-end test and is added to
