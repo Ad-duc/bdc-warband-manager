@@ -42,12 +42,12 @@ export function GroupCampaignsSection() {
           void create();
         }}
       >
-        <label htmlFor={nameId} className="sr-only">
+        <label htmlFor={nameId} className="w-full font-bold">
           {t("groups.name")}
         </label>
         <input
           id={nameId}
-          className="field min-w-0 flex-1"
+          className="field w-full min-w-0 sm:w-auto sm:flex-1"
           placeholder={t("groups.namePlaceholder")}
           value={name}
           onChange={(e) => {

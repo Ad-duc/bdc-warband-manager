@@ -76,7 +76,7 @@ test("set up a battle against a typed-in warband and hand it to the battle log",
 
 test("run a group campaign", async ({ page }) => {
   await importDemo(page);
-  await page.getByPlaceholder("Nom de la nouvelle campagne").fill("Hiver à Rennes");
+  await page.getByLabel("Nom de la campagne").fill("Hiver à Rennes");
   await page.getByRole("button", { name: "Nouvelle campagne" }).click();
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Hiver à Rennes");
 
