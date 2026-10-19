@@ -37,6 +37,8 @@ version is given separately (playtest v1.03).
 
 ### Fixed
 
+- The confirmation window (deleting a warband, cancelling a battle) no
+  longer shows a useless scrollbar, and its frame knot is no longer cut.
 - The reminder sheet now adapts to the screen: no more horizontal scroll on a
   phone or a tablet, its columns stack on narrow screens. The printed A4
   page is unchanged.
