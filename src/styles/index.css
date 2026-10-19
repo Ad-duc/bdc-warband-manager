@@ -129,6 +129,11 @@
   .panel-parchment:not(dialog) {
     position: relative;
   }
+  /* Modal dialogs get overflow: auto from the browser: the knot below the
+     frame would overflow and show a scrollbar */
+  dialog.panel-parchment {
+    overflow: visible;
+  }
   .panel-parchment::before {
     content: "";
     position: absolute;

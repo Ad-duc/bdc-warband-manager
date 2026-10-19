@@ -39,6 +39,9 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ### Corrigé
 
+- La fenêtre de confirmation (suppression d'une bande, annulation d'une
+  bataille) n'affiche plus d'ascenseur inutile et le noeud de son cadre
+  n'est plus coupé.
 - L'aide de jeu s'adapte à l'écran : plus de défilement horizontal sur
   téléphone ou tablette, ses colonnes s'empilent sur les écrans étroits. La
   page A4 imprimée ne change pas.
