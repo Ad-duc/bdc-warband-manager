@@ -124,10 +124,12 @@
     color: var(--color-on-panel);
     border-image: url("/images/parchemin.webp") 22% fill / 56px / 0 stretch round;
     box-shadow: 0 0 0 2px var(--color-ink);
-    /* Room under the content for the cross knot: the inner frame and the
-       knot are placed from the padding box, so this border lifts the bottom
-       line and keeps the whole knot inside the parchment */
-    border-bottom: 9px solid transparent;
+    /* The inner frame and the knot are placed from the padding box: this
+       border moves the frame 6px inwards on every side, keeps the content
+       clear of it and leaves room for the whole knot inside the parchment */
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent;
   }
   /* Dialogs stay in the top layer: only ordinary panels become a containing block */
   .panel-parchment:not(dialog) {

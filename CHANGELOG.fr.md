@@ -18,8 +18,8 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 ### Corrigé
 
 - Le noeud en croix des cadres parchemin était coupé en deux par le bord du
-  bas : la ligne basse du cadre est remontée pour que le noeud reste entier
-  dans le parchemin.
+  bas : le filet intérieur rentre de 6 px sur les quatre côtés pour que le
+  noeud reste entier dans le parchemin, toujours centré sur la ligne du bas.
 
 ### Modifié
 

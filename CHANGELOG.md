@@ -18,8 +18,8 @@ version is given separately (playtest v1.03).
 ### Fixed
 
 - The cross knot of the parchment panels was cut in half by the bottom
-  edge: the bottom line of the frame is lifted so the knot stays whole
-  inside the parchment.
+  edge: the inner frame moves 6 px inwards on every side so the knot stays
+  whole inside the parchment, still centred on the bottom line.
 
 ### Changed
 
