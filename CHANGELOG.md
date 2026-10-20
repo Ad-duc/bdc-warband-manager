@@ -17,6 +17,10 @@ version is given separately (playtest v1.03).
 
 ### Changed
 
+- Every screen now shares the same maximum width (80 rem): the warband
+  list, the wizard, the campaign, the rules reader, the battle set-up and
+  the tutorial line up on the same page width. The direction dice keeps
+  its small centred panel.
 - The direction dice now opens as a screen of its own (header button)
   instead of a window over the current page.
 - Parchment panels now look like the pages of the rulebook: worn grey

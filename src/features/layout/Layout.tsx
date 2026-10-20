@@ -61,7 +61,7 @@ export function Layout({ children }: { children: ReactNode }) {
       </header>
 
       <div className="relative min-h-0 flex-1 overflow-y-auto print:overflow-visible">
-        <main id="main" className="mx-auto w-full max-w-[120rem] px-4 py-8 sm:px-6 xl:px-10">
+        <main id="main" className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 xl:px-10">
           {children}
         </main>
       </div>

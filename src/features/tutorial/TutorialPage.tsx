@@ -45,7 +45,7 @@ export function TutorialPage({ lessonId, step }: { lessonId: string | null; step
 function LessonList() {
   const { t } = useTranslation();
   return (
-    <div className="mx-auto max-w-4xl space-y-6">
+    <div className="space-y-6">
       <h1 className="title-page">{t("tutorial.title")}</h1>
       <p className="max-w-prose text-on-page-muted">{t("tutorial.intro")}</p>
       <ul className="grid gap-4 sm:grid-cols-2">

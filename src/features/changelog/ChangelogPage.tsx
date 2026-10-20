@@ -38,7 +38,7 @@ export function ChangelogPage() {
   const current = state.status !== "loading" && state.language === language ? state : null;
 
   return (
-    <article className="panel-parchment mx-auto max-w-4xl p-4 sm:p-8" aria-busy={current === null}>
+    <article className="panel-parchment p-4 sm:p-8" aria-busy={current === null}>
       {current === null && <p>{t("changelog.loading")}</p>}
       {current?.status === "error" && <p role="alert">{t("changelog.error")}</p>}
       {current?.status === "ready" && (
