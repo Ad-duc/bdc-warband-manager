@@ -3,7 +3,8 @@
  * Role:        French rules reader: the header button opens it, chapters are
  *              reached from the side list, the phone drop-down list and the
  *              previous / next links, the contents list jumps to a section,
- *              and chapters stay readable offline once the app is loaded.
+ *              chapters stay readable offline once the app is loaded, and
+ *              the print view lays out every chapter in book order.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -64,4 +65,24 @@ test("chapters are available offline", async ({ page, context }) => {
   await page.goto("./#/rules/verminkin");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Vermineux (Verminkin)");
   await context.setOffline(false);
+});
+
+test("the print view lists every chapter in book order", async ({ page }) => {
+  await page.goto("./#/rules");
+  await page.getByRole("link", { name: "Imprimer les règles" }).click();
+  await expect(page).toHaveURL(/#\/rules\/print$/);
+  await expect(
+    page.getByRole("heading", { level: 1, name: "Imprimer les règles en français" }),
+  ).toBeVisible();
+  const book = page.getByTestId("rules-book");
+  await expect(book).toBeVisible();
+  await expect(book.getByText("Règles de la version de test 1.03", { exact: true })).toBeVisible();
+  await expect(page.getByTestId("rules-book-chapter")).toHaveCount(12);
+  await expect(
+    page.getByTestId("rules-book-chapter").nth(2).getByRole("heading", { level: 1 }),
+  ).toContainText("Chapitre 2 - Batailles");
+  await expect(book.locator(".reader-feedback")).toHaveCount(0);
+  await expect(page.getByRole("button", { name: "Imprimer" })).toBeEnabled();
+  await page.getByRole("link", { name: "Retour au lecteur" }).click();
+  await expect(page).toHaveURL(/#\/rules$/);
 });

@@ -602,6 +602,19 @@
     "loading": "Chargement du chapitre...",
     "error": "Ce chapitre n'a pas pu être chargé. Rechargez la page avec une connexion.",
     "notFound": "Chapitre inconnu. Choisissez-en un dans la liste.",
+    "printLink": "Imprimer les règles",
+    "print": {
+      "title": "Imprimer les règles en français",
+      "intro": "L'ensemble de la traduction, dans l'ordre du livre : page de titre, sommaire puis les douze chapitres sur deux colonnes, en noir sur blanc.",
+      "help": "Format A4 portrait, échelle 100 %. Le livre complet fait environ 200 pages : vérifiez le nombre de pages dans l'aperçu du navigateur, imprimez en recto verso si votre imprimante le permet. Le navigateur peut aussi enregistrer le résultat en PDF.",
+      "back": "Retour au lecteur",
+      "loading": "Préparation des chapitres...",
+      "coverTitle": "Black Death City",
+      "coverLabel": "Page de titre",
+      "coverRules": "Règles de la version de test 1.03",
+      "coverAuthor": "Par Sam Pearson",
+      "coverSource": "Imprimé depuis BDC Warband Manager, outil de fan non officiel : https://ad-duc.github.io/bdc-warband-manager/"
+    },
     "feedback": {
       "notice": "Une faute, une règle mal traduite ? Proposez une correction depuis le lien sous chaque titre (sélectionnez d'abord le passage pour le citer), ou",
       "edit": "modifiez le fichier sur GitHub.",

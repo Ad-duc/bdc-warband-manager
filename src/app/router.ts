@@ -6,6 +6,7 @@
  *              "#/warband/<id>/print" print view, "#w=<data>" shared warband,
  *              "#/rules", "#/rules/<chapter>" and "#/rules/<chapter>/<section>"
  *              French rules reader (the section is a heading id),
+ *              "#/rules/print" the whole translation laid out for printing,
  *              "#/tutorial", "#/tutorial/<lesson>" and
  *              "#/tutorial/<lesson>/<step>" rules tutorial (1-based step),
  *              "#/changelog" history of the application versions,
@@ -29,6 +30,7 @@ export type Route =
   | { name: "print"; id: string }
   | { name: "shared"; payload: string }
   | { name: "rules"; chapter: string | null; section?: string }
+  | { name: "rulesPrint" }
   | { name: "tutorial"; lesson: string | null; step: number | null }
   | { name: "changelog" }
   | { name: "cardBacks" }
@@ -56,6 +58,7 @@ export function parseHash(hash: string): Route {
     };
   const group = /^#\/campaigns\/([A-Za-z0-9-]+)$/.exec(hash);
   if (group?.[1] !== undefined) return { name: "groupCampaign", id: group[1] };
+  if (hash === "#/rules/print") return { name: "rulesPrint" };
   const rules = /^#\/rules(?:\/([a-z0-9-]+)(?:\/(s-[a-z0-9-]+))?)?$/.exec(hash);
   if (rules !== null) {
     const chapter = rules[1] ?? null;
@@ -95,6 +98,8 @@ export function hrefFor(route: Route): string {
       return route.section === undefined
         ? `#/rules/${route.chapter}`
         : `#/rules/${route.chapter}/${route.section}`;
+    case "rulesPrint":
+      return "#/rules/print";
     case "tutorial":
       if (route.lesson === null) return "#/tutorial";
       return route.step === null ? `#/tutorial/${route.lesson}` : `#/tutorial/${route.lesson}/${route.step}`;

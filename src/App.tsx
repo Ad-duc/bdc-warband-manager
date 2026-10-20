@@ -2,7 +2,8 @@
  * File:        src/App.tsx
  * Role:        Root component: page layout and the screen of the current
  *              route (home, creation wizard, campaign dashboard, print view,
- *              shared warband, French rules reader, changelog, scenarios,
+ *              shared warband, French rules reader and its print view,
+ *              changelog, scenarios,
  *              battle set-up, group campaign, rules tutorial or direction
  *              dice). Screens other than the home
  *              page are loaded on demand to keep the first download small.
@@ -29,6 +30,9 @@ const SharedPage = lazy(async () => ({
 }));
 const ChangelogPage = lazy(async () => ({
   default: (await import("./features/changelog/ChangelogPage.tsx")).ChangelogPage,
+}));
+const RulesPrintPage = lazy(async () => ({
+  default: (await import("./features/reader/RulesPrintPage.tsx")).RulesPrintPage,
 }));
 const CardBacksPage = lazy(async () => ({
   default: (await import("./print/CardBacksPage.tsx")).CardBacksPage,
@@ -66,6 +70,7 @@ export function App() {
         {route.name === "print" && <PrintPage id={route.id} />}
         {route.name === "shared" && <SharedPage payload={route.payload} />}
         {route.name === "rules" && <RulesPage chapterId={route.chapter} sectionId={route.section ?? null} />}
+        {route.name === "rulesPrint" && <RulesPrintPage />}
         {route.name === "tutorial" && <TutorialPage lessonId={route.lesson} step={route.step} />}
         {route.name === "changelog" && <ChangelogPage />}
         {route.name === "cardBacks" && <CardBacksPage />}

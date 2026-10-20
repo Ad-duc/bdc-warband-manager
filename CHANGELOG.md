@@ -15,6 +15,12 @@ version is given separately (playtest v1.03).
 
 ## [Unreleased]
 
+### Added
+
+- The French rules can be printed as a whole: a "Print the rules" link in
+  the reader opens a book layout (title page, list of chapters, every
+  chapter on two columns for A4 paper) with a print button.
+
 ### Fixed
 
 - The cross knot of the parchment panels was cut in half by the bottom
