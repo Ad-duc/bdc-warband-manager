@@ -257,6 +257,10 @@ function ChapterNav({ current }: { current: Chapter | undefined }) {
           ))}
         </ol>
       </nav>
+
+      <a className="btn mt-4 w-full lg:w-auto" href={hrefFor({ name: "rulesPrint" })}>
+        {t("reader.printLink")}
+      </a>
     </div>
   );
 }

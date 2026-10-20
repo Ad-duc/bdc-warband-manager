@@ -99,7 +99,7 @@ export function HeaderTools() {
   const homeCurrent = route.name === "home" ? "page" : undefined;
   const backsCurrent = route.name === "cardBacks" ? "page" : undefined;
   const diceCurrent = route.name === "dice" ? "page" : undefined;
-  const rulesCurrent = route.name === "rules" ? "page" : undefined;
+  const rulesCurrent = route.name === "rules" || route.name === "rulesPrint" ? "page" : undefined;
   const tutorialCurrent = route.name === "tutorial" ? "page" : undefined;
   const tutorialHref = hrefFor({ name: "tutorial", lesson: null, step: null });
   const reminderCurrent = route.name === "reminder" ? "page" : undefined;

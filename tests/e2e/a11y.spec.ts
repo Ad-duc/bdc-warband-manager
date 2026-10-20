@@ -3,7 +3,8 @@
  * Role:        Accessibility audit with axe-core on every screen of the
  *              French interface: home, each wizard step (with an open scroll), the
  *              campaign dashboard (open injuries and battle form), the print
- *              view, the shared page, the rules reader, the changelog, the
+ *              view, the shared page, the rules reader and its print view,
+ *              the changelog, the
  *              scenarios, the battle set-up, a group campaign, the rules
  *              tutorial and the confirmation dialog. WCAG 2.2 A and AA
  *              rules; any violation fails the test with its details.
@@ -83,6 +84,9 @@ for (const locale of ["fr-FR"] as const) {
       await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
       await page.locator("summary").first().click();
       await audit(page, "rules reader");
+      await page.goto("./#/rules/print");
+      await expect(page.getByTestId("rules-book")).toBeVisible();
+      await audit(page, "rules print view");
     });
 
     test("scenarios, battle set-up and group campaign", async ({ page }) => {

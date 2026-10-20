@@ -12,6 +12,7 @@
 @import "tailwindcss";
 @import "./print.css";
 @import "./reminder.css";
+@import "./rules-print.css";
 
 @font-face {
   font-family: "Old Celtiberian";

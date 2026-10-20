@@ -602,6 +602,19 @@
     "loading": "Loading the chapter...",
     "error": "This chapter could not be loaded. Reload the page while online.",
     "notFound": "Unknown chapter. Pick one from the list.",
+    "printLink": "Print the rules",
+    "print": {
+      "title": "Print the French rules",
+      "intro": "The whole translation in book order: title page, list of chapters, then the twelve chapters on two columns, black on white.",
+      "help": "A4 portrait, 100% scale. The whole book is about 200 pages: check the page count in the browser preview, print on both sides if your printer allows it. The browser can also save the result as a PDF.",
+      "back": "Back to the reader",
+      "loading": "Preparing the chapters...",
+      "coverTitle": "Black Death City",
+      "coverLabel": "Title page",
+      "coverRules": "Playtest rules v1.03",
+      "coverAuthor": "By Sam Pearson",
+      "coverSource": "Printed from BDC Warband Manager, an unofficial fan tool: https://ad-duc.github.io/bdc-warband-manager/"
+    },
     "feedback": {
       "notice": "A typo, a rule badly translated? Suggest a correction from the link under each heading (select the passage first to quote it), or",
       "edit": "edit the file on GitHub.",

@@ -133,6 +133,8 @@ describe("rules routes", () => {
     expect(parseHash("#/rules/batailles")).toEqual({ name: "rules", chapter: "batailles" });
     expect(hrefFor({ name: "rules", chapter: null })).toBe("#/rules");
     expect(hrefFor({ name: "rules", chapter: "verminkin" })).toBe("#/rules/verminkin");
+    expect(parseHash("#/rules/print")).toEqual({ name: "rulesPrint" });
+    expect(hrefFor({ name: "rulesPrint" })).toBe("#/rules/print");
   });
 });
 

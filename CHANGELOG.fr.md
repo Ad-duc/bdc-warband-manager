@@ -15,6 +15,13 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ## [Non publié]
 
+### Ajouté
+
+- Les règles en français peuvent être imprimées d'un bloc : un lien
+  "Imprimer les règles" dans le lecteur ouvre une mise en page livre (page
+  de titre, sommaire, chaque chapitre sur deux colonnes au format A4) avec
+  un bouton d'impression.
+
 ### Corrigé
 
 - Le noeud en croix des cadres parchemin était coupé en deux par le bord du
