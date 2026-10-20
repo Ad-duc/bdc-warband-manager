@@ -17,6 +17,10 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ### Modifié
 
+- Tous les écrans partagent désormais la même largeur maximale (80 rem) :
+  la liste des bandes, l'assistant, la campagne, le lecteur de règles, la
+  préparation de bataille et le tutoriel s'alignent sur la même largeur de
+  page. Le dé de direction garde son petit cadre centré.
 - Le dé de direction s'affiche désormais dans un écran à part (bouton du
   bandeau) au lieu d'une fenêtre par-dessus la page en cours.
 - Les cadres parchemin reprennent l'aspect des pages du livre de règles :

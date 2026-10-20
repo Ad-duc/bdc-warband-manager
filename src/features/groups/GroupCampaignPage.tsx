@@ -66,7 +66,7 @@ export function GroupCampaignPage({ id }: { id: string }) {
   const table = standings(campaign);
 
   return (
-    <div className="mx-auto max-w-6xl space-y-6">
+    <div className="space-y-6">
       <section className="panel-parchment space-y-3 p-4 sm:p-6" aria-labelledby="group-heading">
         <h1 id="group-heading" className="title-page">
           {campaign.name || t("groups.unnamed")}

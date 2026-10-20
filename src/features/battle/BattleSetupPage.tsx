@@ -265,7 +265,7 @@ export function BattleSetupPage({
   );
 
   return (
-    <div className="mx-auto max-w-6xl space-y-6">
+    <div className="space-y-6">
       <header className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h1 className="title-page">{t("battle.title")}</h1>
