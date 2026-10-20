@@ -15,6 +15,12 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ## [Non publié]
 
+### Corrigé
+
+- Le noeud en croix des cadres parchemin était coupé en deux par le bord du
+  bas : la ligne basse du cadre est remontée pour que le noeud reste entier
+  dans le parchemin.
+
 ### Modifié
 
 - Tous les écrans partagent désormais la même largeur maximale (80 rem) :
