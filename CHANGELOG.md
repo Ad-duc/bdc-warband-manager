@@ -15,17 +15,16 @@ version is given separately (playtest v1.03).
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-10-21
+
+Printable French rules, French faction and fighter names and one page width
+for every screen, still on the Black Death City playtest v1.03.
+
 ### Added
 
 - The French rules can be printed as a whole: a "Print the rules" link in
   the reader opens a book layout (title page, list of chapters, every
   chapter on two columns for A4 paper) with a print button.
-
-### Fixed
-
-- The cross knot of the parchment panels was cut in half by the bottom
-  edge: the inner frame moves 6 px inwards on every side so the knot stays
-  whole inside the parchment, still centred on the bottom line.
 
 ### Changed
 
@@ -53,6 +52,9 @@ version is given separately (playtest v1.03).
 
 ### Fixed
 
+- The cross knot of the parchment panels was cut in half by the bottom
+  edge: the inner frame moves 6 px inwards on every side so the knot stays
+  whole inside the parchment, still centred on the bottom line.
 - The confirmation window (deleting a warband, cancelling a battle) no
   longer shows a useless scrollbar, and its frame knot is no longer cut.
 - The reminder sheet now adapts to the screen: no more horizontal scroll on a
@@ -225,7 +227,8 @@ First complete release, built on the Black Death City playtest v1.03.
   use Trattatello, easier to read than Old Celtiberian. Old Celtiberian is
   kept for the header title, the rules reader and the printed sheets.
 
-[Unreleased]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Ad-duc/bdc-warband-manager/releases/tag/v1.0.0

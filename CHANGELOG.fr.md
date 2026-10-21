@@ -15,18 +15,18 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ## [Non publié]
 
+## [1.3.0] - 2026-10-21
+
+Règles en français imprimables, noms de factions et de combattants en
+français et une seule largeur de page pour tous les écrans, toujours sur la
+version de test 1.03 de Black Death City.
+
 ### Ajouté
 
 - Les règles en français peuvent être imprimées d'un bloc : un lien
   "Imprimer les règles" dans le lecteur ouvre une mise en page livre (page
   de titre, sommaire, chaque chapitre sur deux colonnes au format A4) avec
   un bouton d'impression.
-
-### Corrigé
-
-- Le noeud en croix des cadres parchemin était coupé en deux par le bord du
-  bas : le filet intérieur rentre de 6 px sur les quatre côtés pour que le
-  noeud reste entier dans le parchemin, toujours centré sur la ligne du bas.
 
 ### Modifié
 
@@ -56,6 +56,9 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ### Corrigé
 
+- Le noeud en croix des cadres parchemin était coupé en deux par le bord du
+  bas : le filet intérieur rentre de 6 px sur les quatre côtés pour que le
+  noeud reste entier dans le parchemin, toujours centré sur la ligne du bas.
 - La fenêtre de confirmation (suppression d'une bande, annulation d'une
   bataille) n'affiche plus d'ascenseur inutile et le noeud de son cadre
   n'est plus coupé.
@@ -250,7 +253,8 @@ City.
   Celtiberian reste pour le titre de l'en-tête, le lecteur des règles et les
   feuilles imprimées.
 
-[Non publié]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.2.0...HEAD
+[Non publié]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Ad-duc/bdc-warband-manager/releases/tag/v1.0.0
