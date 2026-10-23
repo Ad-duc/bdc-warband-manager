@@ -22,6 +22,7 @@ import { currentLanguage } from "../../i18n/index.ts";
 import { CHAPTERS, findChapter, loadChapter, type Chapter } from "./chapters.ts";
 import { editUrl, issueUrl, trimQuote, type FeedbackTarget } from "./feedback.ts";
 import { renderChapter, type Heading, type RenderedChapter } from "./markdown.ts";
+import { loadGlossary, type Glossary } from "./original-terms.ts";
 
 interface Selected {
   text: string;
@@ -43,8 +44,10 @@ function targetFor(chapter: Chapter, heading: Heading | undefined, quote?: strin
   };
 }
 
-function render(chapter: Chapter, markdown: string, t: TFunction): RenderedChapter {
+function render(chapter: Chapter, markdown: string, glossary: Glossary, t: TFunction): RenderedChapter {
   return renderChapter(markdown, {
+    originalTerms: "tooltip",
+    glossary,
     feedbackLink: (heading) => ({
       href: issueUrl(targetFor(chapter, heading)),
       text: t("reader.feedback.link"),
@@ -108,10 +111,10 @@ export function RulesPage({ chapterId, sectionId }: { chapterId: string | null; 
   useEffect(() => {
     if (chapter === undefined) return;
     let active = true;
-    loadChapter(chapter)
-      .then((markdown) => {
+    Promise.all([loadChapter(chapter), loadGlossary()])
+      .then(([markdown, glossary]) => {
         if (!active) return;
-        setState({ status: "ready", id: chapter.id, chapter: render(chapter, markdown, t) });
+        setState({ status: "ready", id: chapter.id, chapter: render(chapter, markdown, glossary, t) });
         setSelected(null);
         scrollToTop();
       })

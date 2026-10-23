@@ -17,7 +17,7 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ### Modifié
 
-- Formulation plus claire de l'introduction du chapitre des scénarios des règles en français.
+- La liseuse des règles n'affiche plus les termes anglais entre parenthèses : survolez ou touchez un terme français pour voir son terme original dans une infobulle. La version imprimable les omet.
 
 ## [1.3.0] - 2026-10-21
 

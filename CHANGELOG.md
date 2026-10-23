@@ -17,7 +17,7 @@ version is given separately (playtest v1.03).
 
 ### Changed
 
-- Clearer wording of the introduction to the scenarios chapter of the French rules.
+- The rules reader no longer shows the original English terms between parentheses: hover or tap a French term to see its original term in a tooltip. The print view leaves them out.
 
 ## [1.3.0] - 2026-10-21
 

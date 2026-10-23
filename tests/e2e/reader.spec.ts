@@ -3,6 +3,7 @@
  * Role:        French rules reader: the header button opens it, chapters are
  *              reached from the side list, the phone drop-down list and the
  *              previous / next links, the contents list jumps to a section,
+ *              original terms are tooltips instead of text,
  *              chapters stay readable offline once the app is loaded, and
  *              the print view lays out every chapter in book order.
  * Author:      Adrien Duclaud
@@ -30,10 +31,7 @@ test("open the reader from the header and move between chapters", async ({ page 
   await page.getByText("Sommaire").click();
   const section = page.getByRole("heading", { level: 2 }).nth(2);
   const title = (await section.textContent()) ?? "";
-  await page
-    .getByRole("button", { name: title.replace(/\s*\(.*\)$/, ""), exact: true })
-    .first()
-    .click();
+  await page.getByRole("button", { name: title, exact: true }).first().click();
   await expect(section).toBeFocused();
   await expect(section).toBeInViewport();
 
@@ -42,6 +40,18 @@ test("open the reader from the header and move between chapters", async ({ page 
     .last()
     .click();
   await expect(page).toHaveURL(/#\/rules\/scenarios$/);
+});
+
+test("original terms show on hover, not in the text", async ({ page }) => {
+  await page.goto("./#/rules/batailles");
+  const content = page.locator(".reader-content");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Chapitre 2 - Batailles");
+  await expect(content).not.toContainText("(warband)");
+  const term = content.locator('.vo-term[data-vo="VO : warband"]').first();
+  await expect(term).toHaveText(/^bandes?$/);
+  await term.hover();
+  const tooltip = await term.evaluate((el) => getComputedStyle(el, "::after").content);
+  expect(tooltip).toBe('"VO : warband"');
 });
 
 test("pick a chapter from the list on a phone", async ({ page }) => {
@@ -63,7 +73,7 @@ test("chapters are available offline", async ({ page, context }) => {
   await page.reload();
   await context.setOffline(true);
   await page.goto("./#/rules/verminkin");
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Vermineux (Verminkin)");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Vermineux");
   await context.setOffline(false);
 });
 
