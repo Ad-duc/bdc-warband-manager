@@ -110,7 +110,9 @@ and "CONTRÔLE AVANT ENVOI"). In short:
 
 - One English term = one French term, as in `00_glossaire.md`. Every game
   term keeps its original term in italics and between parentheses, singular
-  form: `bande (*warband*)`.
+  form: `bande (*warband*)`. The rules reader does not show these notes in
+  the text: it turns each one into a tooltip on the French term before it
+  (`src/features/reader/original-terms.ts`), so they stay in the Markdown.
 - Faction names, fighter names and the keywords identical to them are
   translated (glossary decisions H17 and H19), with the English name in
   parentheses like any other term: `Vermineux (*Verminkin*)`,

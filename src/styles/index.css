@@ -277,11 +277,33 @@
     line-height: 1.15;
     scroll-margin-top: 1rem;
   }
-  /* Original terms in headings: body font, smaller, easier to read than gothic */
-  .reader-content :where(h1, h2, h3, h4) em {
+  /* Original (English) term of a French game term, shown on hover or tap */
+  .reader-content .vo-term {
+    position: relative;
+    cursor: help;
+    text-decoration: underline dotted var(--color-mist);
+    text-underline-offset: 3px;
+  }
+  .reader-content :where(h1, h2, h3, h4) .vo-term {
+    text-decoration: none;
+  }
+  .reader-content .vo-term:hover::after {
+    content: attr(data-vo);
+    position: absolute;
+    bottom: calc(100% + 0.25rem);
+    left: 0;
+    z-index: 10;
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.125rem;
+    background: var(--color-ink);
+    color: var(--color-white);
     font-family: var(--font-body);
-    font-size: 0.65em;
+    font-size: 0.8125rem;
+    font-style: italic;
     font-weight: 400;
+    line-height: 1.4;
+    white-space: nowrap;
+    pointer-events: none;
   }
   /* Feedback link under each heading, to a pre-filled GitHub issue */
   .reader-content .reader-feedback {

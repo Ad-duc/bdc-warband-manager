@@ -3,7 +3,8 @@
  * Role:        French rules reader: every translation chapter of sources/fr
  *              is listed and loads, Markdown rendering (heading ids, contents
  *              list, wrapped tables, escaped raw HTML, source line of each
- *              heading, feedback links), the rules routes, and the changelog
+ *              heading, feedback links, original terms as tooltips or
+ *              removed), the rules routes, and the changelog
  *              shown in the app (same versions in both languages).
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
@@ -17,6 +18,13 @@ import { hrefFor, parseHash } from "../../src/app/router.ts";
 import { loadChangelog, stripHeader } from "../../src/features/changelog/changelog.ts";
 import { CHAPTERS, findChapter, loadChapter } from "../../src/features/reader/chapters.ts";
 import { escapeHtml, plainHeading, renderChapter, slugify } from "../../src/features/reader/markdown.ts";
+import {
+  loadGlossary,
+  markOriginalTerms,
+  parseGlossary,
+  sameWord,
+  termLength,
+} from "../../src/features/reader/original-terms.ts";
 
 const SOURCES = resolve(import.meta.dirname, "../../sources/fr");
 
@@ -124,6 +132,98 @@ describe("markdown rendering", () => {
     expect(slugify("Règles de base : la Cité")).toBe("regles-de-base-la-cite");
     expect(slugify("(*only*)")).toBe("section");
     expect(escapeHtml(`a & "b" <c> 'd'`)).toBe("a &amp; &quot;b&quot; &lt;c&gt; &#39;d&#39;");
+  });
+});
+
+describe("original terms", () => {
+  const glossary = parseGlossary(
+    [
+      "| VO | VF | Catégorie | Remarque |",
+      "|---|---|---|---|",
+      "| battlefield | champ de bataille | Terrain | Imposé. |",
+      "| enemy fighter | combattant ennemi | Général |  |",
+      "| fighter | combattant | Général |  |",
+      '| roll | jet / lancer (un dé) | Général | "jet" |',
+      "| parry | parade | Combat |  |",
+      "| special rule | règle spéciale | Général |  |",
+      "| special | spécial | Général |  |",
+      "| rule | règle | Général |  |",
+      "",
+      "| Réf. | VO | VF retenue |",
+      "|---|---|---|",
+      "| H1 | ignored | ignoré |",
+    ].join("\n"),
+  );
+
+  it("reads the VO and VF columns of the glossary tables", () => {
+    expect(glossary.get("battlefield")).toEqual(["champ de bataille"]);
+    expect(glossary.get("roll")).toEqual(["jet", "lancer"]);
+    expect(glossary.has("h1")).toBe(false);
+    expect(glossary.has("---")).toBe(false);
+  });
+
+  it("matches words whatever their plural, gender or verb ending", () => {
+    expect(sameWord("combattants", "combattant")).toBe(true);
+    expect(sameWord("jets", "jet")).toBe(true);
+    expect(sameWord("activés", "activer")).toBe(true);
+    expect(sameWord("du", "de")).toBe(true);
+    expect(sameWord("le", "de")).toBe(false);
+    expect(sameWord("bande", "bataille")).toBe(false);
+  });
+
+  it("finds the French words of each original term", () => {
+    const span = (text: string, original: string): string =>
+      text.slice(text.length - termLength(text, original, glossary));
+    expect(span("sur le champ de bataille", "battlefield")).toBe("champ de bataille");
+    expect(span("chaque combattants ennemis", "enemy fighter")).toBe("combattants ennemis");
+    expect(span("en commençant par l'outsider", "underdog")).toBe("outsider");
+    expect(span("il réussit un jet de parade", "parry roll")).toBe("jet de parade");
+    expect(span("les règles spéciales", "special rules")).toBe("règles spéciales");
+    expect(span("devient **Ensanglanté**", "bloodied")).toBe("**Ensanglanté**");
+    expect(span("ses bandes", "warband")).toBe("bandes");
+    expect(span("voir :", "see")).toBe("");
+  });
+
+  it("marks each term with its original term, keeping the lines", () => {
+    const markdown =
+      "## Le round (*The Round*)\n\nUn combattant (*fighter*) au champ de bataille (*battlefield*).";
+    const { text, terms } = markOriginalTerms(markdown, "tooltip", glossary);
+    expect(terms).toEqual(["The Round", "fighter", "battlefield"]);
+    expect(text.split("\n")).toHaveLength(3);
+    expect(text).not.toContain("(*");
+    expect(markOriginalTerms(markdown, "hide").text).toBe(
+      "## Le round\n\nUn combattant au champ de bataille.",
+    );
+    expect(markOriginalTerms("Sans note.", "tooltip")).toEqual({ text: "Sans note.", terms: [] });
+  });
+
+  it("renders a tooltip on the French term and keeps the heading ids", () => {
+    const markdown =
+      "## Le round (*The Round*)\n\n**Jet de priorité (*Priority Roll*) :** un combattant (*fighter*).";
+    const { html, headings } = renderChapter(markdown, { originalTerms: "tooltip", glossary });
+    expect(headings[0]).toMatchObject({ id: "s-le-round", text: "Le round" });
+    expect(html).toContain(
+      '<h2 id="s-le-round" tabindex="-1"><span class="vo-term" data-vo="VO : The Round">Le round</span></h2>',
+    );
+    expect(html).toContain(
+      '<strong><span class="vo-term" data-vo="VO : Priority Roll">Jet de priorité</span> :</strong>',
+    );
+    expect(html).toContain('un <span class="vo-term" data-vo="VO : fighter">combattant</span>.');
+    expect(renderChapter(markdown).html).not.toContain("vo-term");
+    expect(renderChapter(markdown).html).not.toContain("Priority Roll");
+  });
+
+  it("takes every note out of every chapter", async () => {
+    const full = await loadGlossary();
+    expect(full.size).toBeGreaterThan(1000);
+    expect(await loadGlossary()).toBe(full);
+    for (const chapter of CHAPTERS) {
+      const markdown = await loadChapter(chapter);
+      const notes = markdown.match(/\(\*[^*()\n]+?\*\)/g)?.length ?? 0;
+      const { html } = renderChapter(markdown, { originalTerms: "tooltip", glossary: full });
+      expect(html, chapter.file).not.toMatch(/\(<em>[^<]*<\/em>\)/);
+      expect(html.match(/class="vo-term"/g)?.length ?? 0, chapter.file).toBeGreaterThan(notes * 0.9);
+    }
   });
 });
 

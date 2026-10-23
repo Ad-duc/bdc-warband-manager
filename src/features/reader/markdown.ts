@@ -5,8 +5,11 @@
  *              list can jump to it, wide tables wrapped in a scrolling box,
  *              cost columns marked so they line up from one list to the next,
  *              raw HTML escaped rather than rendered, and every die written
- *              with its count (1D6). Optionally, a feedback link after each
- *              heading (rules reader), built from the heading and its line.
+ *              with its count (1D6). The "(*original term*)" notes are taken
+ *              out of the text: kept as a tooltip on the French term (rules
+ *              reader) or removed (print view). Optionally, a feedback link
+ *              after each heading (rules reader), built from the heading and
+ *              its line.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -14,6 +17,14 @@
 
 import { Marked, type Tokens } from "marked";
 import { withDiceCount } from "../../i18n/dice.ts";
+import {
+  CLOSE,
+  OPEN,
+  SEP,
+  markOriginalTerms,
+  type Glossary,
+  type OriginalTermsMode,
+} from "./original-terms.ts";
 
 export interface Section {
   id: string;
@@ -39,7 +50,21 @@ export interface RenderOptions {
   prefix?: string;
   /** Adds a link after each heading of level 2 to 4 (href and text). */
   feedbackLink?: (heading: Heading) => { href: string; text: string; label: string };
+  /** Original terms as tooltips on the French terms, or removed (default). */
+  originalTerms?: OriginalTermsMode;
+  /** Glossary used to find the French words of each original term. */
+  glossary?: Glossary;
 }
+
+interface OriginalTermToken {
+  type: "originalTerm";
+  raw: string;
+  term: string;
+  tokens: Tokens.Generic[];
+}
+
+const MARKED_TERM = new RegExp(`^${OPEN}(\\d+)${SEP}([^${CLOSE}]*)${CLOSE}`);
+const MARKERS = new RegExp(`${OPEN}\\d+${SEP}|${CLOSE}`, "g");
 
 const ESCAPES: Record<string, string> = {
   "&": "&amp;",
@@ -56,10 +81,11 @@ export function escapeHtml(text: string): string {
   return text.replace(/[&<>"']/g, (c) => ESCAPES[c] ?? c);
 }
 
-/** Heading text without the "(*original term*)" notes and Markdown marks. */
+/** Heading text without the "(*original term*)" notes, term markers and Markdown marks. */
 export function plainHeading(text: string): string {
   return text
     .replace(/\s*\(\*[^)]*\*\)/g, "")
+    .replace(MARKERS, "")
     .replace(/[*_`]/g, "")
     .trim();
 }
@@ -77,7 +103,8 @@ export function slugify(text: string): string {
 }
 
 export function renderChapter(markdown: string, options: RenderOptions = {}): RenderedChapter {
-  const { prefix = "s", feedbackLink } = options;
+  const { prefix = "s", feedbackLink, originalTerms = "hide", glossary } = options;
+  const { text: source, terms } = markOriginalTerms(withDiceCount(markdown), originalTerms, glossary);
   const used = new Map<string, number>();
   const sections: Section[] = [];
   const headings: Heading[] = [];
@@ -91,6 +118,30 @@ export function renderChapter(markdown: string, options: RenderOptions = {}): Re
 
   const marked = new Marked({ gfm: true });
   marked.use({
+    extensions: [
+      {
+        name: "originalTerm",
+        level: "inline",
+        start: (src: string) => {
+          const at = src.indexOf(OPEN);
+          return at < 0 ? undefined : at;
+        },
+        tokenizer(src: string): OriginalTermToken | undefined {
+          const match = MARKED_TERM.exec(src);
+          if (match === null) return undefined;
+          return {
+            type: "originalTerm",
+            raw: match[0],
+            term: terms[Number(match[1])] ?? "",
+            tokens: this.lexer.inlineTokens(match[2] ?? ""),
+          };
+        },
+        renderer(token: Tokens.Generic): string {
+          const { term, tokens } = token as OriginalTermToken;
+          return `<span class="vo-term" data-vo="${escapeHtml(`VO : ${term}`)}">${this.parser.parseInline(tokens)}</span>`;
+        },
+      },
+    ],
     renderer: {
       heading(token: Tokens.Heading): string {
         const { tokens, depth, text } = token;
@@ -130,7 +181,7 @@ export function renderChapter(markdown: string, options: RenderOptions = {}): Re
 
   // Top-level tokens keep their raw text: the line of a heading is the number
   // of line breaks before it, plus one.
-  const tokens = marked.lexer(withDiceCount(markdown));
+  const tokens = marked.lexer(source);
   let line = 1;
   for (const token of tokens) {
     lines.set(token, line);

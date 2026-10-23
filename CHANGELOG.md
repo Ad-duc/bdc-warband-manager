@@ -15,6 +15,10 @@ version is given separately (playtest v1.03).
 
 ## [Unreleased]
 
+### Changed
+
+- The rules reader no longer shows the original English terms between parentheses: hover or tap a French term to see its original term in a tooltip. The print view leaves them out.
+
 ## [1.3.0] - 2026-10-21
 
 Printable French rules, French faction and fighter names and one page width
