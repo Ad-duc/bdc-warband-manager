@@ -2,7 +2,7 @@
 
 **Dans les ruines de la Cité (*the City*), le fracas des batailles retentit tandis que des bandes (*warband*) rivales s'affrontent dans leur quête de trésors (*treasure*). Parfois, c'est une lutte acharnée entre deux bandes (*warband*) à armes égales. D'autres se retrouvent à lutter désespérément pour leur survie, prises en embuscade depuis les ténèbres.**
 
-Chaque bataille de Black Death City se joue selon un **scénario**. Le scénario dicte le lieu et la raison de la bataille et, point important, ce que chaque bande (*warband*) doit faire pour l'emporter.
+Chaque bataille de Black Death City se joue selon un **scénario**. Le scénario fixe le lieu et l'enjeu de la bataille et, surtout, ce que chaque bande (*warband*) doit accomplir pour l'emporter.
 
 ## Déterminer le scénario (*Determining the Scenario*)
 

@@ -15,6 +15,10 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ## [Non publié]
 
+### Modifié
+
+- Formulation plus claire de l'introduction du chapitre des scénarios des règles en français.
+
 ## [1.3.0] - 2026-10-21
 
 Règles en français imprimables, noms de factions et de combattants en

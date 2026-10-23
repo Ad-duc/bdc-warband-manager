@@ -15,6 +15,10 @@ version is given separately (playtest v1.03).
 
 ## [Unreleased]
 
+### Changed
+
+- Clearer wording of the introduction to the scenarios chapter of the French rules.
+
 ## [1.3.0] - 2026-10-21
 
 Printable French rules, French faction and fighter names and one page width
