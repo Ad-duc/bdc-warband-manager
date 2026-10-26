@@ -41,7 +41,7 @@ règles et les nouveautés du jeu.
   format carte à jouer avec leurs dos, et une aide de jeu en français sur une
   page.
 - **Lire les règles en français** : la traduction complète, chapitre par
-  chapitre, avec sommaire et glossaire VO-VF. Une faute, une règle mal
+  chapitre, avec sommaire, recherche dans tout le livre et glossaire VO-VF. Une faute, une règle mal
   traduite ? Le lien "Proposer une correction" sous chaque titre ouvre un
   ticket GitHub déjà rempli (sélectionnez d'abord le passage pour le citer).
 - **Apprendre les règles en image** : le tutoriel rejoue pas à pas l'exemple

@@ -605,6 +605,18 @@
     "error": "This chapter could not be loaded. Reload the page while online.",
     "notFound": "Unknown chapter. Pick one from the list.",
     "printLink": "Print the rules",
+    "search": {
+      "label": "Search the rules",
+      "placeholder": "One word or more, e.g. charge",
+      "title": "Search results",
+      "loading": "Loading the chapters...",
+      "error": "The chapters could not be loaded. Reload the page with a connection.",
+      "short": "Type at least one word of {{min}} letters.",
+      "none": "No section holds all these words.",
+      "count_one": "{{count}} section holds all these words.",
+      "count_other": "{{count}} sections hold all these words.",
+      "more": "Only the first {{shown}} are shown: add a word to narrow down."
+    },
     "print": {
       "title": "Print the French rules",
       "intro": "The whole translation in book order: title page, list of chapters, then the twelve chapters on two columns, black on white.",

@@ -17,6 +17,7 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ### Ajouté
 
+- Liseuse des règles : un champ de recherche trouve un ou plusieurs mots dans tous les chapitres, sans tenir compte des accents ni des majuscules (termes originaux anglais compris) ; les résultats listent chaque section avec un extrait où les mots sont surlignés, et l'ouvrent.
 - Liseuse des règles : nouveau chapitre "Campagne (avant-première)" avec la traduction française de l'avant-première du chapitre Campagne partagée sur le Discord officiel (Curiosités, Explorer la Cité), signalée comme provisoire.
 
 ### Modifié

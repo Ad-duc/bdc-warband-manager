@@ -605,6 +605,18 @@
     "error": "Ce chapitre n'a pas pu être chargé. Rechargez la page avec une connexion.",
     "notFound": "Chapitre inconnu. Choisissez-en un dans la liste.",
     "printLink": "Imprimer les règles",
+    "search": {
+      "label": "Rechercher dans les règles",
+      "placeholder": "Un mot ou plusieurs, par ex. charge",
+      "title": "Résultats de la recherche",
+      "loading": "Chargement des chapitres...",
+      "error": "Les chapitres n'ont pas pu être chargés. Rechargez la page avec une connexion.",
+      "short": "Saisissez au moins un mot de {{min}} lettres.",
+      "none": "Aucune section ne contient tous ces mots.",
+      "count_one": "{{count}} section contient tous ces mots.",
+      "count_other": "{{count}} sections contiennent tous ces mots.",
+      "more": "Seules les {{shown}} premières sont affichées : ajoutez un mot pour préciser."
+    },
     "print": {
       "title": "Imprimer les règles en français",
       "intro": "L'ensemble de la traduction, dans l'ordre du livre : page de titre, sommaire puis les douze chapitres sur deux colonnes, en noir sur blanc.",
