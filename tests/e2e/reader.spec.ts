@@ -4,7 +4,8 @@
  *              reached from the side list, the phone drop-down list and the
  *              previous / next links, the contents list jumps to a section,
  *              original terms are tooltips instead of text,
- *              chapters stay readable offline once the app is loaded, and
+ *              the search field finds sections in every chapter and opens
+ *              them, chapters stay readable offline once the app is loaded, and
  *              the print view lays out every chapter in book order.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
@@ -52,6 +53,41 @@ test("original terms show on hover, not in the text", async ({ page }) => {
   await term.hover();
   const tooltip = await term.evaluate((el) => getComputedStyle(el, "::after").content);
   expect(tooltip).toBe('"VO : warband"');
+});
+
+test("search the rules and open a result", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("./#/rules");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Black Death City");
+  const field = page.getByLabel("Rechercher dans les règles");
+
+  await field.fill("x");
+  await expect(page.getByText("Saisissez au moins un mot de 2 lettres.")).toBeVisible();
+
+  await field.fill("zzqqxx");
+  await expect(page.getByText("Aucune section ne contient tous ces mots.")).toBeVisible();
+
+  await field.fill("CONTRE-CHARGE");
+  const results = page.getByRole("region", { name: "Résultats de la recherche" });
+  await expect(results.getByText(/sections? conti/)).toBeVisible();
+  await expect(results.locator("mark").first()).toHaveText(/contre-charge/i);
+  const first = results.getByRole("listitem").first().getByRole("link");
+  const href = (await first.getAttribute("href")) ?? "";
+  expect(href).toMatch(/^#\/rules\/[a-z0-9-]+\/s-[a-z0-9-]+$/);
+
+  await first.click();
+  await expect(page).toHaveURL(new RegExp(`${href.replace(/[/]/g, "\\/")}$`));
+  await expect(field).toHaveValue("");
+  await expect(results).toHaveCount(0);
+  const section = page.locator(`[id="${href.slice(href.lastIndexOf("/") + 1)}"]`);
+  await expect(section).toBeFocused();
+  await expect(section).toBeInViewport();
+
+  await field.fill("charge");
+  await expect(results).toBeVisible();
+  await field.press("Escape");
+  await expect(results).toHaveCount(0);
+  await expect(page.locator(".reader-content")).toBeVisible();
 });
 
 test("pick a chapter from the list on a phone", async ({ page }) => {

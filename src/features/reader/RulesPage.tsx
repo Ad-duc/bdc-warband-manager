@@ -8,13 +8,16 @@
  *              section has a "suggest a correction" link to a pre-filled GitHub
  *              issue, which quotes the passage selected in that section. An
  *              address with a section ("#/rules/batailles/s-garde") opens the
- *              chapter at that heading (links from the tutorial).
+ *              chapter at that heading (links from the tutorial). A search
+ *              field looks for words in every chapter; while it holds a
+ *              query, the results take the place of the chapter text and
+ *              each one opens its section.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
  */
 
-import { useEffect, useRef, useState, type MouseEvent } from "react";
+import { useDeferredValue, useEffect, useRef, useState, type MouseEvent } from "react";
 import type { TFunction } from "i18next";
 import { useTranslation } from "react-i18next";
 import { hrefFor, navigate } from "../../app/router.ts";
@@ -23,6 +26,7 @@ import { CHAPTERS, findChapter, loadChapter, type Chapter } from "./chapters.ts"
 import { editUrl, issueUrl, trimQuote, type FeedbackTarget } from "./feedback.ts";
 import { renderChapter, type Heading, type RenderedChapter } from "./markdown.ts";
 import { loadGlossary, type Glossary } from "./original-terms.ts";
+import { RulesSearch, SearchField } from "./RulesSearch.tsx";
 
 interface Selected {
   text: string;
@@ -87,6 +91,9 @@ export function RulesPage({ chapterId, sectionId }: { chapterId: string | null; 
   const chapter = findChapter(chapterId);
   const [state, setState] = useState<State>({ status: "loading" });
   const [selected, setSelected] = useState<Selected | null>(null);
+  const [query, setQuery] = useState("");
+  const deferredQuery = useDeferredValue(query);
+  const searching = query.trim() !== "";
   const contentRef = useRef<HTMLDivElement>(null);
 
   // Remembers the last passage selected in the chapter text: clicking a link
@@ -153,7 +160,7 @@ export function RulesPage({ chapterId, sectionId }: { chapterId: string | null; 
 
   return (
     <div className="grid gap-6 lg:grid-cols-[16rem_minmax(0,1fr)] xl:gap-10">
-      <ChapterNav current={chapter} />
+      <ChapterNav current={chapter} query={query} onQuery={setQuery} />
 
       <article lang="fr" className="panel-parchment min-w-0 p-4 sm:p-8" aria-busy={ready === null}>
         <p className="mb-4 text-sm text-on-panel-muted" lang={currentLanguage()}>
@@ -164,10 +171,25 @@ export function RulesPage({ chapterId, sectionId }: { chapterId: string | null; 
             </a>
           )}
         </p>
-        {chapter === undefined && <p role="alert">{t("reader.notFound")}</p>}
-        {failed && <p role="alert">{t("reader.error")}</p>}
-        {chapter !== undefined && !failed && ready === null && <p>{t("reader.loading")}</p>}
-        {ready !== null && (
+        {searching && (
+          <RulesSearch
+            query={deferredQuery}
+            onOpen={(href) => {
+              setQuery("");
+              // The same section again: the address does not change, jump by hand.
+              if (window.location.hash === href) {
+                const id = href.slice(href.lastIndexOf("/") + 1);
+                requestAnimationFrame(() => {
+                  jumpTo(id);
+                });
+              }
+            }}
+          />
+        )}
+        {!searching && chapter === undefined && <p role="alert">{t("reader.notFound")}</p>}
+        {!searching && failed && <p role="alert">{t("reader.error")}</p>}
+        {!searching && chapter !== undefined && !failed && ready === null && <p>{t("reader.loading")}</p>}
+        {!searching && ready !== null && (
           <>
             {ready.sections.length > 1 && <Contents chapter={ready} />}
             <div
@@ -179,7 +201,7 @@ export function RulesPage({ chapterId, sectionId }: { chapterId: string | null; 
           </>
         )}
         <div aria-live="polite" className="sticky bottom-0 z-10">
-          {chapter !== undefined && selected !== null && selectedHeading !== undefined && (
+          {!searching && chapter !== undefined && selected !== null && selectedHeading !== undefined && (
             <SelectionBar
               quote={selected.text}
               section={selectedHeading.text}
@@ -217,11 +239,21 @@ export function RulesPage({ chapterId, sectionId }: { chapterId: string | null; 
 }
 
 /** Chapter list: side column from the lg breakpoint, drop-down list below. */
-function ChapterNav({ current }: { current: Chapter | undefined }) {
+function ChapterNav({
+  current,
+  query,
+  onQuery,
+}: {
+  current: Chapter | undefined;
+  query: string;
+  onQuery: (query: string) => void;
+}) {
   const { t } = useTranslation();
   return (
     <div className="lg:sticky lg:top-0 lg:self-start">
       <p className="title-section mb-3">{t("reader.title")}</p>
+
+      <SearchField query={query} onQuery={onQuery} />
 
       <div className="lg:hidden">
         <label htmlFor="reader-chapter" className="mb-1 block font-bold">

@@ -84,6 +84,11 @@ for (const locale of ["fr-FR"] as const) {
       await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
       await page.locator("summary").first().click();
       await audit(page, "rules reader");
+      await page.getByLabel("Rechercher dans les règles").fill("charge");
+      await expect(
+        page.getByRole("region", { name: "Résultats de la recherche" }).getByRole("listitem").first(),
+      ).toBeVisible();
+      await audit(page, "rules search");
       await page.goto("./#/rules/print");
       await expect(page.getByTestId("rules-book")).toBeVisible();
       await audit(page, "rules print view");

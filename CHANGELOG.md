@@ -17,6 +17,7 @@ version is given separately (playtest v1.03).
 
 ### Added
 
+- Rules reader: a search field looks for one or more words in every chapter, accents and case aside (English original terms too); the results list each section with an extract where the words are marked, and opens it.
 - Rules reader: new "Campagne (avant-première)" chapter with the French translation of the Campaign chapter preview shared on the official Discord (Curiosities, Explore the City), marked as provisional.
 
 ### Changed
