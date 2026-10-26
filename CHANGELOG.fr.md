@@ -15,6 +15,10 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ## [Non publié]
 
+### Ajouté
+
+- Liseuse des règles : nouveau chapitre "Campagne (avant-première)" avec la traduction française de l'avant-première du chapitre Campagne partagée sur le Discord officiel (Curiosités, Explorer la Cité), signalée comme provisoire.
+
 ### Modifié
 
 - La liseuse des règles n'affiche plus les termes anglais entre parenthèses : survolez ou touchez un terme français pour voir son terme original dans une infobulle. La version imprimable les omet.

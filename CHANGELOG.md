@@ -15,6 +15,10 @@ version is given separately (playtest v1.03).
 
 ## [Unreleased]
 
+### Added
+
+- Rules reader: new "Campagne (avant-première)" chapter with the French translation of the Campaign chapter preview shared on the official Discord (Curiosities, Explore the City), marked as provisional.
+
 ### Changed
 
 - The rules reader no longer shows the original English terms between parentheses: hover or tap a French term to see its original term in a tooltip. The print view leaves them out.
