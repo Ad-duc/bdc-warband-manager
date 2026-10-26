@@ -104,3 +104,23 @@ test("an invalid warband shows blocking errors", async ({ page }) => {
   await expect(page.getByText("Aucune origine choisie.")).toBeVisible();
   await expect(page.getByRole("button", { name: "Terminer la bande" })).toBeDisabled();
 });
+
+test("signature spells show the attack profile and the critical cast", async ({ page }) => {
+  await page.goto("./");
+  await page.getByRole("button", { name: "Nouvelle bande" }).click();
+  await page.getByRole("button", { name: "Suivant" }).click();
+  await page.getByRole("radio", { name: /Épées à louer/ }).check();
+  await page.getByRole("button", { name: "Suivant" }).click();
+  await page.getByRole("button", { name: "Recruter Magicien de la Guilde", exact: true }).click();
+  await page.getByRole("button", { name: "5 Compétences" }).click();
+
+  // Arcane Missile, p. 63: Rend -1, Damage 1D3, critical cast adds 1 to the Damage value.
+  const missile = page
+    .getByRole("region", { name: "Magicien de la Guilde" })
+    .getByRole("listitem")
+    .filter({ has: page.getByRole("checkbox", { name: /^1 - Projectile arcanique/ }) });
+  const profile = missile.getByRole("table");
+  await expect(profile.getByRole("columnheader")).toHaveText(["Perf", "Dég"]);
+  await expect(profile.getByRole("cell")).toHaveText(["-1", "1D3"]);
+  await expect(missile).toContainText("Lancement critique (10+) : Ajoutez 1 à la valeur de Dégâts.");
+});

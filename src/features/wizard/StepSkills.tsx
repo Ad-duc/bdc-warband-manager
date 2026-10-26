@@ -9,9 +9,9 @@
  */
 
 import { useTranslation } from "react-i18next";
-import type { WarbandFighter } from "../../data/schema.ts";
+import type { AttackProfile, WarbandFighter } from "../../data/schema.ts";
 import { fitsSkillCategory, isEligible } from "../../rules/index.ts";
-import { useFormatter } from "../../i18n/text.ts";
+import { formatRange, formatRend, useFormatter } from "../../i18n/text.ts";
 import { Term } from "../common/Term.tsx";
 import { fighterLabel } from "../warbands/factory.ts";
 import type { StepProps } from "./WizardPage.tsx";
@@ -156,6 +156,15 @@ export function StepSkills({ warband, index, update }: StepProps) {
                           <span className="block text-sm">{f.text(spell.text)}</span>
                         </span>
                       </label>
+                      <div className="ml-7 text-sm">
+                        {spell.attack !== null && <SpellAttack profile={spell.attack} />}
+                        <p>
+                          <strong>
+                            {t("wizard.skills.criticalCast", { value: spell.criticalCastValue })}
+                          </strong>{" "}
+                          {f.text(spell.criticalText)}
+                        </p>
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -164,6 +173,39 @@ export function StepSkills({ warband, index, update }: StepProps) {
           </section>
         );
       })}
+    </div>
+  );
+}
+
+/** Attack profile printed under an Attack spell: only the columns the book gives. */
+function SpellAttack({ profile }: { profile: AttackProfile }) {
+  const { t } = useTranslation();
+  const f = useFormatter();
+  const range = profile.range !== undefined;
+  const attacks = profile.attacks !== undefined;
+  const crit = profile.critDamage !== undefined;
+  return (
+    <div className="my-1 overflow-x-auto">
+      <table className="table-bdc w-auto">
+        <thead>
+          <tr>
+            {range && <th scope="col">{t("weapon.rng")}</th>}
+            {attacks && <th scope="col">{t("weapon.atk")}</th>}
+            <th scope="col">{t("weapon.rnd")}</th>
+            <th scope="col">{t("weapon.dmg")}</th>
+            {crit && <th scope="col">{t("weapon.crit")}</th>}
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            {range && <td>{formatRange(profile, t("weapon.flame"))}</td>}
+            {attacks && <td>{f.dice(profile.attacks)}</td>}
+            <td>{formatRend(profile.rend)}</td>
+            <td>{f.dice(profile.damage)}</td>
+            {crit && <td>{f.dice(profile.critDamage)}</td>}
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }

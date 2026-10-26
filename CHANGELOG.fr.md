@@ -23,6 +23,10 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 - La liseuse des règles n'affiche plus les termes anglais entre parenthèses : survolez ou touchez un terme français pour voir son terme original dans une infobulle. La version imprimable les omet.
 
+### Corrigé
+
+- Les sorts fétiches (étape 5 de l'assistant) affichent le profil des sorts d'Attaque (Perforation, Dégâts) et l'effet du lancement critique de chaque sort ; le texte du Projectile arcanique et des autres sorts d'Attaque s'arrêtait à "l'attaque suivante :".
+
 ## [1.3.0] - 2026-10-21
 
 Règles en français imprimables, noms de factions et de combattants en
