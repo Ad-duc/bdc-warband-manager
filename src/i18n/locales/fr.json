@@ -347,6 +347,7 @@
       "takenBy": "possédée par {{name}}",
       "spells": "Sorts fétiches, {{lore}} : {{picked}} sur {{expected}}",
       "casting": "{{type}}, valeur de lancement {{value}}+, critique {{critical}}+",
+      "criticalCast": "Lancement critique ({{value}}+) :",
       "categoryOnly": "{{category}} uniquement"
     },
     "rating": {

@@ -347,6 +347,7 @@
       "takenBy": "held by {{name}}",
       "spells": "Signature spells, {{lore}}: {{picked}} of {{expected}}",
       "casting": "{{type}}, casting value {{value}}+, critical {{critical}}+",
+      "criticalCast": "Critical cast ({{value}}+):",
       "categoryOnly": "{{category}} only"
     },
     "rating": {
