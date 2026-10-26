@@ -338,7 +338,8 @@
       "add": "Buy",
       "addNamed": "Buy {{name}}",
       "held": "Held Item",
-      "rare": "Rare 0-{{max}}"
+      "rare": "Rare 0-{{max}}",
+      "grantedNamed": "Weapon granted by {{name}}"
     },
     "skills": {
       "none": "No fighter of this warband picks skills or spells at recruitment.",

@@ -3,7 +3,8 @@
  * Role:        Death Covens in the wizard (French interface): The Hunt Descends
  *              origin with Dire Wolves out of the Beasts limit, the Lycanfell
  *              Beast shown inside the Lycanfell Noble scroll only, and a
- *              Misbegotten bloodline mutation added to the fighter cost.
+ *              Misbegotten bloodline mutation added to the fighter cost, and
+ *              the weapon granted by the Bestial Companion in the armoury.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -41,4 +42,12 @@ test("start a The Hunt Descends warband", async ({ page }) => {
   await misbegotten.getByRole("checkbox", { name: /Pattes de loup/ }).check();
   await expect(misbegotten).toContainText("75 pa");
   await expect(misbegotten.getByRole("checkbox", { name: /Carrure massive/ })).toBeDisabled();
+
+  // Wargear step: the Bestial Companion row shows the weapon its text announces.
+  await page.getByRole("button", { name: "Suivant" }).click();
+  const granted = page.getByTestId("granted-attack-bestial-companion").first();
+  await expect(granted).toBeVisible();
+  await expect(granted).toContainText("-1");
+  await expect(granted).toContainText("1D3+1");
+  await expect(granted).toContainText("Arme naturelle");
 });

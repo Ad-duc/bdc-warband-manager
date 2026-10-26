@@ -26,6 +26,7 @@ version is given separately (playtest v1.03).
 ### Fixed
 
 - Signature spells (wizard step 5) now show the attack profile of Attack spells (Rend, Damage) and the critical cast effect of every spell; the text of Arcane Missile and the other Attack spells used to stop at "the following attack:".
+- Wargear step: the items that grant a weapon (Bestial Companion, Loyal Companion, Bomb Bolt, Demonic Familiar) now show its profile (Rend, Damage, Critical Damage, traits) under their text, which used to stop at "the following weapon:".
 
 ## [1.3.0] - 2026-10-21
 
