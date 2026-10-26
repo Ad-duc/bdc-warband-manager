@@ -1,0 +1,1679 @@
+{
+  "_header": {
+    "file": "src/data/campaign/preview.json",
+    "role": "Campaign chapter preview shared on the official Discord: Curiosities table and items, Explore the City (scouting party, exploration table). Provisional, kept apart from the playtest data.",
+    "author": "Adrien Duclaud",
+    "created": "2026-10-26",
+    "license": "MIT (structure). Game content belongs to Sam Pearson."
+  },
+  "schemaVersion": 1,
+  "status": "preview",
+  "source": {
+    "kind": "discord-preview",
+    "received": "2026-10-26",
+    "basedOn": "playtest-1.03",
+    "pages": [137, 138, 139, 140, 153, 154, 155, 156]
+  },
+  "note": {
+    "en": "Preview of the Campaign chapter shared on the official Discord. Not part of a published playtest version: values and wording may change.",
+    "fr": "Avant-première du chapitre Campagne partagée sur le Discord officiel. Elle ne fait partie d'aucune version de test publiée : valeurs et formulations peuvent changer."
+  },
+  "curiosities": {
+    "id": "curiosities",
+    "name": {
+      "en": "Curiosities Table",
+      "fr": "Table des curiosités"
+    },
+    "die": "d66",
+    "sourceRef": {
+      "page": 137,
+      "md": "12_campagne-avant-premiere.md > Table des curiosités (*Curiosities Table*) - D66"
+    },
+    "groups": [
+      {
+        "id": "trinkets",
+        "range": "11-16",
+        "name": {
+          "en": "Trinkets",
+          "fr": "Babioles"
+        },
+        "text": null,
+        "countFromUnits": false,
+        "sourceRef": {
+          "page": 137,
+          "md": "12_campagne-avant-premiere.md > Table des curiosités (*Curiosities Table*) - D66"
+        }
+      },
+      {
+        "id": "jar-of-canal-leeches",
+        "range": "21-26",
+        "name": {
+          "en": "Jar of Canal Leeches",
+          "fr": "Bocal de sangsues des canaux"
+        },
+        "text": {
+          "en": "You find a number of Jars of Canal Leeches equal to the units of the D66 roll (for example, a roll of 26 finds 6 jars).",
+          "fr": "Vous trouvez un nombre de bocaux de sangsues des canaux égal au chiffre des unités du jet de D66 (par exemple, un jet de 26 donne 6 bocaux)."
+        },
+        "countFromUnits": true,
+        "sourceRef": {
+          "page": 137,
+          "md": "12_campagne-avant-premiere.md > Table des curiosités (*Curiosities Table*) - D66"
+        }
+      },
+      {
+        "id": "healing-tonic",
+        "range": "31-36",
+        "name": {
+          "en": "Healing Tonic",
+          "fr": "Tonique de soin"
+        },
+        "text": {
+          "en": "You find a number of Healing Tonics equal to the units of the D66 roll (for example, a roll of 36 finds 6 Healing Tonics).",
+          "fr": "Vous trouvez un nombre de toniques de soin égal au chiffre des unités du jet de D66 (par exemple, un jet de 36 donne 6 toniques de soin)."
+        },
+        "countFromUnits": true,
+        "sourceRef": {
+          "page": 137,
+          "md": "12_campagne-avant-premiere.md > Table des curiosités (*Curiosities Table*) - D66"
+        }
+      },
+      {
+        "id": "wondrous-tonics",
+        "range": "41-46",
+        "name": {
+          "en": "Wondrous Tonics",
+          "fr": "Toniques merveilleux"
+        },
+        "text": null,
+        "countFromUnits": false,
+        "sourceRef": {
+          "page": 137,
+          "md": "12_campagne-avant-premiere.md > Table des curiosités (*Curiosities Table*) - D66"
+        }
+      },
+      {
+        "id": "curious-items",
+        "range": "51-56",
+        "name": {
+          "en": "Curious Items",
+          "fr": "Objets curieux"
+        },
+        "text": null,
+        "countFromUnits": false,
+        "sourceRef": {
+          "page": 137,
+          "md": "12_campagne-avant-premiere.md > Table des curiosités (*Curiosities Table*) - D66"
+        }
+      },
+      {
+        "id": "prized-finds",
+        "range": "61-66",
+        "name": {
+          "en": "Prized Finds",
+          "fr": "Trouvailles précieuses"
+        },
+        "text": null,
+        "countFromUnits": false,
+        "sourceRef": {
+          "page": 137,
+          "md": "12_campagne-avant-premiere.md > Table des curiosités (*Curiosities Table*) - D66"
+        }
+      }
+    ],
+    "items": [
+      {
+        "id": "blackened-silver-spoon",
+        "roll": "11",
+        "group": "trinkets",
+        "name": {
+          "en": "Blackened Silver Spoon",
+          "fr": "Cuillère en argent noircie"
+        },
+        "keywords": ["stash-item"],
+        "rarity": null,
+        "flavour": {
+          "en": "You try to clean off the soot and mould as best you can before selling it.",
+          "fr": "Vous tentez de la débarrasser de la suie et de la moisissure du mieux possible avant de la vendre."
+        },
+        "text": {
+          "en": "This item can be sold for 1D6 silver.",
+          "fr": "Cet objet peut être vendu 1D6 pièces d'argent."
+        },
+        "sellValue": "d6",
+        "actions": [],
+        "weapon": null,
+        "sourceRef": {
+          "page": 138,
+          "md": "12_campagne-avant-premiere.md > 11 - Cuillère en argent noircie (*Blackened Silver Spoon*)"
+        }
+      },
+      {
+        "id": "bronze-saint-statuette",
+        "roll": "12",
+        "group": "trinkets",
+        "name": {
+          "en": "Bronze Saint Statuette",
+          "fr": "Statuette de saint en bronze"
+        },
+        "keywords": ["stash-item"],
+        "rarity": null,
+        "flavour": {
+          "en": "A small bronze figure of a saint, worn by years of handling.",
+          "fr": "Une petite figure de saint en bronze, usée par des années de manipulation."
+        },
+        "text": {
+          "en": "This item can be sold for 2D6 silver.",
+          "fr": "Cet objet peut être vendu 2D6 pièces d'argent."
+        },
+        "sellValue": "2d6",
+        "actions": [],
+        "weapon": null,
+        "sourceRef": {
+          "page": 138,
+          "md": "12_campagne-avant-premiere.md > 12 - Statuette de saint en bronze (*Bronze Saint Statuette*)"
+        }
+      },
+      {
+        "id": "amber-pendant",
+        "roll": "13",
+        "group": "trinkets",
+        "name": {
+          "en": "Amber Pendant",
+          "fr": "Pendentif d'ambre"
+        },
+        "keywords": ["stash-item"],
+        "rarity": null,
+        "flavour": {
+          "en": "A piece of polished amber set in a simple silver mount.",
+          "fr": "Un morceau d'ambre poli serti dans une simple monture en argent."
+        },
+        "text": {
+          "en": "This item can be sold for 3D6 silver.",
+          "fr": "Cet objet peut être vendu 3D6 pièces d'argent."
+        },
+        "sellValue": "3d6",
+        "actions": [],
+        "weapon": null,
+        "sourceRef": {
+          "page": 138,
+          "md": "12_campagne-avant-premiere.md > 13 - Pendentif d'ambre (*Amber Pendant*)"
+        }
+      },
+      {
+        "id": "pewter-tankard-with-silver-lid",
+        "roll": "14",
+        "group": "trinkets",
+        "name": {
+          "en": "Pewter Tankard with Silver Lid",
+          "fr": "Chope en étain au couvercle d'argent"
+        },
+        "keywords": ["stash-item"],
+        "rarity": null,
+        "flavour": {
+          "en": "A sturdy pewter tankard fitted with an ornate silver lid, bearing the initials of its former owner.",
+          "fr": "Une solide chope en étain munie d'un couvercle d'argent ouvragé, gravé des initiales de son ancien propriétaire."
+        },
+        "text": {
+          "en": "This item can be sold for 1D6X5 silver.",
+          "fr": "Cet objet peut être vendu 1D6X5 pièces d'argent."
+        },
+        "sellValue": "d6x5",
+        "actions": [],
+        "weapon": null,
+        "sourceRef": {
+          "page": 138,
+          "md": "12_campagne-avant-premiere.md > 14 - Chope en étain au couvercle d'argent (*Pewter Tankard with Silver Lid*)"
+        }
+      },
+      {
+        "id": "silver-locket",
+        "roll": "15",
+        "group": "trinkets",
+        "name": {
+          "en": "Silver Locket",
+          "fr": "Médaillon en argent"
+        },
+        "keywords": ["stash-item"],
+        "rarity": null,
+        "flavour": {
+          "en": "A small silver locket containing a finely painted portrait of a beautiful young lady.",
+          "fr": "Un petit médaillon en argent renfermant le portrait finement peint d'une belle jeune femme."
+        },
+        "text": {
+          "en": "This item can be sold for 2D6X5 silver.",
+          "fr": "Cet objet peut être vendu 2D6X5 pièces d'argent."
+        },
+        "sellValue": "2d6x5",
+        "actions": [],
+        "weapon": null,
+        "sourceRef": {
+          "page": 138,
+          "md": "12_campagne-avant-premiere.md > 15 - Médaillon en argent (*Silver Locket*)"
+        }
+      },
+      {
+        "id": "gilded-brass-pocket-watch",
+        "roll": "16",
+        "group": "trinkets",
+        "name": {
+          "en": "Gilded Brass Pocket Watch",
+          "fr": "Montre de gousset en laiton doré"
+        },
+        "keywords": ["stash-item"],
+        "rarity": null,
+        "flavour": {
+          "en": "Before the City's fall, the wares of its Watchmakers Guild were highly sought.",
+          "fr": "Avant la chute de la Cité, les ouvrages de sa Guilde des horlogers étaient très recherchés."
+        },
+        "text": {
+          "en": "This item can be sold for 3D6X5 silver.",
+          "fr": "Cet objet peut être vendu 3D6X5 pièces d'argent."
+        },
+        "sellValue": "3d6x5",
+        "actions": [],
+        "weapon": null,
+        "sourceRef": {
+          "page": 138,
+          "md": "12_campagne-avant-premiere.md > 16 - Montre de gousset en laiton doré (*Gilded Brass Pocket Watch*)"
+        }
+      },
+      {
+        "id": "jar-of-canal-leeches",
+        "roll": "21-26",
+        "group": "jar-of-canal-leeches",
+        "name": {
+          "en": "Jar of Canal Leeches",
+          "fr": "Bocal de sangsues des canaux"
+        },
+        "keywords": ["stash-item"],
+        "rarity": null,
+        "flavour": null,
+        "text": {
+          "en": "This item can be sold for 1D6 silver. In step 7 of the aftermath sequence, you can use this item to treat a fighter. If you do so, roll a dice. On a 4+ you can remove a level of Black Rot from the fighter. A fighter can only be treated once each aftermath sequence.",
+          "fr": "Cet objet peut être vendu 1D6 pièces d'argent. À l'étape 7 de la séquence d'après-bataille, vous pouvez utiliser cet objet pour soigner un combattant. Si vous le faites, lancez un dé. Sur 4+, vous pouvez retirer un niveau de Pourriture noire à ce combattant. Un combattant ne peut être soigné qu'une seule fois par séquence d'après-bataille."
+        },
+        "sellValue": "d6",
+        "actions": [],
+        "weapon": null,
+        "sourceRef": {
+          "page": 138,
+          "md": "12_campagne-avant-premiere.md > 21-26 - Bocal de sangsues des canaux (*Jar of Canal Leeches*)"
+        }
+      },
+      {
+        "id": "healing-tonic",
+        "roll": "31-36",
+        "group": "healing-tonic",
+        "name": {
+          "en": "Healing Tonic",
+          "fr": "Tonique de soin"
+        },
+        "keywords": ["item", "consumable"],
+        "rarity": null,
+        "flavour": null,
+        "text": {
+          "en": "While this fighter is not engaged in melee, they can use this item to make the following bonus action.",
+          "fr": "Tant que ce combattant n'est pas engagé au corps à corps, il peut utiliser cet objet pour effectuer l'action bonus suivante."
+        },
+        "sellValue": null,
+        "actions": [
+          {
+            "name": {
+              "en": "Drink Tonic",
+              "fr": "Boire le tonique"
+            },
+            "tag": "bonus-action",
+            "text": {
+              "en": "Heal this fighter 1D6 life.",
+              "fr": "Ce combattant est soigné de 1D6 points de vie."
+            }
+          }
+        ],
+        "weapon": null,
+        "sourceRef": {
+          "page": 138,
+          "md": "12_campagne-avant-premiere.md > 31-36 - Tonique de soin (*Healing Tonic*)"
+        }
+      },
+      {
+        "id": "tonic-of-speed",
+        "roll": "41",
+        "group": "wondrous-tonics",
+        "name": {
+          "en": "Tonic of Speed",
+          "fr": "Tonique de vitesse"
+        },
+        "keywords": ["item", "consumable"],
+        "rarity": null,
+        "flavour": null,
+        "text": {
+          "en": "While this fighter is not engaged in melee, they can use this item to make the following bonus action.",
+          "fr": "Tant que ce combattant n'est pas engagé au corps à corps, il peut utiliser cet objet pour effectuer l'action bonus suivante."
+        },
+        "sellValue": null,
+        "actions": [
+          {
+            "name": {
+              "en": "Drink Tonic",
+              "fr": "Boire le tonique"
+            },
+            "tag": "bonus-action",
+            "text": {
+              "en": "For the rest of the battle, add 1 to this fighter's Move value.",
+              "fr": "Jusqu'à la fin de la bataille, ajoutez 1 à la valeur de Mouvement de ce combattant."
+            }
+          }
+        ],
+        "weapon": null,
+        "sourceRef": {
+          "page": 138,
+          "md": "12_campagne-avant-premiere.md > 41 - Tonique de vitesse (*Tonic of Speed*)"
+        }
+      },
+      {
+        "id": "tonic-of-strength",
+        "roll": "42",
+        "group": "wondrous-tonics",
+        "name": {
+          "en": "Tonic of Strength",
+          "fr": "Tonique de force"
+        },
+        "keywords": ["item", "consumable"],
+        "rarity": null,
+        "flavour": null,
+        "text": {
+          "en": "While this fighter is not engaged in melee, they can use this item to make the following bonus action.",
+          "fr": "Tant que ce combattant n'est pas engagé au corps à corps, il peut utiliser cet objet pour effectuer l'action bonus suivante."
+        },
+        "sellValue": null,
+        "actions": [
+          {
+            "name": {
+              "en": "Drink Tonic",
+              "fr": "Boire le tonique"
+            },
+            "tag": "bonus-action",
+            "text": {
+              "en": "For the rest of the battle, improve this fighter's Blade value by 1.",
+              "fr": "Jusqu'à la fin de la bataille, améliorez de 1 la valeur de Lame de ce combattant."
+            }
+          }
+        ],
+        "weapon": null,
+        "sourceRef": {
+          "page": 138,
+          "md": "12_campagne-avant-premiere.md > 42 - Tonique de force (*Tonic of Strength*)"
+        }
+      },
+      {
+        "id": "tonic-of-steady-aim",
+        "roll": "43",
+        "group": "wondrous-tonics",
+        "name": {
+          "en": "Tonic of Steady Aim",
+          "fr": "Tonique de visée sûre"
+        },
+        "keywords": ["item", "consumable"],
+        "rarity": null,
+        "flavour": null,
+        "text": {
+          "en": "While this fighter is not engaged in melee, they can use this item to make the following bonus action.",
+          "fr": "Tant que ce combattant n'est pas engagé au corps à corps, il peut utiliser cet objet pour effectuer l'action bonus suivante."
+        },
+        "sellValue": null,
+        "actions": [
+          {
+            "name": {
+              "en": "Drink Tonic",
+              "fr": "Boire le tonique"
+            },
+            "tag": "bonus-action",
+            "text": {
+              "en": "For the rest of the battle, improve this fighter's Bow value by 1.",
+              "fr": "Jusqu'à la fin de la bataille, améliorez de 1 la valeur d'Arc de ce combattant."
+            }
+          }
+        ],
+        "weapon": null,
+        "sourceRef": {
+          "page": 138,
+          "md": "12_campagne-avant-premiere.md > 43 - Tonique de visée sûre (*Tonic of Steady Aim*)"
+        }
+      },
+      {
+        "id": "tonic-of-fortitude",
+        "roll": "44",
+        "group": "wondrous-tonics",
+        "name": {
+          "en": "Tonic of Fortitude",
+          "fr": "Tonique de robustesse"
+        },
+        "keywords": ["item", "consumable"],
+        "rarity": null,
+        "flavour": null,
+        "text": {
+          "en": "While this fighter is not engaged in melee, they can use this item to make the following bonus action.",
+          "fr": "Tant que ce combattant n'est pas engagé au corps à corps, il peut utiliser cet objet pour effectuer l'action bonus suivante."
+        },
+        "sellValue": null,
+        "actions": [
+          {
+            "name": {
+              "en": "Drink Tonic",
+              "fr": "Boire le tonique"
+            },
+            "tag": "bonus-action",
+            "text": {
+              "en": "For the rest of the battle, improve this fighter's Armour value by 1.",
+              "fr": "Jusqu'à la fin de la bataille, améliorez de 1 la valeur d'Armure de ce combattant."
+            }
+          }
+        ],
+        "weapon": null,
+        "sourceRef": {
+          "page": 139,
+          "md": "12_campagne-avant-premiere.md > 44 - Tonique de robustesse (*Tonic of Fortitude*)"
+        }
+      },
+      {
+        "id": "tonic-of-mind",
+        "roll": "45",
+        "group": "wondrous-tonics",
+        "name": {
+          "en": "Tonic of Mind",
+          "fr": "Tonique d'esprit"
+        },
+        "keywords": ["item", "consumable"],
+        "rarity": null,
+        "flavour": null,
+        "text": {
+          "en": "While this fighter is not engaged in melee, they can use this item to make the following bonus action.",
+          "fr": "Tant que ce combattant n'est pas engagé au corps à corps, il peut utiliser cet objet pour effectuer l'action bonus suivante."
+        },
+        "sellValue": null,
+        "actions": [
+          {
+            "name": {
+              "en": "Drink Tonic",
+              "fr": "Boire le tonique"
+            },
+            "tag": "bonus-action",
+            "text": {
+              "en": "For the rest of the battle, add 1 to this fighter's Initiative and Willpower values.",
+              "fr": "Jusqu'à la fin de la bataille, ajoutez 1 aux valeurs d'Initiative et de Volonté de ce combattant."
+            }
+          }
+        ],
+        "weapon": null,
+        "sourceRef": {
+          "page": 139,
+          "md": "12_campagne-avant-premiere.md > 45 - Tonique d'esprit (*Tonic of Mind*)"
+        }
+      },
+      {
+        "id": "tonic-of-levitation",
+        "roll": "46",
+        "group": "wondrous-tonics",
+        "name": {
+          "en": "Tonic of Levitation",
+          "fr": "Tonique de lévitation"
+        },
+        "keywords": ["item", "consumable"],
+        "rarity": null,
+        "flavour": null,
+        "text": {
+          "en": "While this fighter is not engaged in melee, they can use this item to make the following bonus action.",
+          "fr": "Tant que ce combattant n'est pas engagé au corps à corps, il peut utiliser cet objet pour effectuer l'action bonus suivante."
+        },
+        "sellValue": null,
+        "actions": [
+          {
+            "name": {
+              "en": "Drink Tonic",
+              "fr": "Boire le tonique"
+            },
+            "tag": "bonus-action",
+            "text": {
+              "en": "This fighter can fly. At the start of each of this fighter's subsequent activations, roll a dice. On a 1-3, the effect ends. On a 4+ the effect continues.",
+              "fr": "Ce combattant peut voler. Au début de chacune des activations suivantes de ce combattant, lancez un dé. Sur 1-3, l'effet prend fin. Sur 4+, l'effet continue."
+            }
+          }
+        ],
+        "weapon": null,
+        "sourceRef": {
+          "page": 139,
+          "md": "12_campagne-avant-premiere.md > 46 - Tonique de lévitation (*Tonic of Levitation*)"
+        }
+      },
+      {
+        "id": "book-of-funeral-rites",
+        "roll": "51",
+        "group": "curious-items",
+        "name": {
+          "en": "Book of Funeral Rites",
+          "fr": "Livre des rites funéraires"
+        },
+        "keywords": ["item"],
+        "rarity": 1,
+        "flavour": {
+          "en": "This leather-bound book details psalms to be read aloud to bring a fallen soul peace.",
+          "fr": "Ce livre relié de cuir contient des psaumes à lire à voix haute pour apporter la paix à une âme défunte."
+        },
+        "text": {
+          "en": "Each time another friendly fighter is killed, this fighter earns 5 bonus experience.",
+          "fr": "Chaque fois qu'un autre combattant allié est tué, ce combattant gagne 5 points d'expérience bonus."
+        },
+        "sellValue": null,
+        "actions": [],
+        "weapon": null,
+        "sourceRef": {
+          "page": 139,
+          "md": "12_campagne-avant-premiere.md > 51 - Livre des rites funéraires (*Book of Funeral Rites*)"
+        }
+      },
+      {
+        "id": "gunsmiths-kit",
+        "roll": "52",
+        "group": "curious-items",
+        "name": {
+          "en": "Gunsmith's Kit",
+          "fr": "Trousse d'armurier"
+        },
+        "keywords": ["item", "consumable"],
+        "rarity": null,
+        "flavour": {
+          "en": "A leather pouch that holds an oiled rag and a small wooden pick to be used to clean a fouled weapon.",
+          "fr": "Une pochette en cuir contenant un chiffon huilé et une petite pointe de bois servant à nettoyer une arme encrassée."
+        },
+        "text": {
+          "en": "While this fighter is not engaged in melee, they can use this item to make the following bonus action.",
+          "fr": "Tant que ce combattant n'est pas engagé au corps à corps, il peut utiliser cet objet pour effectuer l'action bonus suivante."
+        },
+        "sellValue": null,
+        "actions": [
+          {
+            "name": {
+              "en": "Unclog",
+              "fr": "Désencrasser"
+            },
+            "tag": "bonus-action",
+            "text": {
+              "en": "Pick a weapon the fighter is armed with that has suffered the 'Clogged' result on the misfire table. That weapon is no longer clogged and can be used to make attacks with once more.",
+              "fr": "Choisissez une arme dont ce combattant est équipé et qui a subi le résultat Encrassée de la table d'incident de tir. Cette arme n'est plus encrassée et peut de nouveau servir à effectuer des attaques."
+            }
+          }
+        ],
+        "weapon": null,
+        "sourceRef": {
+          "page": 139,
+          "md": "12_campagne-avant-premiere.md > 52 - Trousse d'armurier (*Gunsmith's Kit*)"
+        }
+      },
+      {
+        "id": "physicians-kit",
+        "roll": "53",
+        "group": "curious-items",
+        "name": {
+          "en": "Physician's Kit",
+          "fr": "Trousse de médecin"
+        },
+        "keywords": ["stash-item"],
+        "rarity": null,
+        "flavour": {
+          "en": "A leather satchel containing clean linen bandages, remedies and dried herbs.",
+          "fr": "Une sacoche en cuir contenant des bandages de lin propres, des remèdes et des herbes séchées."
+        },
+        "text": {
+          "en": "This item can be sold for 2D6 silver. You can use this item after making an injury roll for a friendly fighter. Re-roll the injury roll.",
+          "fr": "Cet objet peut être vendu 2D6 pièces d'argent. Vous pouvez utiliser cet objet après avoir effectué un jet de blessure pour un combattant allié. Relancez le jet de blessure."
+        },
+        "sellValue": "2d6",
+        "actions": [],
+        "weapon": null,
+        "sourceRef": {
+          "page": 139,
+          "md": "12_campagne-avant-premiere.md > 53 - Trousse de médecin (*Physician's Kit*)"
+        }
+      },
+      {
+        "id": "blinding-powder",
+        "roll": "54",
+        "group": "curious-items",
+        "name": {
+          "en": "Blinding Powder",
+          "fr": "Poudre aveuglante"
+        },
+        "keywords": ["item", "consumable"],
+        "rarity": null,
+        "flavour": {
+          "en": "A small pouch containing ground ghost-pepper and other rare irritants.",
+          "fr": "Une petite bourse contenant du piment fantôme moulu et d'autres irritants rares."
+        },
+        "text": {
+          "en": "While this fighter is engaged in melee, they can use this item to make the following bonus action.",
+          "fr": "Tant que ce combattant est engagé au corps à corps, il peut utiliser cet objet pour effectuer l'action bonus suivante."
+        },
+        "sellValue": null,
+        "actions": [
+          {
+            "name": {
+              "en": "Throw Powder",
+              "fr": "Lancer la poudre"
+            },
+            "tag": "bonus-action",
+            "text": {
+              "en": "Pick an enemy fighter engaged in melee with this fighter and roll a dice. On a 2+, that fighter is blinded until the end of the activation. While a fighter is blinded, subtract 2 from their attack rolls.",
+              "fr": "Choisissez un combattant ennemi engagé au corps à corps avec ce combattant et lancez un dé. Sur 2+, ce combattant ennemi est aveuglé jusqu'à la fin de l'activation. Tant qu'un combattant est aveuglé, soustrayez 2 à ses jets d'attaque."
+            }
+          }
+        ],
+        "weapon": null,
+        "sourceRef": {
+          "page": 139,
+          "md": "12_campagne-avant-premiere.md > 54 - Poudre aveuglante (*Blinding Powder*)"
+        }
+      },
+      {
+        "id": "vial-of-poison",
+        "roll": "55",
+        "group": "curious-items",
+        "name": {
+          "en": "Vial of Poison",
+          "fr": "Fiole de poison"
+        },
+        "keywords": ["item", "consumable"],
+        "rarity": null,
+        "flavour": null,
+        "text": {
+          "en": "While this fighter is not engaged in melee, they can use this item to make the following bonus action.",
+          "fr": "Tant que ce combattant n'est pas engagé au corps à corps, il peut utiliser cet objet pour effectuer l'action bonus suivante."
+        },
+        "sellValue": null,
+        "actions": [
+          {
+            "name": {
+              "en": "Apply Poison",
+              "fr": "Appliquer le poison"
+            },
+            "tag": "bonus-action",
+            "text": {
+              "en": "Pick 1 of this fighter's melee weapons, for the rest of the battle it has the Poison weapon trait.",
+              "fr": "Choisissez 1 des armes de corps à corps de ce combattant. Jusqu'à la fin de la bataille, elle possède le trait d'arme Poison."
+            }
+          }
+        ],
+        "weapon": null,
+        "sourceRef": {
+          "page": 139,
+          "md": "12_campagne-avant-premiere.md > 55 - Fiole de poison (*Vial of Poison*)"
+        }
+      },
+      {
+        "id": "blackrose-balm",
+        "roll": "56",
+        "group": "curious-items",
+        "name": {
+          "en": "Blackrose Balm",
+          "fr": "Baume de rose noire"
+        },
+        "keywords": ["stash-item"],
+        "rarity": null,
+        "flavour": null,
+        "text": {
+          "en": "This item can be sold for 3D6 silver. You can use this item in step 7 of the aftermath sequence. Pick a friendly fighter that has a temporary injury and roll a dice. On a 2+ they no longer have that temporary injury.",
+          "fr": "Cet objet peut être vendu 3D6 pièces d'argent. Vous pouvez utiliser cet objet à l'étape 7 de la séquence d'après-bataille. Choisissez un combattant allié qui a une blessure temporaire et lancez un dé. Sur 2+, il n'a plus cette blessure temporaire."
+        },
+        "sellValue": "3d6",
+        "actions": [],
+        "weapon": null,
+        "sourceRef": {
+          "page": 139,
+          "md": "12_campagne-avant-premiere.md > 56 - Baume de rose noire (*Blackrose Balm*)"
+        }
+      },
+      {
+        "id": "writ-of-sorcery",
+        "roll": "61",
+        "group": "prized-finds",
+        "name": {
+          "en": "Writ of Sorcery",
+          "fr": "Parchemin de sorcellerie"
+        },
+        "keywords": ["item", "consumable"],
+        "rarity": null,
+        "flavour": {
+          "en": "A sheet of parchment inscribed with arcane symbols and an incantation. When read aloud, a spell is conjured and the parchment turns to ash.",
+          "fr": "Une feuille de parchemin couverte de symboles arcaniques et d'une incantation. Lue à voix haute, elle fait apparaître un sort et le parchemin tombe en cendres."
+        },
+        "text": {
+          "en": "When a fighter is given this item, pick one of your faction's spell lores and randomly determine a spell from it. The fighter can use an Arcane Action to cast this spell even if they are not a Wizard or Priest. In addition, do not make a casting roll. Instead roll a dice: on a 1, the spell miscasts, on a 2-5 it casts, and on a 6 it critically casts.",
+          "fr": "Quand un combattant reçoit cet objet, choisissez l'un des domaines de magie de votre faction et déterminez au hasard un sort de ce domaine. Le combattant peut utiliser une action Arcanique pour lancer ce sort même s'il n'est ni Magicien ni Prêtre. De plus, n'effectuez pas de jet de lancement : lancez plutôt un dé. Sur 1, le sort tourne au fiasco ; sur 2-5, il est lancé ; sur 6, il est lancé de façon critique."
+        },
+        "sellValue": null,
+        "actions": [],
+        "weapon": null,
+        "sourceRef": {
+          "page": 139,
+          "md": "12_campagne-avant-premiere.md > 61 - Parchemin de sorcellerie (*Writ of Sorcery*)"
+        }
+      },
+      {
+        "id": "ivory-memento-mori",
+        "roll": "62",
+        "group": "prized-finds",
+        "name": {
+          "en": "Ivory Memento Mori",
+          "fr": "Memento mori d'ivoire"
+        },
+        "keywords": ["item"],
+        "rarity": null,
+        "flavour": {
+          "en": "A small ivory pendant carved into the likeness of a skull.",
+          "fr": "Un petit pendentif d'ivoire sculpté à l'image d'un crâne."
+        },
+        "text": {
+          "en": "The next time an injury roll for this fighter is 'killed', you can treat the injury roll as 'full recovery'. Then, this item is removed.",
+          "fr": "La prochaine fois qu'un jet de blessure de ce combattant donne \"tué\", vous pouvez traiter ce jet de blessure comme un résultat \"rétablissement complet\". Cet objet est ensuite retiré."
+        },
+        "sellValue": null,
+        "actions": [],
+        "weapon": null,
+        "sourceRef": {
+          "page": 140,
+          "md": "12_campagne-avant-premiere.md > 62 - Memento mori d'ivoire (*Ivory Memento Mori*)"
+        }
+      },
+      {
+        "id": "alchemists-fire",
+        "roll": "63",
+        "group": "prized-finds",
+        "name": {
+          "en": "Alchemist's Fire",
+          "fr": "Feu d'alchimiste"
+        },
+        "keywords": ["item", "consumable"],
+        "rarity": null,
+        "flavour": {
+          "en": "A sour-smelling alchemical concoction that, when spat, erupts from the mouth in a burst of fire.",
+          "fr": "Une mixture alchimique à l'odeur aigre qui, une fois crachée, jaillit de la bouche en une gerbe de feu."
+        },
+        "text": {
+          "en": "While this fighter is not engaged in melee, they can use this item to make a ranged attack action with the following weapon.",
+          "fr": "Tant que ce combattant n'est pas engagé au corps à corps, il peut utiliser cet objet pour effectuer une action d'Attaque à distance avec l'arme suivante."
+        },
+        "sellValue": null,
+        "actions": [],
+        "weapon": {
+          "range": "flame",
+          "attacks": 1,
+          "rend": 0,
+          "damage": "d3",
+          "critDamage": null,
+          "traits": [
+            {
+              "key": "flame"
+            },
+            {
+              "key": "scare"
+            }
+          ]
+        },
+        "sourceRef": {
+          "page": 140,
+          "md": "12_campagne-avant-premiere.md > 63 - Feu d'alchimiste (*Alchemist's Fire*)"
+        }
+      },
+      {
+        "id": "treasure-map",
+        "roll": "64",
+        "group": "prized-finds",
+        "name": {
+          "en": "Treasure Map",
+          "fr": "Carte au trésor"
+        },
+        "keywords": ["stash-item"],
+        "rarity": null,
+        "flavour": null,
+        "text": {
+          "en": "This item can be sold for 2D6x5 silver. You can use this item when searching the city. Instead of making a search roll, roll on the Treasure Map table.",
+          "fr": "Cet objet peut être vendu 2D6x5 pièces d'argent. Vous pouvez utiliser cet objet quand vous fouillez la Cité. Au lieu d'effectuer un jet de fouille, lancez un dé sur la table de la Carte au trésor."
+        },
+        "sellValue": "2d6x5",
+        "actions": [],
+        "weapon": null,
+        "sourceRef": {
+          "page": 140,
+          "md": "12_campagne-avant-premiere.md > 64 - Carte au trésor (*Treasure Map*)"
+        }
+      },
+      {
+        "id": "dwarven-bomb",
+        "roll": "65",
+        "group": "prized-finds",
+        "name": {
+          "en": "Dwarven Bomb",
+          "fr": "Bombe naine"
+        },
+        "keywords": ["item", "consumable"],
+        "rarity": null,
+        "flavour": {
+          "en": "A metal device with no fuse; pressing the top starts a hidden mechanism ticking with an ominous sound.",
+          "fr": "Un engin de métal sans mèche ; une pression sur le dessus déclenche un mécanisme caché dont le tic-tac a quelque chose d'inquiétant."
+        },
+        "text": {
+          "en": "While this fighter is not engaged in melee, they can use this item to make a ranged attack action with the following weapon.",
+          "fr": "Tant que ce combattant n'est pas engagé au corps à corps, il peut utiliser cet objet pour effectuer une action d'Attaque à distance avec l'arme suivante."
+        },
+        "sellValue": null,
+        "actions": [],
+        "weapon": {
+          "range": 8,
+          "attacks": 1,
+          "rend": -1,
+          "damage": 2,
+          "critDamage": "d3+1",
+          "traits": [
+            {
+              "key": "blast"
+            }
+          ]
+        },
+        "sourceRef": {
+          "page": 140,
+          "md": "12_campagne-avant-premiere.md > 65 - Bombe naine (*Dwarven Bomb*)"
+        }
+      },
+      {
+        "id": "etched-silver-bullets",
+        "roll": "66",
+        "group": "prized-finds",
+        "name": {
+          "en": "Etched Silver Bullets",
+          "fr": "Balles d'argent gravées"
+        },
+        "keywords": ["item"],
+        "rarity": null,
+        "flavour": null,
+        "text": {
+          "en": "The fighter has 3+1D3 silver bullets. Keep track of how many remain during the campaign. While the fighter has 1 or more silver bullets, and is equipped with an eligible weapon (Blackpowder Pistol, Blackpowder Rifle, Brace of Pistols, Long Rifle, Repeater Pistol), they can use 1 silver bullet to make the bonus action below. The item is removed when no silver bullets remain.",
+          "fr": "Le combattant dispose de 3+1D3 balles d'argent. Notez combien il en reste au fil de la campagne. Tant que le combattant a au moins 1 balle d'argent et qu'il est équipé d'une arme éligible (Pistolet à poudre noire, Fusil à poudre noire, Paire de pistolets, Fusil long, Pistolet à répétition), il peut utiliser 1 balle d'argent pour effectuer l'action bonus ci-dessous. L'objet est retiré quand il ne reste plus aucune balle d'argent."
+        },
+        "sellValue": null,
+        "actions": [
+          {
+            "name": {
+              "en": "Load Silver Bullet",
+              "fr": "Charger une balle d'argent"
+            },
+            "tag": "bonus-action",
+            "text": {
+              "en": "For the next ranged attack this fighter makes this activation with an eligible weapon, improve the Rend value by 1, and if the target suffers damage from the attack, they suffer an additional 1D3 damage.",
+              "fr": "Pour la prochaine attaque à distance que ce combattant effectue pendant cette activation avec une arme éligible, améliorez de 1 la valeur de Perforation, et si la cible subit des dégâts de cette attaque, elle subit 1D3 dégâts supplémentaires."
+            }
+          }
+        ],
+        "weapon": null,
+        "sourceRef": {
+          "page": 140,
+          "md": "12_campagne-avant-premiere.md > 66 - Balles d'argent gravées (*Etched Silver Bullets*)"
+        }
+      }
+    ],
+    "treasureMap": {
+      "id": "treasure-map",
+      "name": {
+        "en": "Treasure Map",
+        "fr": "Carte au trésor"
+      },
+      "die": "d6",
+      "entries": [
+        {
+          "roll": "1",
+          "name": {
+            "en": "Forgery",
+            "fr": "Contrefaçon"
+          },
+          "text": {
+            "en": "After circling for hours, you conclude this map leads nowhere. You find nothing.",
+            "fr": "Après avoir tourné en rond pendant des heures, vous en concluez que cette carte ne mène nulle part. Vous ne trouvez rien."
+          }
+        },
+        {
+          "roll": "2-5",
+          "name": {
+            "en": "Rare Find",
+            "fr": "Trouvaille rare"
+          },
+          "text": {
+            "en": "Roll once on the Relics table.",
+            "fr": "Lancez une fois les dés sur la table des reliques."
+          }
+        },
+        {
+          "roll": "6",
+          "name": {
+            "en": "Incredible Find",
+            "fr": "Trouvaille incroyable"
+          },
+          "text": {
+            "en": "Roll 2 times on the Relics table.",
+            "fr": "Lancez 2 fois les dés sur la table des reliques."
+          }
+        }
+      ]
+    }
+  },
+  "exploration": {
+    "id": "exploration",
+    "name": {
+      "en": "Exploration Table",
+      "fr": "Table d'exploration"
+    },
+    "die": "d66",
+    "aftermathStep": 4,
+    "sourceRef": {
+      "page": 153,
+      "md": "12_campagne-avant-premiere.md > Étape 4 - Explorer la Cité (*Step Four - Explore the City*)"
+    },
+    "scoutingParty": {
+      "leaderOrChampion": {
+        "min": 1,
+        "max": 1
+      },
+      "henchman": {
+        "min": 1,
+        "max": 3
+      },
+      "beast": {
+        "min": 0,
+        "max": 1
+      },
+      "brute": {
+        "min": 0,
+        "max": 0
+      },
+      "excludeTakenDown": true,
+      "sourceRef": {
+        "page": 153,
+        "md": "12_campagne-avant-premiere.md > Le groupe d'éclaireurs (*The Scouting Party*)"
+      }
+    },
+    "results": [
+      {
+        "id": "shadows-lie-ahead",
+        "ranges": ["11-16"],
+        "name": {
+          "en": "Shadows Lie Ahead...",
+          "fr": "Des ombres devant..."
+        },
+        "flavour": {
+          "en": "Down a darkened alleyway, you spy shadows ahead. Perhaps it is a rival warband also searching this part of the City, perhaps it is something worse. You must decide how to proceed.",
+          "fr": "Au fond d'une ruelle obscure, vous apercevez des ombres devant vous. Peut-être une bande rivale qui fouille elle aussi ce quartier de la Cité, peut-être quelque chose de pire. Vous devez décider de la suite."
+        },
+        "text": {
+          "en": "Pick 1 of the following options.",
+          "fr": "Choisissez 1 des options suivantes."
+        },
+        "options": [
+          {
+            "id": "confront-them-head-on",
+            "name": {
+              "en": "Confront them Head On",
+              "fr": "Les affronter de face"
+            },
+            "text": {
+              "en": "Roll a dice for each fighter in the scouting party and total the score. If the total is 15 or more, you are victorious: each fighter in the scouting party earns 10 experience. Otherwise you are defeated: roll a dice for each fighter in the scouting party, on a 1-2 make an injury roll for them.",
+              "fr": "Lancez un dé pour chaque combattant du groupe d'éclaireurs et additionnez les résultats. Si le total atteint 15 ou plus, vous êtes victorieux : chaque combattant du groupe d'éclaireurs gagne 10 points d'expérience. Sinon, vous êtes vaincus : lancez un dé pour chaque combattant du groupe d'éclaireurs, sur 1-2 effectuez un jet de blessure pour lui."
+            },
+            "factionId": null
+          },
+          {
+            "id": "attempt-to-sneak-past",
+            "name": {
+              "en": "Attempt to Sneak Past",
+              "fr": "Tenter de passer inaperçus"
+            },
+            "text": {
+              "en": "Roll a dice. If the roll is equal or less than the number of fighters in the scouting party, you sneak past: roll on the Curiosity table. Otherwise you are detected: roll a dice for each fighter in the scouting party, on a 1 make an injury roll for them.",
+              "fr": "Lancez un dé. Si le résultat est inférieur ou égal au nombre de combattants du groupe d'éclaireurs, vous passez inaperçus : lancez les dés sur la table des curiosités. Sinon, vous êtes repérés : lancez un dé pour chaque combattant du groupe d'éclaireurs, sur 1 effectuez un jet de blessure pour lui."
+            },
+            "factionId": null
+          },
+          {
+            "id": "turn-back",
+            "name": {
+              "en": "Turn Back",
+              "fr": "Rebrousser chemin"
+            },
+            "text": {
+              "en": "The scouting party returns empty handed.",
+              "fr": "Le groupe d'éclaireurs revient bredouille."
+            },
+            "factionId": null
+          }
+        ],
+        "tables": [],
+        "sourceRef": {
+          "page": 154,
+          "md": "12_campagne-avant-premiere.md > 11-16 - Des ombres devant... (*Shadows Lie Ahead...*)"
+        }
+      },
+      {
+        "id": "quiet-night",
+        "ranges": ["21-36", "52"],
+        "name": {
+          "en": "Quiet Night",
+          "fr": "Nuit calme"
+        },
+        "flavour": {
+          "en": "You search this district high and low, through smoke-blackened ruins and down cramped streets, but on this night the City is quiet and you find nothing of note.",
+          "fr": "Vous fouillez ce quartier de fond en comble, à travers les ruines noircies de fumée et les rues étroites, mais cette nuit la Cité est calme et vous ne trouvez rien de notable."
+        },
+        "text": {
+          "en": "The scouting party returns empty handed.",
+          "fr": "Le groupe d'éclaireurs revient bredouille."
+        },
+        "options": [],
+        "tables": [],
+        "sourceRef": {
+          "page": 154,
+          "md": "12_campagne-avant-premiere.md > 21-36 - Nuit calme (*Quiet Night*)"
+        }
+      },
+      {
+        "id": "crossroads",
+        "ranges": ["41-42"],
+        "name": {
+          "en": "Crossroads",
+          "fr": "Carrefour"
+        },
+        "flavour": {
+          "en": "You have heard rumours of something of value hidden in the City nearby. You encounter a fork in the road and must decide which of you will go left, and which of you will go right.",
+          "fr": "On vous a parlé d'un objet de valeur caché non loin dans la Cité. Vous arrivez à une bifurcation et devez décider qui partira à gauche et qui partira à droite."
+        },
+        "text": {
+          "en": "Divide the scouting party into 2 groups as evenly sized as possible. Then, make a new exploration roll for each group, treating each group as its own scouting party. You can use exploration re-rolls with either group unless they are granted by a specific fighter. Any further rolls of 'Crossroads' are ignored, the scouting party returns empty handed instead.",
+          "fr": "Divisez le groupe d'éclaireurs en 2 groupes de tailles aussi proches que possible. Effectuez ensuite un nouveau jet d'exploration pour chaque groupe, en traitant chaque groupe comme un groupe d'éclaireurs à part entière. Vous pouvez utiliser les relances d'exploration avec l'un ou l'autre groupe, sauf si elles sont accordées par un combattant précis. Tout nouveau résultat \"Carrefour\" est ignoré : le groupe d'éclaireurs revient bredouille à la place."
+        },
+        "options": [],
+        "tables": [],
+        "sourceRef": {
+          "page": 154,
+          "md": "12_campagne-avant-premiere.md > 41-42 - Carrefour (*Crossroads*)"
+        }
+      },
+      {
+        "id": "a-curious-find",
+        "ranges": ["43-44"],
+        "name": {
+          "en": "A Curious Find",
+          "fr": "Une curieuse trouvaille"
+        },
+        "flavour": {
+          "en": "As you pass through the husk of a burnt-out ruin, a glimmer in the dark catches your eye.",
+          "fr": "Alors que vous traversez la carcasse d'une ruine incendiée, une lueur dans l'obscurité attire votre regard."
+        },
+        "text": {
+          "en": "Roll on the Curiosity table.",
+          "fr": "Lancez les dés sur la table des curiosités."
+        },
+        "options": [],
+        "tables": [],
+        "sourceRef": {
+          "page": 154,
+          "md": "12_campagne-avant-premiere.md > 43-44 - Une curieuse trouvaille (*A Curious Find*)"
+        }
+      },
+      {
+        "id": "a-shallow-grave",
+        "ranges": ["45-46"],
+        "name": {
+          "en": "A Shallow Grave",
+          "fr": "Une tombe peu profonde"
+        },
+        "flavour": {
+          "en": "You find a recently dug grave in the courtyard of an old manor house. There may be something of value buried below...",
+          "fr": "Dans la cour d'un vieux manoir, vous découvrez une tombe creusée récemment. Il y a peut-être quelque chose de valeur enterré là..."
+        },
+        "text": {
+          "en": "Pick 1 of the following options.",
+          "fr": "Choisissez 1 des options suivantes."
+        },
+        "options": [
+          {
+            "id": "exhume-the-grave",
+            "name": {
+              "en": "Exhume the Grave",
+              "fr": "Exhumer la tombe"
+            },
+            "text": {
+              "en": "Roll on the Exhume the Grave table. Add 1 to the result if the scouting party includes any Priests.",
+              "fr": "Lancez un dé sur la table Exhumer la tombe. Ajoutez 1 au résultat si le groupe d'éclaireurs comprend au moins un Prêtre."
+            },
+            "factionId": null
+          },
+          {
+            "id": "turn-back",
+            "name": {
+              "en": "Turn Back",
+              "fr": "Rebrousser chemin"
+            },
+            "text": {
+              "en": "The scouting party returns empty handed.",
+              "fr": "Le groupe d'éclaireurs revient bredouille."
+            },
+            "factionId": null
+          }
+        ],
+        "tables": [
+          {
+            "id": "exhume-the-grave",
+            "name": {
+              "en": "Exhume the Grave",
+              "fr": "Exhumer la tombe"
+            },
+            "die": "d6",
+            "entries": [
+              {
+                "roll": "1-2",
+                "name": {
+                  "en": "Rotten Remains",
+                  "fr": "Restes putrides"
+                },
+                "text": {
+                  "en": "Each fighter in the scouting party gains 1 level of Black Rot.",
+                  "fr": "Chaque combattant du groupe d'éclaireurs gagne 1 niveau de Pourriture noire."
+                }
+              },
+              {
+                "roll": "3-5",
+                "name": {
+                  "en": "Buried Silver",
+                  "fr": "Argent enterré"
+                },
+                "text": {
+                  "en": "You find 1D6x5 silver.",
+                  "fr": "Vous trouvez 1D6x5 pièces d'argent."
+                }
+              },
+              {
+                "roll": "6+",
+                "name": {
+                  "en": "Grave Offerings",
+                  "fr": "Offrandes funéraires"
+                },
+                "text": {
+                  "en": "You find 2D6x5 silver. In addition, roll once on the Curiosity table.",
+                  "fr": "Vous trouvez 2D6x5 pièces d'argent. De plus, lancez une fois les dés sur la table des curiosités."
+                }
+              }
+            ]
+          }
+        ],
+        "sourceRef": {
+          "page": 154,
+          "md": "12_campagne-avant-premiere.md > 45-46 - Une tombe peu profonde (*A Shallow Grave*)"
+        }
+      },
+      {
+        "id": "swarm-of-rats",
+        "ranges": ["51"],
+        "name": {
+          "en": "Swarm of Rats",
+          "fr": "Nuée de rats"
+        },
+        "flavour": {
+          "en": "A distant thrum of chittering grows louder by the second. You have little time to react before a swarm of rats pours down the street towards you.",
+          "fr": "Au loin, un grouillement de couinements enfle de seconde en seconde. Vous avez à peine le temps de réagir qu'une nuée de rats déferle dans la rue, droit sur vous."
+        },
+        "text": {
+          "en": "Battle the Swarm: roll once on the Swarm of Rats table for each fighter in the scouting party. Brethren to the Verminkin: Verminkin warbands ignore this result, instead re-roll the exploration roll.",
+          "fr": "Combattre la nuée : lancez une fois les dés sur la table Nuée de rats pour chaque combattant du groupe d'éclaireurs. Frères des Vermineux : les bandes vermineuses ignorent ce résultat et relancent le jet d'exploration à la place."
+        },
+        "options": [],
+        "tables": [
+          {
+            "id": "swarm-of-rats",
+            "name": {
+              "en": "Swarm of Rats",
+              "fr": "Nuée de rats"
+            },
+            "die": "d6",
+            "entries": [
+              {
+                "roll": "1",
+                "name": {
+                  "en": "Overrun",
+                  "fr": "Submergé"
+                },
+                "text": {
+                  "en": "Make an injury roll for the fighter.",
+                  "fr": "Effectuez un jet de blessure pour le combattant."
+                }
+              },
+              {
+                "roll": "2-3",
+                "name": {
+                  "en": "Bitten",
+                  "fr": "Mordu"
+                },
+                "text": {
+                  "en": "The fighter gains 1 level of Black Rot.",
+                  "fr": "Le combattant gagne 1 niveau de Pourriture noire."
+                }
+              },
+              {
+                "roll": "4+",
+                "name": {
+                  "en": "Repelled",
+                  "fr": "Repoussée"
+                },
+                "text": {
+                  "en": "The fighter earns 10 experience.",
+                  "fr": "Le combattant gagne 10 points d'expérience."
+                }
+              }
+            ]
+          }
+        ],
+        "sourceRef": {
+          "page": 154,
+          "md": "12_campagne-avant-premiere.md > 51 - Nuée de rats (*Swarm of Rats*)"
+        }
+      },
+      {
+        "id": "leech-pools",
+        "ranges": ["53"],
+        "name": {
+          "en": "Leech Pools",
+          "fr": "Bassins à sangsues"
+        },
+        "flavour": {
+          "en": "You descend a set of cobblestone steps down to one of the City's many canals. Here the waters teem with thousands of writhing leeches.",
+          "fr": "Vous descendez un escalier pavé jusqu'à l'un des nombreux canaux de la Cité. Ici, les eaux grouillent de milliers de sangsues qui se tortillent."
+        },
+        "text": {
+          "en": "Pick 1 of the following options.",
+          "fr": "Choisissez 1 des options suivantes."
+        },
+        "options": [
+          {
+            "id": "bathe",
+            "name": {
+              "en": "Bathe",
+              "fr": "Se baigner"
+            },
+            "text": {
+              "en": "You can remove 1 level of Black Rot from each fighter in the scouting party.",
+              "fr": "Vous pouvez retirer 1 niveau de Pourriture noire à chaque combattant du groupe d'éclaireurs."
+            },
+            "factionId": null
+          },
+          {
+            "id": "harvest",
+            "name": {
+              "en": "Harvest",
+              "fr": "Récolter"
+            },
+            "text": {
+              "en": "Roll a dice for each non-Beast fighter in the scouting party. For each 4+, you receive 1 Jar of Canal Leeches.",
+              "fr": "Lancez un dé pour chaque combattant du groupe d'éclaireurs qui n'est pas une Bête. Pour chaque 4+, vous recevez 1 bocal de sangsues des canaux."
+            },
+            "factionId": null
+          }
+        ],
+        "tables": [],
+        "sourceRef": {
+          "page": 155,
+          "md": "12_campagne-avant-premiere.md > 53 - Bassins à sangsues (*Leech Pools*)"
+        }
+      },
+      {
+        "id": "the-belfry",
+        "ranges": ["54"],
+        "name": {
+          "en": "The Belfry",
+          "fr": "Le beffroi"
+        },
+        "flavour": {
+          "en": "Amidst the rubble and ruins, an old belfry stands in defiance. Scaling this tower will grant an impressive view of the City beyond.",
+          "fr": "Au milieu des gravats et des ruines, un vieux beffroi se dresse encore, comme un défi. Gravir cette tour offrira une vue saisissante sur la Cité alentour."
+        },
+        "text": {
+          "en": "You can pick 1 non-Beast fighter in the scouting party to scale the belfry. If you do so, roll a dice. On a 1 the fighter falls while scaling the belfry, make an injury roll for them. On a 2+, add their Initiative value to the dice roll to create a climbing score. You receive each result of The Belfry table that the climbing score equals or exceeds.",
+          "fr": "Vous pouvez choisir 1 combattant du groupe d'éclaireurs qui n'est pas une Bête pour escalader le beffroi. Si vous le faites, lancez un dé. Sur 1, le combattant chute pendant l'escalade : effectuez un jet de blessure pour lui. Sur 2+, ajoutez sa valeur d'Initiative au résultat du dé pour obtenir un score d'escalade. Vous recevez chaque résultat de la table Le beffroi que le score d'escalade égale ou dépasse."
+        },
+        "options": [],
+        "tables": [
+          {
+            "id": "the-belfry",
+            "name": {
+              "en": "The Belfry",
+              "fr": "Le beffroi"
+            },
+            "die": "climbing-score",
+            "entries": [
+              {
+                "roll": "6+",
+                "name": {
+                  "en": "Gargoyle Eyes",
+                  "fr": "Yeux de gargouille"
+                },
+                "text": {
+                  "en": "You receive 1D6x2 silver.",
+                  "fr": "Vous recevez 1D6x2 pièces d'argent."
+                }
+              },
+              {
+                "roll": "8+",
+                "name": {
+                  "en": "Vantage Point",
+                  "fr": "Point de vue"
+                },
+                "text": {
+                  "en": "You can make an additional exploration roll for the scouting party. Any further rolls of 'The Belfry' are ignored, the scouting party returns empty handed instead.",
+                  "fr": "Vous pouvez effectuer un jet d'exploration supplémentaire pour le groupe d'éclaireurs. Tout nouveau résultat \"Le beffroi\" est ignoré : le groupe d'éclaireurs revient bredouille à la place."
+                }
+              },
+              {
+                "roll": "10+",
+                "name": {
+                  "en": "The Top",
+                  "fr": "Le sommet"
+                },
+                "text": {
+                  "en": "Roll on the Curiosity table.",
+                  "fr": "Lancez les dés sur la table des curiosités."
+                }
+              }
+            ]
+          }
+        ],
+        "sourceRef": {
+          "page": 155,
+          "md": "12_campagne-avant-premiere.md > 54 - Le beffroi (*The Belfry*)"
+        }
+      },
+      {
+        "id": "a-hidden-stash",
+        "ranges": ["55"],
+        "name": {
+          "en": "A Hidden Stash",
+          "fr": "Un butin caché"
+        },
+        "flavour": {
+          "en": "Hidden between the floorboards of a two-storied town house, you discover a stash of valuables left behind by its former occupants.",
+          "fr": "Entre les lattes du plancher d'une maison de ville à deux étages, vous découvrez une réserve d'objets de valeur abandonnés par ses anciens occupants."
+        },
+        "text": {
+          "en": "You find 2D6x5 silver. In addition, roll on the Curiosity table.",
+          "fr": "Vous trouvez 2D6x5 pièces d'argent. De plus, lancez les dés sur la table des curiosités."
+        },
+        "options": [],
+        "tables": [],
+        "sourceRef": {
+          "page": 155,
+          "md": "12_campagne-avant-premiere.md > 55 - Un butin caché (*A Hidden Stash*)"
+        }
+      },
+      {
+        "id": "secluded-holding",
+        "ranges": ["56"],
+        "name": {
+          "en": "Secluded Holding",
+          "fr": "Possession isolée"
+        },
+        "flavour": {
+          "en": "Down a twisting side street flanked by ruined towers that cast long shadows, you come across a building that has thus far escaped the ravages of war and plague.",
+          "fr": "Au bout d'une ruelle tortueuse, entre des tours en ruine aux longues ombres, vous tombez sur un bâtiment qui a jusqu'ici échappé aux ravages de la guerre et de la peste."
+        },
+        "text": {
+          "en": "Roll once on the Holdings Table. You can take control of that holding. Re-roll results of Ruined Hovel (11-16) until you get a different result.",
+          "fr": "Lancez une fois les dés sur la table des possessions. Vous pouvez prendre le contrôle de cette possession. Relancez les résultats Masure en ruine (11-16) jusqu'à obtenir un résultat différent."
+        },
+        "options": [],
+        "tables": [],
+        "sourceRef": {
+          "page": 155,
+          "md": "12_campagne-avant-premiere.md > 56 - Possession isolée (*Secluded Holding*)"
+        }
+      },
+      {
+        "id": "hunted-in-darkness",
+        "ranges": ["61"],
+        "name": {
+          "en": "Hunted in Darkness...",
+          "fr": "Traqués dans les ténèbres..."
+        },
+        "flavour": {
+          "en": "As you descend deeper into the shadowed ruins, an ominous feeling fills the air. Is something down here with you?",
+          "fr": "Alors que vous vous enfoncez dans les ruines plongées dans l'ombre, un sentiment de menace emplit l'air. Quelque chose est-il là, avec vous ?"
+        },
+        "text": {
+          "en": "Put the fighters in the scouting party in an order of your choosing, and then begin rolling a dice for each fighter one at a time, in order. If you roll a 1 for a fighter they are lost in the dark and you stop rolling dice. Lost in the Dark: the fighter is killed.",
+          "fr": "Placez les combattants du groupe d'éclaireurs dans l'ordre de votre choix, puis lancez un dé pour chaque combattant, un par un, dans cet ordre. Si vous obtenez 1 pour un combattant, il est perdu dans le noir et vous arrêtez de lancer les dés. Perdu dans le noir : le combattant est tué."
+        },
+        "options": [],
+        "tables": [],
+        "sourceRef": {
+          "page": 156,
+          "md": "12_campagne-avant-premiere.md > 61 - Traqués dans les ténèbres... (*Hunted in Darkness...*)"
+        }
+      },
+      {
+        "id": "a-treasure-horde",
+        "ranges": ["62-64"],
+        "name": {
+          "en": "A Treasure Horde",
+          "fr": "Un magot"
+        },
+        "flavour": {
+          "en": "You find a latched trapdoor hidden beneath the debris of a ruined house. After breaking the lock, you discover a large stash of silver coins in the compartment below. You take as much as you can carry.",
+          "fr": "Sous les décombres d'une maison en ruine, vous trouvez une trappe fermée par un loquet. Après avoir brisé la serrure, vous découvrez dans le compartiment en dessous une grande réserve de pièces d'argent. Vous en emportez autant que vous pouvez."
+        },
+        "text": {
+          "en": "For each non-Beast fighter in the scouting party, you find 1D6x5 silver.",
+          "fr": "Pour chaque combattant du groupe d'éclaireurs qui n'est pas une Bête, vous trouvez 1D6x5 pièces d'argent."
+        },
+        "options": [],
+        "tables": [],
+        "sourceRef": {
+          "page": 156,
+          "md": "12_campagne-avant-premiere.md > 62-64 - Un magot (*A Treasure Horde*)"
+        }
+      },
+      {
+        "id": "hallowed-ground",
+        "ranges": ["65"],
+        "name": {
+          "en": "Hallowed Ground",
+          "fr": "Terre consacrée"
+        },
+        "flavour": {
+          "en": "Hidden amongst the ruins you discover a small chapel untouched by the Black Rot. Inside, its pews are thick with dust that is stirred into the air with your arrival.",
+          "fr": "Cachée parmi les ruines, vous découvrez une petite chapelle épargnée par la Pourriture noire. À l'intérieur, ses bancs sont couverts d'une épaisse poussière que votre arrivée soulève dans les airs."
+        },
+        "text": {
+          "en": "Roll a dice on the Hallowed Ground table. Then, pick 1 of the following options.",
+          "fr": "Lancez un dé sur la table Terre consacrée. Choisissez ensuite 1 des options suivantes."
+        },
+        "options": [
+          {
+            "id": "take-sanctuary",
+            "name": {
+              "en": "Take Sanctuary",
+              "fr": "Trouver refuge"
+            },
+            "text": {
+              "en": "Roll a dice for each fighter in the scouting party. On a 4+ you can remove 1 injury or 1 level of Black Rot from that fighter.",
+              "fr": "Lancez un dé pour chaque combattant du groupe d'éclaireurs. Sur 4+, vous pouvez retirer à ce combattant 1 blessure ou 1 niveau de Pourriture noire."
+            },
+            "factionId": "guild-mercenaries"
+          },
+          {
+            "id": "exhume-graves",
+            "name": {
+              "en": "Exhume Graves",
+              "fr": "Exhumer les tombes"
+            },
+            "text": {
+              "en": "Roll a dice for each fighter in the scouting party. If you roll any 6s, you can recruit a Skeleton Warrior or Zombie to your warband for 0 silver.",
+              "fr": "Lancez un dé pour chaque combattant du groupe d'éclaireurs. Si vous obtenez au moins un 6, vous pouvez recruter un Guerrier squelette ou un Zombie dans votre bande pour 0 pièce d'argent."
+            },
+            "factionId": "death-covens"
+          },
+          {
+            "id": "desecrate",
+            "name": {
+              "en": "Desecrate",
+              "fr": "Profaner"
+            },
+            "text": {
+              "en": "Leaders or Champions in the scouting party earn 10 experience. Each other fighter in the scouting party earns 1D6 experience.",
+              "fr": "Les Chefs et les Champions du groupe d'éclaireurs gagnent 10 points d'expérience. Chaque autre combattant du groupe d'éclaireurs gagne 1D6 points d'expérience."
+            },
+            "factionId": null
+          }
+        ],
+        "tables": [
+          {
+            "id": "hallowed-ground",
+            "name": {
+              "en": "Hallowed Ground",
+              "fr": "Terre consacrée"
+            },
+            "die": "d6",
+            "entries": [
+              {
+                "roll": "1-2",
+                "name": {
+                  "en": "Alms Box",
+                  "fr": "Tronc des aumônes"
+                },
+                "text": {
+                  "en": "You find 6D6 silver.",
+                  "fr": "Vous trouvez 6D6 pièces d'argent."
+                }
+              },
+              {
+                "roll": "3-5",
+                "name": {
+                  "en": "Reliquary",
+                  "fr": "Reliquaire"
+                },
+                "text": {
+                  "en": "You find 2D6 silver. In addition, roll on the Curiosity table.",
+                  "fr": "Vous trouvez 2D6 pièces d'argent. De plus, lancez les dés sur la table des curiosités."
+                }
+              },
+              {
+                "roll": "6",
+                "name": {
+                  "en": "Saint's Tomb",
+                  "fr": "Tombeau du saint"
+                },
+                "text": {
+                  "en": "You find 1D6x5 silver. In addition, roll on the Relics table.",
+                  "fr": "Vous trouvez 1D6x5 pièces d'argent. De plus, lancez les dés sur la table des reliques."
+                }
+              }
+            ]
+          }
+        ],
+        "sourceRef": {
+          "page": 156,
+          "md": "12_campagne-avant-premiere.md > 65 - Terre consacrée (*Hallowed Ground*)"
+        }
+      },
+      {
+        "id": "into-the-catacombs",
+        "ranges": ["66"],
+        "name": {
+          "en": "Into the Catacombs...",
+          "fr": "Dans les catacombes..."
+        },
+        "flavour": {
+          "en": "After searching extensively through the ruins you at last discover what you have been seeking: a hidden stairwell leading down to the catacombs below. What will you find beneath the City?",
+          "fr": "Après de longues recherches dans les ruines, vous découvrez enfin ce que vous cherchiez : un escalier dérobé qui descend vers les catacombes. Que trouverez-vous sous la Cité ?"
+        },
+        "text": {
+          "en": "Start rolling dice, one at a time, and keep a total of the score. Stop when you roll a 1, or the total is 10 or more (whichever happens first), then consult the Into the Catacombs table. Leader's Intuition: if your scouting party includes your warband's Leader, you can re-roll the first roll of 1.",
+          "fr": "Lancez les dés un par un en tenant le total des résultats. Arrêtez-vous quand vous obtenez un 1 ou quand le total atteint 10 ou plus (selon ce qui arrive en premier), puis consultez la table Dans les catacombes. Intuition du Chef : si votre groupe d'éclaireurs comprend le Chef de votre bande, vous pouvez relancer le premier résultat de 1."
+        },
+        "options": [],
+        "tables": [
+          {
+            "id": "into-the-catacombs",
+            "name": {
+              "en": "Into the Catacombs",
+              "fr": "Dans les catacombes"
+            },
+            "die": "score",
+            "entries": [
+              {
+                "roll": "1",
+                "name": {
+                  "en": "Beset By Ghouls",
+                  "fr": "Assaillis par les goules"
+                },
+                "text": {
+                  "en": "Roll a dice for each fighter. On a 1-3, make an injury roll for that fighter. On a 4+, that fighter earns 10 experience.",
+                  "fr": "Lancez un dé pour chaque combattant. Sur 1-3, effectuez un jet de blessure pour ce combattant. Sur 4+, ce combattant gagne 10 points d'expérience."
+                }
+              },
+              {
+                "roll": "2",
+                "name": {
+                  "en": "Stagnant Water",
+                  "fr": "Eaux stagnantes"
+                },
+                "text": {
+                  "en": "Roll a dice for each fighter. On a 1-3, they gain 1 level of Black Rot.",
+                  "fr": "Lancez un dé pour chaque combattant. Sur 1-3, il gagne 1 niveau de Pourriture noire."
+                }
+              },
+              {
+                "roll": "3-5",
+                "name": {
+                  "en": "Dead End",
+                  "fr": "Impasse"
+                },
+                "text": {
+                  "en": "The scouting party returns empty handed.",
+                  "fr": "Le groupe d'éclaireurs revient bredouille."
+                }
+              },
+              {
+                "roll": "6-9",
+                "name": {
+                  "en": "Lesser Tomb",
+                  "fr": "Tombeau modeste"
+                },
+                "text": {
+                  "en": "You find 1D6x5 silver. In addition, roll on the Curiosity table.",
+                  "fr": "Vous trouvez 1D6x5 pièces d'argent. De plus, lancez les dés sur la table des curiosités."
+                }
+              },
+              {
+                "roll": "10+",
+                "name": {
+                  "en": "Grand Tomb",
+                  "fr": "Grand tombeau"
+                },
+                "text": {
+                  "en": "You find 2D6x5 silver. In addition, roll on the Relics table.",
+                  "fr": "Vous trouvez 2D6x5 pièces d'argent. De plus, lancez les dés sur la table des reliques."
+                }
+              }
+            ]
+          }
+        ],
+        "sourceRef": {
+          "page": 156,
+          "md": "12_campagne-avant-premiere.md > 66 - Dans les catacombes... (*Into the Catacombs...*)"
+        }
+      }
+    ]
+  }
+}

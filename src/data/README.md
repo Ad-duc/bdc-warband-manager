@@ -58,6 +58,16 @@ an error, so a typo cannot slip through.
 | `skillTables`   | Veteran Skills, open to any fighter.                                                           |
 | `campaign`      | Chapter 5 placeholders: status `not-published` and empty tables ready to be filled.            |
 
+## campaign/preview.json
+
+Campaign chapter preview shared on the official Discord (Curiosities table and
+items, Explore the City). It is not part of a published playtest version, so it
+lives in its own folder, outside the files scanned as factions, with its own
+schema (`campaign/schema.ts`, status `preview`). `npm run check:data` validates
+it and checks that the Curiosities and Exploration tables cover each D66 value
+once. Readings of the preview are entries A44 to A51 and D11 of
+`RULES_ASSUMPTIONS.md`.
+
 ## <faction>.json
 
 | Key                                 | Content                                                                                                                                                                                                                            |

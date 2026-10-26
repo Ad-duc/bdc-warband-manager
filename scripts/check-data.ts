@@ -26,6 +26,7 @@ import {
   type FactionData,
   type Wargear,
 } from "../src/data/schema.ts";
+import { CampaignPreviewSchema, checkPreviewIntegrity } from "../src/data/campaign/schema.ts";
 
 /* ------------------------------------------------------------------------- */
 /* Report helpers                                                            */
@@ -108,6 +109,23 @@ for (const f of factions) {
   const problems = checkFactionIntegrity(f, common);
   if (problems.length === 0) ok(`${f.id}: all references resolve`);
   for (const p of problems) fail(`${f.id}: ${p}`);
+}
+
+title("Campaign preview");
+const PREVIEW_FILE = join("src", "data", "campaign", "preview.json");
+const preview = parseOrReport(CampaignPreviewSchema, loadJson(join(ROOT, PREVIEW_FILE)), PREVIEW_FILE);
+if (preview) {
+  const problems = checkPreviewIntegrity(
+    preview,
+    new Set(common.weaponTraits.map((t) => t.key)),
+    new Set(factions.map((f) => f.id)),
+  );
+  if (problems.length === 0)
+    ok(
+      `campaign preview: ${preview.curiosities.items.length} curiosities, ` +
+        `${preview.exploration.results.length} exploration results, every D66 value covered once`,
+    );
+  for (const p of problems) fail(`campaign preview: ${p}`);
 }
 
 title("Armoury list prices");
@@ -223,6 +241,7 @@ function bareDice(value: unknown, key: string | null, path: string, out: string[
 let diceFaults = 0;
 const textFiles: [string, boolean][] = [
   ...["common.json", ...factionFiles].map((f): [string, boolean] => [join("src", "data", f), false]),
+  [PREVIEW_FILE, false],
   ...readdirSync(join(ROOT, "src", "i18n", "locales")).map((f): [string, boolean] => [
     join("src", "i18n", "locales", f),
     true,

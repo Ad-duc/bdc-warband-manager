@@ -332,6 +332,67 @@ bought, p. 49). Fighters taken out of their category limit by the origin
 (Dire Wolves) are not counted. The diagnostics panel keeps reporting the
 same rules for a warband imported or built before this change.
 
+## Campaign chapter preview
+
+Source: pages 137 to 140 and 153 to 156 of the Campaign chapter, shared as a
+preview on the official Discord (received 2026-10-26). They are not part of a
+published playtest version: the data lives in `src/data/campaign/preview.json`
+and nothing in the warband rules engine reads it yet. Page numbers are those
+printed on the preview.
+
+### A44 - Blast weapon with critical damage (open)
+
+p. 140: the Dwarven Bomb prints Damage 2 and Critical Damage 1D3+1 with the
+Blast trait, while playtest v1.03 (p. 31) says a Blast weapon does not score
+critical hits (its Damage became the old Critical Damage).
+Data: profile kept as printed. Question: should it read Damage 1D3+1, no
+critical damage, like the other Blast weapons of v1.03?
+
+### A45 - Numbers of the last two wondrous tonics (data)
+
+p. 137: the Curiosities table lists "15 - Tonic of Mind" and "16 - Tonic of
+Levitation" in the 41-46 group; p. 139 prints them 45 and 46.
+Data: 45 and 46, so each D66 value of the table is used once.
+
+### A46 - Scouting party and search party (open)
+
+p. 153 to 156 say "scouting party", "explore the City" and "exploration
+roll"; p. 137 and 140 and playtest v1.03 (Hunting Dog, Dire Wolf, Explorer's
+Instincts, Fortified Keep) say "search party", "search the city" and "search
+roll". Read as the same step. Translation: "groupe d'éclaireurs" for scouting
+party, "groupe de fouille" kept for search party until the author unifies them.
+
+### A47 - Hunting Dog exploration re-roll (open)
+
+p. 155, example: the Hunting Dog grants a re-roll of the units dice only.
+v1.03 (p. 66) lets a search party with a Hunting Dog re-roll the whole
+exploration roll. Data unchanged (v1.03 text); to settle before an exploration
+assistant counts re-rolls.
+
+### A48 - Step of the aftermath sequence (open)
+
+p. 153: Explore the City is "Step Four" of the aftermath sequence. The Blighted
+Cloister (v1.03, Militant Order) grants its extra re-roll "in step 5 of the
+aftermath sequence" when searching the City. Data: `aftermathStep: 4`, as
+printed on the preview.
+
+### A49 - Into the Catacombs score (open)
+
+p. 156: dice are added until a 1 is rolled or the total reaches 10. The text
+does not say whether the stopping 1 is added. If it is, a score of 2 cannot
+happen; if it is not, a score of 1 cannot happen and a score of 0 is not in
+the table. Data: table kept as printed; no score is computed.
+
+### A50 - Alms Box silver (open)
+
+p. 156: Hallowed Ground 1-2 gives 6D6 silver, more on average than the 3-5
+(2D6 and a curiosity) and 6 (1D6x5 and a relic) results. Kept as printed;
+possible misprint for 1D6 or 1D6x5.
+
+### A51 - Confront them Head On (settled)
+
+p. 154: "If the total exceeds 15 or more". Read as 15 or more.
+
 ## Data decisions
 
 ### D01 - Number of Guild Mercenaries profiles (data)
@@ -412,3 +473,13 @@ field, as for the Guild Mercenaries.
 Factions are listed in book order (Guild Mercenaries, Verminkin, Death Covens,
 The Blighted Cloister), from the page of each chapter, so a new warband starts
 on the Guild Mercenaries as before.
+
+### D11 - Campaign preview kept apart (data)
+
+The Campaign chapter preview (Curiosities, Explore the City) is stored in
+`src/data/campaign/preview.json` with its own schema
+(`src/data/campaign/schema.ts`, status `preview`), outside the folder scanned
+for faction files. `common.json` keeps `campaign.status` at `not-published`
+and its exploration table empty until a playtest version publishes the
+chapter. Texts are taken as printed except the corrections listed in A45 and
+in the translator notes of `sources/fr/12_campagne-avant-premiere.md`.
