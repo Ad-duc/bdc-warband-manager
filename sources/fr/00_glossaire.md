@@ -1,6 +1,6 @@
 # Black Death City - Playtest v1.03 : glossaire VO > VF
 
-Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné. Mis à jour le 13/10/2026 (version 6) : noms de factions, mots-clés de faction et nom commun "coven" traduits (décision H17). Mis à jour le 14/10/2026 (version 7) : Wizard devient Magicien (décision H18). Mis à jour le 14/10/2026 (version 8) : noms de combattants traduits (décision H19). Mis à jour le 15/10/2026 (version 9) : Vermigènes devient Vermineux (décision H20), Prêtre Véroleux devient Prêtre Véroleux (décision H21).
+Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné. Mis à jour le 13/10/2026 (version 6) : noms de factions, mots-clés de faction et nom commun "coven" traduits (décision H17). Mis à jour le 14/10/2026 (version 7) : Wizard devient Magicien (décision H18). Mis à jour le 14/10/2026 (version 8) : noms de combattants traduits (décision H19). Mis à jour le 15/10/2026 (version 9) : Vermigènes devient Vermineux (décision H20), Prêtre Véroleux devient Prêtre Véroleux (décision H21). Mis à jour le 26/10/2026 (version 10) : 14 termes de l'avant-première du chapitre Campagne (Curiosités, Explorer la Cité), marqués "Ajout avant-première Campagne", à confirmer à la parution.
 
 ## Ligne directrice
 
@@ -18,7 +18,7 @@ Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les aj
 
 ## Mode d'emploi
 
-- Le glossaire compte 1142 entrées réparties en 27 catégories. Il est trié par catégorie, puis par ordre alphabétique de la VO.
+- Le glossaire compte 1156 entrées réparties en 27 catégories. Il est trié par catégorie, puis par ordre alphabétique de la VO.
 - "Imposé" : terme repris tel quel de ton glossaire de départ.
 - "VO conservée" : terme laissé en anglais. Depuis les décisions H17 et H19, les noms de factions, leurs mots-clés et les noms de combattants sont traduits, avec le terme anglais entre parenthèses à chaque occurrence.
 - "Tranché (Hn)" : point que tu as arbitré. "Voir Hn" : entrée qui découle de cette décision.
@@ -78,10 +78,10 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 |---|---|---|
 | 01 | Général | 124 |
 | 02 | Formulations de règles | 27 |
-| 03 | Types de combattants et mots-clés | 34 |
+| 03 | Types de combattants et mots-clés | 36 |
 | 04 | Valeurs et profils | 42 |
 | 05 | Séquence de jeu | 76 |
-| 06 | États et situations | 48 |
+| 06 | États et situations | 49 |
 | 07 | Combat | 64 |
 | 08 | Traits d'armes | 19 |
 | 09 | Magie | 33 |
@@ -89,7 +89,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | 11 | Scénarios : termes généraux | 50 |
 | 12 | Scénarios : titres et objectifs | 26 |
 | 13 | Rebondissements et tables de scénario | 50 |
-| 14 | Campagne et feuille de bande | 39 |
+| 14 | Campagne et feuille de bande | 50 |
 | 15 | Factions et combattants | 60 |
 | 16 | Origines | 18 |
 | 17 | Repaires et règles de repaire | 51 |
@@ -277,6 +277,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Brute | Brute | Types de combattants et mots-clés | Imposé. |
 | Champion | Champion | Types de combattants et mots-clés | Imposé. |
 | Cloister | Cloître | Types de combattants et mots-clés | Mot-clé de faction. Tranché (H17). |
+| Consumable | Consommable | Types de combattants et mots-clés | Ajout avant-première Campagne (p. 137-156). Mot-clé d'objet. |
 | Contraption | Engin | Types de combattants et mots-clés | Imposé. |
 | Demon | Démon | Types de combattants et mots-clés | Imposé. |
 | Dog | Chien | Types de combattants et mots-clés | Mot-clé de combattant (Chien de chasse, Loup sinistre). Tranché (H3). |
@@ -294,6 +295,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Priest | Prêtre | Types de combattants et mots-clés | Imposé. |
 | Rat | Rat | Types de combattants et mots-clés | Mot-clé de combattant. Identique en VO et en VF. |
 | Skeleton | Squelette | Types de combattants et mots-clés | Mot-clé de combattant. Tranché (H3). |
+| Stash Item | Objet de butin | Types de combattants et mots-clés | Ajout avant-première Campagne (p. 137-156). Mot-clé d'objet : non équipable, placé dans le butin. |
 | summoned | invoqué | Types de combattants et mots-clés | Imposé. |
 | Thrall | Asservi | Types de combattants et mots-clés | Imposé. |
 | Undead | Mort-vivant | Types de combattants et mots-clés | Imposé. |
@@ -442,6 +444,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | aura of shadows | aura d'ombres | États et situations | Effet du sort Ombres grandissantes. |
 | barrier | barrière | États et situations | Ajout du lot 06. Effet du sort Barrière occulte. |
 | blessed blades | lames bénies | États et situations | Effet du sort Bénédiction des lames. |
+| blinded | aveuglé | États et situations | Ajout avant-première Campagne (p. 137-156). Poudre aveuglante. |
 | bloodied | ensanglanté | États et situations | Imposé. |
 | carrying treasure | porte un trésor | États et situations | Ajout du lot 08. Variante de "holding treasure" (Vestiges du Noble, p. 106). |
 | causes fear | cause la peur | États et situations | Règle spéciale Peur. |
@@ -800,16 +803,21 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Blighted Cloister Epithets | Épithètes du Cloître gangrené | Campagne et feuille de bande | Table D66 traduite (catégorie 26). |
 | bonus experience | expérience bonus | Campagne et feuille de bande |  |
 | Campaign Rules | Règles de campagne | Campagne et feuille de bande |  |
+| climbing score | score d'escalade | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). Le beffroi. |
+| Curiosities | Curiosités | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). "Curiosities Table" et "Curiosity table" = table des curiosités. |
 | Death of a Leader | Mort d'un Chef | Campagne et feuille de bande |  |
 | Demon Injury Table | Table des blessures des Démons | Campagne et feuille de bande |  |
 | Eligible Champion | Champion éligible | Campagne et feuille de bande |  |
 | Enraged | Furieux | Campagne et feuille de bande | Table des blessures des Démons, résultat 66. "enragé" est réservé à "rabid" (Ferveur enragée). |
 | epithet | épithète | Campagne et feuille de bande |  |
 | experience points | points d'expérience | Campagne et feuille de bande |  |
+| exploration re-roll | relance d'exploration | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). |
 | Fighters Lost | Combattants perdus | Campagne et feuille de bande | Champ de la feuille de bande. |
 | Former Leader | Ancien Chef | Campagne et feuille de bande |  |
 | Fractured Essence | Essence fracturée | Campagne et feuille de bande | Table des blessures des Démons, résultat 21-36. |
+| full recovery | rétablissement complet | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). Résultat de jet de blessure cité par le Memento mori d'ivoire. |
 | Holdings Ransacked | Possessions saccagées | Campagne et feuille de bande | Champ de la feuille de bande. |
+| Holdings Table | table des possessions | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). |
 | House | Maison | Campagne et feuille de bande | Maison noble des Cabales de la Mort ("House Dragul" = Maison Dragul). |
 | income | revenu | Campagne et feuille de bande | "collect income" = percevoir le revenu. |
 | injury | blessure | Campagne et feuille de bande |  |
@@ -822,11 +830,17 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Names (name tables) | Noms | Campagne et feuille de bande | "Guild Mercenary Names" = Noms des Mercenaires de la Guilde, etc. Le contenu de ces tables D66 n'est pas traduit. |
 | permanent injury | blessure permanente | Campagne et feuille de bande |  |
 | promote | promouvoir | Campagne et feuille de bande |  |
+| returns empty handed | revient bredouille | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). Rubrique "Returning Empty Handed" = Revenir bredouille. |
+| scouting party | groupe d'éclaireurs | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). Distinct de "search party" (groupe de fouille), à confirmer. |
 | Skeleton & Thrall Injury Table | Table des blessures des Squelettes et des Asservis | Campagne et feuille de bande |  |
 | Skeletons & Thralls | Squelettes et Asservis | Campagne et feuille de bande | Rubrique des règles de campagne des Cabales de la Mort. |
 | standard injury table | table des blessures standard | Campagne et feuille de bande |  |
+| temporary injury | blessure temporaire | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). |
+| tens dice | dé des dizaines | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). "units dice" = dé des unités. |
+| treat (a fighter) | soigner | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). Bocal de sangsues des canaux. |
 | Type | Type | Campagne et feuille de bande | Champ de la feuille de bande. |
 | Unharmed | Intact | Campagne et feuille de bande | Table des blessures des Démons, résultat 41-65. |
+| units dice | dé des unités | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). |
 | Unscathed | Indemne | Campagne et feuille de bande | Table des blessures des Squelettes et des Asservis, résultat 2-6. |
 | Vial of Poison | Fiole de poison | Campagne et feuille de bande | Objet cité p. 115, non décrit dans la v1.03. |
 | Victories Won | Victoires remportées | Campagne et feuille de bande | Champ de la feuille de bande. |

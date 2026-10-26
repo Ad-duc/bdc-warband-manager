@@ -913,6 +913,11 @@
       "category": "03"
     },
     {
+      "vo": "Consumable",
+      "vf": "Consommable",
+      "category": "03"
+    },
+    {
       "vo": "Contraption",
       "vf": "Engin",
       "category": "03"
@@ -995,6 +1000,11 @@
     {
       "vo": "Skeleton",
       "vf": "Squelette",
+      "category": "03"
+    },
+    {
+      "vo": "Stash Item",
+      "vf": "Objet de butin",
       "category": "03"
     },
     {
@@ -1660,6 +1670,11 @@
     {
       "vo": "blessed blades",
       "vf": "lames bénies",
+      "category": "06"
+    },
+    {
+      "vo": "blinded",
+      "vf": "aveuglé",
       "category": "06"
     },
     {
@@ -3253,6 +3268,16 @@
       "category": "14"
     },
     {
+      "vo": "climbing score",
+      "vf": "score d'escalade",
+      "category": "14"
+    },
+    {
+      "vo": "Curiosities",
+      "vf": "Curiosités",
+      "category": "14"
+    },
+    {
       "vo": "Death of a Leader",
       "vf": "Mort d'un Chef",
       "category": "14"
@@ -3283,6 +3308,11 @@
       "category": "14"
     },
     {
+      "vo": "exploration re-roll",
+      "vf": "relance d'exploration",
+      "category": "14"
+    },
+    {
       "vo": "Fighters Lost",
       "vf": "Combattants perdus",
       "category": "14"
@@ -3298,8 +3328,18 @@
       "category": "14"
     },
     {
+      "vo": "full recovery",
+      "vf": "rétablissement complet",
+      "category": "14"
+    },
+    {
       "vo": "Holdings Ransacked",
       "vf": "Possessions saccagées",
+      "category": "14"
+    },
+    {
+      "vo": "Holdings Table",
+      "vf": "table des possessions",
       "category": "14"
     },
     {
@@ -3363,6 +3403,16 @@
       "category": "14"
     },
     {
+      "vo": "returns empty handed",
+      "vf": "revient bredouille",
+      "category": "14"
+    },
+    {
+      "vo": "scouting party",
+      "vf": "groupe d'éclaireurs",
+      "category": "14"
+    },
+    {
       "vo": "Skeleton & Thrall Injury Table",
       "vf": "Table des blessures des Squelettes et des Asservis",
       "category": "14"
@@ -3378,6 +3428,21 @@
       "category": "14"
     },
     {
+      "vo": "temporary injury",
+      "vf": "blessure temporaire",
+      "category": "14"
+    },
+    {
+      "vo": "tens dice",
+      "vf": "dé des dizaines",
+      "category": "14"
+    },
+    {
+      "vo": "treat (a fighter)",
+      "vf": "soigner",
+      "category": "14"
+    },
+    {
       "vo": "Type",
       "vf": "Type",
       "category": "14"
@@ -3385,6 +3450,11 @@
     {
       "vo": "Unharmed",
       "vf": "Intact",
+      "category": "14"
+    },
+    {
+      "vo": "units dice",
+      "vf": "dé des unités",
       "category": "14"
     },
     {
