@@ -338,7 +338,8 @@
       "add": "Acheter",
       "addNamed": "Acheter {{name}}",
       "held": "Objet tenu",
-      "rare": "Rare 0-{{max}}"
+      "rare": "Rare 0-{{max}}",
+      "grantedNamed": "Arme accordée par {{name}}"
     },
     "skills": {
       "none": "Aucun combattant de cette bande ne choisit de compétence ni de sort au recrutement.",

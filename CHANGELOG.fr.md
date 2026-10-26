@@ -26,6 +26,7 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 ### Corrigé
 
 - Les sorts fétiches (étape 5 de l'assistant) affichent le profil des sorts d'Attaque (Perforation, Dégâts) et l'effet du lancement critique de chaque sort ; le texte du Projectile arcanique et des autres sorts d'Attaque s'arrêtait à "l'attaque suivante :".
+- Étape Équipement : les objets qui accordent une arme (Compagnon bestial, Compagnon fidèle, Carreau explosif, Familier démoniaque) affichent son profil (Perforation, Dégâts, Dégâts critiques, traits) sous leur texte, qui s'arrêtait à "l'arme suivante :".
 
 ## [1.3.0] - 2026-10-21
 

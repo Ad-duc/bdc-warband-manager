@@ -10,7 +10,7 @@
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import type { FighterProfile, Wargear, WarbandFighter } from "../../data/schema.ts";
+import type { AttackProfile, FighterProfile, Wargear, WarbandFighter } from "../../data/schema.ts";
 import { effectiveCategory, fighterWargearCost, wargearPrice, type FactionIndex } from "../../rules/index.ts";
 import { formatRange, formatRend, useFormatter } from "../../i18n/text.ts";
 import { TraitList } from "../common/TraitList.tsx";
@@ -213,6 +213,7 @@ function WargearTable({
                   ]
                     .filter((x): x is string => x !== null)
                     .join(" - ") || "-"}
+                  {w.grantsAttack !== null && <GrantedAttack wargear={w} profile={w.grantsAttack} />}
                 </td>
               )}
               <td className="whitespace-nowrap">
@@ -235,5 +236,47 @@ function WargearTable({
         </tbody>
       </table>
     </div>
+  );
+}
+
+/**
+ * Weapon profile granted by an item (Bestial Companion, Loyal Companion,
+ * Bomb Bolt, Demonic Familiar): the item text ends with "the following
+ * weapon:", so the profile is shown right under it, as in the book.
+ */
+function GrantedAttack({ wargear, profile }: { wargear: Wargear; profile: AttackProfile }) {
+  const { t } = useTranslation();
+  const f = useFormatter();
+  const ranged = profile.range !== undefined;
+
+  return (
+    <table
+      className="mt-1 w-auto border border-on-panel text-xs"
+      aria-label={t("wizard.wargear.grantedNamed", { name: f.text(wargear.name) })}
+      data-testid={`granted-attack-${wargear.id}`}
+    >
+      <thead>
+        <tr>
+          {ranged && <th scope="col">{t("weapon.rng")}</th>}
+          {profile.attacks !== undefined && <th scope="col">{t("weapon.atk")}</th>}
+          <th scope="col">{t("weapon.rnd")}</th>
+          <th scope="col">{t("weapon.dmg")}</th>
+          <th scope="col">{t("weapon.crit")}</th>
+          <th scope="col">{t("weapon.traits")}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          {ranged && <td>{formatRange(profile, t("weapon.flame"))}</td>}
+          {profile.attacks !== undefined && <td>{f.dice(profile.attacks)}</td>}
+          <td>{formatRend(profile.rend)}</td>
+          <td>{f.dice(profile.damage)}</td>
+          <td>{f.dice(profile.critDamage)}</td>
+          <td>
+            <TraitList keys={profile.traits ?? []} />
+          </td>
+        </tr>
+      </tbody>
+    </table>
   );
 }
