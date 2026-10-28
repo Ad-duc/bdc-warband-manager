@@ -169,7 +169,7 @@ Ensanglanté n'est pas stocké : il se déduit de `lifeLeft === 1`.
 
 - Nouvelle table Dexie `battleSessions` (clé `id`, index `warbandId`), ajoutée par une **nouvelle version** de la base ; les versions existantes ne changent pas.
 - Schéma zod strict `BattleSessionSchema`, validé à chaque écriture, comme les bandes et les campagnes.
-- Le format des bandes enregistrées ne change pas : pas de nouveau `WARBAND_SCHEMA_VERSION`. Seule l'entrée du journal gagne un champ facultatif `takenDownIds` : à confirmer (question Q3), car il touche au schéma de la bande.
+- L'entrée du journal des batailles gagne un champ `takenDownIds` (combattants mis hors de combat, liste vide par défaut). C'est un changement du format de bande : `WARBAND_SCHEMA_VERSION` augmente et une migration ajoute une liste vide aux entrées existantes (décision D2, section 11).
 - Sauvegarde à chaque changement : la partie survit au verrouillage du téléphone et au rechargement de la page.
 
 ## 8. Code et tests
@@ -212,12 +212,12 @@ Le tout dans une seule pull request, de préférence. Si elle devient trop longu
 - Synchronisation entre deux appareils.
 - Jet de blessure, table des blessures : non publiés dans la v1.03.
 
-## 11. Questions ouvertes
+## 11. Décisions complémentaires (28/10/2026)
 
-| #   | Question                                                                                                              | Proposition                                                 |
-| --- | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Q1  | Le mode bataille doit-il être proposé en mode "recrutement" (bande pas encore en campagne), pour une partie d'essai ? | Oui, sans le report vers le journal                         |
-| Q2  | Faut-il garder un historique des actions de la partie (journal de round) et l'afficher ?                              | Oui, court et en lecture seule, utile pour les notes de fin |
-| Q3  | Ajouter la liste des mis hors de combat à l'entrée du journal (changement du format de bande, avec migration) ?       | Oui, nécessaire pour l'assistant d'exploration              |
-| Q4  | Un objet utilisé (tonique, bombe) est-il retiré de la bande automatiquement à la validation ?                         | Proposé coché dans le récapitulatif, décochable             |
-| Q5  | Garder l'écran allumé pendant la partie (Wake Lock du navigateur, quand il est disponible) ?                          | Oui, avec un interrupteur                                   |
+| #   | Sujet                          | Décision                                                                                                                                              |
+| --- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| D1  | Bande en mode recrutement      | Mode bataille disponible pour une partie d'essai. "Terminer la bataille" n'y propose pas de report : la partie est simplement clôturée.               |
+| D2  | Combattants mis hors de combat | Enregistrés dans l'entrée du journal (`takenDownIds`), avec nouvelle version du format de bande et migration. L'assistant d'exploration s'en servira. |
+| D3  | Objets utilisés                | Proposés au retrait dans le récapitulatif de fin, cochés par défaut, décochables un par un.                                                           |
+| D4  | Écran toujours allumé          | Wake Lock du navigateur quand il est disponible, avec un interrupteur dans le bandeau ; sans support, l'interrupteur est masqué.                      |
+| D5  | Journal de round               | Historique court en lecture seule (dégâts, états, activations, déroute), repris dans les notes du récapitulatif de fin.                               |
