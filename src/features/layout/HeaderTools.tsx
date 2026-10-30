@@ -2,9 +2,10 @@
  * File:        src/features/layout/HeaderTools.tsx
  * Role:        Tools of the header: back to the warband list, direction
  *              dice, battle set-up, card back generator, reminder sheet,
- *              French rules reader, rules tutorial. From
+ *              compendium of skills, spells and wargear, French rules
+ *              reader, rules tutorial. From
  *              the "sm" breakpoint they are shown as buttons (icons, labels
- *              from "xl");
+ *              from 90rem, where the eight labels fit beside the title);
  *              on phones they are grouped in one menu so the title keeps the
  *              room it needs. The menu closes with Escape, an outside click
  *              or the choice of an entry.
@@ -18,7 +19,7 @@ import { useTranslation } from "react-i18next";
 import { hrefFor, useRoute } from "../../app/router.ts";
 
 const BUTTON =
-  "inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 border-2 border-on-page px-2 text-sm hover:bg-on-page hover:text-page aria-[current=page]:bg-on-page aria-[current=page]:text-page xl:px-3";
+  "inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 border-2 border-on-page px-2 text-sm hover:bg-on-page hover:text-page aria-[current=page]:bg-on-page aria-[current=page]:text-page min-[100rem]:px-3";
 const MENU_ITEM =
   "flex min-h-11 w-full items-center gap-3 border-2 border-on-page px-3 text-left hover:bg-on-page hover:text-page aria-[current=page]:bg-on-page aria-[current=page]:text-page";
 
@@ -67,6 +68,13 @@ const ReminderIcon = () => (
     <path d="M8.5 11h7M8.5 14.5h7M8.5 18h4" />
   </Icon>
 );
+const CompendiumIcon = () => (
+  <Icon>
+    <path d="M5 3h12a2 2 0 0 1 2 2v16H7a2 2 0 0 1-2-2z" />
+    <path d="M5 19a2 2 0 0 1 2-2h12" />
+    <path d="M12 6v8M9 9h6" />
+  </Icon>
+);
 const BattleIcon = () => (
   <Icon>
     <path d="M4 4l10 10M14 14l2 2M17 13l-4 4M20 20l-3-3" />
@@ -103,6 +111,7 @@ export function HeaderTools() {
   const tutorialCurrent = route.name === "tutorial" ? "page" : undefined;
   const tutorialHref = hrefFor({ name: "tutorial", lesson: null, step: null });
   const reminderCurrent = route.name === "reminder" ? "page" : undefined;
+  const compendiumCurrent = route.name === "compendium" ? "page" : undefined;
   const battleCurrent = route.name === "battle" || route.name === "scenarios" ? "page" : undefined;
   const battleHref = hrefFor({ name: "battle", warbandId: null, campaignId: null });
 
@@ -139,34 +148,38 @@ export function HeaderTools() {
   return (
     <>
       {/* Tablets and computers: one button per tool */}
-      <div className="hidden items-center gap-3 sm:flex xl:gap-4">
+      <div className="hidden items-center gap-3 sm:flex min-[90rem]:gap-2 min-[100rem]:gap-4">
         <a href={hrefFor({ name: "home" })} aria-current={homeCurrent} className={BUTTON}>
           <HomeIcon />
-          <span className="sr-only xl:not-sr-only">{t("header.home")}</span>
+          <span className="sr-only min-[90rem]:not-sr-only">{t("header.home")}</span>
         </a>
         <a href={hrefFor({ name: "dice" })} aria-current={diceCurrent} className={BUTTON}>
           <DieIcon />
-          <span className="sr-only xl:not-sr-only">{t("header.directionDie")}</span>
+          <span className="sr-only min-[90rem]:not-sr-only">{t("header.directionDie")}</span>
         </a>
         <a href={hrefFor({ name: "cardBacks" })} aria-current={backsCurrent} className={BUTTON}>
           <BacksIcon />
-          <span className="sr-only xl:not-sr-only">{t("header.cardBacks")}</span>
+          <span className="sr-only min-[90rem]:not-sr-only">{t("header.cardBacks")}</span>
         </a>
         <a href={battleHref} aria-current={battleCurrent} className={BUTTON}>
           <BattleIcon />
-          <span className="sr-only xl:not-sr-only">{t("header.battle")}</span>
+          <span className="sr-only min-[90rem]:not-sr-only">{t("header.battle")}</span>
         </a>
         <a href={hrefFor({ name: "reminder" })} aria-current={reminderCurrent} className={BUTTON}>
           <ReminderIcon />
-          <span className="sr-only xl:not-sr-only">{t("header.reminder")}</span>
+          <span className="sr-only min-[90rem]:not-sr-only">{t("header.reminder")}</span>
+        </a>
+        <a href={hrefFor({ name: "compendium" })} aria-current={compendiumCurrent} className={BUTTON}>
+          <CompendiumIcon />
+          <span className="sr-only min-[90rem]:not-sr-only">{t("header.compendium")}</span>
         </a>
         <a href={hrefFor({ name: "rules", chapter: null })} aria-current={rulesCurrent} className={BUTTON}>
           <RulesIcon />
-          <span className="sr-only xl:not-sr-only">{t("header.rules")}</span>
+          <span className="sr-only min-[90rem]:not-sr-only">{t("header.rules")}</span>
         </a>
         <a href={tutorialHref} aria-current={tutorialCurrent} className={BUTTON}>
           <TutorialIcon />
-          <span className="sr-only xl:not-sr-only">{t("header.tutorial")}</span>
+          <span className="sr-only min-[90rem]:not-sr-only">{t("header.tutorial")}</span>
         </a>
       </div>
 
@@ -239,6 +252,15 @@ export function HeaderTools() {
           >
             <ReminderIcon />
             {t("header.reminder")}
+          </a>
+          <a
+            href={hrefFor({ name: "compendium" })}
+            aria-current={compendiumCurrent}
+            className={MENU_ITEM}
+            onClick={close}
+          >
+            <CompendiumIcon />
+            {t("header.compendium")}
           </a>
           <a
             href={hrefFor({ name: "rules", chapter: null })}
