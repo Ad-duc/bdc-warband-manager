@@ -538,7 +538,8 @@
   },
   "reminder": {
     "title": "Reminder sheet (French)",
-    "intro": "The official reminder sheet translated into French, on one A4 page: set-up, round sequence, weapon traits, actions, dice tables. Page numbers refer to the playtest v1.03 rules."
+    "intro": "The official reminder sheet translated into French: set-up, round sequence, weapon traits, actions, dice tables. Page numbers refer to the playtest v1.03 rules. The print button lays it out on one A4 sheet.",
+    "print": "Print the A4 sheet"
   },
   "print": {
     "title": "Print",

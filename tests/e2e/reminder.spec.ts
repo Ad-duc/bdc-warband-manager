@@ -1,7 +1,8 @@
 /*
  * File:        tests/e2e/reminder.spec.ts
- * Role:        French reminder sheet opened from the header: one A4 page in
- *              French whatever the interface language, printed on one page;
+ * Role:        French reminder sheet opened from the header: shown on screen
+ *              like the other screens, printed as one A4 page in French
+ *              whatever the interface language;
  *              "My warbands" header button back to the warband list.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
@@ -17,7 +18,19 @@ test("reminder sheet from the header, in French, on one page", async ({ page, br
   await page.getByRole("banner").getByRole("link", { name: "Aide de jeu" }).click();
   await expect(page).toHaveURL(/#\/reminder$/);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Aide de jeu");
+
+  // On screen: the guide laid out like the other screens, the A4 sheet hidden
+  const guide = page.getByTestId("reminder-guide");
+  await expect(guide).toHaveAttribute("lang", "fr");
+  await expect(guide.getByRole("heading", { level: 2, name: "Mise en place" })).toBeVisible();
+  await expect(guide).toContainText("Jet de fiasco");
   const sheet = page.getByTestId("reminder-sheet");
+  await expect(sheet).toBeHidden();
+
+  // In print: the A4 sheet only
+  await page.emulateMedia({ media: "print" });
+  await expect(guide).toBeHidden();
+  await expect(sheet).toBeVisible();
   await expect(sheet).toHaveAttribute("lang", "fr");
   await expect(sheet.getByRole("heading", { name: "Black Death City - Aide de jeu" })).toBeVisible();
   await expect(sheet).toContainText("Jet de fiasco");
@@ -28,7 +41,6 @@ test("reminder sheet from the header, in French, on one page", async ({ page, br
   expect(overflow).toBeLessThanOrEqual(0);
 
   if (browserName === "chromium") {
-    await page.emulateMedia({ media: "print" });
     const pdf = await page.pdf({ format: "A4", printBackground: true, preferCSSPageSize: true });
     const pages = pdf.toString("latin1").match(/\/Type\s*\/Page[^s]/g) ?? [];
     expect(pages.length).toBe(1);

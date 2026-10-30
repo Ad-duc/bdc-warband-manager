@@ -22,6 +22,7 @@ version is given separately (playtest v1.03).
 
 ### Changed
 
+- Reminder sheet: the screen now shows it like the rest of the site (parchment panel, titles, tables, one or two columns depending on the width) instead of the printable A4 page; the "Print the A4 sheet" button still prints the official layout on one page.
 - The rules reader no longer shows the original English terms between parentheses: hover or tap a French term to see its original term in a tooltip. The print view leaves them out.
 
 ### Fixed

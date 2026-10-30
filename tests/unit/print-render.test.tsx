@@ -4,7 +4,8 @@
  *              fighter blocks, cards and duplex backs, the blank page that
  *              keeps duplex backs aligned, style and language of the print
  *              root, disabled options, the card back generator, the French
- *              reminder sheet, pictograms and Black Rot boxes.
+ *              reminder sheet and its screen guide, pictograms and Black Rot
+ *              boxes.
  * Author:      Adrien Duclaud
  * Created:     2026-10-17
  * License:     MIT
@@ -16,7 +17,8 @@ import i18n from "../../src/i18n/index.ts";
 import { db, saveWarband } from "../../src/db/database.ts";
 import { PrintPage, PrintView } from "../../src/print/PrintPage.tsx";
 import { CardBacksPage, MAX_BACK_SHEETS } from "../../src/print/CardBacksPage.tsx";
-import { ReminderPage } from "../../src/print/ReminderPage.tsx";
+import { ReminderPage } from "../../src/features/reminder/ReminderPage.tsx";
+import { ReminderGuide } from "../../src/features/reminder/ReminderGuide.tsx";
 import { ReminderSheet } from "../../src/print/ReminderSheet.tsx";
 import { Pictogram } from "../../src/print/Pictogram.tsx";
 import { BlackRot } from "../../src/print/RosterSheet.tsx";
@@ -206,14 +208,42 @@ describe("card back generator", () => {
 });
 
 describe("reminder page", () => {
-  it("wraps the sheet in a print root with a print button", () => {
+  it("shows the screen guide and keeps the A4 sheet in a print-only root", () => {
     const print = vi.spyOn(window, "print").mockImplementation(() => undefined);
     render(<ReminderPage />);
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Aide de jeu");
+    const guide = screen.getByTestId("reminder-guide");
+    expect(guide).toHaveAttribute("lang", "fr");
+    expect(guide.closest(".no-print")).not.toBeNull();
+    expect(printRoot()).toHaveClass("print-only");
     expect(printRoot()?.querySelector("[data-testid=reminder-sheet]")).not.toBeNull();
-    fireEvent.click(screen.getByRole("button", { name: "Imprimer" }));
+    fireEvent.click(screen.getByRole("button", { name: "Imprimer la feuille A4" }));
     expect(print).toHaveBeenCalledTimes(1);
     expect(screen.getByRole("link", { name: "Retour" })).toHaveAttribute("href", "#/");
+  });
+});
+
+describe("reminder guide", () => {
+  it("shows every part of the sheet with the site title levels and tables", () => {
+    render(<ReminderGuide />);
+    const guide = screen.getByTestId("reminder-guide");
+    for (const title of [
+      reminder.setup.title,
+      reminder.round.title,
+      reminder.traits.title,
+      reminder.hide.label,
+      reminder.melee.label,
+      reminder.ranged.label,
+      reminder.arcane.label,
+      reminder.bloodied.label,
+      reminder.moves.label,
+    ])
+      expect(screen.getByRole("heading", { level: 2, name: title })).toHaveClass("title-section");
+    for (const table of [reminder.reinforcements, reminder.misfire, reminder.miscast])
+      expect(screen.getByRole("heading", { level: 3, name: table.title })).toHaveClass("title-sub");
+    expect(guide.querySelectorAll("table.table-bdc").length).toBeGreaterThanOrEqual(7);
+    expect(guide).toHaveTextContent("Arcanique");
+    expect(guide.querySelector(".rs-sep")).not.toBeNull();
   });
 });
 

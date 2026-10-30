@@ -2,10 +2,9 @@
  * File:        src/styles/reminder.css
  * Role:        A4 layout of the French reminder sheet, close to the official
  *              "Reminder Sheet": black banner, gothic box titles, Georgia text,
- *              grey header rows, diamond icons and separators. On screen the
- *              sheet is fluid (never wider than the A4 page, no horizontal
- *              scroll) and its columns stack on narrow screens; when printing
- *              it keeps the fixed A4 layout and fills one page.
+ *              grey header rows, diamond icons and separators. Printed only
+ *              (fixed A4 layout, one page); the screen shows the reminder
+ *              guide of src/features/reminder instead.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -216,67 +215,6 @@
 
 .rs-joined td {
   border-top: 0;
-}
-
-/*
- * Screen only: fluid sheet. The fixed A4 box (190 x 277 mm) is kept for
- * printing; on screen the sheet takes the available width up to the A4 width,
- * grows with its content and stacks its columns through container queries,
- * so it adapts to the space actually given to it (phone, tablet, desktop).
- */
-@media screen {
-  .reminder-sheet {
-    container: reminder / inline-size;
-    width: 100%;
-    max-width: 190mm;
-    height: auto;
-    overflow: visible;
-  }
-  .reminder-sheet img {
-    max-width: 100%;
-  }
-  .rs-banner {
-    height: auto;
-    min-height: 11mm;
-    padding-block: 1.5mm;
-  }
-  .rs-banner-title {
-    font-size: clamp(14pt, 5cqi, 21pt);
-  }
-  .rs-table td {
-    overflow-wrap: anywhere;
-  }
-
-  /* Tablet portrait and narrower: one column for the two lower columns and
-     for the round sequence beside the reinforcements table. */
-  @container reminder (max-width: 660px) {
-    .rs-columns,
-    .rs-round {
-      grid-template-columns: 1fr;
-    }
-    .rs-top,
-    .rs-columns {
-      font-size: 9pt;
-    }
-  }
-
-  /* Phone: set-up box above the round sequence, larger text for the table. */
-  @container reminder (max-width: 480px) {
-    .rs-top {
-      grid-template-columns: 1fr;
-    }
-    .rs-top,
-    .rs-columns {
-      font-size: 10pt;
-    }
-    .rs-pairs th,
-    .rs-pairs.rs-traits th {
-      width: 34%;
-    }
-    .rs-icon {
-      width: 10mm;
-    }
-  }
 }
 
 @media print {

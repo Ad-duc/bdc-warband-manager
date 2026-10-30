@@ -538,7 +538,8 @@
   },
   "reminder": {
     "title": "Aide de jeu",
-    "intro": "La feuille d'aide de jeu officielle traduite en français, sur une page A4 : mise en place, séquence du round, traits d'armes, actions, tables de dés. Les numéros de page renvoient aux règles de la version de test 1.03."
+    "intro": "La feuille d'aide de jeu officielle traduite en français : mise en place, séquence du round, traits d'armes, actions, tables de dés. Les numéros de page renvoient aux règles de la version de test 1.03. Le bouton d'impression la met en page sur une feuille A4.",
+    "print": "Imprimer la feuille A4"
   },
   "print": {
     "title": "Impression",

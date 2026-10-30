@@ -6,6 +6,8 @@
  *              hide, melee, ranged and arcane actions, miscast roll, Bloodied
  *              and moves. The text lives in reminder-fr.json (French only,
  *              page numbers of the playtest v1.03); this file only lays it out.
+ *              Printed only: the screen shows the same text through
+ *              src/features/reminder/ReminderGuide.tsx.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -21,7 +23,7 @@ const img = (name: string): string => `${BASE}images/reminder/${name}.webp`;
 type DiceRow = [string, string, string];
 
 /** Renders **bold**, *italic*, {sep} (diamond separator) and {br}. */
-function Rich({ text }: { text: string }) {
+export function Rich({ text }: { text: string }) {
   return (
     <>
       {tokenize(text).map((tok, i) => {
