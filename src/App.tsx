@@ -41,7 +41,7 @@ const DirectionDiePage = lazy(async () => ({
   default: (await import("./features/dice/DirectionDiePage.tsx")).DirectionDiePage,
 }));
 const ReminderPage = lazy(async () => ({
-  default: (await import("./print/ReminderPage.tsx")).ReminderPage,
+  default: (await import("./features/reminder/ReminderPage.tsx")).ReminderPage,
 }));
 const CompendiumPage = lazy(async () => ({
   default: (await import("./features/compendium/CompendiumPage.tsx")).CompendiumPage,

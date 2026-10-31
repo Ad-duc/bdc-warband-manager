@@ -369,6 +369,13 @@
   background-color: var(--color-white);
 }
 
+/* Layouts kept for printing only (reminder sheet): the screen shows another view */
+@media screen {
+  .print-only {
+    display: none !important;
+  }
+}
+
 @media print {
   html,
   body {

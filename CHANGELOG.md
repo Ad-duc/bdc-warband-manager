@@ -23,6 +23,7 @@ version is given separately (playtest v1.03).
 
 ### Changed
 
+- Reminder sheet: the screen now shows it like the rest of the site (parchment panel, titles, tables, one or two columns depending on the width) instead of the printable A4 page; the "Print the A4 sheet" button still prints the official layout on one page.
 - Wizard, wargear and skills steps: each kind of wargear (melee, ranged, armour, items), each skill table and the spell lore are collapsible menus with their count. Wargear menus stay open when another fighter is picked; a skill table opens by itself when it holds a choice.
 - Header: the button labels are shown from 1440 px wide, so the eight tools fit beside the title.
 - The rules reader no longer shows the original English terms between parentheses: hover or tap a French term to see its original term in a tooltip. The print view leaves them out.
