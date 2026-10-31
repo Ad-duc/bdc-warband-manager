@@ -2,7 +2,9 @@
  * File:        src/features/wizard/StepWargear.tsx
  * Role:        Step 4: wargear. One fighter at a time (picked by name, with
  *              its category under it), only the armoury lists allowed by the
- *              profile, with weapon profiles, traits and prices.
+ *              profile, with weapon profiles, traits and prices. Each kind
+ *              of wargear (melee, ranged, armour, items) is a collapsible
+ *              menu; open menus stay open when another fighter is picked.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
@@ -10,14 +12,14 @@
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import type { AttackProfile, FighterProfile, Wargear, WarbandFighter } from "../../data/schema.ts";
-import { effectiveCategory, fighterWargearCost, wargearPrice, type FactionIndex } from "../../rules/index.ts";
-import { formatRange, formatRend, useFormatter } from "../../i18n/text.ts";
-import { TraitList } from "../common/TraitList.tsx";
+import type { Wargear, WarbandFighter } from "../../data/schema.ts";
+import { effectiveCategory, fighterWargearCost, wargearPrice } from "../../rules/index.ts";
+import { useFormatter } from "../../i18n/text.ts";
+import { Collapsible } from "../common/Collapsible.tsx";
+import { WargearTable } from "../common/WargearTable.tsx";
+import { WARGEAR_KINDS } from "../common/wargear-kinds.ts";
 import { fighterLabel } from "../warbands/factory.ts";
 import type { StepProps } from "./WizardPage.tsx";
-
-const KINDS = ["melee", "ranged", "armour", "item"] as const;
 
 export function StepWargear({ warband, index, update }: StepProps) {
   const { t } = useTranslation();
@@ -25,6 +27,16 @@ export function StepWargear({ warband, index, update }: StepProps) {
   const active = warband.fighters.filter((x) => x.status === "active");
   const [selectedId, setSelectedId] = useState<string | null>(active[0]?.instanceId ?? null);
   const selected = active.find((x) => x.instanceId === selectedId) ?? active[0];
+  /* Open menus ("<list>:<kind>"), kept when another fighter is picked. */
+  const [openGroups, setOpenGroups] = useState<ReadonlySet<string>>(new Set());
+  const setGroupOpen = (key: string, open: boolean): void => {
+    setOpenGroups((current) => {
+      const next = new Set(current);
+      if (open) next.add(key);
+      else next.delete(key);
+      return next;
+    });
+  };
 
   if (selected === undefined) return <p>{t("wizard.fighters.none")}</p>;
   const profile = index.fighters.get(selected.profileId);
@@ -114,22 +126,34 @@ export function StepWargear({ warband, index, update }: StepProps) {
                 {f.text(list.name)}
               </h2>
               <div className="grid gap-x-6 min-[100rem]:grid-cols-2 min-[100rem]:items-start">
-                {KINDS.map((kind) => {
+                {WARGEAR_KINDS.map((kind) => {
                   const items = list.entries
                     .map((e) => index.wargear.get(e.wargearId))
                     .filter((w): w is Wargear => w !== undefined && w.kind === kind);
                   if (items.length === 0) return null;
+                  const key = `${list.id}:${kind}`;
                   return (
-                    <WargearTable
+                    <Collapsible
                       key={kind}
-                      kind={kind}
-                      items={items}
-                      index={index}
-                      profile={profile}
-                      onAdd={(id) => {
-                        setGear([...selected.wargearIds, id]);
+                      className="mt-2"
+                      open={openGroups.has(key)}
+                      onOpenChange={(open) => {
+                        setGroupOpen(key, open);
                       }}
-                    />
+                      summary={t("wizard.wargear.group", {
+                        kind: t(`wargearKinds.${kind}`),
+                        n: items.length,
+                      })}
+                    >
+                      <WargearTable
+                        kind={kind}
+                        items={items}
+                        price={(w) => wargearPrice(index, profile, w.id)}
+                        onAdd={(id) => {
+                          setGear([...selected.wargearIds, id]);
+                        }}
+                      />
+                    </Collapsible>
                   );
                 })}
               </div>
@@ -138,145 +162,5 @@ export function StepWargear({ warband, index, update }: StepProps) {
         })
       )}
     </div>
-  );
-}
-
-function WargearTable({
-  kind,
-  items,
-  index,
-  profile,
-  onAdd,
-}: {
-  kind: (typeof KINDS)[number];
-  items: Wargear[];
-  index: FactionIndex;
-  profile: FighterProfile;
-  onAdd: (id: string) => void;
-}) {
-  const { t } = useTranslation();
-  const f = useFormatter();
-  const weapon = kind === "melee" || kind === "ranged";
-
-  return (
-    <div className="mt-2 overflow-x-auto">
-      <table className="table-bdc">
-        <caption className="py-1 text-left font-bold">{t(`wargearKinds.${kind}`)}</caption>
-        <thead>
-          <tr>
-            <th scope="col">{t("weapon.name")}</th>
-            {kind === "ranged" && <th scope="col">{t("weapon.rng")}</th>}
-            {weapon && (
-              <>
-                <th scope="col">{t("weapon.atk")}</th>
-                <th scope="col">{t("weapon.rnd")}</th>
-                <th scope="col">{t("weapon.dmg")}</th>
-                <th scope="col">{t("weapon.crit")}</th>
-                <th scope="col">{t("weapon.traits")}</th>
-              </>
-            )}
-            {kind === "armour" && <th scope="col">{t("stats.ar.abbr")}</th>}
-            {!weapon && <th scope="col">{t("weapon.rules")}</th>}
-            <th scope="col">{t("weapon.cost")}</th>
-            <th scope="col">
-              <span className="sr-only">{t("wizard.wargear.add")}</span>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {items.map((w) => (
-            <tr key={w.id}>
-              <th scope="row" className="!bg-transparent !text-on-panel font-normal">
-                {f.text(w.name)}
-              </th>
-              {kind === "ranged" && (
-                <td>{w.profile === null ? "-" : formatRange(w.profile, t("weapon.flame"))}</td>
-              )}
-              {weapon && w.profile !== null && (
-                <>
-                  <td>{f.dice(w.profile.attacks)}</td>
-                  <td>{formatRend(w.profile.rend)}</td>
-                  <td>{f.dice(w.profile.damage)}</td>
-                  <td>{f.dice(w.profile.critDamage)}</td>
-                  <td>
-                    <TraitList wargear={w} />
-                  </td>
-                </>
-              )}
-              {kind === "armour" && <td>{w.armourValue === null ? "-" : `${w.armourValue}+`}</td>}
-              {!weapon && (
-                <td className="text-xs">
-                  {[
-                    w.itemKeywords.includes("held-item") ? t("wizard.wargear.held") : null,
-                    w.rarity !== null ? t("wizard.wargear.rare", { max: w.rarity }) : null,
-                    w.text === null ? null : f.text(w.text),
-                  ]
-                    .filter((x): x is string => x !== null)
-                    .join(" - ") || "-"}
-                  {w.grantsAttack !== null && <GrantedAttack wargear={w} profile={w.grantsAttack} />}
-                </td>
-              )}
-              <td className="whitespace-nowrap">
-                {t("units.silver", { value: wargearPrice(index, profile, w.id) })}
-              </td>
-              <td>
-                <button
-                  type="button"
-                  className="btn btn-solid btn-sm"
-                  aria-label={t("wizard.wargear.addNamed", { name: f.text(w.name) })}
-                  onClick={() => {
-                    onAdd(w.id);
-                  }}
-                >
-                  {t("wizard.wargear.add")}
-                </button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-/**
- * Weapon profile granted by an item (Bestial Companion, Loyal Companion,
- * Bomb Bolt, Demonic Familiar): the item text ends with "the following
- * weapon:", so the profile is shown right under it, as in the book.
- */
-function GrantedAttack({ wargear, profile }: { wargear: Wargear; profile: AttackProfile }) {
-  const { t } = useTranslation();
-  const f = useFormatter();
-  const ranged = profile.range !== undefined;
-
-  return (
-    <table
-      className="mt-1 w-auto border border-on-panel text-xs"
-      aria-label={t("wizard.wargear.grantedNamed", { name: f.text(wargear.name) })}
-      data-testid={`granted-attack-${wargear.id}`}
-    >
-      <thead>
-        <tr>
-          {ranged && <th scope="col">{t("weapon.rng")}</th>}
-          {profile.attacks !== undefined && <th scope="col">{t("weapon.atk")}</th>}
-          <th scope="col">{t("weapon.rnd")}</th>
-          <th scope="col">{t("weapon.dmg")}</th>
-          <th scope="col">{t("weapon.crit")}</th>
-          <th scope="col">{t("weapon.traits")}</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          {ranged && <td>{formatRange(profile, t("weapon.flame"))}</td>}
-          {profile.attacks !== undefined && <td>{f.dice(profile.attacks)}</td>}
-          <td>{formatRend(profile.rend)}</td>
-          <td>{f.dice(profile.damage)}</td>
-          <td>{f.dice(profile.critDamage)}</td>
-          <td>
-            <TraitList keys={profile.traits ?? []} />
-          </td>
-        </tr>
-      </tbody>
-    </table>
   );
 }

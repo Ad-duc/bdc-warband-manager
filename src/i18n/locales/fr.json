@@ -19,7 +19,8 @@
     "menu": "Outils",
     "reminder": "Aide de jeu",
     "battle": "Préparer une bataille",
-    "tutorial": "Tutoriel"
+    "tutorial": "Tutoriel",
+    "compendium": "Arsenal et grimoire"
   },
   "home": {
     "heading": "Vos bandes",
@@ -339,7 +340,8 @@
       "addNamed": "Acheter {{name}}",
       "held": "Objet tenu",
       "rare": "Rare 0-{{max}}",
-      "grantedNamed": "Arme accordée par {{name}}"
+      "grantedNamed": "Arme accordée par {{name}}",
+      "group": "{{kind}} ({{n}})"
     },
     "skills": {
       "none": "Aucun combattant de cette bande ne choisit de compétence ni de sort au recrutement.",
@@ -349,7 +351,9 @@
       "spells": "Sorts fétiches, {{lore}} : {{picked}} sur {{expected}}",
       "casting": "{{type}}, valeur de lancement {{value}}+, critique {{critical}}+",
       "criticalCast": "Lancement critique ({{value}}+) :",
-      "categoryOnly": "{{category}} uniquement"
+      "categoryOnly": "{{category}} uniquement",
+      "pickedIn_one": "{{count}} choisie",
+      "pickedIn_other": "{{count}} choisies"
     },
     "rating": {
       "caption": "Combattants et leur valeur",
@@ -539,6 +543,20 @@
   "reminder": {
     "title": "Aide de jeu",
     "intro": "La feuille d'aide de jeu officielle traduite en français, sur une page A4 : mise en place, séquence du round, traits d'armes, actions, tables de dés. Les numéros de page renvoient aux règles de la version de test 1.03."
+  },
+  "compendium": {
+    "title": "Arsenal et grimoire",
+    "intro": "Compétences, sorts fétiches, armes, armures et objets de toutes les bandes, regroupés par menu puis par faction. Les prix sont ceux des tables de profils ; une liste d'armurerie peut en indiquer un autre.",
+    "faction": "Faction",
+    "allFactions": "Toutes les factions",
+    "openAll": "Tout ouvrir",
+    "closeAll": "Tout fermer",
+    "group": "{{name}} ({{n}})",
+    "groups": {
+      "skills": "Compétences",
+      "spells": "Sorts fétiches"
+    },
+    "commonSkills": "Compétences communes à toutes les bandes"
   },
   "print": {
     "title": "Impression",

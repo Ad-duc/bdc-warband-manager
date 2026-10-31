@@ -12,7 +12,8 @@
  *              "#/changelog" history of the application versions,
  *              "#/card-backs" stand-alone card back generator,
  *              "#/dice" direction dice,
- *              "#/reminder" French reminder sheet, "#/scenarios" and
+ *              "#/reminder" French reminder sheet, "#/compendium" skills,
+ *              spells and wargear of every faction, "#/scenarios" and
  *              "#/scenarios/<n>" scenario reference, "#/battle" battle set-up
  *              (optionally "?warband=<id>" or "?campaign=<id>"),
  *              "#/campaigns/<id>" group campaign.
@@ -36,6 +37,7 @@ export type Route =
   | { name: "cardBacks" }
   | { name: "dice" }
   | { name: "reminder" }
+  | { name: "compendium" }
   | { name: "scenarios"; number: number | null }
   | { name: "battle"; warbandId: string | null; campaignId: string | null }
   | { name: "groupCampaign"; id: string };
@@ -46,6 +48,7 @@ export function parseHash(hash: string): Route {
   if (hash === "#/card-backs") return { name: "cardBacks" };
   if (hash === "#/dice") return { name: "dice" };
   if (hash === "#/reminder") return { name: "reminder" };
+  if (hash === "#/compendium") return { name: "compendium" };
   const scenarios = /^#\/scenarios(?:\/([1-9]))?$/.exec(hash);
   if (scenarios !== null)
     return { name: "scenarios", number: scenarios[1] === undefined ? null : Number(scenarios[1]) };
@@ -111,6 +114,8 @@ export function hrefFor(route: Route): string {
       return "#/dice";
     case "reminder":
       return "#/reminder";
+    case "compendium":
+      return "#/compendium";
     case "scenarios":
       return route.number === null ? "#/scenarios" : `#/scenarios/${route.number}`;
     case "battle":

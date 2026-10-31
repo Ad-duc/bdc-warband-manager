@@ -131,4 +131,9 @@ describe("router", () => {
     expect(hrefFor({ name: "wizard", id: "x" })).toBe("#/warband/x");
     expect(hrefFor({ name: "home" })).toBe("#/");
   });
+
+  it("has a route for the compendium", () => {
+    expect(parseHash("#/compendium")).toEqual({ name: "compendium" });
+    expect(hrefFor({ name: "compendium" })).toBe("#/compendium");
+  });
 });

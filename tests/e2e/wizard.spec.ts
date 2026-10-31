@@ -38,13 +38,16 @@ test("create a valid Swords for Hire warband", async ({ page }) => {
   for (let i = 0; i < 9; i += 1) await dice.nth(i).fill("3");
   await page.getByRole("button", { name: "Suivant" }).click();
 
-  // 4. Wargear
+  // 4. Wargear: each kind of wargear is a closed menu; an open menu stays open for the next fighter.
+  await expect(page.getByRole("button", { name: "Acheter Épée", exact: true })).toBeHidden();
   const equip = async (fighter: string, nth: number, items: string[]) => {
     await page
       .getByRole("group", { name: "Combattant à équiper" })
       .getByRole("button", { name: fighter })
       .nth(nth)
       .click();
+    const closed = page.locator("details:not([open]) > summary");
+    while ((await closed.count()) > 0) await closed.first().click();
     for (const item of items)
       await page
         .getByRole("button", { name: `Acheter ${item}`, exact: true })
@@ -59,10 +62,17 @@ test("create a valid Swords for Hire warband", async ({ page }) => {
   await expect(page.getByTestId("budget-spent")).toHaveText("995 pa");
   await page.getByRole("button", { name: "Suivant" }).click();
 
-  // 5. Skills
+  // 5. Skills: each table is a closed menu until it holds a choice.
   const captain = page.getByRole("region", { name: "Capitaine de la Guilde" });
+  await expect(captain.getByRole("checkbox", { name: /^Cri de ralliement/ })).toBeHidden();
+  await captain.locator("summary", { hasText: "Vieux briscards" }).click();
   await captain.getByRole("checkbox", { name: /^Cri de ralliement/ }).check();
   await captain.getByRole("checkbox", { name: /^Fine gâchette/ }).check();
+  await expect(captain.locator("summary", { hasText: "Vieux briscards" })).toContainText("2 choisies");
+  await page
+    .getByRole("region", { name: "Champion de la Guilde" })
+    .locator("summary", { hasText: "Vieux briscards" })
+    .click();
   await page
     .getByRole("region", { name: "Champion de la Guilde" })
     .getByRole("checkbox", { name: /^Feinte/ })
@@ -113,6 +123,10 @@ test("signature spells show the attack profile and the critical cast", async ({ 
   await page.getByRole("button", { name: "Suivant" }).click();
   await page.getByRole("button", { name: "Recruter Magicien de la Guilde", exact: true }).click();
   await page.getByRole("button", { name: "5 Compétences" }).click();
+  await page
+    .getByRole("region", { name: "Magicien de la Guilde" })
+    .locator("summary", { hasText: "Sorts fétiches" })
+    .click();
 
   // Arcane Missile, p. 63: Rend -1, Damage 1D3, critical cast adds 1 to the Damage value.
   const missile = page
