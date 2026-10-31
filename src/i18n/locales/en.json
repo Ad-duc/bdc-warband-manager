@@ -19,7 +19,8 @@
     "menu": "Tools",
     "reminder": "Reminder sheet",
     "battle": "Prepare a battle",
-    "tutorial": "Tutorial"
+    "tutorial": "Tutorial",
+    "compendium": "Armoury and grimoire"
   },
   "home": {
     "heading": "Your warbands",
@@ -339,7 +340,8 @@
       "addNamed": "Buy {{name}}",
       "held": "Held Item",
       "rare": "Rare 0-{{max}}",
-      "grantedNamed": "Weapon granted by {{name}}"
+      "grantedNamed": "Weapon granted by {{name}}",
+      "group": "{{kind}} ({{n}})"
     },
     "skills": {
       "none": "No fighter of this warband picks skills or spells at recruitment.",
@@ -349,7 +351,9 @@
       "spells": "Signature spells, {{lore}}: {{picked}} of {{expected}}",
       "casting": "{{type}}, casting value {{value}}+, critical {{critical}}+",
       "criticalCast": "Critical cast ({{value}}+):",
-      "categoryOnly": "{{category}} only"
+      "categoryOnly": "{{category}} only",
+      "pickedIn_one": "{{count}} picked",
+      "pickedIn_other": "{{count}} picked"
     },
     "rating": {
       "caption": "Fighters and their value",
@@ -540,6 +544,20 @@
     "title": "Reminder sheet (French)",
     "intro": "The official reminder sheet translated into French: set-up, round sequence, weapon traits, actions, dice tables. Page numbers refer to the playtest v1.03 rules. The print button lays it out on one A4 sheet.",
     "print": "Print the A4 sheet"
+  },
+  "compendium": {
+    "title": "Armoury and grimoire",
+    "intro": "Skills, signature spells, weapons, armour and items of every warband, grouped by menu then by faction. Prices are those of the profile tables; an armoury list may give another one.",
+    "faction": "Faction",
+    "allFactions": "All factions",
+    "openAll": "Open all",
+    "closeAll": "Close all",
+    "group": "{{name}} ({{n}})",
+    "groups": {
+      "skills": "Skills",
+      "spells": "Signature spells"
+    },
+    "commonSkills": "Skills common to every warband"
   },
   "print": {
     "title": "Print",

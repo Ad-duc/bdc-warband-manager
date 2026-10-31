@@ -4,7 +4,7 @@
  *              French interface: home, each wizard step (with an open scroll), the
  *              campaign dashboard (open injuries and battle form), the print
  *              view, the shared page, the rules reader, its search results and its print view,
- *              the changelog, the
+ *              the changelog, the compendium (closed and open), the
  *              scenarios, the battle set-up, a group campaign, the rules
  *              tutorial and the confirmation dialog. WCAG 2.2 A and AA
  *              rules; any violation fails the test with its details.
@@ -64,7 +64,8 @@ for (const locale of ["fr-FR"] as const) {
           .first()
           .click();
         await expect(page.getByRole("heading", { level: 1 })).toHaveText(step);
-        if (step === "Combattants") await page.locator("summary").first().click();
+        if (["Combattants", "Équipement", "Compétences"].includes(step))
+          await page.locator("summary").first().click();
         await audit(page, `wizard ${step}`);
       }
     });
@@ -132,6 +133,14 @@ for (const locale of ["fr-FR"] as const) {
       await page.goto("./#/tutorial/ranged-attack/4");
       await expect(page.getByText('Masqué, 8"')).toBeVisible();
       await audit(page, "ranged tutorial step");
+    });
+
+    test("compendium", async ({ page }) => {
+      await page.goto("./#/compendium");
+      await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+      await audit(page, "compendium");
+      await page.getByRole("button", { name: "Tout ouvrir" }).click();
+      await audit(page, "compendium open");
     });
 
     test("changelog", async ({ page }) => {

@@ -40,6 +40,9 @@ règles et les nouveautés du jeu.
 - **Imprimer** la feuille de bande au format A4, les cartes de combattants au
   format carte à jouer avec leurs dos, et une aide de jeu en français sur une
   page.
+- **Consulter l'arsenal et le grimoire** : toutes les compétences, sorts
+  fétiches, armes, armures et objets du jeu, regroupés dans des menus
+  repliables puis par faction, avec un filtre par faction.
 - **Lire les règles en français** : la traduction complète, chapitre par
   chapitre, avec sommaire, recherche dans tout le livre et glossaire VO-VF. Une faute, une règle mal
   traduite ? Le lien "Proposer une correction" sous chaque titre ouvre un
@@ -99,6 +102,8 @@ opened. Official game website:
   prepared spells) and group campaigns with standings.
 - Printable A4 roster, playing-card size fighter cards with their backs, and
   a one-page French reminder sheet.
+- Armoury and grimoire: every skill, signature spell, weapon, armour and
+  item in collapsible menus, by faction.
 - French translation of the rules (with a link to report a correction on
   GitHub), direction dice, read-only share links and JSON export.
 - Rules tutorial: the melee attack example of the book and a ranged attack

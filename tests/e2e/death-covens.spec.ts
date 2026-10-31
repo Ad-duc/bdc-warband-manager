@@ -45,6 +45,8 @@ test("start a The Hunt Descends warband", async ({ page }) => {
 
   // Wargear step: the Bestial Companion row shows the weapon its text announces.
   await page.getByRole("button", { name: "Suivant" }).click();
+  const items = page.locator("details:not([open]) > summary", { hasText: "Objets" });
+  while ((await items.count()) > 0) await items.first().click();
   const granted = page.getByTestId("granted-attack-bestial-companion").first();
   await expect(granted).toBeVisible();
   await expect(granted).toContainText("-1");

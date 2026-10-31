@@ -17,12 +17,15 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 
 ### Ajouté
 
+- Nouvel écran "Arsenal et grimoire" (bouton de l'en-tête et menu du téléphone) : toutes les compétences, sorts fétiches, armes, armures et objets regroupés dans des menus repliables (compétences, sorts, armes de corps à corps, armes à distance, armures, objets), puis par faction, avec un filtre par faction et les boutons "Tout ouvrir" et "Tout fermer".
 - Liseuse des règles : un champ de recherche trouve un ou plusieurs mots dans tous les chapitres, sans tenir compte des accents ni des majuscules (termes originaux anglais compris) ; les résultats listent chaque section avec un extrait où les mots sont surlignés, et l'ouvrent.
 - Liseuse des règles : nouveau chapitre "Campagne (avant-première)" avec la traduction française de l'avant-première du chapitre Campagne partagée sur le Discord officiel (Curiosités, Explorer la Cité), signalée comme provisoire.
 
 ### Modifié
 
 - Aide de jeu : l'écran l'affiche désormais comme le reste du site (panneau parchemin, titres, tableaux, une ou deux colonnes selon la largeur) au lieu de la page A4 imprimable ; le bouton "Imprimer la feuille A4" imprime toujours la mise en page officielle sur une page.
+- Assistant, étapes Équipement et Compétences : chaque type d'équipement (corps à corps, distance, armures, objets), chaque table de compétences et le domaine de sorts sont des menus repliables avec leur nombre d'entrées. Les menus d'équipement restent ouverts quand on passe à un autre combattant ; une table de compétences s'ouvre d'elle-même quand elle contient un choix.
+- En-tête : les libellés des boutons s'affichent à partir de 1440 px de large, pour que les huit outils tiennent à côté du titre.
 - La liseuse des règles n'affiche plus les termes anglais entre parenthèses : survolez ou touchez un terme français pour voir son terme original dans une infobulle. La version imprimable les omet.
 
 ### Corrigé

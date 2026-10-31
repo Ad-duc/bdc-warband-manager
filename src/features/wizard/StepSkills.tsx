@@ -1,17 +1,21 @@
 /*
  * File:        src/features/wizard/StepSkills.tsx
  * Role:        Step 5: skills and signature spells for the fighters whose
- *              profile grants them. Only eligible tables are shown; a skill
- *              already held by another fighter is disabled with its holder.
+ *              profile grants them. Only eligible tables are shown, each one
+ *              (and the spell lore) in a collapsible menu that opens by
+ *              itself when it holds a choice; a skill already held by
+ *              another fighter is disabled with its holder.
  * Author:      Adrien Duclaud
  * Created:     2026-10-12
  * License:     MIT
  */
 
 import { useTranslation } from "react-i18next";
-import type { AttackProfile, WarbandFighter } from "../../data/schema.ts";
+import type { WarbandFighter } from "../../data/schema.ts";
 import { fitsSkillCategory, isEligible } from "../../rules/index.ts";
-import { formatRange, formatRend, useFormatter } from "../../i18n/text.ts";
+import { useFormatter } from "../../i18n/text.ts";
+import { Collapsible } from "../common/Collapsible.tsx";
+import { SpellCasting, SpellExtra } from "../common/SpellDetails.tsx";
 import { Term } from "../common/Term.tsx";
 import { fighterLabel } from "../warbands/factory.ts";
 import type { StepProps } from "./WizardPage.tsx";
@@ -75,137 +79,111 @@ export function StepSkills({ warband, index, update }: StepProps) {
             {g.skills > 0 &&
               tables
                 .filter((table) => isEligible(fighter, profile, table))
-                .map((table) => (
-                  <fieldset key={table.id} className="mt-3">
-                    <legend className="band title-sub w-full">
-                      {f.text(table.name)}{" "}
-                      <span className="font-body text-sm">({f.text(table.eligibilityLabel)})</span>
-                    </legend>
-                    <ul className="mt-1 space-y-1">
-                      {table.skills.map((skill) => {
-                        const holder = holderOf.get(skill.id);
-                        const mine = fighter.skillIds.includes(skill.id);
-                        const fixed = g.fixedSkillIds.includes(skill.id);
-                        const taken = holder !== undefined && holder.instanceId !== fighter.instanceId;
-                        const wrongCategory = !fitsSkillCategory(fighter, profile, skill);
-                        return (
-                          <li key={skill.id}>
-                            <label className={`flex gap-2 ${taken || wrongCategory ? "opacity-60" : ""}`}>
-                              <input
-                                type="checkbox"
-                                className="mt-1 size-5 shrink-0"
-                                checked={mine}
-                                disabled={fixed || ((taken || wrongCategory) && !mine)}
-                                onChange={() => {
-                                  toggle(fighter, "skillIds", skill.id);
-                                }}
-                              />
-                              <span>
-                                <strong>
-                                  <Term text={skill.name} />
-                                </strong>
-                                {taken && ` (${t("wizard.skills.takenBy", { name: label(holder) })})`}
-                                {wrongCategory &&
-                                  ` (${t("wizard.skills.categoryOnly", {
-                                    category: skill.onlyCategories
-                                      .map((c) => t(`categories.${c}_other`))
-                                      .join(", "),
-                                  })})`}
-                                <span className="block text-sm">{f.text(skill.text)}</span>
-                              </span>
-                            </label>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </fieldset>
-                ))}
+                .map((table) => {
+                  const pickedHere = table.skills.filter((s) => fighter.skillIds.includes(s.id)).length;
+                  return (
+                    <Collapsible
+                      key={table.id}
+                      className="mt-3"
+                      defaultOpen={pickedHere > 0}
+                      summary={
+                        <>
+                          {f.text(table.name)}{" "}
+                          <span className="font-body text-sm">
+                            ({f.text(table.eligibilityLabel)}) -{" "}
+                            {t("wizard.skills.pickedIn", { count: pickedHere })}
+                          </span>
+                        </>
+                      }
+                    >
+                      <fieldset>
+                        <legend className="sr-only">{f.text(table.name)}</legend>
+                        <ul className="mt-1 space-y-1">
+                          {table.skills.map((skill) => {
+                            const holder = holderOf.get(skill.id);
+                            const mine = fighter.skillIds.includes(skill.id);
+                            const fixed = g.fixedSkillIds.includes(skill.id);
+                            const taken = holder !== undefined && holder.instanceId !== fighter.instanceId;
+                            const wrongCategory = !fitsSkillCategory(fighter, profile, skill);
+                            return (
+                              <li key={skill.id}>
+                                <label className={`flex gap-2 ${taken || wrongCategory ? "opacity-60" : ""}`}>
+                                  <input
+                                    type="checkbox"
+                                    className="mt-1 size-5 shrink-0"
+                                    checked={mine}
+                                    disabled={fixed || ((taken || wrongCategory) && !mine)}
+                                    onChange={() => {
+                                      toggle(fighter, "skillIds", skill.id);
+                                    }}
+                                  />
+                                  <span>
+                                    <strong>
+                                      <Term text={skill.name} />
+                                    </strong>
+                                    {taken && ` (${t("wizard.skills.takenBy", { name: label(holder) })})`}
+                                    {wrongCategory &&
+                                      ` (${t("wizard.skills.categoryOnly", {
+                                        category: skill.onlyCategories
+                                          .map((c) => t(`categories.${c}_other`))
+                                          .join(", "),
+                                      })})`}
+                                    <span className="block text-sm">{f.text(skill.text)}</span>
+                                  </span>
+                                </label>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </fieldset>
+                    </Collapsible>
+                  );
+                })}
 
             {lore !== undefined && g.spells > 0 && (
-              <fieldset className="mt-3">
-                <legend className="band title-sub w-full">
-                  {t("wizard.skills.spells", {
-                    lore: f.text(lore.name),
-                    picked: fighter.spellIds.length,
-                    expected: g.spells,
-                  })}
-                </legend>
-                <ul className="mt-1 space-y-1">
-                  {lore.spells.map((spell) => (
-                    <li key={spell.id}>
-                      <label className="flex gap-2">
-                        <input
-                          type="checkbox"
-                          className="mt-1 size-5 shrink-0"
-                          checked={fighter.spellIds.includes(spell.id)}
-                          onChange={() => {
-                            toggle(fighter, "spellIds", spell.id);
-                          }}
-                        />
-                        <span>
-                          <strong>
-                            {spell.roll} - <Term text={spell.name} />
-                          </strong>{" "}
-                          <span className="text-sm">
-                            {t("wizard.skills.casting", {
-                              type: t(`spellTypes.${spell.spellType}`),
-                              value: spell.castingValue,
-                              critical: spell.criticalCastValue,
-                            })}
+              <Collapsible
+                className="mt-3"
+                defaultOpen={fighter.spellIds.length > 0}
+                summary={t("wizard.skills.spells", {
+                  lore: f.text(lore.name),
+                  picked: fighter.spellIds.length,
+                  expected: g.spells,
+                })}
+              >
+                <fieldset>
+                  <legend className="sr-only">{f.text(lore.name)}</legend>
+                  <ul className="mt-1 space-y-1">
+                    {lore.spells.map((spell) => (
+                      <li key={spell.id}>
+                        <label className="flex gap-2">
+                          <input
+                            type="checkbox"
+                            className="mt-1 size-5 shrink-0"
+                            checked={fighter.spellIds.includes(spell.id)}
+                            onChange={() => {
+                              toggle(fighter, "spellIds", spell.id);
+                            }}
+                          />
+                          <span>
+                            <strong>
+                              {spell.roll} - <Term text={spell.name} />
+                            </strong>{" "}
+                            <SpellCasting spell={spell} />
+                            <span className="block text-sm">{f.text(spell.text)}</span>
                           </span>
-                          <span className="block text-sm">{f.text(spell.text)}</span>
-                        </span>
-                      </label>
-                      <div className="ml-7 text-sm">
-                        {spell.attack !== null && <SpellAttack profile={spell.attack} />}
-                        <p>
-                          <strong>
-                            {t("wizard.skills.criticalCast", { value: spell.criticalCastValue })}
-                          </strong>{" "}
-                          {f.text(spell.criticalText)}
-                        </p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </fieldset>
+                        </label>
+                        <div className="ml-7">
+                          <SpellExtra spell={spell} />
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </fieldset>
+              </Collapsible>
             )}
           </section>
         );
       })}
-    </div>
-  );
-}
-
-/** Attack profile printed under an Attack spell: only the columns the book gives. */
-function SpellAttack({ profile }: { profile: AttackProfile }) {
-  const { t } = useTranslation();
-  const f = useFormatter();
-  const range = profile.range !== undefined;
-  const attacks = profile.attacks !== undefined;
-  const crit = profile.critDamage !== undefined;
-  return (
-    <div className="my-1 overflow-x-auto">
-      <table className="table-bdc w-auto">
-        <thead>
-          <tr>
-            {range && <th scope="col">{t("weapon.rng")}</th>}
-            {attacks && <th scope="col">{t("weapon.atk")}</th>}
-            <th scope="col">{t("weapon.rnd")}</th>
-            <th scope="col">{t("weapon.dmg")}</th>
-            {crit && <th scope="col">{t("weapon.crit")}</th>}
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            {range && <td>{formatRange(profile, t("weapon.flame"))}</td>}
-            {attacks && <td>{f.dice(profile.attacks)}</td>}
-            <td>{formatRend(profile.rend)}</td>
-            <td>{f.dice(profile.damage)}</td>
-            {crit && <td>{f.dice(profile.critDamage)}</td>}
-          </tr>
-        </tbody>
-      </table>
     </div>
   );
 }

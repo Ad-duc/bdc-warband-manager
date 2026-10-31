@@ -3,7 +3,7 @@
  * Role:        Root component: page layout and the screen of the current
  *              route (home, creation wizard, campaign dashboard, print view,
  *              shared warband, French rules reader and its print view,
- *              changelog, scenarios,
+ *              changelog, compendium, scenarios,
  *              battle set-up, group campaign, rules tutorial or direction
  *              dice). Screens other than the home
  *              page are loaded on demand to keep the first download small.
@@ -43,6 +43,9 @@ const DirectionDiePage = lazy(async () => ({
 const ReminderPage = lazy(async () => ({
   default: (await import("./features/reminder/ReminderPage.tsx")).ReminderPage,
 }));
+const CompendiumPage = lazy(async () => ({
+  default: (await import("./features/compendium/CompendiumPage.tsx")).CompendiumPage,
+}));
 const ScenariosPage = lazy(async () => ({
   default: (await import("./features/scenarios/ScenariosPage.tsx")).ScenariosPage,
 }));
@@ -75,6 +78,7 @@ export function App() {
         {route.name === "changelog" && <ChangelogPage />}
         {route.name === "cardBacks" && <CardBacksPage />}
         {route.name === "reminder" && <ReminderPage />}
+        {route.name === "compendium" && <CompendiumPage />}
         {route.name === "dice" && <DirectionDiePage />}
         {route.name === "scenarios" && <ScenariosPage number={route.number} />}
         {route.name === "battle" && (
