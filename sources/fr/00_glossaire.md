@@ -1,6 +1,6 @@
 # Black Death City - Playtest v1.03 : glossaire VO > VF
 
-Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné. Mis à jour le 13/10/2026 (version 6) : noms de factions, mots-clés de faction et nom commun "coven" traduits (décision H17). Mis à jour le 14/10/2026 (version 7) : Wizard devient Magicien (décision H18). Mis à jour le 14/10/2026 (version 8) : noms de combattants traduits (décision H19). Mis à jour le 15/10/2026 (version 9) : Vermigènes devient Vermineux (décision H20), Prêtre Véroleux devient Prêtre Véroleux (décision H21). Mis à jour le 26/10/2026 (version 10) : 14 termes de l'avant-première du chapitre Campagne (Curiosités, Explorer la Cité), marqués "Ajout avant-première Campagne", à confirmer à la parution.
+Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné. Mis à jour le 13/10/2026 (version 6) : noms de factions, mots-clés de faction et nom commun "coven" traduits (décision H17). Mis à jour le 14/10/2026 (version 7) : Wizard devient Magicien (décision H18). Mis à jour le 14/10/2026 (version 8) : noms de combattants traduits (décision H19). Mis à jour le 15/10/2026 (version 9) : Vermigènes devient Vermineux (décision H20), Prêtre Véroleux devient Prêtre Véroleux (décision H21). Mis à jour le 26/10/2026 (version 10) : 14 termes de l'avant-première du chapitre Campagne (Curiosités, Explorer la Cité), marqués "Ajout avant-première Campagne", à confirmer à la parution. Mis à jour le 10/11/2026 (version 11) : 176 termes du chapitre 5, Campagnes, de la v1.10 (possessions, séquence d'après-bataille, curiosités, reliques), marqués "Ajout v1.10".
 
 ## Ligne directrice
 
@@ -18,7 +18,7 @@ Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les aj
 
 ## Mode d'emploi
 
-- Le glossaire compte 1156 entrées réparties en 27 catégories. Il est trié par catégorie, puis par ordre alphabétique de la VO.
+- Le glossaire compte 1332 entrées réparties en 27 catégories. Il est trié par catégorie, puis par ordre alphabétique de la VO.
 - "Imposé" : terme repris tel quel de ton glossaire de départ.
 - "VO conservée" : terme laissé en anglais. Depuis les décisions H17 et H19, les noms de factions, leurs mots-clés et les noms de combattants sont traduits, avec le terme anglais entre parenthèses à chaque occurrence.
 - "Tranché (Hn)" : point que tu as arbitré. "Voir Hn" : entrée qui découle de cette décision.
@@ -76,28 +76,28 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 
 | Code | Catégorie | Entrées |
 |---|---|---|
-| 01 | Général | 124 |
+| 01 | Général | 125 |
 | 02 | Formulations de règles | 27 |
 | 03 | Types de combattants et mots-clés | 36 |
 | 04 | Valeurs et profils | 42 |
 | 05 | Séquence de jeu | 76 |
 | 06 | États et situations | 49 |
 | 07 | Combat | 64 |
-| 08 | Traits d'armes | 19 |
+| 08 | Traits d'armes | 20 |
 | 09 | Magie | 33 |
 | 10 | Terrain | 27 |
 | 11 | Scénarios : termes généraux | 50 |
 | 12 | Scénarios : titres et objectifs | 26 |
 | 13 | Rebondissements et tables de scénario | 50 |
-| 14 | Campagne et feuille de bande | 50 |
-| 15 | Factions et combattants | 60 |
+| 14 | Campagne et feuille de bande | 171 |
+| 15 | Factions et combattants | 61 |
 | 16 | Origines | 18 |
 | 17 | Repaires et règles de repaire | 51 |
 | 18 | Armureries et listes d'équipement | 23 |
-| 19 | Armes de corps à corps | 43 |
-| 20 | Armes à distance | 27 |
+| 19 | Armes de corps à corps | 52 |
+| 20 | Armes à distance | 30 |
 | 21 | Armures | 5 |
-| 22 | Objets | 30 |
+| 22 | Objets | 70 |
 | 23 | Domaines de magie et sorts | 59 |
 | 24 | Compétences | 65 |
 | 25 | Règles spéciales de combattants | 47 |
@@ -182,6 +182,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Pick Skills | Choisir les compétences | Général | Étape 5 du recrutement d'une bande. |
 | player | joueur | Général |  |
 | playtest | version de test | Général | "Playtest v1.03" = "Version de test v1.03" ; "playtest document" = document de test. |
+| Playtest Note | Note de test | Général | Ajout v1.10. Encadré de l'auteur sur une règle encore provisoire. |
 | profile | profil | Général | "weapon profile" = profil d'arme. |
 | Quick Reference Sheet | aide de jeu | Général | Document séparé cité p. 2. Même VF que "Reminder Sheet", la VO employant deux noms pour la même feuille. |
 | ranged weapon | arme à distance | Général |  |
@@ -573,6 +574,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Off-hand | Main secondaire | Traits d'armes | Imposé. |
 | One-use | Usage unique | Traits d'armes | Imposé. |
 | Poison | Poison | Traits d'armes | Imposé. |
+| Polearm | Arme d'hast | Traits d'armes | Ajout v1.10. Validé le 09/11/2026. Permet un objet tenu ; l'arme gagne alors Encombrant. |
 | Rare | Rare | Traits d'armes | Imposé. Notation : "Rare 0-1". |
 | Reload | Rechargement | Traits d'armes | Imposé. |
 | Scare | Effroi | Traits d'armes | Imposé. |
@@ -796,56 +798,177 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
+| A Curious Find | Une curieuse trouvaille | Campagne et feuille de bande | Ajout v1.10. Exploration 21-36. |
+| A Hidden Stash | Un butin caché | Campagne et feuille de bande | Ajout v1.10. Exploration 53-54. |
+| A Poison Package | Un colis de poison | Campagne et feuille de bande | Ajout v1.10. Bonus d'outsider, 3. |
+| A Shallow Grave | Une tombe peu profonde | Campagne et feuille de bande | Ajout v1.10. Exploration 42-43. |
+| A Tincture of Choice | Une teinture au choix | Campagne et feuille de bande | Ajout v1.10. Bonus d'outsider, 4. |
+| A Treasure Horde | Un magot | Campagne et feuille de bande | Ajout v1.10. Exploration 62-64. |
 | advancement | progression | Campagne et feuille de bande | "receive their next advancement" = obtenir sa prochaine progression. |
+| advancement roll | jet de progression | Campagne et feuille de bande | Ajout v1.10. |
+| advancement table | table de progression | Campagne et feuille de bande | Ajout v1.10. |
+| Alchemists' Wares | Articles de l'alchimiste | Campagne et feuille de bande | Ajout v1.10. Règle de l'Alchimiste insidieux. |
+| Apothecary's Wares | Articles de l'apothicaire | Campagne et feuille de bande | Ajout v1.10. Règle de l'Échoppe de l'herboriste. |
+| Arrival by Tunnel | Arrivée par le tunnel | Campagne et feuille de bande | Ajout v1.10. Règle du Tunnel des catacombes. |
+| assume command | assumer le commandement | Campagne et feuille de bande | Ajout v1.10. Validé le 09/11/2026. |
+| Auction House | Salle des ventes | Campagne et feuille de bande | Ajout v1.10. Possession 54. |
 | Banished | Banni | Campagne et feuille de bande | Table des blessures des Démons, résultat 11-16. |
 | Battles Fought | Batailles livrées | Campagne et feuille de bande | Champ de la feuille de bande. |
+| Beast Injury Table | Table des blessures des Bêtes | Campagne et feuille de bande | Ajout v1.10. Variante de "Beasts Injury Table". |
 | Beasts Injury Table | Table des blessures des Bêtes | Campagne et feuille de bande | Citée p. 116 ; absente de la v1.03. |
+| Blackdrop Widow | Veuve à la goutte noire | Campagne et feuille de bande | Ajout v1.10. Possession 62. |
 | Blighted Cloister Epithets | Épithètes du Cloître gangrené | Campagne et feuille de bande | Table D66 traduite (catégorie 26). |
+| Blinded In One Eye | Borgne | Campagne et feuille de bande | Ajout v1.10. Table des blessures, 21. |
+| blood leeching | saignée | Campagne et feuille de bande | Ajout v1.10. |
 | bonus experience | expérience bonus | Campagne et feuille de bande |  |
+| Broken Leg | Jambe cassée | Campagne et feuille de bande | Ajout v1.10. Table des blessures, 23. |
+| Burnt Down Smithy | Forge incendiée | Campagne et feuille de bande | Ajout v1.10. Possession 31-32. |
 | Campaign Rules | Règles de campagne | Campagne et feuille de bande |  |
+| Catacombs Tunnel | Tunnel des catacombes | Campagne et feuille de bande | Ajout v1.10. Possession 56. |
+| Chronic Black Rot | Pourriture noire chronique | Campagne et feuille de bande | Ajout v1.10. Table des blessures, 26. |
 | climbing score | score d'escalade | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). Le beffroi. |
+| Collapse | Effondrement | Campagne et feuille de bande | Ajout v1.10. Règle de la Mine d'argent. |
+| Collapsed Mine | Mine effondrée | Campagne et feuille de bande | Ajout v1.10. Possession 44. |
+| Combat Prowess | Prouesse au combat | Campagne et feuille de bande | Ajout v1.10. Jet de progression, 5. |
+| Crossroads | Carrefour | Campagne et feuille de bande | Ajout v1.10. Exploration 15-16. |
 | Curiosities | Curiosités | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). "Curiosities Table" et "Curiosity table" = table des curiosités. |
+| Curiosity (keyword) | Curiosité | Campagne et feuille de bande | Ajout v1.10. Mot-clé d'objet. |
+| Curious Items | Objets curieux | Campagne et feuille de bande | Ajout v1.10. Table des curiosités, 51-56. |
+| Curious Wares | Articles curieux | Campagne et feuille de bande | Ajout v1.10. Règle de la Vieille boutique de curiosités. |
+| Danger Lies Ahead... | Un danger devant... | Campagne et feuille de bande | Ajout v1.10. Exploration 11-13 ; remplace "Shadows Lie Ahead..." de l'avant-première. |
+| Dead-end | Impasse | Campagne et feuille de bande | Ajout v1.10. Exploration 14 ; aussi résultat 3-5 des catacombes ("Dead End"). |
 | Death of a Leader | Mort d'un Chef | Campagne et feuille de bande |  |
 | Demon Injury Table | Table des blessures des Démons | Campagne et feuille de bande |  |
+| Depleted | Épuisée | Campagne et feuille de bande | Ajout v1.10. Règle de la Mine effondrée. |
+| Dilapidated Guild Shoppe | Échoppe de guilde délabrée | Campagne et feuille de bande | Ajout v1.10. Possession 25-26. |
+| Discovered | Découvert | Campagne et feuille de bande | Ajout v1.10. Règle de l'Entrepôt du marchand. |
+| Downtime | Temps mort | Campagne et feuille de bande | Ajout v1.10. Validé le 09/11/2026. Étape 6. |
+| Drawbridge Crossing | Pont-levis | Campagne et feuille de bande | Ajout v1.10. Possession 46. |
+| Drink Deep | Boire à longs traits | Campagne et feuille de bande | Ajout v1.10. Règle de la Vieille taverne. |
+| Drink Pure Waters | Boire les eaux pures | Campagne et feuille de bande | Ajout v1.10. Règle du Puits du saint. |
+| Drink Unclean Waters | Boire les eaux impures | Campagne et feuille de bande | Ajout v1.10. Règle du Puits souillé. |
+| Duplicate Injuries | Blessures en double | Campagne et feuille de bande | Ajout v1.10. |
+| Eel-farm | Élevage d'anguilles | Campagne et feuille de bande | Ajout v1.10. Possession 41. |
 | Eligible Champion | Champion éligible | Campagne et feuille de bande |  |
 | Enraged | Furieux | Campagne et feuille de bande | Table des blessures des Démons, résultat 66. "enragé" est réservé à "rabid" (Ferveur enragée). |
 | epithet | épithète | Campagne et feuille de bande |  |
 | experience points | points d'expérience | Campagne et feuille de bande |  |
 | exploration re-roll | relance d'exploration | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). |
+| Exploration Table | table d'exploration | Campagne et feuille de bande | Ajout v1.10. |
+| Fated | Élu du destin | Campagne et feuille de bande | Ajout v1.10. Jet de progression, 6. |
 | Fighters Lost | Combattants perdus | Campagne et feuille de bande | Champ de la feuille de bande. |
+| forfeit | abandonner | Campagne et feuille de bande | Ajout v1.10. Abandonner une possession. |
 | Former Leader | Ancien Chef | Campagne et feuille de bande |  |
+| Fractured Arm | Bras fracturé | Campagne et feuille de bande | Ajout v1.10. Table des blessures, 22. |
 | Fractured Essence | Essence fracturée | Campagne et feuille de bande | Table des blessures des Démons, résultat 21-36. |
+| Frayed Nerves | Nerfs à vif | Campagne et feuille de bande | Ajout v1.10. Table des blessures, 25. |
+| Fresh from the Canals | Fraîches des canaux | Campagne et feuille de bande | Ajout v1.10. Règle du Marchand de sangsues. |
 | full recovery | rétablissement complet | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). Résultat de jet de blessure cité par le Memento mori d'ivoire. |
+| Going, Going, Gone | Une fois, deux fois, adjugé | Campagne et feuille de bande | Ajout v1.10. Règle de la Salle des ventes. |
+| Grave Digging | Fouilleurs de tombes | Campagne et feuille de bande | Ajout v1.10. Règle du Vieux cimetière. |
+| Gut Wound | Blessure au ventre | Campagne et feuille de bande | Ajout v1.10. Table des blessures, 16. |
+| Hallowed Ground | Terre consacrée | Campagne et feuille de bande | Ajout v1.10. Exploration 65. |
+| Head Injury | Blessure à la tête | Campagne et feuille de bande | Ajout v1.10. Table des blessures, 24. |
+| Herbalist's Shoppe | Échoppe de l'herboriste | Campagne et feuille de bande | Ajout v1.10. Possession 52. |
+| Heroic Escape | Évasion héroïque | Campagne et feuille de bande | Ajout v1.10. Table des blessures, 66. |
+| Hiring Workers | Engager des ouvriers | Campagne et feuille de bande | Ajout v1.10. Règle de la Mine d'argent. |
 | Holdings Ransacked | Possessions saccagées | Campagne et feuille de bande | Champ de la feuille de bande. |
 | Holdings Table | table des possessions | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). |
 | House | Maison | Campagne et feuille de bande | Maison noble des Cabales de la Mort ("House Dragul" = Maison Dragul). |
+| Hunted in Darkness... | Traqués dans les ténèbres... | Campagne et feuille de bande | Ajout v1.10. Exploration 61. |
 | income | revenu | Campagne et feuille de bande | "collect income" = percevoir le revenu. |
 | injury | blessure | Campagne et feuille de bande |  |
+| Injury Table | table des blessures | Campagne et feuille de bande | Ajout v1.10. Remplace "lasting injury table" de la v1.03. |
+| Insidious Alchemist | Alchimiste insidieux | Campagne et feuille de bande | Ajout v1.10. Possession 55. |
+| Intact Town House | Maison de ville intacte | Campagne et feuille de bande | Ajout v1.10. Possession 23-24. |
+| Into the Catacombs... | Dans les catacombes... | Campagne et feuille de bande | Ajout v1.10. Exploration 66. |
 | Jars of Canal Leeches | Bocaux de sangsues des canaux | Campagne et feuille de bande | Champ de la feuille de bande, sous le butin ; aucune règle associée dans la v1.03. |
+| Jewelsmith | Joaillier | Campagne et feuille de bande | Ajout v1.10. Possession 36. |
 | Laid to Rest | Repos éternel | Campagne et feuille de bande | Table des blessures des Squelettes et des Asservis, résultat 1. |
 | lasting injury | blessure durable | Campagne et feuille de bande | "lasting injury table" = table des blessures durables. |
 | lasting injury table | table des blessures durables | Campagne et feuille de bande | Ajout du lot 06. Table de campagne citée p. 70, absente de la v1.03. |
+| leech (verb) | saigner | Campagne et feuille de bande | Ajout v1.10. Saigner un combattant aux sangsues ; remplace "soigner" (treat) de l'avant-première. |
+| Leech Pools | Bassins à sangsues | Campagne et feuille de bande | Ajout v1.10. Exploration 45-46. |
+| leeching roll | jet de saignée | Campagne et feuille de bande | Ajout v1.10. |
+| Leechmonger | Marchand de sangsues | Campagne et feuille de bande | Ajout v1.10. Possession 45. |
+| Lessons Learned | Leçons retenues | Campagne et feuille de bande | Ajout v1.10. Gain d'expérience. |
 | level | niveau | Campagne et feuille de bande | "advance levels" = gagner des niveaux. |
 | level of Black Rot | niveau de Pourriture noire | Campagne et feuille de bande | Règle de campagne à venir (case "Black Rot" de la feuille de bande). |
+| Major Relics | Reliques majeures | Campagne et feuille de bande | Ajout v1.10. Table des reliques, 41-46. |
+| Merchant's Warehouse | Entrepôt du marchand | Campagne et feuille de bande | Ajout v1.10. Possession 63. |
+| Minor Relics | Reliques mineures | Campagne et feuille de bande | Ajout v1.10. Table des reliques, 11-36. |
+| Moneylender's House | Maison du prêteur | Campagne et feuille de bande | Ajout v1.10. Possession 35. |
 | Names (name tables) | Noms | Campagne et feuille de bande | "Guild Mercenary Names" = Noms des Mercenaires de la Guilde, etc. Le contenu de ces tables D66 n'est pas traduit. |
+| Old Cemetery | Vieux cimetière | Campagne et feuille de bande | Ajout v1.10. Possession 51. |
+| Old Tavern | Vieille taverne | Campagne et feuille de bande | Ajout v1.10. Possession 33-34. |
+| On Your Own... | Livrés à vous-mêmes... | Campagne et feuille de bande | Ajout v1.10. Bonus d'outsider, 1. |
 | permanent injury | blessure permanente | Campagne et feuille de bande |  |
+| Pile of Daggers | Tas de dagues | Campagne et feuille de bande | Ajout v1.10. Table de la Forge incendiée. |
+| Poisonous Wares | Articles empoisonnés | Campagne et feuille de bande | Ajout v1.10. Règle de la Veuve à la goutte noire. |
+| prize holding | possession en jeu | Campagne et feuille de bande | Ajout v1.10. Validé le 09/11/2026. |
+| Prized Finds | Trouvailles précieuses | Campagne et feuille de bande | Ajout v1.10. Table des curiosités, 61-66. |
 | promote | promouvoir | Campagne et feuille de bande |  |
+| Quiet Night | Nuit calme | Campagne et feuille de bande | Ajout v1.10. Exploration 44. |
+| rank | rang | Campagne et feuille de bande | Ajout v1.10. Validé le 09/11/2026. |
+| ransack | saccager | Campagne et feuille de bande | Ajout v1.10. "Ransack:" en tête de ligne = Saccage. |
+| ransack icon | icône de saccage | Campagne et feuille de bande | Ajout v1.10. |
+| Rat-catcher's Shack | Cabane du chasseur de rats | Campagne et feuille de bande | Ajout v1.10. Possession 21-22. |
+| Recuperate Injuries | Guérir des blessures | Campagne et feuille de bande | Ajout v1.10. Activité de l'étape 6. |
+| Relic (keyword) | Relique | Campagne et feuille de bande | Ajout v1.10. Mot-clé d'objet et d'arme. |
+| Relic Weapons | Armes reliques | Campagne et feuille de bande | Ajout v1.10. Table des reliques, 51-66. |
+| retire | mettre à la retraite | Campagne et feuille de bande | Ajout v1.10. |
 | returns empty handed | revient bredouille | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). Rubrique "Returning Empty Handed" = Revenir bredouille. |
+| Ruined Hovel | Masure en ruine | Campagne et feuille de bande | Ajout v1.10. Possession 11-16. |
+| Ruined Tower | Tour en ruine | Campagne et feuille de bande | Ajout v1.10. Possession 43. |
+| Run Dry | À sec | Campagne et feuille de bande | Ajout v1.10. Règle de l'Élevage d'anguilles. |
+| Saint's Well | Puits du saint | Campagne et feuille de bande | Ajout v1.10. Possession 61. |
+| Salt Cellar | Cave à sel | Campagne et feuille de bande | Ajout v1.10. Possession 53. |
 | scouting party | groupe d'éclaireurs | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). Distinct de "search party" (groupe de fouille), à confirmer. |
+| Secluded Holding | Possession isolée | Campagne et feuille de bande | Ajout v1.10. Exploration 55-56. |
+| Seize Enemy Holding | Saisir une possession ennemie | Campagne et feuille de bande | Ajout v1.10. Option de l'étape 1. |
+| Seize the Prize | Saisir la possession en jeu | Campagne et feuille de bande | Ajout v1.10. Option de l'étape 1. |
+| Shield Rack | Râtelier de boucliers | Campagne et feuille de bande | Ajout v1.10. Table de la Forge incendiée. |
+| Silver Bounty | Prime en argent | Campagne et feuille de bande | Ajout v1.10. Bonus d'outsider, 5. |
+| Silver Mine | Mine d'argent | Campagne et feuille de bande | Ajout v1.10. Possession 65. |
 | Skeleton & Thrall Injury Table | Table des blessures des Squelettes et des Asservis | Campagne et feuille de bande |  |
 | Skeletons & Thralls | Squelettes et Asservis | Campagne et feuille de bande | Rubrique des règles de campagne des Cabales de la Mort. |
+| Speed | Vitesse | Campagne et feuille de bande | Ajout v1.10. Jet de progression, 2. |
+| Spy the City | Épier la Cité | Campagne et feuille de bande | Ajout v1.10. Règle de la Tour en ruine. |
+| Stand Ground (aftermath option) | Tenir bon | Campagne et feuille de bande | Ajout v1.10. Option de l'étape 1 ; même VF que la compétence Stand Ground. |
 | standard injury table | table des blessures standard | Campagne et feuille de bande |  |
+| stronghold level | niveau de repaire | Campagne et feuille de bande | Ajout v1.10. |
+| stronghold upgrade | amélioration de repaire | Campagne et feuille de bande | Ajout v1.10. Validé le 09/11/2026. |
+| Surviving | Survivre | Campagne et feuille de bande | Ajout v1.10. Gain d'expérience. |
+| Swarm of Rats | Nuée de rats | Campagne et feuille de bande | Ajout v1.10. Exploration 41. |
+| Tainted Well | Puits souillé | Campagne et feuille de bande | Ajout v1.10. Possession 42. |
+| Taking an Enemy Down | Mettre un ennemi hors de combat | Campagne et feuille de bande | Ajout v1.10. Gain d'expérience. |
 | temporary injury | blessure temporaire | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). |
 | tens dice | dé des dizaines | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). "units dice" = dé des unités. |
+| The Belfry | Le beffroi | Campagne et feuille de bande | Ajout v1.10. Exploration 51-52. |
+| The Burden of Command | Le fardeau du commandement | Campagne et feuille de bande | Ajout v1.10. Règle du Champion qui assume le commandement. |
+| The Hidden Holding | La possession cachée | Campagne et feuille de bande | Ajout v1.10. Bonus d'outsider, 6. |
+| The Trials of the Tower | Les épreuves de la tour | Campagne et feuille de bande | Ajout v1.10. Règle de la Tour du magicien. |
+| The Water Blackens | L'eau noircit | Campagne et feuille de bande | Ajout v1.10. Règle du Puits du saint. |
 | treat (a fighter) | soigner | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). Bocal de sangsues des canaux. |
+| Trinkets | Babioles | Campagne et feuille de bande | Ajout v1.10. Table des curiosités, 11-16. |
 | Type | Type | Campagne et feuille de bande | Champ de la feuille de bande. |
+| underdog bonus | bonus d'outsider | Campagne et feuille de bande | Ajout v1.10. Validé le 09/11/2026. |
+| Underdog Bonus table | table des bonus d'outsider | Campagne et feuille de bande | Ajout v1.10. |
 | Unharmed | Intact | Campagne et feuille de bande | Table des blessures des Démons, résultat 41-65. |
 | units dice | dé des unités | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). |
 | Unscathed | Indemne | Campagne et feuille de bande | Table des blessures des Squelettes et des Asservis, résultat 2-6. |
 | Vial of Poison | Fiole de poison | Campagne et feuille de bande | Objet cité p. 115, non décrit dans la v1.03. |
 | Victories Won | Victoires remportées | Campagne et feuille de bande | Champ de la feuille de bande. |
+| Wall of Swords | Mur d'épées | Campagne et feuille de bande | Ajout v1.10. Table de la Forge incendiée. |
 | Warband Name | Nom de la bande | Campagne et feuille de bande | Champ de la feuille de bande. |
+| ward (Wizard's Tower) | protection | Campagne et feuille de bande | Ajout v1.10. Les 3 protections de la Tour du magicien. |
 | Wargear, Spells, Skills, Injuries, etc | Équipement, sorts, compétences, blessures, etc. | Campagne et feuille de bande | Champ de la feuille de bande. |
+| Whispers and Spies | Murmures et espions | Campagne et feuille de bande | Ajout v1.10. Bonus d'outsider, 2. |
+| Wits | Vivacité | Campagne et feuille de bande | Ajout v1.10. Jet de progression, 1. |
+| Wizard's Tower | Tour du magicien | Campagne et feuille de bande | Ajout v1.10. Possession 66. |
+| Wondrous Tonics | Toniques merveilleux | Campagne et feuille de bande | Ajout v1.10. Table des curiosités, 41-46. |
+| X Marks the Spot | La croix marque l'endroit | Campagne et feuille de bande | Ajout v1.10. Table de la Carte au trésor. |
+| Ye Olde Curiosity Shoppe | Vieille boutique de curiosités | Campagne et feuille de bande | Ajout v1.10. Possession 64. |
 
 ## 15. Factions et combattants
 
@@ -886,6 +1009,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Knight-Abbot | Chevalier-Abbé | Factions et combattants | Tranché (H19). Combattant du Cloître gangrené. L'origine L'Oint cite un "Knight-Abbot Noble" (p. 114). |
 | Lycanfell Beast | Bête lycanthrope | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort (forme transformée). |
 | Lycanfell Noble | Noble lycanthrope | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
+| Manservant | Serviteur | Factions et combattants | Ajout v1.10. Validé le 09/11/2026. Combattant des Cabales de la Mort. |
 | Mercenary Ogre | Ogre mercenaire | Factions et combattants | Tranché (H19). Combattant des Mercenaires de la Guilde. |
 | Misbegotten | Bâtard du sang | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. |
 | Necromancer | Nécromancien | Factions et combattants | Tranché (H19). Combattant des Cabales de la Mort. Le nom commun "necromancer" du texte d'ambiance devient "nécromancien". |
@@ -1026,6 +1150,9 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Arcane Staff | Bâton arcanique | Armes de corps à corps |  |
 | Axe | Hache | Armes de corps à corps |  |
 | Biting Fangs | Crocs mordants | Armes de corps à corps | Arme naturelle de la Chauve-souris sinistre. |
+| Black Flail | Fléau noir | Armes de corps à corps | Ajout v1.10. Relique 61. |
+| Blades of Ruination | Lames de la ruine | Armes de corps à corps | Ajout v1.10. Table de la Lame légendaire (autres factions). |
+| Blades of the Saints | Lames des Saints | Armes de corps à corps | Ajout v1.10. Table de la Lame légendaire (Mercenaires de la Guilde). |
 | Club | Gourdin | Armes de corps à corps | Exemple p. 14 et équipement du Squelette invoqué. |
 | Club/Mace/Hammer | Gourdin/Masse/Marteau | Armes de corps à corps |  |
 | Crushing Bulk | Carcasse écrasante | Armes de corps à corps | Arme naturelle de l'Engin roulant. "Carcasse" pour ne pas réemployer "Masse" (Mace). |
@@ -1036,6 +1163,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Demonic Rot Blade | Lame de pourriture démoniaque | Armes de corps à corps |  |
 | Demonic Rot Maw | Gueule de pourriture démoniaque | Armes de corps à corps | Arme naturelle du Rejeton de la Pourriture. |
 | Demonic Rot Strike | Frappe de pourriture démoniaque | Armes de corps à corps | Arme naturelle du Pourrisson. |
+| Dwarven Axe | Hache naine | Armes de corps à corps | Ajout v1.10. Relique 55. |
 | Ensorcelled Halberd | Hallebarde ensorcelée | Armes de corps à corps |  |
 | Ensorcelled Weapon | Arme ensorcelée | Armes de corps à corps |  |
 | Flail | Fléau | Armes de corps à corps |  |
@@ -1043,16 +1171,21 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Great Demonic Rot Blade | Grande lame de pourriture démoniaque | Armes de corps à corps |  |
 | Great Mace | Grande masse | Armes de corps à corps |  |
 | Halberd | Hallebarde | Armes de corps à corps |  |
+| Halberd of the City | Hallebarde de la Cité | Armes de corps à corps | Ajout v1.10. Relique 63. |
+| Headsman's Axe | Hache du bourreau | Armes de corps à corps | Ajout v1.10. Relique 62. |
 | Heavy Axe | Hache lourde | Armes de corps à corps | Ne possède pas le trait Lourd. |
 | Heavy-Flail | Fléau lourd | Armes de corps à corps | Ne possède pas le trait Lourd. |
 | Iron Claw | Griffe de fer | Armes de corps à corps |  |
+| Legendary Blade | Lame légendaire | Armes de corps à corps | Ajout v1.10. Relique 64-66. |
 | Nasty Bite | Morsure infecte | Armes de corps à corps | Arme naturelle du Rat géant. |
 | Necrotic Bite | Morsure nécrotique | Armes de corps à corps | Arme naturelle du Loup sinistre. |
+| Noble's Rapier | Rapière de noble | Armes de corps à corps | Ajout v1.10. Arme de départ du Noble et relique 56. |
 | Ogre Blade | Lame d'ogre | Armes de corps à corps |  |
 | Ogre Great Weapon | Grande arme d'ogre | Armes de corps à corps |  |
 | Ogre Mace | Masse d'ogre | Armes de corps à corps |  |
 | Oversized Claw | Griffe démesurée | Armes de corps à corps | Arme naturelle du Rat-mutant. |
 | Poison Blade | Lame empoisonnée | Armes de corps à corps |  |
+| Poison Needle | Aiguille empoisonnée | Armes de corps à corps | Ajout v1.10. Relique 54. |
 | Proboscis | Trompe | Armes de corps à corps | Arme naturelle de la Mouche bouffie. |
 | Rat-Mutant Blade | Lame de Rat-mutant | Armes de corps à corps |  |
 | Spark-Drill | Foreuse à étincelles | Armes de corps à corps |  |
@@ -1085,6 +1218,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Flamethrower | Lance-flammes | Armes à distance |  |
 | Hand Crossbow | Arbalète de poing | Armes à distance |  |
 | Heavy Gatling Gun | Gatling lourde | Armes à distance |  |
+| Heirloom Duelling Pistol | Pistolet de duel de famille | Armes à distance | Ajout v1.10. Relique 51. |
 | Long Bow | Arc long | Armes à distance |  |
 | Long Rifle | Fusil long | Armes à distance |  |
 | Ogre Arbalest | Arbalète lourde d'ogre | Armes à distance | Ajout v1.03. Liste des Ogres de la Guilde ; remplace l'Arbalète lourde dans cette liste. |
@@ -1092,6 +1226,8 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Ogre Pistol | Pistolet d'ogre | Armes à distance |  |
 | Orb Bombs | Orbes explosifs | Armes à distance |  |
 | Orb Launcher | Lance-orbes | Armes à distance |  |
+| Poison Quiver & Bow | Carquois empoisonné et arc | Armes à distance | Ajout v1.10. Relique 52. |
+| Repeater Crossbow | Arbalète à répétition | Armes à distance | Ajout v1.10. Relique 53. |
 | Repeater Pistol | Pistolet à répétition | Armes à distance |  |
 | Rocket Launcher | Lance-roquettes | Armes à distance |  |
 | Short Bow | Arc court | Armes à distance |  |
@@ -1113,36 +1249,76 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
+| Alchemist's Fire | Feu d'alchimiste | Objets | Ajout v1.10. Curiosité 63. |
+| Amber Pendant | Pendentif d'ambre | Objets | Ajout v1.10. Curiosité 13. |
 | Ancient Banner | Bannière ancienne | Objets | Armurerie de la Cabale. |
+| Banner of Lost Souls | Bannière des âmes perdues | Objets | Ajout v1.10. Relique 43. |
 | Bestial Companion | Compagnon bestial | Objets | Armurerie de la Cabale. |
+| Blackened Silver Spoon | Cuillère en argent noircie | Objets | Ajout v1.10. Curiosité 11. |
+| Blackrose Balm | Baume de rose noire | Objets | Ajout v1.10. Curiosité 56. |
+| Blackrose Candle | Bougie de rose noire | Objets | Ajout v1.10. Relique 33-34. |
+| Blinding Powder | Poudre aveuglante | Objets | Ajout v1.10. Curiosité 54. |
 | Bomb Rat | Rat-bombe | Objets | Armurerie des Vermineux. |
 | Bomb-Bolt | Carreau explosif | Objets | La VO écrit aussi "Bomb-bolt". |
+| Book of Funeral Rites | Livre des rites funéraires | Objets | Ajout v1.10. Curiosité 51. |
+| Broken Von Zikmund Pocketwatch | Montre de gousset Von Zikmund cassée | Objets | Ajout v1.10. Curiosité 16. Tranché le 10/11/2026 : nom de la fiche, la table écrit "Gilded Brass Pocket Watch". |
+| Bronze Saint Statuette | Statuette de saint en bronze | Objets | Ajout v1.10. Curiosité 12. |
 | Cauldron | Chaudron | Objets | Armurerie du Cloître. |
 | Clan Banner | Bannière de clan | Objets | Armurerie des Vermineux. |
 | Cloister Icon | Icône du Cloître | Objets | Voir H1. |
+| Deepwood Boots | Bottes de Boisprofond | Objets | Ajout v1.10. Relique 41. |
 | Demonic Familiar | Familier démoniaque | Objets | Armurerie du Cloître. |
 | Drive the Stake | Planter le pieu | Objets | Action bonus des Pieux en bois. |
 | Drop Smoke Bomb | Lâcher la bombe fumigène | Objets | Action bonus de la Bombe fumigène. |
+| Dwarven Bomb | Bombe naine | Objets | Ajout v1.10. Curiosité 65. |
+| Dwarven Whetstone | Pierre à aiguiser naine | Objets | Ajout v1.10. Relique 31-32. |
+| Enchanted Coin Purse | Bourse enchantée | Objets | Ajout v1.10. Relique 13-14. |
 | Ensorcelled Bell | Cloche ensorcelée | Objets |  |
+| Etched Silver Bullets | Balles d'argent gravées | Objets | Ajout v1.10. Curiosité 66. |
 | fuse length | longueur de mèche | Objets | Règle du Rat-bombe. |
 | Gas Mask | Masque à gaz | Objets |  |
+| Golden Newt | Triton doré | Objets | Ajout v1.10. Relique 44. |
 | Grappling Hook | Grappin | Objets |  |
 | Grimoire | Grimoire | Objets |  |
 | Guild Banner | Bannière de la Guilde | Objets | Voir H1. |
+| Gunsmith's Kit | Trousse d'armurier | Objets | Ajout v1.10. Curiosité 52. |
 | Harry | Harceler | Objets | Action bonus du Familier ailé. |
+| Healing Tonic | Tonique de soin | Objets | Ajout v1.10. Curiosité 31-36. |
 | Invoke Ethereal Protection | Appeler la protection éthérée | Objets | Action bonus de l'Esprit gardien. "invoquer" est réservé à "summon". |
+| Iron Ward | Protection de fer | Objets | Ajout v1.10. Relique 46. Tranché le 10/11/2026 : nom de la fiche, la table écrit "Talisman of Protection". |
+| Ivory Memento Mori | Memento mori d'ivoire | Objets | Ajout v1.10. Curiosité 62. |
+| Jar of Canal Leeches | Bocal de sangsues des canaux | Objets | Ajout v1.10. Curiosité 21-26. |
 | Lantern/Torch | Lanterne/Torche | Objets | La description p. 62 écrit "Torchlight/Lantern" : même VF, à signaler en note. |
 | Loyal Companion | Compagnon fidèle | Objets | Armurerie de la Guilde. |
 | Net | Filet | Objets |  |
+| Peculiar Flask | Flasque singulière | Objets | Ajout v1.10. Relique 35-36. |
 | Periscope | Périscope | Objets |  |
+| Pewter Tankard with Silver Lid | Chope en étain au couvercle d'argent | Objets | Ajout v1.10. Curiosité 14. |
+| Physician's Kit | Trousse de médecin | Objets | Ajout v1.10. Curiosité 53. |
+| Pilgrim's Eye | Oeil du pèlerin | Objets | Ajout v1.10. Relique 23-24. |
+| Ring of Roses | Anneau de roses | Objets | Ajout v1.10. Relique 21-22, absente de la table imprimée. |
+| Saint Fortuna's Charm | Charme de sainte Fortuna | Objets | Ajout v1.10. Relique 42. |
+| Saint Restoria's Charm | Charme de sainte Restoria | Objets | Ajout v1.10. Relique 25-26. |
+| Saint Trickster's Charm | Charme du saint Filou | Objets | Ajout v1.10. Relique 11-12. |
 | Set Up Bomb Rat | Placer le rat-bombe | Objets | Action bonus du Rat-bombe. |
 | Shield | Bouclier | Objets |  |
+| Shield of Thorns | Bouclier d'épines | Objets | Ajout v1.10. Relique 45. |
+| Silver Locket | Médaillon en argent | Objets | Ajout v1.10. Curiosité 15. |
 | Smoke Bomb | Bombe fumigène | Objets |  |
 | Spirit Guardian | Esprit gardien | Objets | Armurerie de la Cabale. |
+| Tonic of Fortitude | Tonique de robustesse | Objets | Ajout v1.10. Curiosité 44. |
+| Tonic of Levitation | Tonique de lévitation | Objets | Ajout v1.10. Curiosité 46. |
+| Tonic of Mind | Tonique d'esprit | Objets | Ajout v1.10. Curiosité 45. |
+| Tonic of Speed | Tonique de vitesse | Objets | Ajout v1.10. Curiosité 41. |
+| Tonic of Steady Aim | Tonique de visée sûre | Objets | Ajout v1.10. Curiosité 43. |
+| Tonic of Strength | Tonique de force | Objets | Ajout v1.10. Curiosité 42. |
 | Torchlight/Lantern | Lanterne/Torche | Objets | Ajout du lot 06. Variante de "Lantern/Torch" employée dans le titre de l'objet (p. 62). |
+| Treasure Map | Carte au trésor | Objets | Ajout v1.10. Curiosité 64. |
+| Von Zikmund Pocketwatch | Montre de gousset Von Zikmund | Objets | Ajout v1.10. Relique 15-16. |
 | Wheel-Spikes | Pointes de roue | Objets | Armurerie des Vermineux. |
 | Winged Familiar | Familier ailé | Objets | Armurerie de la Cabale. |
 | Wooden Stakes | Pieux en bois | Objets |  |
+| Writ of Sorcery | Parchemin de sorcellerie | Objets | Ajout v1.10. Curiosité 61. |
 
 ## 23. Domaines de magie et sorts
 

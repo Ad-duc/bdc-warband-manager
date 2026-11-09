@@ -2,7 +2,7 @@
 
 Version de test v1.10, publiée le 06/11/2026 (175 pages de PDF, contre 141 pour la v1.03). Ce journal liste les changements de règles constatés par comparaison des deux PDF (texte et tableaux, page par page). Les numéros de page sont ceux imprimés dans la VO v1.10 (page du PDF moins 1).
 
-> **État du report.** Ce journal accompagne l'import du texte anglais de la v1.10. La traduction française (fichiers 01 à 10) et les données de l'application suivent encore la v1.03 : elles seront mises à jour dans deux étapes séparées. Les termes français nouveaux employés ici (suivis de leur terme anglais) sont des propositions, à valider avec la mise à jour du glossaire.
+> **État du report.** Ce journal accompagne l'import du texte anglais de la v1.10. Le chapitre 5 est traduit (`12_campagne.md`). Les chapitres 01 à 10 et les données de l'application suivent encore la v1.03 : ils seront mis à jour ensemble, car les données sont vérifiées contre ces fichiers. Les termes français nouveaux employés ici (suivis de leur terme anglais) sont des propositions, à valider avec la mise à jour du glossaire.
 
 ## Résumé de l'auteur
 
@@ -41,7 +41,7 @@ Le chapitre remplace les renvois "pg xx" et les règles de campagne provisoires 
 
 ## Changements par rapport à l'avant-première du chapitre Campagne
 
-Le fichier `12_campagne-avant-premiere.md` (pages partagées sur Discord avant la parution) ne correspond plus au texte publié.
+L'ancien fichier `12_campagne-avant-premiere.md` (pages partagées sur Discord avant la parution) ne correspondait plus au texte publié : il est remplacé par `12_campagne.md`, traduction du chapitre 5.
 
 | Sujet | Avant-première | v1.10 |
 |---|---|---|
