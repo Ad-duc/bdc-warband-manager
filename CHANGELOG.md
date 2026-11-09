@@ -20,6 +20,7 @@ version is given separately (playtest v1.03).
 - New "Armoury and grimoire" screen (header button and phone menu): every skill, signature spell, weapon, armour and item grouped in collapsible menus (skills, spells, melee weapons, ranged weapons, armour, items), then by faction, with a faction filter and "Open all" and "Close all" buttons.
 - Rules reader: a search field looks for one or more words in every chapter, accents and case aside (English original terms too); the results list each section with an extract where the words are marked, and opens it.
 - Rules reader: new "Campagne (avant-première)" chapter with the French translation of the Campaign chapter preview shared on the official Discord (Curiosities, Explore the City), marked as provisional.
+- Rules reader: new "Modifications de la v1.10" chapter listing what playtest v1.10 changes (Campaign chapter, stronghold levels and upgrades, holdings, new roster, faction changes). The translation and the app data still follow v1.03 until they are updated.
 
 ### Changed
 

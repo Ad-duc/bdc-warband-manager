@@ -35,6 +35,7 @@ export const CHAPTERS: readonly Chapter[] = [
     title: "Campagne (avant-première)",
   },
   { id: "reference", file: "10_aide-de-jeu.md", title: "Référence" },
+  { id: "journal-1-10", file: "11_journal-modifications-1.10.md", title: "Modifications de la v1.10" },
   { id: "journal-1-03", file: "11_journal-modifications-1.03.md", title: "Modifications de la v1.03" },
   { id: "glossaire", file: "00_glossaire.md", title: "Glossaire VO - VF" },
 ];

@@ -20,6 +20,7 @@ La version des règles du jeu est indiquée à part (version de test 1.03).
 - Nouvel écran "Arsenal et grimoire" (bouton de l'en-tête et menu du téléphone) : toutes les compétences, sorts fétiches, armes, armures et objets regroupés dans des menus repliables (compétences, sorts, armes de corps à corps, armes à distance, armures, objets), puis par faction, avec un filtre par faction et les boutons "Tout ouvrir" et "Tout fermer".
 - Liseuse des règles : un champ de recherche trouve un ou plusieurs mots dans tous les chapitres, sans tenir compte des accents ni des majuscules (termes originaux anglais compris) ; les résultats listent chaque section avec un extrait où les mots sont surlignés, et l'ouvrent.
 - Liseuse des règles : nouveau chapitre "Campagne (avant-première)" avec la traduction française de l'avant-première du chapitre Campagne partagée sur le Discord officiel (Curiosités, Explorer la Cité), signalée comme provisoire.
+- Liseuse des règles : nouveau chapitre "Modifications de la v1.10" qui liste ce que change la version de test 1.10 (chapitre Campagne, niveaux et améliorations de repaire, possessions, nouvelle feuille de bande, changements par faction). La traduction et les données de l'application suivent encore la v1.03 en attendant leur mise à jour.
 
 ### Modifié
 
