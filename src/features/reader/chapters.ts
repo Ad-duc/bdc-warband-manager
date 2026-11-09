@@ -29,12 +29,9 @@ export const CHAPTERS: readonly Chapter[] = [
   { id: "verminkin", file: "07_verminkin.md", title: "Vermineux" },
   { id: "death-covens", file: "08_death-covens.md", title: "Cabales de la Mort" },
   { id: "the-blighted-cloister", file: "09_the-blighted-cloister.md", title: "Le Cloître gangrené" },
-  {
-    id: "campagne-avant-premiere",
-    file: "12_campagne-avant-premiere.md",
-    title: "Campagne (avant-première)",
-  },
+  { id: "campagnes", file: "12_campagne.md", title: "Campagnes" },
   { id: "reference", file: "10_aide-de-jeu.md", title: "Référence" },
+  { id: "journal-1-10", file: "11_journal-modifications-1.10.md", title: "Modifications de la v1.10" },
   { id: "journal-1-03", file: "11_journal-modifications-1.03.md", title: "Modifications de la v1.03" },
   { id: "glossaire", file: "00_glossaire.md", title: "Glossaire VO - VF" },
 ];

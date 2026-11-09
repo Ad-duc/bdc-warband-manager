@@ -20,9 +20,11 @@ version is given separately (playtest v1.03).
 - New "Armoury and grimoire" screen (header button and phone menu): every skill, signature spell, weapon, armour and item grouped in collapsible menus (skills, spells, melee weapons, ranged weapons, armour, items), then by faction, with a faction filter and "Open all" and "Close all" buttons.
 - Rules reader: a search field looks for one or more words in every chapter, accents and case aside (English original terms too); the results list each section with an extract where the words are marked, and opens it.
 - Rules reader: new "Campagne (avant-première)" chapter with the French translation of the Campaign chapter preview shared on the official Discord (Curiosities, Explore the City), marked as provisional.
+- Rules reader: new "Modifications de la v1.10" chapter listing what playtest v1.10 changes (Campaign chapter, stronghold levels and upgrades, holdings, new roster, faction changes). The translation and the app data still follow v1.03 until they are updated.
 
 ### Changed
 
+- Rules reader: the "Campagne (avant-première)" chapter gives way to "Campagnes", the full French translation of Chapter 5 of playtest v1.10 (playing a campaign, underdog bonuses, strongholds and the 26 holdings, the seven steps of the aftermath sequence, curiosities, relics). The glossary gains 176 terms.
 - Reminder sheet: the screen now shows it like the rest of the site (parchment panel, titles, tables, one or two columns depending on the width) instead of the printable A4 page; the "Print the A4 sheet" button still prints the official layout on one page.
 - Wizard, wargear and skills steps: each kind of wargear (melee, ranged, armour, items), each skill table and the spell lore are collapsible menus with their count. Wargear menus stay open when another fighter is picked; a skill table opens by itself when it holds a choice.
 - Header: the button labels are shown from 1440 px wide, so the eight tools fit beside the title.

@@ -488,6 +488,11 @@
       "category": "01"
     },
     {
+      "vo": "Playtest Note",
+      "vf": "Note de test",
+      "category": "01"
+    },
+    {
       "vo": "profile",
       "vf": "profil",
       "category": "01"
@@ -2268,6 +2273,11 @@
       "category": "08"
     },
     {
+      "vo": "Polearm",
+      "vf": "Arme d'hast",
+      "category": "08"
+    },
+    {
       "vo": "Rare",
       "vf": "Rare",
       "category": "08"
@@ -3233,8 +3243,73 @@
       "category": "13"
     },
     {
+      "vo": "A Curious Find",
+      "vf": "Une curieuse trouvaille",
+      "category": "14"
+    },
+    {
+      "vo": "A Hidden Stash",
+      "vf": "Un butin caché",
+      "category": "14"
+    },
+    {
+      "vo": "A Poison Package",
+      "vf": "Un colis de poison",
+      "category": "14"
+    },
+    {
+      "vo": "A Shallow Grave",
+      "vf": "Une tombe peu profonde",
+      "category": "14"
+    },
+    {
+      "vo": "A Tincture of Choice",
+      "vf": "Une teinture au choix",
+      "category": "14"
+    },
+    {
+      "vo": "A Treasure Horde",
+      "vf": "Un magot",
+      "category": "14"
+    },
+    {
       "vo": "advancement",
       "vf": "progression",
+      "category": "14"
+    },
+    {
+      "vo": "advancement roll",
+      "vf": "jet de progression",
+      "category": "14"
+    },
+    {
+      "vo": "advancement table",
+      "vf": "table de progression",
+      "category": "14"
+    },
+    {
+      "vo": "Alchemists' Wares",
+      "vf": "Articles de l'alchimiste",
+      "category": "14"
+    },
+    {
+      "vo": "Apothecary's Wares",
+      "vf": "Articles de l'apothicaire",
+      "category": "14"
+    },
+    {
+      "vo": "Arrival by Tunnel",
+      "vf": "Arrivée par le tunnel",
+      "category": "14"
+    },
+    {
+      "vo": "assume command",
+      "vf": "assumer le commandement",
+      "category": "14"
+    },
+    {
+      "vo": "Auction House",
+      "vf": "Salle des ventes",
       "category": "14"
     },
     {
@@ -3248,8 +3323,18 @@
       "category": "14"
     },
     {
+      "vo": "Beast Injury Table",
+      "vf": "Table des blessures des Bêtes",
+      "category": "14"
+    },
+    {
       "vo": "Beasts Injury Table",
       "vf": "Table des blessures des Bêtes",
+      "category": "14"
+    },
+    {
+      "vo": "Blackdrop Widow",
+      "vf": "Veuve à la goutte noire",
       "category": "14"
     },
     {
@@ -3258,8 +3343,28 @@
       "category": "14"
     },
     {
+      "vo": "Blinded In One Eye",
+      "vf": "Borgne",
+      "category": "14"
+    },
+    {
+      "vo": "blood leeching",
+      "vf": "saignée",
+      "category": "14"
+    },
+    {
       "vo": "bonus experience",
       "vf": "expérience bonus",
+      "category": "14"
+    },
+    {
+      "vo": "Broken Leg",
+      "vf": "Jambe cassée",
+      "category": "14"
+    },
+    {
+      "vo": "Burnt Down Smithy",
+      "vf": "Forge incendiée",
       "category": "14"
     },
     {
@@ -3268,13 +3373,68 @@
       "category": "14"
     },
     {
+      "vo": "Catacombs Tunnel",
+      "vf": "Tunnel des catacombes",
+      "category": "14"
+    },
+    {
+      "vo": "Chronic Black Rot",
+      "vf": "Pourriture noire chronique",
+      "category": "14"
+    },
+    {
       "vo": "climbing score",
       "vf": "score d'escalade",
       "category": "14"
     },
     {
+      "vo": "Collapse",
+      "vf": "Effondrement",
+      "category": "14"
+    },
+    {
+      "vo": "Collapsed Mine",
+      "vf": "Mine effondrée",
+      "category": "14"
+    },
+    {
+      "vo": "Combat Prowess",
+      "vf": "Prouesse au combat",
+      "category": "14"
+    },
+    {
+      "vo": "Crossroads",
+      "vf": "Carrefour",
+      "category": "14"
+    },
+    {
       "vo": "Curiosities",
       "vf": "Curiosités",
+      "category": "14"
+    },
+    {
+      "vo": "Curiosity (keyword)",
+      "vf": "Curiosité",
+      "category": "14"
+    },
+    {
+      "vo": "Curious Items",
+      "vf": "Objets curieux",
+      "category": "14"
+    },
+    {
+      "vo": "Curious Wares",
+      "vf": "Articles curieux",
+      "category": "14"
+    },
+    {
+      "vo": "Danger Lies Ahead...",
+      "vf": "Un danger devant...",
+      "category": "14"
+    },
+    {
+      "vo": "Dead-end",
+      "vf": "Impasse",
       "category": "14"
     },
     {
@@ -3285,6 +3445,56 @@
     {
       "vo": "Demon Injury Table",
       "vf": "Table des blessures des Démons",
+      "category": "14"
+    },
+    {
+      "vo": "Depleted",
+      "vf": "Épuisée",
+      "category": "14"
+    },
+    {
+      "vo": "Dilapidated Guild Shoppe",
+      "vf": "Échoppe de guilde délabrée",
+      "category": "14"
+    },
+    {
+      "vo": "Discovered",
+      "vf": "Découvert",
+      "category": "14"
+    },
+    {
+      "vo": "Downtime",
+      "vf": "Temps mort",
+      "category": "14"
+    },
+    {
+      "vo": "Drawbridge Crossing",
+      "vf": "Pont-levis",
+      "category": "14"
+    },
+    {
+      "vo": "Drink Deep",
+      "vf": "Boire à longs traits",
+      "category": "14"
+    },
+    {
+      "vo": "Drink Pure Waters",
+      "vf": "Boire les eaux pures",
+      "category": "14"
+    },
+    {
+      "vo": "Drink Unclean Waters",
+      "vf": "Boire les eaux impures",
+      "category": "14"
+    },
+    {
+      "vo": "Duplicate Injuries",
+      "vf": "Blessures en double",
+      "category": "14"
+    },
+    {
+      "vo": "Eel-farm",
+      "vf": "Élevage d'anguilles",
       "category": "14"
     },
     {
@@ -3313,8 +3523,23 @@
       "category": "14"
     },
     {
+      "vo": "Exploration Table",
+      "vf": "table d'exploration",
+      "category": "14"
+    },
+    {
+      "vo": "Fated",
+      "vf": "Élu du destin",
+      "category": "14"
+    },
+    {
       "vo": "Fighters Lost",
       "vf": "Combattants perdus",
+      "category": "14"
+    },
+    {
+      "vo": "forfeit",
+      "vf": "abandonner",
       "category": "14"
     },
     {
@@ -3323,13 +3548,68 @@
       "category": "14"
     },
     {
+      "vo": "Fractured Arm",
+      "vf": "Bras fracturé",
+      "category": "14"
+    },
+    {
       "vo": "Fractured Essence",
       "vf": "Essence fracturée",
       "category": "14"
     },
     {
+      "vo": "Frayed Nerves",
+      "vf": "Nerfs à vif",
+      "category": "14"
+    },
+    {
+      "vo": "Fresh from the Canals",
+      "vf": "Fraîches des canaux",
+      "category": "14"
+    },
+    {
       "vo": "full recovery",
       "vf": "rétablissement complet",
+      "category": "14"
+    },
+    {
+      "vo": "Going, Going, Gone",
+      "vf": "Une fois, deux fois, adjugé",
+      "category": "14"
+    },
+    {
+      "vo": "Grave Digging",
+      "vf": "Fouilleurs de tombes",
+      "category": "14"
+    },
+    {
+      "vo": "Gut Wound",
+      "vf": "Blessure au ventre",
+      "category": "14"
+    },
+    {
+      "vo": "Hallowed Ground",
+      "vf": "Terre consacrée",
+      "category": "14"
+    },
+    {
+      "vo": "Head Injury",
+      "vf": "Blessure à la tête",
+      "category": "14"
+    },
+    {
+      "vo": "Herbalist's Shoppe",
+      "vf": "Échoppe de l'herboriste",
+      "category": "14"
+    },
+    {
+      "vo": "Heroic Escape",
+      "vf": "Évasion héroïque",
+      "category": "14"
+    },
+    {
+      "vo": "Hiring Workers",
+      "vf": "Engager des ouvriers",
       "category": "14"
     },
     {
@@ -3348,6 +3628,11 @@
       "category": "14"
     },
     {
+      "vo": "Hunted in Darkness...",
+      "vf": "Traqués dans les ténèbres...",
+      "category": "14"
+    },
+    {
       "vo": "income",
       "vf": "revenu",
       "category": "14"
@@ -3358,8 +3643,33 @@
       "category": "14"
     },
     {
+      "vo": "Injury Table",
+      "vf": "table des blessures",
+      "category": "14"
+    },
+    {
+      "vo": "Insidious Alchemist",
+      "vf": "Alchimiste insidieux",
+      "category": "14"
+    },
+    {
+      "vo": "Intact Town House",
+      "vf": "Maison de ville intacte",
+      "category": "14"
+    },
+    {
+      "vo": "Into the Catacombs...",
+      "vf": "Dans les catacombes...",
+      "category": "14"
+    },
+    {
       "vo": "Jars of Canal Leeches",
       "vf": "Bocaux de sangsues des canaux",
+      "category": "14"
+    },
+    {
+      "vo": "Jewelsmith",
+      "vf": "Joaillier",
       "category": "14"
     },
     {
@@ -3378,6 +3688,31 @@
       "category": "14"
     },
     {
+      "vo": "leech (verb)",
+      "vf": "saigner",
+      "category": "14"
+    },
+    {
+      "vo": "Leech Pools",
+      "vf": "Bassins à sangsues",
+      "category": "14"
+    },
+    {
+      "vo": "leeching roll",
+      "vf": "jet de saignée",
+      "category": "14"
+    },
+    {
+      "vo": "Leechmonger",
+      "vf": "Marchand de sangsues",
+      "category": "14"
+    },
+    {
+      "vo": "Lessons Learned",
+      "vf": "Leçons retenues",
+      "category": "14"
+    },
+    {
       "vo": "level",
       "vf": "niveau",
       "category": "14"
@@ -3388,8 +3723,43 @@
       "category": "14"
     },
     {
+      "vo": "Major Relics",
+      "vf": "Reliques majeures",
+      "category": "14"
+    },
+    {
+      "vo": "Merchant's Warehouse",
+      "vf": "Entrepôt du marchand",
+      "category": "14"
+    },
+    {
+      "vo": "Minor Relics",
+      "vf": "Reliques mineures",
+      "category": "14"
+    },
+    {
+      "vo": "Moneylender's House",
+      "vf": "Maison du prêteur",
+      "category": "14"
+    },
+    {
       "vo": "Names (name tables)",
       "vf": "Noms",
+      "category": "14"
+    },
+    {
+      "vo": "Old Cemetery",
+      "vf": "Vieux cimetière",
+      "category": "14"
+    },
+    {
+      "vo": "Old Tavern",
+      "vf": "Vieille taverne",
+      "category": "14"
+    },
+    {
+      "vo": "On Your Own...",
+      "vf": "Livrés à vous-mêmes...",
       "category": "14"
     },
     {
@@ -3398,8 +3768,73 @@
       "category": "14"
     },
     {
+      "vo": "Pile of Daggers",
+      "vf": "Tas de dagues",
+      "category": "14"
+    },
+    {
+      "vo": "Poisonous Wares",
+      "vf": "Articles empoisonnés",
+      "category": "14"
+    },
+    {
+      "vo": "prize holding",
+      "vf": "possession en jeu",
+      "category": "14"
+    },
+    {
+      "vo": "Prized Finds",
+      "vf": "Trouvailles précieuses",
+      "category": "14"
+    },
+    {
       "vo": "promote",
       "vf": "promouvoir",
+      "category": "14"
+    },
+    {
+      "vo": "Quiet Night",
+      "vf": "Nuit calme",
+      "category": "14"
+    },
+    {
+      "vo": "rank",
+      "vf": "rang",
+      "category": "14"
+    },
+    {
+      "vo": "ransack",
+      "vf": "saccager",
+      "category": "14"
+    },
+    {
+      "vo": "ransack icon",
+      "vf": "icône de saccage",
+      "category": "14"
+    },
+    {
+      "vo": "Rat-catcher's Shack",
+      "vf": "Cabane du chasseur de rats",
+      "category": "14"
+    },
+    {
+      "vo": "Recuperate Injuries",
+      "vf": "Guérir des blessures",
+      "category": "14"
+    },
+    {
+      "vo": "Relic (keyword)",
+      "vf": "Relique",
+      "category": "14"
+    },
+    {
+      "vo": "Relic Weapons",
+      "vf": "Armes reliques",
+      "category": "14"
+    },
+    {
+      "vo": "retire",
+      "vf": "mettre à la retraite",
       "category": "14"
     },
     {
@@ -3408,8 +3843,63 @@
       "category": "14"
     },
     {
+      "vo": "Ruined Hovel",
+      "vf": "Masure en ruine",
+      "category": "14"
+    },
+    {
+      "vo": "Ruined Tower",
+      "vf": "Tour en ruine",
+      "category": "14"
+    },
+    {
+      "vo": "Run Dry",
+      "vf": "À sec",
+      "category": "14"
+    },
+    {
+      "vo": "Saint's Well",
+      "vf": "Puits du saint",
+      "category": "14"
+    },
+    {
+      "vo": "Salt Cellar",
+      "vf": "Cave à sel",
+      "category": "14"
+    },
+    {
       "vo": "scouting party",
       "vf": "groupe d'éclaireurs",
+      "category": "14"
+    },
+    {
+      "vo": "Secluded Holding",
+      "vf": "Possession isolée",
+      "category": "14"
+    },
+    {
+      "vo": "Seize Enemy Holding",
+      "vf": "Saisir une possession ennemie",
+      "category": "14"
+    },
+    {
+      "vo": "Seize the Prize",
+      "vf": "Saisir la possession en jeu",
+      "category": "14"
+    },
+    {
+      "vo": "Shield Rack",
+      "vf": "Râtelier de boucliers",
+      "category": "14"
+    },
+    {
+      "vo": "Silver Bounty",
+      "vf": "Prime en argent",
+      "category": "14"
+    },
+    {
+      "vo": "Silver Mine",
+      "vf": "Mine d'argent",
       "category": "14"
     },
     {
@@ -3423,8 +3913,53 @@
       "category": "14"
     },
     {
+      "vo": "Speed",
+      "vf": "Vitesse",
+      "category": "14"
+    },
+    {
+      "vo": "Spy the City",
+      "vf": "Épier la Cité",
+      "category": "14"
+    },
+    {
+      "vo": "Stand Ground (aftermath option)",
+      "vf": "Tenir bon",
+      "category": "14"
+    },
+    {
       "vo": "standard injury table",
       "vf": "table des blessures standard",
+      "category": "14"
+    },
+    {
+      "vo": "stronghold level",
+      "vf": "niveau de repaire",
+      "category": "14"
+    },
+    {
+      "vo": "stronghold upgrade",
+      "vf": "amélioration de repaire",
+      "category": "14"
+    },
+    {
+      "vo": "Surviving",
+      "vf": "Survivre",
+      "category": "14"
+    },
+    {
+      "vo": "Swarm of Rats",
+      "vf": "Nuée de rats",
+      "category": "14"
+    },
+    {
+      "vo": "Tainted Well",
+      "vf": "Puits souillé",
+      "category": "14"
+    },
+    {
+      "vo": "Taking an Enemy Down",
+      "vf": "Mettre un ennemi hors de combat",
       "category": "14"
     },
     {
@@ -3438,13 +3973,53 @@
       "category": "14"
     },
     {
+      "vo": "The Belfry",
+      "vf": "Le beffroi",
+      "category": "14"
+    },
+    {
+      "vo": "The Burden of Command",
+      "vf": "Le fardeau du commandement",
+      "category": "14"
+    },
+    {
+      "vo": "The Hidden Holding",
+      "vf": "La possession cachée",
+      "category": "14"
+    },
+    {
+      "vo": "The Trials of the Tower",
+      "vf": "Les épreuves de la tour",
+      "category": "14"
+    },
+    {
+      "vo": "The Water Blackens",
+      "vf": "L'eau noircit",
+      "category": "14"
+    },
+    {
       "vo": "treat (a fighter)",
       "vf": "soigner",
       "category": "14"
     },
     {
+      "vo": "Trinkets",
+      "vf": "Babioles",
+      "category": "14"
+    },
+    {
       "vo": "Type",
       "vf": "Type",
+      "category": "14"
+    },
+    {
+      "vo": "underdog bonus",
+      "vf": "bonus d'outsider",
+      "category": "14"
+    },
+    {
+      "vo": "Underdog Bonus table",
+      "vf": "table des bonus d'outsider",
       "category": "14"
     },
     {
@@ -3473,13 +4048,53 @@
       "category": "14"
     },
     {
+      "vo": "Wall of Swords",
+      "vf": "Mur d'épées",
+      "category": "14"
+    },
+    {
       "vo": "Warband Name",
       "vf": "Nom de la bande",
       "category": "14"
     },
     {
+      "vo": "ward (Wizard's Tower)",
+      "vf": "protection",
+      "category": "14"
+    },
+    {
       "vo": "Wargear, Spells, Skills, Injuries, etc",
       "vf": "Équipement, sorts, compétences, blessures, etc.",
+      "category": "14"
+    },
+    {
+      "vo": "Whispers and Spies",
+      "vf": "Murmures et espions",
+      "category": "14"
+    },
+    {
+      "vo": "Wits",
+      "vf": "Vivacité",
+      "category": "14"
+    },
+    {
+      "vo": "Wizard's Tower",
+      "vf": "Tour du magicien",
+      "category": "14"
+    },
+    {
+      "vo": "Wondrous Tonics",
+      "vf": "Toniques merveilleux",
+      "category": "14"
+    },
+    {
+      "vo": "X Marks the Spot",
+      "vf": "La croix marque l'endroit",
+      "category": "14"
+    },
+    {
+      "vo": "Ye Olde Curiosity Shoppe",
+      "vf": "Vieille boutique de curiosités",
       "category": "14"
     },
     {
@@ -3655,6 +4270,11 @@
     {
       "vo": "Lycanfell Noble",
       "vf": "Noble lycanthrope",
+      "category": "15"
+    },
+    {
+      "vo": "Manservant",
+      "vf": "Serviteur",
       "category": "15"
     },
     {
@@ -4258,6 +4878,21 @@
       "category": "19"
     },
     {
+      "vo": "Black Flail",
+      "vf": "Fléau noir",
+      "category": "19"
+    },
+    {
+      "vo": "Blades of Ruination",
+      "vf": "Lames de la ruine",
+      "category": "19"
+    },
+    {
+      "vo": "Blades of the Saints",
+      "vf": "Lames des Saints",
+      "category": "19"
+    },
+    {
       "vo": "Club",
       "vf": "Gourdin",
       "category": "19"
@@ -4308,6 +4943,11 @@
       "category": "19"
     },
     {
+      "vo": "Dwarven Axe",
+      "vf": "Hache naine",
+      "category": "19"
+    },
+    {
       "vo": "Ensorcelled Halberd",
       "vf": "Hallebarde ensorcelée",
       "category": "19"
@@ -4343,6 +4983,16 @@
       "category": "19"
     },
     {
+      "vo": "Halberd of the City",
+      "vf": "Hallebarde de la Cité",
+      "category": "19"
+    },
+    {
+      "vo": "Headsman's Axe",
+      "vf": "Hache du bourreau",
+      "category": "19"
+    },
+    {
       "vo": "Heavy Axe",
       "vf": "Hache lourde",
       "category": "19"
@@ -4358,6 +5008,11 @@
       "category": "19"
     },
     {
+      "vo": "Legendary Blade",
+      "vf": "Lame légendaire",
+      "category": "19"
+    },
+    {
       "vo": "Nasty Bite",
       "vf": "Morsure infecte",
       "category": "19"
@@ -4365,6 +5020,11 @@
     {
       "vo": "Necrotic Bite",
       "vf": "Morsure nécrotique",
+      "category": "19"
+    },
+    {
+      "vo": "Noble's Rapier",
+      "vf": "Rapière de noble",
       "category": "19"
     },
     {
@@ -4390,6 +5050,11 @@
     {
       "vo": "Poison Blade",
       "vf": "Lame empoisonnée",
+      "category": "19"
+    },
+    {
+      "vo": "Poison Needle",
+      "vf": "Aiguille empoisonnée",
       "category": "19"
     },
     {
@@ -4528,6 +5193,11 @@
       "category": "20"
     },
     {
+      "vo": "Heirloom Duelling Pistol",
+      "vf": "Pistolet de duel de famille",
+      "category": "20"
+    },
+    {
       "vo": "Long Bow",
       "vf": "Arc long",
       "category": "20"
@@ -4560,6 +5230,16 @@
     {
       "vo": "Orb Launcher",
       "vf": "Lance-orbes",
+      "category": "20"
+    },
+    {
+      "vo": "Poison Quiver & Bow",
+      "vf": "Carquois empoisonné et arc",
+      "category": "20"
+    },
+    {
+      "vo": "Repeater Crossbow",
+      "vf": "Arbalète à répétition",
       "category": "20"
     },
     {
@@ -4618,13 +5298,48 @@
       "category": "21"
     },
     {
+      "vo": "Alchemist's Fire",
+      "vf": "Feu d'alchimiste",
+      "category": "22"
+    },
+    {
+      "vo": "Amber Pendant",
+      "vf": "Pendentif d'ambre",
+      "category": "22"
+    },
+    {
       "vo": "Ancient Banner",
       "vf": "Bannière ancienne",
       "category": "22"
     },
     {
+      "vo": "Banner of Lost Souls",
+      "vf": "Bannière des âmes perdues",
+      "category": "22"
+    },
+    {
       "vo": "Bestial Companion",
       "vf": "Compagnon bestial",
+      "category": "22"
+    },
+    {
+      "vo": "Blackened Silver Spoon",
+      "vf": "Cuillère en argent noircie",
+      "category": "22"
+    },
+    {
+      "vo": "Blackrose Balm",
+      "vf": "Baume de rose noire",
+      "category": "22"
+    },
+    {
+      "vo": "Blackrose Candle",
+      "vf": "Bougie de rose noire",
+      "category": "22"
+    },
+    {
+      "vo": "Blinding Powder",
+      "vf": "Poudre aveuglante",
       "category": "22"
     },
     {
@@ -4635,6 +5350,21 @@
     {
       "vo": "Bomb-Bolt",
       "vf": "Carreau explosif",
+      "category": "22"
+    },
+    {
+      "vo": "Book of Funeral Rites",
+      "vf": "Livre des rites funéraires",
+      "category": "22"
+    },
+    {
+      "vo": "Broken Von Zikmund Pocketwatch",
+      "vf": "Montre de gousset Von Zikmund cassée",
+      "category": "22"
+    },
+    {
+      "vo": "Bronze Saint Statuette",
+      "vf": "Statuette de saint en bronze",
       "category": "22"
     },
     {
@@ -4653,6 +5383,11 @@
       "category": "22"
     },
     {
+      "vo": "Deepwood Boots",
+      "vf": "Bottes de Boisprofond",
+      "category": "22"
+    },
+    {
       "vo": "Demonic Familiar",
       "vf": "Familier démoniaque",
       "category": "22"
@@ -4668,8 +5403,28 @@
       "category": "22"
     },
     {
+      "vo": "Dwarven Bomb",
+      "vf": "Bombe naine",
+      "category": "22"
+    },
+    {
+      "vo": "Dwarven Whetstone",
+      "vf": "Pierre à aiguiser naine",
+      "category": "22"
+    },
+    {
+      "vo": "Enchanted Coin Purse",
+      "vf": "Bourse enchantée",
+      "category": "22"
+    },
+    {
       "vo": "Ensorcelled Bell",
       "vf": "Cloche ensorcelée",
+      "category": "22"
+    },
+    {
+      "vo": "Etched Silver Bullets",
+      "vf": "Balles d'argent gravées",
       "category": "22"
     },
     {
@@ -4680,6 +5435,11 @@
     {
       "vo": "Gas Mask",
       "vf": "Masque à gaz",
+      "category": "22"
+    },
+    {
+      "vo": "Golden Newt",
+      "vf": "Triton doré",
       "category": "22"
     },
     {
@@ -4698,13 +5458,38 @@
       "category": "22"
     },
     {
+      "vo": "Gunsmith's Kit",
+      "vf": "Trousse d'armurier",
+      "category": "22"
+    },
+    {
       "vo": "Harry",
       "vf": "Harceler",
       "category": "22"
     },
     {
+      "vo": "Healing Tonic",
+      "vf": "Tonique de soin",
+      "category": "22"
+    },
+    {
       "vo": "Invoke Ethereal Protection",
       "vf": "Appeler la protection éthérée",
+      "category": "22"
+    },
+    {
+      "vo": "Iron Ward",
+      "vf": "Protection de fer",
+      "category": "22"
+    },
+    {
+      "vo": "Ivory Memento Mori",
+      "vf": "Memento mori d'ivoire",
+      "category": "22"
+    },
+    {
+      "vo": "Jar of Canal Leeches",
+      "vf": "Bocal de sangsues des canaux",
       "category": "22"
     },
     {
@@ -4723,8 +5508,48 @@
       "category": "22"
     },
     {
+      "vo": "Peculiar Flask",
+      "vf": "Flasque singulière",
+      "category": "22"
+    },
+    {
       "vo": "Periscope",
       "vf": "Périscope",
+      "category": "22"
+    },
+    {
+      "vo": "Pewter Tankard with Silver Lid",
+      "vf": "Chope en étain au couvercle d'argent",
+      "category": "22"
+    },
+    {
+      "vo": "Physician's Kit",
+      "vf": "Trousse de médecin",
+      "category": "22"
+    },
+    {
+      "vo": "Pilgrim's Eye",
+      "vf": "Oeil du pèlerin",
+      "category": "22"
+    },
+    {
+      "vo": "Ring of Roses",
+      "vf": "Anneau de roses",
+      "category": "22"
+    },
+    {
+      "vo": "Saint Fortuna's Charm",
+      "vf": "Charme de sainte Fortuna",
+      "category": "22"
+    },
+    {
+      "vo": "Saint Restoria's Charm",
+      "vf": "Charme de sainte Restoria",
+      "category": "22"
+    },
+    {
+      "vo": "Saint Trickster's Charm",
+      "vf": "Charme du saint Filou",
       "category": "22"
     },
     {
@@ -4738,6 +5563,16 @@
       "category": "22"
     },
     {
+      "vo": "Shield of Thorns",
+      "vf": "Bouclier d'épines",
+      "category": "22"
+    },
+    {
+      "vo": "Silver Locket",
+      "vf": "Médaillon en argent",
+      "category": "22"
+    },
+    {
       "vo": "Smoke Bomb",
       "vf": "Bombe fumigène",
       "category": "22"
@@ -4748,8 +5583,48 @@
       "category": "22"
     },
     {
+      "vo": "Tonic of Fortitude",
+      "vf": "Tonique de robustesse",
+      "category": "22"
+    },
+    {
+      "vo": "Tonic of Levitation",
+      "vf": "Tonique de lévitation",
+      "category": "22"
+    },
+    {
+      "vo": "Tonic of Mind",
+      "vf": "Tonique d'esprit",
+      "category": "22"
+    },
+    {
+      "vo": "Tonic of Speed",
+      "vf": "Tonique de vitesse",
+      "category": "22"
+    },
+    {
+      "vo": "Tonic of Steady Aim",
+      "vf": "Tonique de visée sûre",
+      "category": "22"
+    },
+    {
+      "vo": "Tonic of Strength",
+      "vf": "Tonique de force",
+      "category": "22"
+    },
+    {
       "vo": "Torchlight/Lantern",
       "vf": "Lanterne/Torche",
+      "category": "22"
+    },
+    {
+      "vo": "Treasure Map",
+      "vf": "Carte au trésor",
+      "category": "22"
+    },
+    {
+      "vo": "Von Zikmund Pocketwatch",
+      "vf": "Montre de gousset Von Zikmund",
       "category": "22"
     },
     {
@@ -4765,6 +5640,11 @@
     {
       "vo": "Wooden Stakes",
       "vf": "Pieux en bois",
+      "category": "22"
+    },
+    {
+      "vo": "Writ of Sorcery",
+      "vf": "Parchemin de sorcellerie",
       "category": "22"
     },
     {
