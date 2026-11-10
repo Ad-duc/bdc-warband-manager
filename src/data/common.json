@@ -7,7 +7,7 @@
     "license": "MIT for the file structure. Game content belongs to Sam Pearson (Black Death City)."
   },
   "schemaVersion": 1,
-  "sourceVersion": "playtest-1.03",
+  "sourceVersion": "playtest-1.10",
   "recruitment": {
     "startingSilver": 1000,
     "maxFighters": 15,
@@ -46,6 +46,7 @@
     { "key": "beast", "kind": "category", "name": { "en": "Beast", "fr": "Bête" } },
     { "key": "mercenary", "kind": "fighter", "name": { "en": "Mercenary", "fr": "Mercenaire" } },
     { "key": "human", "kind": "fighter", "name": { "en": "Human", "fr": "Humain" } },
+    { "key": "demi-human", "kind": "fighter", "name": { "en": "Demi-human", "fr": "Demi-humain" } },
     { "key": "aristocrat", "kind": "fighter", "name": { "en": "Aristocrat", "fr": "Aristocrate" } },
     { "key": "witch-hunter", "kind": "fighter", "name": { "en": "Witch Hunter", "fr": "Chasseur de sorcières" } },
     { "key": "wizard", "kind": "fighter", "name": { "en": "Wizard", "fr": "Magicien" } },
@@ -153,6 +154,15 @@
         "fr": "Les touches critiques empoisonnent. Subit 1 dégât à chaque activation. Prend fin si soigné ou s'il reste 1 point de vie"
       },
       "fullRuleRef": { "page": 30, "md": "03_batailles.md > Poison" }
+    },
+    {
+      "key": "polearm",
+      "name": { "en": "Polearm", "fr": "Arme d'hast" },
+      "reminder": {
+        "en": "Can be equipped with a Held Item, gains Unwieldy",
+        "fr": "Peut être équipée avec un objet tenu, gagne Encombrant"
+      },
+      "fullRuleRef": { "page": 30, "md": "03_batailles.md > Arme d'hast" }
     },
     {
       "key": "rare",
@@ -321,11 +331,17 @@
     }
   ],
   "campaign": {
-    "status": "not-published",
+    "status": "published",
     "note": {
-      "en": "Chapter 5 (Campaign) is not part of playtest v1.03. Injuries, advancement, income and holdings are free fields until it is released.",
-      "fr": "Le Chapitre 5 (Campagne) n'existe pas dans la version de test 1.03. Blessures, progression, revenus et possessions restent des champs libres jusqu'à sa parution."
+      "en": "Chapter 5 (Campaigns) is published since playtest v1.10. The stronghold levels are applied; injuries, advancement, exploration and holdings stay free fields until their tables are added to the app.",
+      "fr": "Le chapitre 5 (Campagnes) est publié depuis la version de test 1.10. Les niveaux de repaire sont appliqués ; blessures, progression, exploration et possessions restent des champs libres tant que leurs tables ne sont pas ajoutées à l'application."
     },
+    "strongholdLevels": [
+      { "level": 1, "fromBattles": 0, "income": "3d6x5", "upgrades": 0 },
+      { "level": 2, "fromBattles": 3, "income": "4d6x5", "upgrades": 1 },
+      { "level": 3, "fromBattles": 8, "income": "5d6x5", "upgrades": 2 }
+    ],
+    "sourceRef": { "page": 137, "md": "12_campagne.md > Repaires" },
     "tables": [
       {
         "id": "lasting-injuries",

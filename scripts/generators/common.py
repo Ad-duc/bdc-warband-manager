@@ -158,9 +158,9 @@ class Source:
             entries.append({"wargearId": by_fr[clean(cells[0])]["id"], "cost": int(re.sub(r"\D", "", cells[1]))})
         return entries
 
-    def names(self, heading):
+    def names(self, heading, level=2):
         names = {}
-        for l in self.section(heading):
+        for l in self.section(heading, level):
             cells = [c.strip() for c in l.strip("|").split("|")]
             if l.startswith("|") and re.match(r"^\d0$", cells[0]):
                 for col, name in enumerate(cells[1:], start=1):
@@ -196,6 +196,21 @@ class Source:
 
 def rule(rid, en_name, fr_name, en, fr, tag=None):
     return {"id": rid, "name": T(en_name, fr_name), "tag": tag, "text": T(en, fr)}
+
+
+def upgrades(src, items, page):
+    """Stronghold upgrades from (id, English name, French name, English flavour, rules); a rule is
+    (id, English name, French name, English text). The French texts are read from the translation."""
+    return [
+        {
+            "id": uid,
+            "name": T(en, fr),
+            "flavour": T(flavour, src.quote_of(src.section(fr))),
+            "rules": [rule(rid, ren, rfr, rtext, src.bold_rule(fr, rfr)) for rid, ren, rfr, rtext in rules],
+            "sourceRef": src.ref(page, fr),
+        }
+        for uid, en, fr, flavour, rules in items
+    ]
 
 
 def gear(src, gid, en, fr, kind, cost, page, md, **kw):
@@ -238,7 +253,7 @@ UNSHAKEABLE_EN = (
 )
 
 ORDER = ["_header", "schemaVersion", "id", "name", "description", "armouryName", "sourceRef", "assets", "origins",
-         "strongholds", "campaignRules", "leaderSuccession", "nameTable", "epithetTable", "fighters", "wargear",
+         "strongholds", "strongholdUpgrades", "nameTable", "epithetTable", "fighters", "wargear",
          "armouryLists", "skillTables", "spellLores"]
 
 

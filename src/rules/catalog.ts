@@ -149,9 +149,15 @@ export const RULES = {
     assumption: "A05",
   },
   "twoHanded.heldItemMelee": {
-    severity: "info",
+    severity: "error",
     modes: BOTH,
     ref: { page: 62, md: `${GM} > Objets tenus` },
+    assumption: "A05",
+  },
+  "polearm.heldItem": {
+    severity: "info",
+    modes: BOTH,
+    ref: { page: 30, md: `${BATTLES} > Arme d'hast` },
     assumption: "A05",
   },
   "twoHanded.offHand": {

@@ -1,7 +1,7 @@
 {
   "_header": {
     "file": "src/data/death-covens.json",
-    "role": "Death Covens faction data: origins, strongholds, campaign rules, names, fighters, Coven Armoury, skills, spell lores",
+    "role": "Death Covens faction data: origins, strongholds, stronghold upgrades, names, fighters, Coven Armoury, skills, spell lores",
     "author": "Adrien Duclaud",
     "created": "2026-10-12",
     "license": "MIT for the file structure. Game content belongs to Sam Pearson (Black Death City)."
@@ -84,7 +84,6 @@
         "en": "Situated in the noble's district, this estate has seemingly survived the plague untouched. Behind its high walls can be seen the glimmer of firelight, and the sounds of decadent feasting.",
         "fr": "Située dans le district des nobles, cette propriété semble avoir traversé la peste intacte. Derrière ses hautes enceintes, on aperçoit la lueur des feux et l'on entend les échos de festins décadents."
       },
-      "income": "3d6x5",
       "rules": [
         {
           "id": "banquet-of-blood",
@@ -106,7 +105,6 @@
         "en": "Shelves laden with fragrant herbs, posies, and hardened pine resin fill the Embalmers' Hall with a sweet aroma. Beneath it lingers the unmistakable stench of corpses.",
         "fr": "Des étagères chargées d'herbes odorantes, de bouquets et de résine de pin durcie emplissent la Salle de l'embaumeur d'un parfum sucré. En dessous flotte la puanteur des cadavres, reconnaissable entre toutes."
       },
-      "income": "3d6x5",
       "rules": [
         {
           "id": "necromantic-study",
@@ -123,20 +121,19 @@
     },
     {
       "id": "grand-pavilion",
-      "name": { "en": "Grand Pavilion", "fr": "Grand pavillon" },
+      "name": { "en": "Woodland Estate", "fr": "Domaine forestier" },
       "flavour": {
-        "en": "Hidden amongst the northern forests, the Lycanfell Noble's grand pavilion serves as the heart of his hunting court. Rich tapestries and grisly trophies adorn its walls, while iron braziers burn long into the night. Beyond the firelight, the howls of gathering wolves echo through the trees.",
-        "fr": "Dissimulé au cœur des forêts du nord, le grand pavillon du Noble lycanthrope est le centre de sa cour de chasse. De riches tapisseries et de sinistres trophées ornent ses parois, tandis que des braseros de fer brûlent jusque tard dans la nuit. Au-delà de la lueur des feux, les hurlements des loups qui se rassemblent résonnent entre les arbres."
+        "en": "Hidden amongst the northern forests, the Lycanfell Noble's woodland estate serves as the heart of his hunting court. Faded tapestries and grisly trophies adorn its walls, while iron braziers light its cold halls. Beyond the estate, the howls of gathering wolves echo through the trees.",
+        "fr": "Caché au cœur des forêts du nord, le domaine forestier du Noble lycanthrope est le cœur de sa cour de chasse. Des tapisseries fanées et de sinistres trophées ornent ses murs, tandis que des braseros de fer éclairent ses salles froides. Au-delà du domaine, les hurlements des loups qui se rassemblent résonnent entre les arbres."
       },
-      "income": "3d6x5",
       "rules": [
         {
           "id": "bestial-trophies",
-          "name": { "en": "Bestial Trophies", "fr": "Trophées de Bêtes" },
+          "name": { "en": "Trophy Room", "fr": "Salle des trophées" },
           "tag": null,
           "text": {
-            "en": "Each time a Beast that was taken down by your Leader is killed, your Leader earns 10 bonus experience.",
-            "fr": "Chaque fois qu'une Bête qui a été mise hors de combat par votre Chef est tuée, votre Chef gagne 10 d'expérience bonus."
+            "en": "Each time a Beast or Brute that was taken down by your Leader is killed, your Leader earns 10 bonus experience.",
+            "fr": "Chaque fois qu'une Bête ou une Brute qui a été mise hors de combat par votre Chef est tuée, votre Chef gagne 10 d'expérience bonus."
           }
         },
         {
@@ -150,7 +147,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 95, "md": "08_death-covens.md > Grand pavillon" }
+      "sourceRef": { "page": 95, "md": "08_death-covens.md > Domaine forestier" }
     },
     {
       "id": "ancient-barrows",
@@ -159,15 +156,14 @@
         "en": "Set beneath the eastern hills on the City's outskirts, these ancient barrows have long stood silent. Now, rumours spread of the restless dead and an undead lord gathering his forgotten host, preparing to march upon the City once more.",
         "fr": "Creusés sous les collines de l'est, aux abords de la Cité, ces tumulus anciens sont longtemps restés silencieux. À présent, des rumeurs parlent de morts sans repos et d'un seigneur mort-vivant qui rassemble son armée oubliée et se prépare à marcher de nouveau sur la Cité."
       },
-      "income": "3d6x5",
       "rules": [
         {
           "id": "barrow-offering",
           "name": { "en": "Barrow Offering", "fr": "Offrande au tumulus" },
           "tag": null,
           "text": {
-            "en": "In step 5 of the Aftermath sequence, roll a dice. On a 6, mortals from the City have left an offering. Roll once on the treasure table (pg xx).",
-            "fr": "À l'étape 5 de la séquence d'après-bataille, lancez un dé. Sur 6, des mortels de la Cité ont laissé une offrande. Faites un seul jet sur la table des trésors (p. xx)."
+            "en": "In step 6 of the aftermath sequence, roll a dice. On a 6, mortals from the City have left an offering. Roll once on the Curiosities table (pg xx).",
+            "fr": "À l'étape 6 de la séquence d'après-bataille, lancez un dé. Sur 6, des mortels de la Cité ont laissé une offrande. Lancez une fois les dés sur la table des curiosités (p. xx)."
           }
         },
         {
@@ -175,8 +171,8 @@
           "name": { "en": "Immortal Slumber", "fr": "Sommeil immortel" },
           "tag": null,
           "text": {
-            "en": "If your Leader is Laid to Rest (see opposite), they are not removed from your warband. Instead they miss the next 1D3 battles as they slumber. Pick a Champion in your warband to be the Leader in their absence. That fighter temporarily gains the Leader keyword and loses the Champion keyword until the Leader returns.",
-            "fr": "Si votre Chef obtient le résultat Repos éternel, voir ci-dessous, il n'est pas retiré de votre bande. À la place, il manque les 1D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande pour être le Chef en son absence. Le combattant choisi gagne temporairement le mot-clé Chef et perd le mot-clé Champion jusqu'au retour du Chef."
+            "en": "If your Leader is 'Laid to Rest' (pg xx), they are not removed from your warband. Instead they miss the next 1D3 battles as they slumber. You can pick a Champion to assume command until they return (pg xx).",
+            "fr": "Si votre Chef obtient le résultat \"Repos éternel\" (p. xx), il n'est pas retiré de votre bande. À la place, il manque les 1D3 prochaines batailles, le temps de son sommeil. Vous pouvez choisir un Champion pour assumer le commandement jusqu'à son retour (p. xx)."
           }
         }
       ],
@@ -185,35 +181,131 @@
     }
   ],
 
-  "campaignRules": [
+  "strongholdUpgrades": [
     {
-      "id": "death-of-a-leader",
-      "name": { "en": "Death of a Leader", "fr": "Mort d'un Chef" },
-      "tag": null,
-      "text": {
-        "en": "During the campaign, if your leader is killed, and you choose to promote a champion (pg xx), the following champions are eligible:",
-        "fr": "Pendant la campagne, si votre chef est tué et que vous choisissez de promouvoir un champion (p. xx), les champions suivants sont éligibles :"
-      }
+      "id": "blackrose-orchard",
+      "name": { "en": "Blackrose Orchard", "fr": "Verger de roses noires" },
+      "flavour": {
+        "en": "Around the grounds of your stronghold grow tangled thickets that flower with black-petaled roses.",
+        "fr": "Autour de votre repaire poussent des fourrés enchevêtrés qui fleurissent de roses aux pétales noirs."
+      },
+      "rules": [
+        {
+          "id": "dark-harvest",
+          "name": { "en": "Dark Harvest", "fr": "Sombre récolte" },
+          "tag": null,
+          "text": {
+            "en": "In step six of the aftermath sequence, roll a dice. On a 5+, you receive 1 Blackrose Balm (pg xx).",
+            "fr": "À l'étape 6 de la séquence d'après-bataille, lancez un dé. Sur 5+, vous recevez 1 Baume de rose noire (p. xx)."
+          }
+        }
+      ],
+      "sourceRef": { "page": 96, "md": "08_death-covens.md > Verger de roses noires" }
     },
     {
-      "id": "skeletons-and-thralls",
-      "name": { "en": "Skeletons & Thralls", "fr": "Squelettes et Asservis" },
-      "tag": null,
-      "text": {
-        "en": "Fighters with the Thrall keyword do not gain experience. They cannot advance levels.\nIn addition Skeletons and Thralls do not use the standard injury table (pg xx). Instead they use the following Skeleton & Thrall Injury Table (1D6):\n1 - Laid to Rest: The undead creature is undone. Treat this result as killed (pg xx).\n2-6 - Unscathed: The fighter suffers no lasting effects.",
-        "fr": "Les combattants qui ont le mot-clé Asservi ne gagnent pas d'expérience. Ils ne peuvent pas gagner de niveau.\nDe plus, les Squelettes et les Asservis n'utilisent pas la table des blessures standard (p. xx). À la place, ils utilisent la Table des blessures des Squelettes et des Asservis suivante (1D6) :\n1 - Repos éternel : la créature mort-vivante est défaite. Traitez ce résultat comme tué (p. xx).\n2-6 - Indemne : le combattant ne subit aucun effet durable."
-      }
+      "id": "ossuary",
+      "name": { "en": "Ossuary", "fr": "Ossuaire" },
+      "flavour": {
+        "en": "The bones of generations past are gathered within this morbid chamber, stacked in great piles and arranged in alcoves along its walls. There is no shortage of remains from which to fashion new skeletal thralls.",
+        "fr": "Les ossements des générations passées sont rassemblés dans cette chambre morbide, empilés en grands tas et rangés dans des alcôves le long de ses murs. Les restes ne manquent pas pour façonner de nouveaux asservis squelettiques."
+      },
+      "rules": [
+        {
+          "id": "ossified-remains",
+          "name": { "en": "Ossified Remains", "fr": "Restes ossifiés" },
+          "tag": null,
+          "text": {
+            "en": "Reduce the cost of recruiting Skeleton fighters to your warband by 10 silver.",
+            "fr": "Réduisez de 10 pièces d'argent le coût de recrutement des combattants Squelettes dans votre bande."
+          }
+        }
+      ],
+      "sourceRef": { "page": 96, "md": "08_death-covens.md > Ossuaire" }
+    },
+    {
+      "id": "exhumed-crypt",
+      "name": { "en": "Exhumed Crypt", "fr": "Crypte exhumée" },
+      "flavour": {
+        "en": "Deep beneath your stronghold lie the remains of a ancient and powerful warrior. You exhume their crypt in the hopes of finding a powerful relic within...",
+        "fr": "Loin sous votre repaire reposent les restes d'un guerrier ancien et puissant. Vous exhumez sa crypte dans l'espoir d'y trouver une puissante relique..."
+      },
+      "rules": [
+        {
+          "id": "treasure-of-the-crypt",
+          "name": { "en": "Treasure of the Crypt", "fr": "Trésor de la crypte" },
+          "tag": null,
+          "text": {
+            "en": "When this upgrade is picked, you can roll once on the Relics table (pg xx).",
+            "fr": "Quand cette amélioration est choisie, vous pouvez lancer une fois les dés sur la table des reliques (p. xx)."
+          }
+        }
+      ],
+      "sourceRef": { "page": 96, "md": "08_death-covens.md > Crypte exhumée" }
+    },
+    {
+      "id": "gargoyles-tower",
+      "name": { "en": "Gargoyle's Tower", "fr": "Tour des gargouilles" },
+      "flavour": {
+        "en": "This lofted tower is one no mortal would dare ascend, for its battlements are home to a gathering of gargoyles. From here, they take to the skies, circling high above the City before descending upon their prey.",
+        "fr": "Aucun mortel n'oserait gravir cette haute tour, car ses remparts abritent une assemblée de gargouilles. De là, elles prennent leur envol et tournoient haut au-dessus de la Cité avant de fondre sur leur proie."
+      },
+      "rules": [
+        {
+          "id": "circle-the-skies-above",
+          "name": { "en": "Circle the Skies Above", "fr": "Tournoyer dans les cieux" },
+          "tag": null,
+          "text": {
+            "en": "If a friendly Gargoyle starts the battle in reserve, instead of making a reinforcement roll for them, you can say they are circling the skies above. If you do so, they arrive in the Start of Round step of the next round, before any reinforcement rolls are made. They can be set up anywhere on the battlefield more than 9\" away from all enemy fighters.",
+            "fr": "Si une Gargouille alliée commence la bataille en réserve, au lieu d'effectuer un jet de renforts pour elle, vous pouvez déclarer qu'elle tournoie dans les cieux. Dans ce cas, elle arrive à l'étape de début de round du round suivant, avant tout jet de renforts. Elle peut être placée n'importe où sur le champ de bataille, à plus de 9\" de tous les combattants ennemis."
+          }
+        }
+      ],
+      "sourceRef": { "page": 96, "md": "08_death-covens.md > Tour des gargouilles" }
+    },
+    {
+      "id": "household-poisoner",
+      "name": { "en": "Household Poisoner", "fr": "Empoisonneur de la maisonnée" },
+      "flavour": {
+        "en": "You take a manservant with knowledge of various toxins under your employ. As each night draws to a close, they prepare a freshly vial of poison.",
+        "fr": "Vous prenez à votre service un serviteur qui connaît diverses toxines. À la fin de chaque nuit, il prépare une fiole de poison fraîche."
+      },
+      "rules": [
+        {
+          "id": "a-nights-work",
+          "name": { "en": "A Night's Work", "fr": "Le travail d'une nuit" },
+          "tag": null,
+          "text": {
+            "en": "In step six of the aftermath sequence, you receive 1 Vial of Poison (pg xx).",
+            "fr": "À l'étape 6 de la séquence d'après-bataille, vous recevez 1 Fiole de poison (p. xx)."
+          }
+        }
+      ],
+      "sourceRef": { "page": 96, "md": "08_death-covens.md > Empoisonneur de la maisonnée" }
+    },
+    {
+      "id": "necromancers-mausoleum",
+      "name": { "en": "Necromancer's Mausoleum", "fr": "Mausolée du nécromancien" },
+      "flavour": {
+        "en": "The remains of a powerful necromancer are brought to your Stronghold and enshrined within a mausoleum. This conduit of necromantic sorcery bolsters your own magical prowess.",
+        "fr": "Les restes d'un puissant nécromancien sont apportés à votre repaire et placés dans un mausolée. Ce conduit de sorcellerie nécromantique renforce vos propres pouvoirs magiques."
+      },
+      "rules": [
+        {
+          "id": "nexus-of-dark-magic",
+          "name": { "en": "Nexus of Dark Magic", "fr": "Nexus de magie noire" },
+          "tag": null,
+          "text": {
+            "en": "Each battle, you can ignore the first miscast by a friendly Wizard.",
+            "fr": "À chaque bataille, vous pouvez ignorer le premier fiasco d'un Magicien allié."
+          }
+        }
+      ],
+      "sourceRef": { "page": 96, "md": "08_death-covens.md > Mausolée du nécromancien" }
     }
-  ],
-
-  "leaderSuccession": [
-    { "formerLeaderId": "bloodcursed-noble", "eligibleChampionIds": ["bloodcursed-courtesan", "bloodcursed-knight"] },
-    { "formerLeaderId": "necromancer", "eligibleChampionIds": ["necromancers-apprentice"] },
-    { "formerLeaderId": "barrow-lord", "eligibleChampionIds": ["barrow-champion"] }
   ],
   "nameTable": {
     "die": "d66",
-    "sourceRef": { "page": 96, "md": "08_death-covens.md > Noms des Cabales de la Mort" },
+    "sourceRef": { "page": 104, "md": "08_death-covens.md > Noms des Cabales de la Mort" },
     "entries": {
       "11": "Alaric",
       "12": "Barovyr",
@@ -674,14 +766,37 @@
       "sourceRef": { "page": 109, "md": "08_death-covens.md > Champion des tumulus" }
     },
     {
+      "id": "manservant",
+      "name": { "en": "Manservant", "fr": "Serviteur" },
+      "category": "henchman",
+      "keywords": ["henchman", "demi-human"],
+      "cost": 45,
+      "limit": 3,
+      "stats": { "mv": 5, "bl": 4, "bw": 6, "ar": 6, "in": 3, "wl": 3, "lf": 4 },
+      "allowedWargearLists": ["main"],
+      "fixedWargearIds": [],
+      "startingExperience": { "base": 20, "dice": "d6" },
+      "knownSpellLoreIds": [],
+      "recruitmentGrants": { "skills": 0, "fixedSkillIds": [], "spells": 0, "spellLoreId": null },
+      "specialRules": [],
+      "options": null,
+      "formOf": null,
+      "wargearText": {
+        "en": "This fighter can be equipped with wargear from the Main List from the Coven Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie de la Cabale."
+      },
+      "quote": { "en": "Yes, m'lord?", "fr": "Oui, monseigneur ?" },
+      "sourceRef": { "page": 110, "md": "08_death-covens.md > Serviteur" }
+    },
+    {
       "id": "skeleton-warrior",
       "name": { "en": "Skeleton Warrior", "fr": "Guerrier squelette" },
       "category": "henchman",
       "keywords": ["henchman", "undead", "skeleton", "thrall"],
       "cost": 40,
       "limit": null,
-      "stats": { "mv": 4, "bl": 4, "bw": 6, "ar": 6, "in": 3, "wl": 2, "lf": 4 },
-      "allowedWargearLists": ["main"],
+      "stats": { "mv": 4, "bl": 4, "bw": 4, "ar": 6, "in": 3, "wl": 2, "lf": 4 },
+      "allowedWargearLists": ["main", "skeleton-warrior"],
       "fixedWargearIds": [],
       "startingExperience": { "base": 0, "dice": null },
       "knownSpellLoreIds": [],
@@ -866,8 +981,8 @@
           "name": { "en": "Trackers", "fr": "Pisteurs" },
           "tag": null,
           "text": {
-            "en": "Each aftermath sequence, when you search the city, if your search party includes any Dire Wolves, you can re-roll the exploration roll.",
-            "fr": "À chaque séquence d'après-bataille, quand vous fouillez la cité, si votre groupe de fouille comprend au moins un Loup sinistre, vous pouvez relancer le jet d'exploration."
+            "en": "When exploring the city (pg xx). If your scouting party includes a Hunting Dog, you gain 1 exploration re-roll (units dice only).",
+            "fr": "Quand vous explorez la Cité (p. xx), si votre groupe d'éclaireurs comprend un Loup sinistre, vous gagnez 1 relance d'exploration (dé des unités seulement)."
           }
         }
       ],
@@ -1082,7 +1197,7 @@
       "cost": 34,
       "purchasable": true,
       "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3+1" },
-      "traits": [{ "key": "brace" }, { "key": "two-handed" }, { "key": "unwieldy" }],
+      "traits": [{ "key": "brace" }, { "key": "polearm" }, { "key": "two-handed" }],
       "armourValue": null,
       "armourImprovement": 0,
       "itemKeywords": [],
@@ -1208,7 +1323,7 @@
       "cost": 16,
       "purchasable": true,
       "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
-      "traits": [{ "key": "brace" }, { "key": "two-handed" }],
+      "traits": [{ "key": "brace" }, { "key": "polearm" }, { "key": "two-handed" }],
       "armourValue": null,
       "armourImprovement": 0,
       "itemKeywords": [],
@@ -1305,6 +1420,48 @@
       "text": null,
       "designerNote": null,
       "sourceRef": { "page": 110, "md": "08_death-covens.md > Zombie" }
+    },
+    {
+      "id": "long-bow",
+      "name": { "en": "Long Bow", "fr": "Arc long" },
+      "kind": "ranged",
+      "cost": 26,
+      "purchasable": true,
+      "profile": { "range": 28, "attacks": 1, "rend": -1, "damage": "d3", "critDamage": "d6" },
+      "traits": [{ "key": "heavy" }, { "key": "two-handed" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes à distance" }
+    },
+    {
+      "id": "short-bow",
+      "name": { "en": "Short Bow", "fr": "Arc court" },
+      "kind": "ranged",
+      "cost": 16,
+      "purchasable": true,
+      "profile": { "range": 16, "attacks": 1, "rend": 0, "damage": 1, "critDamage": "d6" },
+      "traits": [{ "key": "two-handed" }],
+      "armourValue": null,
+      "armourImprovement": 0,
+      "itemKeywords": [],
+      "rarity": null,
+      "requires": null,
+      "restrictions": [],
+      "grantsAttack": null,
+      "statModifiers": {},
+      "weaponImprovements": [],
+      "text": null,
+      "designerNote": null,
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes à distance" }
     },
     {
       "id": "cuirass",
@@ -1585,6 +1742,15 @@
         { "wargearId": "winged-familiar", "cost": 12 },
         { "wargearId": "spirit-guardian", "cost": 45 }
       ]
+    },
+    {
+      "id": "skeleton-warrior",
+      "name": { "en": "Skeleton Warrior List", "fr": "Liste des Guerriers squelettes" },
+      "sourceRef": { "page": 98, "md": "08_death-covens.md > Liste des Guerriers squelettes" },
+      "entries": [
+        { "wargearId": "long-bow", "cost": 26 },
+        { "wargearId": "short-bow", "cost": 16 }
+      ]
     }
   ],
 
@@ -1636,8 +1802,8 @@
           "id": "supernatural-healing",
           "name": { "en": "Supernatural Healing", "fr": "Guérison surnaturelle" },
           "text": {
-            "en": "This fighter cannot suffer permanent injuries. If they suffer a lasting injury it is always temporary.\nIn addition, if this fighter is killed, you can immediately make a Willpower test for them. If passed, they are not killed but must miss the next 1D3 battles as they slumber. Pick a Champion in your warband to be the Leader in their absence. That fighter temporarily gains the Leader keyword and loses the Champion keyword until the Leader returns.",
-            "fr": "Ce combattant ne peut pas subir de blessures permanentes. S'il subit une blessure durable, elle est toujours temporaire.\nDe plus, si ce combattant est tué, vous pouvez immédiatement effectuer un test de Volonté pour lui. S'il est réussi, il n'est pas tué, mais il doit manquer les 1D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande pour être le Chef en son absence. Le combattant choisi gagne temporairement le mot-clé Chef et perd le mot-clé Champion jusqu'au retour du Chef."
+            "en": "This fighter cannot suffer permanent injuries. If they suffer an injury it is always temporary (pg xx).\nIn addition, if this fighter is killed, you can immediately make a Willpower test for them. If passed, they are not killed but miss the next 1D3 battles as they slumber. Pick a Champion in your warband to assume command in their absence (pg xx).",
+            "fr": "Ce combattant ne peut pas subir de blessures permanentes. S'il subit une blessure, elle est toujours temporaire (p. xx).\nDe plus, si ce combattant est tué, vous pouvez immédiatement effectuer un test de Volonté pour lui. S'il est réussi, il n'est pas tué, mais il manque les 1D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande pour assumer le commandement en son absence (p. xx)."
           },
           "sourceRef": { "page": 103, "md": "08_death-covens.md > Guérison surnaturelle" }
         },

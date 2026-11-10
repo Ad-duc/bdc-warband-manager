@@ -174,8 +174,8 @@ describe("reminder sheet", () => {
     ]);
   });
 
-  it("keeps the 19 weapon traits and the real page numbers of v1.03", () => {
-    expect(reminder.traits.rows).toHaveLength(19);
+  it("keeps the 20 weapon traits and the real page numbers of v1.10", () => {
+    expect(reminder.traits.rows).toHaveLength(20);
     expect(reminder.traits.note).toContain("p. 29-30");
     expect(reminder.setup.steps.join(" ")).toContain("p. 35");
     expect(reminder.setup.steps.join(" ")).toContain("p. 34");

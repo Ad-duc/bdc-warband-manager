@@ -12,7 +12,7 @@ Cette section contient toutes les règles pour recruter une bande (*warband*) de
 
 - **Origines (*Origins*)** (p. xx)
 - **Repaires (*Strongholds*)** (p. xx)
-- **Règles de campagne (*Campaign Rules*)** (p. xx)
+- **Améliorations de repaire (*Stronghold Upgrades*)** (p. xx)
 - **Liste des combattants des Mercenaires de la Guilde (*Guild Mercenaries Fighter List*)** (p. xx)
 - **L'Armurerie de la Guilde (*The Guild Armoury*)** (p. xx-xx)
 - **Domaines de magie des Mercenaires de la Guilde (*Guild Mercenaries Spell Lores*)** (p. xx)
@@ -21,65 +21,49 @@ Cette section contient toutes les règles pour recruter une bande (*warband*) de
 
 ## Origines (*Origins*)
 
-Avant d'engager le moindre combattant (*fighter*), choisissez une origine (*origin*) pour votre bande (*warband*) et notez-la sur votre feuille de bande (*Warband Roster*). Chaque origine (*origin*) s'accompagne de règles spéciales (*special rule*) et de restrictions différentes. Vous trouverez les repaires (*stronghold*) à la page suivante.
+Avant d'engager le moindre combattant (*fighter*), choisissez une origine (*origin*) pour votre bande (*warband*) et notez-la sur votre feuille de bande (*Warband Roster*). Chaque origine (*origin*) impose un Chef (*Leader*) et donne un repaire (*stronghold*) différents. Vous trouverez les repaires (*stronghold*) à la page suivante.
 
 ### Épées à louer (*Swords for Hire*)
 
 > Cette bande (*warband*) travaille pour le plus offrant et s'est assuré un riche mécène pour financer son expédition. Elle le doit à son chef (*Leader*) de sinistre réputation, qui a déjà fait ses preuves en s'aventurant dans la Cité (*the City*) et en en revenant vivant pour le raconter.
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez engager un **Capitaine de la Guilde (*Guild Captain*)** pour diriger votre bande (*warband*) au début de la campagne.
 
-**Règles spéciales (*Special Rules*)**
-
-Vous commencez la campagne avec le repaire (*stronghold*) **Caserne de la Guilde** (*Guild Barracks*).
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Caserne de la Guilde** (*Guild Barracks*).
 
 ### Noble déchu (*Disgraced Noble*)
 
 > La réputation ternie et les dettes s'accumulant, ce noble a vendu divers biens de famille afin de réunir assez de capital pour lever une bande (*warband*) et entrer dans la Cité (*the City*), dans l'espoir de rebâtir sa fortune. Son pari sera-t-il payant ?
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez engager un **Noble** pour diriger votre bande (*warband*) au début de la campagne.
 
-**Règles spéciales (*Special Rules*)**
-
-Vous commencez la campagne avec le repaire (*stronghold*) **Manoir délabré** (*Dilapidated Manor*).
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Manoir délabré** (*Dilapidated Manor*).
 
 ### Guilde des chasseurs de sorcières (*Witch Hunters Guild*)
 
 > L'effondrement de la Cité (*the City*) a libéré des horreurs que l'on croyait enterrées depuis longtemps. Des vampires (*Vampyre*) hantent les rues la nuit, des nécromanciens pillent les fosses de peste (*plague pit*) et des démons (*Demon*) répondent à des appels interdits. Pour la Guilde des chasseurs de sorcières (*Witch Hunters Guild*), il ne peut y avoir qu'une seule réponse. Armés du feu, de la foi et de l'acier froid, ils marchent dans les ruines pour y purger toute trace d'impiété.
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez engager un **Chasseur de sorcières (*Witch Hunter*)** pour diriger votre bande (*warband*) au début de la campagne.
 
-**Règles spéciales (*Special Rules*)**
-
-Vous commencez la campagne avec le repaire (*stronghold*) **Maison capitulaire** (*Chapter House*).
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Maison capitulaire** (*Chapter House*).
 
 ### Suite du Magicien (*Wizard's Retinue*)
 
 > Menée par un Grand Magicien de la Guilde (*High Wizard of the Guild*), cette expédition dans la Cité (*the City*) a été financée à ses propres frais, car il recherche de puissants artefacts arcaniques, perdus lors de la destruction de la Cité (*the City*).
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez engager un **Grand Magicien de la Guilde (*High Wizard of the Guild*)** pour diriger votre bande (*warband*) au début de la campagne.
 
-**Règles spéciales (*Special Rules*)**
-
-Vous commencez la campagne avec le repaire (*stronghold*) **Bibliothèque cachée** (*Hidden Library*).
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Bibliothèque cachée** (*Hidden Library*).
 
 ## Repaires (*Strongholds*)
 
-Selon l'origine (*origin*) choisie pour votre bande (*warband*), elle commence avec l'une des possessions (*holding*) suivantes comme repaire (*stronghold*). Vous en saurez plus sur les possessions (*holding*) et les repaires (*stronghold*) au Chapitre 5 :
+Chaque bande (*warband*) de Mercenaires de la Guilde (*Guild Mercenaries*) contrôle l'un des **repaires** (*stronghold*) suivants pendant la campagne. Le repaire (*stronghold*) est déterminé par l'origine (*origin*) choisie pour la bande (*warband*). Vous en saurez plus sur les repaires (*stronghold*) au chapitre 5, page xx.
 
 ### Caserne de la Guilde (*Guild Barracks*)
 
 > L'ancienne caserne de la Guilde (*the Guild*) se dresse toujours dans les districts extérieurs de la Cité (*the City*). Sans avoir rien de grandiose, elle offre aux jeunes recrues comme aux vétérans endurcis un lieu où s'exercer entre deux expéditions.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
 **Exercices de combat (*Combat Drills*) :** à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir jusqu'à 3 Hommes de main (*Henchman*) alliés (*friendly*) à entraîner. Chacun de ces combattants (*fighter*) gagne 1D6 d'expérience bonus (*bonus experience*).
 
@@ -89,55 +73,73 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), elle commence a
 
 > La famille du noble possède un petit domaine délabré aux abords de la Cité (*the City*). On y trouve, dans la cave, une modeste collection de vins, vite réquisitionnée.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
 **Grands crus (*Vintage Wines*) :** quand cette possession (*holding*) est ajoutée pour la première fois à une feuille de bande (*Warband Roster*), elle contient 2D6 bouteilles de **grand cru** (*vintage wine*). Notez-le sur votre feuille de bande (*Warband Roster*).
 
-Chaque fois que vous percevez le revenu (*income*) de cette possession (*holding*), après avoir lancé les dés, vous pouvez choisir de vendre une bouteille de grand cru (*vintage wine*). Dans ce cas, réduisez le compte de 1 et relancez (*re-roll*) les dés. Vous devez accepter le second résultat.
+Chaque fois que vous percevez le revenu (*income*) de cette possession (*holding*), après avoir lancé les dés, vous pouvez choisir de vendre 1 bouteille de grand cru (*vintage wine*). Dans ce cas, réduisez le compte de 1 et relancez (*re-roll*) l'un des dés. Vous devez accepter le second résultat.
+
+**Compléter la collection (*Add to the Collection*) :** chaque fois que votre bande (*warband*) saccage (*ransack*) une possession (*holding*), lancez un dé. Sur 4+, elle trouve 1D3 bouteilles de grand cru (*vintage wine*).
 
 ### Maison capitulaire (*Chapter House*)
 
 > Modeste mais fortifiée, la Maison capitulaire (*Chapter House*) sert non seulement de base d'opérations dans la cité, mais aussi de lieu de pénitence et de rédemption.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
 **Expiation des péchés (*Atonement for Sin*) :** si votre bande (*warband*) a perdu la bataille, à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), effectuez un test de Volonté (*Willpower*) pour chaque Chasseur de sorcières (*Witch Hunter*) et chaque Prêtre (*Priest*) de votre bande (*warband*). S'il le réussit, il gagne 5 d'expérience bonus (*bonus experience*).
+
+**Saintes reliques (*Holy Relics*) :** tenez le compte des Champions et des Chefs (*Leader*) ennemis Morts-vivants (*Undead*) et Démons (*Demon*) mis hors de combat (*taken down*) en bataille contre votre bande (*warband*). Chaque fois que ce compte atteint un multiple de 10, la Guilde des chasseurs de sorcières (*Witch Hunters' Guild*) vous récompense d'une sainte relique : vous pouvez lancer une fois les dés sur la table des reliques (*Relic table*) (p. xx).
 
 ### Bibliothèque cachée (*Hidden Library*)
 
 > À grands frais, la guilde a transféré de nombreux manuscrits et traités sur les arcanes dans un lieu secret de la cité. De là, ses magiciens (*Wizard*) poursuivent leurs études.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
 **Étude de la sorcellerie (*Sorcerous Study*) :** à chaque bataille, avant de déterminer les sorts préparés (*prepared spell*), vous pouvez choisir 1 Magicien (*Wizard*) allié (*friendly*) de votre bande (*warband*). Au lieu de déterminer au hasard le sort (*spell*) qu'il a préparé dans un Domaine de magie (*Spell Lore*), vous pouvez le choisir.
 
-## Règles de campagne des Mercenaires de la Guilde (*Guild Mercenaries Campaign Rules*)
+**Maîtriser l'arcane (*Master the Arcane*) :** à chaque bataille, tenez le compte des sorts (*spell*) que chaque Magicien (*Wizard*) allié (*friendly*) lance de façon critique (*critically cast*). À l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), chaque Magicien (*Wizard*) allié (*friendly*) gagne 5 d'expérience bonus (*bonus experience*) pour chaque sort (*spell*) qu'il a lancé de façon critique (*critically cast*) pendant la bataille.
 
-Pendant la campagne, les bandes (*warband*) de Mercenaires de la Guilde (*Guild Mercenaries*) ont les règles spéciales (*special rule*) supplémentaires suivantes :
+## Améliorations de repaire (*Stronghold Upgrades*)
 
-### Mort d'un Chef (*Death of a Leader*)
+Pendant la campagne, les bandes (*warband*) de Mercenaires de la Guilde (*Guild Mercenaries*) peuvent améliorer leur repaire (*stronghold*) avec les **améliorations de repaire** (*stronghold upgrade*) suivantes. Vous en saurez plus sur les améliorations de repaire (*stronghold upgrade*) à la page xx :
 
-Pendant la campagne, si votre chef (*Leader*) est tué (*killed*) et que vous choisissez de promouvoir (*promote*) un champion (p. xx), les champions suivants sont éligibles :
+### Salle de prière (*Prayer Room*)
 
-| Ancien Chef (*Former Leader*) | Champion éligible (*Eligible Champion*) |
-|---|---|
-| Capitaine de la Guilde (*Guild Captain*) | Champion de la Guilde (*Guild Champion*) |
-| Noble | Champion de la Guilde (*Guild Champion*) |
-| Chasseur de sorcières (*Witch Hunter*) | Apprenti chasseur de sorcières (*Witch Hunter's Apprentice*) |
-| Grand Magicien (*High Wizard*) | Magicien de la Guilde (*Guild Wizard*) |
+> Vous réservez une pièce calme à la prière et aux observances religieuses, ornée de cierges, d'icônes et d'autres objets saints. Les prêtres de la bande (*warband*) peuvent y faire leurs dévotions et chercher la faveur des Saints.
 
-### Noms des Mercenaires de la Guilde (*Guild Mercenary Names*)
+**Communion avec les Saints (*Communion with the Saints*) :** votre bande (*warband*) peut inclure 0-2 Clercs de la Guilde (*Guild Cleric*). De plus, à chaque bataille, vous pouvez ignorer le premier fiasco (*miscast*) d'un Prêtre (*Priest*) allié (*friendly*).
 
-Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) des Mercenaires de la Guilde (*Guild Mercenaries*).
+### Apothicairerie (*Apothecary*)
 
-| D66 | 1 | 2 | 3 | 4 | 5 | 6 |
-|---|---|---|---|---|---|---|
-| 10 | Adalbert | Albrecht | Anton | Augustin | Balthasar | Benedikt |
-| 20 | Berthold | Dietrich | Eberhard | Erasmus | Fabian | Friedrich |
-| 30 | Georg | Gregor | Hans | Heinrich | Hieronymus | Isenbert |
-| 40 | Jakob | Johannes | Jörg | Karl | Kaspar | Kristof |
-| 50 | Konrad | Leonhard | Lorenz | Ludwig | Matthias | Nikolaus |
-| 60 | Oswald | Otto | Ulrich | Valentin | Wilhelm | Wolfram |
+> Garnie d'étagères d'herbes séchées, de flacons de verre et de curieuses préparations, cette pièce sert à un apothicaire que vous employez pour préparer potions et remèdes.
+
+**La potion de l'apothicaire (*The Apothecary's Potion*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), vous recevez 1 Tonique de soin (*Healing Tonic*) (p. xx).
+
+### Chenil (*Kennels*)
+
+> Vous aménagez une petite cour pour loger et dresser les chiens de la bande (*warband*). Avec des enclos solides et un endroit où se dépenser, les bêtes sont tenues prêtes pour la chasse.
+
+**Chien élevé (*Raised Canine*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez lancer un dé. Sur 5+, vous pouvez recruter (*recruit*) 1 Chien de chasse (*Hunting Dog*) dans votre bande (*warband*) pour 0 pièce d'argent (*silver*).
+
+### Atelier d'arquebusier (*Gunsmith's Workshop*)
+
+> De l'autre côté de la cour, vous construisez un atelier pour l'entretien et la réparation des armes à poudre noire. Un arquebusier habile y est employé pour garder les armes à feu de la bande (*warband*) en état de marche.
+
+**Armes à feu entretenues (*Maintained Firearms*) :** à chaque bataille, vous pouvez ignorer le premier incident de tir (*misfire*) d'un combattant allié (*friendly fighter*).
+
+### Cabinet du chirurgien (*Chirurgeon's Practice*)
+
+> Vous installez un petit cabinet de chirurgie dans le repaire (*stronghold*), garni d'instruments chirurgicaux, de bandages et de préparations médicinales. Le Médecin de peste (*Plague Doctor*) de la bande (*warband*) peut y soigner les blessés et accomplir sa sinistre besogne.
+
+**Soigner les blessés (*Tend the Wounded*) :** si votre bande (*warband*) comprend un Médecin de peste (*Plague Doctor*), il peut utiliser sa règle spéciale (*special rule*) "Chirurgien" (*Sawbones*) deux fois par séquence d'après-bataille (*aftermath sequence*).
+
+### Armurier (*Armourer*)
+
+> Vous employez un armurier pour garder l'équipement de la bande (*warband*) en bon état. Une petite forge est bâtie à l'arrière du repaire (*stronghold*), et jour et nuit résonne le tintement de son marteau.
+
+**Infanterie lourde (*Heavy Infantry*) :** jusqu'à 3 Hommes de main (*Henchman*) de votre bande (*warband*) peuvent être équipés d'une Armure de plates (*Full-Plate*).
 
 ## Liste des combattants des Mercenaires de la Guilde (*Guild Mercenaries Fighters List*)
 
@@ -146,7 +148,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Combattant | Coût |
 |---|---|
 | Capitaine de la Guilde (*Guild Captain*) | 140 pa |
-| Noble | 120 pa |
+| Noble | 150 pa |
 | Chasseur de sorcières (*Witch Hunter*) | 140 pa |
 | Grand Magicien de la Guilde (*High Wizard of the Guild*) | 165 pa |
 
@@ -157,7 +159,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | 0-1 Magicien de la Guilde (*Guild Wizard*) | 120 pa |
 | 0-1 Clerc de la Guilde (*Guild Cleric*) | 120 pa |
 | Champion de la Guilde (*Guild Champion*) | 90 pa |
-| Médecin de peste (*Plague Doctor*) | 65 pa |
+| 0-1 Médecin de peste (*Plague Doctor*) | 65 pa |
 | Apprenti chasseur de sorcières (*Witch Hunter's Apprentice*) | 80 pa |
 
 **Hommes de main (*Henchmen*) (5+)**
@@ -362,15 +364,18 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Dague (*Dagger*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*) | 10 pa |
 | Arme ensorcelée (*Ensorcelled Weapon*) | 3 | -1 | 1 | 1D3 | Arcanique (*Arcane*) | 26 pa |
 | Fléau (*Flail*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*), Contournement (*Wrap*) | 14 pa |
-| Hallebarde (*Halberd*) | 3 | -1 | 1 | 1D3+1 | Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 34 pa |
+| Hallebarde (*Halberd*) | 3 | -1 | 1 | 1D3+1 | Contre-charge (*Brace*), Arme d'hast (*Polearm*), À deux mains (*Two-handed*) | 34 pa |
 | Hache lourde (*Heavy Axe*) | 3 | -2 | 2 | 1D3+1 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 40 pa |
 | Lame d'ogre (*Ogre Blade*) | 3 | -1 | 2 | 1D3+1 | Main secondaire (*Off-hand*) | 36 pa |
-| Grande arme d'ogre (*Ogre Great Weapon*) | 3 | -2 | 3 | 1D3+2 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 50 pa |
+| Grande arme d'ogre (*Ogre Great Weapon*) | 3 | -2 | 3 | 1D3+2 | À deux mains (*Two-handed*) | 50 pa |
+| Rapière de noble (*Noble's Rapier*)* | 4 | -1 | 1 | 1D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 40 pa |
 | Masse d'ogre (*Ogre Mace*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 38 pa |
-| Lance (*Spear*) | 3 | - | 1 | 1D3 | Contre-charge (*Brace*), À deux mains (*Two-handed*) | 16 pa |
+| Lance (*Spear*) | 3 | - | 1 | 1D3 | Contre-charge (*Brace*), Arme d'hast (*Polearm*), À deux mains (*Two-handed*) | 16 pa |
 | Épée (*Sword*) | 3 | - | 1 | 1D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
 | Marteau de guerre (*Warhammer*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 38 pa |
 | Espadon (*Zweihander*) | 3 | -1 | 2 | 1D3+1 | Garde (*Guard*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 42 pa |
+
+*Cette arme ne peut pas être achetée.
 
 **Rappels des traits d'armes (*Weapon Trait Reminders*)**
 
@@ -383,6 +388,7 @@ Voir les règles complètes aux pages xx-xx.
 | Contre-charge (*Brace*) | Initiative contre les combattants qui chargent |
 | Garde (*Guard*) | 1 échec peut parer une touche |
 | Main secondaire (*Off-hand*) | Utilisable en main secondaire : 1 attaque |
+| Arme d'hast (*Polearm*) | Peut être équipée avec un objet tenu, gagne Encombrant |
 | À deux mains (*Two-handed*) | 1 par combattant. Pas d'attaque de main secondaire |
 | Encombrant (*Unwieldy*) | -1 aux jets d'attaque |
 | Contournement (*Wrap*) | Ne peut ni parer ni être parée |
@@ -400,7 +406,7 @@ Voir les règles complètes aux pages xx-xx.
 | Bombes incendiaires (*Fire Bombs*) | 8" | 1 | - | 1D3+1 | - | Explosion (*Blast*), Usage unique (*One-use*), Rare 0-1, Effroi (*Scare*) | 34 pa |
 | Lance-flammes (*Flamethrower*) | Flamme (*Flame*) | 1 | - | 1D3+1 | - | Flamme (*Flame*), Rare 0-1, Rechargement (*Reload*), Effroi (*Scare*), À deux mains (*Two-handed*) | 80 pa |
 | Arbalète de poing (*Hand Crossbow*) | 12" | 1 | - | 1 | 1D6 | Rechargement (*Reload*) | 16 pa |
-| Arc long (*Long Bow*) | 24" | 1 | -1 | 1 | 1D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 26 pa |
+| Arc long (*Long Bow*) | 28" | 1 | -1 | 1D3 | 1D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 26 pa |
 | Fusil long (*Long Rifle*) | 30" | 1 | -2 | 2 | 1D6+2 | Lourd (*Heavy*), Incident de tir (*Misfire*), À deux mains (*Two-handed*) | 70 pa |
 | Arbalète lourde d'ogre (*Ogre Arbalest*) | 24" | 1 | -2 | 3 | 1D6+2 | Rare 0-1, Rechargement (*Reload*), À deux mains (*Two-handed*) | 90 pa |
 | Canon d'ogre (*Ogre Cannon*) | 18" | 1 | -3 | 1D6+1 | - | Explosion (*Blast*), Incident de tir (*Misfire*), Rare 0-1, Rechargement (*Reload*), À deux mains (*Two-handed*) | 112 pa |
@@ -514,11 +520,9 @@ Une fois par bataille, tant que ce combattant (*fighter*) est engagé au corps �
 
 ### Objets tenus (*Held Items*)
 
-Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), par exemple les Boucliers (*Shield*). Ces objets (*item*) comptent dans le nombre d'armes de corps à corps (*melee weapon*) dont un combattant (*fighter*) peut être équipé, à la place du nombre d'objets (*item*). De plus, ils suivent les règles suivantes :
+Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), par exemple les Boucliers (*Shield*). Ces objets (*item*) comptent dans le nombre d'armes de corps à corps (*melee weapon*) dont un combattant (*fighter*) peut être équipé, à la place du nombre d'objets (*item*). De plus, ils suivent la règle suivante :
 
-**Armes de corps à corps à deux mains (*Two-Handed Melee Weapons*) :** un combattant (*fighter*) peut être équipé d'un objet tenu (*held item*) et d'une arme de corps à corps (*melee weapon*) à deux mains (*Two-handed*), par exemple une Lance (*Spear*) et un Bouclier (*Shield*). Cependant, soustrayez 1 à la valeur d'Attaques (*Attacks*) des armes de corps à corps (*melee weapon*) à deux mains (*Two-handed*) du combattant (*fighter*).
-
-**Armes à distance à deux mains (*Two-Handed Ranged Weapons*) :** un combattant (*fighter*) ne peut pas être équipé à la fois d'un objet tenu (*held item*) et d'une arme à distance (*ranged weapon*) à deux mains (*Two-handed*).
+**Armes à deux mains et objets tenus (*Two-Handed Weapons and Held Items*) :** un combattant (*fighter*) ne peut pas être équipé à la fois d'un objet tenu (*held item*) et d'une arme à deux mains (*Two-handed*), sauf si l'arme est une arme d'hast (*Polearm*), par exemple une Lance (*Spear*) et un Bouclier (*Shield*).
 
 ## Domaines de magie des Mercenaires de la Guilde (*Guild Mercenaries Spell Lores*)
 
@@ -704,7 +708,7 @@ Une fois par action d'Attaque au corps à corps (*Melee Attack Action*), après 
 
 ### Instinct d'explorateur (*Explorer's Instincts*)
 
-Si ce combattant (*fighter*) est choisi pour mener un groupe de fouille (*search party*), vous pouvez relancer (*re-roll*) l'un des dés du jet d'exploration (*exploration roll*) (soit les "dizaines", soit les "unités").
+Si ce combattant (*fighter*) est choisi pour mener un groupe d'éclaireurs (*scouting party*), vous gagnez 1 relance d'exploration (*exploration re-roll*).
 
 ### Pile à l'heure (*Right On Time*)
 
@@ -738,6 +742,19 @@ Tant que ce combattant (*fighter*) est ensanglanté (*bloodied*), ajoutez 1 à l
 
 Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Melee Attack Action*) dans laquelle ce combattant (*fighter*) est le défenseur (*defending fighter*) et où l'attaquant (*attacking fighter*) a chargé (*charged*) pendant la même activation, ce combattant (*fighter*) peut tenir bon (*stand ground*). Dans ce cas, ses armes de corps à corps (*melee weapon*) gagnent les traits d'armes (*weapon trait*) Contre-charge (*Brace*) et Contondant (*Bludgeon*) jusqu'à la fin de l'activation.
 
+## Noms des Mercenaires de la Guilde (*Guild Mercenary Names*)
+
+Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) des Mercenaires de la Guilde (*Guild Mercenaries*).
+
+| D66 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| 10 | Adalbert | Albrecht | Anton | Augustin | Balthasar | Benedikt |
+| 20 | Berthold | Dietrich | Eberhard | Erasmus | Fabian | Friedrich |
+| 30 | Georg | Gregor | Hans | Heinrich | Hieronymus | Isenbert |
+| 40 | Jakob | Johannes | Jörg | Karl | Kaspar | Kristof |
+| 50 | Konrad | Leonhard | Lorenz | Ludwig | Matthias | Nikolaus |
+| 60 | Oswald | Otto | Ulrich | Valentin | Wilhelm | Wolfram |
+
 ## Parchemins de combattants des Mercenaires de la Guilde (*Guild Mercenaries Fighter Scrolls*)
 
 ## Chefs (*Leaders*)
@@ -762,19 +779,19 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 ### Noble
 
-*Chef, Mercenaire, Humain, Aristocrate* (*Leader, Mercenary, Human, Aristocrat*) - 120 pa
+*Chef, Mercenaire, Humain, Aristocrate* (*Leader, Mercenary, Human, Aristocrat*) - 150 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
 | 5" | 3+ | 4+ | 6+ | 4 | 3 | 5 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie de la Guilde (*Guild Armoury*).
+**Équipement :** ce combattant (*fighter*) est équipé d'une Rapière de noble (*Noble's Rapier*), comprise dans son coût de recrutement. Ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Champions (*Champion List*) de l'Armurerie de la Guilde (*Guild Armoury*).
 
 **Expérience de départ :** 60+1D6.
 
 **Règles spéciales :**
 
-- **Duelliste entraîné (*Trained Duellist*) :** quand ce combattant (*fighter*) est recruté, il possède déjà la compétence (*skill*) Duelliste (*Duellist*) (p. xx). De plus, choisissez 1 compétence (*skill*) pour lui.
+- **Guerrier aguerri (*Seasoned Warrior*) :** quand ce combattant (*fighter*) est recruté, choisissez 1 compétence (*skill*) pour lui.
 
 > "Je ne suis pas venu jusqu'ici pour mourir comme un mendiant !"
 
@@ -871,7 +888,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 > "Donnez l'ordre, et ce sera fait."
 
-### Médecin de peste (*Plague Doctor*)
+### 0-1 Médecin de peste (*Plague Doctor*)
 
 *Champion, Mercenaire, Humain* (*Champion, Mercenary, Human*) - 65 pa
 
@@ -971,7 +988,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 **Règles spéciales :**
 
 - **Débusquez-les ! (*Sniff 'em Out*) :** les combattants ennemis (*enemy fighter*) qui sont cachés (*hidden*) ne sont pas cachés (*hidden*) tant qu'ils sont à 9" ou moins de ce combattant (*fighter*).
-- **Pisteurs (*Trackers*) :** à chaque séquence d'après-bataille (*aftermath sequence*), quand vous fouillez la cité, si votre groupe de fouille (*search party*) comprend au moins un Chien de chasse (*Hunting Dog*), vous pouvez relancer (*re-roll*) le jet d'exploration (*exploration roll*).
+- **Pisteurs (*Trackers*) :** quand vous explorez la Cité (*the City*) (p. xx), si votre groupe d'éclaireurs (*scouting party*) comprend un Chien de chasse (*Hunting Dog*), vous gagnez 1 relance d'exploration (*exploration re-roll*) (dé des unités (*units dice*) seulement).
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
@@ -994,7 +1011,7 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.03.
+Les numéros de page sont ceux imprimés dans la VO v1.10.
 
 - Ensemble du lot : les encadrés disposés en grille (origines p. 54, repaires p. 55) sont lus ligne par ligne, ce qui garde le même ordre pour les origines, les repaires et les chefs. Les listes de l'armurerie (p. 58) sont lues colonne par colonne : Liste principale, Liste d'armement, Liste des Champions, Liste des Ogres, Liste des Clercs, Liste des Chasseurs de sorcières (*Witch Hunter*), Liste des Magiciens.
 - Ensemble du lot : les citations des combattants sont en anglais ancien et en caractères gothiques dans la VO. Elles sont rendues en français d'aujourd'hui.
@@ -1047,3 +1064,10 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 72 : les trois mots-clés de l'Ogre mercenaire (*Mercenary Ogre*) sont identiques en VO et en VF : ils ne sont donc pas répétés entre parenthèses.
 - p. 72 : Chien de chasse (*Hunting Dog*) : il manque une ponctuation après "(see below)", et "Starting Experience: 0" n'a pas de point final. La règle Pisteurs est coupée par un point ("when you search the city. If your search party...") : j'ai rétabli une seule phrase. "the city" y est sans majuscule.
 - p. 72 : le profil de la Morsure féroce n'a pas de colonne "Silver" dans la VO. Le Chien de chasse (*Hunting Dog*) n'a pas de citation.
+- Mise à jour v1.10 : les origines donnent désormais "Chef" et "Repaire" (plus de rubrique "Restrictions") ; la ligne "Revenu" de chaque repaire disparaît (le revenu dépend du niveau du repaire, chapitre 5) ; la section "Règles de campagne" (Mort d'un Chef) est supprimée, remplacée par "Assumer le commandement" au chapitre 5 ; la table de noms passe après les compétences ; nouvelle section "Améliorations de repaire".
+- p. 55 (v1.10) : nouvelles règles de repaire Compléter la collection (*Add to the Collection*), Saintes reliques (*Holy Relics*) et Maîtriser l'arcane (*Master the Arcane*). Grands crus : "sell 1 bottle" et "re-roll one of the dice".
+- p. 56 (v1.10) : noms des améliorations de repaire proposés : Salle de prière, Apothicairerie, Chenil, Atelier d'arquebusier, Cabinet du chirurgien, Armurier. "Sawbones" garde son nom validé, "Chirurgien". L'avant-première du 05/11 ne donnait pas les 0-2 Clercs de la Guilde à la Salle de prière.
+- p. 57 et 67 (v1.10) : Noble à 150 pa, équipé d'une Rapière de noble (*Noble's Rapier*) comprise dans son coût et non achetable ; "Trained Duellist" devient "Seasoned Warrior" (Guerrier aguerri), sans la compétence Duelliste d'office. Médecin de peste : 0-1.
+- p. 59-60 (v1.10) : Hallebarde et Lance gagnent Arme d'hast (*Polearm*), la Hallebarde et la Grande arme d'ogre perdent Encombrant ; Arc long à 28" et Dégâts 1D3.
+- p. 61 (v1.10) : objets tenus : règle remplacée (interdits avec une arme à deux mains, sauf arme d'hast). La VO place désormais le prix sur la ligne des mots-clés ; la VF garde le prix dans le titre.
+- p. 63 et 72 (v1.10) : Instinct d'explorateur et Pisteurs parlent de "scouting party" (groupe d'éclaireurs) et de relance d'exploration ; "search party" (groupe de fouille) disparaît.

@@ -1,7 +1,7 @@
 """
 File:     scripts/generators/verminkin.py
 Role:     Builds the Verminkin faction data from 07_verminkin.md (French texts
-          extracted and cleaned) and the English playtest v1.03 texts typed
+          extracted and cleaned) and the English playtest v1.10 texts typed
           below (typos fixed, see RULES_ASSUMPTIONS.md D03).
 Author:   Adrien Duclaud
 Created:  2026-10-12
@@ -10,7 +10,7 @@ License:  MIT
 
 import re
 
-from common import Source, T, clean, rule, tr
+from common import Source, T, clean, rule, tr, upgrades
 from common import gear as common_gear
 
 FILE = "07_verminkin.md"
@@ -64,7 +64,7 @@ def build(md_path):
     data = {
         "_header": {
             "file": "src/data/verminkin.json",
-            "role": "Verminkin faction data: origins, strongholds, campaign rules, names, fighters, Verminkin Armoury, skills, spell lores",
+            "role": "Verminkin faction data: origins, strongholds, stronghold upgrades, names, fighters, Verminkin Armoury, skills, spell lores",
             "author": "Adrien Duclaud",
             "created": "2026-10-12",
             "license": "MIT for the file structure. Game content belongs to Sam Pearson (Black Death City).",
@@ -131,27 +131,30 @@ def build(md_path):
          "Black Rot. A place where the Pox Priest and his apprentices practise dark communion.",
          [("prayers-of-plague", "Prayers of Plague", "Prières de peste",
            "Each battle, before you determine prepared spells, you can pick 1 friendly Priest in your warband. Instead of "
-           "randomly determining the spell they have prepared from a Spell Lore, you can pick.")]),
+           "randomly determining the spell they have prepared from a Spell Lore, you can pick."),
+          ("vector-of-plague", "Vector of Plague", "Vecteur de peste",
+           "Each battle, a friendly fighter gains a level of Black Rot, they earn 5 bonus experience.")]),
         ("hidden-vantage", "Hidden Vantage", "Poste d'observation caché",
          "Situated near the City's old market district, this ruined tower is now only accessible from the surrounding rooftops.",
          [("run-the-roofs", "Run the Roofs", "Courir les toits",
-           "If the scenario instructs you to set up fighters near an entry point (for example, wholly within 6\" of an "
+           "During deployment, if the scenario instructs you to set up fighters near an entry point (for example, wholly within 6\" of an "
            "entry point) you can pick up to d3 of those fighters to instead be set up on the roofs. If you do so, these "
            "fighters can be set up anywhere on the battlefield that is wholly within 12\" horizontally of the centre of the "
-           "battlefield, is more than 9\" from all enemy fighters, and isn't on the battlefield floor.")]),
+           "battlefield, is more than 9\" from all enemy fighters, and is 3\" or more vertically above the battlefield floor.")]),
         ("rickety-workshop", "Rickety Workshop", "Atelier branlant",
          "Erupting from a chasm in the city streets, this makeshift shanty of platforms and pulleys is wreathed in smoke "
          "as the Sparkseer's lackeys toil day and night, assembling bizarre contraptions from scavenged scrap.",
          [("mad-tinkerers", "Mad Tinkerers", "Bricoleurs fous",
-           "- When making an injury roll for a friendly Contraption, you can roll twice and pick either result.\n"
-           "- Before each battle begins, you can pick 1 friendly Sparkseer. That fighter starts the battle with 3 "
-           "engineering points instead of d3.")]),
+           "Before each battle begins, you can pick 1 friendly Sparkseer. That fighter starts the battle with 3 "
+           "engineering points instead of d3."),
+          ("patch-em-up", "Patch 'em Up", "Rafistolage",
+           "When making an injury roll for a friendly Contraption, you can roll twice and pick either result.")]),
         ("fortified-warren", "Fortified Warren", "Terrier fortifié",
          "Each night, the warriors of the fortified warren gather to watch their kin battle in the fighting pits. The "
          "Ironfang Warlord encourages such contests, for every dead rival is one less blade pointed at his back.",
          [("fighting-pits", "Fighting Pits", "Fosses de combat",
-           "After each battle, before the aftermath sequence, you can pick 2 friendly Champion or Henchmen fighters that "
-           "were not taken down during the battle to fight in the pits. Resolve the fight as follows:\n"
+           "In step 6 of the aftermath sequence, you can pick 2 friendly Champion or Henchmen fighters that "
+           "were not taken down in the battle to fight in the pits. Resolve the fight as follows:\n"
            "Pick 1 of the fighters to command and let your opponent command the other. The 2 fighters are placed engaged "
            "in melee. Roll-off and start alternating melee attack actions starting with the winner. The fighters cannot "
            "make any other actions or moves. Alternate making melee attack actions until 1 fighter is taken down. That "
@@ -165,7 +168,6 @@ def build(md_path):
                 "id": sid,
                 "name": T(en, fr),
                 "flavour": T(flavour, quote_of(lines)),
-                "income": "3d6x5",
                 "rules": [rule(rid, ren, rfr, rtext, stronghold_rule_fr(fr, rfr)) for rid, ren, rfr, rtext in rules],
                 "trackers": [],
                 "sourceRef": ref(75, fr),
@@ -175,25 +177,55 @@ def build(md_path):
     # ----------------------------------------------------------------------------
     # Campaign rules, names
     # ----------------------------------------------------------------------------
-    death = paragraphs(section("Mort d'un Chef"))[0]
-    data["campaignRules"] = [
-        rule("death-of-a-leader", "Death of a Leader", "Mort d'un Chef",
-             "During the campaign, if your leader is killed, and you choose to promote a champion (pg xx), the following "
-             "champions are eligible:", death)
-    ]
-    data["leaderSuccession"] = [
-        {"formerLeaderId": "pox-priest", "eligibleChampionIds": ["pox-priests-apprentice"]},
-        {"formerLeaderId": "nightfang-assassin", "eligibleChampionIds": ["assassins-apprentice"]},
-        {"formerLeaderId": "ironfang-warlord", "eligibleChampionIds": ["verminkin-champion"]},
-        {"formerLeaderId": "sparkseer", "eligibleChampionIds": ["sparkseers-apprentice"]},
-    ]
+    data["strongholdUpgrades"] = upgrades(src, [
+        ("captured-poisoner", "Captured Poisoner", "Empoisonneur captif",
+         "You take captive a rival assassin, who is shackled in the dungeon beneath your stronghold and put to work "
+         "brewing poisons for the warband. Though they resent their captivity, they are wise enough to know that "
+         "disobedience will be met with a grisly end.",
+         [("lethal-concoctions", "Lethal Concoctions", "Concoctions mortelles",
+           "In step six of the aftermath sequence, you receive 1 Vial of Poison (pg xx).")]),
+        ("breeding-pens", "Breeding Pens", "Enclos d'élevage",
+         "You order your underlings to construct pens beneath the stronghold, where giant rats are kept and bred in "
+         "great numbers. The young are soon ready to join the warband.",
+         [("raised-rat", "Raised Rat", "Rat élevé",
+           "In step 6 of the aftermath sequence, you can roll a dice. On a 5+, you can recruit 1 Giant Rat to your "
+           "warband for 0 silver.")]),
+        ("warlocks-den", "Warlock's Den", "Antre du sorcier",
+         "You construct a second warlock's den enabling you to bring another to your domain. Unsurprisingly, the two "
+         "warlocks despise each other and are always trying to one-up the other.",
+         [("arcane-rivalry", "Arcane Rivalry", "Rivalité arcanique",
+           "Your warband can include 0-2 Verminkin Warlocks. In addition, once per battle, when a friendly Verminkin "
+           "Warlock activates while they are within 6\" of another friendly Verminkin Warlock, they can attempt to "
+           "one-up the other. If they do so, you can re-roll casting rolls for them that activation.")]),
+        ("splicer", "Splicer", "Greffeur",
+         "A deranged Sparkseer, known for conducting strange experiments upon Rat Mutants, is taken captive by your "
+         "warband. They beg for mercy and promise to \"enhance\" your own creatures, provided they are supplied with "
+         "the necessary materials...",
+         [("stitch-and-splice", "Stitch and Splice", "Coudre et greffer",
+           "In step 6 of the aftermath sequence, for each friendly non-Beast fighter that was killed in the same "
+           "aftermath sequence you can pick 1 of the following:\n"
+           "- Stitched-limbs: Pick a friendly Rat Mutant, remove an injury from it (temporary or permanent).\n"
+           "- Spliced-brains: Pick a friendly Rat Mutant, it earns 5 bonus experience.")]),
+        ("rooftop-ratways", "Rooftop Ratways", "Passerelles des toits",
+         "Your verminkin construct a network of wooden beams, rope bridges and iron bars between the surrounding "
+         "rooftops. These precarious walkways allow them to explore the City with ease, far above the streets below.",
+         [("scour-the-city", "Scour the City", "Écumer la Cité",
+           "Each aftermath sequence, you gain 1 exploration re-roll.")]),
+        ("smugglers-den", "Smuggler's Den", "Repaire de contrebandiers",
+         "You expand your network of thieves and smugglers throughout the City, establishing a hidden den where "
+         "stolen goods and illicit wares are bought and sold. Before long, all manner of curious treasures begin to "
+         "find their way into your possession.",
+         [("black-market-wares", "Black Market Wares", "Marchandises du marché noir",
+           "In step 6 of the aftermath sequence, roll a dice. On a 4+, you can roll once on the Curiosity table "
+           "(pg xx).")]),
+    ], 76)
     names = {}
-    for l in section("Noms des Vermineux"):
+    for l in section("Noms des Vermineux", level=2):
         cells = [c.strip() for c in l.strip("|").split("|")]
         if l.startswith("|") and re.match(r"^\d0$", cells[0]):
             for col, name in enumerate(cells[1:], start=1):
                 names[f"{cells[0][0]}{col}"] = name
-    data["nameTable"] = {"die": "d66", "sourceRef": ref(76, "Noms des Vermineux"), "entries": names}
+    data["nameTable"] = {"die": "d66", "sourceRef": ref(86, "Noms des Vermineux"), "entries": names}
 
     # ----------------------------------------------------------------------------
     # Wargear
@@ -212,12 +244,12 @@ def build(md_path):
         melee("crushing-bulk", "Crushing Bulk", "Carcasse écrasante", 0, 3, -1, 2, "d3+1", ["bludgeon", "natural-weapon"],
               purchasable=False, page=92, md="Engin roulant"),
         melee("dagger", "Dagger/Punch Dagger", "Dague/Dague de poing", 10, 3, 0, 1, "d3", ["off-hand"]),
-        melee("ensorcelled-halberd", "Ensorcelled Halberd", "Hallebarde ensorcelée", 52, 3, -1, 1, "d3+1",
-              ["arcane", "brace", "two-handed", "unwieldy"]),
+        melee("ensorcelled-halberd", "Ensorcelled Halberd", "Hallebarde ensorcelée", 48, 3, -1, 1, "d3+1",
+              ["arcane", "brace", "polearm", "two-handed"]),
         melee("ensorcelled-weapon", "Ensorcelled Weapon", "Arme ensorcelée", 26, 3, -1, 1, "d3", ["arcane"],
               note=ENSORCELLED_NOTE),
         melee("flail", "Flail", "Fléau", 14, 3, 0, 1, "d3", ["off-hand", "wrap"]),
-        melee("halberd", "Halberd", "Hallebarde", 34, 3, -1, 1, "d3+1", ["brace", "two-handed", "unwieldy"]),
+        melee("halberd", "Halberd", "Hallebarde", 34, 3, -1, 1, "d3+1", ["brace", "polearm", "two-handed"]),
         melee("heavy-flail", "Heavy-Flail", "Fléau lourd", 38, 3, -1, 2, "d3+1", ["two-handed", "unwieldy", "wrap"]),
         melee("iron-claw", "Iron Claw", "Griffe de fer", 12, 4, 0, 1, 1, ["off-hand"]),
         melee("nasty-bite", "Nasty Bite", "Morsure infecte", 0, 4, 0, 1, 1, ["natural-weapon", "poison"],
@@ -229,7 +261,7 @@ def build(md_path):
         melee("spark-drill", "Spark-Drill", "Foreuse à étincelles", 62, 3, -3, 1, "d3+1", ["arcane", "two-handed"]),
         melee("spark-powered-fists", "Spark-Powered Fists", "Poings à étincelles", 60, 3, -2, 2, "d3+1",
               ["arcane", "bludgeon", "two-handed"]),
-        melee("spear", "Spear", "Lance", 16, 3, 0, 1, "d3", ["brace", "two-handed"]),
+        melee("spear", "Spear", "Lance", 16, 3, 0, 1, "d3", ["brace", "polearm", "two-handed"]),
         melee("sword", "Sword", "Épée", 18, 3, 0, 1, "d3", ["guard", "off-hand"]),
         ranged("arc-lightning-gun", "Arc-Lightning Gun", "Lance-éclairs", 90, 18, 6, 0, 1, "d3",
                ["arcane", "heavy", "misfire", "rare", "two-handed", "volley"], 1),
@@ -513,7 +545,7 @@ def build(md_path):
              "Attack! Attack! [Bonus Action]: Until the end of the round, add 1 to attack rolls for melee attacks made by "
              "friendly fighters, while they are within 9\" of this fighter."),
             ("too-cunning-to-die", "Too Cunning to Die", "Trop rusé pour mourir",
-             "Each time you roll on the lasting injury table for this fighter, you can roll twice and pick either result."),
+             "Each time you roll on the Injury table for this fighter, you can roll twice and pick either result."),
             ("master-of-dark-science", "Master of Dark Science", "Maître de la sombre science",
              "Add 3\" to the Range value of ranged weapons friendly fighters are equipped with while they are within 6\" "
              "of this fighter. In addition, you can re-roll misfire rolls made for friendly fighters while they are "

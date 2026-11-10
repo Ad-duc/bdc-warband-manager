@@ -12,7 +12,7 @@
 **Créez et suivez vos bandes de Black Death City, directement dans votre
 navigateur : [ad-duc.github.io/bdc-warband-manager](https://ad-duc.github.io/bdc-warband-manager/)**
 
-Outil de fan, non officiel et gratuit, fondé sur la version de test 1.03 des
+Outil de fan, non officiel et gratuit, fondé sur la version de test 1.10 des
 règles. Rien à installer, aucun compte à créer : ouvrez le lien, c'est prêt.
 L'application est en français, fonctionne sur ordinateur, tablette et
 téléphone, et reste utilisable sans connexion une fois ouverte. Le
@@ -89,7 +89,7 @@ Pour contribuer ou faire tourner le projet sur votre machine, voir
 **Build and track your Black Death City warbands in your browser:
 [ad-duc.github.io/bdc-warband-manager](https://ad-duc.github.io/bdc-warband-manager/)**
 
-Unofficial, free fan-made tool based on the playtest v1.03 rules. The
+Unofficial, free fan-made tool based on the playtest v1.10 rules. The
 interface is in French; it works on desktop, tablet and phone, and offline once
 opened. Official game website:
 [blackdeathcity.com](https://www.blackdeathcity.com/).

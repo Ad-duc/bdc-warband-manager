@@ -89,4 +89,4 @@ on GitHub instead of working around the restriction.
 A release is a pull request of its own: it moves the changelog lines to a
 dated version heading and bumps `version` in `package.json` (Semantic
 Versioning). The release notes state the supported playtest version
-("rules v1.03"). The tag `vX.Y.Z` is created by Adrien on the merged commit.
+("rules v1.10"). The tag `vX.Y.Z` is created by Adrien on the merged commit.

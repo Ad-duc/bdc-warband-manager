@@ -157,7 +157,7 @@ Lors de la mise en place du champ de bataille (*battlefield*), placez au centre 
 
 Tant qu'une bande (*warband*) a des Chefs (*Leader*) ou des Champions entièrement à 6" ou moins horizontalement du centre du champ de bataille (*centre of the battlefield*), elle peut réussir automatiquement son test de déroute (*flee test*). De plus, si une bande (*warband*) obtient des points de victoire (*victory points*) pour "Tenir le centre (*Hold the Centre*)" (voir ci-dessus), elle obtient 3 points de victoire (*victory points*) à la place de 1D3.
 
-Le vainqueur de la bataille peut utiliser la tour pour reconnaître la cité alentour. Pour représenter cela, le vainqueur de la bataille peut relancer (*re-roll*) son **jet d'exploration** (*exploration roll*) (p. xx).
+Le vainqueur de la bataille peut utiliser la tour pour reconnaître la cité alentour. Pour représenter cela, le vainqueur de la bataille gagne 1 **relance d'exploration** (*exploration re-roll*) dans la séquence d'après-bataille (*aftermath sequence*) (p. xx).
 
 #### 3 - Débordement (*Outflank*)
 
@@ -726,7 +726,7 @@ Au cours de la bataille, les combattants (*fighter*) de la bande (*warband*) du 
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.03.
+Les numéros de page sont ceux imprimés dans la VO v1.10.
 
 Choix valables pour tout le lot :
 
@@ -766,3 +766,4 @@ Points relevés page par page :
 - p. 47 : ordre de lecture reconstitué : le Déploiement se termine en haut de la deuxième colonne, avant le bandeau "Pendant la bataille".
 - p. 47 : pour le Défenseur, la VO écrit "sets up fighters from it", sans article, alors qu'elle écrit "sets up the fighters from it" pour l'Assaillant. J'ai écrit "les combattants" dans les deux cas : "des combattants" laisserait croire qu'une partie seulement du groupe est placée.
 - p. 48 : la VO écrit le pouce avec un guillemet courbe dans "no longer than 5"". Elle écrit "in Deployment" avec majuscule dans Retranchement barricadé et "During deployment" sans majuscule ailleurs : casse reproduite.
+- p. 38 (v1.10) : Bataille pour la tour : le vainqueur gagne 1 relance d'exploration (*exploration re-roll*) au lieu de relancer son jet d'exploration.

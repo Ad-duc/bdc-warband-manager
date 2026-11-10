@@ -8,8 +8,9 @@
 
 # Rules assumptions
 
-Source: Black Death City playtest v1.03 (VO pages as printed) and the French
-translation files (version updated for v1.03, glossary version 5). Each entry states what the book says, what the code does, and
+Source: Black Death City playtest v1.10 (VO pages as printed) and the French
+translation files (updated for v1.10, glossary version 11). Entries written
+for v1.03 keep the page numbers of that version when they say so. Each entry states what the book says, what the code does, and
 whether it is settled (`settled`), an assumption waiting for a decision
 (`open`) or a data decision (`data`).
 
@@ -50,9 +51,11 @@ Code: warning, not error. Decision 2026-10-12: warning confirmed.
 
 p. 13: 2 melee weapons, 1 ranged weapon, 1 set of armour, 2 items.
 p. 15 and p. 62: held items (Shield, Guild Banner, Lantern/Torch) count as melee
-weapons, not items. A held item with a two-handed melee weapon is allowed with
--1 Attacks on that weapon (computed modifier). A held item with a two-handed
-ranged weapon is forbidden (error).
+weapons, not items. Since v1.10 a held item cannot be carried with a
+two-handed weapon, melee or ranged (error), unless the weapon has the Polearm
+trait (p. 30): the polearm then gains Unwieldy (trait added to the weapon line,
+info message). The former "-1 Attacks" modifier of v1.03 is gone. A polearm
+that is already Unwieldy does not gain the trait twice.
 
 ### A06 - Full-plate (settled)
 
@@ -80,11 +83,15 @@ spells. Two casters may share the same signature spell (info message only).
 
 ### A10 - Leader in campaign mode (open)
 
-The origin imposes the leader at the start of the campaign only. In campaign
-mode the code accepts the imposed leader or a champion promoted through the
-faction `leaderSuccession` table, flagged with `promotedToLeader` on the
-fighter. A promoted fighter counts as the Leader for the composition limits
-and gains the Leader keyword for skill eligibility.
+The origin imposes the leader at the start of the campaign only. Since v1.10
+(p. 145, Assume Command) any Champion of the warband can assume command; the
+per-faction succession tables of v1.03 are gone and `leaderSuccession` is
+removed from the data. In campaign mode the code accepts the imposed leader or
+any champion flagged with `promotedToLeader`; a henchman cannot be promoted. A
+fighter assuming command counts as the Leader for the composition limits and
+has the Leader keyword instead of Champion for skill eligibility. Still open:
+the Burden of Command (1D6 bonus experience in step 3) and the "Leaderless and
+Championless" recruitment order are not enforced by the code.
 
 ### A11 - Warband rating of a free recruit (settled)
 
@@ -304,7 +311,8 @@ The assistant follows "Setting Up the Battle" (p. 17) and the scenarios
 
 ### A41 - Group campaigns without campaign rules (settled)
 
-Chapter 5 "Campaigns" is not published in playtest v1.03. A group campaign
+Chapter 5 "Campaigns" was not published in playtest v1.03, and the group
+campaign screen predates it. A group campaign
 only records its warbands (saved in the app or typed in) and the battles they
 fought (scenario, twist, underdog, winner or draw), with a standings table that
 counts battles, victories, draws and defeats. No campaign rule is invented;
@@ -334,8 +342,13 @@ same rules for a warband imported or built before this change.
 
 ## Campaign chapter preview
 
+Playtest v1.10 publishes the chapter (p. 133 to 166, translated in
+`sources/fr/12_campagne.md`): the entries below describe the preview data, which
+is kept until the campaign features read the published chapter, and their page
+numbers are those of the preview.
+
 Source: pages 137 to 140 and 153 to 156 of the Campaign chapter, shared as a
-preview on the official Discord (received 2026-10-26). They are not part of a
+preview on the official Discord (received 2026-10-26). They were not part of a
 published playtest version: the data lives in `src/data/campaign/preview.json`
 and nothing in the warband rules engine reads it yet. Page numbers are those
 printed on the preview.
@@ -392,6 +405,38 @@ possible misprint for 1D6 or 1D6x5.
 ### A51 - Confront them Head On (settled)
 
 p. 154: "If the total exceeds 15 or more". Read as 15 or more.
+
+## Campaign rules (v1.10)
+
+### A52 - Skeleton Warrior wargear lists (settled)
+
+p. 98 prints a Skeleton Warrior List (Long Bow, Short Bow) in the Coven
+Armoury, but the Skeleton Warrior scroll (p. 110) only names the Main List.
+Decision 2026-11-09: the Skeleton Warrior can use both lists.
+
+### A53 - Relics in the warband rating (settled)
+
+p. 50: the warband rating is the silver cost of all fighters and their
+wargear, plus their experience. p. 158: relics are found, not bought, and some are Stash Items that
+no fighter carries. Decision 2026-11-09: a relic carried by a fighter counts
+for its silver cost in the warband rating; a Stash Item does not, like the
+rest of the stash. Not computed yet: the code has no relic catalogue.
+
+### A54 - Silver for sold wargear (settled)
+
+p. 151: the text says "half their cost (rounding down)", the box below says
+"50% silver cost (rounding up)". Decision 2026-11-09: round down, as the
+text. Curiosities and relics are sold for their full cost. Not computed yet:
+the code has no selling step.
+
+### A55 - Stronghold level and income (settled)
+
+p. 137: the stronghold is level 1 for 0 to 2 battles fought (income 3D6x5),
+level 2 from 3 to 7 (4D6x5) and level 3 from 8 (5D6x5); each new level gives
+1 stronghold upgrade. The table is in `common.json`
+(`campaign.strongholdLevels`) and `strongholdLevel()` reads it with the
+`battlesFought` counter of the warband. The choice of the upgrades is not
+recorded on the warband yet.
 
 ## Data decisions
 
@@ -483,3 +528,23 @@ for faction files. `common.json` keeps `campaign.status` at `not-published`
 and its exploration table empty until a playtest version publishes the
 chapter. Texts are taken as printed except the corrections listed in A45 and
 in the translator notes of `sources/fr/12_campagne-avant-premiere.md`.
+
+Since playtest v1.10 `common.json` sets `campaign.status` to `published` and
+carries the stronghold levels; the preview file stays until the campaign
+features (holdings, exploration, relics) are built from the published chapter.
+
+### D12 - Move to playtest v1.10 (data)
+
+Decision 2026-11-09: the app follows v1.10. Changes carried into the data:
+new Polearm trait (Halberd, Spear and the faction polearms) and the held item
+rule of A05; Long Bow 28", damage 1D3, 26 silver; strongholds lose their
+income (A55) and their text is split into flavour and special rules; 6
+stronghold upgrades per faction (`strongholdUpgrades`); `campaignRules` and
+`leaderSuccession` removed from the faction files (A10); name tables moved
+after the skills (p. 66, 86, 104, 132); Guild Mercenaries: Noble 150 silver
+with a Noble's Rapier (not purchasable) and Seasoned Warrior instead of the
+Duellist skill, Plague Doctor 0-1, Ogre Great Weapon without Unwieldy; Death
+Covens: new Manservant (0-3), Skeleton Warrior List and Coven ranged weapons
+(A52), Woodland Estate and Trophy Hall keep the ids `grand-pavilion` and
+`bestial-trophies`; The Blighted Cloister: boons, Demonic Strength, epithets
+moved to p. 132 with the names; new Demi-Human keyword.

@@ -1,7 +1,7 @@
 """
 File:     scripts/generators/death_covens.py
 Role:     Builds the Death Covens faction data from 08_death-covens.md (French
-          texts extracted and cleaned) and the English playtest v1.03 texts
+          texts extracted and cleaned) and the English playtest v1.10 texts
           typed below (typos fixed, see RULES_ASSUMPTIONS.md D03).
 Author:   Adrien Duclaud
 Created:  2026-10-12
@@ -19,6 +19,8 @@ from common import (
     gear,
     melee,
     rule,
+    tr,
+    upgrades,
 )
 
 FILE = "08_death-covens.md"
@@ -36,7 +38,7 @@ def build(md_path):
     data = {
         "_header": {
             "file": "src/data/death-covens.json",
-            "role": "Death Covens faction data: origins, strongholds, campaign rules, names, fighters, Coven Armoury, skills, spell lores",
+            "role": "Death Covens faction data: origins, strongholds, stronghold upgrades, names, fighters, Coven Armoury, skills, spell lores",
             "author": "Adrien Duclaud",
             "created": "2026-10-12",
             "license": "MIT for the file structure. Game content belongs to Sam Pearson (Black Death City).",
@@ -117,12 +119,14 @@ def build(md_path):
            "- Read Forbidden Scrolls: In step 3, your Leader gains 5 bonus experience.\n"
            "- Create a Zombie: In step 6, roll a dice. On a 5+, your Leader has successfully created a Zombie from one "
            "of the hall's corpses. You can recruit a Zombie to your warband for 0 silver.")]),
-        ("grand-pavilion", "Grand Pavilion", "Grand pavillon",
-         "Hidden amongst the northern forests, the Lycanfell Noble's grand pavilion serves as the heart of his hunting "
-         "court. Rich tapestries and grisly trophies adorn its walls, while iron braziers burn long into the night. "
-         "Beyond the firelight, the howls of gathering wolves echo through the trees.",
-         [("bestial-trophies", "Bestial Trophies", "Trophées de Bêtes",
-           "Each time a Beast that was taken down by your Leader is killed, your Leader earns 10 bonus experience."),
+        # The ids keep the v1.03 names (Grand Pavilion, Bestial Trophies): identifiers never change once published.
+        ("grand-pavilion", "Woodland Estate", "Domaine forestier",
+         "Hidden amongst the northern forests, the Lycanfell Noble's woodland estate serves as the heart of his hunting "
+         "court. Faded tapestries and grisly trophies adorn its walls, while iron braziers light its cold halls. "
+         "Beyond the estate, the howls of gathering wolves echo through the trees.",
+         [("bestial-trophies", "Trophy Room", "Salle des trophées",
+           "Each time a Beast or Brute that was taken down by your Leader is killed, your Leader earns 10 bonus "
+           "experience."),
           ("a-howl-in-the-night", "A Howl in the Night", "Un hurlement dans la nuit",
            "In step 6 of the Aftermath sequence, roll a dice. On a 6, a Dire Wolf emerges from the forest. You can "
            "recruit a Dire Wolf to your warband for 0 silver.")]),
@@ -131,19 +135,17 @@ def build(md_path):
          "rumours spread of the restless dead and an undead lord gathering his forgotten host, preparing to march upon "
          "the City once more.",
          [("barrow-offering", "Barrow Offering", "Offrande au tumulus",
-           "In step 5 of the Aftermath sequence, roll a dice. On a 6, mortals from the City have left an offering. Roll "
-           "once on the treasure table (pg xx)."),
+           "In step 6 of the aftermath sequence, roll a dice. On a 6, mortals from the City have left an offering. Roll "
+           "once on the Curiosities table (pg xx)."),
           ("immortal-slumber", "Immortal Slumber", "Sommeil immortel",
-           "If your Leader is Laid to Rest (see opposite), they are not removed from your warband. Instead they miss "
-           "the next d3 battles as they slumber. Pick a Champion in your warband to be the Leader in their absence. "
-           "That fighter temporarily gains the Leader keyword and loses the Champion keyword until the Leader returns.")]),
+           "If your Leader is 'Laid to Rest' (pg xx), they are not removed from your warband. Instead they miss "
+           "the next d3 battles as they slumber. You can pick a Champion to assume command until they return (pg xx).")]),
     ]
     data["strongholds"] = [
         {
             "id": sid,
             "name": T(en, fr),
             "flavour": T(flavour, src.quote_of(src.section(fr))),
-            "income": "3d6x5",
             "rules": [rule(rid, ren, rfr, rtext, src.bold_rule(fr, rfr)) for rid, ren, rfr, rtext in rules],
             "trackers": [],
             "sourceRef": src.ref(95, fr),
@@ -154,33 +156,41 @@ def build(md_path):
     # ----------------------------------------------------------------------------
     # Campaign rules, names
     # ----------------------------------------------------------------------------
-    thralls = src.section("Squelettes et Asservis")
-    thrall_fr = [p for p in src.paragraphs(thralls) if not p.startswith("Table des blessures")]
-    table_fr = []
-    for l in thralls:
-        cells = [c.strip() for c in l.strip("|").split("|")]
-        if l.startswith("|") and cells[0] not in ("Résultat", "---"):
-            table_fr.append(f"{cells[0]} - {clean(cells[1])}")
-    data["campaignRules"] = [
-        rule("death-of-a-leader", "Death of a Leader", "Mort d'un Chef",
-             "During the campaign, if your leader is killed, and you choose to promote a champion (pg xx), the following "
-             "champions are eligible:", src.paragraphs(src.section("Mort d'un Chef"))[0]),
-        rule("skeletons-and-thralls", "Skeletons & Thralls", "Squelettes et Asservis",
-             "Fighters with the Thrall keyword do not gain experience. They cannot advance levels.\n"
-             "In addition Skeletons and Thralls do not use the standard injury table (pg xx). Instead they use the "
-             "following Skeleton & Thrall Injury Table (d6):\n"
-             "1 - Laid to Rest: The undead creature is undone. Treat this result as killed (pg xx).\n"
-             "2-6 - Unscathed: The fighter suffers no lasting effects.",
-             "\n".join(thrall_fr).replace("Table des blessures des Squelettes et des Asservis suivante :",
-                                          "Table des blessures des Squelettes et des Asservis suivante (D6) :")
-             + "\n" + "\n".join(table_fr)),
-    ]
-    data["leaderSuccession"] = [
-        {"formerLeaderId": "bloodcursed-noble", "eligibleChampionIds": ["bloodcursed-courtesan", "bloodcursed-knight"]},
-        {"formerLeaderId": "necromancer", "eligibleChampionIds": ["necromancers-apprentice"]},
-        {"formerLeaderId": "barrow-lord", "eligibleChampionIds": ["barrow-champion"]},
-    ]
-    data["nameTable"] = {"die": "d66", "sourceRef": src.ref(96, "Noms des Cabales de la Mort"),
+    data["strongholdUpgrades"] = upgrades(src, [
+        ("blackrose-orchard", "Blackrose Orchard", "Verger de roses noires",
+         "Around the grounds of your stronghold grow tangled thickets that flower with black-petaled roses.",
+         [("dark-harvest", "Dark Harvest", "Sombre récolte",
+           "In step six of the aftermath sequence, roll a dice. On a 5+, you receive 1 Blackrose Balm (pg xx).")]),
+        ("ossuary", "Ossuary", "Ossuaire",
+         "The bones of generations past are gathered within this morbid chamber, stacked in great piles and arranged "
+         "in alcoves along its walls. There is no shortage of remains from which to fashion new skeletal thralls.",
+         [("ossified-remains", "Ossified Remains", "Restes ossifiés",
+           "Reduce the cost of recruiting Skeleton fighters to your warband by 10 silver.")]),
+        ("exhumed-crypt", "Exhumed Crypt", "Crypte exhumée",
+         "Deep beneath your stronghold lie the remains of a ancient and powerful warrior. You exhume their crypt in "
+         "the hopes of finding a powerful relic within...",
+         [("treasure-of-the-crypt", "Treasure of the Crypt", "Trésor de la crypte",
+           "When this upgrade is picked, you can roll once on the Relics table (pg xx).")]),
+        ("gargoyles-tower", "Gargoyle's Tower", "Tour des gargouilles",
+         "This lofted tower is one no mortal would dare ascend, for its battlements are home to a gathering of "
+         "gargoyles. From here, they take to the skies, circling high above the City before descending upon their prey.",
+         [("circle-the-skies-above", "Circle the Skies Above", "Tournoyer dans les cieux",
+           "If a friendly Gargoyle starts the battle in reserve, instead of making a reinforcement roll for them, you "
+           "can say they are circling the skies above. If you do so, they arrive in the Start of Round step of the "
+           "next round, before any reinforcement rolls are made. They can be set up anywhere on the battlefield more "
+           "than 9\" away from all enemy fighters.")]),
+        ("household-poisoner", "Household Poisoner", "Empoisonneur de la maisonnée",
+         "You take a manservant with knowledge of various toxins under your employ. As each night draws to a close, "
+         "they prepare a freshly vial of poison.",
+         [("a-nights-work", "A Night's Work", "Le travail d'une nuit",
+           "In step six of the aftermath sequence, you receive 1 Vial of Poison (pg xx).")]),
+        ("necromancers-mausoleum", "Necromancer's Mausoleum", "Mausolée du nécromancien",
+         "The remains of a powerful necromancer are brought to your Stronghold and enshrined within a mausoleum. This "
+         "conduit of necromantic sorcery bolsters your own magical prowess.",
+         [("nexus-of-dark-magic", "Nexus of Dark Magic", "Nexus de magie noire",
+           "Each battle, you can ignore the first miscast by a friendly Wizard.")]),
+    ], 96)
+    data["nameTable"] = {"die": "d66", "sourceRef": src.ref(104, "Noms des Cabales de la Mort"),
                          "entries": src.names("Noms des Cabales de la Mort")}
 
     # ----------------------------------------------------------------------------
@@ -206,14 +216,14 @@ def build(md_path):
         m("ensorcelled-weapon", "Ensorcelled Weapon", "Arme ensorcelée", 26, 3, -1, 1, "d3", ["arcane"], note=NOTE_ENS),
         m("flail", "Flail", "Fléau", 14, 3, 0, 1, "d3", ["off-hand", "wrap"]),
         m("great-mace", "Great Mace", "Grande masse", 38, 3, -1, 2, "d3+1", ["bludgeon", "two-handed", "unwieldy"]),
-        m("halberd", "Halberd", "Hallebarde", 34, 3, -1, 1, "d3+1", ["brace", "two-handed", "unwieldy"]),
+        m("halberd", "Halberd", "Hallebarde", 34, 3, -1, 1, "d3+1", ["brace", "polearm", "two-handed"]),
         m("heavy-axe", "Heavy Axe", "Hache lourde", 40, 3, -2, 2, "d3+1", ["two-handed", "unwieldy"]),
         m("necrotic-bite", "Necrotic Bite", "Morsure nécrotique", 0, 3, -1, 1, "d3", ["natural-weapon"],
           page=112, md_ref="Loup sinistre", purchasable=False),
         m("ogre-blade", "Ogre Blade", "Lame d'ogre", 36, 3, -1, 2, "d3+1", ["off-hand"]),
         m("ogre-great-weapon", "Ogre Great Weapon", "Grande arme d'ogre", 50, 3, -2, 3, "d3+2", ["two-handed"]),
         m("ogre-mace", "Ogre Mace", "Masse d'ogre", 38, 3, -1, 2, "d3+1", ["bludgeon", "off-hand"]),
-        m("spear", "Spear", "Lance", 16, 3, 0, 1, "d3", ["brace", "two-handed"]),
+        m("spear", "Spear", "Lance", 16, 3, 0, 1, "d3", ["brace", "polearm", "two-handed"]),
         m("stone-talons", "Stone Talons", "Serres de pierre", 0, 3, -1, 2, "d3+1", ["bludgeon", "natural-weapon"],
           page=111, md_ref="Gargouille", purchasable=False),
         m("sword", "Sword", "Épée", 18, 3, 0, 1, "d3", ["guard", "off-hand"]),
@@ -222,6 +232,13 @@ def build(md_path):
         m("zombie-bite", "Zombie Bite", "Morsure de zombie", 0, 3, 0, 1, "d3", ["natural-weapon", "poison"],
           page=110, md_ref="Zombie", purchasable=False),
     ]
+    RNG = "Armurerie de la Cabale - Armes à distance"
+    for gid, en, fr, cost, rng, rend, dmg, traits in (
+        ("long-bow", "Long Bow", "Arc long", 26, 28, -1, "d3", ["heavy", "two-handed"]),
+        ("short-bow", "Short Bow", "Arc court", 16, 16, 0, 1, ["two-handed"]),
+    ):
+        wargear.append(gear(src, gid, en, fr, "ranged", cost, 99, RNG, traits=tr(*traits),
+                            profile={"range": rng, "attacks": 1, "rend": rend, "damage": dmg, "critDamage": "d6"}))
 
     ITEMS = [
         ("cuirass", "Cuirass", "Cuirasse", "armour", 20, 5, None, False, None, {}),
@@ -274,6 +291,7 @@ def build(md_path):
         ("champion", "Champion List", "Liste des Champions"),
         ("zombie-ogre", "Zombie Ogre List", "Liste des Ogres zombies"),
         ("practitioner", "Practitioner List", "Liste des Praticiens"),
+        ("skeleton-warrior", "Skeleton Warrior List", "Liste des Guerriers squelettes"),
     ]
     data["armouryLists"] = [
         {"id": lid, "name": T(en, fr), "sourceRef": src.ref(98, fr), "entries": src.armoury_list(fr, by_fr)}
@@ -368,8 +386,12 @@ def build(md_path):
          [("veteran-in-life", "Veteran in Life", "Vétéran de son vivant",
            "When this fighter is recruited, pick 1 skill for them."), UNSHAKEABLE],
          MAIN_CHAMP, "Death does not relinquish duty.", 109),
+        ("manservant", "Manservant", "henchman", ["henchman", "demi-human"], 45, 3, (5, 4, 6, 6, 3, 3, 4), ["main"],
+         [], (20, "d6"), [], (0, 0, None), [],
+         "This fighter can be equipped with wargear from the Main List from the Coven Armoury.", "Yes, m'lord?", 110),
+        # The scroll only names the Main List; the Skeleton Warrior List is given too (RULES_ASSUMPTIONS.md, A52).
         ("skeleton-warrior", "Skeleton Warrior", "henchman", ["henchman", "undead", "skeleton", "thrall"], 40, None,
-         (4, 4, 6, 6, 3, 2, 4), ["main"], [], (0, None), [], (0, 0, None), [UNSHAKEABLE],
+         (4, 4, 4, 6, 3, 2, 4), ["main", "skeleton-warrior"], [], (0, None), [], (0, 0, None), [UNSHAKEABLE],
          "This fighter can be equipped with wargear from the Main List from the Coven Armoury.", None, 110),
         ("zombie", "Zombie", "henchman", ["henchman", "undead", "zombie", "thrall"], 35, None, (4, 5, 6, 6, 1, 2, 4), [],
          ["zombie-bite"], (0, None), [], (0, 0, None), [UNSHAKEABLE],
@@ -394,8 +416,8 @@ def build(md_path):
          [("sniff-em-out", "Sniff 'em Out", "Débusquez-les !",
            "Enemy fighters that are hidden are not hidden while they are within 9\" of this fighter."),
           ("trackers", "Trackers", "Pisteurs",
-           "Each aftermath sequence, when you search the city, if your search party includes any Dire Wolves, you can "
-           "re-roll the exploration roll.")],
+           "When exploring the city (pg xx). If your scouting party includes a Hunting Dog, you gain 1 exploration "
+           "re-roll (units dice only).")],
          "This fighter is equipped with a necrotic bite (see below), they cannot be equipped with any other wargear.",
          None, 112),
     ]
@@ -467,11 +489,10 @@ def build(md_path):
             ("unholy-strength", "Unholy Strength", "Force impie",
              "This fighter's melee weapons gain the Bludgeon weapon trait."),
             ("supernatural-healing", "Supernatural Healing", "Guérison surnaturelle",
-             "This fighter cannot suffer permanent injuries. If they suffer a lasting injury it is always temporary.\n"
+             "This fighter cannot suffer permanent injuries. If they suffer an injury it is always temporary (pg xx).\n"
              "In addition, if this fighter is killed, you can immediately make a Willpower test for them. If passed, "
-             "they are not killed but must miss the next d3 battles as they slumber. Pick a Champion in your warband to "
-             "be the Leader in their absence. That fighter temporarily gains the Leader keyword and loses the Champion "
-             "keyword until the Leader returns."),
+             "they are not killed but miss the next d3 battles as they slumber. Pick a Champion in your warband to "
+             "assume command in their absence (pg xx)."),
             ("leech-blood", "Leech Blood", "Drain de sang",
              "Once per battle, this fighter can use the following bonus action:\n"
              "Leech Blood [Bonus Action]: Each enemy fighter within 9\" of this fighter must take a Willpower test. If "

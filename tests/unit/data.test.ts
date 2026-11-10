@@ -13,8 +13,8 @@ import { loadGameData } from "../../src/data/index.ts";
 describe("game data", () => {
   const data = loadGameData();
 
-  it("loads common data from playtest 1.03", () => {
-    expect(data.common.sourceVersion).toBe("playtest-1.03");
+  it("loads common data from playtest 1.10", () => {
+    expect(data.common.sourceVersion).toBe("playtest-1.10");
     expect(data.common.recruitment.startingSilver).toBe(1000);
   });
 

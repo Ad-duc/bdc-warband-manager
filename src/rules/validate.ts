@@ -106,13 +106,9 @@ function checkComposition(
   if (leaders.length !== 1) push("composition.leaderCount", { count: leaders.length });
 
   for (const leader of leaders) {
-    if (leader.fighter.promotedToLeader) {
-      const eligible = index.faction.leaderSuccession.some((s) =>
-        s.eligibleChampionIds.includes(leader.profile.id),
-      );
-      if (leader.profile.category !== "champion" || !eligible)
-        push("composition.promotedLeader", { profile: leader.profile.id }, leader.fighter.instanceId);
-    }
+    // v1.10, p. 145: any Champion can assume command when the Leader is killed.
+    if (leader.fighter.promotedToLeader && leader.profile.category !== "champion")
+      push("composition.promotedLeader", { profile: leader.profile.id }, leader.fighter.instanceId);
     if (requiredLeaderId !== null && leader.profile.id !== requiredLeaderId)
       push(
         "composition.leaderOrigin",
@@ -223,17 +219,14 @@ function checkWargear(
   if (twoHanded.length > 1) push("twoHanded.multiple", { count: twoHanded.length }, id);
   if (held.length > 0 && twoHanded.some((w) => w.kind === "ranged"))
     push("twoHanded.heldItemRanged", { wargear: held.map((w) => w.id).join(",") }, id);
-  if (held.length > 0 && twoHanded.some((w) => w.kind === "melee"))
-    push(
-      "twoHanded.heldItemMelee",
-      {
-        wargear: twoHanded
-          .filter((w) => w.kind === "melee")
-          .map((w) => w.id)
-          .join(","),
-      },
-      id,
-    );
+  // v1.10: a held item is forbidden with any two-handed weapon, unless the weapon is a polearm.
+  const twoHandedMelee = twoHanded.filter((w) => w.kind === "melee");
+  const blocked = twoHandedMelee.filter((w) => !hasTrait(w, "polearm"));
+  const polearms = twoHandedMelee.filter((w) => hasTrait(w, "polearm"));
+  if (held.length > 0 && blocked.length > 0)
+    push("twoHanded.heldItemMelee", { wargear: blocked.map((w) => w.id).join(",") }, id);
+  if (held.length > 0 && polearms.length > 0)
+    push("polearm.heldItem", { wargear: polearms.map((w) => w.id).join(",") }, id);
   const offHand = melee.filter((w) => hasTrait(w, "off-hand") && !hasTrait(w, "two-handed"));
   if (twoHanded.length > 0 && offHand.length > 0)
     push("twoHanded.offHand", { wargear: offHand.map((w) => w.id).join(",") }, id);

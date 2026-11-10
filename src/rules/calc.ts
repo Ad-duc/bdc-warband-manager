@@ -194,8 +194,8 @@ export interface WeaponLine {
   id: string;
   kind: "melee" | "ranged";
   profile: AttackProfile;
-  /** True when the Attacks value was reduced (two-handed melee weapon with a held item, p. 60). */
-  attacksReduced: boolean;
+  /** True when the weapon gained Unwieldy (polearm carried with a held item, p. 30). */
+  unwieldyFromHeldItem: boolean;
 }
 
 /** Lines of the roster weapon table, in wargear order, with improvements applied. */
@@ -208,22 +208,23 @@ export function weaponLines(index: FactionIndex, fighter: WarbandFighter): Weapo
 
   for (const w of gear) {
     if ((w.kind === "melee" || w.kind === "ranged") && w.profile !== null) {
-      const base = w.profile.attacks;
-      const reduce = w.kind === "melee" && holdsItem && hasTrait(w, "two-handed") && typeof base === "number";
-      const profile: AttackProfile = { ...w.profile, traits: w.traits };
-      if (reduce) profile.attacks = base - 1;
+      const gains = holdsItem && hasTrait(w, "polearm") && !hasTrait(w, "unwieldy");
+      const profile: AttackProfile = {
+        ...w.profile,
+        traits: gains ? [...w.traits, { key: "unwieldy" }] : w.traits,
+      };
       // Rend improvements from other wargear (Wheel-Spikes on Crushing Bulk).
       for (const other of gear)
         for (const imp of other.weaponImprovements)
           if (imp.wargearIds.includes(w.id)) profile.rend -= imp.rend;
-      lines.push({ id: w.id, kind: w.kind, profile, attacksReduced: reduce });
+      lines.push({ id: w.id, kind: w.kind, profile, unwieldyFromHeldItem: gains });
     }
     if (w.grantsAttack !== null)
       lines.push({
         id: w.id,
         kind: w.grantsAttack.range === undefined ? "melee" : "ranged",
         profile: w.grantsAttack,
-        attacksReduced: false,
+        unwieldyFromHeldItem: false,
       });
   }
 
@@ -232,7 +233,7 @@ export function weaponLines(index: FactionIndex, fighter: WarbandFighter): Weapo
       id: "unarmed-strike",
       kind: "melee",
       profile: index.common.unarmedStrike.profile,
-      attacksReduced: false,
+      unwieldyFromHeldItem: false,
     });
   return lines;
 }

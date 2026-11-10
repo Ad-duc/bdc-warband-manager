@@ -40,9 +40,7 @@ export function FighterCard({
   const typeName = f.text(profile.name);
   const name = fighterLabel(fighter, typeName);
   const stats = effectiveStats(index, fighter);
-  const canPromote =
-    profile.category === "champion" &&
-    index.faction.leaderSuccession.some((s) => s.eligibleChampionIds.includes(profile.id));
+  const canPromote = profile.category === "champion";
   const nameOf = (ids: string[], lookup: (id: string) => string | undefined) =>
     ids.map((id) => lookup(id) ?? id).join(", ") || "-";
 

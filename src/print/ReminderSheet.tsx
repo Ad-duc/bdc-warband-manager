@@ -5,7 +5,7 @@
  *              reinforcements roll, weapon trait reminders, misfire roll,
  *              hide, melee, ranged and arcane actions, miscast roll, Bloodied
  *              and moves. The text lives in reminder-fr.json (French only,
- *              page numbers of the playtest v1.03); this file only lays it out.
+ *              page numbers of the playtest v1.10); this file only lays it out.
  *              Printed only: the screen shows the same text through
  *              src/features/reminder/ReminderGuide.tsx.
  * Author:      Adrien Duclaud

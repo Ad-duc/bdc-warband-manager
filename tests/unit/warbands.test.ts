@@ -44,7 +44,8 @@ describe("factory", () => {
     expect(w.strongholdId).toBe("dilapidated-manor");
     expect(w.strongholdTrackers["vintage-wine"]).toBe(8);
     expect(w.fighters.map((f) => f.profileId)).toEqual(["noble"]);
-    expect(w.fighters[0]?.skillIds).toEqual(["duellist"]);
+    expect(w.fighters[0]?.skillIds).toEqual([]);
+    expect(w.fighters[0]?.wargearIds).toEqual(["nobles-rapier"]);
   });
 
   it("changing origin replaces the leader and keeps the others", () => {

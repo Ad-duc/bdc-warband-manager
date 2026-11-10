@@ -352,8 +352,10 @@ interface FactionLayout {
   names: string;
   armouryStart: string;
   melee: string;
-  /** null when the faction has no ranged weapon page (Death Covens). */
+  /** null when the faction has no ranged weapon page. */
   ranged: string | null;
+  /** Weapons printed in the melee table that cannot be purchased (Noble's Rapier). */
+  meleeTableExtras: string[];
   armourItems: string;
   skillSections: string[];
   loreSections: string[];
@@ -371,6 +373,7 @@ const LAYOUTS: Record<string, FactionLayout> = {
     armourItems: "Armurerie de la Guilde - Armures et objets",
     skillSections: ["Vieux briscards", "Ruse de soldat"],
     loreSections: ["Domaine de la Magie autorisée", "Domaine des Saints"],
+    meleeTableExtras: ["nobles-rapier"],
     naturalWeaponsInMeleeTable: false,
   },
   verminkin: {
@@ -382,6 +385,7 @@ const LAYOUTS: Record<string, FactionLayout> = {
     armourItems: "Armurerie des Vermineux - Armures et objets",
     skillSections: ["Machinations magistrales", "Coureurs de tunnels"],
     loreSections: ["Domaine des Tunnels profonds", "Domaine des Véroles"],
+    meleeTableExtras: [],
     naturalWeaponsInMeleeTable: true,
   },
   "death-covens": {
@@ -389,10 +393,11 @@ const LAYOUTS: Record<string, FactionLayout> = {
     names: "Noms des Cabales de la Mort",
     armouryStart: "## Armurerie de la Cabale (*Coven Armoury*)",
     melee: "Armurerie de la Cabale - Armes de corps à corps",
-    ranged: null,
+    ranged: "Armurerie de la Cabale - Armes à distance",
     armourItems: "Armurerie de la Cabale - Armures et objets",
     skillSections: ["Sombre aristocratie", "Seigneurs immortels"],
     loreSections: ["Domaine de la Nécromancie", "Domaine du Sang"],
+    meleeTableExtras: [],
     naturalWeaponsInMeleeTable: false,
   },
   "the-blighted-cloister": {
@@ -404,6 +409,7 @@ const LAYOUTS: Record<string, FactionLayout> = {
     armourItems: "Armurerie du Cloître - Armures et objets",
     skillSections: ["Ordonnés du Cloître", "Bénédictions de Sainte Pourriture"],
     loreSections: ["Domaine des Asticots bénis", "Domaine démoniaque de la Pourriture"],
+    meleeTableExtras: [],
     naturalWeaponsInMeleeTable: true,
   },
 };
@@ -440,10 +446,15 @@ function compareFaction(dir: string, f: FactionData, c: CommonData): void {
     headings(section(md, 2, "Repaires"), 3).map((h) => splitTerm(h).fr),
     f.strongholds.map((s) => s.name.fr),
   );
+  compareSets(
+    "Stronghold upgrades (FR names)",
+    headings(section(md, 2, "Améliorations de repaire"), 3).map((h) => splitTerm(h).fr),
+    f.strongholdUpgrades.map((u) => u.name.fr),
+  );
 
   // D66 names
   const d66: string[] = [];
-  for (const row of tableRows(section(md, 3, layout.names))) {
+  for (const row of tableRows(section(md, 2, layout.names))) {
     if (!/^\d0$/.test(row[0] ?? "")) continue;
     row.slice(1).forEach((name, col) => d66.push(`${(row[0] ?? "")[0]}${col + 1}=${name}`));
   }
@@ -526,16 +537,22 @@ function compareFaction(dir: string, f: FactionData, c: CommonData): void {
     );
   }
 
-  // Weapon profiles
+  // Weapon profiles; a trailing "*" marks a weapon that cannot be purchased.
+  const meleeName = (cell: string): string => cell.replace(/\*$/, "");
   const melee = tableRows(section(md, 2, layout.melee)).filter((r) => r.length === 7 && r[0] !== "Nom");
   compareSets(
     "Melee weapon profiles",
     melee.map(
       (r) =>
-        `${findWargear(r[0] ?? "")?.id ?? "?" + (r[0] ?? "")}: ${r.slice(1, 5).join(" ")} | ${stripTerms(r[5] ?? "")} | ${cost(r[6] ?? "")}`,
+        `${findWargear(meleeName(r[0] ?? ""))?.id ?? "?" + (r[0] ?? "")}: ${r.slice(1, 5).join(" ")} | ${stripTerms(r[5] ?? "")} | ${cost(r[6] ?? "")}`,
     ),
     f.wargear
-      .filter((w) => w.kind === "melee" && (w.purchasable || layout.naturalWeaponsInMeleeTable) && w.profile)
+      .filter(
+        (w) =>
+          w.kind === "melee" &&
+          (w.purchasable || layout.naturalWeaponsInMeleeTable || layout.meleeTableExtras.includes(w.id)) &&
+          w.profile,
+      )
       .map((w) => {
         const p = w.profile as AttackProfile;
         return `${w.id}: ${frValue(p.attacks)} ${frRend(p.rend)} ${frValue(p.damage)} ${frValue(p.critDamage)} | ${frTraits(w, c)} | ${w.cost}`;

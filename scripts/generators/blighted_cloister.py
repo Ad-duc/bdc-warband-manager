@@ -2,7 +2,7 @@
 File:     scripts/generators/blighted_cloister.py
 Role:     Builds The Blighted Cloister faction data from
           09_the-blighted-cloister.md (French texts extracted and cleaned) and
-          the English playtest v1.03 texts typed below (typos fixed, see
+          the English playtest v1.10 texts typed below (typos fixed, see
           RULES_ASSUMPTIONS.md D03).
 Author:   Adrien Duclaud
 Created:  2026-10-12
@@ -21,6 +21,7 @@ from common import (
     melee,
     rule,
     tr,
+    upgrades,
 )
 
 FILE = "09_the-blighted-cloister.md"
@@ -38,7 +39,7 @@ def build(md_path):
     data = {
         "_header": {
             "file": "src/data/the-blighted-cloister.json",
-            "role": "The Blighted Cloister faction data: origins, strongholds, campaign rules, names, epithets, fighters, Cloister Armoury, skills, spell lores",
+            "role": "The Blighted Cloister faction data: origins, strongholds, stronghold upgrades, names, epithets, fighters, Cloister Armoury, skills, spell lores",
             "author": "Adrien Duclaud",
             "created": "2026-10-12",
             "license": "MIT for the file structure. Game content belongs to Sam Pearson (Black Death City).",
@@ -115,12 +116,12 @@ def build(md_path):
 
 
     COMMUNION_EN = [
-        "2 - Damnation: Your leader is killed. You can add a Demonic Rotspawn to your warband without paying any "
-        "silver. It bears the name of your former leader.",
+        "2 - Damnation: Your leader is killed. You can add a Demonic Rotspawn to your warband for 0 silver. It bears "
+        "the name of your former leader.",
         "3-8 - Silence: No effect.",
-        "9-12 - Minor Boon: Your leader earns 10 bonus experience.",
-        "13-15 - Demonic Ally: You can add a Rot Demon or a Rotling to your warband without paying any silver.",
-        "16+ - Major Boon: Your leader earns 30 bonus experience.",
+        "9-12 - Minor Boon: Your leader earns 5 bonus experience.",
+        "13-15 - Demonic Ally: You can add a Rot Demon or a Rotling to your warband for 0 silver.",
+        "16+ - Major Boon: Your leader earns 20 bonus experience.",
     ]
     STRONGHOLDS = [
         ("fortified-keep", "Fortified Keep", "Donjon fortifié",
@@ -128,21 +129,20 @@ def build(md_path):
          "the City. Here, its knights drill tirelessly in the arts of war, ever preparing for the next crusade into the "
          "ruins.",
          [("martial-training", "Martial Training", "Entraînement martial",
-           "In step 3 of the Aftermath sequence you can pick up to 3 friendly Knight fighters to take part in martial "
+           "In step 3 of the aftermath sequence you can pick up to 3 friendly Knight fighters to take part in martial "
            "training. Each of those fighters earns d6 bonus experience."),
           ("search-the-city", "Search the City", "Fouiller la Cité",
-           "In step 5 of the aftermath sequence, if you won the battle, you gain 1 additional re-roll when searching "
-           "the City.")], []),
+           "In step 4 of the aftermath sequence, if you won the battle, you gain 1 exploration re-roll.")], []),
         ("secluded-scriptorium", "Secluded Scriptorium", "Scriptorium isolé",
          "By candlelight, the High Sorcerer oversees a host of hooded scribes as they translate forgotten manuscripts "
          "and corrupt works of medicine into foul treatises on plague and poison.",
          [("blasphemous-study", "Blasphemous Study", "Étude blasphématoire",
-           "In each Aftermath sequence, you can pick 1 of the following:\n"
+           "In step 6 of the aftermath sequence, you can pick 1 of the following:\n"
            "- Scry Ancient Scrolls: Roll a dice for each Wizard in your warband. Record an ongoing tally on your Warband "
            "Roster. Each time the tally exceeds a multiple of 20, you can pick a Wizard in your warband to earn enough "
            "experience to receive their next advancement.\n"
            "- Brew Concoctions: Roll a dice for each Wizard in your warband. For each roll of 5+, you can add 1 Vial of "
-           "Poison item (pg xx) to your stash.")],
+           "Poison (pg xx) to your stash.")],
          [{"id": "ancient-scrolls-tally", "name": T("Ancient scrolls tally", "Total des parchemins anciens"),
            "initial": "0"}]),
         ("unholy-altar", "Unholy Altar", "Autel impie",
@@ -150,14 +150,14 @@ def build(md_path):
          "One enters alone and kneels before the altar in silent communion, awaiting the judgement of the demon that "
          "lays claim to his soul.",
          [("demonic-communion", "Demonic Communion", "Communion démoniaque",
-           "Before the Aftermath sequence, roll on the table below. If you won the battle, roll 3d6. If you lost, roll "
+           "In step 6 of the aftermath sequence, roll on the table below. If you won the battle, roll 3d6. If you lost, roll "
            "2d6:\n" + "\n".join(COMMUNION_EN))], []),
         ("street-pulpit", "Street Pulpit", "Chaire de rue",
          "Each night, beneath this weathered pulpit, those afflicted with the Black Rot gather before the congregation "
          "to receive the Cloister's blessing. Those who have fallen in battle are brought forth and raised upon wooden "
          "crosses, where they are left to fester, their decaying bodies venerated as holy martyrs.",
          [("venerate-living-saints", "Venerate Living Saints", "Vénérer les Saints vivants",
-           "Each time a Dreg Cultist in this warband earns a level of Black Rot, they earn 5 additional experience."),
+           "Each time a Dreg Cultist in this warband gains a level of Black Rot, they earn 5 bonus experience."),
           ("canonise-the-fallen", "Canonise the Fallen", "Canoniser les défunts",
            "Each time a fighter in this warband is killed, every Dreg Cultist in this warband earns 10 additional bonus "
            "experience in step 3 of the aftermath sequence.")], []),
@@ -171,49 +171,61 @@ def build(md_path):
                 fr_text += "\n" + "\n".join(table_lines(fr))
             built.append(rule(rid, ren, rfr, rtext, fr_text))
         data["strongholds"].append(
-            {"id": sid, "name": T(en, fr), "flavour": T(flavour, src.quote_of(src.section(fr))), "income": "3d6x5",
-             "rules": built, "trackers": trackers, "sourceRef": src.ref(115, fr)}
+            {"id": sid, "name": T(en, fr), "flavour": T(flavour, src.quote_of(src.section(fr))),              "rules": built, "trackers": trackers, "sourceRef": src.ref(115, fr)}
         )
 
     # ----------------------------------------------------------------------------
     # Campaign rules, names, epithets
     # ----------------------------------------------------------------------------
-    demons_fr = src.paragraphs(src.section("Démons de la Pourriture"))
-    demons_fr = [p for p in demons_fr if not p.startswith("Table des blessures des Démons")]
-    data["campaignRules"] = [
-        rule("death-of-a-leader", "Death of a Leader", "Mort d'un Chef",
-             "During the campaign, if your leader is killed, and you choose to promote a champion (pg xx), the following "
-             "champions are eligible:", src.paragraphs(src.section("Mort d'un Chef"))[0]),
-        rule("rot-demons", "Rot Demons", "Démons de la Pourriture",
-             "Fighters with the Demon keyword do not use the standard injury table (pg xx). Instead they use the "
-             "following Demon Injury Table (d66):\n"
-             "The exception to this are Rotlings which use the Beasts Injury Table (pg xx).\n"
-             "11-16 - Banished: The demon is banished from the mortal world for 666 years. Remove it from your warband "
-             "roster. All its wargear is lost.\n"
-             "21-36 - Fractured Essence: The demon's grip on its corporeal form is momentarily unravelled. The demon "
-             "misses the next battle.\n"
-             "41-65 - Unharmed: Mortal weapons are not enough to deal lasting harm to a creature such as this. The demon "
-             "suffers no lasting effects.\n"
-             "66 - Enraged: The demon suffers no lasting effects. In addition, in step 3 of the Aftermath sequence, after "
-             "earning experience, they earn bonus experience to reach the next level.",
-             "\n".join(demons_fr).replace("Table des blessures des Démons suivante :",
-                                          "Table des blessures des Démons suivante (D66) :")
-             + "\n" + "\n".join(table_lines("Démons de la Pourriture"))),
-    ]
-    data["leaderSuccession"] = [
-        {"formerLeaderId": "knight-abbot", "eligibleChampionIds": ["cloister-champion"]},
-        {"formerLeaderId": "high-sorcerer", "eligibleChampionIds": ["cloister-sorcerer"]},
-    ]
-    data["nameTable"] = {"die": "d66", "sourceRef": src.ref(116, "Noms du Cloître gangrené"),
+    data["strongholdUpgrades"] = upgrades(src, [
+        ("hospice", "Hospice", "Hospice",
+         "You establish a hospice where the sick and afflicted are brought to receive care from the Cloister's devoted "
+         "attendants. Here, wounds are tended and suffering eased, although where the Black Rot is found, it is "
+         "nurtured.",
+         [("nurture-sickness", "Nurture Sickness", "Cultiver la maladie",
+           "In step six of the aftermath sequence, you can pick 1 friendly fighter with any temporary injuries. Remove "
+           "1 of their temporary injuries, they gain 1 level of Black Rot.")]),
+        ("herbalists-garden", "Herbalist's Garden", "Jardin de l'herboriste",
+         "An allotment within the Cloister grounds is set aside for a herbalist, who cultivates medicinal herbs and "
+         "prepares tonics and remedies for the Cloister.",
+         [("medicinal-remedies", "Medicinal Remedies", "Remèdes médicinaux",
+           "In step six of the aftermath sequence, you receive 1 Healing Tonic (pg xx).")]),
+        ("bell-tower", "Bell Tower", "Clocher",
+         "You construct a colossal bell tower above your stronghold. When its bell chimes, the sound can be heard all "
+         "over the City.",
+         [("the-bell-tolls", "The Bell Tolls", "Le glas sonne",
+           "Once per battle, when you activate your Leader, you can say the Bell Tower tolls. If you do so, friendly "
+           "fighters gain the Unshakeable rule until the end of the round:\n"
+           "- Unshakeable: This fighter ignores the Fear special rule and all rules that would make them scatter (eg. "
+           "the Scare weapon trait).")]),
+        ("ritual-chamber", "Ritual Chamber", "Chambre rituelle",
+         "Deep within the Cloister you consecrate a chamber to the unholy powers. Blasphemous sigils and runes are "
+         "etched into its stone walls, and from here your sorcerer-priests conduct dark rituals.",
+         [("unholy-pacts", "Unholy Pacts", "Pactes impies",
+           "In step 3 of the aftermath sequence you can pick 1 friendly Demon to earn d6 bonus experience.")]),
+        ("flykeeper", "Flykeeper", "Éleveur de mouches",
+         "You bring a Flykeeper into your employ who begins to nurture a hive of Bloat Flies. Before long the air "
+         "around the Cloister fills with an onerous buzzing.",
+         [("hive-spawn", "Hive-spawn", "Engeance de l'essaim",
+           "In step 6 of the aftermath sequence, you can roll a dice. On a 5+, you can recruit 1 Bloat Fly to your "
+           "warband for 0 silver.")]),
+        ("alms-box", "Alms Box", "Tronc des aumônes",
+         "An alms box of blackened oak is fitted beneath the pulpit. In times of peril for the Cloister, it fills with "
+         "the weight of silver, offered freely by the congregation as they pray for the City's salvation.",
+         [("congregation-collection", "Congregation Collection", "Quête de la congrégation",
+           "When you collect income from your stronghold, if you lost the battle, you receive an additional 3d6 "
+           "silver.")]),
+    ], 116)
+    data["nameTable"] = {"die": "d66", "sourceRef": src.ref(132, "Noms du Cloître gangrené"),
                          "entries": src.names("Noms du Cloître gangrené")}
     epithets = {}
-    for l in src.section("Épithètes du Cloître gangrené"):
+    for l in src.section("Épithètes du Cloître gangrené", level=2):
         cells = [c.strip() for c in l.strip("|").split("|")]
         if l.startswith("|") and re.match(r"^\d0$", cells[0]):
             for col, cell in enumerate(cells[1:], start=1):
                 m = re.match(r"^(.*?)\s*\(\*(.+?)\*\)$", cell)
                 epithets[f"{cells[0][0]}{col}"] = T(m.group(2), m.group(1))
-    data["epithetTable"] = {"die": "d66", "sourceRef": src.ref(118, "Épithètes du Cloître gangrené"),
+    data["epithetTable"] = {"die": "d66", "sourceRef": src.ref(132, "Épithètes du Cloître gangrené"),
                             "entries": epithets}
 
     # ----------------------------------------------------------------------------
@@ -250,10 +262,10 @@ def build(md_path):
         m("great-demonic-rot-blade", "Great Demonic Rot Blade", "Grande lame de pourriture démoniaque", 70, 3, -2, 3,
           "d3+2", ["arcane", "bludgeon", "poison", "two-handed", "unwieldy"]),
         m("great-club", "Great Club", "Grand gourdin", 38, 3, -1, 2, "d3+1", ["bludgeon", "two-handed", "unwieldy"]),
-        m("halberd", "Halberd", "Hallebarde", 34, 3, -1, 1, "d3+1", ["brace", "two-handed", "unwieldy"]),
+        m("halberd", "Halberd", "Hallebarde", 34, 3, -1, 1, "d3+1", ["brace", "polearm", "two-handed"]),
         m("heavy-axe", "Heavy Axe", "Hache lourde", 40, 3, -2, 2, "d3+1", ["two-handed", "unwieldy"]),
         m("proboscis", "Proboscis", "Trompe", 0, 3, 0, 1, 1, ["natural-weapon", "poison"], purchasable=False),
-        m("spear", "Spear", "Lance", 16, 3, 0, 1, "d3", ["brace", "two-handed"]),
+        m("spear", "Spear", "Lance", 16, 3, 0, 1, "d3", ["brace", "polearm", "two-handed"]),
         m("sword", "Sword", "Épée", 18, 3, 0, 1, "d3", ["guard", "off-hand"]),
         ranged("sling", "Sling", "Fronde", 14, 16, 1, 0, 1, "d3", []),
         ranged("blowpipe", "Blowpipe", "Sarbacane", 16, 12, 1, 0, 1, "d3", ["poison"]),
@@ -396,7 +408,10 @@ def build(md_path):
          "This fighter is equipped with a Demonic Rot Maw (see below), they cannot be equipped with any other wargear.",
          "Sate... my... hunger...", 130),
         ("demonic-rot-colossal", "Demonic Rot-Colossal", "brute", ["brute", "cloister", "demon"], 200, None,
-         (5, 4, 6, 5, 4, 4, 10), [], ["great-demonic-rot-blade"], (30, "d6"), [], (0, 0, None), [WARDS, FEAR],
+         (5, 4, 6, 5, 4, 4, 10), [], ["great-demonic-rot-blade"], (30, "d6"), [], (0, 0, None),
+         [WARDS, FEAR,
+          ("demonic-strength", "Demonic Strength", "Force démoniaque",
+           "This fighter ignore the Unwieldy weapon trait on its Demonic Rot Blade.")],
          "This fighter is equipped with a Great Demonic Rot Blade (included in their recruit cost). They cannot be "
          "equipped with any other wargear.", "Come hither, little mortal.", 130),
         ("bloat-fly", "Bloat Fly", "beast", ["beast", "cloister", "fly"], 50, None, (10, 5, None, 6, 4, 1, 2), [],

@@ -1,6 +1,6 @@
-# Black Death City - Playtest v1.03 : glossaire VO > VF
+# Black Death City - Playtest v1.10 : glossaire VO > VF
 
-Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné. Mis à jour le 13/10/2026 (version 6) : noms de factions, mots-clés de faction et nom commun "coven" traduits (décision H17). Mis à jour le 14/10/2026 (version 7) : Wizard devient Magicien (décision H18). Mis à jour le 14/10/2026 (version 8) : noms de combattants traduits (décision H19). Mis à jour le 15/10/2026 (version 9) : Vermigènes devient Vermineux (décision H20), Prêtre Véroleux devient Prêtre Véroleux (décision H21). Mis à jour le 26/10/2026 (version 10) : 14 termes de l'avant-première du chapitre Campagne (Curiosités, Explorer la Cité), marqués "Ajout avant-première Campagne", à confirmer à la parution. Mis à jour le 10/11/2026 (version 11) : 176 termes du chapitre 5, Campagnes, de la v1.10 (possessions, séquence d'après-bataille, curiosités, reliques), marqués "Ajout v1.10".
+Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné. Mis à jour le 13/10/2026 (version 6) : noms de factions, mots-clés de faction et nom commun "coven" traduits (décision H17). Mis à jour le 14/10/2026 (version 7) : Wizard devient Magicien (décision H18). Mis à jour le 14/10/2026 (version 8) : noms de combattants traduits (décision H19). Mis à jour le 15/10/2026 (version 9) : Vermigènes devient Vermineux (décision H20), Prêtre Véroleux devient Prêtre Véroleux (décision H21). Mis à jour le 26/10/2026 (version 10) : 14 termes de l'avant-première du chapitre Campagne (Curiosités, Explorer la Cité), marqués "Ajout avant-première Campagne", à confirmer à la parution. Mis à jour le 10/11/2026 (version 11) : 176 termes du chapitre 5, Campagnes, de la v1.10 (possessions, séquence d'après-bataille, curiosités, reliques), marqués "Ajout v1.10". Mis à jour le 10/11/2026 (version 12) : 59 termes des chapitres 01 à 10 de la v1.10 (améliorations de repaire et leurs règles, mot-clé Demi-humain), marqués "Ajout v1.10".
 
 ## Ligne directrice
 
@@ -18,7 +18,7 @@ Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les aj
 
 ## Mode d'emploi
 
-- Le glossaire compte 1332 entrées réparties en 27 catégories. Il est trié par catégorie, puis par ordre alphabétique de la VO.
+- Le glossaire compte 1391 entrées réparties en 27 catégories. Il est trié par catégorie, puis par ordre alphabétique de la VO.
 - "Imposé" : terme repris tel quel de ton glossaire de départ.
 - "VO conservée" : terme laissé en anglais. Depuis les décisions H17 et H19, les noms de factions, leurs mots-clés et les noms de combattants sont traduits, avec le terme anglais entre parenthèses à chaque occurrence.
 - "Tranché (Hn)" : point que tu as arbitré. "Voir Hn" : entrée qui découle de cette décision.
@@ -77,8 +77,8 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Code | Catégorie | Entrées |
 |---|---|---|
 | 01 | Général | 125 |
-| 02 | Formulations de règles | 27 |
-| 03 | Types de combattants et mots-clés | 36 |
+| 02 | Formulations de règles | 28 |
+| 03 | Types de combattants et mots-clés | 37 |
 | 04 | Valeurs et profils | 42 |
 | 05 | Séquence de jeu | 76 |
 | 06 | États et situations | 49 |
@@ -92,7 +92,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | 14 | Campagne et feuille de bande | 171 |
 | 15 | Factions et combattants | 61 |
 | 16 | Origines | 18 |
-| 17 | Repaires et règles de repaire | 51 |
+| 17 | Repaires et règles de repaire | 107 |
 | 18 | Armureries et listes d'équipement | 23 |
 | 19 | Armes de corps à corps | 52 |
 | 20 | Armes à distance | 30 |
@@ -102,7 +102,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | 24 | Compétences | 65 |
 | 25 | Règles spéciales de combattants | 47 |
 | 26 | Épithètes du Cloître gangrené | 36 |
-| 27 | Structure du livre | 19 |
+| 27 | Structure du livre | 20 |
 
 ## 01. Général
 
@@ -258,6 +258,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | remove from the battlefield | retirer du champ de bataille | Formulations de règles |  |
 | set up | placer | Formulations de règles | Pour un combattant. "Deployment" reste "Déploiement". |
 | spend | dépenser | Formulations de règles | "spend an engineering point". "spend a Move or Action" devient "forgo" en v1.03. |
+| Two-Handed Weapons and Held Items | Armes à deux mains et objets tenus | Formulations de règles | Ajout v1.10. Encadré du chapitre 1 : pas d'objet tenu avec une arme à deux mains, sauf arme d'hast. |
 | until the end of the round | jusqu'à la fin du round | Formulations de règles | Imposé. |
 | up to | jusqu'à | Formulations de règles | Imposé. |
 | wholly within | entièrement à X" ou moins | Formulations de règles | Imposé. |
@@ -280,6 +281,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Cloister | Cloître | Types de combattants et mots-clés | Mot-clé de faction. Tranché (H17). |
 | Consumable | Consommable | Types de combattants et mots-clés | Ajout avant-première Campagne (p. 137-156). Mot-clé d'objet. |
 | Contraption | Engin | Types de combattants et mots-clés | Imposé. |
+| Demi-human | Demi-humain | Types de combattants et mots-clés | Ajout v1.10. Mot-clé du Serviteur (Cabales de la Mort). |
 | Demon | Démon | Types de combattants et mots-clés | Imposé. |
 | Dog | Chien | Types de combattants et mots-clés | Mot-clé de combattant (Chien de chasse, Loup sinistre). Tranché (H3). |
 | Fly | Vol | Types de combattants et mots-clés | Imposé. Attention : la Mouche bouffie (une mouche) a aussi le mot-clé Vol. |
@@ -1064,18 +1066,34 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
 | A Howl in the Night | Un hurlement dans la nuit | Repaires et règles de repaire | Règle du Grand pavillon. |
+| A Night's Work | Le travail d'une nuit | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Cabales de la Mort). |
+| Add to the Collection | Compléter la collection | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Mercenaires de la Guilde). |
+| Alms Box | Tronc des aumônes | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Cloître gangrené). |
 | Ancient Barrows | Tumulus anciens | Repaires et règles de repaire | Repaire des Cabales de la Mort. |
+| Apothecary | Apothicairerie | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Mercenaires de la Guilde). |
+| Arcane Rivalry | Rivalité arcanique | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Vermineux). |
+| Armourer | Armurier | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Mercenaires de la Guilde). |
 | Atonement for Sin | Expiation des péchés | Repaires et règles de repaire | Règle de la Maison capitulaire. |
 | Banquet of Blood | Banquet de sang | Repaires et règles de repaire | Règle du Manoir opulent. |
 | Barrow Offering | Offrande au tumulus | Repaires et règles de repaire | Règle des Tumulus anciens. |
+| Bell Tower | Clocher | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Cloître gangrené). |
 | Bestial Trophies | Trophées de Bêtes | Repaires et règles de repaire | Règle du Grand pavillon. La règle porte sur le mot-clé Bête ; "bestiaux" se lirait "bétail". |
+| Black Market Wares | Marchandises du marché noir | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Vermineux). |
+| Blackrose Orchard | Verger de roses noires | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Cabales de la Mort). |
 | Blasphemous Study | Étude blasphématoire | Repaires et règles de repaire | Règle du Scriptorium isolé. |
+| Breeding Pens | Enclos d'élevage | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Vermineux). |
 | Brew Concoctions | Préparer des décoctions | Repaires et règles de repaire | Option de l'Étude blasphématoire. |
 | Canonise the Fallen | Canoniser les défunts | Repaires et règles de repaire | Règle de la Chaire de rue. |
+| Captured Poisoner | Empoisonneur captif | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Vermineux). |
 | Chapter House | Maison capitulaire | Repaires et règles de repaire | Repaire des Mercenaires de la Guilde. La VO écrit aussi "Chapter house". |
+| Chirurgeon's Practice | Cabinet du chirurgien | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Mercenaires de la Guilde). |
+| Circle the Skies Above | Tournoyer dans les cieux | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Cabales de la Mort). |
 | Combat Drills | Exercices de combat | Repaires et règles de repaire | Règle de la Caserne de la Guilde. |
+| Communion with the Saints | Communion avec les Saints | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Mercenaires de la Guilde). |
+| Congregation Collection | Quête de la congrégation | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Cloître gangrené). |
 | Create a Zombie | Créer un Zombie | Repaires et règles de repaire | Option de l'Étude nécromantique. |
 | Damnation | Damnation | Repaires et règles de repaire | Table de la Communion démoniaque, résultat 2. |
+| Dark Harvest | Sombre récolte | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Cabales de la Mort). |
 | Demonic Ally | Allié démoniaque | Repaires et règles de repaire | Table de la Communion démoniaque, résultat 13-15. |
 | Demonic Communion | Communion démoniaque | Repaires et règles de repaire | Règle de l'Autel impie. |
 | Desecrated Chapel | Chapelle profanée | Repaires et règles de repaire | Repaire des Vermineux. |
@@ -1084,36 +1102,76 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Embalmer's Hall | Salle de l'embaumeur | Repaires et règles de repaire | Repaire des Cabales de la Mort. La VO écrit aussi "Embalmers' Hall". |
 | Embalmers' Hall | Salle de l'embaumeur | Repaires et règles de repaire | Ajout du lot 08. Variante de "Embalmer's Hall" dans le texte d'ambiance du repaire (p. 95). |
 | engineering points | points d'ingénierie | Repaires et règles de repaire | Règles Bricoleurs fous et Ingénierie folle. |
+| Exhumed Crypt | Crypte exhumée | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Cabales de la Mort). |
 | Fighting Pits | Fosses de combat | Repaires et règles de repaire | Règle du Terrier fortifié. |
+| Flykeeper | Éleveur de mouches | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Cloître gangrené). |
 | Fortified Keep | Donjon fortifié | Repaires et règles de repaire | Repaire du Cloître gangrené. |
 | Fortified Warren | Terrier fortifié | Repaires et règles de repaire | Repaire des Vermineux. |
+| Gargoyle's Tower | Tour des gargouilles | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Cabales de la Mort). |
 | Grand Pavilion | Grand pavillon | Repaires et règles de repaire | Repaire des Cabales de la Mort. |
 | Guild Barracks | Caserne de la Guilde | Repaires et règles de repaire | Repaire des Mercenaires de la Guilde. Voir H1. |
+| Gunsmith's Workshop | Atelier d'arquebusier | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Mercenaires de la Guilde). |
+| Heavy Infantry | Infanterie lourde | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Mercenaires de la Guilde). |
+| Herbalist's Garden | Jardin de l'herboriste | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Cloître gangrené). |
 | Hidden Library | Bibliothèque cachée | Repaires et règles de repaire | Repaire des Mercenaires de la Guilde. |
 | Hidden Vantage | Poste d'observation caché | Repaires et règles de repaire | Repaire des Vermineux. |
+| Hive-spawn | Engeance de l'essaim | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Cloître gangrené). |
+| Holy Relics | Saintes reliques | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Mercenaires de la Guilde). |
+| Household Poisoner | Empoisonneur de la maisonnée | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Cabales de la Mort). |
 | Immortal Slumber | Sommeil immortel | Repaires et règles de repaire | Règle des Tumulus anciens. |
 | Income | Revenu | Repaires et règles de repaire | Ligne de profil des repaires. |
+| Kennels | Chenil | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Mercenaires de la Guilde). |
+| Lethal Concoctions | Concoctions mortelles | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Vermineux). |
 | Living Saints | Saints vivants | Repaires et règles de repaire | "the Saints" = les Saints. |
 | Mad Tinkerers | Bricoleurs fous | Repaires et règles de repaire | Règle de l'Atelier branlant. |
+| Maintained Firearms | Armes à feu entretenues | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Mercenaires de la Guilde). |
 | Major Boon | Faveur majeure | Repaires et règles de repaire | Table de la Communion démoniaque, résultat 16+. |
 | Martial Training | Entraînement martial | Repaires et règles de repaire | Règle du Donjon fortifié. |
+| Master the Arcane | Maîtriser l'arcane | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Mercenaires de la Guilde). |
+| Medicinal Remedies | Remèdes médicinaux | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Cloître gangrené). |
 | Minor Boon | Faveur mineure | Repaires et règles de repaire | Table de la Communion démoniaque, résultat 9-12. |
+| Necromancer's Mausoleum | Mausolée du nécromancien | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Cabales de la Mort). |
 | Necromantic Study | Étude nécromantique | Repaires et règles de repaire | Règle de la Salle de l'embaumeur. |
+| Nexus of Dark Magic | Nexus de magie noire | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Cabales de la Mort). |
+| Nurture Sickness | Cultiver la maladie | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Cloître gangrené). |
 | Opulent Manor | Manoir opulent | Repaires et règles de repaire | Repaire des Cabales de la Mort. |
+| Ossified Remains | Restes ossifiés | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Cabales de la Mort). |
+| Ossuary | Ossuaire | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Cabales de la Mort). |
+| Patch 'em Up | Rafistolage | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Vermineux). |
+| Prayer Room | Salle de prière | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Mercenaires de la Guilde). |
 | Prayers of Plague | Prières de peste | Repaires et règles de repaire | Règle de la Chapelle profanée. |
+| Raised Canine | Chien élevé | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Mercenaires de la Guilde). |
+| Raised Rat | Rat élevé | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Vermineux). |
 | Read Forbidden Scrolls | Lire les parchemins interdits | Repaires et règles de repaire | Option de l'Étude nécromantique. |
 | Rickety Workshop | Atelier branlant | Repaires et règles de repaire | Repaire des Vermineux. |
+| Ritual Chamber | Chambre rituelle | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Cloître gangrené). |
+| Rooftop Ratways | Passerelles des toits | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Vermineux). |
 | Run the Roofs | Courir les toits | Repaires et règles de repaire | Règle du Poste d'observation caché. |
+| Scour the City | Écumer la Cité | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Vermineux). |
 | Scry Ancient Scrolls | Scruter les parchemins anciens | Repaires et règles de repaire | Option de l'Étude blasphématoire. |
 | Search the City | Fouiller la Cité | Repaires et règles de repaire | Règle du Donjon fortifié. |
 | Secluded Scriptorium | Scriptorium isolé | Repaires et règles de repaire | Repaire du Cloître gangrené. |
 | Silence (boon table) | Silence | Repaires et règles de repaire | Table de la Communion démoniaque, résultat 3-8 ; même VF que le sort homonyme. |
+| Smuggler's Den | Repaire de contrebandiers | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Vermineux). |
 | Sorcerous Study | Étude de la sorcellerie | Repaires et règles de repaire | Règle de la Bibliothèque cachée. |
+| Spliced-brains | Cerveaux greffés | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Vermineux). |
+| Splicer | Greffeur | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Vermineux). |
+| Stitch and Splice | Coudre et greffer | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Vermineux). |
+| Stitched-limbs | Membres recousus | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Vermineux). |
 | Street Pulpit | Chaire de rue | Repaires et règles de repaire | Repaire du Cloître gangrené. |
+| Tend the Wounded | Soigner les blessés | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Mercenaires de la Guilde). |
+| The Apothecary's Potion | La potion de l'apothicaire | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Mercenaires de la Guilde). |
+| The Bell Tolls | Le glas sonne | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Cloître gangrené). |
+| Treasure of the Crypt | Trésor de la crypte | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Cabales de la Mort). |
+| Trophy Room | Salle des trophées | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Cabales de la Mort). |
 | Unholy Altar | Autel impie | Repaires et règles de repaire | Repaire du Cloître gangrené. |
+| Unholy Pacts | Pactes impies | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Cloître gangrené). |
+| Vector of Plague | Vecteur de peste | Repaires et règles de repaire | Ajout v1.10. Règle de repaire ou d'amélioration (Vermineux). |
 | Venerate Living Saints | Vénérer les Saints vivants | Repaires et règles de repaire | Règle de la Chaire de rue. |
 | vintage wine | grand cru | Repaires et règles de repaire | Ajout du lot 06. Bouteille de grand cru (règle Grands crus du Manoir délabré). |
 | Vintage Wines | Grands crus | Repaires et règles de repaire | Règle du Manoir délabré. "bottle of vintage wine" = bouteille de grand cru. |
+| Warlock's Den | Antre du sorcier | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Vermineux). |
+| Woodland Estate | Domaine forestier | Repaires et règles de repaire | Ajout v1.10. Repaire ou amélioration de repaire (Cabales de la Mort). |
 
 ## 18. Armureries et listes d'équipement
 
@@ -1557,6 +1615,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Core Concepts | Concepts de base | Structure du livre | Chapitre 1. |
 | Explore the City | Explorer la Cité | Structure du livre | Ajout du lot 01. Rubrique de la vue d'ensemble. |
 | Fight Battles | Livrer des batailles | Structure du livre | Ajout du lot 01. Rubrique de la vue d'ensemble. |
+| Fighter Cards | cartes de combattants | Structure du livre | Ajout v1.10. Introduction du chapitre 6. |
 | How to use this book | Comment utiliser ce livre | Structure du livre |  |
 | Introduction | Introduction | Structure du livre |  |
 | Join the Community | Rejoignez la communauté | Structure du livre |  |

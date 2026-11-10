@@ -843,6 +843,11 @@
       "category": "02"
     },
     {
+      "vo": "Two-Handed Weapons and Held Items",
+      "vf": "Armes à deux mains et objets tenus",
+      "category": "02"
+    },
+    {
       "vo": "until the end of the round",
       "vf": "jusqu'à la fin du round",
       "category": "02"
@@ -925,6 +930,11 @@
     {
       "vo": "Contraption",
       "vf": "Engin",
+      "category": "03"
+    },
+    {
+      "vo": "Demi-human",
+      "vf": "Demi-humain",
       "category": "03"
     },
     {
@@ -4498,8 +4508,38 @@
       "category": "17"
     },
     {
+      "vo": "A Night's Work",
+      "vf": "Le travail d'une nuit",
+      "category": "17"
+    },
+    {
+      "vo": "Add to the Collection",
+      "vf": "Compléter la collection",
+      "category": "17"
+    },
+    {
+      "vo": "Alms Box",
+      "vf": "Tronc des aumônes",
+      "category": "17"
+    },
+    {
       "vo": "Ancient Barrows",
       "vf": "Tumulus anciens",
+      "category": "17"
+    },
+    {
+      "vo": "Apothecary",
+      "vf": "Apothicairerie",
+      "category": "17"
+    },
+    {
+      "vo": "Arcane Rivalry",
+      "vf": "Rivalité arcanique",
+      "category": "17"
+    },
+    {
+      "vo": "Armourer",
+      "vf": "Armurier",
       "category": "17"
     },
     {
@@ -4518,13 +4558,33 @@
       "category": "17"
     },
     {
+      "vo": "Bell Tower",
+      "vf": "Clocher",
+      "category": "17"
+    },
+    {
       "vo": "Bestial Trophies",
       "vf": "Trophées de Bêtes",
       "category": "17"
     },
     {
+      "vo": "Black Market Wares",
+      "vf": "Marchandises du marché noir",
+      "category": "17"
+    },
+    {
+      "vo": "Blackrose Orchard",
+      "vf": "Verger de roses noires",
+      "category": "17"
+    },
+    {
       "vo": "Blasphemous Study",
       "vf": "Étude blasphématoire",
+      "category": "17"
+    },
+    {
+      "vo": "Breeding Pens",
+      "vf": "Enclos d'élevage",
       "category": "17"
     },
     {
@@ -4538,13 +4598,38 @@
       "category": "17"
     },
     {
+      "vo": "Captured Poisoner",
+      "vf": "Empoisonneur captif",
+      "category": "17"
+    },
+    {
       "vo": "Chapter House",
       "vf": "Maison capitulaire",
       "category": "17"
     },
     {
+      "vo": "Chirurgeon's Practice",
+      "vf": "Cabinet du chirurgien",
+      "category": "17"
+    },
+    {
+      "vo": "Circle the Skies Above",
+      "vf": "Tournoyer dans les cieux",
+      "category": "17"
+    },
+    {
       "vo": "Combat Drills",
       "vf": "Exercices de combat",
+      "category": "17"
+    },
+    {
+      "vo": "Communion with the Saints",
+      "vf": "Communion avec les Saints",
+      "category": "17"
+    },
+    {
+      "vo": "Congregation Collection",
+      "vf": "Quête de la congrégation",
       "category": "17"
     },
     {
@@ -4555,6 +4640,11 @@
     {
       "vo": "Damnation",
       "vf": "Damnation",
+      "category": "17"
+    },
+    {
+      "vo": "Dark Harvest",
+      "vf": "Sombre récolte",
       "category": "17"
     },
     {
@@ -4598,8 +4688,18 @@
       "category": "17"
     },
     {
+      "vo": "Exhumed Crypt",
+      "vf": "Crypte exhumée",
+      "category": "17"
+    },
+    {
       "vo": "Fighting Pits",
       "vf": "Fosses de combat",
+      "category": "17"
+    },
+    {
+      "vo": "Flykeeper",
+      "vf": "Éleveur de mouches",
       "category": "17"
     },
     {
@@ -4613,6 +4713,11 @@
       "category": "17"
     },
     {
+      "vo": "Gargoyle's Tower",
+      "vf": "Tour des gargouilles",
+      "category": "17"
+    },
+    {
       "vo": "Grand Pavilion",
       "vf": "Grand pavillon",
       "category": "17"
@@ -4620,6 +4725,21 @@
     {
       "vo": "Guild Barracks",
       "vf": "Caserne de la Guilde",
+      "category": "17"
+    },
+    {
+      "vo": "Gunsmith's Workshop",
+      "vf": "Atelier d'arquebusier",
+      "category": "17"
+    },
+    {
+      "vo": "Heavy Infantry",
+      "vf": "Infanterie lourde",
+      "category": "17"
+    },
+    {
+      "vo": "Herbalist's Garden",
+      "vf": "Jardin de l'herboriste",
       "category": "17"
     },
     {
@@ -4633,6 +4753,21 @@
       "category": "17"
     },
     {
+      "vo": "Hive-spawn",
+      "vf": "Engeance de l'essaim",
+      "category": "17"
+    },
+    {
+      "vo": "Holy Relics",
+      "vf": "Saintes reliques",
+      "category": "17"
+    },
+    {
+      "vo": "Household Poisoner",
+      "vf": "Empoisonneur de la maisonnée",
+      "category": "17"
+    },
+    {
       "vo": "Immortal Slumber",
       "vf": "Sommeil immortel",
       "category": "17"
@@ -4640,6 +4775,16 @@
     {
       "vo": "Income",
       "vf": "Revenu",
+      "category": "17"
+    },
+    {
+      "vo": "Kennels",
+      "vf": "Chenil",
+      "category": "17"
+    },
+    {
+      "vo": "Lethal Concoctions",
+      "vf": "Concoctions mortelles",
       "category": "17"
     },
     {
@@ -4653,6 +4798,11 @@
       "category": "17"
     },
     {
+      "vo": "Maintained Firearms",
+      "vf": "Armes à feu entretenues",
+      "category": "17"
+    },
+    {
       "vo": "Major Boon",
       "vf": "Faveur majeure",
       "category": "17"
@@ -4663,8 +4813,23 @@
       "category": "17"
     },
     {
+      "vo": "Master the Arcane",
+      "vf": "Maîtriser l'arcane",
+      "category": "17"
+    },
+    {
+      "vo": "Medicinal Remedies",
+      "vf": "Remèdes médicinaux",
+      "category": "17"
+    },
+    {
       "vo": "Minor Boon",
       "vf": "Faveur mineure",
+      "category": "17"
+    },
+    {
+      "vo": "Necromancer's Mausoleum",
+      "vf": "Mausolée du nécromancien",
       "category": "17"
     },
     {
@@ -4673,13 +4838,53 @@
       "category": "17"
     },
     {
+      "vo": "Nexus of Dark Magic",
+      "vf": "Nexus de magie noire",
+      "category": "17"
+    },
+    {
+      "vo": "Nurture Sickness",
+      "vf": "Cultiver la maladie",
+      "category": "17"
+    },
+    {
       "vo": "Opulent Manor",
       "vf": "Manoir opulent",
       "category": "17"
     },
     {
+      "vo": "Ossified Remains",
+      "vf": "Restes ossifiés",
+      "category": "17"
+    },
+    {
+      "vo": "Ossuary",
+      "vf": "Ossuaire",
+      "category": "17"
+    },
+    {
+      "vo": "Patch 'em Up",
+      "vf": "Rafistolage",
+      "category": "17"
+    },
+    {
+      "vo": "Prayer Room",
+      "vf": "Salle de prière",
+      "category": "17"
+    },
+    {
       "vo": "Prayers of Plague",
       "vf": "Prières de peste",
+      "category": "17"
+    },
+    {
+      "vo": "Raised Canine",
+      "vf": "Chien élevé",
+      "category": "17"
+    },
+    {
+      "vo": "Raised Rat",
+      "vf": "Rat élevé",
       "category": "17"
     },
     {
@@ -4693,8 +4898,23 @@
       "category": "17"
     },
     {
+      "vo": "Ritual Chamber",
+      "vf": "Chambre rituelle",
+      "category": "17"
+    },
+    {
+      "vo": "Rooftop Ratways",
+      "vf": "Passerelles des toits",
+      "category": "17"
+    },
+    {
       "vo": "Run the Roofs",
       "vf": "Courir les toits",
+      "category": "17"
+    },
+    {
+      "vo": "Scour the City",
+      "vf": "Écumer la Cité",
       "category": "17"
     },
     {
@@ -4718,8 +4938,33 @@
       "category": "17"
     },
     {
+      "vo": "Smuggler's Den",
+      "vf": "Repaire de contrebandiers",
+      "category": "17"
+    },
+    {
       "vo": "Sorcerous Study",
       "vf": "Étude de la sorcellerie",
+      "category": "17"
+    },
+    {
+      "vo": "Spliced-brains",
+      "vf": "Cerveaux greffés",
+      "category": "17"
+    },
+    {
+      "vo": "Splicer",
+      "vf": "Greffeur",
+      "category": "17"
+    },
+    {
+      "vo": "Stitch and Splice",
+      "vf": "Coudre et greffer",
+      "category": "17"
+    },
+    {
+      "vo": "Stitched-limbs",
+      "vf": "Membres recousus",
       "category": "17"
     },
     {
@@ -4728,8 +4973,43 @@
       "category": "17"
     },
     {
+      "vo": "Tend the Wounded",
+      "vf": "Soigner les blessés",
+      "category": "17"
+    },
+    {
+      "vo": "The Apothecary's Potion",
+      "vf": "La potion de l'apothicaire",
+      "category": "17"
+    },
+    {
+      "vo": "The Bell Tolls",
+      "vf": "Le glas sonne",
+      "category": "17"
+    },
+    {
+      "vo": "Treasure of the Crypt",
+      "vf": "Trésor de la crypte",
+      "category": "17"
+    },
+    {
+      "vo": "Trophy Room",
+      "vf": "Salle des trophées",
+      "category": "17"
+    },
+    {
       "vo": "Unholy Altar",
       "vf": "Autel impie",
+      "category": "17"
+    },
+    {
+      "vo": "Unholy Pacts",
+      "vf": "Pactes impies",
+      "category": "17"
+    },
+    {
+      "vo": "Vector of Plague",
+      "vf": "Vecteur de peste",
       "category": "17"
     },
     {
@@ -4745,6 +5025,16 @@
     {
       "vo": "Vintage Wines",
       "vf": "Grands crus",
+      "category": "17"
+    },
+    {
+      "vo": "Warlock's Den",
+      "vf": "Antre du sorcier",
+      "category": "17"
+    },
+    {
+      "vo": "Woodland Estate",
+      "vf": "Domaine forestier",
       "category": "17"
     },
     {
@@ -6710,6 +7000,11 @@
     {
       "vo": "Fight Battles",
       "vf": "Livrer des batailles",
+      "category": "27"
+    },
+    {
+      "vo": "Fighter Cards",
+      "vf": "cartes de combattants",
       "category": "27"
     },
     {

@@ -107,8 +107,11 @@
     "twoHanded": {
       "multiple": "{{count}} two-handed weapons: only 1 per fighter, melee and ranged together.",
       "heldItemRanged": "A held item ({{wargear}}) cannot be carried with a two-handed ranged weapon.",
-      "heldItemMelee": "Held item with a two-handed melee weapon ({{wargear}}): -1 Attacks with that weapon.",
+      "heldItemMelee": "A held item cannot be carried with a two-handed melee weapon ({{wargear}}), unless it is a polearm.",
       "offHand": "With a two-handed weapon, {{wargear}} cannot be used for off-hand attacks."
+    },
+    "polearm": {
+      "heldItem": "Polearm carried with a held item ({{wargear}}): it gains the Unwieldy trait."
     },
     "rarity": {
       "exceeded": "{{count}} fighters equipped with {{wargear}}: Rare 0-{{max}} in the warband."
@@ -411,7 +414,8 @@
     },
     "holdings": {
       "title": "Stronghold and holdings",
-      "chapter5": "Holdings are detailed in Chapter 5, not released yet: free fields until then.",
+      "chapter5": "Holdings are detailed in Chapter 5 (Campaigns). Their catalogue is not in the app yet: free fields until then.",
+      "strongholdLevel": "level {{level}}",
       "label": "Holding {{n}}",
       "notes": "Notes on holding {{n}}",
       "remove": "Remove",
@@ -437,7 +441,7 @@
       "status": "Status",
       "promoted": "Promoted to leader",
       "injuriesAndAdvances": "Injuries and advancements ({{injuries}} injuries)",
-      "chapter5": "The lasting injury table and advancements are in Chapter 5, not released yet: describe them freely and set their effect on the characteristics.",
+      "chapter5": "The injury table and advancements are in Chapter 5 (Campaigns). They are not in the app yet: describe them freely and set their effect on the characteristics.",
       "injury": "Injury {{n}}",
       "injuryEffects": "Effect on the characteristics",
       "removeInjury": "Remove",
@@ -542,7 +546,7 @@
   },
   "reminder": {
     "title": "Reminder sheet (French)",
-    "intro": "The official reminder sheet translated into French: set-up, round sequence, weapon traits, actions, dice tables. Page numbers refer to the playtest v1.03 rules. The print button lays it out on one A4 sheet.",
+    "intro": "The official reminder sheet translated into French: set-up, round sequence, weapon traits, actions, dice tables. Page numbers refer to the playtest v1.10 rules. The print button lays it out on one A4 sheet.",
     "print": "Print the A4 sheet"
   },
   "compendium": {
@@ -613,7 +617,7 @@
   },
   "reader": {
     "title": "French rules",
-    "notice": "Unofficial French translation of the playtest v1.03 rules. The text below is in French.",
+    "notice": "Unofficial French translation of the playtest v1.10 rules. The text below is in French.",
     "chapter": "Chapter",
     "chapters": "Chapters",
     "contents": "Contents",
@@ -644,7 +648,7 @@
       "loading": "Preparing the chapters...",
       "coverTitle": "Black Death City",
       "coverLabel": "Title page",
-      "coverRules": "Playtest rules v1.03",
+      "coverRules": "Playtest rules v1.10",
       "coverAuthor": "By Sam Pearson",
       "coverSource": "Printed from BDC Warband Manager, an unofficial fan tool: https://ad-duc.github.io/bdc-warband-manager/"
     },
