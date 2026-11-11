@@ -11,9 +11,15 @@
 Les changements notables du projet sont listés ici. Le format suit
 [Keep a Changelog 1.1.0](https://keepachangelog.com/fr/1.1.0/) et le projet
 applique le [versionnage sémantique](https://semver.org/lang/fr/spec/v2.0.0.html).
-La version des règles du jeu est indiquée à part (version de test 1.03).
+La version des règles du jeu est indiquée à part (version de test 1.10).
 
 ## [Non publié]
+
+## [1.4.0] - 2026-11-11
+
+Passage à la version de test 1.10 de Black Death City, avec le chapitre
+Campagnes en français, un écran arsenal et grimoire et une recherche dans la
+liseuse des règles.
 
 ### Ajouté
 
@@ -277,7 +283,8 @@ City.
   Celtiberian reste pour le titre de l'en-tête, le lecteur des règles et les
   feuilles imprimées.
 
-[Non publié]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.3.0...HEAD
+[Non publié]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.0.0...v1.1.0

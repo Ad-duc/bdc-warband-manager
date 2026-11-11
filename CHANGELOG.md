@@ -11,9 +11,14 @@
 All notable changes to this project are listed here. The format follows
 [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and the project
 uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html). The game rules
-version is given separately (playtest v1.03).
+version is given separately (playtest v1.10).
 
 ## [Unreleased]
+
+## [1.4.0] - 2026-11-11
+
+Move to the Black Death City playtest v1.10, with the Campaigns chapter in
+French, an armoury and grimoire screen and a search in the rules reader.
 
 ### Added
 
@@ -251,7 +256,8 @@ First complete release, built on the Black Death City playtest v1.03.
   use Trattatello, easier to read than Old Celtiberian. Old Celtiberian is
   kept for the header title, the rules reader and the printed sheets.
 
-[Unreleased]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Ad-duc/bdc-warband-manager/compare/v1.0.0...v1.1.0
