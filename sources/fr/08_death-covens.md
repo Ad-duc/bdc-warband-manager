@@ -12,7 +12,7 @@ Cette section contient toutes les règles pour recruter une bande (*warband*) de
 
 - **Origines (*Origins*)** (p. xx)
 - **Repaires (*Strongholds*)** (p. xx)
-- **Règles de campagne (*Campaign Rules*)** (p. xx)
+- **Améliorations de repaire (*Stronghold Upgrades*)** (p. xx)
 - **Liste des combattants des Cabales de la Mort (*Death Covens Fighter List*)** (p. xx)
 - **L'Armurerie de la Cabale (*The Coven Armoury*)** (p. xx-xx)
 - **Domaines de magie des Cabales de la Mort (*Death Covens Spell Lores*)** (p. xx)
@@ -27,61 +27,51 @@ Avant d'engager le moindre combattant (*fighter*), choisissez une origine (*orig
 
 > Pendant des siècles, cette maison noble a dissimulé sa malédiction vampirique derrière les titres et la fortune. Avec l'effondrement de la Cité (*the City*), plus besoin de faux-semblants. Sa mascarade a pris fin. À présent, les réjouissances commencent.
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez recruter un **Noble au sang maudit (*Bloodcursed Noble*)** pour diriger votre bande (*warband*) au début de la campagne.
+
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Manoir opulent** (*Opulent Manor*).
 
 **Règles spéciales (*Special Rules*)**
 
-- Vous commencez la campagne avec le repaire (*stronghold*) **Manoir opulent** (*Opulent Manor*).
-- Votre bande (*warband*) peut inclure 0-3 Chevaliers au sang maudit (*Bloodcursed Knight*).
+Votre bande (*warband*) peut inclure 0-3 Chevaliers au sang maudit (*Bloodcursed Knight*).
 
 ### Nécromancien renégat (*Rogue Necromancer*)
 
 > Mis hors la loi et traqué sans relâche par la Guilde des chasseurs de sorcières (*Witch Hunters Guild*), ce puissant Nécromancien (*Necromancer*) a cherché refuge dans la Cité (*the City*), où les morts récents lui fournissent une source inépuisable de "spécimens".
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez recruter un **Nécromancien (*Necromancer*)** pour diriger votre bande (*warband*) au début de la campagne.
 
-**Règles spéciales (*Special Rules*)**
-
-Vous commencez la campagne avec le repaire (*stronghold*) **Salle de l'embaumeur** (*Embalmer's Hall*).
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Salle de l'embaumeur** (*Embalmer's Hall*).
 
 ### La chasse s'abat (*The Hunt Descends*)
 
 > Depuis les cimes enneigées et les sombres forêts du nord, la nouvelle de terrains de chasse inexplorés est parvenue jusqu'à un aristocrate des temps anciens.
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez recruter un **Noble lycanthrope (*Lycanfell Noble*)** pour diriger votre bande (*warband*) au début de la campagne.
+
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Domaine forestier** (*Woodland Estate*).
 
 **Règles spéciales (*Special Rules*)**
 
-- Vous commencez la campagne avec le repaire (*stronghold*) **Grand pavillon** (*Grand Pavilion*).
-- Votre bande (*warband*) peut inclure n'importe quel nombre de Loups sinistres (*Dire Wolf*) ; ils ne comptent pas dans votre limite de Bêtes (*Beasts*).
+Votre bande (*warband*) peut inclure n'importe quel nombre de Loups sinistres (*Dire Wolf*) ; ils ne comptent pas dans votre limite de Bêtes (*Beasts*).
 
 ### Seigneur éveillé (*Awakened Lord*)
 
 > L'effondrement de la Cité (*the City*) a tiré ce seigneur des temps anciens de son long sommeil. Sous sa bannière se rassemblent les hommes de son clan, encore liés par les serments prêtés de leur vivant. Il jure de reconquérir son ancien fief.
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez recruter un **Seigneur des tumulus (*Barrow Lord*)** pour diriger votre bande (*warband*) au début de la campagne.
 
-**Règles spéciales (*Special Rules*)**
-
-Vous commencez la campagne avec le repaire (*stronghold*) **Tumulus anciens** (*Ancient Barrows*).
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Tumulus anciens** (*Ancient Barrows*).
 
 ## Repaires (*Strongholds*)
 
-Selon l'origine (*origin*) choisie pour votre bande (*warband*), elle commence avec l'une des possessions (*holding*) suivantes comme repaire (*stronghold*). Vous en saurez plus sur les possessions (*holding*) et les repaires (*stronghold*) au Chapitre 5 :
+Chaque bande (*warband*) des Cabales de la Mort (*Death Covens*) contrôle l'un des **repaires** (*stronghold*) suivants pendant la campagne. Le repaire (*stronghold*) est déterminé par l'origine (*origin*) choisie pour la bande (*warband*). Vous en saurez plus sur les repaires (*stronghold*) au chapitre 5, page xx.
 
 ### Manoir opulent (*Opulent Manor*)
 
 > Située dans le district des nobles, cette propriété semble avoir traversé la peste intacte. Derrière ses hautes enceintes, on aperçoit la lueur des feux et l'on entend les échos de festins décadents.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
 **Banquet de sang (*Banquet of Blood*) :** à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), choisissez jusqu'à 3 combattants alliés (*friendly fighter*) Vampires (*Vampyre*) qui prendront place à table. Chacun de ces combattants (*fighter*) gagne 1D6 d'expérience bonus (*bonus experience*). Si vous avez gagné la bataille, chacun de ces combattants (*fighter*) gagne, à la place, 2D6 d'expérience bonus (*bonus experience*).
 
@@ -89,20 +79,20 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), elle commence a
 
 > Des étagères chargées d'herbes odorantes, de bouquets et de résine de pin durcie emplissent la Salle de l'embaumeur (*Embalmers' Hall*) d'un parfum sucré. En dessous flotte la puanteur des cadavres, reconnaissable entre toutes.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
 **Étude nécromantique (*Necromantic Study*) :** à chaque séquence d'après-bataille (*aftermath sequence*), choisissez 1 des options suivantes :
 
 - Lire les parchemins interdits (*Read Forbidden Scrolls*) : à l'étape 3, votre Chef (*Leader*) gagne 5 d'expérience bonus (*bonus experience*).
 - Créer un Zombie (*Create a Zombie*) : à l'étape 6, lancez un dé. Sur 5+, votre Chef (*Leader*) a réussi à créer un Zombie à partir de l'un des cadavres de la salle. Vous pouvez recruter un Zombie dans votre bande (*warband*) pour 0 pièce d'argent (*silver*).
 
-### Grand pavillon (*Grand Pavilion*)
+### Domaine forestier (*Woodland Estate*)
 
-> Dissimulé au cœur des forêts du nord, le grand pavillon (*grand pavilion*) du Noble lycanthrope (*Lycanfell Noble*) est le centre de sa cour de chasse. De riches tapisseries et de sinistres trophées ornent ses parois, tandis que des braseros de fer brûlent jusque tard dans la nuit. Au-delà de la lueur des feux, les hurlements des loups qui se rassemblent résonnent entre les arbres.
+> Caché au cœur des forêts du nord, le domaine forestier du Noble lycanthrope (*Lycanfell Noble*) est le cœur de sa cour de chasse. Des tapisseries fanées et de sinistres trophées ornent ses murs, tandis que des braseros de fer éclairent ses salles froides. Au-delà du domaine, les hurlements des loups qui se rassemblent résonnent entre les arbres.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
-**Trophées de Bêtes (*Bestial Trophies*) :** chaque fois qu'une Bête (*Beast*) qui a été mise hors de combat (*taken down*) par votre Chef (*Leader*) est tuée (*killed*), votre Chef (*Leader*) gagne 10 d'expérience bonus (*bonus experience*).
+**Salle des trophées (*Trophy Room*) :** chaque fois qu'une Bête (*Beast*) ou une Brute qui a été mise hors de combat (*taken down*) par votre Chef (*Leader*) est tuée (*killed*), votre Chef (*Leader*) gagne 10 d'expérience bonus (*bonus experience*).
 
 **Un hurlement dans la nuit (*A Howl in the Night*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), lancez un dé. Sur 6, un Loup sinistre (*Dire Wolf*) surgit de la forêt. Vous pouvez recruter un Loup sinistre (*Dire Wolf*) dans votre bande (*warband*) pour 0 pièce d'argent (*silver*).
 
@@ -110,51 +100,51 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), elle commence a
 
 > Creusés sous les collines de l'est, aux abords de la Cité (*the City*), ces tumulus anciens (*ancient barrows*) sont longtemps restés silencieux. À présent, des rumeurs parlent de morts sans repos et d'un seigneur mort-vivant (*undead*) qui rassemble son armée oubliée et se prépare à marcher de nouveau sur la Cité (*the City*).
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
-**Offrande au tumulus (*Barrow Offering*) :** à l'étape 5 de la séquence d'après-bataille (*aftermath sequence*), lancez un dé. Sur 6, des mortels de la Cité (*the City*) ont laissé une offrande. Faites un seul jet sur la table des trésors (*treasure table*) (p. xx).
+**Offrande au tumulus (*Barrow Offering*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), lancez un dé. Sur 6, des mortels de la Cité (*the City*) ont laissé une offrande. Lancez une fois les dés sur la table des curiosités (*Curiosities table*) (p. xx).
 
-**Sommeil immortel (*Immortal Slumber*) :** si votre Chef (*Leader*) obtient le résultat Repos éternel (*Laid to Rest*), voir ci-dessous, il n'est pas retiré de votre bande (*warband*). À la place, il manque les 1D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande (*warband*) pour être le Chef (*Leader*) en son absence. Le combattant (*fighter*) choisi gagne temporairement le mot-clé (*keyword*) Chef (*Leader*) et perd le mot-clé (*keyword*) Champion jusqu'au retour du Chef (*Leader*).
+**Sommeil immortel (*Immortal Slumber*) :** si votre Chef (*Leader*) obtient le résultat "Repos éternel" (*Laid to Rest*) (p. xx), il n'est pas retiré de votre bande (*warband*). À la place, il manque les 1D3 prochaines batailles, le temps de son sommeil. Vous pouvez choisir un Champion pour assumer le commandement (*assume command*) jusqu'à son retour (p. xx).
 
-## Règles de campagne des Cabales de la Mort (*Death Coven Campaign Rules*)
+## Améliorations de repaire (*Stronghold Upgrades*)
 
-Pendant la campagne, les bandes (*warband*) des Cabales de la Mort (*Death Covens*) ont les règles spéciales (*special rule*) suivantes :
+Pendant la campagne, les bandes (*warband*) des Cabales de la Mort (*Death Covens*) peuvent améliorer leur repaire (*stronghold*) avec les **améliorations de repaire** (*stronghold upgrade*) suivantes. Vous en saurez plus sur les améliorations de repaire (*stronghold upgrade*) à la page xx :
 
-### Mort d'un Chef (*Death of a Leader*)
+### Verger de roses noires (*Blackrose Orchard*)
 
-Pendant la campagne, si votre chef (*Leader*) est tué (*killed*) et que vous choisissez de promouvoir (*promote*) un champion (p. xx), les champions suivants sont éligibles :
+> Autour de votre repaire (*stronghold*) poussent des fourrés enchevêtrés qui fleurissent de roses aux pétales noirs.
 
-| Ancien Chef (*Former Leader*) | Champion éligible (*Eligible Champion*) |
-|---|---|
-| Noble au sang maudit (*Bloodcursed Noble*) | Courtisane au sang maudit (*Bloodcursed Courtesan*) ou Chevalier au sang maudit (*Bloodcursed Knight*) |
-| Nécromancien (*Necromancer*) | Apprenti nécromancien (*Necromancer's Apprentice*) |
-| Seigneur des tumulus (*Barrow Lord*) | Champion des tumulus (*Barrow Champion*) |
+**Sombre récolte (*Dark Harvest*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), lancez un dé. Sur 5+, vous recevez 1 Baume de rose noire (*Blackrose Balm*) (p. xx).
 
-### Squelettes et Asservis (*Skeletons & Thralls*)
+### Ossuaire (*Ossuary*)
 
-Les combattants (*fighter*) qui ont le mot-clé (*keyword*) Asservi (*Thrall*) ne gagnent pas d'expérience (*experience*). Ils ne peuvent pas gagner de niveau (*level*).
+> Les ossements des générations passées sont rassemblés dans cette chambre morbide, empilés en grands tas et rangés dans des alcôves le long de ses murs. Les restes ne manquent pas pour façonner de nouveaux asservis squelettiques.
 
-De plus, les Squelettes (*Skeleton*) et les Asservis (*Thrall*) n'utilisent pas la table des blessures standard (*standard injury table*) (p. xx). À la place, ils utilisent la Table des blessures des Squelettes et des Asservis (*Skeleton & Thrall Injury Table*) suivante :
+**Restes ossifiés (*Ossified Remains*) :** réduisez de 10 pièces d'argent (*silver*) le coût de recrutement des combattants (*fighter*) Squelettes (*Skeleton*) dans votre bande (*warband*).
 
-**Table des blessures des Squelettes et des Asservis (*Skeleton & Thrall Injury Table*) - 1D6**
+### Crypte exhumée (*Exhumed Crypt*)
 
-| Résultat | Effet |
-|---|---|
-| 1 | **Repos éternel (*Laid to Rest*) :** la créature mort-vivante (*undead*) est défaite. Traitez ce résultat comme tué (*killed*) (p. xx). |
-| 2-6 | **Indemne (*Unscathed*) :** le combattant (*fighter*) ne subit aucun effet durable. |
+> Loin sous votre repaire (*stronghold*) reposent les restes d'un guerrier ancien et puissant. Vous exhumez sa crypte dans l'espoir d'y trouver une puissante relique...
 
-### Noms des Cabales de la Mort (*Death Coven Names*)
+**Trésor de la crypte (*Treasure of the Crypt*) :** quand cette amélioration (*upgrade*) est choisie, vous pouvez lancer une fois les dés sur la table des reliques (*Relics table*) (p. xx).
 
-Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) des Cabales de la Mort (*Death Covens*). Ces noms peuvent aussi servir à créer une Maison (*House*), par exemple la Maison (*House*) Dragul. Enfin, vous pouvez donner une sonorité plus féminine à un nom en ajoutant "-a" à un nom qui se termine par une consonne (par exemple, Barovyr devient Barovyra).
+### Tour des gargouilles (*Gargoyle's Tower*)
 
-| D66 | 1 | 2 | 3 | 4 | 5 | 6 |
-|---|---|---|---|---|---|---|
-| 10 | Alaric | Barovyr | Casimir | Dargoi | Dragomir | Dragul |
-| 20 | Garganov | Gavril | Grigor | Ilvar | Karstig | Kostan |
-| 30 | Lazar | Lucian | Marek | Matei | Mausar | Mircea |
-| 40 | Morovin | Morvane | Nicolai | Noskar | Oleg | Ossrik |
-| 50 | Radimir | Radovan | Sorin | Stevrik | Strigan | Strigor |
-| 60 | Valek | Vargoi | Vasile | Viktor | Vrykan | Zorvyr |
+> Aucun mortel n'oserait gravir cette haute tour, car ses remparts abritent une assemblée de gargouilles. De là, elles prennent leur envol et tournoient haut au-dessus de la Cité (*the City*) avant de fondre sur leur proie.
+
+**Tournoyer dans les cieux (*Circle the Skies Above*) :** si une Gargouille (*Gargoyle*) alliée (*friendly*) commence la bataille en réserve (*in reserve*), au lieu d'effectuer un jet de renforts (*reinforcement roll*) pour elle, vous pouvez déclarer qu'elle tournoie dans les cieux. Dans ce cas, elle arrive à l'étape de début de round (*Start of Round step*) du round suivant, avant tout jet de renforts (*reinforcement roll*). Elle peut être placée (*set up*) n'importe où sur le champ de bataille (*battlefield*), à plus de 9" de tous les combattants ennemis (*enemy fighter*).
+
+### Empoisonneur de la maisonnée (*Household Poisoner*)
+
+> Vous prenez à votre service un serviteur qui connaît diverses toxines. À la fin de chaque nuit, il prépare une fiole de poison fraîche.
+
+**Le travail d'une nuit (*A Night's Work*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), vous recevez 1 Fiole de poison (*Vial of Poison*) (p. xx).
+
+### Mausolée du nécromancien (*Necromancer's Mausoleum*)
+
+> Les restes d'un puissant nécromancien sont apportés à votre repaire (*stronghold*) et placés dans un mausolée. Ce conduit de sorcellerie nécromantique renforce vos propres pouvoirs magiques.
+
+**Nexus de magie noire (*Nexus of Dark Magic*) :** à chaque bataille, vous pouvez ignorer le premier fiasco (*miscast*) d'un Magicien (*Wizard*) allié (*friendly*).
 
 ## Liste des combattants des Cabales de la Mort (*Death Covens Fighters List*)
 
@@ -181,6 +171,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 
 | Combattant | Coût |
 |---|---|
+| 0-3 Serviteur (*Manservant*) | 45 pa |
 | Guerrier squelette (*Skeleton Warrior*) | 40 pa |
 | Zombie | 35 pa |
 
@@ -251,6 +242,15 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Esprit gardien (*Spirit Guardian*) | 45 pa |
 | Familier ailé (*Winged Familiar*) | 12 pa |
 
+### Liste des Guerriers squelettes (*Skeleton Warrior List*)
+
+**Armes à distance (*Ranged Weapons*)**
+
+| Nom | Pièces d'argent |
+|---|---|
+| Arc long (*Long Bow*) | 26 pa |
+| Arc court (*Short Bow*) | 16 pa |
+
 ### Liste des Ogres zombies (*Zombie Ogre List*)
 
 **Armes de corps à corps (*Melee Weapons*)**
@@ -307,12 +307,12 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Arme ensorcelée (*Ensorcelled Weapon*) | 3 | -1 | 1 | 1D3 | Arcanique (*Arcane*) | 26 pa |
 | Fléau (*Flail*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*), Contournement (*Wrap*) | 14 pa |
 | Grande masse (*Great Mace*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 38 pa |
-| Hallebarde (*Halberd*) | 3 | -1 | 1 | 1D3+1 | Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 34 pa |
+| Hallebarde (*Halberd*) | 3 | -1 | 1 | 1D3+1 | Contre-charge (*Brace*), Arme d'hast (*Polearm*), À deux mains (*Two-handed*) | 34 pa |
 | Hache lourde (*Heavy Axe*) | 3 | -2 | 2 | 1D3+1 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 40 pa |
 | Lame d'ogre (*Ogre Blade*) | 3 | -1 | 2 | 1D3+1 | Main secondaire (*Off-hand*) | 36 pa |
 | Grande arme d'ogre (*Ogre Great Weapon*) | 3 | -2 | 3 | 1D3+2 | À deux mains (*Two-handed*) | 50 pa |
 | Masse d'ogre (*Ogre Mace*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 38 pa |
-| Lance (*Spear*) | 3 | - | 1 | 1D3 | Contre-charge (*Brace*), À deux mains (*Two-handed*) | 16 pa |
+| Lance (*Spear*) | 3 | - | 1 | 1D3 | Contre-charge (*Brace*), Arme d'hast (*Polearm*), À deux mains (*Two-handed*) | 16 pa |
 | Épée (*Sword*) | 3 | - | 1 | 1D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
 
 **Rappels des traits d'armes (*Weapon Trait Reminders*)**
@@ -327,10 +327,27 @@ Voir les règles complètes aux pages xx-xx.
 | Garde (*Guard*) | 1 échec peut parer une touche |
 | Arme naturelle (*Natural Weapon*) | Ne peut pas parer |
 | Main secondaire (*Off-hand*) | Utilisable en main secondaire : 1 attaque |
+| Arme d'hast (*Polearm*) | Peut être équipée avec un objet tenu, gagne Encombrant |
 | Poison | Les touches critiques empoisonnent. Subit 1 dégât à chaque activation. Prend fin si soigné ou s'il reste 1 point de vie |
 | À deux mains (*Two-handed*) | 1 par combattant. Pas d'attaque de main secondaire |
 | Encombrant (*Unwieldy*) | -1 aux jets d'attaque |
 | Contournement (*Wrap*) | Ne peut ni parer ni être parée |
+
+## Armurerie de la Cabale - Armes à distance (*Coven Armoury - Ranged Weapons*)
+
+| Nom | Portée | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
+|---|---|---|---|---|---|---|---|
+| Arc long (*Long Bow*) | 28" | 1 | -1 | 1D3 | 1D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 26 pa |
+| Arc court (*Short Bow*) | 16" | 1 | - | 1 | 1D6 | À deux mains (*Two-handed*) | 16 pa |
+
+**Rappels des traits d'armes (*Weapon Trait Reminders*)**
+
+Voir les règles complètes aux pages xx-xx.
+
+| Trait | Rappel |
+|---|---|
+| Lourd (*Heavy*) | Mouvement ou Attaque |
+| À deux mains (*Two-handed*) | 1 par combattant. Pas d'attaque de main secondaire |
 
 ## Armurerie de la Cabale - Armures et objets (*Coven Armoury - Armour & Items*)
 
@@ -585,9 +602,9 @@ Les armes de corps à corps (*melee weapon*) de ce combattant (*fighter*) gagnen
 
 ### Guérison surnaturelle (*Supernatural Healing*)
 
-Ce combattant (*fighter*) ne peut pas subir de blessures permanentes (*permanent injury*). S'il subit une blessure durable (*lasting injury*), elle est toujours temporaire.
+Ce combattant (*fighter*) ne peut pas subir de blessures permanentes (*permanent injury*). S'il subit une blessure (*injury*), elle est toujours temporaire (p. xx).
 
-De plus, si ce combattant (*fighter*) est tué (*killed*), vous pouvez immédiatement effectuer un test de Volonté (*Willpower*) pour lui. S'il est réussi, il n'est pas tué (*killed*), mais il doit manquer les 1D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande (*warband*) pour être le Chef (*Leader*) en son absence. Le combattant (*fighter*) choisi gagne temporairement le mot-clé (*keyword*) Chef (*Leader*) et perd le mot-clé (*keyword*) Champion jusqu'au retour du Chef (*Leader*).
+De plus, si ce combattant (*fighter*) est tué (*killed*), vous pouvez immédiatement effectuer un test de Volonté (*Willpower*) pour lui. S'il est réussi, il n'est pas tué (*killed*), mais il manque les 1D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande (*warband*) pour assumer le commandement (*assume command*) en son absence (p. xx).
 
 ### Drain de sang (*Leech Blood*)
 
@@ -634,6 +651,19 @@ Quand ce combattant (*fighter*) est mis hors de combat (*taken down*) alors qu'i
 Cette compétence (*skill*) ne peut être choisie que pour un Champion.
 
 Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) engagé au corps à corps (*engaged in melee*) avec un Chef (*Leader*) allié (*friendly*), et que ce combattant (*fighter*) n'est pas engagé (*engaged*), ce combattant (*fighter*) peut effectuer une Charge (*Charge Move*). Ce combattant (*fighter*) doit terminer cette Charge (*Charge Move*) engagé au corps à corps (*engaged in melee*) avec ce combattant ennemi (*enemy fighter*). Dans ce cas, le combattant ennemi (*enemy fighter*) doit cibler (*target*) ce combattant (*fighter*) avec toutes les actions d'Attaque au corps à corps (*Melee Attack Action*) qu'il effectue pendant cette activation.
+
+## Noms des Cabales de la Mort (*Death Coven Names*)
+
+Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) des Cabales de la Mort (*Death Covens*). Ces noms peuvent aussi servir à créer une Maison (*House*), par exemple la Maison (*House*) Dragul. Enfin, vous pouvez donner une sonorité plus féminine à un nom en ajoutant "-a" à un nom qui se termine par une consonne (par exemple, Barovyr devient Barovyra).
+
+| D66 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| 10 | Alaric | Barovyr | Casimir | Dargoi | Dragomir | Dragul |
+| 20 | Garganov | Gavril | Grigor | Ilvar | Karstig | Kostan |
+| 30 | Lazar | Lucian | Marek | Matei | Mausar | Mircea |
+| 40 | Morovin | Morvane | Nicolai | Noskar | Oleg | Ossrik |
+| 50 | Radimir | Radovan | Sorin | Stevrik | Strigan | Strigor |
+| 60 | Valek | Vargoi | Vasile | Viktor | Vrykan | Zorvyr |
 
 ## Parchemins de combattants des Cabales de la Mort (*Death Covens Fighter Scrolls*)
 
@@ -841,13 +871,27 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 
 ## Hommes de main (*Henchmen*)
 
+### 0-3 Serviteur (*Manservant*)
+
+*Homme de main, Demi-humain* (*Henchman, Demi-human*) - 45 pa
+
+| Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
+|---|---|---|---|---|---|---|
+| 5" | 4+ | 6+ | 6+ | 3 | 3 | 4 |
+
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) de l'Armurerie de la Cabale (*Coven Armoury*).
+
+**Expérience de départ :** 20+1D6.
+
+> "Oui, monseigneur ?"
+
 ### Guerrier squelette (*Skeleton Warrior*)
 
 *Homme de main, Mort-vivant, Squelette, Asservi* (*Henchman, Undead, Skeleton, Thrall*) - 40 pa
 
 | Mouvement | Lame | Arc | Armure | Initiative | Volonté | Vie |
 |---|---|---|---|---|---|---|
-| 4" | 4+ | 6+ | 6+ | 3 | 2 | 4 |
+| 4" | 4+ | 4+ | 6+ | 3 | 2 | 4 |
 
 **Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) de l'Armurerie de la Cabale (*Coven Armoury*).
 
@@ -952,7 +996,7 @@ Si un combattant ennemi (*enemy fighter*) termine une Charge (*Charge Move*) eng
 **Règles spéciales :**
 
 - **Débusquez-les ! (*Sniff 'em Out*) :** les combattants ennemis (*enemy fighter*) qui sont cachés (*hidden*) ne sont pas cachés (*hidden*) tant qu'ils sont à 9" ou moins de ce combattant (*fighter*).
-- **Pisteurs (*Trackers*) :** à chaque séquence d'après-bataille (*aftermath sequence*), quand vous fouillez la cité, si votre groupe de fouille (*search party*) comprend au moins un Loup sinistre (*Dire Wolf*), vous pouvez relancer (*re-roll*) le jet d'exploration (*exploration roll*).
+- **Pisteurs (*Trackers*) :** quand vous explorez la Cité (*the City*) (p. xx), si votre groupe d'éclaireurs (*scouting party*) comprend un Loup sinistre (*Dire Wolf*), vous gagnez 1 relance d'exploration (*exploration re-roll*) (dé des unités (*units dice*) seulement).
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes |
 |---|---|---|---|---|---|
@@ -981,7 +1025,7 @@ Voir les règles complètes aux pages xx-xx.
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.03.
+Les numéros de page sont ceux imprimés dans la VO v1.10.
 
 - Ensemble du lot : même mise en forme que pour les factions précédentes. Les encadrés en grille (origines p. 94, repaires p. 95) sont lus ligne par ligne ; les listes de l'armurerie (p. 98) colonne par colonne : Liste principale, Liste des Champions, Liste des Ogres zombies (*Zombie Ogre*), Liste des Praticiens ; les armures, les objets et les compétences colonne de gauche puis colonne de droite.
 - Ensemble du lot : cette faction n'a ni page d'armes à distance ni encadré "Objets tenus". Les Hommes de main, les Brutes et les Bêtes n'ont pas de citation. Les citations sont rendues en français d'aujourd'hui.
@@ -1029,3 +1073,11 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 112 : la v1.03 retire le rappel du trait Poison de l'encadré des Bêtes, qu'aucune n'utilise.
 - p. 110 à 112 : "Starting Experience: 0" n'a pas de point final et il manque une ponctuation après "(see below)". La VO écrit "a stone talons" et "a biting fangs bite" : "serres de pierre" et "crocs mordants". Les profils des armes naturelles n'ont pas de colonne "Silver".
 - p. 112 : Loup sinistre (*Dire Wolf*) : la règle Pisteurs est coupée par un point, comme chez le Chien de chasse (*Hunting Dog*) (p. 72) : une seule phrase. "the city" y est sans majuscule ; "Dire Wolves" est rendu par "au moins un Dire Wolf".
+- Mise à jour v1.10 : les origines donnent désormais "Chef", "Repaire" et, s'il y a lieu, "Règles spéciales" ; la ligne "Revenu" de chaque repaire disparaît ; la section "Règles de campagne" est supprimée : "Mort d'un Chef" est remplacée par "Assumer le commandement" et la table des blessures des Squelettes et des Asservis passe au chapitre 5 (p. 145) ; la table de noms passe après les compétences ; nouvelle section "Améliorations de repaire".
+- p. 95 (v1.10) : le repaire "Grand Pavilion" devient "Woodland Estate" (Domaine forestier) avec un nouveau texte d'ambiance ; "Bestial Trophies" devient "Trophy Room" (Salle des trophées) et compte aussi les Brutes. Offrande au tumulus : étape 6 et table des curiosités. Sommeil immortel : "assume command" (assumer le commandement).
+- p. 96 (v1.10) : noms des améliorations de repaire proposés : Verger de roses noires, Ossuaire, Crypte exhumée, Tour des gargouilles, Empoisonneur de la maisonnée, Mausolée du nécromancien. "a freshly vial of poison" : coquille, traduit selon le sens.
+- p. 97-98 et 110 (v1.10) : nouvel Homme de main, le Serviteur (*Manservant*), 0-3, terme validé le 09/11/2026 ; son mot-clé "Demi-human" est rendu par "Demi-humain". Nouvelle Liste des Guerriers squelettes (Arc long, Arc court) et nouvelle table des armes à distance.
+- p. 110 (v1.10) : Guerrier squelette : Arc 4+. Son profil ne cite toujours que la Liste principale alors que la Liste des Guerriers squelettes lui est destinée : traduit tel quel ; décision du 09/11/2026 pour l'application : il a accès aux deux listes.
+- p. 99 (v1.10) : Hallebarde et Lance gagnent Arme d'hast (*Polearm*), la Hallebarde perd Encombrant. Objets tenus : règle remplacée.
+- p. 103 (v1.10) : Guérison surnaturelle : "If they suffer an injury it is always temporary (pg xx)" et "assume command".
+- p. 112 (v1.10) : Loup sinistre, Pisteurs : la VO écrit "If your scouting party includes a Hunting Dog" (copie de la règle du Chien de chasse) : traduit "un Loup sinistre", à signaler.

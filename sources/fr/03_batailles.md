@@ -588,6 +588,12 @@ Si un combattant (*fighter*) subit des dégâts (*suffer damage*) à cause d'une
 
 Les combattants (*fighter*) Démons (*Demon*) et Morts-vivants (*Undead*) ne peuvent pas devenir empoisonnés (*poisoned*).
 
+### Arme d'hast (*Polearm*)
+
+*(Peut être équipée avec un objet tenu, gagne Encombrant)*
+
+Les combattants (*fighter*) équipés de cette arme peuvent quand même être équipés d'objets tenus (*held item*), par exemple de Boucliers (*Shield*). Dans ce cas, cette arme gagne le trait d'arme (*weapon trait*) Encombrant (*Unwieldy*).
+
 ### Rare (0-[x])
 
 *(Limité au nombre indiqué)*
@@ -841,7 +847,7 @@ Ajouts de la mise à jour v1.03 :
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.03.
+Les numéros de page sont ceux imprimés dans la VO v1.10.
 
 Choix valables pour tout le lot :
 
@@ -899,3 +905,5 @@ Points relevés page par page :
 - p. 34 : la rubrique Sorts d'Attaque parle toujours de "resolving a hit" et de "Make Armour Rolls", alors que la section s'intitule désormais "Resolving Attacks" avec l'étape "Make an Armour Roll". Traduit tel quel.
 - p. 33 : Lancement réussi : "casting fighter's" devient "caster's" en v1.03 : "du lanceur".
 - p. 34 : "Powder misfires. Sorcery devours..." est rendu par "La poudre trahit. La sorcellerie dévore...", sans reprendre "incident de tir" ni "long feu", qui sont des termes de jeu.
+- p. 30 (v1.10) : nouveau trait Arme d'hast (*Polearm*), terme validé le 09/11/2026. La VO change l'ordre des traits sur la page ; l'ordre de la VF n'est pas modifié.
+- p. 26 (v1.10) : la mise en page de l'exemple d'attaque au corps à corps est corrigée (échanges II et IV), sans changement de texte.

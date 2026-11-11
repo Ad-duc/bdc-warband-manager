@@ -107,8 +107,11 @@
     "twoHanded": {
       "multiple": "{{count}} armes à deux mains : 1 seule par combattant, corps à corps et distance confondus.",
       "heldItemRanged": "Un objet tenu ({{wargear}}) ne peut pas être porté avec une arme à distance à deux mains.",
-      "heldItemMelee": "Objet tenu avec une arme de corps à corps à deux mains ({{wargear}}) : -1 Attaques avec cette arme.",
+      "heldItemMelee": "Un objet tenu ne peut pas être porté avec une arme de corps à corps à deux mains ({{wargear}}), sauf une arme d'hast.",
       "offHand": "Avec une arme à deux mains, {{wargear}} ne permet pas d'attaque de main secondaire."
+    },
+    "polearm": {
+      "heldItem": "Arme d'hast portée avec un objet tenu ({{wargear}}) : elle gagne le trait Encombrant."
     },
     "rarity": {
       "exceeded": "{{count}} combattants équipés de {{wargear}} : Rare 0-{{max}} dans la bande."
@@ -411,7 +414,8 @@
     },
     "holdings": {
       "title": "Repaire et possessions",
-      "chapter5": "Les possessions sont détaillées au Chapitre 5, pas encore paru : champs libres d'ici là.",
+      "chapter5": "Les possessions sont détaillées au chapitre 5 (Campagnes). Leur catalogue n'est pas encore dans l'application : champs libres d'ici là.",
+      "strongholdLevel": "niveau {{level}}",
       "label": "Possession {{n}}",
       "notes": "Notes sur la possession {{n}}",
       "remove": "Retirer",
@@ -437,7 +441,7 @@
       "status": "Statut",
       "promoted": "Promu chef",
       "injuriesAndAdvances": "Blessures et progression ({{injuries}} blessure(s))",
-      "chapter5": "La table des blessures durables et la progression sont au Chapitre 5, pas encore paru : décrivez-les librement et indiquez leur effet sur les caractéristiques.",
+      "chapter5": "La table des blessures et les progressions sont au chapitre 5 (Campagnes). Elles ne sont pas encore dans l'application : décrivez-les librement et indiquez leur effet sur les caractéristiques.",
       "injury": "Blessure {{n}}",
       "injuryEffects": "Effet sur les caractéristiques",
       "removeInjury": "Retirer",
@@ -542,7 +546,7 @@
   },
   "reminder": {
     "title": "Aide de jeu",
-    "intro": "La feuille d'aide de jeu officielle traduite en français : mise en place, séquence du round, traits d'armes, actions, tables de dés. Les numéros de page renvoient aux règles de la version de test 1.03. Le bouton d'impression la met en page sur une feuille A4.",
+    "intro": "La feuille d'aide de jeu officielle traduite en français : mise en place, séquence du round, traits d'armes, actions, tables de dés. Les numéros de page renvoient aux règles de la version de test 1.10. Le bouton d'impression la met en page sur une feuille A4.",
     "print": "Imprimer la feuille A4"
   },
   "compendium": {
@@ -613,7 +617,7 @@
   },
   "reader": {
     "title": "Règles en français",
-    "notice": "Traduction française non officielle des règles de la version de test 1.03.",
+    "notice": "Traduction française non officielle des règles de la version de test 1.10.",
     "chapter": "Chapitre",
     "chapters": "Chapitres",
     "contents": "Sommaire",
@@ -644,7 +648,7 @@
       "loading": "Préparation des chapitres...",
       "coverTitle": "Black Death City",
       "coverLabel": "Page de titre",
-      "coverRules": "Règles de la version de test 1.03",
+      "coverRules": "Règles de la version de test 1.10",
       "coverAuthor": "Par Sam Pearson",
       "coverSource": "Imprimé depuis BDC Warband Manager, outil de fan non officiel : https://ad-duc.github.io/bdc-warband-manager/"
     },

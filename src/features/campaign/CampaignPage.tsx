@@ -20,6 +20,7 @@ import {
   validateWarband,
   warbandRating,
   type FactionIndex,
+  strongholdLevel,
 } from "../../rules/index.ts";
 import { hrefFor, navigate } from "../../app/router.ts";
 import { useFormatter } from "../../i18n/text.ts";
@@ -339,7 +340,14 @@ function Holdings({ warband, index, update }: { warband: Warband; index: Faction
           <p>
             <strong>{t("wizard.origin.stronghold")}</strong>{" "}
             <span className="font-hand text-xl">{f.text(stronghold.name)}</span> (
-            {t("wizard.origin.income", { income: f.dice(stronghold.income) })})
+            {t("campaign.holdings.strongholdLevel", {
+              level: strongholdLevel(index.common, warband.counters.battlesFought).level,
+            })}
+            ,{" "}
+            {t("wizard.origin.income", {
+              income: f.dice(strongholdLevel(index.common, warband.counters.battlesFought).income),
+            })}
+            )
           </p>
           {stronghold.rules.map((r) => (
             <p key={r.id} className="text-sm">

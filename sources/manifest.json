@@ -16,8 +16,8 @@
     "size": 86439247,
     "etag": "\"989b653c839da5d9312dcbcc2c8da533\"",
     "lastModified": "Fri, 06 Nov 2026 12:44:32 GMT",
-    "translatedVersion": "1.03",
-    "appDataVersion": "1.03"
+    "translatedVersion": "1.10",
+    "appDataVersion": "1.10"
   },
   "history": [
     {
@@ -51,5 +51,5 @@
       "lastModified": "Sat, 03 Oct 2026 01:03:25 GMT"
     }
   },
-  "lastCheck": "2026-11-09"
+  "lastCheck": "2026-11-10"
 }

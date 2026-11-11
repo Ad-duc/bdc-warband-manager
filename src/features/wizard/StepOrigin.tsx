@@ -13,6 +13,7 @@ import { useFormatter } from "../../i18n/text.ts";
 import { ClampedText } from "../common/ClampedText.tsx";
 import { applyOrigin } from "../warbands/factory.ts";
 import type { StepProps } from "./WizardPage.tsx";
+import { strongholdLevel } from "../../rules/index.ts";
 
 export function StepOrigin({ warband, index, update }: StepProps) {
   const { t } = useTranslation();
@@ -61,7 +62,7 @@ export function StepOrigin({ warband, index, update }: StepProps) {
                   <strong>{t("wizard.origin.stronghold")}</strong>{" "}
                   {stronghold === undefined ? "-" : f.text(stronghold.name)}
                   {stronghold !== undefined &&
-                    ` (${t("wizard.origin.income", { income: f.dice(stronghold.income) })})`}
+                    ` (${t("wizard.origin.income", { income: f.dice(strongholdLevel(index.common, 0).income) })})`}
                 </span>
                 {origin.uncappedFighterIds.map((id) => {
                   const fighter = faction.fighters.find((x) => x.id === id);

@@ -46,7 +46,7 @@ Chaque faction dispose d'une liste de combattants (*fighter*) qui peuvent être 
 
 **0-3 Bêtes (*Beast*) :** les Chiens de chasse (*Hunting Dog*), les Rats géants (*Giant Rat*) et autres créatures du même genre sont désignés comme Bêtes (*Beast*). Une bande (*warband*) peut inclure jusqu'à 3 Bêtes (*Beast*).
 
-**Limite de 15 combattants (*15 Fighters Limit*) :** une bande (*warband*) ne peut jamais dépasser 15 combattants (*fighter*) au total.
+**Limite de 15 combattants (*15 Fighters Limit*) :** vous ne pouvez pas recruter (*recruit*) plus de 15 combattants (*fighter*) au total.
 
 **Restrictions spécifiques (*Specific Restrictions*) :** certains combattants (*fighter*) peuvent avoir une restriction spécifique à côté de leur nom sur leur profil de combattant (*fighter*). Par exemple, la mention "0-1" figure à côté du nom du Magicien de la Guilde (*Guild Wizard*) sur son parchemin (*scroll*), ce qui signifie que vous ne pouvez recruter qu'un seul combattant (*fighter*) de ce type dans votre bande (*warband*).
 
@@ -134,7 +134,7 @@ Ajoutez 1 aux jets d'attaque (*attack roll*) des attaques à distance (*ranged a
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.03.
+Les numéros de page sont ceux imprimés dans la VO v1.10.
 
 - p. 49 : le bandeau de la VO indique "Chapter Four" et le chiffre romain "IV". Le paragraphe d'ambiance, en gras italique, est rendu en gras.
 - p. 49 : la VO écrit "On page xx" et "Page xx" en toutes lettres : rendu par "à la page xx" et "page xx".
@@ -156,3 +156,4 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 50 : "on the next page" renvoie à la mise en page de la VO : rendu par "ci-dessous".
 - p. 50 : "lanceur de sorts" (spellcaster) est ajouté au glossaire comme terme général. Les trois termes originaux de la phrase sont en minuscules, comme dans la VO.
 - p. 51 : dans "until they are removed from your warband", "they" est compris comme le premier combattant, celui qui possède déjà la compétence.
+- p. 50 (v1.10) : Limite de 15 combattants : "You cannot recruit more than 15 fighters in total".

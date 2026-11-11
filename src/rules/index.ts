@@ -15,3 +15,4 @@ export * from "./calc.ts";
 export * from "./validate.ts";
 export * from "./battle.ts";
 export * from "./recruit.ts";
+export * from "./stronghold.ts";

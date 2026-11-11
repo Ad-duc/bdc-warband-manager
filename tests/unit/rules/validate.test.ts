@@ -133,18 +133,18 @@ describe("composition", () => {
     expect(codes(w, "campaign")).toEqual([]);
   });
 
-  it("a champion or henchman outside the succession table cannot be promoted", () => {
+  it("any champion can assume command, a henchman cannot (p. 145)", () => {
     const doctor = warband([
       fighter("plague-doctor", { wargearIds: ["dagger"], promotedToLeader: true }),
       ...fiveMercs(),
     ]);
-    expect(codes(doctor, "campaign")).toEqual(["composition.promotedLeader"]);
+    expect(codes(doctor, "campaign")).toEqual([]);
     const merc = warband([mercenary({ promotedToLeader: true }), ...fiveMercs()]);
     expect(codes(merc, "campaign")).toEqual(["composition.promotedLeader"]);
   });
 
   it("0-3 champions, 5+ henchmen, 0-2 brutes, 0-3 beasts", () => {
-    const champs = [1, 2, 3, 4].map(() => fighter("plague-doctor", { wargearIds: ["dagger"] }));
+    const champs = [1, 2, 3, 4].map(() => fighter("guild-champion", { wargearIds: ["dagger"] }));
     expect(codes(warband([captain(), ...champs, ...fiveMercs()]), "campaign")).toEqual([
       "composition.categoryMax",
     ]);
@@ -218,8 +218,12 @@ describe("wargear", () => {
   it("held item with two-handed weapons", () => {
     const ranged = withFighter(swordsForHire(), "m1", { wargearIds: ["dagger", "shield", "crossbow"] });
     expect(codes(ranged, "campaign")).toEqual(["twoHanded.heldItemRanged", "twoHanded.offHand"]);
-    const melee = withFighter(swordsForHire(), "m1", { wargearIds: ["spear", "shield"] });
-    expect(run(melee, "campaign")).toMatchObject([{ code: "twoHanded.heldItemMelee", severity: "info" }]);
+    const polearm = withFighter(swordsForHire(), "m1", { wargearIds: ["spear", "shield"] });
+    expect(run(polearm, "campaign")).toMatchObject([{ code: "polearm.heldItem", severity: "info" }]);
+    const melee = withFighter(swordsForHire(), "m1", { wargearIds: ["warhammer", "shield"] });
+    expect(run(melee, "campaign")).toMatchObject([
+      { code: "twoHanded.heldItemMelee", severity: "error", params: { wargear: "warhammer" } },
+    ]);
   });
 
   it("off-hand weapon carried with a two-handed weapon is a warning (A04)", () => {
@@ -271,22 +275,36 @@ describe("skills", () => {
     expect(codes(w, "campaign")).toEqual([]);
   });
 
-  it("the Noble starts with Duellist plus 1 skill", () => {
+  it("the Noble picks 1 skill when recruited (Seasoned Warrior, v1.10)", () => {
     const ok = warband(
-      [fighter("noble", { wargearIds: ["sword"], skillIds: ["duellist", "feint"] }), ...fiveMercs()],
-      {
-        originId: "disgraced-noble",
-      },
+      [fighter("noble", { wargearIds: ["nobles-rapier"], skillIds: ["feint"] }), ...fiveMercs()],
+      { originId: "disgraced-noble" },
     );
     expect(codes(ok)).toContain("budget.leftover");
     expect(codes(ok).filter((c) => c.startsWith("skill"))).toEqual([]);
+    const none = warband([fighter("noble", { wargearIds: ["nobles-rapier"] }), ...fiveMercs()], {
+      originId: "disgraced-noble",
+    });
+    expect(codes(none).filter((c) => c.startsWith("skill"))).toEqual(["skill.recruitmentCount"]);
+  });
+
+  it("a skill given by the profile must be present", () => {
+    const d = cloneData();
+    const noble = d.factions
+      .find((x) => x.id === "guild-mercenaries")
+      ?.fighters.find((x) => x.id === "noble");
+    if (noble === undefined) throw new Error("no profile");
+    noble.recruitmentGrants.fixedSkillIds = ["duellist"];
     const missing = warband(
-      [fighter("noble", { wargearIds: ["sword"], skillIds: ["feint"] }), ...fiveMercs()],
-      {
-        originId: "disgraced-noble",
-      },
+      [fighter("noble", { wargearIds: ["nobles-rapier"], skillIds: ["feint"] }), ...fiveMercs()],
+      { originId: "disgraced-noble" },
     );
-    expect(codes(missing, "campaign")).toEqual(["skill.fixedMissing"]);
+    expect(codes(missing, "campaign", d)).toEqual(["skill.fixedMissing"]);
+    const present = warband(
+      [fighter("noble", { wargearIds: ["nobles-rapier"], skillIds: ["duellist", "feint"] }), ...fiveMercs()],
+      { originId: "disgraced-noble" },
+    );
+    expect(codes(present, "campaign", d)).toEqual([]);
   });
 
   it("table eligibility: Old Dogs is for Mercenary Leaders and Champions", () => {
@@ -297,13 +315,9 @@ describe("skills", () => {
   });
 
   it("a promoted henchman gains the Leader keyword for eligibility", () => {
-    const d = cloneData();
-    const gm = d.factions.find((x) => x.id === "guild-mercenaries");
-    if (gm === undefined) throw new Error("no faction");
-    gm.leaderSuccession.push({ formerLeaderId: "guild-captain", eligibleChampionIds: ["guild-mercenary"] });
     const leader = mercenary({ promotedToLeader: true, skillIds: ["rallying-cry"] });
-    expect(codes(warband([leader, ...fiveMercs()]), "campaign", d)).toEqual(["composition.promotedLeader"]);
-    expect(codes(warband([leader, ...fiveMercs()]), "campaign", d)).not.toContain("skill.notEligible");
+    expect(codes(warband([leader, ...fiveMercs()]), "campaign")).toEqual(["composition.promotedLeader"]);
+    expect(codes(warband([leader, ...fiveMercs()]), "campaign")).not.toContain("skill.notEligible");
   });
 
   it("Veteran Skills are open to any fighter", () => {

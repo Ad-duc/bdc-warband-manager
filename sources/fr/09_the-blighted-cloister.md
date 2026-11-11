@@ -8,7 +8,7 @@ Cette section contient toutes les règles pour recruter une bande (*warband*) du
 
 - **Origines (*Origins*)** (p. xx)
 - **Repaires (*Strongholds*)** (p. xx)
-- **Règles de campagne (*Campaign Rules*)** (p. xx)
+- **Améliorations de repaire (*Stronghold Upgrades*)** (p. xx)
 - **Liste des combattants du Cloître gangrené (*Blighted Cloister Fighter List*)** (p. xx)
 - **L'Armurerie du Cloître (*The Cloister Armoury*)** (p. xx-xx)
 - **Domaines de magie du Cloître gangrené (*Blighted Cloister Spell Lores*)** (p. xx)
@@ -23,74 +23,67 @@ Avant d'engager le moindre combattant (*fighter*), choisissez une origine (*orig
 
 > Cette troupe de chevaliers s'est emparée, au nom du Cloître (*the Cloister*), d'un vieux donjon au cœur de la Cité (*the City*). De là, ils lancent des croisades dans les ruines et apportent une mort rapide à quiconque ne vénère pas les Saints vivants (*Living Saints*).
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez recruter un **Chevalier-Abbé (*Knight-Abbot*)** pour diriger votre bande (*warband*) au début de la campagne.
 
-**Avantages (*Perks*)**
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Donjon fortifié** (*Fortified Keep*).
 
-- Vous commencez la campagne avec le repaire (*stronghold*) **Donjon fortifié** (*Fortified Keep*).
-- Votre bande (*warband*) peut recruter n'importe quel nombre de Chevaliers du Cloître (*Cloister Knight*).
+**Règles spéciales (*Special Rules*)**
+
+Votre bande (*warband*) peut recruter n'importe quel nombre de Chevaliers du Cloître (*Cloister Knight*).
 
 ### Clergé de sorciers (*Priesthood of Sorcerers*)
 
 > Jadis renommé pour ses manuscrits enluminés d'une grande beauté, ce clergé corrompu se penche désormais sur les parchemins (*scroll*) anciens conservés dans son abbaye, pour y exhumer les pestes et les afflictions d'autrefois et les déchaîner de nouveau sur le monde.
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez recruter un **Grand Sorcier (*High Sorcerer*)** pour diriger votre bande (*warband*) au début de la campagne.
 
-**Avantages (*Perks*)**
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Scriptorium isolé** (*Secluded Scriptorium*).
 
-- Vous commencez la campagne avec le repaire (*stronghold*) **Scriptorium isolé** (*Secluded Scriptorium*).
-- Votre bande (*warband*) peut recruter 0-2 Sorciers du Cloître (*Cloister Sorcerer*).
+**Règles spéciales (*Special Rules*)**
+
+Votre bande (*warband*) peut recruter 0-2 Sorciers du Cloître (*Cloister Sorcerer*).
 
 ### L'Oint (*The Anointed One*)
 
 > Des cercles les plus fermés du Cloître (*the Cloister*) s'avance un guerrier qui arbore le sceau d'un maître démoniaque. En échange de l'accomplissement de ses sombres desseins dans la Cité (*the City*), il reçoit des dons impies qui déforment la chair comme l'âme.
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez recruter un **Chevalier-Abbé (*Knight-Abbot*)** pour diriger votre bande (*warband*) au début de la campagne.
 
-**Avantages (*Perks*)**
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Autel impie** (*Unholy Altar*).
 
-- Vous commencez la campagne avec le repaire (*stronghold*) **Autel impie** (*Unholy Altar*).
-- Votre bande (*warband*) peut recruter n'importe quel nombre de Démons de la Pourriture (*Rot Demon*).
+**Règles spéciales (*Special Rules*)**
+
+Votre bande (*warband*) peut recruter n'importe quel nombre de Démons de la Pourriture (*Rot Demon*).
 
 ### Populace bénie (*Blessed Rabble*)
 
 > Menée par celui qui parle au nom des Saints vivants (*Living Saints*), une congrégation toujours plus nombreuse se rassemble dans les rues de la Cité (*the City*) pour écouter ses sermons. Embrasés de ferveur, ses fidèles s'aventurent dans la cité, convaincus d'être investis d'une mission divine.
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez recruter un **Grand Sorcier (*High Sorcerer*)** pour diriger votre bande (*warband*) au début de la campagne.
 
-**Avantages (*Perks*)**
-
-Vous commencez la campagne avec le repaire (*stronghold*) **Chaire de rue** (*Street Pulpit*).
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Chaire de rue** (*Street Pulpit*).
 
 ## Repaires (*Strongholds*)
 
-Selon l'origine (*origin*) choisie pour votre bande (*warband*), vous commencez avec l'une des possessions (*holding*) suivantes comme repaire (*stronghold*). Vous en saurez plus sur les Possessions (*Holdings*) et les Repaires (*Strongholds*) au Chapitre 5 :
+Chaque bande (*warband*) du Cloître gangrené (*The Blighted Cloister*) contrôle l'un des **repaires** (*stronghold*) suivants pendant la campagne. Le repaire (*stronghold*) est déterminé par l'origine (*origin*) choisie pour la bande (*warband*). Vous en saurez plus sur les repaires (*stronghold*) au chapitre 5, page xx.
 
 ### Donjon fortifié (*Fortified Keep*)
 
 > Autrefois abandonné, ce donjon usé par le temps a été repris par le Cloître (*the Cloister*) et fortifié contre les dangers de la Cité (*the City*). Ses chevaliers s'y exercent sans relâche aux arts de la guerre, se préparant sans cesse à la prochaine croisade dans les ruines.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
 **Entraînement martial (*Martial Training*) :** à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir jusqu'à 3 combattants alliés (*friendly fighter*) Chevaliers (*Knight*) pour prendre part à l'entraînement martial (*martial training*). Chacun de ces combattants (*fighter*) gagne 1D6 d'expérience bonus (*bonus experience*).
 
-**Fouiller la Cité (*Search the City*) :** à l'étape 5 de la séquence d'après-bataille (*aftermath sequence*), si vous avez gagné la bataille, vous gagnez 1 relance (*re-roll*) supplémentaire quand vous fouillez la Cité (*search the City*).
+**Fouiller la Cité (*Search the City*) :** à l'étape 4 de la séquence d'après-bataille (*aftermath sequence*), si vous avez gagné la bataille, vous gagnez 1 relance d'exploration (*exploration re-roll*).
 
 ### Scriptorium isolé (*Secluded Scriptorium*)
 
 > À la lueur des chandelles, le Grand Sorcier (*High Sorcerer*) surveille une armée de scribes encapuchonnés, qui traduisent des manuscrits oubliés et dévoient des ouvrages de médecine pour en faire d'immondes traités sur la peste et le poison.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
-**Étude blasphématoire (*Blasphemous Study*) :** à chaque séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir 1 des options suivantes :
+**Étude blasphématoire (*Blasphemous Study*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir 1 des options suivantes :
 
 - Scruter les parchemins anciens (*Scry Ancient Scrolls*) : lancez un dé pour chaque Magicien (*Wizard*) de votre bande (*warband*). Tenez un total cumulé sur votre feuille de bande (*Warband Roster*). Chaque fois que le total dépasse un multiple de 20, vous pouvez choisir un Magicien (*Wizard*) de votre bande (*warband*) : il gagne assez d'expérience (*experience*) pour obtenir sa prochaine progression (*advancement*).
 - Préparer des décoctions (*Brew Concoctions*) : lancez un dé pour chaque Magicien (*Wizard*) de votre bande (*warband*). Pour chaque résultat de 5+, vous pouvez ajouter 1 objet (*item*) Fiole de poison (*Vial of Poison*) (p. xx) à votre butin (*stash*).
@@ -99,68 +92,69 @@ Selon l'origine (*origin*) choisie pour votre bande (*warband*), vous commencez 
 
 > Les parois de ce sanctuaire dissimulé sont couvertes de sceaux profanes, chacun tracé au sang séché. L'Oint (*The Anointed One*) entre seul et s'agenouille devant l'autel, en communion silencieuse, dans l'attente du jugement du démon (*demon*) qui réclame son âme.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
-**Communion démoniaque (*Demonic Communion*) :** avant la séquence d'après-bataille (*aftermath sequence*), faites un jet sur la table ci-dessous. Si vous avez gagné la bataille, lancez 3D6. Si vous avez perdu, lancez 2D6 :
+**Communion démoniaque (*Demonic Communion*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), faites un jet sur la table ci-dessous. Si vous avez gagné la bataille, lancez 3D6. Si vous avez perdu, lancez 2D6 :
 
 | Résultat | Effet |
 |---|---|
-| 2 | **Damnation :** votre chef (*Leader*) est tué (*killed*). Vous pouvez ajouter un Rejeton de la Pourriture (*Demonic Rotspawn*) à votre bande (*warband*) sans dépenser de pièces d'argent (*silver*). Il porte le nom de votre ancien chef (*Leader*). |
+| 2 | **Damnation :** votre chef (*Leader*) est tué (*killed*). Vous pouvez ajouter un Rejeton de la Pourriture (*Demonic Rotspawn*) à votre bande (*warband*) pour 0 pièce d'argent (*silver*). Il porte le nom de votre ancien chef (*Leader*). |
 | 3-8 | **Silence :** aucun effet. |
-| 9-12 | **Faveur mineure (*Minor Boon*) :** votre chef (*Leader*) gagne 10 d'expérience bonus (*bonus experience*). |
-| 13-15 | **Allié démoniaque (*Demonic Ally*) :** vous pouvez ajouter un Démon de la Pourriture (*Rot Demon*) ou un Pourrisson (*Rotling*) à votre bande (*warband*) sans dépenser de pièces d'argent (*silver*). |
-| 16+ | **Faveur majeure (*Major Boon*) :** votre chef (*Leader*) gagne 30 d'expérience bonus (*bonus experience*). |
+| 9-12 | **Faveur mineure (*Minor Boon*) :** votre chef (*Leader*) gagne 5 d'expérience bonus (*bonus experience*). |
+| 13-15 | **Allié démoniaque (*Demonic Ally*) :** vous pouvez ajouter un Démon de la Pourriture (*Rot Demon*) ou un Pourrisson (*Rotling*) à votre bande (*warband*) pour 0 pièce d'argent (*silver*). |
+| 16+ | **Faveur majeure (*Major Boon*) :** votre chef (*Leader*) gagne 20 d'expérience bonus (*bonus experience*). |
 
 ### Chaire de rue (*Street Pulpit*)
 
 > Chaque nuit, au pied de cette chaire usée par les intempéries, ceux que la Pourriture noire (*Black Rot*) a frappés se rassemblent devant la congrégation pour recevoir la bénédiction du Cloître (*the Cloister*). Ceux qui sont tombés au combat sont amenés et dressés sur des croix de bois, où on les laisse suppurer, leurs corps en décomposition vénérés comme de saints martyrs.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
-**Vénérer les Saints vivants (*Venerate Living Saints*) :** chaque fois qu'un Cultiste de la lie (*Dreg Cultist*) de cette bande (*warband*) gagne un niveau de Pourriture noire (*level of Black Rot*), il gagne 5 d'expérience (*experience*) supplémentaire.
+**Vénérer les Saints vivants (*Venerate Living Saints*) :** chaque fois qu'un Cultiste de la lie (*Dreg Cultist*) de cette bande (*warband*) gagne un niveau de Pourriture noire (*level of Black Rot*), il gagne 5 d'expérience bonus (*bonus experience*).
 
 **Canoniser les défunts (*Canonise the Fallen*) :** chaque fois qu'un combattant (*fighter*) de cette bande (*warband*) est tué (*killed*), chaque Cultiste de la lie (*Dreg Cultist*) de cette bande (*warband*) gagne 10 d'expérience bonus (*bonus experience*) supplémentaire à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*).
 
-## Règles de campagne du Cloître gangrené (*Blighted Cloister Campaign Rules*)
+## Améliorations de repaire (*Stronghold Upgrades*)
 
-Pendant la campagne, les bandes (*warband*) du Cloître gangrené (*The Blighted Cloister*) ont les règles spéciales (*special rule*) supplémentaires suivantes :
+Pendant la campagne, les bandes (*warband*) du Cloître gangrené (*The Blighted Cloister*) peuvent améliorer leur repaire (*stronghold*) avec les **améliorations de repaire** (*stronghold upgrade*) suivantes. Vous en saurez plus sur les améliorations de repaire (*stronghold upgrade*) à la page xx :
 
-### Mort d'un Chef (*Death of a Leader*)
+### Hospice
 
-Pendant la campagne, si votre chef (*Leader*) est tué (*killed*) et que vous choisissez de promouvoir (*promote*) un champion (p. xx), les champions suivants sont éligibles :
+> Vous fondez un hospice où les malades et les affligés sont amenés pour recevoir les soins des serviteurs dévoués du Cloître. Les plaies y sont pansées et les souffrances apaisées, mais là où l'on trouve la Pourriture noire, on la cultive.
 
-| Ancien Chef (*Former Leader*) | Champion éligible (*Eligible Champion*) |
-|---|---|
-| Chevalier-Abbé (*Knight-Abbot*) | Champion du Cloître (*Cloister Champion*) |
-| Grand Sorcier (*High Sorcerer*) | Sorcier du Cloître (*Cloister Sorcerer*) |
+**Cultiver la maladie (*Nurture Sickness*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir 1 combattant allié (*friendly fighter*) qui a des blessures temporaires (*temporary injury*). Retirez-lui 1 de ses blessures temporaires (*temporary injury*) : il gagne 1 niveau de Pourriture noire (*level of Black Rot*).
 
-### Démons de la Pourriture (*Rot Demon*)
+### Jardin de l'herboriste (*Herbalist's Garden*)
 
-Les combattants (*fighter*) qui ont le mot-clé (*keyword*) Démon (*Demon*) n'utilisent pas la table des blessures standard (*standard injury table*) (p. xx). À la place, ils utilisent la Table des blessures des Démons (*Demon Injury Table*) suivante :
+> Une parcelle de l'enclos du Cloître est réservée à un herboriste, qui cultive des herbes médicinales et prépare toniques et remèdes pour le Cloître.
 
-Font exception les Pourrissons (*Rotling*), qui utilisent la Table des blessures des Bêtes (*Beasts Injury Table*) (p. xx).
+**Remèdes médicinaux (*Medicinal Remedies*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), vous recevez 1 Tonique de soin (*Healing Tonic*) (p. xx).
 
-**Table des blessures des Démons (*Demon Injury Table*) - D66**
+### Clocher (*Bell Tower*)
 
-| Résultat | Effet |
-|---|---|
-| 11-16 | **Banni (*Banished*) :** le démon (*demon*) est banni du monde des mortels pour 666 ans. Retirez-le de votre feuille de bande (*Warband Roster*). Tout son équipement (*wargear*) est perdu. |
-| 21-36 | **Essence fracturée (*Fractured Essence*) :** l'emprise du démon (*demon*) sur sa forme corporelle se défait un instant. Le démon (*demon*) manque la prochaine bataille. |
-| 41-65 | **Intact (*Unharmed*) :** les armes des mortels ne suffisent pas à infliger un mal durable à une telle créature. Le démon (*demon*) ne subit aucun effet durable. |
-| 66 | **Furieux (*Enraged*) :** le démon (*demon*) ne subit aucun effet durable. De plus, à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), après avoir gagné de l'expérience (*experience*), il gagne assez d'expérience bonus (*bonus experience*) pour atteindre le niveau (*level*) suivant. |
+> Vous construisez un clocher colossal au-dessus de votre repaire (*stronghold*). Quand sa cloche sonne, on l'entend dans toute la Cité (*the City*).
 
-### Noms du Cloître gangrené (*Blighted Cloister Names*)
+**Le glas sonne (*The Bell Tolls*) :** une fois par bataille, quand vous activez votre Chef (*Leader*), vous pouvez déclarer que le Clocher (*Bell Tower*) sonne. Dans ce cas, les combattants alliés (*friendly fighter*) gagnent la règle Inébranlable (*Unshakeable*) jusqu'à la fin du round :
 
-Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) du Cloître gangrené (*The Blighted Cloister*).
+- **Inébranlable (*Unshakeable*) :** ce combattant (*fighter*) ignore la règle spéciale (*special rule*) Peur (*Fear*) et toutes les règles qui le feraient dévier (*scatter*), par exemple le trait d'arme (*weapon trait*) Effroi (*Scare*).
 
-| D66 | 1 | 2 | 3 | 4 | 5 | 6 |
-|---|---|---|---|---|---|---|
-| 10 | Agabus | Anselm | Balthus | Blasius | Cadmus | Cassian |
-| 20 | Corvinus | Dismas | Eleazar | Erasmus | Festian | Gideon |
-| 30 | Ignatius | Isidor | Lazarus | Lucien | Malach | Morthus |
-| 40 | Nicodem | Othmar | Paschal | Pestian | Pestor | Phocas |
-| 50 | Pusian | Putrian | Raban | Remigius | Rotmar | Septimus |
-| 60 | Severin | Silvan | Tertius | Theophilus | Vermian | Zacharias |
+### Chambre rituelle (*Ritual Chamber*)
+
+> Au plus profond du Cloître, vous consacrez une chambre aux puissances impies. Des sceaux et des runes blasphématoires sont gravés dans ses murs de pierre, et vos prêtres-sorciers y conduisent de sombres rituels.
+
+**Pactes impies (*Unholy Pacts*) :** à l'étape 3 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir 1 Démon (*Demon*) allié (*friendly*) : il gagne 1D6 d'expérience bonus (*bonus experience*).
+
+### Éleveur de mouches (*Flykeeper*)
+
+> Vous prenez à votre service un Éleveur de mouches, qui commence à nourrir un essaim de Mouches bouffies (*Bloat Fly*). Bientôt, l'air autour du Cloître s'emplit d'un bourdonnement pesant.
+
+**Engeance de l'essaim (*Hive-spawn*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez lancer un dé. Sur 5+, vous pouvez recruter (*recruit*) 1 Mouche bouffie (*Bloat Fly*) dans votre bande (*warband*) pour 0 pièce d'argent (*silver*).
+
+### Tronc des aumônes (*Alms Box*)
+
+> Un tronc des aumônes en chêne noirci est fixé sous la chaire. Quand le Cloître est en péril, il se remplit du poids de l'argent, offert librement par la congrégation qui prie pour le salut de la Cité (*the City*).
+
+**Quête de la congrégation (*Congregation Collection*) :** quand vous percevez le revenu (*income*) de votre repaire (*stronghold*), si vous avez perdu la bataille, vous recevez 3D6 pièces d'argent (*silver*) supplémentaires.
 
 ## Liste des combattants du Cloître gangrené (*Blighted Cloister Fighters List*)
 
@@ -281,19 +275,6 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Familier démoniaque (*Demonic Familiar*) | 30 pa |
 | Cloche ensorcelée (*Ensorcelled Bell*) | 10 pa |
 
-### Épithètes du Cloître gangrené (*Blighted Cloister Epithets*)
-
-Vous pouvez utiliser la table ci-dessous pour générer rapidement une épithète (*epithet*) pour un combattant (*fighter*) de renom ou un démon (*demon*) du Cloître gangrené (*The Blighted Cloister*).
-
-| D66 | 1 | 2 | 3 | 4 | 5 | 6 |
-|---|---|---|---|---|---|---|
-| 10 | Acolyte du Souffle noir (*Acolyte of the Black Breath*) | Oint de la Corruption (*Anointed of Corruption*) | Apôtre du Miasme (*Apostle of Miasma*) | le Cendreux (*Ashen One*) | Porteur de la Septième Vérole (*Bearer of the Seventh Pox*) | Père des Asticots (*Father of Maggots*) |
-| 20 | le Couronné de mouches (*Fly-Crowned*) | Dispensateur des Plaies bénies (*Giver of Blessed Sores*) | Celui du Trône purulent (*He of the Festering Throne*) | Celui qui flétrit toute chose (*He Who Withereth All*) | Celui dont l'haleine empeste (*He Whose Breath Befouleth*) | Gardien de la Neuvième Plaie (*Keeper of the Ninth Sore*) |
-| 30 | Né du bourbier (*Mire-Born*) | aux Mille Mouches (*O' the Thousand-Flies*) | du Miracle impur (*O' the Unclean Miracle*) | Prince des Vers (*Prince of Worms*) | la Pourriture incarnée (*Rot Incarnate*) | Rejeton de la Vérole noire (*Scion of the Black Pox*) |
-| 40 | Berger de la Charogne (*Shepherd of Carrion*) | le Pasteur bouffi (*the Bloated Pastor*) | la Légion rampante (*the Crawling Host*) | le Souilleur d'autels (*the Defiler of Altars*) | le Dévoreur de chair (*the Devourer of Flesh*) | l'Éternel Affamé (*the Ever-Hungry*) |
-| 50 | l'Apôtre purulent (*the Festering Apostle*) | le Héraut de la Dernière Peste (*the Herald of the Last Plague*) | l'Homme aux yeux caves (*the Hollow-Eyed*) | le Faux Rédempteur (*the Mock Redeemer*) | le Page des Véroles (*the Page of Poxes*) | le Pâle Châtiment (*the Pale Reckoning*) |
-| 60 | le Saint souillé (*the Saint Defiled*) | l'Impur (*the Unclean*) | le Sacrilège (*the Unhallowed One*) | l'Impénitent (*the Unshriven*) | le Bouquet flétri (*the Withered Posie*) | Veilleur de l'Alliance purulente (*Warden of the Festering Covenant*) |
-
 ## Armurerie du Cloître - Armes de corps à corps (*Cloister Armoury - Melee Weapons*)
 
 | Nom | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
@@ -309,10 +290,10 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement une épithèt
 | Fléau (*Flail*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*), Contournement (*Wrap*) | 14 pa |
 | Grande lame de pourriture démoniaque (*Great Demonic Rot Blade*) | 3 | -2 | 3 | 1D3+2 | Arcanique (*Arcane*), Contondant (*Bludgeon*), Poison, À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 70 pa |
 | Grand gourdin (*Great Club*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 38 pa |
-| Hallebarde (*Halberd*) | 3 | -1 | 1 | 1D3+1 | Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 34 pa |
+| Hallebarde (*Halberd*) | 3 | -1 | 1 | 1D3+1 | Contre-charge (*Brace*), Arme d'hast (*Polearm*), À deux mains (*Two-handed*) | 34 pa |
 | Hache lourde (*Heavy Axe*) | 3 | -2 | 2 | 1D3+1 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 40 pa |
 | Trompe (*Proboscis*) | 3 | - | 1 | 1 | Arme naturelle (*Natural Weapon*), Poison | - |
-| Lance (*Spear*) | 3 | - | 1 | 1D3 | Contre-charge (*Brace*), À deux mains (*Two-handed*) | 16 pa |
+| Lance (*Spear*) | 3 | - | 1 | 1D3 | Contre-charge (*Brace*), Arme d'hast (*Polearm*), À deux mains (*Two-handed*) | 16 pa |
 | Épée (*Sword*) | 3 | - | 1 | 1D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
 
 ## Armurerie du Cloître - Armes à distance (*Cloister Armoury - Ranged Weapons*)
@@ -335,6 +316,7 @@ Voir les règles complètes aux pages xx-xx.
 | Lourd (*Heavy*) | Mouvement ou Attaque |
 | Arme naturelle (*Natural Weapon*) | Ne peut pas parer |
 | Main secondaire (*Off-hand*) | Utilisable en main secondaire : 1 attaque |
+| Arme d'hast (*Polearm*) | Peut être équipée avec un objet tenu, gagne Encombrant |
 | Poison | Les touches critiques empoisonnent. Subit 1 dégât à chaque activation. Prend fin si soigné ou s'il reste 1 point de vie |
 | À deux mains (*Two-handed*) | 1 par combattant. Pas d'attaque de main secondaire |
 | Encombrant (*Unwieldy*) | -1 aux jets d'attaque |
@@ -404,11 +386,9 @@ Améliorez de 1 la valeur d'Armure (*Armour*) de ce combattant (*fighter*), jusq
 
 ### Objets tenus (*Held Items*)
 
-Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), par exemple les Boucliers (*Shield*). Ces objets (*item*) comptent dans le nombre d'armes de corps à corps (*melee weapon*) dont un combattant (*fighter*) peut être équipé, à la place du nombre d'objets (*item*). De plus, ils suivent les règles suivantes :
+Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), par exemple les Boucliers (*Shield*). Ces objets (*item*) comptent dans le nombre d'armes de corps à corps (*melee weapon*) dont un combattant (*fighter*) peut être équipé, à la place du nombre d'objets (*item*). De plus, ils suivent la règle suivante :
 
-**Armes de corps à corps à deux mains (*Two-Handed Melee Weapons*) :** un combattant (*fighter*) peut être équipé d'un objet tenu (*held item*) et d'une arme de corps à corps (*melee weapon*) à deux mains (*Two-handed*), par exemple une Lance (*Spear*) et un Bouclier (*Shield*). Cependant, soustrayez 1 à la valeur d'Attaques (*Attacks*) des armes de corps à corps (*melee weapon*) à deux mains (*Two-handed*) du combattant (*fighter*).
-
-**Armes à distance à deux mains (*Two-Handed Ranged Weapons*) :** un combattant (*fighter*) ne peut pas être équipé à la fois d'un objet tenu (*held item*) et d'une arme à distance (*ranged weapon*) à deux mains (*Two-handed*).
+**Armes à deux mains et objets tenus (*Two-Handed Weapons and Held Items*) :** un combattant (*fighter*) ne peut pas être équipé à la fois d'un objet tenu (*held item*) et d'une arme à deux mains (*Two-handed*), sauf si l'arme est une arme d'hast (*Polearm*), par exemple une Lance (*Spear*) et un Bouclier (*Shield*).
 
 ## Domaines de magie du Cloître gangrené (*Blighted Cloister Spell Lores*)
 
@@ -872,6 +852,8 @@ Voir les règles complètes aux pages xx-xx.
 
   Un combattant ennemi (*enemy fighter*) qui cause la peur (*causes fear*) lui aussi peut ignorer cette règle.
 
+- **Force démoniaque (*Demonic Strength*) :** ce combattant (*fighter*) ignore le trait d'arme (*weapon trait*) Encombrant (*Unwieldy*) de sa Lame de pourriture démoniaque (*Demonic Rot Blade*).
+
 > "Approche, petit mortel."
 
 ## Bêtes (*Beasts*)
@@ -920,6 +902,32 @@ Voir les règles complètes aux pages xx-xx.
 
 ---
 
+## Noms du Cloître gangrené (*Blighted Cloister Names*)
+
+Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) du Cloître gangrené (*The Blighted Cloister*).
+
+| D66 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| 10 | Agabus | Anselm | Balthus | Blasius | Cadmus | Cassian |
+| 20 | Corvinus | Dismas | Eleazar | Erasmus | Festian | Gideon |
+| 30 | Ignatius | Isidor | Lazarus | Lucien | Malach | Morthus |
+| 40 | Nicodem | Othmar | Paschal | Pestian | Pestor | Phocas |
+| 50 | Pusian | Putrian | Raban | Remigius | Rotmar | Septimus |
+| 60 | Severin | Silvan | Tertius | Theophilus | Vermian | Zacharias |
+
+## Épithètes du Cloître gangrené (*Blighted Cloister Epithets*)
+
+Vous pouvez utiliser la table ci-dessous pour générer rapidement une épithète (*epithet*) pour un combattant (*fighter*) de renom ou un démon (*demon*) du Cloître gangrené (*The Blighted Cloister*).
+
+| D66 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| 10 | Acolyte du Souffle noir (*Acolyte of the Black Breath*) | Oint de la Corruption (*Anointed of Corruption*) | Apôtre du Miasme (*Apostle of Miasma*) | le Cendreux (*Ashen One*) | Porteur de la Septième Vérole (*Bearer of the Seventh Pox*) | Père des Asticots (*Father of Maggots*) |
+| 20 | le Couronné de mouches (*Fly-Crowned*) | Dispensateur des Plaies bénies (*Giver of Blessed Sores*) | Celui du Trône purulent (*He of the Festering Throne*) | Celui qui flétrit toute chose (*He Who Withereth All*) | Celui dont l'haleine empeste (*He Whose Breath Befouleth*) | Gardien de la Neuvième Plaie (*Keeper of the Ninth Sore*) |
+| 30 | Né du bourbier (*Mire-Born*) | aux Mille Mouches (*O' the Thousand-Flies*) | du Miracle impur (*O' the Unclean Miracle*) | Prince des Vers (*Prince of Worms*) | la Pourriture incarnée (*Rot Incarnate*) | Rejeton de la Vérole noire (*Scion of the Black Pox*) |
+| 40 | Berger de la Charogne (*Shepherd of Carrion*) | le Pasteur bouffi (*the Bloated Pastor*) | la Légion rampante (*the Crawling Host*) | le Souilleur d'autels (*the Defiler of Altars*) | le Dévoreur de chair (*the Devourer of Flesh*) | l'Éternel Affamé (*the Ever-Hungry*) |
+| 50 | l'Apôtre purulent (*the Festering Apostle*) | le Héraut de la Dernière Peste (*the Herald of the Last Plague*) | l'Homme aux yeux caves (*the Hollow-Eyed*) | le Faux Rédempteur (*the Mock Redeemer*) | le Page des Véroles (*the Page of Poxes*) | le Pâle Châtiment (*the Pale Reckoning*) |
+| 60 | le Saint souillé (*the Saint Defiled*) | l'Impur (*the Unclean*) | le Sacrilège (*the Unhallowed One*) | l'Impénitent (*the Unshriven*) | le Bouquet flétri (*the Withered Posie*) | Veilleur de l'Alliance purulente (*Warden of the Festering Covenant*) |
+
 ## Ajouts au glossaire
 
 | VO | VF | Catégorie |
@@ -929,7 +937,7 @@ Voir les règles complètes aux pages xx-xx.
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.03.
+Les numéros de page sont ceux imprimés dans la VO v1.10.
 
 - Ensemble du lot : même mise en forme que pour les factions précédentes. Les encadrés en grille (origines p. 114, repaires p. 115) sont lus ligne par ligne ; les listes de l'armurerie (p. 118) colonne par colonne : Liste principale, Liste des Champions, Liste de la lie, Liste des Praticiens, Liste d'objets des Praticiens ; les armures, les objets et les compétences colonne de gauche puis colonne de droite.
 - Ensemble du lot : la table des épithètes (p. 118) est traduite, comme convenu, avec les 36 VF de ton glossaire et le terme original dans chaque case. La table D66 des noms (p. 116) n'est pas traduite. Les citations sont rendues en français d'aujourd'hui.
@@ -969,3 +977,8 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 130 : la v1.03 retire la règle Force incroyable (*Incredible Strength*) du Colosse de la Pourriture (*Demonic Rot-Colossal*).
 - p. 120 : le Grimoire porte désormais "Rare: 0-1".
 - p. 130 et 131 : il manque une ponctuation après "(see below)" (Rejeton de la Pourriture (*Demonic Rotspawn*), Mouche bouffie (*Bloat Fly*), Pourrisson (*Rotling*)) ; p. 131, "Starting Experience: 0" n'a pas de point final. Le Pourrisson (*Rotling*) porte le mot-clé Démon mais son parchemin ne lui donne ni Protections démoniaques ni Peur : rien n'a été ajouté. Les Bêtes n'ont pas de citation et leurs profils d'armes n'ont pas de colonne "Silver".
+- Mise à jour v1.10 : la rubrique "Avantages" (*Perks*) des origines est remplacée par "Repaire" et "Règles spéciales" ; la ligne "Revenu" de chaque repaire disparaît ; la section "Règles de campagne" est supprimée : "Mort d'un Chef" est remplacée par "Assumer le commandement" et la table des blessures des Démons passe au chapitre 5 (p. 145), sur 1D6 et sans le résultat "Enragé" ; les tables de noms et d'épithètes passent en fin de faction (p. 132) ; nouvelle section "Améliorations de repaire".
+- p. 115 (v1.10) : Fouiller la Cité : étape 4 et "1 exploration re-roll". Communion démoniaque : étape 6, Faveur mineure +5, Faveur majeure +20, "for 0 silver". Étude blasphématoire : étape 6. Vénérer les Saints vivants : "bonus experience".
+- p. 116 (v1.10) : noms des améliorations de repaire proposés : Hospice, Jardin de l'herboriste, Clocher, Chambre rituelle, Éleveur de mouches, Tronc des aumônes. "colossal bell tower" : coquille pour "colossal".
+- p. 130 (v1.10) : Colosse de la Pourriture : nouvelle règle Force démoniaque (*Demonic Strength*). La VO cite la "Demonic Rot Blade" alors que le Colosse porte une "Great Demonic Rot Blade" : traduit tel quel, à signaler.
+- p. 119 (v1.10) : Hallebarde et Lance gagnent Arme d'hast (*Polearm*), la Hallebarde perd Encombrant. Objets tenus : règle remplacée.

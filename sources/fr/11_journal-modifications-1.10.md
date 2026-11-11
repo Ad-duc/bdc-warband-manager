@@ -2,7 +2,7 @@
 
 Version de test v1.10, publiée le 06/11/2026 (175 pages de PDF, contre 141 pour la v1.03). Ce journal liste les changements de règles constatés par comparaison des deux PDF (texte et tableaux, page par page). Les numéros de page sont ceux imprimés dans la VO v1.10 (page du PDF moins 1).
 
-> **État du report.** Ce journal accompagne l'import du texte anglais de la v1.10. Le chapitre 5 est traduit (`12_campagne.md`). Les chapitres 01 à 10 et les données de l'application suivent encore la v1.03 : ils seront mis à jour ensemble, car les données sont vérifiées contre ces fichiers. Les termes français nouveaux employés ici (suivis de leur terme anglais) sont des propositions, à valider avec la mise à jour du glossaire.
+> **État du report.** Ce journal accompagne l'import du texte anglais de la v1.10. Le chapitre 5 est traduit (`12_campagne.md`). Les chapitres 01 à 10 et les données de l'application suivent désormais la v1.10 eux aussi. Restent à venir dans l'application : le choix des améliorations de repaire, le catalogue des possessions et la nouvelle feuille de bande. Les termes français nouveaux employés ici (suivis de leur terme anglais) figurent au glossaire avec la mention "Ajout v1.10".
 
 ## Résumé de l'auteur
 
@@ -116,7 +116,7 @@ L'ancien fichier `12_campagne-avant-premiere.md` (pages partagées sur Discord a
 
 | Élément | v1.03 | v1.10 |
 |---|---|---|
-| Engin roulant | Sans limite dans la liste | 0-1 dans la liste (l'origine Tyran impitoyable autorise toujours 0-2) |
+| Engin roulant | Sans limite dans la liste | 0-1 dans la liste (l'origine Cabale du Maître artificier autorise toujours 0-2) |
 | Hallebarde ensorcelée | Arcanique, Contre-charge, À deux mains, Encombrant, 52 pa | Arcanique, Contre-charge, Arme d'hast, À deux mains, 48 pa |
 | Hallebarde, Lance | Voir changements communs | Arme d'hast |
 | Chapelle profanée | Prières de peste | Nouvelle règle Vecteur de peste (*Vector of Plague*) : 5 d'expérience bonus quand un combattant allié gagne un niveau de Pourriture noire |
@@ -131,7 +131,7 @@ L'ancien fichier `12_campagne-avant-premiere.md` (pages partagées sur Discord a
 |---|---|---|
 | Serviteur (*Manservant*) | Absent | Nouvel Homme de main, 0-3, 45 pa : Mouvement 5", Lame 4+, Arc 6+, Armure 6+, Initiative 3, Volonté 3, Vie 4 ; Liste principale ; expérience de départ 20+1D6 |
 | Guerrier squelette | Arc 6+ | Arc 4+ |
-| Liste des Guerriers squelettes | Absente | Nouvelle liste : Arc long 26 pa, Arc court 16 pa, Bannière ancienne 25 pa |
+| Liste des Guerriers squelettes | Absente | Nouvelle liste : Arc long 26 pa, Arc court 16 pa |
 | Armes à distance de l'armurerie | Absentes | Arc long (28", 1, -1, 1D3, 1D6, Lourd, À deux mains) et Arc court (16", 1, -, 1, 1D6, À deux mains) |
 | Grand pavillon (repaire) | Grand pavillon ; Trophées de Bêtes : Bête tuée par le Chef | Renommé Domaine forestier (*Woodland Estate*) ; Salle des trophées (*Trophy Room*) : Bête ou Brute tuée par le Chef |
 | Tumulus anciens, Offrande au tumulus | Étape 5, table des trésors | Étape 6, table des curiosités |
@@ -150,7 +150,7 @@ L'ancien fichier `12_campagne-avant-premiere.md` (pages partagées sur Discord a
 | Scriptorium isolé, Étude blasphématoire | À chaque séquence d'après-bataille | À l'étape 6 de la séquence d'après-bataille |
 | Table des blessures des Démons | D66 : 11-16 banni, 21-36 essence fracturée, 41-65 indemne, 66 enragé (expérience bonus) | Déplacée p. 145, sur 1D6 : 1 banni, 2-3 essence fracturée, 4-6 indemne ; le résultat Enragé disparaît |
 | Colosse de la Pourriture | Sans règle sur le trait Encombrant | Force démoniaque (*Demonic Strength*) : ignore le trait Encombrant de sa Lame de pourriture démoniaque |
-| Épithètes du Cloître gangrené | Table D66 | Table supprimée |
+| Épithètes du Cloître gangrené | Table D66 après les origines | Table déplacée p. 132, avec les noms |
 | Améliorations de repaire | Absentes | Hospice, Jardin de l'herboriste, Clocher, Chambre rituelle, Éleveur de mouches, Tronc des aumônes (noms à valider) |
 
 ## Chapitre 6 - Références (p. 167 à 174) et aide de jeu (lot 10)

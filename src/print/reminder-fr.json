@@ -1,7 +1,7 @@
 {
   "_header": {
     "file": "src/print/reminder-fr.json",
-    "role": "Text of the French reminder sheet (sources/fr/10_aide-de-jeu.md, French only, page numbers of the playtest v1.03). Markup: **bold**, *italic*, {sep} diamond separator, {br} line break.",
+    "role": "Text of the French reminder sheet (sources/fr/10_aide-de-jeu.md, French only, page numbers of the playtest v1.10). Markup: **bold**, *italic*, {sep} diamond separator, {br} line break.",
     "author": "Adrien Duclaud",
     "created": "2026-10-12",
     "license": "MIT"
@@ -68,6 +68,7 @@
         "Poison",
         "Les touches critiques empoisonnent. Subit 1 dégât à chaque activation. Prend fin si soigné ou s'il reste 1 point de vie"
       ],
+      ["Arme d'hast", "Peut être équipée avec un objet tenu, gagne Encombrant"],
       ["Rare", "Limité au nombre indiqué"],
       ["Rechargement", "Renoncer à un Mouvement ou une Action pour recharger"],
       ["Effroi", "Les combattants non engagés réussissent un test de Volonté ou dévient de 1D6\""],

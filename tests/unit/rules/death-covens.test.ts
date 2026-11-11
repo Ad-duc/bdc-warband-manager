@@ -76,8 +76,8 @@ function awakenedLord(): Warband {
 }
 
 describe("Death Covens data", () => {
-  it("has 16 profiles, the Lycanfell Beast being a form of the Lycanfell Noble", () => {
-    expect(faction.fighters).toHaveLength(16);
+  it("has 17 profiles, the Lycanfell Beast being a form of the Lycanfell Noble", () => {
+    expect(faction.fighters).toHaveLength(17);
     expect(profile("lycanfell-beast").formOf).toBe("lycanfell-noble");
     expect(formsOf(index, "lycanfell-noble").map((p) => p.id)).toEqual(["lycanfell-beast"]);
     expect(formsOf(index, "barrow-lord")).toEqual([]);

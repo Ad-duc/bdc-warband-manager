@@ -251,6 +251,20 @@ export const CommonDataSchema = z
       .object({
         status: z.enum(["not-published", "published"]),
         note: LocalizedTextSchema,
+        /** Stronghold level, income and number of upgrades by battles fought (p. 137). */
+        strongholdLevels: z
+          .array(
+            z
+              .object({
+                level: z.number().int().min(1),
+                fromBattles: z.number().int().min(0),
+                income: DiceExprSchema,
+                upgrades: z.number().int().min(0),
+              })
+              .strict(),
+          )
+          .min(1),
+        sourceRef: SourceRefSchema,
         tables: z.array(OpenTableSchema),
       })
       .strict(),
@@ -438,7 +452,7 @@ export const StrongholdSchema = z
     id: IdSchema,
     name: LocalizedTextSchema,
     flavour: LocalizedTextSchema,
-    income: DiceExprSchema,
+    /** Special rules; the income depends on the stronghold level (common.json, campaign.strongholdLevels). */
     rules: z.array(RuleSchema),
     /** Counters noted on the roster (eg. bottles of vintage wine). */
     trackers: z.array(
@@ -454,6 +468,18 @@ export const StrongholdSchema = z
   })
   .strict();
 export type Stronghold = z.infer<typeof StrongholdSchema>;
+
+/** Stronghold upgrade of a faction: 1 picked at stronghold level 2, 1 more at level 3 (p. 137). */
+export const StrongholdUpgradeSchema = z
+  .object({
+    id: IdSchema,
+    name: LocalizedTextSchema,
+    flavour: LocalizedTextSchema,
+    rules: z.array(RuleSchema).min(1),
+    sourceRef: SourceRefSchema,
+  })
+  .strict();
+export type StrongholdUpgrade = z.infer<typeof StrongholdUpgradeSchema>;
 
 export const OriginSchema = z
   .object({
@@ -519,15 +545,7 @@ export const FactionDataSchema = z
     armouryName: LocalizedTextSchema,
     origins: z.array(OriginSchema).min(1),
     strongholds: z.array(StrongholdSchema),
-    campaignRules: z.array(RuleSchema),
-    leaderSuccession: z.array(
-      z
-        .object({
-          formerLeaderId: IdSchema,
-          eligibleChampionIds: z.array(IdSchema).min(1),
-        })
-        .strict(),
-    ),
+    strongholdUpgrades: z.array(StrongholdUpgradeSchema),
     nameTable: z
       .object({
         die: z.literal("d66"),
@@ -801,6 +819,10 @@ export function checkFactionIntegrity(faction: FactionData, common: CommonData):
     faction.strongholds.map((s) => s.id),
   );
   dup(
+    "stronghold upgrade",
+    faction.strongholdUpgrades.map((u) => u.id),
+  );
+  dup(
     "skill table",
     allTables.map((t) => t.id),
   );
@@ -830,13 +852,6 @@ export function checkFactionIntegrity(faction: FactionData, common: CommonData):
       if (!fighterIds.has(l.fighterId)) problems.push(`Origin ${o.id}: unknown fighter "${l.fighterId}"`);
     for (const id of o.uncappedFighterIds)
       if (!fighterIds.has(id)) problems.push(`Origin ${o.id}: unknown fighter "${id}"`);
-  }
-
-  for (const s of faction.leaderSuccession) {
-    if (!fighterIds.has(s.formerLeaderId))
-      problems.push(`Leader succession: unknown fighter "${s.formerLeaderId}"`);
-    for (const c of s.eligibleChampionIds)
-      if (!fighterIds.has(c)) problems.push(`Leader succession: unknown fighter "${c}"`);
   }
 
   for (const f of faction.fighters) {

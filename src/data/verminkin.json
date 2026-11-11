@@ -1,7 +1,7 @@
 {
   "_header": {
     "file": "src/data/verminkin.json",
-    "role": "Verminkin faction data: origins, strongholds, campaign rules, names, fighters, Verminkin Armoury, skills, spell lores",
+    "role": "Verminkin faction data: origins, strongholds, stronghold upgrades, names, fighters, Verminkin Armoury, skills, spell lores",
     "author": "Adrien Duclaud",
     "created": "2026-10-12",
     "license": "MIT for the file structure. Game content belongs to Sam Pearson (Black Death City)."
@@ -80,7 +80,6 @@
         "en": "This once holy place now has walls blackened with mould and dripping filth. It has become an epicentre of the Black Rot. A place where the Pox Priest and his apprentices practise dark communion.",
         "fr": "Les parois de ce lieu jadis sacré sont désormais noircies de moisissure et ruissellent d'immondices. Il est devenu un épicentre de la Pourriture noire. Un lieu où le Prêtre Véroleux et ses apprentis pratiquent une sombre communion."
       },
-      "income": "3d6x5",
       "rules": [
         {
           "id": "prayers-of-plague",
@@ -89,6 +88,15 @@
           "text": {
             "en": "Each battle, before you determine prepared spells, you can pick 1 friendly Priest in your warband. Instead of randomly determining the spell they have prepared from a Spell Lore, you can pick.",
             "fr": "À chaque bataille, avant de déterminer les sorts préparés, vous pouvez choisir 1 Prêtre allié de votre bande. Au lieu de déterminer au hasard le sort qu'il a préparé dans un Domaine de magie, vous pouvez le choisir."
+          }
+        },
+        {
+          "id": "vector-of-plague",
+          "name": { "en": "Vector of Plague", "fr": "Vecteur de peste" },
+          "tag": null,
+          "text": {
+            "en": "Each battle, a friendly fighter gains a level of Black Rot, they earn 5 bonus experience.",
+            "fr": "À chaque bataille, quand un combattant allié gagne un niveau de Pourriture noire, il gagne 5 d'expérience bonus."
           }
         }
       ],
@@ -102,15 +110,14 @@
         "en": "Situated near the City's old market district, this ruined tower is now only accessible from the surrounding rooftops.",
         "fr": "Située près de l'ancien district du marché de la Cité, cette tour en ruine n'est désormais accessible que par les toits environnants."
       },
-      "income": "3d6x5",
       "rules": [
         {
           "id": "run-the-roofs",
           "name": { "en": "Run the Roofs", "fr": "Courir les toits" },
           "tag": null,
           "text": {
-            "en": "If the scenario instructs you to set up fighters near an entry point (for example, wholly within 6\" of an entry point) you can pick up to 1D3 of those fighters to instead be set up on the roofs. If you do so, these fighters can be set up anywhere on the battlefield that is wholly within 12\" horizontally of the centre of the battlefield, is more than 9\" from all enemy fighters, and isn't on the battlefield floor.",
-            "fr": "Si le scénario vous demande de placer des combattants près d'un point d'entrée, par exemple entièrement à 6\" ou moins d'un point d'entrée, vous pouvez choisir jusqu'à 1D3 de ces combattants pour les placer, à la place, sur les toits. Dans ce cas, ces combattants peuvent être placés n'importe où sur le champ de bataille, à un endroit qui est entièrement à 12\" ou moins horizontalement du centre du champ de bataille, à plus de 9\" de tous les combattants ennemis et qui n'est pas sur le sol du champ de bataille."
+            "en": "During deployment, if the scenario instructs you to set up fighters near an entry point (for example, wholly within 6\" of an entry point) you can pick up to 1D3 of those fighters to instead be set up on the roofs. If you do so, these fighters can be set up anywhere on the battlefield that is wholly within 12\" horizontally of the centre of the battlefield, is more than 9\" from all enemy fighters, and is 3\" or more vertically above the battlefield floor.",
+            "fr": "Pendant le déploiement, si le scénario vous demande de placer des combattants près d'un point d'entrée, par exemple entièrement à 6\" ou moins d'un point d'entrée, vous pouvez choisir jusqu'à 1D3 de ces combattants pour les placer, à la place, sur les toits. Dans ce cas, ces combattants peuvent être placés n'importe où sur le champ de bataille, à un endroit qui est entièrement à 12\" ou moins horizontalement du centre du champ de bataille, à plus de 9\" de tous les combattants ennemis et qui est à 3\" ou plus verticalement au-dessus du sol du champ de bataille."
           }
         }
       ],
@@ -124,15 +131,23 @@
         "en": "Erupting from a chasm in the city streets, this makeshift shanty of platforms and pulleys is wreathed in smoke as the Sparkseer's lackeys toil day and night, assembling bizarre contraptions from scavenged scrap.",
         "fr": "Jaillie d'un gouffre ouvert dans les rues de la cité, cette baraque de fortune faite de plateformes et de poulies est noyée de fumée, tandis que les larbins du Maître artificier triment jour et nuit pour assembler d'étranges engins à partir de ferraille récupérée."
       },
-      "income": "3d6x5",
       "rules": [
         {
           "id": "mad-tinkerers",
           "name": { "en": "Mad Tinkerers", "fr": "Bricoleurs fous" },
           "tag": null,
           "text": {
-            "en": "- When making an injury roll for a friendly Contraption, you can roll twice and pick either result.\n- Before each battle begins, you can pick 1 friendly Sparkseer. That fighter starts the battle with 3 engineering points instead of 1D3.",
-            "fr": "- Quand vous effectuez un jet de blessure pour un Engin allié, vous pouvez faire deux jets et choisir l'un des deux résultats.\n- Avant le début de chaque bataille, vous pouvez choisir 1 Maître artificier allié. Le combattant choisi commence la bataille avec 3 points d'ingénierie à la place de 1D3."
+            "en": "Before each battle begins, you can pick 1 friendly Sparkseer. That fighter starts the battle with 3 engineering points instead of 1D3.",
+            "fr": "Avant le début de chaque bataille, vous pouvez choisir 1 Maître artificier allié. Le combattant choisi commence la bataille avec 3 points d'ingénierie à la place de 1D3."
+          }
+        },
+        {
+          "id": "patch-em-up",
+          "name": { "en": "Patch 'em Up", "fr": "Rafistolage" },
+          "tag": null,
+          "text": {
+            "en": "When making an injury roll for a friendly Contraption, you can roll twice and pick either result.",
+            "fr": "Quand vous effectuez un jet de blessure pour un Engin allié, vous pouvez faire deux jets et choisir l'un des deux résultats."
           }
         }
       ],
@@ -146,15 +161,14 @@
         "en": "Each night, the warriors of the fortified warren gather to watch their kin battle in the fighting pits. The Ironfang Warlord encourages such contests, for every dead rival is one less blade pointed at his back.",
         "fr": "Chaque nuit, les guerriers du terrier fortifié se rassemblent pour regarder leurs semblables s'affronter dans les fosses de combat. Le Seigneur de guerre Croc-de-Fer encourage ces affrontements, car chaque rival mort est une lame de moins pointée dans son dos."
       },
-      "income": "3d6x5",
       "rules": [
         {
           "id": "fighting-pits",
           "name": { "en": "Fighting Pits", "fr": "Fosses de combat" },
           "tag": null,
           "text": {
-            "en": "After each battle, before the aftermath sequence, you can pick 2 friendly Champion or Henchmen fighters that were not taken down during the battle to fight in the pits. Resolve the fight as follows:\nPick 1 of the fighters to command and let your opponent command the other. The 2 fighters are placed engaged in melee. Roll-off and start alternating melee attack actions starting with the winner. The fighters cannot make any other actions or moves. Alternate making melee attack actions until 1 fighter is taken down. That fighter suffers an injury as normal. The other fighter is the winner and earns 10 bonus experience.",
-            "fr": "Après chaque bataille, avant la séquence d'après-bataille, vous pouvez choisir 2 combattants alliés Champions ou Hommes de main qui n'ont pas été mis hors de combat au cours de la bataille pour qu'ils s'affrontent dans les fosses. Résolvez le combat comme suit :\nChoisissez 1 des combattants : vous le jouez, et votre adversaire joue l'autre. Les 2 combattants sont placés engagés au corps à corps. Effectuez un jet de départage, puis alternez les actions d'Attaque au corps à corps, en commençant par le vainqueur. Les combattants ne peuvent effectuer aucune autre action ni aucun autre Mouvement. Continuez d'alterner les actions d'Attaque au corps à corps jusqu'à ce que 1 combattant soit mis hors de combat. Ce dernier subit une blessure normalement. L'autre combattant est le vainqueur et gagne 10 d'expérience bonus."
+            "en": "In step 6 of the aftermath sequence, you can pick 2 friendly Champion or Henchmen fighters that were not taken down in the battle to fight in the pits. Resolve the fight as follows:\nPick 1 of the fighters to command and let your opponent command the other. The 2 fighters are placed engaged in melee. Roll-off and start alternating melee attack actions starting with the winner. The fighters cannot make any other actions or moves. Alternate making melee attack actions until 1 fighter is taken down. That fighter suffers an injury as normal. The other fighter is the winner and earns 10 bonus experience.",
+            "fr": "À l'étape 6 de la séquence d'après-bataille, vous pouvez choisir 2 combattants alliés Champions ou Hommes de main qui n'ont pas été mis hors de combat au cours de la bataille pour qu'ils s'affrontent dans les fosses. Résolvez le combat comme suit :\nChoisissez 1 des combattants : vous le jouez, et votre adversaire joue l'autre. Les 2 combattants sont placés engagés au corps à corps. Effectuez un jet de départage, puis alternez les actions d'Attaque au corps à corps, en commençant par le vainqueur. Les combattants ne peuvent effectuer aucune autre action ni aucun autre Mouvement. Continuez d'alterner les actions d'Attaque au corps à corps jusqu'à ce que 1 combattant soit mis hors de combat. Ce dernier subit une blessure normalement. L'autre combattant est le vainqueur et gagne 10 d'expérience bonus."
           }
         }
       ],
@@ -163,27 +177,131 @@
     }
   ],
 
-  "campaignRules": [
+  "strongholdUpgrades": [
     {
-      "id": "death-of-a-leader",
-      "name": { "en": "Death of a Leader", "fr": "Mort d'un Chef" },
-      "tag": null,
-      "text": {
-        "en": "During the campaign, if your leader is killed, and you choose to promote a champion (pg xx), the following champions are eligible:",
-        "fr": "Pendant la campagne, si votre chef est tué et que vous choisissez de promouvoir un champion (p. xx), les champions suivants sont éligibles :"
-      }
+      "id": "captured-poisoner",
+      "name": { "en": "Captured Poisoner", "fr": "Empoisonneur captif" },
+      "flavour": {
+        "en": "You take captive a rival assassin, who is shackled in the dungeon beneath your stronghold and put to work brewing poisons for the warband. Though they resent their captivity, they are wise enough to know that disobedience will be met with a grisly end.",
+        "fr": "Vous capturez un assassin rival, enchaîné dans le cachot sous votre repaire et mis au travail pour brasser des poisons pour la bande. Il supporte mal sa captivité, mais il est assez sage pour savoir que la désobéissance lui vaudrait une fin atroce."
+      },
+      "rules": [
+        {
+          "id": "lethal-concoctions",
+          "name": { "en": "Lethal Concoctions", "fr": "Concoctions mortelles" },
+          "tag": null,
+          "text": {
+            "en": "In step six of the aftermath sequence, you receive 1 Vial of Poison (pg xx).",
+            "fr": "À l'étape 6 de la séquence d'après-bataille, vous recevez 1 Fiole de poison (p. xx)."
+          }
+        }
+      ],
+      "sourceRef": { "page": 76, "md": "07_verminkin.md > Empoisonneur captif" }
+    },
+    {
+      "id": "breeding-pens",
+      "name": { "en": "Breeding Pens", "fr": "Enclos d'élevage" },
+      "flavour": {
+        "en": "You order your underlings to construct pens beneath the stronghold, where giant rats are kept and bred in great numbers. The young are soon ready to join the warband.",
+        "fr": "Vous ordonnez à vos sous-fifres de construire des enclos sous le repaire, où des rats géants sont gardés et élevés en grand nombre. Les jeunes sont vite prêts à rejoindre la bande."
+      },
+      "rules": [
+        {
+          "id": "raised-rat",
+          "name": { "en": "Raised Rat", "fr": "Rat élevé" },
+          "tag": null,
+          "text": {
+            "en": "In step 6 of the aftermath sequence, you can roll a dice. On a 5+, you can recruit 1 Giant Rat to your warband for 0 silver.",
+            "fr": "À l'étape 6 de la séquence d'après-bataille, vous pouvez lancer un dé. Sur 5+, vous pouvez recruter 1 Rat géant dans votre bande pour 0 pièce d'argent."
+          }
+        }
+      ],
+      "sourceRef": { "page": 76, "md": "07_verminkin.md > Enclos d'élevage" }
+    },
+    {
+      "id": "warlocks-den",
+      "name": { "en": "Warlock's Den", "fr": "Antre du sorcier" },
+      "flavour": {
+        "en": "You construct a second warlock's den enabling you to bring another to your domain. Unsurprisingly, the two warlocks despise each other and are always trying to one-up the other.",
+        "fr": "Vous construisez un second antre de sorcier, ce qui vous permet d'en attirer un autre dans votre domaine. Sans surprise, les deux sorciers se détestent et cherchent sans cesse à se surpasser l'un l'autre."
+      },
+      "rules": [
+        {
+          "id": "arcane-rivalry",
+          "name": { "en": "Arcane Rivalry", "fr": "Rivalité arcanique" },
+          "tag": null,
+          "text": {
+            "en": "Your warband can include 0-2 Verminkin Warlocks. In addition, once per battle, when a friendly Verminkin Warlock activates while they are within 6\" of another friendly Verminkin Warlock, they can attempt to one-up the other. If they do so, you can re-roll casting rolls for them that activation.",
+            "fr": "Votre bande peut inclure 0-2 Sorciers vermineux. De plus, une fois par bataille, quand un Sorcier vermineux allié est activé alors qu'il est à 6\" ou moins d'un autre Sorcier vermineux allié, il peut tenter de surpasser l'autre. S'il le fait, vous pouvez relancer ses jets de lancement pendant cette activation."
+          }
+        }
+      ],
+      "sourceRef": { "page": 76, "md": "07_verminkin.md > Antre du sorcier" }
+    },
+    {
+      "id": "splicer",
+      "name": { "en": "Splicer", "fr": "Greffeur" },
+      "flavour": {
+        "en": "A deranged Sparkseer, known for conducting strange experiments upon Rat Mutants, is taken captive by your warband. They beg for mercy and promise to \"enhance\" your own creatures, provided they are supplied with the necessary materials...",
+        "fr": "Un Maître artificier dérangé, connu pour mener d'étranges expériences sur les Rats-mutants, est fait prisonnier par votre bande. Il implore votre pitié et promet d'\"améliorer\" vos propres créatures, pourvu qu'on lui fournisse les matériaux nécessaires..."
+      },
+      "rules": [
+        {
+          "id": "stitch-and-splice",
+          "name": { "en": "Stitch and Splice", "fr": "Coudre et greffer" },
+          "tag": null,
+          "text": {
+            "en": "In step 6 of the aftermath sequence, for each friendly non-Beast fighter that was killed in the same aftermath sequence you can pick 1 of the following:\n- Stitched-limbs: Pick a friendly Rat Mutant, remove an injury from it (temporary or permanent).\n- Spliced-brains: Pick a friendly Rat Mutant, it earns 5 bonus experience.",
+            "fr": "À l'étape 6 de la séquence d'après-bataille, pour chaque combattant allié qui n'est pas une Bête et qui a été tué pendant cette même séquence d'après-bataille, vous pouvez choisir 1 des options suivantes :\n- Membres recousus : choisissez un Rat-mutant allié et retirez-lui une blessure, temporaire ou permanente.\n- Cerveaux greffés : choisissez un Rat-mutant allié : il gagne 5 d'expérience bonus."
+          }
+        }
+      ],
+      "sourceRef": { "page": 76, "md": "07_verminkin.md > Greffeur" }
+    },
+    {
+      "id": "rooftop-ratways",
+      "name": { "en": "Rooftop Ratways", "fr": "Passerelles des toits" },
+      "flavour": {
+        "en": "Your verminkin construct a network of wooden beams, rope bridges and iron bars between the surrounding rooftops. These precarious walkways allow them to explore the City with ease, far above the streets below.",
+        "fr": "Vos vermineux construisent un réseau de poutres, de ponts de corde et de barres de fer entre les toits alentour. Ces passerelles précaires leur permettent d'explorer la Cité avec aisance, bien au-dessus des rues."
+      },
+      "rules": [
+        {
+          "id": "scour-the-city",
+          "name": { "en": "Scour the City", "fr": "Écumer la Cité" },
+          "tag": null,
+          "text": {
+            "en": "Each aftermath sequence, you gain 1 exploration re-roll.",
+            "fr": "À chaque séquence d'après-bataille, vous gagnez 1 relance d'exploration."
+          }
+        }
+      ],
+      "sourceRef": { "page": 76, "md": "07_verminkin.md > Passerelles des toits" }
+    },
+    {
+      "id": "smugglers-den",
+      "name": { "en": "Smuggler's Den", "fr": "Repaire de contrebandiers" },
+      "flavour": {
+        "en": "You expand your network of thieves and smugglers throughout the City, establishing a hidden den where stolen goods and illicit wares are bought and sold. Before long, all manner of curious treasures begin to find their way into your possession.",
+        "fr": "Vous étendez votre réseau de voleurs et de contrebandiers à travers la Cité et établissez un repaire caché où s'achètent et se vendent biens volés et marchandises illicites. Bientôt, toutes sortes de curieux trésors commencent à tomber entre vos mains."
+      },
+      "rules": [
+        {
+          "id": "black-market-wares",
+          "name": { "en": "Black Market Wares", "fr": "Marchandises du marché noir" },
+          "tag": null,
+          "text": {
+            "en": "In step 6 of the aftermath sequence, roll a dice. On a 4+, you can roll once on the Curiosity table (pg xx).",
+            "fr": "À l'étape 6 de la séquence d'après-bataille, lancez un dé. Sur 4+, vous pouvez lancer une fois les dés sur la table des curiosités (p. xx)."
+          }
+        }
+      ],
+      "sourceRef": { "page": 76, "md": "07_verminkin.md > Repaire de contrebandiers" }
     }
-  ],
-
-  "leaderSuccession": [
-    { "formerLeaderId": "pox-priest", "eligibleChampionIds": ["pox-priests-apprentice"] },
-    { "formerLeaderId": "nightfang-assassin", "eligibleChampionIds": ["assassins-apprentice"] },
-    { "formerLeaderId": "ironfang-warlord", "eligibleChampionIds": ["verminkin-champion"] },
-    { "formerLeaderId": "sparkseer", "eligibleChampionIds": ["sparkseers-apprentice"] }
   ],
   "nameTable": {
     "die": "d66",
-    "sourceRef": { "page": 76, "md": "07_verminkin.md > Noms des Vermineux" },
+    "sourceRef": { "page": 86, "md": "07_verminkin.md > Noms des Vermineux" },
     "entries": {
       "11": "Bizzrecht",
       "12": "Bratzik",
@@ -760,10 +878,10 @@
       "id": "ensorcelled-halberd",
       "name": { "en": "Ensorcelled Halberd", "fr": "Hallebarde ensorcelée" },
       "kind": "melee",
-      "cost": 52,
+      "cost": 48,
       "purchasable": true,
       "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3+1" },
-      "traits": [{ "key": "arcane" }, { "key": "brace" }, { "key": "two-handed" }, { "key": "unwieldy" }],
+      "traits": [{ "key": "arcane" }, { "key": "brace" }, { "key": "polearm" }, { "key": "two-handed" }],
       "armourValue": null,
       "armourImprovement": 0,
       "itemKeywords": [],
@@ -829,7 +947,7 @@
       "cost": 34,
       "purchasable": true,
       "profile": { "attacks": 3, "rend": -1, "damage": 1, "critDamage": "d3+1" },
-      "traits": [{ "key": "brace" }, { "key": "two-handed" }, { "key": "unwieldy" }],
+      "traits": [{ "key": "brace" }, { "key": "polearm" }, { "key": "two-handed" }],
       "armourValue": null,
       "armourImprovement": 0,
       "itemKeywords": [],
@@ -1018,7 +1136,7 @@
       "cost": 16,
       "purchasable": true,
       "profile": { "attacks": 3, "rend": 0, "damage": 1, "critDamage": "d3" },
-      "traits": [{ "key": "brace" }, { "key": "two-handed" }],
+      "traits": [{ "key": "brace" }, { "key": "polearm" }, { "key": "two-handed" }],
       "armourValue": null,
       "armourImprovement": 0,
       "itemKeywords": [],
@@ -1689,7 +1807,7 @@
       "name": { "en": "Champion List", "fr": "Liste des Champions" },
       "sourceRef": { "page": 78, "md": "07_verminkin.md > Liste des Champions" },
       "entries": [
-        { "wargearId": "ensorcelled-halberd", "cost": 52 },
+        { "wargearId": "ensorcelled-halberd", "cost": 48 },
         { "wargearId": "poison-blade", "cost": 20 },
         { "wargearId": "blackpowder-pistol", "cost": 18 },
         { "wargearId": "repeater-pistol", "cost": 30 },
@@ -1758,7 +1876,7 @@
           "name": { "en": "Purveyor of Poisons", "fr": "Empoisonneur" },
           "text": {
             "en": "This fighter's melee weapons gain the Poison weapon trait. If a weapon already has the Poison weapon trait, improve the Rend value of that weapon by 1 instead.",
-            "fr": "Les armes de corps à corps de ce combattant gagnent le trait d'arme Poison. Si une arme a déjà le trait d'arme Poison, améliorez, à la place, de 1 la valeur de Perforation de cette arme."
+            "fr": "Concoctions mortelles : à l'étape 6 de la séquence d'après-bataille, vous recevez 1 Fiole de poison (p. xx)."
           },
           "sourceRef": { "page": 85, "md": "07_verminkin.md > Empoisonneur" }
         },
@@ -1784,8 +1902,8 @@
           "id": "too-cunning-to-die",
           "name": { "en": "Too Cunning to Die", "fr": "Trop rusé pour mourir" },
           "text": {
-            "en": "Each time you roll on the lasting injury table for this fighter, you can roll twice and pick either result.",
-            "fr": "Chaque fois que vous faites un jet sur la table des blessures durables pour ce combattant, vous pouvez faire deux jets et choisir l'un des deux résultats."
+            "en": "Each time you roll on the Injury table for this fighter, you can roll twice and pick either result.",
+            "fr": "Chaque fois que vous faites un jet sur la table des blessures pour ce combattant, vous pouvez faire deux jets et choisir l'un des deux résultats."
           },
           "sourceRef": { "page": 85, "md": "07_verminkin.md > Trop rusé pour mourir" }
         },

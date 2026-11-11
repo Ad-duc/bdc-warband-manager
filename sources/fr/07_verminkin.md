@@ -10,7 +10,7 @@ Cette section contient toutes les règles pour recruter une bande (*warband*) de
 
 - **Origines (*Origins*)** (p. xx)
 - **Repaires (*Strongholds*)** (p. xx)
-- **Règles de campagne des Vermineux (*Verminkin Campaign Rules*)** (p. xx)
+- **Améliorations de repaire (*Stronghold Upgrades*)** (p. xx)
 - **Liste des combattants des Vermineux (*Verminkin Fighter List*)** (p. xx)
 - **L'Armurerie des Vermineux (*The Verminkin Armoury*)** (p. xx-xx)
 - **Domaines de magie des Vermineux (*Verminkin Spell Lores*)** (p. xx)
@@ -25,120 +25,126 @@ Avant d'engager le moindre combattant (*fighter*), choisissez une origine (*orig
 
 > Cette bande (*warband*) est convaincue que c'est elle qui a apporté la Pourriture noire (*Black Rot*) à la cité, et elle cherche désormais à achever son œuvre.
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez recruter un **Prêtre Véroleux (*Pox Priest*)** pour diriger votre bande (*warband*) au début de la campagne.
+
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Chapelle profanée** (*Desecrated Chapel*).
 
 **Règles spéciales (*Special Rules*)**
 
-- Vous commencez la campagne avec le repaire (*stronghold*) **Chapelle profanée** (*Desecrated Chapel*).
-- Votre bande (*warband*) peut inclure 0-2 Apprentis véroleux (*Pox Priest's Apprentice*).
+Votre bande (*warband*) peut inclure 0-2 Apprentis véroleux (*Pox Priest's Apprentice*).
 
 ### Coureurs des toits (*Rooftop Runners*)
 
 > Savourant sa liberté loin des tunnels d'en bas, cette bande (*warband*) a investi les toits de la cité, où elle opère à la nuit tombée : assassins, voleurs et contrebandiers.
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez recruter un **Assassin Croc-de-Nuit (*Nightfang Assassin*)** pour diriger votre bande (*warband*) au début de la campagne.
 
-**Règles spéciales (*Special Rules*)**
-
-Vous commencez la campagne avec le repaire (*stronghold*) **Poste d'observation caché** (*Hidden Vantage*).
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Poste d'observation caché** (*Hidden Vantage*).
 
 ### Cabale du Maître artificier (*Sparkseer Coven*)
 
 > Cette bande (*warband*) est menée par un Maître artificier (*Sparkseer*) génial et légèrement fou. Ces Vermineux (*Verminkin*) écument les ruines de la Cité (*the City*) en quête de ferraille et d'ingrédients alchimiques, dont ils font des armes et des engins (*contraption*) élaborés.
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez recruter un **Maître artificier (*Sparkseer*)** pour diriger votre bande (*warband*) au début de la campagne.
+
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Atelier branlant** (*Rickety Workshop*).
 
 **Règles spéciales (*Special Rules*)**
 
-- Vous commencez la campagne avec le repaire (*stronghold*) **Atelier branlant** (*Rickety Workshop*).
-- Votre bande (*warband*) peut inclure 0-2 Engins roulants (*Rolling-Contraption*).
+Votre bande (*warband*) peut inclure 0-2 Engins roulants (*Rolling-Contraption*).
 
 ### Tyran impitoyable (*Merciless Tyrant*)
 
 > Ils sont menés par un Seigneur de guerre Croc-de-Fer (*Ironfang Warlord*) particulièrement cruel et impitoyable ; leur haine des hommes d'en haut nourrit leur ambition : mettre la Cité (*the City*) sous leur botte.
 
-**Restrictions**
-
 **Chef (*Leader*) :** vous devez recruter un **Seigneur de guerre Croc-de-Fer (*Ironfang Warlord*)** pour diriger votre bande (*warband*) au début de la campagne.
 
-**Règles spéciales (*Special Rules*)**
-
-Vous commencez la campagne avec le repaire (*stronghold*) **Terrier fortifié** (*Fortified Warren*).
+**Repaire (*Stronghold*) :** vous commencez la campagne avec le repaire (*stronghold*) **Terrier fortifié** (*Fortified Warren*).
 
 ## Repaires (*Strongholds*)
 
-Selon l'origine (*origin*) choisie pour votre bande (*warband*), vous commencez avec l'une des possessions (*holding*) suivantes comme repaire (*stronghold*). Vous en saurez plus sur les Possessions (*Holdings*) et les Repaires (*Strongholds*) au Chapitre 5 :
+Chaque bande (*warband*) de Vermineux (*Verminkin*) contrôle l'un des **repaires** (*stronghold*) suivants pendant la campagne. Le repaire (*stronghold*) est déterminé par l'origine (*origin*) choisie pour la bande (*warband*). Vous en saurez plus sur les repaires (*stronghold*) au chapitre 5, page xx.
 
 ### Chapelle profanée (*Desecrated Chapel*)
 
 > Les parois de ce lieu jadis sacré sont désormais noircies de moisissure et ruissellent d'immondices. Il est devenu un épicentre de la Pourriture noire (*Black Rot*). Un lieu où le Prêtre Véroleux (*Pox Priest*) et ses apprentis pratiquent une sombre communion.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
 **Prières de peste (*Prayers of Plague*) :** à chaque bataille, avant de déterminer les sorts préparés (*prepared spell*), vous pouvez choisir 1 Prêtre (*Priest*) allié (*friendly*) de votre bande (*warband*). Au lieu de déterminer au hasard le sort (*spell*) qu'il a préparé dans un Domaine de magie (*Spell Lore*), vous pouvez le choisir.
+
+**Vecteur de peste (*Vector of Plague*) :** à chaque bataille, quand un combattant allié (*friendly fighter*) gagne un niveau de Pourriture noire (*level of Black Rot*), il gagne 5 d'expérience bonus (*bonus experience*).
 
 ### Poste d'observation caché (*Hidden Vantage*)
 
 > Située près de l'ancien district du marché de la Cité (*the City*), cette tour en ruine n'est désormais accessible que par les toits environnants.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
-**Courir les toits (*Run the Roofs*) :** si le scénario vous demande de placer des combattants (*fighter*) près d'un point d'entrée (*entry point*), par exemple entièrement à 6" ou moins d'un point d'entrée (*entry point*), vous pouvez choisir jusqu'à 1D3 de ces combattants (*fighter*) pour les placer, à la place, sur les toits. Dans ce cas, ces combattants (*fighter*) peuvent être placés n'importe où sur le champ de bataille (*battlefield*), à un endroit qui est entièrement à 12" ou moins horizontalement du centre du champ de bataille (*centre of the battlefield*), à plus de 9" de tous les combattants ennemis (*enemy fighter*) et qui n'est pas sur le sol du champ de bataille (*battlefield floor*).
+**Courir les toits (*Run the Roofs*) :** pendant le déploiement (*deployment*), si le scénario vous demande de placer des combattants (*fighter*) près d'un point d'entrée (*entry point*), par exemple entièrement à 6" ou moins d'un point d'entrée (*entry point*), vous pouvez choisir jusqu'à 1D3 de ces combattants (*fighter*) pour les placer, à la place, sur les toits. Dans ce cas, ces combattants (*fighter*) peuvent être placés n'importe où sur le champ de bataille (*battlefield*), à un endroit qui est entièrement à 12" ou moins horizontalement du centre du champ de bataille (*centre of the battlefield*), à plus de 9" de tous les combattants ennemis (*enemy fighter*) et qui est à 3" ou plus verticalement au-dessus du sol du champ de bataille (*battlefield floor*).
 
 ### Atelier branlant (*Rickety Workshop*)
 
 > Jaillie d'un gouffre ouvert dans les rues de la cité, cette baraque de fortune faite de plateformes (*platform*) et de poulies est noyée de fumée, tandis que les larbins du Maître artificier (*Sparkseer*) triment jour et nuit pour assembler d'étranges engins (*contraption*) à partir de ferraille récupérée.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
-**Bricoleurs fous (*Mad Tinkerers*) :**
+**Bricoleurs fous (*Mad Tinkerers*) :** avant le début de chaque bataille, vous pouvez choisir 1 Maître artificier (*Sparkseer*) allié (*friendly*). Le combattant (*fighter*) choisi commence la bataille avec 3 points d'ingénierie (*engineering points*) à la place de 1D3.
 
-- Quand vous effectuez un jet de blessure (*injury roll*) pour un Engin (*Contraption*) allié (*friendly*), vous pouvez faire deux jets et choisir l'un des deux résultats.
-- Avant le début de chaque bataille, vous pouvez choisir 1 Maître artificier (*Sparkseer*) allié (*friendly*). Le combattant (*fighter*) choisi commence la bataille avec 3 points d'ingénierie (*engineering points*) à la place de 1D3.
+**Rafistolage (*Patch 'em Up*) :** quand vous effectuez un jet de blessure (*injury roll*) pour un Engin (*Contraption*) allié (*friendly*), vous pouvez faire deux jets et choisir l'un des deux résultats.
 
 ### Terrier fortifié (*Fortified Warren*)
 
 > Chaque nuit, les guerriers du terrier fortifié (*fortified warren*) se rassemblent pour regarder leurs semblables s'affronter dans les fosses de combat (*fighting pits*). Le Seigneur de guerre Croc-de-Fer (*Ironfang Warlord*) encourage ces affrontements, car chaque rival mort est une lame de moins pointée dans son dos.
 
-**Revenu (*Income*) :** 3D6x5 pièces d'argent (*silver*)
+**Règles spéciales (*Special Rules*)**
 
-**Fosses de combat (*Fighting Pits*) :** après chaque bataille, avant la séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir 2 combattants alliés (*friendly fighter*) Champions ou Hommes de main (*Henchman*) qui n'ont pas été mis hors de combat (*taken down*) au cours de la bataille pour qu'ils s'affrontent dans les fosses (*pit*). Résolvez le combat comme suit :
+**Fosses de combat (*Fighting Pits*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir 2 combattants alliés (*friendly fighter*) Champions ou Hommes de main (*Henchman*) qui n'ont pas été mis hors de combat (*taken down*) au cours de la bataille pour qu'ils s'affrontent dans les fosses (*pit*). Résolvez le combat comme suit :
 
 Choisissez 1 des combattants (*fighter*) : vous le jouez, et votre adversaire joue l'autre. Les 2 combattants (*fighter*) sont placés engagés au corps à corps (*engaged in melee*). Effectuez un jet de départage (*roll-off*), puis alternez les actions d'Attaque au corps à corps (*Melee Attack Action*), en commençant par le vainqueur. Les combattants (*fighter*) ne peuvent effectuer aucune autre action ni aucun autre Mouvement (*Move*). Continuez d'alterner les actions d'Attaque au corps à corps (*Melee Attack Action*) jusqu'à ce que 1 combattant (*fighter*) soit mis hors de combat (*taken down*). Ce dernier subit une blessure (*injury*) normalement. L'autre combattant (*fighter*) est le vainqueur et gagne 10 d'expérience bonus (*bonus experience*).
 
-## Règles de campagne des Vermineux (*Verminkin Campaign Rules*)
+## Améliorations de repaire (*Stronghold Upgrades*)
 
-Pendant la campagne, les bandes (*warband*) de Vermineux (*Verminkin*) ont les règles spéciales (*special rule*) supplémentaires suivantes :
+Pendant la campagne, les bandes (*warband*) de Vermineux (*Verminkin*) peuvent améliorer leur repaire (*stronghold*) avec les **améliorations de repaire** (*stronghold upgrade*) suivantes. Vous en saurez plus sur les améliorations de repaire (*stronghold upgrade*) à la page xx :
 
-### Mort d'un Chef (*Death of a Leader*)
+### Empoisonneur captif (*Captured Poisoner*)
 
-Pendant la campagne, si votre chef (*Leader*) est tué (*killed*) et que vous choisissez de promouvoir (*promote*) un champion (p. xx), les champions suivants sont éligibles :
+> Vous capturez un assassin rival, enchaîné dans le cachot sous votre repaire (*stronghold*) et mis au travail pour brasser des poisons pour la bande (*warband*). Il supporte mal sa captivité, mais il est assez sage pour savoir que la désobéissance lui vaudrait une fin atroce.
 
-| Ancien Chef (*Former Leader*) | Champion éligible (*Eligible Champion*) |
-|---|---|
-| Prêtre Véroleux (*Pox Priest*) | Apprenti véroleux (*Pox Priest's Apprentice*) |
-| Assassin Croc-de-Nuit (*Nightfang Assassin*) | Apprenti assassin (*Assassin's Apprentice*) |
-| Seigneur de guerre Croc-de-Fer (*Ironfang Warlord*) | Champion vermineux (*Verminkin Champion*) |
-| Maître artificier (*Sparkseer*) | Apprenti artificier (*Sparkseer's Apprentice*) |
+**Concoctions mortelles (*Lethal Concoctions*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), vous recevez 1 Fiole de poison (*Vial of Poison*) (p. xx).
 
-### Noms des Vermineux (*Verminkin Names*)
+### Enclos d'élevage (*Breeding Pens*)
 
-Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) Vermineux (*Verminkin*) :
+> Vous ordonnez à vos sous-fifres de construire des enclos sous le repaire (*stronghold*), où des rats géants sont gardés et élevés en grand nombre. Les jeunes sont vite prêts à rejoindre la bande (*warband*).
 
-| D66 | 1 | 2 | 3 | 4 | 5 | 6 |
-|---|---|---|---|---|---|---|
-| 10 | Bizzrecht | Bratzik | Chitterik | Diebrik | Dietskrit | Fritznik |
-| 20 | Gnashrik | Gnibbel | Huzzik | Klauzik | Klinkrik | Kratcher |
-| 30 | Kratzik | Krik-Krik | Kriknar | Nibbrecht | Pestnik | Pilfrik |
-| 40 | Ratta-tat | Ratterik | Raubrik | Rikkerskit | Rittch | Scabbrecht |
-| 50 | Skrabbs | Skrik | Skrittitch | Skrott | Skurrik | Snatchzit |
-| 60 | Snikk | Snivvel | Theivik | Tik-Tik | Vritch | Zikkrik |
+**Rat élevé (*Raised Rat*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), vous pouvez lancer un dé. Sur 5+, vous pouvez recruter (*recruit*) 1 Rat géant (*Giant Rat*) dans votre bande (*warband*) pour 0 pièce d'argent (*silver*).
+
+### Antre du sorcier (*Warlock's Den*)
+
+> Vous construisez un second antre de sorcier, ce qui vous permet d'en attirer un autre dans votre domaine. Sans surprise, les deux sorciers se détestent et cherchent sans cesse à se surpasser l'un l'autre.
+
+**Rivalité arcanique (*Arcane Rivalry*) :** votre bande (*warband*) peut inclure 0-2 Sorciers vermineux (*Verminkin Warlock*). De plus, une fois par bataille, quand un Sorcier vermineux (*Verminkin Warlock*) allié (*friendly*) est activé alors qu'il est à 6" ou moins d'un autre Sorcier vermineux (*Verminkin Warlock*) allié (*friendly*), il peut tenter de surpasser l'autre. S'il le fait, vous pouvez relancer (*re-roll*) ses jets de lancement (*casting roll*) pendant cette activation.
+
+### Greffeur (*Splicer*)
+
+> Un Maître artificier (*Sparkseer*) dérangé, connu pour mener d'étranges expériences sur les Rats-mutants (*Rat-Mutant*), est fait prisonnier par votre bande (*warband*). Il implore votre pitié et promet d'"améliorer" vos propres créatures, pourvu qu'on lui fournisse les matériaux nécessaires...
+
+**Coudre et greffer (*Stitch and Splice*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), pour chaque combattant allié (*friendly fighter*) qui n'est pas une Bête (*non-Beast*) et qui a été tué (*killed*) pendant cette même séquence d'après-bataille (*aftermath sequence*), vous pouvez choisir 1 des options suivantes :
+
+- **Membres recousus (*Stitched-limbs*) :** choisissez un Rat-mutant (*Rat-Mutant*) allié (*friendly*) et retirez-lui une blessure (*injury*), temporaire (*temporary*) ou permanente (*permanent*).
+- **Cerveaux greffés (*Spliced-brains*) :** choisissez un Rat-mutant (*Rat-Mutant*) allié (*friendly*) : il gagne 5 d'expérience bonus (*bonus experience*).
+
+### Passerelles des toits (*Rooftop Ratways*)
+
+> Vos vermineux construisent un réseau de poutres, de ponts de corde et de barres de fer entre les toits alentour. Ces passerelles précaires leur permettent d'explorer la Cité (*the City*) avec aisance, bien au-dessus des rues.
+
+**Écumer la Cité (*Scour the City*) :** à chaque séquence d'après-bataille (*aftermath sequence*), vous gagnez 1 relance d'exploration (*exploration re-roll*).
+
+### Repaire de contrebandiers (*Smuggler's Den*)
+
+> Vous étendez votre réseau de voleurs et de contrebandiers à travers la Cité (*the City*) et établissez un repaire caché où s'achètent et se vendent biens volés et marchandises illicites. Bientôt, toutes sortes de curieux trésors commencent à tomber entre vos mains.
+
+**Marchandises du marché noir (*Black Market Wares*) :** à l'étape 6 de la séquence d'après-bataille (*aftermath sequence*), lancez un dé. Sur 4+, vous pouvez lancer une fois les dés sur la table des curiosités (*Curiosity table*) (p. xx).
 
 ## Liste des combattants des Vermineux (*Verminkin Fighters List*)
 
@@ -172,7 +178,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Combattant | Coût |
 |---|---|
 | Rat-mutant (*Rat-Mutant*) | 105 pa |
-| Engin roulant (*Rolling-Contraption*) | 150 pa |
+| 0-1 Engin roulant (*Rolling-Contraption*) | 150 pa |
 
 **Bêtes (*Beasts*) (0-3)**
 
@@ -246,7 +252,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 
 | Nom | Pièces d'argent |
 |---|---|
-| Hallebarde ensorcelée (*Ensorcelled Halberd*) | 52 pa |
+| Hallebarde ensorcelée (*Ensorcelled Halberd*) | 48 pa |
 | Lame empoisonnée (*Poison Blade*) | 20 pa |
 
 **Armes à distance (*Ranged Weapons*)**
@@ -346,10 +352,10 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Gourdin/Masse/Marteau (*Club/Mace/Hammer*) | 3 | - | 1 | 1D3 | Contondant (*Bludgeon*), Main secondaire (*Off-hand*) | 14 pa |
 | Carcasse écrasante (*Crushing Bulk*) | 3 | -1 | 2 | 1D3+1 | Contondant (*Bludgeon*), Arme naturelle (*Natural Weapon*) | - |
 | Dague/Dague de poing (*Dagger/Punch Dagger*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*) | 10 pa |
-| Hallebarde ensorcelée (*Ensorcelled Halberd*) | 3 | -1 | 1 | 1D3+1 | Arcanique (*Arcane*), Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 52 pa |
+| Hallebarde ensorcelée (*Ensorcelled Halberd*) | 3 | -1 | 1 | 1D3+1 | Arcanique (*Arcane*), Contre-charge (*Brace*), Arme d'hast (*Polearm*), À deux mains (*Two-handed*) | 48 pa |
 | Arme ensorcelée (*Ensorcelled Weapon*) | 3 | -1 | 1 | 1D3 | Arcanique (*Arcane*) | 26 pa |
 | Fléau (*Flail*) | 3 | - | 1 | 1D3 | Main secondaire (*Off-hand*), Contournement (*Wrap*) | 14 pa |
-| Hallebarde (*Halberd*) | 3 | -1 | 1 | 1D3+1 | Contre-charge (*Brace*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 34 pa |
+| Hallebarde (*Halberd*) | 3 | -1 | 1 | 1D3+1 | Contre-charge (*Brace*), Arme d'hast (*Polearm*), À deux mains (*Two-handed*) | 34 pa |
 | Fléau lourd (*Heavy-Flail*) | 3 | -1 | 2 | 1D3+1 | À deux mains (*Two-handed*), Encombrant (*Unwieldy*), Contournement (*Wrap*) | 38 pa |
 | Griffe de fer (*Iron Claw*) | 4 | - | 1 | 1 | Main secondaire (*Off-hand*) | 12 pa |
 | Morsure infecte (*Nasty Bite*) | 4 | - | 1 | 1 | Arme naturelle (*Natural Weapon*), Poison | - |
@@ -358,7 +364,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 | Lame de Rat-mutant (*Rat-Mutant Blade*) | 3 | -1 | 2 | 1D3+1 | Main secondaire (*Off-hand*) | 36 pa |
 | Foreuse à étincelles (*Spark-Drill*) | 3 | -3 | 1 | 1D3+1 | Arcanique (*Arcane*), À deux mains (*Two-handed*) | 62 pa |
 | Poings à étincelles (*Spark-Powered Fists*) | 3 | -2 | 2 | 1D3+1 | Arcanique (*Arcane*), Contondant (*Bludgeon*), À deux mains (*Two-handed*) | 60 pa |
-| Lance (*Spear*) | 3 | - | 1 | 1D3 | Contre-charge (*Brace*), À deux mains (*Two-handed*) | 16 pa |
+| Lance (*Spear*) | 3 | - | 1 | 1D3 | Contre-charge (*Brace*), Arme d'hast (*Polearm*), À deux mains (*Two-handed*) | 16 pa |
 | Épée (*Sword*) | 3 | - | 1 | 1D3 | Garde (*Guard*), Main secondaire (*Off-hand*) | 18 pa |
 
 **Rappels des traits d'armes (*Weapon Trait Reminders*)**
@@ -373,6 +379,7 @@ Voir les règles complètes aux pages xx-xx.
 | Garde (*Guard*) | 1 échec peut parer une touche |
 | Arme naturelle (*Natural Weapon*) | Ne peut pas parer |
 | Main secondaire (*Off-hand*) | Utilisable en main secondaire : 1 attaque |
+| Arme d'hast (*Polearm*) | Peut être équipée avec un objet tenu, gagne Encombrant |
 | Poison | Les touches critiques empoisonnent. Subit 1 dégât à chaque activation. Prend fin si soigné ou s'il reste 1 point de vie |
 | À deux mains (*Two-handed*) | 1 par combattant. Pas d'attaque de main secondaire |
 | Encombrant (*Unwieldy*) | -1 aux jets d'attaque |
@@ -519,11 +526,9 @@ Améliorez de 1 la valeur de Perforation (*Rend*) de l'arme de corps à corps (*
 
 ### Objets tenus (*Held Items*)
 
-Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), par exemple les Boucliers (*Shield*). Ces objets (*item*) comptent dans le nombre d'armes de corps à corps (*melee weapon*) dont un combattant (*fighter*) peut être équipé, à la place du nombre d'objets (*item*). De plus, ils suivent les règles suivantes :
+Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), par exemple les Boucliers (*Shield*). Ces objets (*item*) comptent dans le nombre d'armes de corps à corps (*melee weapon*) dont un combattant (*fighter*) peut être équipé, à la place du nombre d'objets (*item*). De plus, ils suivent la règle suivante :
 
-**Armes de corps à corps à deux mains (*Two-Handed Melee Weapons*) :** un combattant (*fighter*) peut être équipé d'un objet tenu (*held item*) et d'une arme de corps à corps (*melee weapon*) à deux mains (*Two-handed*), par exemple une Lance (*Spear*) et un Bouclier (*Shield*). Cependant, soustrayez 1 à la valeur d'Attaques (*Attacks*) des armes de corps à corps (*melee weapon*) à deux mains (*Two-handed*) du combattant (*fighter*).
-
-**Armes à distance à deux mains (*Two-Handed Ranged Weapons*) :** un combattant (*fighter*) ne peut pas être équipé à la fois d'un objet tenu (*held item*) et d'une arme à distance (*ranged weapon*) à deux mains (*Two-handed*).
+**Armes à deux mains et objets tenus (*Two-Handed Weapons and Held Items*) :** un combattant (*fighter*) ne peut pas être équipé à la fois d'un objet tenu (*held item*) et d'une arme à deux mains (*Two-handed*), sauf si l'arme est une arme d'hast (*Polearm*), par exemple une Lance (*Spear*) et un Bouclier (*Shield*).
 
 ## Domaines de magie des Vermineux (*Verminkin Spell Lores*)
 
@@ -710,7 +715,7 @@ Une fois par bataille, ce combattant (*fighter*) peut utiliser l'action bonus (*
 
 ### Trop rusé pour mourir (*Too Cunning to Die*)
 
-Chaque fois que vous faites un jet sur la table des blessures durables (*lasting injury table*) pour ce combattant (*fighter*), vous pouvez faire deux jets et choisir l'un des deux résultats.
+Chaque fois que vous faites un jet sur la table des blessures (*Injury table*) pour ce combattant (*fighter*), vous pouvez faire deux jets et choisir l'un des deux résultats.
 
 ### Maître de la sombre science (*Master of Dark Science*)
 
@@ -749,6 +754,19 @@ Améliorez de 1 la valeur de Perforation (*Rend*) des armes de corps à corps (*
 ### Rôdeur des ombres (*Shadow Lurker*)
 
 Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*), il n'est pas visible pour les combattants ennemis (*enemy fighter*) situés à plus de 9".
+
+## Noms des Vermineux (*Verminkin Names*)
+
+Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) Vermineux (*Verminkin*) :
+
+| D66 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| 10 | Bizzrecht | Bratzik | Chitterik | Diebrik | Dietskrit | Fritznik |
+| 20 | Gnashrik | Gnibbel | Huzzik | Klauzik | Klinkrik | Kratcher |
+| 30 | Kratzik | Krik-Krik | Kriknar | Nibbrecht | Pestnik | Pilfrik |
+| 40 | Ratta-tat | Ratterik | Raubrik | Rikkerskit | Rittch | Scabbrecht |
+| 50 | Skrabbs | Skrik | Skrittitch | Skrott | Skurrik | Snatchzit |
+| 60 | Snikk | Snivvel | Theivik | Tik-Tik | Vritch | Zikkrik |
 
 ## Parchemins de combattants des Vermineux (*Verminkin Fighter Scrolls*)
 
@@ -1020,7 +1038,7 @@ Tant que ce combattant (*fighter*) est à 1/2" ou moins d'un décor (*terrain*),
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.03.
+Les numéros de page sont ceux imprimés dans la VO v1.10.
 
 - Ensemble du lot : même mise en forme que pour les Mercenaires de la Guilde (*Guild Mercenaries*). Les encadrés en grille (origines p. 74, repaires p. 75) sont lus ligne par ligne ; les listes de l'armurerie (p. 78) colonne par colonne : Liste principale, Liste des Rats-mutants (*Rat-Mutant*), Liste des Champions, Liste des Artificiers, Liste des Engins, Liste des Praticiens ; les armures, les objets et les compétences colonne de gauche puis colonne de droite.
 - Ensemble du lot : quand tous les mots-clés d'un combattant sont identiques en VO et en VF (Champion vermineux (*Verminkin Champion*), Apprenti assassin (*Assassin's Apprentice*), Apprenti artificier (*Sparkseer's Apprentice*), Rat-mutant (*Rat-Mutant*)), ils ne sont pas répétés entre parenthèses.
@@ -1066,3 +1084,9 @@ Les numéros de page sont ceux imprimés dans la VO v1.03.
 - p. 92 : Engin roulant (*Rolling-Contraption*) : "equipped with Crushing Bulk melee weapon" sans article ; "set-up" avec trait d'union ; "Charge move" sans majuscule ; "engaged" seul. L'exemple entre parenthèses de Mouvement imprévisible est rendu par une phrase.
 - p. 92 : Rat géant (*Giant Rat*) : il manque une ponctuation après "(see below)" et "Starting Experience: 0" n'a pas de point final. Il n'a ni règle spéciale ni citation.
 - p. 91 et 92 : les profils des armes naturelles n'ont pas de colonne "Silver" dans la VO.
+- Mise à jour v1.10 : les origines donnent désormais "Chef", "Repaire" et, s'il y a lieu, "Règles spéciales" ; la ligne "Revenu" de chaque repaire disparaît (le revenu dépend du niveau du repaire, chapitre 5) ; la section "Règles de campagne" (Mort d'un Chef) est supprimée, remplacée par "Assumer le commandement" au chapitre 5 ; la table de noms passe après les compétences ; nouvelle section "Améliorations de repaire".
+- p. 75 (v1.10) : nouvelle règle Vecteur de peste (*Vector of Plague*) : la VO écrit "Each battle, a friendly fighter gains a level of Black Rot, they earn 5 bonus experience", traduit selon le sens ("quand un combattant allié gagne..."). "Patch 'em Up" devient une règle à part de l'Atelier branlant : "Rafistolage". Courir les toits : "During deployment" et "3" or more vertically above the battlefield floor". Fosses de combat : à l'étape 6.
+- p. 76 (v1.10) : noms des améliorations de repaire proposés : Empoisonneur captif, Enclos d'élevage, Antre du sorcier, Greffeur, Passerelles des toits, Repaire de contrebandiers.
+- p. 77 (v1.10) : l'Engin roulant porte désormais "0-1" dans la liste (l'origine Cabale du Maître artificier autorise toujours 0-2).
+- p. 79 (v1.10) : Hallebarde ensorcelée à 48 pa ; elle, la Hallebarde et la Lance gagnent Arme d'hast (*Polearm*), les deux hallebardes perdent Encombrant.
+- p. 85 (v1.10) : Trop rusé pour mourir : "Injury table" remplace "lasting injury table".

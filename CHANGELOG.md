@@ -20,10 +20,14 @@ version is given separately (playtest v1.03).
 - New "Armoury and grimoire" screen (header button and phone menu): every skill, signature spell, weapon, armour and item grouped in collapsible menus (skills, spells, melee weapons, ranged weapons, armour, items), then by faction, with a faction filter and "Open all" and "Close all" buttons.
 - Rules reader: a search field looks for one or more words in every chapter, accents and case aside (English original terms too); the results list each section with an extract where the words are marked, and opens it.
 - Rules reader: new "Campagne (avant-première)" chapter with the French translation of the Campaign chapter preview shared on the official Discord (Curiosities, Explore the City), marked as provisional.
-- Rules reader: new "Modifications de la v1.10" chapter listing what playtest v1.10 changes (Campaign chapter, stronghold levels and upgrades, holdings, new roster, faction changes). The translation and the app data still follow v1.03 until they are updated.
+- Rules reader: new "Modifications de la v1.10" chapter listing what playtest v1.10 changes (Campaign chapter, stronghold levels and upgrades, holdings, new roster, faction changes).
 
 ### Changed
 
+- The application now follows playtest v1.10: chapters 1 to 4, the four factions and the reminder sheet are translated again and the data follows (Polearm trait on halberds and spears, Long Bow 28" and 1D3 damage, Noble at 150 silver with a Noble's Rapier and a free skill, Plague Doctor 0-1, new Manservant and Skeleton Warrior List for the Death Covens, Demonic Strength, name tables moved after the skills).
+- Held items: a Shield, Banner or Lantern can no longer be carried with a two-handed weapon, unless it is a polearm, which then gains Unwieldy (it used to lose 1 Attack). Saved warbands that break the new rule show an error on the fighter.
+- Campaign mode: any Champion can now assume command when the Leader is gone (the per-faction succession tables are removed).
+- Strongholds: the income now depends on the stronghold level (3D6x5 silver, then 4D6x5 after 3 battles and 5D6x5 after 8); the origin step and the campaign screen show the level and its income. Each faction lists its 6 stronghold upgrades in the data; choosing them comes with the campaign features.
 - Rules reader: the "Campagne (avant-première)" chapter gives way to "Campagnes", the full French translation of Chapter 5 of playtest v1.10 (playing a campaign, underdog bonuses, strongholds and the 26 holdings, the seven steps of the aftermath sequence, curiosities, relics). The glossary gains 176 terms.
 - Reminder sheet: the screen now shows it like the rest of the site (parchment panel, titles, tables, one or two columns depending on the width) instead of the printable A4 page; the "Print the A4 sheet" button still prints the official layout on one page.
 - Wizard, wargear and skills steps: each kind of wargear (melee, ranged, armour, items), each skill table and the spell lore are collapsible menus with their count. Wargear menus stay open when another fighter is picked; a skill table opens by itself when it holds a choice.

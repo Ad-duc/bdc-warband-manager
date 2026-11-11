@@ -121,20 +121,25 @@ describe("weapon lines", () => {
     expect(lines.map((l) => l.id)).toEqual(["unarmed-strike", "crossbow"]);
   });
 
-  it("two-handed melee weapon with a held item loses 1 Attack", () => {
+  it("a polearm carried with a held item gains Unwieldy (v1.10, p. 30)", () => {
     const [spear] = weaponLines(index, mercenary({ wargearIds: ["spear", "shield"] }));
-    expect(spear).toMatchObject({ id: "spear", attacksReduced: true, profile: { attacks: 2 } });
+    expect(spear).toMatchObject({ id: "spear", unwieldyFromHeldItem: true, profile: { attacks: 3 } });
+    expect(spear?.profile.traits?.map((t) => t.key)).toEqual(["brace", "polearm", "two-handed", "unwieldy"]);
+    const [alone] = weaponLines(index, mercenary({ wargearIds: ["spear"] }));
+    expect(alone).toMatchObject({ unwieldyFromHeldItem: false });
+    expect(alone?.profile.traits?.map((t) => t.key)).toEqual(["brace", "polearm", "two-handed"]);
   });
 
-  it("a dice Attacks value is not reduced", () => {
+  it("a polearm that is already Unwieldy does not gain the trait twice", () => {
     const d = cloneData();
     const gm = d.factions.find((x) => x.id === "guild-mercenaries");
     const spear = gm?.wargear.find((w) => w.id === "spear");
     if (gm === undefined || spear?.profile === null || spear === undefined) throw new Error("data");
-    spear.profile.attacks = "d3";
+    spear.traits = [...spear.traits, { key: "unwieldy" }];
     const i = indexFaction(d.common, gm);
     const [line] = weaponLines(i, mercenary({ wargearIds: ["spear", "shield"] }));
-    expect(line).toMatchObject({ attacksReduced: false, profile: { attacks: "d3" } });
+    expect(line).toMatchObject({ unwieldyFromHeldItem: false });
+    expect(line?.profile.traits?.filter((t) => t.key === "unwieldy")).toHaveLength(1);
   });
 
   it("Loyal Companion adds its own attack line", () => {

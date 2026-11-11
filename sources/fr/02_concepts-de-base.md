@@ -248,7 +248,7 @@ Chaque **arme** possède un profil qui détaille ses valeurs et ses traits d'arm
 | Nom | Portée | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|---|
 | Arbalète de poing (*Hand Crossbow*) | 12" | 1 | - | 1 | 1D6 | Rechargement (*Reload*) | 16 pa |
-| Arc long (*Long Bow*) | 24" | 1 | -1 | 1 | 1D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 28 pa |
+| Arc long (*Long Bow*) | 28" | 1 | -1 | 1D3 | 1D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 26 pa |
 | Fusil long (*Long Rifle*) | 30" | 1 | -2 | 2 | 1D6+2 | Lourd (*Heavy*), Incident de tir (*Misfire*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 90 pa |
 
 ## Valeurs d'arme (*Weapon Values*)
@@ -349,11 +349,9 @@ Améliorez de 1 la valeur d'Armure (*Armour*) de ce combattant (*fighter*), jusq
 
 ### Objets tenus (*Held Items*)
 
-Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), par exemple les Boucliers (*Shield*). Ces objets (*item*) comptent dans le nombre d'armes de corps à corps (*melee weapon*) dont un combattant (*fighter*) peut être équipé, à la place du nombre d'objets (*item*). De plus, ils suivent les règles suivantes :
+Certains objets (*item*) ont le mot-clé (*keyword*) Objet tenu (*Held Item*), par exemple les Boucliers (*Shield*). Ces objets (*item*) comptent dans le nombre d'armes de corps à corps (*melee weapon*) dont un combattant (*fighter*) peut être équipé, à la place du nombre d'objets (*item*). De plus, ils suivent la règle suivante :
 
-**Armes de corps à corps à deux mains (*Two-Handed Melee Weapons*) :** un combattant (*fighter*) peut être équipé d'un objet tenu (*held item*) et d'une arme de corps à corps (*melee weapon*) à deux mains (*Two-handed*), par exemple une Lance (*Spear*) et un Bouclier (*Shield*). Cependant, soustrayez 1 à la valeur d'Attaques (*Attacks*) des armes de corps à corps (*melee weapon*) à deux mains (*Two-handed*) du combattant (*fighter*).
-
-**Armes à distance à deux mains (*Two-Handed Ranged Weapons*) :** un combattant (*fighter*) ne peut pas être équipé à la fois d'un objet tenu (*held item*) et d'une arme à distance (*ranged weapon*) à deux mains (*Two-handed*).
+**Armes à deux mains et objets tenus (*Two-Handed Weapons and Held Items*) :** un combattant (*fighter*) ne peut pas être équipé à la fois d'un objet tenu (*held item*) et d'une arme à deux mains (*Two-handed*), sauf si l'arme est une arme d'hast (*Polearm*), par exemple une Lance (*Spear*) et un Bouclier (*Shield*).
 
 ## Décors (*Terrain*)
 
@@ -462,7 +460,7 @@ De nombreux éléments de décor (*terrain feature*) sont montés sur un **socle
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.03.
+Les numéros de page sont ceux imprimés dans la VO v1.10.
 
 Choix de mise en forme valables pour tout le lot :
 
@@ -502,3 +500,6 @@ Points relevés page par page :
 - p. 16 : "1.5"" garde le point décimal de la VO. Le demi-pouce, noté dans la VO avec le caractère de fraction, est écrit "1/2"" pour éviter un caractère spécial. Dis-moi si tu préfères "1,5"".
 - p. 16 : la VO coupe une phrase en deux par un point ("... after falling off a platform). They are moved ...") : traduite en une seule phrase.
 - p. 16 : les lignes "Eg." placées sous les titres sont traduites par "Par exemple :".
+- p. 14 (v1.10) : dans l'exemple d'armes, l'Arc long passe à 28", Dégâts 1D3 et 26 pa. Le Fusil long y garde 90 pa et Encombrant, alors que l'armurerie de la Guilde le donne à 70 pa sans Encombrant : traduit tel quel.
+- p. 15 (v1.10) : la VO place désormais le prix des armures et des objets sur la ligne des mots-clés ("Item, Rare: 0-1, 15 silver"). La VF garde le prix dans le titre de chaque fiche, comme avant : simple choix de mise en page.
+- p. 15 (v1.10) : la règle des objets tenus est remplacée : plus de -1 Attaque, interdiction avec toute arme à deux mains sauf arme d'hast (*Polearm*).

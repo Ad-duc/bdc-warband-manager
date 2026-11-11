@@ -1,6 +1,10 @@
-# À suivre... (*To be continued...*)
-
 # Chapitre 6 - Référence (*Chapter Six - Reference*)
+
+Ce chapitre réunit des pages de référence et des feuilles à imprimer. Vous y trouverez :
+
+- l'aide de jeu (*Reminder Sheet*) (p. xx) ;
+- la feuille de bande (*Warband Roster*) (p. xx-xx) ;
+- les cartes de combattants (*Fighter Cards*) (p. xx-xx).
 
 ## Black Death City - Aide de jeu (*Black Death City - Reminder Sheet*)
 
@@ -47,6 +51,7 @@ Voir les règles complètes aux pages xx-xx.
 | Main secondaire (*Off-hand*) | Utilisable en main secondaire : 1 attaque |
 | Usage unique (*One-use*) | 1 attaque par bataille |
 | Poison | Les touches critiques empoisonnent. Subit 1 dégât à chaque activation. Prend fin si soigné ou s'il reste 1 point de vie |
+| Arme d'hast (*Polearm*) | Peut être équipée avec un objet tenu, gagne Encombrant |
 | Rare | Limité au nombre indiqué |
 | Rechargement (*Reload*) | Renoncer à un Mouvement ou une Action pour recharger |
 | Effroi (*Scare*) | Les combattants non engagés réussissent un test de Volonté ou dévient de 1D6" |
@@ -209,7 +214,7 @@ Tant que le combattant (*fighter*) n'a plus que 1 point de vie (*life point*) :
 
 Seule la p. 133 porte un numéro imprimé dans ce lot ; les autres numéros sont déduits de la pagination (page du PDF moins 1).
 
-- Ensemble du lot : le Chapitre 5 (Campagne) n'existe pas dans la v1.03 ; comme convenu, il n'est pas écrit. La page "To be continued..." (p. 132) en tient lieu.
+- Ensemble du lot : numéros de page de la VO v1.03, sauf mention contraire. En v1.10, la page "To be continued..." disparaît (le Chapitre 5 est publié, voir 12_campagne.md) et le chapitre s'ouvre p. 167 sur une courte introduction, traduite ci-dessus avec ses renvois "pg xx" tels quels.
 - p. 133 : le bandeau de la VO indique "Chapter Six" et le chiffre romain "VI" ; le titre "Reference" figure à côté.
 - p. 134 : l'aide de jeu est une page de tableaux. Elle est rendue dans l'ordre suivant : le bandeau du haut (mise en place, séquence du round, jet de renforts), puis les rappels des traits et le jet d'incident de tir (colonne de gauche), les quatre encadrés d'actions et le jet de fiasco (colonne de droite), et enfin les deux encadrés du bas de la colonne de gauche (Ensanglanté, Mouvements).
 - p. 134 : six encadrés n'ont pas de titre écrit, seulement une icône (crâne, épée, arc, bâton, goutte, botte). J'ai décrit chaque icône entre crochets et indiqué la règle qu'elle résume ; ces lignes entre crochets sont de moi, pas de la VO.
@@ -226,3 +231,4 @@ Seule la p. 133 porte un numéro imprimé dans ce lot ; les autres numéros sont
 - p. 135 à 140 : la feuille de bande et les cartes de combattants sont des pages à remplir, sans titre dans la VO. Les titres "Feuille de bande", "Combattants de la feuille de bande" et "Cartes de combattants", ainsi que les textes entre crochets, sont de moi. Les 18 cartes portent chacune un pictogramme de type de combattant, que je décris entre crochets. Je décris un bloc une seule fois et j'indique combien de fois il est répété : c'est pourquoi le lot contient les nombres 5, 15, 9, 18 et 3, absents de la VO.
 - p. 135 : le champ "Jars of Canal Leeches" figure au bas de l'encadré du butin, sans aucune règle associée dans la v1.03 : traduit tel quel.
 - p. 136 à 140 : les abréviations des profils sont celles de ton glossaire (Mvt, Lam, Arc, Arm, Ini, Vlt, Vie, Por, Att, Perf, Dég) ; "Crit" et "Exp" sont identiques en VO et en VF.
+- p. 168 (v1.10) : ajout du rappel du trait Arme d'hast (*Polearm*). L'aide de jeu, la feuille de bande et les cartes forment désormais le chapitre 6, Références (p. 167 à 174).
