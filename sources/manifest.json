@@ -9,17 +9,23 @@
   "site": "https://www.blackdeathcity.com/",
   "filesBase": "https://files.blackdeathcity.com/",
   "rules": {
-    "version": "1.10",
-    "file": "BlackDeathCity-Playtest-1.10.pdf",
-    "text": "sources/vo/BlackDeathCity-Playtest-1.10.txt",
-    "sha256": "3fa7e9cbbcecc1f58f5b684868628bc873d37314740de5d659737706159bb077",
-    "size": 86439247,
-    "etag": "\"989b653c839da5d9312dcbcc2c8da533\"",
-    "lastModified": "Fri, 06 Nov 2026 12:44:32 GMT",
+    "version": "1.11",
+    "file": "BlackDeathCity-Playtest-1.11.pdf",
+    "text": "sources/vo/BlackDeathCity-Playtest-1.11.txt",
+    "sha256": "de7b6fefe872211942d3f2e3533417e4bcb79b83ae21b628898797750438ff59",
+    "size": 88535570,
+    "etag": "\"8ca5455eeef6f8bef457d2b447d13008\"",
+    "lastModified": "Fri, 13 Nov 2026 09:44:03 GMT",
     "translatedVersion": "1.10",
     "appDataVersion": "1.10"
   },
   "history": [
+    {
+      "version": "1.10",
+      "file": "BlackDeathCity-Playtest-1.10.pdf",
+      "text": "sources/vo/BlackDeathCity-Playtest-1.10.txt",
+      "sha256": "3fa7e9cbbcecc1f58f5b684868628bc873d37314740de5d659737706159bb077"
+    },
     {
       "version": "1.03",
       "file": "BlackDeathCity-Playtest-1.03.pdf",
@@ -51,5 +57,5 @@
       "lastModified": "Sat, 03 Oct 2026 01:03:25 GMT"
     }
   },
-  "lastCheck": "2026-11-10"
+  "lastCheck": "2026-11-14"
 }
