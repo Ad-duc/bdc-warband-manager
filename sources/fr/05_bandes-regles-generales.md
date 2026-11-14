@@ -62,7 +62,7 @@ Chaque faction dispose de **listes d'équipement** (*wargear list*) pour ses com
 
 Certains combattants (*fighter*) vous permettent de leur choisir des compétences (*skill*) quand ils sont recrutés dans votre bande (*warband*). Vous en saurez plus sur les compétences (*skill*) ci-dessous.
 
-### Étape 5 - Calculer votre valeur de bande (*Step 5 - Calculate your Warband Rating*)
+### Étape 6 - Calculer votre valeur de bande (*Step 6 - Calculate your Warband Rating*)
 
 La dernière étape consiste à calculer la **valeur de bande** (*warband rating*) de votre bande (*warband*). C'est un indicateur de la puissance de votre bande (*warband*), que vous mettrez à jour après chaque bataille de la campagne.
 
@@ -134,7 +134,7 @@ Ajoutez 1 aux jets d'attaque (*attack roll*) des attaques à distance (*ranged a
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.10.
+Les numéros de page sont ceux imprimés dans la VO v1.10, sauf pour les notes marquées (v1.11).
 
 - p. 49 : le bandeau de la VO indique "Chapter Four" et le chiffre romain "IV". Le paragraphe d'ambiance, en gras italique, est rendu en gras.
 - p. 49 : la VO écrit "On page xx" et "Page xx" en toutes lettres : rendu par "à la page xx" et "page xx".
@@ -157,3 +157,4 @@ Les numéros de page sont ceux imprimés dans la VO v1.10.
 - p. 50 : "lanceur de sorts" (spellcaster) est ajouté au glossaire comme terme général. Les trois termes originaux de la phrase sont en minuscules, comme dans la VO.
 - p. 51 : dans "until they are removed from your warband", "they" est compris comme le premier combattant, celui qui possède déjà la compétence.
 - p. 50 (v1.10) : Limite de 15 combattants : "You cannot recruit more than 15 fighters in total".
+- p. 51 à 52 (v1.11) : le chapitre est décalé de 2 pages par l'ajout du scénario VII. L'étape "Calculate your Warband Rating" porte enfin le numéro 6 dans son titre ("Step 5" jusqu'en v1.10, en double avec "Pick Skills").

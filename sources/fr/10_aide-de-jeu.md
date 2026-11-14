@@ -232,3 +232,4 @@ Seule la p. 133 porte un numéro imprimé dans ce lot ; les autres numéros sont
 - p. 135 : le champ "Jars of Canal Leeches" figure au bas de l'encadré du butin, sans aucune règle associée dans la v1.03 : traduit tel quel.
 - p. 136 à 140 : les abréviations des profils sont celles de ton glossaire (Mvt, Lam, Arc, Arm, Ini, Vlt, Vie, Por, Att, Perf, Dég) ; "Crit" et "Exp" sont identiques en VO et en VF.
 - p. 168 (v1.10) : ajout du rappel du trait Arme d'hast (*Polearm*). L'aide de jeu, la feuille de bande et les cartes forment désormais le chapitre 6, Références (p. 167 à 174).
+- p. 172 (v1.11) : le chapitre est décalé de 4 pages (p. 171 à 178). Table des renforts : la coquille "more and than 6"" est corrigée ("and more than 6""). L'aide de jeu n'est pas mise à jour par l'auteur pour les règles de la v1.11 (jet de course, jet de charge, Mouvement de consolidation, infériorité numérique) : rien n'est ajouté.

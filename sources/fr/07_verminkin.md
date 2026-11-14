@@ -1038,7 +1038,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.10.
+Les numéros de page sont ceux imprimés dans la VO v1.10, sauf pour les notes marquées (v1.11).
 
 - Ensemble du lot : même mise en forme que pour les Mercenaires de la Guilde (*Guild Mercenaries*). Les encadrés en grille (origines p. 74, repaires p. 75) sont lus ligne par ligne ; les listes de l'armurerie (p. 78) colonne par colonne : Liste principale, Liste des Rats-mutants (*Rat-Mutant*), Liste des Champions, Liste des Artificiers, Liste des Engins, Liste des Praticiens ; les armures, les objets et les compétences colonne de gauche puis colonne de droite.
 - Ensemble du lot : quand tous les mots-clés d'un combattant sont identiques en VO et en VF (Champion vermineux (*Verminkin Champion*), Apprenti assassin (*Assassin's Apprentice*), Apprenti artificier (*Sparkseer's Apprentice*), Rat-mutant (*Rat-Mutant*)), ils ne sont pas répétés entre parenthèses.
@@ -1090,3 +1090,4 @@ Les numéros de page sont ceux imprimés dans la VO v1.10.
 - p. 77 (v1.10) : l'Engin roulant porte désormais "0-1" dans la liste (l'origine Cabale du Maître artificier autorise toujours 0-2).
 - p. 79 (v1.10) : Hallebarde ensorcelée à 48 pa ; elle, la Hallebarde et la Lance gagnent Arme d'hast (*Polearm*), les deux hallebardes perdent Encombrant.
 - p. 85 (v1.10) : Trop rusé pour mourir : "Injury table" remplace "lasting injury table".
+- p. 79 à 96 (v1.11) : la faction est décalée de 4 pages. Corrections de la VO sans effet en VF : "3" or more" (Courir les toits), "Roll off", "Your Verminkin", "its Rend value" (Gonflage), "a Crushing Bulk melee weapon", "set up".

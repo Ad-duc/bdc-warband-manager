@@ -1,6 +1,6 @@
-# Black Death City - Playtest v1.10 : glossaire VO > VF
+# Black Death City - Playtest v1.11 : glossaire VO > VF
 
-Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné. Mis à jour le 13/10/2026 (version 6) : noms de factions, mots-clés de faction et nom commun "coven" traduits (décision H17). Mis à jour le 14/10/2026 (version 7) : Wizard devient Magicien (décision H18). Mis à jour le 14/10/2026 (version 8) : noms de combattants traduits (décision H19). Mis à jour le 15/10/2026 (version 9) : Vermigènes devient Vermineux (décision H20), Prêtre Véroleux devient Prêtre Véroleux (décision H21). Mis à jour le 26/10/2026 (version 10) : 14 termes de l'avant-première du chapitre Campagne (Curiosités, Explorer la Cité), marqués "Ajout avant-première Campagne", à confirmer à la parution. Mis à jour le 10/11/2026 (version 11) : 176 termes du chapitre 5, Campagnes, de la v1.10 (possessions, séquence d'après-bataille, curiosités, reliques), marqués "Ajout v1.10". Mis à jour le 10/11/2026 (version 12) : 59 termes des chapitres 01 à 10 de la v1.10 (améliorations de repaire et leurs règles, mot-clé Demi-humain), marqués "Ajout v1.10".
+Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les ajouts des lots 01 à 10 (version 4), puis mis à jour le 12/10/2026 pour la v1.03 du livre (version 5, ajouts marqués "Ajout v1.03"). Aucun terme validé n'a été modifié : les ajouts sont les termes nouveaux et les variantes d'écriture de la VO rencontrés pendant la traduction. Chacun porte la mention "Ajout du lot NN" dans sa remarque et figure aussi à la fin du lot concerné. Mis à jour le 13/10/2026 (version 6) : noms de factions, mots-clés de faction et nom commun "coven" traduits (décision H17). Mis à jour le 14/10/2026 (version 7) : Wizard devient Magicien (décision H18). Mis à jour le 14/10/2026 (version 8) : noms de combattants traduits (décision H19). Mis à jour le 15/10/2026 (version 9) : Vermigènes devient Vermineux (décision H20), Prêtre Véroleux devient Prêtre Véroleux (décision H21). Mis à jour le 26/10/2026 (version 10) : 14 termes de l'avant-première du chapitre Campagne (Curiosités, Explorer la Cité), marqués "Ajout avant-première Campagne", à confirmer à la parution. Mis à jour le 10/11/2026 (version 11) : 176 termes du chapitre 5, Campagnes, de la v1.10 (possessions, séquence d'après-bataille, curiosités, reliques), marqués "Ajout v1.10". Mis à jour le 10/11/2026 (version 12) : 59 termes des chapitres 01 à 10 de la v1.10 (améliorations de repaire et leurs règles, mot-clé Demi-humain), marqués "Ajout v1.10". Mis à jour le 14/11/2026 (version 13) : 31 termes de la v1.11 (jets de course et de charge, Mouvement de consolidation, infériorité numérique, marques de victoire, scénario VII Les Salles en ruine, tables de noms de la Guilde), marqués "Ajout v1.11", à valider ; les scénarios V et VI échangent leur numéro.
 
 ## Ligne directrice
 
@@ -18,7 +18,7 @@ Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les aj
 
 ## Mode d'emploi
 
-- Le glossaire compte 1391 entrées réparties en 27 catégories. Il est trié par catégorie, puis par ordre alphabétique de la VO.
+- Le glossaire compte 1422 entrées réparties en 27 catégories. Il est trié par catégorie, puis par ordre alphabétique de la VO.
 - "Imposé" : terme repris tel quel de ton glossaire de départ.
 - "VO conservée" : terme laissé en anglais. Depuis les décisions H17 et H19, les noms de factions, leurs mots-clés et les noms de combattants sont traduits, avec le terme anglais entre parenthèses à chaque occurrence.
 - "Tranché (Hn)" : point que tu as arbitré. "Voir Hn" : entrée qui découle de cette décision.
@@ -33,7 +33,7 @@ Glossaire validé le 10/10/2026 (version 3), complété le 11/10/2026 par les aj
 | H2 | Vampyre, Werwulf | Vampire, Loup-garou |
 | H3 | Aristocrat, Assassin, Bat, Beastman, Dog, Knight, Skeleton | Aristocrate, Assassin, Chauve-souris, Homme-bête, Chien, Chevalier, Squelette |
 | H4 | Doom / doomed | Fatalité / frappé de fatalité |
-| H5 | the hit (scénario V) | la Proie |
+| H5 | the hit (scénario VI) | la Proie |
 | H6 | Ambusher, Attacker, Defender (rôles de scénario) | Embusqué, Assaillant, Défenseur |
 | H7 | Full-Plate | Armure de plates |
 | H8 | Arbalest | Arbalète lourde |
@@ -374,11 +374,13 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Begin the Battle | Commencer la bataille | Séquence de jeu | Étape 6 de la mise en place. |
 | bonus action | action bonus | Séquence de jeu | Imposé. Dans un titre de règle : [Action bonus]. |
 | Charge Move | Charge | Séquence de jeu | Imposé. |
+| charge roll | jet de charge | Séquence de jeu | Ajout v1.11. Dé ajouté à la valeur de Mouvement lors d'une Charge (p. 20). |
 | charged | a chargé | Séquence de jeu | "The fighter is said to have charged." |
 | climb | escalader | Séquence de jeu | Imposé. Nom : escalade. |
 | Climbing (heading) | Escalade | Séquence de jeu | Ajout du lot 03. Rubrique p. 22 ; l'état "climbing" reste "en train d'escalader". |
 | Climbing a Ladder | Escalader une échelle | Séquence de jeu | Ajout du lot 03. Rubrique p. 22. |
 | Climbing High Terrain | Escalader un terrain haut | Séquence de jeu | Ajout du lot 03. Rubrique p. 22. |
+| consolidation move | Mouvement de consolidation | Séquence de jeu | Ajout v1.11. Mouvement de 3" au plus quand une Charge ne peut pas aboutir (p. 20). |
 | Determine Prepared Spells | Déterminer les sorts préparés | Séquence de jeu | Étape 4 de la mise en place. |
 | Determine Scenario | Déterminer le scénario | Séquence de jeu | Ajout du lot 10. Forme abrégée de l'aide de jeu pour "Determine the Scenario". |
 | Determine the Scenario | Déterminer le scénario | Séquence de jeu | Étape 2 de la mise en place. |
@@ -427,6 +429,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | round | round | Séquence de jeu | Imposé. |
 | Round Sequence | Séquence du round | Séquence de jeu |  |
 | Run Move | Course | Séquence de jeu | Imposé. |
+| run roll | jet de course | Séquence de jeu | Ajout v1.11. Dé ajouté à la valeur de Mouvement lors d'une Course (p. 20). |
 | scatter | dévier | Séquence de jeu | Imposé. Nom : déviation. |
 | Scattering | Déviation | Séquence de jeu | Ajout du lot 02. Rubrique p. 8. |
 | Scattering Across Terrain | Dévier à travers un décor | Séquence de jeu | Ajout du lot 03. Sous-règle de la déviation (p. 22). |
@@ -458,7 +461,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | disorientated | désorienté | États et situations | Effet du sort Cri de chauve-souris. |
 | doomed | frappé de fatalité | États et situations | Tranché (H4). Effet du sort Fatalité. Ni "maudit" (cursed) ni "condamné" (condemned). |
 | drawn power | pouvoir puisé | États et situations | "has drawn power" = a puisé du pouvoir. |
-| drunk | soûl | États et situations | Rebondissement Soûl comme une grive (scénario V). "sober up" = dessoûler. |
+| drunk | soûl | États et situations | Rebondissement Soûl comme une grive (scénario VI). "sober up" = dessoûler. |
 | engaged | engagé | États et situations | Ajout du lot 06. Forme courte de "engaged in melee" (Lanterne/Torche, p. 62). |
 | engaged in melee | engagé au corps à corps | États et situations | Imposé. "engaged" seul = engagé ; "unengaged" = non engagé. |
 | entwined | empêtré | États et situations | Effet de l'objet Filet. |
@@ -478,6 +481,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | mesmerised | hypnotisé | États et situations | Effet de la compétence Regard hypnotique. |
 | mire | bourbier | États et situations | Ajout du lot 09. Effet du sort Bourbier noir. |
 | obscured | masqué | États et situations | Imposé. |
+| outnumbered | en infériorité numérique | États et situations | Ajout v1.11. "outnumbered by 2" = en infériorité numérique de 2 (p. 23). |
 | pit | fosse | États et situations | Ajout du lot 09. Effet du sort Fosse de peste. |
 | poisoned | empoisonné | États et situations | Imposé. |
 | protective shroud | linceul protecteur | États et situations | Effet du sort Linceul protecteur. |
@@ -516,7 +520,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | flame template | gabarit de flamme | Combat | Imposé. |
 | Flash-in-the-Pan | Long feu | Combat | Tranché (H11). Résultat 3-6 du jet d'incident de tir : l'amorce brûle sans que le coup parte. |
 | heal | soigner | Combat | "they heal 1 life point" = il est soigné de 1 point de vie. Nom : soin. |
-| hit | touche | Combat | Imposé. Verbe : toucher. Ne pas confondre avec "the hit" du scénario V. |
+| hit | touche | Combat | Imposé. Verbe : toucher. Ne pas confondre avec "the hit" du scénario VI. |
 | hit (verb) | toucher | Combat | Ajout du lot 02. Le nom "hit" reste "touche" (imposé). |
 | hit roll | jet pour toucher | Combat | Une seule occurrence (p. 64) : incohérence de la VO pour "attack roll", traduite telle quelle et signalée en note. |
 | initiative (melee) | initiative | Combat | "has the initiative" = a l'initiative. En minuscule, par opposition à la valeur d'Initiative. |
@@ -536,6 +540,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | No Critical Hits | Pas de touches critiques | Combat | Ajout v1.03. Sous-règle du gabarit d'explosion (p. 31). |
 | off-hand attack | attaque de main secondaire | Combat |  |
 | off-hand weapon | arme de main secondaire | Combat |  |
+| Outnumbered | Infériorité numérique | Combat | Ajout v1.11. Rubrique de l'étape 4 de l'action d'Attaque au corps à corps. |
 | parry | parade | Combat | Imposé. Verbe : parer. |
 | parry (verb) | parer | Combat | Ajout du lot 03. Le nom "parry" reste "parade" (imposé). |
 | parry roll | jet de parade | Combat | Imposé. |
@@ -659,26 +664,29 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
-| Ambusher | Embusqué | Scénarios : termes généraux | Tranché (H6). Rôle du scénario V, avec majuscule. |
+| Ambusher | Embusqué | Scénarios : termes généraux | Tranché (H6). Rôle du scénario VI, avec majuscule. |
 | Arrival | Arrivée | Scénarios : termes généraux | Résultat 3-5 de la table des renforts. |
 | Arriving Reinforcements | Arrivée des renforts | Scénarios : termes généraux | Rubrique de scénario. |
-| Attacker | Assaillant | Scénarios : termes généraux | Tranché (H6). Rôle du scénario VI, avec majuscule. "attaquant" (imposé) reste réservé à "attacking fighter". |
+| Attacker | Assaillant | Scénarios : termes généraux | Tranché (H6). Rôle du scénario V, avec majuscule. "attaquant" (imposé) reste réservé à "attacking fighter". |
 | battle group | groupe de combat | Scénarios : termes généraux | Imposé. |
 | Bonus Experience | Expérience bonus | Scénarios : termes généraux | Rubrique de scénario. |
 | chapel | chapelle | Scénarios : termes généraux | Zone du scénario IV. |
 | chest | coffre | Scénarios : termes généraux |  |
 | claim (treasure) | revendiquer | Scénarios : termes généraux |  |
 | control (a quarter) | contrôler | Scénarios : termes généraux |  |
-| death mark | marque de mort | Scénarios : termes généraux |  |
+| courtyard | cour | Scénarios : termes généraux | Ajout v1.11. Zone centrale du scénario VII. |
+| death mark | marque de mort | Scénarios : termes généraux | N'apparaît plus dans la v1.11 (remplacé par "victory mark"). |
 | Defender | Défenseur | Scénarios : termes généraux | Tranché (H6). Rôle des scénarios V et VI, avec majuscule ; "la bande du Défenseur" en cas de doute avec le défenseur d'une attaque. |
 | Deployment | Déploiement | Scénarios : termes généraux | Rubrique de scénario. |
-| domination mark | marque de domination | Scénarios : termes généraux |  |
+| domination mark | marque de domination | Scénarios : termes généraux | En v1.11, ne subsiste que dans les rebondissements 3, 4 et 5 du scénario III. |
 | drop (treasure) | lâcher | Scénarios : termes généraux |  |
 | During the Battle | Pendant la bataille | Scénarios : termes généraux | Rubrique de scénario. |
 | entry point | point d'entrée | Scénarios : termes généraux | Imposé. |
 | escape (with treasure) | s'échapper | Scénarios : termes généraux |  |
-| escape battlefield edge | bord d'évasion | Scénarios : termes généraux | Scénario V. Forme longue : bord d'évasion du champ de bataille. |
+| escape battlefield edge | bord d'évasion | Scénarios : termes généraux | Scénario VI. Forme longue : bord d'évasion du champ de bataille. |
+| estate | domaine | Scénarios : termes généraux | Ajout v1.11. Scénario VII ; comme Domaine forestier (*Woodland Estate*). |
 | exploration roll | jet d'exploration | Scénarios : termes généraux | Règle de campagne citée dans les scénarios et les compétences. |
+| hall | salle | Scénarios : termes généraux | Ajout v1.11. Zone du scénario VII. |
 | home quarter | quartier de départ | Scénarios : termes généraux | "origine" est réservé à "origin". Voir H14. |
 | mark | marque | Scénarios : termes généraux | Marque attribuée par un scénario (par exemple être la Proie). |
 | No Control Area | Zone sans contrôle | Scénarios : termes généraux | Légende du schéma du scénario III. |
@@ -697,9 +705,10 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | scenario | scénario | Scénarios : termes généraux | Imposé. |
 | Scenario Table | Table des scénarios | Scénarios : termes généraux |  |
 | score | obtenir | Scénarios : termes généraux | Points de victoire, marques de mort, marques de domination. "marquer" donnerait "marquer 1 marque de domination". |
+| search (a hall) | fouiller | Scénarios : termes généraux | Ajout v1.11. Scénario VII ; comme "search the City". |
 | search party | groupe de fouille | Scénarios : termes généraux | "search the City" = fouiller la Cité. |
-| the hit | la Proie | Scénarios : termes généraux | Tranché (H5). Scénario V : le combattant visé par l'embuscade. "touche" est réservé à "hit". |
-| the street | la rue | Scénarios : termes généraux | Zone du scénario V. Légende du schéma : La Rue. |
+| the hit | la Proie | Scénarios : termes généraux | Tranché (H5). Scénario VI : le combattant visé par l'embuscade. "touche" est réservé à "hit". |
+| the street | la rue | Scénarios : termes généraux | Zone du scénario VI. Légende du schéma : La Rue. |
 | The Twist | Le Rebondissement | Scénarios : termes généraux | Rubrique de scénario. |
 | treasure | trésor | Scénarios : termes généraux |  |
 | treasure table | table des trésors | Scénarios : termes généraux | Table de campagne citée p. 95. |
@@ -707,7 +716,8 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | twist | rebondissement | Scénarios : termes généraux | Imposé. |
 | twist table | table des rebondissements | Scénarios : termes généraux |  |
 | victory conditions | conditions de victoire | Scénarios : termes généraux |  |
-| victory points | points de victoire | Scénarios : termes généraux | Imposé. |
+| victory mark | marque de victoire | Scénarios : termes généraux | Ajout v1.11. Remplace les points de victoire, les marques de mort et, pour l'objectif, les marques de domination. |
+| victory points | points de victoire | Scénarios : termes généraux | Imposé. N'apparaît plus dans la v1.11 (remplacé par "victory mark"). |
 | Winning the Battle | Remporter la bataille | Scénarios : termes généraux | Rubrique de scénario. |
 
 ## 12. Scénarios : titres et objectifs
@@ -715,30 +725,35 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | VO | VF | Catégorie | Remarque |
 |---|---|---|---|
 | A Deadly Encounter | Une rencontre mortelle | Scénarios : titres et objectifs | Scénario I. |
-| Ambusher & Defender | Embusqué et Défenseur | Scénarios : titres et objectifs | Rubrique du scénario V. Voir H6. |
-| Attacker & Defender | Assaillant et Défenseur | Scénarios : titres et objectifs | Rubrique du scénario VI. Voir H6. |
-| Claim Treasure | Revendiquer les trésors | Scénarios : titres et objectifs | Objectif des scénarios II et VI. |
+| Ambusher & Defender | Embusqué et Défenseur | Scénarios : titres et objectifs | Rubrique du scénario VI. Voir H6. |
+| Attacker & Defender | Assaillant et Défenseur | Scénarios : titres et objectifs | Rubrique du scénario V. Voir H6. |
+| Claim the Halls | Revendiquer les salles | Scénarios : titres et objectifs | Ajout v1.11. Objectif du scénario VII. |
+| Claim Treasure | Revendiquer les trésors | Scénarios : titres et objectifs | Objectif des scénarios II, IV et V. |
 | Claiming Treasure | Revendiquer un trésor | Scénarios : titres et objectifs | Rubrique des règles de trésor. |
-| Death Marks | Marques de mort | Scénarios : titres et objectifs | Objectif des scénarios I et IV. |
+| Death Marks | Marques de mort | Scénarios : titres et objectifs | Objectif des scénarios I et IV. N'apparaît plus dans la v1.11 (objectif renommé "Draw Blood"). |
 | Domination | Domination | Scénarios : titres et objectifs | Objectif du scénario III. |
+| Draw Blood (objective) | Faire couler le sang | Scénarios : titres et objectifs | Ajout v1.11. Objectif des scénarios I et IV (ex "Death Marks"). "Saignée" reste le sort du domaine du Sang. |
 | Dropping Treasure | Lâcher un trésor | Scénarios : titres et objectifs | Rubrique des règles de trésor. |
-| Escape the Ambushers | Échapper aux Embusqués | Scénarios : titres et objectifs | Objectif du scénario V. Voir H6. |
-| Escaping with Treasure | S'échapper avec un trésor | Scénarios : titres et objectifs | Rubrique des règles de trésor et bonus d'expérience (scénarios II et VI). |
+| Escape the Ambushers | Échapper aux Embusqués | Scénarios : titres et objectifs | Objectif du scénario VI. Voir H6. |
+| Escaping with Treasure | S'échapper avec un trésor | Scénarios : titres et objectifs | Rubrique des règles de trésor et bonus d'expérience (scénarios II et V). |
 | First Blood | Premier sang | Scénarios : titres et objectifs | Bonus d'expérience du scénario I. |
 | First to Step Inside | Premier à entrer | Scénarios : titres et objectifs | Bonus d'expérience du scénario IV. |
 | Fleeing with Treasure | Partir en déroute avec un trésor | Scénarios : titres et objectifs | Rubrique des règles de trésor. |
 | Glimmers in the Dark | Lueurs dans les ténèbres | Scénarios : titres et objectifs | Scénario II. |
 | Hold Ground | Tenir le terrain | Scénarios : titres et objectifs | Bonus d'expérience du scénario III. |
 | Hold the Centre | Tenir le centre | Scénarios : titres et objectifs | Objectif du scénario I. |
-| No Easy Way Out | Aucune issue facile | Scénarios : titres et objectifs | Règle du scénario V. |
+| No Easy Way Out | Aucune issue facile | Scénarios : titres et objectifs | Règle du scénario VI. |
 | No Quarter | Pas de quartier | Scénarios : titres et objectifs | Scénario III. Le double sens repose sur H14. |
-| Picking up Treasure | Ramasser un trésor | Scénarios : titres et objectifs | Rubrique des règles de trésor et du scénario VI. |
+| Picking up Treasure | Ramasser un trésor | Scénarios : titres et objectifs | Rubrique des règles de trésor et du scénario V. |
 | Prying Off the Sarcophagus Lid | Forcer le couvercle du sarcophage | Scénarios : titres et objectifs | Bonus d'expérience du scénario IV. "pry off the lid" = forcer le couvercle. |
-| Street of Death | La Rue de la mort | Scénarios : titres et objectifs | Scénario V. |
+| Ruined Halls | Les Salles en ruine | Scénarios : titres et objectifs | Ajout v1.11. Scénario VII. |
+| Searching a Hall | Fouiller une salle | Scénarios : titres et objectifs | Ajout v1.11. Bonus d'expérience du scénario VII. |
+| Searching the Halls | Fouiller les salles | Scénarios : titres et objectifs | Ajout v1.11. Rubrique du scénario VII. |
+| Street of Death | La Rue de la mort | Scénarios : titres et objectifs | Scénario VI. |
 | The Chapel | La Chapelle | Scénarios : titres et objectifs | Scénario IV. |
-| The Find | La Trouvaille | Scénarios : titres et objectifs | Scénario VI. |
-| The Hit & Battle Groups | La Proie et les groupes de combat | Scénarios : titres et objectifs | Rubrique du scénario V. Voir H5. |
-| To The Hit or the Hitter | À la Proie ou au Tueur | Scénarios : titres et objectifs | Bonus d'expérience du scénario V. Voir H5. |
+| The Find | La Trouvaille | Scénarios : titres et objectifs | Scénario V. |
+| The Hit & Battle Groups | La Proie et les groupes de combat | Scénarios : titres et objectifs | Rubrique du scénario VI. Voir H5. |
+| To The Hit or the Hitter | À la Proie ou au Tueur | Scénarios : titres et objectifs | Bonus d'expérience du scénario VI. Voir H5. |
 | Unclaimed Treasure | Trésor non revendiqué | Scénarios : titres et objectifs | Rubrique des règles de trésor. |
 
 ## 13. Rebondissements et tables de scénario
@@ -749,52 +764,65 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | A Hidden Trove | Un trésor caché | Rebondissements et tables de scénario | Scénario IV, rebondissement 1. |
 | A Modest Find | Une modeste trouvaille | Rebondissements et tables de scénario | Table du coffre, résultat 2-5. |
 | A Stash of Silver | Un butin de pièces d'argent | Rebondissements et tables de scénario | Table du coffre, résultat 6. |
-| Barricaded Holdout | Retranchement barricadé | Rebondissements et tables de scénario | Scénario VI, rebondissement 3. |
+| Alchemist's Estate | Domaine de l'alchimiste | Rebondissements et tables de scénario | Ajout v1.11. Scénario VII, rebondissement 2. |
+| Barricaded Holdout | Retranchement barricadé | Rebondissements et tables de scénario | Scénario V, rebondissement 3. |
 | Battle for the Tower | Bataille pour la tour | Rebondissements et tables de scénario | Scénario I, rebondissement 2. |
 | Beggar's Desperation | Le Désespoir du mendiant | Rebondissements et tables de scénario | Scénario II, rebondissement 4. |
+| Blackpowder Storage Room | Réserve de poudre noire | Rebondissements et tables de scénario | Ajout v1.11. Table de la Maison de guilde, résultat 1. |
 | blaze | brasier | Rebondissements et tables de scénario | Deuxième stade de l'incendie (rebondissement En feu). |
 | Blood Frenzy | Frénésie sanguinaire | Rebondissements et tables de scénario | Table de la Terre profanée, résultat 5. |
 | Coin Purse | Bourse | Rebondissements et tables de scénario | Table du sarcophage, résultat 5. |
 | Condemned | Condamné | Rebondissements et tables de scénario | Scénario I, rebondissement 5. |
 | critical quarter | quartier critique | Rebondissements et tables de scénario | Scénario III, rebondissement 5. Voir H14. |
 | Cursed Coin | Pièce maudite | Rebondissements et tables de scénario | Scénario II, rebondissement 1. |
-| Defiant Stand | Résistance acharnée | Rebondissements et tables de scénario | Scénario VI, rebondissement 2. |
-| Delayed Arrival | Arrivée retardée | Rebondissements et tables de scénario | Rebondissement 4 des scénarios I et VI. |
+| Defiant Stand | Résistance acharnée | Rebondissements et tables de scénario | Scénario V, rebondissement 2. |
+| Delayed Arrival | Arrivée retardée | Rebondissements et tables de scénario | Rebondissement 4 du scénario V ; jusqu'en v1.10, aussi rebondissement 4 du scénario I. |
 | Desecrated Ground | Terre profanée | Rebondissements et tables de scénario | Scénario IV, rebondissement 2. |
-| Drunk as an Eel | Soûl comme une grive | Rebondissements et tables de scénario | Scénario V, rebondissement 1. Équivalent idiomatique ; littéralement "soûl comme une anguille". |
+| Drunk as an Eel | Soûl comme une grive | Rebondissements et tables de scénario | Scénario VI, rebondissement 1. Équivalent idiomatique ; littéralement "soûl comme une anguille". |
+| Eager for Blood | Avides de sang | Rebondissements et tables de scénario | Ajout v1.11. Scénario I, rebondissement 4. |
 | Empty All Along | Vide depuis toujours | Rebondissements et tables de scénario | Table du coffre, résultat 1. |
+| Encircle | Encerclement | Rebondissements et tables de scénario | Ajout v1.11. Scénario I, rebondissement 3. |
 | False Riches | Fausses richesses | Rebondissements et tables de scénario | Scénario II, rebondissement 2. |
 | forsaken quarter | quartier abandonné | Rebondissements et tables de scénario | Scénario III, rebondissement 3. Voir H14. |
 | Grass sprouts | L'herbe pousse | Rebondissements et tables de scénario | Table de la Terre profanée, résultat 4. |
-| Heavy Downpour | Pluie battante | Rebondissements et tables de scénario | Scénario V, rebondissement 2. |
+| Guild Hall | Maison de guilde | Rebondissements et tables de scénario | Ajout v1.11. Scénario VII, rebondissement 3. Siège de l'une des guildes de la Cité, pas de la Guilde. |
+| Guildmaster's Office | Bureau du maître de guilde | Rebondissements et tables de scénario | Ajout v1.11. Table de la Maison de guilde, résultat 6. |
+| Heavy Downpour | Pluie battante | Rebondissements et tables de scénario | Scénario VI, rebondissement 2. |
 | Heavy Rain | Forte pluie | Rebondissements et tables de scénario | Table de la Terre profanée, résultat 3. |
 | Heirloom | Relique de famille | Rebondissements et tables de scénario | Table du sarcophage, résultat 6. La VO le décrit comme une relique et renvoie à la table des reliques. |
-| Hidden Tunnel | Tunnel caché | Rebondissements et tables de scénario | Scénario V, rebondissement 4. |
+| Hidden Tunnel | Tunnel caché | Rebondissements et tables de scénario | Scénario VI, rebondissement 4. |
+| Hidden Vault | Chambre forte cachée | Rebondissements et tables de scénario | Ajout v1.11. Table du Domaine de l'alchimiste, résultat 6. |
 | inferno | fournaise | Rebondissements et tables de scénario | Troisième stade de l'incendie (rebondissement En feu). |
+| Infested with Rot | Infestée par la Pourriture | Rebondissements et tables de scénario | Ajout v1.11. Table de l'Hospice de pestiférés, résultat 1-3. |
 | Light Rain | Pluie fine | Rebondissements et tables de scénario | Table de la Terre profanée, résultat 1-2. |
-| Old Debt Collector's House | La Maison du vieux collecteur de dettes | Rebondissements et tables de scénario | Scénario VI, rebondissement 6. La VO peut aussi se lire "la vieille maison du collecteur de dettes". |
-| On Fire | En feu | Rebondissements et tables de scénario | Scénario VI, rebondissement 1. |
-| Outflank (twist) | Débordement | Rebondissements et tables de scénario | Scénario I, rebondissement 3 ; même VF que le résultat de la table des renforts. |
+| Mundane Hall | Salle ordinaire | Rebondissements et tables de scénario | Ajout v1.11. Tables du Domaine de l'alchimiste (3-5) et de la Maison de guilde (3). |
+| Old Debt Collector's House | La Maison du vieux collecteur de dettes | Rebondissements et tables de scénario | Scénario V, rebondissement 6. La VO peut aussi se lire "la vieille maison du collecteur de dettes". |
+| On Fire | En feu | Rebondissements et tables de scénario | Scénario V, rebondissement 1. |
+| Outflank (twist) | Débordement | Rebondissements et tables de scénario | Scénario I, rebondissement 3 ; même VF que le résultat de la table des renforts. Rebondissement supprimé en v1.11 (remplacé par "Encircle"). |
+| Plague Hospice | Hospice de pestiférés | Rebondissements et tables de scénario | Ajout v1.11. Scénario VII, rebondissement 1. |
+| Poison Trap | Piège empoisonné | Rebondissements et tables de scénario | Ajout v1.11. Table du Domaine de l'alchimiste, résultat 1. |
 | rain roll | jet de pluie | Rebondissements et tables de scénario | Rebondissement L'orage menace (scénario I). |
 | Rolling Fog | Nappes de brouillard | Rebondissements et tables de scénario | Scénario III, rebondissement 1. |
 | Rotten Black Mulch | Terreau noir pourri | Rebondissements et tables de scénario | Table du sarcophage, résultat 2-4. |
 | Saint Trickster's Game | Le Jeu de Saint Farceur | Rebondissements et tables de scénario | Scénario II, rebondissement 5. |
 | Saint's Statue | La Statue du Saint | Rebondissements et tables de scénario | Scénario III, rebondissement 6. |
-| Shadows Lurk Above | Des ombres rôdent en hauteur | Rebondissements et tables de scénario | Scénario V, rebondissement 5. |
+| Shadows Lurk Above | Des ombres rôdent en hauteur | Rebondissements et tables de scénario | Scénario VI, rebondissement 5. |
 | Show of Strength | Démonstration de force | Rebondissements et tables de scénario | Scénario III, rebondissement 2. |
 | smouldering | couvant | Rebondissements et tables de scénario | Premier stade de l'incendie (rebondissement En feu). |
-| Surrounded on All Sides | Encerclés de toutes parts | Rebondissements et tables de scénario | Scénario VI, rebondissement 5. |
+| Stripped Hall | Salle dépouillée | Rebondissements et tables de scénario | Ajout v1.11. Tables du Domaine de l'alchimiste et de la Maison de guilde, résultat 2. |
+| Surrounded on All Sides | Encerclés de toutes parts | Rebondissements et tables de scénario | Scénario V, rebondissement 5. |
 | The Chest | Le Coffre | Rebondissements et tables de scénario | Scénario I, rebondissement 6. |
 | The Critical Quarter | Le Quartier critique | Rebondissements et tables de scénario | Scénario III, rebondissement 5. Voir H14. |
 | The Forsaken Quarter | Le Quartier abandonné | Rebondissements et tables de scénario | Scénario III, rebondissement 3. Voir H14. |
 | The Saint's Sarcophagus | Le Sarcophage du Saint | Rebondissements et tables de scénario | Scénario IV, rebondissement 3. |
 | Thieves in the Dark | Voleurs dans les ténèbres | Rebondissements et tables de scénario | Scénario II, rebondissement 3. Reprend "dans les ténèbres" du titre du scénario. |
 | Thunder Claps | Coups de tonnerre | Rebondissements et tables de scénario | Table de la Terre profanée, résultat 6. |
-| Tip-off | Avertissement | Rebondissements et tables de scénario | Scénario V, rebondissement 6. |
+| Tip-off | Avertissement | Rebondissements et tables de scénario | Scénario VI, rebondissement 6. |
+| Treasure Chamber | Salle du trésor | Rebondissements et tables de scénario | Ajout v1.11. Table de la Maison de guilde, résultat 4-5. |
 | Turf War | Guerre de territoire | Rebondissements et tables de scénario | Scénario III, rebondissement 4. |
 | Unholy Curse | Malédiction impie | Rebondissements et tables de scénario | Table du sarcophage, résultat 1. |
 | Upturned Wagon | Chariot renversé | Rebondissements et tables de scénario | Scénario II, rebondissement 6. |
-| Vow of Blood | Serment de sang | Rebondissements et tables de scénario | Scénario V, rebondissement 3. |
+| Vow of Blood | Serment de sang | Rebondissements et tables de scénario | Scénario VI, rebondissement 3. |
 
 ## 14. Campagne et feuille de bande
 
@@ -858,6 +886,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | exploration re-roll | relance d'exploration | Campagne et feuille de bande | Ajout avant-première Campagne (p. 137-156). |
 | Exploration Table | table d'exploration | Campagne et feuille de bande | Ajout v1.10. |
 | Fated | Élu du destin | Campagne et feuille de bande | Ajout v1.10. Jet de progression, 6. |
+| Female Names | Prénoms féminins | Campagne et feuille de bande | Ajout v1.11. Table D66 des Mercenaires de la Guilde ; contenu non traduit. |
 | Fighters Lost | Combattants perdus | Campagne et feuille de bande | Champ de la feuille de bande. |
 | forfeit | abandonner | Campagne et feuille de bande | Ajout v1.10. Abandonner une possession. |
 | Former Leader | Ancien Chef | Campagne et feuille de bande |  |
@@ -897,6 +926,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | level | niveau | Campagne et feuille de bande | "advance levels" = gagner des niveaux. |
 | level of Black Rot | niveau de Pourriture noire | Campagne et feuille de bande | Règle de campagne à venir (case "Black Rot" de la feuille de bande). |
 | Major Relics | Reliques majeures | Campagne et feuille de bande | Ajout v1.10. Table des reliques, 41-46. |
+| Male Names | Prénoms masculins | Campagne et feuille de bande | Ajout v1.11. Table D66 des Mercenaires de la Guilde ; contenu non traduit. |
 | Merchant's Warehouse | Entrepôt du marchand | Campagne et feuille de bande | Ajout v1.10. Possession 63. |
 | Minor Relics | Reliques mineures | Campagne et feuille de bande | Ajout v1.10. Table des reliques, 11-36. |
 | Moneylender's House | Maison du prêteur | Campagne et feuille de bande | Ajout v1.10. Possession 35. |
@@ -940,6 +970,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | standard injury table | table des blessures standard | Campagne et feuille de bande |  |
 | stronghold level | niveau de repaire | Campagne et feuille de bande | Ajout v1.10. |
 | stronghold upgrade | amélioration de repaire | Campagne et feuille de bande | Ajout v1.10. Validé le 09/11/2026. |
+| Surnames | Noms de famille | Campagne et feuille de bande | Ajout v1.11. Table D66 des Mercenaires de la Guilde ; contenu non traduit. |
 | Surviving | Survivre | Campagne et feuille de bande | Ajout v1.10. Gain d'expérience. |
 | Swarm of Rats | Nuée de rats | Campagne et feuille de bande | Ajout v1.10. Exploration 41. |
 | Tainted Well | Puits souillé | Campagne et feuille de bande | Ajout v1.10. Possession 42. |
@@ -1277,7 +1308,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Hand Crossbow | Arbalète de poing | Armes à distance |  |
 | Heavy Gatling Gun | Gatling lourde | Armes à distance |  |
 | Heirloom Duelling Pistol | Pistolet de duel de famille | Armes à distance | Ajout v1.10. Relique 51. |
-| Long Bow | Arc long | Armes à distance |  |
+| Longbow | Arc long | Armes à distance | Écrit "Long Bow" jusqu'en v1.10. |
 | Long Rifle | Fusil long | Armes à distance |  |
 | Ogre Arbalest | Arbalète lourde d'ogre | Armes à distance | Ajout v1.03. Liste des Ogres de la Guilde ; remplace l'Arbalète lourde dans cette liste. |
 | Ogre Cannon | Canon d'ogre | Armes à distance |  |
@@ -1288,7 +1319,7 @@ Entrées alignées sur la ligne directrice en dehors des points arbitrés, y com
 | Repeater Crossbow | Arbalète à répétition | Armes à distance | Ajout v1.10. Relique 53. |
 | Repeater Pistol | Pistolet à répétition | Armes à distance |  |
 | Rocket Launcher | Lance-roquettes | Armes à distance |  |
-| Short Bow | Arc court | Armes à distance |  |
+| Shortbow | Arc court | Armes à distance | Écrit "Short Bow" jusqu'en v1.10. |
 | Sling | Fronde | Armes à distance |  |
 | Throwing Stars | Étoiles de jet | Armes à distance |  |
 | Volley Rifle | Fusil à salves | Armes à distance |  |

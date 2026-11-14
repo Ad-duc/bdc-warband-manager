@@ -11,9 +11,22 @@
 Les changements notables du projet sont listés ici. Le format suit
 [Keep a Changelog 1.1.0](https://keepachangelog.com/fr/1.1.0/) et le projet
 applique le [versionnage sémantique](https://semver.org/lang/fr/spec/v2.0.0.html).
-La version des règles du jeu est indiquée à part (version de test 1.10).
+La version des règles du jeu est indiquée à part (version de test 1.11).
 
 ## [Non publié]
+
+### Ajouté
+
+- Scénarios : nouveau scénario VII, Les Salles en ruine, avec ses trois rebondissements et leurs tables de fouille (version de test 1.11).
+- Liseuse des règles : nouveau chapitre "Modifications de la v1.11", qui liste ce que change la version de test 1.11.
+- Mercenaires de la Guilde : les noms au hasard utilisent désormais les trois tables du livre, prénoms masculins, prénoms féminins et noms de famille (un prénom suivi d'un nom de famille).
+
+### Modifié
+
+- Passage à la version de test 1.11 de Black Death City : traduction française, glossaire (31 nouveaux termes) et données mis à jour. Principaux changements de règles : jets de course et de charge, Mouvement de consolidation après une charge qui ne peut pas atteindre d'ennemi, règle d'infériorité numérique au corps à corps, marques de victoire dans tous les scénarios.
+- Scénarios : La Trouvaille devient le scénario V et La Rue de la mort le scénario VI ; un 6 sur la table des scénarios demande un second dé (1-3 La Rue de la mort, 4-6 Les Salles en ruine), que l'assistant de bataille lance de lui-même. Tous les scénarios suivent les objectifs, les rounds et les rebondissements de la v1.11.
+- Mercenaires de la Guilde : le Carreau explosif peut aussi être acheté dans la Liste des Chasseurs de sorcières. Le Cloître gangrené : Familier démoniaque à 30 pa partout.
+- Les numéros de page affichés dans l'application suivent le livre de la v1.11.
 
 ## [1.4.0] - 2026-11-11
 

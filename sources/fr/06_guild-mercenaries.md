@@ -209,8 +209,8 @@ Pendant la campagne, les bandes (*warband*) de Mercenaires de la Guilde (*Guild 
 | Tromblon (*Blunderbuss*) | 14 pa |
 | Arbalète (*Crossbow*) | 20 pa |
 | Arbalète de poing (*Hand Crossbow*) | 16 pa |
-| Arc long (*Long Bow*) | 26 pa |
-| Arc court (*Short Bow*) | 16 pa |
+| Arc long (*Longbow*) | 26 pa |
+| Arc court (*Shortbow*) | 16 pa |
 
 **Armures (*Armour*)**
 
@@ -329,6 +329,7 @@ Pendant la campagne, les bandes (*warband*) de Mercenaires de la Guilde (*Guild 
 |---|---|
 | Lanterne/Torche (*Lantern/Torch*) | 4 pa |
 | Pieux en bois (*Wooden Stakes*) | 5 pa |
+| Carreau explosif (*Bomb-bolt*) | 25 pa |
 
 ### Liste des Magiciens (*Wizard List*)
 
@@ -406,13 +407,13 @@ Voir les règles complètes aux pages xx-xx.
 | Bombes incendiaires (*Fire Bombs*) | 8" | 1 | - | 1D3+1 | - | Explosion (*Blast*), Usage unique (*One-use*), Rare 0-1, Effroi (*Scare*) | 34 pa |
 | Lance-flammes (*Flamethrower*) | Flamme (*Flame*) | 1 | - | 1D3+1 | - | Flamme (*Flame*), Rare 0-1, Rechargement (*Reload*), Effroi (*Scare*), À deux mains (*Two-handed*) | 80 pa |
 | Arbalète de poing (*Hand Crossbow*) | 12" | 1 | - | 1 | 1D6 | Rechargement (*Reload*) | 16 pa |
-| Arc long (*Long Bow*) | 28" | 1 | -1 | 1D3 | 1D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 26 pa |
+| Arc long (*Longbow*) | 28" | 1 | -1 | 1D3 | 1D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 26 pa |
 | Fusil long (*Long Rifle*) | 30" | 1 | -2 | 2 | 1D6+2 | Lourd (*Heavy*), Incident de tir (*Misfire*), À deux mains (*Two-handed*) | 70 pa |
 | Arbalète lourde d'ogre (*Ogre Arbalest*) | 24" | 1 | -2 | 3 | 1D6+2 | Rare 0-1, Rechargement (*Reload*), À deux mains (*Two-handed*) | 90 pa |
 | Canon d'ogre (*Ogre Cannon*) | 18" | 1 | -3 | 1D6+1 | - | Explosion (*Blast*), Incident de tir (*Misfire*), Rare 0-1, Rechargement (*Reload*), À deux mains (*Two-handed*) | 112 pa |
 | Pistolet d'ogre (*Ogre Pistol*) | 16" | 1 | -1 | 3 | 1D6+2 | Incident de tir (*Misfire*), Rechargement (*Reload*) | 30 pa |
 | Pistolet à répétition (*Repeater Pistol*) | 12" | 1 | -1 | 2 | 1D6+1 | Incident de tir (*Misfire*) | 30 pa |
-| Arc court (*Short Bow*) | 16" | 1 | - | 1 | 1D6 | À deux mains (*Two-handed*) | 16 pa |
+| Arc court (*Shortbow*) | 16" | 1 | - | 1 | 1D6 | À deux mains (*Two-handed*) | 16 pa |
 | Fusil à salves (*Volley Rifle*) | 16" | 3 | -1 | 2 | 1D6+1 | Incident de tir (*Misfire*), Rare 0-1, Rechargement (*Reload*), À deux mains (*Two-handed*), Salve (*Volley*) | 75 pa |
 
 **Rappels des traits d'armes (*Weapon Trait Reminders*)**
@@ -744,16 +745,40 @@ Une fois par bataille, au début d'une action d'Attaque au corps à corps (*Mele
 
 ## Noms des Mercenaires de la Guilde (*Guild Mercenary Names*)
 
-Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) des Mercenaires de la Guilde (*Guild Mercenaries*).
+Vous pouvez utiliser les tables ci-dessous pour générer rapidement le nom d'un combattant (*fighter*) des Mercenaires de la Guilde (*Guild Mercenaries*).
+
+### Prénoms masculins (*Male Names*)
 
 | D66 | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
 | 10 | Adalbert | Albrecht | Anton | Augustin | Balthasar | Benedikt |
 | 20 | Berthold | Dietrich | Eberhard | Erasmus | Fabian | Friedrich |
-| 30 | Georg | Gregor | Hans | Heinrich | Hieronymus | Isenbert |
+| 30 | Gormen | Gregor | Hans | Heinrich | Hieronymus | Isenbert |
 | 40 | Jakob | Johannes | Jörg | Karl | Kaspar | Kristof |
 | 50 | Konrad | Leonhard | Lorenz | Ludwig | Matthias | Nikolaus |
 | 60 | Oswald | Otto | Ulrich | Valentin | Wilhelm | Wolfram |
+
+### Prénoms féminins (*Female Names*)
+
+| D66 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| 10 | Adelheid | Amalia | Barbel | Brunhild | Catharina | Elsbeth |
+| 20 | Else | Esmeralda | Frieda | Fuchsia | Gretel | Griselda |
+| 30 | Helene | Hildegund | Ida | Isolde | Josepha | Kriemhild |
+| 40 | Liesel | Magdalena | Maria | Melusine | Nettle | Ottilia |
+| 50 | Perchta | Rosamund | Rosenrot | Rosina | Seraphia | Sibylla |
+| 60 | Therese | Ursula | Veronika | Viktoria | Wilhelmine | Zelda |
+
+### Noms de famille (*Surnames*)
+
+| D66 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| 10 | Acker | Amman | Ashenwald | Bader | Blackpike | Bleakwater |
+| 20 | Brandhart | Candlemurk | Cinders | Crowhurst | Dammerhart | Dunkelforst |
+| 30 | Eberhart | Eelbeck | Eisenmark | Falkenstein | Finstergruft | Frey |
+| 40 | Gallowsmann | Glaser | Grimwald | Hartmann | Ironghast | Kessel |
+| 50 | Lepermann | Maidenwald | Nachtwalt | Piper | Rabenstein | Rattleberg |
+| 60 | Schwarz | Sootwell | Totenforst | Vogt | Widowmark | Wormwurz |
 
 ## Parchemins de combattants des Mercenaires de la Guilde (*Guild Mercenaries Fighter Scrolls*)
 
@@ -1011,7 +1036,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.10.
+Les numéros de page sont ceux imprimés dans la VO v1.10, sauf pour les notes marquées (v1.11).
 
 - Ensemble du lot : les encadrés disposés en grille (origines p. 54, repaires p. 55) sont lus ligne par ligne, ce qui garde le même ordre pour les origines, les repaires et les chefs. Les listes de l'armurerie (p. 58) sont lues colonne par colonne : Liste principale, Liste d'armement, Liste des Champions, Liste des Ogres, Liste des Clercs, Liste des Chasseurs de sorcières (*Witch Hunter*), Liste des Magiciens.
 - Ensemble du lot : les citations des combattants sont en anglais ancien et en caractères gothiques dans la VO. Elles sont rendues en français d'aujourd'hui.
@@ -1071,3 +1096,6 @@ Les numéros de page sont ceux imprimés dans la VO v1.10.
 - p. 59-60 (v1.10) : Hallebarde et Lance gagnent Arme d'hast (*Polearm*), la Hallebarde et la Grande arme d'ogre perdent Encombrant ; Arc long à 28" et Dégâts 1D3.
 - p. 61 (v1.10) : objets tenus : règle remplacée (interdits avec une arme à deux mains, sauf arme d'hast). La VO place désormais le prix sur la ligne des mots-clés ; la VF garde le prix dans le titre.
 - p. 63 et 72 (v1.10) : Instinct d'explorateur et Pisteurs parlent de "scouting party" (groupe d'éclaireurs) et de relance d'exploration ; "search party" (groupe de fouille) disparaît.
+- p. 60 (v1.11) : le Carreau explosif (*Bomb-bolt*) figure désormais aussi dans la Liste des Chasseurs de sorcières, en plus de la Liste d'armement. La VO écrit "Longbow" et "Shortbow" en un mot : terme original mis à jour, VF inchangée.
+- p. 75 (v1.11) : la page des noms passe à la fin de la faction, après les parchemins, et compte trois tables D66 : "Male Names" (Georg y est remplacé par Gormen), "Female Names" et "Surnames", rendus par Prénoms masculins, Prénoms féminins et Noms de famille. Leur contenu n'est pas traduit, comme convenu. La section garde sa place dans ce fichier.
+- p. 56 à 66 (v1.11) : corrections de la VO sans effet en VF : "You must recruit a Noble", "You must recruit a High Wizard", "Up to 3 Henchmen", "In step 6", "a Demon or Undead fighter" (Pieux en bois), "Critical Cast [10+]".

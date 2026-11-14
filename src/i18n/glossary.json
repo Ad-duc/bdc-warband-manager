@@ -1348,6 +1348,11 @@
       "category": "05"
     },
     {
+      "vo": "charge roll",
+      "vf": "jet de charge",
+      "category": "05"
+    },
+    {
       "vo": "charged",
       "vf": "a chargé",
       "category": "05"
@@ -1370,6 +1375,11 @@
     {
       "vo": "Climbing High Terrain",
       "vf": "Escalader un terrain haut",
+      "category": "05"
+    },
+    {
+      "vo": "consolidation move",
+      "vf": "Mouvement de consolidation",
       "category": "05"
     },
     {
@@ -1613,6 +1623,11 @@
       "category": "05"
     },
     {
+      "vo": "run roll",
+      "vf": "jet de course",
+      "category": "05"
+    },
+    {
       "vo": "scatter",
       "vf": "dévier",
       "category": "05"
@@ -1840,6 +1855,11 @@
     {
       "vo": "obscured",
       "vf": "masqué",
+      "category": "06"
+    },
+    {
+      "vo": "outnumbered",
+      "vf": "en infériorité numérique",
       "category": "06"
     },
     {
@@ -2105,6 +2125,11 @@
     {
       "vo": "off-hand weapon",
       "vf": "arme de main secondaire",
+      "category": "07"
+    },
+    {
+      "vo": "Outnumbered",
+      "vf": "Infériorité numérique",
       "category": "07"
     },
     {
@@ -2673,6 +2698,11 @@
       "category": "11"
     },
     {
+      "vo": "courtyard",
+      "vf": "cour",
+      "category": "11"
+    },
+    {
       "vo": "death mark",
       "vf": "marque de mort",
       "category": "11"
@@ -2718,8 +2748,18 @@
       "category": "11"
     },
     {
+      "vo": "estate",
+      "vf": "domaine",
+      "category": "11"
+    },
+    {
       "vo": "exploration roll",
       "vf": "jet d'exploration",
+      "category": "11"
+    },
+    {
+      "vo": "hall",
+      "vf": "salle",
       "category": "11"
     },
     {
@@ -2813,6 +2853,11 @@
       "category": "11"
     },
     {
+      "vo": "search (a hall)",
+      "vf": "fouiller",
+      "category": "11"
+    },
+    {
       "vo": "search party",
       "vf": "groupe de fouille",
       "category": "11"
@@ -2863,6 +2908,11 @@
       "category": "11"
     },
     {
+      "vo": "victory mark",
+      "vf": "marque de victoire",
+      "category": "11"
+    },
+    {
       "vo": "victory points",
       "vf": "points de victoire",
       "category": "11"
@@ -2888,6 +2938,11 @@
       "category": "12"
     },
     {
+      "vo": "Claim the Halls",
+      "vf": "Revendiquer les salles",
+      "category": "12"
+    },
+    {
       "vo": "Claim Treasure",
       "vf": "Revendiquer les trésors",
       "category": "12"
@@ -2905,6 +2960,11 @@
     {
       "vo": "Domination",
       "vf": "Domination",
+      "category": "12"
+    },
+    {
+      "vo": "Draw Blood (objective)",
+      "vf": "Faire couler le sang",
       "category": "12"
     },
     {
@@ -2973,6 +3033,21 @@
       "category": "12"
     },
     {
+      "vo": "Ruined Halls",
+      "vf": "Les Salles en ruine",
+      "category": "12"
+    },
+    {
+      "vo": "Searching a Hall",
+      "vf": "Fouiller une salle",
+      "category": "12"
+    },
+    {
+      "vo": "Searching the Halls",
+      "vf": "Fouiller les salles",
+      "category": "12"
+    },
+    {
       "vo": "Street of Death",
       "vf": "La Rue de la mort",
       "category": "12"
@@ -3023,6 +3098,11 @@
       "category": "13"
     },
     {
+      "vo": "Alchemist's Estate",
+      "vf": "Domaine de l'alchimiste",
+      "category": "13"
+    },
+    {
       "vo": "Barricaded Holdout",
       "vf": "Retranchement barricadé",
       "category": "13"
@@ -3035,6 +3115,11 @@
     {
       "vo": "Beggar's Desperation",
       "vf": "Le Désespoir du mendiant",
+      "category": "13"
+    },
+    {
+      "vo": "Blackpowder Storage Room",
+      "vf": "Réserve de poudre noire",
       "category": "13"
     },
     {
@@ -3088,8 +3173,18 @@
       "category": "13"
     },
     {
+      "vo": "Eager for Blood",
+      "vf": "Avides de sang",
+      "category": "13"
+    },
+    {
       "vo": "Empty All Along",
       "vf": "Vide depuis toujours",
+      "category": "13"
+    },
+    {
+      "vo": "Encircle",
+      "vf": "Encerclement",
       "category": "13"
     },
     {
@@ -3105,6 +3200,16 @@
     {
       "vo": "Grass sprouts",
       "vf": "L'herbe pousse",
+      "category": "13"
+    },
+    {
+      "vo": "Guild Hall",
+      "vf": "Maison de guilde",
+      "category": "13"
+    },
+    {
+      "vo": "Guildmaster's Office",
+      "vf": "Bureau du maître de guilde",
       "category": "13"
     },
     {
@@ -3128,13 +3233,28 @@
       "category": "13"
     },
     {
+      "vo": "Hidden Vault",
+      "vf": "Chambre forte cachée",
+      "category": "13"
+    },
+    {
       "vo": "inferno",
       "vf": "fournaise",
       "category": "13"
     },
     {
+      "vo": "Infested with Rot",
+      "vf": "Infestée par la Pourriture",
+      "category": "13"
+    },
+    {
       "vo": "Light Rain",
       "vf": "Pluie fine",
+      "category": "13"
+    },
+    {
+      "vo": "Mundane Hall",
+      "vf": "Salle ordinaire",
       "category": "13"
     },
     {
@@ -3150,6 +3270,16 @@
     {
       "vo": "Outflank (twist)",
       "vf": "Débordement",
+      "category": "13"
+    },
+    {
+      "vo": "Plague Hospice",
+      "vf": "Hospice de pestiférés",
+      "category": "13"
+    },
+    {
+      "vo": "Poison Trap",
+      "vf": "Piège empoisonné",
       "category": "13"
     },
     {
@@ -3193,6 +3323,11 @@
       "category": "13"
     },
     {
+      "vo": "Stripped Hall",
+      "vf": "Salle dépouillée",
+      "category": "13"
+    },
+    {
       "vo": "Surrounded on All Sides",
       "vf": "Encerclés de toutes parts",
       "category": "13"
@@ -3230,6 +3365,11 @@
     {
       "vo": "Tip-off",
       "vf": "Avertissement",
+      "category": "13"
+    },
+    {
+      "vo": "Treasure Chamber",
+      "vf": "Salle du trésor",
       "category": "13"
     },
     {
@@ -3543,6 +3683,11 @@
       "category": "14"
     },
     {
+      "vo": "Female Names",
+      "vf": "Prénoms féminins",
+      "category": "14"
+    },
+    {
       "vo": "Fighters Lost",
       "vf": "Combattants perdus",
       "category": "14"
@@ -3735,6 +3880,11 @@
     {
       "vo": "Major Relics",
       "vf": "Reliques majeures",
+      "category": "14"
+    },
+    {
+      "vo": "Male Names",
+      "vf": "Prénoms masculins",
       "category": "14"
     },
     {
@@ -3950,6 +4100,11 @@
     {
       "vo": "stronghold upgrade",
       "vf": "amélioration de repaire",
+      "category": "14"
+    },
+    {
+      "vo": "Surnames",
+      "vf": "Noms de famille",
       "category": "14"
     },
     {
@@ -5488,7 +5643,7 @@
       "category": "20"
     },
     {
-      "vo": "Long Bow",
+      "vo": "Longbow",
       "vf": "Arc long",
       "category": "20"
     },
@@ -5543,7 +5698,7 @@
       "category": "20"
     },
     {
-      "vo": "Short Bow",
+      "vo": "Shortbow",
       "vf": "Arc court",
       "category": "20"
     },

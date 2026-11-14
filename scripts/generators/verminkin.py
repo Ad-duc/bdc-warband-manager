@@ -1,7 +1,7 @@
 """
 File:     scripts/generators/verminkin.py
 Role:     Builds the Verminkin faction data from 07_verminkin.md (French texts
-          extracted and cleaned) and the English playtest v1.10 texts typed
+          extracted and cleaned) and the English playtest v1.11 texts typed
           below (typos fixed, see RULES_ASSUMPTIONS.md D03).
 Author:   Adrien Duclaud
 Created:  2026-10-12

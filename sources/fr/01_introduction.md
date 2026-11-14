@@ -2,7 +2,7 @@
 
 Par Sam Pearson
 
-Version de test v1.10
+Version de test v1.11
 
 > Sentez-vous le vent sur votre visage, voyageur ?
 >
@@ -149,7 +149,7 @@ Le dernier chapitre est rempli de tables et de tableaux de référence rapide. U
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.10 (la couverture n'est pas numérotée).
+Les numéros de page sont ceux imprimés dans la VO v1.11 (la couverture n'est pas numérotée).
 
 - Tout le lot : le terme original suit chaque terme de jeu traduit, à chaque occurrence, y compris dans l'épigraphe. Les titres de sections donnent le titre original complet. Je n'ai pas marqué le vocabulaire courant qui n'est pas un terme de jeu : version de test, document de test, numéro de version, journal des modifications, mètre ruban, tapis de jeu, dés à 6 ou 12 faces, jeu d'escarmouche, liste.
 - Tout le lot : trois mots courants de la VO sont aussi des termes de jeu ("hidden" p. 3, "priority" p. 2, "take turns" p. 6). Ils sont employés ici dans leur sens ordinaire : je les ai rendus par "dissimulées", "en premier" et "en alternance", pour réserver "caché", "priorité" et "tour" aux termes de jeu.
@@ -168,3 +168,4 @@ Les numéros de page sont ceux imprimés dans la VO v1.10 (la couverture n'est p
 - p. 5 : la page ne contient que le titre et les quatre blasons des factions. Les noms de factions restent en VO.
 - p. 6 : le "Chapter 5 - Campaigns" présenté ici existe depuis la v1.10 (fichier `12_campagne.md`).
 - p. 2 (v1.10) : la rubrique "Et ensuite ?" annonce désormais de nouvelles factions (huit au total) ; la mention du journal des modifications du site disparaît de "Numéros de version".
+- p. 2 à 6 (v1.11) : corrections de ponctuation et d'orthographe de la VO ("venture within the City", "burned-down", "the game: how measuring works"), sans effet en VF.

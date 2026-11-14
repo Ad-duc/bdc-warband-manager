@@ -535,6 +535,15 @@ export const SpellLoreSchema = z
   .strict();
 export type SpellLore = z.infer<typeof SpellLoreSchema>;
 
+/** D66 table of names, keys "11" to "66". Names are not translated. */
+export const NameTableSchema = z
+  .object({
+    die: z.literal("d66"),
+    entries: z.record(z.string().regex(/^[1-6][1-6]$/), z.string().min(1)),
+    sourceRef: SourceRefSchema,
+  })
+  .strict();
+
 export const FactionDataSchema = z
   .object({
     _header: FileHeaderSchema,
@@ -546,13 +555,11 @@ export const FactionDataSchema = z
     origins: z.array(OriginSchema).min(1),
     strongholds: z.array(StrongholdSchema),
     strongholdUpgrades: z.array(StrongholdUpgradeSchema),
-    nameTable: z
-      .object({
-        die: z.literal("d66"),
-        entries: z.record(z.string().regex(/^[1-6][1-6]$/), z.string().min(1)),
-        sourceRef: SourceRefSchema,
-      })
-      .strict(),
+    nameTable: NameTableSchema,
+    /** Book D66 table of female names, when the faction has one (Guild Mercenaries since v1.11). */
+    femaleNameTable: NameTableSchema.nullable().default(null),
+    /** Book D66 table of surnames, when the faction has one (Guild Mercenaries since v1.11). */
+    surnameTable: NameTableSchema.nullable().default(null),
     /** Optional D66 epithets for renowned fighters (Blighted Cloister), translated. */
     epithetTable: z
       .object({
@@ -938,6 +945,13 @@ export function checkFactionIntegrity(faction: FactionData, common: CommonData):
 
   const d66 = Object.keys(faction.nameTable.entries);
   if (d66.length !== 36) problems.push(`Name table: expected 36 entries, found ${d66.length}`);
+  for (const [label, table] of [
+    ["Female name table", faction.femaleNameTable],
+    ["Surname table", faction.surnameTable],
+  ] as const) {
+    const count = Object.keys(table?.entries ?? {}).length;
+    if (table !== null && count !== 36) problems.push(`${label}: expected 36 entries, found ${count}`);
+  }
   const epithets = Object.keys(faction.epithetTable?.entries ?? {}).length;
   if (faction.epithetTable !== null && epithets !== 36)
     problems.push(`Epithet table: expected 36 entries, found ${epithets}`);

@@ -122,8 +122,8 @@ test("the print view lists every chapter in book order", async ({ page }) => {
   ).toBeVisible();
   const book = page.getByTestId("rules-book");
   await expect(book).toBeVisible();
-  await expect(book.getByText("Règles de la version de test 1.10", { exact: true })).toBeVisible();
-  await expect(page.getByTestId("rules-book-chapter")).toHaveCount(14);
+  await expect(book.getByText("Règles de la version de test 1.11", { exact: true })).toBeVisible();
+  await expect(page.getByTestId("rules-book-chapter")).toHaveCount(15);
   await expect(
     page.getByTestId("rules-book-chapter").nth(2).getByRole("heading", { level: 1 }),
   ).toContainText("Chapitre 2 - Batailles");
