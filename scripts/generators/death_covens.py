@@ -1,7 +1,7 @@
 """
 File:     scripts/generators/death_covens.py
 Role:     Builds the Death Covens faction data from 08_death-covens.md (French
-          texts extracted and cleaned) and the English playtest v1.10 texts
+          texts extracted and cleaned) and the English playtest v1.11 texts
           typed below (typos fixed, see RULES_ASSUMPTIONS.md D03).
 Author:   Adrien Duclaud
 Created:  2026-10-12
@@ -234,8 +234,8 @@ def build(md_path):
     ]
     RNG = "Armurerie de la Cabale - Armes à distance"
     for gid, en, fr, cost, rng, rend, dmg, traits in (
-        ("long-bow", "Long Bow", "Arc long", 26, 28, -1, "d3", ["heavy", "two-handed"]),
-        ("short-bow", "Short Bow", "Arc court", 16, 16, 0, 1, ["two-handed"]),
+        ("long-bow", "Longbow", "Arc long", 26, 28, -1, "d3", ["heavy", "two-handed"]),
+        ("short-bow", "Shortbow", "Arc court", 16, 16, 0, 1, ["two-handed"]),
     ):
         wargear.append(gear(src, gid, en, fr, "ranged", cost, 99, RNG, traits=tr(*traits),
                             profile={"range": rng, "attacks": 1, "rend": rend, "damage": dmg, "critDamage": "d6"}))
@@ -389,10 +389,11 @@ def build(md_path):
         ("manservant", "Manservant", "henchman", ["henchman", "demi-human"], 45, 3, (5, 4, 6, 6, 3, 3, 4), ["main"],
          [], (20, "d6"), [], (0, 0, None), [],
          "This fighter can be equipped with wargear from the Main List from the Coven Armoury.", "Yes, m'lord?", 110),
-        # The scroll only names the Main List; the Skeleton Warrior List is given too (RULES_ASSUMPTIONS.md, A52).
+        # Since v1.11 the scroll names the Skeleton Warrior List too (RULES_ASSUMPTIONS.md, A52).
         ("skeleton-warrior", "Skeleton Warrior", "henchman", ["henchman", "undead", "skeleton", "thrall"], 40, None,
          (4, 4, 4, 6, 3, 2, 4), ["main", "skeleton-warrior"], [], (0, None), [], (0, 0, None), [UNSHAKEABLE],
-         "This fighter can be equipped with wargear from the Main List from the Coven Armoury.", None, 110),
+         "This fighter can be equipped with wargear from the Main List and the Skeleton Warrior List from the Coven "
+         "Armoury.", None, 110),
         ("zombie", "Zombie", "henchman", ["henchman", "undead", "zombie", "thrall"], 35, None, (4, 5, 6, 6, 1, 2, 4), [],
          ["zombie-bite"], (0, None), [], (0, 0, None), [UNSHAKEABLE],
          "This fighter is equipped with a zombie bite (see below), they cannot be equipped with any other wargear.",
@@ -491,8 +492,8 @@ def build(md_path):
             ("supernatural-healing", "Supernatural Healing", "Guérison surnaturelle",
              "This fighter cannot suffer permanent injuries. If they suffer an injury it is always temporary (pg xx).\n"
              "In addition, if this fighter is killed, you can immediately make a Willpower test for them. If passed, "
-             "they are not killed but miss the next d3 battles as they slumber. Pick a Champion in your warband to "
-             "assume command in their absence (pg xx)."),
+             "they are not killed but miss the next d3 battles as they slumber. If they are your Leader, pick a "
+             "Champion in your warband to assume command in their absence (pg xx)."),
             ("leech-blood", "Leech Blood", "Drain de sang",
              "Once per battle, this fighter can use the following bonus action:\n"
              "Leech Blood [Bonus Action]: Each enemy fighter within 9\" of this fighter must take a Willpower test. If "

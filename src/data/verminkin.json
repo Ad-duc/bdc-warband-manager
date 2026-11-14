@@ -14,7 +14,7 @@
     "fr": "Loin sous la Cité s'étend un labyrinthe de tunnels et de vieux égouts : le territoire des Vermineux. C'est une race d'hommes-rats sournois, depuis longtemps déformés par les sombres sorcelleries qui montent du gouffre du néant, en contrebas. La destruction de la Cité les a enhardis au point de se montrer enfin : ils déferlent dans les rues d'en haut pour s'y tailler leur part.\nCréatures d'embuscade et de tromperie, les Vermineux préfèrent agir depuis l'ombre : ils épient leurs ennemis et attendent qu'ils aient le dos tourné pour frapper.\nCette nature fourbe a peut-être évité à la Cité d'être entièrement submergée, car les Vermineux trahissent les leurs aussi vite que leurs ennemis, et les luttes intestines acharnées ne sont pas rares entre les différentes factions, chacune cherchant à se hisser, à coups de griffes, au-dessus des autres."
   },
   "armouryName": { "en": "Verminkin Armoury", "fr": "Armurerie des Vermineux" },
-  "sourceRef": { "page": 73, "md": "07_verminkin.md > Vermineux" },
+  "sourceRef": { "page": 77, "md": "07_verminkin.md > Vermineux" },
   "assets": { "shield": "bouclier_verminkin.webp", "accentColor": null },
 
   "origins": [
@@ -29,7 +29,7 @@
       "strongholdId": "desecrated-chapel",
       "specialRules": [],
       "profileLimits": [{ "fighterId": "pox-priests-apprentice", "limit": 2 }],
-      "sourceRef": { "page": 74, "md": "07_verminkin.md > Acolytes de la peste" }
+      "sourceRef": { "page": 78, "md": "07_verminkin.md > Acolytes de la peste" }
     },
     {
       "id": "rooftop-runners",
@@ -42,7 +42,7 @@
       "strongholdId": "hidden-vantage",
       "specialRules": [],
       "profileLimits": [],
-      "sourceRef": { "page": 74, "md": "07_verminkin.md > Coureurs des toits" }
+      "sourceRef": { "page": 78, "md": "07_verminkin.md > Coureurs des toits" }
     },
     {
       "id": "sparkseer-coven",
@@ -55,7 +55,7 @@
       "strongholdId": "rickety-workshop",
       "specialRules": [],
       "profileLimits": [{ "fighterId": "rolling-contraption", "limit": 2 }],
-      "sourceRef": { "page": 74, "md": "07_verminkin.md > Cabale du Maître artificier" }
+      "sourceRef": { "page": 78, "md": "07_verminkin.md > Cabale du Maître artificier" }
     },
     {
       "id": "merciless-tyrant",
@@ -68,7 +68,7 @@
       "strongholdId": "fortified-warren",
       "specialRules": [],
       "profileLimits": [],
-      "sourceRef": { "page": 74, "md": "07_verminkin.md > Tyran impitoyable" }
+      "sourceRef": { "page": 78, "md": "07_verminkin.md > Tyran impitoyable" }
     }
   ],
 
@@ -101,7 +101,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 75, "md": "07_verminkin.md > Chapelle profanée" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Chapelle profanée" }
     },
     {
       "id": "hidden-vantage",
@@ -122,7 +122,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 75, "md": "07_verminkin.md > Poste d'observation caché" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Poste d'observation caché" }
     },
     {
       "id": "rickety-workshop",
@@ -152,7 +152,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 75, "md": "07_verminkin.md > Atelier branlant" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Atelier branlant" }
     },
     {
       "id": "fortified-warren",
@@ -173,7 +173,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 75, "md": "07_verminkin.md > Terrier fortifié" }
+      "sourceRef": { "page": 79, "md": "07_verminkin.md > Terrier fortifié" }
     }
   ],
 
@@ -196,7 +196,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 76, "md": "07_verminkin.md > Empoisonneur captif" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Empoisonneur captif" }
     },
     {
       "id": "breeding-pens",
@@ -216,7 +216,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 76, "md": "07_verminkin.md > Enclos d'élevage" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Enclos d'élevage" }
     },
     {
       "id": "warlocks-den",
@@ -236,7 +236,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 76, "md": "07_verminkin.md > Antre du sorcier" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Antre du sorcier" }
     },
     {
       "id": "splicer",
@@ -256,7 +256,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 76, "md": "07_verminkin.md > Greffeur" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Greffeur" }
     },
     {
       "id": "rooftop-ratways",
@@ -276,7 +276,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 76, "md": "07_verminkin.md > Passerelles des toits" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Passerelles des toits" }
     },
     {
       "id": "smugglers-den",
@@ -296,12 +296,12 @@
           }
         }
       ],
-      "sourceRef": { "page": 76, "md": "07_verminkin.md > Repaire de contrebandiers" }
+      "sourceRef": { "page": 80, "md": "07_verminkin.md > Repaire de contrebandiers" }
     }
   ],
   "nameTable": {
     "die": "d66",
-    "sourceRef": { "page": 86, "md": "07_verminkin.md > Noms des Vermineux" },
+    "sourceRef": { "page": 90, "md": "07_verminkin.md > Noms des Vermineux" },
     "entries": {
       "11": "Bizzrecht",
       "12": "Bratzik",
@@ -372,7 +372,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie des Vermineux."
       },
       "quote": { "en": "Scurry forth, and bear the Black Rot!", "fr": "Élancez-vous, et portez la Pourriture noire !" },
-      "sourceRef": { "page": 87, "md": "07_verminkin.md > Prêtre Véroleux" }
+      "sourceRef": { "page": 91, "md": "07_verminkin.md > Prêtre Véroleux" }
     },
     {
       "id": "nightfang-assassin",
@@ -412,7 +412,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie des Vermineux."
       },
       "quote": { "en": "Splatter the cobbles with their blood!", "fr": "Éclaboussez les pavés de leur sang !" },
-      "sourceRef": { "page": 87, "md": "07_verminkin.md > Assassin Croc-de-Nuit" }
+      "sourceRef": { "page": 91, "md": "07_verminkin.md > Assassin Croc-de-Nuit" }
     },
     {
       "id": "ironfang-warlord",
@@ -446,7 +446,7 @@
         "en": "Bring me the head of a Guilder, or I'll take yours!",
         "fr": "Apportez-moi la tête d'un Guildien, ou je prends la vôtre !"
       },
-      "sourceRef": { "page": 88, "md": "07_verminkin.md > Seigneur de guerre Croc-de-Fer" }
+      "sourceRef": { "page": 92, "md": "07_verminkin.md > Seigneur de guerre Croc-de-Fer" }
     },
     {
       "id": "sparkseer",
@@ -486,7 +486,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale, de la Liste des Champions et de la Liste des Artificiers de l'Armurerie des Vermineux."
       },
       "quote": { "en": "One more adjustment... just one...", "fr": "Encore un réglage... juste un..." },
-      "sourceRef": { "page": 88, "md": "07_verminkin.md > Maître artificier" }
+      "sourceRef": { "page": 92, "md": "07_verminkin.md > Maître artificier" }
     },
     {
       "id": "verminkin-warlock",
@@ -522,7 +522,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie des Vermineux."
       },
       "quote": { "en": "The void-chasm whispers to me...", "fr": "Le gouffre du néant me murmure des choses..." },
-      "sourceRef": { "page": 89, "md": "07_verminkin.md > Sorcier vermineux" }
+      "sourceRef": { "page": 93, "md": "07_verminkin.md > Sorcier vermineux" }
     },
     {
       "id": "pox-priests-apprentice",
@@ -556,7 +556,7 @@
         "en": "Bring them boils! Bring them death!",
         "fr": "Apportez-leur les furoncles ! Apportez-leur la mort !"
       },
-      "sourceRef": { "page": 89, "md": "07_verminkin.md > Apprenti véroleux" }
+      "sourceRef": { "page": 93, "md": "07_verminkin.md > Apprenti véroleux" }
     },
     {
       "id": "verminkin-champion",
@@ -587,7 +587,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie des Vermineux."
       },
       "quote": { "en": "Let not a manling live!", "fr": "Ne laissez vivre aucun de ces petits hommes !" },
-      "sourceRef": { "page": 89, "md": "07_verminkin.md > Champion vermineux" }
+      "sourceRef": { "page": 93, "md": "07_verminkin.md > Champion vermineux" }
     },
     {
       "id": "assassins-apprentice",
@@ -618,7 +618,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie des Vermineux."
       },
       "quote": { "en": "You won't see me coming, Guilder...", "fr": "Tu ne me verras pas venir, Guildien..." },
-      "sourceRef": { "page": 90, "md": "07_verminkin.md > Apprenti assassin" }
+      "sourceRef": { "page": 94, "md": "07_verminkin.md > Apprenti assassin" }
     },
     {
       "id": "sparkseers-apprentice",
@@ -652,7 +652,7 @@
         "en": "Hmmm... this screw is probably unnecessary...",
         "fr": "Hmmm... cette vis est sans doute inutile..."
       },
-      "sourceRef": { "page": 90, "md": "07_verminkin.md > Apprenti artificier" }
+      "sourceRef": { "page": 94, "md": "07_verminkin.md > Apprenti artificier" }
     },
     {
       "id": "verminkin-warrior",
@@ -673,7 +673,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie des Vermineux."
       },
       "quote": { "en": "We rise from below!", "fr": "Nous surgissons d'en bas !" },
-      "sourceRef": { "page": 91, "md": "07_verminkin.md > Guerrier vermineux" }
+      "sourceRef": { "page": 95, "md": "07_verminkin.md > Guerrier vermineux" }
     },
     {
       "id": "rat-mutant",
@@ -694,7 +694,7 @@
         "fr": "Ce combattant est équipé de l'arme de corps à corps Griffe démesurée. De plus, il peut être équipé de l'équipement de la Liste des Rats-mutants de l'Armurerie des Vermineux."
       },
       "quote": { "en": "Head... hurts...", "fr": "Tête... fait mal..." },
-      "sourceRef": { "page": 91, "md": "07_verminkin.md > Rat-mutant" }
+      "sourceRef": { "page": 95, "md": "07_verminkin.md > Rat-mutant" }
     },
     {
       "id": "rolling-contraption",
@@ -743,7 +743,7 @@
         "fr": "Ce combattant est équipé de l'arme de corps à corps Carcasse écrasante. De plus, il peut être équipé de l'équipement de la Liste des Engins de l'Armurerie des Vermineux."
       },
       "quote": { "en": "Screeeeeeeeeeeee-!", "fr": "Scriiiiiiiiiiiiii- !" },
-      "sourceRef": { "page": 92, "md": "07_verminkin.md > Engin roulant" }
+      "sourceRef": { "page": 96, "md": "07_verminkin.md > Engin roulant" }
     },
     {
       "id": "giant-rat",
@@ -764,7 +764,7 @@
         "fr": "Ce combattant est équipé d'une arme de corps à corps morsure infecte, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": null,
-      "sourceRef": { "page": 92, "md": "07_verminkin.md > Rat géant" }
+      "sourceRef": { "page": 96, "md": "07_verminkin.md > Rat géant" }
     }
   ],
 
@@ -788,7 +788,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "axe",
@@ -809,7 +809,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "club-mace-hammer",
@@ -830,7 +830,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "crushing-bulk",
@@ -851,7 +851,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 92, "md": "07_verminkin.md > Engin roulant" }
+      "sourceRef": { "page": 96, "md": "07_verminkin.md > Engin roulant" }
     },
     {
       "id": "dagger",
@@ -872,7 +872,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "ensorcelled-halberd",
@@ -893,7 +893,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "ensorcelled-weapon",
@@ -917,7 +917,7 @@
         "en": "You can use any weapon to represent the Ensorcelled Weapon.",
         "fr": "Vous pouvez utiliser n'importe quelle arme pour représenter l'Arme ensorcelée."
       },
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "flail",
@@ -938,7 +938,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "halberd",
@@ -959,7 +959,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "heavy-flail",
@@ -980,7 +980,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "iron-claw",
@@ -1001,7 +1001,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "nasty-bite",
@@ -1022,7 +1022,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 92, "md": "07_verminkin.md > Rat géant" }
+      "sourceRef": { "page": 96, "md": "07_verminkin.md > Rat géant" }
     },
     {
       "id": "oversized-claw",
@@ -1043,7 +1043,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 91, "md": "07_verminkin.md > Rat-mutant" }
+      "sourceRef": { "page": 95, "md": "07_verminkin.md > Rat-mutant" }
     },
     {
       "id": "poison-blade",
@@ -1064,7 +1064,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "rat-mutant-blade",
@@ -1085,7 +1085,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "spark-drill",
@@ -1106,7 +1106,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "spark-powered-fists",
@@ -1127,7 +1127,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "spear",
@@ -1148,7 +1148,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "sword",
@@ -1169,7 +1169,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 79, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
+      "sourceRef": { "page": 83, "md": "07_verminkin.md > Armurerie des Vermineux - Armes de corps à corps" }
     },
     {
       "id": "arc-lightning-gun",
@@ -1197,7 +1197,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
+      "sourceRef": { "page": 84, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "blackpowder-pistol",
@@ -1218,7 +1218,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
+      "sourceRef": { "page": 84, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "flame-canister",
@@ -1239,7 +1239,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
+      "sourceRef": { "page": 84, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "heavy-gatling-gun",
@@ -1266,7 +1266,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
+      "sourceRef": { "page": 84, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "long-rifle",
@@ -1287,7 +1287,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
+      "sourceRef": { "page": 84, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "orb-bombs",
@@ -1308,7 +1308,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
+      "sourceRef": { "page": 84, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "orb-launcher",
@@ -1335,7 +1335,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
+      "sourceRef": { "page": 84, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "repeater-pistol",
@@ -1356,7 +1356,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
+      "sourceRef": { "page": 84, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "rocket-launcher",
@@ -1384,7 +1384,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
+      "sourceRef": { "page": 84, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "sling",
@@ -1405,7 +1405,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
+      "sourceRef": { "page": 84, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "throwing-stars",
@@ -1426,7 +1426,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 80, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
+      "sourceRef": { "page": 84, "md": "07_verminkin.md > Armurerie des Vermineux - Armes à distance" }
     },
     {
       "id": "heavy-plating",
@@ -1450,7 +1450,7 @@
         "fr": "Soustrayez 1 à la valeur de Mouvement des combattants équipés de cette armure."
       },
       "designerNote": null,
-      "sourceRef": { "page": 81, "md": "07_verminkin.md > Blindage lourd" }
+      "sourceRef": { "page": 85, "md": "07_verminkin.md > Blindage lourd" }
     },
     {
       "id": "warded-robes",
@@ -1474,7 +1474,7 @@
         "fr": "Lancez un dé chaque fois qu'un combattant équipé de cette armure est ciblé par un sort lancé par un combattant ennemi. Sur 4+, le sort n'a aucun effet sur ce combattant."
       },
       "designerNote": null,
-      "sourceRef": { "page": 81, "md": "07_verminkin.md > Robe de protection" }
+      "sourceRef": { "page": 85, "md": "07_verminkin.md > Robe de protection" }
     },
     {
       "id": "full-plate",
@@ -1498,7 +1498,7 @@
         "fr": "Les combattants équipés de cette armure ne peuvent pas être équipés d'armes à distance à deux mains, à l'exception d'une Paire de pistolets."
       },
       "designerNote": null,
-      "sourceRef": { "page": 81, "md": "07_verminkin.md > Armure de plates" }
+      "sourceRef": { "page": 85, "md": "07_verminkin.md > Armure de plates" }
     },
     {
       "id": "bomb-rat",
@@ -1522,7 +1522,7 @@
         "fr": "Une fois par bataille, tant que ce combattant n'est pas engagé au corps à corps, il peut effectuer l'action bonus suivante :\nPlacer le rat-bombe [Action bonus] : un Rat géant est invoqué et ajouté à la bande du joueur qui contrôle le combattant. Placez le combattant Rat géant à 3\" ou moins du combattant et choisissez un nombre entre 1 et 6. Ce nombre est la longueur de mèche. Utilisez un dé posé à côté du Rat géant pour suivre la longueur de mèche.\nChaque fois que ce Rat géant est activé, lancez un dé. Si le résultat est supérieur à la longueur de mèche, la bombe explose. Si le résultat est égal ou inférieur à la longueur de mèche, le Rat géant est activé normalement et la longueur de mèche est réduite de 1 (jusqu'à un minimum de 1).\nQuand la bombe explose, le gabarit d'explosion est centré sur le Rat géant. Chaque autre combattant situé dans le gabarit est touché par l'attaque suivante, puis le Rat géant est mis hors de combat, sans compter pour les tests de déroute : Perforation -2, Dégâts 1D3.\nSi le Rat géant est mis hors de combat alors que la bombe n'a pas encore explosé, lancez un dé comme ci-dessus pour voir si elle explose ou non."
       },
       "designerNote": null,
-      "sourceRef": { "page": 81, "md": "07_verminkin.md > Rat-bombe" }
+      "sourceRef": { "page": 85, "md": "07_verminkin.md > Rat-bombe" }
     },
     {
       "id": "clan-banner",
@@ -1546,7 +1546,7 @@
         "fr": "Tant que ce combattant est sur le champ de bataille, vous pouvez relancer les tests de déroute.\nVous pouvez relancer les tests de Volonté effectués par les combattants alliés tant qu'ils sont à 12\" ou moins de ce combattant et que ce combattant est visible pour eux."
       },
       "designerNote": null,
-      "sourceRef": { "page": 81, "md": "07_verminkin.md > Bannière de clan" }
+      "sourceRef": { "page": 85, "md": "07_verminkin.md > Bannière de clan" }
     },
     {
       "id": "ensorcelled-bell",
@@ -1570,7 +1570,7 @@
         "fr": "Une fois par bataille, vous pouvez relancer un jet de fiasco effectué pour ce combattant."
       },
       "designerNote": null,
-      "sourceRef": { "page": 81, "md": "07_verminkin.md > Cloche ensorcelée" }
+      "sourceRef": { "page": 85, "md": "07_verminkin.md > Cloche ensorcelée" }
     },
     {
       "id": "gas-mask",
@@ -1591,7 +1591,7 @@
       "weaponImprovements": [],
       "text": { "en": "This fighter cannot be poisoned.", "fr": "Ce combattant ne peut pas être empoisonné." },
       "designerNote": null,
-      "sourceRef": { "page": 81, "md": "07_verminkin.md > Masque à gaz" }
+      "sourceRef": { "page": 85, "md": "07_verminkin.md > Masque à gaz" }
     },
     {
       "id": "grappling-hook",
@@ -1615,7 +1615,7 @@
         "fr": "Ce combattant peut escalader les hauts murs de la même manière que les échelles."
       },
       "designerNote": null,
-      "sourceRef": { "page": 81, "md": "07_verminkin.md > Grappin" }
+      "sourceRef": { "page": 85, "md": "07_verminkin.md > Grappin" }
     },
     {
       "id": "grimoire",
@@ -1639,7 +1639,7 @@
         "fr": "Une fois par bataille, après que ce combattant a effectué un jet de lancement, vous pouvez relancer le jet de lancement."
       },
       "designerNote": null,
-      "sourceRef": { "page": 82, "md": "07_verminkin.md > Grimoire" }
+      "sourceRef": { "page": 86, "md": "07_verminkin.md > Grimoire" }
     },
     {
       "id": "net",
@@ -1663,7 +1663,7 @@
         "fr": "Une fois par bataille, au début d'une action d'Attaque au corps à corps dans laquelle ce combattant est soit l'attaquant, soit le défenseur, il peut lancer le filet. Pour cela, il effectue un test d'Initiative. S'il le réussit, le combattant ennemi devient empêtré.\nTant qu'un combattant est empêtré, soustrayez 1 à la valeur d'Attaques de ses armes de corps à corps ; les attaques de main secondaire ne sont pas affectées. Chaque fois qu'un combattant empêtré est activé, il peut effectuer un test d'Initiative ; s'il le réussit, il n'est plus empêtré."
       },
       "designerNote": null,
-      "sourceRef": { "page": 82, "md": "07_verminkin.md > Filet" }
+      "sourceRef": { "page": 86, "md": "07_verminkin.md > Filet" }
     },
     {
       "id": "periscope",
@@ -1687,7 +1687,7 @@
         "fr": "Tant que ce combattant n'a pas effectué de Mouvement pendant la même activation, ajoutez 5\" à la valeur de Portée de ses armes à distance à deux mains, à l'exception de celles qui ont le trait d'arme Flamme."
       },
       "designerNote": null,
-      "sourceRef": { "page": 82, "md": "07_verminkin.md > Périscope" }
+      "sourceRef": { "page": 86, "md": "07_verminkin.md > Périscope" }
     },
     {
       "id": "shield",
@@ -1711,7 +1711,7 @@
         "fr": "Améliorez de 1 la valeur d'Armure de ce combattant, jusqu'à un maximum de 2+. (Par exemple, 6+ devient 5+)."
       },
       "designerNote": null,
-      "sourceRef": { "page": 82, "md": "07_verminkin.md > Bouclier" }
+      "sourceRef": { "page": 86, "md": "07_verminkin.md > Bouclier" }
     },
     {
       "id": "smoke-bomb",
@@ -1735,7 +1735,7 @@
         "fr": "Une fois par bataille, tant que ce combattant est engagé au corps à corps, il peut utiliser l'action bonus suivante :\nLâcher la bombe fumigène [Action bonus] : retirez ce combattant du champ de bataille et placez-le de nouveau entièrement à 6\" ou moins de sa position précédente et non engagé au corps à corps."
       },
       "designerNote": null,
-      "sourceRef": { "page": 82, "md": "07_verminkin.md > Bombe fumigène" }
+      "sourceRef": { "page": 86, "md": "07_verminkin.md > Bombe fumigène" }
     },
     {
       "id": "wheel-spikes",
@@ -1759,7 +1759,7 @@
         "fr": "Améliorez de 1 la valeur de Perforation de l'arme de corps à corps Carcasse écrasante de ce combattant et de l'attaque infligée par la règle spéciale Splatch !."
       },
       "designerNote": null,
-      "sourceRef": { "page": 82, "md": "07_verminkin.md > Pointes de roue" }
+      "sourceRef": { "page": 86, "md": "07_verminkin.md > Pointes de roue" }
     }
   ],
 
@@ -1767,7 +1767,7 @@
     {
       "id": "main",
       "name": { "en": "Main List", "fr": "Liste principale" },
-      "sourceRef": { "page": 78, "md": "07_verminkin.md > Liste principale" },
+      "sourceRef": { "page": 82, "md": "07_verminkin.md > Liste principale" },
       "entries": [
         { "wargearId": "axe", "cost": 16 },
         { "wargearId": "club-mace-hammer", "cost": 14 },
@@ -1791,7 +1791,7 @@
     {
       "id": "rat-mutant",
       "name": { "en": "Rat-Mutant List", "fr": "Liste des Rats-mutants" },
-      "sourceRef": { "page": 78, "md": "07_verminkin.md > Liste des Rats-mutants" },
+      "sourceRef": { "page": 82, "md": "07_verminkin.md > Liste des Rats-mutants" },
       "entries": [
         { "wargearId": "rat-mutant-blade", "cost": 36 },
         { "wargearId": "spark-drill", "cost": 62 },
@@ -1805,7 +1805,7 @@
     {
       "id": "champion",
       "name": { "en": "Champion List", "fr": "Liste des Champions" },
-      "sourceRef": { "page": 78, "md": "07_verminkin.md > Liste des Champions" },
+      "sourceRef": { "page": 82, "md": "07_verminkin.md > Liste des Champions" },
       "entries": [
         { "wargearId": "ensorcelled-halberd", "cost": 48 },
         { "wargearId": "poison-blade", "cost": 20 },
@@ -1819,7 +1819,7 @@
     {
       "id": "sparkseer",
       "name": { "en": "Sparkseer List", "fr": "Liste des Artificiers" },
-      "sourceRef": { "page": 78, "md": "07_verminkin.md > Liste des Artificiers" },
+      "sourceRef": { "page": 82, "md": "07_verminkin.md > Liste des Artificiers" },
       "entries": [
         { "wargearId": "spark-drill", "cost": 62 },
         { "wargearId": "arc-lightning-gun", "cost": 90 },
@@ -1832,7 +1832,7 @@
     {
       "id": "contraption",
       "name": { "en": "Contraption List", "fr": "Liste des Engins" },
-      "sourceRef": { "page": 78, "md": "07_verminkin.md > Liste des Engins" },
+      "sourceRef": { "page": 82, "md": "07_verminkin.md > Liste des Engins" },
       "entries": [
         { "wargearId": "dagger", "cost": 10 },
         { "wargearId": "arc-lightning-gun", "cost": 90 },
@@ -1843,7 +1843,7 @@
     {
       "id": "practitioner",
       "name": { "en": "Practitioner List", "fr": "Liste des Praticiens" },
-      "sourceRef": { "page": 78, "md": "07_verminkin.md > Liste des Praticiens" },
+      "sourceRef": { "page": 82, "md": "07_verminkin.md > Liste des Praticiens" },
       "entries": [
         { "wargearId": "arcane-staff", "cost": 10 },
         { "wargearId": "ensorcelled-weapon", "cost": 26 },
@@ -1869,7 +1869,7 @@
         "en": "Verminkin Leaders and Champions only",
         "fr": "Chefs et Champions Vermineux uniquement"
       },
-      "sourceRef": { "page": 85, "md": "07_verminkin.md > Machinations magistrales" },
+      "sourceRef": { "page": 89, "md": "07_verminkin.md > Machinations magistrales" },
       "skills": [
         {
           "id": "purveyor-of-poisons",
@@ -1878,7 +1878,7 @@
             "en": "This fighter's melee weapons gain the Poison weapon trait. If a weapon already has the Poison weapon trait, improve the Rend value of that weapon by 1 instead.",
             "fr": "Concoctions mortelles : à l'étape 6 de la séquence d'après-bataille, vous recevez 1 Fiole de poison (p. xx)."
           },
-          "sourceRef": { "page": 85, "md": "07_verminkin.md > Empoisonneur" }
+          "sourceRef": { "page": 89, "md": "07_verminkin.md > Empoisonneur" }
         },
         {
           "id": "dirty-fighter",
@@ -1887,7 +1887,7 @@
             "en": "Subtract 1 from parry rolls made by enemy fighters against attacks made by this fighter. In addition, each time an enemy fighter fails such a parry roll, that enemy fighter suffers 1 damage.",
             "fr": "Soustrayez 1 aux jets de parade effectués par les combattants ennemis contre les attaques effectuées par ce combattant. De plus, chaque fois qu'un combattant ennemi rate un tel jet de parade, ce combattant ennemi subit 1 dégât."
           },
-          "sourceRef": { "page": 85, "md": "07_verminkin.md > Combattant déloyal" }
+          "sourceRef": { "page": 89, "md": "07_verminkin.md > Combattant déloyal" }
         },
         {
           "id": "attack-attack",
@@ -1896,7 +1896,7 @@
             "en": "Once per battle, this fighter can use the following bonus action:\nAttack! Attack! [Bonus Action]: Until the end of the round, add 1 to attack rolls for melee attacks made by friendly fighters, while they are within 9\" of this fighter.",
             "fr": "Une fois par bataille, ce combattant peut utiliser l'action bonus suivante :\nÀ l'attaque ! À l'attaque ! [Action bonus] : jusqu'à la fin du round, ajoutez 1 aux jets d'attaque des attaques au corps à corps effectuées par les combattants alliés, tant qu'ils sont à 9\" ou moins de ce combattant."
           },
-          "sourceRef": { "page": 85, "md": "07_verminkin.md > À l'attaque ! À l'attaque !" }
+          "sourceRef": { "page": 89, "md": "07_verminkin.md > À l'attaque ! À l'attaque !" }
         },
         {
           "id": "too-cunning-to-die",
@@ -1905,7 +1905,7 @@
             "en": "Each time you roll on the Injury table for this fighter, you can roll twice and pick either result.",
             "fr": "Chaque fois que vous faites un jet sur la table des blessures pour ce combattant, vous pouvez faire deux jets et choisir l'un des deux résultats."
           },
-          "sourceRef": { "page": 85, "md": "07_verminkin.md > Trop rusé pour mourir" }
+          "sourceRef": { "page": 89, "md": "07_verminkin.md > Trop rusé pour mourir" }
         },
         {
           "id": "master-of-dark-science",
@@ -1914,7 +1914,7 @@
             "en": "Add 3\" to the Range value of ranged weapons friendly fighters are equipped with while they are within 6\" of this fighter. In addition, you can re-roll misfire rolls made for friendly fighters while they are within 6\" of this fighter.",
             "fr": "Ajoutez 3\" à la valeur de Portée des armes à distance dont les combattants alliés sont équipés tant qu'ils sont à 6\" ou moins de ce combattant. De plus, vous pouvez relancer les jets d'incident de tir effectués pour les combattants alliés tant qu'ils sont à 6\" ou moins de ce combattant."
           },
-          "sourceRef": { "page": 85, "md": "07_verminkin.md > Maître de la sombre science" }
+          "sourceRef": { "page": 89, "md": "07_verminkin.md > Maître de la sombre science" }
         },
         {
           "id": "from-unseen-quarter",
@@ -1923,7 +1923,7 @@
             "en": "If this fighter starts the battle in reserve, when it is set up on the battlefield for the first time they can be set up anywhere on the battlefield more than 9\" away from all enemy fighters. Then, up to 2 friendly Henchmen that are also in reserve and will be set up in the same round, can be set up anywhere on the battlefield that is within 3\" of this fighter and more than 9\" away from all enemy fighters.",
             "fr": "Si ce combattant commence la bataille en réserve, quand il est placé sur le champ de bataille pour la première fois, il peut être placé n'importe où sur le champ de bataille, à plus de 9\" de tous les combattants ennemis. Ensuite, jusqu'à 2 Hommes de main alliés qui sont aussi en réserve et qui seront placés pendant le même round peuvent être placés n'importe où sur le champ de bataille, à 3\" ou moins de ce combattant et à plus de 9\" de tous les combattants ennemis."
           },
-          "sourceRef": { "page": 85, "md": "07_verminkin.md > Venu de nulle part" }
+          "sourceRef": { "page": 89, "md": "07_verminkin.md > Venu de nulle part" }
         }
       ]
     },
@@ -1932,7 +1932,7 @@
       "name": { "en": "Tunnel Runners", "fr": "Coureurs de tunnels" },
       "eligibility": { "kind": "keywords", "anyOf": [["verminkin"]] },
       "eligibilityLabel": { "en": "Any Verminkin fighter", "fr": "N'importe quel combattant Vermineux" },
-      "sourceRef": { "page": 86, "md": "07_verminkin.md > Coureurs de tunnels" },
+      "sourceRef": { "page": 90, "md": "07_verminkin.md > Coureurs de tunnels" },
       "skills": [
         {
           "id": "impetuous",
@@ -1941,7 +1941,7 @@
             "en": "The first time this fighter makes a Move in battle, it can move an additional 1D6\".",
             "fr": "La première fois que ce combattant effectue un Mouvement au cours de la bataille, il peut se déplacer de 1D6\" supplémentaires."
           },
-          "sourceRef": { "page": 86, "md": "07_verminkin.md > Impétueux" }
+          "sourceRef": { "page": 90, "md": "07_verminkin.md > Impétueux" }
         },
         {
           "id": "wall-scrambler",
@@ -1950,7 +1950,7 @@
             "en": "This fighter can climb high terrain in the same manner as ladders. In addition, it can jump as far as its maximum move distance.",
             "fr": "Ce combattant peut escalader un terrain haut de la même manière que les échelles. De plus, il peut sauter aussi loin que la distance maximale dont il peut se déplacer."
           },
-          "sourceRef": { "page": 86, "md": "07_verminkin.md > Grimpeur de murs" }
+          "sourceRef": { "page": 90, "md": "07_verminkin.md > Grimpeur de murs" }
         },
         {
           "id": "ambush",
@@ -1959,7 +1959,7 @@
             "en": "Add 1 to the Attacks value of this fighter's melee weapons while they have made a Charge Move in the same activation.",
             "fr": "Ajoutez 1 à la valeur d'Attaques des armes de corps à corps de ce combattant tant qu'il a effectué une Charge pendant la même activation."
           },
-          "sourceRef": { "page": 86, "md": "07_verminkin.md > Embuscade" }
+          "sourceRef": { "page": 90, "md": "07_verminkin.md > Embuscade" }
         },
         {
           "id": "escape-artist",
@@ -1968,7 +1968,7 @@
             "en": "Once per battle, if this fighter is engaged in melee, this fighter can use the following bonus action:\nEscape Artist [Bonus Action]: Remove this fighter from the battlefield and set it up again wholly within 2D6\" of its previous position and not engaged in melee.",
             "fr": "Une fois par bataille, si ce combattant est engagé au corps à corps, ce combattant peut utiliser l'action bonus suivante :\nRoi de l'évasion [Action bonus] : retirez ce combattant du champ de bataille et placez-le de nouveau entièrement à 2D6\" ou moins de sa position précédente et non engagé au corps à corps."
           },
-          "sourceRef": { "page": 86, "md": "07_verminkin.md > Roi de l'évasion" }
+          "sourceRef": { "page": 90, "md": "07_verminkin.md > Roi de l'évasion" }
         },
         {
           "id": "back-stabber",
@@ -1977,7 +1977,7 @@
             "en": "Improve the Rend value of this fighter's melee weapons by 1 while it is engaged in melee with an enemy fighter that is engaged in melee with multiple fighters.",
             "fr": "Améliorez de 1 la valeur de Perforation des armes de corps à corps de ce combattant tant qu'il est engagé au corps à corps avec un combattant ennemi lui-même engagé au corps à corps avec plusieurs combattants."
           },
-          "sourceRef": { "page": 86, "md": "07_verminkin.md > Coup dans le dos" }
+          "sourceRef": { "page": 90, "md": "07_verminkin.md > Coup dans le dos" }
         },
         {
           "id": "shadow-lurker",
@@ -1986,7 +1986,7 @@
             "en": "While this fighter is within 1/2\" of any terrain, it is not visible to enemy fighters more than 9\" away.",
             "fr": "Tant que ce combattant est à 1/2\" ou moins d'un décor, il n'est pas visible pour les combattants ennemis situés à plus de 9\"."
           },
-          "sourceRef": { "page": 86, "md": "07_verminkin.md > Rôdeur des ombres" }
+          "sourceRef": { "page": 90, "md": "07_verminkin.md > Rôdeur des ombres" }
         }
       ]
     }
@@ -1997,7 +1997,7 @@
       "id": "lore-of-the-under-tunnels",
       "name": { "en": "Lore of the Under-Tunnels", "fr": "Domaine des Tunnels profonds" },
       "die": "d6",
-      "sourceRef": { "page": 83, "md": "07_verminkin.md > Domaine des Tunnels profonds" },
+      "sourceRef": { "page": 87, "md": "07_verminkin.md > Domaine des Tunnels profonds" },
       "spells": [
         {
           "id": "shadow-leap",
@@ -2015,7 +2015,7 @@
             "fr": "Augmentez de 9\" à 12\" la portée à laquelle le combattant peut être placé."
           },
           "attack": null,
-          "sourceRef": { "page": 83, "md": "07_verminkin.md > 1 - Bond d'ombre" }
+          "sourceRef": { "page": 87, "md": "07_verminkin.md > 1 - Bond d'ombre" }
         },
         {
           "id": "doom",
@@ -2030,7 +2030,7 @@
           },
           "criticalText": { "en": "Increase the range to 18\".", "fr": "Augmentez la portée à 18\"." },
           "attack": null,
-          "sourceRef": { "page": 83, "md": "07_verminkin.md > 2 - Fatalité" }
+          "sourceRef": { "page": 87, "md": "07_verminkin.md > 2 - Fatalité" }
         },
         {
           "id": "chain-lightning",
@@ -2048,7 +2048,7 @@
             "fr": "Une fois l'attaque contre la deuxième cible résolue, choisissez comme troisième cible un autre combattant ennemi à 3\" ou moins des deux premières et visible pour elles. Il est touché par la même attaque."
           },
           "attack": { "rend": -1, "damage": "d3" },
-          "sourceRef": { "page": 83, "md": "07_verminkin.md > 3 - Chaîne d'éclairs" }
+          "sourceRef": { "page": 87, "md": "07_verminkin.md > 3 - Chaîne d'éclairs" }
         },
         {
           "id": "tunnel-from-below",
@@ -2066,7 +2066,7 @@
             "fr": "Augmentez la portée de 12\" à 15\"."
           },
           "attack": null,
-          "sourceRef": { "page": 83, "md": "07_verminkin.md > 4 - Tunnel venu d'en bas" }
+          "sourceRef": { "page": 87, "md": "07_verminkin.md > 4 - Tunnel venu d'en bas" }
         },
         {
           "id": "gathering-shadows",
@@ -2084,7 +2084,7 @@
             "fr": "Augmentez la portée de l'aura de 6\" à 9\"."
           },
           "attack": null,
-          "sourceRef": { "page": 83, "md": "07_verminkin.md > 5 - Ombres grandissantes" }
+          "sourceRef": { "page": 87, "md": "07_verminkin.md > 5 - Ombres grandissantes" }
         },
         {
           "id": "bouncing-blast",
@@ -2102,7 +2102,7 @@
             "fr": "Quand le gabarit d'explosion est placé pour la première fois, il ne dévie pas."
           },
           "attack": { "rend": -1, "damage": "d3" },
-          "sourceRef": { "page": 83, "md": "07_verminkin.md > 6 - Explosion rebondissante" }
+          "sourceRef": { "page": 87, "md": "07_verminkin.md > 6 - Explosion rebondissante" }
         }
       ]
     },
@@ -2110,7 +2110,7 @@
       "id": "lore-of-poxes",
       "name": { "en": "Lore of Poxes", "fr": "Domaine des Véroles" },
       "die": "d6",
-      "sourceRef": { "page": 84, "md": "07_verminkin.md > Domaine des Véroles" },
+      "sourceRef": { "page": 88, "md": "07_verminkin.md > Domaine des Véroles" },
       "spells": [
         {
           "id": "spray-of-vomit",
@@ -2128,7 +2128,7 @@
             "fr": "La valeur de Dégâts est de 1D3 à la place de 1."
           },
           "attack": { "rend": -1, "damage": 1 },
-          "sourceRef": { "page": 84, "md": "07_verminkin.md > 1 - Gerbe de vomi" }
+          "sourceRef": { "page": 88, "md": "07_verminkin.md > 1 - Gerbe de vomi" }
         },
         {
           "id": "fetid-blades",
@@ -2146,7 +2146,7 @@
             "fr": "Augmentez la portée du sort de 6\" à 12\"."
           },
           "attack": null,
-          "sourceRef": { "page": 84, "md": "07_verminkin.md > 2 - Lames fétides" }
+          "sourceRef": { "page": 88, "md": "07_verminkin.md > 2 - Lames fétides" }
         },
         {
           "id": "rabid-fervour",
@@ -2164,7 +2164,7 @@
             "fr": "Augmentez la portée de l'aura de 6\" à 9\"."
           },
           "attack": null,
-          "sourceRef": { "page": 84, "md": "07_verminkin.md > 3 - Ferveur enragée" }
+          "sourceRef": { "page": 88, "md": "07_verminkin.md > 3 - Ferveur enragée" }
         },
         {
           "id": "rotten-armour",
@@ -2182,7 +2182,7 @@
             "fr": "Le combattant ciblé a une armure pourrie pour le reste de la bataille."
           },
           "attack": null,
-          "sourceRef": { "page": 84, "md": "07_verminkin.md > 4 - Armure pourrie" }
+          "sourceRef": { "page": 88, "md": "07_verminkin.md > 4 - Armure pourrie" }
         },
         {
           "id": "dark-vitality",
@@ -2197,7 +2197,7 @@
           },
           "criticalText": { "en": "Increase the range from 3\" to 6\".", "fr": "Augmentez la portée de 3\" à 6\"." },
           "attack": null,
-          "sourceRef": { "page": 84, "md": "07_verminkin.md > 5 - Sombre vitalité" }
+          "sourceRef": { "page": 88, "md": "07_verminkin.md > 5 - Sombre vitalité" }
         },
         {
           "id": "plague-bomb",
@@ -2212,7 +2212,7 @@
           },
           "criticalText": { "en": "It does not scatter.", "fr": "Il ne dévie pas." },
           "attack": { "rend": 0, "damage": "d3" },
-          "sourceRef": { "page": 84, "md": "07_verminkin.md > 6 - Bombe de peste" }
+          "sourceRef": { "page": 88, "md": "07_verminkin.md > 6 - Bombe de peste" }
         }
       ]
     }

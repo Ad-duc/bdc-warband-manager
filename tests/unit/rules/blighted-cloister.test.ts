@@ -134,8 +134,8 @@ describe("wargear", () => {
     expect(codes(w)).toContain("wargear.fixedMissing");
   });
 
-  it("the Demonic Familiar costs its Practitioner Item List price (30, not 20)", () => {
-    expect(index.wargear.get("demonic-familiar")?.cost).toBe(20);
+  it("the Demonic Familiar costs 30 on its sheet and in the Practitioner Item List (v1.11)", () => {
+    expect(index.wargear.get("demonic-familiar")?.cost).toBe(30);
     expect(wargearPrice(index, profile("high-sorcerer"), "demonic-familiar")).toBe(30);
   });
 

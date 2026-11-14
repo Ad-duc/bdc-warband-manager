@@ -1,11 +1,13 @@
 /*
  * File:        src/features/names/houseNames.ts
- * Role:        Name generators that go beyond the book: female fighter names
- *              and warband names. The female tables and the warband name
- *              tables are house tables (not official, see RULES_ASSUMPTIONS.md
- *              A42); the Death Covens female names follow the book (p. 96):
- *              "-a" added to a name ending in a consonant. House content is
- *              kept here, out of the faction data files that follow the book.
+ * Role:        Random fighter and warband names. Fighter names use the book
+ *              tables of the faction data; where the book has no female
+ *              table, the Death Covens follow the book rule (p. 100: "-a"
+ *              added to a name ending in a consonant) and the Verminkin and
+ *              The Blighted Cloister use house tables. The house female tables
+ *              and the warband name tables are not official (see
+ *              RULES_ASSUMPTIONS.md A42) and are kept here, out of the faction
+ *              data files that follow the book.
  * Author:      Adrien Duclaud
  * Created:     2026-10-13
  * License:     MIT
@@ -27,44 +29,6 @@ function d66Table(names: readonly string[]): Record<string, string> {
 
 /** House D66 tables of female names, in the style of each faction's book table. */
 export const FEMALE_NAME_TABLES: Readonly<Record<string, Record<string, string>>> = {
-  "guild-mercenaries": d66Table([
-    "Adelheid",
-    "Agnes",
-    "Anna",
-    "Barbara",
-    "Beatrix",
-    "Brigitta",
-    "Christina",
-    "Dorothea",
-    "Elisabeth",
-    "Elsbeth",
-    "Engel",
-    "Fridrun",
-    "Gerda",
-    "Gertrud",
-    "Gisela",
-    "Hedwig",
-    "Hildegard",
-    "Ida",
-    "Irmgard",
-    "Jutta",
-    "Katharina",
-    "Kunigunde",
-    "Liesel",
-    "Magdalena",
-    "Margarete",
-    "Mechthild",
-    "Ottilie",
-    "Richardis",
-    "Rosamund",
-    "Sibylla",
-    "Sophia",
-    "Ursula",
-    "Walburga",
-    "Wilhelmina",
-    "Wiltrud",
-    "Zita",
-  ]),
   verminkin: d66Table([
     "Bizzka",
     "Bratzka",
@@ -146,25 +110,45 @@ export const FEMALE_NAME_TABLES: Readonly<Record<string, Record<string, string>>
 /** Factions whose female names come from the book rule instead of a table. */
 const FEMININE_BY_SUFFIX: ReadonlySet<string> = new Set(["death-covens"]);
 
-/** Book rule (Death Covens, p. 96): "-a" added to a name ending in a consonant. */
+/** Book rule (Death Covens, p. 100): "-a" added to a name ending in a consonant. */
 export function feminine(name: string): string {
   return /[b-df-hj-np-tv-z]$/i.test(name) ? `${name}a` : name;
 }
 
+/** Book name tables of a faction: male names, and female names and surnames when the book has them. */
+export interface BookNameTables {
+  male: Record<string, string>;
+  female: Record<string, string> | null;
+  surnames: Record<string, string> | null;
+}
+
 /**
- * Random fighter name: the book D66 table for male names; for female names the
- * house table of the faction, or the book "-a" rule for the Death Covens.
- * Without a female table the book table is used.
+ * Random fighter name. Male names come from the book D66 table. Female names
+ * come from the book table when the faction has one (Guild Mercenaries, p. 75),
+ * from the book "-a" rule for the Death Covens, else from the house table of
+ * the faction (the male table without one). A surname of the book table is
+ * added when the faction has one.
  */
 export function randomFighterName(
   factionId: string,
-  bookTable: Record<string, string>,
+  book: BookNameTables,
   gender: NameGender,
   random: RandomSource = Math.random,
 ): string {
-  if (gender === "male") return randomName(bookTable, random);
-  if (FEMININE_BY_SUFFIX.has(factionId)) return feminine(randomName(bookTable, random));
-  return randomName(FEMALE_NAME_TABLES[factionId] ?? bookTable, random);
+  const first = firstName(factionId, book, gender, random);
+  return book.surnames === null ? first : `${first} ${randomName(book.surnames, random)}`;
+}
+
+function firstName(
+  factionId: string,
+  book: BookNameTables,
+  gender: NameGender,
+  random: RandomSource,
+): string {
+  if (gender === "male") return randomName(book.male, random);
+  if (book.female !== null) return randomName(book.female, random);
+  if (FEMININE_BY_SUFFIX.has(factionId)) return feminine(randomName(book.male, random));
+  return randomName(FEMALE_NAME_TABLES[factionId] ?? book.male, random);
 }
 
 /** House warband name tables: a head and a complement, combined at random. */

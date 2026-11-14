@@ -546,7 +546,7 @@
   },
   "reminder": {
     "title": "Aide de jeu",
-    "intro": "La feuille d'aide de jeu officielle traduite en français : mise en place, séquence du round, traits d'armes, actions, tables de dés. Les numéros de page renvoient aux règles de la version de test 1.10. Le bouton d'impression la met en page sur une feuille A4.",
+    "intro": "La feuille d'aide de jeu officielle traduite en français : mise en place, séquence du round, traits d'armes, actions, tables de dés. Les numéros de page renvoient aux règles de la version de test 1.11. Le bouton d'impression la met en page sur une feuille A4.",
     "print": "Imprimer la feuille A4"
   },
   "compendium": {
@@ -617,7 +617,7 @@
   },
   "reader": {
     "title": "Règles en français",
-    "notice": "Traduction française non officielle des règles de la version de test 1.10.",
+    "notice": "Traduction française non officielle des règles de la version de test 1.11.",
     "chapter": "Chapitre",
     "chapters": "Chapitres",
     "contents": "Sommaire",
@@ -648,7 +648,7 @@
       "loading": "Préparation des chapitres...",
       "coverTitle": "Black Death City",
       "coverLabel": "Page de titre",
-      "coverRules": "Règles de la version de test 1.10",
+      "coverRules": "Règles de la version de test 1.11",
       "coverAuthor": "Par Sam Pearson",
       "coverSource": "Imprimé depuis BDC Warband Manager, outil de fan non officiel : https://ad-duc.github.io/bdc-warband-manager/"
     },
@@ -799,8 +799,9 @@
       "male": "Nom masculin",
       "female": "Nom féminin"
     },
+    "femaleTableNote": "Les symboles masculin et féminin choisissent le nom tiré au hasard ; prénoms et noms de famille viennent des tables du livre (p. 75).",
     "femaleHouseNote": "Les symboles masculin et féminin choisissent le nom tiré au hasard ; les noms féminins viennent de tables maison, non officielles.",
-    "femaleBookNote": "Les symboles masculin et féminin choisissent le nom tiré au hasard ; un nom féminin suit la règle du livre : \"-a\" ajouté à un nom qui se termine par une consonne (p. 96)."
+    "femaleBookNote": "Les symboles masculin et féminin choisissent le nom tiré au hasard ; un nom féminin suit la règle du livre : \"-a\" ajouté à un nom qui se termine par une consonne (p. 100)."
   },
   "tutorial": {
     "title": "Tutoriel",

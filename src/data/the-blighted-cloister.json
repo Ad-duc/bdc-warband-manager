@@ -14,7 +14,7 @@
     "fr": "Le Cloître gangrené est un ordre monastique secret de chevaliers et de prêtres-sorciers, qui voient dans la Pourriture noire non pas une malédiction, mais une bénédiction accordée à la Cité. Derrière les hautes enceintes de pierre de leurs abbayes, ils prennent soin des malades et des pestiférés sans aucune intention de les guérir. Ils les entretiennent au contraire jusqu'à en faire des réceptacles boursouflés de pestilence, vénérés comme des saints vivants.\nDans les cercles les plus fermés du Cloître, leur credo a sombré plus loin encore dans le blasphème. Les prières ont cédé la place aux sombres pactes, et les hymnes aux invocations murmurées. La Pourriture noire a attiré le regard d'entités démoniaques qui cherchent à fouler le monde des mortels pour y semer la peste et la maladie. Ces démons donnent de la force aux chevaliers du Cloître et font d'eux des créatures bouffies et pourries, qui dominent de toute leur taille les hommes ordinaires. Le prix en est leur âme, et tandis que la corruption démoniaque leur tord les entrailles, rares sont ceux qui gardent longtemps la raison."
   },
   "armouryName": { "en": "Cloister Armoury", "fr": "Armurerie du Cloître" },
-  "sourceRef": { "page": 113, "md": "09_the-blighted-cloister.md > Le Cloître gangrené" },
+  "sourceRef": { "page": 117, "md": "09_the-blighted-cloister.md > Le Cloître gangrené" },
   "assets": { "shield": "bouclier_cloister.webp", "accentColor": null },
 
   "origins": [
@@ -30,7 +30,7 @@
       "specialRules": [],
       "profileLimits": [{ "fighterId": "cloister-knight", "limit": null }],
       "uncappedFighterIds": [],
-      "sourceRef": { "page": 114, "md": "09_the-blighted-cloister.md > Chevaliers militants" }
+      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Chevaliers militants" }
     },
     {
       "id": "priesthood-of-sorcerers",
@@ -44,7 +44,7 @@
       "specialRules": [],
       "profileLimits": [{ "fighterId": "cloister-sorcerer", "limit": 2 }],
       "uncappedFighterIds": [],
-      "sourceRef": { "page": 114, "md": "09_the-blighted-cloister.md > Clergé de sorciers" }
+      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Clergé de sorciers" }
     },
     {
       "id": "the-anointed-one",
@@ -58,7 +58,7 @@
       "specialRules": [],
       "profileLimits": [{ "fighterId": "rot-demon", "limit": null }],
       "uncappedFighterIds": [],
-      "sourceRef": { "page": 114, "md": "09_the-blighted-cloister.md > L'Oint" }
+      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > L'Oint" }
     },
     {
       "id": "blessed-rabble",
@@ -72,7 +72,7 @@
       "specialRules": [],
       "profileLimits": [],
       "uncappedFighterIds": [],
-      "sourceRef": { "page": 114, "md": "09_the-blighted-cloister.md > Populace bénie" }
+      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Populace bénie" }
     }
   ],
 
@@ -105,7 +105,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 115, "md": "09_the-blighted-cloister.md > Donjon fortifié" }
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Donjon fortifié" }
     },
     {
       "id": "secluded-scriptorium",
@@ -132,7 +132,7 @@
           "initial": "0"
         }
       ],
-      "sourceRef": { "page": 115, "md": "09_the-blighted-cloister.md > Scriptorium isolé" }
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Scriptorium isolé" }
     },
     {
       "id": "unholy-altar",
@@ -153,7 +153,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 115, "md": "09_the-blighted-cloister.md > Autel impie" }
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Autel impie" }
     },
     {
       "id": "street-pulpit",
@@ -183,7 +183,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 115, "md": "09_the-blighted-cloister.md > Chaire de rue" }
+      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Chaire de rue" }
     }
   ],
 
@@ -206,7 +206,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 116, "md": "09_the-blighted-cloister.md > Hospice" }
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Hospice" }
     },
     {
       "id": "herbalists-garden",
@@ -226,7 +226,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 116, "md": "09_the-blighted-cloister.md > Jardin de l'herboriste" }
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Jardin de l'herboriste" }
     },
     {
       "id": "bell-tower",
@@ -246,7 +246,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 116, "md": "09_the-blighted-cloister.md > Clocher" }
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Clocher" }
     },
     {
       "id": "ritual-chamber",
@@ -266,7 +266,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 116, "md": "09_the-blighted-cloister.md > Chambre rituelle" }
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Chambre rituelle" }
     },
     {
       "id": "flykeeper",
@@ -286,7 +286,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 116, "md": "09_the-blighted-cloister.md > Éleveur de mouches" }
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Éleveur de mouches" }
     },
     {
       "id": "alms-box",
@@ -306,12 +306,12 @@
           }
         }
       ],
-      "sourceRef": { "page": 116, "md": "09_the-blighted-cloister.md > Tronc des aumônes" }
+      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Tronc des aumônes" }
     }
   ],
   "nameTable": {
     "die": "d66",
-    "sourceRef": { "page": 132, "md": "09_the-blighted-cloister.md > Noms du Cloître gangrené" },
+    "sourceRef": { "page": 136, "md": "09_the-blighted-cloister.md > Noms du Cloître gangrené" },
     "entries": {
       "11": "Agabus",
       "12": "Anselm",
@@ -353,7 +353,7 @@
   },
   "epithetTable": {
     "die": "d66",
-    "sourceRef": { "page": 132, "md": "09_the-blighted-cloister.md > Épithètes du Cloître gangrené" },
+    "sourceRef": { "page": 136, "md": "09_the-blighted-cloister.md > Épithètes du Cloître gangrené" },
     "entries": {
       "11": { "en": "Acolyte of the Black Breath", "fr": "Acolyte du Souffle noir" },
       "12": { "en": "Anointed of Corruption", "fr": "Oint de la Corruption" },
@@ -427,7 +427,7 @@
         "en": "Blessed are they whom the Black Rot hath chosen.",
         "fr": "Bénis soient ceux que la Pourriture noire a choisis."
       },
-      "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > Chevalier-Abbé" }
+      "sourceRef": { "page": 129, "md": "09_the-blighted-cloister.md > Chevalier-Abbé" }
     },
     {
       "id": "high-sorcerer",
@@ -458,7 +458,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens et de la Liste d'objets des Praticiens de l'Armurerie du Cloître."
       },
       "quote": { "en": "Count thy afflictions as blessings.", "fr": "Tiens tes afflictions pour des bénédictions." },
-      "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > Grand Sorcier" }
+      "sourceRef": { "page": 129, "md": "09_the-blighted-cloister.md > Grand Sorcier" }
     },
     {
       "id": "cloister-sorcerer",
@@ -489,7 +489,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens et de la Liste d'objets des Praticiens de l'Armurerie du Cloître."
       },
       "quote": { "en": "I'll see thy flesh boil and burn.", "fr": "Je verrai ta chair bouillir et brûler." },
-      "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > Sorcier du Cloître" }
+      "sourceRef": { "page": 130, "md": "09_the-blighted-cloister.md > Sorcier du Cloître" }
     },
     {
       "id": "cloister-champion",
@@ -520,7 +520,7 @@
         "fr": "Ce combattant est équipé d'une Armure de plates, comprise dans son coût de recrutement. Il peut être équipé d'équipement supplémentaire de la Liste principale et de la Liste des Champions de l'Armurerie du Cloître."
       },
       "quote": { "en": "Corruption grants me strength.", "fr": "La corruption me donne de la force." },
-      "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > Champion du Cloître" }
+      "sourceRef": { "page": 130, "md": "09_the-blighted-cloister.md > Champion du Cloître" }
     },
     {
       "id": "darkcloven-shaman",
@@ -563,7 +563,7 @@
         "en": "Tonight the herd shall feast on blood and marrow.",
         "fr": "Ce soir, la harde se repaîtra de sang et de moelle."
       },
-      "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Chaman Sabot-Noir" }
+      "sourceRef": { "page": 131, "md": "09_the-blighted-cloister.md > Chaman Sabot-Noir" }
     },
     {
       "id": "demonic-rot-herald",
@@ -615,7 +615,7 @@
         "en": "Thy flesh and thy soul shall know corruption, mortal.",
         "fr": "Ta chair et ton âme connaîtront la corruption, mortel."
       },
-      "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Héraut de la Pourriture" }
+      "sourceRef": { "page": 131, "md": "09_the-blighted-cloister.md > Héraut de la Pourriture" }
     },
     {
       "id": "cloister-knight",
@@ -636,7 +636,7 @@
         "fr": "Ce combattant est équipé d'une Armure de plates, comprise dans son coût de recrutement. Il peut être équipé d'équipement supplémentaire de la Liste principale de l'Armurerie du Cloître."
       },
       "quote": { "en": "My blade serves the Living Saints.", "fr": "Ma lame sert les Saints vivants." },
-      "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Chevalier du Cloître" }
+      "sourceRef": { "page": 132, "md": "09_the-blighted-cloister.md > Chevalier du Cloître" }
     },
     {
       "id": "dreg-cultist",
@@ -657,7 +657,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste de la lie de l'Armurerie du Cloître."
       },
       "quote": { "en": "The afflicted shall inherit the City.", "fr": "Les affligés hériteront de la Cité." },
-      "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Cultiste de la lie" }
+      "sourceRef": { "page": 132, "md": "09_the-blighted-cloister.md > Cultiste de la lie" }
     },
     {
       "id": "darkcloven-beastman",
@@ -688,7 +688,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie du Cloître."
       },
       "quote": { "en": "Feast on flesh!", "fr": "Repaissez-vous de chair !" },
-      "sourceRef": { "page": 129, "md": "09_the-blighted-cloister.md > Homme-bête Sabot-Noir" }
+      "sourceRef": { "page": 133, "md": "09_the-blighted-cloister.md > Homme-bête Sabot-Noir" }
     },
     {
       "id": "rot-demon",
@@ -731,7 +731,7 @@
         "en": "Once more do I tread the mortal plane.",
         "fr": "Une fois encore, je foule le plan des mortels."
       },
-      "sourceRef": { "page": 129, "md": "09_the-blighted-cloister.md > Démon de la Pourriture" }
+      "sourceRef": { "page": 133, "md": "09_the-blighted-cloister.md > Démon de la Pourriture" }
     },
     {
       "id": "demonic-rotspawn",
@@ -771,7 +771,7 @@
         "fr": "Ce combattant est équipé d'une Gueule de pourriture démoniaque, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": { "en": "Sate... my... hunger...", "fr": "Rassasiez... ma... faim..." },
-      "sourceRef": { "page": 130, "md": "09_the-blighted-cloister.md > Rejeton de la Pourriture" }
+      "sourceRef": { "page": 134, "md": "09_the-blighted-cloister.md > Rejeton de la Pourriture" }
     },
     {
       "id": "demonic-rot-colossal",
@@ -820,7 +820,7 @@
         "fr": "Ce combattant est équipé d'une Grande lame de pourriture démoniaque, comprise dans son coût de recrutement. Il ne peut être équipé d'aucun autre équipement."
       },
       "quote": { "en": "Come hither, little mortal.", "fr": "Approche, petit mortel." },
-      "sourceRef": { "page": 130, "md": "09_the-blighted-cloister.md > Colosse de la Pourriture" }
+      "sourceRef": { "page": 134, "md": "09_the-blighted-cloister.md > Colosse de la Pourriture" }
     },
     {
       "id": "bloat-fly",
@@ -841,7 +841,7 @@
         "fr": "Ce combattant est équipé d'une trompe, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": null,
-      "sourceRef": { "page": 131, "md": "09_the-blighted-cloister.md > Mouche bouffie" }
+      "sourceRef": { "page": 135, "md": "09_the-blighted-cloister.md > Mouche bouffie" }
     },
     {
       "id": "rotling",
@@ -862,7 +862,7 @@
         "fr": "Ce combattant est équipé d'une frappe de pourriture démoniaque, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": null,
-      "sourceRef": { "page": 131, "md": "09_the-blighted-cloister.md > Pourrisson" }
+      "sourceRef": { "page": 135, "md": "09_the-blighted-cloister.md > Pourrisson" }
     }
   ],
 
@@ -886,7 +886,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "axe",
@@ -907,7 +907,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "club-mace-hammer",
@@ -928,7 +928,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "dagger",
@@ -949,7 +949,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "demonic-rot-blade",
@@ -970,7 +970,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "demonic-rot-maw",
@@ -991,7 +991,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "demonic-rot-strike",
@@ -1012,7 +1012,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "ensorcelled-weapon",
@@ -1036,7 +1036,7 @@
         "en": "You can use any weapon to represent the Ensorcelled Weapon.",
         "fr": "Vous pouvez utiliser n'importe quelle arme pour représenter l'Arme ensorcelée."
       },
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "flail",
@@ -1057,7 +1057,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "great-demonic-rot-blade",
@@ -1084,7 +1084,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "great-club",
@@ -1105,7 +1105,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "halberd",
@@ -1126,7 +1126,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "heavy-axe",
@@ -1147,7 +1147,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "proboscis",
@@ -1168,7 +1168,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "spear",
@@ -1189,7 +1189,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "sword",
@@ -1210,7 +1210,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes de corps à corps" }
     },
     {
       "id": "sling",
@@ -1231,7 +1231,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes à distance" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes à distance" }
     },
     {
       "id": "blowpipe",
@@ -1252,7 +1252,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 119, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes à distance" }
+      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Armurerie du Cloître - Armes à distance" }
     },
     {
       "id": "cuirass",
@@ -1273,7 +1273,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Cuirasse" }
+      "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Cuirasse" }
     },
     {
       "id": "warded-robes",
@@ -1297,7 +1297,7 @@
         "fr": "Lancez un dé chaque fois qu'un combattant équipé de cette armure est ciblé par un sort lancé par un combattant ennemi. Sur 4+, le sort n'a aucun effet sur ce combattant."
       },
       "designerNote": null,
-      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Robe de protection" }
+      "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Robe de protection" }
     },
     {
       "id": "full-plate",
@@ -1321,7 +1321,7 @@
         "fr": "Les combattants équipés de cette armure ne peuvent pas être équipés d'armes à distance à deux mains, à l'exception d'une Paire de pistolets."
       },
       "designerNote": null,
-      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Armure de plates" }
+      "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Armure de plates" }
     },
     {
       "id": "cauldron",
@@ -1345,7 +1345,7 @@
         "fr": "[Action] Ce combattant peut utiliser cet objet en tant qu'action. Le combattant effectue un test de Volonté. S'il le réussit, choisissez un sort d'un domaine de magie qu'il connaît : ce sort devient un sort préparé."
       },
       "designerNote": null,
-      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Chaudron" }
+      "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Chaudron" }
     },
     {
       "id": "cloister-icon",
@@ -1369,13 +1369,13 @@
         "fr": "Tant que ce combattant est sur le champ de bataille, vous pouvez relancer les tests de déroute.\nVous pouvez relancer les tests de Volonté effectués par les combattants alliés tant qu'ils sont à 12\" ou moins de ce combattant et que ce combattant est visible pour eux."
       },
       "designerNote": null,
-      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Icône du Cloître" }
+      "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Icône du Cloître" }
     },
     {
       "id": "demonic-familiar",
       "name": { "en": "Demonic Familiar", "fr": "Familier démoniaque" },
       "kind": "item",
-      "cost": 20,
+      "cost": 30,
       "purchasable": true,
       "profile": null,
       "traits": [],
@@ -1401,7 +1401,7 @@
         "en": "This item is designed for miniatures that feature other small demonic creatures on the same base. The demonic familiar is not considered a separate fighter for any rules.",
         "fr": "Cet objet est conçu pour les figurines qui comportent d'autres petites créatures démoniaques sur le même socle. Le familier démoniaque n'est considéré comme un combattant distinct pour aucune règle."
       },
-      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Familier démoniaque" }
+      "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Familier démoniaque" }
     },
     {
       "id": "ensorcelled-bell",
@@ -1425,7 +1425,7 @@
         "fr": "Une fois par bataille, vous pouvez relancer un jet de fiasco effectué pour ce combattant."
       },
       "designerNote": null,
-      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Cloche ensorcelée" }
+      "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Cloche ensorcelée" }
     },
     {
       "id": "grimoire",
@@ -1449,7 +1449,7 @@
         "fr": "Une fois par bataille, après que ce combattant a effectué un jet de lancement, vous pouvez relancer le jet de lancement."
       },
       "designerNote": null,
-      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Grimoire" }
+      "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Grimoire" }
     },
     {
       "id": "shield",
@@ -1473,7 +1473,7 @@
         "fr": "Améliorez de 1 la valeur d'Armure de ce combattant, jusqu'à un maximum de 2+. (Par exemple, 6+ devient 5+)."
       },
       "designerNote": null,
-      "sourceRef": { "page": 120, "md": "09_the-blighted-cloister.md > Bouclier" }
+      "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Bouclier" }
     }
   ],
 
@@ -1481,7 +1481,7 @@
     {
       "id": "main",
       "name": { "en": "Main List", "fr": "Liste principale" },
-      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Liste principale" },
+      "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > Liste principale" },
       "entries": [
         { "wargearId": "axe", "cost": 16 },
         { "wargearId": "club-mace-hammer", "cost": 14 },
@@ -1499,7 +1499,7 @@
     {
       "id": "champion",
       "name": { "en": "Champion List", "fr": "Liste des Champions" },
-      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Liste des Champions" },
+      "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > Liste des Champions" },
       "entries": [
         { "wargearId": "demonic-rot-blade", "cost": 45 },
         { "wargearId": "great-demonic-rot-blade", "cost": 70 },
@@ -1509,7 +1509,7 @@
     {
       "id": "dreg",
       "name": { "en": "Dreg List", "fr": "Liste de la lie" },
-      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Liste de la lie" },
+      "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > Liste de la lie" },
       "entries": [
         { "wargearId": "blowpipe", "cost": 16 },
         { "wargearId": "sling", "cost": 14 }
@@ -1518,7 +1518,7 @@
     {
       "id": "practitioner",
       "name": { "en": "Practitioner List", "fr": "Liste des Praticiens" },
-      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Liste des Praticiens" },
+      "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > Liste des Praticiens" },
       "entries": [
         { "wargearId": "arcane-staff", "cost": 10 },
         { "wargearId": "ensorcelled-weapon", "cost": 26 },
@@ -1529,7 +1529,7 @@
     {
       "id": "practitioner-items",
       "name": { "en": "Practitioner Item List", "fr": "Liste d'objets des Praticiens" },
-      "sourceRef": { "page": 118, "md": "09_the-blighted-cloister.md > Liste d'objets des Praticiens" },
+      "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > Liste d'objets des Praticiens" },
       "entries": [
         { "wargearId": "grimoire", "cost": 15 },
         { "wargearId": "cauldron", "cost": 40 },
@@ -1554,7 +1554,7 @@
         "en": "Cloister Leaders and Champions only",
         "fr": "Chefs et Champions Cloître uniquement"
       },
-      "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Ordonnés du Cloître" },
+      "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Ordonnés du Cloître" },
       "skills": [
         {
           "id": "shepherd-the-afflicted",
@@ -1563,7 +1563,7 @@
             "en": "Add 1 to the maximum distance other friendly fighters can move if they started the move within 6\" of this fighter.",
             "fr": "Ajoutez 1 à la distance maximale dont les autres combattants alliés peuvent se déplacer s'ils ont commencé ce Mouvement à 6\" ou moins de ce combattant."
           },
-          "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Guider les affligés" }
+          "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Guider les affligés" }
         },
         {
           "id": "demonic-conduit",
@@ -1572,7 +1572,7 @@
             "en": "Once per battle, when a friendly Demon fighter would be set up from reserve, they can instead be set up within 3\" of this fighter, not engaged in melee with any enemy fighters.",
             "fr": "Une fois par bataille, quand un combattant allié Démon devrait être placé depuis la réserve, il peut, à la place, être placé à 3\" ou moins de ce combattant, non engagé au corps à corps avec le moindre combattant ennemi."
           },
-          "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Conduit démoniaque" }
+          "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Conduit démoniaque" }
         },
         {
           "id": "rite-of-contagion",
@@ -1581,7 +1581,7 @@
             "en": "Once per battle, if this fighter is not engaged, this fighter can use the following bonus action:\nRite of Contagion [Bonus Action]: Each enemy fighter within 12\" of this fighter must pass a Willpower test else suffer 1 point of damage and be poisoned (see the Poison weapon trait).",
             "fr": "Une fois par bataille, si ce combattant n'est pas engagé, ce combattant peut utiliser l'action bonus suivante :\nRite de contagion [Action bonus] : chaque combattant ennemi à 12\" ou moins de ce combattant doit réussir un test de Volonté, sans quoi il subit 1 point de dégâts et est empoisonné, voir le trait d'arme Poison."
           },
-          "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Rite de contagion" }
+          "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Rite de contagion" }
         },
         {
           "id": "last-rites",
@@ -1590,7 +1590,7 @@
             "en": "Each time another fighter is taken down within 6\" of this fighter, this fighter can heal 1 life point.",
             "fr": "Chaque fois qu'un autre combattant est mis hors de combat à 6\" ou moins de ce combattant, ce combattant peut être soigné de 1 point de vie."
           },
-          "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Derniers sacrements" }
+          "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Derniers sacrements" }
         },
         {
           "id": "unholy-sermon",
@@ -1599,7 +1599,7 @@
             "en": "Once per battle, if this fighter is not engaged, this fighter can use the following bonus action:\nUnholy Sermon [Bonus Action]: Until the end of the round, add 1 to attack rolls for melee attacks made by friendly fighters while they are within 6\" of this fighter.",
             "fr": "Une fois par bataille, si ce combattant n'est pas engagé, ce combattant peut utiliser l'action bonus suivante :\nSermon impie [Action bonus] : jusqu'à la fin du round, ajoutez 1 aux jets d'attaque des attaques au corps à corps effectuées par les combattants alliés tant qu'ils sont à 6\" ou moins de ce combattant."
           },
-          "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > Sermon impie" }
+          "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > Sermon impie" }
         },
         {
           "id": "the-black-benediction",
@@ -1608,7 +1608,7 @@
             "en": "Subtract 1 from the Damage and Critical Damage values of weapons while they target this fighter (to a minimum of 1).",
             "fr": "Soustrayez 1 aux valeurs de Dégâts et de Dégâts critiques des armes tant qu'elles ciblent ce combattant, jusqu'à un minimum de 1."
           },
-          "sourceRef": { "page": 123, "md": "09_the-blighted-cloister.md > La Bénédiction noire" }
+          "sourceRef": { "page": 127, "md": "09_the-blighted-cloister.md > La Bénédiction noire" }
         }
       ]
     },
@@ -1617,7 +1617,7 @@
       "name": { "en": "Blessings of Saint Rot", "fr": "Bénédictions de Sainte Pourriture" },
       "eligibility": { "kind": "keywords", "anyOf": [["cloister"]] },
       "eligibilityLabel": { "en": "Any Cloister fighter", "fr": "N'importe quel combattant Cloître" },
-      "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Bénédictions de Sainte Pourriture" },
+      "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Bénédictions de Sainte Pourriture" },
       "skills": [
         {
           "id": "infested-with-maggots",
@@ -1626,13 +1626,13 @@
             "en": "Each time this fighter activates, if it has suffered any damage, roll a dice. On a 4+, they heal 1 life point.",
             "fr": "Chaque fois que ce combattant est activé, s'il a subi des dégâts, lancez un dé. Sur 4+, il est soigné de 1 point de vie."
           },
-          "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Infesté d'asticots" }
+          "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Infesté d'asticots" }
         },
         {
           "id": "black-blood",
           "name": { "en": "Black Blood", "fr": "Sang noir" },
           "text": { "en": "This fighter cannot be poisoned.", "fr": "Ce combattant ne peut pas être empoisonné." },
-          "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Sang noir" }
+          "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Sang noir" }
         },
         {
           "id": "toxic-miasma",
@@ -1641,7 +1641,7 @@
             "en": "Each time an enemy fighter activates while they are engaged in melee with this fighter, they must pass a Willpower test or suffer 1 point of damage.",
             "fr": "Chaque fois qu'un combattant ennemi est activé alors qu'il est engagé au corps à corps avec ce combattant, il doit réussir un test de Volonté ou subir 1 point de dégâts."
           },
-          "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Miasme toxique" }
+          "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Miasme toxique" }
         },
         {
           "id": "shroud-of-flies",
@@ -1650,7 +1650,7 @@
             "en": "Subtract 1 from attack rolls that target this fighter.",
             "fr": "Soustrayez 1 aux jets d'attaque qui ciblent ce combattant."
           },
-          "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Linceul de mouches" }
+          "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Linceul de mouches" }
         },
         {
           "id": "vessel-of-black-rot",
@@ -1659,7 +1659,7 @@
             "en": "When this fighter is taken down, roll a dice for each enemy fighter within 6\". On a 4+ they become poisoned (see Poison weapon trait).",
             "fr": "Quand ce combattant est mis hors de combat, lancez un dé pour chaque combattant ennemi à 6\" ou moins. Sur 4+, il devient empoisonné, voir le trait d'arme Poison."
           },
-          "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Réceptacle de la Pourriture noire" }
+          "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Réceptacle de la Pourriture noire" }
         },
         {
           "id": "vector-of-entropy",
@@ -1668,7 +1668,7 @@
             "en": "Worsen the Armour value of enemy fighters by 1 (to a minimum of '-') while they are engaged in melee with this fighter.",
             "fr": "Dégradez de 1 la valeur d'Armure des combattants ennemis, jusqu'à un minimum de \"-\", tant qu'ils sont engagés au corps à corps avec ce combattant."
           },
-          "sourceRef": { "page": 124, "md": "09_the-blighted-cloister.md > Vecteur d'entropie" }
+          "sourceRef": { "page": 128, "md": "09_the-blighted-cloister.md > Vecteur d'entropie" }
         }
       ]
     }
@@ -1679,7 +1679,7 @@
       "id": "lore-of-blessed-maggots",
       "name": { "en": "Lore of Blessed Maggots", "fr": "Domaine des Asticots bénis" },
       "die": "d6",
-      "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > Domaine des Asticots bénis" },
+      "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > Domaine des Asticots bénis" },
       "spells": [
         {
           "id": "swollen-form",
@@ -1694,7 +1694,7 @@
           },
           "criticalText": { "en": "Increase the range to 12\".", "fr": "Augmentez la portée à 12\"." },
           "attack": null,
-          "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > 1 - Forme boursouflée" }
+          "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > 1 - Forme boursouflée" }
         },
         {
           "id": "black-mire",
@@ -1712,7 +1712,7 @@
             "fr": "Le sol du champ de bataille à 9\" ou moins de ce point est un bourbier, à la place de 6\"."
           },
           "attack": null,
-          "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > 2 - Bourbier noir" }
+          "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > 2 - Bourbier noir" }
         },
         {
           "id": "erupting-sores",
@@ -1727,7 +1727,7 @@
           },
           "criticalText": { "en": "Increase the range to 12\".", "fr": "Augmentez la portée à 12\"." },
           "attack": null,
-          "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > 3 - Plaies éruptives" }
+          "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > 3 - Plaies éruptives" }
         },
         {
           "id": "rain-of-filth",
@@ -1742,7 +1742,7 @@
           },
           "criticalText": { "en": "It does not scatter.", "fr": "Il ne dévie pas." },
           "attack": null,
-          "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > 4 - Pluie d'immondices" }
+          "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > 4 - Pluie d'immondices" }
         },
         {
           "id": "putrid-blessing",
@@ -1760,7 +1760,7 @@
             "fr": "Augmentez la portée du sort de 6\" à 12\"."
           },
           "attack": null,
-          "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > 5 - Bénédiction putride" }
+          "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > 5 - Bénédiction putride" }
         },
         {
           "id": "black-bile",
@@ -1778,7 +1778,7 @@
             "fr": "Chaque combattant touché par l'attaque doit réussir un test de Volonté, sans quoi il devient empoisonné, voir le trait d'arme Poison."
           },
           "attack": { "rend": -1, "damage": "d3" },
-          "sourceRef": { "page": 121, "md": "09_the-blighted-cloister.md > 6 - Bile noire" }
+          "sourceRef": { "page": 125, "md": "09_the-blighted-cloister.md > 6 - Bile noire" }
         }
       ]
     },
@@ -1786,7 +1786,7 @@
       "id": "demonic-lore-of-rot",
       "name": { "en": "Demonic Lore of Rot", "fr": "Domaine démoniaque de la Pourriture" },
       "die": "d6",
-      "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > Domaine démoniaque de la Pourriture" },
+      "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > Domaine démoniaque de la Pourriture" },
       "spells": [
         {
           "id": "summon-rotling",
@@ -1804,7 +1804,7 @@
             "fr": "Le combattant peut être placé à 9\" ou moins du lanceur et non engagé au corps à corps."
           },
           "attack": null,
-          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 1 - Invoquer un Pourrisson" }
+          "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > 1 - Invoquer un Pourrisson" }
         },
         {
           "id": "demonic-strength",
@@ -1822,7 +1822,7 @@
             "fr": "Vous pouvez choisir comme cibles 2 combattants à la place de 1."
           },
           "attack": null,
-          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 2 - Force démoniaque" }
+          "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > 2 - Force démoniaque" }
         },
         {
           "id": "rotten-insides",
@@ -1837,7 +1837,7 @@
           },
           "criticalText": { "en": "Increase the range to 12\".", "fr": "Augmentez la portée à 12\"." },
           "attack": null,
-          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 3 - Entrailles pourries" }
+          "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > 3 - Entrailles pourries" }
         },
         {
           "id": "plague-wind",
@@ -1855,7 +1855,7 @@
             "fr": "Soustrayez 1 à tous les tests de Volonté effectués pour ce sort."
           },
           "attack": null,
-          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 4 - Vent de peste" }
+          "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > 4 - Vent de peste" }
         },
         {
           "id": "protective-shroud",
@@ -1870,7 +1870,7 @@
           },
           "criticalText": { "en": "Increase the range to 12\".", "fr": "Augmentez la portée à 12\"." },
           "attack": null,
-          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 5 - Linceul protecteur" }
+          "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > 5 - Linceul protecteur" }
         },
         {
           "id": "plague-pit",
@@ -1885,7 +1885,7 @@
           },
           "criticalText": { "en": "Increase the range from 9\" to 12\".", "fr": "Augmentez la portée de 9\" à 12\"." },
           "attack": null,
-          "sourceRef": { "page": 122, "md": "09_the-blighted-cloister.md > 6 - Fosse de peste" }
+          "sourceRef": { "page": 126, "md": "09_the-blighted-cloister.md > 6 - Fosse de peste" }
         }
       ]
     }

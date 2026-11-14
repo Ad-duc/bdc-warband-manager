@@ -7,7 +7,7 @@
     "license": "MIT for the file structure. Game content belongs to Sam Pearson (Black Death City)."
   },
   "schemaVersion": 1,
-  "sourceVersion": "playtest-1.10",
+  "sourceVersion": "playtest-1.11",
   "recruitment": {
     "startingSilver": 1000,
     "maxFighters": 15,
@@ -18,7 +18,7 @@
       "brute": { "min": 0, "max": 2 },
       "beast": { "min": 0, "max": 3 }
     },
-    "sourceRef": { "page": 50, "md": "05_bandes-regles-generales.md > Étape 3 - Recruter des combattants" }
+    "sourceRef": { "page": 52, "md": "05_bandes-regles-generales.md > Étape 3 - Recruter des combattants" }
   },
   "carryingLimit": {
     "melee": 2,
@@ -35,7 +35,7 @@
   "rosterLimits": {
     "holdings": 5,
     "blackRotBoxes": 3,
-    "sourceRef": { "page": 135, "md": "10_aide-de-jeu.md > Feuille de bande" }
+    "sourceRef": { "page": 173, "md": "10_aide-de-jeu.md > Feuille de bande" }
   },
 
   "keywords": [
@@ -234,7 +234,7 @@
         "en": "Not visible to enemies they are in cover from. Remains hidden until: next activation, or no longer touching terrain, or are within 3\" of an enemy fighter.",
         "fr": "Non visible pour les ennemis par rapport auxquels il est à couvert. Reste caché jusqu'à : sa prochaine activation, ou jusqu'à ce qu'il ne soit plus au contact d'un décor, ou qu'il soit à 3\" ou moins d'un combattant ennemi."
       },
-      "sourceRef": { "page": 134, "md": "10_aide-de-jeu.md > Black Death City - Aide de jeu" }
+      "sourceRef": { "page": 172, "md": "10_aide-de-jeu.md > Black Death City - Aide de jeu" }
     },
     {
       "key": "poisoned",
@@ -253,7 +253,7 @@
       "name": { "en": "Veteran Skills", "fr": "Compétences de vétéran" },
       "eligibility": { "kind": "any" },
       "eligibilityLabel": { "en": "Any fighter", "fr": "N'importe quel combattant" },
-      "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Compétences de vétéran" },
+      "sourceRef": { "page": 53, "md": "05_bandes-regles-generales.md > Compétences de vétéran" },
       "skills": [
         {
           "id": "dual-weapon-wielder",
@@ -262,7 +262,7 @@
             "en": "Each time this fighter attacks with an off-hand weapon, they can make 2 attacks with that weapon instead of 1.",
             "fr": "Chaque fois que ce combattant attaque avec une arme de main secondaire, il peut effectuer 2 attaques avec cette arme à la place de 1."
           },
-          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Combattant à deux armes" }
+          "sourceRef": { "page": 53, "md": "05_bandes-regles-generales.md > Combattant à deux armes" }
         },
         {
           "id": "shooting-drills",
@@ -271,7 +271,7 @@
             "en": "Each time this fighter reloads a weapon, they can make a Willpower test. If they pass, they do not need to forgo a Move or Action, (see Reload weapon trait).",
             "fr": "Chaque fois que ce combattant recharge une arme, il peut effectuer un test de Volonté. S'il le réussit, il n'a pas besoin de renoncer à un Mouvement ou à une Action, voir le trait d'arme Rechargement."
           },
-          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Exercices de tir" }
+          "sourceRef": { "page": 53, "md": "05_bandes-regles-generales.md > Exercices de tir" }
         },
         {
           "id": "great-weapon-master",
@@ -280,7 +280,7 @@
             "en": "This fighter ignores the 'Unwieldy' weapon trait on Melee Weapons.",
             "fr": "Ce combattant ignore le trait d'arme \"Encombrant\" des armes de corps à corps."
           },
-          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Maître des grandes armes" }
+          "sourceRef": { "page": 53, "md": "05_bandes-regles-generales.md > Maître des grandes armes" }
         },
         {
           "id": "unshakeable",
@@ -289,7 +289,7 @@
             "en": "This fighter ignores the Fear special rule and all rules that would make them scatter (eg. the Scare weapon trait).",
             "fr": "Ce combattant ignore la règle spéciale Peur et toutes les règles qui le feraient dévier, par exemple le trait d'arme Effroi."
           },
-          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Inébranlable" }
+          "sourceRef": { "page": 53, "md": "05_bandes-regles-generales.md > Inébranlable" }
         },
         {
           "id": "tough-bastard",
@@ -298,7 +298,7 @@
             "en": "Each time this fighter activates while they are bloodied, they can take a Willpower test. If they pass, they heal 1 life point and are no longer bloodied.",
             "fr": "Chaque fois que ce combattant est activé alors qu'il est ensanglanté, il peut effectuer un test de Volonté. S'il le réussit, il est soigné de 1 point de vie et n'est plus ensanglanté."
           },
-          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Dur à cuire" }
+          "sourceRef": { "page": 53, "md": "05_bandes-regles-generales.md > Dur à cuire" }
         },
         {
           "id": "fast-learner",
@@ -307,7 +307,7 @@
             "en": "In the Aftermath sequence of each battle, this fighter earns 1D6 bonus experience.",
             "fr": "Lors de la séquence d'après-bataille de chaque bataille, ce combattant gagne 1D6 d'expérience bonus."
           },
-          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Apprend vite" }
+          "sourceRef": { "page": 53, "md": "05_bandes-regles-generales.md > Apprend vite" }
         },
         {
           "id": "duellist",
@@ -316,7 +316,7 @@
             "en": "This fighter can parry critical hits with any successful attack.",
             "fr": "Ce combattant peut parer les touches critiques avec n'importe quelle attaque réussie."
           },
-          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Duelliste" }
+          "sourceRef": { "page": 53, "md": "05_bandes-regles-generales.md > Duelliste" }
         },
         {
           "id": "steady-aim",
@@ -325,7 +325,7 @@
             "en": "Add 1 to attack rolls for ranged attacks made by this fighter, while this fighter has not moved in the same activation.",
             "fr": "Ajoutez 1 aux jets d'attaque des attaques à distance effectuées par ce combattant, tant que ce combattant ne s'est pas déplacé pendant la même activation."
           },
-          "sourceRef": { "page": 51, "md": "05_bandes-regles-generales.md > Visée stable" }
+          "sourceRef": { "page": 53, "md": "05_bandes-regles-generales.md > Visée stable" }
         }
       ]
     }
@@ -341,7 +341,7 @@
       { "level": 2, "fromBattles": 3, "income": "4d6x5", "upgrades": 1 },
       { "level": 3, "fromBattles": 8, "income": "5d6x5", "upgrades": 2 }
     ],
-    "sourceRef": { "page": 137, "md": "12_campagne.md > Repaires" },
+    "sourceRef": { "page": 141, "md": "12_campagne.md > Repaires" },
     "tables": [
       {
         "id": "lasting-injuries",
