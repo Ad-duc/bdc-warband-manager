@@ -6,8 +6,10 @@
  *              groups, reserve, treasure) and, for each scenario, its sections
  *              before / during the battle and for the campaign, its map legend,
  *              its twist table, the number of battle groups and the rounds the
- *              reinforcements arrive. The text stays the translation's: nothing
- *              is rewritten, the sections are only cut out.
+ *              reinforcements arrive. Since playtest v1.11 a result of the
+ *              scenario table can ask for a second dice (6: 1-3 or 4-6). The
+ *              text stays the translation's: nothing is rewritten, the
+ *              sections are only cut out.
  * Author:      Adrien Duclaud
  * Created:     2026-10-13
  * License:     MIT (code). The rules text belongs to its author, see README.
@@ -30,7 +32,7 @@ export interface Twist {
 }
 
 export interface Scenario {
-  /** Scenario number, also its result on the scenario table (1 to 6). */
+  /** Scenario number of the book (I to VII). Its result on the scenario table is in `ScenarioChapter.table`. */
   number: number;
   /** French title without the original term, eg. "Une rencontre mortelle". */
   title: string;
@@ -49,11 +51,26 @@ export interface Scenario {
   reinforcementRounds: number[];
 }
 
+/** Scenario picked by a result of the scenario table, for a range of the second dice. */
+export interface TablePick {
+  from: number;
+  to: number;
+  /** Scenario number. */
+  number: number;
+}
+
+export interface TableRow {
+  roll: number;
+  label: string;
+  /** One scenario (second dice 1 to 6, not rolled) or several, each with its range. */
+  picks: TablePick[];
+}
+
 export interface ScenarioChapter {
   title: string;
   intro: string;
-  /** Scenario table: roll -> scenario number. */
-  table: { roll: number; label: string }[];
+  /** Scenario table, one row per result of the first dice. */
+  table: TableRow[];
   /** Rules shared by the scenarios: battle groups, reserve, treasure. */
   shared: Section[];
   scenarios: Scenario[];
@@ -150,7 +167,8 @@ export function parseScenarios(markdown: string): ScenarioChapter {
       if (/^Déterminer le scénario/.test(block.heading)) {
         for (const line of block.lines) {
           const row = /^\|\s*(\d)\s*\|\s*(.*?)\s*\|$/.exec(line);
-          if (row !== null) result.table.push({ roll: Number(row[1]), label: (row[2] ?? "").trim() });
+          if (row !== null)
+            result.table.push({ roll: Number(row[1]), label: (row[2] ?? "").trim(), picks: [] });
         }
         continue;
       }
@@ -207,6 +225,8 @@ export function parseScenarios(markdown: string): ScenarioChapter {
     }
   }
 
+  for (const row of result.table) row.picks = tablePicks(row.label, result.scenarios);
+
   for (const s of result.scenarios) {
     const all = [...s.phases.before, ...s.phases.during].map((x) => x.markdown).join("\n");
     const groups = /Chaque bande \(\*warband\*\) est divisée en \*\*(\d+) groupes? de combat\*\*/.exec(all);
@@ -217,6 +237,40 @@ export function parseScenarios(markdown: string): ScenarioChapter {
     );
   }
   return result;
+}
+
+/**
+ * Scenarios named by a row of the scenario table. "La Chapelle (*The Chapel*)"
+ * names one scenario; "Lancez un dé. 1-3 : A (*A*) (p. xx). 4-6 : B (*B*)"
+ * names two, each with the range of the second dice.
+ */
+function tablePicks(label: string, scenarios: Scenario[]): TablePick[] {
+  const numberOf = (original: string): number | undefined =>
+    scenarios.find((s) => s.originalTitle === original)?.number;
+  const picks: TablePick[] = [];
+  for (const m of label.matchAll(/(\d)-(\d) : [^(]*\(\*([^*]+)\*\)/g)) {
+    const number = numberOf(m[3] ?? "");
+    if (number !== undefined) picks.push({ from: Number(m[1]), to: Number(m[2]), number });
+  }
+  if (picks.length > 0) return picks;
+  const number = numberOf(/\(\*([^*]+)\*\)/.exec(label)?.[1] ?? "");
+  return number === undefined ? [] : [{ from: 1, to: 6, number }];
+}
+
+/** Scenario number for a roll on the scenario table; the second dice is only read when the row needs it. */
+export function scenarioNumberForRoll(table: TableRow[], first: number, second: number): number | null {
+  const picks = table.find((row) => row.roll === first)?.picks ?? [];
+  return picks.find((pick) => second >= pick.from && second <= pick.to)?.number ?? null;
+}
+
+/** Result of the scenario table that gives a scenario: "5", or "6 (1-3)" when a second dice is rolled. */
+export function scenarioTableResult(table: TableRow[], number: number): string {
+  for (const row of table) {
+    const pick = row.picks.find((p) => p.number === number);
+    if (pick === undefined) continue;
+    return row.picks.length === 1 ? String(row.roll) : `${row.roll} (${pick.from}-${pick.to})`;
+  }
+  return "";
 }
 
 let cached: ScenarioChapter | null = null;

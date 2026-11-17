@@ -14,7 +14,7 @@
     "fr": "La Cité est un lieu de mort. La Pourriture noire a décimé la population, laissant des corps entassés dans les rues ou jetés dans des charniers. Leur puanteur imprègne désormais le sol lui-même, où elle a acquis une sombre volonté propre.\nChaque nuit, quand le soleil sombre sous l'horizon à l'ouest et que la lune se lève à sa place, les morts de longue date s'éveillent de leur sommeil. Des tumulus anciens, au-delà des limites orientales de la Cité, s'agitent de nouveau, tandis que la terre des nombreux cimetières de la Cité bouillonne sous la poussée des morts qui se relèvent.\nUn lieu aussi abandonné est devenu un havre pour les créatures de la nuit. Les vampires, autrefois contraints de dissimuler leur lignée maudite, arpentent désormais les rues ouvertement. Les nécromanciens, exilés des terres des Hommes pour leur art blasphématoire, trouvent dans la Cité non seulement un refuge, mais aussi une source inépuisable de cadavres pour grossir leurs rangs.\nIl y a enfin ceux qui viennent du Grand Nord, des nobles dans les veines desquels coule le sang des loups. Ils viennent chercher le frisson de la chasse au milieu des ruines de la Cité, et ne connaîtront pas le repos avant d'être rassasiés."
   },
   "armouryName": { "en": "Coven Armoury", "fr": "Armurerie de la Cabale" },
-  "sourceRef": { "page": 93, "md": "08_death-covens.md > Cabales de la Mort" },
+  "sourceRef": { "page": 97, "md": "08_death-covens.md > Cabales de la Mort" },
   "assets": { "shield": "bouclier_death.webp", "accentColor": null },
 
   "origins": [
@@ -30,7 +30,7 @@
       "specialRules": [],
       "profileLimits": [{ "fighterId": "bloodcursed-knight", "limit": 3 }],
       "uncappedFighterIds": [],
-      "sourceRef": { "page": 94, "md": "08_death-covens.md > Aristocrates du sang" }
+      "sourceRef": { "page": 98, "md": "08_death-covens.md > Aristocrates du sang" }
     },
     {
       "id": "rogue-necromancer",
@@ -44,7 +44,7 @@
       "specialRules": [],
       "profileLimits": [],
       "uncappedFighterIds": [],
-      "sourceRef": { "page": 94, "md": "08_death-covens.md > Nécromancien renégat" }
+      "sourceRef": { "page": 98, "md": "08_death-covens.md > Nécromancien renégat" }
     },
     {
       "id": "the-hunt-descends",
@@ -58,7 +58,7 @@
       "specialRules": [],
       "profileLimits": [],
       "uncappedFighterIds": ["dire-wolf"],
-      "sourceRef": { "page": 94, "md": "08_death-covens.md > La chasse s'abat" }
+      "sourceRef": { "page": 98, "md": "08_death-covens.md > La chasse s'abat" }
     },
     {
       "id": "awakened-lord",
@@ -72,7 +72,7 @@
       "specialRules": [],
       "profileLimits": [],
       "uncappedFighterIds": [],
-      "sourceRef": { "page": 94, "md": "08_death-covens.md > Seigneur éveillé" }
+      "sourceRef": { "page": 98, "md": "08_death-covens.md > Seigneur éveillé" }
     }
   ],
 
@@ -96,7 +96,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 95, "md": "08_death-covens.md > Manoir opulent" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Manoir opulent" }
     },
     {
       "id": "embalmers-hall",
@@ -117,7 +117,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 95, "md": "08_death-covens.md > Salle de l'embaumeur" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Salle de l'embaumeur" }
     },
     {
       "id": "grand-pavilion",
@@ -147,7 +147,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 95, "md": "08_death-covens.md > Domaine forestier" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Domaine forestier" }
     },
     {
       "id": "ancient-barrows",
@@ -177,7 +177,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 95, "md": "08_death-covens.md > Tumulus anciens" }
+      "sourceRef": { "page": 99, "md": "08_death-covens.md > Tumulus anciens" }
     }
   ],
 
@@ -200,7 +200,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 96, "md": "08_death-covens.md > Verger de roses noires" }
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Verger de roses noires" }
     },
     {
       "id": "ossuary",
@@ -220,7 +220,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 96, "md": "08_death-covens.md > Ossuaire" }
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Ossuaire" }
     },
     {
       "id": "exhumed-crypt",
@@ -240,7 +240,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 96, "md": "08_death-covens.md > Crypte exhumée" }
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Crypte exhumée" }
     },
     {
       "id": "gargoyles-tower",
@@ -260,7 +260,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 96, "md": "08_death-covens.md > Tour des gargouilles" }
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Tour des gargouilles" }
     },
     {
       "id": "household-poisoner",
@@ -280,7 +280,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 96, "md": "08_death-covens.md > Empoisonneur de la maisonnée" }
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Empoisonneur de la maisonnée" }
     },
     {
       "id": "necromancers-mausoleum",
@@ -300,12 +300,12 @@
           }
         }
       ],
-      "sourceRef": { "page": 96, "md": "08_death-covens.md > Mausolée du nécromancien" }
+      "sourceRef": { "page": 100, "md": "08_death-covens.md > Mausolée du nécromancien" }
     }
   ],
   "nameTable": {
     "die": "d66",
-    "sourceRef": { "page": 104, "md": "08_death-covens.md > Noms des Cabales de la Mort" },
+    "sourceRef": { "page": 108, "md": "08_death-covens.md > Noms des Cabales de la Mort" },
     "entries": {
       "11": "Alaric",
       "12": "Barovyr",
@@ -387,7 +387,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Cabale."
       },
       "quote": { "en": "The City belongs to the night.", "fr": "La Cité appartient à la nuit." },
-      "sourceRef": { "page": 105, "md": "08_death-covens.md > Noble au sang maudit" }
+      "sourceRef": { "page": 109, "md": "08_death-covens.md > Noble au sang maudit" }
     },
     {
       "id": "necromancer",
@@ -423,7 +423,7 @@
         "en": "I have studied the art of death longer than you have drawn breath.",
         "fr": "J'étudie l'art de la mort depuis plus longtemps que tu ne respires."
       },
-      "sourceRef": { "page": 105, "md": "08_death-covens.md > Nécromancien" }
+      "sourceRef": { "page": 109, "md": "08_death-covens.md > Nécromancien" }
     },
     {
       "id": "lycanfell-noble",
@@ -468,7 +468,7 @@
         "en": "The wind bears the scent of blood. The hunt calls me once more.",
         "fr": "Le vent charrie l'odeur du sang. La chasse m'appelle une fois encore."
       },
-      "sourceRef": { "page": 106, "md": "08_death-covens.md > Noble lycanthrope" }
+      "sourceRef": { "page": 110, "md": "08_death-covens.md > Noble lycanthrope" }
     },
     {
       "id": "lycanfell-beast",
@@ -510,7 +510,7 @@
         "fr": "Ce combattant est équipé de Griffes de loup, voir ci-dessous."
       },
       "quote": { "en": "Flesh... blood... marrow...", "fr": "Chair... sang... moelle..." },
-      "sourceRef": { "page": 106, "md": "08_death-covens.md > Bête lycanthrope" }
+      "sourceRef": { "page": 110, "md": "08_death-covens.md > Bête lycanthrope" }
     },
     {
       "id": "barrow-lord",
@@ -552,7 +552,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Cabale."
       },
       "quote": { "en": "I command thee to rise again.", "fr": "Je t'ordonne de te relever." },
-      "sourceRef": { "page": 107, "md": "08_death-covens.md > Seigneur des tumulus" }
+      "sourceRef": { "page": 111, "md": "08_death-covens.md > Seigneur des tumulus" }
     },
     {
       "id": "bloodcursed-courtesan",
@@ -585,7 +585,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Praticiens de l'Armurerie de la Cabale."
       },
       "quote": { "en": "Come hither... I insist.", "fr": "Approche... j'insiste." },
-      "sourceRef": { "page": 107, "md": "08_death-covens.md > Courtisane au sang maudit" }
+      "sourceRef": { "page": 111, "md": "08_death-covens.md > Courtisane au sang maudit" }
     },
     {
       "id": "bloodcursed-knight",
@@ -621,7 +621,7 @@
         "en": "Kneel, and I may grant you a swift death.",
         "fr": "À genoux, et je t'accorderai peut-être une mort rapide."
       },
-      "sourceRef": { "page": 108, "md": "08_death-covens.md > Chevalier au sang maudit" }
+      "sourceRef": { "page": 112, "md": "08_death-covens.md > Chevalier au sang maudit" }
     },
     {
       "id": "misbegotten",
@@ -685,7 +685,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Cabale."
       },
       "quote": { "en": "No... look not upon me...", "fr": "Non... ne me regardez pas..." },
-      "sourceRef": { "page": 108, "md": "08_death-covens.md > Bâtard du sang" }
+      "sourceRef": { "page": 112, "md": "08_death-covens.md > Bâtard du sang" }
     },
     {
       "id": "necromancers-apprentice",
@@ -721,7 +721,7 @@
         "en": "The secrets of the grave shall be mine in time.",
         "fr": "Les secrets de la tombe seront miens, le moment venu."
       },
-      "sourceRef": { "page": 109, "md": "08_death-covens.md > Apprenti nécromancien" }
+      "sourceRef": { "page": 113, "md": "08_death-covens.md > Apprenti nécromancien" }
     },
     {
       "id": "barrow-champion",
@@ -763,7 +763,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Cabale."
       },
       "quote": { "en": "Death does not relinquish duty.", "fr": "La mort ne délie pas du devoir." },
-      "sourceRef": { "page": 109, "md": "08_death-covens.md > Champion des tumulus" }
+      "sourceRef": { "page": 113, "md": "08_death-covens.md > Champion des tumulus" }
     },
     {
       "id": "manservant",
@@ -786,7 +786,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie de la Cabale."
       },
       "quote": { "en": "Yes, m'lord?", "fr": "Oui, monseigneur ?" },
-      "sourceRef": { "page": 110, "md": "08_death-covens.md > Serviteur" }
+      "sourceRef": { "page": 114, "md": "08_death-covens.md > Serviteur" }
     },
     {
       "id": "skeleton-warrior",
@@ -815,11 +815,11 @@
       "options": null,
       "formOf": null,
       "wargearText": {
-        "en": "This fighter can be equipped with wargear from the Main List from the Coven Armoury.",
-        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie de la Cabale."
+        "en": "This fighter can be equipped with wargear from the Main List and the Skeleton Warrior List from the Coven Armoury.",
+        "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Guerriers squelettes de l'Armurerie de la Cabale."
       },
       "quote": null,
-      "sourceRef": { "page": 110, "md": "08_death-covens.md > Guerrier squelette" }
+      "sourceRef": { "page": 114, "md": "08_death-covens.md > Guerrier squelette" }
     },
     {
       "id": "zombie",
@@ -852,7 +852,7 @@
         "fr": "Ce combattant est équipé d'une morsure de zombie, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": null,
-      "sourceRef": { "page": 110, "md": "08_death-covens.md > Zombie" }
+      "sourceRef": { "page": 114, "md": "08_death-covens.md > Zombie" }
     },
     {
       "id": "zombie-ogre",
@@ -885,7 +885,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste des Ogres zombies de l'Armurerie de la Cabale."
       },
       "quote": null,
-      "sourceRef": { "page": 111, "md": "08_death-covens.md > Ogre zombie" }
+      "sourceRef": { "page": 115, "md": "08_death-covens.md > Ogre zombie" }
     },
     {
       "id": "gargoyle",
@@ -918,7 +918,7 @@
         "fr": "Ce combattant est équipé de serres de pierre, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": null,
-      "sourceRef": { "page": 111, "md": "08_death-covens.md > Gargouille" }
+      "sourceRef": { "page": 115, "md": "08_death-covens.md > Gargouille" }
     },
     {
       "id": "dire-bat",
@@ -951,7 +951,7 @@
         "fr": "Ce combattant est équipé de crocs mordants, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": null,
-      "sourceRef": { "page": 112, "md": "08_death-covens.md > Chauve-souris sinistre" }
+      "sourceRef": { "page": 116, "md": "08_death-covens.md > Chauve-souris sinistre" }
     },
     {
       "id": "dire-wolf",
@@ -993,7 +993,7 @@
         "fr": "Ce combattant est équipé d'une morsure nécrotique, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": null,
-      "sourceRef": { "page": 112, "md": "08_death-covens.md > Loup sinistre" }
+      "sourceRef": { "page": 116, "md": "08_death-covens.md > Loup sinistre" }
     }
   ],
 
@@ -1017,7 +1017,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "axe",
@@ -1038,7 +1038,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "biting-fangs",
@@ -1059,7 +1059,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 112, "md": "08_death-covens.md > Chauve-souris sinistre" }
+      "sourceRef": { "page": 116, "md": "08_death-covens.md > Chauve-souris sinistre" }
     },
     {
       "id": "club-mace-hammer",
@@ -1080,7 +1080,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "cursed-blade",
@@ -1101,7 +1101,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "dagger",
@@ -1122,7 +1122,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "ensorcelled-weapon",
@@ -1146,7 +1146,7 @@
         "en": "You can use any weapon to represent the Ensorcelled Weapon.",
         "fr": "Vous pouvez utiliser n'importe quelle arme pour représenter l'Arme ensorcelée."
       },
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "flail",
@@ -1167,7 +1167,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "great-mace",
@@ -1188,7 +1188,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "halberd",
@@ -1209,7 +1209,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "heavy-axe",
@@ -1230,7 +1230,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "necrotic-bite",
@@ -1251,7 +1251,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 112, "md": "08_death-covens.md > Loup sinistre" }
+      "sourceRef": { "page": 116, "md": "08_death-covens.md > Loup sinistre" }
     },
     {
       "id": "ogre-blade",
@@ -1272,7 +1272,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "ogre-great-weapon",
@@ -1293,7 +1293,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "ogre-mace",
@@ -1314,7 +1314,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "spear",
@@ -1335,7 +1335,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "stone-talons",
@@ -1356,7 +1356,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 111, "md": "08_death-covens.md > Gargouille" }
+      "sourceRef": { "page": 115, "md": "08_death-covens.md > Gargouille" }
     },
     {
       "id": "sword",
@@ -1377,7 +1377,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes de corps à corps" }
     },
     {
       "id": "wulfen-claws",
@@ -1398,7 +1398,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 106, "md": "08_death-covens.md > Bête lycanthrope" }
+      "sourceRef": { "page": 110, "md": "08_death-covens.md > Bête lycanthrope" }
     },
     {
       "id": "zombie-bite",
@@ -1419,11 +1419,11 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 110, "md": "08_death-covens.md > Zombie" }
+      "sourceRef": { "page": 114, "md": "08_death-covens.md > Zombie" }
     },
     {
       "id": "long-bow",
-      "name": { "en": "Long Bow", "fr": "Arc long" },
+      "name": { "en": "Longbow", "fr": "Arc long" },
       "kind": "ranged",
       "cost": 26,
       "purchasable": true,
@@ -1440,11 +1440,11 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes à distance" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes à distance" }
     },
     {
       "id": "short-bow",
-      "name": { "en": "Short Bow", "fr": "Arc court" },
+      "name": { "en": "Shortbow", "fr": "Arc court" },
       "kind": "ranged",
       "cost": 16,
       "purchasable": true,
@@ -1461,7 +1461,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 99, "md": "08_death-covens.md > Armurerie de la Cabale - Armes à distance" }
+      "sourceRef": { "page": 103, "md": "08_death-covens.md > Armurerie de la Cabale - Armes à distance" }
     },
     {
       "id": "cuirass",
@@ -1482,7 +1482,7 @@
       "weaponImprovements": [],
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 100, "md": "08_death-covens.md > Cuirasse" }
+      "sourceRef": { "page": 104, "md": "08_death-covens.md > Cuirasse" }
     },
     {
       "id": "warded-robes",
@@ -1506,7 +1506,7 @@
         "fr": "Lancez un dé chaque fois qu'un combattant équipé de cette armure est ciblé par un sort lancé par un combattant ennemi. Sur 4+, le sort n'a aucun effet sur ce combattant."
       },
       "designerNote": null,
-      "sourceRef": { "page": 100, "md": "08_death-covens.md > Robe de protection" }
+      "sourceRef": { "page": 104, "md": "08_death-covens.md > Robe de protection" }
     },
     {
       "id": "full-plate",
@@ -1530,7 +1530,7 @@
         "fr": "Les combattants équipés de cette armure ne peuvent pas être équipés d'armes à distance à deux mains, à l'exception d'une Paire de pistolets."
       },
       "designerNote": null,
-      "sourceRef": { "page": 100, "md": "08_death-covens.md > Armure de plates" }
+      "sourceRef": { "page": 104, "md": "08_death-covens.md > Armure de plates" }
     },
     {
       "id": "ancient-banner",
@@ -1554,7 +1554,7 @@
         "fr": "Tant que ce combattant est sur le champ de bataille, vous pouvez relancer les tests de déroute.\nVous pouvez relancer les tests de Volonté effectués par les combattants alliés tant qu'ils sont à 12\" ou moins de ce combattant et que ce combattant est visible pour eux."
       },
       "designerNote": null,
-      "sourceRef": { "page": 100, "md": "08_death-covens.md > Bannière ancienne" }
+      "sourceRef": { "page": 104, "md": "08_death-covens.md > Bannière ancienne" }
     },
     {
       "id": "bestial-companion",
@@ -1581,7 +1581,7 @@
         "en": "This item is designed for miniatures that feature other creatures such as dire wolves on the same base. The Bestial Companion is not considered a separate fighter for any rules.",
         "fr": "Cet objet est conçu pour les figurines qui comportent d'autres créatures sur le même socle, comme des loups monstrueux. Le Compagnon bestial n'est considéré comme un combattant distinct pour aucune règle."
       },
-      "sourceRef": { "page": 100, "md": "08_death-covens.md > Compagnon bestial" }
+      "sourceRef": { "page": 104, "md": "08_death-covens.md > Compagnon bestial" }
     },
     {
       "id": "grimoire",
@@ -1605,7 +1605,7 @@
         "fr": "Une fois par bataille, après que ce combattant a effectué un jet de lancement, vous pouvez relancer le jet de lancement."
       },
       "designerNote": null,
-      "sourceRef": { "page": 100, "md": "08_death-covens.md > Grimoire" }
+      "sourceRef": { "page": 104, "md": "08_death-covens.md > Grimoire" }
     },
     {
       "id": "spirit-guardian",
@@ -1632,7 +1632,7 @@
         "en": "This item is designed for miniatures that feature other creatures such as spirits and ghosts on the same base. The Spirit Guardian is not considered a separate fighter for any rules.",
         "fr": "Cet objet est conçu pour les figurines qui comportent d'autres créatures sur le même socle, comme des esprits et des fantômes. L'Esprit gardien n'est considéré comme un combattant distinct pour aucune règle."
       },
-      "sourceRef": { "page": 100, "md": "08_death-covens.md > Esprit gardien" }
+      "sourceRef": { "page": 104, "md": "08_death-covens.md > Esprit gardien" }
     },
     {
       "id": "shield",
@@ -1656,7 +1656,7 @@
         "fr": "Améliorez de 1 la valeur d'Armure de ce combattant, jusqu'à un maximum de 2+. (Par exemple, 6+ devient 5+)."
       },
       "designerNote": null,
-      "sourceRef": { "page": 100, "md": "08_death-covens.md > Bouclier" }
+      "sourceRef": { "page": 104, "md": "08_death-covens.md > Bouclier" }
     },
     {
       "id": "winged-familiar",
@@ -1680,7 +1680,7 @@
         "fr": "Une fois par bataille, le combattant peut utiliser l'action bonus suivante :\nHarceler [Action bonus] : choisissez un combattant ennemi visible à 24\" ou moins. Jusqu'à la fin du round, ce combattant ennemi est harcelé. Tant qu'un combattant est harcelé, chaque fois qu'il effectue un Mouvement ou une Action, il doit réussir un test de Volonté, sans quoi il perd ce Mouvement ou cette Action."
       },
       "designerNote": null,
-      "sourceRef": { "page": 100, "md": "08_death-covens.md > Familier ailé" }
+      "sourceRef": { "page": 104, "md": "08_death-covens.md > Familier ailé" }
     }
   ],
 
@@ -1688,7 +1688,7 @@
     {
       "id": "main",
       "name": { "en": "Main List", "fr": "Liste principale" },
-      "sourceRef": { "page": 98, "md": "08_death-covens.md > Liste principale" },
+      "sourceRef": { "page": 102, "md": "08_death-covens.md > Liste principale" },
       "entries": [
         { "wargearId": "axe", "cost": 16 },
         { "wargearId": "club-mace-hammer", "cost": 14 },
@@ -1704,7 +1704,7 @@
     {
       "id": "champion",
       "name": { "en": "Champion List", "fr": "Liste des Champions" },
-      "sourceRef": { "page": 98, "md": "08_death-covens.md > Liste des Champions" },
+      "sourceRef": { "page": 102, "md": "08_death-covens.md > Liste des Champions" },
       "entries": [
         { "wargearId": "cursed-blade", "cost": 40 },
         { "wargearId": "great-mace", "cost": 38 },
@@ -1719,7 +1719,7 @@
     {
       "id": "zombie-ogre",
       "name": { "en": "Zombie Ogre List", "fr": "Liste des Ogres zombies" },
-      "sourceRef": { "page": 98, "md": "08_death-covens.md > Liste des Ogres zombies" },
+      "sourceRef": { "page": 102, "md": "08_death-covens.md > Liste des Ogres zombies" },
       "entries": [
         { "wargearId": "ogre-blade", "cost": 36 },
         { "wargearId": "ogre-great-weapon", "cost": 50 },
@@ -1730,7 +1730,7 @@
     {
       "id": "practitioner",
       "name": { "en": "Practitioner List", "fr": "Liste des Praticiens" },
-      "sourceRef": { "page": 98, "md": "08_death-covens.md > Liste des Praticiens" },
+      "sourceRef": { "page": 102, "md": "08_death-covens.md > Liste des Praticiens" },
       "entries": [
         { "wargearId": "arcane-staff", "cost": 10 },
         { "wargearId": "ensorcelled-weapon", "cost": 26 },
@@ -1746,7 +1746,7 @@
     {
       "id": "skeleton-warrior",
       "name": { "en": "Skeleton Warrior List", "fr": "Liste des Guerriers squelettes" },
-      "sourceRef": { "page": 98, "md": "08_death-covens.md > Liste des Guerriers squelettes" },
+      "sourceRef": { "page": 102, "md": "08_death-covens.md > Liste des Guerriers squelettes" },
       "entries": [
         { "wargearId": "long-bow", "cost": 26 },
         { "wargearId": "short-bow", "cost": 16 }
@@ -1769,7 +1769,7 @@
         "en": "Undead Aristocrat Leaders and Champions only",
         "fr": "Chefs et Champions Morts-vivants Aristocrates uniquement"
       },
-      "sourceRef": { "page": 103, "md": "08_death-covens.md > Sombre aristocratie" },
+      "sourceRef": { "page": 107, "md": "08_death-covens.md > Sombre aristocratie" },
       "skills": [
         {
           "id": "cloud-of-bats",
@@ -1778,7 +1778,7 @@
             "en": "Once per battle, this fighter can use the following bonus action:\nCloud of Bats [Bonus Action]: Remove the fighter from the battlefield, set them up again anywhere on the battlefield, wholly within 9\" horizontally of their previous location. They cannot be set up engaged in melee.",
             "fr": "Une fois par bataille, ce combattant peut utiliser l'action bonus suivante :\nNuée de chauves-souris [Action bonus] : retirez le combattant du champ de bataille et placez-le de nouveau n'importe où sur le champ de bataille, entièrement à 9\" ou moins horizontalement de son emplacement précédent. Il ne peut pas être placé engagé au corps à corps."
           },
-          "sourceRef": { "page": 103, "md": "08_death-covens.md > Nuée de chauves-souris" }
+          "sourceRef": { "page": 107, "md": "08_death-covens.md > Nuée de chauves-souris" }
         },
         {
           "id": "mesmeric-gaze",
@@ -1787,7 +1787,7 @@
             "en": "Once per battle, when this fighter makes a Melee Attack action, it can attempt to mesmerise the defending fighter. If they do so, the commanding players each roll a dice and add their fighter's Willpower value to the score. If this fighter's total exceeds the defending fighter's total, they are mesmerised for that action. While they are mesmerised, subtract 1 from the Attacks value of their melee weapons (off-hand attacks are not affected).",
             "fr": "Une fois par bataille, quand ce combattant effectue une action d'Attaque au corps à corps, il peut tenter d'hypnotiser le défenseur. Dans ce cas, le joueur qui contrôle le combattant, de chaque côté, lance un dé et ajoute la valeur de Volonté de son combattant au résultat. Si le total de ce combattant dépasse le total du défenseur, ce dernier est hypnotisé pour cette action. Tant qu'il est hypnotisé, soustrayez 1 à la valeur d'Attaques de ses armes de corps à corps ; les attaques de main secondaire ne sont pas affectées."
           },
-          "sourceRef": { "page": 103, "md": "08_death-covens.md > Regard hypnotique" }
+          "sourceRef": { "page": 107, "md": "08_death-covens.md > Regard hypnotique" }
         },
         {
           "id": "unholy-strength",
@@ -1796,16 +1796,16 @@
             "en": "This fighter's melee weapons gain the Bludgeon weapon trait.",
             "fr": "Les armes de corps à corps de ce combattant gagnent le trait d'arme Contondant."
           },
-          "sourceRef": { "page": 103, "md": "08_death-covens.md > Force impie" }
+          "sourceRef": { "page": 107, "md": "08_death-covens.md > Force impie" }
         },
         {
           "id": "supernatural-healing",
           "name": { "en": "Supernatural Healing", "fr": "Guérison surnaturelle" },
           "text": {
-            "en": "This fighter cannot suffer permanent injuries. If they suffer an injury it is always temporary (pg xx).\nIn addition, if this fighter is killed, you can immediately make a Willpower test for them. If passed, they are not killed but miss the next 1D3 battles as they slumber. Pick a Champion in your warband to assume command in their absence (pg xx).",
-            "fr": "Ce combattant ne peut pas subir de blessures permanentes. S'il subit une blessure, elle est toujours temporaire (p. xx).\nDe plus, si ce combattant est tué, vous pouvez immédiatement effectuer un test de Volonté pour lui. S'il est réussi, il n'est pas tué, mais il manque les 1D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande pour assumer le commandement en son absence (p. xx)."
+            "en": "This fighter cannot suffer permanent injuries. If they suffer an injury it is always temporary (pg xx).\nIn addition, if this fighter is killed, you can immediately make a Willpower test for them. If passed, they are not killed but miss the next 1D3 battles as they slumber. If they are your Leader, pick a Champion in your warband to assume command in their absence (pg xx).",
+            "fr": "Ce combattant ne peut pas subir de blessures permanentes. S'il subit une blessure, elle est toujours temporaire (p. xx).\nDe plus, si ce combattant est tué, vous pouvez immédiatement effectuer un test de Volonté pour lui. S'il est réussi, il n'est pas tué, mais il manque les 1D3 prochaines batailles, le temps de son sommeil. S'il est votre Chef, choisissez un Champion de votre bande pour assumer le commandement en son absence (p. xx)."
           },
-          "sourceRef": { "page": 103, "md": "08_death-covens.md > Guérison surnaturelle" }
+          "sourceRef": { "page": 107, "md": "08_death-covens.md > Guérison surnaturelle" }
         },
         {
           "id": "leech-blood",
@@ -1814,7 +1814,7 @@
             "en": "Once per battle, this fighter can use the following bonus action:\nLeech Blood [Bonus Action]: Each enemy fighter within 9\" of this fighter must take a Willpower test. If they fail, they suffer 1 damage and this fighter heals 1 life.",
             "fr": "Une fois par bataille, ce combattant peut utiliser l'action bonus suivante :\nDrain de sang [Action bonus] : chaque combattant ennemi à 9\" ou moins de ce combattant doit effectuer un test de Volonté. S'il le rate, il subit 1 dégât et ce combattant est soigné de 1 point de vie."
           },
-          "sourceRef": { "page": 103, "md": "08_death-covens.md > Drain de sang" }
+          "sourceRef": { "page": 107, "md": "08_death-covens.md > Drain de sang" }
         },
         {
           "id": "relentless-attacker",
@@ -1823,7 +1823,7 @@
             "en": "Subtract 1 from parry rolls made against attacks made by this fighter.",
             "fr": "Soustrayez 1 aux jets de parade effectués contre les attaques effectuées par ce combattant."
           },
-          "sourceRef": { "page": 103, "md": "08_death-covens.md > Attaquant implacable" }
+          "sourceRef": { "page": 107, "md": "08_death-covens.md > Attaquant implacable" }
         }
       ]
     },
@@ -1841,7 +1841,7 @@
         "en": "Undead Skeleton Leaders and Champions only",
         "fr": "Chefs et Champions Morts-vivants Squelettes uniquement"
       },
-      "sourceRef": { "page": 104, "md": "08_death-covens.md > Seigneurs immortels" },
+      "sourceRef": { "page": 108, "md": "08_death-covens.md > Seigneurs immortels" },
       "skills": [
         {
           "id": "death-march",
@@ -1850,7 +1850,7 @@
             "en": "Once per battle, this fighter can use the following bonus action:\nDeath March [Bonus Action]: Until the end of the round, add 2 to the Move value of friendly Thralls who begin a move while they are within 9\" of this fighter.",
             "fr": "Une fois par bataille, ce combattant peut utiliser l'action bonus suivante :\nMarche de la mort [Action bonus] : jusqu'à la fin du round, ajoutez 2 à la valeur de Mouvement des Asservis alliés qui commencent un Mouvement alors qu'ils sont à 9\" ou moins de ce combattant."
           },
-          "sourceRef": { "page": 104, "md": "08_death-covens.md > Marche de la mort" }
+          "sourceRef": { "page": 108, "md": "08_death-covens.md > Marche de la mort" }
         },
         {
           "id": "rise-again",
@@ -1859,7 +1859,7 @@
             "en": "When this fighter is taken down for the first time in battle, mark its location with a token. At the start of each subsequent round you can roll a dice, on a 6 the fighter returns.\nIf the fighter returns, set them up on the battlefield as close to the marked location as possible. They heal 1D3 life points. A fighter can only return once per battle in this manner.",
             "fr": "Quand ce combattant est mis hors de combat pour la première fois au cours de la bataille, repérez son emplacement avec un pion. Au début de chaque round suivant, vous pouvez lancer un dé : sur 6, le combattant revient.\nSi le combattant revient, placez-le sur le champ de bataille aussi près que possible de l'emplacement repéré. Il est soigné de 1D3 points de vie. Un combattant ne peut revenir de cette manière qu'une fois par bataille."
           },
-          "sourceRef": { "page": 104, "md": "08_death-covens.md > Se relever" }
+          "sourceRef": { "page": 108, "md": "08_death-covens.md > Se relever" }
         },
         {
           "id": "chill-touch",
@@ -1868,7 +1868,7 @@
             "en": "Add 1 to the Critical Damage value of this fighter's melee weapons.",
             "fr": "Ajoutez 1 à la valeur de Dégâts critiques des armes de corps à corps de ce combattant."
           },
-          "sourceRef": { "page": 104, "md": "08_death-covens.md > Toucher glacial" }
+          "sourceRef": { "page": 108, "md": "08_death-covens.md > Toucher glacial" }
         },
         {
           "id": "dread-aura",
@@ -1877,7 +1877,7 @@
             "en": "This fighter causes fear. Enemy fighters that start their activation engaged in melee with a fighter that causes fear must pass a Willpower test. If they fail, their activation immediately ends.\nEnemy fighters that also cause fear can ignore this rule.",
             "fr": "Ce combattant cause la peur. Les combattants ennemis qui commencent leur activation engagés au corps à corps avec un combattant qui cause la peur doivent réussir un test de Volonté. S'ils le ratent, leur activation prend fin immédiatement.\nUn combattant ennemi qui cause la peur lui aussi peut ignorer cette règle."
           },
-          "sourceRef": { "page": 104, "md": "08_death-covens.md > Aura de terreur" }
+          "sourceRef": { "page": 108, "md": "08_death-covens.md > Aura de terreur" }
         },
         {
           "id": "drag-down-into-the-earth",
@@ -1886,7 +1886,7 @@
             "en": "When this fighter is taken down while engaged in melee, pick 1 fighter it is engaged with, they suffer 1D3 damage.",
             "fr": "Quand ce combattant est mis hors de combat alors qu'il est engagé au corps à corps, choisissez 1 combattant avec lequel il est engagé : le combattant choisi subit 1D3 dégâts."
           },
-          "sourceRef": { "page": 104, "md": "08_death-covens.md > Entraîner sous terre" }
+          "sourceRef": { "page": 108, "md": "08_death-covens.md > Entraîner sous terre" }
         },
         {
           "id": "kingsguard",
@@ -1896,7 +1896,7 @@
             "en": "This skill can only be picked for a Champion.\nIf an enemy fighter finishes a Charge Move engaged in melee with a friendly Leader, and this fighter is not engaged, this fighter can make a Charge Move. This fighter must finish that Charge Move engaged in melee with that enemy fighter. If it does so, the enemy fighter must target this fighter with any melee attack actions it makes this activation.",
             "fr": "Cette compétence ne peut être choisie que pour un Champion.\nSi un combattant ennemi termine une Charge engagé au corps à corps avec un Chef allié, et que ce combattant n'est pas engagé, ce combattant peut effectuer une Charge. Ce combattant doit terminer cette Charge engagé au corps à corps avec ce combattant ennemi. Dans ce cas, le combattant ennemi doit cibler ce combattant avec toutes les actions d'Attaque au corps à corps qu'il effectue pendant cette activation."
           },
-          "sourceRef": { "page": 104, "md": "08_death-covens.md > Garde royale" }
+          "sourceRef": { "page": 108, "md": "08_death-covens.md > Garde royale" }
         }
       ]
     }
@@ -1907,7 +1907,7 @@
       "id": "lore-of-necromancy",
       "name": { "en": "Lore of Necromancy", "fr": "Domaine de la Nécromancie" },
       "die": "d6",
-      "sourceRef": { "page": 101, "md": "08_death-covens.md > Domaine de la Nécromancie" },
+      "sourceRef": { "page": 105, "md": "08_death-covens.md > Domaine de la Nécromancie" },
       "spells": [
         {
           "id": "witchfire",
@@ -1925,7 +1925,7 @@
             "fr": "Placez 3 pions Feu sorcier à côté du lanceur, jusqu'à un maximum de 3, à la place de 1D3."
           },
           "attack": { "rend": 0, "damage": "d3" },
-          "sourceRef": { "page": 101, "md": "08_death-covens.md > 1 - Feu sorcier" }
+          "sourceRef": { "page": 105, "md": "08_death-covens.md > 1 - Feu sorcier" }
         },
         {
           "id": "ethereal-armour",
@@ -1943,7 +1943,7 @@
             "fr": "Augmentez la portée du sort de 6\" à 12\"."
           },
           "attack": null,
-          "sourceRef": { "page": 101, "md": "08_death-covens.md > 2 - Armure éthérée" }
+          "sourceRef": { "page": 105, "md": "08_death-covens.md > 2 - Armure éthérée" }
         },
         {
           "id": "raise-zombie",
@@ -1961,7 +1961,7 @@
             "fr": "Le combattant peut être placé à 9\" ou moins du lanceur et non engagé au corps à corps."
           },
           "attack": null,
-          "sourceRef": { "page": 101, "md": "08_death-covens.md > 3 - Relever un Zombie" }
+          "sourceRef": { "page": 105, "md": "08_death-covens.md > 3 - Relever un Zombie" }
         },
         {
           "id": "twilight-translocation",
@@ -1979,7 +1979,7 @@
             "fr": "Au moment de placer le combattant, augmentez la portée à 18\"."
           },
           "attack": null,
-          "sourceRef": { "page": 101, "md": "08_death-covens.md > 4 - Translocation crépusculaire" }
+          "sourceRef": { "page": 105, "md": "08_death-covens.md > 4 - Translocation crépusculaire" }
         },
         {
           "id": "death-blast",
@@ -1994,7 +1994,7 @@
           },
           "criticalText": { "en": "It does not scatter.", "fr": "Il ne dévie pas." },
           "attack": { "rend": -1, "damage": "d3+1" },
-          "sourceRef": { "page": 101, "md": "08_death-covens.md > 5 - Explosion de mort" }
+          "sourceRef": { "page": 105, "md": "08_death-covens.md > 5 - Explosion de mort" }
         },
         {
           "id": "balefire",
@@ -2009,7 +2009,7 @@
           },
           "criticalText": { "en": "Add 1 to the Damage value.", "fr": "Ajoutez 1 à la valeur de Dégâts." },
           "attack": { "rend": -2, "damage": "d3" },
-          "sourceRef": { "page": 101, "md": "08_death-covens.md > 6 - Feu funeste" }
+          "sourceRef": { "page": 105, "md": "08_death-covens.md > 6 - Feu funeste" }
         }
       ]
     },
@@ -2017,7 +2017,7 @@
       "id": "lore-of-blood",
       "name": { "en": "Lore of Blood", "fr": "Domaine du Sang" },
       "die": "d6",
-      "sourceRef": { "page": 102, "md": "08_death-covens.md > Domaine du Sang" },
+      "sourceRef": { "page": 106, "md": "08_death-covens.md > Domaine du Sang" },
       "spells": [
         {
           "id": "draw-blood",
@@ -2035,7 +2035,7 @@
             "fr": "À la place, la cible subit 2 dégâts et le lanceur est soigné de 2 points de vie."
           },
           "attack": null,
-          "sourceRef": { "page": 102, "md": "08_death-covens.md > 1 - Saignée" }
+          "sourceRef": { "page": 106, "md": "08_death-covens.md > 1 - Saignée" }
         },
         {
           "id": "cursed-blades",
@@ -2053,7 +2053,7 @@
             "fr": "Augmentez la portée du sort de 6\" à 12\"."
           },
           "attack": null,
-          "sourceRef": { "page": 102, "md": "08_death-covens.md > 2 - Lames maudites" }
+          "sourceRef": { "page": 106, "md": "08_death-covens.md > 2 - Lames maudites" }
         },
         {
           "id": "raise-skeleton",
@@ -2071,7 +2071,7 @@
             "fr": "Le combattant peut être placé à 9\" ou moins du lanceur et non engagé au corps à corps."
           },
           "attack": null,
-          "sourceRef": { "page": 102, "md": "08_death-covens.md > 3 - Relever un Squelette" }
+          "sourceRef": { "page": 106, "md": "08_death-covens.md > 3 - Relever un Squelette" }
         },
         {
           "id": "recall",
@@ -2089,7 +2089,7 @@
             "fr": "Vous pouvez choisir jusqu'à 2 Asservis alliés à la place de 1."
           },
           "attack": null,
-          "sourceRef": { "page": 102, "md": "08_death-covens.md > 4 - Rappel" }
+          "sourceRef": { "page": 106, "md": "08_death-covens.md > 4 - Rappel" }
         },
         {
           "id": "bat-scream",
@@ -2107,7 +2107,7 @@
             "fr": "Soustrayez 1 aux tests de Volonté effectués par les combattants ciblés."
           },
           "attack": null,
-          "sourceRef": { "page": 102, "md": "08_death-covens.md > 5 - Cri de chauve-souris" }
+          "sourceRef": { "page": 106, "md": "08_death-covens.md > 5 - Cri de chauve-souris" }
         },
         {
           "id": "sanguine-spear",
@@ -2122,7 +2122,7 @@
           },
           "criticalText": { "en": "Increase the range to 15\".", "fr": "Augmentez la portée à 15\"." },
           "attack": { "rend": -2, "damage": "d3" },
-          "sourceRef": { "page": 102, "md": "08_death-covens.md > 6 - Lance sanguine" }
+          "sourceRef": { "page": 106, "md": "08_death-covens.md > 6 - Lance sanguine" }
         }
       ]
     }

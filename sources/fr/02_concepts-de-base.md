@@ -248,7 +248,7 @@ Chaque **arme** possède un profil qui détaille ses valeurs et ses traits d'arm
 | Nom | Portée | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|---|
 | Arbalète de poing (*Hand Crossbow*) | 12" | 1 | - | 1 | 1D6 | Rechargement (*Reload*) | 16 pa |
-| Arc long (*Long Bow*) | 28" | 1 | -1 | 1D3 | 1D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 26 pa |
+| Arc long (*Longbow*) | 28" | 1 | -1 | 1D3 | 1D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 26 pa |
 | Fusil long (*Long Rifle*) | 30" | 1 | -2 | 2 | 1D6+2 | Lourd (*Heavy*), Incident de tir (*Misfire*), À deux mains (*Two-handed*), Encombrant (*Unwieldy*) | 90 pa |
 
 ## Valeurs d'arme (*Weapon Values*)
@@ -460,7 +460,7 @@ De nombreux éléments de décor (*terrain feature*) sont montés sur un **socle
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.10.
+Les numéros de page sont ceux imprimés dans la VO v1.11.
 
 Choix de mise en forme valables pour tout le lot :
 
@@ -503,3 +503,7 @@ Points relevés page par page :
 - p. 14 (v1.10) : dans l'exemple d'armes, l'Arc long passe à 28", Dégâts 1D3 et 26 pa. Le Fusil long y garde 90 pa et Encombrant, alors que l'armurerie de la Guilde le donne à 70 pa sans Encombrant : traduit tel quel.
 - p. 15 (v1.10) : la VO place désormais le prix des armures et des objets sur la ligne des mots-clés ("Item, Rare: 0-1, 15 silver"). La VF garde le prix dans le titre de chaque fiche, comme avant : simple choix de mise en page.
 - p. 15 (v1.10) : la règle des objets tenus est remplacée : plus de -1 Attaque, interdiction avec toute arme à deux mains sauf arme d'hast (*Polearm*).
+- p. 14 (v1.11) : la VO écrit désormais "Longbow" et "Shortbow" en un mot : terme original mis à jour, VF inchangée. "An example of some melee weapons" devient "Examples of..." : sans effet.
+- p. 15 (v1.11) : Grimoire : "after a casting roll has been made for this fighter" devient "after this fighter has made a casting roll" : même VF.
+- p. 16 (v1.11) : la VO change l'ordre des types de terrain sur la page (Plateformes en tête de colonne) ; l'ordre de la VF n'est pas modifié.
+- p. 8 et 9 (v1.11) : corrections d'orthographe de la VO ("storey", "the rules ask", "tens" et "units" pour le D66, "12 o'clock"), sans effet en VF.

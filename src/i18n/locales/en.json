@@ -546,7 +546,7 @@
   },
   "reminder": {
     "title": "Reminder sheet (French)",
-    "intro": "The official reminder sheet translated into French: set-up, round sequence, weapon traits, actions, dice tables. Page numbers refer to the playtest v1.10 rules. The print button lays it out on one A4 sheet.",
+    "intro": "The official reminder sheet translated into French: set-up, round sequence, weapon traits, actions, dice tables. Page numbers refer to the playtest v1.11 rules. The print button lays it out on one A4 sheet.",
     "print": "Print the A4 sheet"
   },
   "compendium": {
@@ -617,7 +617,7 @@
   },
   "reader": {
     "title": "French rules",
-    "notice": "Unofficial French translation of the playtest v1.10 rules. The text below is in French.",
+    "notice": "Unofficial French translation of the playtest v1.11 rules. The text below is in French.",
     "chapter": "Chapter",
     "chapters": "Chapters",
     "contents": "Contents",
@@ -648,7 +648,7 @@
       "loading": "Preparing the chapters...",
       "coverTitle": "Black Death City",
       "coverLabel": "Title page",
-      "coverRules": "Playtest rules v1.10",
+      "coverRules": "Playtest rules v1.11",
       "coverAuthor": "By Sam Pearson",
       "coverSource": "Printed from BDC Warband Manager, an unofficial fan tool: https://ad-duc.github.io/bdc-warband-manager/"
     },
@@ -799,8 +799,9 @@
       "male": "Male name",
       "female": "Female name"
     },
+    "femaleTableNote": "The male and female symbols choose the random name; first names and surnames come from the tables of the book (p. 75).",
     "femaleHouseNote": "The male and female symbols choose the random name; female names come from house tables, not official.",
-    "femaleBookNote": "The male and female symbols choose the random name; a female name follows the book rule: \"-a\" added to a name ending in a consonant (p. 96)."
+    "femaleBookNote": "The male and female symbols choose the random name; a female name follows the book rule: \"-a\" added to a name ending in a consonant (p. 100)."
   },
   "tutorial": {
     "title": "Tutorial",

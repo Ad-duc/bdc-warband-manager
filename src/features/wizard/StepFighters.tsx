@@ -40,6 +40,15 @@ import type { StepProps } from "./WizardPage.tsx";
 
 const CATEGORIES: readonly Category[] = ["leader", "champion", "henchman", "brute", "beast"];
 
+/** Note under the roster title: where the random female names come from. */
+function femaleNameNoteKey(
+  factionId: string,
+  hasBookTable: boolean,
+): "names.femaleTableNote" | "names.femaleBookNote" | "names.femaleHouseNote" {
+  if (hasBookTable) return "names.femaleTableNote";
+  return factionId === "death-covens" ? "names.femaleBookNote" : "names.femaleHouseNote";
+}
+
 export function StepFighters({ warband, index, update }: StepProps) {
   const { t } = useTranslation();
   const f = useFormatter();
@@ -138,7 +147,7 @@ export function StepFighters({ warband, index, update }: StepProps) {
           ) : (
             <>
               <p className="mb-2 text-sm">
-                {t(index.faction.id === "death-covens" ? "names.femaleBookNote" : "names.femaleHouseNote")}
+                {t(femaleNameNoteKey(index.faction.id, index.faction.femaleNameTable !== null))}
               </p>
               <ul className="space-y-3">
                 {active.map((fighter) => {
@@ -156,7 +165,11 @@ export function StepFighters({ warband, index, update }: StepProps) {
                         replace(fighter.instanceId, {
                           customName: randomFighterName(
                             index.faction.id,
-                            index.faction.nameTable.entries,
+                            {
+                              male: index.faction.nameTable.entries,
+                              female: index.faction.femaleNameTable?.entries ?? null,
+                              surnames: index.faction.surnameTable?.entries ?? null,
+                            },
                             gender,
                           ),
                         });

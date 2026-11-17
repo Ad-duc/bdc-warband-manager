@@ -640,7 +640,7 @@ Chaque combattant (*fighter*) gagne de l'expérience (*experience*) à cette ét
 
 - **+1D6 Survivre (*Surviving*) :** chaque combattant (*fighter*) qui a pris part à la bataille gagne 1D6 points d'expérience (*experience*).
 - **+1D6 Leçons retenues (*Lessons Learned*) :** chaque combattant (*fighter*) de la bande (*warband*) qui a perdu la bataille gagne 1D6 points d'expérience (*experience*) supplémentaires.
-- **+5 Mettre un ennemi hors de combat (*Taking an Enemy Down*) :** un combattant (*fighter*) gagne 5 points d'expérience (*experience*) pour chaque combattant ennemi (*enemy fighter*) mis hors de combat (*taken down*) pendant son activation en bataille.
+- **+5 Mettre un ennemi hors de combat (*Taking an Enemy Down*) :** un combattant (*fighter*) gagne 5 points d'expérience (*experience*) pour chaque combattant ennemi (*enemy fighter*) mis hors de combat (*taken down*) en bataille pendant son activation, ou lors d'une attaque au corps à corps (*melee attack*) où il était le défenseur (*defending fighter*).
 
 **Expérience bonus (*Bonus Experience*)**
 
@@ -911,8 +911,8 @@ Lancez les dés un par un en tenant le total des résultats. Arrêtez-vous quand
 | Score | Dans les catacombes (*Into the Catacombs*) |
 |---|---|
 | 1 | **Assaillis par les goules (*Beset By Ghouls*) :** lancez un dé pour chaque combattant (*fighter*). Sur 1-3, effectuez un jet de blessure (*injury roll*) pour ce combattant. Sur 4+, ce combattant gagne 10 points d'expérience (*experience*). |
-| 2 | **Eaux stagnantes (*Stagnant Water*) :** lancez un dé pour chaque combattant (*fighter*). Sur 1-3, il gagne 1 niveau de Pourriture noire (*level of Black Rot*). |
-| 3-5 | **Impasse (*Dead End*) :** le groupe d'éclaireurs (*scouting party*) revient bredouille (*returns empty handed*). |
+| 3 | **Eaux stagnantes (*Stagnant Water*) :** lancez un dé pour chaque combattant (*fighter*). Sur 1-3, il gagne 1 niveau de Pourriture noire (*level of Black Rot*). |
+| 4-5 | **Impasse (*Dead End*) :** le groupe d'éclaireurs (*scouting party*) revient bredouille (*returns empty handed*). |
 | 6-9 | **Tombeau modeste (*Lesser Tomb*) :** vous trouvez 1D6x5 pièces d'argent (*silver*). De plus, lancez les dés sur la table des curiosités (*Curiosities table*) (p. xx). |
 | 10+ | **Grand tombeau (*Grand Tomb*) :** vous trouvez 2D6x5 pièces d'argent (*silver*). De plus, lancez les dés sur la table des reliques (*Relics table*) (p. xx). |
 
@@ -981,7 +981,7 @@ Pour acheter de l'équipement (*wargear*) à vos combattants (*fighter*), utilis
 
 **Vendre de l'équipement (*Selling Wargear*)**
 
-Tout équipement (*wargear*) et tout objet (*item*) de votre butin (*stash*) peut être vendu. Quand vous vendez de l'équipement et des objets, vous recevez des pièces d'argent (*silver*) égales à la moitié de leur coût (en arrondissant à l'inférieur). Les Curiosités (*Curiosity*) et les Reliques (*Relic*) font exception : elles se vendent à leur prix entier.
+Tout équipement (*wargear*) de votre butin (*stash*) peut être vendu. Quand vous vendez de l'équipement, vous recevez des pièces d'argent (*silver*) égales à la moitié de son coût (en arrondissant au supérieur). Les Curiosités (*Curiosity*) et les Reliques (*Relic*) font exception : elles se vendent à leur prix entier.
 
 - Équipement vendu = 50 % du coût en pièces d'argent (en arrondissant au supérieur)
 - Curiosités et Reliques vendues = coût entier en pièces d'argent
@@ -1044,7 +1044,7 @@ Note du concepteur : c'est une différence avec les reliques (*relic*), qui sont
 
 | D66 | Résultat |
 |---|---|
-| 11-16 | **Babioles (*Trinkets*) :** 11 - Cuillère en argent noircie (*Blackened Silver Spoon*) ; 12 - Statuette de saint en bronze (*Bronze Saint Statuette*) ; 13 - Pendentif d'ambre (*Amber Pendant*) ; 14 - Chope en étain au couvercle d'argent (*Pewter Tankard with Silver Lid*) ; 15 - Médaillon en argent (*Silver Locket*) ; 16 - Montre de gousset Von Zikmund cassée (*Broken Von Zikmund Pocketwatch*) |
+| 11-16 | **Babioles (*Trinkets*) :** 11 - Cuillère en argent noircie (*Blackened Silver Spoon*) ; 12 - Montre de gousset Von Zikmund cassée (*Broken Von Zikmund Pocketwatch*) ; 13 - Statuette de saint en bronze (*Bronze Saint Statuette*) ; 14 - Pendentif d'ambre (*Amber Pendant*) ; 15 - Chope en étain au couvercle d'argent (*Pewter Tankard with Silver Lid*) ; 16 - Médaillon en argent (*Silver Locket*) |
 | 21-26 | **Bocal de sangsues des canaux (*Jar of Canal Leeches*) :** vous trouvez un nombre de Bocaux de sangsues des canaux (*Jar of Canal Leeches*) égal au chiffre des unités du jet de D66 (par exemple, un jet de 26 donne 6 bocaux). |
 | 31-36 | **Tonique de soin (*Healing Tonic*) :** vous trouvez un nombre de Toniques de soin (*Healing Tonic*) égal au chiffre des unités du jet de D66 (par exemple, un jet de 36 donne 6 Toniques de soin). |
 | 41-46 | **Toniques merveilleux (*Wondrous Tonics*) :** 41 - Tonique de vitesse (*Tonic of Speed*) ; 42 - Tonique de force (*Tonic of Strength*) ; 43 - Tonique de visée sûre (*Tonic of Steady Aim*) ; 44 - Tonique de robustesse (*Tonic of Fortitude*) ; 45 - Tonique d'esprit (*Tonic of Mind*) ; 46 - Tonique de lévitation (*Tonic of Levitation*) |
@@ -1059,43 +1059,43 @@ Curiosité (*Curiosity*), Objet de butin (*Stash Item*), 1D6 pa
 
 Cet objet n'a d'autre utilité que d'être vendu.
 
-### 12 - Statuette de saint en bronze (*Bronze Saint Statuette*)
+### 12 - Montre de gousset Von Zikmund cassée (*Broken Von Zikmund Pocketwatch*)
 
 Curiosité (*Curiosity*), Objet de butin (*Stash Item*), 2D6 pa
+
+*Avant la chute de la Cité, les ouvrages de sa Guilde des horlogers étaient très recherchés.*
+
+Cet objet n'a d'autre utilité que d'être vendu.
+
+### 13 - Statuette de saint en bronze (*Bronze Saint Statuette*)
+
+Curiosité (*Curiosity*), Objet de butin (*Stash Item*), 3D6 pa
 
 *Une petite figure de saint en bronze, usée par des années de manipulation.*
 
 Cet objet n'a d'autre utilité que d'être vendu.
 
-### 13 - Pendentif d'ambre (*Amber Pendant*)
+### 14 - Pendentif d'ambre (*Amber Pendant*)
 
-Curiosité (*Curiosity*), Objet de butin (*Stash Item*), 3D6 pa
+Curiosité (*Curiosity*), Objet de butin (*Stash Item*), 1D6x5 pa
 
 *Un morceau d'ambre poli serti dans une simple monture en argent.*
 
 Cet objet n'a d'autre utilité que d'être vendu.
 
-### 14 - Chope en étain au couvercle d'argent (*Pewter Tankard with Silver Lid*)
+### 15 - Chope en étain au couvercle d'argent (*Pewter Tankard with Silver Lid*)
 
-Curiosité (*Curiosity*), Objet de butin (*Stash Item*), 1D6x5 pa
+Curiosité (*Curiosity*), Objet de butin (*Stash Item*), 2D6x5 pa
 
 *Une solide chope en étain munie d'un couvercle d'argent ouvragé, gravé des initiales de son ancien propriétaire.*
 
 Cet objet n'a d'autre utilité que d'être vendu.
 
-### 15 - Médaillon en argent (*Silver Locket*)
-
-Curiosité (*Curiosity*), Objet de butin (*Stash Item*), 2D6x5 pa
-
-*Un petit médaillon en argent renfermant le portrait finement peint d'une belle jeune femme.*
-
-Cet objet n'a d'autre utilité que d'être vendu.
-
-### 16 - Montre de gousset Von Zikmund cassée (*Broken Von Zikmund Pocketwatch*)
+### 16 - Médaillon en argent (*Silver Locket*)
 
 Curiosité (*Curiosity*), Objet de butin (*Stash Item*), 3D6x5 pa
 
-*Avant la chute de la Cité, les ouvrages de sa Guilde des horlogers étaient très recherchés.*
+*Un petit médaillon en argent renfermant le portrait finement peint d'une belle jeune femme.*
 
 Cet objet n'a d'autre utilité que d'être vendu.
 
@@ -1682,3 +1682,9 @@ Pages imprimées de la VO v1.10 (page du PDF moins 1).
 - p. 162 : Arbalète à répétition : son texte dit qu'elle tire sans recharger ; le profil n'a en effet pas le trait Rechargement.
 - p. 163 : la Rapière de noble est à la fois l'arme de départ du Noble (armurerie de la Guilde, non achetable) et une relique à 40 pa : même nom, même profil.
 - p. 165-166 : noms des Lames légendaires : préfixe et suffixe sont traduits séparément ; en français le nom se compose "suffixe + préfixe" (par exemple "Le Défenseur d'argent" pour "The Argent Defender"). L'accord en genre est laissé au joueur. La liste de rappels de traits de la p. 165 omet l'Arme d'hast et cite l'Arme naturelle : traduit tel quel.
+- p. 150 (v1.11) : étape 3 : les 5 points d'expérience pour un ennemi mis hors de combat sont aussi gagnés par le défenseur d'une attaque au corps à corps.
+- p. 154 (v1.11) : Dans les catacombes : la table passe de 1, 2, 3-5 à 1, 3, 4-5 (un total de 2 est impossible, les jets s'arrêtant sur un 1).
+- p. 156 (v1.11) : vente d'équipement : le texte et l'encadré arrondissent désormais tous deux au supérieur, ce qui remplace la décision du 09/11/2026 (arrondi à l'inférieur). La VO ne parle plus que de "wargear" dans ce paragraphe.
+- p. 157 et 158 (v1.11) : babioles : la Montre de gousset Von Zikmund cassée passe du résultat 16 au résultat 12 et les quatre objets suivants reculent d'un rang. Les prix restent attachés au rang (2D6, 3D6, 1D6x5, 2D6x5, 3D6x5 pa) : chaque objet change donc de prix. La table et les fiches portent désormais le même nom.
+- p. 163 (v1.11) : "Reliques et valeur de bande" : l'encadré dit désormais "Do include the cost of relics", ce qui confirme la décision du 09/11/2026.
+- p. 137 à 170 (v1.11) : le chapitre est décalé de 4 pages. Corrections de la VO sans effet en VF : "A Climactic End", "taken down" à l'étape 2, "fewer than 5 Henchmen", "A Treasure Hoard", "If the total is 15 or more", "equal to or greater than", "whichever", "lost souls stir" et une trentaine de fautes d'orthographe ou de ponctuation.

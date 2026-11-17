@@ -8,8 +8,10 @@
 
 # Rules assumptions
 
-Source: Black Death City playtest v1.10 (VO pages as printed) and the French
-translation files (updated for v1.10, glossary version 11). Entries written
+Source: Black Death City playtest v1.11 (VO pages as printed) and the French
+translation files (updated for v1.11, glossary version 13). Entries written
+for v1.10 keep the page numbers of that version; since v1.11 the pages after
+p. 48 are 2 pages later and those after p. 72 are 4 pages later. Entries written
 for v1.03 keep the page numbers of that version when they say so. Each entry states what the book says, what the code does, and
 whether it is settled (`settled`), an assumption waiting for a decision
 (`open`) or a data decision (`data`).
@@ -261,11 +263,14 @@ Rot Demon and the Demonic Rot-Herald with a Demonic Rot Blade, the Rot-Colossal
 with a Great Demonic Rot Blade. Code: fixed wargear, free, present from
 recruitment; removing it raises `wargear.fixedMissing`.
 
-### A35 - Demonic Familiar price (open)
+### A35 - Demonic Familiar price (settled)
 
 The Practitioner Item List prints 30 silver (p. 118), the item description 20
 (p. 120). Code: the list price is paid, as for every item bought from a list;
 `check:data` keeps a warning on this difference.
+
+v1.11 (p. 124): the item sheet now prints 30 silver, like the list. Reference
+price set to 30; the checker no longer reports the difference.
 
 ### A36 - Demonic Rot Strike Rend (open)
 
@@ -321,14 +326,18 @@ the aftermath of a battle stays in each warband's battle log.
 ### A42 - Female names and warband names (settled)
 
 The book gives one D66 name table per faction and a single rule for female
-names, in the Death Covens chapter (p. 96): "you can make a name sound more
-feminine by adding '-a' to a name ending in a consonant (eg. Barovyr becomes
-Barovyra)". The app applies this rule to the Death Covens only. The female
-D66 tables of the Guild Mercenaries, the Verminkin and The Blighted Cloister,
-and the warband name tables of every faction (a head and a complement, in
-French), are house tables, written in the style of the book tables and marked
-as not official in the interface. They live in
-`src/features/names/houseNames.ts`, outside the faction data files.
+names, in the Death Covens chapter (p. 96 in v1.10): "you can make a name
+sound more feminine by adding '-a' to a name ending in a consonant (eg.
+Barovyr becomes Barovyra)". The app applies this rule to the Death Covens
+only. Since v1.11 the Guild Mercenaries have three D66 tables (p. 75): male
+names, female names and surnames; they are in the faction data
+(`nameTable`, `femaleNameTable`, `surnameTable`) and a random Guild name is a
+first name of the chosen table followed by a surname. The female D66 tables
+of the Verminkin and The Blighted Cloister, and the warband name tables of
+every faction (a head and a complement, in French), are house tables,
+written in the style of the book tables and marked as not official in the
+interface. They live in `src/features/names/houseNames.ts`, outside the
+faction data files.
 
 ### A43 - Recruit buttons greyed out (settled)
 
@@ -389,12 +398,12 @@ Cloister (v1.03, Militant Order) grants its extra re-roll "in step 5 of the
 aftermath sequence" when searching the City. Data: `aftermathStep: 4`, as
 printed on the preview.
 
-### A49 - Into the Catacombs score (open)
+### A49 - Into the Catacombs score (settled)
 
-p. 156: dice are added until a 1 is rolled or the total reaches 10. The text
-does not say whether the stopping 1 is added. If it is, a score of 2 cannot
-happen; if it is not, a score of 1 cannot happen and a score of 0 is not in
-the table. Data: table kept as printed; no score is computed.
+p. 154 (v1.11): dice are added until a 1 is rolled or the total reaches 10.
+v1.10 printed the scores 1, 2, 3-5, 6-9 and 10+ and did not say whether the
+stopping 1 is added. v1.11 prints 1, 3, 4-5, 6-9 and 10+: the stopping 1 is
+added, a score of 2 cannot happen. Data: no score is computed.
 
 ### A50 - Alms Box silver (open)
 
@@ -410,9 +419,10 @@ p. 154: "If the total exceeds 15 or more". Read as 15 or more.
 
 ### A52 - Skeleton Warrior wargear lists (settled)
 
-p. 98 prints a Skeleton Warrior List (Long Bow, Short Bow) in the Coven
-Armoury, but the Skeleton Warrior scroll (p. 110) only names the Main List.
-Decision 2026-11-09: the Skeleton Warrior can use both lists.
+p. 98 (v1.10) prints a Skeleton Warrior List (Longbow, Shortbow) in the Coven
+Armoury, but the Skeleton Warrior scroll only named the Main List.
+Decision 2026-11-09: the Skeleton Warrior can use both lists. Confirmed by
+v1.11 (p. 114): the scroll names both lists.
 
 ### A53 - Relics in the warband rating (settled)
 
@@ -421,13 +431,15 @@ wargear, plus their experience. p. 158: relics are found, not bought, and some a
 no fighter carries. Decision 2026-11-09: a relic carried by a fighter counts
 for its silver cost in the warband rating; a Stash Item does not, like the
 rest of the stash. Not computed yet: the code has no relic catalogue.
+v1.11 (p. 163): the box now says "Do include the cost of relics".
 
 ### A54 - Silver for sold wargear (settled)
 
-p. 151: the text says "half their cost (rounding down)", the box below says
-"50% silver cost (rounding up)". Decision 2026-11-09: round down, as the
-text. Curiosities and relics are sold for their full cost. Not computed yet:
-the code has no selling step.
+p. 151 (v1.10): the text said "half their cost (rounding down)", the box
+below "50% silver cost (rounding up)"; decision 2026-11-09: round down.
+v1.11 (p. 156) prints "rounding up" in both places: sold wargear gives half
+its cost, rounded up. Curiosities and relics are sold for their full cost.
+Not computed yet: the code has no selling step.
 
 ### A55 - Stronghold level and income (settled)
 
@@ -437,6 +449,47 @@ level 2 from 3 to 7 (4D6x5) and level 3 from 8 (5D6x5); each new level gives
 (`campaign.strongholdLevels`) and `strongholdLevel()` reads it with the
 `battlesFought` counter of the warband. The choice of the upgrades is not
 recorded on the warband yet.
+
+## Rules of v1.11
+
+### A56 - Domination marks in the twists of No Quarter (open)
+
+p. 41: since v1.11 the Domination objective scores victory marks (1 for each
+quarter controlled, battle won at 8). The twists p. 42 still say "domination
+marks" (The Forsaken Quarter, Turf War, The Critical Quarter). Read as the
+same marks: Turf War gives 3 victory marks instead of 1, The Critical
+Quarter 1 additional victory mark. The translation keeps the printed term.
+
+### A57 - Battle groups of the Ambusher in Street of Death (open)
+
+p. 47: since v1.11 "the Ambusher's warband is divided into 3 battle groups"
+(2 before); one of them is set up, then "the other battle group starts in
+reserve", in the singular. Read as: the 2 other battle groups start in
+reserve. The battle assistant proposes 3 groups for the Ambusher and 2 for
+the Defender through the group selector, as the scenario gives no single
+number.
+
+### A58 - Scenario table with a second roll (data)
+
+p. 35: a 6 on the scenario table asks for another dice: 1-3 Street of Death,
+4-6 Ruined Halls. The Find becomes scenario V and Street of Death scenario
+VI. The scenario reader keeps the number of the book (1 to 7) in its
+addresses, so an address or a saved battle set-up written before v1.11 with
+scenario 5 or 6 now opens the other of the two scenarios. The battle
+assistant rolls the second dice by itself when the first is a 6.
+
+### A59 - List of the four actions (open)
+
+p. 23: the paragraph "There are 4 actions a fighter can make" of v1.10 is no
+longer printed in v1.11 (the page gained the Outnumbered rule); the actions
+are still named p. 19 and each keeps its section. The translation keeps the
+paragraph.
+
+### A60 - Reminder sheet behind the rules (open)
+
+p. 172: the reminder sheet of v1.11 still prints the v1.10 text for the run
+and charge moves and has no line for the consolidation move or the
+Outnumbered rule. Kept as printed in the translation.
 
 ## Data decisions
 
@@ -548,3 +601,20 @@ Covens: new Manservant (0-3), Skeleton Warrior List and Coven ranged weapons
 (A52), Woodland Estate and Trophy Hall keep the ids `grand-pavilion` and
 `bestial-trophies`; The Blighted Cloister: boons, Demonic Strength, epithets
 moved to p. 132 with the names; new Demi-Human keyword.
+
+### D13 - Move to playtest v1.11 (data)
+
+Decision 2026-11-14: the app follows v1.11. Changes carried into the data:
+`sourceVersion` and the page numbers (chapter 4 and the Guild Mercenaries 2
+pages later, the other factions and the campaign chapter 4 pages later; the
+generators add `PAGE_SHIFT` to the v1.10 pages they hold); Guild Mercenaries:
+Bomb-bolt added to the Witch Hunters List, "Longbow" and "Shortbow" in one
+word (ids unchanged), Gormen instead of Georg in the male names, new
+`femaleNameTable` and `surnameTable` (A42); Death Covens: Supernatural
+Healing names the Leader, Skeleton Warrior scroll with both lists (A52); The
+Blighted Cloister: Demonic Familiar at 30 silver (A35). Scenarios are read
+from the translation: seven scenarios, scenario table with a second roll
+(A58). Rules with no data or code yet, carried in the translation only: run
+and charge rolls, consolidation move, Outnumbered, victory marks, experience
+of the defending fighter, wargear sold for half its cost rounded up (A54),
+trinkets 12 to 16 reordered.

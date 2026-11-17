@@ -2,7 +2,7 @@
 File:     scripts/generators/blighted_cloister.py
 Role:     Builds The Blighted Cloister faction data from
           09_the-blighted-cloister.md (French texts extracted and cleaned) and
-          the English playtest v1.10 texts typed below (typos fixed, see
+          the English playtest v1.11 texts typed below (typos fixed, see
           RULES_ASSUMPTIONS.md D03).
 Author:   Adrien Duclaud
 Created:  2026-10-12
@@ -285,7 +285,7 @@ def build(md_path):
          "While this fighter is on the battlefield, you can re-roll flee tests.\n"
          "You can re-roll Willpower tests made by friendly fighters while they are within 12\" of this fighter and this "
          "fighter is visible to them.", {}),
-        ("demonic-familiar", "Demonic Familiar", "Familier démoniaque", "item", 20, None, 1, False,
+        ("demonic-familiar", "Demonic Familiar", "Familier démoniaque", "item", 30, None, 1, False,
          "Each time this fighter makes a melee attack, they can make 1 additional attack with the following weapon:",
          {"grants": {"rend": 0, "damage": 1, "critDamage": "d3",
                      "traits": [{"key": "arcane"}, {"key": "natural-weapon"}, {"key": "poison"}]},

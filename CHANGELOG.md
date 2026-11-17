@@ -11,9 +11,22 @@
 All notable changes to this project are listed here. The format follows
 [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and the project
 uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html). The game rules
-version is given separately (playtest v1.10).
+version is given separately (playtest v1.11).
 
 ## [Unreleased]
+
+### Added
+
+- Scenarios: new scenario VII, Ruined Halls, with its three twists and their search tables (playtest v1.11).
+- Rules reader: new "Modifications de la v1.11" chapter listing what playtest v1.11 changes.
+- Guild Mercenaries: random names now use the three tables of the book, male names, female names and surnames (a first name followed by a surname).
+
+### Changed
+
+- Move to the Black Death City playtest v1.11: French translation, glossary (31 new terms) and data updated. Main rule changes: run and charge rolls, consolidation move after a charge that cannot reach an enemy, Outnumbered rule in melee, victory marks in every scenario.
+- Scenarios: The Find is now scenario V and Street of Death scenario VI; a 6 on the scenario table asks for a second dice (1-3 Street of Death, 4-6 Ruined Halls), which the battle assistant rolls by itself. All scenarios follow the v1.11 objectives, rounds and twists.
+- Guild Mercenaries: the Bomb-bolt can also be bought from the Witch Hunters List. The Blighted Cloister: Demonic Familiar at 30 silver everywhere.
+- Page numbers shown in the app follow the v1.11 book.
 
 ## [1.4.0] - 2026-11-11
 

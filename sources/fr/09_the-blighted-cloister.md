@@ -354,7 +354,7 @@ Tant que ce combattant (*fighter*) est sur le champ de bataille (*battlefield*),
 
 Vous pouvez relancer (*re-roll*) les tests de Volonté (*Willpower*) effectués par les combattants alliés (*friendly fighter*) tant qu'ils sont à 12" ou moins de ce combattant (*fighter*) et que ce combattant (*fighter*) est visible pour eux.
 
-### Familier démoniaque (*Demonic Familiar*) - 20 pa
+### Familier démoniaque (*Demonic Familiar*) - 30 pa
 
 Objet (*Item*), Rare : 0-1
 
@@ -937,7 +937,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement une épithèt
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.10.
+Les numéros de page sont ceux imprimés dans la VO v1.10, sauf pour les notes marquées (v1.11).
 
 - Ensemble du lot : même mise en forme que pour les factions précédentes. Les encadrés en grille (origines p. 114, repaires p. 115) sont lus ligne par ligne ; les listes de l'armurerie (p. 118) colonne par colonne : Liste principale, Liste des Champions, Liste de la lie, Liste des Praticiens, Liste d'objets des Praticiens ; les armures, les objets et les compétences colonne de gauche puis colonne de droite.
 - Ensemble du lot : la table des épithètes (p. 118) est traduite, comme convenu, avec les 36 VF de ton glossaire et le terme original dans chaque case. La table D66 des noms (p. 116) n'est pas traduite. Les citations sont rendues en français d'aujourd'hui.
@@ -982,3 +982,6 @@ Les numéros de page sont ceux imprimés dans la VO v1.10.
 - p. 116 (v1.10) : noms des améliorations de repaire proposés : Hospice, Jardin de l'herboriste, Clocher, Chambre rituelle, Éleveur de mouches, Tronc des aumônes. "colossal bell tower" : coquille pour "colossal".
 - p. 130 (v1.10) : Colosse de la Pourriture : nouvelle règle Force démoniaque (*Demonic Strength*). La VO cite la "Demonic Rot Blade" alors que le Colosse porte une "Great Demonic Rot Blade" : traduit tel quel, à signaler.
 - p. 119 (v1.10) : Hallebarde et Lance gagnent Arme d'hast (*Polearm*), la Hallebarde perd Encombrant. Objets tenus : règle remplacée.
+- p. 124 (v1.11) : le Familier démoniaque coûte désormais 30 pa sur sa fiche, comme dans la liste : l'écart relevé p. 118 est corrigé par l'auteur.
+- p. 126 (v1.11) : Entrailles pourries : phrase corrigée dans la VO ("At the end of their activation, a fighter with rotten insides takes a Willpower test") : même VF.
+- p. 119 à 134 (v1.11) : la faction est décalée de 4 pages. Corrections sans effet en VF : "stone talons", "biting fangs", "On a 4+," (Réceptacle de Pourriture noire), "This fighter ignores" (Force démoniaque), "a protective shroud".

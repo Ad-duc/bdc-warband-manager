@@ -148,7 +148,7 @@ Un combattant (*fighter*) peut effectuer une **Course** (*Run Move*) si :
 - il n'est pas engagé au corps à corps (*engaged in melee*), et
 - il n'a effectué aucune action pendant cette activation.
 
-Quand un combattant (*fighter*) effectue une Course (*Run Move*), il peut se déplacer (*move*) sur le champ de bataille (*battlefield*) d'une distance maximale en pouces allant jusqu'à sa valeur de Mouvement (*Move*) + 1D6" supplémentaires. Ce faisant, il ne peut pas se déplacer (*move*) à 1" ou moins d'un combattant ennemi (*enemy fighter*). Un combattant (*fighter*) qui effectue une Course (*Run Move*) ne peut pas effectuer d'action pendant cette activation.
+Quand un combattant (*fighter*) effectue une Course (*Run Move*), le joueur qui contrôle le combattant (*commanding player*) effectue un **jet de course** (*run roll*) en lançant un dé. Le combattant (*fighter*) peut se déplacer (*move*) d'une distance maximale en pouces allant jusqu'à sa valeur de Mouvement (*Move*) + le jet de course (*run roll*). Ce faisant, il ne peut pas se déplacer (*move*) à 1" ou moins d'un combattant ennemi (*enemy fighter*). Un combattant (*fighter*) qui effectue une Course (*Run Move*) ne peut pas effectuer d'action pendant cette activation.
 
 ### Charge (*Charge Move*)
 
@@ -157,9 +157,9 @@ Un combattant (*fighter*) peut effectuer une **Charge** (*Charge Move*) si :
 - il n'est pas engagé au corps à corps (*engaged in melee*), et
 - il n'a effectué aucune action pendant cette activation.
 
-Quand un combattant (*fighter*) effectue une Charge (*Charge Move*), il peut se déplacer (*move*) sur le champ de bataille (*battlefield*) d'une distance maximale en pouces égale à sa valeur de Mouvement (*Move*) + 1D6" supplémentaires. Il doit terminer ce Mouvement (*Move*) à 1" ou moins d'un ou plusieurs combattants ennemis (*enemy fighter*). On dit alors que le combattant (*fighter*) **a chargé** (*charged*).
+Quand un combattant (*fighter*) effectue une Charge (*Charge Move*), le joueur qui contrôle le combattant (*commanding player*) effectue un **jet de charge** (*charge roll*) en lançant un dé. Le combattant (*fighter*) peut se déplacer (*move*) d'une distance maximale en pouces allant jusqu'à sa valeur de Mouvement (*Move*) + le jet de charge (*charge roll*). Il doit terminer ce Mouvement (*Move*) à 1" ou moins d'un ou plusieurs combattants ennemis (*enemy fighter*). On dit alors que le combattant (*fighter*) **a chargé** (*charged*).
 
-S'il lui est impossible de terminer à 1" ou moins d'un combattant ennemi (*enemy fighter*), il ne se déplace (*move*) pas du tout : la Charge (*Charge Move*) est ratée et l'activation du combattant (*fighter*) prend fin immédiatement.
+S'il lui est impossible de terminer à 1" ou moins d'un combattant ennemi (*enemy fighter*), il peut renoncer (*forgo*) à son Mouvement (*Move*) ou effectuer, à la place, un **Mouvement de consolidation** (*consolidation move*). S'il effectue un Mouvement de consolidation (*consolidation move*), il peut se déplacer (*move*) jusqu'à 3". Il doit terminer ce Mouvement (*Move*) plus près du combattant ennemi (*enemy fighter*) le plus proche. Ce faisant, il ne peut pas se déplacer (*move*) à 1" ou moins d'un combattant ennemi (*enemy fighter*).
 
 ### Désengagement (*Disengage Move*)
 
@@ -275,8 +275,6 @@ Il existe 4 actions qu'un combattant (*fighter*) peut effectuer :
 
 > L'action d'Attaque au corps à corps (*Melee Attack Action*) représente un duel entre deux combattants (*fighter*) : les lames s'entrechoquent, parades (*parry*) audacieuses et feintes se succèdent, jusqu'à ce qu'un coup fasse mouche.
 
-Des jets d'attaque (*attack roll*) sont effectués à la fois pour l'attaquant (*attacking fighter*) et pour le défenseur (*defending fighter*).
-
 Un combattant (*fighter*) engagé au corps à corps (*engaged in melee*) peut effectuer une **action d'Attaque au corps à corps** (*Melee Attack Action*). Quand un combattant (*fighter*) effectue une action d'Attaque au corps à corps (*Melee Attack Action*), la séquence suivante est utilisée :
 
 1. **Choisir une cible (*Pick a Target*)**
@@ -307,6 +305,8 @@ Si l'attaquant (*attacking fighter*) **a chargé** (*charged*) pendant cette act
 
 ### 4. Effectuer les jets d'attaque (*Make Attack Rolls*)
 
+Des jets d'attaque (*attack roll*) sont effectués à la fois pour l'attaquant (*attacking fighter*) et pour le défenseur (*defending fighter*).
+
 Pour effectuer les jets d'attaque (*attack roll*), le joueur lance un nombre de dés égal à la valeur d'Attaques (*Attacks*) des armes utilisées par son combattant (*fighter*).
 
 #### Attaques de main secondaire (*Off-hand Attacks*)
@@ -318,6 +318,14 @@ Par exemple, un combattant (*fighter*) qui utilise une Épée (*Sword*) et un Fl
 #### Jets d'attaque réussis (*Successful Attack Rolls*)
 
 Les jets d'attaque (*attack roll*) qui donnent un 6 naturel (*natural*) sont réussis et obtiennent une **touche critique** (*critical hit*). De plus, chaque jet d'attaque (*attack roll*) égal ou supérieur à la valeur de Lame (*Blade*) du combattant (*fighter*) est réussi et obtient une **touche** (*hit*). Tous les autres jets d'attaque (*attack roll*) sont des **échecs** (*miss*).
+
+#### Infériorité numérique (*Outnumbered*)
+
+Lors des jets d'attaque (*attack roll*), si l'un des combattants (*fighter*) est engagé au corps à corps (*engaged in melee*) avec plus de combattants ennemis (*enemy fighter*) que l'autre, il est **en infériorité numérique** (*outnumbered*). Comptez de combien le nombre de combattants ennemis (*enemy fighter*) avec lesquels il est engagé au corps à corps (*engaged in melee*) dépasse celui de son adversaire : c'est le nombre dont il est en infériorité numérique (*outnumbered*). Tant qu'un combattant (*fighter*) est en infériorité numérique (*outnumbered*), son adversaire peut relancer (*re-roll*) un nombre de jets d'attaque (*attack roll*) égal au nombre dont l'autre combattant (*fighter*) est en infériorité numérique (*outnumbered*).
+
+[Schéma : le combattant (*fighter*) A fait face au combattant (*fighter*) B. Deux autres combattants (*fighter*), C et D, sont au contact de A, l'un au-dessus et l'autre en dessous.]
+
+Légende : c'est l'activation du combattant (*fighter*) A. Il effectue une action d'Attaque au corps à corps (*Melee Attack Action*) et le combattant (*fighter*) B est la cible (*target*). Le combattant (*fighter*) A est aussi engagé au corps à corps (*engaged in melee*) avec 2 autres combattants ennemis (*enemy fighter*), C et D : il est donc en infériorité numérique (*outnumbered*) de 2. Pendant l'action d'Attaque au corps à corps (*Melee Attack Action*), le combattant (*fighter*) B peut relancer (*re-roll*) jusqu'à 2 de ses jets d'attaque (*attack roll*).
 
 ### 5. Alterner attaques et parades (*Alternate Attacks and Parries*)
 
@@ -510,7 +518,7 @@ Les différents traits d'armes (*weapon trait*) des armes de corps à corps (*me
 
 *(Touches critiques sur 5+)*
 
-Les jets d'attaque (*attack roll*) effectués avec cette arme obtiennent des touches critiques (*critical hit*) sur un jet naturel (*natural roll*) de 5 ou 6.
+Les jets d'attaque (*attack roll*) effectués avec cette arme qui donnent un 5 ou un 6 naturel (*natural*) sont réussis et obtiennent une touche critique (*critical hit*).
 
 ### Explosion (*Blast*)
 
@@ -845,9 +853,19 @@ Ajouts de la mise à jour v1.03 :
 | Successful Attack Rolls | Jets d'attaque réussis | Combat |
 | vantage | surplomb (être en surplomb) | Combat |
 
+Ajouts de la mise à jour v1.11 :
+
+| VO | VF | Catégorie |
+|---|---|---|
+| charge roll | jet de charge | Séquence de jeu |
+| consolidation move | Mouvement de consolidation | Séquence de jeu |
+| run roll | jet de course | Séquence de jeu |
+| outnumbered | en infériorité numérique | États et situations |
+| Outnumbered | Infériorité numérique | Combat |
+
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.10.
+Les numéros de page sont ceux imprimés dans la VO v1.11.
 
 Choix valables pour tout le lot :
 
@@ -907,3 +925,8 @@ Points relevés page par page :
 - p. 34 : "Powder misfires. Sorcery devours..." est rendu par "La poudre trahit. La sorcellerie dévore...", sans reprendre "incident de tir" ni "long feu", qui sont des termes de jeu.
 - p. 30 (v1.10) : nouveau trait Arme d'hast (*Polearm*), terme validé le 09/11/2026. La VO change l'ordre des traits sur la page ; l'ordre de la VF n'est pas modifié.
 - p. 26 (v1.10) : la mise en page de l'exemple d'attaque au corps à corps est corrigée (échanges II et IV), sans changement de texte.
+- p. 20 (v1.11) : la Course et la Charge utilisent désormais un "run roll" et un "charge roll" : "jet de course" et "jet de charge". Une Charge qui ne peut pas aboutir n'est plus ratée : le combattant renonce à son Mouvement ou effectue un "consolidation move", rendu par "Mouvement de consolidation". La VO change l'ordre des Mouvements sur la page ; l'ordre de la VF n'est pas modifié.
+- p. 23 (v1.11) : la phrase "Attack rolls are made for both..." passe de l'introduction à l'étape 4. Nouvelle règle "Outnumbered" : "en infériorité numérique", le combattant étant en infériorité numérique "de 2". La légende du schéma, en encadré dans la VO, est placée à la suite de la règle.
+- p. 23 (v1.11) : "Count how many more enemy fighters they are engaged in melee with than their opponent" : j'ai compris la différence entre le nombre d'ennemis engagés avec l'un et avec l'autre, ce que confirme l'exemple (3 contre 1, infériorité de 2).
+- p. 25 et 26 (v1.11) : corrections de la VO dans l'exemple ("charged this activation", "dismay" au lieu de "disdain", échange IV replacé) : la VF, traduite selon le sens, n'est pas modifiée.
+- p. 29 (v1.11) : Arcanique : "score critical hits on a natural roll of 5 or 6" devient "of a natural 5 or 6 are successful and score a critical hit" : le 5 est désormais explicitement réussi, quelle que soit la valeur de Lame ou d'Arc.

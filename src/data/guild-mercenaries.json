@@ -14,7 +14,7 @@
     "fr": "Les bandes de mercenaires prêtes à braver les rues maudites de la Cité en quête de fortune ne manquent pas. Financés par de riches mécènes ou risquant leurs propres pièces d'argent, ces aventuriers cherchent richesses, reliques et renommée au milieu de ses ruines."
   },
   "armouryName": { "en": "Guild Armoury", "fr": "Armurerie de la Guilde" },
-  "sourceRef": { "page": 53, "md": "06_guild-mercenaries.md > Mercenaires de la Guilde" },
+  "sourceRef": { "page": 55, "md": "06_guild-mercenaries.md > Mercenaires de la Guilde" },
   "assets": { "shield": "bouclier_guild.webp", "accentColor": null },
   "origins": [
     {
@@ -27,7 +27,7 @@
       "requiredLeaderId": "guild-captain",
       "strongholdId": "guild-barracks",
       "specialRules": [],
-      "sourceRef": { "page": 54, "md": "06_guild-mercenaries.md > Épées à louer" }
+      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Épées à louer" }
     },
     {
       "id": "disgraced-noble",
@@ -39,7 +39,7 @@
       "requiredLeaderId": "noble",
       "strongholdId": "dilapidated-manor",
       "specialRules": [],
-      "sourceRef": { "page": 54, "md": "06_guild-mercenaries.md > Noble déchu" }
+      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Noble déchu" }
     },
     {
       "id": "witch-hunters-guild",
@@ -51,7 +51,7 @@
       "requiredLeaderId": "witch-hunter",
       "strongholdId": "chapter-house",
       "specialRules": [],
-      "sourceRef": { "page": 54, "md": "06_guild-mercenaries.md > Guilde des chasseurs de sorcières" }
+      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Guilde des chasseurs de sorcières" }
     },
     {
       "id": "wizards-retinue",
@@ -63,7 +63,7 @@
       "requiredLeaderId": "high-wizard-of-the-guild",
       "strongholdId": "hidden-library",
       "specialRules": [],
-      "sourceRef": { "page": 54, "md": "06_guild-mercenaries.md > Suite du Magicien" }
+      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Suite du Magicien" }
     }
   ],
   "strongholds": [
@@ -95,7 +95,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 55, "md": "06_guild-mercenaries.md > Caserne de la Guilde" }
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Caserne de la Guilde" }
     },
     {
       "id": "dilapidated-manor",
@@ -131,7 +131,7 @@
           "initial": "2d6"
         }
       ],
-      "sourceRef": { "page": 55, "md": "06_guild-mercenaries.md > Manoir délabré" }
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Manoir délabré" }
     },
     {
       "id": "chapter-house",
@@ -161,7 +161,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 55, "md": "06_guild-mercenaries.md > Maison capitulaire" }
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Maison capitulaire" }
     },
     {
       "id": "hidden-library",
@@ -191,7 +191,7 @@
         }
       ],
       "trackers": [],
-      "sourceRef": { "page": 55, "md": "06_guild-mercenaries.md > Bibliothèque cachée" }
+      "sourceRef": { "page": 57, "md": "06_guild-mercenaries.md > Bibliothèque cachée" }
     }
   ],
   "strongholdUpgrades": [
@@ -213,7 +213,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Salle de prière" }
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Salle de prière" }
     },
     {
       "id": "apothecary",
@@ -233,7 +233,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Apothicairerie" }
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Apothicairerie" }
     },
     {
       "id": "kennels",
@@ -253,7 +253,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Chenil" }
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Chenil" }
     },
     {
       "id": "gunsmiths-workshop",
@@ -273,7 +273,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Atelier d'arquebusier" }
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Atelier d'arquebusier" }
     },
     {
       "id": "chirurgeons-practice",
@@ -293,7 +293,7 @@
           }
         }
       ],
-      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Cabinet du chirurgien" }
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Cabinet du chirurgien" }
     },
     {
       "id": "armourer",
@@ -313,12 +313,12 @@
           }
         }
       ],
-      "sourceRef": { "page": 56, "md": "06_guild-mercenaries.md > Armurier" }
+      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Armurier" }
     }
   ],
   "nameTable": {
     "die": "d66",
-    "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > Noms des Mercenaires de la Guilde" },
+    "sourceRef": { "page": 75, "md": "06_guild-mercenaries.md > Prénoms masculins" },
     "entries": {
       "11": "Adalbert",
       "12": "Albrecht",
@@ -332,7 +332,7 @@
       "24": "Erasmus",
       "25": "Fabian",
       "26": "Friedrich",
-      "31": "Georg",
+      "31": "Gormen",
       "32": "Gregor",
       "33": "Hans",
       "34": "Heinrich",
@@ -356,6 +356,90 @@
       "64": "Valentin",
       "65": "Wilhelm",
       "66": "Wolfram"
+    }
+  },
+  "femaleNameTable": {
+    "die": "d66",
+    "sourceRef": { "page": 75, "md": "06_guild-mercenaries.md > Prénoms féminins" },
+    "entries": {
+      "11": "Adelheid",
+      "12": "Amalia",
+      "13": "Barbel",
+      "14": "Brunhild",
+      "15": "Catharina",
+      "16": "Elsbeth",
+      "21": "Else",
+      "22": "Esmeralda",
+      "23": "Frieda",
+      "24": "Fuchsia",
+      "25": "Gretel",
+      "26": "Griselda",
+      "31": "Helene",
+      "32": "Hildegund",
+      "33": "Ida",
+      "34": "Isolde",
+      "35": "Josepha",
+      "36": "Kriemhild",
+      "41": "Liesel",
+      "42": "Magdalena",
+      "43": "Maria",
+      "44": "Melusine",
+      "45": "Nettle",
+      "46": "Ottilia",
+      "51": "Perchta",
+      "52": "Rosamund",
+      "53": "Rosenrot",
+      "54": "Rosina",
+      "55": "Seraphia",
+      "56": "Sibylla",
+      "61": "Therese",
+      "62": "Ursula",
+      "63": "Veronika",
+      "64": "Viktoria",
+      "65": "Wilhelmine",
+      "66": "Zelda"
+    }
+  },
+  "surnameTable": {
+    "die": "d66",
+    "sourceRef": { "page": 75, "md": "06_guild-mercenaries.md > Noms de famille" },
+    "entries": {
+      "11": "Acker",
+      "12": "Amman",
+      "13": "Ashenwald",
+      "14": "Bader",
+      "15": "Blackpike",
+      "16": "Bleakwater",
+      "21": "Brandhart",
+      "22": "Candlemurk",
+      "23": "Cinders",
+      "24": "Crowhurst",
+      "25": "Dammerhart",
+      "26": "Dunkelforst",
+      "31": "Eberhart",
+      "32": "Eelbeck",
+      "33": "Eisenmark",
+      "34": "Falkenstein",
+      "35": "Finstergruft",
+      "36": "Frey",
+      "41": "Gallowsmann",
+      "42": "Glaser",
+      "43": "Grimwald",
+      "44": "Hartmann",
+      "45": "Ironghast",
+      "46": "Kessel",
+      "51": "Lepermann",
+      "52": "Maidenwald",
+      "53": "Nachtwalt",
+      "54": "Piper",
+      "55": "Rabenstein",
+      "56": "Rattleberg",
+      "61": "Schwarz",
+      "62": "Sootwell",
+      "63": "Totenforst",
+      "64": "Vogt",
+      "65": "Widowmark",
+      "66": "Wormwurz"
     }
   },
   "fighters": [
@@ -391,7 +475,7 @@
         "en": "Stay in formation, and you might live to see the next dawn.",
         "fr": "Restez en formation, et vous vivrez peut-être assez longtemps pour voir la prochaine aube."
       },
-      "sourceRef": { "page": 67, "md": "06_guild-mercenaries.md > Capitaine de la Guilde" }
+      "sourceRef": { "page": 69, "md": "06_guild-mercenaries.md > Capitaine de la Guilde" }
     },
     {
       "id": "noble",
@@ -425,7 +509,7 @@
         "en": "I didn't come this far to die a beggar!",
         "fr": "Je ne suis pas venu jusqu'ici pour mourir comme un mendiant !"
       },
-      "sourceRef": { "page": 67, "md": "06_guild-mercenaries.md > Noble" }
+      "sourceRef": { "page": 69, "md": "06_guild-mercenaries.md > Noble" }
     },
     {
       "id": "witch-hunter",
@@ -465,7 +549,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale, de la Liste des Champions et de la Liste des Chasseurs de sorcières de l'Armurerie de la Guilde."
       },
       "quote": { "en": "Cast out the wretch. Burn the unholy.", "fr": "Chassez le misérable. Brûlez l'impie." },
-      "sourceRef": { "page": 68, "md": "06_guild-mercenaries.md > Chasseur de sorcières" }
+      "sourceRef": { "page": 70, "md": "06_guild-mercenaries.md > Chasseur de sorcières" }
     },
     {
       "id": "high-wizard-of-the-guild",
@@ -499,7 +583,7 @@
         "en": "I have spent a lifetime studying matters beyond your comprehension.",
         "fr": "J'ai passé mon existence à étudier des choses qui dépassent votre entendement."
       },
-      "sourceRef": { "page": 68, "md": "06_guild-mercenaries.md > Grand Magicien de la Guilde" }
+      "sourceRef": { "page": 70, "md": "06_guild-mercenaries.md > Grand Magicien de la Guilde" }
     },
     {
       "id": "guild-wizard",
@@ -533,7 +617,7 @@
         "en": "Magic cannot be tamed, even by one such as myself.",
         "fr": "La magie ne se laisse pas dompter, pas même par quelqu'un comme moi."
       },
-      "sourceRef": { "page": 69, "md": "06_guild-mercenaries.md > 0-1 Magicien de la Guilde" }
+      "sourceRef": { "page": 71, "md": "06_guild-mercenaries.md > 0-1 Magicien de la Guilde" }
     },
     {
       "id": "guild-cleric",
@@ -567,7 +651,7 @@
         "en": "The Saints walk beside those who keep the faith.",
         "fr": "Les Saints marchent aux côtés de ceux qui gardent la foi."
       },
-      "sourceRef": { "page": 69, "md": "06_guild-mercenaries.md > 0-1 Clerc de la Guilde" }
+      "sourceRef": { "page": 71, "md": "06_guild-mercenaries.md > 0-1 Clerc de la Guilde" }
     },
     {
       "id": "guild-champion",
@@ -598,7 +682,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale et de la Liste des Champions de l'Armurerie de la Guilde."
       },
       "quote": { "en": "Give the order, and I'll see it done.", "fr": "Donnez l'ordre, et ce sera fait." },
-      "sourceRef": { "page": 69, "md": "06_guild-mercenaries.md > Champion de la Guilde" }
+      "sourceRef": { "page": 71, "md": "06_guild-mercenaries.md > Champion de la Guilde" }
     },
     {
       "id": "plague-doctor",
@@ -641,7 +725,7 @@
         "en": "There's no saving this leg. We'll have to amputate it.",
         "fr": "Cette jambe est perdue. Il va falloir l'amputer."
       },
-      "sourceRef": { "page": 70, "md": "06_guild-mercenaries.md > 0-1 Médecin de peste" }
+      "sourceRef": { "page": 72, "md": "06_guild-mercenaries.md > 0-1 Médecin de peste" }
     },
     {
       "id": "witch-hunters-apprentice",
@@ -672,7 +756,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale, de la Liste des Champions et de la Liste des Chasseurs de sorcières de l'Armurerie de la Guilde."
       },
       "quote": { "en": "Let not the wicked rest.", "fr": "Que les malfaisants ne trouvent aucun repos." },
-      "sourceRef": { "page": 70, "md": "06_guild-mercenaries.md > Apprenti chasseur de sorcières" }
+      "sourceRef": { "page": 72, "md": "06_guild-mercenaries.md > Apprenti chasseur de sorcières" }
     },
     {
       "id": "guild-mercenary",
@@ -696,7 +780,7 @@
         "en": "Fifty silver, and my blade is yours.",
         "fr": "Cinquante pièces d'argent, et ma lame est à vous."
       },
-      "sourceRef": { "page": 71, "md": "06_guild-mercenaries.md > Mercenaire de la Guilde" }
+      "sourceRef": { "page": 73, "md": "06_guild-mercenaries.md > Mercenaire de la Guilde" }
     },
     {
       "id": "guild-recruit",
@@ -717,7 +801,7 @@
         "fr": "Ce combattant peut être équipé de l'équipement de la Liste principale de l'Armurerie de la Guilde."
       },
       "quote": { "en": "I'll earn my keep.", "fr": "Je mériterai ma solde." },
-      "sourceRef": { "page": 71, "md": "06_guild-mercenaries.md > Recrue de la Guilde" }
+      "sourceRef": { "page": 73, "md": "06_guild-mercenaries.md > Recrue de la Guilde" }
     },
     {
       "id": "mercenary-ogre",
@@ -741,7 +825,7 @@
         "en": "Whose bones you want me to break next, Boss?",
         "fr": "À qui je casse les os maintenant, Patron ?"
       },
-      "sourceRef": { "page": 72, "md": "06_guild-mercenaries.md > Ogre mercenaire" }
+      "sourceRef": { "page": 74, "md": "06_guild-mercenaries.md > Ogre mercenaire" }
     },
     {
       "id": "hunting-dog",
@@ -781,7 +865,7 @@
         "fr": "Ce combattant est équipé d'une morsure féroce, voir ci-dessous ; il ne peut être équipé d'aucun autre équipement."
       },
       "quote": null,
-      "sourceRef": { "page": 72, "md": "06_guild-mercenaries.md > Chien de chasse" }
+      "sourceRef": { "page": 74, "md": "06_guild-mercenaries.md > Chien de chasse" }
     }
   ],
   "wargear": [
@@ -802,7 +886,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "axe",
@@ -821,7 +905,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "club-mace-hammer",
@@ -840,7 +924,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "dagger",
@@ -859,7 +943,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "ensorcelled-weapon",
@@ -881,7 +965,7 @@
         "en": "You can use any weapon to represent the Ensorcelled Weapon.",
         "fr": "Vous pouvez utiliser n'importe quelle arme pour représenter l'Arme ensorcelée."
       },
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "flail",
@@ -900,7 +984,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "halberd",
@@ -919,7 +1003,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "heavy-axe",
@@ -938,7 +1022,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "ogre-blade",
@@ -957,7 +1041,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "nobles-rapier",
@@ -976,7 +1060,7 @@
       "grantsAttack": null,
       "text": { "en": "This weapon cannot be purchased.", "fr": "Cette arme ne peut pas être achetée." },
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "ogre-great-weapon",
@@ -995,7 +1079,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "ogre-mace",
@@ -1014,7 +1098,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "spear",
@@ -1033,7 +1117,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "sword",
@@ -1052,7 +1136,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "warhammer",
@@ -1071,7 +1155,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "zweihander",
@@ -1090,7 +1174,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 59, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
+      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes de corps à corps" }
     },
     {
       "id": "vicious-bite",
@@ -1109,7 +1193,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 72, "md": "06_guild-mercenaries.md > Chien de chasse" }
+      "sourceRef": { "page": 74, "md": "06_guild-mercenaries.md > Chien de chasse" }
     },
     {
       "id": "arbalest",
@@ -1128,7 +1212,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "blackpowder-pistol",
@@ -1147,7 +1231,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "blackpowder-rifle",
@@ -1166,7 +1250,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "blunderbuss",
@@ -1185,7 +1269,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "brace-of-pistols",
@@ -1204,7 +1288,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "crossbow",
@@ -1223,7 +1307,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "fire-bombs",
@@ -1242,7 +1326,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "flamethrower",
@@ -1267,7 +1351,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "hand-crossbow",
@@ -1286,11 +1370,11 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "long-bow",
-      "name": { "en": "Long Bow", "fr": "Arc long" },
+      "name": { "en": "Longbow", "fr": "Arc long" },
       "kind": "ranged",
       "cost": 26,
       "purchasable": true,
@@ -1305,7 +1389,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "long-rifle",
@@ -1324,7 +1408,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "ogre-arbalest",
@@ -1343,7 +1427,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "ogre-cannon",
@@ -1368,7 +1452,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "ogre-pistol",
@@ -1387,7 +1471,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "repeater-pistol",
@@ -1406,11 +1490,11 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "short-bow",
-      "name": { "en": "Short Bow", "fr": "Arc court" },
+      "name": { "en": "Shortbow", "fr": "Arc court" },
       "kind": "ranged",
       "cost": 16,
       "purchasable": true,
@@ -1425,7 +1509,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "volley-rifle",
@@ -1450,7 +1534,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
+      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Armurerie de la Guilde - Armes à distance" }
     },
     {
       "id": "cuirass",
@@ -1469,7 +1553,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Cuirasse" }
+      "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Cuirasse" }
     },
     {
       "id": "warded-robes",
@@ -1491,7 +1575,7 @@
         "fr": "Lancez un dé chaque fois qu'un combattant équipé de cette armure est ciblé par un sort lancé par un combattant ennemi. Sur 4+, le sort n'a aucun effet sur ce combattant."
       },
       "designerNote": null,
-      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Robe de protection" }
+      "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Robe de protection" }
     },
     {
       "id": "full-plate",
@@ -1515,7 +1599,7 @@
         "fr": "Les combattants équipés de cette armure ne peuvent pas être équipés d'armes à distance à deux mains, à l'exception d'une Paire de pistolets."
       },
       "designerNote": null,
-      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armure de plates" }
+      "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Armure de plates" }
     },
     {
       "id": "ogre-armour",
@@ -1534,7 +1618,7 @@
       "grantsAttack": null,
       "text": null,
       "designerNote": null,
-      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Armure d'ogre" }
+      "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Armure d'ogre" }
     },
     {
       "id": "bomb-bolt",
@@ -1556,7 +1640,7 @@
         "fr": "Cet objet exige que le combattant soit équipé d'une Arbalète.\nUne fois par bataille, ce combattant peut effectuer une action d'Attaque à distance avec l'arme suivante :"
       },
       "designerNote": null,
-      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Carreau explosif" }
+      "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Carreau explosif" }
     },
     {
       "id": "grappling-hook",
@@ -1578,7 +1662,7 @@
         "fr": "Ce combattant peut escalader les hauts murs de la même manière que les échelles."
       },
       "designerNote": null,
-      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Grappin" }
+      "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Grappin" }
     },
     {
       "id": "grimoire",
@@ -1600,7 +1684,7 @@
         "fr": "Une fois par bataille, après que ce combattant a effectué un jet de lancement, vous pouvez relancer le jet de lancement."
       },
       "designerNote": null,
-      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Grimoire" }
+      "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Grimoire" }
     },
     {
       "id": "guild-banner",
@@ -1622,7 +1706,7 @@
         "fr": "Tant que ce combattant est sur le champ de bataille, vous pouvez relancer les tests de déroute. Vous pouvez relancer les tests de Volonté effectués par les combattants alliés tant qu'ils sont à 12\" ou moins de ce combattant et que ce combattant est visible pour eux."
       },
       "designerNote": null,
-      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Bannière de la Guilde" }
+      "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Bannière de la Guilde" }
     },
     {
       "id": "loyal-companion",
@@ -1647,7 +1731,7 @@
         "en": "This item is designed for miniatures that feature other creatures such as leashed attack dogs on the same base. The Loyal Companion is not considered a separate fighter for any rules.",
         "fr": "Cet objet est conçu pour les figurines qui comportent d'autres créatures sur le même socle, comme des chiens de guerre tenus en laisse. Le Compagnon fidèle n'est considéré comme un combattant distinct pour aucune règle."
       },
-      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Compagnon fidèle" }
+      "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Compagnon fidèle" }
     },
     {
       "id": "shield",
@@ -1669,7 +1753,7 @@
         "fr": "Améliorez de 1 la valeur d'Armure de ce combattant, jusqu'à un maximum de 2+. (Par exemple, 6+ devient 5+)."
       },
       "designerNote": null,
-      "sourceRef": { "page": 61, "md": "06_guild-mercenaries.md > Bouclier" }
+      "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Bouclier" }
     },
     {
       "id": "lantern-torch",
@@ -1691,7 +1775,7 @@
         "fr": "Dégradez de 1 la valeur d'Armure des combattants ennemis Démons et Morts-vivants tant qu'ils sont engagés avec au moins un combattant équipé de cet objet."
       },
       "designerNote": null,
-      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Lanterne/Torche" }
+      "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > Lanterne/Torche" }
     },
     {
       "id": "wooden-stakes",
@@ -1713,14 +1797,14 @@
         "fr": "Une fois par bataille, tant que ce combattant est engagé au corps à corps avec un combattant Mort-vivant ou Démon qui est ensanglanté, il peut utiliser l'action bonus suivante :\nPlanter le pieu [Action bonus] : choisissez comme cible un combattant ennemi Démon ou Mort-vivant avec lequel ce combattant est engagé au corps à corps et qui est ensanglanté. Lancez un dé. Sur 2+, la cible est immédiatement mise hors de combat. Lors de la séquence d'après-bataille, ce combattant gagne 10 d'expérience bonus."
       },
       "designerNote": null,
-      "sourceRef": { "page": 62, "md": "06_guild-mercenaries.md > Pieux en bois" }
+      "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > Pieux en bois" }
     }
   ],
   "armouryLists": [
     {
       "id": "main",
       "name": { "en": "Main List", "fr": "Liste principale" },
-      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Liste principale" },
+      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Liste principale" },
       "entries": [
         { "wargearId": "axe", "cost": 16 },
         { "wargearId": "club-mace-hammer", "cost": 14 },
@@ -1747,7 +1831,7 @@
     {
       "id": "munitions",
       "name": { "en": "Munitions List", "fr": "Liste d'armement" },
-      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Liste d'armement" },
+      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Liste d'armement" },
       "entries": [
         { "wargearId": "arbalest", "cost": 90 },
         { "wargearId": "flamethrower", "cost": 80 },
@@ -1759,7 +1843,7 @@
     {
       "id": "champion",
       "name": { "en": "Champion List", "fr": "Liste des Champions" },
-      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Liste des Champions" },
+      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Liste des Champions" },
       "entries": [
         { "wargearId": "brace-of-pistols", "cost": 30 },
         { "wargearId": "long-rifle", "cost": 70 },
@@ -1772,7 +1856,7 @@
     {
       "id": "ogre",
       "name": { "en": "Ogre List", "fr": "Liste des Ogres" },
-      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Liste des Ogres" },
+      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Liste des Ogres" },
       "entries": [
         { "wargearId": "ogre-blade", "cost": 36 },
         { "wargearId": "ogre-great-weapon", "cost": 50 },
@@ -1787,7 +1871,7 @@
     {
       "id": "cleric",
       "name": { "en": "Cleric List", "fr": "Liste des Clercs" },
-      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Liste des Clercs" },
+      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Liste des Clercs" },
       "entries": [
         { "wargearId": "arcane-staff", "cost": 10 },
         { "wargearId": "club-mace-hammer", "cost": 14 },
@@ -1803,16 +1887,17 @@
     {
       "id": "witch-hunter",
       "name": { "en": "Witch Hunters List", "fr": "Liste des Chasseurs de sorcières" },
-      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Liste des Chasseurs de sorcières" },
+      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Liste des Chasseurs de sorcières" },
       "entries": [
         { "wargearId": "lantern-torch", "cost": 4 },
-        { "wargearId": "wooden-stakes", "cost": 5 }
+        { "wargearId": "wooden-stakes", "cost": 5 },
+        { "wargearId": "bomb-bolt", "cost": 25 }
       ]
     },
     {
       "id": "wizard",
       "name": { "en": "Wizard List", "fr": "Liste des Magiciens" },
-      "sourceRef": { "page": 58, "md": "06_guild-mercenaries.md > Liste des Magiciens" },
+      "sourceRef": { "page": 60, "md": "06_guild-mercenaries.md > Liste des Magiciens" },
       "entries": [
         { "wargearId": "arcane-staff", "cost": 10 },
         { "wargearId": "ensorcelled-weapon", "cost": 26 },
@@ -1837,7 +1922,7 @@
         "en": "Mercenary Leaders and Champions only",
         "fr": "Chefs et Champions Mercenaires uniquement"
       },
-      "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > Vieux briscards" },
+      "sourceRef": { "page": 67, "md": "06_guild-mercenaries.md > Vieux briscards" },
       "skills": [
         {
           "id": "rallying-cry",
@@ -1846,7 +1931,7 @@
             "en": "Once per battle, this fighter can use the following bonus action:\nRallying Cry [Bonus Action]: This fighter heals 1 damage. In addition, at the end of the round, if this fighter is still on the battlefield, the commanding player does not need to take a Flee test for their warband.",
             "fr": "Une fois par bataille, ce combattant peut utiliser l'action bonus suivante :\nCri de ralliement [Action bonus] : ce combattant est soigné de 1 dégât. De plus, à la fin du round, si ce combattant est toujours sur le champ de bataille, le joueur qui contrôle le combattant n'a pas besoin d'effectuer de test de déroute pour sa bande."
           },
-          "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > Cri de ralliement" }
+          "sourceRef": { "page": 67, "md": "06_guild-mercenaries.md > Cri de ralliement" }
         },
         {
           "id": "point-blank-shot",
@@ -1855,7 +1940,7 @@
             "en": "While this fighter is engaged in melee, they can attempt to make a Ranged Attack action. To do so, they take an Initiative test. If passed they can make a Ranged Attack action but cannot use a Heavy weapon. The Ranged Attack action must target a fighter they are engaged in melee with. If failed, the action immediately ends.",
             "fr": "Tant que ce combattant est engagé au corps à corps, il peut tenter d'effectuer une action d'Attaque à distance. Pour cela, il effectue un test d'Initiative. S'il le réussit, il peut effectuer une action d'Attaque à distance, mais ne peut pas utiliser une arme qui a le trait d'arme Lourd. L'action d'Attaque à distance doit cibler un combattant avec lequel il est engagé au corps à corps. S'il le rate, l'action prend fin immédiatement."
           },
-          "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > Tir à bout portant" }
+          "sourceRef": { "page": 67, "md": "06_guild-mercenaries.md > Tir à bout portant" }
         },
         {
           "id": "crackshot",
@@ -1864,7 +1949,7 @@
             "en": "When making a ranged attack action, this fighter scores a critical hit on a natural roll of a 5 or a 6.",
             "fr": "Quand il effectue une action d'Attaque à distance, ce combattant obtient une touche critique sur un jet naturel de 5 ou de 6."
           },
-          "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > Fine gâchette" }
+          "sourceRef": { "page": 67, "md": "06_guild-mercenaries.md > Fine gâchette" }
         },
         {
           "id": "feint",
@@ -1873,7 +1958,7 @@
             "en": "Once per melee attack action, after an enemy has successfully parried one of this fighter's hits, this fighter can attempt a feint. To do so, roll a dice. If the roll equals or exceeds the parry roll, the hit is not parried and it becomes a critical hit.",
             "fr": "Une fois par action d'Attaque au corps à corps, après qu'un ennemi a paré avec succès l'une des touches de ce combattant, ce combattant peut tenter une feinte. Pour cela, lancez un dé. Si le résultat est égal ou supérieur au jet de parade, la touche n'est pas parée et elle devient une touche critique."
           },
-          "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > Feinte" }
+          "sourceRef": { "page": 67, "md": "06_guild-mercenaries.md > Feinte" }
         },
         {
           "id": "explorers-instincts",
@@ -1882,7 +1967,7 @@
             "en": "If this fighter is picked to lead a scouting party you gain 1 exploration re-roll.",
             "fr": "Si ce combattant est choisi pour mener un groupe d'éclaireurs, vous gagnez 1 relance d'exploration."
           },
-          "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > Instinct d'explorateur" }
+          "sourceRef": { "page": 67, "md": "06_guild-mercenaries.md > Instinct d'explorateur" }
         },
         {
           "id": "right-on-time",
@@ -1891,7 +1976,7 @@
             "en": "You can re-roll reinforcement rolls made for a battle group that includes this fighter.",
             "fr": "Vous pouvez relancer les jets de renforts effectués pour un groupe de combat qui comprend ce combattant."
           },
-          "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > Pile à l'heure" }
+          "sourceRef": { "page": 67, "md": "06_guild-mercenaries.md > Pile à l'heure" }
         }
       ]
     },
@@ -1900,7 +1985,7 @@
       "name": { "en": "Soldier's Cunning", "fr": "Ruse de soldat" },
       "eligibility": { "kind": "keywords", "anyOf": [["mercenary"]] },
       "eligibilityLabel": { "en": "Any Mercenary", "fr": "N'importe quel Mercenaire" },
-      "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > Ruse de soldat" },
+      "sourceRef": { "page": 68, "md": "06_guild-mercenaries.md > Ruse de soldat" },
       "skills": [
         {
           "id": "blackpowder-specialist",
@@ -1909,7 +1994,7 @@
             "en": "You can re-roll misfire rolls made for this fighter.",
             "fr": "Vous pouvez relancer les jets d'incident de tir effectués pour ce combattant."
           },
-          "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > Spécialiste de la poudre noire" }
+          "sourceRef": { "page": 68, "md": "06_guild-mercenaries.md > Spécialiste de la poudre noire" }
         },
         {
           "id": "shield-expert",
@@ -1918,7 +2003,7 @@
             "en": "If this fighter is equipped with a shield, improve their Armour value by an additional 1 (to a maximum of 2+), while they are the defending fighter and the attacking fighter made a Charge move this activation.",
             "fr": "Si ce combattant est équipé d'un bouclier, améliorez sa valeur d'Armure de 1 supplémentaire (jusqu'à un maximum de 2+), tant qu'il est le défenseur et que l'attaquant a effectué une Charge pendant cette activation."
           },
-          "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > Expert du bouclier" }
+          "sourceRef": { "page": 68, "md": "06_guild-mercenaries.md > Expert du bouclier" }
         },
         {
           "id": "marksman",
@@ -1927,7 +2012,7 @@
             "en": "Add 3\" to the Range value of this fighter's ranged weapons (excluding those with the Flame weapon trait).",
             "fr": "Ajoutez 3\" à la valeur de Portée des armes à distance de ce combattant, à l'exception de celles qui ont le trait d'arme Flamme."
           },
-          "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > Tireur d'élite" }
+          "sourceRef": { "page": 68, "md": "06_guild-mercenaries.md > Tireur d'élite" }
         },
         {
           "id": "fight-till-the-end",
@@ -1936,7 +2021,7 @@
             "en": "While this fighter is bloodied, add 1 to the Damage and Critical Damage value of their melee weapons.",
             "fr": "Tant que ce combattant est ensanglanté, ajoutez 1 à la valeur de Dégâts et de Dégâts critiques de ses armes de corps à corps."
           },
-          "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > Se battre jusqu'au bout" }
+          "sourceRef": { "page": 68, "md": "06_guild-mercenaries.md > Se battre jusqu'au bout" }
         },
         {
           "id": "blessed-by-the-saints",
@@ -1945,7 +2030,7 @@
             "en": "Each round, the first time this fighter is hit by an attack that is a critical hit, the attack is not a critical hit.",
             "fr": "À chaque round, la première fois que ce combattant est touché par une attaque qui est une touche critique, l'attaque n'est pas une touche critique."
           },
-          "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > Béni des Saints" }
+          "sourceRef": { "page": 68, "md": "06_guild-mercenaries.md > Béni des Saints" }
         },
         {
           "id": "stand-ground",
@@ -1954,7 +2039,7 @@
             "en": "Once per battle, at the start of a melee attack action in which this fighter is the defending fighter and the attacking fighter charged in the same activation, this fighter can stand their ground. If they do so, their melee weapons gain the Brace and Bludgeon weapon traits until the end of the activation.",
             "fr": "Une fois par bataille, au début d'une action d'Attaque au corps à corps dans laquelle ce combattant est le défenseur et où l'attaquant a chargé pendant la même activation, ce combattant peut tenir bon. Dans ce cas, ses armes de corps à corps gagnent les traits d'armes Contre-charge et Contondant jusqu'à la fin de l'activation."
           },
-          "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > Tenir bon" }
+          "sourceRef": { "page": 68, "md": "06_guild-mercenaries.md > Tenir bon" }
         }
       ]
     }
@@ -1964,7 +2049,7 @@
       "id": "lore-of-sanctioned-magic",
       "name": { "en": "Lore of Sanctioned Magic", "fr": "Domaine de la Magie autorisée" },
       "die": "d6",
-      "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > Domaine de la Magie autorisée" },
+      "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > Domaine de la Magie autorisée" },
       "spells": [
         {
           "id": "arcane-missile",
@@ -1979,7 +2064,7 @@
           },
           "criticalText": { "en": "Add 1 to the Damage value.", "fr": "Ajoutez 1 à la valeur de Dégâts." },
           "attack": { "rend": -1, "damage": "d3" },
-          "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > 1 - Projectile arcanique" }
+          "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > 1 - Projectile arcanique" }
         },
         {
           "id": "flaming-weapon",
@@ -1997,7 +2082,7 @@
             "fr": "Augmentez la portée du sort de 6\" à 12\"."
           },
           "attack": null,
-          "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > 2 - Arme enflammée" }
+          "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > 2 - Arme enflammée" }
         },
         {
           "id": "eldritch-barrier",
@@ -2015,7 +2100,7 @@
             "fr": "Les 2 points peuvent être placés à 9\" ou moins l'un de l'autre, à la place de 6\"."
           },
           "attack": null,
-          "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > 3 - Barrière occulte" }
+          "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > 3 - Barrière occulte" }
         },
         {
           "id": "silence",
@@ -2033,7 +2118,7 @@
             "fr": "Augmentez la portée de 12\" à 18\"."
           },
           "attack": null,
-          "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > 4 - Silence" }
+          "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > 4 - Silence" }
         },
         {
           "id": "torrent-of-fire",
@@ -2048,7 +2133,7 @@
           },
           "criticalText": { "en": "The Rend value is -2.", "fr": "La valeur de Perforation est de -2." },
           "attack": { "rend": -1, "damage": "d3+1" },
-          "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > 5 - Torrent de feu" }
+          "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > 5 - Torrent de feu" }
         },
         {
           "id": "umbral-vortex",
@@ -2063,7 +2148,7 @@
           },
           "criticalText": { "en": "It does not scatter.", "fr": "Il ne dévie pas." },
           "attack": { "rend": -1, "damage": "d3+1" },
-          "sourceRef": { "page": 63, "md": "06_guild-mercenaries.md > 6 - Vortex d'ombre" }
+          "sourceRef": { "page": 65, "md": "06_guild-mercenaries.md > 6 - Vortex d'ombre" }
         }
       ]
     },
@@ -2071,7 +2156,7 @@
       "id": "lore-of-the-saints",
       "name": { "en": "Lore of the Saints", "fr": "Domaine des Saints" },
       "die": "d6",
-      "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > Domaine des Saints" },
+      "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > Domaine des Saints" },
       "spells": [
         {
           "id": "healing-essence",
@@ -2089,7 +2174,7 @@
             "fr": "La cible est soignée de 3 points de vie à la place de 1D3."
           },
           "attack": null,
-          "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > 1 - Essence curative" }
+          "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > 1 - Essence curative" }
         },
         {
           "id": "bless-thy-blade",
@@ -2107,7 +2192,7 @@
             "fr": "Si le sort est lancé de façon critique, jusqu'à 2 combattants alliés peuvent être choisis à la place de 1."
           },
           "attack": null,
-          "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > 2 - Bénédiction des lames" }
+          "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > 2 - Bénédiction des lames" }
         },
         {
           "id": "godspeed",
@@ -2125,7 +2210,7 @@
             "fr": "Augmentez la portée de l'aura de 9\" à 12\"."
           },
           "attack": null,
-          "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > 3 - Célérité divine" }
+          "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > 3 - Célérité divine" }
         },
         {
           "id": "will-of-the-saints",
@@ -2143,7 +2228,7 @@
             "fr": "Si le sort est lancé de façon critique, jusqu'à 2 combattants alliés peuvent être choisis à la place de 1."
           },
           "attack": null,
-          "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > 4 - Volonté des Saints" }
+          "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > 4 - Volonté des Saints" }
         },
         {
           "id": "holy-strength",
@@ -2161,7 +2246,7 @@
             "fr": "Augmentez la portée de l'aura de 6\" à 9\"."
           },
           "attack": null,
-          "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > 5 - Force sacrée" }
+          "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > 5 - Force sacrée" }
         },
         {
           "id": "consecrated-ground",
@@ -2179,7 +2264,7 @@
             "fr": "Tant que le sort est en jeu, les combattants alliés sont affectés tant qu'ils sont à 6\" ou moins de ce point, à la place de 3\"."
           },
           "attack": null,
-          "sourceRef": { "page": 64, "md": "06_guild-mercenaries.md > 6 - Terre consacrée" }
+          "sourceRef": { "page": 66, "md": "06_guild-mercenaries.md > 6 - Terre consacrée" }
         }
       ]
     }

@@ -1,7 +1,8 @@
 /*
  * File:        tests/unit/names.test.ts
- * Role:        Unit tests of the house name generators: female fighter names
- *              (house tables, Death Covens book rule) and warband names.
+ * Role:        Unit tests of the name generators: fighter names (book tables
+ *              of the Guild Mercenaries, house female tables, Death Covens
+ *              book rule) and warband names.
  * Author:      Adrien Duclaud
  * Created:     2026-10-13
  * License:     MIT
@@ -15,6 +16,7 @@ import {
   feminine,
   randomFighterName,
   randomWarbandName,
+  type BookNameTables,
 } from "../../src/features/names/houseNames.ts";
 
 /** Random source returning the given values in a loop. */
@@ -26,10 +28,14 @@ const fixed =
     return value;
   };
 
-const book = (id: string): Record<string, string> => {
+const book = (id: string): BookNameTables => {
   const faction = gameData.factions.find((f) => f.id === id);
   if (faction === undefined) throw new Error(id);
-  return faction.nameTable.entries;
+  return {
+    male: faction.nameTable.entries,
+    female: faction.femaleNameTable?.entries ?? null,
+    surnames: faction.surnameTable?.entries ?? null,
+  };
 };
 
 describe("female name tables", () => {
@@ -42,13 +48,11 @@ describe("female name tables", () => {
       expect(new Set(Object.values(table)).size, id).toBe(36);
       expect(Object.values(table).every((n) => n.length > 0)).toBe(true);
     }
-    expect(Object.keys(FEMALE_NAME_TABLES).sort()).toEqual(
-      ["guild-mercenaries", "the-blighted-cloister", "verminkin"].sort(),
-    );
+    expect(Object.keys(FEMALE_NAME_TABLES).sort()).toEqual(["the-blighted-cloister", "verminkin"]);
   });
 });
 
-describe("feminine (Death Covens, p. 96)", () => {
+describe("feminine (Death Covens, p. 100)", () => {
   it("adds -a to a name ending in a consonant", () => {
     expect(feminine("Barovyr")).toBe("Barovyra");
     expect(feminine("Dragul")).toBe("Dragula");
@@ -60,22 +64,38 @@ describe("feminine (Death Covens, p. 96)", () => {
 });
 
 describe("randomFighterName", () => {
-  it("draws male names from the book table", () => {
+  it("draws Guild names from the three book tables (v1.11)", () => {
     expect(randomFighterName("guild-mercenaries", book("guild-mercenaries"), "male", fixed(0, 0))).toBe(
-      "Adalbert",
+      "Adalbert Acker",
     );
+    expect(randomFighterName("guild-mercenaries", book("guild-mercenaries"), "female", fixed(0, 0))).toBe(
+      "Adelheid Acker",
+    );
+    expect(
+      randomFighterName("guild-mercenaries", book("guild-mercenaries"), "male", fixed(0.4, 0, 0.99, 0.99)),
+    ).toBe("Gormen Wormwurz");
+  });
+  it("has three full Guild tables and no other book female table (v1.11)", () => {
+    const guild = book("guild-mercenaries");
+    expect(Object.keys(guild.female ?? {})).toHaveLength(36);
+    expect(Object.keys(guild.surnames ?? {})).toHaveLength(36);
+    for (const id of ["verminkin", "death-covens", "the-blighted-cloister"]) {
+      expect(book(id).female, id).toBeNull();
+      expect(book(id).surnames, id).toBeNull();
+    }
   });
   it("draws female names from the house table", () => {
-    expect(randomFighterName("guild-mercenaries", book("guild-mercenaries"), "female", fixed(0, 0))).toBe(
-      "Adelheid",
-    );
     expect(randomFighterName("verminkin", book("verminkin"), "female", fixed(0.99, 0.99))).toBe("Zizzra");
+    expect(randomFighterName("verminkin", book("verminkin"), "male", fixed(0, 0))).toBe(
+      book("verminkin").male["11"],
+    );
   });
   it("applies the book rule to the Death Covens", () => {
     expect(randomFighterName("death-covens", book("death-covens"), "female", fixed(0, 0.2))).toBe("Barovyra");
   });
   it("falls back to the book table for an unknown faction", () => {
-    expect(randomFighterName("other", { "11": "Solo" }, "female", fixed(0, 0))).toBe("Solo");
+    const solo: BookNameTables = { male: { "11": "Solo" }, female: null, surnames: null };
+    expect(randomFighterName("other", solo, "female", fixed(0, 0))).toBe("Solo");
   });
 });
 

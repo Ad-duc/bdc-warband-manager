@@ -452,17 +452,30 @@ function compareFaction(dir: string, f: FactionData, c: CommonData): void {
     f.strongholdUpgrades.map((u) => u.name.fr),
   );
 
-  // D66 names
-  const d66: string[] = [];
-  for (const row of tableRows(section(md, 2, layout.names))) {
-    if (!/^\d0$/.test(row[0] ?? "")) continue;
-    row.slice(1).forEach((name, col) => d66.push(`${(row[0] ?? "")[0]}${col + 1}=${name}`));
+  // D66 names. A faction with female names and surnames (Guild Mercenaries
+  // since v1.11) prints three tables, each under its own sub-heading.
+  const d66Rows = (lines: string[]): string[] => {
+    const d66: string[] = [];
+    for (const row of tableRows(lines)) {
+      if (!/^\d0$/.test(row[0] ?? "")) continue;
+      row.slice(1).forEach((name, col) => d66.push(`${(row[0] ?? "")[0]}${col + 1}=${name}`));
+    }
+    return d66;
+  };
+  const entries = (table: { entries: Record<string, string> }): string[] =>
+    Object.entries(table.entries).map(([k, v]) => `${k}=${v}`);
+  const names = section(md, 2, layout.names);
+  if (f.femaleNameTable === null || f.surnameTable === null) {
+    compareSets("D66 name table", d66Rows(names), entries(f.nameTable));
+  } else {
+    compareSets("D66 male name table", d66Rows(section(names, 3, "Prénoms masculins")), entries(f.nameTable));
+    compareSets(
+      "D66 female name table",
+      d66Rows(section(names, 3, "Prénoms féminins")),
+      entries(f.femaleNameTable),
+    );
+    compareSets("D66 surname table", d66Rows(section(names, 3, "Noms de famille")), entries(f.surnameTable));
   }
-  compareSets(
-    "D66 name table",
-    d66,
-    Object.entries(f.nameTable.entries).map(([k, v]) => `${k}=${v}`),
-  );
 
   // Fighter list and scrolls
   const listRows = tableRows(section(md, 2, "Liste des combattants"))

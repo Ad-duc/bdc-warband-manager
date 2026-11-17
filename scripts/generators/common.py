@@ -27,6 +27,13 @@ def clean(s):
     return re.sub(r"[ \t]+", " ", s).strip()
 
 
+# The page numbers typed in the generators are the printed pages of playtest
+# v1.10. Since v1.11 every chapter after the Guild Mercenaries (Verminkin,
+# Death Covens, The Blighted Cloister) starts 4 pages later: scenario VII and
+# the Guild name tables each add 2 pages before them.
+PAGE_SHIFT = 4
+
+
 def cap(s):
     return s[:1].upper() + s[1:]
 
@@ -43,7 +50,7 @@ class Source:
         self.name = name
 
     def ref(self, page, heading):
-        return {"page": page, "md": f"{self.name} > {heading}"}
+        return {"page": page + PAGE_SHIFT, "md": f"{self.name} > {heading}"}
 
     def section(self, heading, level=3):
         mark = "#" * level + " "

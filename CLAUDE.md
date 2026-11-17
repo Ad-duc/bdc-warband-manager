@@ -11,7 +11,7 @@
 # Agent instructions
 
 BDC Warband Manager is a static React PWA for Black Death City (playtest
-v1.10, Sam Pearson): warband builder, campaign tracking, print sheets, battle
+v1.11, Sam Pearson): warband builder, campaign tracking, print sheets, battle
 set-up, group campaigns and a French rules reader. It is published on GitHub
 Pages at https://ad-duc.github.io/bdc-warband-manager/ from `main`. Owner and
 only reviewer: Adrien Duclaud (French speaker).

@@ -15,7 +15,13 @@ import { useTranslation } from "react-i18next";
 import { hrefFor, navigate } from "../../app/router.ts";
 import { currentLanguage } from "../../i18n/index.ts";
 import { Markdown } from "./Markdown.tsx";
-import { findScenario, scenarioChapter, type Phase, type Scenario } from "./scenarios.ts";
+import {
+  findScenario,
+  scenarioChapter,
+  type Phase,
+  type Scenario,
+  scenarioTableResult,
+} from "./scenarios.ts";
 
 const PHASES: Phase[] = ["before", "during", "campaign"];
 
@@ -113,7 +119,7 @@ function Overview() {
           <tbody>
             {chapter.scenarios.map((s) => (
               <tr key={s.number}>
-                <td>{s.number}</td>
+                <td>{scenarioTableResult(chapter.table, s.number)}</td>
                 <td>
                   <a
                     className="underline underline-offset-2"

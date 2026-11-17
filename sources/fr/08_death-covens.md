@@ -248,8 +248,8 @@ Pendant la campagne, les bandes (*warband*) des Cabales de la Mort (*Death Coven
 
 | Nom | Pièces d'argent |
 |---|---|
-| Arc long (*Long Bow*) | 26 pa |
-| Arc court (*Short Bow*) | 16 pa |
+| Arc long (*Longbow*) | 26 pa |
+| Arc court (*Shortbow*) | 16 pa |
 
 ### Liste des Ogres zombies (*Zombie Ogre List*)
 
@@ -337,8 +337,8 @@ Voir les règles complètes aux pages xx-xx.
 
 | Nom | Portée | Attaques | Perforation | Dégâts | Dégâts critiques | Traits d'armes | Pièces d'argent |
 |---|---|---|---|---|---|---|---|
-| Arc long (*Long Bow*) | 28" | 1 | -1 | 1D3 | 1D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 26 pa |
-| Arc court (*Short Bow*) | 16" | 1 | - | 1 | 1D6 | À deux mains (*Two-handed*) | 16 pa |
+| Arc long (*Longbow*) | 28" | 1 | -1 | 1D3 | 1D6 | Lourd (*Heavy*), À deux mains (*Two-handed*) | 26 pa |
+| Arc court (*Shortbow*) | 16" | 1 | - | 1 | 1D6 | À deux mains (*Two-handed*) | 16 pa |
 
 **Rappels des traits d'armes (*Weapon Trait Reminders*)**
 
@@ -604,7 +604,7 @@ Les armes de corps à corps (*melee weapon*) de ce combattant (*fighter*) gagnen
 
 Ce combattant (*fighter*) ne peut pas subir de blessures permanentes (*permanent injury*). S'il subit une blessure (*injury*), elle est toujours temporaire (p. xx).
 
-De plus, si ce combattant (*fighter*) est tué (*killed*), vous pouvez immédiatement effectuer un test de Volonté (*Willpower*) pour lui. S'il est réussi, il n'est pas tué (*killed*), mais il manque les 1D3 prochaines batailles, le temps de son sommeil. Choisissez un Champion de votre bande (*warband*) pour assumer le commandement (*assume command*) en son absence (p. xx).
+De plus, si ce combattant (*fighter*) est tué (*killed*), vous pouvez immédiatement effectuer un test de Volonté (*Willpower*) pour lui. S'il est réussi, il n'est pas tué (*killed*), mais il manque les 1D3 prochaines batailles, le temps de son sommeil. S'il est votre Chef (*Leader*), choisissez un Champion de votre bande (*warband*) pour assumer le commandement (*assume command*) en son absence (p. xx).
 
 ### Drain de sang (*Leech Blood*)
 
@@ -893,7 +893,7 @@ Vous pouvez utiliser la table ci-dessous pour générer rapidement le nom d'un c
 |---|---|---|---|---|---|---|
 | 4" | 4+ | 4+ | 6+ | 3 | 2 | 4 |
 
-**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) de l'Armurerie de la Cabale (*Coven Armoury*).
+**Équipement :** ce combattant (*fighter*) peut être équipé de l'équipement (*wargear*) de la Liste principale (*Main List*) et de la Liste des Guerriers squelettes (*Skeleton Warrior List*) de l'Armurerie de la Cabale (*Coven Armoury*).
 
 **Expérience de départ :** 0.
 
@@ -1025,7 +1025,7 @@ Voir les règles complètes aux pages xx-xx.
 
 ## Notes du traducteur
 
-Les numéros de page sont ceux imprimés dans la VO v1.10.
+Les numéros de page sont ceux imprimés dans la VO v1.10, sauf pour les notes marquées (v1.11).
 
 - Ensemble du lot : même mise en forme que pour les factions précédentes. Les encadrés en grille (origines p. 94, repaires p. 95) sont lus ligne par ligne ; les listes de l'armurerie (p. 98) colonne par colonne : Liste principale, Liste des Champions, Liste des Ogres zombies (*Zombie Ogre*), Liste des Praticiens ; les armures, les objets et les compétences colonne de gauche puis colonne de droite.
 - Ensemble du lot : cette faction n'a ni page d'armes à distance ni encadré "Objets tenus". Les Hommes de main, les Brutes et les Bêtes n'ont pas de citation. Les citations sont rendues en français d'aujourd'hui.
@@ -1081,3 +1081,6 @@ Les numéros de page sont ceux imprimés dans la VO v1.10.
 - p. 99 (v1.10) : Hallebarde et Lance gagnent Arme d'hast (*Polearm*), la Hallebarde perd Encombrant. Objets tenus : règle remplacée.
 - p. 103 (v1.10) : Guérison surnaturelle : "If they suffer an injury it is always temporary (pg xx)" et "assume command".
 - p. 112 (v1.10) : Loup sinistre, Pisteurs : la VO écrit "If your scouting party includes a Hunting Dog" (copie de la règle du Chien de chasse) : traduit "un Loup sinistre", à signaler.
+- p. 107 (v1.11) : Guérison surnaturelle : la VO précise "If they are your Leader, pick a Champion...", ce qui lève la remarque de la p. 103 ci-dessus.
+- p. 114 (v1.11) : Guerrier squelette : son équipement cite désormais la Liste des Guerriers squelettes en plus de la Liste principale.
+- p. 99 à 116 (v1.11) : la faction est décalée de 4 pages. La VO écrit "Longbow" et "Shortbow" en un mot. Corrections sans effet en VF : "This fighter's melee weapons" (Force impie), "a Death Coven fighter", "consonant", "the caster's warband", "3 witchfire tokens".

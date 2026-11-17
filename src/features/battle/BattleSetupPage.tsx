@@ -38,7 +38,13 @@ import {
 } from "../../rules/index.ts";
 import { addBattle, participantName } from "../groups/groups.ts";
 import { Markdown } from "../scenarios/Markdown.tsx";
-import { findScenario, scenarioChapter, twistDieSides, type Scenario } from "../scenarios/scenarios.ts";
+import {
+  findScenario,
+  scenarioChapter,
+  scenarioNumberForRoll,
+  twistDieSides,
+  type Scenario,
+} from "../scenarios/scenarios.ts";
 import { fighterLabel, nowIso } from "../warbands/factory.ts";
 import { savePrefill } from "./handoff.ts";
 
@@ -413,7 +419,8 @@ export function BattleSetupPage({
             type="button"
             className="btn btn-solid"
             onClick={() => {
-              pickScenario(rollD6());
+              // v1.11, p. 35: a 6 asks for a second dice (Street of Death or Ruined Halls).
+              pickScenario(scenarioNumberForRoll(chapter.table, rollD6(), rollD6()));
             }}
           >
             {t("battle.rollScenario")}
